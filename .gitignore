@@ -1,0 +1,8 @@
+Data/
+Temp/
+Qlever.ipynb
+xml_input.ipynb
+wikidata.ipynb
+.DS_Store
+.vscode/
+.ipynb_checkpoints
