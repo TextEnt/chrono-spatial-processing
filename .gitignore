@@ -6,3 +6,5 @@ wikidata.ipynb
 .DS_Store
 .vscode/
 .ipynb_checkpoints
+.DS_Store
+__pycache__/
