@@ -1,12 +1,44 @@
 import spacy
+import random
 from standoffconverter import Standoff, View
 from lxml import etree
 from pathlib import Path
 from tqdm import tqdm
-from spacy.tokens import Doc, Span
+from spacy.tokens import Doc, Span, DocBin
+from typing import List
 
 nlp_model_fr = spacy.load("fr_core_news_lg")
 nlp_model_fr.remove_pipe('ner')
+
+def sample_files(folder: Path, n: int) -> List[Path]:
+    """
+    Randomly sample a specified number of files from a given folder.
+
+    Args:
+        folder (Path): The path to the folder from which to sample files.
+        n (int): The number of files to sample.
+
+    Returns:
+        List[Path]: A list of Paths to the sampled files.
+    """
+    sample = random.sample(list(folder.iterdir()), n)
+    return sample
+
+def print_corpus_summary(corpus: DocBin, spacy_model: spacy.language.Language):
+    """
+    Print a summary of spaCy corpus (`DocBin`) by printing the number of documents, entities, and tokens.
+
+    Args:
+        corpus (DocBin): The corpus to be summarized, represented as a spaCy DocBin object.
+        spacy_model (spacy.language.Language): The spaCy language model used to process the corpus.
+
+    Returns:
+        None
+    """
+    docs = list(corpus.get_docs(spacy_model.vocab))
+    print(f"Number of documents in the corpus: {len(docs)}")
+    print(f"Number of entities in the corpus: {sum([len(list(doc.ents)) for doc in docs])}")
+    print(f"Number of tokens in the corpus: {sum([len(doc) for doc in docs])}")
 
 class OffsetResolver(object):
     
@@ -46,7 +78,7 @@ def tei_element_to_ner_label(tag: str) -> str:
     else:
         return None
 
-def tei2spacy(tei_file_path: Path) -> Doc:
+def tei2spacy(tei_file_path: Path, project_entities: bool) -> Doc:
     """
     Convert a TEI (Text Encoding Initiative) XML file to a SpaCy Doc object with named entities (pre-annotated in the TEI).
     Args:
@@ -91,43 +123,47 @@ def tei2spacy(tei_file_path: Path) -> Doc:
     }
     inside_entity = False
 
-    # Iterate over the tokens in the document and project the entities from the TEI document
-    # onto character offsets of tokens in the SpaCy document
-    for token in tqdm(doc, desc="Projecting NER labels from TEI onto SpaCy tokens"):
-        tei_tag = resolver.get_tag_from_char_index(token.idx, token.idx + len(token.text))
-        ner_label = tei_element_to_ner_label(tei_tag)
-        
-        if inside_entity:
-            if ner_label is None:
-                entities.append(entity)
-                entity = {}
-                inside_entity = False
-            else:
-                if entity['label'] == ner_label:
-                    entity['chunks'].append(token)
-                else:
+    if project_entities:
+        # Iterate over the tokens in the document and project the entities from the TEI document
+        # onto character offsets of tokens in the SpaCy document
+        for token in tqdm(doc, desc="Projecting NER labels from TEI onto SpaCy tokens"):
+            tei_tag = resolver.get_tag_from_char_index(token.idx, token.idx + len(token.text))
+            ner_label = tei_element_to_ner_label(tei_tag)
+            
+            if inside_entity:
+                if ner_label is None:
                     entities.append(entity)
-                    entity = {
-                        'label': ner_label,
-                        'chunks': [token]
-                    } 
-        else:
-            if ner_label is not None:
-                entity['label'] = ner_label
-                entity['chunks'] = [token]
-                inside_entity = True
-    
-    ## Convert the entities to Spacy format
-    entities_to_add = []
-    for entity in entities:
-        spacy_ent = {}
-        spacy_ent['start'] = entity['chunks'][0].i
-        spacy_ent['end'] = entity['chunks'][-1].i + 1
-        spacy_ent['label'] = entity['label']
-        entities_to_add.append(spacy_ent)
+                    entity = {}
+                    inside_entity = False
+                else:
+                    if entity['label'] == ner_label:
+                        entity['chunks'].append(token)
+                    else:
+                        entities.append(entity)
+                        entity = {
+                            'label': ner_label,
+                            'chunks': [token]
+                        } 
+            else:
+                if ner_label is not None:
+                    entity['label'] = ner_label
+                    entity['chunks'] = [token]
+                    inside_entity = True
+        
+        ## Convert the entities to Spacy format
+        entities_to_add = []
+        for entity in entities:
+            spacy_ent = {}
+            spacy_ent['start'] = entity['chunks'][0].i
+            spacy_ent['end'] = entity['chunks'][-1].i + 1
+            spacy_ent['label'] = entity['label']
+            entities_to_add.append(spacy_ent)
 
-    # Create Span objects for each entity and inject them into the Doc object
-    doc.ents = [Span(doc, ent["start"], ent["end"], label=ent["label"]) for ent in entities_to_add]
-    print(f"Found {len(list(doc.ents))} entities in document {doc.user_data['filename']}")
-    print("##############################################")
-    return doc
+        # Create Span objects for each entity and inject them into the Doc object
+        doc.ents = [Span(doc, ent["start"], ent["end"], label=ent["label"]) for ent in entities_to_add]
+        print(f"Found {len(list(doc.ents))} entities in document {doc.user_data['filename']}")
+        print("##############################################")
+        return doc
+    else:
+        print("Skipping entity projection")
+        return doc
