@@ -1,11 +1,15 @@
 import spacy
 import random
+import operator
+import pandas as pd
+from dataclasses import dataclass
 from standoffconverter import Standoff, View
+import xml.etree.ElementTree as ET
 from lxml import etree
 from pathlib import Path
 from tqdm import tqdm
 from spacy.tokens import Doc, Span, DocBin
-from typing import List
+from typing import List, Tuple
 
 nlp_model_fr = spacy.load("fr_core_news_lg")
 nlp_model_fr.remove_pipe('ner')
@@ -78,6 +82,41 @@ def tei_element_to_ner_label(tag: str) -> str:
     else:
         return None
 
+def extract_metadata_from_tei(root: ET) -> dict:
+    """
+    Extracts metadata from a TEI (Text Encoding Initiative) XML element.
+
+    Args:
+        root (ET.Element): The root element of the TEI XML document.
+
+    Returns:
+        dict: A dictionary containing the extracted metadata with keys 'author', 'title', and 'date'.
+              The values are strings or None if the corresponding metadata is not found.
+    """
+    ns = {"tei":"http://www.tei-c.org/ns/1.0"}
+    bibl = root.find('.//tei:bibl', namespaces=ns)
+    author = None
+    title = None
+    date = None
+
+    if bibl is not None:
+        author_elem = bibl.find('.//tei:author/tei:persName', namespaces=ns)
+        title_elem = bibl.find('.//tei:title', namespaces=ns)
+        date_elem = bibl.find('.//tei:date', namespaces=ns)
+
+    if author_elem is not None:
+        author = author_elem.text
+    if title_elem is not None:
+        title = title_elem.text
+    if date_elem is not None:
+        date = date_elem.attrib['when'] if date_elem is not None and 'when' in date_elem.attrib else None
+
+    return {
+        'author': author,
+        'title': title,
+        'date': date
+    }
+
 def tei2spacy(tei_file_path: Path, project_entities: bool) -> Doc:
     """
     Convert a TEI (Text Encoding Initiative) XML file to a SpaCy Doc object with named entities (pre-annotated in the TEI).
@@ -106,9 +145,15 @@ def tei2spacy(tei_file_path: Path, project_entities: bool) -> Doc:
         .insert_tag_text("{http://www.tei-c.org/ns/1.0}reg", " ")
         .shrink_whitespace()
     )
+
+    # extract metadata from TEI
+    metadata = extract_metadata_from_tei(xml_tree)
     
     # create a spacy doc object
     doc = nlp_model_fr(tei_view.get_plain())
+    doc.user_data['author'] = metadata['author']
+    doc.user_data['title'] = metadata['title']
+    doc.user_data['publication_date'] = metadata['date']
     doc.user_data['path'] = str(tei_file_path) 
     doc.user_data['filename'] = str(tei_file_path.name)
     print(f"There are {len(doc)} tokens in document {doc.user_data['filename']}")
@@ -167,3 +212,97 @@ def tei2spacy(tei_file_path: Path, project_entities: bool) -> Doc:
     else:
         print("Skipping entity projection")
         return doc
+
+@dataclass
+class Entity:
+    qid: str
+    ner_labels: List[str] # ner tags for entity mentions
+    mention_frequency: int # document-level mention frequency
+    unique_surface_forms: List[str]
+    short_desc: str
+
+class SalientSentenceSelector(object):
+    
+    def __init__(self, spacy_doc: Doc):
+        self.doc = spacy_doc
+        self.person_entities = self._mentions2entities(ner_label='PER')
+        self.place_entities = self._mentions2entities(ner_label='LOC')
+        self.sentences = {sent_i + 1: sent for sent_i, sent in enumerate(self.doc.sents)}
+        self.sent2ent_idx = self._build_sentence2entity_index()
+
+    def _mentions2entities(self, ner_label : str = 'PER') -> List[str]:
+        # transform the entity mentions from spacy into a dataframe for easier manipulation
+        self._mentions_df = pd.DataFrame(
+            [
+                {
+                    'mention': ent.text,
+                    'ner_label': ent.label_,
+                    'qid': ent._.kb_qid,
+                    'url_wikidata': ent._.url_wikidata,
+                    'nerd_score': ent._.nerd_score
+                }
+                for ent in self.doc.ents
+                if ent.label_ == ner_label
+            ]
+        )
+        linked_entities_df = self._mentions_df[self._mentions_df.qid.notna()]
+        n_nonlinked_entities = len(self._mentions_df[self._mentions_df.qid.isna()])
+        n_linked_entities = len(linked_entities_df)
+        print(
+            f'Document {self.doc.user_data["filename"]} contains {self._mentions_df.shape[0]} {ner_label} entities;',
+            f'{n_linked_entities} linked and {n_nonlinked_entities} non-linked'
+        )
+
+        # unique entities
+        unique_qids = linked_entities_df.qid.unique()
+        print(f'Document {self.doc.user_data["filename"]} contains {len(unique_qids)} {ner_label} unique entities')
+
+        entities = []
+        for qid in unique_qids:
+            mentions  = linked_entities_df[linked_entities_df.qid == qid].mention
+            mention_frequency = len(mentions.tolist())
+            ner_labels = linked_entities_df[linked_entities_df.qid == qid].ner_label.unique().tolist()
+            unique_surface_forms = mentions.unique().tolist()
+            entities.append(
+                Entity(
+                    qid=qid,
+                    ner_labels=ner_labels,
+                    mention_frequency=mention_frequency,
+                    unique_surface_forms=unique_surface_forms,
+                    short_desc=''
+                )
+            )
+        return {entity.qid: entity for entity in entities}
+
+    def _build_sentence2entity_index(self) -> dict:
+        sentence2entity_index = {}
+        for sent_i, sent in self.sentences.items():
+            for ent in sent.ents:
+                if ent._.kb_qid:
+                    if sent_i not in sentence2entity_index:
+                        sentence2entity_index[sent_i] = set()
+                    sentence2entity_index[sent_i].add(ent._.kb_qid)
+        return sentence2entity_index
+
+    # TODO: select sentences for people and places separately
+    def _find_sentences_for_entity(self, entity: Entity) -> List[str]:
+        sentences = []
+        for sentence_id, entity_qids in self.sent2ent_idx.items():
+            if entity.qid in entity_qids:
+                sentences.append(self.sentences[sentence_id])
+        sentences.sort(key=lambda x: len(x), reverse=True)
+        return sentences
+
+    # take the most frequent person|place and return the first `k`` sentences where the entity appears,
+    # ranked by sentence length (rationale: the longer, the more informative)
+    def select(self, entity_type : str  = 'person', top_k_sentences: int = 5) -> Tuple[Entity, List[str]]:
+        if entity_type == 'person':
+            sorted_person_entities = sorted(self.person_entities.values(), key=operator.attrgetter('mention_frequency'), reverse=True)
+            top_person = sorted_person_entities[0]
+            return (top_person, self._find_sentences_for_entity(top_person)[:top_k_sentences])
+        elif entity_type == 'place':
+            sorted_place_entities = sorted(self.place_entities.values(), key=operator.attrgetter('mention_frequency'), reverse=True)
+            top_place = sorted_place_entities[0]
+            return (top_place, self._find_sentences_for_entity(top_place)[:top_k_sentences])
+        else:
+            raise ValueError(f"Entity type {entity_type} not supported")
