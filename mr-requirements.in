@@ -3,3 +3,4 @@ spacy
 pandas
 tqdm
 spacyfishing
+dask
