@@ -14,18 +14,27 @@ from typing import List, Tuple
 nlp_model_fr = spacy.load("fr_core_news_lg")
 nlp_model_fr.remove_pipe('ner')
 
-def sample_files(folder: Path, n: int) -> List[Path]:
+def sample_files(folder: Path, n: int, files_to_exclude: List[Path] = None) -> List[Path]:
     """
     Randomly sample a specified number of files from a given folder.
 
     Args:
         folder (Path): The path to the folder from which to sample files.
         n (int): The number of files to sample.
+        List[Path]: A list of files to exclude from the sampling process.
 
     Returns:
         List[Path]: A list of Paths to the sampled files.
     """
-    sample = random.sample(list(folder.iterdir()), n)
+    all_files = set(folder.iterdir())
+    print(f'Found {len(all_files)} files in {folder}')
+    if files_to_exclude:
+        exclude = set(files_to_exclude)
+        filtered = all_files - exclude
+        print(f'Excluded {len(exclude)} files: kept {len(filtered)} files')
+        sample = random.sample(list(filtered), n)
+    else:
+        sample = random.sample(list(all_files), n)
     return sample
 
 def print_corpus_summary(corpus: DocBin, spacy_model: spacy.language.Language):
@@ -117,11 +126,12 @@ def extract_metadata_from_tei(root: ET) -> dict:
         'date': date
     }
 
-def tei2spacy(tei_file_path: Path, project_entities: bool) -> Doc:
+def tei2spacy(tei_file_path: Path, project_entities: bool, disable_progress_bar: bool) -> Doc:
     """
     Convert a TEI (Text Encoding Initiative) XML file to a SpaCy Doc object with named entities (pre-annotated in the TEI).
     Args:
         tei_file_path (Path): The file path to the TEI XML file.
+        disable_progress_bar (bool): A flag to disable the progress bar when projecting entities.
     Returns:
         Doc: A SpaCy Doc object containing the text and named entities from the TEI file.
     The function performs the following steps:
@@ -156,6 +166,7 @@ def tei2spacy(tei_file_path: Path, project_entities: bool) -> Doc:
     doc.user_data['publication_date'] = metadata['date']
     doc.user_data['path'] = str(tei_file_path) 
     doc.user_data['filename'] = str(tei_file_path.name)
+    doc.user_data['entity_linking'] = None
     print(f"There are {len(doc)} tokens in document {doc.user_data['filename']}")
 
     # initialise the OffsetResolver object
@@ -171,7 +182,7 @@ def tei2spacy(tei_file_path: Path, project_entities: bool) -> Doc:
     if project_entities:
         # Iterate over the tokens in the document and project the entities from the TEI document
         # onto character offsets of tokens in the SpaCy document
-        for token in tqdm(doc, desc="Projecting NER labels from TEI onto SpaCy tokens"):
+        for token in tqdm(doc, desc="Projecting NER labels from TEI onto SpaCy tokens", disable=disable_progress_bar):
             tei_tag = resolver.get_tag_from_char_index(token.idx, token.idx + len(token.text))
             ner_label = tei_element_to_ner_label(tei_tag)
             
