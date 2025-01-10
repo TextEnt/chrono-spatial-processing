@@ -28,14 +28,17 @@ def sample_files(folder: Path, n: int, files_to_exclude: List[Path] = None) -> L
     """
     all_files = set(folder.iterdir())
     print(f'Found {len(all_files)} files in {folder}')
-    if files_to_exclude:
-        exclude = set(files_to_exclude)
-        filtered = all_files - exclude
-        print(f'Excluded {len(exclude)} files: kept {len(filtered)} files')
-        sample = random.sample(list(filtered), n)
+    if n:
+        if files_to_exclude:
+            exclude = set(files_to_exclude)
+            filtered = all_files - exclude
+            print(f'Excluded {len(exclude)} files: kept {len(filtered)} files')
+            sample = random.sample(list(filtered), n)
+        else:
+            sample = random.sample(list(all_files), n)
+        return sample
     else:
-        sample = random.sample(list(all_files), n)
-    return sample
+        return list(all_files)
 
 def print_corpus_summary(corpus: DocBin, spacy_model: spacy.language.Language):
     """
