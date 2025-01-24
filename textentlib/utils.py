@@ -315,6 +315,28 @@ def tei2spacy_simple(tei_file_path: Path) -> Doc:
     doc.ents = [Span(doc, ent["start"], ent["end"], label=ent["label"]) for ent in entities_to_add]
     return doc
 
+def load_or_create_corpus(spacy_corpus_path: str) -> DocBin:
+    """
+    Load an existing spaCy corpus from disk or create a new one if it doesn't exist.
+
+    Args:
+        spacy_corpus_path (str): The file path to the spaCy corpus.
+
+    Returns:
+        DocBin: The loaded or newly created spaCy DocBin object.
+
+    If the specified file path exists, the function loads the serialized spaCy corpus from the disk
+    and prints a summary of the corpus. If the file path does not exist, it creates a new empty
+    DocBin object.
+    """
+    if Path(spacy_corpus_path).exists():
+        spacy_corpus = DocBin(store_user_data=True).from_disk(spacy_corpus_path)
+        print(f"Loaded serialize spacy corpus from {spacy_corpus_path}")
+        print_corpus_summary(spacy_corpus, nlp_model_fr)
+    else:
+        spacy_corpus = DocBin(store_user_data=True)
+    return spacy_corpus
+
 @dataclass
 class Entity:
     qid: str
