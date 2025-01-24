@@ -9,6 +9,7 @@ import xml.etree.ElementTree as ET
 from lxml import etree
 from pathlib import Path
 from tqdm import tqdm
+from bs4 import BeautifulSoup as bs
 from spacy.tokens import Doc, Span, DocBin
 from typing import List, Tuple
 
@@ -95,6 +96,12 @@ def tei_element_to_ner_label(tag: str) -> str:
     else:
         return None
 
+def get_tag_from_char_index(char_start: int, char_end: int, entities: dict) -> str:
+    for (start, end), tag in entities.items():
+        if start <= char_start and end >= char_end:
+            return tag
+    return None
+
 def extract_metadata_from_tei(root: ET) -> dict:
     """
     Extracts metadata from a TEI (Text Encoding Initiative) XML element.
@@ -116,6 +123,7 @@ def extract_metadata_from_tei(root: ET) -> dict:
         author_elem = bibl.find('.//tei:author/tei:persName', namespaces=ns)
         title_elem = bibl.find('.//tei:title', namespaces=ns)
         date_elem = bibl.find('.//tei:date', namespaces=ns)
+        ptr_elem = bibl.find('.//tei:ptr', namespaces=ns)
 
     if author_elem is not None:
         author = author_elem.text
@@ -123,11 +131,14 @@ def extract_metadata_from_tei(root: ET) -> dict:
         title = title_elem.text
     if date_elem is not None:
         date = date_elem.attrib['when'] if date_elem is not None and 'when' in date_elem.attrib else None
+    if ptr_elem is not None:
+        link = ptr_elem.attrib['target'] if ptr_elem is not None and 'target' in ptr_elem.attrib else None
 
     return {
         'author': author,
         'title': title,
-        'date': date
+        'date': date,
+        'link': link
     }
 
 def tei2spacy(tei_file_path: Path, project_entities: bool, disable_progress_bar: bool) -> Doc:
@@ -227,6 +238,82 @@ def tei2spacy(tei_file_path: Path, project_entities: bool, disable_progress_bar:
     else:
         print("Skipping entity projection")
         return doc
+
+def tei2spacy_simple(tei_file_path: Path) -> Doc:
+    soup = bs(tei_file_path.read_text(), 'xml')
+    output_text = ""
+    chunks = {}
+    entities = []
+    entity = {}
+    inside_entity = False
+
+    for elem in soup.findAll('reg'):
+        for node in elem.contents:
+            if isinstance(node, str):
+                output_text += node.text
+            else:
+                if node.name == 'persName' or node.name == 'placeName':
+                    offset_start = len(output_text)
+                    output_text += node.text
+                    offset_end = len(output_text)
+                    ner_tag = tei_element_to_ner_label(node.name)
+                    chunks[(offset_start, offset_end)] = ner_tag
+                else:
+                    output_text += node.text
+        output_text += " "
+
+    # extract metadata from TEI
+    metadata = extract_metadata_from_tei(etree.parse(tei_file_path))
+    
+    # create a spacy doc object
+    doc = nlp_model_fr(output_text)
+    doc.user_data['author'] = metadata['author']
+    doc.user_data['title'] = metadata['title']
+    doc.user_data['publication_date'] = metadata['date']
+    doc.user_data['link'] = metadata['link']
+    doc.user_data['path'] = str(tei_file_path) 
+    doc.user_data['filename'] = str(tei_file_path.name)
+    doc.user_data['document_id'] = doc.user_data['filename'].split('.')[0]
+    doc.user_data['entity_linking'] = None
+
+
+    # Iterate over the tokens in the document and project the entities from the TEI document
+    # onto character offsets of tokens in the SpaCy document
+    for token in doc:
+        ner_label = get_tag_from_char_index(token.idx, token.idx + len(token.text), chunks)
+        if inside_entity:
+            if ner_label is None:
+                entities.append(entity)
+                entity = {}
+                inside_entity = False
+            else:
+                if entity['label'] == ner_label:
+                    entity['chunks'].append(token)
+                else:
+                    entities.append(entity)
+                    entity = {
+                        'label': ner_label,
+                        'chunks': [token]
+                    } 
+        else:
+            if ner_label is not None:
+                entity['label'] = ner_label
+                entity['chunks'] = [token]
+                inside_entity = True
+
+    # Convert the entities to Spacy format
+    # NB: start and end are token indices, not character offsets
+    entities_to_add = []
+    for entity in entities:
+        spacy_ent = {}
+        spacy_ent['start'] = entity['chunks'][0].i
+        spacy_ent['end'] = entity['chunks'][-1].i + 1
+        spacy_ent['label'] = entity['label']
+        entities_to_add.append(spacy_ent)
+
+    # Create Span objects for each entity and inject them into the Doc object
+    doc.ents = [Span(doc, ent["start"], ent["end"], label=ent["label"]) for ent in entities_to_add]
+    return doc
 
 @dataclass
 class Entity:
