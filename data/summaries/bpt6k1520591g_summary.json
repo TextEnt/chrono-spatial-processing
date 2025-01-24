@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "author": "La Motte, Antoine de",
+    "title": "Issé : pastorale héroïque en musique, représentée devant S. M., à Trianon, le 17 de décembre 1697, par l'Académie royale de musique [par A. Houdar de La Motte]",
+    "publication_date": "1697",
+    "document_id": "bpt6k1520591g"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Apollon",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Apollon, en ces lieux hâtez-vous de paraître, Par des attraits pompeux tâchez de m'attendrir, Ce Berger de mon cœur sera toujours le maître, Et les vœux éclatants que vous viendrez m'offrir Ne serviront.",
+          "Elle sçait mes tourments secrets, Que ne peut-elle, Hélas! répéter mes regrets Pour vous tirer d'inquiétude. \nAPOLLON\n En vain votre cœur s'est flatté De mépriser pour moi la suprême Puissance;",
+          "Le Théâtre représente un Bocage, dont la vue est terminée par la Forêt de Dodone \nAPOLLON\n De Vand on a souffert une fois L'amoureux esclavage, Ah!",
+          "Que dites-vous, et que viens-je d'entendre? \nAPOLLON\n Mon cœur brûle pour vous de l'amour le plus tendre;",
+          "APOLLON, ISSE' AN DORIS, Troupes d'Européens, d'Européennes, de Chinois, d'Amiquains, d'Amériques, dEgyptiens."
+        ]
+      },
+      "top_5_persons": [
+        "Apollon",
+        "E",
+        "AN",
+        "Issé",
+        "Hercule"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "ISSE",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Ô Ciel! \nISSE\n \nAPOLLON\n Sous l'habit d'un Berger s'ai voulu séparer mon amour de ma gloire.",
+          "Qu'entends-je? \nISSE\n \nAPOLLON\n Dans l'Objet de votre amour extrême Connaissez le Dieu qui vous aime.",
+          "APOLLON, ISSE, PAN et DORIS \nAPOLLON\n IOn, je ne puis me rassurer;",
+          "ISSE endormie, HILAS \nHILAS\n ",
+          "ISSE se réveillant."
+        ]
+      },
+      "top_5_places": [
+        "ISSE",
+        "Paris"
+      ]
+    }
+  }
+}

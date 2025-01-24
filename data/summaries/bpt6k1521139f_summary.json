@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "La princesse d'Élide : [intermèdes], comédie héroïque meslée de musique et d'entrée de ballet / [de Molière]",
+    "publication_date": "1692",
+    "document_id": "bpt6k1521139f"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Magny",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Messieurs Favier l'aîné, Pecourt, Faüre, Létang, Magny, Bouteville, Dumirail et Germain LE PREMIER ACTE de la Comédie.",
+          "vier l'aîné, l' Magny, 8 \nSYLVIE\n \nMademoiselle Varango\n ",
+          "Pecourt, Létang, Faüre, Magny, Bouteville et Germain LE QUATRIE'ME",
+          "Messieurs Faüre, Magny, Bouteville"
+        ]
+      },
+      "top_5_persons": [
+        "Magny",
+        "Bouteville",
+        "Moron",
+        "Cloris",
+        "Germain"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "La Princesse pour chasser son inquiétude oblige les Bergers à Rome chanter les Airs suivants."
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Bergère"
+      ]
+    }
+  }
+}

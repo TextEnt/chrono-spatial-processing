@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "author": "Nicole, Claude",
+    "title": "Le Phantosme, comédie",
+    "publication_date": "1656",
+    "document_id": "bpt6k1090179c"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "LISTAN",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Si vous voulez pour moi vous laisser attacher A l'in âme gibet où l'on me va brancher, Je vous donne comment srangs, pourvu qu'on voꝰimmole, Et qu'une prompte mort vous ôte la parole: Après si vous pouvez les venir demander, Vous me trouverez prêt à vous les accorder. \nLISTAN\n Que dit cet insolent?",
+          "Il a tous les attraits dont notre esprit se flatte, De toutes les vertus il ne le manque rien, J'ai son cœur tout à moi, ieaire donne le mien, \nIUSTINE\n Tu te repentiras de tes fausses maximes.  Bi. \nLISTAN\n Ces mains t'étoufferont pour expier tes crimes.",
+          "Fpendant que mon Maître est à chercher Li Ô sandre, Pour lui parler du meurtre, et luyfaire reprendre Ce logis exécrable où l'on parle aux esprits, Je m'en vais acheuer mon ouvrage entrepris, Je m'en vais retrouver Listan et sa Maîtresse, Et tâcher d'adoucir leur crainte et leur tristesse.",
+          "Je vais chercher Listan, j'en veux être éclairci, Quand tu l'aurai trouvé, avec perdrai ma colère, Il est rousiours mon Fils, et moi toujours son père, C'est un jeune éventé que l'âge a fait faillir, L'on ne peut être sage à moins que de vieillir.",
+          "Mais j'ai peur à la fin du succès de mon art, Jusqu'ici tout va bien, mais atremble et et une Lors que j'en considère et la suite et lissue, y vois tant d'embarras et de difficultés, ue mes esprits consus en sont épouuantez. \nLISTAN\n Hélas!"
+        ]
+      },
+      "top_5_persons": [
+        "LISTAN",
+        "Seigneur",
+        "FLORIS",
+        "FLORIS",
+        "Justine"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Pars",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Signé Par l Roi en son Conseil, BZRAUD Il est permis CHARLES DE SERCY, Marchand Libraire à Pars d'imprimer, ou faire imprimer, vendre et débiter Le Phautôme, Comédie, du sieur Nicole, en tel caractères, et autant de fois que bon sens sem blera, durant le temps et espace de cinq ans, compter du jour que ladite Comédie sera achèves d'imprimer pour la première fois.",
+          "Signé Par l Roi en son Conseil, BZRAUD Il est permis CHARLES DE SERCY, Marchand Libraire à Pars d'imprimer, ou faire imprimer, vendre et débiter Le Phautôme, Comédie, du sieur Nicole, en tel caractères, et autant de fois que bon sens sem blera, durant le temps et espace de cinq ans, compter du jour que ladite Comédie sera achèves d'imprimer pour la première fois."
+        ]
+      },
+      "top_5_places": [
+        "Pars",
+        "France",
+        "Cypre",
+        "Candie",
+        "Barque"
+      ]
+    }
+  }
+}

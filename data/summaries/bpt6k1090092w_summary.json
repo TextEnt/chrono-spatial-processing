@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "author": "Ferrier de La Martinière, Louis",
+    "title": "Adraste, tragédie",
+    "publication_date": "1680",
+    "document_id": "bpt6k1090092w"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Adraste",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Mais vous, Seigneur, mais vous qui jusques à ce jour Avez fermé votre âme aux chagrins de l'amour, Et qui toujours armé de votre indiférence, Avez des plus beaux yeux combattu la puissance, Sur quel prétexte ici pouvez-vous appuyer L'injurieux refus qu'il me faut essuyer? \nADRASTE\n Sur quel prétexte!",
+          "Ah, Prince, quel plaisir pour votre heureuse Amante D'aller bientôt revoir le rivage du Xante Et pour vous exprimer mes souhaits les plus doux, Quel plaisir de l'aller revoir avec vous! \nADRASTE\n La Fortune envers moi s'est trop tôt démentie, De ses dons trop hâtez mon âme se défie.",
+          "Qui pour le trilte Auraite augmentent mon étin é: Mais quand j'aurais, Seigneur, un cœur moins généreux, Malheureuse, je dois aimer les Malheureux. \nADRASTE\n D'une aveugle bonté votre estime l'ouvrage, Mais en de sûrs périls ce dessein nous engage.",
+          "M'aime-t-on, ou plutôt, Prince, me hait-on moins, Et mon repos est-il l'ouvrage de vos soins? \nADRASTE\n nanoreprope, ouigneur, de vous leur peur dépendre, À vos sens agitez la raison doit le rendre.",
+          "Si ma vive douleur peut encor vous toucher, Cher Adraste, aidez-moi vous-même à le chercher. \nADRASTE\n Vous croyez voir, Seigneur, votre peine adoucie, Si du sort d'un Rival votre âme est éclaircie;"
+        ]
+      },
+      "top_5_persons": [
+        "Adraste",
+        "Crésus",
+        "ARCAS",
+        "Lycaste",
+        "Lydie"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Grèce",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Hélène vit pour elle armer toute la Grèce, Troie éteinte en sentit la fureur vengeresse;",
+          "De Crésus dans la Grèce est le seul ennemi."
+        ]
+      },
+      "top_5_places": [
+        "Grèce",
+        "PARIS",
+        "Sardis",
+        "Lydie",
+        "Trone"
+      ]
+    }
+  }
+}

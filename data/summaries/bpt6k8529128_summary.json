@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "author": null,
+    "title": "La belle cabaretière ou le procureur à la mode, comédie",
+    "publication_date": "1692",
+    "document_id": "bpt6k8529128"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "CRISPIN",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "MANON, TOINETTE, CRISPIN, CLEANTE CLEANIE h Madame, que j'ai de plaisir de vous voir ACT de pouvoir vous dire de bouche, ce que depuis un temps notre n'ai peu vous faire Içavoit que par lettre, vous devez être instruite par ma dernière de tout ce qui se passe.",
+          "-Je le voudiais pour me venger de sa fille qui me boit, cat toujours tiens que c'est la faite assez de ma de la marier, et me faire beaucoup de bien que de m'en déburasser. \nCRISPIN\n ",
+          "CRISPIN Monsieur, tel que vous me voyez, j'ai été autres fois à l'armée, et si vous me dépeignez Monsieur eur voste Fils je pourrais peu- vous ures de peine.",
+          "CRISPIN, il tend les deux mains: Vous donnez de si bonne grâce, qu'on ne peut se défénare de réséevorr de vous.",
+          "Mais j'entends ce fou de Gascon, retirons-nous et allons voir si Crispin a trouvé Cleante CHEVALIER Soureinleyan inemicur, SCÈNE XV."
+        ]
+      },
+      "top_5_persons": [
+        "CRISPIN",
+        "TOINETTE",
+        "Cléante",
+        "NICOLAS",
+        "Louis"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Je produis au priocipal, et dans ma production j'y fais couler une Pièce fausse, la partie ne manque pas de s'inscrire en faux, demande que la Pièce soir mise au Grffe parasse ( nô variétur) icelle mise, il zigue son inscription, et moi mes soutiens de vérité, fais ensuite ordonner qu'il garnirait l'amande portée par l'Ordonnance ArT. V. Mais au lieu de Rome donner trois jours pour faire cette consignatlon d'amande;",
+          "C'est un âne que Rome vais décrier par tout, SCÈNE VI."
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Normandie",
+        "Bourgogne",
+        "Trianon",
+        "Champagne"
+      ]
+    }
+  }
+}

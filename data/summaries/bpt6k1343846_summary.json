@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "author": "Puget de La Serre, Jean",
+    "title": "Thesee, ou Le prince reconnu . Tragi-comedie en prose",
+    "publication_date": "1644",
+    "document_id": "bpt6k1343846"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Pyritous",
+          "frequency": 11
+        },
+        "related_sentences": [
+          "Qui devait s'il n'est point venu vous secourir pour vous obliger à le nommer pour successeur: et si Pyritous et la Reine des Amazones n'ont pas entendu qu'il pouvait monter par cette voie au Trône de votre Empire: joignez à ces considérations l'inclination naturelle que vous avez pour ce Prince, porte le désir que vous avez de le voir: et craignez que toutes ces choses vous fassent oublier le soin que vous devez avoir de votre propre conservation.",
+          "À moi, mes chères compagnes, à l'assaut, à la mort, il s'agit en cette occasion de plus que d'Athènes: Mais non arrêtez-vous, prions où nous devions commander, allons Pyritous, approchons-nous des remparts, et demandons à parser au Raij, nontte prerenee camera peut-être ce grand orage.",
+          "Il est son fils, je l'ai su des Demons que j'ai conjuiten tur ie rujet de mia pairion, et deux Ilgnes que j'ai effacées du billet de Pyritous m'en ont absoluement assurée. \nNERINE\n Il est donc innocent du crime dont on l'accuse.",
+          "LE1372CI VI, Madame, vous êtes plus raisonnable dans vos soupçons, que ieans le suis dans mes confiances, le long entretien de Thesée et de Pyritous, ne peut être sans quelque dessein pernicieux à mon État, mais mer le preuiendray: À moi quelqu'autre.  ",
+          "Vous devez la lui donner à l'abord, sous prétexte de reste faire voir sa condamnation dans ce que Pyritous te écrit, et vous assurer qu'il ne l'aura pas plustost touchée que vous aurez sujet de ne plus craindre les effets de sa déloyauté."
+        ]
+      },
+      "top_5_persons": [
+        "Pyritous",
+        "Antiope",
+        "Lysandre",
+        "Seigneur",
+        "Nerine"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Grèce",
+          "frequency": 11
+        },
+        "related_sentences": [
+          "Ce Princeétant allé en Déléphes, pour consulter l'Oracle dApollon, sur le sujet de quelque entreprise importante, et en ayant eu une réponse obscure, passa par le Peloponese, et voulut en conférer avec Pythée mon aïeul, qui comme vous savez, était alors l'Interprète des Oracles de toute la Grèce Il arrêta quelque temps à Trezene ce fut là qu'il vit ma mère, et ce fut de cette vue que nasquit l'amour qui les porta depuis à résoudre leur mariage, que mon père voulut tenir secret jusqu' à ce qu'il eût terminé la guerre qu'il avait contie les chants du Roy Allas Cependant ils s'emportèrent dans toutes ces agréables licences que la jeunesse conseille, et que l'hymen autorise en telle sorte que mon père eut sujet de croire qu'il lui naîtrait bien tôt un successeur: et ce fut au temps qu'il reçut des nouvelles qui l'obligèrent à partir pour retourner en Athènes Il partit donc, mais auparavant il fit faire une épée, où il fit graver les plus considérables aventures de sa vie, et l'ayant remise entre les mains de ma mère, la pria de la garder jusques à ce que je serais en état de la porter, et la conjura en suite si les grandes guerres qu'il avait sur les bras l'empêchaient de retourner vers elle auparavant ce temps de m'envoyer à luitaît cette marque de manaissance.",
+          "Le dirai-je, il m'aima, je le crus, jusqu'aimai, mesdiscours aussi bien que mes regards, lui témoignèrent mapassion, enfin nous résolus de le faire Souverain dãs mes États aussi bien qu'il l'était dans mon âme: Je voulais en faire la propositi nom lorsqu'Herculefit dessein de partir et de le remener en Grèce Il résista, mes larmes aidèrentlongtemps sa résistance, l'amour combatit contre le devoir, la victoire fut Daiancee, mais emm riereuic remporta, Thesée partit, et un restai dans le sentiment de tout ce que la perte de la personne aimée à de rigoureux?",
+          "point à ce que vous dites des conventions militaires, mais sens dirai bien qu'un Roi se peut justement dispenser de l'exécution d'un traité qui ajesté sait par ses Capitaines, dans les nécessités présentes, et sans son ordre exprès, que ieans suis point obligé de tenir ce que vous avez promis, et que si y faites ce que vous devez, vous ne ferez rien au préjudice de votre patrie, et du secours que vous avez promis à la Grèce ô in Jux PXRITOYS.",
+          "l'ai pris pour prétexte les ravages que le Roi Egée fit dans nos terres auparavant la guerre d'Hercule: Mais en effet, je n'attaque la Grèce que pour intéresser ce perfide Grec, et que pour le revoir en qualité d'ennemi, puisque je ne l'ai pu voir en qualité d'ami.",
+          "Que s'il ne me la rend aujourd' y, n' aura y, et que le reste bras qui a délié vos chaînes, et qui doit rompre celles de cette valeureuse fille, lui en peut donner qu'il nesçauroit rompre avec le secours de toute la Grèce PYRITOUS."
+        ]
+      },
+      "top_5_places": [
+        "Grèce",
+        "Athènes",
+        "Peloponese"
+      ]
+    }
+  }
+}

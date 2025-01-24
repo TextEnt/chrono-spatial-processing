@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "L'Escole des femmes, comédie par J. B. P. Molière",
+    "publication_date": "1674",
+    "document_id": "bpt6k1280452z"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ALAIN",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "ALAIN, Paysan, valet d'Arnolphe GEORGETTE, Paysanne, servante d'Anolphe CHRISALDE, Ami d'Arnolphe NRIQUE, Beau frère de Chrysalde ORONTE, Père d'Horace, et grand Ami d'Arnolphe",
+          "Le présent quilm à fait d'une beile cancue, Et l'argent qu'en ont eu notre Alain et Georgette, Vous l'aimeriez sans doute, et diriez comme nous. \n",
+          "Cependant par avance, Alain, voilà pour boire, Et voilà pour t'avoir, Georgette, un cottillon, Ils tendent tous deux la main, et prennent l'argent.",
+          "V. ALAIN, ARNOLPHÉE li dès dlIus E ne sais ce que c'est, Monsieur, mais il me semble Qu'Agnès et le corps mort s'en sont allez ensemble.",
+          "Auriez-vous bien l'esprit de servir mon courroux? \nALAIN\n S'il ne tient qu'à frapper, Monsieur, tout est à nous."
+        ]
+      },
+      "top_5_persons": [
+        "ALAIN",
+        "GEORGETTE",
+        "Agnès",
+        "Arnolphe",
+        "Horace"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Et de retour en France, il a cherché d'abord Celle à qui de sa fille il confia le sort. \nCHRISALDE\n Et cette Paysanne a dit avec franchise, qu'en vos mais a quatle ans cène l'avait remise. \nORONTE\n ",
+          "France\n eu de France eu de France"
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Enrique",
+        "Rome"
+      ]
+    }
+  }
+}

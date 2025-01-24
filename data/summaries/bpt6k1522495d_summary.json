@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": null,
+    "title": "Zephire et Flore, opéra représenté par l'Académie royale de musique",
+    "publication_date": "1688",
+    "document_id": "bpt6k1522495d"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Flore",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Les Nuages se dissipent, et les Aquilons abandonnent l'Empire de Flore Belle Flore, pour vous ce que je viens de faire Vous montre assez combien vous m'êtes chère: Mais pour me voir toujours favoriser ces lieux Regardant Éloignez un objet qui blesse ici mes yeux.  CLYTIE.",
+          "S. ARTENICE, Nymphe de Diane Troupe des Nymphes de Flore Troupe d'autres Divinités de la suite de Flore Troupe de Silvains et de Dryades Troupe de Zéphirs de la suite de Zéphire Troupe d'Aquilon de la suite de Borée Y BÊLÉ.",
+          "Je viens d'implorer sa justice: pu tuneur me jetait dans un cruel supplice J'aime mieux souffrir avec vous. \nFLORE\n En attendant du sort l'arrêt suprême Éloignez-vous, songez ce que vous hasardez. \n",
+          "CLORIS\n TEndre Léphire, Amant trop malheureux, Tu pers pers que ton cœur adore, Borée en ce moment vient de t'enlever Flore \nZÉPHIRE\n Et Jupiter, hélas, l'accordait à mes vœux!",
+          "Dans ces Jardins délicieux Où toujours mes soins curieux, Secondent si bien ceux de Flore Que je suis content en ce jour De voir ce beau Palais devenir le séjour D'un Roi que l'Univers adore."
+        ]
+      },
+      "top_5_persons": [
+        "Flore",
+        "Zéphire",
+        "Borée",
+        "Cloris",
+        "Jupiter"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Cybele",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Depuis qu'elle a reçu les honneurs immortels, Cybele te tient lieu de Mère: Allez jusque sur ses Autels Demander cet Hymen qui ne peut venir déplaire. \nBORÉE\n Oui, je suis ce conseil sincère.",
+          "Et toi, confident infidèle, Je découvre donc en ce jour Pourquoi tu me pressais d'aller trouver Cybele Et in viens entort ans ma Cour Paire eciarer ion infaient Mmour.",
+          "Après les refus de Cybele, Fallait-il ce surcroît à ma douleur mortelle?",
+          "Je viens vous annoncer les ordres de Cybele De ses refus Borée",
+          "Bientôt vous allez voir Cybele, Hymen et Bacchus avec elle;"
+        ]
+      },
+      "top_5_places": [
+        "Cybele",
+        "Clytie",
+        "Bergères",
+        "Prairies",
+        "Grèce"
+      ]
+    }
+  }
+}

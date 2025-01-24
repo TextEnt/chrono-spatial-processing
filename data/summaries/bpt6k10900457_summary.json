@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "author": "Mairet, Jean",
+    "title": "Chryséide et Arimand, tragi-comédie",
+    "publication_date": "1639",
+    "document_id": "bpt6k10900457"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Alexandre",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "On ne me connaît point, voilà que l'on me charge. \nAlexandre\n On ne devrait jamais quoi que tout succombât Engager japperjonne enstmotaniecenua, Sinon que pour le moins elle fût bien suivie. \nBellimard\n Je fallis de l'apprendre aux dépens de ma vie, Ils se jetaient sur moi sans respect quelque demi, Ainsi qu'ils auraient fait sur leur propre ennemi Je ne connais personne en ce danger qui m'aide, Et voyant que la fuite est mon dernier remède.",
+          "Mais ne voudrais -tu point que ainsi t'ac eompagnasse crains ju queiquait uanger ont te coup te menace, Ou si quelque envieux jaloux de ton bonheur Près de Seigneur n'aurait point attaqué ton honneur. \nBellimard\n Je sais bien que plusieurs ont une âme fort lâche, Mais tu n'ai point en Cour d'ennemis que ie éclache, Uivant comme tu fais tout m'éjét imnaijérent. \nAlexandre\n Es",
+          "Nous en partagerons te gainpar tu monu \nAlexandre\n Je ne Veux rien de toi sinon ton amitié, Gagnant l'affection d'un homme de la sorte 'est avoir plus vaillant que le Perou n'apporte.",
+          "Alexandre\n C'est me faire sentir un extrême plaisir, Et dans l'occasion que tu m'en feras naître Au péril de mon sang ie te ferai connaître Que je sers mes amis auecques passion.",
+          "Alexandre\n Je pense en avoir plus que tout le monde ensemble. \nBelimard\n Aussi crois qu'en cela Bellimard te ressemble. \necnandre\n \nBellimard\n Et c'est aussi pourquoi."
+        ]
+      },
+      "top_5_persons": [
+        "Alexandre",
+        "Seigneur",
+        "Climène",
+        "Olympe",
+        "Mars"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Tage",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Lui, qui jeune Monarque, et la fleur des guerriers, Nous assure qu'un jour on verra ses Lauriers Ombrager les deux bords du Tage et de l'Euphrate Lui qui se donne à vous, mous seriez trop ingrate môme neuuuomupuusauuuusement à lui. \n",
+          "Noi, Tage Roi."
+        ]
+      },
+      "top_5_places": [
+        "Tage",
+        "France",
+        "Vienne"
+      ]
+    }
+  }
+}

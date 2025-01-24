@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "author": "Puget de La Serre, Jean",
+    "title": "Le Pyrame, tragédie en prose",
+    "publication_date": "1633",
+    "document_id": "bpt6k1090048g"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "NARBAL",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Je ne cherche point de raison pour soutenir un crime, dont les reproches seulement me font rougir de honte dans mon innocenc Mais si mes soupiis vous offet cent, il vous sera bien plus aisé m'arracher le cœur du sein, q d'en effacer l'amour juer j'ai gra déte \nNARBAL\n Je ne veux pas t'arracher le cœt du sein;",
+          "Vous vous pouvez vanter de l'avoir fait renaître: car en me donnant la vie, vous m'avez donné un cœur qui sait aimer parfai Tement. \nNARBAL\n Cette perfection est un vice en toi, puis qu'elle intéresse mon repos. \nYRAME\n ",
+          "La patience est le remède du mal, qui n'en a point. \nNARBAL\n Tu me voudrais persuader que les Dieux Dieux sont complices de la folie de mon Fils, encore qu'ils permettent le mal, ils n'en sont pas les auteurs.",
+          "Mais s'il y a quelque affection éternelle, celle que ie ou ay voue durera toujours. \nNARBAL\n Et toi qu’as tu résolu, veux tu preterer la qualte d'amant adèle à celle de fils obéissant.",
+          "Mais comment voulez -vous tirer raison d'un homme qui n'en a point. \nNARBAL\n S'il n'a point de raison, il doit être puni de sa folie, puis qu'elle est volontaire."
+        ]
+      },
+      "top_5_persons": [
+        "NARBAL",
+        "SYLAR",
+        "ILAR",
+        "l'Aurore",
+        "Zéphire"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Tigre",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Renvoie donc ce même Tigre, ou ce Lyon, pour quérir le reste de fa Haire.",
+          "Lyon ou le Tigre"
+        ]
+      },
+      "top_5_places": [
+        "Tigre",
+        "Lyon"
+      ]
+    }
+  }
+}

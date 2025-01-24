@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Dépit amoureux. Comedie, representée sur le Theatre du Palais Royal. Par J. B. P. de Moliere",
+    "publication_date": "1679",
+    "document_id": "bpt6k12804022"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Lucile",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Et, dans cette aventure où chacun m'intéresse, Vous allez voir plutôt éclater ma faiblesse, Connaître que le Ciel qui dispose de nous Ne me fit pas un cœur pour tenir contre vous, Et qu'il vous réservait pour victoire facile, De finir le destin du frère de Lucile Oui, bien loin de vanter le pouvoir de mon bras, Ascagne va par vous recevoir le trépas: Mais Mais il veut bien mourir, si sa mort nécessaire Peut avoir maintenant dequoy vous satisfaire, En vous donnant pour femme en présence de tous Celle qui justement ne peut être qu'à vous.",
+          "et, puisque votre haine Chasse un cœur tant de fois que l'amour vous ramène, C'est la dernière ici des importunités é roudren janidio de men veua feouten \nLUCILE\n Vous pouvez faire aux miens la grâce toute entière, Monsieur, et m'épargner encor cette dernière. \nERASTE\n Hé bien, Madame, hé bien, ils seront satisfaits: Je romps avec vous, et j'y romps pour jamais, Puisque vous le voulez;",
+          "Et que s'est-il passé, montre d'effronterie, Entre ton maître et moi? \nMASCARILLE\n Vous devez, que je crois, En savoir un peu plus de nouvelles que moi, Et pour vous cette nuit fut trop douce, pour croire Que vous puissiez si vite en perdre la mémoire. \nLUCILE\n C'est trop souffrir, mon père, un impudent valet.",
+          "eusse-je un faible cœur Jusques à n'en pouvoir effacer votre image, Croyez que vous n'aurez jamais cet avantage De me voir revenir. \nLUCILE\n Ce sesait bieh en vain. \nERASTE\n Moi -même, de cent coups je percerais mon sein, Si j'avais jamais fait cette bassesse insigne, De vous revoir, après ce traitement indigne.",
+          "Lucile, à mon avis, vous montre assez d'amour, Elle vous voir, vous parle, à toute heure du jour, Et Valère après-tour qui cause vôtre crainte, Semble n'être à présent souffert que par contrainte. \nERASTE\n Souvent d'un faux espoir un amant est nourri;"
+        ]
+      },
+      "top_5_persons": [
+        "Lucile",
+        "Lucile",
+        "Valère",
+        "Marinette",
+        "Ascagne"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "À MONSTEUR MONSIEUR HOURLIER, Escuyer, Sieur de Mericourt, Conseiller du Roi, Lieutenant Général Civil et Criminel au Baillage du Palais à Paris ONSIEUR, Si cette Pièce n'avait reçu les applaudissements de toute la France, si elle n'avait été le charme de Paris, et si elle n'avait été le divertissement du plus grand Monarque de la Terre, je ne prendrais pas la liberté de vous l'offrir.",
+          "FIN \nFrance\n \nFrance\n \nFrance\n "
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Paris",
+        "PARIS"
+      ]
+    }
+  }
+}

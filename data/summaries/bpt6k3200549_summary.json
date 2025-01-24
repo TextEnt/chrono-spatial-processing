@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Les Oeuvres de M. Molière. Édition nouvelle enrichie de figures en taille-douce et augmentée des oeuvres posthumes",
+    "publication_date": "1691",
+    "document_id": "bpt6k3200549"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "MAROTTE",
+          "frequency": 11
+        },
+        "related_sentences": [
+          "Vite, venez nous tendre ici dedans le conseiller: des grâces, \nMAROTTE\n Par ma foi, je ne fay point quelle bête c'est là, il faut parler Chrétien, rous rouien que je vous entende.",
+          "MAROTTE\n Onsieur, voilà mes Majaitrelies qui vont venir tout à l'heure.",
+          "ODELET, MASCARILLE, CATHOS, MAGDELON, MAROTTE \nMASCARILLE\n ",
+          "MAROTTE, MASCARILLE, CATHOS, MAGDELON Qui ? \n",
+          "Le Vicomte de Jodèlet \nSE\n \nMAROTTE\n "
+        ]
+      },
+      "top_5_persons": [
+        "MAROTTE",
+        "SCE",
+        "ALMANZOR",
+        "Chaise",
+        "SE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 11
+        },
+        "related_sentences": [
+          "et je vous laisse à penser, si quand nous disons quelque chose, le Parterre ose nous contredire, Pour moi j'y luis fort exact, et quand j'ai promis à quelque Poète, je crie toujours, voilà qui est beau, devant que les chandelles soient allumées. \nMAGDELON\n Ne m'en parlez point, c'est un admirable lieu que Paris il s'y passe cent choses tous les jours, qu'on ignore dans les Provinces, quelque spirituelle qu'on painetier 011 ATHOS.",
+          "La renommée accusé juste, en contant ce que vous valez, et vous allez faire pic, repic, et capot, tout ce qu'il y a de galant dans Paris \nMAC\n \nMAGDELON\n Votre complaisance pousse un peu trop avant la libéralité de ses langes, et nous n'avons garde, ma cousine et moi, nout rtrieux, d ès le doux de votre flatterie.  ",
+          "Il faudrait être l'antipode de la raison, pour ne pas confesser que Paris en le gravo ouicau des mertélles, le centre du bon goût, du bel esprit et de la galanterie. \nMASCARILLE\n Pour moi, je tiens que hors de Paris, il n'y a point de salut pour les honnétes gens.",
+          "Comment est ce qu'on peut soufnn un nenlce de coucner contre un nomme vraies ment nu? \nJAGDELON\n Souffrez que nous prenions un peu haleine parmi le beau monde de Paris, où nous ne faisons que durtiven namennous rane à fomi le essu de notre Roman, et n'en pressez point tant la conclusion.",
+          "Pour moi, tel que vous me voyez, je m'en escrime un peu quand je veux, et vous verrez courir de ma façon dans les belles Ruelles de Paris, deux cens Chamons , autant de sonnets, quatre cents Épigrammes, et plus de mille Madrigaux, sans compter les Enigmes et les Portraits."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Louvre",
+        "Champagne",
+        "France"
+      ]
+    }
+  }
+}

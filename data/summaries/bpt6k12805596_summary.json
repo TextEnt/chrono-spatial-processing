@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Le Malade imaginaire, Comedie, Meslée de musique et de dance. Par Mr de Moliere",
+    "publication_date": "1674",
+    "document_id": "bpt6k12805596"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ARGAN",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Ce font de bons négauto, ce je repo se bien ridicules de mettre sur leur Théâtre de vénérables Messieurs comme ces Messieurs-là. \nBÉRALDE\n Que voulez-vous qu'ils y mettent que les diverses professions des hommes, nous y voyons bien tous les jours des Princes et des Rois qui sont du moins d'aussi bonne maison que les Médecins. \nARGAN\n Par la mort non d'un diable, je les attraperais bien quand ils seraient malades, ils auraient beau me prier, je prendrais plaisir à les voir souffrir, je ne voudrais pas les soulager en rien, je ne leur ordonnerais pas la moindre petite seigriée, le momdie petit lavement, je me vengerais bien de leur insolence, et leur dirais;",
+          "et lors que vous vous êtes mis quelque chose dans l'esprit, difficilement peut-on l'en chasier. \nARGAN\n Que ferai-je, mon Frère, à présent qu'il m'a abandonné, et où trouverai-je un Médecin qui me puisse traiter aussi bien que lui? \nBÉRALDE\n Mon Dieu, mon Frère, puisque c'est une nécessité pour vous d'avoir un Médecin, l'on vous en trouvera un du moins aussi habile, qui n'ira pas si vite, avec qui vous courerez moins de risque, et qui prendra plus de précaution aux remèdes qu'il vous ordonnera. \nARGAN\n Ah, mon Frère, il connaissait mon tempérament, et savait mon mal mieux que moimeiie.",
+          "Quelle est notre raison, s'il vous plaît, pour un tel mariage? \nARGAN\n Ma raison est, que me voyant infirme, et malade lade comme je suis, je veux me faire un Gendre, et des Alliés Médecins, afin de m'appuyer de bon secours contre ma maladie, d'avoir dans ma Famille les sources des Rèmèdes qui me sont nécenanto, ce d'être à même des Consultations et des Ordonnances. \nTOINETTE\n Hé bien, voilà dire une raison, et il y a plaisir à se répondre doucement les uns aux autres.",
+          "Qu'il possède en un degré louable la vertu prolifique, et qu'il est du tempérament qu'il faut pour engendrer et procréer des Enfants bien conditionnez. \nARGAN\n N'est-ce pas votre intention, Monsieur, de le pousser à la Cour, et d'y ménager pour venir une Charge de Médecin. \nM\n \nDYAFOIRUS\n À vous en parler franchement, notre métier auprès des Grands ne m'a jamais paru agréable, et j'ai toujours trouvé qu'il valait mieux, pour nous autres, demeurer au public.",
+          "Vous me voyez, Tircis, triste et mélancolique Aux aprets de l'Hymen dont vous vous alarmez, Je lève au Ciel les yeux, je vous regarde, je soupire C'est vous en dire assez. \nARGAN\n Ouais, je ne croyais pas que ma Fille fût si habile que de chanter ainsi à Livre ouvert sans hésiter. \nCLÉANTE\n Hélas, belle Philis, Se pourrait-il que l'amoureux Tircis Eut assez de bonheur Compt uour iqueiqut pruce uuns vôtre cœur."
+        ]
+      },
+      "top_5_persons": [
+        "ARGAN",
+        "TOINETTE",
+        "M",
+        "Cléante",
+        "POLICHINELLE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Bergère",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Il ne peut souffrir l'effroyable Idée de voir tout ce qu'il aime entre les bras d'un autre, et son amour au désespoir sens fait trouver moyen de s'introduire dans la maison de sa Bergère, pour apprendre ses sentiments, et savoir d'elle la Destinée à laquelle il doit se résoudre.",
+          "mais il se plaint et de cette première plut, parce qu'en finissant il le sépare de son adorable Bergère, et de cette première vue, de ce premier moment il emporte chez avoir tout ce qu'un amour de plusieurs anhées peut avoir de plus violent.",
+          "et après avoir donné au brutal le châtiment de son insolence, il vient à la Bergère, et voit une jeune personne qui des deux plus beaux yeux qu'il eût jamais vus, versait des larmes, qu'il trouva les plus belles du monde.",
+          "Il le voit Triomphant, ce Rival ridicule, auprès de l'aimable Bergère, ainsi qu'auprès d'une Conquête qui a est assurée, et cette vue le remplit d'une colère dont il a peine à se rendre le maître.",
+          "Il se retourne, et voit un brutal, qui de paroles insolentes maltrait une Bergère D'abord il prend les intérêts d'un sexe à qui tous les hommes doivent hommage;"
+        ]
+      },
+      "top_5_places": [
+        "Bergère",
+        "Bergères",
+        "Paris",
+        "Rome",
+        "France"
+      ]
+    }
+  }
+}

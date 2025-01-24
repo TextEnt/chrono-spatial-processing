@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "author": null,
+    "title": "Comédie admirable intitulée la Merveille, où l'on voit un capitaine françois, esclave du Soldam d'Egypte, transporté de son bon sens, ce donne au Diable pour s'affranchir de servitude, lequel il trompe mesme subtillement tant qu'il fut contrainct luy rendre son obligation",
+    "publication_date": "1620",
+    "document_id": "bpt6k857058h"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Pharos",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "il semble, Pharos, qu'ou soyez en colère À vous voir résonner comme un pourceau grondant, Et qu'avez-vous au ventre ainsi qu'il va roulant, Il paraît qu'ou ayez dans le cœur quelque fièvre Car vous tremblez ainsi qu'une volage chèvre: Or ce n'est pas le tout vous êtes mon vallet, Et pour tel je vous tiens mieux que par le collet, Vous vous êtes obligé vers moi, de me complaire En tout ce que voudrai songer et faire faire, N'est-il pas vrai, Pharos Sus donc, il me faut sous l'abri de ton aile Apeler ce démon, pipeur et infidèle, Afin de recouvrir ma chère liberté, Sus, venez cy, Pharos, faire ma volonté Autrement",
+          "cest quelque bon ange Pour du ciel admirer qu'a mon veueil il se range Afin de le tirer de la gueule d'enfer: Mais ce n'est pas cela, sus, sus, ô Lucifer Delaissez le cocyte, et vos demeures sombreuses, Les fléaux, les foncets, les feux, les mânes et les ombres, Et venez en ce lieu, échauffé du Soleil, Au fortuné Pharos, donner quelque conseil: Venez, venez, grand Roi de la noire cohorte Puisque de m'assister ici vous prie et exhorte, Venez, dis-je venez, prince des noirs cachos Sur ce vaste élément pour secourir Pharos \nLucifer\n Hé bien!",
+          "que ferai-je donc à ce destin felon, Sortez, mânes sortez, du bourbeux Acheron, Sortez, esprits sortez, sortez hideux succubes, Sortez, démons vollants, et basanez incubes: Venez, fatales sœurs, et venez m'assister, Voire en mon désespoir aider et conforter, Venez, venez bourgeois de l'infernalle averne, Quittez vos feux ardants, et vos noires cavernes, Et venez ce iourd’hui étoupher mes beaux jours Où subtils me donner à ma douleur secours: Venez, venez, Pharos, c'est vous que de la bande Du Stix bitumieux ie désire et demande:",
+          "Divinité Je connais, mais trop tard, que sans t'ai irrité, De vrai mon Créateur, c'était en un affaire Où je n'espérais rien que la mort pour salaire, Mais ores que je suis en heur et en repos Fais moi franchir les fers de l'infernal Pharos, Lequel j'ai inuocqué en mon secours peu sage:",
+          "Flodoar s'en va, et Pharos dit: Il me faut invocquer le prince Lucifer Pour me donner conseil et en ce fait m'instruire, Car déjà Flodoar ce voudrait bien dédire De ce que nous avons ensemblement traité: Mais qui lui a donné cette subtillité De demander cela, ha!"
+        ]
+      },
+      "top_5_persons": [
+        "Pharos",
+        "Pharos",
+        "Lucifer",
+        "Neptun",
+        "Babylon"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "et Voir si découvrirons quelque nef sur la mer Ou quel ques épieux cette prote province Pour apporter du mal au Soldam notre Prince, Mais à propos Raphin à il mis prisonnier L'espion par nous pris au bord de ce gravier: \nRaphin\n Nenni, car Sarono, sa Majesté suprême Ne le veut prodiguer au mains de la mort blême, Mais afin de franchir la parque et le tombeau Dessus le bord d'Euphrate il doit faire un Château Le plus fort qu'il soit point de ce lieu à la France Tour loger des Soldats et faire résistance * 38 4 \nComédle Suimiraole\n Au Tartare ennemi et au Scythe inhumain Sans qu'un autre que lui il mette encor sa main.",
+          "Il n'est pas encor temps, montez en assurance, Car ie vous veux porter sa et sauf dans la France Flodoar Capits.",
+          "Qui veut faire un Château à la façon de France Bosphoron Lieutenant."
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Babylone",
+        "Barbarie",
+        "Numidie",
+        "Bizance"
+      ]
+    }
+  }
+}

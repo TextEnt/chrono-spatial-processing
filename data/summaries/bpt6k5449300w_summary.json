@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Rotrou, Jean de",
+    "title": "Le veritable St Genest, tragedie de Mr de Rotrou.",
+    "publication_date": "1648",
+    "document_id": "bpt6k5449300w"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ADRIAN",
+          "frequency": 8
+        },
+        "related_sentences": [
+          "Et reconnaît si mal qui lui veut tant de bien! \nADRIAN\n Qu'il cesse de m'aimer, ou qu'il m'aime Chrétien. \nFLAVIE\n Les Dieux, dont comme nous, les Monarques dépendent, Ne le permettent pas, et les Lois le défendent. \nADRIAN\n C'est le Dieu que ici sers, qui fait régner les Rois, 1Juome co mono ennuundles Lois. \nFLAVIE\n Sa mort sur un Gibet, marque son impuissance. \nADRIAN\n Dittes",
+          "Et vous, Hôtes du Ciel, sainte légions d'Anges, Qui du nom trois fois saint, célébrez les louanges, Sans interruption de vos sacrés concerts, À son aveugiement, tenez les cieux ounerts. \nADRIAN\n Mes vœux arriveront à leur comble suprême, Si lavant mes péchés de l'eau du saint Baptême, Tu m'enrolles au rang de tant d'heureux soldats, Qui sous même étendard ont rendu des combats;",
+          "FLAVIE\n Sa piété l'oblige, autant que sa justice, À faire des Chrétiens un égal sacrifice. \nADRIAN\n Qu'il jasse, il tarde frop. \nFLAVIE\n Que votre repentir! \nADRIAN\n Non, non, mon sang, Flavie, est tout prêt à sortir. \nFLAVIE\n ol vonds vou ovnide (,virt perte est certaine. \n",
+          "ont-ce là les faveurs, traître, sont-ce les gages, Ca de eemapre nouveau, querepour tes nommages e Et qu'au mépris des droits, et du culte des Dieux, L'impiété Chrétienne, oze placer aux Cieux? \nADRIAN\n La nouveauté, Seigneur, de ce Maître des Maîtres, Est devant tous les temps, et devant tous les êtres;",
+          "Ainsi notre fortune, avec tout son éclat, Ne peut (quoi qu'elle fasse) acheter un ingrat. \nADRIAN\n Pour croire un Dieu, Seigneur, la liberté de croire, Est-elle en votre estime une action si noire?"
+        ]
+      },
+      "top_5_persons": [
+        "ADRIAN",
+        "Maximin",
+        "VALERIE",
+        "Césars",
+        "Adrian"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 8
+        },
+        "related_sentences": [
+          "Depuis, Rome souffrit, et ne réprouva pas Qu'il commit un Alcide, au fardeau d'un Atlas, Qu'on vit sur l'Univers deux têtes Souveraines, Et que Maximan en partagea les rênes: Mais pourquoi pour un seul tant de Maîtres divers, Et pour quoi quatre Chefs au corps de l'Univers?",
+          "GENÊT, Nos plus nonueaux sujets, les plus dignes de Rome, Et les plus grands efforts des veellés d'un grãd Homme, A qui les rares fruits que la Muse produits, Ont acquis dans la Scène un légitime bruit;",
+          "nuojt crai, mais qui commande à Rome Le songe m'effrayait, et j'en chéris l'effet, Et ce qui fut ma peur, est enfin mon souhait.",
+          "Et récemment encor dans Rome, Vitellie, Gordian, Pertinax, Macrin, Probe, Aurelie, N'y sont-ils pas monetz?",
+          "Tous les Arcs triomphants, que Rome m'a dressez, Cédent à la prison que vous me bâtissez;"
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Paris",
+        "PARIS",
+        "France",
+        "Lyon"
+      ]
+    }
+  }
+}

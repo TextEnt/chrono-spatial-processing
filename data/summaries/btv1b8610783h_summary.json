@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "L'avare , comédie par J.-B. P. Molière",
+    "publication_date": "1669",
+    "document_id": "btv1b8610783h"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Cléante",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Je fais chercher par tout pour ce dessein, de l'argent à emprunter; et si vos affaires, ma Sœur, sont semblables aux miennes, et qu'il faille que notre Père s'oppose à nos désirs, nous le quitterons là tous deux, et nous affranchirons de cette tyrannie où nous tient depuis si longtemps son avarice insupportable. \nÉLISE\n Jr'est bien vrai que tous les jours il nous donne, de plus en plus, sujet de regretter la mort de notre Mère, et que. \nCLÉANTE\n J'entends sa voix.",
+          "Je vous prie de m'excuser, ma Belle, si ici n'ai pas songé à vous donner un peu de colation avant que de partir. \nCLÉANTE\n J'y ai pourvu, mon Père, et j'ai fait apporter ici quelques bassins d'Oranges de la Chine, de Citrons doux, et de Confitures, que j'ai envoyé quérir de votre part.",
+          "car enfin, il vous aime fort, je le sais; mais il aime un peu plus l'argent; et quand ébloui de ce leurre, il aurait une fois consenti à ce qui vous touche, il importerait peu en suite qu'il se désabusât, en venant à vouron cianl aux enets de notre Marquise. \nCLÉANTE\n Tout cela est fort bien pensé.",
+          "ACTEURS, HARPAGON, Père de Cléante et d'Élise, et Amoureux de Mariane ODANTE, rais d'IIIaipagon, Asllant de AAN imon, Jine dIIIpagon, Illlarite de Valère VALÈRE, Fils d'Anselme, et Amant d'Élise MARIANE, Amante de Cléante, et aimée d'Harpagon ANSELME, Père de Valère, et de Mariane FROSINE, Femme d'Intrigue.",
+          "Je vous dis tout cela, ma Sœur, afin que vous ne vous donniez pas la peine de me le dire: car enfin, mon amour ne veut rien écouter, et je vous prie de ne me point faire de remontrances. \nÉLISE\n Vous êtes-vous engagé, mon Frère, avec cène quevous anien. \nCLÉANTE\n Non;"
+        ]
+      },
+      "top_5_persons": [
+        "Cléante",
+        "M",
+        "JACQUES",
+        "ÉLISE",
+        "FLÈCHE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Naples",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Apprenez, pour vous vous confondre, qu'il y a seize ans pour le moins que l'Homme dont vous nous parlez, périt sur Mer auec ses Enfants et sa Femme, en voulant dérober leur vie aux cruelles persécutions qui ont accompagnés les désordres de Naples, et qui en firent exiler plusieurs nobles Familles.",
+          "Après dix ans d'esclauage, une heureuse fortune nous rendit notre liberté, et nous retournâmes dans Naples, où nous trouvâmes tout nôtre bien vendu, sans y pouvoir trouver des nouvelles de notre Père.",
+          "Sachez que j'ai le cœur trop bon, pour me parer de quelque chose qui ne soit point à moi, et que tout Naples peut rendre témoignage de ma naissance.",
+          "et vous parlez devant un Homme à qui tout Naples est connu, et qui peut aisément voir clair dans l'Histoire que vous ferez.",
+          "que j'ai vu pour ma vie, à retourner à Naples, m'a fait y renoncer pour toujours;"
+        ]
+      },
+      "top_5_places": [
+        "Naples",
+        "Paris",
+        "Rome",
+        "Ville",
+        "Hongrie"
+      ]
+    }
+  }
+}

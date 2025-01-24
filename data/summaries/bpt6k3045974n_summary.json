@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "author": null,
+    "title": "Le Ballet extravagant . Comedie",
+    "publication_date": "1694",
+    "document_id": "bpt6k3045974n"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Toinette",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Ah parbleu, mon enfant, je vais faire pour nos amants et pour nous un grand effort de mémoire et de bel esprit: Vivat Toinette, tu vais voir un échantillon du sçavoir faire de son futur époux: C'est à vous, mon génie, à qui je m'abandonne, retracez moi fidèlement tous les morceaux d'histoire, dont des Rondeaux et mon virgnle travit y mi ont si souvent embrouillé la cervelle, et venez m'aider à renverser par un pompeux galimatias celle de Maître Julie \nTOINETTE\n Prends garde à toi, la voici.",
+          "Que croyez-vous, elle ne fait si bien apprendre à chanter et à danser à ses filles, que dans la vue de leur rallé faire les premiers rôles dans son Opera? ORONIE. \nTOINETTE\n C'est une adroite, vous dis-je, elle en sait bien plus long que notre pauvre défunt Monsieur Oronte on dit que c'était un bon homme, mais petit génie.",
+          "réu de gens m'égalent en vivacité, et si sans vanité je n'en fais pas trophée. \nTOINETTE\n En prenant la figure d'un Maître à daliter, (ous yen uren pas pris tous les apanages, et l'on voit bien que la moditie est une de vos bonnes qualités.",
+          "ORONTE\n Tout le monde est-il devenu fou chez vous? \nTOINETTE\n Vous l'êtes bien davantage, d'aller courir les mers pour quelque petit profit trèsincertain, nous allons nous gagner de l'argent sans danger, et en terre ferme. \nORCONTE\n Comment ? \nTOINETTE\n ",
+          "il y a pourtant dequoi se divercaniineua duno notle teurscunig, que dans toute votre Arménie \nORONTE\n Je le crois. \nTOINETTE\n Courage, Seigneur Dom Japhète le ténébreux, faites comme nous qui n'avons en tête que joie, allégresse, réjoüissance, argent et bonne chère."
+        ]
+      },
+      "top_5_persons": [
+        "Toinette",
+        "Clitandre",
+        "Julie",
+        "Rondeaux",
+        "Rivière"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Malgré votre raillerie trouvez encore dans Paris un valet, qui pour servir son Maiitre s'mouune auprès de là Maïtresse en qualité de Maître à danser, et qui puisse soutenir pendant un mois ce noble curadètre.",
+          "Registré sur le Livre de la Communauté des Libraires et Imprimeurs de Paris, le 4.",
+          "DAR Grâce et Privilège du Roi, donné à Paris T le 30."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Arménie",
+        "Languedoc",
+        "Gascogne",
+        "Provinces"
+      ]
+    }
+  }
+}

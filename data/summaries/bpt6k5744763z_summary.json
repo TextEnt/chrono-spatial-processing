@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "author": "Mairet, Jean",
+    "title": "Les galanteries du duc d'Ossonne, vice-roy de Naples , comédie de Mairet",
+    "publication_date": "1636",
+    "document_id": "bpt6k5744763z"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Paulin",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Deux morts, moins d'ennemis sur les bras me demeu \nFLAVIE\n Au reste votre Brave a dit de bout en bout, La chose comme elle est, et vous charge de tour. \nPAULIN\n Et moi quelque suis d'avis, puis qu'il s'est laisse prendre, De me sauver fortbien, et de le laisser pendre: Mais avant mon départ, qu'onne peut retarder, Je vous pri'rai, ma sœur, \nFLAVIE\n ",
+          "PAULIN\n Monsieur, Seigneur mets en vous toute ma confiance: Or pour n'abusempas de votre patience, C'est que l'assa ssinat qui vient d'être commis Sur un de mes plus grands, et mortels ennemis, Dont le bruit à cette heure emplit toute la Ville, M'allait sacrifier à la fureur civile, Si grande n'eusse trouvé votre Palais ouvert, Comme un Temple, où j'ai mis mon salut à couvert.",
+          "Ou viennent vous chercher jusques dedans ma couche. \nPAULIN\n La crainte du contraire est celle qui te tonche, Mon cœur, puis qu'elle feint feignons pareillement, Uotre bon naturel, que j'aime extrêmement, Me rend plus dure encor l'absence nécessaire, Que m'ordonne déjà le cours de mon affaire:",
+          "Et petit suis néanmoins le plus trompé du monde, Si déjà l'infidèle en malice féonde, Ne consulte la fraude en son esprit malin: Mais bon à quelque dupé, et non pas à Paulin Qui pour si longuement, et si bien que tu feignes, Ne s'endormira pas qu'à fort bonnes enseignes",
+          "Et qu'ici, plus qu'ailleurs, les âmes outragées, Par de si lâches turs veulent être vengées. \nPAULIN\n Il me siérait fort mal de vouloir soutenir A. 4 Un acte pour lequel vous me pouvez, punir: Mais vos rares oertus, de qui lu renommée."
+        ]
+      },
+      "top_5_persons": [
+        "Paulin",
+        "OCTAVE",
+        "Camille",
+        "Camille",
+        "Emilie"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Enfin ce fut l'audacieux des de porter mes pas sur les vôtres qui me persuada de changer, comme beau fis, à l'âge de seize ans l'air de Besançon a celui de Paris, où prélque en arrivant, comme rencontrai par une heureuse temerité la protection et la bienveillance du plus Grand, du plus Magnifique, et du plus Glorieux de tous les hommes de sa condition que la France ait jamais porté, si nous ôtons les trois derniers mois de sa vie, avec laquelle toutes mes espérances ont fait un dernier naufrage.",
+          "Là PIERRE ROCOLET, Marchand Libraire à Paris, pour en jouir entièrement, et pour le temps y porté, suivant le Contract passé entreeux pardevant les Notaires de Paris Achevé d'imprimer le7. \nJanvier 1636\n ",
+          "De Paris, ce'4."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Naples",
+        "Louvre",
+        "PARIS",
+        "Besançon"
+      ]
+    }
+  }
+}

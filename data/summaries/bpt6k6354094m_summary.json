@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "author": "Villiers, Claude Deschamps",
+    "title": "La Critique du Tartuffe, comédie",
+    "publication_date": "1670",
+    "document_id": "bpt6k6354094m"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "LISE",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Car lors qu'avec douceur l'on veut se montrer sage, Plus avant qu'on ne veut, fort se'ivent on s'engage. \nLAURENS\n Que ton Colier est beau! \nLISE\n Je comptends ton dessein, Tu voudrais bien par là me patiner le Sein. \nLAURHNS\n Non, laisse le moi voir, les perles en sont grosses, Et d'une fort belle eau.",
+          "Si tu ne veux quitter une humeur si farouche, Je meurs. \nLISE\n Talit Pls pour toi. \nLAURENS\n Que ma douleur te touche! \nLISE\n Aussi dure qu'Orgon, tu trépasserais là, Que tu m'en soucirais autant que de cela. \n",
+          "Que le noble transport de ses beaux mouvements, Ne confond point ses dons toujours ses châtiments, ue jamais la Pitié ne séduit sa Justice, Et qu'il ne punit point les Hommes par caprice, SCÈNE XI CLEON, l'ARTUFE, LISE, LIDIANE.",
+          "mais si j'apprends quel est cet inhumaim, Je veux a plaisir le tuer de ma main. \nLISE\n vous rueler Puone un pionmie ance mône de colère, Que Tartuffe une Puce en faisant sa prière? \nLISANDRE\n ",
+          "LISE\n Bien des Gens ont lait juvre canemei, Et si loin d'en parlet, j'ai fort bien su m'en taire, Et cacher dans mon sein tout ce que j'ai vu faire."
+        ]
+      },
+      "top_5_persons": [
+        "LISE",
+        "Cleon",
+        "LAURENS",
+        "Tartuffe",
+        "Orgon"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Ville de Paris",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "à la charge qu'il sera mis deux Exemplaires de ladite Pièce en notre Bibliothèque, un en celle de notre Château du Louvre, et un autre en celle de nôtre très-cher et féal le Sieur Séguier, Chevalier, Chancelier de France, avant que de l'exposer en vente, et qu'elles seront registrées dans le Livre de la Communauté des Libraires de notre Ville de Paris SI vous mandons et enjoignons, que du contenu en ces Présentes, vous fassiez jouir et user l'Exposant, et tous ceux qui auront droit de même, pleinement et paisiblement, sans permettre qu'ils y soient troublés Seigneur empêchez, voulant qu'en insérant ces Présentes, ou Extrait d'icelles, en chacun des Exemplaires, elles soient tenues pour bien et deuëment signifiées.",
+          "en telle marge, caractère, et autant de fois qu'il voudra, durant le temps de cinq années, à commencer du jour qu'elle sera achevée d'imprimer pour la première fois: Faisant très-expresses inhibitions et défenses à toutes Personnes, de quelque qualité et condition qu'ils soient, de l'imprimer, vendre, ni débiter, sans le consentement de l'Exposant, ou de ceux qui auront droit de deux, a peine de confiscation des Exemplaires contrefaits, mil livres d'amende, appliquable un tiers à Nous, un tiers à l'Hôpital Général de notredite Ville de Paris et l'autre tiers à l'Exposant, et de tous dépens, dommages et intérêts;",
+          "Notre cher et bien amé GABRIEL VINET, Marchand Libraire de notre bonne Ville de Paris, Nous a très-humblement fait remontrer qu'il lui aurait été mis ès mains un Pièce de Théâtre, intitulée, LA BRITIQUE DU TARTUFE, qu'il désirerait faire imprimer et donner au Public, s'il nous plaisait lui en accorder la permission, et icelle interdire à tous autres pendant le temps qui lui sera accordé."
+        ]
+      },
+      "top_5_places": [
+        "Ville de Paris",
+        "Paris",
+        "Orgon",
+        "PARIS",
+        "Navarre"
+      ]
+    }
+  }
+}

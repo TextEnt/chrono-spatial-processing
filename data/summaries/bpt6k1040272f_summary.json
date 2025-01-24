@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "author": "Chappuzeau, Samuel",
+    "title": "Le colin-maillard . Comedie facetieuse, représentée sur le theatre royal de l'hostel de Bourgogne",
+    "publication_date": "1662",
+    "document_id": "bpt6k1040272f"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ISABELLE",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Si Croquesole votre père vous presle encor de cette ahanle, Ne relâchez point, tenez bon, Et dites-lui tout franc que non \nISABELLE\n Marine, à voir comme il me traite, Croi-moi, ce n'est qu'une défaite Quand il me propose Colin, Il sais bien que ce Jobelin A j De mon amour est trop indigne.",
+          "Ne m'approchez pas, Seigneur vous prie. \nMARINE\n Notre Maître est en réuerie De Seigneur donner ce laid camard. \nISABELLE\n Ma de dia pas n'ient le laide COLIN.",
+          "Les voici, vous aurez la gloire D'excuter vô tre mémoire Dans une belle occasion, Lt le véoxetre re chalsem, \nISABELLE\n Mon père, excusez ma faiblesse;",
+          "Votre foi, l'y souffririez-vous? \nISABELLE\n Hupuène, dau elt naynabice \nMARINE\n De fait, il est plus noir qu'un Diable.",
+          "J'ai peu de barbe, mais peut-être A cuisiner nul n'est mon Maître. \nISABELLE\n Il veut manier la main d'Isabelle."
+        ]
+      },
+      "top_5_persons": [
+        "ISABELLE",
+        "Colin",
+        "Isabelle",
+        "Colin",
+        "Marine"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "et après l'hon neur que j'ai eu plus d'une fois de votre entretien, après avoir sçù l'estime que tout Paris fait de vous, quand j'aurais crù n'en recevoir jamais autre avantage, j'aurais pris plaisir à m'approcher de vous, à vous contempler tout à mon aise, pour ébaucher un portrait dont les premiers idées me plaisaient infiniment.",
+          "Le dit Sieur Chapuzeau, à Cédé et transporté son droit de Privilège à Jean Baptiste Loison, et Jean Ris bou Marchants Libraires à Paris pour en jouir le temps porté par icelui, iuiuant",
+          "Crois- tu que nous ayons la source De l'argent qui court dans Paris COLIN."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "France",
+        "Frontignac",
+        "Palais de Luxembourg",
+        "Indes"
+      ]
+    }
+  }
+}

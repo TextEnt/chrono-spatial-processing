@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Robbe, Jacques",
+    "title": "La rapinière, ou L'intéressé , comédie, par M. de Barquebois. Avec les vers retranchés",
+    "publication_date": "1683",
+    "document_id": "bpt6k56290424"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "JASMIN",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Qui deviennent Termiors au Bail suivant. \nJASMIN\n La peste: E combien par année aurai-je bien de reste? \nDORANTE\n Pour leurs appointements, on leur donne, dit on, Huit cens livres au moins, et le tour du bâton, ?",
+          "BEATRIX, suivante de Léonore TA ROCHE, Commis de M \nla Rapinière\n JASMIN, valet de Fervand, et Commis de Eas la Rappsseles MASCARTLLE, autre valet de Fernand LA FLEUR, Sergent de la Compagnie de Fernand LE CLERC du Notaire.",
+          "À, Monsieur du Jasmin, héros de notre sete, Dont l'amour court la poste, et dont l'hymu s'apprête, Peut-on vous diie un mot, sans vous être enaveux? \nJASMIN\n ",
+          "Et pourquoi non lui-même? \nJASMIN\n Il a fort attendu; mais le péril extrême, Où se trouve un malade en ce même moment, L'a pressé de sortir, pour faire un testament.",
+          "C'est assez. \nJASMIN\n Il m'a dit en sortant, Qu'on n'avait qu'à signer, et qu'étant sans conteste, Son Clerc en son absence, achèverait le reste."
+        ]
+      },
+      "top_5_persons": [
+        "JASMIN",
+        "FERNAND",
+        "BEATRIX",
+        "Leonore",
+        "Fernand"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Qu'on y voyait en tout triompher l'injustice, Que j'avais fait dessein de quitter le service, De sortir de l'État, et d'aller engager Mon bras dans l'intéret d'un État étranger, Ri que pour ce sujet, faisant un tour en France, Je cherchais quelque endroit, pour mettre en assurance Quatorze mil écus, qu'on m'avait remboursez, Et que mon peu de soin n'avoir pas replacez, Dans mon entêtement de quitter l'Italie: Qu'après avoir traité mon dessein de solie, Vour même aviez été contraint d'y consenvir, Et malgté vos raisons, de me laisser partir:",
+          "Non, ce sont des points de France Des ouvrages tout faits, savoir un grand peignoir, A vecque la cointe, un taoler, un mouchoir, Des manchettes, eufin toute la garniture D'une Dame.",
+          "Depuis vingtants, au plus, il est en Itelie Ne pouvant demeurer en France en liber.",
+          "bnffr ( Bibllothèque nationale de France BEATRIXbas.",
+          "Ce tont des points de France 1p."
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Paris",
+        "Rome",
+        "Italie",
+        "Corse"
+      ]
+    }
+  }
+}

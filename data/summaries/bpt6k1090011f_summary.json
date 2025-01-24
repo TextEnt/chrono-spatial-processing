@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Scudéry, Georges de",
+    "title": "Le Vassal généreux, poème tragi-comique ; suivi de Autres Œuvres de Monsieur de Scudéry",
+    "publication_date": "1636",
+    "document_id": "bpt6k1090011f"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ANDROPHILE",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Aschez de luyturr téne éjume u tœur, Mais ne le traités pas avec trop de rigueur, Car au lieu d'y servir elle nous pourrait nuire: \nANDROPHILE\n Laissez -moi seulement, Seigneur saurai m'yconduire.",
+          "L'honneur que j'ai reçu m'oblige désormais, A chercher un renom qui ne meure jamais. \nANDROPHILE\n La guerre des Danois contre nous allumée, y ous oyre terenom sans partir de tarmée.",
+          "ANDROPHILE\n Je suis fâché de voir deux choses en votre âme, Fort indignes d'un Prince, et bien dignes de blâme, Et qui vous porteront un jour dans le malheur,",
+          "Et que le souvenir d'un père généreux, Vous empêche de rendre un Prince malheu. \nreux\n Androphile est-il mort avec toute sa gloire?",
+          "Une folle. \nEvCIbhn\n \nANDROPHILE\n Tout beau: votre âme bien reglée, Faisant ce jugement ne s'est point aveuglée;"
+        ]
+      },
+      "top_5_persons": [
+        "ANDROPHILE",
+        "MADEMOISELLE",
+        "Sceptre",
+        "Artesie",
+        "l'Aurore"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Ne même d'en extraire aucune chose, ou d'en contre faire le titre, à peine de quinze cens livres d'amende, payable par chacun des contrevenants, et applicables un tiers à l'Hôtel-Dieu de Paris et l'autre tiers",
+          "Retournons à Paris, remettre votre Cour, Je vous ferai régner, ou personne perdraile jour:",
+          "Et sortant de Paris comme des Étrangers, Gn entcuaventriants tions conrons tes dangers.",
+          "0 Retournons à Paris, empêcher ce malheur;",
+          "Donné à Paris le onz iesme jour d'Août"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Rome",
+        "Rheims",
+        "champ de Mars",
+        "France"
+      ]
+    }
+  }
+}

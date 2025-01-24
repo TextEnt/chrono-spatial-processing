@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Dancourt",
+    "title": "La Foire Saint-Germain, comedie . De M. Dancourt",
+    "publication_date": "1696",
+    "document_id": "bpt6k9791972w"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "LORANGE",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Mad. \nMOUSET\n Hé, qu'as-tu donc fait de ta Chevalerie, mon pauvre Lorange \nLORANGE\n Elle est allé tenir compagnie à t'on Marquisat, ma chère Marton Mad. \nMOUSET\n Tu as fait de grands voyages, à ce que l'on m'adit, depuis que nous ne nous sommes vus. \nLORANGE\n Comment morbleu de grands voyages, j'ai pensé faire celui de l'autre monde.",
+          "Je l'y attendais depuis une heure, il y est venu, j'ai été au devant de même, il n'a pas fait semblant de me voir, Mademoiselle Mousset, et il est allé faire mille caresses en ma présence à une guenon, qui ne le regardait presque pas seulement. \nLORANGE\n Il fallait venir donner le soufflet que j'ai eu, cela eût été dans l'ordre.",
+          ", nous nous sommes donc connus, à votre compte? \nLORANGE\n Quelquefois un peu par cy par là: mais cependant je vous l'avoue, j'ai eu toutes les peines du monde à vous remettre, parce que jène pourvismne négurenque Madame la Marquise de la Papelardière du Marais fut devenue Marchande de robes de chambre à la Foire.",
+          "En vérité, Mademoiselle, cela n'est pas vrai, je vous assure. \nLORANGE\n ri à coupe nr n'y a que trois jours à une fort honnête Procureuse de la rue Calante une Croix de diamants de prés de dix pistoles, que deux jeunes Accadémistes un avaient donnée.",
+          "Nous vous demandons bien pardon, Messieurs. \nLORANGE\n Si ces Messieurs veulent en attendant, pour ne point perdre de temps, on montrera le Cercle. \nFARFADEL\n Le Cercle, oui, voyons ce Cèrele, c'est ma folie à moi que les Cercles."
+        ]
+      },
+      "top_5_persons": [
+        "LORANGE",
+        "MAROTTE",
+        "ISAAC",
+        "Clitandre",
+        "M"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Il est permis à THOMAS GUILLAIN, Marchand Libraire à Paris, de faire imprimer le Recueil des Comédies du Sieur Dancourt, pendant le temps de six années, à compter du jour qu'elles seront achevées d'imprimer pour la première sois, en vertu des présentes; pendant lequel temps trèsexpresses inhibitions et défenses sont faites à toutes personnes de quelque qualité et condition qu'elles soient, de faire imprimer, vendre mieux débiter desdites Comédies d'autre Édition que celles de J'Exposant, ou de ceux qui auront droit de lui, à peine de quinze cens livres d'amende, payable sans déports par chacun des Contrevenants, de confiseation des Exemplaires contrefaits, et de tous dépens, dommages et intérêts, et autres peines portées plus au long par lesdites Lettres de Privilège.",
+          "Envisagez bien cette femme-là, ma sœur, c'est une illustre de Paris au moins. \nJRBINE\n Tant nouvelle je suis à la Ville, que je n'en connais pas encore les merveilles.",
+          "comme enfant de Paris, Escuyer Sieur de Lorange, et Chevalier de Gourdinvilliers, les ordres sont précis: mais comme Arménien naturalisé depuis trois semaines;",
+          "V ne petite Bourgeoise de Paris \nLORANGE\n Doucement. \n",
+          "Inpouicrutode Paris si la Police ne s'en mêle."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Chine",
+        "Constantinople",
+        "Perse",
+        "Canarie"
+      ]
+    }
+  }
+}

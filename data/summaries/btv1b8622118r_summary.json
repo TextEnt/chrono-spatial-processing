@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Rotrou, Jean de",
+    "title": "La soeur , comédie de M. de Rotrou",
+    "publication_date": "1647",
+    "document_id": "btv1b8622118r"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Aurie",
+          "frequency": 15
+        },
+        "related_sentences": [
+          "Car enfin il advint, que leurs biens augmentés, Et leurs posse Zions, passant vos facultés, Au point qu'ils méditaient, et se trouvaient en peine, De vous rendre Aurie, et reprendre Eroxène, Le Ciel permit sa perte et son euenemeut, De leur crime secret, visible châtiment, Fut pour l'vn et pour l'avire ont utieinte funeste, Qui leur coûta le jour;",
+          "Elle l'est en effet, puis que plus de deux ans, Ont déjà veu durer l'Hymen que ie prétends, De la vraie Éroxène, ou la fausse Aurie, Que Lélie épousa sous le nom de Sophie Hymen, qui traversé par une courte erreur, nu femou puris uons umipesse et l'horreur, Ne nous inspirait plus que des pensers funèbres.",
+          "De Sophie, à présent, Aurie est le nom, Le père en cette erreur la souffre en sa maison, Où, d'une chaste amour satisfaisant la flamme, Elle est fille le jour, et la nuit elle est femme;",
+          "Et voyant vos transports, moi -même j'ai douté, Si votre feinte était, ou feinte, ou vérité. \nLELIE\n À voir de quel abord vous l'avez accueillie, Le plus judicieux, eut crû voir Aurie ONSTANCE.",
+          "Nole vous peut fournir assez d'autres beautés, Pour changer vos liens, si vous ne les quittez. \nLELIE\n L'Amour ne peut changer le beau nœud qui me lie, Sans changer Aurelie, en une autre Aurelie"
+        ]
+      },
+      "top_5_persons": [
+        "Aurie",
+        "ASTE",
+        "Anselme",
+        "Constance",
+        "Lydie"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Turquie",
+          "frequency": 15
+        },
+        "related_sentences": [
+          "Et ne me puis assez promettre d'industrie, Pour parer tous les coups qui viennent de Turquie Toujours au pis aller, quelques coups de bâton, Ou quelque an de galère, en feront la raison.",
+          "vous devez donc, (si ce n'est raillerie,) Venir de l'autre monde, et non pas de Turquie ARa IL.",
+          "Cet ami, de Turquie aujourd' hui de retour, der apprena que cotre mère y respire le jour.",
+          "Nous venons de Turquie, et dans cette contrée, Des plus religieux, l'Église est ignorée;",
+          "Vous avez, dites -vous, vu Constance en Turquie Vous oz soutenir, qu'Aurelie est Sophie"
+        ]
+      },
+      "top_5_places": [
+        "Turquie",
+        "Constantinople",
+        "Venise",
+        "Pologne",
+        "Paris"
+      ]
+    }
+  }
+}

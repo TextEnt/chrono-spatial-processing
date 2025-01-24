@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Le grand divertissement royal de Versailles",
+    "publication_date": "1668",
+    "document_id": "bpt6k1526239b"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Cloris",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Que j'aime et n'obtienne rien? \nCloris\n \nCloris\n Non, ce n'est pas mon envie, N'aime pius, je le veux bien. \nTircis\n Le Ciel me force à l'hommage Dont tous ces bois sont témoins. \nClimène\n den u oit, pun quit t'engage, À te payer de tes soins. \nPhilène\n C'est par ton mérite extrême Que tu captive mes vœux. \n",
+          "Enfin un de ses amis homme conseille de noyer dans le vin toutes ses inquiétudes, et part avec ) pour joindre sa troupe, voyant venir toute la foule des Bergers amoureux, qui à la manière des anciens Bergers, commencent à célébrer par des chants et des dances le pouvoir de l'Amour. \nCLORIS\n I",
+          "Plusieurs du parti de Bachus mêlent aussi * suivants de leurs pas à la Musique, * et l'on voit ici un combat de dançeurs contre dançeurs, et de Doliuet, Chichantres contre chantres. \nCloris\n C'est le Printemps qui rend l'âme momod emmpe peumn de fleurs;",
+          "Climène, à Cloris Sois sensible à l'amour que te porte Philène Cloris, à Climène Sois sensible à l'ardeur dont Tircis est épris, \nClimène\n Si tu veux me donner ton exemple, Bergère;",
+          "Climène et Cloris, * deux Bergères amies, s'avisent au son de ces Flutes de chanter cette CHANSONNETTE."
+        ]
+      },
+      "top_5_persons": [
+        "Cloris",
+        "Bachus",
+        "Climène",
+        "Jean",
+        "Martin"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Bergères",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Les deux Bergères Berger, ne t'en plains donc pas. \n",
+          "Les deux Bergères D'étourne de moi tes pas.",
+          "* amants de ces deux Bergères",
+          "Les deux Bergères"
+        ]
+      },
+      "top_5_places": [
+        "Bergères",
+        "Versailles"
+      ]
+    }
+  }
+}

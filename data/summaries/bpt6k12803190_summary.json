@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Corneille, Pierre",
+    "title": "Le Menteur, comédie par le Sieur Corneille",
+    "publication_date": "1653",
+    "document_id": "bpt6k12803190"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "CLARICE",
+          "frequency": 10
+        },
+        "related_sentences": [
+          "Certes vous m'allez mettre en crédit par la ville: Mais en crédit si grand, que j'en crains les jaloux, \nCLARICE\n C'est tout ce que mérite un homme tel que vous, Un Un homme qui se dit un grand foudre de guerre, Et n'en a vu qu'à coups d'écritoire et de verre, Qui vint hier de Poitiers, et conte à son retour Que depuis une année il fait ici sa Cour, Qui donne toute nuit festin, musique, et dance, Bien qu'il l'ait dans son lit passée en tout silence, Qui se dit marié, puis soudain s'en dédit: Sa méthode est jolie à se mettre en crédit, Vous-même apprenez-moi comme il faut qu'on le doiine.",
+          "Mais laissons là Dorante avec son audace, Allons trouver Clarice, et lui demander grâce, Elle pouvait tantôt m'entendre sans rougir. \nPHILISTE\n Attendez à demain et me laissez agir, Je veux par ce récit vous préparer la voie, Diper sa colère, et lui rendre sa joie, Ne vous exposez point, pour gagner un moment, Aux premières chaleurs de son ressentiment. \nALCIPPE\n Si du jour qui s'enfuit la lumière est fidèle, Je pense l'entrevoir auec son Isabelle Je suivrai tes conseils, et fuirai son courroux Jusqu'a ce qu'elle ait ri de m'avoir veux jaloux.",
+          "Il est vrai, venir le dois tout entier au hasard, Mes soins, ni vos désirs n'y prennent point de part, Et sa douceur mêlée avec cette amertume, Ne me rend pas le sort plus doux que de coutume, Puis qu'enfin ce bonheur que j'ai si fort prisé A mon peu de mérite eût été refusé. \nCLARICE\n S'il aperdu sitôt ce qui pouvait vous plaire, Je veux été à mon tour d'un sentiment contraire, Et crois qu'on doit trouver plus de félicité À posséder un bien sans l'avoir mérité.",
+          "On n'ai parle qu'a vous. \nCLARICE\n Vous n'avez point parlé cette nuit à Lucre \nDORANTE\n  vous n'avez potnt voutu me fattre on tour d'adresse, Et toujours ne vous ai point reconnue à la voix? \nCLARICE\n Vous dirait-il bien vrai pour la première fois? \nDORANTE\n Pour me venger de vous j'eus assés de malice Pour vous laisser jouir d'un si lourd artifice, Et vous laissant pour ce que vous vouiez -je vous en donnai plus que vous ne m'en donniez.",
+          "Les mens les plus grands disent vrai quelquefois. \nÀBINE\n Elle a lieu de douter et d'être en défiance. \nCLOTON\n Qu'elle donne à ses feux v peu plus de croyance, Il n'a fait toute nuit que soupirer d'ennui. \nSABINE\n Peut-être que tu mens aussi bien comme lui. \nM\n \nCLITON\n Je suis homme d'honneur, tu me fais injustice. \nSABINE\n Mais dis-moi, sais-tu bien qu'il n'aime plus Clarice CETTON."
+        ]
+      },
+      "top_5_persons": [
+        "CLARICE",
+        "Lucrece",
+        "ALCIPPE",
+        "SABINE",
+        "ISABELLE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 10
+        },
+        "related_sentences": [
+          "À ne rien déguiser, Cliton, Elle te confesse Qu'à Poitctiers j'ai vécu comme vit la jeunesse, J'étais en ces lieux-là de beaucoup de métiers: Mais Paris, après tout, est bien loin de Poitiers, Le climat différent veut une autre méthode, Ce qu'on admire ailleurs, est ici hors de mode.",
+          "Et se feraient siffler, si dans un entretien Ils étaient si grogniers que d'en dire du bienChés les Provinciaux on prend ce qu'on rencontre, Et là, faute de mieux, un sot passe à la montre: Mais il faut à Paris bien d'autres qualités, On ne s'éblouit point de ces fausses clartés;",
+          "Que l'ordre est rare et beau ue tes grunus bâtiments! \nDORANTE\n Paris semble à mes yeux un pays de Romants E ijà I’y croyais ce matin voir une Île enchantée, Je la laissai déserte, et la trouve habitée: Quelque Amphion nouveau sans l'aide des maçons En superbes Palais a changé ses buissons.",
+          "Que j'en sais comme lui qui parlent d'Allemagne, Et si l'on les veut croire, ont vu chaque campagne, Sur chaque occasion tranchent des entendus, Content quelque défaite, et des chevaux perdus, Qui dans une Gazette apenant ce langage, S'ils sortent de Paris, ne vont qu'à leur village;",
+          "Paris est un grand lieu plein de marchands mêlez: L'effet n'y répond pas toujours à l'apparence, On s'y laisse duper autant qu'en lieu de France, Et parmi tant d'esprits plus polis et meilleurs Il y croit des badauts autant et plus qu'ailleurs."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Poitiers",
+        "France",
+        "Turquie",
+        "Espagne"
+      ]
+    }
+  }
+}

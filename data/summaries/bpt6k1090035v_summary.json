@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Troterel, Pierre",
+    "title": "L'Amour triomphant, pastorale comique",
+    "publication_date": "1615",
+    "document_id": "bpt6k1090035v"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ARON",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "étant ainsi conclut, puis que le temps ne nous permet pas d'être ici davantage pour maintenant, tum'en vais vous dire avant que m'en aller ce qu'il faut que vous fassiez pour l'entière consommation de notre mariage, c'étant qu'ayant été donnée à l'Oreadepar mes plus proches parẽs (qui sõt depuis peudedez, comme vous savez, il faut que vous alliez trouver l'Oreade pour la prier d'avoir agréable la recerche que vous faites de moi, car elle m'en a della parlé trois ou quatre fois, \nARON\n Je serais l'homme du monde le plus ingrat si ici ne m'acquitais envers elle de ce devoir duquel ie our suis oblige, toujours pour sa qualice, qu’en connderauion des ralsons que vous venez d'alléguer.",
+          "S'il est ainsi, belle Nymphe, que votre cœur ne consente à ces douces paroles, qui me convient encore à vivre, où vous cõiure par ceque vouque cenen de plue,de ne me flatterpas davantage en mon mal, et de ne poït interrõpre ses efforts, afin que par une soudaine mort il me tire de toutes mes afflictions \nCLÉAN\n Ne doutez pas, Aronthe, que mon cœur n'avoue mes paroles, et vous assurez que pour maintenant il sait mieux aimer que dissimuler. \nARON\n Dieux!",
+          "sans que tu m'en viennes donner davantage? \nCLÉAN\n J'éprouve bien à ce coup que nous sommes plus aux Dieux qu'à nous mêmes, et qu'ils disposent de nos actions à leur volonté. \nARON\n Qu'il me déplaît que ce vent m'empêche d'avoir part aux discours de Cléanthe Apaise toi-je te prie zéphyre: autrement ie me pleindrai à t maîtreÉole de l'outrage quetu me fais.",
+          "Un pareil accident nous surprend à l'abord de quelque personne de marque, à cause de la prééminence et authonite qui eit en elle, laquenle nous contraint de la révérer avec un respect accompagné d'une crainte pleine de bienséance. \nARON\n Puis que cette appréhension est commune à tous ceux qui aiment: ne nous étonnous point, mais plutôt armons nous de nouveaux courages, et tirons droit vers ces belles Nymphes.",
+          "Je veux bien que tu igeonto, mintonthe, que j'ai possible quelque perfection qu'ils n'ont pas, pour laquelle l'Oreade m'octroiera la faveur qu'élIe leur a dénie. \nARON\n Voilà qui était bon autrefois, Pyran dre, mais tu sais que nous sommes maintenant en un siècle, où l'Amour contribue plus aux richesses qu'au mérite des plus galants hommes."
+        ]
+      },
+      "top_5_persons": [
+        "ARON",
+        "PHIL",
+        "ARON",
+        "Philodice",
+        "Seigneur"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Bergère",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Voilà pourquoi votre le trouve maintenant si agréable, que je n'aurai jamais de regret d'avoir quitté ma première condition de Bergère \nPHILOD\n Est-ce donc ainsi que tu méprises l'état de tes devanciers, et même le tien, puis que la nature t'a élevée parmi des Bergères tes semblables? \nCLÉAN\n Tu fais semblant Cléanthe, d'ignorer une chose que tu ne sais que trop, si tu veux dire le vrai: Je t'avoue que ç'a été l'état de mes devanciers, comme tu viens de dire: mais non pas le mien: et petit m'en vais te faire entendre commment.",
+          "D'abord qu'elle la vi si gentille, et d'une humeur beaucoup plus belle, que la condition d'une simple Bergère ne requérait, elle s'informa de son nom, et de son extraction, et l'ayant appris de la propre bouche de Cléanthe voudriez -vous bien (lui dit-elle) être à moi, pour tenir un même rang que les Nymphes, qui sont à ma suite?",
+          "ainsi s'appelait cette Bergère vefue) et me mis à deviser avec elle de plusieurs matières, félon que mon âge et la portée de mon esprit me le permettaient.",
+          "Or est-il que ici refusai l'état de Bergère si tôt qu'on me le présenta: il n'est dõc point à moi maintenant.",
+          "Par où grande conclus que vous avez tort de croire que votre Bergère en puisse avoir pour vous, étant belle comme a pentevin ceu moes"
+        ]
+      },
+      "top_5_places": [
+        "Bergère",
+        "Perse",
+        "Nil",
+        "Seines",
+        "Sicile"
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "author": null,
+    "title": "La Fontange ou les Façonnières, comédie nouvelle",
+    "publication_date": "1694",
+    "document_id": "bpt6k8572113"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "BELIZE",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Mais, c'est c'est autre chose de faire voir qu'on se laisse aller malgré soi au torrent de la coûtume, en suivant les modes en quelque chose, et de vouloir renchérir par délus tous les jours, par des manières affectées, et par des rafinements sur la Fontange, qui choquent non seulement la modestie, mais la ventable mode quita son fondement dans la bienséance. \nBELIZE\n Madame, voulez-vous que je vous parIe sincèrement, c'est vouloir ramer contre le fil de l'eau que de vous opposer, comnie vous jaites, à une inode n'en reque?",
+          "Je crois, Mesdames, que c'est cette Histoire qui a donné lieu au Proverbe dont vous m'avez parlé. \nBELIZE\n Vous êtes d'un sentiment différent de Mr. votre ami, car il a rapporté l'origine de ce Proverbe à une autre Histoire. \nFLORIMONT\n Madame, l'amitié ne détruit point entre nous la franchise, ni la liberté d'avoir chacun son sentiment, et de le dire librement.",
+          "c'est à moi à recevoir la Lois de vous et non pas à vous la donner. \nBELIZE\n Hé bien, Monsieur si vous voulez que nous vous donnions la Loi, ou pour mieux dire, que nous vous priions, ces Dames et moi, souhaiterions ouïr de vous, de quelle manière vous passez votre temps quand vous êtes en quartier d'hiver;",
+          "et vous seavez qu'ils tirent de leur arsenal, des armes assez puissantes pour les combattre. \nBELIZE\n Nous en tirons d'aussi puissantes contre eux, car si l'Écriture veut que les femmes soient voileés, elle défend aussi aux hommes d'avoir soin de leurs cheveux, et encore plus de se faire une parade de cheveux étrangers;",
+          "Qu'il y aurait un beau champ à discourir de son enluminure, de ses fréquentes buvetes, de sa délicatesse, et de son esprit capricieux et contrariant. \nBELIZE\n On m'a dit que c'était un assez joli épit en conversation. \nDORINE\n Cela est vrai;"
+        ]
+      },
+      "top_5_persons": [
+        "BELIZE",
+        "Dorine",
+        "Florimont",
+        "Clorine",
+        "Cléante"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Dans une des plus belles Contrées de France il y avoir un Berger et une Bergère, qui faisaient paître leurs troupeaux assez près l'un de l'aurre, dans in lieu champ si agréable qu'il semblait que la nature eût pris plaisir d'étaler à leurs yeux ce qu'elle a de plus charmant.",
+          "Bélise, votre règle est pour les modes de France mais les Anglaises portent la Fontange plus hannute, parce-qu'elles portent des Engageantes. \nBELIZE\n ",
+          "Je le donne à toutes les bonnes faiseuses de France de pouvoir jamais en apocher."
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Hollande",
+        "Malines",
+        "FLORIMONT",
+        "Bergère"
+      ]
+    }
+  }
+}

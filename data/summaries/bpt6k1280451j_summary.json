@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Les Plaisirs de l'isle enchantée, ou la Princesse d'Élide, comédie de M. Molière",
+    "publication_date": "1668",
+    "document_id": "bpt6k1280451j"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Moron",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Il était facile de juger que le mirite de ce Prince produisait son effot ordinaire, que ses belles qualités avaient touché ce cœur superbe, et commencé à fondre une partie de cette glace qui avait résisté jusqu' alors à toutes les ardeurs de l'Amour, et plus il affectait, ( par le conseil de Moron qu'il avait gagné, et qui connaissait fort le cœur de la Princesse) de paraître insensible ( quoi qu’il ne fut que trop amoureux;",
+          "Je suis votre valet, et j'aime mieux qu'on dise, C'est ici qu'en fuyant sans se faire prier averon lauva les jours des ruieurs deri oanglier, Que si l'on y disait, voila l'illustre place Où le brave Moron, d'une héroïque audace, Affrontant d'un Sanglier l'impétueux effort Par un coup de ses dents vits terminer son fort.",
+          "Ces heureux Chasseurs n'eurent pas plutôt remporté cette victoire, que Moron de venu bravone par l'éloignement du péril, u ulut aller donner mille coups à la bête, qui n'était plus en état de se défendre, et fit tout ce qu'un fanfaron, qui n'aurait pas esié",
+          "Moron ne fut pa satisfait de cette Chanson quoi qu'il la trouvât quie, ni en gémanu vut pime passrnnés, et priant le Satire de lui dire celle qu'il lui avait ouï changer quelques jours auparavant: il continua ainsi.",
+          "elle en parla à Moron, qui fit passer cet insensible pour un brus al: Et enfin le voyant arriver quelque-même, elle ne puves empêcher de même en toucher fort sérieusemient quelque chose:"
+        ]
+      },
+      "top_5_persons": [
+        "Moron",
+        "Moron",
+        "Aignan",
+        "Seigneur",
+        "Diane"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Grèce",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Si ces lieux fortunés ont tout ce qu'eut la Grèce, De gloire, de valeur, de mérite et d'adresse, Ce n'est pas sans raison qu'on y voit transférez Ces leux qu'à mon honneur la terre a consacrez, J'ai toujours pris plaisir à verser sur la France De mes plus doux rayons la bénigne influence;",
+          "On publie en tous lieux que son âme hautaine Garde pour l'Hyménée une invincible haine, Er Et qu'un Arc à la main, sur l'épaule un Carquois Comme une autre Diane elle hante les bois, N'aime rien que la chasse, et de toute la Grèce Fait soupirer en vain l'Héroïque jeunesse.",
+          "Je souhaite, à la vérité, que ton cœur puisse aimer quelqu'un: Tous mes vœux seraient satisfaits si cela pouvait arriver, et un n'ai proposé les Fêtes et les Jeux que sans fais célébrer ici, qu'afin d'y pouvoir attirer tout ce que la Grèce a d'illustre;",
+          "J'ai d'Itaque en ces lieux fait es en diligence, Et le couvie vi et de Mes vœux enflammez Du désir de paraître à ses lois renommés, Où l'illustre Iphitas, Père de la Princesse, Assemble la plupart des Princes de la Grèce ARBATE.",
+          "Comment? \nARISTOMENE\n Le prince d'Ithaque, Madame, vient de m'assurer tout à l'heure, que votre cœur avait eu la bonté de s'expliquer en ina faveur, lur ce celebre choix qu'attend toute la Grèce LA FEINCESSE."
+        ]
+      },
+      "top_5_places": [
+        "Grèce",
+        "Bergères",
+        "France",
+        "Paris",
+        "Oland"
+      ]
+    }
+  }
+}

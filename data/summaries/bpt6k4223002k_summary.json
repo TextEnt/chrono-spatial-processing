@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "author": null,
+    "title": "Gallie, opéra, ornée d'entrées de ballet, de machines et de changements de théâtre",
+    "publication_date": "1691",
+    "document_id": "bpt6k4223002k"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "RAMIE",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Cachez -vous tous derrière ce bocage, Je vais pour l'attirer De dessous l'Oranger, Mettre la feinte en usage, Je m'en va lui parler, Je vais dissimuler, Si nous pouvions l'avoir, cette grande Ramie, Amis, si nous pouvions la livrer à Galie, Mon bonneur j' ans égal, Allez soyez prêts au signal.",
+          "Mes chers amis, c'est dans ce jour, Qu'il faut se saisir de Ramie, Il faut ravager ses Hameaux, Et dévorer tous ses troupeaux, Allons, chassons d'ici Hercule d'Orange J'ai pour cela de toutes parts Assemblé tous mes Léopards, Mes Tigres et mes Loups serviront ma furie.",
+          "Par les intrigues de Galie On voulait dépouiller Ramie Du droit qu'elle a de gouverner, On la voulait déshériter, Cette Illustre et grande Bergére, De cette Île unique Heritiére.",
+          "Si j'ai pitié de moi-même, Je ne puis l'avoir de vous. \nJACES\n Puis que ma faute est passée, celcen en le louvelas \nRAMIE\n ",
+          "De vous honorer, Ramie, J'en jure sur mon trépas. \nRAMIE\n Et je jure sur ma vie, Que je ne vous cronar pas, QUIACES."
+        ]
+      },
+      "top_5_persons": [
+        "RAMIE",
+        "Galie",
+        "Damon",
+        "BERGER",
+        "Neptune"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Europe",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Et toi, Europe, et toi, je vais te mettre en cendre, Ton Hercule nouveau ne saurait t'en défendre.",
+          "La Scène est en Europe GALLI OPÉRA.  "
+        ]
+      },
+      "top_5_places": [
+        "Europe",
+        "Rhin",
+        "Gallie",
+        "Ferro",
+        "Bergère"
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Le Sicilien, ou L'amour peintre, comedie. Par J. B. P. de Moliere",
+    "publication_date": "1668",
+    "document_id": "bpt6k12804645"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ADRASTE",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Je vous aime plus que tout ce que l'on peut aimer, et Elle n'ai point d'autre pensée, d'autre but, d'autre passion, que d'être à vous toute ma \nISIDORE\n Je ne sais si vous dites vrai, mais vous perluadez. \nADRASTE\n Mais vous persuadai-je, jusqu'à vous inspirer quelque peu de bonté pour moi? \nISIDORE\n Je necrams que d'err trop avoir. \nADRASTE\n En aurez-vous assez pour consentir, belle Isidore, au denrein que le voudai alt: \nISIDORE\n Je ne puis, encor, vous le dire. \nADRASTE\n Qu'attendez-vous pour cela? COMÉDIE. \nISIDORE\n Âme Teroudre. \nADRASTE\n Ah! quand on aime bien, on se résout bientôt. \nISIDORE\n Te Bien, anen, Oui, consens. \nADRASTE\n Mais, consentez-vous, dites -moi, que ce soit dès ce moment même? \nISIDORE\n 2 Eors qu'oi eure, valulais, résolu sur la chose, s'arrestet’on sur le temps?",
+          "mais le Sujet, ici, ne fournit que trop de lui mesme, et il y a moyen de faire quelque cilore de bu lalvi MIginal fait comme celui-là. \nISIDORE\n L'Original est peu de chose, mais l'adresse du Peintre en saura couvrir les défauts. \nADRASTE\n Le Peintre n'y en voit aucun; et tout ce qu'il souhaite, est d'en pouvoir représenter les grâces aux yeux dé tout le Monde, aussi grandes dun jes pene vonrs \nISIDORE\n Si votre Pinceau flatte autant que votre Langue, vous allez me faire un Portrait qui ne me ressemblera pas. \nADRASTE\n Le Ciel, qui fit l'Original, nous ôte le moyen d'en faire un Portrait qui puisse flatter.",
+          "À ces heures de nuit, hors vous, et moi, Monsieur, tu ne crois pas que Personne s'avise de courir, maintenant, les Rues. \nADRASTE\n Aussi ne crois-je pas qu'on puisse voir Personne qui sente, dans son cœur, la peine que ielieux: car, enfin, ce n'est rien d'avoir à combattre l'indiférence, ou les rigueurs d'une Beauté qu'on aime;",
+          "ne sçauriezvous vous tenir comme il faut? \nISIDORE\n Ce sont, ici, des choses toutes neufues pour moi; et cet à Momeur à me mettre de la façon qu'il veut. \nADRASTE\n Voilà qui va le mieux du Monde, et vous vous tenez à merveilles.",
+          "et ici prétends faire éclater les talents que j'ai eus du Ciel. \nADRASTE\n Je voudrais, seulement, que par quelque moyen, par un Billet, par quelque Bouche, elle fut avertie des sentiments qu'on a pour elle, et savoir les siens là dessus."
+        ]
+      },
+      "top_5_persons": [
+        "ADRASTE",
+        "Isidore",
+        "ISIDORE",
+        "D",
+        "Signore"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "À CES CAUSES, désirants favorablement traiter l'Exposant, Nous ç auons permis et permettons par ces Présentes, de faire imprimer ladite Pièce par tel des Imprimeurs par Nous réservez que bon lui semblera, et icelle vendre et débiter en tous les Lieux de notre Royaume qu'il désirera, durant l'espace de cinq années, à commencer du jour qu'elle sera achevée d'imprimer pour la première fois, à condition qu'il en sera mis deux Exemplaires en notre Biblioteque publique, un en celle h nostre Cabinet du Chasteau du Louure, etbin en celle de te très-cher et féal Cheualier, a de France, le Sieur AU, ait que de exposer en vente, à ce de nullité du Presentes: Pendant lequel temps faisons défenses à toutes Personnes, de quelque qualité et condition qu'elles soient, de l'imprimer, ni faire imprimer, vendre, sans débiter, en aucun Lieu de notre obéissance, sous quelque prétexte que ce soit, sans le cousentement de l'Exposant, ou de ceux ayant droit de jours, à peine de confiscation des Exemplaires, quinze cens livres d'amende, appliquable un tiers à l'Hospital General, un tiers au dénonciateur,",
+          "Ledit Sieur DE MOLIÈRE a cédé et transporté son droit de Privilège à JEAN RIBOU Marchand Libraire à Paris, pour en jouir le temps porté par icelui, suivant l'accord fait entr'eux. \nFrance\n \nFrance\n \nFrance\n ",
+          "La manièvre de France est bonne pour vos Femmes; inais pour les noitres, elle est, un peu, trop familière. \n",
+          "C'est la manière de France D. PÉDRE."
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Paris",
+        "PARIS",
+        "Navarre"
+      ]
+    }
+  }
+}

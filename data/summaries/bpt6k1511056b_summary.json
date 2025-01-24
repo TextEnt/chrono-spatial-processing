@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": null,
+    "title": "Le Marquis de Louvois sur la sellette, criminel examiné en jugement par l'Europe, et ses filles, ses interrogats, ses réponses et enfin la sentence portée par l'Europe",
+    "publication_date": "1695",
+    "document_id": "bpt6k1511056b"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Louis",
+          "frequency": 23
+        },
+        "related_sentences": [
+          "Le Parlement de Metz juge des Souverains Aurait incontinent fait un Roi des Romains Qui de même qu'au temps de Diocletan Dans Rome aurait vécu, tel qu'il est, en Tyran Voilà, Madame, enfin le recueil du projet Avec Louis et moi fait dans le Cabinet.",
+          "Roi de la haute et de la basse Hongrie, Et Prince héréditaire en la Transylvanie Depuis longtemps Louis ménageait ce rebelle, Comme une pièce utile à susciter querelle.  8 VieVène, Prusse, Louis payait?",
+          "Mon a Louis dont le tien par un embrasement, À brulé le Pays pour plaire à Solyman Va-t-en, parfait Héros, tout couronné de Gloire, Rendre son nom fameux pour jamais dans l'Histoire.",
+          "Ayant même avoué dans ses confessions, Qu'il avait envoyé beaucoup de millions, Quantité de soldats aux Turcs nos ennemis, Brouillé tout l'univers avec son grand Louis Le tout bien averé, rédigé par écrit.",
+          "Si nous sommes entrés en nouveaux différents, y n'ai encor perdu que fort peu de mes gens, Louis n'occupe encor aucune de mes places, Quel intérêt ai-je, quelles sont mes disgrâces?"
+        ]
+      },
+      "top_5_persons": [
+        "Louis",
+        "Louis",
+        "Caron",
+        "Guillaume",
+        "Guillaume"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Europe",
+          "frequency": 23
+        },
+        "related_sentences": [
+          "Europe à Caron Donne ordre cependant à Cerbère ton Chien Qu'il arrête sans bruit pour un temps ce qui vient Europe à Louvais Te voilà donc! approche, infâme Boutefeu Me reconnais-tu bien?",
+          "Europe\n Écrivez promptement que les Sieurs Moscovites, Instigués de Louvais, firent les hypocrites, É 6 Qu'aQu'avec nos ennemis même d'intelligence, Ils n'auraient jamais rien fait pour notre défense;",
+          "anceole muicrou reomea Louys vouloit l’être. \nEurope\n Écrivez que Louis voulût dans Rome -même, Avoir comme à Paris l'autorité suprenie, Et de cet attentat tu fus le seul auteur?",
+          "Europe\n Qui a fait fausser le ferment au Dauphin, Après s'être engagé aux habitants du Rhin D'êtré le protecteur du beau Palatinat Louis fit-il encor rompre ce conCordate.",
+          "Europe\n Écrivez que Louvais tout écumant de rage, Fit sur Liège ses gens fondre comme un orage, Que pour être fidèle à son vrai souverain,"
+        ]
+      },
+      "top_5_places": [
+        "Europe",
+        "France",
+        "Rhin",
+        "Pays-bas",
+        "Flandre"
+      ]
+    }
+  }
+}

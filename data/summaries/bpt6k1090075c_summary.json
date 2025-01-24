@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "author": "Chappuzeau, Samuel",
+    "title": "L'Académie des femmes, comédie",
+    "publication_date": "1661",
+    "document_id": "bpt6k1090075c"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Guillot",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Nous cracher au visage, en nous baisant nous mordre, Crier haro sur nous, mettre tout en derorure, Sachez qu'en fait d'argent Guillot et Ragotin, veulent ielolument avon put aubutin. \nALIX\n Que nous veulent ces foux, ces enragés, ces rustres?",
+          "Guillot, quoi que ie pusse avec bonne justice Te donner tout le sou de l'eau pour ton supplice, Te fermer la cuisine, et te bien tétonner, le veux plus fatle encor que de te pardonner.",
+          "LEARQUE, HORTENSE, LA ROQVE EMILIE, À MINTE, LUCE, CORNELIE, GUILLOT, LISETE LA ROQUE, IE est temps d'approcher, \nBAJETE\n Ah le voici, Madame!",
+          "À la porte, Guillot, vite. \nGUILOT\n Vas-y toi-même, Je prends dans le cellier deux verres d'Aposème.",
+          "Il n. Guillot, encore un coup, tu t'en repentiras, Et tu sais le pouvoir que j'ai dans la cuisine. \n"
+        ]
+      },
+      "top_5_persons": [
+        "Guillot",
+        "ALIX",
+        "Lisette",
+        "LUCRECE",
+        "Sénèque"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Se divertit-on bien à Rome il me souvient Que j'y passai fort bien le temps dans un voyage Qu'avec l'Ambassadeur j'y fis en mon jeune âge.",
+          "De Rome, ou de Turin si quelque autre revient;",
+          "est extrême, Plus cruelle que Rome"
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Paris",
+        "Théâtre du Marais",
+        "Hongrie",
+        "Turin"
+      ]
+    }
+  }
+}

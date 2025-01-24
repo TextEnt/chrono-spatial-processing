@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "author": null,
+    "title": "L'essay des filles nouvelle comédie en trois actes...",
+    "publication_date": "1699",
+    "document_id": "bpt6k852915d"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "COLOMBINE",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "avoir l'effronterie de dire qu'il veut du retour. \nARLÊQUII\n S'il ne tient qu'à cela que vous soyez mariez riez baille était-en tout son soul parce que cela serite bien se faire tirer l'oreille. \nCOLOMBINE\n Ah il verra si je l'aime dès te réir, je vais déchirer ses lettres.",
+          "Si aptés l'avoir envoyé le tambour de mon cœur dans la ville de ton indifférance tu ne te livre entre mes bras, sur le champ je t'investie, et mettrai des batteries si à propos que la brèche, et l'assaut ne sera qu'un. \nCOLOMBINE\n Tu veux me tuer ARLEQUIN.",
+          "Quand se serait au Crénier j y aurais flonté à cheval botté, et espéronné, j'ai un bidet qui monterait au grand galop l'escalier de la Tour de Babilonne \nCOLOMBINE\n Allez exercer vos menteries ailleurs.",
+          "Que ne vous rendez vous Madame la begueulle, est-ce qu'un malis compse moi est à refuser. \nCOLOMBINE\n Je voudrais bien être mariée, mais je ne voudrais pas aller à l'armée.",
+          "il s'en va. \nCOLOMBINE\n Vertu de ma vie tu n'en demeureras pas là, tu tiendras ta parole ou je t'arracherai les yeux."
+        ]
+      },
+      "top_5_persons": [
+        "COLOMBINE",
+        "PIERROT",
+        "COLOMBINE",
+        "POLICHINELLE",
+        "OCTAVE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Il n'est pas difficile de le diviner, croyezmoi retirez-vous, le feu immortel n'aurait qu'à vous entendre parler, il ne resterait de vous qu'une fumée qui m'incommoderait, et tout l'onguent à la brûlure des Apoticaires de Paris et la Rivière de Seine ne serait pas suffisante d'empêcher votre consommation.",
+          "N voilà bien un autre je crois que c'est une Citrouille des Marais de la Ville jour bre que y outout au moments le Mag isin aux Tripes de la Porte de Paris, et qui êtes vous par votre permînisnon? \nMARINETTTE\n Je voudrais parler au feu immortel.",
+          "Êtes -vous Monsieur Médecin de l'Université de Paris \nPASCARIEL\n Oui Monsieur, et de certains Quidams factieux non reçus en l'Univerfité, ont voulu changer l'état du corps humain;"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Flandre",
+        "Piémont",
+        "Athenes",
+        "Grisette"
+      ]
+    }
+  }
+}

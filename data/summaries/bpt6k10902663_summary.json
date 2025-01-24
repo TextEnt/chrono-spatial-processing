@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Montchrestien, Antoine de",
+    "title": "Les Tragédies d'Anthoine de Montchrestien [...] Edition nouvelle augmentee par l'auteur",
+    "publication_date": "1604",
+    "document_id": "bpt6k10902663"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Ch",
+          "frequency": 18
+        },
+        "related_sentences": [
+          "Et ne retournez point que la Grèce ne pleure Ia mort de maint grand Duc inunolé par le ser Dessus l'autel de Mars aux déités d'Euser. \nCh\n Veuille le Cielbemn soutenir la querelle Qu'après mille combats notre camp renouvelle, Et si bien renforcer les nerfi de sa vertu, Que l'exercite Grec s'en retourne battu, Vaincu, désespéré d'avoir perdu sa peine A tenter par dix ans une entreprise vaine, Dont le fruit soit la honte et l'éternel regret Davoir trop obstiné un serment indiscret.",
+          "Tu gagnes beaucoup plus que tu n'avais perdu: Le ciel t'ôte un soldat, un Mona-que il te donne, Qui dépose en tes mains sa vie et sa Couronne: Tiens ce sceptre Royal, tu le peux bien porter, Puis que de t'obéir toujours me veux coutomer. \nCh\n , Quand l'hommme cuide avoir ait \" Le comble de tous ses désirs, \" A l'heure que mous il en craint, \" Surviennent mille déplaisics.",
+          "Et si vous détournez le bel œil de votre âme Sur mon esprit dolut que votre perte entame, Tous morts vous priserez mon immortel amour, Qui parmi votre cendre à choisi son séjour, Mon cœur tout soupirant de mortelle souffrance, Respire désormais cette seule espè te. \nCh\n \" Rien n'est si fort à redouser \" Que l'âme d'un Prince élancée \" De colère injensee: » \" ne la saurait arrêter;",
+          "Car je suis re lève à mourir paravant Qu'Hector mon bien mon tout se d'être vivant. \nCh\n Quoi que ce seul désir règne dedans votre âme, Retardez-en l'effet, ô magnanime Dame, Pour jouir de la joie ou baigneront vos yeux Tant qu'il reviendra sur un char glorieux Sui par le pauvé d'une pompe Guerrière.",
+          "„ Mais de leur ombre épesse il n'est point obscurci: Je sort lui suseita de grauds désavantages, Mais tout à son honneur est en finreussi. \nCh\n Si le Ciel eût permis à son brave courage D'acomplir les desseins qu'il avait proiettez, Il eût en liberté changé notre servage, Et sait naître un bonheur de nos adversité."
+        ]
+      },
+      "top_5_persons": [
+        "Ch",
+        "Hector",
+        "An",
+        "Andromache",
+        "Priam"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Troie",
+          "frequency": 18
+        },
+        "related_sentences": [
+          "Qu'Hecube et ses parents le chérissent sur tous, Quema Cour le respecte et l'adnure et l'embrasse Comne l'appui de Troie et l'honneur de sa race: Mais regardez un peu qui le sait estimer, Téchercber des Seigneurs, et des peuples aimer, Ce n'est ni sa bejuté, ni sa grandeur Royale, C'est sa rare vertu qui marche saus égale: Ainsi cessant le fruit d'où germe son bonheur, Il ne cueillirait plus cette moisson d'honneur.",
+          "Je repute ma Troie heureuse entre les villes Non pour son aboudance en illustres samilles, Non pour ses murs bâtis des propres mains des Dieux, Non pour ses hautes tours qui voisinent les Cieux, Nonpour ces grands trésors, non pour sa large terre Mais pour loger chez soice grand homme de guerre, Qui notre sera toujours comme un heureux flambeau, Quand toute elle devrait n'être plus qu'un tombeau, , .",
+          "ma douce Andromache et ne t'afflige ainsiSait queie sou à Troie oubion à la campagus, Démon fils et de toi le penser m'ascompaxue S'efforce m'éloigner de l'orage des coups, Et m'attendrit aux doux noms de père et d'époux.",
+          "Troie a cédé par tout, et la Grèce au contraire A regagné le champ et suivi tellement Qu'il ne rêle au combat que Memnon seulement, Qui contraint par le nombre à tourner le visage S'en revient plus dépit que sailli de courage.",
+          "Ces voleurs juhumains nous vont faire leur proie, On dira quelque jour ici jadis fut Troie, Là son grand Ilion enclos de plus de tours, Qu'au cours de l'an entier on ne conte de jours."
+        ]
+      },
+      "top_5_places": [
+        "Troie",
+        "Sparte",
+        "Grèce",
+        "France",
+        "Carthage"
+      ]
+    }
+  }
+}

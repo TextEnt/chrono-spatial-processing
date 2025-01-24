@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "author": "Dorimond",
+    "title": "La Femme industrieuse, comédie",
+    "publication_date": "1661",
+    "document_id": "bpt6k1090154j"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ISABELLE",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "De ne la yoir jamais rien cours donc un grand risque, Quitter mes bons amis, les bons vins, les chapons, Une longe de veau vaut mieux que cent leçons, Jeuner, je suis trop pâle, Isabelle est si maigre, Je veux m'entretenir dans mon humeur alaigre, Gardez votre billet, il me met en courroux, Belle, ieusné pour moi, ie mangeray pour vous, \nISABELLE\n Laisse-moi, Madame te prie, avec ce bon père, J'aime de ce Docteur le conseil salutaire.",
+          "Vos printanières appas, vos attraits sans quartier, Qui font brûler les gens dans le mois de Janvier \nISABELLE\n Monsieur, le bruit commun qui court de vostie estime, Me fait avoir recours à vostte esprit sublime: Vous êtes Précepteur d'un jeune homme bien fait, Mais qui sait mal son monde, et sais peu ce qu'il fait.",
+          "Que mon honneur s'offense à l'y voir si souvent, Et que je ne suis pas une tête à l'évent, Que l'honneur m'est cent fois plus que ne m'est n vies Qu'il cesse, s'il ne veut voir punir sa folit \nISABELLE\n Je connais bien l'amour, et j'y suis fort sensible;",
+          "Voilà la place en ordre, et j'en laisse la garde Au brave Trapolin mais d'ou vient qu'il retarde! \nISABELLE\n C'est qu'il sait que tu suis une femme de bien, Qu'il n'appartiêt qu'à moi de me garder fort bié.",
+          "À Dieu. \nISABELLE\n Faites, Amour, le succès de ma flamme, S'ils captivent mon corps, ils n'ont riẽ sur moname, Et mon aimable Amant sous peine autorité, Peut tout seul se venter de ma captivité."
+        ]
+      },
+      "top_5_persons": [
+        "ISABELLE",
+        "LÉANDRE",
+        "CAPITAN",
+        "Seigneur",
+        "Louis"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Mars 1661\n Signé par le Roi en son Conseil DE SAYES, Il est permis au Sieur DORIMOND, Comédien des Mademoiselle, de faire imprimer les Pièces de Théatres, par un composée, et représentées par la Troupe de Mademoiselle à Paris, par tel Imprimeur et Libraire qu'il voudra, pendant cinq années: et défenses sont faites à tous autres de l'imprimer ni vendre d'autre Édition que celle de l'Exposant, ou de ceux qui auront droit de lui, peine de deux mille livres d'amende, de tous dépens, dommages, et intérêts, comme il est porté plus amplement par lesdites Lettres.",
+          "à Jean Ribou Marchand Libraire à Paris,",
+          "La Seène est à Paris V A"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Paris I",
+        "GAP"
+      ]
+    }
+  }
+}

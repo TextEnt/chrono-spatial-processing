@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Le Médecin malgré luy, comédie par J.-B. P. de Molière",
+    "publication_date": "1667",
+    "document_id": "bpt6k12804808"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "MARTINE",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Plusieurs Médecins ont déjà espüisé toute leur Science après elle: mais on trouve, par fois, des Gens avec des Secs admirables, de certains Remedes particuliers, qui font le plus souvent, ce que les autres n'ont igeulane, ç èle la, ce que nous cherchons. \nMARTINE\n Elle dit ces trois premières lignes bas.",
+          "ON ie te dis que ici n'en veux rien faire: et que c'est à moi de parler, ce denio le MARTINE, Et ainsi te dis -moi, que deux veux que tu vives à ma fantaisie: et que ici ne me suis point mariée avec toi, pour souffrir tes fredaines.",
+          "à bonne part aux prétentions qu'on peut avoir sur sa Personne: et quoi qu’elle ait fait voir de l'amitié pour un certain Leandre, tu sais bien que son Père n'a jamais, voulu consentir à le recevoir pour on Gendre. \nMARTINE\n Rêvant à part-elle.",
+          "Ô la grande fatigue que d'avoir une Femme: et qu'Aristote a bien raison, quand il dit qu'une Femme est pire qu'un Démon! \nMARTINE\n Voyez un peu l'habile Homme, avec son benêt d'Aristote.",
+          "Il fatit que cet riomme-là, ait la Médecine Universelle. \nMARTINE\n Qui en doute? \nLUCAS\n Poius uo, rela justement, l'Homme qu'il nous faut: allons vite le charcher.  VALÈRE."
+        ]
+      },
+      "top_5_persons": [
+        "MARTINE",
+        "LUCAS",
+        "JACQUELINE",
+        "M",
+        "Seigneur"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Et jeuit neur de MOLIRE, à cève et transporté son droit de Privilège à JEAN RIBOU, Marchand Libraire à Paris, pour en jouir suivant l'accord fait entre-eux."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Malade",
+        "Casse"
+      ]
+    }
+  }
+}

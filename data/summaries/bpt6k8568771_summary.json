@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "author": "Girard, Le Frère",
+    "title": "\"Caian ou L'idolatre converty . Tagi-comedie [\"\"sic\"\"]. De F. G. B.\"",
+    "publication_date": "1656",
+    "document_id": "bpt6k8568771"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Olympe",
+          "frequency": 23
+        },
+        "related_sentences": [
+          "N a trouvé Seigneur au fonds d'une galère Ô Quelques Soldats cachez que leur devra-on Juire CAIAN en s'en allant a Olympe Qu'on les laisse échapper, mes ordres sont donnés Que l'on sauve la vie à ces infortunés.",
+          "Mais comme Olympe n'a que de divins attraits, L'amour ne m'a jeté que de pudiques traits. \nORANTE\n Excusez donc ma flamme ô",
+          "lequel se trouve miraculeusement échappé de la mort, et Dorante à Olympe et se résout à mener une vie parfaitement Chrétienne.",
+          "Clyante avec Olympe étaient en un recoin, D'où j'étais assez près quoi 'on me crut plus loin;",
+          "À Romilde Madame entre chez -vous, et souffrez à ma filme, Olympe, Oumpe sque tsborpe mume quaprès jonme."
+        ]
+      },
+      "top_5_persons": [
+        "Olympe",
+        "Cajan",
+        "Olympe",
+        "Seigneur",
+        "Zèle"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Venise",
+          "frequency": 23
+        },
+        "related_sentences": [
+          "Ce rare bâtiment ou châcun voit assez Les richesses et l'Art de dix siècles passez, Et ces superbes Tours qui semblaient éternelles, Que la flamme abatra comme nids d'arondeldes, Nos canaux pleins du sang du Citoyen vaincu, Et de tant d'innocents qui n'ont encor vécu, Bref ces sa Autels l'ornement de Venise, Perdant tout leur éclat avec que leur franchise, Sous un bras que l'Enfer armera de rigueur, Et qui mettra sa gloire à leur fermer le cœur, ut orceront-ils pas ma Chrestienne venstance, D'échapper par la m a tant de violence.",
+          "Si j'entre dans Venise en pompe de vainqueur, Ce n'est que pour sortir de ton infâme cœur. Car l'honneur me défend d'épouser-vne infâme, \nROMILDE\n Est-ce avoir aur nouvnu uonomperont jemème.",
+          "Venise veut combatixę, et tous ses habitants, Voulant mourir marcyrs veulent mourir contents, Et posposer l'horreur et du fer et des flammes, À la foi que le Ciel a gravé dans leurs âmes.",
+          "C'est de vous que le Ciel à fait un juste choix, Pour la faire fleurir une seconde fois: Mais sauvez mon amour aussi bien que Venise, Ou j'oserai penser qu'Olympe me méprise.",
+          "Et toi Venise et toi que mon âme éperdue A méchamment thraie, et lâchement rendue Pardonne enfin te prie un aveugle transport, Qui me faisait choisir ainsi gouffre pour un port."
+        ]
+      },
+      "top_5_places": [
+        "Venise",
+        "Pologne",
+        "France",
+        "Tours"
+      ]
+    }
+  }
+}

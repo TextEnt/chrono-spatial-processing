@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "author": "Rosimond, Claude Rose",
+    "title": "L'Advocat savetier, par le sieur Scipion,...",
+    "publication_date": "1683",
+    "document_id": "bpt6k5628610x"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Jason",
+          "frequency": 7
+        },
+        "related_sentences": [
+          "Or, parmi ses Docteurs dont les science brille, On met au premier rang Balde, Lesquiquoquille, Bertolle, Déclapier, Théophile, Jason, Duanacursse, Alciat, Hypolite, et Papon Tribonien, Mernæ, Fulgosse, Dorathée, Rocheslaven, Ménard, Odoftet, Abudée, Macrobe, Imbert, Fabert, Lolive, Carondars, Louet, Dinno, Marcil, et l'Illustre Cujar Bref, Dépareils sçavants une longue Illiade, Qui tous, pour s'élever dans le suprême grade, Et remplir de leur noms, leur fameux tribunaux, En foncent, et leurs têtes, et leurs nez Doctoraux, Dans les digestes, lois, paragraphe, rubriques, Décretales, Versets, chapitres au tantiques.",
+          "enerace est ignorant, et ce seul mot bien dit, est fait passer d'abord pour un hommne d'esprit, jais il te faut marcher sur un ton gravissime, tant devant eur, parler en homme docticime, Citer avec en faces, et Jason, et Cusas, Auteurs, que ce vieillart, je crois, ne connaît pas. \n"
+        ]
+      },
+      "top_5_persons": [
+        "Jason",
+        "Sénèque",
+        "Crespin",
+        "Ro",
+        "OLIN"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 7
+        },
+        "related_sentences": [
+          "C'est que mon frère est propre, et sur tont en chauIule, Et craignant en ce lieu qu'on le trouva mal mis, Il a sait apporter sa forme de Paris \nPANCRACE\n Mais il est à propos touchant ce Mariage, De sçavoir si ma fille aura quelqu'avantage?",
+          "Quoi m'écrire à Paris, de venir promptement Joindre le nom d'Époux, aux ardeur, d'un Amant, Et vous voir à mes yeux destiné pour un autre",
+          "un homme en qui le savoir brille, Plus docte qu'Aristote, et qui dédans Paris A fait taire cent fois, les plus rares esprits.",
+          "Ayant su dans Paris quel homme vous étiez, Et par le bruit commun, ce que vous méritiez. \nPANCRACE\n Ah!",
+          "que je vous emComment vous portez -vous, depuis que dans Paris, J'étais orfèvre en cuire devant votre logis?"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "France",
+        "Rome"
+      ]
+    }
+  }
+}

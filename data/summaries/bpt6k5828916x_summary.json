@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "author": "Rotrou, Jean de",
+    "title": "L'hypocondriaque, ou Le mort amoureux , tragi-comédie.Dédiée a monseigneur le comte de Soissons. Par le Sr Rotrou.",
+    "publication_date": "1631",
+    "document_id": "bpt6k5828916x"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "M",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Après tous ces efforts, jalouse, ombre traîtresse, Le répot m'est acauv au sein de ma M aîtresse: Pour un seul des plaisirs qu'ensemble nous cueillons, Mon courage allumé fendreit des bétaillons.",
+          "M\n DC."
+        ]
+      },
+      "top_5_persons": [
+        "M",
+        "Seigneur",
+        "ISIDOR",
+        "CLEON",
+        "Seigneur"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Corinthe",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Elle est PERSIDE. \nÀLIASTE\n Près de Corinthe, en un jour si beau, Que Que on y verrait des appas au tombeau: Que ce lieu pour les morts même aurait dé lices, Aussi jamais le Ciel n'y versa ses malices;",
+          "Ces réponses obscures font résoudre ces deux Amants d'aller vers Corinthe pour app en fré des nouvelles, l'une de son serviteur, et l'autre de sa maîtresse; muis",
+          "Ce jeune Seigneur allant à Corinthe, Ville capitalle de Grèce, où était la Cour, rencontre sur les chemins deux Gentilshommes qui veulent enlever une Damoiselle;",
+          "C'est Corinthe, on me nuit pour peu qu'on me détourne, CLÉONICE.",
+          "C'est-là que Cléonice hors du bruit de Corinthe Savoure ces douceurs;"
+        ]
+      },
+      "top_5_places": [
+        "Corinthe",
+        "Paris",
+        "Grèce",
+        "Tages",
+        "Bergères"
+      ]
+    }
+  }
+}

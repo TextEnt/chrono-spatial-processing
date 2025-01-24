@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "author": "Passerat, François",
+    "title": "Amarillis petite pastoralle mêlée de récit, de musique et de danse... / par M. Passerat",
+    "publication_date": "1695",
+    "document_id": "bpt6k8528619"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Amarillis",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Mais je vois ce Berger, Honneur, fierté, vertu, daignez me protéger, Et ne permetez pas à l'amour de paraître. \nTIRCIS\n Puis-je vous demander, sans trop être indiscret, Qui vous force à chercher ainsi la solitude? \nAMA\n \nAMARYLLIS\n Me pourriez-vous, Berger, confiet en secret Le sujet important de votre inquiétude? \nTIRCIS\n ji tye certais apprends qu'on s'efforce à cacher, Mais on n'est pas certain d'en être longtemps maître. \n",
+          "AMARYLLIS\n On éprouve du sort les plus rigoureux coups Quand par un ner honneur on ert reudit à feindre. \nTIRCIS\n Sous les dehors trompeurs d'insensibilité J'ai caché jusqu'ici la plus ardente flamme. \nAMARYLLIS\n mar ces ceruts pompeur dorguen de de nerte, J'ai tâché d'étouffer les désirs de mon âme. \nTIRCIS\n Mais malgré mes efforts je connais en ce jour Qu'on ne peur résister au Dieu qui fait qu'on aime. \n",
+          "TIRCIS\n M Mirons-nous, Idas, on va finir la fête, E A inter ces beaux lieux Amarillis s'apprête, Quand un heureux destin me permet de la voir Le plaisir que je sens ne se peut concevoir;",
+          "AMARYLLIS\n Je n'ose me flatter de cet heureux espoir, Je crains tout, et mon cœur en cette inquiétude Pour calmer mes ennuis veut de la solitude, Laissez moi seule, allez, ne suivez point mes pas.",
+          "AMARYLLIS, Le doux printems de fleurs horncra prus la tête, Nos timides agueaux feront trembler les loups, L'orageux Occan n'aura plus de tempête, Quand je romprai des nœuds si charmant et si doux. \nTIRCIS\n "
+        ]
+      },
+      "top_5_persons": [
+        "Amarillis",
+        "Climène",
+        "Idas",
+        "IRIS",
+        "Diane"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Bergère",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Quand on a combattu, Bergère, assez longtemps, On peut enfin parler sans être téméraire."
+        ]
+      },
+      "top_5_places": [
+        "Bergère"
+      ]
+    }
+  }
+}

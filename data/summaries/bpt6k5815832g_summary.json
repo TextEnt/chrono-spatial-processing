@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Bordelon, Laurent",
+    "title": "Arlequin comedien aux Champs Elisées . Nouvelle historique, allegorique & comique",
+    "publication_date": "1692",
+    "document_id": "bpt6k5815832g"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Colombine",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Oui, ma fille, uns qualité la plut aimable que je ue trouve pas dans Octavio, et qutu ne pourras y rematquer toi-même, m'en1 cage à le poster à tout autte. \nCOLOMBINE\n C'est beaucoup d'argent, voilà la qualité aimable qui manque à Octavio, et dont votre petit Papa mignon veut parler: Mademoiselle, ce n'est pas des fleurettes que votre père veut qu'on vous compte, il veut qu'on vous conte des dus, ce n'est pas un siomme que votre père vous veut faire épouser, il veut vous faite épouser des éeus, il âme vous a pas mise, au monde pour posséder un beau mati, il vous a mise au monde pour possédet de beaux écus;",
+          "car quoi que je sois fort jeune, je sais bien que pour engager les hommes, c'est comme cela qu'il faut faite. \nCOLOMBINE\n Hélas, Mademoiselle, vous ne savez Picirl d Item lUltaiexifles e avent autant que vous sut cette matière, dès qu'elles commencut à se sentit. \nISABELLE\n Crois-tu, Colombine qu'il m'aime bien? \nCOLOMBINE\n Mais, Mademoiselle, pourquoi vouletous douter s'il vous aims?",
+          "j'espère qu'en cela, vous ne mesurerez pas mon goût sur le vue: car vous aimez de certains Livres barbâtes, qui fegardelst votre prolession, et qui sétaient un tourment pout moi, si j'étais obligée d'en lire seulement un page. \nCOLOMBINE\n Oquen, Maquemqnènei mqmneur vous fera achet la Diubletique d'Aristette pour vous divertir, ou l'Anie qui cause de Pribagore.",
+          "Je voulais seulement te demander si mon cœur soupirera encore longiems en vain pouf Octavio, et si tu ne trouvetas, pas quelque moyen de mollifier la duré de celui de mon père.  \n1152\n  E \nCOLOMBINE\n nin ilomuerple joii mott ouj Mademoiselle, si je savais faire de jolis mots comme cela, ils me tiendraient lieu de plus agréable mari du monde.",
+          "LE DOCTEUR, Tu sauras donc, Colombine, que si je lui ai résisté dans la passion qui lui cause tant de chagrin, c'est que j'ai remarqué qu'Octavio a autant d'indifférente pour elle, qu'elle a d'amour pour lui, etque c'est, un coquet qui ne la distingue d'aucune des autres filles à qui il en conte."
+        ]
+      },
+      "top_5_persons": [
+        "Colombine",
+        "ISABELLE",
+        "Arlequin",
+        "Colombine",
+        "Octavio"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Je puis tout faire allet de Paris à Rome en hue heure, pourvu que vous marchiei assez vite pour cela.",
+          "comme vous dvea un fils à Paris qui vour imite, à ce qu'on dit;",
+          "Liste geuterale des filoux, et leur distribution dans tous les quartiers de Paris AR ARLEQUIN",
+          "Acie Extrait DAr grâce et Privilège du Roi, donnc à Paris le 1o.",
+          "DAr grâce et Privilège du Roi, donnc à Paris le 1o."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "ARLEQUIN",
+        "Allemagne",
+        "Champagne",
+        "OTÁVIO"
+      ]
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "author": "Villiers, Claude Deschamps",
+    "title": "L'Apoticaire dévalisé, comédie burlesque ; suivi de Portrait d'une inconnue",
+    "publication_date": "1660",
+    "document_id": "bpt6k1090091g"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "M",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Mais donnez un petit de courage. \nM\n \nAMBROISE\n Votre esprit me paraît encor bitir roucieux. \nM\n \nROBERT\n Exculez-moi, le crois que le ine porte meux, \nM\n \nAMBROISE\n À quoi songez-vous donc? \nM\n \nROBERT\n Maitre Aibroise, une songe Qu'Agrimont a causé la douleur qui me ronge. \nM\n \nAMBROISE\n Pour avoir ce soupçon, surquoi vous fondez-vous? \nM\n \nROBERT\n Sur ce que maintesfois il m'a parlé chez nous Nous j'avais une Fille aussi sage que belle, Et que s'il était Prince, il n'épouserait qu'elle;",
+          ". \nM\n Robert et M \nAmbr\n ne paraissent qu'en cet endroit. \nLISANDRE\n C'est un étrange fait, qu'on ne puisse pas être Vne nuit en repos, sans qu'il faille connaître Des torts, et dé lits que font des garnements Qui troublent le Bourgeois de joments en ihomens. \nDAMIS\n Mhomeur, vous devriez bien rendre un peu plus sévère.",
+          "Cette petite adresse Nous mènera sans risque au logis du Gascon. \nLISANDRE\n Tu n'en reviendras pas sans des coups de bâton. \nM\n \nROBERT\n Accélérons un peu, car à qui mal endure Certes le moindre instant plus d' siècle enfin dure. \nLISANDRE\n Et nous nous retirons afin de revenir De tous tes carillons en un seul te punir;",
+          "In quarto, vous voulez que j'entende son Maître, de rous cioyez tremper au complot de ce traistr In quinto, vous voulez que s'il est convaincu, l'our réparation l'accuse soit pendu. \nM\n \nROBERT\n Prosecto, Seigneur le veux, et vous ferez justico Il s'appelle? \nLISANDRE\n \nM\n RODERI. \n",
+          "DAMIS\n Je te seconderai, ne te mets point en peine. \nLISANDRE\n Jusqu' à son retour mon bras est à la gêne. \nDAMIS\n Le voici, vous diriez d'âme vrai Nôtradamus À v \nM\n \nROBERT\n Fabrice, holà, soyez vigilantissimus;"
+        ]
+      },
+      "top_5_persons": [
+        "M",
+        "DAMIS",
+        "ISABELLE",
+        "Lucrece",
+        "Clarice"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Grâce et Privilège du Roi, donné à Paris L",
+          "Marchand Libraire à Paris,",
+          "La Scène est à Paris"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "France"
+      ]
+    }
+  }
+}

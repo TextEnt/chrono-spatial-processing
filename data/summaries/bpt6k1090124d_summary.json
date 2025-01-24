@@ -1,0 +1,47 @@
+{
+  "metadata": {
+    "author": "Donneau de Vizé, Jean",
+    "title": "Le Mariage de Bachus et d'Ariane, comédie héroyque",
+    "publication_date": "1672",
+    "document_id": "bpt6k1090124d"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Bachus",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Il est perm au Sieur D de faire imprimer, vendr et débiter une Pièce de Théâtre, inti tulée Le Mariage de Bachus et d'A riane, représentée sur le Théâtre d Marais Et défenses sont faites toutes Personnes, de quelque qualit et condition qu'elles soient, d'impri ver, faire imprimer, vendre et debl ter dite Pièce, fans le consentement de l'Exposant, où de ceux qui auron droit de jours, et ce pendant le temp et ace de dix années entières et ac plies, à compter du jour que la dite Pièce sera achevée d'imprime pour la première fois, à peine de six mille livres d'amende, payable sant déport par chacun des contre venants, confiscation des Exemplaires contrefaits, et de tous des, dommages et interests, à que plus à long ilest porté ausdites Lettres de PriviR9u Registré sur le Livre de la Communauté le 27. \nFévrier 1672\n Signé, THIERRY, Syndic.",
+          "Si j'écoutais à présent son ardeur, Et si je lui voulais mon cœur, Il pourrait soupçonnet que pour venger l'outrage Que me vient de faire un Volage, Je répondrais sitôt à ses désirs, Sans que pour lui l'amour excitât mes soupirs: Mais s'il faut enfin que je l'aime, Je ne le dois aimer qu'à cause de soins-même. \nBACHUS\n Je pamdone erpérer qu un jour Vous vous rendrez à mon ardante amour.",
+          "Si j'eus sur votre cœur la première victoire, En faisant qu'un Mortel fut aimable à vos yeux, Pour un amour plus glorieux, En faveur de Bachus perdez-en la mémoire: Sur tout n'ayez aucun effroi De ces noms d'Inconstante et de Beauté légère, Qu'à de tels changements on donne d'ordinaire, Et jetez-en la faute dessus moi.",
+          "Le Fils du Dieu qui lance le tonnerre Du plus galant de tous les Dieux Que l'on adore sur la Terre, Et qu'on respecte dans les Cieux, Quoi, Bachus, enfin qui doit être Tir beau, Toujours jeune, etsans cessevainqueur, orait y j'en ie fassant connaître, Quelque Beauté était dispute son cœur? \nBACHUS\n ",
+          "Ans recourir à tous vos artifices, Déesse, il vous serait aisé De faire que Bachus languit dans les suplices, Quand son sort le conduit au milieu des délices: Mais par malheur pour vous, je suis de son côté, Et Jupiter aussi, dont la toute-puissance Le saura mettre en sûreté Contre votre injuste vengeance:"
+        ]
+      },
+      "top_5_persons": [
+        "Bachus",
+        "ARIANE",
+        "Junon",
+        "Jupiter",
+        "Églé"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Athènes",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "On m'a dit que dedans Athènes"
+        ]
+      },
+      "top_5_places": [
+        "Athènes",
+        "Rome"
+      ]
+    }
+  }
+}

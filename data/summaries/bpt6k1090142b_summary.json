@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Scarron, Paul",
+    "title": "Le Prince corsaire, tragi-comédie",
+    "publication_date": "1663",
+    "document_id": "bpt6k1090142b"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Élise",
+          "frequency": 10
+        },
+        "related_sentences": [
+          "Où plutôt Seigneur crains tout, et Seigneur n'espère rien, Est-il un désespoir plus juste que le mien? \nCLARICE\n Mais Amintas lassé d'aimer qui le méprise, Peut un jour vous offrir ce que refuse Élise \nÀLCIONE\n Après les sentiments d'une noble fierté, Ou mon cœur contre même s'est tantôt omporté, Après avoir promis à masœur qui m'est chère, De résister comme elle aux volontés d'un Père, Lâche puis-ie trahir la fierté de mon cœur, Et plus lâche manquer de parole à ma sœur? \n",
+          "CLARICE, ÉLISE \nCLARICE\n E plus grand, le plus sier de tous vos ennemis, LEst douc ainsi Madame, à vos ordres soumis! \nÉLISE\n Prépare -toi, Clarice, à voir d'autres merveilles, Qui surprendront bien plus les yeux et les oreillet Cypre ne verra plus la fille de ses Roys, Redouter des Tyrans, et gémir sous leurs lois, Ma puissance en ces lieux ne sera plus bornée, Et j'y disposerai de mon libre Himenée, Mais que vois-je, grands Dieux SCÈNE IX.",
+          "ÉLISE\n Mintas, généreux même à ses ennemis, HTe tirera des feis comme il te l'a promis Mais, cher Prince, il est temps qu'Élise impatient Cesse enfin d'ignorer ta fortune inconstante, Et pourquoi si longtemps, et si proche de moi, Le faux nom d'Orômane abusa de ma foi. \nOROSMANE\n Quand la parfaite Élise aussi juste que belle, M'eut appris les desseins de son Père infidèle, Qui sur de spécieux, mais frivoles sujets",
+          "De tous ces longs malheurs qui me suivaient san cesse, Je ne conserve pas le moindre souvenir, Je perds même la peur de tous maux avenir, Et puis qu'enfin le Ciel permet que je vous voie, Je ne m'en plaindrai plus quelque mal qu'il m'ẽuoyt \nÉLISE\n Ne craignons rien du Ciel après un bien si doux, Ce ne peut-être en vain qu'il s'est changé pour nou",
+          "Conserve son respect heureux ou malheureux, C'est comme doit agit un Amant généreux, J'aime Élise, et mon âme à ses fers asservie, N'en sortira jamais qu'en sortant de la vie, Et toute autre beauté par des Sceptres offerts, La tenterait en vain de sortir de ses fers, Pourrais-je donc, Seigneur, épousant Alcionne, À sa sœur que j'adore ôter une Couronne?"
+        ]
+      },
+      "top_5_persons": [
+        "Élise",
+        "CLARICE",
+        "Amintas",
+        "Corsaire",
+        "Nicanor"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paphos",
+          "frequency": 10
+        },
+        "related_sentences": [
+          "Mais par mon fiss sauvé, par Paphos délivrée, Sa mort est seulement pour un temps différée, Si ne s'opposant plus au bonheur d'un Rival, Il ne consent sans feinte à cet Hymen fatal, Autrement contre lui toute chose est permise.",
+          "Que faisait ta valeur dans les murs de Paphos, Quand des Soldats sans Chef t'ont fait tourner le doj OROSMANE,ELISE, NICANOI SÉBASTE, CORSAIRES. \n",
+          "C'est perdre temps, Seigneur, en de vaines paroles Tandis que de Paphos tout le peuple étonné, se croit avec raison de nous abandonné.",
+          "Que vous y ravirez la liberté du choix, Orômane et les siens périront pour Élise Paphos suivra de pres a matonte surprise.",
+          "qu'était donc tantôt la tienne devenue, Quand tu gardais Paphos, et que tu l'as perdue?"
+        ]
+      },
+      "top_5_places": [
+        "Paphos",
+        "Cypre",
+        "Ville de Paris",
+        "Asie",
+        "Grèce"
+      ]
+    }
+  }
+}

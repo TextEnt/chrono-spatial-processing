@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "author": "Saint-Glas, Pierre de",
+    "title": "Les Bouts-Rimez, comédie",
+    "publication_date": "1682",
+    "document_id": "bpt6k1090188b"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Crispin",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "On fait à savoir à tous Poètes, prés et à ven, que le temps s'en va expirer dans un quart d'heure, de donnet es Sonnets sur les rimes qu'il a propoées, afin que s'il y en a encore quelqu'un faire enrôller, on ait à le présenter au lus vite à moi Crispin ici présent, Tamour de sa Compagnie de Bouts-Rimez.",
+          "Ah! \nCrispin\n Il faut voit dans les livres qui nous en restent les beaux Rondeaux, les belles Complaintes, les belles Balades, les beaux Lais, et les beaux Virelets pleins de belles pointes qui divertissaient les honnêtes gens, et le plus souvent tout cela en Acroces belles choses à la fois, ce serait trop.",
+          "Mais c'est qu'aves ra manière nouvelle de le faire tu me fait venir dans l'esprit quatre ou cinq autres be les modes pour les Sonnets, auxquelles ! veux donner cours tandis que le monde est en train, jur tout à une que je veux appeler des Anti-bouts-Rimez. \nCRISPIN\n Ah que cela sera beau!",
+          "On jugera au premier jour en cravate, il faut seulement que tu me lises avant toutes choses les Rimes à hauste voix, pour m'en bien remettre l'idée. \nCRISPIN\n Ô",
+          "Il faudra le faire mettre dans le Mercure Galant, qui se servira même de cette occasion, pour dire de toi cent autres louanges. \nCRISPIN\n Et il ne me connaît pas."
+        ]
+      },
+      "top_5_persons": [
+        "Crispin",
+        "Rimet",
+        "Lisette",
+        "Parafe",
+        "Monsieur"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Parlez-lui de Paris, des champs, de bled, de Foin, Parlez-lui bon Français, parlez-lui.",
+          "Ce Sonnet a été fait par quelqu'un qui n'a jamais été à Paris DO YMEYII.",
+          "La Scène est à Paris LES BOUTS"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "France",
+        "Parnasse",
+        "Chantilly",
+        "Ville de Paris"
+      ]
+    }
+  }
+}

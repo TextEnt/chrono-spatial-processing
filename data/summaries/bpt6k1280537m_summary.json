@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "George Dandin, ou le mary confondu, comédie par J. B. P. de Molière",
+    "publication_date": "1670",
+    "document_id": "bpt6k1280537m"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Claudine",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Vous méritez sans doute que toute autre destinée te le Giernt vous a point faite pour être la femme d'un paysan: G. DANDIN Plût au Ciel fût-elle la tienne tu changerais bien de langage: Rentrons, c'en éltanel, Il entre et ferme la porte CLAUDINE Madame, si vous avez à dire du mal de votre masi, déperchemrinto, ul il est tard.",
+          "? CLAUDINE non, non, son Mari n'est pas au logis, et puis, ce n'est pas autre qu'elle a le plus à ménager, c'est son père et sa mère, et pourvu qu'ils soient prévenus tout le reste n'est rien à craindre.",
+          "Il est fâcheux d'être contrainte d'oublier de telles injures mais quelle violence que je me fasse, c'est à dois de vous obelr, L'auvre mouton! \nCLAUDINE\n Mr DE SOTENVILLE Approchez, ANGELIQUE",
+          "-tu Claudine que je te donne le bon soir CLAUDINE Va, va, je le reçois de loin, et notre t'en renvoie autant CLAUDINE La porte s'est fermée.",
+          "Je n'ai pas osé envoyer de mes gens ma ma pauvre Claudine, il faut que sans te récompense des bons offices que je sais que tu m'as rendus."
+        ]
+      },
+      "top_5_persons": [
+        "Claudine",
+        "GEORGE DANDIN",
+        "Claudine",
+        "Dandin",
+        "Colin"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Nancy",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Mon nom est connu à la Cour, et j'eus l'ilonneur dans ma jeunesse de me signaler des premiers à l'arrière-bon de Nancy CLITANDRE A la bonne heure, Mite DE Sorblelen Monsieur mon père Jean-Gilles de Sotenville eut la gloire d'assister en personne au grand siège de Montauban J'en suis ravi."
+        ]
+      },
+      "top_5_places": [
+        "Nancy"
+      ]
+    }
+  }
+}

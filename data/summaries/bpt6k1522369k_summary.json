@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "author": "Rousseau, Jean-Baptiste",
+    "title": "Vénus et Adonis , tragédie en musique représentée par l'Académie royale de musique",
+    "publication_date": "1697",
+    "document_id": "bpt6k1522369k"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "MARS",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "MARS, BÉLLONE \nBÉLONE\n JE Ar mes empressements connais quel est mon zèle, Je vole où ta fureur m'appelle, Bien- tôt mes cruautéz appuyant ton courroux, Vont détruire un peuple coupable, Pour le cœur de Blone est-il un bien plus doux Qu'une vengeance impitoyable.",
+          "Ah faut-il que nos pleurs vous trouvent insensible, Et le courroux tues Duun doit-il être infléxible. \nMARS\n Non non, rien ne peut m'attendrir, Vos peuples insolents ne sauraient trop souffrir:",
+          "UN SUIVANT DE MARS Chœur et Troupe de Peuples de différents endroits de l'Île de Cypre LA JALOUSIE Suite de la Jalousie, les Soupçons, le Dépit, la Fureur, la Haine, etc.",
+          "Prenez pitié de notre peine, Dieux puissants que nos pleurs apaisent votre haine. \nMARS\n se vou a tes vry pieins d'horreur, Que le montre déjà fait sentir sa fureur.",
+          "IVANT DE MARS Un cœur qui s'abandonne à son inquiétude, Se repent bien souvent d'en avoir trop appris, Et peu d'Amands savent le prix D'une flatteuse incertitude."
+        ]
+      },
+      "top_5_persons": [
+        "MARS",
+        "Venus",
+        "VENUS",
+        "Mars",
+        "Adonis"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paphos",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Je vais quitter ces lieux pour me rendre à Paphos, Je jouirai bientôt de l'heureux avantage De revoir le Dieu qui m'engage.",
+          "Les Peuples de Paphos s'assemblent dans ce jour Pour célébrer celui de ma naissance:"
+        ]
+      },
+      "top_5_places": [
+        "Paphos",
+        "MARS",
+        "Thrace",
+        "Belone"
+      ]
+    }
+  }
+}

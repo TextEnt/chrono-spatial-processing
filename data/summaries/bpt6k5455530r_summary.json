@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "author": "Claveret, Jean",
+    "title": "Le ravissement de Proserpine . Tragédie",
+    "publication_date": "1640",
+    "document_id": "bpt6k5455530r"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Proserpine",
+          "frequency": 8
+        },
+        "related_sentences": [
+          "Et l'on devait loger au plus beau lieu du monde, Celle dont la beauté n'eût jamais de seconde. \nPROSERPINE\n Vous me raillez toujours, me donnant des appas, Que mou teint, mon visage, et mon esprit n'ont pas, Mais du moins il est vrai quecette Isle se pare, De tout ce que la terre eût jamais de plus rare, Q on Trimiempseternet y parmi des fleurs, Dont lesmail éclatant ne se voit point ailleurs. \nVENUS\n Siton Isle est féconde en de si belles choses, Si dans son large sein tant de fleurs sont écloses, Si sa riche abondance à vaincu les désirs, N'en don ju pas goûter tes plus parfaits plaisirs, Sans passer tes beaux jours dans cette humeur austère, Captère en une tour: ANOJERIEE.",
+          "Sus, que toute ma cour à le parer s'applique, Et pour vous faire voir que la joie est publique, Que l'horreur de la nuit quitte la place au jour, Qu'on arrache Iitie à son gourmand vautour, Qu'on détache Ixion, que l'altéré Tantale S'enivre à la santé de la Reine infernale, Que Sisiphe à présent ne se puisse fâcher, Ne sentant plus sur lui retumber son rocher, Que dans ces jours heureux la troupe Dande Quitte le soin d'emplir un tonneau toujours vide, Et que pour être enfin lui faire voir Plus preside ou l'on n'en vit iamais: \nPROSERPINE\n ",
+          "Sur tout donc qu'on se garde en ma maison divine D'enseigner à Ceres lesort de Proserpine Car quand l'audacieux sortirait de mon sang, Quand il aurait au ciel l'honneur du second rang, Fût-il le plus chéri de toute ma famille, Fût-ilmon fils, ma sœur, ou ma femme, ou ma fille: Je jure par la paix, ce lien précieux, Par qui seul sont unis l'enfer, la mer, les cieux, Que ce foudre élancé punira son audace, Que ainsi l'affligera y d'une telle disgrâce, Qu'il se plaindra du sort de n'être pas mortel;",
+          "On ne voit point déclat que le sien n'éblouisse, Mais pour la posséder, il faut qu'on la ravisse, C'est à vous qu'appartient cet effort glorieux, Désia pour vous aider Venus quittant les cieux Avec un ordre exprès est allée en Sicile, L'attirer surles fleurs dont se pare cette Isle: Janah que promptementi trai par l'Hivers, Dire aux Diuinités des terres et des mers, Qu'on ne découvre point le rapt de Proserpine, Si l'on ne veut déplaire à la grandeur divine.",
+          "Mais avant que partir, Ô vous, qui m'avez fait à mes maux consentir, Vous, qui me possédez, triste et charmante Reine, Consentez, qu'Ascalaphe après moi vous amène, furez moi par Ceres de faire exactement, Tout ce qu'il vous dira par mon commandement, Et de n'approcher point, s'il ne vous sert de guide, L'auguste et sacré trône où Jupiter préside, Après cela, ma Reine, à toutie me sousmets, à tout promettez -vous? \nPROSERPINE\n "
+        ]
+      },
+      "top_5_persons": [
+        "Proserpine",
+        "PLUTON",
+        "CERES",
+        "Pluton",
+        "Jupiter"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Sicile",
+          "frequency": 8
+        },
+        "related_sentences": [
+          "On ne voit point déclat que le sien n'éblouisse, Mais pour la posséder, il faut qu'on la ravisse, C'est à vous qu'appartient cet effort glorieux, Désia pour vous aider Venus quittant les cieux Avec un ordre exprès est allée en Sicile, L'attirer surles fleurs dont se pare cette Isle: Janah que promptementi trai par l'Hivers, Dire aux Diuinités des terres et des mers, Qu'on ne découvre point le rapt de Proserpine, Si l'on ne veut déplaire à la grandeur divine.",
+          "C'est la rare beauté qu'en faveur d'hyménée, Les destins, des longtemps, aux enfers ont donnes Or tandis que sa Mère exige des mortels, Les honneurs qu'on doit rendre à ses fameux Autels, Et qu'elle là cachée en un lieu de Sicile, Qu'elle crait pour sa garde un imprenable asile Choisi, pour l'éblouir, tes plus vives couleurs.",
+          "La scène est au Ciel, en la Sicile et aux enfers, ou l'imagination du lecteur se peut représenter une certaine espèce d'vnité de lieu, les concevant comme une ligne perpendiculaire du ciel aux enfers.",
+          "C'est la même beauté que le Dieu des enfers ravit dans la Sicile, et dont il ne pût posséder les bonnes grâces: Aussi les Dieux fabuleux n'ont point de qualités qui la puissent toucher;",
+          "Le respect de vos lois en Sicile domine, Elle s'est bienouverte au rapt de Proserpine, Mais sans favoriser ce barbare dessein;"
+        ]
+      },
+      "top_5_places": [
+        "Sicile",
+        "France",
+        "Paris",
+        "Rome"
+      ]
+    }
+  }
+}

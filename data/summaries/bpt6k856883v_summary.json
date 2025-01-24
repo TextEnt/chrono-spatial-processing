@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": null,
+    "title": "La Bourgeoise Madame. - Comédie nouvelle",
+    "publication_date": "1685",
+    "document_id": "bpt6k856883v"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "MAD",
+          "frequency": 12
+        },
+        "related_sentences": [
+          "Ne vous moquez-vous point? \nCHAMPAGNE\n C'est la vérité pure, Le Garcon rapmtemme ru dit en sortant, Et de plus tous les jours qu'elle en faisait autant. \nMAD\n \nMARTIN\n Cela n'est pas mêchant. \nCHAMPAGNE\n Ce n'est pas une affaire, Quania on est une fois la femme d'un Notaire, On sait bien d'autres tours, on n'en manque jamais zeur cuve en cône paus quontout le Falais. \nMAD\n \nMARTIN\n Avez-vous rencontre Madame Pinçonmere \nCHAMPAGNE\n ",
+          "C'est donc cela, car je n'en ai point d'autre, Il s'est pourtant trompé, mon cher, car tous mes gens Me servant comme il faut, sont encore céans, Il ne m'en faudra point de toute la semaine. \nCHAMPAGNE\n Madame, j'attendrai non sans beaucoup de peine, Car je m'estimerais un très-heureux mortel, D'être dès à présent votre Maître d'Hôtel. \nMAD\n \nMARTIN\n bas.",
+          "Outre que mon visage est trop blanc pour cela, Mon pays produit-il de ces animaux-là, Qui diable a jamais vu des Mores de Champagne \nMAD\n \nMARTIN\n Mais de quel pays donc sont ces gens? \nCHAMPAGNE\n D'Allemagne. \nMAD\n \nMARTIN\n Je ne le savais pas encore en vérité, s'allais tout de ce pas, si vous l'eussiez été, Sur un collier d'argent faire graver mes armes.",
+          "Monsieur me prend pour elle, et me donne de plus etuere ce qu' are vous Je sgnol y ul ceude \nISABELLE\n Madame elle est à vous, vous pouvez la reprendre. \nFANCHON\n Gardez-vous, s'il vous plaît, Madame de me rendre. \nMAD\n \nMARTIN\n Puis qu'avec-vous, Madame, elle se trouve bien Vous pouvez la garder je ne m'oppose à rien. \nFANCHON\n ",
+          "Elle a cru que j'étais à quelque Ambassadeur: Elle m'a demandé le nom de ma Maîtresse, j'ai dit que je relevais Madame la Comtesse, De S. \nMartin\n Hé bien un autre un peu plus sot, De Madame Martin aurait tranché le mot, Mais. \nMAD\n \nMARTIN\n je ne touurais pas pour quarante pistoles Que vous n'eussiez point dit ces charmantes paroles: Madame la Comtesse?"
+        ]
+      },
+      "top_5_persons": [
+        "MAD",
+        "CHAMPAGNE",
+        "CHAMPAGNE",
+        "FANCHON",
+        "M"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Champagne",
+          "frequency": 12
+        },
+        "related_sentences": [
+          "-tu A venir nous troubler? \nCHAMPAGNE\n Hé qui diable l'eût cru, Je viens dedans ce lieu pour vous rendre service, J'entends des gens, je crois vous rendre un bon office, En les chassant d'ici, j'entends qu'ils sont plusieurs, Je suis seul, et croyant que ce sont des voleurs: Je contrefais le guet vous me graissez la patte, Vous me reconnaissez, votre fureur éclatte, Voilà tout, quel malheur en est-il arrivé.",
+          "Outre que mon visage est trop blanc pour cela, Mon pays produit-il de ces animaux-là, Qui diable a jamais vu des Mores de Champagne \nMAD\n \nMARTIN\n Mais de quel pays donc sont ces gens? \nCHAMPAGNE\n D'Allemagne. \nMAD\n \nMARTIN\n Je ne le savais pas encore en vérité, s'allais tout de ce pas, si vous l'eussiez été, Sur un collier d'argent faire graver mes armes.",
+          "Il n'en faut plus douter: c'est Champagne avait-même Quel plaisir n'ai-je pas de voir qu'un Comte m'aime? \nCHAMPAGNE\n Il doit épouser cette Dame malgré tous les empêchements d'un certain Marquis qui le traversera dans son dessein: mais le mariage ne se pourra jamais conclure que le Marquis n'ait épousé sa première Maîtresse.",
+          "Reous demeurons ici pour lui jouer d'un tour, Cette nuit me promet quelque bonne aventure, Je sens démangeaison de faire ici capture, Prenons encore un coup l'air du guet et la voix, J'en dois être content pour la première fois. \nMAD\n MARTIN, touchant Champagne qu'elle prend pour le Marquis.",
+          "CHAM \nCHAMPAGNE\n Du nom de mon pais? \nMAD\n \nMARTIN\n Quel pays? \nCHAMPAGNE\n de Qnampagne s 'où viennent les bons vins, vrai pays de cocagne. \nMAD\n \nMARTIN\n Hé bien, Champagne soit, puisqu'il vous plaît ainsi, Êtes-vous More? \nCHAMPAGNE\n Moi?"
+        ]
+      },
+      "top_5_places": [
+        "Champagne",
+        "Paris",
+        "Versaille",
+        "Rome",
+        "Toulouse"
+      ]
+    }
+  }
+}

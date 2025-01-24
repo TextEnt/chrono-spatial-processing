@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "author": null,
+    "title": "Les Thuilleries trage-comedie",
+    "publication_date": "1636",
+    "document_id": "bpt6k1513094n"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Doris",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Mais sachez qu'avez-tôt que je vous eus quitte AT LES IIVIELERILO Je fus voir ma Doris, qui suivant sa coutume, Après quelque discours du feu qui nous consume, Me demande en secret si vous deviez venir, Et qu'elle désirait de vous entretenir, Pour vous donner avis que sur le soir sans crainte, Vous verriez Clorimène quelque moins de cõtrainte.",
+          "DORANDRE\n Elle aime toutefois Doris qui m'aime bien, Qui Qui dit nos secrets, qui ne lui cache rien. \nÀLCIDON\n C'est le plus grand malheur que sans trouve en ma flamme, Qu'elle approuve en autrui, ce qu'e elle elle blâme. \n",
+          "C'est le plus grand bonheur que j'eusse osé prétendre. \nDAPHNIDE\n Clorimène Alcidon, Doris aura Dorandre, Et moi -moi trouverai si On veux un parti, Mais de sçay bien à qui sera le démenti.",
+          "L'amour en est banni pour donner à ma haine Dans le mal d'Alcidon, le mal de Clorimène Que Doris et Dorandre en soient participants, Ils ont ri trop longtemps tout quatre à mes dépenses.",
+          "Mais me vois avancer ce me semble Doris Le visage fort triste, il sied fort mal aux Dames, Dont les yeux nous font voir de si puissantes flammes."
+        ]
+      },
+      "top_5_persons": [
+        "Doris",
+        "Thuilleries",
+        "Seigneur",
+        "Ure",
+        "Clameur de Haro"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Votre absence fit naître en moi de l'assurance, Je le pris et le lus avec quelque espérance: Toutefois quand Rome vis que c'était mon rival, Qui ne vous écrivait que pour croître mon mal.",
+          "Toi qui sais que Rome l'aime, et que personne ne respire, Que de vivre pour lui dans l'amoureux Empire.",
+          "N'avez -vous pas encore quelque lettres de Rome C'est par la que On veux commencer son ennui.",
+          "Je n'eusse jamais cru de Rome cette imposture."
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Louvre",
+        "France",
+        "Paris",
+        "Seine"
+      ]
+    }
+  }
+}

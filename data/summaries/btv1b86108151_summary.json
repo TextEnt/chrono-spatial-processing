@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Racine, Jean",
+    "title": "Mithridate , tragédie par M. Racine",
+    "publication_date": "1673",
+    "document_id": "btv1b86108151"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Pharnace",
+          "frequency": 28
+        },
+        "related_sentences": [
+          "Comment m'offririez-vous l'entrée et la Couronne D'un Pays que la Guerre, et leur Camp environne, Si le traité secret qui vous lie aux Romains Ne vous en assurait l'Empire et les chemins? \nPHARNACE\n De mes intentions je pourrais vous instruire, Et je sais les raisons que j'aurais à vous dire, Si vous rendre laissant ces vains déguisements Vous m'aviez expliqué vos propres sentiments.",
+          "Il ajoute que ce Projet fut le prétexte dont Pharnace se servit pour révolter toute l'Armée, et que les Soldats effrayez de l'entreprise de son Père, la regardèrent comme le désespoir d'un Prince qui ne cherchait qu'à périr avec éclat.",
+          "j'ai vu de toutes parts, Vaincus, et renversez les Romains, et Pharnace, Fuyant vers leurs vaisseaux abandonner la place, Et le Vainqueur vers nous s'avançant de plus près, À mes yeux éperdus a montré Xipharés.",
+          "Rinces, toute la Mer est de vaisseaux couverte, 1 Et bientôt démentant le faux bruit de sa mort Mithridate lui-même arrive dans le Port. \nMithridate\n MONIME. \nXIPHARES\n Mon Père! \nPHARNACE\n Ah!",
+          "Quoi l'amour de régner en sa place Rend déjà Xiphares ennemi de Pharnace \nXIPHARES\n Non, je ne prétends point, cher Arbate, à ce prix D'un malheureux Empire acheter le débris."
+        ]
+      },
+      "top_5_persons": [
+        "Pharnace",
+        "Xiphares",
+        "Mithridate",
+        "Mithridate",
+        "ARCAS"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 28
+        },
+        "related_sentences": [
+          "Pour tenter encor de nouvelles conquêtes Quand der ne verrais pas des routes tout prêtes, Quand le sort ennemi m'aurait jeté plus bas, Vaincu, persécuté, sans secours, sans États, Errant de mers en mers, et moins Roi que Pirate Conservant pour tous biens le nom de Mithridate, Apprenez que suivi d'un nom si glorieux Par tout de l'Univers j'attacherais les yeux, Et qu'il n'est point de Rois, s'ils sont dignes de l'être, Qui sur le trône assis n'envient peut-être Au dessus de leur gloire un naufrage élevé, Que Rome, et quarante ans ont à peine achevé.",
+          "C'est moi, qui les rendant l'un de l'autre jaloux, Vins allumer le feu qui les embrase tous, Tison de la Discorde, et fatale Furie, Que le Démon de Rome a formée et nourrie.",
+          "Ce Fils victorieux que vous favorisez, Cette vivante image en qui vous vous plaisez, Cet Ennemi de Rome, et cet autre vous-même Enn ce Xipharez que vous voulez que j'aime.",
+          "Ainsi ce Roi, qui seul a durant quarante ans Lassé tout ce que Rome eut de Chefs importants Et qui dans l'Orient balançant la fortune Vengeait de tous les Rois la querelle commune.",
+          "Nfin après un an, tu me rêvais, Arbate, ENon plus comme autrefois cet heureux Mithri date, Qui de Rome toujours balançant le destin, Tenais entre-elle et moi l'Univers incertain."
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Monime",
+        "Bosphore",
+        "Grèce",
+        "Pharnace"
+      ]
+    }
+  }
+}

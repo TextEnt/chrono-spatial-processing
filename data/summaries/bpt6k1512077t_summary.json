@@ -1,0 +1,47 @@
+{
+  "metadata": {
+    "author": "La Motte, Antoine de",
+    "title": "Amadis de Grèce, tragédie [par A. Houdar de La Motte], représentée par l'Académie royale de musique",
+    "publication_date": "1699",
+    "document_id": "bpt6k1512077t"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Melisse",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Des Magiciens viennent, à la voix de Melisse, et se préparent à servir sa fureur. \nMÉLISSE\n Faites naître en ces lieux des Monstres effroyables, Qu'on n'y respire que des feux.",
+          "reçut à tous tes autres charmes, Lui, pour qui Melisse en ce jour Ma vu braver sa fureur et ses larmes. \nMÉLISSE\n ",
+          "Il tire son épée pour s'en frapper Melisse s'en saisit. \nMÉLISSE\n Arrêtez, Amadis AMADIS.",
+          "Répondez, en ces lieux à de tendres désirs, Melisse sent pour vous la flamme la plus belle;",
+          "du moins, si sur vous leur voix est sans pouvoir, Cédez à celle de Melisse AMADIS."
+        ]
+      },
+      "top_5_persons": [
+        "Melisse",
+        "Amadis",
+        "PRINCE DE",
+        "Apollon",
+        "Themis"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Les Arts Riches par toi des beautés souveraines Qu'ils eurent autrefois dans Rome et dans Athènes"
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Athènes"
+      ]
+    }
+  }
+}

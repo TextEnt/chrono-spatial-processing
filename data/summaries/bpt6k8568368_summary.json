@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "author": "La Roque, Siméon-Guillaume de",
+    "title": "La Chaste bergere. Pastorale nouvelle. De l'invention du sieur de La Roque,...",
+    "publication_date": "1629",
+    "document_id": "bpt6k8568368"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Coridon",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "ARDENIE\n Coridon c'est chose assurée Que Lucile s'est retirée Dans le temple des chastes vœux, Ayant ja coupé ses cheveux, Et fait le serment qu'on doit faire A ce saint et sacré mystère, Mettant dessous les pieds soudain Le monde et tout espoir mondain: Tu sais la loi qu'on y observé, Et comme l'entre on conserve, Coridon, et ne puis montrer Qu'homme mortel y puisse entrer, Si tu veux que sans te déguise Pour aider à ton entreprise, Je le ferai soudainement: Je prendrai un accoutrement De ma sœur qui est de ma taille, Toi de la tienne, et ne t'en chaille Nous ne serons pas reconnus.",
+          "Je cours au temple de Diane Pour n'en ouïr jamais parler, Ne vous y pouvant consoler, Cherchez un autre que Lucile, De qui l'humeur douce et facile Vous puisse éteindre cette ardeur, Et fuyez l'étrange froideur De quoi ma poitrine est remplie, Et me laissez à vous supplie, Car je dedans ce chemin Alexis, Flora et Celin, Qui pourraient penser quelque chose, Çest pourquoi, Coridon, ie n'ose Que plus long-temps.",
+          "ne vois-je pas, ma compagne, I JAu travers de cette campagne S'en aller droit à nos forêts, Avec ses chiens et ses rets, Le beau Coridon qui surpasse Adonis des traits de sa face, Ayons le plaisir aujourd'hui De nous en aller auec quelque Prendre quelque bête sauvage: Laissons un peu au pastur age Notre doux et frisé troupeau Le long de ce plaisant ruisseau.",
+          "Et c'est pourquoi vous devez croire Que ie sçay la présente histoire De ces amants que vous voyez p- Que les ouront ie Et rendu leur peine inutile: Coridon saches que Lucile \" Est ton sang et ta propre sceur, De cela tu dois être sûr, Et soudain éteindre en ton âme Cette Cole ardeur qui t'enflamme, Bannissant cette passion, Transportant ton affection A cette constante",
+          "Et donc sans plus en parler Laissons maintenant aller Coridon et Ardénie Avec la joie infinie De jouir de ce désir Qui donne tant de plaisir: Laissons Lucile et Damette Que l'amoureuse sagette Ne saurait plus entamer, Puis qu'elles veulent aimer Ce lieu saint qui les convie De vivre une chaste vie:"
+        ]
+      },
+      "top_5_persons": [
+        "Coridon",
+        "LUCILE",
+        "ALEXIS",
+        "LUCILE",
+        "CLAUDIN"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "PARIS",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "PARIS,"
+        ]
+      },
+      "top_5_places": [
+        "PARIS",
+        "Arcadie",
+        "Bergères",
+        "Rome"
+      ]
+    }
+  }
+}

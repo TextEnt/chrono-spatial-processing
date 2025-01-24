@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Amphitryon, comédie par J. B. P. de Molière",
+    "publication_date": "1669",
+    "document_id": "bpt6k12805529"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Amphitryon",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Et tandis qu'au milieu des Beotiques Plaines, Amphitryon, son Épous, Commande aux Troupes Thebaines, Il en a pris la forme, et reçoit là-dessous Un soulagement à ses peines, Dans la possession des plaisirs les plus doux.",
+          "Ou bien que de Seigneur-même, il soit venu sans guide, Vers celle qu'il a sçu qu'on en voulait parer. \nAMPHITRYON\n Ô Dieux, dont le pouvoir sur les choses preside, Quelle eit cette atenture!",
+          "Et me voilà déterminée, A souffrir qu'en ce jour, nos liens soient rompus. \nAMPHITRYON\n Après l'indigne affront que l'on me fait connaître, C'est bien à quoi, sans doute, il faut vous préparer.",
+          "Sosie, un Moi, de vos ordres jalous, Que vous avez du Port envoyé vers Alcméne, Et qui de nos secrets à connaissance pleine, Comme le Moi qui parle à Vous. \nAMPHITRYON\n Quels contes!",
+          "Il n'en sera, Monsieur, que ce que vous voudrez. \nAMPHITRYON\n Çà, je veux étouffer le courroux qui m'enflamme, Et, tout du long, t'oüir sur ta Commission."
+        ]
+      },
+      "top_5_persons": [
+        "Amphitryon",
+        "Jupiter",
+        "Mercure",
+        "JE",
+        "M"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Thebes",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Thebes en a pour moi de tout autres que vous: Et je vais en trouver, qui partageant l'injure, Sauront prêter la main à mon juste courrous.",
+          "SOSIE, Valet d'Amphitryon ARGATIPHONTIDAS, NAUCRATES, PDLIDAS, POSICLES, La Scène est à Thebes, devant la Maison d'Amphitryon AMPHITRYON, COMÉDIE.",
+          "Et les remercier des succès glorieux, Dont Thebes, par son Bras, goûte les avantages."
+        ]
+      },
+      "top_5_places": [
+        "Thebes",
+        "Thebe",
+        "France",
+        "V",
+        "Rome"
+      ]
+    }
+  }
+}

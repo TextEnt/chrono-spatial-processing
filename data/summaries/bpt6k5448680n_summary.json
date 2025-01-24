@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Quinault, Philippe",
+    "title": "Atys , tragedie en musique. Ornée d'entrées de ballet, de machines, & de changements de theatre. Representée devant Sa Majesté à Saint Germain en Laye, le dixiéme jour de janvier 1676",
+    "publication_date": "1676",
+    "document_id": "bpt6k5448680n"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Cybele",
+          "frequency": 18
+        },
+        "related_sentences": [
+          "Va songe à mon hymen, et vois si tout est prêt, Eaissevmei jeut tei ,la Btesste paraisl, : DOEIURSECONDE CYBELE, CELUNS, MÉLISSE, Troupe de Prêtresses de Cybele \nCYBELE\n E veux joindre en ces lieux la gloire et l'abondance, D'un Sacrificateur je veux faire le choix, Et le Roi de Phrygie aurait la préférence Si je voulais choisir entre les plus grands Rois.",
+          "et mon choix te surprend? \nMÉLISSE\n Al ys tvous doit peaucoup, et son vonneur est grand, \nCYBELE\n J'ai fait encor pour lui plus que tu ne peux croire. \nMÉLISSE\n Est-il pour un Mortel un rang plus glorieux? \nCYBELE\n Tu ne vois que sa moindre gloire;",
+          "Les Divinités des Bois et des Eaux, avec les Coribantes, honorent le nouvel Arbre, et le consacrent à Cybele Les regrets des Divinités des Bois et des Eaux, et les cris des Corybantes, sont secondés et terminés par des tremblemens de Terre, par des Éclairs, et par des éclats de X oherre.",
+          "CYBELE\n Sangaride est aimable, Atys peut tout charmer, Ils témoignent trop s'estimer, Et de simples parents sont moins d'intelligence: Ils se sont aimés dès l'enfance, Ils pourraient enfin trop s'aimer.",
+          "Il faut tout un cœur pour C'ybele, et peine tout te mien peut fussire à lAmour, \nCYBELE\n Tortez à votre Ami la première nouvelle De l'honneur éclatant ou ma faveur l'appelle."
+        ]
+      },
+      "top_5_persons": [
+        "Cybele",
+        "Atys",
+        "Flore",
+        "DORIS",
+        "CYBELE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Cybele",
+          "frequency": 18
+        },
+        "related_sentences": [
+          "Va songe à mon hymen, et vois si tout est prêt, Eaissevmei jeut tei ,la Btesste paraisl, : DOEIURSECONDE CYBELE, CELUNS, MÉLISSE, Troupe de Prêtresses de Cybele \nCYBELE\n E veux joindre en ces lieux la gloire et l'abondance, D'un Sacrificateur je veux faire le choix, Et le Roi de Phrygie aurait la préférence Si je voulais choisir entre les plus grands Rois.",
+          "et mon choix te surprend? \nMÉLISSE\n Al ys tvous doit peaucoup, et son vonneur est grand, \nCYBELE\n J'ai fait encor pour lui plus que tu ne peux croire. \nMÉLISSE\n Est-il pour un Mortel un rang plus glorieux? \nCYBELE\n Tu ne vois que sa moindre gloire;",
+          "Les Divinités des Bois et des Eaux, avec les Coribantes, honorent le nouvel Arbre, et le consacrent à Cybele Les regrets des Divinités des Bois et des Eaux, et les cris des Corybantes, sont secondés et terminés par des tremblemens de Terre, par des Éclairs, et par des éclats de X oherre.",
+          "CYBELE\n Sangaride est aimable, Atys peut tout charmer, Ils témoignent trop s'estimer, Et de simples parents sont moins d'intelligence: Ils se sont aimés dès l'enfance, Ils pourraient enfin trop s'aimer.",
+          "Il faut tout un cœur pour C'ybele, et peine tout te mien peut fussire à lAmour, \nCYBELE\n Tortez à votre Ami la première nouvelle De l'honneur éclatant ou ma faveur l'appelle."
+        ]
+      },
+      "top_5_places": [
+        "Cybele",
+        "Fleuve",
+        "Cybele",
+        "Saint Germain en Laye",
+        "PARIS"
+      ]
+    }
+  }
+}

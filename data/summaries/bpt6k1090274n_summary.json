@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Borée, Vincent",
+    "title": "Les Princes victorieux, tragedies françoises [suivi de] Les Peintures morales",
+    "publication_date": "1627",
+    "document_id": "bpt6k1090274n"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Cyrus",
+          "frequency": 20
+        },
+        "related_sentences": [
+          "Et bien, soit, allons donc user de ce moyens Mais voici de sa part quelque Achemenien, SCÈNE -TROISIÈME, ARSACE, AMBASSADEUR pour Cyrus Rand' Reine, député du plus grand ?  du monde, Et l'vnique bientôt, si le sort le seconde, Je te viens à présent ouvrir sa volonté, Et te faire avouer son immense bonté, Pouvant entièrement exterminer le Scythe, Après avoir défait ton puissant exercite, Il ne l'a pu souffrir, sa grande piété L'a vaincu, quoi qu’il fût justement irrité.",
+          "Que \nCYRUS\n Dopuis que je commence à connaître les armes, J'ai su qu'on estimait les Scythes bons gendarmes: Leur valeur, qu'on a vu dans l'Asie éclater M'oblige à les vouloir d'autant plus affronter: Les Lydiens domptez, la Syrie, le Mède Ne sauraient comptenter l'ardeur qui me possède: Ma gloire, qui des accroître son pouvoir, Ueut des Palmes encor sur les Scythes avoir: Allez, faites soudain sçauoir à votre Reine, Que tu tu vais livrer une guerre inhumaine:",
+          "En fin mon bon avis fait qu'on me crut devin, Nous le trouvons chargé de viande et de vin, Pêle-mêle gîtant au milieu de la plaine, Où le Persan avait fait rendre l'âme sans peine, Pardonnant seulement aux plus grands et au Roi, Lesquels nous t'amenons pour vivre sous ta loi. \nCYRUS\n Vraiment c'est à présent, qu'il faut que tu confesse, Qu'on ne voit rien d'égal à ta rare prouesse, .",
+          "ce De m on peuple le bien, c'est mon celui but, Ô l' eupauu m pire salut, \nCYBARE\n que déju pius ayant un von Lyphyre, \nCYRUS\n C'est pourquoi votre crains tant de perdre mon navire L'on remarque toujours, que le nocher prudent Même le ciel serain, au timon est pendant: \" Lun doit vivre toujours avec méfiance, »Si l'on veut longuement régner en assurance. \n",
+          "Cambise file de Cyrus \nCresus\n \nCYRUS\n Es pas intestins, la victime fuyar de, Ce comète flambant, qui du Ciel nous regarde, Ces taureaux échappez de nos Autels sanglanQui courent la campagne horriblement bevy Ces songes redoublés, ces spectres ordinaires De me présagent rien que les destins contrair Preserue, Jupiter, mon sceptre de malheur, Et ne redoute point l'effort de ma valeur."
+        ]
+      },
+      "top_5_persons": [
+        "Cyrus",
+        "Memnon",
+        "Achille",
+        "Oriane",
+        "Alin"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rhodes",
+          "frequency": 20
+        },
+        "related_sentences": [
+          "Au reste, les Frères Hospitaliers ne voulans point que le Prince s'en retournât sans avoir d'eux quelque chose, en mémoire du bienfait, qu'ils avaient reçu de Seigneur, le prièrent de porter ces quatre lettres, F. E. R. T. en ses armes, qui veulent autant à dire en Latin, que Fortitudo eius Rhodum tenuit: c'est à dire, que sa force a obtenu Rhodes Ce Q Roi ce grand Amé leur promit de faire: d'où vient, que nous les voyons à l'entour de l'écu de cette si noble, si puissante, et si ancienne Maison  I LE PAR ÂME QUATRIÈME COMTE DE SAVOIE, SUR Cenonsan prêmer Empereur des Turcs.",
+          "Qui Rhodes subiuguant rapporta tant de gloire, Et qui dans les combats ardant comme un lion Occit plus d'ennemis que n'en eut lion: Il n'eut pas si tôt dit, quand on vois apparaître L'honneur des grands Guerriers, qu'il me semble connaître: Plein d'ardeur ainsi m'informe à l'instant de son nom, Et at te quit u fait pivobergue dre remon, Ce Héros (respõd-i’il) qui tout seul se promène, Féit trembler les pervers sous le nom de D MAINE, Le Français le sait bien, qui vit en mille paya Le Rebelle opposer vainement ses remparts, Et qui plaignant toujours sa maudite infor.",
+          "Qu'ores ne le chassant de Rhodes usurpée, L'Europe va céder au fil de son épée: On le tient de la sorte, et le crois fermement: C'est pourquoi, mes amis, nous convient promptement L'assaillir dereches avec plus de courage: Ainsi nous prévenons une seconde rage:",
+          "Après donc qu'il eut assemblé le meilleur de ses États, et composé une armée digne de son courage, il s'embarque et navige en telle sorte, qu'en peu de temps il arrive à Rhodes Foulques avait été déjà repoussé cinq ou six fois, et avec des pertes incomparables.",
+          "Rhodes par tant d'assauts vainement attaquée, De puissants boulevars et de tours si flanquée, Nos soldats désormais recreus de Dans de maux, Leurs Chess trop ennuyez des belliqueux travaux, N'osant plus me fier en assistance aucune, Ayant incessamment contraire la fortune:"
+        ]
+      },
+      "top_5_places": [
+        "Rhodes",
+        "Perse",
+        "Antioche",
+        "Paris",
+        "Troie"
+      ]
+    }
+  }
+}

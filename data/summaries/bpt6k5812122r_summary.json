@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Abeille, Gaspard",
+    "title": "Argélie, reyne de Thessalie . Tragédie",
+    "publication_date": "1674",
+    "document_id": "bpt6k5812122r"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ARCAS",
+          "frequency": 8
+        },
+        "related_sentences": [
+          "et prenez dès ce jour Le rang que Timagène occupait dans ma Cour, En l'état où le va mettre son hrmence, Il sera peu jaloux de vôtte destinée: veais on sont Mos Aulais \nARCAS\n Ils sont ici tous deux, Pourita von queimoivent coutomela leurs voeur, \nARGELIE\n Envojs Tiliogène, et guides la Pincèle DELE I ARGELIE seule.",
+          "C'est lui, c'est mien Rival: mais c'est l'Époux d'Ismene Sauvons-le, et secondant notre propre malheur, Montrons-nous plus que lui dignes de son bonheur, Ahi Tinglat \nARGELIE\n \nARCAS\n ",
+          "Na montrer à ses y eux les tiens humiliés, SCÈNE V ARGELIE, ISMENE, PHOENIX, ARCAS, CLYTIE, GARDES. \nARODLIE\n TYE bien!",
+          "ARCAS\n Que le Ciel me punisse, Madame, si jamais ou la crainte, ou l'espoir, M'a fait un seul moment démentir mon devoir.",
+          ", À A Qu'a-t-on fait de Phœuix Parlez, \nARCAS\n C'est assez que vos maux."
+        ]
+      },
+      "top_5_persons": [
+        "ARCAS",
+        "DIONE",
+        "Cleon",
+        "Phœnix",
+        "Ismene"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Clytie",
+          "frequency": 8
+        },
+        "related_sentences": [
+          "V me vas-tu conduire, et de quelœil, Clytie, Pourrai-je envisager une Sœur ennemie, Dont la fausse douceur m'invitant à parier, Ne cherche mon Amant que pour se l'immoier?",
+          "Pour prévenit l'effẽt de mes tristes présiges, De ses deux Favoris j'acceptai les hommages, Clytie, et les traitant tous deux également, Entre ces deux Hêros, je cachai mon Amant:",
+          "lors que je t'ai pressée, De m'avouet le coup dont j'eslois menacée, Ta timide pitié n'osait me secourir, Tu balançais, Clytie, et me laissais périr.",
+          "-le, Clytie, Il ne m'est plus permis de faire un autre choix, Épousons dès ce jour.",
+          "Mais vengeons-nous, Clytie, et cherchons une peine Digne de leur amour, et digne de ma haine."
+        ]
+      },
+      "top_5_places": [
+        "Clytie",
+        "Clytie",
+        "Ismene",
+        "Sparte",
+        "Grèce"
+      ]
+    }
+  }
+}

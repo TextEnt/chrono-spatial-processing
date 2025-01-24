@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "author": "Corneille, Thomas",
+    "title": "Festin de Pierre, comédie mise en vers sur la prose de feu Mr de Molière",
+    "publication_date": "1683",
+    "document_id": "bpt6k1090190d"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Leonor",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Tous les jours de soufflets avait pleine mesure, Cutenpive D. \nJUAN\n Bientôt, Dieu merci, la voilà Erempte an m'épousant de tous ces chagrins-là. Monsieur. \nLEONOR\n D. \nJUAN\n C'est à mes yeux la plus aimable",
+          "Quand une chose est faite, elle n'est pas à faire. \nLEONOR\n Oh, ma Tante et ma Sœur seront bien en colère, Car jaurai pour ma part plus de vingt hsille éeus Bien des Gens me l'on dit.",
+          "Vos écus sont pour venir des beautés peu touchantes. \nLEONOR\n J'ai dans le Bourg voisin une de mes Parentes, Qui veut qu'on mène marie, et qui a toujours dit, Que si quelqu'un m'aimait.",
+          "Rei \nLEONOR\n À cause de ma Sœur qu'on aime plus que moi, On la mariera mieux, quand on n'aura plus qu'elle D. \nJUAN\n Vous êtes pour cela trop aimable et trop belle.",
+          "quirert prêtr, pour laire crève aux coups, D'épouser, s'il le faut, votre Tante avec vous, \nLEONOR\n Ah, qu'il n'en fasse rien, elle est"
+        ]
+      },
+      "top_5_persons": [
+        "Leonor",
+        "M",
+        "CHARLOTE",
+        "PIERROT",
+        "CHARLOTE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Prose",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "fit jouer en Prose quelque temps avant sa mort."
+        ]
+      },
+      "top_5_places": [
+        "Prose",
+        "Mer",
+        "Ville",
+        "Rome"
+      ]
+    }
+  }
+}

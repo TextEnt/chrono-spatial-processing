@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Gilbert, Gabriel",
+    "title": "Les Intrigues amoureuses, comédie",
+    "publication_date": "1667",
+    "document_id": "bpt6k10902611"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "MAROT",
+          "frequency": 8
+        },
+        "related_sentences": [
+          "Il est vrai, j'ai menti, Monsieur, je vous l'avoue, Car enfin ie suis homme, et tout homme est menteur, Mais su mens à propos comme un bon serviteur Qui sert fidèlement son maître et sa maîtresse: Sans moi, sauf le respect qu'on doit à la vieillesse, Vous auriez sur ma foi, que le dis haut et clair, Parlant au vieux Damon fait un grand pas de clerc, Vous eussiez découvert, \nCLINDOR\n Hé quoi ? \nMAROT\n Ce qu'il raut taire, Les changements d'habits de la sœur et dufre.",
+          "On aurait fort grand tort, Il est plus sûrement, c'est un Ciradelle Où la raison toujours fait bonne sentinelle. \nMAROT\n En tournant à l'entour, à force de roder Un drille comme moi pourrait l'escalade. \nLISETTE\n Non, l'on dit qui va la, la place est bsen gardée. \n",
+          "Sans me mettre en souci d'en donner de descharDerriere un postillon à l'instant ici la charge, Puissi monte à cheval lui jetant un souris, Et ainsi prends mon chemin tout droit devers Paris Lui d'un autre côté reprend celui de Rome \nMAROT\n Assez mal satisfait de n'avoir plus la somme. \nLISANDRE\n ",
+          "MAROT\n le ne muis pas, Momieur, de votre sentiment: Je vois que tout mille rit, tout avoir fait bone mine, Qu'on l'attend avec joie au logis de Seline, Qu'on prépare int festin, et le bal que ie in, L'argent est prêt aussi. YANTE.",
+          "Si-tôt que ici t'ai vu, iel’ay bien deviné. \nMAROT\n Tu feins de m'admirer, mais c'est moi qui t'admire, Pour t'en mieux assurer, ois mon cœur qui soupire. \nLISETTE\n Ce n'est rien que du vent. \n"
+        ]
+      },
+      "top_5_persons": [
+        "MAROT",
+        "SELINE",
+        "TIMANDRE",
+        "LISETTE",
+        "Yante"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 8
+        },
+        "related_sentences": [
+          "Sans me mettre en souci d'en donner de descharDerriere un postillon à l'instant ici la charge, Puissi monte à cheval lui jetant un souris, Et ainsi prends mon chemin tout droit devers Paris Lui d'un autre côté reprend celui de Rome \nMAROT\n Assez mal satisfait de n'avoir plus la somme. \nLISANDRE\n ",
+          "Ç Cijà C'est l'esprit le plus prompt, quoi qu'il soit fortbon homme, Que l'on puisse trouver de Paris jusqu'à Rome \nCLINDOR\n Se fut-il emporté pour ce qui n'est qu'un jeu? \nMAROT\n ",
+          "Vous êtes à Paris chez moi depuis ainsi mois, Et ne crois pas en tout vous avoir vu six fois: aspprenez-moi de grâce ou vous allez sans cesse.",
+          "Pour tromper à Paris, où le beau monde brille, Tantôt elle est garçon, et tantôt elle est fille.",
+          "C'est la façon d'agir des femmes de Paris Quand on ett duelair."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Mans",
+        "Rome",
+        "Provinces de France",
+        "France"
+      ]
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "author": null,
+    "title": "La forte romaine, ou Sainte Suzanne par Vallée",
+    "publication_date": "Unknown",
+    "document_id": "bpt6k856976z"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "MAXIMIAN",
+          "frequency": 8
+        },
+        "related_sentences": [
+          "que j'aurais de funestes appas Si j'évitais par eux un semblable trépas, SOLILOQUE de MAXIMIAN Doux et charmant désir, espérance flatteuse, Qui causez les transports de mon âme amoureuse, Aquoi la portés vous d'un violent effort?",
+          "MAXIMIAN, CURÉE, \nMAXIMIAN\n lete l'auoüe, enfin, il est vrai que mon âme, Dès longtemps sent l'ardeur d'une pudique flamme;",
+          "Incontinent qu'il eut à Gabin fait entendre, Que vous avez destiniez Maximian pour gendre;",
+          "MAXIMIAN\n ",
+          "Dijà MAXIMIAN"
+        ]
+      },
+      "top_5_persons": [
+        "MAXIMIAN",
+        "MAXIME",
+        "Susanne",
+        "Claude",
+        "Claude"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 8
+        },
+        "related_sentences": [
+          "y ous me devez ertcer comne vortre parent: Feignez -vous d'ignorer l'ordre vivre à Rome SUSANNE J'ai de l'aversion pour les baisers d'un homme: Mon visage ne fut jamais touché d'aucun, De le flio bucinaiuumomomtrant du commun?",
+          "Ses parents, après nous, tiennent le premier rang, Et Rome n'en a point d'un plus illustre sang.",
+          "Lors que Rome offre aux siens de pieux sacrifices, Pour selon ses besoins se les rendre propices;",
+          "Rome n'ignore pas de quel air j'ai vécu, Je puis être accusé;",
+          "ure, Que mon honneur est quitte, et que Rome est ingrate."
+        ]
+      },
+      "top_5_places": [
+        "Rome"
+      ]
+    }
+  }
+}

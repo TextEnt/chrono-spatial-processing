@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "author": "Villemot, J",
+    "title": "Conversion de S. Paul, tragi-comédie",
+    "publication_date": "1655",
+    "document_id": "bpt6k857199k"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "BARNABE",
+          "frequency": 11
+        },
+        "related_sentences": [
+          "BARNABE' Ayez de sa constance un autre sentiment, Il a le cœur trop bon pour un tel changement, Et malgré la rigueur des maux qui nous talonnent, Il ren Il ra aveun que ler tourments estonnens SCÈNE II.",
+          "ne rejettes pas Ces cruels qui tantôt voulaient votre trépas, Ils connaissent enfin qu'elle est leur impuissance, Tuisque le juste Ciel défend vôtre innocence: BARNABE'.",
+          "BARNABE' C'est courir à la gloire, Ce n'est pas en fuyant qu'on gagne la victoire.",
+          "Quoi, Barnabe, si tôt tombé dans l'inconstance, Avec nos ennemis est-il d'intelligence?",
+          "te demeure surpris sans avoir espérance, BARNABE'."
+        ]
+      },
+      "top_5_persons": [
+        "BARNABE",
+        "Saul",
+        "ILAS",
+        "Silas",
+        "SILAS"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Damas",
+          "frequency": 11
+        },
+        "related_sentences": [
+          "Il n'a pris cẽt emploi que pour servir sa gloire, Pour faire de l'oubli triompher sa mémoire, Damas est destiné comme un objet de deuil, Pour être le Théâtre ou plutôt le cercueil Ou les Chrétiens verront une brutale envie, En prodiguant leur sang n'être pas assouis, Et déployer sur eux ce que la cruauté La rage et la fureur ont jamais inventé, Ô triste objet horreur! dont la seule pensée Rend d'une juste crainte une âme traversée, Vous m'accusez tantôt, n'avais ie pas raison?",
+          "Que mille crains qu'il ne coure ou la fureur l'inuite, Et n'allé exécuter le dessein qu'il médite, Ce pas précipité dont votre le vois courir, Le couduit à Damas pour le faire périr, Mais, arrêtez Seigneur le cours de cette rage, Et ne permettes pas qu'il fasse quelque outrage A ceux dont votre bras se rend le protecteur;",
+          "Mais toutefois, Seigneur, souffrez que je vous die, Que cette grande ardeur dus être rafroidie, Une troupe si faible, et sans aucun pouvoir N'est pas un ennemi qui peut vous émouvoir, Attendez seulement que le temps la dissipe, Sans qu'aux malheurs d'autrui tout Damas par \" ticiper;",
+          "Soyez, Seigneur, soyez notre libérateur, Si l'on vous peut fléchir auecque des priores, Recez tous les vœux des familles entières, Et tous ceux que Damas vous offre tous les jours, Pour implorer votre aide et demander secours. \nL'AN\n L'ANGE, dans le Ciel.",
+          "Sans les interroger, j'ai connu seulement, Qu'à Damas les Chrétiens règnent absolument, Que leur secte s'accroît avec tant d'apparance, Qu'elle est le scul appui de leur folle espérance, Ce peuple qui se plaît en cette nouveauté L'ambrasse avidement malgré sa fausseté;"
+        ]
+      },
+      "top_5_places": [
+        "Damas",
+        "France",
+        "PAUL"
+      ]
+    }
+  }
+}

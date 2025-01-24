@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "author": "Rotrou, Jean de",
+    "title": "Celie ou Le Vice-roy de Naples, tragi-comedie. Par Monsieur de Rotrou.",
+    "publication_date": "1646",
+    "document_id": "btv1b8622117b"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Celie",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Au profit du butin, Celie eut l'avantage, Au moins, ma liberté tomba dans son partage, Et mon bonheur fut tel, dans mes nouveaux liens, Que cent fois mes regards, rencontrèrent les siens, Comme si contemplant mes vainqueurs avec joie, Ils eussent pris plaïsir à voir aussi leur proie, Et me solliciter, par leur aimable aspect, Acroître mon amour, autant que mon respect.",
+          "Ce n'est pas cet amour, qu'on dit être un enfant, C'est un puissant vainqueur, c'est un Dieu triomphant, J'ai combattu longtemps le pouvoir de Celie, J'ai longtemps refusé la chaîne qui me lie;",
+          "Priez le, hâtez le: c'est de cette façon, Que vous lui lèverez tout sujet de soupçon, Et que si pour Celie, il sent la même flamme, Vous le divertirez de la prendre pour femme.",
+          "Si par un doux supplice ou plutôt ce bonheur, Il ne vous rend Celie, il vous rendra l'honneur, Fera taire l'envie, et par cette alliance, Au peuple de Salerne imposera silence.",
+          "Si peu que j'ai dormi, Celie à tout propos, Venait en soupirant traverser mon repos, Et d'une triste voix, me reprocher le crime Duomtiany jues otcux, et fouit son estime;"
+        ]
+      },
+      "top_5_persons": [
+        "Celie",
+        "RODRIGUE",
+        "Seigneur",
+        "M",
+        "ALVA"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Je pris occasion de l'emmener chez nous, Ayant auparavant commis l'un mes pages, A sçauoir à quels dieux s'adressaient mes hommaIe me couchai le soir, pensif, inquiété, Les yeux, l'âme, et le cœur, pleins de cette beauté, Et passai cette nuit avec plus de peine, Que n'en fit à Paris, la conquête d'Hélène.",
+          "Il est permis à Toussaint Quinet, Marchand Libraire à Paris, d'Imprimer ou faire Imprimer une pièce de Théâtre déla Composition de Monsieur de Rotrou, intitulée CELIE, ou le Vice-Roi de Naples, Et ce durant le temps de cinq ans;",
+          "Et ledit Quinet a associé au susdit Privilège Antoine de Sommaville, et Augustin Courbé, aussi Marchands Libraires à Paris, suivant l'accord fait entr'eux."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Naples",
+        "Tarente",
+        "Salerne",
+        "PARIS"
+      ]
+    }
+  }
+}

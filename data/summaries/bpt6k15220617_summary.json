@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "author": "Quinault, Philippe",
+    "title": "Thésée, tragédie en musique ornée d'entrées de ballet, de machines et de changemens de théâtre. [Paroles de Quinault, musique de Lulli.]",
+    "publication_date": "1698",
+    "document_id": "bpt6k15220617"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Arcas",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "ÉGLÉE', CLÉONE, et ARCAS Il n'est point de grandeur charmante Sans l'Amour et sans ses douceurs: Rien ne plaît, rien n'enchante, Sans l'amour et sans ses douceurs;",
+          "Si tu veux que je t'aime, Arcas, Fais ce que je souhaite, Et ne réplique pas. \nAS\n Pour un autre que moi Cléone s'intéresse?",
+          "CLÉONE, ARCAS, Combattant que l'on entend et que l'on ne voit point. \nLEONE\n Aissons aller la Princesse E Prier en paix la Déesse;",
+          "MINERVE, Chœur de Divinités qui accompagnent Minerve LE ROY, THÈSE, ÆGLE', CLÉLEONE, ARCAS, CHOEUR, et Troupe d'Athéniens.",
+          "Si tu connais, Arcas, le trouble qui me presse, Ne va point découvrir la peine où tu me vois. \nCLÉONE\n "
+        ]
+      },
+      "top_5_persons": [
+        "Arcas",
+        "DORINE",
+        "Minerve",
+        "Églé",
+        "Pallas"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Athènes",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Puissions-nous voir toujours Athènes triomphante, Puisse son Roi vainqueur des plus grands Potentats La rendre heureuse et florissante.",
+          "La Scène est à Athènes TETT 2 TRAGÉDIE."
+        ]
+      },
+      "top_5_places": [
+        "Athènes",
+        "Versailles",
+        "Palais de Versailles",
+        "France"
+      ]
+    }
+  }
+}

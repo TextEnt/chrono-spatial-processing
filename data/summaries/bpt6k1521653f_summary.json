@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "author": "Quinault, Philippe",
+    "title": "Proserpine, tragédie en musique , ornée d'entrées de ballet, de machines, & de changements de théâtre. Représentée devant sa majesté à Saint Germain en Laye le troisième février 1680",
+    "publication_date": "1680",
+    "document_id": "bpt6k1521653f"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Alphée",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Si vous ne m'aimez plus, que vous sert de connaître Le seorti ut mon cœurs \nALPHÉE\n Faut-il que votre Cœur à l'Amour moins rebelle Récompense un Amant sans éprouver sa fois Si ce bien eût été le prix du plus fidèle, Ah!",
+          "fl me permet de voir Arethuse un moment. \nALPHÉE\n D'où vous vient tant d'empressement? \nÀSCALAPHÉE\n Je l'ai vue aux Enfers, que je la trouvais belle! \nÀLPHÉE\n L'Ingrate me fuirait, elle est toujours cruelle.",
+          "Si je disais que je vous aime, Vous m'ôteriez encor le plaisir de vous voir, C'est une Ç'est un ÉTHUSE et ALPHÉE autre que moi qui règne dans votre âme",
+          "Alphée à mon repos a déclaré la guerre: Diane propice à mes vœux, En vain pour me cacher à ce Fleuve amoureux, Fit ouvrir le sein de la Terre:",
+          "Les Nymphes et les Dieux des Bois se cachent, Alphée et Authuse descendeht aux Enfers, le Char vorant de Gères ourrerte, et la Déesle en descend."
+        ]
+      },
+      "top_5_persons": [
+        "Alphée",
+        "Proserpine",
+        "Proserpine",
+        "CERES",
+        "ARETHUSE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Sicile",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Il admire les dons que vous venez de faire En cent climats divers, L'abondante Sicile heureuse de vous plaire De vos riches moissons voit tous ses champs couverts: Mais la Mère des Dieux se plaint que la Phrygie Qu'elle a toujours chérie, Ne se ressente pas de vos soins bienfaisants;",
+          "Cyané et Crinise vont de deux côtés différents appeler les Divinités et les Peuples de Sicile, pour venir ensemble célébrer la victoire de lupiter.",
+          "Je suis dans la Sicile une Nymphe étrangère, Je viens vous conjurer de m'en laisser partir, \nCERES\n ",
+          "Messieurs Chicanneau, Noblet, Mayeux, Germain, Arnal, Favier cadet, Dumirail et Boutteville Habitants de Sicile dançans.",
+          "CERES, Troupes de Nymphes et de Dieux champêtres, Troupe de Suivants de Ceres, Troupe de Peuples de Sicile"
+        ]
+      },
+      "top_5_places": [
+        "Sicile",
+        "Rome",
+        "Champs"
+      ]
+    }
+  }
+}

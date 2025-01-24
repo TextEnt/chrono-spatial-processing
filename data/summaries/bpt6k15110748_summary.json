@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "author": "Tristan L'Hermite",
+    "title": "Panthée, tragédie de M. de Tristan",
+    "publication_date": "1639",
+    "document_id": "bpt6k15110748"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "CYRUS",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "PANTHÉE\n Seigneur, votre bonté s'est acquise Abradate J'ai dépêché des miens pour lui faire savoir Qu'elles sont vos vertus, et quel est son devoir: S'il n'a changé d'esprit j'ose bien me promettre Qu'il viendra vous trouver ayant reçu ma lettre, Et qu'il vous servira s'il est autant heureux en alitours qre paeut et gencren: \nCYRUS\n Madame, notre n'ai point mérité cette grâce.",
+          "Charis apprend de lui sa passion, essaie de le guérir par la raison: et le plaint voyant sa maladie incurable. \nPANTHÉE\n EITI AE TRIRIEDIE ICTEFREMIÈR SCÈNE IREMIÈRE. \nCYRUS\n \nCHRISANTE\n HYDASPE. \nCYRUS\n HRISANTE, ils sont défaits, et c'est notre destin De revenir chargés d'honneur et de butin, Apres avoir dompté cette injuste Puissance Qui veut insolemment opprimer l'innocence.",
+          "JRUS\n Cet acte, sans mentir, fait horreur et pitié, Un moindre coup peut rompre une grande amitié: J'ai su d'vn Gouverneur d'une de ces Provinces, Qu'on le pourrait compter entre les mauvais Princes. \nPANTHÉE\n It me aome à peu pres que est ec Gounerneur \nCYRUS\n C'est un père affligé: \nPANTHÉE\n ",
+          "Carpuisqu'on doit aimer enomeun prus quejà cte, \nCYRUS\n Madame, les honneurs dont il me va chargeant Font voir en ce papier qu'il est fort obligeant, Par ses grands compliments il ma voulu confondre, À ces civilités après ne saurais répondre: Mais si pour le servir ainsi suis assez puissant, Il ne me tiendra pas pour un méconnaissant:",
+          "Sans doute votre esprit qui n'a point de défaut, Le loue avec excès, en le mettant si haut. \nPANTHÉE\n Cyrus m'a fait faveur, mais ainsi lui rends iustice, Quand j'atteste qu'il est inaccesible au vice, Et qu'on peut l'élever entre les immortels, Onis grareros certus mermem u Tels:"
+        ]
+      },
+      "top_5_persons": [
+        "CYRUS",
+        "Cirus",
+        "Cyrus",
+        "Seigneur",
+        "Charis"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Notre bien amé Augustin Courbé Libraire à Paris, nous a fait remontrer qu'il désirerait imprimer, Une Tragédie intitulée, Panthée, composée par le Sieur de Tristanl'Hermite, S'il avait sur ce nos Lettres nécessaires, lesquelles ils nous a très humblement supplié de leurs accorder: À CES CAUSES, Nous avons permis et permettons à l'exposant d'imprimer, vendre, et débiter en tous les lieux de notre obéissance ladite Tragédie, en telles marges, en tels caractères, etautant de fois qu'il voudra, durant l'espace de sept ans entiers et accomplis;",
+          "Donné à Paris le vingt troisième de Février l'an de grâce mil six cents trente huit Et de notre règne le vingt-huictiême.",
+          "Donné à Paris le vingt troisième de Février l'an de grâce mil six cents trente huit Et de notre règne le vingt-huictiême."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Babylone",
+        "Perse",
+        "Théâtre du Marais",
+        "France"
+      ]
+    }
+  }
+}

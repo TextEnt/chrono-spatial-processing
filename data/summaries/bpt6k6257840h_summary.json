@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": null,
+    "title": "Le theatre françois . Contenant : Le trebuchement de Phaëton ; La mort de Roger ; La mort de Bradamante ; Andromède delivrée ; Le foudroiement d'Athamas et La folie de Silene",
+    "publication_date": "1624",
+    "document_id": "bpt6k6257840h"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "POLITE",
+          "frequency": 13
+        },
+        "related_sentences": [
+          "; Que le Ciel a jamais envoie, Une moisson de doux plaisirs, De ris, d'amours, et de désirs, Où la douleur en fin se noie. \nPOLITE\n Que ce Dieu qui eut au besoin, De leurs amours toujour, le soin, Et qui conduit leur destinée, Acouplant leurs belles moitiés; Bénisse ores leurs amitiés En cette célèbre journée. \nAN\n Jamais les jalouses rancœurs, Ne trouvent place dans les cœurs, De vos bergères grâces;",
+          "Ô grand Dieu des Pasteurs, à bon droit adoré, Ton saint Temple sera de nos vœux honoré. \nCORILE\n Deux fois tu es mon père, et puis à bon droit dire, Que renmame entor, par toi seutte répire Deux fois l'air d'Arcadie \nPOLITE\n Il me faut approcher, C'est trop en se cachant ma liesse cacher;",
+          "Quarante, il m'en faut bien autant, ar ie nous aller en Égypte Voyez compe ils prennent la fuite, Ilfautsur ce joli gazon, Chanar einSencenajaa \nPOLITE\n Voici l'écervelé, le grand Dieu Pan renvoie, Ce brouillard importun qui ton esprit dévoie, Et te rende les sens.",
+          "pour vous doner la mort (tor! \nCORILE\n Hélaissez -moi mourir. \nPOLITE\n Mais voyez ici vous prie, Elle est morte, où du moins elle est éuanoüye: Je sens dessur son front une humide sueur, Elle vît, ie tu sens un batement de cœur;",
+          "J'entasse tout cela, dos blonds, et doux cheveux De ma belle Laurie, en voici quelque tout contre, Les Dieux puissent aider cette heureuse rencontre. \nYRSIS\n an menumsueomopuiscner, Les membres de Tyrsis, jadis ton fils si cher. \nPOLITE\n Quels charmes sont ceci!"
+        ]
+      },
+      "top_5_persons": [
+        "POLITE",
+        "Roger",
+        "Tyrsis",
+        "Roger",
+        "Phaéton"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 13
+        },
+        "related_sentences": [
+          "La brèche vous présente un chemin accessible Où votre victoire est apparente, et visible, Race illustre de ars, ne degénerez point, Faitis reluire en vous sey vortus de tout point, Montez à cetsaut, et d'un brave tourage Fondez sur l'ennemo come un subit orage Saisissieurs remparts, diligents a doner Forcant ceux de dans de tout abandoner: En ce prîmer assaut on vit come en balance La perte de notre ost, où la perte de France Paris étant à nous, il ne faut plus douter Qu'au rêle du pay rien puisse résister;",
+          "Ton Charles, son Paris, et toute sa séquelle Me payeront le prix de ma juste querelle, Je ferai mes soldats par les airs écouler, Come on voit au printemps était aigle s'envoler, Emportant ses petits sur le fort de ses ailes, Pour enlèver le lit des simples Colombeles, Sique sans aparence investis un matin, Ils se vertont des miens desimplacable butin, Rejieneà \nDAMOISELLE\n Madame, un Chevalier n'aguère, Pour entrer en votreile a passe la rivière.",
+          "Mes amis c'étici c'est devant ce Paris, Que vos cœurs d'un rancœur doivent paraître épris, Vengez de vos parents les tristes funérailles, Pour le bien du pays enclos sous ces murailles, Reviuez en leur cendre, et tâchés de remplir Ce qu'un sinistre sort empêcha d'acomplir Ils ont éte vaincus, non faute de courage, Mais parvn gauche aspect qui leur brassal outrage LIEUTENANT.",
+          "Imprimeur à Paris, d'imprimer, où faire imprimer, vendre, et distribuer, en un, où plusieurs vblumes, ensemble, où a part, une hureihtitulé: LE -THÉÂTRE FRANÇOIS, contenant plusieurs Tragédies, Trage-comédies, Pastorales, Intermédes, Prologues, et Comédies Françaises, de divers Auteurs, A sçauoir,",
+          "D'un assaut général nous venant investir. \nCHARLES\n Il pense de plein saut nous pouvoir engloutir, Qu'il soit assé de mettre un Paris tout en cendre, Plus vite qu'il n'y vient on le fera décendre;"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "France",
+        "Silène",
+        "Nil",
+        "PARIS"
+      ]
+    }
+  }
+}

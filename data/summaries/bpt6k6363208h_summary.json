@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "author": "Quinault, Philippe",
+    "title": "Proserpine : tragédie en musique ornée d'entrées et de ballet, de machines, & de changemens de théâtre : représentée devant sa majesté à Saint Germain en Laye le troisième février 1680",
+    "publication_date": "1680",
+    "document_id": "bpt6k6363208h"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ALPHÉE",
+          "frequency": 7
+        },
+        "related_sentences": [
+          "Du Maître des Enfers je veux aller me plaindre, Craignez en me suivant d'attirer son courroux. \nALPHÉE\n Pour moi rien n'est tant à craindre Ç 'istro donné de vous.",
+          "Si vous ne m'aimez plus, que vous sert de connaître Le secret de mop cœur? \nALPHÉE\n Faut-il que votre Cœur à l'Amour moins rebelle Récompense un Amant",
+          "-nous à ses yeux, Les Nymphes et les Dibuuοdος Bois, se cachent, Alphée et Arcthuse descendent auk Enfers, le Char volant auempucutreite, et ja (Déesse en descend.",
+          "Alphée à mon repos a déclaré la guerre: Diane propice à mes vœux, En tuin pour me catner à te Fleuve amoureux, Fit ouvrir le sein de la Terre:",
+          "De ugerame limom: que je te veux de mal Du trouble qu'il me cause! \nCERES\n À vec Alphée ici je veux vous arrêter ARETHÉS."
+        ]
+      },
+      "top_5_persons": [
+        "ALPHÉE",
+        "Proserpine",
+        "Proserpine",
+        "Arethuse",
+        "Pluton"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Sicile",
+          "frequency": 7
+        },
+        "related_sentences": [
+          "CERE Sa Troupes de Nymphes et de pieux Champestres, Troupe de Suivants de pères, roupe de Peuples de Sicile jy 3107 1 Les suivyants de Gères rompeno les Arbres, et en prennent des branches et enpfont des flambeaux qu'ils allument au feu qui sort du Mont Éta Ils en brûlent les bleds, malgré des efforts et les cris des Nymphes, des pieux champestees, et des Peuples.",
+          "Il est malaisé qu'on oublie Ce qu'on a tendrement aimé, Il admire les dons que vous-venez de faire En cent climets divers, L'abondante Sicile heureuse de vous plaire De vos riches moissons voit tous ses champs couverts: Mais la Mère des Dieux se plaint que la Phrygie Quelle a toujours chérie, Ne se ressente pas de vos soins bienfaisants;",
+          "Cyané et Crinise vont de deux côtés différents appeler les Divinités et les Peuples de Sicile, pour venir ensemble célébrer la victoire de Jupiter \nM\n 2 CON DE Mercure descend dù Ciel.",
+          "LSORINE, ALPHÉE, ARETHUSE, CYANE, CRISE, Troupe de Divinités et de Peuples de Sicile",
+          "TROUPE d'Hâbitans de Sicile PLUTON, Dieu des Enfers. \n"
+        ]
+      },
+      "top_5_places": [
+        "Sicile",
+        "PARIS",
+        "Rome"
+      ]
+    }
+  }
+}

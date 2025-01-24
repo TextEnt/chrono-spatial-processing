@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "author": "Brécourt",
+    "title": "La nopce de village . Comédie",
+    "publication_date": "1681",
+    "document_id": "bpt6k62763275"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "NICOLAS",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Hayer, com pge veni d'au te prairie, entris cheul grand Français pour viriter not mie, Margué j'apercevi par le trou du grand huis, Que tu batifolais tout l'en viron du puis A veuc elle. \nNICOLAS\n Aveuc qui?",
+          "Margué -t-as bien du plaid, Mais vois-tu, Nicolas je suis, pargué, bon Léli Veux-tu sçavoir pourquoi que je suis en colère? \nNICOLAS\n Et bien, pourquoi? dis donc.",
+          "Nicolas, tu sais bien que je son bon amis, Et tu sais bien encore que je somme pormis La fille au grand Français aveuc moi par enensemble.",
+          "Déchausson le rabat, margué, bon pied, bon ceil, tam ia fait tout. \nNICOLAS\n Fi donc, Colin, n'en te regarde.",
+          "Mais bref, tanquia, n'importe, Or donc, car ventrigué, vois-tu bien, Nicolas Je ne suis point un gînais."
+        ]
+      },
+      "top_5_persons": [
+        "NICOLAS",
+        "NICOLAS",
+        "CLAUDINE",
+        "Colin",
+        "JEAN"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Aubervilliers",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Lequel Guillaume Battan non ici présent pour être détenu au lit d'un coup de pierre au beau milieu du dos, a donné et donne à Colin Battan son fils et futur époux, par ces présentes, en faveur de mariage un arpent d'héritage assis audit Aubervilliers Plus une charrue attelée d'un Bœuf et d'un Asne gez de quarante cinq ans ou environ;",
+          "Aubervilliers et Perrète"
+        ]
+      },
+      "top_5_places": [
+        "Aubervilliers",
+        "PARIS"
+      ]
+    }
+  }
+}

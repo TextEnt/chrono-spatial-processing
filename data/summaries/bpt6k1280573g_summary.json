@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Psiché, tragédie ballet. Par J. B. P. Moliere",
+    "publication_date": "1673",
+    "document_id": "bpt6k1280573g"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ZÉPHIRE",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Ce Prince qui vous aime, et qui commande aux Vents, Qui nous donne pour Char les aisles de Zéphire, Et de nouveaux plaisirs vous comble à tous moments Quand il rompt à vos yeux l'ordre de la Nature, Peut-être à tant d'amour mêle un peu d'imposture, Peut-être ce Palais n'est qu'un enchantement, Et ces lambris dorez ces amas de richesses Dont il achète vos tendresses, 1 fa mhomfanle de soumm vos caresses, Disparaîtront en un moment.",
+          "Mais je la vois, mon cher Zéphire \nZÉPHIRE\n Vous pouvez vous montrer pour finir son martyre, Lui découvrir son destin glorieux, Et vous dire entre vous tout ce que peuvent dire Les soupirs, la bouche, et les yeux.",
+          "Ce qu'elle à de plus doux appas, Zéphire vole aux ordres qu'elle donne, Et son Amante et lui s'en laissant trop charmer, Quittent pour la servir les soins de s'entre aimer.",
+          "Mais ne me laissez plus en doute Seigneur, et dites-moin par la même loute Après moi le Zéphire ici vous a rendu Pour me dire ce que j'écoute.",
+          "J'ai résolu, mon chey Zéphire, De demeurer ainsi toujours, Et l'on ne peut trouver à redire À l'aîné de tous les A mours."
+        ]
+      },
+      "top_5_persons": [
+        "ZÉPHIRE",
+        "AGENOR",
+        "Venus",
+        "Venus",
+        "Flore"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Registré sur le Livre de la Communauté des In primeurs et Marchands Libraires de Paris suivant l'Arrêt de la Cœur de Parlement du 8. \nAvril 1653\n aux charges et conditions portées ès pransentes Lettres.",
+          "Grâce et Privilège dn Roi, Donné à Paris le I 31."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Fleuve"
+      ]
+    }
+  }
+}

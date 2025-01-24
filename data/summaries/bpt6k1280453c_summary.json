@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "L'Escole des maris, comédie de J. B. P. Molière, représentée sur le théâtre du Palais Royal",
+    "publication_date": "1674",
+    "document_id": "bpt6k1280453c"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ISABELLE",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Oui, tout ce que Monsieur, de votre part m'a dit, Madame, a bien pouvoir de surprendre un esprit, J'ai douté, je l'avoue, et cet arrêt suprême, Qui décide du sort de mon amour extrême, Doit m'être assez touchant pour ne pas s'offenser, Que mon cœur par deux fois le fasse prononcer. \nISABELLE\n Non, non, un tel arrêt ne doit pas vous surprendre, Ce sont mes sentiments qu'il vous a fait entendre, Et je les tiens fondez sur assez d'équité, Pour en faire éclater toute la vérité;",
+          "Il le mérite bien, et j'en suis fort ravi; \nISABELLE\n Enfin de cent raisons mon dépit s'est servi, Pour lui bien reprocher des bassesses si grandes, Et pouvoir cette nuit rejetter ses demandes, Mais elle m'a fait voir de si pressants désirs, À tant versé de pleurs, tant poussé de soupirs, Tant dit qu'au désespoir je porterais son âme, Si je lui refusais ce qu'exige sa flamme;",
+          ", vous lui donneriez trop de confusion, Et c'est avec raison qu'elle pourrait se plaindre, Du peu de retenue, où j'ai su me contraindre, Puisque de son dessein je dois me départir, ailiendeeque du Molils la lane IFortil \nSACNARELLE\n Et bien fais? \nISABELLE\n Mais sur tout, cachez-vous je vous prie, Et sans lui dire rien daignez voir sa sortie.",
+          "disez, Je vois par ce discours de quoi vous me pressez, Et je saurai dans peu vous ôter la présence, De celui qui vous fait si grande violence. \nISABELLE\n Vous ne me sauriez faire un plus charmant plaiAl 3 Car enfin cette vue est fâcheuse à souffrir, Elle m'est odieuse, et l'horreur est si forte.",
+          "Et pourquoi? \nISABELLE\n Lui voulez-vous donner à croire que c'est moi, Une fille d'honneur doit toujours se défendre De lire les billets qu'un homme lui fait rendre, La curiosité, qu'on fait lors éclater, Marque un secret plaisir de s'en ouïr conter,"
+        ]
+      },
+      "top_5_persons": [
+        "ISABELLE",
+        "ARISTE",
+        "LEONOR",
+        "LISETTE",
+        "Valère"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "que je suis heureux, et que j'ai de plaisir, De trouver une femme au gré de mon désir, Oui, voilà comme il faut que les femmes soient faites, Et non comme j'en sais, de ces franches coquettes, Qui s'en laissent conter, et font dans tout Paris monitier au bout du doigt leurs honnêtes maris;",
+          "Avouons que Paris nous fait part De cent plaisirs charmants qu'on n'a point autrepart;"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "France"
+      ]
+    }
+  }
+}

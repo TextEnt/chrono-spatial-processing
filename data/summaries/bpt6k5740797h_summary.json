@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "author": "Prade, Jean Le Royer",
+    "title": "Arsace, roi des Parthes , tragédie. De M. de Prade. Représentée par la troupe du Roy",
+    "publication_date": "1666",
+    "document_id": "bpt6k5740797h"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Arsace",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "ARSACE\n Le refus de sa main et celui de l'Empire Quoi que vous en croyez vous en fera dédite, Soyez mon interprète, et faites lui savoir, Que pour m'acquitter mieux, je veux moins tu devoir: Mais allons consultet toute nostte prudence, Pour couut ce refus d'une belle apparence, Et joignons à ce coup tant d'afait et de douceur, Qu'il puisse chang porté de la main d'une sœur.",
+          "ARSACE\n N veut que le combat montre nostre innocences CMais, si vous m'e croyez, tous deux prêts à périt, Avant que de combattre on nous verra mourir, Un peut faire verser et mon sang et le vôtre, Mais non pas nous contraindte à périr l'un par l'autre, Cat nos mains qu'on destine à cette cruauté Relèvent seulement de notre volonté;",
+          "t ne pouvant m'aimer sans perdre un Diadême. \nARSACE\n Ç'ai prévu cette crainte, et vous viens témoigner déce impre qu'auce pous quiedandeicuer, ambition ne peut commander à ma flamme, t mon plus cher Empire est celui de votre âme: ais le Sceptre d'ailleuts étant tel en effet, peine on consent au refus on en fait.",
+          "Mais Aisace m'offrant de ne combattre pas, À ma priète aussi mettez les atmes bas, D'un et d'autre côté mon fort serait à plaindre, J'autais pour mon supplice également à craindre Que vaincu par Arsace, ou d'Atsace vainqueur, Mon Amant n'y petit, ou n'épousât ma sœur.",
+          "Et veux tout avouer de peur de vous confondre, J'évitai mon trépas qui vous eut fait périr: Mais pour vous conserver ainsi suis prêt à mourir. \nARSACE\n Certes je suis surpris, cette impudence extrême Me pourrait faire entrer en soubon de moi"
+        ]
+      },
+      "top_5_persons": [
+        "Arsace",
+        "Arsace",
+        "Sceptre",
+        "Seigneur",
+        "M"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "PARIS",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "À PARIS, Chez THEODORE GIRARD, dans la grand Salle du Palais, à l'Enuie."
+        ]
+      },
+      "top_5_places": [
+        "PARIS",
+        "Montauban",
+        "Perse",
+        "France",
+        "Rome"
+      ]
+    }
+  }
+}

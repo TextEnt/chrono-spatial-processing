@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Corneille, Pierre",
+    "title": "Pompée, tragédie par P. Corneille",
+    "publication_date": "1682",
+    "document_id": "bpt6k1280304j"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "César",
+          "frequency": 34
+        },
+        "related_sentences": [
+          "qu'à ces périls je vous puisse exposer, a dosmuuis pomonen moène quiles peue causer, Sacrifiez ma vie au bonheur de la vôtre, Le mien sera trop grand, et je n'en veux point d'autre, Indigne que je suis d'un César pour époux, Que de vivre en votre âme étant morte pour vous. \nCÉSAR\n Reine, ces vains projets sont le seul avantage Qu'un grand cœur impuissant à du Ciel en partage: Cemme il a peu de force il a beaucoup de soins, Et s'il pouvait plus faire, il souhait moins",
+          "Oui, Seigneur, je l'ai vue elle est incomparable, Le Ciel n'a point encor par de si doux accords Uni tant de vertus aux grâces d'un beau corps, Une majesté douce épand sur son visage Dequoy s'assujettir le plus tobie courage, 424 Ses yeux Savent ravir, son discours sait charmer, Et si j'étais César, je la voudrais aimer. \nCÉSAR\n comme a-t éle reçu les offres de ma flamme? \nANTOINE\n Comme n'osant la croire, et la croyant dans l'âme;",
+          "Il est juste, et César est tout prêt de vous rendre Ce reste où vous avez tant de droit de prétendre: Mais il est juste aussi qu'après tant de sanglots A ses Manes errants nous rendions le repos, Qu'un bûcher allumé par ma main et la vôtre Le venge pleinement de la honte de l'autre, Que son Ombre s'apaise en voyant notre ennui, Et qu'une Urne plus digne et de vous et de quoi, Après la flamme éteinte et les pompes finies, Renferme avec éclat ses cendres réünies.",
+          "Je dois bien toutefois rendre grâces aux Dieux De ce qu'en arrivant je te trouve en ces lieux, Que César y commande, et non pas Ptolomée \nHendlas\n et sous quel astre, ô Ciel, m'as-tu formée, Si je leur dois des vœux de ce qu'ils ont permis Que je rencontre ici mes plus grands ennemis, Et tombe entre leurs mains plutôt qu'aux mains d'un Prince Qui doit à mon époux son trône et sa Province?",
+          "Il s'agit de Pompée, et nous aurons la gloire D'achever de César, ou troubler la victoire, Et je puis dire enfin que jamais Potentat N'eut à délibérer d'un si grand coup d'État. \nPHOTIN\n Seigneur, quand par le fer les choses sont vidées, La Justice et le Droit sont de vaines idées, Et qui veut être juste en de telles saisons Balance le pouvoir, et non-pas les raisons."
+        ]
+      },
+      "top_5_persons": [
+        "César",
+        "Pompée",
+        "César",
+        "ACHILLAS",
+        "ANTOINE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 34
+        },
+        "related_sentences": [
+          "De quel nom après tout pensez-vous que je nomme Ce coup où vous tranchez du Souverain de Rome, Et qui sur un seul Chef avait fait bien plus d'affront, Que sur tant de milliers ne fit le Roi de Pont Pensez-vous que j'ignore, ou que je dissimule Que vous n'auriez pas eu pour moi plus de scrupule, Et que s'il m'eût vaincu, votre esprit complaisant Lui faisait de ma tête un semblable présent?",
+          "Je sais qu'elle est ta flamme, et quelles sont ses forces, Que tu n'ignores pas comme on fait les divorces, Que ton amour t'aveugle, et que pour l'épouser Rome n'a point de lois que tu n'oses briser: Mais sache aussi qu'alors la jeunesse Romaine Se croira tout permis sur l'époux d'une Reine, Et que de cet Hymen tes amis indignez Vengeront sur ton sang leurs avis dédaignez.",
+          "Nous avons honoré votre ami, votre gendre, jusqu'à ce qu'a vous-même naître le prendre: Mais voyant son pouvoir de vos succès jaloux Passer en tyrannie et s'armer contre vous. \nCÉSAR\n Tout beau que votre haine en son sang assouvie N'aille point à sa gloire, il suffit de sa vie, N'avancez rien ici que Rome ose nier, Et justifiez-vous sans le calomnier. \n",
+          "Quand ce peuple insolent qu'enferme Alexandrie Fit quitter au feu Roi son Trône et sa Patrie, ne que jusque dans Rome il alla du Sénat Implorer la pitié contre un tel attentat, Il nous mena tous deux pour toucher son courage, Vous, assez jeune encor, moi, déjà dans un âge, Où ce peu de beauté que m'ont donné les Cieux D'un assez vif éclat faisait briller mes yeux.",
+          "Certes Rome à ce coup pourrait bien se vanter D'avoir eu juste lieu de me persécuter, Elle qui d'un même œil les donne et les dédaigne, Qui ne voit rien aux Rois qu'elle aime, ou qu'elle craigne, Et qui verse en nos cœurs avec l'âme et le sang Et la haine du nom, et le mépris du rang."
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Égypte",
+        "Alexandrie",
+        "Tage",
+        "Memphis"
+      ]
+    }
+  }
+}

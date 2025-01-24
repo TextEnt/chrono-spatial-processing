@@ -1,0 +1,47 @@
+{
+  "metadata": {
+    "author": "Mary, Nicolas",
+    "title": "Bélisaire, tragi-comédie . Dédié à monseigneur le comte de Bury",
+    "publication_date": "1641",
+    "document_id": "bpt6k57155059"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Bélisaire",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Tu médites en vaindes excuses frivoles, On ne m'apaise pas avec des paroles, Il faut pour satisfaire à celles de mon rang, Un Prince pour un Prince, et le sangpour le sang 12 \nISXIRION\n Hé bien, assouissez cette barbare envie, J'ai trahi vos desseins, arrachez moi la vie, Tenez, me voilà prêt, suiuez votre courroux, C'est pour ce sujet seul que je suis devant vous, Ne le différez point, votre injuste colère, Frappant Isxirion, frappera Bélisaire, Son âme vit en moi, mon âme vit en lu Même cœur, même esprit nous anime aujourd'hur De qui que le sang coule on le peut dire notre, La fortune de l'vn La fortune de l'autre, Et le Ciel fait en nous desi mant accords, Qvons pappes",
+          "Je sais que le Démon qui préside aux combats, L'a mis dedans les fers, et ravi ses États, Ses biens, sa liberté, son sceptre, sa couronne, Que son peuple le quitte, et que tout l'abandonne: Mais bien que votre bras l'ait réduit à ce point, Croyez moi, Bélisaire, il ne le perdra point, Quoi que vous puissiez faire, ou que vous puissiez dire, dème jeme le perts) que Épeurs, foi Empiré, Son espoir, sa grandeur, ses sujets, et sa Cour, Son Conseil mes désirs, et ses lois mon amour.",
+          "Je suis ce sentiment que la vertu te donne, J'aime ses qualités bien plus que sa personne, Et voyant que tu tiens de ses perfections Tu partages déjà mes inclinations: C'est par ces beaux dégrez que l'on monte à la gloire, Qu'on gagne sur les cœurs quelque illustre victoire, Et qu'on peut prévenir à ce superbe ran Qui supplée aux deffaux et du ts et du sang Théodore prétend que sans sois le salaire, De qui lui portera le cœur de Bélisaire, Et moi pour m'opposer à ce lâche courrousx, De son libérateur je ferai mon époux.",
+          "souffrez que mon crime Reçoive un châtiment et juste et légitime, J'ai cherché votre sang, j'ai voulu votre mort, Ce désir criminel demande un même sort, Et bien qu'il ne soit rien que ministre d'un autre, Mon sang à cet effet doit payer pour le vôtre, Permettez moi Seigneur  \nBÉLISAIRE\n Non quittez ce dessein, Ce fer est seulement destiné pour mon sein, Et si votre bonheur dépend de mon naufrage, Ce poignard peut encor achever mon ouvrage, Bien loin d'en murmurer j'en beniray les coups.",
+          "BÉLISAIRE\n Quelques nobles effets qu'ait produit ma victoire, Seigneur, ie crue assez de salaire en ma gloire, Sans que vous ajoutiez à ce rare bonheur Ces titres àbsolus ainsi ce suprême honneur Qui loin de m'obliger exposeront ma vie Aux atteintes des traits que décochent l'envie: Pour ces hautes faveurs prenez d'autres objets, Permettez que ie Amue aurang des vos,sujets, Et par le seul honneur, de franc, et de fidèle Souffrez que je vous montre et mon cœur est mon zèle,"
+        ]
+      },
+      "top_5_persons": [
+        "Bélisaire",
+        "Iustinian",
+        "Sophie",
+        "Sophie",
+        "Seigneur"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "DONNE' à Paris, le vingticline jour de Juin mil six cents quarante-H Signé LEMOINE"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "France"
+      ]
+    }
+  }
+}

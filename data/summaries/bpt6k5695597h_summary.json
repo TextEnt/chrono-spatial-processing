@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "author": "Saintonge, Louise-Geneviève de",
+    "title": "Circé, tragédie en musique représentée par l'Académie royale de musique",
+    "publication_date": "1694",
+    "document_id": "bpt6k5695597h"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Ulisse",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Circe pour toi toute de flamme Devrait seule occuper ton âme. \nULISSE\n Pour vous mon cœur brûle de mille feux Et vous brillez de mille charmes, Pour quoi ces Guerriers fameux Vous causent-ils tant d'alarmes?",
+          "Ulisse Parlez, ne craignez, point d'augmenter mon supplice. \nÉLPHENOR\n Dans ce paisible séjour J'ai surpris ce Prince volage, Qui parlait d'amour À la Nymphe qui l'engage;",
+          "9 Pré POLITE Nfin le juste Ciel a comblé nos désirs, Ulisse est délivré par la Nymphe Éolie Bientôt loin de ces lieux nous braverons l'Envie, Rien ne pourra troubler nos innocents plaisirs.",
+          ", crois que ma reconnaissance Fera durer à jamais Mon Amour et ma constance, CIRCE' et ULISSE Désir de se venger, inutile fureur, Cédez, cédés à l'amoureuse ardeur.",
+          "Pourquoi si vous m'aimez, n'êtes -vous pas demême? \nULISSE\n La Conquête de votre cœur Fait mon plaisir et ma gloire, Mais, hélâs!"
+        ]
+      },
+      "top_5_persons": [
+        "Ulisse",
+        "CIRCE",
+        "Circé",
+        "POLITE",
+        "ULISSE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Seine",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "La Nymphe de la Seine La force, la valeur, le secret, la prudence, Sont avec ce grand Roi toujours d'intelligence;",
+          "LA NYMPHE de la Seine \nAYADES\n Troupe de A DIEUX DES EAUX. \nDRYADES\n ÀCIEURS PU PROLOGUE.",
+          "Rien ne peut vous troubler sur les bords de la Seine, Demeurez à jamais dans cet aSile heureux.",
+          "La Nymphe de la Seine Ornez ici votre course incertaine, T)C'harmand Plaisirs, aimables Jeux;",
+          "La Nymphe de la Seine et un Dieu des Eaux."
+        ]
+      },
+      "top_5_places": [
+        "Seine",
+        "Grèce",
+        "France"
+      ]
+    }
+  }
+}

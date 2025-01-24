@@ -1,0 +1,47 @@
+{
+  "metadata": {
+    "author": null,
+    "title": "La Juste vangeance , tragi-comédie",
+    "publication_date": "1641",
+    "document_id": "bpt6k852869b"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Childebrand",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Vous en avez, Seigneur, délivré notre Reine, l ouumemte dèneo orespon noue nouvejaine, Vous l'avez conservée, et notre affection, Vous en aura toujours cette obligation. \nCHILDEBRAND\n Duiduis uignes dût olrt uu Tempie de Mémoire, Vous devez ezez moi partager la victoire, Car votre Zèle ardent a servir son pais, Me faisant votre Chef, vous m'avez obéis.",
+          "Je dois à votre bras, ainsi qu'à votre épée, Qui s'est contre un Tyran justement occupée, Le Ci lreconnoistra votre grande vertu, Puisque pour me venger vous avez combattu. \nCHILDEBRAND\n J'ai fait ce que j'ai déç, prenant votre défense, Je n'en demande point aucune récompense;",
+          "Sur tout il faut garder dextrement l'avenue, d'il ne se trouve point quelque route inconnue, Par où les ennemis sans péril ni danger Nous pourraient tous défaire, et nous endommager. \nCHILDEBRAND\n Allons dans nos vaisseaux, car il est nécessaire De mettre notre armée en état de bien faire.",
+          "Et moi ici vous élis pour Maître de mon cœur Puis qu'avec vérité vous en êtes Vainqueur \nCHILDEBRAND\n J'aurais vous refusant la Fortune ennemie, Et mon âme en effet serait bien endormie Si grande n'acceptais pas un don si précieux Que de finir mes jours auprès de vos beaux yeux.",
+          "Qu'au bruit de votre nom, tous les plus mutine Pour éviter les maux qui leur sont destinés, Sont contraints d'auoüer que sous votre puissance, La Terre dois ployer avec obéissance. \nCHILDEBRAND\n Madame, donnez -moi cette permisiion, De faire exécuter cette Commission;"
+        ]
+      },
+      "top_5_persons": [
+        "Childebrand",
+        "PANDOR",
+        "ANDOR",
+        "Seigneur",
+        "Césars"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Il a voulu permettre en voyant mon amour, Que Rome vinsse en ce lieu pour le priver du jour;"
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Throne"
+      ]
+    }
+  }
+}

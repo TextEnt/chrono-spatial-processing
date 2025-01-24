@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "author": "Charenton, De",
+    "title": "Ptolomée, tragi-comédie par le Sr de Charenton",
+    "publication_date": "1666",
+    "document_id": "bpt6k8528577"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "LUCIAN",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "le veux d'un vain effort arrêter leur fureur, Leur nombre se croissant, et les miens perdant ceur, Lucian des premiers à senti leur outrage, Et j'apprends par sa mort jusqu'où venait leur rage, On me saisit au corps sans respect de mon rang, Je me vois mal-traiter, les miens couverts de sang, Et joignant sans raison la menace à l'injure,  ij On m'amène vers vous me tacher d'imposture, Et sans vouloir savoir l'ordre que j'ai de vous, Sans in coûter parler, ils en viennent aux coups.",
+          "Il devient furieux quand il n'espère rien, Et par un désespoir il espère son bien: Je me vois en état de n'avoir rien à craindre, J'agis d'une la goir de pouuoir tout contraindre, Je brave le hasard, enfin ie ne crains pas, Je Idis.  \nLUCIAN\n Le Roi, Seigneur, adresse ici ses pas. \n",
+          "le te dirai tout luiqu'au Princes ihcident, Et de tous mes secrets ie te fais confident. \nLUCIAN\n De ces grâces, Seigneur, je me connais indigne;",
+          "LUCIAN\n Je m'en vais de ce pas, Seigneur, vous satisfaire, Et ici saurai prévoir à tout ce qu'il faut faire.",
+          "DORIMAN, LUCIAN \nLUCIAN\n bar I sAis dans ce grand espoir de tous vos avantages, VIl pourrait se cacher de sinistres présages,"
+        ]
+      },
+      "top_5_persons": [
+        "LUCIAN",
+        "SABINE",
+        "PAULINE",
+        "Seleucus",
+        "Straton"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Je devrais après avoir au nom de toute la France, si mon Présent en était digne, Vous donner par là quelques marques de ses reconnaissances, d'être venu confirmer l'amitié des deux plus grands Rois qui règnent aujourd'hui sur la Terre, et dont les forces Tries par l'entremise de Votre Excellence, les rendront redoutables à tous les hutres.",
+          "2041Cusnibio À SON EXCELLENCE MONSEIGNEUR LE COMTE DE ONISMAR, GRAND CHAMBELLAN du Roi de Suède, Capitaine des Chevaux-Légers de sa Garde, et son fiinbunadeur Extrédordinaire en France ONSEIGNEUR"
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Memphis",
+        "PAULINE",
+        "Rome"
+      ]
+    }
+  }
+}

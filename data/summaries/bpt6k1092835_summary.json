@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "author": "Ouville, Antoine d'",
+    "title": "L'esprit folet . Comédie. Par Mr Douville",
+    "publication_date": "1642",
+    "document_id": "bpt6k1092835"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ISABELLE",
+          "frequency": 7
+        },
+        "related_sentences": [
+          "Puis qu'ici j'ai de quoi, je veux à ce galant Écrire un mot de lettre. \nISABELLE\n Et pourmoi cependant Je veux revisiter ici cette autre male, C'est celle du Valet, voici du linge sale, Quels infâmes haillons, mais quel est ce livret, C'est l'Almanach de l'an mil six cents vingt et sept, Des brosses, une étrille, un pair de décrotoire, Vnbonnet gras sans coiffe, un paquet de lardoires, Deux gands despairiés, un grand chanteau de pain, V morceau de fromage, ah!",
+          "Nous t'allons étrangler si tu dis un seul mot. \nCARRILLE\n Je ne parlerai plus, Madame ne suis pas si sot, Pardonnez s'il vous plaît à mon effronterie A deux genoux ici Carrille vous en prie, Au moins permettez-moi d'avoir un peu de peur. \nISABELLE\n ",
+          "Et si l'on ne veut pas pourtant me le permettre. \nISABELLE\n Mais à leurs volonté il faut bien vous soumettre, Et pour vous dire vrai, vos frères ont raison",
+          "Je ne veux pona teier que sans bruste d envie Dame sçauoir quel il est, et de le voir aussi. \nISABELLE\n Madame taisez-vous, votre frère entre ici.",
+          "Qui merveilleusement me surprennent les sens, Je n'ose seulement espérer cette gloire, Et deux pense en effet qu'on me le fait acroire. \nISABELLE\n "
+        ]
+      },
+      "top_5_persons": [
+        "ISABELLE",
+        "Isabelle",
+        "Seigneur",
+        "Florestan",
+        "FLORESIAN"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 7
+        },
+        "related_sentences": [
+          "Si vous ne voulez pas si tôt vous mettre au lit Pour tâcher d'acquérir un peu plus d'appétit, Puis que vous estimez, si peu votre blessure Allons nous promener il est encor bonne heure, Si nous allons au Cours, quelque rare beauté Vous pourra dans Paris ravir la liberté. \nFLORÊTAN\n Allons, Seigneur le veux bien, c'est ce que Rome désire. \nLIZANDRE\n Descend là-bas Ariste, et va promptement dire Que le carroce vienne, et qu'on nous tienne prêt Le soupé dans une heure. \n",
+          "FLORÊTAN, CARILLE. vais à Q Apètea FLORÉTAN VÎT Paris en effet est l'abrégé du monde, Dans l'enclos de ses murs toute merveille abonde, Et su ne l'aurais pas sans doute reconnu Depuis dix ans entiers que sans n'y suis venu.",
+          "À peine le croiré-je, il est presque impossible, Et l'esprit le mieux fait s'y trouverait surpris) Qu'un étranger rencontre arrivant à Paris",
+          "CARRILLE\n Je n'ai point bu depuis que je suis à Paris, Non, non, tu ne ris point",
+          "Donné à Paris le vingt-troisième jour de Décembre l'an de grâce 1641 Et de notre règne le trentième."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Rome",
+        "Languedoc"
+      ]
+    }
+  }
+}

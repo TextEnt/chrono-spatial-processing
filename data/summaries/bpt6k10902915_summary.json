@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "author": "Puget de La Serre, Jean",
+    "title": "Pandoste ou la Princesse malheureuse, tragédie en prose, divisée en deux journées",
+    "publication_date": "1631",
+    "document_id": "bpt6k10902915"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Seigneur",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "et personne vous promets d'honorer votre mémoire, et de chérir vos cendres. \nPANDOSTE\n Si mon ombre pouvait posséder votre corps, après mon trépas, Seigneur vous rendrais bientôt contente.",
+          "Vos commandements me pressent plus que Seigneur rivis, Seigneur vous laisse mon cœur, mon âme, et mes pensées, et n'emporte rien que mon corps animé de votre amour.",
+          "Car dans ma faiblesse, Seigneur me moque de votre pouvoir. \nPANDOSTE\n Ne savez-vous pas que la vie de votre époux est entre mes mains?",
+          "Sire, Seigneur porterai toujours la qualité de votre! servante, avec celle de votre fille, dont vous m'honorez aujourd'hui;",
+          "Je t'avais bien commande de Seigneur parler, mais non pas d'amour."
+        ]
+      },
+      "top_5_persons": [
+        "Seigneur",
+        "Paysan",
+        "Seigneur",
+        "Espouse",
+        "Zéphir"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Candie",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "DORASTE\n Changeons donc de nom et de qualité, et disons nous habitants de Candie, pour donner moins de jour à la vérité, de peur que ce perfide Pandôte ne nous dresse quelque embûche.",
+          "Mais quelle est votre nation, et de quel côté se termine votre voyage? \nDORASTE\n Nous sommes de Candie, et allons vers la côte visiter un de nos parents."
+        ]
+      },
+      "top_5_places": [
+        "Candie",
+        "Rome",
+        "Bergère"
+      ]
+    }
+  }
+}

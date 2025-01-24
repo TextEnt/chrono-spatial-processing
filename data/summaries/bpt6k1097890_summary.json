@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "author": "Puget de La Serre, Jean",
+    "title": "Climene ou Le triomphe de la vertu. Trage-comedie en prose Dediee a madame la duchesse de Sully. Par Monsieur de La Serre",
+    "publication_date": "1643",
+    "document_id": "bpt6k1097890"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Climène",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Et tu m'auoüeras que quand le Nature durait fait de ses mains propres ces deux merveilles sous un même visage, Climène serait toujours l'original du porttrait de sa sœur. \nPOLIARQUE\n Quand il n'y aurait autre différence que celle que votre Majesté ymet, elle sera toujours assez grande, pour diminuer l'estime de l'une, en faveur de l'autre.",
+          "POLIARQUE\n Saches qu'à l'arrivée de Climène et de Pampilie, ces deux grandes Princesses, qui bannies de leur pays par la trouver de Clyamas, ont cherché leur protection dans cette Cour, pour la trouver en la bonté du Roi;",
+          "J'ai offensé votre vertu Climène Mais si mon amour m'en a donné le Conseil, et votre beauté la hardiesse, elles -mêmes encore pour vous satisfaire m'en donnent maintenant le repentir CLIMENE.",
+          "J'avais fait dresser un bûcher pour y réduire en cendre Climène, sans considérer qu'en possédant mon cœur, j'eusse esté aux bien qu'elle la victime de ce sacrifice.",
+          "Allons donc, puis qu'il le faut, allons dire à Climène que le Roi est son Amant, pour lui faire connaître que personne ne porte plus ce titre?"
+        ]
+      },
+      "top_5_persons": [
+        "Climène",
+        "Seigneur",
+        "M",
+        "Seigneur",
+        "Adame"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "-trois Ledit Sieur de la Serre a cédé son Privilège à Antoine de Sommaville et Augustin Courbé, Marchands Libraires à Paris, suivant l'accord fait entr'eux.",
+          "-trois Ledit Sieur de la Serre a cédé son Privilège à Antoine de Sommaville et Augustin Courbé, Marchands Libraires à Paris, suivant l'accord fait entr'eux.",
+          "Ar grâce et Privilège du Roi, donné à Paris le L 22.",
+          "Ar grâce et Privilège du Roi, donné à Paris le L 22."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Climène",
+        "PARIS",
+        "France",
+        "Coronne"
+      ]
+    }
+  }
+}

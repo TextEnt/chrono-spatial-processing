@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "author": "Hauteroche, Noël Lebreton",
+    "title": "Les bourgeoises de qualité . Comedie. Par Mr de Haute Roche",
+    "publication_date": "1691",
+    "document_id": "bpt6k5752605t"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Mariane",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Quel nouve: ms couveat nous les donnerons-nous, Tous ces nom d'amitil,souvent on les condamne, DD E3 Il faut les rendre vrais, épousez Mariane Alors il me sera permis en tout honneur De voir quand je voudrai le mari de ma sœur.",
+          "Son père voudrait-il, quoi qu’on lui pût apprendre, Payer vingt mille écus qu'il devrait à Lisandre Le Comte en proposant d'employer ce dédit, Pour lier Mariane a fait un tour d'esprit.",
+          "En esset, Vousdevez comnemoychercher lon avantage, La pauvre Mariane est heureuse, elle est sage, Et je l'ai toujours dit, que quelque bon hasard Pour l'en récompenser ainsi viendrait tôt ou tard.",
+          "L'amour qu'on désespère est contraint d'éclater, Mariane pour vous, s'était rendue aimable, Je vous plains du chagrin dont elle vous accable, On sait que vous voyez son hymen a regret.",
+          "mais je te voyievule, Courage, Mariane, on va te rendre heureuse, Explique ces désirs, s'ils sont ailleurs portez."
+        ]
+      },
+      "top_5_persons": [
+        "Mariane",
+        "LECOMTE",
+        "Olympe",
+        "MORILLE",
+        "Monsieur le Comte"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Par exemple, on veut bien rendre à ma qualité Tout l'honneur qu'un vrai Compte a toujours mérité, Si ma maison n'est noble, il n'en est point en France Mais malgré ce bonheur d'une haute naissance, Si j'étais demeuré dans l'un de mes Châteaux, A compter mes moutons, vaches, et mes veaux, Vifitant mes moulins, mettant somme sur somme, Je serais Gentillâtre, et non pas Gentilhomme: Croyez-moi, pour tous ceux dont la gloire est le but;",
+          "bnf fr ( Bibliott ale de France SCÈNE VI.",
+          "bnffr 1t de France SCÈNE II."
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Auvergne",
+        "Tours",
+        "Paris",
+        "Rome"
+      ]
+    }
+  }
+}

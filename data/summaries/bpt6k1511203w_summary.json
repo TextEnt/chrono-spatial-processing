@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "author": "Boucher",
+    "title": "Alphée et Aréthuse : tragédie, représentée devant Sa Majesté à Fontainebleau au mois d'octobre 1686 / mise en musique par M. de Boësset,... ; et en vers par M. Boucher",
+    "publication_date": "1686",
+    "document_id": "bpt6k1511203w"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Alphée",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Vous n'avez pas sujet de vous tant alarmer, Alphée est mal traité, sa disgrâce est certaine, Arcinuje ie suii, propiez de ja haine, Songez à vous en faire aimer, \nJRCE\n Arethuse est belle, elle est fière, Cela doit-il vous rebuter?",
+          "Il cherche à m'éviter, son crime est volontaire, uccuurois qu'il se fit un paiifinut me plaire: Pour tenir l'amour dans mon cœur Je voudrais qu'il voulut mériter ma douceur: Mais il ne veut que ma colère. \nALPHÉE\n ",
+          "Et peut-on être constant Lors qu'on voit tant D'indifférence Gals tuperaince. \nALPHÉE\n Quoi?",
+          "Alphée disparaît comme Arethuse, il est métamorphosé en un Fleuye qui va se mêler à la Fontaine.",
+          "Et moi je vous fuirai toujours. \nALPHÉE\n À mon secours Dieu des Amours."
+        ]
+      },
+      "top_5_persons": [
+        "Alphée",
+        "Arethuse",
+        "CIRCE",
+        "Arethuse",
+        "Diane"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "PARIS",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "À PARIS,"
+        ]
+      },
+      "top_5_places": [
+        "PARIS"
+      ]
+    }
+  }
+}

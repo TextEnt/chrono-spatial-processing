@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "L'Escole des femmes, comédie par J. B. P. Molière",
+    "publication_date": "1669",
+    "document_id": "bpt6k1280444d"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ALAIN",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "ARNOLPHÉ\n *on Holà, c'est assez. \nGEORGETTE\n Puis jepus comiie il faut; \nALAIN\n Est-ce de la façon que vous voulez l'entendre?",
+          "ALAIN\n E ne sais ce que c'est, Monsieur, mais il me semble IQu’Agnès et le corps moit s'en sont allés ensemble. \n",
+          "lee \nALAIN\n Nous vous avons rendu, Monsieur, obéissance, \nARNOLPHÉ\n De cette excuse en vain vous vou lez armer;",
+          "Vas-y toi. \nGEORGETTE\n \nALAIN\n vaa y ouvoi. \nGEORGETTE\n Ma foi ici n'irai pas.",
+          "Dou vient qu'a tout le monde lnteuttant la cacher, Et qu'il ne saurait voir personne en approcher; \nALAIN\n "
+        ]
+      },
+      "top_5_persons": [
+        "ALAIN",
+        "GEORGETTE",
+        "Agnès",
+        "Arnolphe",
+        "MAXIME"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Enrique",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Cet Enrique, dont hier ici m'informais à vous, Cause tout le malheur dont quelque ressens les coups;",
+          "HORACE. \nEnrique\n "
+        ]
+      },
+      "top_5_places": [
+        "Enrique",
+        "Rome",
+        "France"
+      ]
+    }
+  }
+}

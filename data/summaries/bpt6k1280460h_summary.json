@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Sganarelle ou le Cocu imaginaire, comédie par J. B. P. Molière [sic]",
+    "publication_date": "1666",
+    "document_id": "bpt6k1280460h"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Celie",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Mon fils, dont votre fille acceptait l'hyménée, bous des nélis cachez tronipants les yeux de tous Vît depuis quatre mois était lise en Époux, Et comme des parents le bien et la naissance M'ôtent tout le pouvoir d'en casser l'alliance, Je vous viens. \nGORGIBUS\n Brisons là, si sans votre congé, Valère votre fils ailleurs s'est engagé, Je ne vous puis celer que ma fille Celie, Dès longtemps par moi-même est promise à Lélie, Et que riche en vertus son retour aujourd'hui M'empêche d'agréer un autre Époux que tu.",
+          "regardant aller Lélis SGANARELLE sans voir Celie E n'est point s'expliquer en terme ambigus etCét étrange propos me rend auxîn confus Que s'il m'était venu des cornes à la tête.",
+          "Qui comme m a foi le voudrait bien aussi, En ramassant le portrait que Celie avait laissétõber.",
+          "CELIE, LELIE, GORGIBUS, SGANARELLE, SA FEMME, VILLEBREQUIN, LA SVIVANTE. \n",
+          "Celie approche peu à peu Mais je le laisse aller après un tel indice."
+        ]
+      },
+      "top_5_persons": [
+        "Celie",
+        "Sganarelle",
+        "Valère",
+        "VILEBREQUIN",
+        "Louis"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "-Villenaine a cédé son droit de Privilège à Jean Ribou, Marchand à Paris, pour en joüyr suivant l'accord fait entr'eux.",
+          "La Scène est à Paris À ij Extrait de Privilège du Roi.",
+          "GORGIBUS, Bourgeois de Paris CLTE, sa fille.",
+          "AR grâce et Privilège du Roi, donné à Paris"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "PARIS",
+        "France"
+      ]
+    }
+  }
+}

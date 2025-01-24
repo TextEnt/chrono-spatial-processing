@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Péchantré, Nicolas",
+    "title": "Geta, tragedie",
+    "publication_date": "1687",
+    "document_id": "bpt6k853024v"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Antonin",
+          "frequency": 22
+        },
+        "related_sentences": [
+          "Ajà Fille de Pertinax, la source de son sang La rappelle sans cesse à votre auguste range Par son ambition secrètement pressée Elle voudra se voir à cet hymen forcée, Heureuse si vos lois épargnent à son cœur lente duavca comle à Ia pudeur, \nANTONIN\n Mais pour la rendre Albin à mes vœux moins contraire, Tâchons en ma faveur d'intéresser ma mère;",
+          "À jijà \nANTONIN\n J'ai caché cet hymen, j'ai cru le devoir taire, Je n'ai pu sur mon choix faire le moindre éclat Sans en avoir plutôt consulté le Sénat: Voici le jour enfin où tout se détermine, La fille d'un César, l'adorable Justine Que son sang, ses vertus m'ont dû faire estimer.",
+          "Le malheureux Géon, ce Prince déplorable Entretenait Julie en son appartement, Le cruel Antonin entre inopinément, Il approche son frère, il le joint, il l'embrasse, Et sans faire éclat ainsi courroux mieux menace Il le frappe, et soudain après l'avoir blessé, Fuit, et laisse en son sein le poignard enfoncé;",
+          "Par là nos différents se trouveront finis, Et quoi que séparés nous serons mieux unis. \nANTONIN\n Tous ces raisonnements si beaux en apparence, N'ont que l'éclat trompeur d'une fausse prudence: Mais s'il faut vous parler encore à cœur ouvert, Notre discorde seule est tout ce qui nous perd.",
+          "Si pour le sens caché des obscures Sybilles nés famières que j'ai peuvent vous être utiles, Ou s'il faut pour la Guerre, ou sil faut pour la Paix, Consulter de nos Dieux les Oracles secrets, À vos ordres ici vous me voyez soumise, Vous pouvez m'oidonner. \nANTONIN\n Ciel!"
+        ]
+      },
+      "top_5_persons": [
+        "Antonin",
+        "JUSTINE",
+        "Justine",
+        "Albin",
+        "Justine"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 22
+        },
+        "related_sentences": [
+          "si je pouvais vous partager ma vie, Vivre avec l'un à Rome, avec l'autre en Asie Malgré votre fureur, j'espérerais du moins Concilier vos cœurs, par mes vœux, par mes soins: Mais votre haine enfin jusqu'ici suspendue Va désormais avoir toute son étendue, Et par l'ambition l'un et l'autre animés, Je vous verrai bientôt l'un contre l'autre armés: Épargnez ces douleurs à mon cœur trop sensible, Jouissez en repos d'un Empire paisible: Le Parthe, le Germain, tout fléchit sous vos lois, Et ce n'est que par vous qu'on voit régner cent Rois;",
+          "Rien n'est si célèbre chez les Historiens que l'inimitié d'Antonin et de Geta, tous deux fils de l'Empereur Sevère, fameux par la défaite de trois Empereurs: Rien de si connu que le soin que prit cet illustre père de prévenir les suites de leur haine par le partage de l'Empire: Rien de si bien marqué que les oppositions de Julie leur mère à l'exécution de ce Traité, suivant lequel l'un de ces Princes devait aller régner en Asie, et l'autre à Rome Voici comment Hérodian exprime les sentiments de cette mère: Ô fili!",
+          "Entourez de flatteurs qui nous trahissent tous, Nous ne pouvons avoir de vrais amis que nous: Si nous voulons régner dans une paix profonde, Rome doit demeurer la maîtresse du Monde, N'avoir point de rivale, et sous deux Souverains Faire adorer par tout l'Empire des Romains, Tel qu'il fut autrefois sous nos fameux Ancêtres, Il peut encore entier subfisteres deux maîtres, Qui tous deux conspirant pour un parfait accord, De l'Univers entier sachant régler le sort;",
+          "Pour éteindre ce feu que nous voulons dompter, Il faut partir de Rome, ou plutôt nous quitter: Le Germain se soulève, Antioche est rebelle, De deux divers côtés la gloire nous appelle, Allons comme Empereurs, et non comme rivaux, Abandonner nos cœurs à de plus grands travaux;",
+          "EN est fait, cher Arcas, je tiendrai ma parole, Je dois abandonner demain le Capitole, Ces Mouumens pompeux, ces Cirques, ces Palais, Je sors de Rome enfin, et j'en sors pour jamais: Justine rentre au Temple, ici rien ne m'arrête;"
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Asie",
+        "Sévère",
+        "Antioche",
+        "Paris"
+      ]
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "author": "Regnard, Jean-François",
+    "title": "La Sérénade , comédie",
+    "publication_date": "1695",
+    "document_id": "bpt6k4222962n"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "CHAMPAGNE",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "CHAMPAGNE\n Maraut, voilà quelqu'un qui me connaît, je suis plus pesant que de coutume, et je ne sais si mes jambes pourront porter au logis tout le vin que j'ai bu. \nMrGRIFON\n Ne serait-ce point quelque émissaire de mon coquin de fils qui viendrait ici pour troubler la fête, je veux m'en éclaircir. \nCHAMPAGNE\n Holà l'ami, qui parlez tout seul, suis-je loin de chez moi, par paranthese. \n",
+          ", rien ne la domine, ell e a du goût pour toutes les belles manières elle vend pour jouer tout ce qu'elle a, elle met ses nières en gages pour aller à l'Opera et à la Comédie, elle court le Bal sept fois la semaine seulement, elle fesse son vin de Champagne à mervénie;",
+          "CHAMPAGNE\n Je me suis associé d'un fort honnête homme, qui est, je pense, Seigneur, associé d'un autre fort nomeite nomie enez qui il m'envoie prendre deux mille huit cens livres \nCAPIN\n \nDeux mille huit cens livres\n Serions- nous assez heureux.",
+          "La retraite est méritoire. \nCHAMPAGNE\n Ma foi il n'y a plus que ce métier là pour faire quelque chose, il n'y a rien de tel, quand on a de l'argent d'en aider des partieuners danis leurs llecessitez prêtantes.",
+          "CHAMPAGNE\n Par une espèce de scrupule, une lettre de cachet du Châtelet m'avait défendu de paraître à la Ville, elle me prescrivait un temps pour voyager, mes voyagés sont finis, je reparais sur nouveaux frais. \n"
+        ]
+      },
+      "top_5_persons": [
+        "CHAMPAGNE",
+        "LEONORE",
+        "SCAPIN",
+        "Valère",
+        "Marine"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Champagne",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "CHAMPAGNE\n Maraut, voilà quelqu'un qui me connaît, je suis plus pesant que de coutume, et je ne sais si mes jambes pourront porter au logis tout le vin que j'ai bu. \nMrGRIFON\n Ne serait-ce point quelque émissaire de mon coquin de fils qui viendrait ici pour troubler la fête, je veux m'en éclaircir. \nCHAMPAGNE\n Holà l'ami, qui parlez tout seul, suis-je loin de chez moi, par paranthese. \n",
+          ", rien ne la domine, ell e a du goût pour toutes les belles manières elle vend pour jouer tout ce qu'elle a, elle met ses nières en gages pour aller à l'Opera et à la Comédie, elle court le Bal sept fois la semaine seulement, elle fesse son vin de Champagne à mervénie;",
+          "CHAMPAGNE\n Je me suis associé d'un fort honnête homme, qui est, je pense, Seigneur, associé d'un autre fort nomeite nomie enez qui il m'envoie prendre deux mille huit cens livres \nCAPIN\n \nDeux mille huit cens livres\n Serions- nous assez heureux.",
+          "La retraite est méritoire. \nCHAMPAGNE\n Ma foi il n'y a plus que ce métier là pour faire quelque chose, il n'y a rien de tel, quand on a de l'argent d'en aider des partieuners danis leurs llecessitez prêtantes.",
+          "CHAMPAGNE\n Par une espèce de scrupule, une lettre de cachet du Châtelet m'avait défendu de paraître à la Ville, elle me prescrivait un temps pour voyager, mes voyagés sont finis, je reparais sur nouveaux frais. \n"
+        ]
+      },
+      "top_5_places": [
+        "Champagne",
+        "France"
+      ]
+    }
+  }
+}

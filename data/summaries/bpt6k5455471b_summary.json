@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "author": "Chappuzeau de Baugé, Daniel-Paul",
+    "title": "Coronis , pastorale héroïque, représentée par l'Académie royale de musique, le 23e mars 1691",
+    "publication_date": "1691",
+    "document_id": "bpt6k5455471b"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Coronis",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Coronis A repris sa première chaîne, Ni son dépit, ni sa haine Rien n'a pu résister à l'amour de Daphnis L'espoir d'un sortbrillant, votre ardeur, tout deux cède, Dans ces valons à Venus consacrez Je viens d'être témoin du plaisir qui succé de Au chagrin dont leurs cœurs ont été pénétrés.",
+          "Non, belle Coronis, que l'amour vous enflamme, Mais faites un glorieux choix, Daphnis est un ingrat qui renonce à vos lois, Et je viens vous offrir l'empire de mon âme.",
+          "Mais Coronis est infidèle, Duo ouve poumtuy ou moumour pour elle, Et je voudrais vous voir contents.",
+          "Sans Coronis peut-être il eût été sensible À la fidèle ardeur dont je brûlais pour lui: Ah!",
+          "Je croyais Coronis pour tout autre inflexible, Et cependant l'ingrate a su se dégager."
+        ]
+      },
+      "top_5_persons": [
+        "Coronis",
+        "Daphnis",
+        "Coronis",
+        "Daphnis",
+        "CLIO"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "CORAX",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Nymphe du Pinde, Amante de Daphnis DAPTINTS, fitz au Fleuve Penée, Amant de Coronis APIDAMIE, fille du FleuveApidamie, Amante de Daphnis CORAX, consident d'Apollon."
+        ]
+      },
+      "top_5_places": [
+        "CORAX",
+        "Fleuve",
+        "Corax"
+      ]
+    }
+  }
+}

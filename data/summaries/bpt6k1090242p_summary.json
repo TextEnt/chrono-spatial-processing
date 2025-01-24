@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": null,
+    "title": "Tite et Titus, ou Critique sur les Berenices, comédie",
+    "publication_date": "1673",
+    "document_id": "bpt6k1090242p"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "THALIE",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Oui sans doute, savante Nim hé, et si tous les entiments de Titus m'ont toujours servi de Loi, ors même que j'ai eu sujet de les trouver les lus injustes, il n'y a pas apparence que je le désaoue quand il m'en attribue d'aussi raisonnables que ceux -là. \nTHALIE\n J'ai bien de la joie, illustres Amants, de vous évoir dans un si bon accord, et tous ceux, que outre séparation avait si fort affligés, Jusques à les lire fondre en Larmes, seront bien consolez, and ils sauront votre bonne intelligence prêlen: vous vous étiez pourtant séparés avec assés de eremonie, et votre à dieu avait été asséz long, our tenir plus longtemps, et pour ne vous pas revIr si tôt.",
+          "Il parait bien à vos discours, savante Nim que les grâces et les jeux ne vous abandonne mais, et l'obligeante raillerie, dont vous u accueillie, ne pouvait être assaisonnée pa main plus délicate aussi jo la reçois avec tos reconnaissance que méritent les civilités, et louanges d'une immortelle comme vous. \nTHALIE\n Vous venez à propos en ce pays, aimable l'ut cesse, et le sort vous y à sans doute conduite p",
+          "En effet, ma sœur n'a pas raison de vous cette raillerie, mais il ne faut pas que cela vousfraie: épar, outre que tout céqu'elle dit n'est lesouvent que pour rire, élle est obligée de défe vos Ennemis ayant ordre d'Apollon de les pie ger, comme il m'a chargée de vous conduire TITUS à THALIE Aimable",
+          ", j'ai encore plus grand jet que Tite d'appréhender qu'on ne me prenne our une autre, et qu'on ne m'attribue bien des hoses, qui ne me conviennent pas. \nTHALIE\n C'en est assurés pour le présent, belle Princesse ous avés apparemament plus besoin de repos que de ascours;",
+          "Thalie, il ne faut pas que cette inégalité vous surprenne, la différence que vous trouvez entre notre entretien et ceux que Titus vous à rappoitéz, est une suitte nécessaire de la différence des matières, il est bien aisé d'être clair dans un entretien familier comme celui cy ou l'on ne parle que"
+        ]
+      },
+      "top_5_persons": [
+        "THALIE",
+        "Tite",
+        "Titus",
+        "Berenice",
+        "Apollon"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Parnasse",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Ces noms sont en vénération au Parnasse l'un a té le père du Théâtre Français et l'autre en est le burrislier, personne, ô Melpomene, ne le sait jeux que vous, mais passons outre, vous Tite mmancéz mais acte condition de ne dire précinent que ce qui sait contre Titus et ce que vous ouvez à redire en lui etde ne dire point ce qui fait pour vous et ce qu'on peut vous objecter etcela re.",
+          "c'est ainsi que Paris est devenu aujourd'aui le lieu du monde ou nous sommes en plus grande estime et les plus connue, aussi voyez vous qu'Apollon et nous ne parlons tous que Français, c'est jamais présent la langue du Parnasse et toute autre y est arbare, telle est la vicissitude des choses, mais j'apperçois, Aposson qui s'avance et vous allez et ugéz.",
+          "c'est pourquoi abstenéz vous en soigneusement, si vous êtes sagé, quand vous retournerez en France, il sera permis à vous de reprendre votre jargon, puisqu'il y a des gens qu'en accommodent, mais tant que vous seréseréz au Parnasse, vivez selon la loi du pays.",
+          "Ur fin qu'il en soit mémoire ôrmaise et pour empêcher que pareille chose ne puisse arriver à l'avenir, l est enioint à tous ceux qui gardent les entrées du Parnasse, qu'ils aient désormais ne laisser plus montrer personne de quelque qualité et condition que ce soit;",
+          "soyer d les biens venus Princes, il ne vous rêle pluss nous dire de qui sont vos lettres d'adresse qui vous a donné passe port pour monter sur le Parnasse MELPOMENE."
+        ]
+      },
+      "top_5_places": [
+        "Parnasse",
+        "Rome",
+        "France",
+        "Bervie",
+        "Carthage"
+      ]
+    }
+  }
+}

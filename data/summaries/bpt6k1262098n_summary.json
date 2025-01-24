@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "author": "Corneille, Thomas",
+    "title": "\"L'Amour à la mode, comédie, par P. (\"\"sic\"\") Corneille\"",
+    "publication_date": "1688",
+    "document_id": "bpt6k1262098n"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "LYSETTE",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Sache qu'Eraste et Seigneur m'offrent ici leurs vœux, Et qu'à la même lettre ils répondent tous deux, Comment? \nLYSETTE\n Bo. \nDOROTÉE\n C'est dequoy faire un assez plaisant compte, J'écrivais ce matin un billet pour Oronte, Et voyant que pour l'autre il semblait fait exprès J'ai voulu l'obliger sur l'heure à peu de frais, J'ai transcrit le billet, et sans cérémonie Regalé son amour d'une belle copie.",
+          "Vous la trouvâtes seule? \nORONTE\n Aussi pour m'en venger Je ne m'étudiai qu'à la faire enrager, J'eus des respects pour elle aussi rares qu'étranges, Er pensai Paccaoler a rolce de Iotanges, Mais elle me perdait tant mon style était haut. \nLYSETTE\n Vous pourrez aujoud'hui réparer ce défaut, Elle vous veut parler, et je viens vous le dire.",
+          "ET ne vois plus paraître Oronte ni Lysette Jéprouve en que par un bizarre destin, Qu'un père j' ait contaaint à jeurouner chemin, Et que par un mépris que je ne puis comprendre, Oronte cependant n'ait pas daigné m'attendre, Mato si reirence \nCÈNE VIII\n 101I ORONTE, DOROTE, CLITON ORIO NT E. MAraut, s'il t'arrive jamais.",
+          "me angerve tous deux. \nLYSETTE\n Mais suivant les transports de votre jalousie Gardez. \nDOROTÉE\n Dans le jardin va retrouver Lucie Puis lors que tu croiras qu'Oronte soit ici Pai-Penfortir soudan pour yévemr auri, Et sur le point d'entrer arrête-la de sorte Qu'éise nous pume entendre eitant à cette porte.",
+          ", sans la flatter, Lysette a des appas Dont quelque effort qu'on fasse on ne se défend pas, À toute autre beauté mon amour laprefère, 19 Et comme elle me plaît autant qu'elle peut faire, Crois que c'est en user assez modestement Que de te l'emprunter pour huit jours seulement. \nCLITON\n "
+        ]
+      },
+      "top_5_persons": [
+        "LYSETTE",
+        "Lucie",
+        "LUCIE",
+        "Lisette",
+        "ORON"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Aussi sans vanité vaux-je un peu mieux que Rome, L'obéissance irait à votre préjudice.",
+          "Vous vouliez devant moi Rome donner votre cœur."
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "PARIS",
+        "France",
+        "Paris"
+      ]
+    }
+  }
+}

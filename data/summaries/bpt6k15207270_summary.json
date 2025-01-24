@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "author": "Rousseau, Jean-Baptiste",
+    "title": "Jason, ou la Toison d'or , tragédie représentée par l'Académie royale de musique",
+    "publication_date": "1696",
+    "document_id": "bpt6k15207270"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ORPHÉE",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Peuples cruels de ces Royaumes sombres, Impitoyables ombres, Pourquoi m'arrachez-vous un bien si précieux? \nORPHÉE\n Étouffez une vaine flamme Partons, éloignons-nous de ces funestes bords.",
+          "c'est une rigueur extrême D'être réduit à quitter ce qu'on aime Pour s'attacher à ce qu'on n'aime pas. \nORPHÉE\n Je vois paraître la Princesse.",
+          "N'offrez plus à mon cœur votre douceur passée. \nORPHÉE\n Tandis qu'en cette Cour vous prodiguez vos vœux, Croirai-je qu'Hisipile occupe encor votre âme?",
+          "je silelep, Et que de notre Zèle une preuve éclatante Puisse autoriser nos projets. \nORPHÉE\n Pour nous engager à vous croire Cessez de prendre un vain détour",
+          "Divin Orphée à qui les Dieux Ont prodigué des Sons la science charmante, Par les accents mélodieux De ta Lyre savante Suspens la Rage menaçante"
+        ]
+      },
+      "top_5_persons": [
+        "ORPHÉE",
+        "Jason",
+        "Jason",
+        "Sibille",
+        "Neptune"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Grèce",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Pour nous qu'un fier Tyran tient à ses lois soumis, Tel est le malheur qui nous presse, Ju'une honteuse mort nous attend dans la Grèce, Si de notre retour la Toison n'est le prix.",
+          "Je t'offre la Toison et je vais dans la Grèce, 1 L'ae cemui aucuda von niour.",
+          "Tant d'illustres Guerriers n'ont-ils quitté la Grèce Que pour venir être en ces lieux"
+        ]
+      },
+      "top_5_places": [
+        "Grèce",
+        "Fleuve",
+        "Seine",
+        "champ de Mars"
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "author": "Rotrou, Jean de",
+    "title": "Les Ménechmes , comédie de Rotrou",
+    "publication_date": "1636",
+    "document_id": "bpt6k5828942d"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Ravi",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Heureuse occasion que le ciel m'a fait naître, Pour signaler me sorce en faveur demon Maître, Mais qui portait ces gens à vous traiter ainsi, Dequoy se plaignaient-ils, ôtez, moi de soucié MENCHME. \nRavi\n Deux mots te l'apprendront.",
+          "Ravi\n Ô toi qui que tu sois dont la main favorable, M'est encor cette fois au besoin secourable, Seul ami qui me reste, auteur de mon repos, Que ton secours me vient, et m'assiste à propos, MENCHME.",
+          "Ravi\n Las lô ie n'ai point de gens au besoin si propices, Modoumen pumeml a pauumles ossces.",
+          "Ravi\n oui, de toutes les belles, Oapprenus-je de la femme eue en sait des nouvelles.",
+          "Ravi\n MESSENIE, EROTIE, ORAZIE, ERGASTE, LE VIEILLARD, LE MÉDECIN, LE VALET."
+        ]
+      },
+      "top_5_persons": [
+        "Ravi",
+        "Seigneur",
+        "Seigneur",
+        "Mercure",
+        "LE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "ATATRTS, Chez ANTHOINE DE SOMAVILLE, au Palais, dans la petite Salle, à l'Écu de France \nM\n DC."
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Navarre",
+        "Paris"
+      ]
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Boyer, Claude",
+    "title": "Fédéric , tragi-comédie, par Monsieur Boyer",
+    "publication_date": "1660",
+    "document_id": "bpt6k1171346"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Valère",
+          "frequency": 9
+        },
+        "related_sentences": [
+          "Édle fait d'être Empire un généreux mépris, Et non Trône vaut moins que l'amour de mon Fils. \nYOLAND\n À cent Trônes mon cégut préfereroit Valère Nésoyez point jaloux d'une Fils qu'on vous préférer Il vous est glorieux d'avoir donné le jour À qui suit mieux qu'un Roi mériter mon amour.",
+          "Valère peut toucher la vertu la plus fière, Et du rang Souverain l'orgueil le plus sénére Ne s'emprèsla tamais à demander des Rois, Quand un si grand Héros se présente à son choix: Élever jusqu'à nous un mérire sublime, Faire un Roi d'un Sujet, ne fut jamais un crime;",
+          "Valère, que son Père élevait auc moi, Me rendant tous les soins qu'on rend au Fils d'unRai, Me sut si bien gagner par ses tendres caresles, Qu'en peu de temps mon âme épreua ces faiblesses Dont l'amour en naislant saisit un jeune cœur;",
+          "Vous, feignez de l'aimer en Rival de Valère D'une Reine en courroux l'ambitieux désir, Entre un Sujet et vous, saura bientôt choisir; Poussez de feins soupirs, versez de fausses larmes, D'un Amant coivme vous elle a senri les charmes.",
+          "Bijà \nFABRICE\n Seigneur, Seigneur reconnais le bonheur de Valère Mais quand j'ai votre aveu, quand j'ai celui d'unPère, Est-ce avec ce secours manquer à mon devoir, De soutenir mes droits contre tout son pouvoir?"
+        ]
+      },
+      "top_5_persons": [
+        "Valère",
+        "Fabrice",
+        "MARCELLIN",
+        "CAMILLE",
+        "OCTAVE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Sicile",
+          "frequency": 9
+        },
+        "related_sentences": [
+          "Seigneur, expliquez -vous: par l'ordre du feu Roi, P'ar votre propre choix, vous deviez être à moi: L'Hvmen devait unir Naples à la Sicile Et si j'en pris d'abord un espoir inutile, Par le trépas d'un Père étant libre en ce jour, Vous pouvez disposer de vous, de votre amour.",
+          "Vous perdez tout, ingrat, en adorant Camille Tous les biens que le Ciel vous gardait en Sicile, Tout ce que vous avez de graudeur dans ma Cour Tout à péri pour vous par cet indigne amour.",
+          "autorité J'exerce la Vertu jointe à tant de beauté, Notre Sexe aurait moins de pouuoir en Sicile Le beau Sexe est traité de faible, et d'imbécile;",
+          "et c'est peu d'être grand en Sicile, lfaut régner dans Naple, et sur un révolté enger l'honneur du Trône, et de la Majesté.",
+          "Je le vois bien ingrat, vous adorez Camille Les beautés, les grandeurs de la Cour de Sicile, Ne sauraient arrêter ce cœur ainbitieux;"
+        ]
+      },
+      "top_5_places": [
+        "Sicile",
+        "Naples",
+        "Paris",
+        "PARIS",
+        "Messine"
+      ]
+    }
+  }
+}

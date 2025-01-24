@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "author": "Corneille, Thomas",
+    "title": "L'Amour à la mode , comédie [par Thomas Corneille]",
+    "publication_date": "1656",
+    "document_id": "bpt6k1311799"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Lysette",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Non non, Seigneur vois le sujet de ra plainte, Pour elle assurément tu me crois l'âme atteinte, Mais ne t'alarme point, quoi que l'on t'en ait dit, Je lui trouve aussi peu de beauté que d'esprit, Ses grâces la plupart sont grâces empruntées, Et tu vaux à mes yeux cinquante Dorotées. \nLYSETTE\n Vous pensez vous railler, Monsieur, mai, sur ma foii J'en vaux bien tout au moins une pire que moi. \nORONTE\n Je meure si tes yeux n'ont sur moi tel empire Que. \nLYSETTE\n J'en crois plus encor que vous n'en sauriez dire;",
+          "Croyez-vous qu'il y manque ou qu'il passe tout dioic ! \nDOROTE\n Ne pouvant me payer que d' ains faible excuse, Il peut. \nLYSETTE\n Non, en tel cas qui ne dit mot s'accuse, Il a l'esprit t oi bon pour en demeurer là. \nSOROTE\n Que te dit-il, Lysette, alors qu'il te parla? \nYSETTE\n Que vous le ravissiez, qu'il vous allait attendre, Et peut-être à délein s'est-il voulu méprendre.",
+          "Sache qu'Eraste et Seigneur m'offrent ici leurs vœux, Et qu'à la même lettre ils répondent tous deux, Comment? \nLYSETTE\n \nDOROTE\n C'est dequoy faire un assez plaisant compte, J'écrivais ce matin un billet pour Oronte, Et voyant que pour l'autre il semblait fait exprès, J'ai voulu l'obliger sur l'heure à peu de frais, J'ai transcrit le billet, et sans cérémonie Regalé son amour d'une belle copie.",
+          "DOROTE, LYSETTE \nDOROTE\n LA promenade est belle et ce lieu fort charmanti \nLYSETTE\n Voici l'heure à peu près qu'on y voit le beau monde, \nDOROTE\n Aux rendez-vous publics d'ordinaire il abonde, Et sur tout, nos galants prennent soin chaque jous D y venir débiter leur gâtez d'amour, C'est à dire, Lystte, autant de menteries. \nYSETTE\n Donc le bureau d'adresse en est aux Tuilleries? \n",
+          "Lois tombe entre vos mains, garde le stratagème, Enfin Lucie \nORONTE\n Enfin, doutes-tusi ie l'almer \nCLITON\n tortbien, et Doie \nORONTE\n Encor plus que jamais: \nCLITON\n Vous allez donc bientôt laisser Lysette en paix? \nRONTE\n Ou*, sa maigre beauté n'a plus rien qui me tente, On la souffre au besoin quand la place est vacante, rau veux. \nCLITON\n "
+        ]
+      },
+      "top_5_persons": [
+        "Lysette",
+        "Lucie",
+        "LUCIE",
+        "Lucie",
+        "Seigneur"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Je pense avoir trouvé ce milieu dans cet pièce, où vous verrez un personnage d'une humeur assez particulière, et qui bien loin d'être fort scrupuleux en matière d'amour, ne regarde la constance que comme une vertu de Romans non qu'il se déclare assez, ennemi du beau sexe pourfois refuses l'hommage qui lui était légitimement , au contraire il s'en acquite avec si peu de réserve dans la moindre rencontre, que jamais personne n'offrit son cœur plus libéralement, mais c'est toutefiis avec une indépendance qui fait aisément cognoistre que la perte maîtresse ne d' une guère de maîtres nuits, et guil a ère de m' en main contre les surprises que sa passion Rome peut faire.",
+          ". \nONTE\n Aussi sans vanité vaux-je un peu mieux que Rome, L'obéissance irait à votre préjudice, Et vous vous obligez en me rendant justice.",
+          "Vous vouliez devant moi Rome donner votre cœur."
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Paris",
+        "PARIS",
+        "France"
+      ]
+    }
+  }
+}

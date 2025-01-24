@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "author": "Troterel, Pierre",
+    "title": "Aristene pastorale . De l'invention de Pierre Troterel sieur d'Aves",
+    "publication_date": "1626",
+    "document_id": "bpt6k10404294"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Dolis",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Dolis\n L'on dit pourtant qu'il vaudrait mieux mourir, Que son renom voir devant soi périr. \nJoesse\n Fol est celui qui là dessus se fonde, Certes il n'est que de vivre en ce monde, Quand l'on est mort l'on ne sert plus de rien, Et notre corps ne seni ne mal, ne bien, 3 J'aime les vifs, et non ceux qu'une lame Enclôt en soi, privez de sang et d'âme: Pour ce Prince veux, sans plus vous hasarder, Que vous ayez le soin de vous garder. \nDolis\n Ce bon avis grandement profitable, Fait que personne crois votre amour véritable: denneusleuei faut un pen songer Comme on pourra l'aborder sans danger.",
+          ", sans entrer en courrous Dt vom purter 5jujex in pu peus dous. \nAristène\n Va-t-en te dis-je et plus ne m'importune. \nDolis\n Vous témoignez une grande rancune, Si ne pensai-je avoir oncques commis Aucun forfait qui nous rende ennemis. \nAristène\n Au loin au loin, et sans caiollerie Ne me viens plus donner de fâcherie, Si ce n'était que ici n'aurais d'honneur De t'assommer, perfide suborneur, Tiens pour certain que cette roche dure Te servirait de triste sépulivre.",
+          "DEQLIS ET IOESSE, \nDolis\n On dit bien vrai, troptard l'on se ravise, L' Quand le sort veut, que la faute est commises Si j'eusse su, ce qu'ores avoir connais, Je n'eusse pas pour la seconde fois Remis mon col sous le rude servage De l'importun et fâcheux mariages Si mon esprit eût été bien sensé Je me devais contenter du passé, Et demeurer en mon triste veufuage Qui Ce restait à passer de mon âge:",
+          ", Je ne serais, comme tu suis chétive, Pour mes ennuis bien plus morte que vive, Las! le regret dont mon cœur est époint, Pour Dolis qu'Amour m'avait conjoint, Ne me ferait noyer dedans mes l'armes Ainsi qu'il fait, et les rudes alarmes Que d'autre part ie sens pour son rival, Comme elles font ne me feraient de mal, Ô dieux, ô dieux de l'Empire celeste, Relas amour que tu nous és funeste!",
+          "Adieu Passteur, et cent fois grand merci. \nDolis\n Ha qu'ai-je dit transporté de colère, Mon cœur, m'amour, ma gentille Bergeré, He revenez, je vous requiers pardon, Ne me laissez tout seul à l'abandon Du désespoir qui contre moi conspire, He lez et été vostreire, Elle s'enfuit, Elle vain ie crie après, Allons aussi faire ailleurs nos regrets."
+        ]
+      },
+      "top_5_persons": [
+        "Dolis",
+        "Seigneur",
+        "Berges",
+        "Ber",
+        "Pasteur"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Mais le malheur est tant mon adversaire, Que Rome ne puis en rien vous satisfaire. \nAristène\n "
+        ]
+      },
+      "top_5_places": [
+        "Rome"
+      ]
+    }
+  }
+}

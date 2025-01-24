@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "author": "Aure, François d'",
+    "title": "Dipné, infante d'Irlande , tragédie, dédiée à madame Eleonor de Roham,...",
+    "publication_date": "1668",
+    "document_id": "bpt6k56197532"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Armide",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Qu'un Armide qui tient une pauvre Taverne, Hier sur le tard fut vu traitant avec Gerberne, Qui le sollicitait de pourvoir à sa faim, Iui mettant pour l'achappt, or et joyaux en main: Qu'aussitôt le suluant avec cettain Argante, Il n'avait pas atteint sa demeure présente: Mais que son compagnon en courant plus avant.",
+          "Mais tu me pressais crop, et j'étais occupé: Après t'avoir oui je voulais voir Armide Pour sçauoir de sa bouche où Gerberne réside, Quels joyaux en ses mains il peut avoir témis, Et tu peux témoigner qu'il me les a promis.",
+          "ARMIDE\n Je parle de ceux-là, ces hommes merveilleux Se sont faits maintenant habitants de ces lieux, Et des endroits voisins où leur famille habite Je les dois voit ici recevoir ma visite. \n",
+          "Armide a déclaré qu'au soir un étranger (C'est Gerberne sans doute) afin de l'obliger À ses provisions, lui fit grande largesse Des joyaux que je tient être de la l'rincesse.",
+          "ARMIDE\n Je ne sais si grande dois ou répandre des pleurs, Ou m'échapper en tis, ayant l'âme occupéo Moins en mon bien perdu qu'en ma vie écbappée."
+        ]
+      },
+      "top_5_persons": [
+        "Armide",
+        "MOGALE",
+        "Nearque",
+        "Colombe",
+        "M"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Mogale",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Il est vrai qu'on en fait de commuus entretiens, Et qu'il est soupçonné Sectaire des Chrétiens: Mais pendant que le Roi sous ces bruits le tolère, Pour les fruits de la fille et les vœux de la mère, Mogale voyant bien si le Prince mourait Que (les fils défaillants) la fille hériterait, Et que dans ses grandeurs qui le feraient décroître Cette illustre Disciple éleueroit son Maître;",
+          "mais encor je n'ai pas contenté Dans tous nos entretiens ma curiosité: Car j'attendais toujours quelque réponse mâle Dont Gerberne arrêtât le discours de Mogale, Lois qu'il lui proposa par tant d'empressements Ce conseil coloré de ses beaux compliments, Si la crainte du Roi;",
+          "S'il va bien c'est le Roi, s'il va mal c'est Mogale Sans avoir ręcherché ces illustres honneurs, Leur acquêt nous acquiert le nom de suborneurs: Ainsi nous ne croissons qu'au péril de décroitre.",
+          "Mogale était à pied, et se croit à cheval (En chatoüillant le Roi) s'il détruit son rival: C'est pour ce beau conseil sans donte qu'il s'apprête Apadle ceRvarqu a toujouls ententes TROPHIME.",
+          "Je veux vous faire voir, Monsieut (poursuit Mogale) un trait de mon devoir Au bien de la Punces aregner destinée, Le Conseil lui pourchasse un royal hyménée."
+        ]
+      },
+      "top_5_places": [
+        "Mogale",
+        "Dublin",
+        "Gange",
+        "Rhin"
+      ]
+    }
+  }
+}

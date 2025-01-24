@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "L'Escole des femmes, comédie par J. B. P. Molière",
+    "publication_date": "1665",
+    "document_id": "bpt6k12804467"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ALAIN",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "ALAIN\n \nARNOLPHÉ\n Laissons, c'est pour quelque autre jour, On veut à mon honneur joüer d'un mauvais tour : Et quel affront pour vous mes enfants pourrait-ce être, Si l'on avait ôté l'honneur à votre Maître?",
+          "Le présent qu'il m'a fait a rène bene canette, Et l'argent qu'en ont eu notre Alain et Georgette ano du majmeneztants doute, œuiriez comline nous. \nARNOLPHÉ\n ",
+          "Auriez-vous bien l'esprit de servir mon courroux? \nALAIN\n S'il ne tient qu'à frapper, mon Dieu, tout est à nous.",
+          "Qui va là? \nALAIN\n \nARNOLPHÉ\n Moi. \nALAIN\n \nGeorgette\n \nOBORAMHTE\n Hé bien? \nÀLRIN\n Ouvre la bas.",
+          "ALAIN\n E ne sais ce que c'est, Monsieur, mais il me semble IUGnez et le corps mort s'en sont allés ensemble. \n"
+        ]
+      },
+      "top_5_persons": [
+        "ALAIN",
+        "GEORGETTE",
+        "Agnès",
+        "Arnolphe",
+        "MAXIME"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Enrique",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Cet Enrique, dont hier ici m'informais à vous, Cause tout le malheur dont quelque ressens les coups:",
+          "HORACE. \nEnrique\n "
+        ]
+      },
+      "top_5_places": [
+        "Enrique",
+        "Rome",
+        "Paris",
+        "France"
+      ]
+    }
+  }
+}

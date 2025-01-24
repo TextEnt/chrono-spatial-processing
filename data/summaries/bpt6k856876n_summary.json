@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "author": null,
+    "title": "Le Combat victorieux de Bachus contre Neptune. Ensemble sa naissance et sa vie. Comédie en prose",
+    "publication_date": "1634",
+    "document_id": "bpt6k856876n"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Bachus",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "que si les Dieux te veulent élever avec eux, qu'ils te créent de nouveaux Empires, ou qu'ils descẽdẽt eux -mêmes pour te seconder en tes conquêtes: car tandis qu'il y aura un Neptune, sache que nul autre ne régnera. \nBACHUS\n Les Dieux ne se mettront pas en peine de créer des nouveaux Empi- etses soldats rés pour me faire régner: j'ai des arcelles qu'ils mes, j'ai des armes pour conquérir ceux qui sont faits, et pour vaincre ceux qui les possèdent.",
+          "Que si tu te dis fils de Jupiter, et que tu te renomme Bachus, sache que c'est à toi que j'en veux. \nBACHUS\n Et toi, si tu te vente de commander à la mer et aux eaux, et que tu nous menasse de nous submerger, sache que sans te déclare la guerre, et que c'est contre toi que je porte les armes.",
+          "EURISTE\n Ô illustre personnage de qui les hommes honorent les paroles, et admirent la science: nous venons à vous pour avoir le soulagement de nos peines, et pour savoir de vous que veulent dire ces prodiges qui pa- Était lui loient en cet ensant, n'nle veut ni ici Bachus et le lait, ni eau, et ne savons dequoy le nourrir.",
+          "Souvenez-vous, mes soldats, qu'il faut conserver notre vie et notre liberté, ce ne sont que des yurongnes. \nBACHUS\n Trop de victoires gagnées, trop d'ennemis vaincus pour ne me dire monarque de l'Hivers, les dépouilles le montrent, mes ennemis le savent et le confessent: que reste il maintenant pour l'accomplissement de ma gloire?",
+          "Ô que ici suis infortunée d'avoir adressé mes vœux au Ciel: ô larmes, qui m'avez acquis la naissance de mon cher fils, de mon bienaimé Bachus ne me le pouvez-vous rendre encore présent?"
+        ]
+      },
+      "top_5_persons": [
+        "Bachus",
+        "AMAZONE",
+        "M",
+        "Neptune",
+        "Jupiter"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Le Roi d'Espagne à la France Cum desidérat servus ad fontes aquarum, ita desidérat anima mea ad te.",
+          "La France à Monsieur le Prince Iniustitia tua letabitur Rex Resp.",
+          "La France à Monsieur le Prince."
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Vendôme"
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "author": "Racine, Jean",
+    "title": "La Thébayde, ou les Frères ennemis, tragédie [de J. Racine]",
+    "publication_date": "1664",
+    "document_id": "btv1b8610808w"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "CREON",
+          "frequency": 11
+        },
+        "related_sentences": [
+          "Tu verras que sa rage cit encore la même, Et que toujours son cœur aspire au Diadème, Qu'il m'abhorre toujours, et veut toujours régner, Et qu'on peut bien le vaincre et non pas le gagner. \nCREON\n Domptez-le donc, Seigneur, s'il demeure inflexible, Quelque fier qu'il puusse être il n'est pas invincible, Et puisque la raison ne peut rien sur son cœur, Éprouvez ce que peut un bras toujours vainqueur.",
+          "À cet instant fatal le dernier de nos Princes, Ç liij L'honneur de notre sang, l'espoir de nos Provinces Ménecée en un mot digne Frère d' Hémon, Et trop indigne aussi d'être Fils de Créon, De l'amour du Pays montrant son âme atteinte, Au milieu des deux camps est auancé sans crainte, Et se faisant ouïrir des Grecs et des Thébains, Arrêtez, a t'il dit, arrêtez inhumains.",
+          "La bataille sans doute allait avoir cruelle, Et son événement vidait notre querelle, Quand du Fils de Créon le funeste trépas, Des Thébains et des Grecs a retenu le bras, Ce Prince le dernier de la race Royale, S'est appliqué des Dieux la réponse fatale, Et m-même à la mort il s'est précipité, De l'amour du pays noblement transporté, \nJOCASTE\n Ah!",
+          "ne font uit la grandeur est le seul qui m'anime, Je hai ses ennemis, et c'est la tout mon crimes Je ne m'en cache point, mais à ce que je vois, Chacun n'est pas ici criminel comme moi. \nJOCASTE\n Tant que pour ennemi le Roi n'aura qu' Frere, Sa personne, Creon, me sera toujours chère;",
+          "Oelcai que Polinice est une humeur altière, e allai bien que sa haine est encor toute entière, ne crois pas qu'on puisse en arrêter le cours, lut pour mo ie ici bien que tu le haï toujours. \nCREON\n lais s'il vous cède enfin la grandeur Souveraine, lous devez ce me semble apaiser votre haine."
+        ]
+      },
+      "top_5_persons": [
+        "CREON",
+        "Polinice",
+        "JOCASTE",
+        "JOCASTE",
+        "Antigone"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Thebes",
+          "frequency": 11
+        },
+        "related_sentences": [
+          "J'ai des forces assez pour tenir la campagne, Mel querque con juul dovurmamhetompigne, L'insolent Polinice et ses Grecs orgueilleux, Laisseront Thebes libre, ou mouront à ses yeux. \nJOCASTE\n Vous preserve le Ciel d'une telle Victoire, Thebes ne veut point voir une action si noire, Laissez là son salut et n'y songez jamais;",
+          "Polinice à ce titre aurait tort de prétendre, Thebes sous son pouvoir n'a point voulu se rendre, Hulors que sur le Trône il s'est voulu placer, C'est elle et non pas moi qui l'en a su chasser.",
+          "Lors que le Roi d'Argos l'a choisi pour son Gendre, Il espérait par deux de voir Thebes en cendre, L'amour eût pu de part à cet hymen honteux, Et la seule fureur en alluma les feux.",
+          "Non, puisqu'à nos malheurs vous devenez sensible, Au sang de Ménecée il n'est rien d'impossible, Que Thebes se rassure après ce grand effort, Puis qu'il change votre âme, il changera son sort.",
+          "Eigneur, votre sortie a mis tout en alarmes, Thebes qui croitvous perdre est déjà toute en larmes, L'épouvante et l'horreur règnent de toutes parts, Et le Peuple effrayé tremble sur ses rempars."
+        ]
+      },
+      "top_5_places": [
+        "Thebes",
+        "Thebes",
+        "Lajus",
+        "Grece"
+      ]
+    }
+  }
+}

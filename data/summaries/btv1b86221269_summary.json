@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Rotrou, Jean de",
+    "title": "La Diane comédie . Par le Sieur Rotrou. Dédiée à Monsieur le comte de Fiesque",
+    "publication_date": "1635",
+    "document_id": "btv1b86221269"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Diane",
+          "frequency": 10
+        },
+        "related_sentences": [
+          "Vois mon visage, ingrat, je suis cette Diane, Cette abiette inconnue, et vile paysanne, Cette simple Bergère, et celle toutefois, En qui tu n'aurais fait, qu'un raisonnable choix Dont la condition, jadis était commune, Mais dont les qualités relevaient la fortune, L'or n'est pas seul aimable, et sous ces vêtements La vertu quelquefois, s'est acquis des amants, En fin, avait été à ma fortune arrive, Qui me fait posséder l'objet qui te captive, L'aveugle de, qui pluside aux humains, Ouure en fin se j' est pas mains, Seul t'atquerir, à ma fortune, Elle qui se donnoit est en pouuoir de prendre.",
+          "car ce sont les mêmes lettres que Lymant a écrittes autrefois à Diane et quelques-vnes de Diane à Lymant Orante avait de l'amour pour Ariste, et le seul commandement de son père la forçait de souffrir Lymant, pour se tirer de cette contrainte elle fait voir à son père ces témoignages de l'inconstance de Lysimant Philemon le reproche à Lysimant qui Elle fait voir le peu d'ardeur qu'il a pour Quante Ariste à qui l'avarice de Filémon, les premières visites de Lymant chez Orante, et le bruit qui courrait de leur mariage avaient ja irrité, en fait des reproches à Orante, mêlées de beaucoup de mépris",
+          "et non pas amoureuse, Je vois d'un œil égal son infidélité, Je sais bien que résoudre en la necessité, Et quoi que simple Paysanne, Quand il m'aimait il était Lysimant, Il n'a changé que d'amour seulsent, Il est toujours lui-même, et moi toujours Diane, Consultés ces écris, que j'avais de ces part, Ne vous repentez pas, quand il sera trop tard, J'a dequoy vous ravir ce traître, Yaspire n' a aux commun lien, Pour mon ce que pour troubler le sien Pour le ni malheureux ie souhaitte de pire.",
+          "Las, après de si longs, et de si vains ennuis, Tu me plaindrais peut-être en l'état où tu suis, D'un Berger estimé dans tout le paysage, Abondant en troupeaux, et riche en pâturage, Mõ donc, dõt l'ardeur m'oblige à te chercher, A fait belle Diane, un malheureux cocher, J'ai changé pour te voir, sans juger que j'efface La gloire de mon nom, et l'honneur de ma race, Au soin de deux chevaux, le soin de cent brebis, Et mes habits de toile, en ces honteux habits",
+          "à ORIMAND En ce commun plaisir ne me déniez point, Un bõ-heur qui me rend accompli de tout point Les Dieux en Orient m'étaient si favorables, Et mes profits, Monsieur, sont si considérables Que mes biens partagez égalent quatre fois Ceux que j'eu estant jeune, et ceux que j'espérais, Tant de prospérité ont suivi mon attente, Que chang chang chang heureux, et Diane contente. \nORIMAND\n Puisque votre vois enfin ces doutes éclaircis, Mõgẽdre embrassez moi, bãnissons toujours soucis"
+        ]
+      },
+      "top_5_persons": [
+        "Diane",
+        "Dorothée",
+        "Sylvian",
+        "Lysandre",
+        "Ariste"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 10
+        },
+        "related_sentences": [
+          "Marchand Libraire à Paris, d'imprimer ou faire Imprimer un livre intitulé, La Diane, Faisant défenses à tous Libraires, Imprimeurs et autres de quelque qualité et condition qu'ils soient, d'Imprimer ou faire Imprimer ledit Livre, le vendre, débiter ni distribuer par notre Royaume, durant le temps de six ans, sur peine aux contreuenans sur peine aux contrevenants d'amende, de confiscation des exemplaires, et de tous dépens, la et ires, comme il est contenues lettres.",
+          "Chacun, pour vous trouver fait des desseins divers, L'un veut voir tout Paris, l'autre tout l'univers, L'un consulte Apollon, l'autre aux noires sciences, Va chercher du remède à ses impatiences On entend votre nom en la bouche lâche tous, Ils laissẽt leurs troupeaux à la merci des loups, Les voleurs pillent tout, les maisons sont desertes Et votre perte seule est cause de ses pertes;",
+          "Moi quelquefois n'ai point recours à des armes pareilles, J'ai déjà trop long temp possedé vos oreilles, Adieu pour me déplaire obligez qui vous plaît, Mon cœur à qui le veut cède son intérêt, Prest de quitter Paris unis un temps infidèle, Ces gages criminels, d'une amour criminelle, Et j'ateste le Ciel de la confusion, Que j'ai d'avoir souffert à votre occasion. \n",
+          "2l neuenTo, Non, il vient de descendre, Et sort par le jardin. \nORIMAND\n La curiosité, Le porte à voir Paris, en cette nouveauté, Pardonnez Lymant, à mon regret extrême, Ce qui me touche plus mille fois que vo meme, Et si j'ai le moyen de vous servir jamais, Éprouvez par l'effeci, te dessein, que j'en faits.",
+          "elle apprend que dans Paris il était devenu amoureux d'Orante fille de Filémon, elle sort de Boulogne à dessein de traverser leurs amours par quelque artifice, elle se met au service d'Orante, Silvisan paysan qui l'avait aimée, la suit et se fait cocher de Lysimant à dessein de la voir quelquefois."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Boulogne",
+        "France",
+        "Rome",
+        "DOROTHÉE"
+      ]
+    }
+  }
+}

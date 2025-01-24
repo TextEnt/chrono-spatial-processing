@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "author": "Chevalier, Jean",
+    "title": "Les Avantures de nuit, comédie",
+    "publication_date": "1666",
+    "document_id": "bpt6k10901675"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "LISE",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Ainsi ie me servais d'onguent miton mitaine, Attendant que quelqu'un me vint tirer de peine. \nROBERT\n Par grand bonheur pour nous nous en voilà dehors, Mais c'est ici qu'il faut faire nos grands efforts, Et de nous obliger Lise est tout à fait digne, Rentre donc et ne sors qu'entendant notre signe, Mulle Dame avec toi ne peut aller du pair, Et te voilà ma foi tout à fait du bon air.",
+          "Et vous Alfonse allez près de votre logis, Où Lise va venir pour vous faire visite, Appelez-là d'abord vostte chère Hypolite, Afin de faire croire à notre vieil Amant Que c'est elle, et qu'il est Cocu ment, Dites-vous forces mots pour prouver vos flamme, Traitez -vous de Mamour, de mon Cœur, de mon , 1!",
+          "Mon Maistre tu sais bien ne haï pas la Grisette, C'est pourquoi j'aime mieux que tu sois ainsi faites, Avec ces vêtements tu fais voir des attraits Qui te font ressembler nos sœurs du Marais, Je te dis seulement par la superficie, Car du dedans ici sais quelle est ta modestie. \nLISE\n Adieu donc petit fou. \nROBERT\n ",
+          "14 ROBERT, LISE \nROBERT\n NE perds point de moments, Va prendre d'Hypolite un de ses vêtements, Et fais si bien qu'en tout on te prenne pour elle, Tu n'es guère moins grande, et tu n'es pas moins belle, Ayant son même habit, étant sur le bon bout, Tu lui ressembleras apparemment en tout;",
+          "Pourrais-je sans clarté rester seule en ces lieux, Robert tu sais qu'il est des esprits vicieux, Qui ne rodent la nuit que pour faire sottise, S'il en allait venir, qu'est-ce que ferait Lise \nROBERT\n Va, va, ces visions sont visions de foux."
+        ]
+      },
+      "top_5_persons": [
+        "LISE",
+        "SIMEON",
+        "Robert",
+        "Simeon",
+        "Valère"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "La Scène est à Paris"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Rome",
+        "Constance"
+      ]
+    }
+  }
+}

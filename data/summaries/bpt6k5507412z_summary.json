@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "author": null,
+    "title": "Le triomphe de l'Amour , opéra, ou pastorale en musique, imitée des amours de Diane, & d'Endymion, divisée en trois parties ; mêlées de deux intermèdes. Représentée devant Sa Majesté, en son château de St-Germain-en-Laye au mois de février 1672",
+    "publication_date": "1672",
+    "document_id": "bpt6k5507412z"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Diane",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Si elle n'a pas le Étaiie de déplaire tout à fait, on peut répondre d'un autre, que l'on exposera volontiers à la censure, sans demander l'indulgence, qu'on ne peut refuser à celle cy. \nLE\n LE TRIOMPHE DE L'AMOUR, OPÉRA, Ou Pastorale en Musique, imitée des Amours de Diane, et d'Endimion, dIvilées en trois Partles, fleslées de deux Intermèdes.",
+          "Ai vu Diane dans ces Bois, THuiQ se prépare pour la Chasse, Et dé ja ses Piqueurs, du Cors, et de la Voix, S'uivent une Bête à la trace: Silvains, préparez-vous aussi A divertir la Déesse, Mêlez des Chants d'allégresse Aux innocents plaisirs, qu'Elle vient prendre ici.",
+          "Le Dieu qui m'oblige d'aimer, Pour Diane, en dormant, me blesse, Et sait à mon rèveil pour Elle m'enflammer. \nARGAS\n Il saura la toucher, et la rendre propice, Puisque de votre cœur il fait un sacrifice.",
+          "LE SACRIFICATEUR mêlant les chiffres de Diane, et d'Endimion Unissez vos cœurs, en ce jour, Qu'ils deviennent inséparables, Et par des sentiments semblables, Réparant à ceux de l'Amour.",
+          "il mêle les chifres d'Endimion, avec ceux de Diane, et perce d'une même flèche deux cœurs enIlaffifsiez fur un Truter, que d'autres Sacricateurs apportent."
+        ]
+      },
+      "top_5_persons": [
+        "Diane",
+        "Corimon",
+        "Flore",
+        "Diane",
+        "ARGAS"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Bergère",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Non, non, le cœur de la Bergère \nCORIMON\n N'est pas pour toi;",
+          "Pendant cette contestation, la Bergère échappe de leurs mains, et les Fées la rendent invisible."
+        ]
+      },
+      "top_5_places": [
+        "Bergère",
+        "PARIS",
+        "Versailles",
+        "Argine"
+      ]
+    }
+  }
+}

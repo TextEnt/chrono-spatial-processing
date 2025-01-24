@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Mareschal, André",
+    "title": "La Genereuse Allemande ou le Triomphe d'amour, tragi-comedie, mise en deux journées [...], Premiere journee",
+    "publication_date": "1631",
+    "document_id": "bpt6k10903080"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Adraste",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Mais comme il était pour faire hâter les apprêts de son mariage, Adraste son intime Ami et frère-d'armes arrive en ce lieu, pour y lever quelques Troupes de gens de pied qu'il devait mener en Hongrie Ce Colon Polonnois vient voir son Ami, et étonné de la résolution qu'il avait, de se lier d'un nœud quelquefois aussi difficile à dénuer comme impossible à rompre, et toujours insupportable à un homme comme lui, qu'il connaissait d'amoureuse complexion, autant facile comme changeant en amour, avec peine le tire de Prague, pour lui faire voir encore une fois avant que de se marier, leur Maître commun Maximilian Pour aller en Hongrie, ils tirent premier en Poloigne, où les soldats d'Andraste avaient leur rendez-vous;",
+          "oui, pour flatter mes geines: Mais crois, si le plaisir qui se lit dans mes yeux Rend plus gai mon abord, et s'il te charme mieux, Que cette force vient d'un qui me l'a donnée Dont la présence ici tient la grâce enchaînée, [Iliblé fait voir Adraste D'un, qu'à l'égal d'un Dieu ie te viens présenter Pour suborner tes sens, s'il daigne les tenter;",
+          "Puis que je le voudrais à cela tout répandre, Que pour gagner ce bien que mon espoir attend Lepostrais tent taurs, sa ven ais autant, Je tédrois pour victime et ces bras, et ma vies \nADRASTE\n Encore d'où vous vient une si belle envie? \nARISTANDRE\n Uonuusoomtu Su, ton vapar des vœux. \n",
+          "Un voyage entrepris me fait quitter la ville, Adraste, mon devoir, un dernier souvenir Me font voir l'Archiduc, afin de revenir Carge de ses faveurs, porte d'impatience, D'un ressort éternel fermer notre alliance: De grâce, à ma prière accorde ce congé.",
+          "ne devons-nous pas vivre et mourir ensemble? \nARISTANDRE\n Tu me presses, Adraste, un peu trop, ce me semble. \nADRASTE\n Quie auce dons noms, u cons, a notre Roi? \nARISTANDRE\n De Roi ici n'ai qu'Amour;"
+        ]
+      },
+      "top_5_persons": [
+        "Adraste",
+        "Roseline",
+        "Camille",
+        "Seigneur",
+        "Camille"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Hongrie",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Mais comme il était pour faire hâter les apprêts de son mariage, Adraste son intime Ami et frère-d'armes arrive en ce lieu, pour y lever quelques Troupes de gens de pied qu'il devait mener en Hongrie Ce Colon Polonnois vient voir son Ami, et étonné de la résolution qu'il avait, de se lier d'un nœud quelquefois aussi difficile à dénuer comme impossible à rompre, et toujours insupportable à un homme comme lui, qu'il connaissait d'amoureuse complexion, autant facile comme changeant en amour, avec peine le tire de Prague, pour lui faire voir encore une fois avant que de se marier, leur Maître commun Maximilian Pour aller en Hongrie, ils tirent premier en Poloigne, où les soldats d'Andraste avaient leur rendez-vous;",
+          "Il n'est pas de mon dessein ni de mon pouvoir en cet endroit, de rapporter les généreuses actions de celui-cy, ni ce qu'il fit aux guerres de Pologne et de Hongrie, la faveur qu'il eut auprès de l'Archiduc Maximilian, de ce temps-là Roi de Poloigne, et de son frère l'Empereur Rodolphe, dont le premier le retint de sa Cour, autant pour J'admirer autant pour s'en servir, et l'éleva aux premiers et plus honorables degrés de l'ambition.",
+          "Cependant qu'autre part l'occasion est belle, Que toute la Hongrie en armes vous appelle, Que l'Europe remue, et s'apprête aux efforts Qui raviront au Turc le Danube et ses bords, Que la fête Pologne, et la forte Allemagne Ont mis tous leurs Héros, et leur force en campagne Où plein d'ardeur ie fais, suivi de mes guerriers, Rendre mon Roy jaloux de mes propres lauriers:",
+          "Là Aristandre est très-bien reçu du Prince Coryléon, qui l'avait connu en Hongrie, et encore mieux de sa femme la Duchesse Roseline, qui l'aimabiusques à ce point qu'il pouvait tirer d'elle tout ce qu'il en eût voulu.",
+          "Je n'ai pour le présent en l'esprit autre guerre, La Hongrie à ce coup me verra sans tonnerre: Que cela ne t'afflige;"
+        ]
+      },
+      "top_5_places": [
+        "Hongrie",
+        "Pologne",
+        "Lyon",
+        "Paris",
+        "Danube"
+      ]
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "author": "Blessebois, Pierre-Corneille",
+    "title": "Mademoiselle de Scay, petite comedie satyrique",
+    "publication_date": "1684",
+    "document_id": "bpt6k10902396"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Clarice",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Je divin de l'orme rend la fl dure, étend, la peint de la ur du feu, r vigoureuse, et la dispose au jeu : Mais cela ne dit pas qu'on revu Clarice, Quinze ou vingt coups de V. un trait d'avarice:",
+          "Eh, quoi donc? notre abordpar f. destin, ès lubriques Ç. n'a-t-il pas donne nu ? \nCLARICE\n un destin plus doux notre affaire eitoncimte *: us pouvez maintenant, en servir de trompeté. \nCLERIMONT\n mment!",
+          "Emané d'un gros V, qui ne le P pas N'a-t-il pas mille fois de plus di as? \nCLARICE\n Mais qui n'a pas ce V. il faut qu'ils en passe.",
+          "CLERIMONT\n t que Clarice à moi m'en donne une dixaine, elle chevaucherai pendant une semaine, douze coups par jour y comprise la la nuit : dégents, à telprix, vous feront le déduit.  ",
+          "Non, non, Madame n'attends point, et londain Elle t'écharpe, Si te fais un seul ctis, nous ioüans de la harpe, \nCLARICE\n Gobe f. tiers, cruel, inflexibles."
+        ]
+      },
+      "top_5_persons": [
+        "Clarice",
+        "LuBiN",
+        "Faux",
+        "Tou",
+        "Verne"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "vos bras sos tellement carrés et si secs, que la divinité qui règne aux sombres lieux et fera faire quelque jour des des passetemps de la ténèbreule famille et votre taille est devenue si horribl dépus votre dernière couche que le bons connoisseuis disent que la nature vous sir l le modèle de la Tou grise de Verne Votre esprit n pas de plus beaux ornements: Il est libertin et extravagant, et voudroil qu'il n'yeût non plus de justice er France qu'il n'y en avait autrefois eût Arcadie, et que les Avocats et le Procureur d'Alançon fussent chan contre les Pâtres de Libie Ilest vra qu'à lexemple des Pantomines il con trefait merveilleusement la voix de hommes, le cris des bêtes et le chan des oise aux, et qu'un jour ayant en tendu dans l'Église des Capucins d yeux Ville, où vous feigniez d'étr en prières que Nannette Sois assî naît rendésvous à son serviteur dar cArc, aussitôt que les Nereides raient fait la couverture du lit du Soleil, dès qu'enfin le ténèbres régneraient sur la terre, vous y étant rendue en sa places vous places si bien sa voix, que vous reçûtes le sacrifice, qui lui était consacré. Votre justement n'appas moins de dégoût, et cette couleur de perroquet sur qui votre constances est inséparablement taché, a fait dire à quelques rieurs, que vous n'en faisiez cas que par ce que les J'ures la revereht, et que ces barbares, dont la force est presque toute au milieu ducorps, vous sont en singulière recommandation.",
+          "et c'est tout au bour du monde si j'ai été jusques à sept. Il est vrai aussi que Dieu ne suis pas mieux doré en Hollande que je ne l'étais en France, au contraire, une n'ai point ici les pensions que j'avais là;"
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "saint Germain",
+        "Hollande",
+        "Arcadie",
+        "V"
+      ]
+    }
+  }
+}

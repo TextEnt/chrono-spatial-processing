@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Du Ryer, Pierre",
+    "title": "L'Argenis [...], tragi-comédie, Dernière Journée",
+    "publication_date": "1631",
+    "document_id": "bpt6k10900331"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ARGENIS",
+          "frequency": 29
+        },
+        "related_sentences": [
+          "Le sacrifice est prêt, il reste seulement Que Madame lui donne un bon commencement, Et qu'un zèle pieux l'accompagne sans feinte, Les veux ne valent rien que je fom par contrainte, Le Ciel demande un cœur qui s'accorde à la voix. \nARGENIS\n Argenis c'est que tu te reseruois, - Si le ciel fauorise n cœur c'est flame, Que de plaisirs tu te rés de monvais, Mais j'éprouve qu'autre Dieus empare de mes sens, Et mon âme reçoit ses transports plus puissants.",
+          "Ses soins et ses discours par tout injurieux Ne tendent seulement qu'a vous rendre odieux: l'enignore la cause. \nPOLIARQUE\n Ho traistre, la Nature, Qui donne à ton pays était noire teinture, En a privé ton corps digne de tous malheurs, A dessein que ton âme en reçut les couleurs. \nARGENIS\n Paraissez à la cour, et ainsi suis bien certaine Que vôtre état connu finira notre peine.",
+          "cependant mes adieux Ne sépareront point mon âme de ces lieux. \nARGENIS\n Excusez la douleur, qui m'ôte la parole. \nPOLIARQUE\n Beau souci de mon cœur, que l'espoir vous con sole, C'est le plaisir qui reste à ceux qui n'en ont plus, Les maux, comme la mer, ont un flus et reflus. \nARGENIS\n ",
+          "L'honneur de vous servir me tient lieu de salaire, Mes soins se borneront du désir de vous plaire, Et les plus grands plaisirs quitteront leurs appas, Devant que la frayeur vous épargne mes pas. \nARGENIS\n Disblé que m'ayant vue il retourne en sa terre, Qu'il prépare sa force à nous faire la guerre.",
+          "Si c'était sans semer du discord parmi nous Je dirais que la mer est plus douce que vous, Puis qu'avôtre mépris, ou le sort m'abandonne, Elle endure les feux que mon amour lui donne. \nARGENIS\n Quelle heure favorable à ces nouveaux plaisirs Doibt en fin contenter nos yeux et nos désire?"
+        ]
+      },
+      "top_5_persons": [
+        "ARGENIS",
+        "FRANCINE",
+        "DU RYER",
+        "Venus",
+        "Pallas"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Sicile",
+          "frequency": 29
+        },
+        "related_sentences": [
+          "mes yeux sont ébahis De ne voir point en vous les couleurs du pays, Votre âme ou la vertu voi t autre elle -même Fait montre en votre corps de la couleur qu'elle aime, Ma curiosité ne se peut plus tenir Sans savoir le dessein qui vous a fait venir. \nARCOMBR\n Le principal dessein, qui m'amène en Sicile, Est d'apprendre les meurs d'un peuple si facile, Tout le monde témoin des faits de votre Roy Sollicite mon âme à vivre sous sa loi, Dontuparte pur toun comme a unt merveille, Et l'ondit que sa cour n'eût jamais de pareille. \nPOLIAR\n L'on n'en saurait trouver, cheZ qui le vrai bon heur Sache mieux assembler le mérite et l'honneur.",
+          "Le bye-heur, qui me suit depuis que mõ vaisseau S'est laisse gouuerner à la merci de l'eau, Me fait imaginer que les vents et l'orage Approuvant mon dessein m'ont donné ce rivage, Et que leur violence, ou plutôt leur secours Me traça sur la mer un favorable cours, Lors qu'ils eurent connu, que sa face tranquille Se montrait paresseuse a me mettre en Sicile, Ou desya devant moi mes esprits arrivés D'eau plaisir infini demeuraient captivés.",
+          "ARGUMENT quatrième acte. \nDU\n Peinte Rcombrotte, ayant découvert le mauvais dessein que Selenisse avait donné à Radirobane, en avertit Mèleandre sur le point même qu'il se devait exécuter, si bien que Radirobe se voyant privé de son attente change ses amours en rage, et après avoir appris à Mèleandre par une lettre injurieuse, ce que Scenisse lui avait dit des secrètes amours d'Argénis, il quite la Sicile pour aller faire la guerres cauritane.",
+          "Que peut faire ce Prince avec son artifice or remunur pomtomuiforce et la Justice? \nGELANORE\n Madame onvoid par tout les armes et l'effroi, La force de Sardaigne accompagne son Roi, Et ses soldats campez auprès de vos muraille: S'entretiennent déjà dessus vos funérailles. \nPOLIARQUE\n Je le saurai punir des desseins odieux Qu'il eût dans la Sicile, et qu'il montre en ces lieux.",
+          "Cependant j'ai connu que ce Prince estrãger Sous l'appas des plaisirs déguise le danger, Que ces feux d'artifice, et leur pompe inutile Doivent une autre fois allumer la Sicile, 1 Qu'il les a préparés dans de petits batteaux A dessein d'attirer Argénis aux vaisseaux, Et lors que la clairté sera morte en ce monde L'enlever aussi tôt à la faveur de l'onde."
+        ]
+      },
+      "top_5_places": [
+        "Sicile",
+        "France",
+        "Mauritanie",
+        "Paris",
+        "Corse"
+      ]
+    }
+  }
+}

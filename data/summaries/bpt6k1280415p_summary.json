@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Les Précieuses ridicules, comédie par J. B. P. Molière",
+    "publication_date": "1674",
+    "document_id": "bpt6k1280415p"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "MAROTTE",
+          "frequency": 11
+        },
+        "related_sentences": [
+          "MAROTTE\n Dame, je n'entends point le Latin, et je n'ai pas appris, comme vous, la Filosofie dans le grand Chyre \nMAGDELON\n L'impertinente: le moyen de lounir cela! et qui est-il le Maître de ce laquais! \nMAROTTE\n ",
+          "LE MOE MAROTTE, CATHOS, MAGDELON \nMAROTTE\n Ôila un laquais qui demande si vous êtesau logis, et dit que son Maître vous veut venir voir. \nMAGDELON\n Apprenez, sotte, à vous énoncer moiut vulgairement.",
+          "MAROTTE\n Par ma foi, je ne sais point quelle bête c'est là, il faut parler Chrétien, si vous voulez que je vous entende. \nCATHOS\n Apportez-nous le miroir, ignorante que vous êtes.",
+          "Allez, venez me reprendre tantôt, pour aller au Louvre au petit coucher. \nCÈNE VIII\n MAROTTE, MASCARILLE \nMAROTTE\n Omoui;",
+          "M 2 MAROTTE, GORGIBUES \nMAROTTE\n QUe désirez -vous, Monsieur?"
+        ]
+      },
+      "top_5_persons": [
+        "MAROTTE",
+        "Almanzor",
+        "SCE",
+        "LUCILE",
+        "Trivelin"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 11
+        },
+        "related_sentences": [
+          "Pour moi j'y luis soit chatt, d quand j'ai promis à quelque Poète, je crie toujours, voiIà qui est beau, devant que les chandelles soient allumées. \nMA\nGDELON\n Ne m'en parlez point, c'est un admirable lieu que Paris il s'y passe cent choses tous les jours, qu'on ignore dans les Provinces, quelque spirituelle qu'on puisse être. \n",
+          "Il faudrait être l'antipode de la raison, pour ne pas confesser que Paris est le grand bureau des merveilles, le centre du bon goût, du bel esprit et de la galanterie.  \nMASCARILLE\n Pour moi, je tiens que hors de Paris, il n'y a point de salut pour les honnêtes gens. \n",
+          "Ce sont ceux qui donnent le branle à la réputation dans Paris et vous savez qu'il y en a tel, dont il ne faut que la seule fréquentation, pour vous donner bruit de connaisseuse, quand il n'y aurait rien autre chose que cela.",
+          "mais ne vous mettez pas en peine, je veux établir chez vous une Académie de beaux Esprits, et je vous promets, qu'il ne se fera pas un bout de Vers dans Paris, que vous ne sachiez par cœur avant tous les autres.",
+          "La renommée accuse juste, en contant ce que vous vallez, et vous allez faire pic, repic, et capot, tout ce qu'il ya de galant dans Paris MAG \nMAGDELON\n "
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Provinces",
+        "GOR",
+        "Louvre",
+        "Champagne"
+      ]
+    }
+  }
+}

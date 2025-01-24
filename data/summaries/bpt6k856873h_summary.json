@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "author": null,
+    "title": "Le Sage jaloux, tragi-comédie",
+    "publication_date": "1648",
+    "document_id": "bpt6k856873h"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "DIANE",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Venez-ce que ie vous embrasse, mon fils, puisque vous vous mettez à votre devoir, j'espère qu'elle veuille, ou non y ranger votre frère et l'empêcher de s'opposer à mes desseins, quoi que je pense que j'y aurai dorénavant peu de peines, ayant ôté l'obstacle, qui le faisait opposer à mon contentement, j'ai marié Lucidor à Diane qui était l'objet, qui l'obligeait à mépriser celle que ie lui ay destinée: et quoi que je n'aie point de sujet à présent de craindre aucun obstacle, porte veux que vous le meniez avec vous voir la Princesse, puisque vous m'assurez que les charmes auront le pouvoir de remettre de tout point les esprits égarés. \nALBERT\n Si votre majesté considère l'âge où il est, eûle excu sera facilement cette fougue de jeunesse, et puis voyant à présent que la chose est sans remède, et sa Maîtresse mariée, il ne faut pas s'imaginer qu'il y songe davantage, prineipaiement, quand ie cy aurai fait voir ce sujet si digne d'adoration.",
+          "mais par ce que Prince crois que vous serez à l'avenir plus sage, que vous n'avez été, et que votre frère m'a assuré, que vous vous repentez de votre faute, et que dorénavant vous avez dessein de suivre entièrement mes sentiments, et d'aimer celle que je vous eux donner pour Espouse, laissant entièrement ces vaines, et inutiles chimères, qui maru proposes ceciupèrent votre aspect, je veux oublier le passé, pourvu que vous me confirmiez que ce que l'on m'a dit soit venitable. \nSIGISMOND\n Monsieur, Seigneur ne puis nier que ainsi n'aie aimé Diane, des l'heure que j'ai su qu'elle méprisait si fort l'amour, cela m'a porté à en avoir pour elle, car les courages généreux ne se doivent porter qu'aux entreprises, où ils trouvent de la résistance, et ce n'a pas été peu de gloire à moi de l'avoir vaincu;",
+          "elle est résolue de s'enfermer dans sa chambre avec Lisène, et ne recevoir de visites de personne, disant que ayant su en chemin la nouvelle de la mort de son frère Vratissai, il n'est pas raisonnable que personne la visite si tôt au commencement de son deuil, comme il y a si peu qu'elle est venue, et personne ne l'ayant encor veuë, ne a été fort facile de faire courir le bruit de cette ressemblance par toute la Cour, de sorte qu'il n'y en a pas un qui ne croie que c'est le vrai portrait de Lisane, ce qui reste à fairs ion forte, il raut faire en sorte que Lisene ion for la Te auec vous, il re Diane aide de son costé cette fourbe. \n",
+          "Si ici n'ai autre moyen, le feu me servira de bourreau, c'est à votre seul à châtier les adultères, étant un élement pur et chaste, il n'importe d'apaiser Diane dans la résolution, ou elle a oui que j'étais de lui donner la mort, un coupable est toujours craintif, sans doute elle se tiendra sur ses gardes, mais il faut par caresses feintes, assurer ses soupçons, voyons pour lui ôter tout ombrage, comme une pourrai feindre en sa présence avoir de l'amour pour elle, puis que votre brûle de rage et de désespoir.",
+          "Mais le papier et le portrait que Fisbert trouva entre les mains de Diane, et le jour qu'elle se maria, les ressentiments que tu en témoignes, comment cela se rapporte t'il à ce que tu dis. \nLISENE\n Ma sœur lisait la lettre, et tenait le portrait, quand mon père entra en colère dans notre jardin, ma sœur le mit dans sa manche, ou mon père le trouva, ce qu'il fit croire, qu'il s'adressait à elle."
+        ]
+      },
+      "top_5_persons": [
+        "DIANE",
+        "Lucidor",
+        "SIGISMOND",
+        "SIGISMOND",
+        "Leonor"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Hongrie",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "l'ambition Se porte, comme si l'Amour étant un Dieu, faisait cas des États de Hongrie Devant que le jour de demain arrive, que doit arriver la Princesse Leonor, quand vous veux mettre en posse ssion du bien qu'elle espère posséder: afin qu'elle trouve la porte fermée, je vous eux donner la foi d'être vôtre Espoux, en présence du Ciel et des Astres qui l'ornent, qui seront les seuls témoins de notre mariage, sans l'accomplir en façon quelcon que, que toutes les cérémonies ne soient auparavant observées; car un homme qui a bonne envie de payer, ne craint point à donner des gages: Je veux seulement vous assurer que mon amour est honnête;",
+          "LISENE\n Je voudrais avec la Couronne de Hongrie dont j'hérit mamtenant pouuon oni au rimée Sigismond I possession d'un monde tout entier, encor serait-ç peu pour ce qu'il mérite. \nSIGISMOND\n Je tiens plus glorieux de la possession de votre person ne, que de celle de toutes les Empires de la terre.",
+          "mais voyez la présomption et la belle Créature, pour penser l'emporter sur l'Infante de Hongrie orilion rerc ranait ion devoir, il vous traiterait comme vous méritez: En vérité, le Royaume de Boheme aurait mis la Souueraineté de ses États entre les mains d'une jolie Reine!",
+          "Il lit: Mon cœur, le Roi me veut marier, et ce n'est pas avec vous, comme si l'amour étant un Dieu faisait cas des États de Hongrie Ah!"
+        ]
+      },
+      "top_5_places": [
+        "Hongrie",
+        "Paris",
+        "Rome",
+        "Boheme",
+        "Pologne"
+      ]
+    }
+  }
+}

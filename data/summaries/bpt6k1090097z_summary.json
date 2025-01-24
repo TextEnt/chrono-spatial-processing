@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "author": "Nanteuil, Denis Clerselier de",
+    "title": "Le Comte de Rocquefoeuilles, ou le Docteur extravagant, comédie",
+    "publication_date": "1672",
+    "document_id": "bpt6k1090097z"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Catin",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "-pripare a vous faire vire dans les coliments qu' fat a sa Maîtresse brilpin et Catin dans leurs amours et les débats qu'elle a été le boceur enfin tout contribuera si j'en crois le sentiment de quelques uns de me ami Ie vous prie Monsieur de le ur faire lustice et de me dire s'ils ne se sont point irompez et de pardonner quelques petit fautes qui pourreient y être rest es a foible Muse qui ne fait que de naître Mais cõme tnon but est que de vous diveriir pour pu que ma petite die puisse vous plaire y auray assez de quoi intimider tous les critiques uoudroient censurer ce prrit ouvrage",
+          "Et puis l'on verra les enfants, De ma Catin en fourmillaire, Venir comme unt pépinière, Embrasser leur Papa Cryspin Cependant songons au festin, Et que toute cérémonies, Entre nous autres soient banies: Puis que Catin donne à mes vœu Un gros pucelage amoure GLORGIBUS Et ie te commande aujourc'hui De conserver l'amour pour lui, Que tu gardais.",
+          "Ose tu te jouer à moi Cesse de me vexer bagasse, Ou j'étrillerav a carcasse, Je te déchirerau la peau De ton gros malautru museau, CATIN voyez uune ce qu' nous veut dire, Il nous feroir cruer de rire, Avec son diable de Latin.",
+          "Et puis l'on verra les enfants, De ma Catin en fourmillaire, Venir comme unt pépinière, Embrasser leur Papa Cryspin Cependant songons au festin, Et que toute cérémonies, Entre nous autres soient banies: Puis que Catin donne à mes vœu Un gros pucelage amoure",
+          "CRYSPIN Ô que ce serait un bean coup, Ma chère Catin ie t'adore, Et at’aymerois plus encore, Si tu voulais un peu rosser, Ce villain qui nous veut succer."
+        ]
+      },
+      "top_5_persons": [
+        "Catin",
+        "Climène",
+        "CRISPIN",
+        "Muse",
+        "Pompée"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Car c'est un homme dans la France Qui sans doute est de conséquence, Car il parle fort bien Français Est-il loin.",
+          "Je suis depuis peu dans la France, Mais las que je serais heurebz,"
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "mer noire",
+        "Catia",
+        "Rome",
+        "Pontoise"
+      ]
+    }
+  }
+}

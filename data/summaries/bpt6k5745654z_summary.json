@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "author": "Regnard, Jean-François",
+    "title": "\"Scènes françoises de la comédie italienne intitulée \"\"la Foire S.-Germain\"\" , comme elles ont paru dans les premières représentations\"",
+    "publication_date": "1696",
+    "document_id": "bpt6k5745654z"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Lucrece",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "C'est-à -dire que vous avez présentement la conscience à la glace, et moi pour le répo, de la mienne j'attrape ici l'aigent du passant, c'est moi qui fais voir la bonche de la vérité, la mort de Lucrece, le Quadran du Loaque, le Sertail de l'Empereur duCap verd, et autres niaiseries lucratives Huroute datorlos \nCOLOMBINE\n Quoi Celt toi qui.",
+          "Jugez en ce moment de l'excès de sa flamme Dachepter des faveurs trois cens Loüis comptant, Qu'il pourrait obtenir ailleurs pour quinze francs, \nLUCRECE\n N'était tout le respect que j'ai pour vostra Maîtie, Vous poulées bien, spigneur, sortir par la fenêtre. MELÉPEIN.",
+          "Mais quoi, pour me punir n'ai- je donc pas un bras, Que ce poignard encor tout fumant de sagesse, Immole en même temps et Tarquin et Lucrece, Frappons ce lache cœur qui me retient la main, Perçons.",
+          "Que voulez-vous, Seigneur? \nLUCRECE\n Puisque rien ne saurait atêter ta fureur, Approche, et vois en moi l'action la plus rare Dont jamais l'Univers ait ouï parler.",
+          "J'ai trop fait pour titer mon épingle du jeu. \nLUCRECE\n Avant qu'à tes desseins mon coeur se détermine, Ce fer de mille coups m'ouvrira la poitrine."
+        ]
+      },
+      "top_5_persons": [
+        "Lucrece",
+        "Colombine",
+        "COLOMBINE",
+        "Tarquin",
+        "Pistoles"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Apprenez si vous ne le savez que je suis la première cousine du premier Clerc d'un Huissier à verge au Châtelet de Paris ARLEQUIN.",
+          "À Paris \nCOLOMBINE\n ARLEQUIN.",
+          "la circulation de Paris MEZETIN."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "France",
+        "GRENOBLE",
+        "Allemagne",
+        "verd"
+      ]
+    }
+  }
+}

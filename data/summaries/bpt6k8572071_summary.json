@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Basire, Gervais",
+    "title": "La Princesse ou L'heureuse bergère . Pastoralle. De l'invention du sieur de Basire",
+    "publication_date": "1627",
+    "document_id": "bpt6k8572071"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Lycoris",
+          "frequency": 10
+        },
+        "related_sentences": [
+          "Ainsi jens ma pauvre âme ravie Entre le doutte, ou de mort ou de vie, Et ne sachant lequel doit m'arriver Je suis brûlé de flamme en plain hiver: Mais si jugeant, ô gentille Bergère, Ce grand serment que vous venez de faire, Rous trouviez bon d'avoir de moi pitié, Et d'accepter ma constante amitié, Sans prendre garde à cela que vous êtes, Vous me mettriez au nombre des célestes, En désormais ne voudrois animer Mon triste cœur sinon pour vous aimer: Rien que de vous rien n'aurais plus mémoire, Et Lycoris serait ma seule gloire: Prononcez donc, Çuine beauté, da mon von beur, ou ma catamnes: \nLycoris\n Méchant Berger, es-tu si téméraire Que d'affronter une simple Bergère, Qui ne peut mais de ton aveuglement?",
+          "Plutôt un jour on verra s'envoler Ces grands rochers éloignés de la terre, Plutôt les Loups vivront en Angleterre, Et l'Africain verra servir un jour Liste de Malthe aux serpens de séjour, Plutôt le verre aux chiens ne fera honte, Que detes vœux je puisse faire compte. \nDoralis\n Plutôt à mont retournera Ladon Et la nature errant à l'abandon, Et transgressant ses bornes, et ses règles, Éera sortir les colombes des Migles: Plutôt le fer ayant baisé l'Eimant Deuers le Nort n'aura plus mouvement, Et les français boiront les eaux du Gange, Que ce revés le courage me change. \nLycoris\n D'un tel dessain tu ne peux voir sortir, Que l'aigre fruit d'un triste repentir. \nDoralis\n „",
+          "Oici venir Hylas le beau Berger, 3 Qui seul pourrait mon courage obliger, nane æn ère NEyrinine, yu faut tâcher d'apprendre Quel sujet l'a dans notre Île fait rendre. \nMyrthine\n Tour moi : crois que le bruit glorieux Detes beautés, qui vole en mille lieux, Et qui vaincrait l'âme la plus sauvage, A fait surgir sa nef en ce rivage. \nLycoris\n Tu veux gausser Myrte, tu sais bien Tous mes d'effauts, et que mes yeux n'ont rien Qui puisse induire un Amant à me prendre, Et dont chacun ne se puisse défendre.",
+          "Lycoris\n Cesse a m'aimer sans plus fort me déplaire. \nDoralis\n Quand ici pourrais, Madame ne le voudrais faire: \nLycoris\n Mais qui te force à me venir aimer? \nDoralls\n Amour, qui peut les Dieux était allumer. \nLycoris\n Je ne saurais te donner allégeance. \nDoralis\n unntons tomte Cuamurauriez puissance. \nLycoris\n Pais fait va puvu ue ma virginité. \nDoralis\n Le second rend le premier irrité. \nLycoris\n Penserais-tu que de toi j'eusse cure?",
+          "Dans le lieu saint où la tourbe espleuree Frappait de vœux la courtine éthérée, Remplissant l'air de plaintes et de cris, Je vous avise, ô belle Lycoris, Vos beaux Soleils, vos belles tresses blondes, Qui raviraient les cœurs de mille mondes, Prindrent le mien: et dès lors oubliant Mes biens perdués, Pan j'allais suppliant, Qu'il me voulût, comme Dieu pitoyable, Tirer encor dix bœufs de mon étable, Pourvu qu'en fin mon triste cœur perdu Pres ses autels, me pût été rendu."
+        ]
+      },
+      "top_5_persons": [
+        "Lycoris",
+        "Philiris",
+        "Hylas",
+        "Damon",
+        "Damon"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Bergère",
+          "frequency": 10
+        },
+        "related_sentences": [
+          "Pour y passer à l'avenir tes jours? \nFilas\n Je n'en sais rien, ô gentille Bergère, Tout vent est bon à qui nul port n'espère. \nDoralis\n Je comprends bien, t'oyant parler ainsi, Qu'un désespoir te fait partir d'ici, Mais cher Hylas, par notre amitié rare D'avec nous ainsi ne te sépare!",
+          "Et ne vois pas que sur notre hémisphère Bien tôt luira vesper l'étoille claire: Et que ma trompe errant parmi ces champs, Peut être proie à quelques loups méchants: Adieu Pasteur! \nDoralis\n À dieu chaste Bergère Bien que la mort soit fin à ma misère, Et l'Antidote à mon deuil véhément: Je tiens bien cher ton avertissement.",
+          "Maudit le jour, que jamais je fus née! \nDamon\n Tu feins mourir, pensant que par ta mort Tu seras juste, et que j'aurai le tort: Mais t'est en vain: il sussit ô Bergère, Qu'un Doralis t'ait pu rendre légère! \nPhiliris\n Qu'un Doralis ait approché de moi?",
+          "Ainsi dît le Pasteur: et la chaste Bergère Ainsi vertu répondit: s'il est vrai que mon père Soit si proche d'ici, Je me ferai conduire en sa belle présence: Car mon plus doux souci 41 Est, de voir celui-la qui m'a donné naissance.",
+          "Si que venant retrouver la Bergère, Il lui conta l'histoire mensongère De cette mort: et bien print l'e dessam , Lycoris, qu'avait fait ce villain. \nArcadin\n Lu mens coquin: Ne suis fort nonnejre nomme."
+        ]
+      },
+      "top_5_places": [
+        "Bergère",
+        "Salamine",
+        "Paphos",
+        "Cypre",
+        "Arcadie"
+      ]
+    }
+  }
+}

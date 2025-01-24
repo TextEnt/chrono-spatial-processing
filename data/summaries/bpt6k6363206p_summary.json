@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "author": "Quinault, Philippe",
+    "title": "Thésée , tragédie en musique... représentée devant S. M., à Saint-Germain en Laye, le [ ] jour de janvier 1678",
+    "publication_date": "1678",
+    "document_id": "bpt6k6363206p"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ARCAS",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "ÆGLE', CLÉONE, et ARCAS, Il n'est point de grandeur charmante Sans l'Amour et sans ses douceurs: Rien ne plaît, rien n'enchante, Sans l'Amour et sans ses douceurs:",
+          "CLÉONE\n Je te l'ai déjà dit, et je te le répète, Si tu veux que je t'aime, Arcas, Fais ce que je souhaite, Et ne réplique pas. \n",
+          "ARCAS\n Des plus fiers Ennemis il écarte la foule, On reconnaît sa tratt aux siois au sang qui coule: Une grêle de Traits ne l'a point retenu.",
+          "CLÉONE\n Aissons aller la Princesse, ÉPrier en paix la Déesse, Arcas, je veux voir en ce jour Jusqu'où va pour moi ton amour. \n",
+          "MINERVE, Chœur de Divinités qui accompagnent Minerve, LE ROY, THESE’ E, CLÉ, CLÉ, ARCAS, Chœur, et Troupe d'Athéniens."
+        ]
+      },
+      "top_5_persons": [
+        "ARCAS",
+        "DORINE",
+        "Minerve",
+        "MARS",
+        "Églé"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Athènes",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Puissions-nous voir toujours Athènes triomphante, Puisse son Roi vainqueur des plus grands Potentats La rendre heureuse et florissante.",
+          "La Scène est à Athènes"
+        ]
+      },
+      "top_5_places": [
+        "Athènes",
+        "Saint Germain en Laye",
+        "PARIS",
+        "Versailles",
+        "Palais de Versailles"
+      ]
+    }
+  }
+}

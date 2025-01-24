@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "author": "Ovyn, Jacques",
+    "title": "Thobie Tragi-Comedie nouvelle. Tiree de la S. Bible, par Jacques Ovyn Loverien. Dediee à Madame du Roulet.",
+    "publication_date": "1606",
+    "document_id": "bpt6k857162w"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Anne",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Maintenant que mon fils fait si longue demeure Anne ma chère sœur, tu repense a tout heure, Ou que Gabel soit mort, qui nous débuait l'argent Ou que mon pauvre fils malade et indigent, Ne pouvant recouvrer la somme qui m'est de Se plaint de la rigueur que tue ur que tenue, De l'envoyer quasi malgré hors d'ici: Las mon Dieu que fais -tu (mon fils) mon cher soulage, Retourne languissante moi brentost si tu as quelqu'envie De soulager un peu ma languissante vie. \nAnne\n Mon ami croyez moi qu'on ne doit has arder Ce que l'on aime tant il se faut bien garder: Vous avez eu grand tort pour si petite somme De jeter en danger la vie de ce jeune homme: Hélas mon cher enfant, lumière de nos yeux Que nous avons été de toi mal soucieux: Sont ce de tes biens faits les dignes récompenses",
+          "Vous savez bien (monsieur) comme les sept maris De la pauvre Sarra sont tous morts et péris. \nRaguel\n Peut-être cestui-cy, qui est notre plus proche Vient pour nous délivrer de ce vilain reproche, Temqure le Seigneur l'a fait venir à nous, Pour être de Sarra perpétuel époux. \nAlinc\n Et que vous me donnez une douce espérance. \nRaguel\n Je vois dans ce jeunehomme une humble contenance Un regard adouci, un geste gracieux: Te connon bien-ausst qu'il est devocieux Et qui le nom de Dieu parfaitement adore, Cgrui ta est praiment méjaigne qu'on ore, \nAnne\n Notre fille avec lui serait en grand repos.",
+          "Tout beau tout beau ma femme, Vous savez qu'il m'est devoir , c' est ià d'il Aimerait somme d'argent, ie sais qu'il est conttant Gabel m'est oblegé, et de vrai il ne reste Qu'a l'aller recepuoir, cest homme est si honnête Qu'il aimerait plutôt mille morts encourir Que nyer à son fait. \nAnne\n Vous me fait augurer, Ce n'est pas ce défi qui m'apporte la crainte, Mais c'est vnefrayeur qui a mon âme atiainte, Qui me fait augurer de jamais ne revoir Vêtre fils et le mien, Thobie le père",
+          "Si c'est pour nos péchés donne nous patience, oit est pour éprouner ou pour pon tupérance Que nous avons en lui, toujours ses mandements, Sont solides et sains, comme vrais firmaments. \nAnne\n Ce n'est pas sans raison que mon mari se fâche D'avoir perdu les yeux, mais hélas que sera-te, Quand il orra parler de tout ce qui c'est fait, Ia nuit qui l'aveugla, pensez vous quel regret: Il aura entendant la plus triste nonuelle Dont jamais on parla voire et la plus ervelle, J'en tremble dans le cœur.",
+          "Que vous plaît-il monsieur, Mon père me voici. \nSarra\n \nRaguel\n Saluez, ce jeune-homme et me dites mamie Si vous le connaissez, que Sarra est rougie En approchant de Seigneur, par les émotions On peutivger souvent de nos affections, Pour-ce qu'ils sont issus de même parentage, Van nuste naturel lui époint le courage: Ma femme cet-cy est le fils bien aimé De mon frère thobie, et le plus estimé Que l'on ait jamais vu en si grande jeunesse. \nAnne\n Ha!"
+        ]
+      },
+      "top_5_persons": [
+        "Anne",
+        "Raguel",
+        "Sarra",
+        "Gabel",
+        "Sarra"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Car le gracieux accueil dont il vous préjà me recevoir à mon retour de Rome me le fait espérer et demeurer a jamais pour revenge des obligations que je vous en ai: SONNET",
+          "Azarie\n Prends le il t'est utile, Arrache Rome le foie, le gisier et le cœur, Et te médisdanstenjat et laje ahane phehta"
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Gabel",
+        "V",
+        "Samos",
+        "Carthage"
+      ]
+    }
+  }
+}

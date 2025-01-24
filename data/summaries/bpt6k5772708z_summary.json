@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "author": "Thilloys, George",
+    "title": "L'amphithéâtre du grand collège de Reims . Solyman 2, quatorziesme empereur des Turcs... par George Thilloys,...",
+    "publication_date": "1617",
+    "document_id": "bpt6k5772708z"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Soli",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Certes j'avais bien peur de voir la mort preste, Soli Or en fin je resptre au milieu du bon heur, Je suis en bien parfait, et parfait en grandeur, Je ne redoute rien, j'ai aboli la race De celui qui voulait d'une impudente audace, Ensemble ma couronne et ma vie amacher.",
+          "La Reine escheuelee, Toute bouffante d'ire, et de rage enflammée Est sorti' vite, certe il y a danger Que la grande douleur la force à s'outrager. \nSoli\n Ô terre, ô ciel, ô mer, ô gouffres homicides, Ô enfers, ô enfers de cruaurez avides: Ô rages!",
+          "L'Égyptien, le Parthe en cruauté barbare, Cegnaissants que c'était de s'armer contre nous, Prudents ont redoutez se distraire de vous. \nSoli\n En fin toute la terre un Solyman honore Bon gré malgré: le Ciel un Jupiter adore, Le Cocyte un Pluton moi",
+          "Et puis ce qui se fait par un avis bien sage, Ne peut jamais causer qu'un très-grand avantage. \nSoli\n Saladin, écourez, avant que commencer, Vous ferez en ce lieu mon conseil amasser, Asin que sur cei son avis il vous donne.",
+          "et me tient asservie, Ne veut pas que mon front desmẽtant mon tourment Porte empreint dessus soi l'ordinaire ornement, La tristeze bien mienx convient à mon visage. \nSoli\n Mais qui est le suject qui vons bat le courage?"
+        ]
+      },
+      "top_5_persons": [
+        "Soli",
+        "Soli",
+        "Tach",
+        "Rox",
+        "Mustapha"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "comme n'ayant voulu dégénérer de tant de mes aïeux, purriculièrement d'Emond duBoullay mon Père grand, jadis Historiographe de ce généreux Prince AntoineDuc de Lorraine, eût parler par ses braves successeurs premer Ambassadeur en France ce hérault armes sou",
+          "Lij Source gallicabnffr( Bibllothèque nation de France Tuteris d'avou fait un exploit si nonucu."
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Hongrie",
+        "Perse",
+        "REIMS",
+        "Clermont"
+      ]
+    }
+  }
+}

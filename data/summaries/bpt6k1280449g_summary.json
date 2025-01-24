@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Le Mariage forcé, comédie par J. B. P. de Molière",
+    "publication_date": "1674",
+    "document_id": "bpt6k1280449g"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "MARPHURIUS",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "J'ai une grande inclination pour la fille. \nMARPHURIUS\n Cela peut être. \nANARELLE\n Le Père me l'a accordée. \nMARPHURIUS\n Il se pourrait.",
+          "Je vous demande, si je ferai bien d'épouser la fille, dont je vous parle. \nMARPHURIUS\n Selon la rencontre. \nJANARELE E\n ",
+          "Mais que senez-vous, il vous étiez en ma place? \nMARPHURIUS\n Je ne sais. \nGANARELLL\n ",
+          "Je viens vous dire que j'ai envie de me marier. \nMARPHURIUS\n  Jen'en lai nenl.",
+          "-je bien, ou mal, de l'épouser? \nMARPHURIUS\n L'un, ou l'autre."
+        ]
+      },
+      "top_5_persons": [
+        "MARPHURIUS",
+        "ÉGYPTIENNE",
+        "Aristote",
+        "Geronimo",
+        "GE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Huit dans notre séjour à Rome, font trente-deux : Et vingt que vous aviez lors que nous nous connuilles, cela fait juitement cinquante-deux.",
+          "Comcien fumetn ous ensemble à Rome Huit ans."
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Angleterre",
+        "Hollande"
+      ]
+    }
+  }
+}

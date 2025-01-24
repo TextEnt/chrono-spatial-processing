@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "author": "Gombauld, Jean de",
+    "title": "Les Danaïdes , tragédie. Par M. Gombauld",
+    "publication_date": "1658",
+    "document_id": "bpt6k5745518r"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Danaus",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Si ici vous suis suspecte, et si ici l'ai servi Demandez moi pourquoi toujours ne l'ai point suivi, \nDANAUS\n Un excès de pouvoir vous assure, et vous flatte Ma bonté m'a perdu votre crédit, ingrate, Seul a fait le chemin par où s'est échappé Celui qui m'est fatal, et vous m'avez trompé.",
+          "que tout hommes rende hommage, Et que ses Ennemis à ses pieds abattus, Au lieu de l'offenser, implorent ses vertus. \nDANAUS\n Laissez-là désormais ces respects, et ces craintes Qu'on ne peut ériger que des âmes contraintes.",
+          "Quelle loi nous défend, alors qu'on nous offense, D'user de notre force, et de notre prudence? \nDANAUS\n D'un visible danger, ou pareil, ou plus grand, La nouvelle auanture aujourd'hui me sur; rend;",
+          "Suppliez, gémissez, vous serez soulagé, Et la plus digne offrande est un cœur affligé. \nDANAUS\n Que était serve les Dieux, ou que sans les offense, Je vois bienque ma mort sera ma récompense, BRCTJ.",
+          "Mais ici les Immortels, Seigneur tous leurs Interprètes Oui sauvent du Deltin les soix les plus secrètes, Ne m'ont jamais pédit que d'hortibles desseins, De tragiques succès, et de noirs assassins. \nDANAUS\n "
+        ]
+      },
+      "top_5_persons": [
+        "Danaus",
+        "BACIS",
+        "Bel",
+        "Jupiter",
+        "Mars"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Argos",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "LENCE\n Quel démon si puissant à ces crimes se joint, Et qui soutient Argos quelle n'abîme point?",
+          "La Scent est dans Argos LES DANAÏDES, TRAGÉDIE."
+        ]
+      },
+      "top_5_places": [
+        "Argos",
+        "Paris",
+        "Nil",
+        "Memphis",
+        "Grèce"
+      ]
+    }
+  }
+}

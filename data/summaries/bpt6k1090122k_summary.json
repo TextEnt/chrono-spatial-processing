@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "author": "Robbe, Jacques",
+    "title": "La Femme testuë, ou le Médecin holandois, comédie",
+    "publication_date": "1686",
+    "document_id": "bpt6k1090122k"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ISABELLE",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Ils vous viennent toujours rebattre les oreilles, Feu ma femme par çi, feu ma femme par-là. Elle faisait ceçi, s'abstenait de cela, Et cependant on sait que cent fois en alarmes, Les voisins sont venus apaiser leurs vendre. \nPANDOLPHÉ\n Et Damis qu'en dis-tu? \nISABELLE\n ",
+          "Pour voir. \nISABELLE\n S'il est si fin, hé bien, tant mieux, ma Mère, Il le sera pour moi, car je ne la suis guère.",
+          "avec que vous ce fripon serait joint? \nISABELLE\n Voulez -vous qu'a mes yeux en prison l'on vous traîne! \nMADAME PANDOLPHÉE\n Qu'on traine.",
+          "De tous ceux qui te sont mieux coPour qui ton cœur touché pancerait-il le plus? \nISABELLE\n Moi? je ne les ai pas examinez encore. \n",
+          "Dame, je ne saurais fairé à la fois deux choses, \nISABELLE\n Fais de grâce Lubni, à tes pleurs quelques pauses, t parle nous."
+        ]
+      },
+      "top_5_persons": [
+        "ISABELLE",
+        "VALÈRE",
+        "ALCIPPE",
+        "CLÉANTE",
+        "Isabelle"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "J'en aure fait fenir une de mon pays Qui doit faire bientôt ein giand bruit tans Paris",
+          "La Scène est à Paris dans la maison de Pandolphe LA",
+          "Il faudrait qu'à Paris n jue"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "France"
+      ]
+    }
+  }
+}

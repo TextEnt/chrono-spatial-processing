@@ -1,0 +1,47 @@
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Psiché, tragédie ballet, par J.-B. P. Molière (P. Corneille et Quinault)",
+    "publication_date": "1673",
+    "document_id": "bpt6k1280564h"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ZÉPHIRE",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "J'ai dans ce doux climat un souverain empire, Comme vous l'avez sur mon cœur: L'Amour m'est favorable, et c'est en sa faveur Qu'à mes ordres Æole a soumis le Zéphire C'est l'Amour qui pour voir mes feux récompensez Lui-même à dicté cet Oracle, Par qui vos beaux jours menacés D'une foule d'Amand se sont débarassez, Et qui m'a délivré de béternel obstacle De tant de soupirs empressez, Qui ne méritaient pas de vous être adressez.",
+          "Ce Prince qui vous aime, et qui commande aux Vents, Qui nous donne pour Char les aime du Zéphire, Et de nouveaux plaisirs vous comble à tous moments, Quand il rompt à vos yeux l'ordre de la Nature, Peut-être à tant d'amour mêle un peu d'imposture Peut-être ce Palais n'est qu'un enchantement;",
+          "Et pour en exprimer l'amoureuse langueur, Et cacher ce que je puis être Aux yeux quim'impaient des lois, J'ai pris la forme que tu vois. \nZÉPHIRE\n En tout vous êtes un grand Maître, C'est ici que je le connais.",
+          "Ce qu'elle a de plus doux appas, Zéphire vole aux ordres qu'elle donne, Et son Amante et lu en laissant trop charmer, Quittent pour la servir les soins de s'entre autour.",
+          "ZÉPHIRE\n Vous pouvez vous montrer pour finir son martyre, Lui découvrir son destin glorieux, Et vous dire entre vous tout ce que peuvent dire Les soupirs, la bouche, et les yeux."
+        ]
+      },
+      "top_5_persons": [
+        "ZÉPHIRE",
+        "VENUS",
+        "AGENOR",
+        "Vénus",
+        "Venus"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "le Livre de la Communauté des Imprimeurs et Marchands Libraires de Paris, suivant l'Arrêt de la Cour de Parlement du 8. \nAvril 1653\n aux charges et conditions portées ès présentes Lettres.",
+          "Grâce et Privilège du Roi, Donné à Paris le T31."
+        ]
+      },
+      "top_5_places": [
+        "Paris"
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Le misantrope, comédie par J. B. P. de Molière",
+    "publication_date": "1675",
+    "document_id": "bpt6k1280470w"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ALCESTE",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Et comme votre Esprit a de grandes lumières, Je viens pour commencer entre nous ce beau nœud Vous montrer un Sonnet que j'ai fait depuis peu, Et savoir s'il est bon qu'au Public je l'expose. \nALCESTE\n Monsieur, je suis mal propre à décider la chose, veumés m'en dilpenser. \nORONTE\n Pourquoi? \nALCESTE\n J'ai le défaut D'être un peu plus sincère en cela qu'il ne faut. \nORONTE\n C'est ce que je demande, et j'aurais lieu de plainte, Si m'exposant à vous pour me parler sans feinte, Vous alliez me trahir, et me déguiser rien. \n",
+          "Et si du choix des Mots vous vous contenterez. \nALCESTE\n Nous allons voir, Monsieur. \nORONTE\n A réite vous iceaurez, Que je n'ai demeuré qu'un quart-d'heure à le faire. \nALCESTE\n Voyons, Monsieur, le Temps ne fait rien à l'affaire. \nRONTE\n Espoir, il est vrai, nous soulage, L'Et nous berce un temps notre ennui: Mais, Philis, le triste avantage, Lors que rien ne marche après avoir! \n",
+          "Mais en disant cela, songez-vous je vous prie, Que cette Personne est, Madame, votre Amie? \nARSINOE\n Oui, mais ma Conscience est blessée en effet, De souffrir plus longtemps le tort que l'on vous fait: L'état où je vous vois afflige trop mon Âme, Et je vous donne avis, qu'on trame dontie flamme. \nALCESTE\n C'est me montrer, Madame, un tendre mouvement",
+          "Ouais, quel est donc le troubie ou je vous vois pays que me veulent dire et ces Soupirs poussés, Et ces sombres Regards que sur moi vous lancez? \nALCESTE\n toutes les Horreurs dont une Âme est capable, À vos Déloyautés n'ont rien de comparable: Que le Sort, les Demons, et le Cier courroux, N'ont jamais rien produit de si méchant que vous.",
+          "Mais, encor, dites-moi, quelle bizarrerie. \nALCESTE\n Laissez-moi là, vous dis-je, et courez -vous cacher. \nPHILINTE\n Mais on entend les Gens, au moins, sans se fâcher. \nALCESTE\n Moi, je veux me fâcher, et ne veux point entendre, \nPHILINTE\n Dans vos brusques chagrins, je ne puis,vous comprendre;"
+        ]
+      },
+      "top_5_persons": [
+        "ALCESTE",
+        "ARSINOE",
+        "Celimène",
+        "Clitandre",
+        "ACASTE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Je dirais au Roi Henri, Reprenez votre Paris, J'aime mieux ma Mie, au gué, J'aime mieux ma Mie La Riie n'éit pas fiene et le Style en est vieux: Mais ne voyez-vous pas que cela vaut bien mieux Que ces Colifichets dont le bon Sens murmure, Et que la Passion parle là toute pure?",
+          "te dirais au Roi Henri, Reprenez votre Paris, J'aime mieux ma Mie, au gué, J'aime mieux ma Mie Voilà ce que peut dire un Cœur vraiment épris.",
+          "Si le Roi m'avait donné Paris sa grand' Ville, Et qu'il me fallut quitter L'amour de ma mie;",
+          "Paris sa grand' Ville, Et qu'il me fallut quitter L'amour de ma Mie;",
+          "La Scène est à Paris \nLE\n LE MISANTROPE OMEDIE."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Rome",
+        "Louvre",
+        "Tours"
+      ]
+    }
+  }
+}

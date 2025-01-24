@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "author": null,
+    "title": "Tragi-comédie des enfans de Turlupin, malheureux de nature , où l'on void les fortunes dudit Turlupin, le mariage d'entre luy et la Boulonnoise, et autres mille plaisantes joyeusetez qui trompent la morne oisiveté",
+    "publication_date": "1620",
+    "document_id": "btv1b86197053"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Neptune",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Je lui ferai porter dessus le front Comme Acteon des cornes invisibles. \nLyrofle\n Moi, Seigneur ferai des choses impossibles Comme un cheval monté sur un fourmi La Mer bruller, un rocher entoumi, Les Élephants pêcher dessus Neptune",
+          "-ce Junon non, Junon, ni Saturne, Jupiter Mars, Mercure, ni Neptune, Phebus, Diane, et l'Archerot sans yeux Ne avait point dans la voûte des Cieux:",
+          "Était-ce toi porte-Trident Neptune"
+        ]
+      },
+      "top_5_persons": [
+        "Neptune",
+        "Banc",
+        "Cupidon",
+        "Diane",
+        "Phebus"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Champagne",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "LA Vrlupin aussi malheureux en femme et chevaux, que malheuoy reux de nature, Apres plusieurs grandes infortunes et le trépas de sa première femme aussi heureuse que lui désira se remarier, de sorte que craignant que quelqu'un ne le fit Cocu s'il épousait quelque belle femme, il épousa par le conseil d'un de ses amis nommé Bon au Banc, une certaine commere de Champagne que nous nommons la Boulonnaisse faute que nous ne savons son nom, laquelle encor que la nature l'eût rendue la plus difforme de France si est-ce que Turlupin imaginant nomme Carguille lui auoit fait porter des Cornes comme Bruscant compagnon de y auoit fait Bon a Banc, de façon que ' un sur le point 'leur le, es entre frottèrent très bien puïs a boire tous, ensemble pour leurs accorder NOMS DES ACTEURS."
+        ]
+      },
+      "top_5_places": [
+        "Champagne",
+        "France",
+        "Europe",
+        "Candie",
+        "Rouen"
+      ]
+    }
+  }
+}

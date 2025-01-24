@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Les fascheux, comédie de J. B. P. Molière, représentée sur le théâtre du Palais Royal",
+    "publication_date": "1668",
+    "document_id": "bpt6k1280442k"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "DAMIS",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "mon juste courroux le saura prévenir. \nERASTE\n J'entrevoi la quelqu'un sur la porte d'Orphise Quoi, toujours quelque obstacle aux feux qu'elle autorise! \nDAMIS\n Oui, j'ai su que ma Nièce en dépit de mes soins, Doit voir ce soir chez elle Éraste sans témoins.",
+          "DAMIS\n \nDAMIS\n Quoi, celui, dont j'avais résolu le trépas, Est celui, qui pour moi vient d'employer son bras?",
+          "DAMIS\n Mais avant qu'il ait lieu d'achever son dessein, Il faut de mille coups percer son traître sein.",
+          "DAMIS\n Vois, malgré moi, le traître espère l'obtenir?",
+          "DAMIS, L'ÉPINE, ERASTE, Mil déli la lents \n"
+        ]
+      },
+      "top_5_persons": [
+        "DAMIS",
+        "ORMIN",
+        "Lysandre",
+        "M",
+        "Cerf"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Or l'avis dont encor nul ne s'est avisé, Est qu'il faut de la France, et c'est un coup aisé, En fameux ports de Mer mettre toutes les côtes.",
+          "Quatre Bergers, et une Bergère, qui au sentiment de tous ceux qui l'ont vue, ferme le divertissement d'assez honne grâce \nFrance\n ",
+          "et deux crois qu'en quelque façon ce n'est pas être inutile à la France, au divertissement de son Roi.",
+          "J'ai le bien, la naissance, et quelque emploi passable, Et fais figure en France assez considétable;"
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Paris",
+        "Ville de Paris",
+        "Luxembourg"
+      ]
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Mareschal, André",
+    "title": "La Soeur valeureuse, ou l'Aveugle amante, tragi-comédie... par le Sr Mareschal",
+    "publication_date": "1634",
+    "document_id": "bpt6k8405564"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Melinde",
+          "frequency": 14
+        },
+        "related_sentences": [
+          "eu bien à Dorme, à cause qu'il l'avait vu s'opposer au meurtre de sa Fille ou de son Fils, que jour reconnaissance de cette action il avait acorde Oronte en mariage, après que par le noyen de ce Prince s'étant vu et accommodé uecque le Roi de Thrace, sur une paix comnune Olympe est jointe à Lucidor Dorme ec Oronte prend aussi le Royaume des Mères, et renonce à ses prétentions dans la Bythilié en faveur de Gelailaidre qui pour accomplir à paix et la joie possède Melinde, et au milieu désespoir se voit éleué et compris au nombre es heureux Amants.",
+          "Melinde dedans et instruite par son Frère de ce qu'elle devait faire, lui envoie après quelque teps après, par où (continuant leurs feintes) elle se plaignait de l'insolence et des poursuites violent du Prince de Perse, qui ferait enfin quelque effort sur son honneur, si on était en laissait le temps et les moyens dans les longueurs d'un siège; que ce remède était trop lent et trop éloigné pour un mal si proche, et qu'il fallait prévenir ses mauvais desseins par un duel.",
+          "Gélandre averti par Melinde fait une sortie pour les é pécher, et n'arrive qu'après les coups donn et lors que Lucidor est déjà blessé par Oron qui soutenue avantageusement des Troupes Dorme, qui tirent en campagne contre celu de contre Ville, m' Lucidor en fuitte, Gandre les siens en déroute, ce reur juit regagner la y le sans se reconnaître.",
+          "Melinde amoureuse à l'extrême, après endre combat de Lucidor contre Oronte, se voyant pressée avait déclaré le fond de tous les déseins de son Frère: surquoi Lucidor indigné l'alait fait mettre dans une prison; et pour ruiner out a fait Dorme avait envoyé quérir du seours en Perse, qui venait déjà à grandes iourdées, et même le Roi en personne.",
+          "Lucidor accompagné de Melinde Sœur du favori, qui la femme avait donnée autant pour conduite et assurance que pour otage à Gelandre, pensait fuir la colère du Roi, qui était aussi fausse que tous ces complots que Dorme avait feint que sa Majesté dressait contre même, sur l'enlèvement de sa fille Olympe que ce Rival ingénieux avait encore supposé."
+        ]
+      },
+      "top_5_persons": [
+        "Melinde",
+        "Lucidor",
+        "Olympe",
+        "Mars",
+        "Seigneur"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Perse",
+          "frequency": 14
+        },
+        "related_sentences": [
+          "Mais ce prétexte n'étant pas assez puissants, pour effacer ou couvrir en l'esprit d'Oronte in vice qu'elle avait elle -même par la honte qu'elle ressentait à le commettre, ne put ôter aussi l'aversion de Lucidor Il la quitte et la Perse même; et après mille courses que ses armes te rendirent glorieuses, borna heureusement sa fuite en Trace ou parmi l'accueil et les honneurs qu'il reçut, il se trouva enfin amoureux et aime d'Olympe, fille unique du Roi de ce pays.",
+          "Melinde amoureuse à l'extrême, après endre combat de Lucidor contre Oronte, se voyant pressée avait déclaré le fond de tous les déseins de son Frère: surquoi Lucidor indigné l'alait fait mettre dans une prison; et pour ruiner out a fait Dorme avait envoyé quérir du seours en Perse, qui venait déjà à grandes iourdées, et même le Roi en personne.",
+          "où rencontrant aussi bien qu'en votre esprit toute chose à admirer, elle ne s'étonne que d'une seule, comme votre front chargé de lauriers ne l'est point encore de la Couronne de toute l'Asie, puis que c'étaient de semblables visages qu'autrefois la Perse faisait adorer dessus le Trône de ses illustres Aussi.",
+          "Pour ici faire connaître un désir innocent, F 1 Et les plus chastes traits que son âme ressent: Que cette loi de Perse en moi soit abolie Qui permet que la Sœur à son Frère se lie, Qu'elle efface le crime et non pas mon tourmet Je reerche l'amour, non le contentement:",
+          ", déclare que l'Oracle enfin était promis leur rencontre en ce lieu, rapporte ette loi de Perse que j'ai ditte, et tout ce qu'elput pour lui faire excuser et agréer sa pason, qui n'a de jours que des reproches et injures our réponse:"
+        ]
+      },
+      "top_5_places": [
+        "Perse",
+        "Thrace",
+        "France",
+        "Martigues",
+        "Grèce"
+      ]
+    }
+  }
+}

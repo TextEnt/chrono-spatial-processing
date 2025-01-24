@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "author": "Belisle",
+    "title": "Le Mariage de la reine de Monomotapa, comédie",
+    "publication_date": "1682",
+    "document_id": "bpt6k852871n"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Lizette",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Cette peur me surprend et m'offense, Lizette Ainsi, comme le corps, j'ai l'âme assez bien faite, Je suis discret, fidèle, et forthomme de bien, De peur de te fâcher je ne te ferai rien Je suis assez complète, on n'a rien à me faire, Aussi de ta façon n'ai-je pas grande affaire, e travaille moi seule à ce que j'ai besoin, ne je ne pletends pas rien tirer de ton soin. \n",
+          "Oui, Lizette, avec moi te veux-tu marier? \nLIZETTE\n Je ne me ferai pas fort longuement prier. \nMASCARILLE\n Dis-moi si quelque jour en venant de me battre Dans la chaleur du vin j'arnivais a te battre, Sans pitié, n'y regret, me ferais-tu cornard? \nLIZETTE\n Sur ce chapitre-là tu fais le goguenard, Mais dis, si tu me veux sans t'amuser à rire.",
+          "Oui, mais. \nLIZETTE\n \nMASCARILLE\n Mon cher tendron ne t'enquête de rien, Va trouver ta maîtresse et dis dui de se taire, De toutes nos amours je conduis le mystère, Qu'isabelle obéisse en tout à son papa, Nous vous emmènerons à Monomapa \nLIZETTE\n où diable est ce pays? \nMASCARILLE\n Ne t'en mets pas en peine.",
+          "LIZETTE\n Ma foi, je n'en voudrais point d'autre que la mienne, Allons joindre Lisandre, et quoi qu'il en advienne Achevons entre nous nôtre commun bonheur Lisandre a de l'amour, de l'Esprit, de l'honneur, Jettons-nous en ses bras sans crainte, ni remise, Il vous tiendra toujours la foi, qu'il a promise.",
+          "mais je tremble Quand je me trouve seule un moment avec toi \nMASCARILLE\n Et pourquoi donc trembler? \nLIZETTE\n Je ne sais pas pourquoi, Mais tu parais toujours campé sut le pied gauche Comme un jeune Évanté qui sort de la débauche, Que trop d'ardeur agite, et qui te rend suspect"
+        ]
+      },
+      "top_5_persons": [
+        "Lizette",
+        "ISABELLE",
+        "Isabelle",
+        "Isabelle",
+        "SCE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Chine",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Il ma dit que, peut-être, il viendrait de la Chine, Qu'il serait Moscovite, ou Tartare, ou Persan, Mais pour toute remarque il aura le Turban, Et que Monsieur Lizandre en ce moment funeste, Pourra chercher ailleurs à jouer de son reste."
+        ]
+      },
+      "top_5_places": [
+        "Chine"
+      ]
+    }
+  }
+}

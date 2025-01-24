@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "author": "Mary, Nicolas",
+    "title": "Les Galantes vertueuses : histoire véritable et arrivée de ce temps pendant le siège de Thurin : tragi-comédie / [Desfontaines]",
+    "publication_date": "1642",
+    "document_id": "bpt6k63622516"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "NERINE",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Et puis que mon dessein s'accorde à la raison, Souffre que je franchise une double prison, Et par un melme-coup que cette main contente, Mon Amour, les Destins, mes Rivaux, et Dorante. \nNERINE\n Bien loin de témoigner ces transports violents, re vous conseil lerais de les rendre plus lents, La femme en peu de temps s'apaise et se cour rouée, Tantôt elle est cruelle, et tantôt elle est douce, Et son humeur étant en son flus, et reflus, Bien souvent elle fuit ce qu'elle aime le plus: Quittez donc le dépit dont votre âme s'afflige, La nature en Dorante aurait fait un prodige,",
+          "Mais pour ce beau dessein, qui pourrons-nous choisir? \nNERINE\n Liliane est fort propre à donner de l'ombrage, 2i na lu la llyr l u: mais si tout à bon elle me rend volage? \nNERINE\n Le succès de la feinte en sera plus heureux, Car soit qu'un changement divertisse vos vœux, Ou que vous conserviez une flamme constante, Ce trait vous donnera Liliane, ou Dorante du le ne malane l.",
+          "NERINE\n Mettez-vous dans le plus noble orgueil, Dont vous puissiez flatter les regards d'un bel œil, N'épargnez point sur vous les parfums, Seigneur les poudres, Que l'amour dans vos yeux soit tout armé de foudres, J'oignez la bonne mine à tous ces ornements, Que vos moindres discours soient de beaux compliments;",
+          "Tu fondes mon bonheur sur d'estrãges maximes, Mais la vertu ne peut s'acquérir par des crimes, Et malgré tes conseils, je veux croire en ce jour, Que l'amour seulement est le prix de l'Amour. \nNERINE\n Puis qu'autre contraire effet détruit vôtre espérance, Vous conservez à tort cette injuste créance.",
+          ", N'oppose pas Nerine se mme importune, À ce fer qui pourra finir mon infortune, Et sache-quand les Dieux nous rendent malheureux, Que ic coup qui nous tue est le moins rigoureux: Souffre donc que ainsi meure, et qu'une noble envie, Satisfasse Dorante, en m'arrachant la vie;"
+        ]
+      },
+      "top_5_persons": [
+        "NERINE",
+        "Liliane",
+        "Arbane",
+        "Diane",
+        "Mars"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "tu sauras que Monsieur le Maréchal de la Force, allant au devant du Duc de Féria la plus belle Noblesse de France qui l'accompagnait, séjourna quelque temps à Remiremont en Lorraine, où cette Histoire se passa, et quelques temps après ses Cavaliers qui en avaient formé les Incidents paslèrent en Italie pour réparer auprès de Mars le temps qu'ils avaient perdu près de l'Amour.",
+          "À MONSIEUR MONSIEUR D'IMBERT, Conseilleir et Secrétaire du de France, et Commiflaire général des armes d'Italie, ETC."
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Italie",
+        "Remiremont",
+        "Lorraine",
+        "Florence"
+      ]
+    }
+  }
+}

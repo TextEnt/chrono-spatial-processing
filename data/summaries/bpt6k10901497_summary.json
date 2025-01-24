@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Scudéry, Georges de",
+    "title": "Eudoxe, tragi-comédie",
+    "publication_date": "1642",
+    "document_id": "bpt6k10901497"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Eudoxe",
+          "frequency": 10
+        },
+        "related_sentences": [
+          "C'est là cruel, c'est là, (faut-il queris le die) Que l'une et l'autre Eudoxe, avec ta Placidie, Dans l'effroyable flamme, ont trouvé leur tombeau: Mais ton conseil timide, en fournit le flambeau.",
+          "Vous le voulez ainsi, j'y consens, je vous cède: Mais dans le désespoir, qui mon âme possède, Souvenez-vous Vrsace, en me disant adieu, Que vous laissez Eudoxe en ce funeste lieu:",
+          "Je vois mourir Eudoxe, et mourir dans la flamme: Mourir dans les ardeurs d'un brasier dévorant, Et donner à chacun de l'horreur en mourant.",
+          "Eudoxe, belle Eudoxe, objet incomparable, Au milieu de la flamme, au milieu du courroux, Voyez votre bourreau, qui souffre plus que vous.",
+          "Eudoxe brûler vive ô destin quelle atteinte, Eudoxe n'être plus que de la cendre éteinte, Éudoxe dans le feu, pour signer sa foi!"
+        ]
+      },
+      "top_5_persons": [
+        "Eudoxe",
+        "ASPAR",
+        "Genseric",
+        "Seigneur",
+        "Seigneur"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 10
+        },
+        "related_sentences": [
+          "Si la raison encor ne vous est ennemie; Permettez que Monsieur, au moins sans infamie, Et qu'un noble trépas arrête le dessein, E Qu'une injuste fureur vous a mis dans le sein, Je vous conjure donc, par Rome surmontée, Par ce baut rang de gloire, où la vôtre est montée, Par les fameux lauriers, qui vous ceignent le front Par ce bras généreux, si vaillant et si prompt, Puite de Ruite de Ruy, pur t'honneur,par tous mémé, De poignarder ce cœur, séance vouloir qu'il vous aime.",
+          "Mais en ce même temps un funeste accident Ravit Honorius, Empereur d'Occident: Mon maître prend la route où son désir aspire, Asin d'aller à Rome établir son Empire: B y Là sa femme le suit, et nous le suivons tous: Et le vent favorable, et la mer sans courroux Nous met au bort du Tibre, où le plus grand des Princes Reçoit les compliments de toutes ses provinces, Et va revoir après le sceptre dans la main, La maîtresse du monde et du Peuple Romain.",
+          "Je pris Rome, il me prit, et possédant mon cœur, Il me fit voir captif, lors que j'étais vainqueur.",
+          "Avez-vous pris en main les intérêts de Rome Prétendez-vous passer pour son libérateur, Et disputer de gloire avec son fondateur?",
+          "Il s'embarque, il arrive, il prend Rome à l'instant Maxime lui résiste, et meurt en combattant;"
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Carthage",
+        "Afrique",
+        "Carthage",
+        "Grèce"
+      ]
+    }
+  }
+}

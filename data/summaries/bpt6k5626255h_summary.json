@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Pradon, Nicolas",
+    "title": "Scipion l'Africain , tragédie par M. Pradon",
+    "publication_date": "1697",
+    "document_id": "bpt6k5626255h"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Hannibal",
+          "frequency": 32
+        },
+        "related_sentences": [
+          "Caton et Fabius en ont conçu pour moi, Et peut-être en secret jaloux de monemploi, À me nuire au Sénat l'un et l'autre s'applique, Mais il faut terminer cette guerte d'Afrique, C'est à moi de remplir la gloite de mon sort, le n'écouterai rien si l'on parle d'accord, Il faut que par mon bras Carthage soit punie, Il faut vaincre Hannibal et la guerre est finie, Il vient, que son abord inspire de respect, Aux Gardes.",
+          "Modérez cette vaine colère, Attendez tout de moi quand tout vous est comtraites Je ne romprai jamais le serment solennel Que m'impose un lien qui doit être éternel, Ny Scipion, ni Rome, et toute sa puissance N'obtiendront point de moi de lâche obéissance, Je réponds de mon éœur, fondez-moi de vous, Mais de grâce évitez Hannibal en courroux, Partez, car je frémis, et tout mon sang se glace",
+          "Rois qui fût dans l'Univers, L'infidèle Syphax a péri daus ses fers, Asdrubal et Xantus ont perdu trois batailles, Carthage va nous voir au pied de ses murailles, Cette superbe ville est contrainte aujourd'hui D'appeler Hannibal pour lui servir d'appui;",
+          "Quelques conditions que j’ impose à Carthage, Quand Rome la verrait réduite à l'esclavage, Je ne fais rien pour moi, si dans un jour fatal Scipion n'est vainqueur de l'illustre Hannibal voila donc l'intérêt le premier de ma gloire;",
+          "Non, Seigneur, je n'y puis consentir, Hannibal vient bientôt, attendons sa venue, Aprenons le succès d'une telle entrevue, Il va parler de paix, j'aurai la liberté, Et nous seross tous deux compris dans le traité;"
+        ]
+      },
+      "top_5_persons": [
+        "Hannibal",
+        "Scipion",
+        "Scipion",
+        "Fabius",
+        "Zama"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 32
+        },
+        "related_sentences": [
+          "Et je vais soutenir les intérêts de Rome Il faut reprendre Hy toute ma fermeté, Oublier les transports de mon cœur agité, J'en ai tougi cent fois, et j'y fus trop sensible, À l'aspect d'Hannibal je dois être inslexible, Et je veux aujourd'hui plein d'une noble ardeur Malgré ma passion même découvrir le cœur y Roinaus, d' Comus, de qui politique Ne songe sa gloire et la Republique. \nLÉPIDE\n Sur vous de l'Univers vous attachez les yeux, Seigneur, et vos succès vous font des envieux, Quine peuvent souffrit sans quelque jalousie.",
+          "Modérez cette vaine colère, Attendez tout de moi quand tout vous est comtraites Je ne romprai jamais le serment solennel Que m'impose un lien qui doit être éternel, Ny Scipion, ni Rome, et toute sa puissance N'obtiendront point de moi de lâche obéissance, Je réponds de mon éœur, fondez-moi de vous, Mais de grâce évitez Hannibal en courroux, Partez, car je frémis, et tout mon sang se glace",
+          "Le sort d'une bataille est toujours incertain, Mais celui de la paix est tout en votre main, Pour Scipion, pour Rome étant pleine de gloire, Elle aura plus d'éclat pour vous qu'une victoire: Pour Carthage, j'avoue avec sincérité Qu'elle aura moins d'honneur et plus d'utilité: Mais j'aime mieux encor pour la cause continun Suivre ici la raison que l'aveugle fortune;",
+          "Madame, point de paix, Point d'accord, c'est eunain en former l'espéraute, Il faut de Rome, il faut poursuivre la vengeance, On me l'a confiée, et j'en dois prendre soin, Et si j'en erais mon cœur je la porterai loin, Ma dame, vous pleurez.  ",
+          "Quelques conditions que j’ impose à Carthage, Quand Rome la verrait réduite à l'esclavage, Je ne fais rien pour moi, si dans un jour fatal Scipion n'est vainqueur de l'illustre Hannibal voila donc l'intérêt le premier de ma gloire;"
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Carthage",
+        "Afrique",
+        "Carthage",
+        "Paris"
+      ]
+    }
+  }
+}

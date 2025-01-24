@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Bernier de La Brousse, Joachim",
+    "title": "Les Œuvres poëtiques du sieur Bernier de la Brousse",
+    "publication_date": "1618",
+    "document_id": "bpt6k1090269b"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Apol",
+          "frequency": 15
+        },
+        "related_sentences": [
+          "Apol\n Trois seigneurs Tyriens comblés d'aise et de joie Pour cet heureux succès, qui ne font que d'entrer La voile basse au port, où encor vient d'anchrer Un grand Duc mon ami, qui plus libre m'apporte Le sceptre d'Antioche, et l'alliance forte De ses peuples voisins: car tous les Syriens, Après le noir trépas de ces deux faux ruffiens, M'ont élev pour leur Roi, m'appellent me conjurent Me supplient sans cesse, et fidèles m'assurent Me mettre entre les mains les trésors précieux Qu'eut jadis Seleuque, et son fils dans ces lieux.",
+          "Je ne sais pour certain, tu peux lui demander. \nApol\n Tous deux également me pouvés commander. \nLuc\n Dites donc votre nom, et quelle seigneurie Xature vous acquit sur la terre fleurie? \nApol\n Jadis mon nom fut grand, mais ores sans mémtiIe l'ai laisse en mer, ma seigneurie en Tyr \nLuc\n Parlez plus clairement, bel ami, qu'on vous oie. \nApol\n Princesse le Soleil qui jour et nuit flamboie De l'Inde au noir Atlas, ne vit onc de ses yeux",
+          "Mais si encor Amour le tient et le manie, On le nomme par tout le sage Apollonie Roi de Tyr, de Sydon, et de ce beau quartier Où jadis commandait Antioque le sierMame à qui le Ciel ne fut onc favorable, Est sous les bois ombreux du Prince inexorable, Lucine était son nom, et fut fille du Roi Qui de Pentapolis tient l'iste sous sa loi. \nApol\n Ah!",
+          "Elle t'aime ardemment, et ses affections N'ont point eu d'autre objet que tes perfections. \nApol\n Sire, ce sont des faits de la grandeur divine, ,, Qui ne laisse jamais sous la ronde machine \", Les esprits affligés, qu'un torrent de bon heur \" N'emporte les aigreurs de leur triste douleur.",
+          "La vérité s'allie apprendre ce qu'on vous chante. \nApol\n Donc, puisque tu dis vrai, Seigneur te conjure encor Par les Cieux étoilés, et par tes cheveux d'or, De m'apprendre l'état et le nom de ton père, S'il est mort, s'il est vif, et celui de ta Mère?"
+        ]
+      },
+      "top_5_persons": [
+        "Apol",
+        "Phœbus",
+        "Cloris",
+        "Seigneur",
+        "Luc"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 15
+        },
+        "related_sentences": [
+          "J'ois déjà (ce me semble) en Sicile chanter Un autre villageois, qui si doucement joue, Que celui saura prou qui saura l'imiter, Voire même celui qui viendra de Mantoue Mais passant plus avant, votre vois chez les Français Un harpeur dont le nom dans les astres j'avance: Qui louera les Bergers, mais ces Bergers sont Rois, Si haut sont élevés les Bergers de la France Un autre l'accompagne au fait de ses chansons, Mais le seconde en temps, qui dedans une GROYZ Chérit par les forêts de si grands nourrissons, Qu'on y verra du Ciel les planètes qu'il porte.",
+          "Our ce coup, cher ami, qu'uniquement j'honore, Comme un luisant Soleil que toute France adore, A Tu ne verras de moi les traits, Seigneur le branPAnal des beaux esprits) du jeune Cupidon donc, Mon luth charme-vous n'assourdira ta Muse, Comme il feyt autres- fois, de la subtile ruse De la rare beauté qui retint par deux ans Mon cœur comme forçat dans ses yeux décevants.",
+          "Peuples qui admiinez ja gloire et sa vaillance, L'enfer pour le domre vomit cest inhumain, Car si tout l'Univers l'eût pris l'épée en main, Il eût joint d'un seul coup l'Univers à sa France SUR LA MORT DE MADAME MARGUERIE DE TARNAC ÉLÉGIE.",
+          "Voici un hardi aventurier, qui sous les auspices de votre nom trèsillustre, se va mettre à l'abandon par les campagnes de la France Je l'ai retenu tant qu'il m'a été possible, et par plusieurs années l'ai rendu comme inconnu aux hommes.",
+          "Tout ce que les Latins ont acquis d'éloquence, Ces fleurs que dans l'Atique on a vu s'espanir, Vont émaillant ton vers, qui porte par la France Sa verdeur, qui jamais ne se pourra fanir."
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Rome",
+        "Syrie",
+        "Bergère",
+        "Nil"
+      ]
+    }
+  }
+}

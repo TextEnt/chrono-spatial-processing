@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "author": "Mareschal, André",
+    "title": "Le jugement équitable de Charles le Hardy, dernier duc de Bourgogne, tragédie",
+    "publication_date": "1646",
+    "document_id": "bpt6k5609968x"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Ferdinand",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Et l'Assassin d'Alb est indigne de nous: Au XX des désavoue, et mon cœur en soupire, Tout ce qu'en sa faveur Ferdinand' à pu dire. \nFERDINAND\n {egidnaunes \nMATILDE\n Je sais qu'un faux commandément Vous a, pour me servir, donné ce mouvement;",
+          "où ici l'espérais moins. \nCHARLES\n Disposez tout, Madame, et secondez mes soins. \nSEIGNEUR CÈNE II\n \nFERDINAND\n Une est au désespoir, lors que l'autre est contente.",
+          "Qui vus ai vu l'aimer et Fille, et mariée. \nFERDINAND\n Et qui, sans l'offenser d'un sou ir seulement, Verras durer ma flamme encore au monument: Bi.",
+          "Se pourront mesurer à votre double perte, En la mort d'Han Espoux en votre honneur soufferte. \nFERDINAND\n Sa tête est le seul bien qui répond à ses vœux.",
+          "MATILDE, Vous voulez donc aussi ma vie en sacrifice: Bien tôt mon désespoir vous rendra cet office. \nFERDINAND\n Pour grâce, accordez lui a liberté des pleurs;"
+        ]
+      },
+      "top_5_persons": [
+        "Ferdinand",
+        "Matilde",
+        "Rodolphe",
+        "Albert",
+        "Matilde"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Après tous ces éloges éclattans et presque incomparables qu'elle a fait insérer dans votre Breuét, touchant votre illustre naissance, les grandeurs de la première Maison du Duché de Holstin, et la première aussi du Royaume de Dannemarch s'aussi vieille et aussi fameuse que l'Empire, et tant de merveilleuses actions par qui vous la relevez tous les jours encore, et par qui la France obligée la respecte meste au fond de l'Allemagne, et en terre ennemie, qu'en sa faveur et pour l'amour de vous elle doit peut-être iour épargner: Après, dis-je, tous ces titres d'honneur, qui rendent plus recommendable encore le don qu'on vous fait par ces qualités qu'on publie, qui sont les brillants de votre Couronne et les plus beaux rayons de votre gloire;",
+          "l2 la France reconnaissante;"
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Liège",
+        "Liège",
+        "Paris",
+        "Peronne"
+      ]
+    }
+  }
+}

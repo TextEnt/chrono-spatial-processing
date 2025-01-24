@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Le tartuffe, ou L'imposteur , comédie par J.-B. P. de Molière",
+    "publication_date": "1669",
+    "document_id": "btv1b8610800k"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Tartuffe",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Elle n'en fera qu'un Sot, je vous assure. \nORGON\n Ouais, quels discours! \nDORINE\n Je dis qu'il en a l'encolûre, Et que son ascendant, Monsieur, l'emportera Sur toute la vertu que votre Fille aura. \nORGON\n Cessez de m'interrompre, et songez à vous taire, Sans mettre votre nez où vous n'avez que faire, \nDORINE\n mon on parle, Monsieur, que pour votre intérêt.",
+          "Je vous dis. \nDORINE\n Non, vous avez beau faire, On ne vous croira point. \nORGON\n À la fin, mon courrous. \nDonTivve\n Hé bien on vous croit donner, et c'est tant pis pour vous, Quoi! se peut-il, Monsieur, qu'avec l'air d'Homme sage, Et cette large barbe au milieu du visage, Vous soyez assez fou pour vouloir. \nORGON\n Écoutez.",
+          "taisez-vous, s'il vous plaît. \nDORINE\n Si l'on ne vous aimait. \nORGON\n Je ne veux pas qu'on m'aime. \nDORINE\n Et je veux vous aimer, Monsieur, malgré vous-même Ah! \nORGON\n \nDORINE\n Votre honneur m'est cher, et je ne puis souffir Qu'aux brocards d'un chacun vous alliez vous offrir \nORGON\n ",
+          "Je vous dis qu'il me faut apprendre d'elle à vivre. \nDORINE\n Vous n'en feriez que mieux, de suivre mes leçons. \nORGON\n Ne nous amusons point, ma Fille, à ces chansons, Je sais ce qu'il vous faut, et je suis votre Pêre J'avais donné pour vous ma parole a vuière;",
+          "Mais pour Homme de bien, votre garantis le Maître, Vous ne lui voulez mal, et ne le rebutez, Qu'à cause qu'il vous dit à tous vos vérité, C'est contre le Péché que son cœur se courrouce, Et l'intérêt du Ciel est tout ce qui le pousse, \nDORINE\n Oui;"
+        ]
+      },
+      "top_5_persons": [
+        "Tartuffe",
+        "ORGON",
+        "CLÉANTE",
+        "M",
+        "DAMIS"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Elle nous apprendra que de ses plus grans Hommes, et des premiers en dignité, ont fait gloire d'en composer eux-mêmes; qu'il y en a eu d'autres, qui n'ont pas dédaigné de réciter en public celles qu'ils avaient composées; que la Grèce a fait pour cet Art éclater son estime, par les Pris glorieux, et par les superbes Thea très dont elle a voulu l'honorer; et que dans Rome enfin ce même Art a reçu aussi des honneurs extraordinaires: Je ne dis pas d'une Rome débauchée, et sous la licence des Empereurs;",
+          "et comme on ne s'avise point de défendre la Médecine, pour avoir été bannie de Rome ni la Philosophie, pour avoir été condamnée publiquement dans Athènes on ne doit point aussi vouloir interdire la Comédie, pour avoir été censée en de certains temps.",
+          "mais dans Rome disciplinée, sous la sagesse des Consuls, et dans le temps de la vigueur de la Vertu Romaine."
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "France",
+        "Paris",
+        "Grèce",
+        "Athènes"
+      ]
+    }
+  }
+}

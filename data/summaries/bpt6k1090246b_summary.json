@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Montauban, Jacques Pousset de",
+    "title": "Seleucus, tragi-comedie heroyque",
+    "publication_date": "1654",
+    "document_id": "bpt6k1090246b"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Antigonus",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Mais apprenez, mon fils, pour la dernière fois Que si vous résistez d'obéir à mes lois, Si dans ce même jour it ne vous vois sans cesse, Reporter votre cœur, sans haine, à la Princesse Si vous vous obstinez à garder ce courroux, Si vous ne renouez Antigonus et vous, Si de ce que je veux vous osez vous défendre, D'où vous êtes montépris",
+          "Mais pour vous l'assurer, malgré ces Rois jaloux Il faut nous bien remettre Antigonus, et vous.",
+          "à Antigonus Prince, d'où peut venir ce bouillant mouvement ?",
+          "Madame, assurément le vôtre est moins sensible, OLYMPIE à Antigonus",
+          "Ne peut-on vous aimer qu'aimant Antigonus LADICE."
+        ]
+      },
+      "top_5_persons": [
+        "Antigonus",
+        "Seleucus",
+        "OLIMPIE",
+        "Seleucus",
+        "Sceptre"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Olympie",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Je nexamine pas si c'est crimie, ou justice, Et dans ce coup hardi s'il fit bien, s'il fit mal, Mais de tous vos malheurs c'est le sujet fatal : Olympie aussi tôt, que la vengeance inspire Par un juste coutroux arma toute l'Epire, t le vangeoit sa mère aute cent mille brax.",
+          "à Olympie vis, oui j'ai des Soldats accoutumés aux OÙ cupIls feront bien pour moi ce qu'ils ont fait pour vous, Seigneur pour la Princesse en vain mon cœur soupire, On l'arrache à mes vœux, et un viens vous le dire, Voilà tout le succès d'un si long entretien.",
+          "ARAXE à Olympie Gardez-vous d'irriter ma puissance absolue, Madame, tu le veux, la chose est résolue, Et votre armée attend que vous nommiez celui Qui lui doit après vous commander aujourd'hui. \nLISANDRE\n ",
+          "Madame, assurément le vôtre est moins sensible, OLYMPIE à Antigonus",
+          "HÉROYg E. LADICE, OLIMPIE LADICE."
+        ]
+      },
+      "top_5_places": [
+        "Olympie",
+        "Syrie",
+        "Paris",
+        "Ville de Paris",
+        "Trone"
+      ]
+    }
+  }
+}

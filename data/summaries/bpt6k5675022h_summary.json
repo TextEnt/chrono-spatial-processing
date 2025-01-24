@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Scudéry, Georges de",
+    "title": "La comedie des comediens poeme de nouvelle invention . Par monsieur de Scudery",
+    "publication_date": "1635",
+    "document_id": "bpt6k5675022h"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "MELISE",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Vous le pouvez montrer, librement en ces atense, Un plus rare chresor, m'occupe assez les yeux. \nMELISE\n De votre jugement, ne vient pas mon estime: ISOMENE.",
+          "Mais persistez Berger, en cette repentance: \nLIRANDRE\n Ma seule fin, seracelle de ma constance.  \nMELISE\n La mienne doit durer, plus long temps que mes jours.",
+          "té Quand son esprit poür moi, n'aurait que cruaule fais vœu solennel, d'adorer ses haute? \nMELISE\n Graver dessus mon cœur, n'est pas écrire at sable;",
+          "Et puis qu'en la servant nous souffrons le trépas, Tâchons de l'obtenir en ne la servant pat, \nMELISE\n Pirandre, Pyrandre, objet de ma pensée;",
+          "Votre cœur ferait honté, à ceux que j'est \nMELISE\n Glorieuse prison, honorables Entraves, On voit autour de vous, des Monarques esclaues;"
+        ]
+      },
+      "top_5_persons": [
+        "MELISE",
+        "Aliante",
+        "IRIS",
+        "M",
+        "Tambour"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "les Lettres ou nous le destinoins, lui ont semblé une occupation trop basse, et trop endormie, pour sa vivacité, il a voulu porter les armes, et le faisant, a couru toute l'Europe: et certes comme ce métier n'était pas indigne de sa naissance, nous suportions son erreur, mais lors que nous pensions qu'il dût faire sa rétraite, il est répartr de nouveau, sans que nous ayons pu découvrir sa route, et mon frère m'ayat suplié eu mourant, d'avoir soin d'en faire la recherche, il n'est forme de vie où la débauche puisse réduire un jeune homme, dans laquelle ie appa tasché de le re: mais tout inutilement, de sorte, qu'ennuyé d'un si long voyage, en sin me voici dans Lyon, mais si las, qu'il ne m'est pas possible d'en partir de deux où trois jours, pour revoir après notre ville, la plus belle du monde, Paris LHÔTE.",
+          "et que voici un jeu de paume, où des Comediẽs qui ne sont point nous, et lesquels nous sommes pourtant, représentent une Pastorle, ces insensé ont tous pris des noms de guerre, et pẽsent vous être inconnus, en s'appelant, Belle Ombre, Beau Soleil, Beau Seiour, et d'autres encor tous semblables: ils veulent que vous croyez être au bord du Rhône, et non pas à celui de la Seine et sans partir de Paris, ils prétendent vous faire passer pour des habitants de Lion à moi même ces Messieurs des petites Maisons, me veulent persuader que la Métempsychose est vraie, et que par conséquent Pithagore était un Évangeliste, car ils disent que tu suis un certain monsieur de Blandimare, bien que sans m'apelle véritablement Mondori, et voyez s'ils ont le sens bien égaré, ils doivent faire passer y cy un Tambour et un Harlequin, comme le pratiquenie jes petites louINOLOGUE.",
+          "c'est -à -dire, estime ce qu'il a de bon, et pardonne moi des fautes que tu ne verras, que parce que je ne les ai point vues, AR grâce et Privilège du Roi, donné à Paris, en datte du 20. \nAvril 1635\n ",
+          "faites -vous Iris dans cette forêt sombre, Ou nul Soleil que vous n'a jamais pene RIS, 1 y cuerenon te quisu, cese dire l'ombre, Et fuyois seulement ce que ay rencontré. CLORICE, Plus parfait que Paris, cher miracle des hommes,",
+          "Libraire à Paris"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Lignon",
+        "PARIS",
+        "Rhône",
+        "Seine"
+      ]
+    }
+  }
+}

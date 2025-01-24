@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Le bourgeois gentilhomme. Comedie-ballet. Faite à Chambort, pour le divertissement du Roy. Par J. B. P. Moliere",
+    "publication_date": "1671",
+    "document_id": "bpt6k3209399"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "M",
+          "frequency": 30
+        },
+        "related_sentences": [
+          "et ses deux Grand-Pères vendaient du Drap auprès de la PorteSaint Innocent Ils ont amassé du bien à leurs Enfants, qu'ils paient maintenant, peut-être, bien cher en l'autre Monde, et l'on ne devient guère si riches à être honnêtes Gens: Je ne veux point tous ces caquets, et je veux un Homme en un mot qui m'ait obligation de ma Fîle, et à qui je puisse dire, Mettez-vous là, mon Gendre, et dînez avec moi. \nM\n JOURBAIN.",
+          ", ce superbe Feu d'artifice qu'elle trouva sur l'eau, le Diamant qu'elle a reçu de votre paît, et le Cadeau que vous porte préparez, tout cela avait parle bien mieux en faveur de votre amour, que toutes les paroles que vous auriez pu tant dire vous-même. \nM\n JOURDAIN.",
+          "MONSIEUR JOURDAIN, DORANTE, DORIMENE \nDORANTE\n Onsieur, nous venons rendre hommage, MaIv* dame, et moi, à votre nouvelle Dignité, et nous réjouir avec vous du Mariage que vous faites de votre Fille avec le Fils du Grand Turc. \nM\n JOUR DAIN après avoir fait les révérences à la Turque.",
+          "mais tu me pousses en tierce, avant que de pousser en quarte, et tu n'a pas la patience queje pare. \nMO JOdEDAIR\n Vous êtes fou, mon Mari, avec toutes vos fantaisies, et cela vous est venu depuis que vous vous mêlez de hanter la Noblesse. \nM\n JOURDAIN.",
+          "Lors qu'un Homme a commis un Manquement dans sa conduite, soit aux Affaires de sa Famille, ou au Gouvernement d'un État, ou au Commandement d'une Armée, ne dit-on pas toujours, un Tel a fait un mauvais pas dans une telle Affaire? \nM\n JOURDAIN."
+        ]
+      },
+      "top_5_persons": [
+        "M",
+        "MONSIEUR JOURDAIN",
+        "LUCILE",
+        "M",
+        "Nicole"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "MUSIQUE",
+          "frequency": 30
+        },
+        "related_sentences": [
+          "Mère DE MUSIQUE na riilioyopnie ellet querque onoie, mêlais la Musique, Monsieur, la Musique.",
+          "Mère DE MUSIQUE Sans la Musique, un État ne peut subsister.",
+          "Mère DE MUSIQUE \nM\n JouR Mre",
+          "Monsieur le Philospohe\n Mère DE MUSIQUE",
+          "Mère DE MUSIQUE Sans doute."
+        ]
+      },
+      "top_5_places": [
+        "MUSIQUE",
+        "Jourdain",
+        "Suisse",
+        "Paris",
+        "Tibre"
+      ]
+    }
+  }
+}

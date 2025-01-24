@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "author": "Veronneau",
+    "title": "L'Impuissance, tragi-comédie pastorale",
+    "publication_date": "1634",
+    "document_id": "bpt6k1090041k"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Charixene",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "en tenant sa route coustumiere a donné que trois fois au monde sa lumière, Depuis que Charixene en épousant Syluain M'a voulu témoigner que mon désir est vain, Voila le seul subiect qui dans ces bois oblige aduoüer le tourment dont mon âme afflige, Ie deguise pourtant peu dans mon amour, Et Cette seule rais comme on fait qu' elle a, Rejet té L'hommage que mon çœur faisait à, Sa prendre au té maux que 7amour nous apporte.",
+          "il lui persuada d'aller trouver avec Charixène un Magicien qu'il feignait avoir vu depuis peu dans un lieu proche de leur, demeure, qui pourrait lui donner les forces nécessaires à la guerre d'amour, ce qu'ayant promis Syluain, et pris jour au lendemain, Ismin s'habilla en Magicien et trouva au lieu assigné où Sylua au Charixene ne manquèrent pas de se rendre, et de le prendre pour un véritable Magicien, tant il était bien déguisé:",
+          "Vous ne connaîtrez plus cet effort languissant, Au contraire il ira vos deux lèvres suçant: Dedans un long baiser vous tenant engagée, Par là vous jugerez de sa froideur changée: Attendant que la nuit un chaud embrassement En jui ronsfusse poit puemierthangement: Mais n'ouvrez pas les yeux sur peine de la vie. \nCHARIXENE\n Si ce n'était cela j'en aurais grande envie.",
+          "Ainsi votre beauté vous pourrait empêcher D'obtenir le bonheur que vous venez chercher: Car pensant voir le Ciel dans votre beau visaIls croient que ce lieu n'est pas de leur partage: On nest pas sans ouvanger quand ils sontirrités, Et ce n'est pas ici l'Empire des beautés \nCHARIXENE\n Mon père, vous voyez ma prompte obéissance.",
+          "Ce n'est pas le chemin d'aller en Paradis. \nYLVAIN\n Absent de vos beaux yeux où je reçois maflamme, Mon âme travaillée endure mille efforts, \nCHARIXENE\n Vous avez bien raison de travailler de l'âme, N'ayant pas le pouvoir de travailler du corps. \nSYLVAIN\n "
+        ]
+      },
+      "top_5_persons": [
+        "Charixene",
+        "DAMIS",
+        "SYLVAIN",
+        "Lycaste",
+        "LEON"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Nil",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Remarque un cabinet tout lambrissé d'ombrage, Du côté d'où le Nil nous montrant son rivage, Va tous les champs voisins de son onde abreuant,",
+          "Nil"
+        ]
+      },
+      "top_5_places": [
+        "Nil",
+        "CHARLEVAL",
+        "Louvre",
+        "DAMIS",
+        "Rochelle"
+      ]
+    }
+  }
+}

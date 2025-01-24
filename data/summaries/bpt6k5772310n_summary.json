@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "author": "Corneille, Thomas",
+    "title": "Ariane , tragédie. Par T. Corneille",
+    "publication_date": "1672",
+    "document_id": "bpt6k5772310n"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "NERINE",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Coibplen ls en selte satsds de lois de Que de mépris! \nNERINE\n Son erime auprès de voua le gêne, Madame, et n'aut point d'ercuse à vout donner, S'il eous fuit, j'y vois peu dequoy vous étonner:",
+          "J'ai mal our Nerine, et cela ne peut être, Ce sercit tralir tont raison, gloire, équid, les Vaui pasueneeos Pour crolre qu'à ma mort sea injustice asplère, NERINS Pirithoüs ne dit que ce ap'il ley fait dire;",
+          ". Qu'on le fasse venir, allez Nerine Ainsi De mon cœur, de ma foi, n'ayez aucun souci: Après ce que j'ai dit vous en êtes le maître.",
+          "Un connaît, on a vu des Amantes trahies, A d'autres quelquefois on a manqué de foi, Mais, Nerine jamais il n'en sut comme moi.",
+          "Oui, nédadame, ARIANE Quels combats dans mon âme! \nNERINE\n \nARIANG\n Dans l'ercès étennant de mon cruel martyr Hélas!"
+        ]
+      },
+      "top_5_persons": [
+        "NERINE",
+        "ARIANE",
+        "ARCAS",
+        "ARIANE",
+        "Phédre"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "PARIS",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "À PARIS Clè GVILLAVME DE LUYNE, Librairène"
+        ]
+      },
+      "top_5_places": [
+        "PARIS",
+        "Athènes",
+        "nil",
+        "France"
+      ]
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": null,
+    "title": "L'Amant doüillet, comédie",
+    "publication_date": "1666",
+    "document_id": "bpt6k10901000"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ARGINE",
+          "frequency": 5
+        },
+        "related_sentences": [
+          ", croyons, pourtant que pour en être en peine, Il faut avoir en tête une forte migraine. \nARGINE\n J'en voudrais être quite à quatre jours d'ennui, \nPOLEXANDRE\n Un contrat fait pour moi peut-il l'être pour lui 1 Ce n'est qu'un jeu d'esprit. \nARGINE\n Qui peut m'être funeste, Masflamme est sans espoir et ne sert pas d'vn lentes \nROBIN\n Holà, ma joie, holà, n'éclatez pas si fort, Modérez prés d'Argine un si joyeux transport,",
+          "sachez une chose, Ou qu'il faut que sans meure, ou que je me repose, Et que j'ai cru de l'air que l'on m'a relancé, Qu'on voulait m'ajuster en Lièvre desossé. \nARGINE\n Qui donc? \nPOLEXANDRE\n Je n'en sais rien. \nARGINE\n Voyez comme il en donne ? \nPOLEXANDRE\n Non, mais vous connaissez celui que ici soubçonne.",
+          "1 Pour être entretenue il ne faut qu'être belle: Mais pour être une femme il faut être fidèle, Et si lors qu'étant fil le on a porté son cœur, A sçauoir de l'amour jusqu'où va la douceur, Que ne peut-on point faire aussitôt qu'on est femme, Et qu'on peut mieux trouver dequoy couvrir sa flamme? \nARGINE\n Ciel qu'il est effronté!",
+          "L'enragé cependant sans trefue ni quartier, Prend le soin malgré moi de me mortifiers Mais si bien, que j'ai cru sans pouvoir m'en défendre, Que pour me mieux manger il me rendrait si tendre. \nARGINE\n Qui vous a donc été séparer en ce bois? \nPOLEXANDRE\n \nNostradamus\n \nARGINE\n Il sort. \nPOLEXANDRE\n J'ai reconnu sa voix.",
+          "ARGINE, ISABELLE \nARGINE\n jous l'aimez donc? \nISABELLE\n Pour vous rendre service. \nJRGINE\n Sur vous enchrer son choix, c'est vous rendre justice \nISABELLE\n C'est vous la fanuum. \nARGINE\n Que de vous enfermer. \nISABELLE\n Est-ce à tort qu'il vous fronde, et s'engage à m'aimer?"
+        ]
+      },
+      "top_5_persons": [
+        "ARGINE",
+        "LEONOR",
+        "ISABELLE",
+        "Limaçon",
+        "NOSTRADAMUS"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "ARGINE",
+          "frequency": 5
+        },
+        "related_sentences": [
+          ", croyons, pourtant que pour en être en peine, Il faut avoir en tête une forte migraine. \nARGINE\n J'en voudrais être quite à quatre jours d'ennui, \nPOLEXANDRE\n Un contrat fait pour moi peut-il l'être pour lui 1 Ce n'est qu'un jeu d'esprit. \nARGINE\n Qui peut m'être funeste, Masflamme est sans espoir et ne sert pas d'vn lentes \nROBIN\n Holà, ma joie, holà, n'éclatez pas si fort, Modérez prés d'Argine un si joyeux transport,",
+          "sachez une chose, Ou qu'il faut que sans meure, ou que je me repose, Et que j'ai cru de l'air que l'on m'a relancé, Qu'on voulait m'ajuster en Lièvre desossé. \nARGINE\n Qui donc? \nPOLEXANDRE\n Je n'en sais rien. \nARGINE\n Voyez comme il en donne ? \nPOLEXANDRE\n Non, mais vous connaissez celui que ici soubçonne.",
+          "1 Pour être entretenue il ne faut qu'être belle: Mais pour être une femme il faut être fidèle, Et si lors qu'étant fil le on a porté son cœur, A sçauoir de l'amour jusqu'où va la douceur, Que ne peut-on point faire aussitôt qu'on est femme, Et qu'on peut mieux trouver dequoy couvrir sa flamme? \nARGINE\n Ciel qu'il est effronté!",
+          "L'enragé cependant sans trefue ni quartier, Prend le soin malgré moi de me mortifiers Mais si bien, que j'ai cru sans pouvoir m'en défendre, Que pour me mieux manger il me rendrait si tendre. \nARGINE\n Qui vous a donc été séparer en ce bois? \nPOLEXANDRE\n \nNostradamus\n \nARGINE\n Il sort. \nPOLEXANDRE\n J'ai reconnu sa voix.",
+          "ARGINE, ISABELLE \nARGINE\n jous l'aimez donc? \nISABELLE\n Pour vous rendre service. \nJRGINE\n Sur vous enchrer son choix, c'est vous rendre justice \nISABELLE\n C'est vous la fanuum. \nARGINE\n Que de vous enfermer. \nISABELLE\n Est-ce à tort qu'il vous fronde, et s'engage à m'aimer?"
+        ]
+      },
+      "top_5_places": [
+        "ARGINE",
+        "Paris",
+        "ISABELLE",
+        "Mane",
+        "France"
+      ]
+    }
+  }
+}

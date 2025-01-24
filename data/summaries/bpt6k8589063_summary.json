@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "author": "Rampalle",
+    "title": "Dorothée ou la victorieuse martire de l'amour : tragédie / de Rampalle",
+    "publication_date": "Unknown",
+    "document_id": "bpt6k8589063"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Dorothée",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Et quoi que Dorothée emporte le dessus Sur son cœur où Christine enfin ne rêgne plus, Scache que cette fil le adorable et divine Net tujt pas empêché de défendre Christins \nICE\n Et toi sçache à ton tour que mes intentions Doivent s'accommoder à tes prétentions.",
+          "C'est ce divin Amant que Dorothée adore, C'est ce puissant Seigneur que sert Athémodore Sachez que Théophile, Aprice et l'Empereur Ne seraient point sans lui, quoi qu’ils soient dans l'erreur.",
+          "Mais puis que Dorothée en mon bien s'intéresse, Travaille à mon salut auecque tant d'adresse, Et qu'elle a déjà part à son commencement, Souffre aussi qu'elle ait part à son achèvement.",
+          "Dorothée à ce coup plus aize que surprise, Remet ce beau présent entre les mains d'Élise, Avec ordre que d'elle il ne soit point remis, Qu'à Théophile seul auquel il est promis.",
+          "pus moins obscur, \nHRISTINE\n Touchée d'un amour que j'avais cru si pur, Je n'ai pu voir aller cent fois chez Dorothée Un de tes serviteurs sans être inquiétée."
+        ]
+      },
+      "top_5_persons": [
+        "Dorothée",
+        "Théophile",
+        "FLAVIEN",
+        "Christine",
+        "Seigneur"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "non ce lache Amant m'ayant bien pu quitter Pour cette amie un peutrop belle, Je ne dois plus sur Rome médesirs arrêter;",
+          "Pour me venger de Rome quand ie déurois périr, Il doit absolument se résoudre à mourir.",
+          "Elle vient, elle est gaie, ô Dieu Rome",
+          ", est ce que Rome souhaite."
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Croix"
+      ]
+    }
+  }
+}

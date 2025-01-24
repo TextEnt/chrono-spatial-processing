@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Les Fascheux, comédie de J. B. P. Molière, représentée sur le théâtre du Palais Royal",
+    "publication_date": "1674",
+    "document_id": "bpt6k12804504"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "LAMONTAGNE",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Si ce parfait amour, que vous prouvez si bien, Se fait vers votre objet un grand crime de rien, Ce que son cœur, pour vous, sent de feux légitimes, mail lèvanehles lui lait un fren de tous vos cilnies. \nERASTE\n 1 Mais, tout de bon, crois-tu que je sois d'elle aimé? \nLAMONTAGNE\n Quoi?",
+          "Ma foi, sans vous vanter mon ze'ai bien fait du chemin, pour trouver cette belle, niMleate \nE RASTE\n Peste soit fait de tes digressions. \nLAMONTAGNE\n Ah!",
+          "J'ai de l'amour encor pour la belle inhumaine, me mia larion vouait, que jeune de la Mlaine \nLAMONTAGNE\n Monsieur, votre raison ne sait ce qu'elle veut;",
+          "Où va-t-elle si vite, et quel homme la tient? \nLAMONTAGNE\n Monsieur, je ne dis rien de peur d'être fâcheux.",
+          "6 ERASTE \nLAMONTAGNE\n Devinez. \nERASTE\n Sais -tu que je ne veux pas rire?  6 La4* LAMONTAGNE."
+        ]
+      },
+      "top_5_persons": [
+        "LAMONTAGNE",
+        "Lysandre",
+        "Cerf",
+        "ORMIN",
+        "DAMIS"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Or l'avis dont encor nul ne s'est avisé, Est qu'il faut de la France, et c'est un coup aisé, En sameux ports de me mettre toutes les côtes.",
+          "et je crois qu'en quelque façon ce n'est pas être inutile à la France, que de contribuer quelque chose A those au divertissement de son Roi.",
+          "J'ai le bien, la naissance, et quelque emploi passable, Et fais figure en France assez considérable;",
+          "*IN. \nFrance\n \nFrance\n "
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Paris",
+        "Ville de Paris",
+        "ORMIN",
+        "Luxembourg"
+      ]
+    }
+  }
+}

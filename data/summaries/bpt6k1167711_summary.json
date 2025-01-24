@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "author": null,
+    "title": "Perselide, ou La constance d'amour , tragi-comédie",
+    "publication_date": "1646",
+    "document_id": "bpt6k1167711"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Floridor",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Et le Ciel nous pardonne aisément cett' injure, Alors que dans l'amour nôtre esprit se parjure, Mais le traître en mourra, qui m'a manqué de foi, \nCLORIMAN\n Mais aussi Floridor se veut venger de toi, I il On n'a pas vu depuis ton départ Persélide, Tout le moùde à la Cour te prend pour un perfide, On t'excuse, on t'accuse, on ne sait, qu'en penser: Tes amis d'un côte te veulent excuser, Les autres au contraire accusent ta malice: Le Roi même a permis d'en faire la justice.",
+          "Non, non: n'excuse point une folle action, QUE mon tort fut brûlé quitter, ic reconnais mon crime, Je devais conserver un ardeur légitime, Et non pas lâchement porter ailleurs mes veux, Et souffrir, que mon cœur fut brûlé d'autres feux. \nFLORIDOR\n Leur amour aujourd'hui videra leur querelle, Et vengera ma sœur d'Hannant infidèle, Il nous faut accorder à leur intention, Et poursaiure l'effet de leur affection, Ma sœur, ce criminel reconnaît son offense.",
+          "Puis qu'il croit, qu'Aminthas a ravi Persélide, On ne saurait blâmer la fureur qui le guide, Je ne puis, qu'approuver sa résolution. \nCLORIMAN\n Il a quitté la Cour à cett-intention, On louait son dessein, mais le Roi s'en offense, Il croit, que Floridor ait choque sa puissance.",
+          "Il connaît ta valeur, et tu connais la sienne, Son épée est pointue, aussi bien, que la tienne. \nFLORIDOR\n Que le sort favorise, à qui le Ciel voudra, Mais ou bien Floridor, ou le traître en mourrandIespère que les Dieux n'auront pas la malice De laisser aujourd'hui triomphar l'injustice.",
+          "ai-je mis mon honneur, D'avoir recev chez-nous, et de nuit un voleur. \nFLORIDOR\n Va, tu mets ton honneur à couvert de l'envie, Si par tes propres mains le traître en perd la vie, Mon sang témoignera, qu'un malheureux amant Entra de nuit enesstoi jaus torc confentemenr."
+        ]
+      },
+      "top_5_persons": [
+        "Floridor",
+        "CALLISTE",
+        "Lucidor",
+        "LYSIS",
+        "Lysis"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Marchand Libraire à Paris, d'imprimer ou faire imprimer, vendre et débiter un Tragédie intitulée PERSELIDE, OU LA CONSTANCE D'AMOUR, avec défenses à tous Imptimeurs et Libraires, et autres de quelque qualité et condition qu'ils soient, de le contrefaire ici d'en vendre de contrefaits en quelque sorte ny manière que ce soit pendant le terme et espace de cinq ans, sans le consentement dudit exposant, sur les peines contenues plus au long temps Plus au Long.",
+          "PAR Grâce et Privilège du Roi, Donné à Paris"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Rome"
+      ]
+    }
+  }
+}

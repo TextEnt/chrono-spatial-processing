@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "author": null,
+    "title": "Le cardinal tasche d'entrer en Paradis, tragi-comédie, acte premier. Monsieur de Marillac",
+    "publication_date": "1642",
+    "document_id": "bpt6k5675059j"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Le",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "T'ayant par ma bonté fait puissant à la Cour, Traître tu as payé d'un exil mon amour, Te faisant des premiers en biens et enpuissance, Je n'en espérais pas aucune récompense, Étant dans un état que loing d'en recevoir, J'en présentais à ceux qui faisaient leur débuoir, Mais ie l'avoue aussi, je n'aurais pas la crainte, De te faire jamais une si juste plainte, Entre plusieurs Seigneurs de grande qualité, Dont chacun aspirait à celle dignité, De Gouverner mon fils Maître d'apgrand Empire, Pouvant choisir le mieux, ie Puis prendre le pi, Tu as y cruel de beaucoup de thresors, Plein que sans dr ie souffrois le morts, Pour y fait heureux tu as fait mal-heureuse, Helas! que l'amitié est souvent dangereuse, Ponr des gens comme toi qui donnent des tourments 2a ceua qui ont cuhretousieus conceinements Le Cardinal.",
+          "Monsieur le Grand\n Pense tu nous tromper encore par tes discours, Je sais bien que l'on a combattu quelques sours, Conère les p'arpalots qu onaprrl la Rochelle, J'étais pour puis après Conseiller infidèle, Mieux combartu le rite, il était à propos, Puisque tu désirais troubler nôtre repos, De faire une action qui fut considérable Le Cardinal.",
+          "que si l'on pouvait ressentant tant dépeines, Avoir quelque plaisir que le chant des sercynes, Que la possession de ces riches trésors, Qui Corrompent l'esprit ayant gâté le corps, Ne me causeraient pas une si grande joie, Comme j'en recevrais de te savoir la proie, Des flammes qui toujours nous font vivre en mourant, Le Cardinal.",
+          "Toi qui as fait si souvent j'allir des Foncaines, Des corps de tant de gens que tu as fait mourir, Céserait être fol, Le Cardinal.",
+          "Au lleu d'aner ad Ciertu delcenlus aux enfers, Le Cardinal."
+        ]
+      },
+      "top_5_persons": [
+        "Le",
+        "Charon",
+        "Pluton",
+        "Monsieur le Grand",
+        "I"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Soissons",
+          "frequency": 1
+        },
+        "related_sentences": [
+          ", Lap prationpéenrte compte ut Soissons \nMonsieur le Comte de Soissons\n Est"
+        ]
+      },
+      "top_5_places": [
+        "Soissons",
+        "France",
+        "Rochelle",
+        "Rome"
+      ]
+    }
+  }
+}

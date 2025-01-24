@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "author": "Quinault, Philippe",
+    "title": "Proserpine : tragédie en musique ornée d'entrées et de ballet, de machines, & de changemens de théâtre : représentée devant sa majesté à Saint Germain en Laye le troisième février 1680",
+    "publication_date": "1680",
+    "document_id": "bpt6k1521651m"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Alphée",
+          "frequency": 8
+        },
+        "related_sentences": [
+          "Du Maître des Enfers je veux aller me plaindre, Craignez en me suivant d'attirer son courroux. \nALPHÉE\n Pour moi rien n'est tant à craindre Que d'être éloigné de vous.",
+          "ALPHÉE\n Ingrate, il est trop vrai, mon Cœur rompt avec peine Des nœuds qu'ils a trouvez si beaux, Mais de peur qu'il ne les reprenne Ao ppoute ongugonomuuouens nouveaux.",
+          "Alphée à mon repos a déclaré la guerre: Diane propice à mes vœux, En vain pour me cacher à ce Fleuve amoureux, Fit ouvrir le sein de la Terre:",
+          "Il me permet de voir Arethuse un moment. \nALPHÉE\n D'où vous vient tant d'empressement? \nÀSCALAPHÉE\n Je l'ai vue aux Enfers;",
+          "Le Theatre change, et représente les Jardins de Ceres CRINISE, ALPHÉE y CRINISE OUiter a dompté les Géants pour jamais."
+        ]
+      },
+      "top_5_persons": [
+        "Alphée",
+        "Proserpine",
+        "Proserpine",
+        "Arethuse",
+        "PLUTON"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Sicile",
+          "frequency": 8
+        },
+        "related_sentences": [
+          "Il admire les dons que vous venez de faire En cent climats divers, L'abondante Sicile heureuse de vous plaire De vos riches moissons voit tous ses champs couverts: Mais la Mère des Dieux se plaint que la Phrygie Qu'elle a toujours cherié, Ne se ressente pas de vos soins bienfaisants;",
+          "Cyané et Crinise vont de deux côtés différents appeler les Divinités et les Peuples de Sicile, pour venir ensemble célébrer la victoire de Jupiter SCÈNE SECONDE.",
+          "Troupe de Divinités et de Peuples de Sicile Nymphes, et Divinités des Bois, et des Eaux chantes, Habitants de Sicile chantans.",
+          "CERES, Troupes de Nymphes et de Dieux champêtres, Troupe de Suivants de Ceres, Troupe de Peuples de Sicile",
+          "Je suis dans la Sicile une Nymphe étrangère, Je viens vous conjurer de m'en laisser partir."
+        ]
+      },
+      "top_5_places": [
+        "Sicile",
+        "Rome",
+        "AIX"
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "author": "Corneille, Pierre",
+    "title": "Horace, tragédie par P. Corneille",
+    "publication_date": "1663",
+    "document_id": "bpt6k1280300w"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "SABINE",
+          "frequency": 64
+        },
+        "related_sentences": [
+          "Mais si prés d'un Hymen l'amant que donne un père Nous est moins qu'un époux, et non-pas moins qu'un frère, Nos sentiments entr'eux demeurent suspendus, Notre choix impossible, et nos vœux confondus, Ainsi, ma sœur, du moins vous avez dans vos plaintes, Où porter vos souhaits, et terminer vos craintes, Mais si le Ciel s'obstine à nous persécuter, Pour moi, j'ai tout à craindre et rien à souhaiter. \nSABINE\n l'autre, Quand il faut que l'un meure, et par les mains de C'est un raisonnement bien mauvais que le vôtre.  ",
+          "L'effet vous fera voir que nous en jugeons bien. \nSABINE\n y Armi nos déplaisirs souffrez que je vous blâme, Je ne puis approuver tant de trouble en votre âme, Que feriez-vous, ma sœur, au point où je me vois, Si vous aviez à craindre autant que je le dois, Et si vous attendiez de leurs armes fatales Des maux pareils aux miens, et des pertes égales?",
+          "Et laissant à ses pleurs vaincre ce grand courage, L'amenez-vous ici chercher même avantage? \nSABINE\n Non non, mon frère, non, je ne viens en ce lieu Que pour vous embrasser, et pour vous dire adieu, Votre sang est trop bon, n'en craignez rien de lâche, Rien dont la fermeté de ces grands cœurs se fâche;",
+          "Il ne vous a fait peur que pour vous faire grâce, Adieu, je vais savoir comme enfin tout se passe, Modérez vos maïeurs, felpère à mon retour Ne vous entretenir que de propos d'amour, Et que nous n'emploîrons la fin de la journée Qu'aux doux préparatifs d'un heureux Hyménée. \nSABINE\n J'ose encor l'espérer.",
+          "Un Oracle jamais ne se laisse comprendre, On l'entend d'autant moins que plus on croit l'entendre, nal ramde danédleriat an palen LE, Qui n'y voit rien d'obscur, doit croire que tout l'est. \nSABINE\n Sur ce qui fait pour nous prenons plus d'assurance, Et souffrons les douceurs d'une juste espérance."
+        ]
+      },
+      "top_5_persons": [
+        "SABINE",
+        "HORACE",
+        "Albe",
+        "Camille",
+        "Valère"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 64
+        },
+        "related_sentences": [
+          "Pour moi, je l'ose dire, et vous l'avez pu voir, Je n'ai point consulté pour suivre mon devoir, Notre longue amitié, l'amour, ni l'alliance, N'ont pu mettre un moment mon esprit en balane, Et puisque par ce choix Albe montre en effet Qu'elle m'estime autant que Rome vous a fait, Je crois faire pour elle autant que vous pour Rome, J'ai le cœur aussi bon, mais enfin je suis homme.",
+          "Un Orâcle m'assure, un songe me travaille, La Pate calme l'effroi que me fait la bataille, mon ni Jen le prépare, et presque en un moment Pour combattre mon frère on choisit mon amant, Ce choix me désespère, et tous le désavouent, La partie est rompue, et les Dieux la renoüent, Rome semble vaincue, et seul des trois Albains Curiace en mon sang n'a point trempé ses mains.",
+          "Sur vous ce sacrilège attirerait sa peine, Ne le considérez qu'en objet de leur haine, Et croyez avec nous qu'en tous ses trois combats Le bon destin de Rome a plus fait que son bras, Puisque ces mêmes Dieux auteurs de sa victoire Ont permis qu'aussitôt il en souillât la gloire, Et qu'un si grand courage après ce noble effort Fust digne en même jour de triomphe et de mort.",
+          "J'en nommerai l'Arrêt une faveur bien grande : Ma main peut me donner ce que je vous demande, Mais ce trépas enfin me sera bien plus doux Si je puis de sa honte affranchir mon époux, Si je puis par mon sang apaiser la colère Des Dieux qu'aspû fâcher sa vertu trop sévère, Satisfaire en mourant aux Manes de sa sœur, Et conserver à Rome un si bon défenseur.",
+          "Si c'est offenser Rome, et que l'heur de ses armes L'autorise à punir ce crime de nos larmes, Quel sang épargnera ce barbare vainqueur Qui ne pardonne pas à celui de sa sœur, Et ne peut excuser cette douleur pressante Que la mort d'un amant jette au cœur d'une amnte, Quand prés d'être éclairez du nuptial flambeau Elle voit avec lui son espoir au tombeau?"
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Rhin",
+        "Tulle"
+      ]
+    }
+  }
+}

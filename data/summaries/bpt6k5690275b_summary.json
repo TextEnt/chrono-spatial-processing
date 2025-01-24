@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Les oeuvres de Monsieur Molière. Tome 3",
+    "publication_date": "1673",
+    "document_id": "bpt6k5690275b"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ALCESTE",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Je vais voir si son Cœur a de l'amour pour moi, Et c'est ce moment-cy, qui doit m'en faire soi. \nPHILINTE\n Montons chez Éliante, attendant sa venue. \nALCESTE\n Non, de trop de souci, je me sens l'Âme émue, Allez-vous-en la voir, et me laissez, enfinDans ce petit Coin sombre, avec mo noir Chagrin \nPHILINTE\n C'est assez Compagnie étrange, pour attendre,",
+          "pour vous, vous savez quel est notre Traité, Parler-moi, pour vous prie, avec sincérité. \nALCESTE\n Monsieur, cette matière est toujours délicate, Et, sur le bel Esprit, nous aimons qu'on nous flatte: Mais un jour, à quelqu'vn, dont on tairai le nom, Je disais, en voyant des Vers de sa façon, Qu'il fautqu'vngalãt Homme ait toujoursgrãd empire Sur les démangeaisons qui nous prennent d'écrire;",
+          "Et que; par un chagrin, que lui-même il avoue, Il ne saurait souffrir qu'on blâme, Seigneur qu'on loue. \nALCESTE\n C'est quẽ lamais, morbleu, les Hõmes n'ont raison, Que le Chagrin, contre eux, est toujours de Saison, Et que je vois qu'ils sont, sur toutes les Affaires, Louveurs impertinens, ou Censeurs témeraires.",
+          "Je ne prends point de part aux intérêts des autres: Mais, Monsieur, que, chez vous, fixait votre Bonneur, Un Homme, comme lui, de Mérite, et d'Honneur, Et qui vous chérissait auec idolâtrie, Deuait-il. \nALCESTE\n Laissez-moi, Madame, je vous prie, Vuider mes intérêts, moi",
+          "Et mon esprit, ensin, n'est pas plus offensé, De voir un Homme fourbe, in juste, intéressé, Que de voir des Vautours affamés de carnage, Des Singes mal-faisans, et des Loups pleins de rage, \nALCESTE\n Je me verrai trahir, mettre en pièces, voler, Sans que personne sois."
+        ]
+      },
+      "top_5_persons": [
+        "ALCESTE",
+        "M",
+        "LYSETTE",
+        "MARTINE",
+        "LUCAS"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "que ce n'est qu'un jeu de Paroles qui ne signifient rien; mais que la Chanson dit beaucoui plus, puis qu'elle fait du moins voir un Homme amoureux, qui abandonnerait une Ville, comme Paris, pour sa Maîtresse.",
+          "Si le Roi m'avait donné Paris sa grand' Ville, Et qu'il me fallut quitter L'amour de ma Mie: Je dirais au Roi Henri, Reprenez votre Paris, J'aime mieux ma Mie, an gué;",
+          "Et ledit Sieur De MOLIErE a cédé son droitède Privilège à JEAN RABOU, Marchand Librairé à Paris, pour en jouar sardetervccord sast entr'eux.",
+          "Je dirais au Roi Hexry, Reprenez votre Paris, J'aime",
+          "à Paris L le 30."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "PARIS",
+        "Champagne",
+        "Ville de Paris",
+        "Rome"
+      ]
+    }
+  }
+}

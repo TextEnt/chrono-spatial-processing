@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Poisson, Raymond",
+    "title": "Le Fou raisonnable, comédie",
+    "publication_date": "1664",
+    "document_id": "bpt6k10901282"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "RODOLPHE",
+          "frequency": 10
+        },
+        "related_sentences": [
+          "Qui l'aurait empêché de se faire connaître? \nRODOLPHE\n Mais si près d'être unis d'un aimable lien, le vous vois peu d'ardeur. \nISABELLE\n Il en use si bien, Que j'ai tout à fait tort. \nRODOLPHE\n Le Seigneur Dom Alphonse A qui j'écrivis hier, me doit faire réponse, Je lui demande escorte, et ie le prie aussi De dite un mot au Roi de ce malheur ici, Par lui de mon neu nous aurons des nouvelles. \nISABELLE\n Si l'on vous disait tout vous en sauriez de belles.",
+          "Non, non, depuis deux mois apprends que sans l'ai vue, Avec tous les appas dont le Ciel l'a pourvue J'appris où il la vis, hélas! pour mon malheur, Que Rodolphe son père était l'Ambassadeur Que l'Empereur faisait séjourner en Espagne, Qu'il avait amené sa fille d'Allemagne, Et que dans peu de jours elle donnait la main, Par l'ordre de son père, à son Cousin-germain, Son nom est Léopolde, il est considérable. \nCRISPIN\n ",
+          "À Léopolde, Vous savez que Cõstance est d'un illustren Son frère Dom Pedro qui se fait craindie Handre, Aux plus riches partis peut justement prêter Les qui ennemis qui poursuivent sa mai Depuis deux ou trois mois n'ont fait qu’ rat effort. \nRODOLPHE\n Je sais qu'il a tué Dom Lope de Cardonnt A-t-il sa grâce? \nDOM ALPHONSE\n Oui. \nISABELLE\n Le Courier part.",
+          "Je voulus qu'il apprît d'abord l'Astrologie, On dit que l'on ne peut la savoir sans Magie, Que cela soit ou non, il la sait comme il faut, Car sitôt qu'il est nuit et qu'il regarde en haut Il vous montre du doigt à la moindre prière, Le char du Roi David, l'étoile poussinière, Le chemin de saint lacques. \nRODOLPHE\n ",
+          "laissez-là de grâce et notre sang et nous, Si sa naissance enfin, n'est pas considérable, Son éducation fut assez raisonnable, J'en suis fort satisfait,ai en te mon bien Mais il puis coûte aussi qu'il n'ignore de rien. \nRODOLPHE\n Vous avez si bien fait, que daus cette aventusOn peut dire que l'art a passe la nature. \n"
+        ]
+      },
+      "top_5_persons": [
+        "RODOLPHE",
+        "CRISPIN",
+        "ISABELLE",
+        "FELICIAN",
+        "Isabelle"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Madrid",
+          "frequency": 10
+        },
+        "related_sentences": [
+          "Aussi pas qu'un mort, d'un ton mal assuré, Monté sur son mulet, sa mule ou sa bourique, Lit dans un grand papier votre panégyrique, Et tout cela se sait pour vous faire sait Pour von faire savoir Que l'on vous aime tant qu'on Brûle de vous n'apportez à Madrid vôtre face On va faire esleuer vôtre ait en place.",
+          "Je l'attends aujourd'hui, Il est depuis deux jours à Madrid pour ma grâce, Et ma sœur l'instruira de tout ce qui s'y passe, B y Ôur de puissants amis aujourd'hui dans la Cour Et puis mon affaire est plus claire que le jour. \nCRISPIN\n Mais vous feriez le fou, n'auriez-vous point d honte ?",
+          "Je me rends à Madrid par un ordre du Roi, Et le jour que j'en parts pour m'en aller chez moi, Le sort veut que j'y tuue un des Braves d'Espagne, Que de peur d'être pris un tienne la campagne, Et qu'attendant peut-être un destin rigoureux, Je sois encore ici fortement amoureux;",
+          "Comme il n'est que croqué, vous voulez qu'il soit mieux, Je connais votre humeur, et vois que sans rien craindre Vous allez à Madrid vous achever de peindre.",
+          "me ferait-on cet affront en Espagne \nFELICIAN\n On dit que les Prévôts sont pour vous en campagne, Si proche de Madrid, gare l'in earetre."
+        ]
+      },
+      "top_5_places": [
+        "Madrid",
+        "Espagne",
+        "Flandre",
+        "France",
+        "Paris"
+      ]
+    }
+  }
+}

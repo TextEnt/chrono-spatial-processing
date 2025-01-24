@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Tristan L'Hermite",
+    "title": "La mort de Chrispe, ou Les malheurs domestiques du grand Constantin . Par le Sr Tristan L'Hermite",
+    "publication_date": "1645",
+    "document_id": "bpt6k5789987q"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Constantin",
+          "frequency": 7
+        },
+        "related_sentences": [
+          "CONSTANTIN\n Parle donc, et m'en donne une raison bien ample, Dappronuo uoypour momnsu pumuu purexemple, Cherche dans nôtre Siecle, ou dans Antiquité trait si fauorable la temerité. \nCHRISPE\n Alexandre vainquit un Prince de l'Indie Qui pour l'oser combattre eut l'Ame assez, bardie.",
+          "S'il faut que désormais par une erreur fatale, Ce Prince si bien né passe dans leur cabale, Licine aura bientôt suborné son esprit Pour avait faire achever le coup qu'il entreprit. \nCONSTANTIN\n Ce n'est pas un parti qu'il faille qu'il embrasse;",
+          "Nummen cène, \nCONSTANTIN\n Quand par vos actions vous osez me choquer, Les frivoles raisons ne vous peuvent manquer: Mon cœur qui hait à mort l'artifice et les ruses, Peut plus de retenue, et beaucoup moins d'excuses.",
+          "Qu'avez-vous, Seigneur, qui vous fait soupirer? \nCONSTANTIN\n J'ai ce que sans frémir Seigneur ne puis déclarer: Je n'aperçois par tout que de tristes presages Qui de l'lère du Ciel m'apportent les messages;",
+          "CONSTANTIN\n VOS derniers procédez ont bien montré, Madame, Que toute femme est faible, et fait toujours la femme, Et qu'au moindre sujet de mécontentement, Ce sexe impérieux s'adoucit rarement."
+        ]
+      },
+      "top_5_persons": [
+        "Constantin",
+        "Constance",
+        "Constantin",
+        "Constance",
+        "Léonce"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 7
+        },
+        "related_sentences": [
+          "Il était aussi fier en sauvant sa personne Que s'il eût de mon Père enlevé la Couronne, De moi, ie fus touché de voir tant de valeur, J'en goûtai la victoire avec quelque douleur, Et bien qu'interessé dans la gloire de Rome, J'eus un peu de regret de perdre un si grande Homme.",
+          "Et vous l'ayant prédit, je serai la Cassandre Qui verraimettre Rome et nos Palais en cendre: Posible que là-haut assis entre les Dieux, Lors que sur nos malheurs vous porterez les yeux, Vous aurez du regret de voir Fauste enchaînée, Prez du Char de Licine en triomphe menée;",
+          "Rome est en sa puissance, et nous pouvons bien dire Qu'il est Maître absolu de nous, et de l'Empire.",
+          "Pour les presser d'agir, dès cette heure Rome donne Le plus beau diamant qui brille en ma Couronne.",
+          "La Scène est à Rome dans le Palais de Constantin À RGUMENT DU PREMIER ACTE."
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Thrace",
+        "PARIS",
+        "Paris I",
+        "Paris"
+      ]
+    }
+  }
+}

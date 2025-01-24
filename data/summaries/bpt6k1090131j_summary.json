@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "author": "Boyer, Claude",
+    "title": "Le Fils supposé, tragédie",
+    "publication_date": "1672",
+    "document_id": "bpt6k1090131j"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Berenice",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "ARIARATHÉE\n Il faut parler, Madame: La Reine aime mon Frère, il a toute son âme, Et vous croyez peut-être avoir ses sentiments, Que cette préférence a de bons fondements, Éi que j'ai mérité le courroux de la Reine. \nBERENICE\n ",
+          "Sur ce beau choix vous pouvez vous défendre? \nBERENICE\n Vous étant destinée, avant que de vous voir, J'accoutumais mon cœur dès ma plus tendre enfanceA régler ses désirs sur mon obéissance, Et réussis si bien, que ce cœurprévenu,",
+          "Pour ne pas obéir, Madame, quand on aime, L'Amour ne doit avoir besoin que de notre-même. \nBERENICE\n Cet Amour a formé mille difficultés, Pour rompre, ou retarder l'effet de nos Traités.",
+          "BERENICE\n Ne pouvant m'assurer, ni sur vous, ni sur elle, e doute, et dans ce doute, il suffit que mon cœur Voit mon rang en péril, magloire, et mon bonheur.",
+          "Madame, vous savez ce qu'on attend de vous. \nBERENICE\n N'attendez rien, Seigneur, sur l'offre d'un Épous, Ni du choix de mon cœur, ni de ma résistance;"
+        ]
+      },
+      "top_5_persons": [
+        "Berenice",
+        "BARSINE",
+        "Mitridate",
+        "Euridice",
+        "Eurydice"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Trone",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Ce don qu'on belle ravit me serait un supplice, S'il ne m'offrait dequoy consoler Euridice au deraut d'un Amant au Trone déltine, Je pourra y donner un Frère couronné.",
+          "voit son sang sur le Trone, et croit régner en cet."
+        ]
+      },
+      "top_5_places": [
+        "Trone",
+        "Palais Royal",
+        "Syrie"
+      ]
+    }
+  }
+}

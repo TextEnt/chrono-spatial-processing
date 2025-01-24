@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "author": "Boyer, Claude",
+    "title": "Clotilde, tragedie",
+    "publication_date": "1659",
+    "document_id": "bpt6k10902522"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Clotilde",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Il est permis à CHARLES DE SERCY, Marchand Libraire à Paris, d'imprimer, ou faire imprimer, vendre et débiter une Pièce de Théâtre intitulée, Clotilde, Tragédie, en telle marge, en tel caractère, et autant de fois que bon lui semblera, et ce durant le temps et espace de sept ans entiers et accomplis, à compter du jour que ladite Pièce sera achevée d'imprimer la première fois:",
+          "Il est permis à CHARLES DE SERCY, Marchand Libraire à Paris, d'imprimer, ou faire imprimer, vendre et débiter une Pièce de Théâtre intitulée, Clotilde, Tragédie, en telle marge, en tel caractère, et autant de fois que bon lui semblera, et ce durant le temps et espace de sept ans entiers et accomplis, à compter du jour que ladite Pièce sera achevée d'imprimer la première fois:",
+          "C'est de cette rare et prétieuse qualité que j'espère d'obtenir pour Clotilde l'honneur de votre protection, et pour moi la permission de vous dire que j' est avec notre passion très -ardente et très respectueuse, MONSEIGNEUR, Votre très-humbl et très-obeïssan Serviteur BOYER Pour Monseigneur le Procureur Général, Ministre d'État, et Sur-Intendant de Financel ONNNET.",
+          "Parlez, me l'auoüer, c'est le dire à vous-même. \nCLOTILDE\n Puis donc que tu le crois, je veux croire que j'aimes Et s'il faut sur ta foi que j'avoue un vainqueur, Clidamant seul peut être auoüé de mon cœur.",
+          "Quand pour un choix si noble on brise d'autres nœus, Le changement est juste, et n'a rien de honteux. \nCLOTILDE\n Dans quelque rang qu'il soit, de fortune, et d'estime, Cette infidélité ne peut être sans crime;"
+        ]
+      },
+      "top_5_persons": [
+        "Clotilde",
+        "CLOTILDE",
+        "Seigneur",
+        "Besiers",
+        "Femme"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Il est permis à CHARLES DE SERCY, Marchand Libraire à Paris, d'imprimer, ou faire imprimer, vendre et débiter une Pièce de Théâtre intitulée, Clotilde, Tragédie, en telle marge, en tel caractère, et autant de fois que bon lui semblera, et ce durant le temps et espace de sept ans entiers et accomplis, à compter du jour que ladite Pièce sera achevée d'imprimer la première fois:",
+          "Il est permis à CHARLES DE SERCY, Marchand Libraire à Paris, d'imprimer, ou faire imprimer, vendre et débiter une Pièce de Théâtre intitulée, Clotilde, Tragédie, en telle marge, en tel caractère, et autant de fois que bon lui semblera, et ce durant le temps et espace de sept ans entiers et accomplis, à compter du jour que ladite Pièce sera achevée d'imprimer la première fois:"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Grèce"
+      ]
+    }
+  }
+}

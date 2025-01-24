@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "author": "La Calprenède, Gautier de Coste",
+    "title": "Phalante : tragédie / de Mr de La Calprenède",
+    "publication_date": "1642",
+    "document_id": "bpt6k1097720"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "TIMANDRE",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Considérez les vœux d'un peuple qui désire, Qu'à jamais votre sang gouverne cet Empire, Et qui ne verra point sans mourir mille fois, Au tronc bereditaut esteuer à âtres Rois. \nTIMANDRE\n Lors que par un mari vous serez soulagée, De ce pesant fardeau, votre âme dégagée, Dans calme profond goûtera le repos, Qu'un soing continuel lui trouble à tout propos, D'un peuple satisfait vous serez révérée, Et d'un prince obligé vous serez adorée:",
+          "S'ils ne m'ont pu guérir que la mort m'en délivre, Mon amour l'importune et ie suis las de et. Philoxène au tombeau n'importunera plus La Reine et sonami par des soins su perflus, Et le profond repos qu'il goûtera avait-même, Dans un moment repos mettra tout ce qu'il aimène. \nTIMANDRE\n La Reine le méprise avec peu de raison, Elle doit mieux traiter une illustre maison:",
+          ", Cette main qui me reste en est déjà capable, M'ayant peu de ma vie enlever la moitié - .   Pensesetu que pourt autre eue ait pius de pitiés \nTIMANDRE\n Aanmen puyuuppuyauepvieillesse, Seul espoir de mes jours, crois-tu que je te laisse? \n",
+          "Ous arrivons trop tard. \nCLÉOMEDE\n Dieux, le triste spectacle? \nTIMANDRE\n Achève, achève ingrat, après ta trabison, Et te souille du sang de touté ma maison, Meurs ou me fais mourir.  \nPHALANTE\n 2",
+          "Que j'ai souffert de même parce que je vous aime. \nTIMANDRE\n Il a tort de dé plaire à votre Majesté, Mais dans le désespoir où vous l'avez jeté."
+        ]
+      },
+      "top_5_persons": [
+        "TIMANDRE",
+        "Hélène",
+        "Seigneur",
+        "M",
+        "L"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Corinthe",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Mon cœur ne changea point, mais le vôtre changea, Sitôt que sous vos lois Corinthe se rangea: Quand votre dignité s'accrut avec votre âge, Et que la majesté qui brille en ce visage, Recut d'une couronne un éclat tout nouveau, Toute mon espérance entra dans le tombeaut, Vous ne connûtes plus le pauvre Philoxène, Son amour seulement fit naître votre haine, Et ce ressentiment qui vous peut animer Ne vous le fait haïr que pour vous trop aimer.",
+          "De vos prédécesseurs la récente mémoire Vit encor dans nos cœurs avec tant de gloire, Et laisse dans Corinthe un si beau souvenir, Que la suité des ans ne l'en saurait bannir: Le feu Roi votre père, et tous vos bons Ancêtres, Que ce Royaume illustre à connu pourfes Maîtres, Bien qu'ils soient morts pournous ont laissé désormats Un amour parmi nous qui ne mourra jamais.",
+          "Ô protecteur des Rois et Démon tutélaire, Et vous grand Dieu des mers que Corinthe révère, Vous qui lui fîtes voie, et et ses vaisseaux"
+        ]
+      },
+      "top_5_places": [
+        "Corinthe",
+        "Paris"
+      ]
+    }
+  }
+}

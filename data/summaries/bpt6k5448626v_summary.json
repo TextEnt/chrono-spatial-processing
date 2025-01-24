@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "author": "Le Vert",
+    "title": "Aristotime , tragédie",
+    "publication_date": "1642",
+    "document_id": "bpt6k5448626v"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ÉLISE",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Qu'il hâte donc ma mort puis qu'elle est si certaine, Ma résolution épargnera sa peine, Je protestai d'abord que sans le haïssais, Je ne changerai point le dessein que j'avais, Ae le plorejre enter , le derène son ovmle 5 Et aime mieux souffrir la mort, qu'Aristotime. \nÉLISE\n Madame, Seigneur sais bien qu'une si noble courroux Est digne du grand cœur que l'on remarque en vous, Que votre haine est juste, en ce qu'elle se fonde A haïr un objet funeste a tout le monde, Et qu'une femme ayant un mari glorieux, Qui veut les séparer Seigneur doit être odieux.",
+          "n'en doutons plus, notre trépas est prêt, Et cette injuste mort qu'il excuse en un autre, Est le signe fatal qui précède la nôtre. \nÉLISE\n Madame, vous craignez un peu légèrement, Il a frop d amifie pour vons e MÉGISTE.",
+          "PHILINTE\n \nÉLISE\n SOLDATS. \nMYRONE\n E bien, Madame, en fin êtes -vous satisfaite?",
+          "ME MYRONE, MEGISTE. \nÉLISE\n \nPHILINTE\n \nMYRONE\n Vis",
+          "ÉLISE\n \nÉLISE\n Adame, si la chose est encor incertaine"
+        ]
+      },
+      "top_5_persons": [
+        "ÉLISE",
+        "Timoleon",
+        "Adame",
+        "Seigneur",
+        "ARISTON"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Grèce",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Oui, pour le mieux pousser où son malheur le porte, Je veux l'accompagner, et avoir servir descorte, Et lauer dans son sang, en m'attachant à lui, Mon amour négligé, ma honte, et mon ennui, \nTRASIBULE\n Nos desseins vont servir et soulager la Grèce Allons les appuyer de toute notre adresse:",
+          "oublier un mari, Que tous les gens de bien et la Grèce ont chéri?"
+        ]
+      },
+      "top_5_places": [
+        "Grèce",
+        "PARIS",
+        "France",
+        "Megiste",
+        "Paris"
+      ]
+    }
+  }
+}

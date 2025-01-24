@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Monsieur de Pourceaugnac , comedie. Faite à Chambord, pour le divertissement du Roy. Par J.B.P. Moliere",
+    "publication_date": "1670",
+    "document_id": "btv1b8610798z"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "M",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "on n'a pas envie de vous enlever votre Fille, et vos grimaces hatraperont Jicil \nORONTE\n Toutes les vôtres n'auront pas grand effet. \nM\n \nPOURCEAUGNAC\n Vous êtes-vous mis dans la tête que Léonard de Pourceaugnac soit un Homme à acheter Chant en poche? et qu'il n'ait pas là-dedans quelque morceau de judiciaire pour se conduire, pour se faire informer de l'histoire du Monte, ce von ei le Micersit, ji son honneur a bien toutes ses sûretés? \nORONTE\n Je ne sais pas ce que cela veut dire: mais vous êtes,vous mis dans la tête, qu'un Homme de soixante et trois ans ait si peu de cervelle, et considère si peu sa Fille, que de la marier avec un Homme qui a ce que vous savez, et qui a été mis chez un Medeein pour eitie panle? \nM\n \nPOURCEAUGNAC\n C'est une pièce que l'on m'a faite, et Madame n'ai aucun mal.",
+          "et la grâce avec laquelle vous mangiez votre pain, m'a fait naître d'abord de l'amitié pour vous: Et comme ie sais que vous n'êtes jamais venu en ce Pays, et que vous y êtes tout neuf, venir suis bien aise de vous avoir trouvé pour vous offrir mon service à cette arrivée, et vous aider à vous conduire parmi ce DÈres uivi de Pue pax lois pour les honnêtes Gens toute la considération qu'il faudrait. \nM\n \nTOUNCLAUGNAC\n ",
+          "11 0 \nM\n \nPOURCEAUGNAC\n Voilà deux impudentés carognes: 14 \nLUCETTE\n Béni Françon, béni -Jeanet, béni tous, béni toustoune, beny fais beire à un Payre dénaturat, la duretat quel a per nautres. \nNERINE\n venez Mauciaine, indim indimfain, venez-vênesen ichy faire honte à vo Père de l'inpudainche qu'il a. \nJEA\n FAN.",
+          "mais je suis originaire de Naples, à votre service, et j'ai voulu conserver un peu et la manière de s'habiller, et la sincérité de mon Pays. \nM\n \nPOURCEAUGNAC\n C'est fort bien fait: Pour moi j'ai voulu me mettre à la mode de la Cour pour la Campagne.",
+          "ils ont contracté du Barreau certaine habitude de Déclamation, qui fait que l'on dirait qu'ils chantent, et vous prendrez pour Musique tout ce qu'ils vous diront. \nM\n \nPOURCEAUGNAC\n Qu'importe comme ils parlent, pourvu qu'ils me disent ce que je leun aquune SCÈNE XI."
+        ]
+      },
+      "top_5_persons": [
+        "M",
+        "Nerine",
+        "LUCETTE",
+        "Monsieur de Pourceaugnac",
+        "Seigneur"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "La Scène est à Paris Ouuerture se fait par Eraste, qui Éconduit un grand Concert de Voix et d'Instruments, pour venir Serenade, dont les Paroles chantées par trois Voix en manière de Dialogue, sont faites sur le Sujet de la Comédie, et expriment les sentiments de deux Amants, qui étant bien ensemble, sont traversez par le caprice des Parents.",
+          "I. B. P. de Molière a cédé le présent Privilège, à Jean Ribou, Marchand Libraire à Paris, pour en jouir suivant l'accord fait entr'eux.",
+          "Donné à I Paris"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Limoges",
+        "Chicane",
+        "Limine",
+        "Cuisine"
+      ]
+    }
+  }
+}

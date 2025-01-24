@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Scarron, Paul",
+    "title": "L'escolier de Salamanque, ou Les généreux ennemis , tragi-comédie de Mr Scarron, dédiée à... Mademoiselle",
+    "publication_date": "1655",
+    "document_id": "bpt6k841852"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Crispin",
+          "frequency": 9
+        },
+        "related_sentences": [
+          "En peu de mots, voilà de votre fiss la vie. \nLEONORE\n De sa Relatton, pour moi -même suis ravie. \nDOM FELIX\n Pour un sot de Collège, il parle plaisamment: Mais n'a-t-il rien de bon, ce mauvais garniment! \nCRISPIN\n De bon!",
+          "Mais a l'nomne de cuur es n'est que bagatelle. \nCRISPIN\n affaire, s'il vous plaît, soit secrète Intet nés \nZAMORIN\n Con lisenza Patron, Je vais dire deux mots, A J'homme que . \nCRISPIN\n Et moi Mosi somir.",
+          "L'Avocat sit pourtant, rompre le mariage, Et sans mes bons amis j'étais long temps en cage. \nZAMORIN\n Tous les hommes d'honneur sont malheureux ainsi: Mais aujourd'hui pourquoi vous a-t-on mis ici? \nCRISPIN\n Pour aimer par excès.",
+          "N'ai-je pas fait sortir le Comte adroitement. \nCRISPIN\n Sa sœur n'a-t'-elle pas tremblé cruellement, Voyant à ses talons sot: frère et non Lizette Elle aura bien pesté contre vous, la coquette.",
+          "DOM PEDRE, Elle prend mal son temps, et peut bien s'en aller \nCRISPIN\n flle n'en fera rien: car elle est résolue De vous voir, ex dût -elle être ici retenue."
+        ]
+      },
+      "top_5_persons": [
+        "Crispin",
+        "LEONORE",
+        "ZAMORIN",
+        "CRISPIN",
+        "LEONORE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Tolède",
+          "frequency": 9
+        },
+        "related_sentences": [
+          "Il bat présentement le pavé dans Tolède, Et sans considérer que son Père grison A changé brusquement depuis peu de maison, Et que moi seul j'en sais le quartier, et la rue, Ayant sa Lettre seul, reçue, ouuerte et leuë;",
+          "Un ami depuis peu, m'a de la Cour écrit, à Que celui que j'avais offensé dans Madrid Afin de se venger est parti pour Tolède Une Dame que j'aime, et de qui notre possède.",
+          "Puis que votre bras m'aide, Je ferais tête à tous les braves de Tolède Allons après, Crispin \nCRISPIN\n Allons, quoi que bien las: Car ici n'avais jamais tant remué les bras.",
+          "Mais différons encor cet extrême remède, Rappelons cependant Dom Pédre dans Tolède Ce fils que Dieu me laisse, est jeune, et courageux, Il saura bien venger un mépris outrageux.",
+          "qu'as-tu fille la moins traitable Des filles de Tolède, et la moins conversable? \nBRATRIS\n Va-t'-en chercher ton Maître. \n"
+        ]
+      },
+      "top_5_places": [
+        "Tolède",
+        "Paris",
+        "PARIS",
+        "France",
+        "Rome"
+      ]
+    }
+  }
+}

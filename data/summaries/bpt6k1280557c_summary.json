@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Le Malade imaginaire, comedie en trois actes. Mélez de Danses & de Musique",
+    "publication_date": "1674",
+    "document_id": "bpt6k1280557c"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ORGON",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Ma joie est aussi grande que ma douleur l'a été, et ce sera Seigneur, Masurpris, demoiselle, qui réglera notre sort, voulant être aussi soumis à ses volontés que vous le serez vous-même. \nORONTE\n Mon frère, vous avez là un beau champ pour exercer votre générosité, et dans la justice vous ne sauriez refuser à votre fille qui vous aime, et à ce brave Cavalier qui vous honort, qureit lène y ce luge, ce que vous jugez bien que l'un et l'autre souhaitent. \nORGON\n Je vois bien tout cela, mon frémIe, ihais à vous parier dul yranchement, j'aurais bien souhaité pour les raisons que je vous ai dites, que ma fille eût épousé un Médecin.",
+          "Je ne m'étonne plus, mon frère, de ce qu'il vous faut tant de médecines et de lavements, et à manger ce que vous dites il faut faire de grandes évacuations. \nORGON\n Dans mon régime, comme dans les remèdes, je suis les ordonnances de sévionneur Turbon, et il ne défend jamais ni ré vin Qui la viande solide à ses malades. \nATO\n Et moi, Monsieur, si vous vouliez suivre mes avis, je vous ordonnerais une bonne diète de quatre ou cinq jours sans manger ni boire, avec un petit remède spécifique qui vous rendrait le corps neuf.",
+          "J'ai toujours pour ces gens-là une aveugle obéissance. \nCATO\n Ma foi, Monsieur, en bonne et fidèle servante que je vous suis, et que vous avez reconnue pour telle du vivant de votre première femme, je vous dirai franchement, que Monsieur Turbon se moque de vous, qu'il n'en veut qu'à votre bourse, et que vous portant très-bien, il fait tout ce qu'il peut pour détruire votre santé, vous vous rendez malade pour votre plaisir. \nORGON\n Comment coquine!",
+          "CATO\n Tous vos Médecins sont des ig. norants, et n'en veulent qu'à votre bourse, et ils font bien de profiter de votre folie. \nORGON\n Comment, insolente, me parler de la sorte, et traiter Monsieur Turbon avec si peu de respect, lui qui m'aime à un point que de vouloir bien faire une donation considérabit a Monneur Diafoirus son neveu en faveur de ma fille qu'il doit épouser! \nCATO\n Monsieur Diafoirus épouser votre Mle: \nORGON\n ",
+          "Elle mettait sa paresseuse comme on sortais. \nORGON\n N'y a-t-il personne avec elle dans sa chambre ? \nFANCHON\n Non, mon Papa, Cato en est sortie avec moi. \nORGON\n N'y vient-il point quelquefois des gens de hors? \nFANCHON\n Non, mon Papa, je n'y vois jamais entrer personne qu'une lingère de nos voisines, et une gantière, et quelquefois le tailleur et le Cordonier \nORGON\n Tolnit datitreo. \n"
+        ]
+      },
+      "top_5_persons": [
+        "ORGON",
+        "CATO",
+        "CATO",
+        "ISABELLE",
+        "Cato"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "France\n \nFrance\n "
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Orgon",
+        "Paris"
+      ]
+    }
+  }
+}

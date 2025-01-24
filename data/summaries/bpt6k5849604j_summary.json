@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "author": "Quinault, Philippe",
+    "title": "Armide tragedie, representée par l'Academie royale de musique établie a Lyon. Et jouée cy-devant en presence de Sa Majesté",
+    "publication_date": "1698",
+    "document_id": "bpt6k5849604j"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Armide",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Au mois comme ennemi, si ce n'est comme Amant, Emmenez Armide captive, J'irai dans les Combats, j'irai m'offrir aux coups, Qui leront dessinez pour vous: Renaud, pourvu que je vous suive Le sort plus affreux me paraîtra trop doux.",
+          "OÙBALDE, Chevalier qui va chercher Renaud, Le Chevalier Danois, qui va avec Vbalde chercher Renaud Un démon sous la figure de Lucinde fille Danoise, aimée du Chevalier Danois TROUPE de démons, transformés en Habitants Champôtres de l'isle ous Armide retient Renaud enchanté.",
+          "Si votre sort est en votre puissauce, vo73 Faites choix de l'indifférence, Elle assure un repos heurẽux. \nARMIDE\n \" 179 Non, non, il ne mæt plus possible De passer de mou trouble en un état paisible.",
+          "La belle Armide a su vaincre aisément De fiers Guerriers plus craints que le Tonnerre, Et ses regards ont en moins d'un moment Donné des lois aux Vainqueurs de la terte.",
+          "En vain, de mille Amaos je me voyais suivie, Aucun n'a fléchi ma rigueur, Se peut-il que Renaud tienne Armide asservie?"
+        ]
+      },
+      "top_5_persons": [
+        "Armide",
+        "RENAUD",
+        "PHENICE",
+        "Godefroi",
+        "SIDONIE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Damas",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "ARONTE, HIDRAOT, ARMIDE, Peuples de Damas ARONTE. \n"
+        ]
+      },
+      "top_5_places": [
+        "Damas",
+        "Fleuve",
+        "Rome",
+        "Valde",
+        "Tigre"
+      ]
+    }
+  }
+}

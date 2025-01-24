@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "author": "Tasse, Le",
+    "title": "L'Aminte,... pastorale fidellement traduite de l'italien en vers françois [par Vion Dalibray]...",
+    "publication_date": "1632",
+    "document_id": "bpt6k12801807"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Daphné",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Change, change, crois -moi, change d'avis, Syluie, Et désormais renonce à ta première vie. \nSyluie\n Bien, Seigneur lairrai l'amour de mon cœur s'emparer, Alors que j'entendrai les arbres soupirer. \nDaphné\n \nDaphné\n Mes fidèles conseils te servent de risée, Et font que tu me tiens pour femme peu rusée, Ô fille également sourde, et simple en amour, Mais je asseure bien, il viendra quelque jour Que tu regretteras de en auoir fait conte: Je ne dis pas alors que la crainte, et la honte, De voir ton front chargé des nuages épais, Et des rides que l'age y mettra pour jamais, T'éloigneront des eaux, où souvent tu te mires, Et peut-être où souvent maintenants tu t'admires: Car bien qu'il soit certain que ce mel t'aduiẽdra, Et que le feu brillant de ces yeux s'éteindra, Un soûlas toutefois reste à cette infortune, Que si la perte est grande, au moins elle est commune:",
+          "Mais écoute Tirsis, je parle en confiance, Que de ce que je dis, aucun n'ait connaissanEt sur tout ne vas pas me coucher en tes vers, Tu sais si je saurais leur donner un revers. \nTirsis\n Qu'on n'appréhende point que jamais je rédie Chose qui m'accusât d'aucune perfidie, Non, Daphné, tu n'as point raison de redouter, Que contre ton vouloir j'aille rien reporter: Mais fort te prie aussi, ma Daphné, par la gloire De ton jeune Printemps si doux à ta mémoire, De vouloir avec nous Aminte secourir, Aminte qui bientôt est tout prêt de mourir. \nDaphné\n Ô",
+          "De ne te point fâcher par ma persévérance, De ne te point troubler en venant après toi, Et que cette colère éprise contre moi Se fut laissée au moins éteindre auec ta vie: Reçois-moi, Seigneur te suis, notre viens à toi, Scylue À ces mots ou sa voix plus forte se haussa, La tête basse, en bas, d'un saut il se lança: Me laissant sans pouvoir qu'à peine ouvrie la bouche Aussi froid, et muet, qu'une insensible souche \nDaphné\n Le pôvre Aminte ! \nSyluie\n Hélas!",
+          "Je me voulais tuer, Tu me retins mauvaise, Et quant et toi le Ciel ennemi de mon aise, Qui craignait que ma mort n'eut alors arrêté L'influence du mal qu'il m'avait apprête: Mais puis que sa rigueur désormais assouuie N'a rien de plus cruel à verser sur ma vie, fl souffre que je meure après un tel ennui, Et tu le doibs Daphné, souffrir auecques y. \nDaphné\n Diffères de mourir jusqu'at ec quoutminde Quelqu' un qui du vrai donne assurance plus grande. \n",
+          "Or laissons ce discours, feras-tu que Syluie Escoute encor Aminte notre fois en sa vie, Ou seul, ou pour le moins avec toi seulement? \nDaphné\n Je ne sais, car elle est farouche extrêmement. \nTirsis\n Et Elle d'autre côté discret outre mesure, \nDaphné\n Qu'un amant trop discret de sa perte s'assure: S'il est tel, il peut bien faire un autre métier."
+        ]
+      },
+      "top_5_persons": [
+        "Daphné",
+        "Daphné",
+        "Nerine",
+        "Diane",
+        "Tasse"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Bergère",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "que de Princes seraient ravis de vous ouïr faire les plaintes de Syluie, et que cette Bergère tirerait de soupirs après elle, si elle soupirait par votre bouche: Toutefois, MADEMOISELLE, peut-être ne voudriez-vous pas prendre un si bas personnage, puis qu'il y en a ici de plus convenables à votre naissance;"
+        ]
+      },
+      "top_5_places": [
+        "Bergère",
+        "Rome",
+        "Dauphin",
+        "Seine"
+      ]
+    }
+  }
+}

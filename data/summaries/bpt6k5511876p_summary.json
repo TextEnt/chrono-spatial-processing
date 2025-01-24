@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "author": "Dancourt",
+    "title": "Ballet de la jeunesse , divertissement mêlé de comédie & de musique, représenté devant Sa Majesté, à Versailles, le (28) janvier 1686",
+    "publication_date": "1686",
+    "document_id": "bpt6k5511876p"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Jupiter",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Jupiter commande aux destins, C'est de lui seul qu'ils ont voulu dépendre, Et quand le sort du monde est en ses mains, La vertu seule en peut prétendre Des biens solides, et certains Il n'est point de grandeur qu'elle n'en doive attendre: À ses bontés la vertu seule a part, Et jamais on ne le voit répandre Comme les autres Dieux ses bienfaits au hasard.",
+          "Les biens les plus charmands vont prévenir leurs vœux, Au bonheur le plus grand Jupiter les élève, Il ne commence rien que sa Bonté n'achève.",
+          "Heureux Amants goûtez toujours Un Destin charmant et tranquille, Jupiter prend soin de vos jours N'en laissez pas un d'inutile.",
+          "Jupiter a vaincu ce Monstre épouvantable Qui paraissait insurmontable, Et pour jamais il l'a mis dans les fers.",
+          "Jupiter les unit ensemble, Tout favorise leurs désirs, Mêlons nos jeux à leurs plaisirs."
+        ]
+      },
+      "top_5_persons": [
+        "Jupiter",
+        "Maure",
+        "Miracle",
+        "Magny",
+        "Frison"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Versailles",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Représenté devant Sa Majesté à Versailles le Janvier 1686 À PARIS, Par CHRISTOPHE BALLARD, seul Imprimeur du Roi pour la Musique, rue S. Jean de Beauvais, au Mont Parnasse \nM\n DC.",
+          "Le Théâtre représente le Palais de Versailles, Quatre Bergers qui chantent separément."
+        ]
+      },
+      "top_5_places": [
+        "Versailles",
+        "PARIS"
+      ]
+    }
+  }
+}

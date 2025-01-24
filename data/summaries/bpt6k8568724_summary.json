@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Le Noble, Henri",
+    "title": "Les barons flechois, comedie . Representée sur le theatre royal de Saint Germain en Laye",
+    "publication_date": "1667",
+    "document_id": "bpt6k8568724"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Pauline",
+          "frequency": 9
+        },
+        "related_sentences": [
+          "Ans doute que le Sort est pour moi bien propice OPuis que l'occasion de vous rendre service Se présente aujourd'hui, quoi qu’il soit déjà tard, Madame, et ainsi m'en sens redevable au hasards Mais pour combler mon cœur d'une parfaite joie, Et rendre grâce au Ciel du bonheur qu'il m'envoi Permettez que je puisse, en vous donnant la mainUous aider à marcher le reste du chemin. \nPAULINE\n On me l'avait bien dit, que l'aimable Clandre S'offrait de si bien cœur qu'on ne peut s'en défendre Il oblige toujours, et sa civilité.",
+          "CLEANDRE avec une profonde révérence, Je sais ce que l'on doit à votre qualité, Madame, et ce n'est là que la moindre étincelle Par où je puis prouver le brasier de mon zèle. \nPAULINE\n ",
+          "Je ne puis oublier, Mais ne saurai-je point quel est ce Cavalier Que personne était vois vous: \nPAULINE\n le voudrais bien savoir quel est la qualité De celui qui.",
+          "Mais pourquoi. \nPAULINE\n Mais enfin, c'est qu'il ne me plaît pas Elle sort en colère avec Celimène CLÉANDRE.",
+          "Vous savez que jamais cela ne se refuse. \nPAULINE\n Non, Monsieur, demeurez."
+        ]
+      },
+      "top_5_persons": [
+        "Pauline",
+        "CELIMENE",
+        "Seigneur",
+        "Cassandre",
+        "Nicodeme"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 9
+        },
+        "related_sentences": [
+          "car qui pourrait imaginer qu'un buroir crois qui ne m'avait jamais vu, me soit venu trouver à Paris au retour d'un Voyage d'Italie, pour me bailler cette Lettre, qu'il avait pris la peine de porter si loin?",
+          "Quand un peut attraper un Badaut de Paris Tu sçauras qu'il était dans sa Chambre en affaire Avec un Débiteur, et Monsieur le Notaire;",
+          "Pour donc t'en exempter, il faut que tu t'en aille Au plutôt à Paris voir Messieurs du Conseil.",
+          ". N'as-tu point des Amis quelque part à Paris POLEAND RE en souriant.",
+          "Moii pauvre foquelm, que ta sottise est grandel Pour été de Paris JOUVELIN."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "France",
+        "Flèche",
+        "Ville",
+        "Saint Martin"
+      ]
+    }
+  }
+}

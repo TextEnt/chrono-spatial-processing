@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": null,
+    "title": "Le Retour de Jacques II à Paris, comédie",
+    "publication_date": "1696",
+    "document_id": "bpt6k1090231w"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "LOUIS XIV",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Le trop parler, Sire, donne des vapeurs féminines, qui montent au cerveau et qui causent quelque fois un grand deréglement dans les esprits vitaux, Hipocrate dit dans un de ses ouvrages de médecine tine, que le trop grand exercice le la langue, oppresse le cœur et es parties célèbres de l'entendement. \nLOUIS XIV\n Il ne faut pas être surpris, si les femmes sont sujetes à ces palpitations de cœur, qui ne leur viennent que de trop parler. \n",
+          "Le Père la CHAIZE, Madame de MAINTENON, La Reine MARIE \nLOUIS XIV\n On Cousin, votre bénédicMia is nécessaire en tut x tioyi cit sesci.    temps mais particulièrement à présent, où nous sommes dans un chagrin inconcevable, bannissez de nos cœurs et de nos esprits, par votre piété, les monstres qui s'y forment, enfin le Prince d'Orange retourne en Campagne, et je vois en idée la victoire pencher de son côté, ho douleur!",
+          "Louis XIV\n C'était à quelque bon Saint, Madame, à qui mon Allié adressait ces prier muvra ma cy La Reine MARIE J'en doute fort, Sire, non, il me souvient que c'était aux astes, joa Dun du n Le Due de BERWICK Voici une modèle nouvelle de E 4 faifaire des oraisons aux astres, le païens n'avaient donc pas un méchant fondement, d'adorer !",
+          "Vous aimerez une jeune Abbesse née sous une constellation tendre amoureuse, qui fera grand bruit par le monde, le Soleil étant faible en sera affligé, par la présence de Saturne, ce qui causera peut la mort de quelque grand en Europe \nLOUIS XIV\n Hé bien, mon Cousin, vous avez souhaité ardamment de parler à cet homme, que dites-vous de sa Prophétie.",
+          "et je viens d'apprendre que le Prince d'Orange se prépare pour marcher à la tête des troupes des Alliés \nLOUIS XIV\n C'est ce qui me désespère, Madame, je m'étais flatté que nous aurions empêché ce Prince d'aller cette année en Campagne."
+        ]
+      },
+      "top_5_persons": [
+        "LOUIS XIV",
+        "Mars",
+        "Jupiter",
+        "Louis XIV",
+        "Venus"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Le Dus de BERWICK Sire, je ne le connaissais pas pour lors, et j'ai trouvé cet Astrologue tout excellent sur le chemin en venant à Paris \nJAQUES II\n Comment l'appelez-vous, Milord Duc Le Duc de BERWICK Cet homme n'a point de nom, Sire, par un caprice que votre Majesté sait que tous les Astrologues affectent, il ne permet pas même qu'on parle à lui qu'en une seule langue, qui est la Française, et quand on l'interroge, il répond tantôt par signes, tantôt par les plus belles expressions du monde, sans nommer personne par leurs noms, ni par leurs qualités, fûtce un Roi. \n",
+          "Le Duc de BERWICK y cours dès ce pas, Sire, ce mortel admirable est à Paris, logé à l'oblervatoire.",
+          "L'ARCHEVÊQUE de Paris, Le Duc de BERIC, JAQUES II Le MAGICIEN, LOUIS XIV Madame de MAINTENON.",
+          "L'ARCHEVÊQUE de Paris",
+          "L'ARCHEVËQUE de Paris"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "France",
+        "Angleterre",
+        "Saint Germain",
+        "Scorpion"
+      ]
+    }
+  }
+}

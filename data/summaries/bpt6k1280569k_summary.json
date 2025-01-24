@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Les Femmes savantes, comédie, par J.-B. P. Molière",
+    "publication_date": "1673",
+    "document_id": "bpt6k1280569k"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "HENRIETTE",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Et lors qu'à mon amour je vois chacun se rendre. \nHENRIETTE\n Je sais le peu de bien que vous avez, Clitandre, Et je vous ai toujours souhaité pour Épous, Lors qu'en satisfaisant à mes vœux les plus dous, J'ai vu que mon Hymen ajustait vos affaires: Mais lors que nous a vons les Destins si contraires, Je vous chéris assez dans cette cxtremite, Pour ne vous charger point de notre aversité. CLITANDRE.",
+          "Et tout ce que sur moi peut le raisonnement, C'est de me vouloir mal d'un tel aveuglement. \nTRISOTIN\n Le don de votre main où l'on me fait prétendre, Me livrera ce cœur que possède Clitandre Et par mille doux soins, j'ai lieu de présumer, Que je pourrai trouver l'art de me faire aimer. \nHENRIETTE\n Non, à ses premiers vœux mon âme est attachée,",
+          "Elle mérite assez une telle franchise, Et toutes les dauteule de darone nerce Sont dignes tout au moins de ma sincérité: Mais puis qu'il m'est permis, je vais à votre Père, Madame. \nHENRIETTE\n Le plus sûr est de gagner ma Mère: Mon Père est d'une humeur à consentir à tout, Mais il met peu de poids aux choses qu'il résout;",
+          "Son Monsieur Trissotin me chagrine, m'assomme, Et j'enrage de voir qu'elle estime un tel Homme, Qu'elle nous mette au rang des grands et beaux Esprits Un Benêt dont par out on sifle les Écrits, Un Pédant dont on voit la plume libérale D'officieux papiers fournir toute la Hale. \nHENRIETTE\n Ses Écrits, ses discours, tout m'en semble ennuyeux,",
+          "Sachez que le devoir vous soumet à leurs lois, Qu'il ne vous est permis d'aimer que par leur choix, Qu'ils ont sur votre cœur l'autorité suprême, Et qu'il est criminel d'en disposer vous-même. \nHENRIETTE\n Je rends grâce aux bontés que vous me faites voir, De m'enseigner si bien les choses du devoir;"
+        ]
+      },
+      "top_5_persons": [
+        "HENRIETTE",
+        "BELIZE",
+        "ARISTE",
+        "MARTINE",
+        "CLITANDRE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Où voyez-vous, Monsieur, qu'elle l'ait si mauvais? \nTRISOTIN\n Ce que ici vois, Monsieur, c'est que pour la Science Rasius et Baldus font honneur à la France, Et que tout leur mérite exposé fort au jour, N'attire point les yeux et les dons de la Cour.",
+          "Qu'est-ce que leurs Écrits hommes rendent de service, Pour accuser la Cour d'une horrible injustice, Et se plaindre en tous lieux que sur leurs doctes noms Leur avoir à la France est beaucoup nécessaire, Et des Livres qu'ils font la Cour a bien affaire.",
+          "Il entend raillerie autant qu'Homme de France, Et de bien d'autres traits il s'est sent piquer, Sans que jamais sa gloire ait fait que s'en moquer, \nTRISOTIN\n Je ne m'étonne pas au combat que j'essuie,",
+          "Et sait du Grec, Madame, autant qu'Homme de France \nPHILAMINTE\n Du Grec, ô Ciel!",
+          "quelle barbarie au milieu de la France Mais au moins en faveur, Monsieur, de la Science."
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Rome",
+        "Paris",
+        "Pontoise",
+        "Gand"
+      ]
+    }
+  }
+}

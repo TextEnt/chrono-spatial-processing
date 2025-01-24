@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "author": "Du Ryer, Pierre",
+    "title": "Bérénice , tragi-comédie en prose, par P. Du Ryer",
+    "publication_date": "1645",
+    "document_id": "bpt6k58158364"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "BERENICE",
+          "frequency": 10
+        },
+        "related_sentences": [
+          "le Soleil aime la terre, et lui donne de la vertu, le Ciel l'embrasse de tous côtés, comme pour lui monstrer son amour, et moi qui connaître parfaitement le mérite de Tirinte, Seigneur ne feins point de confesser que j'aime Tirinte \nBERENICE\n mouis que pour raihel vonre amiour vous alsez chercher des raisons jusques dans le Ciel, vous témoignez sans doute que vous en avez bien peu, puisque vous en allez chercher siloing.",
+          ", mettez en oubli votre amour, et permettez que notre départ soit le remède de votre passion, quand vous ne verrez plus Berenice, vous cencren vous tort de rappmeu On nous attend en Sicile, le Tyran est mort, notre pays nous appelle, et ic ne puis disposer, ni de m ni de mes enfants, puis que nous appartenons à notre patrie, qui nous demande et qui nous appelle.",
+          "et s'il faut perdre l'espérance de me voir un jour dans le trône, au moins j'en serai consolé lors qu'une: autre que Bereniee ne possédera pas un si grand bien, et que je ne perdrai ma splendeur que pour en voir mœur éclairée. \nBERENICE\n Faut-il que la rencontre d'exc œur vous mette au hasard de perdre des prospérité si glorieuses?",
+          "Vous voyez cependant ce qui en arrive, et que c'est avoir contribué à sa faute que d'avoir différé de m'en parler. \nBERENICE\n Je ne vous en ai point parlé, parce que ie sans sais assurance, que l'amour et l'honneur sont en elles -même chose, tant ils sont bien d'accord enSchetone CRITON.",
+          "Berenice, l'amour est un traître qui sait feindre adroitement d'être d'accord avec l'honneur, quand il médite sa ruine, et qu'il veut s'en faire un trophée. \nBERENICE\n Je pourrais bien vous assurer que dans le cœur d'Amasie l'amour est un noble esclaue, de qui l'honneur est toujours le maître."
+        ]
+      },
+      "top_5_persons": [
+        "BERENICE",
+        "BERENICE",
+        "Criton",
+        "Tarsis",
+        "Tars"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Sicile",
+          "frequency": 10
+        },
+        "related_sentences": [
+          ", mettez en oubli votre amour, et permettez que notre départ soit le remède de votre passion, quand vous ne verrez plus Berenice, vous cencren vous tort de rappmeu On nous attend en Sicile, le Tyran est mort, notre pays nous appelle, et ic ne puis disposer, ni de m ni de mes enfants, puis que nous appartenons à notre patrie, qui nous demande et qui nous appelle.",
+          "En ce temps là, Sire, vous envoyâtes en Sicile la Reine vôtre femme, par ce qu'elle n'était pas en sûreté dans vos États, et qu'il était à craindre qu'elle reçut quelque outrage de ces Princes vos ennemis, qui prétendaient à la Couronne, et qui n'y pou.",
+          "Si votre père aime les honneurs, on l'arrêtera par ces liens de toutes les âmes généreuses. \nBERENICE\n Il a des prétentions dans la Sicile, qui l'empêcheront d'écouter votre amour, et qui l'obligeront sans doute à refuser tous les honneurs que vous pourriez assez présenter.",
+          "Il vous souvient bien du temps que nous quittâmes la Sicile, notrechère et misérable Patrie, et que mon Père nous amena en ce Pays, où nous avons trouvé un asile contre les fureurs du Tyran, qui a usurpé la domination \nBERENICE\n Hélas!",
+          "Carenfin vous ne pouvez quitter la Crète, que pour retourner en Sicile, puis qu'il ne serait pas honnête de quitter un Roi qui vous aime et qui vous a fait tant de biens, pour aller vivrez chez un autre Prin cé."
+        ]
+      },
+      "top_5_places": [
+        "Sicile",
+        "BERENICE",
+        "LEONIDE",
+        "Cypre"
+      ]
+    }
+  }
+}

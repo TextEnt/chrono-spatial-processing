@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "author": "Chevalier, Jean",
+    "title": "Le Soldat poltron, comédie",
+    "publication_date": "1668",
+    "document_id": "bpt6k1090138f"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Guillot",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Car c'est le sentiment de tous, Que quand on aime, on est jaloux: Sers-toi du même stratagème, Pour découvrir si Guillot t'aime. \nGUILOT\n Monsieur, j'ai peur, votre pense voir Latva certai Tantouc noir Qui vers Angélique s'avance.",
+          "Guillot est armé de toutes les Armes qu'il peut porter, faisant marcher deux Pièces de Canon tirées par des Chevaux, et un Goujat chargé d'une Hotte pleine d'Armes, de quantité de Vivres attachez à une Bandolière, avec un Pain et une Bouteille.",
+          "Guillot, quitte ton humeur fière, Et tous deux radoucissez-vous, Pour venir faire comme nous. \nBVILOT\n a compenteta, enère mhette? \nOuida\n \nLISETTE\n \nGUILOT\n Va, ta fortune est faite. \n",
+          "Guillot, quitte ton humeur fière, Et tous deux radoucissez-vous, Pour venir faire comme nous. \nBVILOT\n a compenteta, enère mhette? \nOuida\n \nLISETTE\n \nGUILOT\n Va, ta fortune est faite.",
+          "Non, Guillot, ne m'en parlez plus, Angélique est sage, elle est belle, Vous savez que ici mûrs pour elle, Et que sans mets tout mon bonheur A pouuoir m'acquérir son cœur."
+        ]
+      },
+      "top_5_persons": [
+        "Guillot",
+        "LISETTE",
+        "Angélique",
+        "Rocque",
+        "Seigneur"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Ce sont des apprêts pour la Guerre, Et non pour se battre à Paris, Et vous vous seriez fort mépris,",
+          "La Scène est à Paris, dans le Quartier du Marais  I *( Y I EOMEDIE.",
+          "À la Guerre, à la Guerre, allons, Montrons à Paris les tallons;"
+        ]
+      },
+      "top_5_places": [
+        "Paris"
+      ]
+    }
+  }
+}

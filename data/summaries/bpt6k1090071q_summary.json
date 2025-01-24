@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "author": "Boyer, Claude",
+    "title": "Artaxerce, tragédie [...], Avec sa critique",
+    "publication_date": "1683",
+    "document_id": "bpt6k1090071q"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Darius",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Pour finir cette Préface, qui peut-être n'est déjà que trop longue, je n'ai qu'à répondre à l'objection qu'on m'a faite touchant le Personnage de Nitocrais Lec-uns disent que c'est une Épisode inutile, sans laquelle l'action de ma Pièce aurait son exécution entière, et que j'en devais faire un Personnage muet, comme de celui d'Ariarathe, Frère de Darius mais peut-on traiter d'inutile le Personnage de Nitocris, qui étant Fille unique de Tiribase, oblige la tendresse de son Père à appliquer tous ses soins à la couronner par le Mariage d'un des Fils d'Artaxerce N'est-ce pas elle, qui plus fière et plus vindicative même que son Père, voyant ses espérances trompées, soutient son ressentiment, et combat les irrésolutions d'un Père qui brûle de venger par la perte de Darius, et par celle d'Artaxerce, les affrons qu'il a reçus de l'un et dél'autre, mais qui craint de faire périr sa Fille par une entreprise si dangereuse?",
+          "L'emportement et l'exemple du Père ébranlent le respect du Fils, et d'autant plus que Tiribase lui envoie des Amis infidèles, qui par un faux zèle, et par des conseils concertés, irritent la jalousie de Darius Le retour de ce Prince et son repentir, qui le font trembler de respect à la vue de son Père, quand il veut enlever sa Maîtresse, et qui lui font tomber les armes des mains, fait bien voir qu'il garde pour lui dans le fond de son cœur un respect qui ne se dément que par la violence de son Père, par la force de sa passion, et par l'inspiration de ses faux Amis.",
+          "Ici Darius quoi que jeune, ardent, impétueux, et qui veut mourir, s'il est obligé de céder sa Maîtresse, ne s'emporte contre son Père, qu'alors qu'il voit que ce Père, qui malgré sa passion et son ressentiment, fait voir tant de tendresse pour son Fils, prend tout d'un coup la résolution de tant ôter Aspasie, et même fait porter cette nouvelle par Tiribase même, qui lui avait donné un conseil h violent.",
+          "C'est par là qu'on le peut accuser de trop de faiblesse, et Darius son Fils d'une dureté ingrate et condamnable, lors qu'en recevant la Couronne de son Père, il osefois disputer la possession d'Aspasie, qui devait être la consolation de sa retraite, et le prix de l'Empire qu'il cédait à son Fils.",
+          "Quelle misère est plus illustre et plus touchante que celle d'Aspasie, qui étant prévenue d'une estime infinie pour Artaxerce, pénétrée de ses bien-faits, enchaînée par sa reconnaissance, se sent entraîner vers Darius par un penchant invincible, et qui cependant s'arrache à son amour pour se donner toute entière à son devoir?"
+        ]
+      },
+      "top_5_persons": [
+        "Darius",
+        "Darius",
+        "Aspasie",
+        "Nitocris",
+        "BARSINE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Perse",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "C'est une Loi qu'en Perse on garde exactement, Que quiconque est nommé Successeur de l'Empire, Puisse obtenir du Roi la faveur qu'il désire. \nDARIUS\n Avant que m'expliquer, pour répondre à vos vœux, Vous pouvez consoler un Prince malheureux.",
+          "La Perse, l'Univers, vous parlent par ma bouches B icij",
+          "La Perse a des Beautés, dont la haute naissance.",
+          "À Perse enfin triomphe;"
+        ]
+      },
+      "top_5_places": [
+        "Perse",
+        "Paris",
+        "Perse",
+        "PARIS",
+        "Versailles"
+      ]
+    }
+  }
+}

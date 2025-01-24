@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "author": "Campistron, Jean Galbert de",
+    "title": "Alcide, tragédie en musique (paroles de Campistron, musique de Lulli et Marais), représentée par l'Académie royalle de musique",
+    "publication_date": "1693",
+    "document_id": "bpt6k5629556w"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Déjanire",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Croyez-vous qu'il vous soit facile De voir sans vous troubler tous mes enchantements? \nDEJANIRE\n S'ils peuvent finir mes tourments, Je les verrai d'un œil tranquille. \n",
+          "par les nœuds qui m'attachent à vous Prenez des sentiments plus doux. \nDEJANIRE\n Dans le désespoir qui m'anime, Puis-je avoir quelque égard aux plus sacrés liens;",
+          "punissons Déjanire, Sa colère a plus fait que tous mes ennemis. \nPHILOCTETTE\n Elle s'est punie elle-même D'un crime que Nessus et le sort ont commis.",
+          "DEJANIRE\n Tous ces ménagements sont vains Dans l'état où je suis réduite, L'Hymen d'un ingrat qui me quitte Est le seul objet que je crains.",
+          "Iole me charmait et j'avais su lui plaire, J'allais devenir son époux. \nDEJANIRE\n Ah que vous me portez de redoutables coups!"
+        ]
+      },
+      "top_5_persons": [
+        "Déjanire",
+        "Alcide",
+        "IOLE",
+        "Nessus",
+        "Junon"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "PARIS",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "À PARIS cI9 cIO XCII."
+        ]
+      },
+      "top_5_places": [
+        "PARIS"
+      ]
+    }
+  }
+}

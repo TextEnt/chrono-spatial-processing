@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "author": "Lespine, Charles de",
+    "title": "Le mariage d'Orphée, sa descente aux enfers, sa mort par les bacchantes . Tragédie : et autres oeuvres poétiques du sieur de Lespine,...",
+    "publication_date": "1623",
+    "document_id": "bpt6k5744744m"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Orphée",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "son arc et son flambeau, Je n'aspire plus rien qu'a me voir au tombeau. \nBacchante II\n Changez de volonté, délaissez cette envie, De quelque autre beauté ranimés votre vie, Sormontez le malheur, contentez vos esprits, Ioupssez désormais des douceurs de Cypris \nOrphée\n Orphe.",
+          "Car de lui seul dépend notre heureux hrmène. \nOrphée\n Non, non, ne craignez point puis que cette journée Ensemble nous avons tant de présents des Cieux Qui nous peut offenser en ce rond spacieux?",
+          "Orphée\n Je suis tout éperdu, peu s'en fant qu'à cette heure Par ces tristes propos de crainte quelque meure, Qu'un este accident sur ma Belle arriné",
+          "Orphée\n Je veux jusqu'à la fin de mon heure dernière, Les femmes abhorrer tout ainsi que Démons, En finissant mes jours dessur ces tristes monts",
+          "Orphée\n J'arrêterais plutôt Phœbus faisant son cours, Et plutôt a perdrais la lueur de cet astre, Que pouvoir oublier ce malheureux désastre."
+        ]
+      },
+      "top_5_persons": [
+        "Orphée",
+        "Orphée",
+        "Phœbus",
+        "Pluton",
+        "Orphée"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "NAVARRE",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "LA GRACE DE DIEUROY DE FRANCE ET-DE NAVARRE, A nos âmez et féaux"
+        ]
+      },
+      "top_5_places": [
+        "NAVARRE",
+        "Toloze",
+        "Ren",
+        "Bordeaux",
+        "Dijon"
+      ]
+    }
+  }
+}

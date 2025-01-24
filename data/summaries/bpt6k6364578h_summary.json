@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Desmarets de Saint-Sorlin, Jean",
+    "title": "Europe : comédie héroïque",
+    "publication_date": "1645",
+    "document_id": "bpt6k6364578h"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "LILIAN",
+          "frequency": 91
+        },
+        "related_sentences": [
+          "À mon secours, ibère, SCÈNE VI. \nIBÈRE\n \nAUSTRASIE\n \nFRANCION\n \nLILIAN\n \nHISPALE\n \nIBÈRE\n ",
+          "V. \nFRANCION\n \nAUSTRASIE\n \nLILIAN\n \nFRANCION\n Nfidelle, quelqu'un vient de partir d'ici. \n",
+          "On peut tout croire d'elle. \nLILIAN\n Princesse, il est ainsi. \nEUROPE\n Quoi?",
+          "LILIAN\n L'assistance d'Ibére \nEUROPE\n Toutefois elle pert bien plus qu'elle n'espère.",
+          "LILIAN\n E viens vous avertir que la folle Autrasie, Par trouble nouveau change de fantaisie."
+        ]
+      },
+      "top_5_persons": [
+        "LILIAN",
+        "Seigneur",
+        "Mars",
+        "Mélanie",
+        "Muses"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Europe",
+          "frequency": 91
+        },
+        "related_sentences": [
+          "Pour mo ie ne prétends que l'heur devous servir re crois que si les Dieux vous eussent destinée Pour donner à quelque Roy ointe par l'hyménée, Par amour, par devoirs, et par mille travaux, J'eusse emporté cet heur pat dessus mes sivaux: Mais s'il n'est pas permis, ma Reine belle d'aspire Qu'a l'honneur d'établir la paix dans votre Empire. \nEUROPE\n Prince, ie votre teçois par un choix singulier, Non pas pour mon amant, mais pour mon chevalier, Comme tel désormais pensez à me d'effendre D'un Prince ambitieux qui tâche à nre surprendre. \nFRANCION\n Puisque vous m'appelez à cet illustre emploi, Nul en tout l'Univers n'est plus heureux que moi.",
+          "Il croit que tout nous rit sur la terre et sur l'amendes Et ne prétend rien moins que l'Empire du monde, Il croit que vous trouvez son orgueil’ fort charmant 2 Et que vous menacer c'est bien faire l'amant. \nEUROPE\n Cette sorte d'amants, fâcheux, tristes et sombres, S'attachent à nous suivre ainsi que font nos ombres ?",
+          "Il ne peut plus souffrir de voir en tant de lieux, Ces destructeurs d'autels, ces ennemis des Dieux Tirés par Francion de la Mer glaciale, Pour pouvoir contre nous combattre à forte \négile\n \nEUROPE\n N'appelle pas ainsi ces invincibles cœurs, Qui tiennent un beau ramg entre mes défenseurs, S'ils n'ont point commme nous d'autels.",
+          "Le choix en est tout fait: ie préfère sans peur, La name dercouvice à ton umnour doupeur. \nIBÈRE\n Mévio amnour touterais vous rerait mois de peine \nEUROPE\n Ta haine est mon amour, et ton amour ma haine, \nIBÈRE\n On ne suis point à craindte: à quoi vous émouvoir?",
+          "EUROPE\n Nul ne peut m'agrandir, et apprendre sais me défendre Le Ciel fit ma grandeur, nul ne le peut étendre Des Dieux, et des humains et le père et le Roi A reglé les confins de mes sœurs et de moi. \nIBÈRE\n Soyez toujours"
+        ]
+      },
+      "top_5_places": [
+        "Europe",
+        "Amérique",
+        "France",
+        "Madrid",
+        "Perse"
+      ]
+    }
+  }
+}

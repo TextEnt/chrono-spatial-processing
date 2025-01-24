@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Desmarets de Saint-Sorlin, Jean",
+    "title": "Oeuvres poétiques du sieur Desmarets,...",
+    "publication_date": "1641",
+    "document_id": "bpt6k5767243z"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "OLINDE",
+          "frequency": 98
+        },
+        "related_sentences": [
+          "Ce Temple, dont les Dieux sans force ou sans pitié, ront voi tant de Joibiene, ou tant d'inimitié? \nORCADE\n La puisance des Dieux, des nommes adorée, Bien plus par les vainqueurs doit être révérée. \nOLINDE\n Hélas! pour arrêter l'ardeur des conquérants, Les images des Dieux sont de faibles garants.",
+          "Ne vous affligez point, généreuse Princesse, Et de ce noble cœur éloignez la tendresse: Sous l'auspice puissant d'un regard de vos yeux, Je soutiendrais l'assaut même de tous les Dieux. \nOLINDE\n Lucidan, ie sais trop, (1 c'est ce qui m'afflige) À quelles aPions votre cœur vous oblige.",
+          "J'oute chose ici bas entr eux deux le parcage: En la guerre, en l'amour, tout succombe aux efforts Des esprits les plus fins, ou des bras les plus forts. \nOLINDE\n Mais toute la Noblesse, ou Punique, ou Romaine, Dacime deliiee ds la die ce la peue.",
+          "Quel est votre pays, et quel est votre sang! \nOLINDE\n Seigneur, je suis d'Espagne, et de race Rovale, Et ie dois succéder au Royaume d'Hispale Mon père m'est resté, dont le caduques ans Pour conduire l'état n'étant pas saffiants.",
+          "Vous me percez le sein, plus vous versez de larmes Ce seul point me console en recevant vos coups, Que vous êtes à moi comme a suis à vous. \nOLINDE\n Seigneur, meure plutôt cette triste caprive, Qu'à mon honneur jamais la moindre tache atrivc."
+        ]
+      },
+      "top_5_persons": [
+        "OLINDE",
+        "Alexandre",
+        "LYSIS",
+        "Roxane",
+        "LYSANDRE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Europe",
+          "frequency": 98
+        },
+        "related_sentences": [
+          "Mais s'il n'est pas permis, ma Reine, Elle n'aspire Qu'à l'honneur d’établir la paix dans votre Empire. \nEUROPE\n Prince, ie Seigneur reçois, par un choix singulier, Non pas pour mon Amant, mais pour mon Chevalier.",
+          "Ensin, mon Envaner, on nous dôme ja paix: Pour le moins si de l'offre on en vient aux effets, Qui l'offre? \nFRANCION\n \nEUROPE\n Germanique, et de la part d'Ibère \nFRANCION\n D'Ibère?",
+          "les enfers. \nEUROPE\n Et le Ciel sarmera pour m'ôter de tes fers. \nIBÈRE\n \nIBÈRE\n Mon désir toutefois sur cet espoir se fonde, Qu'un jour j'aurai l'honneur de commander au monde. \n",
+          ", a fait remontrer qu'il a rccouuré une pièce de Théarre intitulée Europe, laquelle il désirait faire imprimer tant en Français qu'en Latin, et autres langues, s'il nous plaisait de jours accorder nos lettres sur ce nécessaires.",
+          "Vel souci, ma Princesse, occupe vos esprits? \nEUROPE\n Je plaignais nos malheurs, ayant des miens appris Qu'Ibère ambitieux vous veut mettre à la chaîne, Connaissant qu'envers moi sa poursuite était vaine."
+        ]
+      },
+      "top_5_places": [
+        "Europe",
+        "France",
+        "Rome",
+        "Carthage",
+        "Grèce"
+      ]
+    }
+  }
+}

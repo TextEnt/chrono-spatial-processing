@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Montfleury",
+    "title": "Le gentilhomme de Beauce , comedie. Par A. J. Mont-Fleury",
+    "publication_date": "1670",
+    "document_id": "btv1b8622104q"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "BEATRIX",
+          "frequency": 18
+        },
+        "related_sentences": [
+          "mais il n'est pas céans, Car ici depuis hier il n'est entré personne, Quoi que cette raison peut seule être sort bonne: J'ajoute pour parler catégoriquement, Que je n'ai pas quitté la porte d'un moment, Que j'en ai toujours eu la clef dedans ma poche, Qu'on ne peut justement m'en faire de reproche, Que ce fou que tu viens dis tu de rencontrer, Ne s'est pas seulement présenté pour entrer, Ô Que tu m'en fais ici des plaintes inutiles, Et que s'il est entré c'est par dessus les tuilles, Tu peux dire à présent tout ce que tu voudras. \nBEATRIX\n le menant par le bras vers le jardin.",
+          "Il s'est fait habiller. \nBEATRIX\n Oui, mais ce lunatique Avec son habit neuf sent sa médaille antique, Son tailleur avec lui pensa perdre l'Esprit Quand il le fit venir, et touchant cet habit, Ce bourv méprisant ses avis et les nôtres, N'a pas voulu qu'en rien il fût semblable aux autres, Il dit que ses aïeuls étaient ainsi vêtus, Et qu'il veut imiter leur mode et leurs vertus, À propos dites -moi, Madame je vous prie.",
+          "Et les soins de l'amour seconderont les nôtres. \nBEATRIX\n Il'est vrai qu'à l'aspect du cousin, vos amis, Ont en fort peu de temps déserté le logis, Car vous aviez toujours fort bonne compagnie, Cela vous tient au cœur, mais depuis leur sortie, N'avez-vous rien appris du pauvre Chevalier? \nD'Alante\n de Damon car pour le Maltôtier, Il est mort.",
+          "De quel espoir hélas! flatter ma passion? \nBEATRIX\n les séparant Que de discours, voici dont il est question, Pour empêcher qu'ici la foule ne se glisse, Le cousin Beauceron, veut que l'on prenne un Suisse vous savez que le Basque est un original, Qui le contrefait bien.",
+          "Et le reste du jour, avis qu'ène veut en approuver notre amour, Nous pourrons empêchant que le peuple ne crie, Par divertissement tirer la Lotterie. \nBEANDRE\n Et quand de notre amour l'Hymen sera le prix, Il faudra marier le Basque et Beatrix Fin du cinquième Acte."
+        ]
+      },
+      "top_5_persons": [
+        "BEATRIX",
+        "Léandre",
+        "Beauceron",
+        "Louis",
+        "Basque"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Suisse",
+          "frequency": 18
+        },
+        "related_sentences": [
+          "J'aimerais mieux encor que l'on me crût dehors, Qu'ivre dans le logis, je crains bien si je sors, Que ce Suisse ingénu ne gâte le mystère, Je suis un peu pressé voici ce qu'il faut faire, Je veux quoi que dehors, qu'on me croie ç, ô la lotterie attire bien des gens, Pour donner leur argent, il faut à tous leur argent, Que l'on n'en reçoit plus, que demain on la tire, Et pour les empêcher de vous persécuter, Il faut ne point répondre et les laisser heurter.",
+          "Jette acquisition est fort bonne, et ce Suisse C'ist comme je le veux, naïf sans artifice, Et nous allons avoir un peu plus de repos: Mais pour ne point avoir la populace à dos, P'ar un retardement dont déjà chacun crie, Il faudrait promptement fermer la lotterie, en imif au plutôt les frais, et l'embarras;",
+          "Puis poussant contre moi plus avant l'artifice, D'un Basque son valet, vous avez fait un Suisse, Vos gez dans lesquels je suis presque tombé, L'on mis de Basque en Suisse, et de Suisse en Abé Et vous avez enfin employant toutes choses, Comme les Dieux défunts fait des Métamorphoses.",
+          "Quoi notre nouveau Suisse au lieu de s'aguérir, Cet lurter en : \nBEATRIX\n Le Suisse est allé voir mourir, Sa femme, qui dit-on est prête à rendre l'âme.",
+          "D'introduire un valet de son galant pour Suisse Et moi qui m'y fiais jetais en bonne main, Ah!"
+        ]
+      },
+      "top_5_places": [
+        "Suisse",
+        "Paris",
+        "Beauce",
+        "France",
+        "Allemagne"
+      ]
+    }
+  }
+}

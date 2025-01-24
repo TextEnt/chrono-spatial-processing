@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Larivey, Pierre de",
+    "title": "Trois Comedies des six dernieres de Pierre de Larivey, champenois. A l'imitation des anciens Grecs, Latins & Modernes Italiens",
+    "publication_date": "1611",
+    "document_id": "bpt6k10902737"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "M",
+          "frequency": 10
+        },
+        "related_sentences": [
+          "ployer à ces beatilles, c'est pourquoi vous devez souvent demeurer les mains vides. \nM\n Si ici n'ai de l'argent à dépendre j'ai des yeux pour regarder, et si elles ne se soucient pas beaucoup de cela Alors sans leur fais entendre que j'ai de l'huile qui fait les dents d'ivoire, qui ôte la mauvaise odeur de la bouche, que j'ai un fard divin, une blonde miraculeuse, une eau de lentilles fort excellente: et ainsi leur nomme tant et tant de choses, qu'elles sont contraintes, tent elles sont ambitieuses de leur beauté, s'aider de moi, non sans mon très-grand profit, Seigneur dis ceci, pource que quelque peu après elles m'envoient quérir et me payent comme on veux.",
+          "D. Entrez devant, Seigneur vous suivi entre encor Adrian La peste vienne à qui m'a ici amené ce viel ranceux et poussif, faire caresse à ce glair eux et pourri n'est autre chose sinonse embrasser les corps morts, baiser des cailloux, tâter des vessies flammes, et flétries, coucher avec des peaux d'un chat mort sans nerfs et sans os, succer un tétin qui n'a point de lait baveux, puant, puant, qui édeux heures à t'affûter devant que ton marteau en puisse sonner une, va en puisse ieonnirai va. \nM\n Dorothée m'amour venez.",
+          "Je m'en éclaircirai bien tôt, demeure ici, caches toi, épie bien si tu tu verras entrer ou sortir quelqu'un de la maison de Victoire, va après, tâche à le connaître, et s'il parle pren garde à entendre ce qu'il dit, et dis faux pas. \nN\n Laissez m'en le soin, tu me veux cacher cy derrière. \nM\n Iosse hausse la tête peur sortir du charnier ou monument, et voyant Narcisse aller celle part, se retire et dit.",
+          "M\n Cela ne peut être, pource que si tôt que je m'aperçois de son altéraion, ie votre mon propos en chose ie juge être conforme à sõ humeur, et pour autant que sans sais qu'on ne peut faire plus grand plaisir à une fête que la louer de beauré quelque homme dy, mes yeux ne voient rion de plus beau que vous, et crois certainement que la splendeur de votre visage est forte assez d'enflammer tous ceux qui vous regardent.",
+          "et me montrez quelqu'autre secret, car après avoir prendrai celui que plus me plaira. \nM\n En cette phiolle est du lait de la mère et de la fille, lequel incorporé avec farine en faut faire un tourteau, et icelu ire cuire soubs les braises, ayant premièrement écrit d'un côté Cupidon et Venus et de l'autre le nom de celui qu'on aimé, puis le bailler manger à l'amoureux."
+        ]
+      },
+      "top_5_persons": [
+        "M",
+        "N",
+        "Léonard",
+        "N",
+        "Blaise"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Troyes",
+          "frequency": 10
+        },
+        "related_sentences": [
+          "Il y a environ dix ans peu plus ou peu moins, je ne m'en puis souvenir, qu'Antoine votre frère partit de Troyes non à autre occasion, sinon par ce que Madame Constance, laquelle il aimait sur toutes choses fut donnée par son père en mariage a Léonard Il me fit par contrat que ici porte, une libre et franche donnation entre vifs de tous les biens et facultés qui lui étaient escheuz par la succession de son père.",
+          "Je dis ainsi pource que ce matin j'en ai longuement devisé avec Madame Constance, laquelle m'a envoyé quérir rout exprès, et entre autres choses m'a dit, qu'il y a environ un mois que Léonard son mari estoir parti de Troyes pour aller en Allemagne trouver Antoine, afin de le ramener à Troyes Je vous dirai d'avantage qu'à ce soir elle attend et l'âme et l'autre, vous en faites l'ébahi.",
+          "Oui le temps est dit être père de la vérité, mais quand pensez -vous retourner à Troyes A. Ce soir, ou demain de grand matin, j'envoyerai mon laquais devant quérir mon chal et dire qu'on m'attende à la Trinité, pource que passant par la, Seigneur désire voir un mien ami qui est demeuré malade aux rai à la ville.",
+          "Combien je suis aise que GeO rard a prins résolution de venir ce soir avec moi à Troyes, et beaucoup plus, de ce qu'il m'a découvert les tromperies et trahisons de celle qui faisait semblant m'aimer sur toutes choses, voire plus que sa propre vie.",
+          "Et où as tu été qu'on ne t'a point vu ce fourd'hui? \nBar\n À Troyes, allé quérir la fille de Madame Spinette Bl."
+        ]
+      },
+      "top_5_places": [
+        "Troyes",
+        "Rome",
+        "Lyon",
+        "Troyes",
+        "Dijon"
+      ]
+    }
+  }
+}

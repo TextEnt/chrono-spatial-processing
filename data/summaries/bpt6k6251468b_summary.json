@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "author": "Rosimond, Claude Rose",
+    "title": "Les trompeurs trompez, ou Les femmes vertueuses . Comédie. Du sieur Rosimond,... représentée sur le Théâtre royal du Marais",
+    "publication_date": "1671",
+    "document_id": "bpt6k6251468b"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "FABRICE",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "FABRICE\n DE la part d'un Cresus, p'un homme, qui prétend vous accabler d'écus, Vieux à la vérité, mais pourtant assez drôle, Pour jouer en amour encor un peu son rôle, Mon maître enfn, Seigneur viens vous dire que l'amour, Qu'il a pour vos appas le ronge nuit et jour.",
+          "Et pour plus sûrement faire notre entrevue, Comme quelque voisin peut être dans la rue, Qui le voyant entrer, pourrait bien en jaser, J'il me veut obliger, il doit se déguiser, Se rendre par l'habit à mon mari semblable, Et tout par ce moyen quelque lera favorable. \nFABRICE\n Il suffit.",
+          "Oui, Fabrice, dis même que j'approuve sa flamme, Qua son rare mérite à su toucher mon âme, Et que, s'il m'aime tant, il peut me venir voir, Librement sur les neuf à dix heures du soir;",
+          "Fabrices Si tu m'aimes un peu, rends moi ce bon office, \nFABRICE\n Nenni, nenni, voyez un peu le bel emploi, J'irais pour vos beaux yeux corrompre les gens!",
+          "FABRICE\n riète à la faifierie, et me dis franchement jus porter ton maître à ce déguisement, Plus j'y ponse, Gusman, et moins j'en vois la cause."
+        ]
+      },
+      "top_5_persons": [
+        "FABRICE",
+        "ARISTE",
+        "Gusman",
+        "Julie",
+        "Damon"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Ar grâce et Privilège du Roi donné à Paris T le 19.",
+          "Le Scène est à Paris"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "PARIS",
+        "Ville de Paris"
+      ]
+    }
+  }
+}

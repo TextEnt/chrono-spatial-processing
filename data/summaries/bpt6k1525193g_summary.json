@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Les oeuvres de Monsieur de Molière. Tome 7 / , reveuës, corrigées et augmentées [par Vivot et C. Varlet, sieur de La Grange]... [T. I-VI.] - Les Oeuvres posthumes de Monsieur de Molière. T. VII [-VIII], imprimées pour la première fois en 1682...",
+    "publication_date": "1682",
+    "document_id": "bpt6k1525193g"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "MOLIÈRE",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "et je ferais craindre aux Maris la différence qu'il y a de leurs manières brusques, aux civilités des Galants. \nMOLIÈRE\n Ahi, laissons cela, il n'est pas question de causer maintenant, nous avons autre chose à faire. \nMademoiselle BEJART\n Mais puisqu'on vous a commandé de travailler sur le sujet de la Critique qu'on a faite contre vous, que n'avez-vous fait cette Comédie des Comédients dont vous nous avez parlé il y a longtemps, c'était une affaire toute trouvée, et qui venait fort bien à la chose, et d'autant mieux, qu'ayant entrepris de vous peindre, ils vous ouvraient l'occasion de les peindre aussi, et que cela aurait aurait pu s'appeler leur portrait, à bien plus juste titre que tout ce qu'ils ont fait ne peut être appelé le vôtre;",
+          "Comment cela se pourrait-il faire, car il n'y a point de personne au monde qui soit moins façonnière que moi. \nMOLIÈRE\n Cela est vrai, et c'est en quoi vous faites mieux voir que vous êtes excellente Comédienne de bien représenter un personnage, qui est si contraire à votre humeur: tâchez-donc de bien prendre tous le caractère de vos rôles, et de vous figurer que vous êtes ce que vous représentez.",
+          "Notre cher, et bien amé DENIS THIERY, Marchand Libraire, Imprimeur, et ancien Consul des Marchands à Paris, Nous a fait remontrer, qu'il a traité avec la Veuve de feu Jean Baptiste Poclin de Molière, d'un Manuscrit intitulé, Recueil des Oeuvres Posthumes de I. B. P. de Molière, contenant le Dom Garcie de Navarre, ou le Prince jaloux;",
+          "Je vous laisse à penser si tous ceux qui se croient satyrisez par Molière, ne prendront pas l'occasion de se venger de Seigneur en applaudissant à cette Comédie \nBRECOURT\n Sans doute, et pour moi je réponds de douze Marquis, de six Precieules, de vingt Coquettes, et de trente Cocus, qui ne manqueront pas d'y battre des mains. \n",
+          "et quel avantage pensez-vous qu'en prendront tous vos ennemis? \nMademoiselle DE BRIE\n En enet y iuioit cencurer avée rerpeet envers le Roi, ou demander du temps davantage. \nMOLIÈRE\n Mon Dieu, Mademoiselle, les Rois n'aiment rien tant qu'une prompte obéissance, et ne se plaisent point du tout à trouver des obstacles."
+        ]
+      },
+      "top_5_persons": [
+        "MOLIÈRE",
+        "CHARLOTE",
+        "ÉLISE",
+        "D",
+        "DAPHNE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Castille",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Il faut que de ma main un illustre attentat Porte une mort trop due au sein de Mauregat, Que j'aille prévenir par une belle audace, Le coup, dont la Castille avec bruit le menace, Et j'aurai des douceurs dans mon instant fatal, De ravir cette gloire, à l'espoir d'un Rival.",
+          "Oui, je suis Dom Alphonse, et mon sort conservé, Et sous le nom du sang de Castille élevé, Est un fameux effet de l'amitié sincère, Qui fut entre son Prince, et le Roy nôtre Père.",
+          "Il a tenté Léon, et ses fidèles trames, Des grands, comme du peuple ont pratiqué les Tandis que la Castille armait dix mille brans, Pour redonner ce Prince aux vœux de ses États;",
+          "Je m'opposais encor, ce qu'au sang de Castille, Du feu Roi de Léon, semble devoir la Fille;",
+          "Oui, Madame, et ce Frère en Castille élevé De rentrer dans ses droits voit le temps arrivé."
+        ]
+      },
+      "top_5_places": [
+        "Castille",
+        "Paris",
+        "Castille",
+        "Lolr",
+        "Burgos"
+      ]
+    }
+  }
+}

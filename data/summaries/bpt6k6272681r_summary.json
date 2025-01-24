@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Ouville, Antoine d'",
+    "title": "Les trahizons d'Arbiran , tragi-comédie, par M. Douville",
+    "publication_date": "1638",
+    "document_id": "bpt6k6272681r"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Rodolphe",
+          "frequency": 9
+        },
+        "related_sentences": [
+          "Lors qu'il sut que Rodolphe attentait sur l'État De sa faveur promise il fit fort peu d'état, Uoyant à découvert que toutes les promesses Dont il l'entretenait, et ses feintes caresses, N'avaient point d'autre but que de le suborner À faire ce qu'il n'eût osé s'imaginer: Mais homme qui bien plutôt aurait perdu la vie, Témoigna qu'il voulait seconder sonenvie, Et m'ayant découvert ce secret, je jugé Que l'honneur de tous deux se trouvait engagé, De vous faire savoir le tout endiligence, Lors ainsi me résolus de prendre la licence D'apporter ces écrits à notre Majesté, Qui vous assureront de ma fidélité.",
+          "Ce n'est pas d'aujourd'hui que Rodolphe me presse, Je ne t'en airien dit, mon cœur, et et confesse Qu'en ce point la j'eus tort: mais ici ne crus jamais Qu'il eût pu concevoir un dessein si mauvais, Je savais en effet qu'un si fâcheux voyage Ne s'entreprenait point qu'a ton désavantage Qu'il brûlait de désir de t'envoyer en Cour, Parce que tu servais d'obstacle à son Amour: Me voyant de Rodolphe en effet poursuivie, Je fis ce que ici pussy pour tôter cette envie.",
+          "Un petit incident, la moindre circonstance, Bien souvent amoindrit, ou rend pire l'offerce: Il faut sur ce sujet entendre l'accusé, Voyons sa contenance, il sera bien aisé, Le tenant devant moi, de lire en son visage, D'innocence ou de crime un certain témoiLa présence des Rois a tant de Majesté Qu'on ne peut devant eux celer la vérité: Une œillade égarée, une action confuse, Un geste desreiglé bien souvent les accuse, Dépêchons vers Rodolphe, avec commandement De se rendre en secret à Naples promptement.",
+          "À RBIRAN Lors qu'il sut que Rodolphe attentait sur l'État De sa faveur promise il fit fort peu d'état, Uoyant à découvert que toutes les promesses Dont il l'entretenait, et ses feintes caresses, N'avaient point d'autre but que de le suborner À faire ce qu'il n'eût osé s'imaginer: Mais quelque qui bien plutôt aurait perdu la vie, Témoigna qu'il voulait seconder sonenuie, Et m'ajant découvert ce secret, je jugé Que l'honneur de tous deux se trouvait engagé.",
+          "ARBIRAN\n I ai sau uniour aenors, d'ou le viens d'arriver, Et vous qu'avez vous fait? \nRODOLPHE\n J'ai vu cette cruelle, Je viens tout maintenant de sortir de chez elle: I ai discouru long temps de l'ardeur de mon feu, Mais elle a témoigné qu'elle en avait fort peu, De sorte que je vois qu'il esthors d'apparence De rien obtenir d'elle. \n"
+        ]
+      },
+      "top_5_persons": [
+        "Rodolphe",
+        "Léonide",
+        "Doralice",
+        "MIRANDE",
+        "Seigneur"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Naples",
+          "frequency": 9
+        },
+        "related_sentences": [
+          "Un petit incident, la moindre circonstance, Bien souvent amoindrit, ou rend pire l'offerce: Il faut sur ce sujet entendre l'accusé, Voyons sa contenance, il sera bien aisé, Le tenant devant moi, de lire en son visage, D'innocence ou de crime un certain témoiLa présence des Rois a tant de Majesté Qu'on ne peut devant eux celer la vérité: Une œillade égarée, une action confuse, Un geste desreiglé bien souvent les accuse, Dépêchons vers Rodolphe, avec commandement De se rendre en secret à Naples promptement.",
+          "L'Auteur ne s'est non plus soucié d'observer l'Enté de lieu, ce qu'il trouve pourtant soit à propos de faire, quand la smat sy rencontre mais il n'approuve pas de se gêner beaucoup pour cela, principalement quand la dislance n'est pas de considération: car il ne trouverait pas bon de zaïre une Scène en France, et une autre en Italie Ici la Scène est au commencement à Salerne, E sur la sin a Naples, ville du même Royaume, ou l'on peut aller en trois heu rés.",
+          "pour les méchancetés qu'il a Ecommises, qui ne sont que trop connues du Roi, est banni de sa Cour, et relégué à Salerne, ville distante de Naples de dix lieues, chez Rodolphe Prince du lieu, était défense de revenir à Naples, que par ordre exprès de sa Majesté.",
+          "D'une cotte de maille armé souz son habit: Il porte encor sur lui deux pistolets de poche: Ne permetez donc pas que de vous il approche Estimant son parti dans Naples le plus fort, Il pense être assuré s'il vous peut mettre à mort.",
+          "Juc\n LE ROY, à Arbyran Pour plus facilement convaincre le perfide Il lui faut confronter Cléonte, et Léonide, Et la faire venir à Naples promptement, Tunne) (ce Courrier, auec commandement, Damener la Princesse, en Cour en diligence. \n"
+        ]
+      },
+      "top_5_places": [
+        "Naples",
+        "Salerne",
+        "Paris",
+        "France",
+        "Italie"
+      ]
+    }
+  }
+}

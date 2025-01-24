@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Corneille, Pierre",
+    "title": "Oedipe, tragédie par P. Corneille",
+    "publication_date": "1660",
+    "document_id": "bpt6k1280331f"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Dircé",
+          "frequency": 12
+        },
+        "related_sentences": [
+          "Non, ma fille, et du moins nous aurons quelques jours A demander au Ciel int plus heureux secours, On prépare à demain après d'autres victimes, Le peuple ne veut pas que vous payiez ses crimes, Il aime mieux périls qu'être ainsi conservé, Et le Roy même, encor que vous l'ayez bravé, Sensible à vos malheurs autant qu'à ma prière Vous offre sur ce point liberté toute entière. \nDIRCE\n C'est assez vainement qu'il m'offre un si grand Olen, Quand le Giel ne veut pas que ie ans apprendre rien, Et ce n'est pas à lui de mettre des obstacles Aux ordres souuerains que donnent ses Oracles, DACSTE.",
+          "De mes plus chers désirs ce partisan sincère En faveur de l'amant tyrannise le frère, Et partage à tous deux le digne empressement De mourir comme frère, et vivre comme amant. \nDIRCE\n Ô du saug de Lajus preuuez trop manifestes, Le Ciel vous destinant à des flammes incestes, A su de votre esprit déraciner l'horreur Que doit faire à l'amour le sacré nom de sœur : Mais si sa flamme y garde une place usurpée, Dircé dans votre erreur n'est point enveloppée Elle se défend mieux de ce trouble intestin, Et si c'est votre fort, ce n'est pas son destin.",
+          "Mais si jamais d'ailleurs on peut vous secourir, Peut-être que le Ciel me faisant mieux connaître, Si-tôt que vous vivrez, sans cesserai de l'être, Pces Car on n'aspire point à calmer son courroux, Et ne veux, ni mourir, ni vivre que pour vous. \nDIRCE\n Cet amour mal éteint sied mal au cœur d'un frère, Où le sang doit parler, c'est à lui de se taire, fat a tort que lans erme n'une peue pruo durer, Pour ses feux les plus ifs il est temps d'expirer.",
+          "Nous ne savons pas bien cõme agit l'autre monde, Il n'est point d'œil perçant dans cette nuit profonde, (bras, Et quand les Dieux vengeurs laissent tomber leur Il tombe assez souvent sur qui n'y pénie pas. \nDIRCE\n Deust leur décret fatal me choisir pour victime, Si j'ai part au courroux, quelque n'en veux point au crime Je veux m'offrir sans tache à lun bras tout-puissant Et n'avoir à verser que du sang innocent.",
+          "Qu'il vous remplit le cœur d'une attente frivole, Qu'au Prince Æmõ pour vous j'ai donner ma parole, Que me perdrai le sceptre, ou saurai la tenir: Puissent, si belle la romps, tous les Dieux m'en punir, Puille de prus de laux M accabier sûr corere, Qu'Apollon n'en prédit jadis pour votre frère. \nDIRCE\n N'insultez point au sort d'une enfant malheureux, Et faites des serments qui soient plus généreux."
+        ]
+      },
+      "top_5_persons": [
+        "Dircé",
+        "Phorbas",
+        "Jocaste",
+        "Laius",
+        "DIRCE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Corinthe",
+          "frequency": 12
+        },
+        "related_sentences": [
+          "Souscrivons donc, Madame, à tout ce qu'elle ordonne, Couronnons cet amour de ma propre couronne, Cédons de bonne grâce, et n'embrassons plus tant, Un trône héréditaire à Corinthe m'attend, À mon ambition ce trône peut suffire, Et pour ses prîtis grauseœuise ère eanen d'vnEmpire, Mais vous souvenez-vous que vous avez deux fils, Que le courroux du Ciel a fait naître ennemis, Et qu'il vous en faut craindre un exemple barbare, A moins que pour se leur destin les répare? \n",
+          "J'ai tué le feu Roi jadis sans le connaître, Son fils qu'on croyait mort vient ici de renaître, Son peuple mutiné me voit avec horreur, Sa vefue mon épouse en est dans la fureur, Le chagrin accablant qui me dévore l'âme Me fait abandonner, et peuple, et sceptre, et femme, Pour remettre à Corinthe un esprit éperdu;",
+          "Je vais donc à Corinthe achever mon supplice: Mais ce n'est pas au peuple à se faire justice, L'ordre que tient le Ciel à M choisir des Rois Ne lui permet jamais d'examiner son choix, Et le devoir aveugle y doit toujours souscrire Jusqu'à ce que d'enhaut on veuille s'en dédire.",
+          "À regret Ses remords en mourant ont rompu le secret, Il vous gardôt encore une aissitie Iort tenidre : Mais le compte qu'aux Dieux la mort force de rendre A porté dans son cœur vu si pressant effroi, Qu'y a remis Corinthe aux mains de son vrai Roi.",
+          "Seigneur, il faut ici faire reste à l'orage, Il faut faite ici ferme, et montrer du courage, Le repos à Corinthe en effet serait doux, Mais il n'est plus de sceptre à Corinthe pous vous."
+        ]
+      },
+      "top_5_places": [
+        "Corinthe",
+        "Lajus",
+        "Grèce",
+        "Thebes",
+        "Paris"
+      ]
+    }
+  }
+}

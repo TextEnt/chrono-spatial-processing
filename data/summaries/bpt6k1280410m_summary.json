@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Les amans magnifiques, comedie meslée de musique, & d'entrées de balet Par J. B. P. de Moliere",
+    "publication_date": "1689",
+    "document_id": "bpt6k1280410m"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Neptune",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Empiretôt une haute, est fertile en très, Tous les mortels en foule accourent sur ses bords, Et pour faire bientôt une haute fortune, Il ne faut rien qu'avoir la faveur de Neptune Pour le Marquis de Villeroy, représentant un Dieu Marin.",
+          "Le Chœur de la Musique annonce la venue de Neptune, et tandis que ce Dieu dance avec sa suite, les Pêcheurs, les Tritons, et et Jieuves accompagnent ses pas de gestes différents, et de bruit de conques de Perles.",
+          "Neptune le grand Dieu, Neptune avec sa Cour Vient honorer ce beau jour De son Auguste présence.",
+          "OUOguez sur cette Mer d'un zèle inébranlable, C'est le moyen d'avoir Neptune favorable.",
+          "Mais le Neptune est consiant."
+        ]
+      },
+      "top_5_persons": [
+        "Neptune",
+        "Pantomimes",
+        "Princesse",
+        "ASTE",
+        "Venus"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Grèce",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "uont le blas à n glorieusement contribué à nous défaire de ce déluge de Barbares qui ravageait la Grèce Est-il possible dis-je, qu'un homine si assuré dans la guerre soit si timide en amour, et que je le voie trembler à dire seulement qu'il aime? \nOSTRATE\n Ah!",
+          "de vous souvenir, s'il vous plaît, que Sostrate est revêtu d'un mérite, qui s'est fait connaître à toute la Grèce, et que let ou le Ciel l'élève aujourd'hui, va remplir toute la distance qui était entre lui et vous. \n"
+        ]
+      },
+      "top_5_places": [
+        "Grèce",
+        "Bergère"
+      ]
+    }
+  }
+}

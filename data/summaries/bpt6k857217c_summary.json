@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "author": "Du Perche, Nicolas",
+    "title": "L'Ambassadeur d'Affrique comedie . Par le sieur Du Perche",
+    "publication_date": "1666",
+    "document_id": "bpt6k857217c"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "CRISPIN",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Une âme accomplie Comme la vôtre l'est Seigneur, Nest point sujet à cette erreur, Vous avez connaissance Consonnante à votre naissance, Vos vertus sont dans un degré. \nCRISPIN\n Vous me connaissez à mon gré, Bien mieux que je ne fais moi -même, Car cette science suprême, Ces vertus, et tous ces appas 3 Qu'en moi vous trouvez à tous pas N'e m'étaient en aucune sorte ontidey umlodéladlo mn morte.",
+          "Le Chemin le plus racourci, N'est pas plus long si je m'e plique Que d'ici jusques en affiique 2 Oy donc pour vous conduite mieux Crispin n'ayant point de commerce En Afrique ici dans la perle Conclud concluant de bon cœur Qu'ici eit sitien j' eus \nLELIE\n Tu n'as l'esprit de comprendre Mon sens CRISPIN",
+          "Vous voyez qu'on n'ose démordre Devant ici, tu tremble de peur, Pour vous de sa mauvaise humeur S'il vient a savoir votre flamme, v ous éltes perdu lui Mon alnes Tâchez à déguiser si bien, Qu'il ne vous soupçonne de rien. \nCRISPIN\n À la fin assez perds patience Dictes Monsieur, votre intendance Agréra",
+          "Il tire s'ilment en lerantant l'âme, Le tiaple emporte les moineaux. \nLELIE\n Le ciel à fini nos trauaux Madame, cette mort vous laisse Lieu d'accomplir votre promesse \nCRISPIN\n Vous allez bien vite à l'offrande Toubeau, patience un moment vous ne faites pas compliment Et ne de mandez pas auluiste",
+          "Pour multiplier votre lustre, Et prouver à tout l'Univers, Qu'il fait gloire d'être en vos fers, Veut que ma débile éloquence, Vous extolle la violence, Du désir qu'il à d'être à vous, Et de deven voltte ellepoua, Mais hélas ! \nCRISPIN\n Mais hélas!"
+        ]
+      },
+      "top_5_persons": [
+        "CRISPIN",
+        "L'ALLEMAND",
+        "Roi",
+        "Alleluya",
+        "Seigneur"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Afrique",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Le Chemin le plus racourci, N'est pas plus long si je m'e plique Que d'ici jusques en affiique 2 Oy donc pour vous conduite mieux Crispin n'ayant point de commerce En Afrique ici dans la perle Conclud concluant de bon cœur Qu'ici eit sitien j' eus \nLELIE\n Tu n'as l'esprit de comprendre Mon sens CRISPIN",
+          "CRISPINIe nay point de Correspondance En Afrique, et ne veux avoir Rien a faire à cette Homme noir Videz vos affaires vous même \nLELIE\n Ah?"
+        ]
+      },
+      "top_5_places": [
+        "Afrique",
+        "Paris",
+        "France",
+        "Suisse"
+      ]
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": null,
+    "title": "Le Theatre Francois, contenant Le Trebuchement de Phaëton, La Mort de Roger, La Mort de Bradamante, Andromede delivrée, Le Foudroyement d'Athamas, et La Folie de Silene",
+    "publication_date": "1625",
+    "document_id": "bpt6k1090305r"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "POLITE",
+          "frequency": 15
+        },
+        "related_sentences": [
+          "Doncant les premiers fruits de tes embrassements, A son sein, tout flétri par la longueur des ans, Ainsi elle t'enlève, \nPOLITE\n Ô Diena que de mène, Dois-je croire à mes yeux, croirai-je à mes oreilles? \nAN\n Aidée à ce dessein par un sien serviteur, Tyrsis, elle te prend, et Melie ta sœur, Tous deux en même temps, votre âge jeune, et tendre, Pauvres petits enfants, ne se pouvait défendre: Come ils sont dans un bois, on sont qu'un fort someil, Les surprend tout soudain, et leur fait clore l'œil, Alors leur reprenant cette proie ravie, Je te pris, mon Tirfis, et lui laissai Melie, Lui laissant quant et quant, un éternel désir, Un éternel ennui d'vn si soudain plaisir;",
+          "Ô grand Dieu des Pasteurs, à bon droit adoré, Ton saint Temple sera de nos vœux honoré. \nCORILE\n Deux fois tu es mon père, et puis à bon droit dire, Que remnamcemtor, partaiselle ropire Deux fois l'air d'Arcadie \nPOLITE\n Il me faut approcher, C'est trop en se cachant ma liesse cacher;",
+          "Oui, quand ils ont de bones armes, Mais ma foi votre pauvré étoc, Faudrait en approchant du choc. \nPOLITE\n Non, non, j'ai encore la force, ji De lãchersouuent vne amorce, Les vieux, savent mieux les détours, Que les plus jeunes en amours.",
+          ", pleurez le malheur de Tyrs Cependantil me faut obéir à leurs charmes, Rechanter en mon roc quelques sinistres carmes, Pour adoucir ma peine, et mes cuisants soucis, Pleurez Nymphes, pleurez le malheur de Tyrs SCÈNE II CORILE, TYRSIS, POLITE \nCORILE\n Trsis",
+          "Mais ne te fâche point, prends courage mon père, Les Dieux était le temps détourneront arière, De menenej innocen le mameni quein coi, Adieu mon père, adieu, ie ainsi faillir ma voix. \nPOLITE\n Ha!"
+        ]
+      },
+      "top_5_persons": [
+        "POLITE",
+        "Roger",
+        "Tyrsis",
+        "Andromède",
+        "Bradamante"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 15
+        },
+        "related_sentences": [
+          "Si personne puis obtenir cela de vous, et que la preuve de ma bonne volonté, bien que faible, vous soit agréable, mes contentements reront arivez à leur période, et me donerai la vanté de crois EXTRAIT DU PRIVILÈGE D D IDu Roi. \nMH\n Ar grâce, et Privilège du Roi, il est permis à PAUL MANSAN, Maître Imprimeur à Paris, d'imprimer, où faire imprimer, vendre, et distribuer, en un, où plusieurs volumes, ensemble, où a part, une: LE -THÉÂTRE FRANÇOIS, contenant plusieurs Tragédies, Tragne-comédies, Pastorales, Intermédes, Prologues, et Comédies Françaises, de divers Auteurs, A sçauoir, Le Trébuchement de Phaéton La Mort de Roger La Mort de Bradamante La Folie de Silène, et autres semblables œuvres.",
+          "Ta haine en mon endroit à mal pris sa racine, Ce n'Au de cas d'afronter une Alcine, Tu pouuois bien penser de raison dégarni, Que tel forfait jamais ne mourait impuni: Ia des peuples glacés une innombrable presse, Et de ceux que Phœbus de ses rayons opresse, Ala mort résolus, par l'afront animés, Pour tirer ma raison s'acheminent armés: Ton Charles, son Paris, et toute sa séquelle Me payeront le prix de ma iuste querelle;",
+          "où ayant été conduit par ce courier, il fut assailly, et mis à mort par Ganes et toute sa parẽté. Cependant Rosemont et les siens furent défaits, et contraints de lèver le siège de devant Paris Alcine voyant Roger mort, regrette sa perte, et le fait inhumer honorablement, qui est la conclusion du ALCYNE Magicienne. \nDAMOISELLE d'Alcine\n RiiiTRoy des Turcs.",
+          "Chaque chef courageux exhorte ses gendarmes, De montrer con tre nous la valen, tième armes, D'un assaut général nous venant investir. \nCHARLES\n Il pense de plein saut nous pouvoir engloutir, Qu'il soit aisé de mettre un Paris tout en cendre, Plus vite qu'il n'y vient on le fera décendre;",
+          "ceux de dans de tout abandoner: En ce premier assaut on voit come en balance La perte de notre ost, où la perte de France Paris étant à nous, il ne faut plus douter, Qu'au reste du pays rien puisse résister;"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "France",
+        "PARIS",
+        "Silène",
+        "Nil"
+      ]
+    }
+  }
+}

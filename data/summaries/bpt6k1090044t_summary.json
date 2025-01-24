@@ -1,0 +1,47 @@
+{
+  "metadata": {
+    "author": "Auvray, Jean",
+    "title": "L'Innocence descouverte, tragi-comédie",
+    "publication_date": "1628",
+    "document_id": "bpt6k1090044t"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Fabrice",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "On n'est point obligé d'exécuter un mal, Êtez la moi d'ici, que ce monstre infernal A jamais exilé avec ses deux complices, Aille au gouffre d’Æthna trouver ses maléfices, SequestreZ, arrachez cette pesie de nous, Et que Fabrice soit dès maintenant absous. \nThomas\n Adieu cuisine, adieu, adieu grâces marmites, Adieu broches, landiez, cueillers et lèchefrites, Adieu douces vapeurs qui des pots s'exallaient, Alors qu'au pres du feu par bannons sautelaient, Adieu petits pâtez, adieu te verrée, De vin qui distillait sur ma langue altérée, Adieu, Thomas s'en va dedans un bois reclus, Ou par être trop saoul il ne a plus. \nFabrice\n Seigneur que tes secrets sont cachés à nos yeux, N'aguères avoir servais de blanc à la fortune, Et n'ayant offensé les hommes et les Cieux, Les hommes et les Cieux tramaient mon infortune.",
+          "La mère espouuentée avec sa nourrice, et voyant l'inconvénient avenu à son fils, fait accroire à son mari lequel était venu de sadite métairie que ledit Fabrice l'avait empoisoné, pour lequel ledit breuage avait été apprêté, lequel est prins et lié par son père, et mené deuant le Sénat, auquel lieu après avoir été accusé par les susdits témoins, est condamné d'avoir la tête trenche: le Medecin survient sur la prononciation de l'arrêt, lequel fait retarder l'exécution, et conte audit Sénat comme le tout s'était passé, et mène quelques Seigneurs dudit Sénat au cercueil dudit Antoine, Seigneur frotte les temples de cerain onguent, lequel le fît revenir en sa prenière convalescence, et leur dit comme il a. uoit pris ceste composition.",
+          "Ut mhal se doit prévoir avant l'exécuter, Mais étant survenu on le doit supporter, Comme contre son faix la palme se redresse, Il convient repousser le malheur qui nous presse, Je vous pry par ce presse de vos doigts enfantins Le premier passetemps, par ces maigres tétins Qui dedans le berceau esprit enfance allecèrent, Par ces débiles mains qui vous emmaillottèrent, Par ces yeux décharnez, par ces tremblants geneux, Re me plus ainsi vôtre estomach de coups Seren vostre face, et de ce maléfice Accus finement vôtre ce Fabrice, Fa que par y il auroit forcené Ainsi funestement son frère empoisonné, Et mal extrême veut extrême remède:",
+          "Or comme hier au soir Anthoine revenait Des champs et qui la soif extrême le pressait, Fabrice cauteleux, d'vn simulé visage, Lui donne dans un verre un feunête breuage, Et pour mieux tout soupçon de son esprit ôter, Ce fratricide feint le premier en goûler, Mais si tôt le pauurer ceste liqueur eut beuë il sentit promptement le poison qui le tuë. Il mourut, et mourant prononça ces propos, Adieu mon frère, adieu, un éternel repos Me va fermer les yeux, pendant qu'une furie D'un remors continu bourrelera ta vie. \n",
+          "bien d'Amour l'inévitable flèche Au cœur de ton Fabrice aurait fait une brèche Ses sens enamourez voudraient ils pas avoir Un subier receptible à les bien recevoir, Oui l'amour n'est amour sans quelque symettrie, Ces jeunes n'aiment point la vieillesse flétrie, Le chaud auec le froid ne peut symboliser, Mais quand bien tu verrais son âme s'embrazer D'on amou, mutuel D' un la mutuel et Que la tes me enflameroit son me, Ô folle aurait tu bien si peu de jugement Que d'un désir lascif l'aimer lascivement?"
+        ]
+      },
+      "top_5_persons": [
+        "Fabrice",
+        "Thomas",
+        "Thomas",
+        "Le",
+        "Le Père"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "louvre",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Ià mon front crystin de main noire ride 0 N'est plus comme il soûlait le louvre et le séjour, Et le Corail besson de mes très sucrines, 417 Des grâces, des hautés de Cypris et d'Amour: Mes joues ne sont plus neigeusement pourprines, Palle ne semond plus un amoureux baiser Qui pouvait les plus froids doucemont embraser, Bref assez ne semble plus qu'une tronche animée, Qu'Un phantôme ombrageux, qu'une idole enfumée, Dont le moite cerveau distille incessamment Par ses canaux communs vn fœtide excrément:"
+        ]
+      },
+      "top_5_places": [
+        "louvre",
+        "Palestine"
+      ]
+    }
+  }
+}

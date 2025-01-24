@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Gillet de La Tessonerie",
+    "title": "Le desniaisé , comédie. [par Gillet de La Tessonerie]",
+    "publication_date": "1648",
+    "document_id": "bpt6k1513897n"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ARISTE",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Je suis un faux matin, Sans moi dans vos amours vous auriez vôtre compte, Car Lisette m'a dit que l'Intendant d'Oronte Sans elle nous allait enne jer a bana teau, Mais que de quelque espoir flattant le jouuenceau Elle avait empêché qu'on nous envoya paître: \nARISTE\n Mais ce n'est qu'un rêveur, \nJODELT\n Il est cru de son maître Qui le tient fort sçauant, et le croit fort discret, Mais de Climante aussi dites moi le secret, Aimerait-il Olympe \nARISTE\n Oui, Jodèlet, il l'aime Pour elle son amour passe jusqu'à l'extrême, Et j'ai bien reconnu qu'il trouve les moyens D'expliquer ses désirs en débitant les miens.",
+          "Que ferais-tu? \nARISTE\n Hé bien traître ORONTHE en regardant Clémanthe \nClimante\n \nARISTE\n Approne jame comoorseré. \nLIMANTE\n Tu ne parlerat pas toujours si hardiment. \nARISTE\n Tu ne jouras plus au moins impunément, Si j'ai passé pour sot en fin j'ai l'avantage, De te voir aujourd'hui jouer mon personnage, Et le voir d'autant mieux que ton esprit rusé Ne peut plus m'empêcher d'être déniaisé,",
+          "Qu'a cela de commun au feu qui vous consomme De vous faire introduire à titre de jeune homme, Et pourquui ne peut-il paranguer ses amours Sans vous faire parler et chercher ces détours? \nARISTE\n Tu sais bien que d'Oronte elle fut enlevée Que pur tout de te tâtne on ja voit observée, Et qu'en fin ce jaloux l'ayant en son pouvoir Sans sa permise l'on ne la saurait voir.",
+          "CLIMANTE\n À la fin était conçois ce que vous souhaitez, Je dois parler ainsi faisant parler Ariste Qui récitant ces vers sous le nom de Caliste, Croyant parler pour soi fera l'amour pour vous, Et sera par ce trait l'amant et le jaloux. \nONTHE\n D'une mauvaise adresse auec celle que j'aime, En me croyant ioüer, il se joura toujours-même.",
+          "Ils sont allés faire les loups garour, Et croient vous jouer une pièce excellente. \nARISTE\n Pour les contrejouer d'une façon galante, J'ai fait au lieu de moi déguiser Ioclet, Qui loin de vous porter un amoureux poulet, Tient un écrit tout plein d'excuses ingénues Pour ne pouvoir venir à ces heures indues, Ou Ou vous dis qu'étant fort brave cavalier"
+        ]
+      },
+      "top_5_persons": [
+        "ARISTE",
+        "Lisette",
+        "TE",
+        "LISETTE",
+        "ISTE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Il est permis à Toussaint Quinet Marchand Libraire à Paris, d'imprimer, ou faire imprimer un livre intitulé Le Dèsniaisé Comédie, durant le temps de sept ans, à compter du jour que ledit liuresera achevé d'imprimer;",
+          "OUraiment vieux Rocantin vous me la baillez bonne, Ou ne haranguez point, ou ne raillez personne, Car si ici ne suis pas la perle de Paris Vous ne devez pas croire être le beau Paris ANCRACE.",
+          "Dedans Paris \nCLIMANTE\n Ne vous étonnez pas cher ami si ici ris, Était-ce depuis peu? \nTE\n ",
+          "La Scène est à Paris devant la maison d'Oronthe Te VIOLON.",
+          "Ar grâce et privilège du Roi donné à Paris le 9."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Provence",
+        "Rome",
+        "Bordeaux",
+        "Paphos"
+      ]
+    }
+  }
+}

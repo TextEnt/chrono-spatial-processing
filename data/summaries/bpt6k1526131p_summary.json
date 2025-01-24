@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": null,
+    "title": "Les Plaisirs de l'île enchantée : Course de bague, collation ornée de machines, comédie mêlée de danse et de musique, ballet du palais d'Alcine, feu d'artifice, et autres fêtes galantes et magnifiques, faites par le roi à Versailles, le 7 mai 1664...",
+    "publication_date": "1664",
+    "document_id": "bpt6k1526131p"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Moron",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Il était facile de juger que le mérite de ce Prince produisait son effet ordinaire, que ses belles qualités avaient touché se cœur superbe: et commencé à fondre une partie de cette glace qui avait résisté jusques alors à toutes les ardeurs de l'Amour, et plus il affectait, (par le conseil de Moron qu'il avait gagné, et qui connaissait fort le cœur de la Princesse,) de paraître insensible, quoi qu’il ne fut que trop amoureux, plus la Princesse se mettait dans la tête de l'engager, quoi qu’elle n'eût pas fait dessein de s'engager elle-même.",
+          "Je suis votre valet, et j'aime mieux qu'on dise, C'est ici qu'en fuyant sans se faire prier Moron sauva ses jours des fureurs d'un Sanglier, Que si l'on y disait, voilà l'illustre place Ou le vraut Ablbron, u on néroïque audace, Affrontant d'un Sanglier l'impétueux effort Par un coup de ses dents vit terminer son sort.",
+          "Ces heureux Chasseurs, n'eurent pas plutôt remporté cette victoire, que Moron devenu brave par l'éloignement du péril, voulut aller donner mille coups à la bête, qui n'était plus en état de se défendre, et fit toût ce qu'un fanfaron, qui n'aurait pas été trop hardi, eût pu faire en cette occasion;",
+          "elle en parla à Moron, qui fit passer cet insensible pour un brutal: Et enfin le voyant arriver luymesme, elle ne pût s'empêcher de lui en toucher fort sérieusement quelque chose:",
+          "Le voici qui s'entretient avec Moron nous saurons un peu dequoy il avait parle: Ne rompons point encore leur entretien, et prenons cette route pour revenin à leur rencontre, Les Piaillis TSCENE"
+        ]
+      },
+      "top_5_persons": [
+        "Moron",
+        "Aignan",
+        "Roger",
+        "Moron",
+        "Apollon"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Grèce",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "On publie en tous lieux que son âme hautaine Garde pour l'Hyménée une invincible haine, Et qu'un arc à la main, sur l'épaule un carquois, Comme une autre Diane elle hante les bois, N'aime rien que la Chasse, et de toute la Grèce Fait soupirer en vain l'héroïque jeunesse.",
+          "Je souhaite à la vérité que ton cœur puisse aimer qu'ellequ'un: Tous mes vœux seraient satisfaits si cela pouvait arriver, et je n'ai proposé les Fêtes et les Jeux que je fais célébrer ici, qu'afin d'y pouvoir attirer tout ce que la Grèce à d'illustre;",
+          "J'ai d'Itaque en ces lieux fait es en diligence, Et je couvre un effet de mes vœux enflammés Du désir de paraître à ces jeux renommés, Ou l'Illustre Iphitas, père de la Princesse, Assemble la plupart des Princes de la Grèce ARBATE.",
+          ", vient de m'assurer tout à l'heure, que votre cœur avait eu la bonté de s'expliquer en ma faveur, sur ce celebre choix qu'attend toute la Grèce ahunm 11 L'A PRINCESSE.",
+          "Si ces lieux fortuné ont tout ce qu'eût la Grèce De gloire, de valeur, de mérite et d'adresse;"
+        ]
+      },
+      "top_5_places": [
+        "Grèce",
+        "versailles",
+        "Paris",
+        "France",
+        "Brie"
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "author": "Grandval, Nicolas de",
+    "title": "Le Quartier d'hyver, comédie en prose mêlée de musique & de danses",
+    "publication_date": "1697",
+    "document_id": "bpt6k1090140h"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "MÁRTON",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Monsieur fait son Quartier auprès de Madame, pendant que Mrs les Officiers sont Oil Gumpagne Mon Quartier dure toute l'année à moi, Marton \nMÁRTON\n Il est vrai que vous autres xessieurs ne quittez guère Paris \nMr DE LA RICHARDIERE\n Je fais de temps en temps de petites Campagnes, où je vais toujours en Parti, bleu, rouge, verd, selon la saison, \nMÁRTON\n Ouï, vous êtes un bon Partisan vous, on sait bien cela vous allez fourager à Boulogne, à Saint Clou, à Vincennes mais les combats que vous donnez en ces lieux-là ne sont pas dangereux.",
+          "Oh bien, bien, quand je serai remariée ce qui arrivera bien tôt, si 'ai des Enfants comme jertipère, j'en ferunde pesits Officiers de bonne heure. \nMÁRTON\n Voilà qui est bien louable, Madame, de vous marier ainsi pour le Ser vice du Roi, il faudra vous faire coucher sur l'État \nMe SIMONET\n ",
+          "merci de ma vie, sortez d ici \nMe SIMONET\n Fais-moi parler à ta Maîtresse? \nMÁRTON\n Hélas bitu m engarde. \nMe SIMONET\n voyons donc Mr le Baron ? \nMÁRTON\n Ilest sorti \nMe SIMONET\n Je veux parler à Mr son Fils, LA ROSE.",
+          "L'expérience m'a rendu sçavante, Madame, et je devine à vos manières nobles et héroïques, que vous en aimez quelqu'un? \nMC IMIONET\n Ah, Marton, tu devines juste, et . \nMÁRTON\n Oh, oh!",
+          "Ah, Madame, pendant la Guerre, vive le Quartier d'Hiver. \nMÁRTON\n Sur tout pour celles qui comme vous ont uiniimiancen campagne, et qu'attendent que le retour pour être mariées."
+        ]
+      },
+      "top_5_persons": [
+        "MÁRTON",
+        "Marton",
+        "Rose",
+        "Mars",
+        "V"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Monsieur fait son Quartier auprès de Madame, pendant que Mrs les Officiers sont Oil Gumpagne Mon Quartier dure toute l'année à moi, Marton \nMÁRTON\n Il est vrai que vous autres xessieurs ne quittez guère Paris \nMr DE LA RICHARDIERE\n Je fais de temps en temps de petites Campagnes, où je vais toujours en Parti, bleu, rouge, verd, selon la saison, \nMÁRTON\n Ouï, vous êtes un bon Partisan vous, on sait bien cela vous allez fourager à Boulogne, à Saint Clou, à Vincennes mais les combats que vous donnez en ces lieux-là ne sont pas dangereux.",
+          "Quand ils seront venus, tu iras chercher les Hauts bois de la Compagnie, avec nos Musiciens et nos Dans Dragons, on ne leur a donné congé de venir à Paris que pour nous divertir: ils doivent être arrivés.",
+          "Ouï morbleu, c'est l'usage: toutes les Coquettes de Paris sont en Fiacres sur la route, qui attendent leurs Amants. \nMÁRTON\n Es",
+          "DE LA RICHARDIERE\n Non, Madame, à Paris, derrière les Chartreux"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Suisse",
+        "Flandre",
+        "Boulogne",
+        "Saint Clou"
+      ]
+    }
+  }
+}

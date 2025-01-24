@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "author": null,
+    "title": "L'Inconstant vaincu, pastorale en chansons",
+    "publication_date": "1661",
+    "document_id": "bpt6k8568033"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "LYSIS",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Quand vous verrez et l'Amour, et ses charmes, Possible aussi lui rendrez -vous les armes. \nÔEBAMENL\n Je crains même la rigueur de ce Dieu vainqueur, Car bien souvent il passe des yeux jusqu'au cœur. \nLYSIS\n Ne craignez rien, dans l'amoureux Empire Le mal n'est pas si grand que l'on le fait, Et lors qu'on aime, et lors qu'un cœur soupire, Son propre mal souvent le satisfait.",
+          "Ce qui pourrait l'obliger à la fuite, Je lui dirais. \nLYSIS\n Lors qu'à mes vœux Celimene contraire Se rit des maux que je souffre en aimant, Je fais dessein au fort de ma colère De la quitter, et j'en fais un serment, Mais un serment que le dépit fait faire, E ji Contre un bel œil qu'on aime chèrement, Autant en emporte le vent.",
+          "Que j'aime et que j'honore, Car il n'est point léger, Et de plus il m'adore. \nLYSIS\n Ne cachez donc plus, finette, Votre Amour, ni votre Amant, Un discours de compliment Fait voir une âme discrète;",
+          "Tant pis pour venir, s'il ne veut croire Ce que Pai défat uit tout haut, J'aime, il est vrai, mais c'est à boire. \nLYSIS\n Elle a l'esprit et le visage Tout plein de générosité,!",
+          "Que Bacchus est charmant, Qu'Amour a de malice, Et qu’il a d’ artifice rour tromper Et Aihant l \nLYSIS\n Rempli d'étonnement, Je consulte en moi-même Si tu dois préférer Celimène à Bacchus CELIMENE."
+        ]
+      },
+      "top_5_persons": [
+        "LYSIS",
+        "Celimène",
+        "Lysis",
+        "Bacchus",
+        "ALISON"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Il est permis à Estienne Loison, Marchand Libraire à Paris, d'imprimer, faire imprimer, vendre et débiter, un Livre intitulé, L'Inconstant Vaincu, Pastorale en Chansons, et ce durant le temps et espace de cinq années entières et accomplies, à compter du jour que ledit Livre aura été achevé d'imprimer:",
+          "Grâce et Privilège du Roi, donné à Paris Tle dernier jour de Janvier 1661"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "LYSIS",
+        "France",
+        "Bergère",
+        "Cabaret"
+      ]
+    }
+  }
+}

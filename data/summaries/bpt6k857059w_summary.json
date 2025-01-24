@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "author": null,
+    "title": "Tragi-comédie de la Rébellion ou mescontentement des Grenouilles contre Jupiter",
+    "publication_date": "1620",
+    "document_id": "bpt6k857059w"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Jupiter",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Jupiter\n 5 Vous voullez dont un Roi ô pauvres Grenouillards Afin de vous régir dons vos Marais épars, Bien vous en auriez un, le Cocyte j'en jure, Qui vous gouvernera avec toute droiture, Et contre qui les Rats les Guêpes les Fourmis Les Cérastes les Vers et autre ennemis Ne pourront subsister, parquoi en diligence Fuyez de devant moi abhorrable semence Ou bien sens vous ferai par le souffle importun Du venteux Boreas noyer dedans Neptun Pallustrine.",
+          "Et ravisse sans droit des autres Rois la terre, Si le grand Jupiter qui gouverne les Cieux: Se montrant indulgent; n'est du tout soucieux De nous donner un Roi pour régir notre terre Et nos Marêts bourbeux, déclarons toujours la guerre, Escaladons le Ciel et comme les Géants Qui furent inhumés dans les cnamps rmegreans, Couvrons de nos Soldats le seing de la Campagne Mettant ainsi comme sur Montagne sur Montagne.",
+          "Jupiter\n Je ne veux ravaller si bas ces Grenouillons, Que tu n'aille premier entendant leurs raisons: Car alors que Typhon, Mymas, et Encelade, Voulurent empiéter le Ciel par escalade, Ne vous souvient-il pas que leurs cris croassants, Allèrent tous les Dieux en sursaut resueillans.",
+          "Jupiter\n Vous voulez faire un Roi à votre fantaisie, Non, non, calmez vos cris, abaissez vôtre voix, Il se fallait tenir à votre Tronc de bois, Qui comme le Milan n'était point téméraire, Il salait l'honorer, et craindre ma colère;",
+          "prenons nos coutelas, Nos lances, nos épieux, et allons de ce pas Esealader l'Olympe où Jupiter habite, S'il est espouuenté de voir notre Exercite Les Armes en la main, nonobstant toute Loi, Nous lui proposerons que nous voulons un Roi."
+        ]
+      },
+      "top_5_persons": [
+        "Jupiter",
+        "Mercure",
+        "Mars",
+        "Grenouilles",
+        "Homère"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Milan",
+          "frequency": 5
+        },
+        "related_sentences": [
+          ", Pour ne les * Ex mécontenter leur donne un Tronc de bois, mais ces Grenoüilles faisant peu d'estime de la faveur que lupiter leur avait faite, me sprisent ce nouveau Roi, et l'inquietẽt tellement de leurs cris enroux, qu'il leur donne un Milan pour Roi à celle fin de les gouverner, mais se plaignant des cruautés de ce Milan Jupiter ne voulut entendre leur complainte, d'autant qu'ils avaient abusé de la douceur de leur Roi.",
+          "Vous donnant un Milan pour régir votre terre, Et pour vous maintenir et en paix, et en guerre Contre vos ennemis les Guêpes et les Rats, Et or changeant d'avis vous ne le voulez pas. \nGrenouillard\n Oui, mais il nous ravit et les biens et la vie. \n",
+          "entendre Nos discours croassants, ains nous feront descendre Plus vite que le pas, du mont Olympien, Ou nous relégueront dans l'Antre Auernien \nGrenouillard\n J'aime autant être au fond du Palus Tenaride, Que de servir de proie à un Milan autant: Mais allons toutefois retentons les hasards:",
+          "Jupiter\n Vous voulez faire un Roi à votre fantaisie, Non, non, calmez vos cris, abaissez vôtre voix, Il se fallait tenir à votre Tronc de bois, Qui comme le Milan n'était point téméraire, Il salait l'honorer, et craindre ma colère;",
+          "Mais nous ne saurions pas ce Milan respecter, Qui n'a d'autre plaisir que de nous molester. \nMollymon\n Donnez-nous-en un autre, ô vénérable Père, Qui soit plus attrempé, plus doux, et débonnaire."
+        ]
+      },
+      "top_5_places": [
+        "Milan",
+        "ROUEN",
+        "Nil",
+        "Rome"
+      ]
+    }
+  }
+}

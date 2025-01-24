@@ -1,0 +1,47 @@
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Le medecin malgre luy. Comedie. Par J.-B. P. Moliere",
+    "publication_date": "1673",
+    "document_id": "bpt6k1280463r"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Martine",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "C'est une chose admirable, que tous les grands Hommes ont toujours du caprice, quelque petit grain de folie mêlé à leur Scienc eu. \nMARTINE\n La folie de celui-cy est plus grande qu'on ne peut croire;",
+          "Quand j'ai bien ouv et bien mange, se veux que tout se monde soit saoul dans ma Maison. \nMARTINE\n Et tu prétends, Yvrogne, que les choses aillent toujours de même?",
+          "Nous vous remercions du plaisir que vous nous faites. \nMARTINE\n Mais souvenez-vous bien au moins de raiéitincient que je vousai dèmes \nLUCAS\n Eh morguenne, laissez-nous faire;",
+          "La Médecine l'a échappé belle. \nMARTINE\n Puis que tu ne seras point pendu, rendsmoi grâce d'être Médecin, car c'est moi qui t'ai procuré cet honneur.",
+          "et qu'Aristote a bien raison, quaiiu nuit qu'une Pemme els pare qu'un Démon! \nMARTINE\n Voyez un peu l'habile Homme, avec son benêt d'Aristote."
+        ]
+      },
+      "top_5_persons": [
+        "Martine",
+        "LUCAS",
+        "JACQUELINE",
+        "M",
+        "SGANARELLE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Ville de Paris",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "continuant la réquisition d'enregistrer le Privilège cydessus, a été signifié aux fins y contenues, et baillé copie, et fait les défenses y portées sur lesdites peines, à la Communauté des Marchands Libraires de cette Ville de Paris, au domicile de M. Sevestre Syndic de ladite Communauté, tant pour lui que pour les autres Syndics dédits Marchands Libraires, en parlant à sa personne en cette Ville de Paris, à ce qu'ils aient présentement à faire l'enregistrement dudit Privilège;"
+        ]
+      },
+      "top_5_places": [
+        "Ville de Paris",
+        "PARIS"
+      ]
+    }
+  }
+}

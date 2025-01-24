@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "author": "Scarron, Paul",
+    "title": "Dom Japhet d'Arménie , comédie, par M. Scarron",
+    "publication_date": "1668",
+    "document_id": "bpt6k57724367"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "LEONORE",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "ÀLFONCE, LEONORE, MARINE, MARCANTOINE ALTONCE, qut rivtre sir le Théaire ave Hare-Autolus Eonore, il est temps qué l'apprene mon soit, CLi que vous me doniez ou la vie ou la juort, Je voui ai déclare que pour voui une solpire, Vous ne me dites rics, quan d'y ose vout le dire, La silènes à uion len De pramet tien de Popp",
+          "LEONORE\n Je ne le suis non plus que toi: mais toutefois J'y mieur connais que toi que celui que tu vois Ba habit d'Écolier, et dont tu suis éprise, Est le bean Courtisan qui pour moi st déguise;",
+          "Αιst sοειιο αὐbεπͅ d man le A \nLEONORE\n Adieu, nous vous verrone aucc le grand Japbes \nRODRIGUE\n Cet homme pour va lon paraît allen bien fait;",
+          "Et moi j'espère Que le grand Dom Japhet m'aimera \nLEONORE\n Quant à mo Ie Je donne mon cœur, mon amour, et ma foi.",
+          "Je ne suis point Tigresse, et n'en ai point la mins, Jésuis bonne Chrétienne, et Leonore aussi, Allez zaïre blanchir votre linge noirci."
+        ]
+      },
+      "top_5_persons": [
+        "LEONORE",
+        "MARC-ANTOINE",
+        "RODRIGUE",
+        "César",
+        "M"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Madrid",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Et n'atrends rien de bon de ce déguisement, Encor si vous vouliez seulement me permettre D'envoyerà Madrid le moindre mot de Letrre, Votre Mère serait moins en peine de vous: Elle croit que son sils de sa Nièce l'Époux, A trouvé dans Seuille, en Dom Sanche son Frère, Un Oncle, un Bienfait-faiteur, et comme un nouveau Pères Et que riche Seigneur de Seigneur indigent, Vous avez de son Frère et la Fille et l'argent?",
+          "Elle arrive à Madrid pour être baptisée, De mon Cousin laphét qu'elle soit l'Espouséez"
+        ]
+      },
+      "top_5_places": [
+        "Madrid",
+        "Pérou",
+        "Daos",
+        "nar",
+        "Cabre"
+      ]
+    }
+  }
+}

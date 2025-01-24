@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Quinault, Philippe",
+    "title": "Atys. Tragédie en musique, ornée d'entrées de ballet, de machines et de changements de théâtre, représentée devant S. M. à Saint Germain en Laye, le 10e jour de janvier 1676. [Paroles de Quinault]",
+    "publication_date": "1676",
+    "document_id": "bpt6k6524930f"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Cybele",
+          "frequency": 18
+        },
+        "related_sentences": [
+          "De ne s'exprimer pas bien, Un cœur qui n'aima jamais rien Sait peu comment l'amour s'exprime. \nCYBELE\n Sangaride est aimable, Atys peut tout charmer, Ils témoignent trop s'estimer, Et de simples parents sont moins d'intelligence: Ils se sont aimés dès l'enfance, Ils pourraient enfin trop s'aimer.",
+          "Je prétends m'éclaircir leur feinte sera vaine. \nMÉLISSE\n Quels secrets par les Dieux ne sont point pénétrés Deux cœurs à feindre préparés Ont beau cacher leur chaîne, M y jemle, Les Dieux par l'Amour éclairez. \nCYBELE\n nus métisse , ô ururt t'aimable Zephire Dattompiir promplement tout ce qu'Atys desire.",
+          "Mélisse se retire. \nCYBELE\n Que les plus doux Zéphyr, que les Peuples divers, Qui des deux bouts de l'Univers Sont venus me montrer leur zèle, Clèbrent la gloire immortelle Du Sacrificateur dont Cybele a fait choix, Atys doit dispenser mes lois, Honorez le choix de Cybele SCÈNE SCÈNE QUATRIÈME.",
+          "CYBELE, CELÆNVS, MÉLISSE, Troupe de Prêtresses de Cybele \nCYBELE\n E veux joindre en ces lieux la gloire et l'abondance, D'un Sacrificateur je veux faire le choix, Et le Roi de Phrygie aurait la préférence Si je voulais choisir entre les plus grands Rois.",
+          "Il faut tout un cœur pour Cybele, À peine tout le mien peut suffire à l'Amour. \nCYBELE\n Portez a cosère amti ta premtert nouvelle De l'honneur éclatant ou ma faveur l'appelle."
+        ]
+      },
+      "top_5_persons": [
+        "Cybele",
+        "Atys",
+        "Cybele",
+        "Flore",
+        "YS"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Cybele",
+          "frequency": 18
+        },
+        "related_sentences": [
+          "De ne s'exprimer pas bien, Un cœur qui n'aima jamais rien Sait peu comment l'amour s'exprime. \nCYBELE\n Sangaride est aimable, Atys peut tout charmer, Ils témoignent trop s'estimer, Et de simples parents sont moins d'intelligence: Ils se sont aimés dès l'enfance, Ils pourraient enfin trop s'aimer.",
+          "Je prétends m'éclaircir leur feinte sera vaine. \nMÉLISSE\n Quels secrets par les Dieux ne sont point pénétrés Deux cœurs à feindre préparés Ont beau cacher leur chaîne, M y jemle, Les Dieux par l'Amour éclairez. \nCYBELE\n nus métisse , ô ururt t'aimable Zephire Dattompiir promplement tout ce qu'Atys desire.",
+          "Mélisse se retire. \nCYBELE\n Que les plus doux Zéphyr, que les Peuples divers, Qui des deux bouts de l'Univers Sont venus me montrer leur zèle, Clèbrent la gloire immortelle Du Sacrificateur dont Cybele a fait choix, Atys doit dispenser mes lois, Honorez le choix de Cybele SCÈNE SCÈNE QUATRIÈME.",
+          "CYBELE, CELÆNVS, MÉLISSE, Troupe de Prêtresses de Cybele \nCYBELE\n E veux joindre en ces lieux la gloire et l'abondance, D'un Sacrificateur je veux faire le choix, Et le Roi de Phrygie aurait la préférence Si je voulais choisir entre les plus grands Rois.",
+          "Il faut tout un cœur pour Cybele, À peine tout le mien peut suffire à l'Amour. \nCYBELE\n Portez a cosère amti ta premtert nouvelle De l'honneur éclatant ou ma faveur l'appelle."
+        ]
+      },
+      "top_5_places": [
+        "Cybele",
+        "Cybele",
+        "Fleuve",
+        "PARIS",
+        "Belone"
+      ]
+    }
+  }
+}

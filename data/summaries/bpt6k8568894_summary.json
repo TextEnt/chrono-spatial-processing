@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "author": null,
+    "title": "Les Yvrongnes, comédie satiribulesque [sic]",
+    "publication_date": "1687",
+    "document_id": "bpt6k8568894"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Guillot",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Son art et ses couleurs sont au bout d'un bâton, Cent-fois il in en a peint la joue et le menton, 18 GUILLOT",
+          "Ç 2 Po \nPOTELIN\n Grand-merci mon Guillot Encor chacun six coups nous aurons l'avantage D'être les plus savants de tout le voisinage. \n",
+          "C'est trop s'entretenir sur un sujet si fade, Puisque Guillot et moi et notre camarade Avons asses d'argent pourte blen.   ",
+          "SCÈNE V. Rafin, Potelin, Guillot, Guillemette, et Fringalette RAFIN.",
+          "Guillot, Potelin, Rafin et Fringalette \nGUILOT\n S'éveillant:"
+        ]
+      },
+      "top_5_persons": [
+        "Guillot",
+        "Guillemette",
+        "Bachus",
+        "OT",
+        "RA"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "GUILLOT",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Son art et ses couleurs sont au bout d'un bâton, Cent-fois il in en a peint la joue et le menton, 18 GUILLOT",
+          "Ç 2 Po \nPOTELIN\n Grand-merci mon Guillot Encor chacun six coups nous aurons l'avantage D'être les plus savants de tout le voisinage. \n",
+          "C'est trop s'entretenir sur un sujet si fade, Puisque Guillot et moi et notre camarade Avons asses d'argent pourte blen.   ",
+          "SCÈNE V. Rafin, Potelin, Guillot, Guillemette, et Fringalette RAFIN.",
+          "Guillot, Potelin, Rafin et Fringalette \nGUILOT\n S'éveillant:"
+        ]
+      },
+      "top_5_places": [
+        "GUILLOT",
+        "Rome",
+        "Pays-bas",
+        "Flandre"
+      ]
+    }
+  }
+}

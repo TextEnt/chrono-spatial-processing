@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Benserade, Isaac de",
+    "title": "Gustaphe ou L'heureuse ambition , tragi-comedie de Mr. de Bensseradde",
+    "publication_date": "1637",
+    "document_id": "bpt6k30450252"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ORIANE",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Qu'en pensez-vous, Mélise, à qui dois-je la pomme? \nMELISE\n Madame, au plus vaillant, au plus généreux homme, À celui que l'honneur, la sagesse, et le sang Font le plus approcher de votre illustre rang. \nORIANE\n Oui comme si ma sœur pénétroit de la vue Les belles qualités dont une âme est pourvue, Verra t'elle des yeux la gloire, le bonheur, La générosité, la noblesse, l'honneur, La vaillance, l'esprit, et les mœurs innocentes, Toutes tes qu' suunt tes aises puissantes Élèvent un époux au dessus du commun?",
+          "Ce que dit l'étranger se fait assez comprendre, Mais qu'il change l'objet qui le réduit en cendre, Cette ingrate maîtresse, il en est dans ces lieux Qui ne lui cèdent pas, et le traiteront mieux. \nORIANE\n Ne avait conseillez point de paraître infidèle, Ce qu'il aime est aimable, et la constance est belle. \n",
+          "Mais afin de languirles malheureux demeurent, Et la mort à regret ferme des yeux qui pleurent. \nORIANE\n De grâce, chère sœur, ayeZ l'esprit constant, Vous n'avez pas raison de vous affliger tant, Quand ce n'est qu'à ce point que le sort se courouce, Je tiens que la constance est une vertu douce.",
+          "L'honneur de votre sexe,et de votre naissance, Et pour moi vous servant a voir vous faire voir Que l'amitié m'y porte autant que le devoir. \nORIANE\n Je vous en dis autant, belle et sage Princesse, M Mij La douleur qui vous touche également me blesse, Votre entretien m'est cher.",
+          "Enfin encore vous entends, Ainsi que mes désirs vos vœux seront contents, Oriane, achevez -les biens de la journée, Que ce Prince ait de vous la foi de l'hyménée, Vous savez son amour, ses vertus, son pays, Et ie vous le commande, \nORIANE\n Et -te vous obéis."
+        ]
+      },
+      "top_5_persons": [
+        "ORIANE",
+        "MELISE",
+        "ORMIN",
+        "RIANE",
+        "Artaban"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Perse",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "J'oubliais à te dire aussi que la beauté Qui comme tu t'ai dit tenait ma liberté, Et qui brûlait pour moi d'une flamme discrette, A mis la cour endueil par sa fuite secrète, Toute la Perse ignore en un coup si soudain Quelle route elle a prise, et quel est son dessein, Son âme de l'amour se sera dégage, Et comme il m'a changé le temps l'aura changée.",
+          "Ha ne me nomme point! \nORMIN\n Que j'ai dès ma jeunesse abandonné la Perse Aussi du profit, et non pas sans traverse, Car parmi les dangers, et parmi les malheurs, J'ai vu mille climas, j'ai reconnu les meurs",
+          "Quoi l'aîné des enfants du Monarque de Perse Ce courage rebelle, ambitieux, ingrat, Et qui contre son père a soulevé l'état?",
+          "La Perse est le climat où j'ai vu la lumière.",
+          "Le fils ainé du Roi que la Perse révère."
+        ]
+      },
+      "top_5_places": [
+        "Perse",
+        "Perse",
+        "Paris",
+        "PARIS",
+        "France"
+      ]
+    }
+  }
+}

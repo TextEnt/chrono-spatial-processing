@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "author": "Rousseau, Jean-Baptiste",
+    "title": "Le caffé , comédie",
+    "publication_date": "1694",
+    "document_id": "bpt6k56295349"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "JÉRÔME",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "vous cices poul les icescucions loccusnes Madame Jérôme Mad. \nJÉRÔME\n Oh vraiment si on n'avait d'autres rentes que la dépense qui se fait ici de jour, et sans le casuel de la nuit, on courrait rilque d'avoir les dents bien longues.",
+          "JÉRÔME\n U’est-ce donc petite fille, vous parlez à des hommes quand je n'y suis pas?",
+          "DORANTE, JOBELIN, M. \nJÉRÔME\n \nDORANTE\n N de mes parents assassiné!",
+          "JÉRÔME\n Quais, qu'est-ce que tout ceci?",
+          "Mad. \nJÉRÔME\n Eh bien vous voilà muette."
+        ]
+      },
+      "top_5_persons": [
+        "JÉRÔME",
+        "FLÈCHE",
+        "JÉRÔME",
+        "Louison",
+        "Thuilleries"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Mais sur tout pour en filer une dupe à quelque jeu que ce soit, et lui tirer par cent moyens ingénieux tout l'argent de sa bourse, je suis le garçon de France le plus en réputation.",
+          "SCÈNE Sourcé que nationale de France SCÈNE XIV.",
+          "À jij Ou France SCÈNE II.",
+          "France, et CHARLES CLOUZIÈR"
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Paris",
+        "Hollande",
+        "Hongrie",
+        "Belgrade"
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "author": "Chevreau, Urbain",
+    "title": "Coriolan, tragédie",
+    "publication_date": "1662",
+    "document_id": "bpt6k10901215"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Coriolan",
+          "frequency": 29
+        },
+        "related_sentences": [
+          "mais il faut considérer qu'il était imposible de mettre la Tragédie dans la sévérité des règles, et dans celle qu'on tient aujourd'hui si nécessaire, qui est l'Unité du lieu, si je ne l'eusse fait mourir près de Rome Ce changement ne doit point tellement altérer l'esprit qu'on doive m'acuser d'avoir violé quelque notable incident de l'histoire, puisque Coriolan ne mourut pas autrement chez les Uolques que sans le fais mourir chez les Romains.",
+          "Car je vois des enfants, une famé, une mère. \nSANCINE\n Non non dans ce dessein Rome doit succomber, Coriolan sait bien qu'elle est prête à tomber, Ni pays ni parent contraindre le peuuent avait Droit lesmaux Puisqu'elle avait droit de craĩdre Puis qu'il la doit punir ainsi juste raison",
+          "Cependant vous pensez modérer son courrous Et recevoir des biens qu'il n'obtint pas de vous Dequoi Coriolan n'était-il point capable Quand vos mauvais soupçons le rẽdirẽt coupabl Pouvait-il pas finir l'excès de votre ennui, Et relever l'État qu'il ruine aujourd'hui?",
+          "Tarquin nous haïssait, le fils eommit un crime, Et depuis leur exil qu'ils ont voulu venger, Coriolan sans doute a bien su les ranger.",
+          "Elle voit ici Coriolan étendu, Mais sont-ce encore ici les restes de la guerre, Quelques goutes de sang paraissent sur la terre;"
+        ]
+      },
+      "top_5_persons": [
+        "Coriolan",
+        "Seigneur",
+        "M",
+        "Seigneur",
+        "Tarquin"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 29
+        },
+        "related_sentences": [
+          "mais il faut considérer qu'il était imposible de mettre la Tragédie dans la sévérité des règles, et dans celle qu'on tient aujourd'hui si nécessaire, qui est l'Unité du lieu, si je ne l'eusse fait mourir près de Rome Ce changement ne doit point tellement altérer l'esprit qu'on doive m'acuser d'avoir violé quelque notable incident de l'histoire, puisque Coriolan ne mourut pas autrement chez les Uolques que sans le fais mourir chez les Romains.",
+          "Rome en fit autrefois sa meilleure espérance Alors que sa valeur la mit en assurance, Et que nos ennemis trouvaient sans son secours Le terme de sa gloire et celui de nos jours: Mais le peuple animé d'une injuste rancune Bannit avec lui notre bonne fortune, Treua par cet exil les bords de son cercueil, Et le couvrant de honte il nous couvrit de dueil A quoi dont maintensez no9 pouuõs noꝰ résoudre?",
+          "Avec vous j'ai couru les pays étr angers, Et je vous ai suivi dans les plus grands dangers Rome fut mon pays, mais après votre perte Je crû qu'on en ferait une ville déserte, Et qu'eupruntant les bras de tous nos ennemis Vous feriez pour le moins ce qui leur fut promis CORIOLAN.",
+          "Car je vois des enfants, une famé, une mère. \nSANCINE\n Non non dans ce dessein Rome doit succomber, Coriolan sait bien qu'elle est prête à tomber, Ni pays ni parent contraindre le peuuent avait Droit lesmaux Puisqu'elle avait droit de craĩdre Puis qu'il la doit punir ainsi juste raison",
+          "Car m'éloignant de Rome on m'éloignait de vo Dans ce départ sanglant j'eus mille fois envie De finir par le fer ma misérable vie Si l'amour qui console, et qui garde un Amant Ne m'eût fait espérer quelque contentemant."
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Tibre",
+        "Troie"
+      ]
+    }
+  }
+}

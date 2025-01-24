@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": null,
+    "title": "Geneviève, ou L'innocence reconnue , tragédie chrestienne",
+    "publication_date": "1669",
+    "document_id": "bpt6k5745520t"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Golo",
+          "frequency": 9
+        },
+        "related_sentences": [
+          "-même l'ai vengu, lavsoreuuuloresola cemro cucreveuse, J'ai su comme Golo s'en voulant faire aimer Eut recours aux démons afin de la charmer, Et ainsi ctois que ce fut par le même artisice Que le Comte trotupé sit hâter son supplice, \nCLEON\n Ce soupçon, Orismond, pourrait bien être vrai, Er voici là -dessus un secret que ie éclai, Vous connaissez tous deux cette fameuse Argine -A Hôtesse de nos bois, mais luive d'origine, Que ses prédictions et ses enchantements Font estimer l'oracle et l'effroi de ce temps.",
+          "Et dans l'affliction et l'état ou tu suis Je viens seul en ce bois promener mes ennuis \nGOLO\n vous n'avez oue pas vu panélici le Conite, \nORISMOND\n Par quel lieu voulez-vous qu'un Cavalier y monte? \nGOLO\n Nous pensions avoir oui sa voix sur cérocher. \nOMiodlne\n C'est le silence seul que l'on y doit chercher. \nGOLO\n Mais parmi le silence et cette paix profonde, N'entretenez vous point ces gens de l'autre monde? \nORISMOND\n ",
+          "Dont un ruisseau d'argent en deuxbras est couCée sera sur sa cime, et dans ses grottes sombres Que ie vous ferai voir la plus belle des ombres, Je m'en vais le premier m'y rendre de ce pas, Vous m'attendrez au pied si je n'y parais pas, Adieu, voici Golo \nCLEON\n Prenez votre avantage, Cachez jours ce péril où ce complot l'engage.",
+          "Je veux qu'elle ait failli, plus sa faute fut grande, Ilus de compassion sa peine vous demaude. \nGOLO\n Conservez-en pour vous ces belles passions: Mais ne vous chargez pas de ces commissions, Aucremenc oimono, l ' vousdesonce Que vous en porterez vous même la réponse. \nLERIS\n Laissons le là dessus rêver tout à loisir, Et suivons cependant notre innocent plaisir.",
+          "Sur une vision c'est beaucoup entreprendre. \nLYSANDRE\n Qui don, vou, cnancoren de peruren déltein Où vous avez promis et le cœur et la main? \nCLEON\n Vous connaissez Golo, si par quelque artifice Ilsait qu'un de nous deux soit de ceci complice, Vous savez son crédit, vous savez son pouvoir Comme il s'en servira vous le pouvez prévoir. \n"
+        ]
+      },
+      "top_5_persons": [
+        "Golo",
+        "Cleon",
+        "Benoni",
+        "LYSANDRE",
+        "GOLO"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Golo",
+          "frequency": 9
+        },
+        "related_sentences": [
+          "-même l'ai vengu, lavsoreuuuloresola cemro cucreveuse, J'ai su comme Golo s'en voulant faire aimer Eut recours aux démons afin de la charmer, Et ainsi ctois que ce fut par le même artisice Que le Comte trotupé sit hâter son supplice, \nCLEON\n Ce soupçon, Orismond, pourrait bien être vrai, Er voici là -dessus un secret que ie éclai, Vous connaissez tous deux cette fameuse Argine -A Hôtesse de nos bois, mais luive d'origine, Que ses prédictions et ses enchantements Font estimer l'oracle et l'effroi de ce temps.",
+          "Et dans l'affliction et l'état ou tu suis Je viens seul en ce bois promener mes ennuis \nGOLO\n vous n'avez oue pas vu panélici le Conite, \nORISMOND\n Par quel lieu voulez-vous qu'un Cavalier y monte? \nGOLO\n Nous pensions avoir oui sa voix sur cérocher. \nOMiodlne\n C'est le silence seul que l'on y doit chercher. \nGOLO\n Mais parmi le silence et cette paix profonde, N'entretenez vous point ces gens de l'autre monde? \nORISMOND\n ",
+          "Dont un ruisseau d'argent en deuxbras est couCée sera sur sa cime, et dans ses grottes sombres Que ie vous ferai voir la plus belle des ombres, Je m'en vais le premier m'y rendre de ce pas, Vous m'attendrez au pied si je n'y parais pas, Adieu, voici Golo \nCLEON\n Prenez votre avantage, Cachez jours ce péril où ce complot l'engage.",
+          "Je veux qu'elle ait failli, plus sa faute fut grande, Ilus de compassion sa peine vous demaude. \nGOLO\n Conservez-en pour vous ces belles passions: Mais ne vous chargez pas de ces commissions, Aucremenc oimono, l ' vousdesonce Que vous en porterez vous même la réponse. \nLERIS\n Laissons le là dessus rêver tout à loisir, Et suivons cependant notre innocent plaisir.",
+          "Sur une vision c'est beaucoup entreprendre. \nLYSANDRE\n Qui don, vou, cnancoren de peruren déltein Où vous avez promis et le cœur et la main? \nCLEON\n Vous connaissez Golo, si par quelque artifice Ilsait qu'un de nous deux soit de ceci complice, Vous savez son crédit, vous savez son pouvoir Comme il s'en servira vous le pouvez prévoir. \n"
+        ]
+      },
+      "top_5_places": [
+        "Golo",
+        "France",
+        "Paris",
+        "PARIS",
+        "Brabant"
+      ]
+    }
+  }
+}

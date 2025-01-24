@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Beys, Charles de",
+    "title": "L'Hospital des fous, tragi-comédie",
+    "publication_date": "1638",
+    "document_id": "bpt6k10900791"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "PALAMEDE",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "N'est-ce pas un trépas qu'il a bien mérité, \nPALAMEDE\n Je suis mort, justes Dieux, s'il dit la vérité, tame pujme, le proid dans mes vaines se glisse, \nÉLIANTE\n Voudriez-vous bien blâmer un si juste supplice, PALAMEDE, à Éliante Cruelle, c'est donc vous qui dans ce lâche sein, Avez mis ce barbare et funeste dessein, Vous êtes ce Démon, dont le discours perfide, Arma si lâchement les mains du parricide;",
+          "PALAMEDE\n On ne te connaît pas. \nMELIANE\n Si l'on m'eût pû connaître Je ne vous tiendrais pas en qualité de traître, Car certaune vtautt que t'on conduite ici, Ne m'eût pas découvert votre amoureux souci: Vous voyez cepenuant comme te vous carresse, \nPALAMEDE\n De qui me parlez -vous? \nMELIANE\n D'une belle maîtresse: \nPALAMEDE\n D'une fille qui m'aime: \nMELIANE\n Et que vous m'aimez bien. \n",
+          "Animé iustement contre ce ravisseur, J'entre dans le logis, où ie trouve sa sœur, Je l'aborde en colère, et l'ayant regardée Je perds Je perds de Palamede et l'horreur et l'idée, Je change d'action, et me sens dégager, Du généreux dessein que j'eus de me venger, 33 De mes premiers désirs, l'amour seut it possède, Célie en mon esprit efface Palamède \nPALAMEDE\n Aronte aime ma sœur!",
+          ", les Dieux donnent à tous moments, Des plus grandes faveurs à de moindres amants, Ils aiment les vertus, et de leurs mains puissantes, Conseruent avec soin les filles innocentes, Songez qu'ils ont un foudre, et l'ont souvent jeté Contre les oppresseurs de la virginité, Vos vœux l'attireront sur ces coupables têtes. \nPALAMEDE\n Mais combien de tyrans ont fait de ces conquêtes Ne pourrait -elle pas souffrir le même mal.",
+          "PALAMEDE -Tu diras que je n'ai ici jugement homme honte, J'ai prié Polidor ce bon ami d'Aronte, Homme, comme tu vois, de crédit entre nous, De me faire loger dans l'Hespital des Fous Il a fait à l'abord un peu de résistance, Mais enfn il a cru qu'un dessein d'importance, Dont apprendre ne voulais pas parler ouuertement, Peut-être m'obligeait à feindre ce tourment."
+        ]
+      },
+      "top_5_persons": [
+        "PALAMEDE",
+        "Meliane",
+        "Palamède",
+        "Celie",
+        "Polidor"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Valence",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Puisque pour ce perfide, il tira de vos larmes: Je m'en dédis, Célie, et le veux accuser, Il ne vous enleva que pour vous abuser, Le crime qu'il commit en vous laissant en France, Donne de sa malice une entière assurance, Songez à mon discours, et que ce suborneur, Préfera lâchement sa vie à votre honneur: Mais quoi sa trahison lui tient lieu de mérite, Et vous venez chercher le traître qui vous quitte, Vous voici dans Valence, après le grand effort, Qui vous tira des mains du frère de ce mort, Orle n'ensje paître, ce cruet auverjàtre, Se fut vengé sur vous du meurtre de son frère.",
+          "Dépêchez des Prouôts, ce traître est à Valence, Son crime est averé, leurs efforts seront vains, Qu'ils apportent des fers, il y mettra les mains, Prouvez, père, prouvez, par ma fin criminelle, Que vous avez gardé de l'amitié pour elle, Et craignez justement d'être par la douceur, Encore plus cruel que n'est ce ravisseur.",
+          "Ne pouvant pas souffrir une si longue absence, Je me mis en chemin pour venir à Valence Le frère de celui qu'Aronte mit à mort, Voulant à mes dépens se venger de ce tort:",
+          "En pareils habitants ce pays est fertile, Nous avons en ce lieu la moitié de la ville, Et si l'autre moitié ne guérit de ce mal, On revira bientôt Valence en Hespital;",
+          "Je lui dis en secret, ie m'en vais à Valence, Ceux dont votre valeur a puni l'insolence, Sont des gens envoyés par les parents du mort. \n"
+        ]
+      },
+      "top_5_places": [
+        "Valence",
+        "Madrid",
+        "Tolède",
+        "France",
+        "Madrid"
+      ]
+    }
+  }
+}

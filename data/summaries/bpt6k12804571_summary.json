@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "La Critique de l'Escole des femmes, comédie par J. B. P. Molière",
+    "publication_date": "1663",
+    "document_id": "bpt6k12804571"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ÉLISE",
+          "frequency": 64
+        },
+        "related_sentences": [
+          "Enfin j'avais besois de vous, lors que vous êtes venu, et tout le monde était ici contre moi. \nÉLISE\n Il s'est mis d'abord de votre côté, mais maintenant qu'il sait que Madame est à la tête du parti contraire, je pense que vous n'avez qu'à chercher un autre secours.",
+          "Il ne s'est jamais fait, je pense, une si méchante Comédie. \nURANIE\n Ah! voici Dorante que nous attendions. \nSCE\n SCÈNE V. DORANTE, LE MARQUIS, CLIMEN, ÉLISE, URANIE \nDORANTE\n E bougez, de grâce, et n'interromI a pez point votre discours.",
+          "et je pense que je vis d'un air dans le monde, à ne pas craindre d'être cherchée dans les peintures qu'on fait là des femmes qui se gouvernent mal \nÉLISE\n Assureinent, Mladaille, omle vous y cherchera point;",
+          "et que lors que vous avez vu cette acprercheutiontaste \nÉLISE\n Il est vrai, mais j'ai changé d'avis, et Madame sait appuyer le sien, par des I rairaisons si convaincantes, qu'elle m'a endalislcc ècloncolte. \n",
+          "Il a raison. \nÉLISE\n À s Arnolphe ne donne-t-il pas trop librement son argent à Horace et puisque c'est le personnage ridicule de la pièce, fallait-il avait faire faire l'action d'un honnête homme?"
+        ]
+      },
+      "top_5_persons": [
+        "ÉLISE",
+        "GALOPIN",
+        "URANIE",
+        "MOLIÈRE",
+        "Agnès"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "URANIE",
+          "frequency": 64
+        },
+        "related_sentences": [
+          "Laisions nous aherde bôme loi ava choses qui nous prennent par les entrailles, et ne cherchons point de raisonnements pour nous empêcher d'avoir du plaisir. \nURANIE\n Pour moi, quand je vois une Comédie, je regarde seulement si les choses me Ç 4 toutouchent, et lors que je m'y suis bien divertie, je ne vais point demander si j'ai eu tort, et si les règles d'Aristote me deffehdoient de rire. \n",
+          "qu'il n'y a point de lieu où les décisions soient si justes; et sans mettre en ligne de contetous les gens sçavans qui y sont, que du simple bon sens naturel et du commerce de tout le beau monde, on s'y fait une manière d'esprit, qui, sans comparaison, juge plus finement des choses, que toût le sçayoir enrouillé des Pédans.  4 2 \nURANIE\n ",
+          "et les récits eux-mêmes y sont des actions suivant la constitution du sujet, dautant qu'ils sont tous faits innocemment, ces récits, à la personne intéressée, qui par là entre tous coups dans une confusion à réjouir les spectateurs, et prend à chaque nouvelle toutes les mesures quil peut pour le paler du mameur qu'il craint. \nURANIE\n Pour moi",
+          "mais Madame a une éloquence si persuasive, elle tourne les choses d'une manière si agréable, qu'il faut être de son sentiment, mal-gré qu'on en ait. \nURANIE\n Pour moi je n'ai pas tant de complaisance, et pour dire ma pensée, je tiens cette Comédie une des plus plaisantes que l'Auteur ait produites.",
+          "et pour moi je vous avoue que je suis dans une colère épouvantable, de voir que cet auteur impertinent nous appelle des animaux. \nURANIE\n Ne voyez-vous pas que c'est un ridicule qu'il fait parler? \nDORANTE\n Et puis, Madame, ne savez -vous pas que les injures des Amants n'offensent jamais?"
+        ]
+      },
+      "top_5_places": [
+        "URANIE",
+        "France",
+        "Paris",
+        "Louvre",
+        "Place Maubert"
+      ]
+    }
+  }
+}

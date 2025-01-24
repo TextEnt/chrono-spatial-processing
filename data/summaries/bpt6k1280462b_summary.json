@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "L'Escole des femmes, comédie par J. B. P. Molière",
+    "publication_date": "1663",
+    "document_id": "bpt6k1280462b"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ALAIN",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Je ne suis pas un homme à vouloir rien pour rien, Je sais quand on me sert en garder la mémoire: Cependant par avance, Alain, voilà pour boire, Et voilà pour t'avoir, Georgette, un cottillon, Ils tendent tous deux la main, et prennent l'argent.",
+          "Le pie qu'iiin lait qu'ièle belle caliette, Et l'argent qu'en ont eu notre Alain et Georgette, Vous l'aimeriez sans doute, et diriez comme nous. \n",
+          "parlez, dépêchez, vite, promptement, tôt, B 2 Sans LESCOHE HRO EDAMES, ALAIN et GEORGETTE AN,AII. \nGEORGETTE\n Le cœur me faut.",
+          "Auriez-vous bien l'esprit de servir mon courroux? \nALAIN\n S'il ne tient qu'à frapper, Monsieur, tout est à nous.",
+          "Fais-je pas comme il faut? \nALAIN\n Est-ce de la façon que vous voulez l'entendre? \n"
+        ]
+      },
+      "top_5_persons": [
+        "ALAIN",
+        "Georgette",
+        "Arnolphe",
+        "Agnès",
+        "Horace"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Mais ces lieux et cela ne s'accommodent guère, Allons dans la maison débrouiller ces mystères, Payer à notre ami ces soins officieux, Et rendie grâce au Ciel qui sais tore meye me mieus. \nFrance\n eu de France eu de France"
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Enrique",
+        "Rome"
+      ]
+    }
+  }
+}

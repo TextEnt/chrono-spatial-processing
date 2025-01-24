@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Rotrou, Jean de",
+    "title": "La Sœur genereuse, comédie",
+    "publication_date": "1647",
+    "document_id": "bpt6k10901979"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Aurelie",
+          "frequency": 12
+        },
+        "related_sentences": [
+          "Elle l'est en éfet, puis que plus de deux ans, Ont déjà vu durer l'Hymen que ici prétends, De la vraie Éroxène, ou la sauce Aurie, Que Lélie épousa sous le nom de Sophie Hymen, qui traversé par une courte erreur, Qui semait parmi nous la tristesse et l'horreur, Ne nous inspirait plus que des pensers funèbres, ANSELME.",
+          "Car enfin il advint que leurs biens augmentés, Et leurs possesions passant vos facultés, Au point qu'ils méditaient, et se trouvaient en peine, De vous rendre Aurie, et reprendre Eroxène, Le Ciel permît sa perte et son événement, (De leur crime secret, visible châtiment,)",
+          "et c'est l'ench'eù naît votre mélancolie, Si fait dis qu'en effet Sophie est Aurie, Serez vus satisfait \nLELIE\n Vous me rendez le jour, Que sans cette saveur m'était votre retour, CONSTANCE.",
+          "De Sophie à présent Aurie est le nom, Le père encette erreur la souffre en sa maison, Où, d'une chaste amour satisfaisant la slamme, Elle est fille le jour, et la nuit elle est femme;",
+          "Nole vous peut fournir assez d'autres beautés, Pour changer vos liens si vous ne les quittez. \nLELIE\n L'Amourne peut changer le beau nœud qui me lie, Sans changer Aurelie, en une autre Aurelie"
+        ]
+      },
+      "top_5_persons": [
+        "Aurelie",
+        "ANSELME",
+        "Constance",
+        "Lydie",
+        "Sophie"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Turquie",
+          "frequency": 12
+        },
+        "related_sentences": [
+          "Et toi traître, avec ta Turquie, Avecques ta Loi Turque, avec ton Mahomet, Tu veux autoriser cet usage indiscret, Et sous un voile Turc me chargeant d'infamie, M'affronter à la Turque, et couvrir leur folie;",
+          "Et ne me puis assez promettre d'industrie, Pour parer tous les coups qui viennent de Turquie Touieurs au pis aller, quelques ceups de bazien, Où quelque an de galère, en serent la raisen.",
+          "Ne voilà pas encor des traits de la Turquie, Ce malheureux pais, si fatal aux Chrétiens, Si fertile en tous maux, si stérile en tous biens!",
+          "vous devez donc, (si ce n'est raillerie,) Venir de l'autre monde, et non pas de Turquie GERONIE.",
+          "ma fille servante, V'n voyage en Turquie, et ma femme vivante, Tout ce conte à plaisir est une vérité."
+        ]
+      },
+      "top_5_places": [
+        "Turquie",
+        "Venise",
+        "Pologne",
+        "Constantinople",
+        "Bari"
+      ]
+    }
+  }
+}

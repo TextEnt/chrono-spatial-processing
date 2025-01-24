@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "author": "Magnon, Jean",
+    "title": "Tite, tragi-comédie par le Sieur de Magnon,...",
+    "publication_date": "1660",
+    "document_id": "bpt6k1281031q"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Berenice",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Sachez donc que l'État vous demande un service, Il jaut que Cièvme amemt Dérénice, Et qu'allant en Iudée au nom d'Ambassadeur Il serve d'un César l'amour et la grandeur: Recevez, cet emploi, lui mesme vous le donne. \nBERENICE\n Ce grand emploi m'honore aussi bien qu'il m'étonne, Mais apprenez le mien, César m'a témoigné Que Mucian pour lui ne s'est point épargné, que on epri Diuin ayant intelligence Vous maintenez par tout sa gloire et sa puissance, Et protégez ses droits auecque tant ardeur il vous est obligé de toute sa grandeur, Mais, dis lui, a il-dit, comme ie sçais il aime peu plus Estat il attache moi-même Et dans les passions que ie sens tour tour apres ambition il serve en moi amour.",
+          "Cléonte de sa part soutient sa confidence, Toi-même tu te vois de notre intelligence, Garde donc de détruire un si fameux devin, Nous avons sur les bras tout l'Empire Romain: En vain j'aurais voulu qu'elle vint en personne, Romme dans ses transports s'aveugle et s'abandonne, Et si ma Berenice arrivait en ces lieux Le peuple malgré moi la perdrait à mes yeux. \nBERENICE\n Vous la conserveriez \nTE\n Moi, la sauver, ab! sache.",
+          "Rends était donc sa faveur, toi Monstre de fortune, \nBERENICE\n Sa faveur n'a pour moi qu'une gloire importune; \nCIE\n Mais si j'aime César, as tu droit de m'aimer? \nBERENICE\n Vous avez une erreur dont je vous dois blâmer, En vain vous avez cru que vous m'étiez aimable uiime umom pour vous rien ne me sens capable, Je ne puis vous offrir qu'une simple amitié: MUCIE.",
+          "Et dans l'aveuglement où tu-même s'est mis, Il prend pour ses rivaux ses plus parfaits amis. \nÔINE\n Non, non, dans la fureur dont mon âme est saisie, Avec deux rivaux j'ai double jalousie, Vous avoir pour riual, ou l'Empereur, ou moi, Vous connaissez-vous bien? \nBERENICE\n Non, Seigneur me méconnais: Mais celt erreurme ôtent at moi-même à moi",
+          "dois-je m'étonner d'une telle injustice, Qui quitte Clobule, a quitté Berenice, Il était de la fin d'un si cruel rapport Que si j'en ai des traits j'en eusse aussi le sort: Mais dequoy dans ses feux J'avisa la nature De m'en avoir rendu la funeste peinture, Et causant un m'élange, et propice, et fatal, De ce qui fut mon bien produire tout mon mal."
+        ]
+      },
+      "top_5_persons": [
+        "Berenice",
+        "BERENICE",
+        "Mucian",
+        "ANTOINE",
+        "César"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "MUCIE, Fille de Mucian DITTIE, Confidente de Mucie PIZON, Colonel des Gardes de Tite BERENICE, Reine de Iudée, et sous le nom de Cléobule, Favori de Tite CLÉONTE, Confident de Berenice La Scène est à Rome dans le Palais Impérial.",
+          "En perdant un César n'ai-je pas tout perdu? \nFLAVIE\n Quelque reste de Rome vous peut-être rendu, \nMUCTE\n Quand on pert un Empire on n'a rien à prétendre Antoine m'adorant me le pourrait-il rendre?",
+          "Ces hommes indomptés mettent tous bas les armes, Eux qui voulaient son sang lui san g Rome, Et ce doux Sacrifice à la face des Dieux Punit leurs vœux sanglants par le sang de leurs yeux."
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Savoie",
+        "Alpes",
+        "Pyrénées",
+        "Alpes"
+      ]
+    }
+  }
+}

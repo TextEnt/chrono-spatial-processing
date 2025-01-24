@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "author": "Montluc, Adrien de",
+    "title": "La Comédie des proverbes, pièce comique",
+    "publication_date": "1698",
+    "document_id": "bpt6k1090104n"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Philippin",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "nous pourons facilement donner une cassade au Docteur, il est assez aisé à enjôler, à un besoin on lui ferait croire que les nuées sont des poësles d'air, laissez me lui jeter cette fourbe, je gagerai ma tête à couper qui est la gajeure d'un tol, que j'en viendrai à bout, vous n'aurez qu'a bite comme au jeu de l'à me suivre, je vous veux premièrement apprendre cinq ou six mots un langage que ay apris la Cour du grand Cœsre, du temps que étois marmy Matrois, cagoux, polisson, casseur de hannes, je ne me mocque par ma foi pas, je veux on me coupe la tête si je ne vous mets accord avec le Docteur, comme le bois dequoy on fait les vièles. \nPhilippin\n Ah, ce garçon l'a à de l'eiprit, n'a couché au Cimetière. \n",
+          "voilà maintenant préparé comme Mun boureau qui est de fête, je m'inmagine qu'on ne nous prendrait pas tous quatre pour des enfants du bourlabé qui ne demandent qu'amour et simplesse, on nous prendrait bien tôt pour des carabins de la comette et pour des éveillez qui ne cherche que chapechute, un Cabartier nous regarde droit à deux fois, avant que nous donner quelque chose, il aurait peur d'être payé en monnaie de Singe: Florinde a bien la mine de ses Ficheuses qui ressemble aux balances d'un boucher qui posent toutes sortes de viandes, car la voilà troussée comme une poire de chiot, mon maître à mieux la mine d'un geuteur de chemins et d'un ecornifseur de potence que d'un moulin à vent et Philippin pour une bourgeoise d'Aubervilliers, à qui les joües passent le nez.",
+          ". \nFlorinde\n Mon père, je ne sais, mais sans le secours de ce Gentilhomme vous n'auriez plus de fille, c'est à lui à qui vous devez savoir gré de m'avoir conservé l'honneur sain et entier, exposant sa vie à plus d'une douzaine d'épées, dont les coups tombaient sur lui et sur les siens comme la pluie. \nAlaigre\n Philippin a échappé belle aussi-bien que moi, je m'aneure qu'il Içast bien a quoi s'en tenir, car il eut de bons chifrenaux. \nPhilippin\n Ils n'avaient pas envie de me faire languir, sont des méchants, ils ont coupé la main à notre cochon;",
+          "mon voisin, plus l'on va en avant et pis c'est, il y a d'aussi méchantes gens dans ce monde qu'en lieu ou on puisse allet, on dit bien vrai qu'une fille est de mauvaise garde, et à un bon jour, bonne œuvre, aux bonnes font se font les bons coups. \nMarin\n Hélas Jean mon ami, saimon, car fille qui écoute, et ville qui parlemente est à demi rendue, hélas, ils enlèvent Philippin comme un corps mort, garçons: aux voleurs, aux voleurs courez dessus et frappez comme tous les diables, quoi, je ressemble à Mr. de Boüillon, quand je commande personne ne bouge.",
+          "Lidias\n Mon frère chaque chose a sa saison et chaque saison apporte quelque chose ouvelle, aujourd'hui Evêque et demain Munier, c'est le monde, l'un décend et l'autre monte, le bonheur suit le malheur, châque chose fait son contraire et cherche son semblable, après la guerre la paix, que nous pouvons avoir sans coup férir, le jour qui comence beau ce feran, nous pronostique qu'après la pluie, vient le beau-temps. \nPhilippin\n Pardienne comme dit l'autre, Ciel pommelé et Femme fardée ne sont pas de longuojuojuje nô roi le enemin de S. Jacques écrit au temps"
+        ]
+      },
+      "top_5_persons": [
+        "Philippin",
+        "Fierabras",
+        "Alison",
+        "Bertrand",
+        "Alison"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Il est vrai qu'il vaut mieux être foux qu'en mauvaise compagnie, pour trop grater il en cuit aux ongles, qui garde sa femme et sa maison a assez d'affaires, mais cependant on s'étrangle, il est tard Jacquet, retirons nous tretous ensemble chacun chez soi, bon jour bon soir c'est pour deux lois rorrerie demain des cals à Paris SCÈNE IV.",
+          ", il y fait chaut, ils sont armés comme des Jacquemarts et montez comme des Saints Georges, il vaut mieux faire comme on fait à Paris, laisser pleuvoir, je n'ai garde de m'y aller faire frotter.",
+          "La gloire ne court point de risque Paris qu'il a donné quinZe et bisque, À tous les Potentats."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "PARIS",
+        "Melun",
+        "Alison",
+        "Pampelune"
+      ]
+    }
+  }
+}

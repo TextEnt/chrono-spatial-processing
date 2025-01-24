@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Amphitryon, comédie par J. B. P. Molière",
+    "publication_date": "1668",
+    "document_id": "btv1b86070014"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Amphitryon",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Que le moi quę voiti, charge de famude, A trouvé l'autre moi, frais, gaillard et dispos, Et n'ayant d'autre inquiétude, Que de batue, à canes desos. \nAMPHITRYON\n Il faut être, je le confesse, D'un esprit bien posé, bien tranquille, et bien dous, Pour souffrit qu'un valet, de chansons me repaisse.",
+          "À LCMENE Quoi! de retour sitôt! \nAMPHITRYON\n Certes, c'est en ce jour, Me donner de vos feux un mauvais témoig nage, Et ce, Quoi sitôt de retour, En ces oecasions n'est guère le langage D'un cœur bien enflammé d'amour.",
+          "Vous avez raison, et la chose à chacun, Hors de créance doit paraître, C'est un fait à n'y rien cunhornis, Vn conte extravagant, ridicule, importun, Cela choque le sens commun: Mais cela ne jaisse pas d'être. \nAMPHITRYON\n ",
+          "Et me voilà déterminée, A souffrir qu'en ce jour nos liens soient rompus. \nAMPHITRYON\n Après l'indigne affront que l'on me fait connaître, C'est bien à quoi sans doute il faut vous préparer.",
+          "Elle a besoin de six grains d'Élébore, Monsieur, son Esprit est tourné! \nAMPHITRYON\n Alcène au nom de tous les Dieux, Ce discours à d'étranges suites, Reprenez vos sens un peu mieux;"
+        ]
+      },
+      "top_5_persons": [
+        "Amphitryon",
+        "Jupiter",
+        "Mercure",
+        "Amphitryon",
+        "Alcmène"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Barbarie",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Ce discours est plus raisonnable, Alémène, que vous ne pensez: Mais un plus long séjour me rendrait trop coupable, Et du tour au port, les moments sont pressez, Adieu, de mon devait l'étrange Barbarie, Pour un temps, m'arrache de vous, Mais belle Allemène, au moins, quand vous verrez l'Épous, Songez à l'Amant je vous prie.",
+          "Et je parle d'un vieux Sosie, Qur lut javis de mes parents, Qu'avec très grande Barbarie, A l'heure du dîné l'on chassa de céans."
+        ]
+      },
+      "top_5_places": [
+        "Barbarie",
+        "Thebes",
+        "PARIS",
+        "V",
+        "Saint Germain en Laye"
+      ]
+    }
+  }
+}

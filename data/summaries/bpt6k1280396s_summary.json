@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Les Oeuvres de Monsieur Molière...",
+    "publication_date": "1673",
+    "document_id": "bpt6k1280396s"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "LUCILE",
+          "frequency": 25
+        },
+        "related_sentences": [
+          "Oui, c'est elle, en un mot, dont l'adresse subtile, La nuit reçut ta foi sous le nom de Lucile, Et qui par ce ressort, qu'on ne comprenait pas A leme parmi vous un li grand enibalras, Mais, puis qu'Ascagne ici fait place à Dorothée, Il faut voir de vos seux toute imposture ôtée, Et qu'un nœud Et sacré donne force au premier. \nALBERT\n Et c'est là justement ce combat singulier, Qui devait envers nous réparer votre offense, Et pour qui les Édits n'ont point fait dé sensé. \n",
+          "Éde lu de Que me vient donc conter ce coquin assuré? \nMASCARILLE\n Bon, me voilà déjà d'un beau titre honoré. \nLUCILE\n Sachons un peu, Monsieur, quelle belle saillie Fait ce conte galant qu'aujourd'hui l'on publie. \nVIERE\n Pardon, charmant objet, un valet a parlé, Et j'ai vu malgré moi votre hymen revelé.",
+          "Et Lucile depuis fait encore moins paraître La violente amour qu'elle porte à mon Maître, Et veut absolument que tout ce qu'il verra, Et qu'en votre faveur son cœur témoignera, Il l'impute à l'effet d'une haute prudence, Qui veut de leurs secrets ôter la connaissance.",
+          "Tient mon bonheur en doute, et me rend difficile Une entière croyance aux propos de Lucile Je voudrais, pour trouver un tel destin plus doux, y voir entrer un peu de son transport jaloux, Et sur ses déplaisirs et son impatience, Mon âme prendrait lors une pleine assurance.",
+          "Si quelque intention le pressait pour Lucile, La recherche en pouvait être honnête et civile, Il fallait l'attaquer du côté du devoir, Il rallost de ion père implorer le pouvoir, Et non pas recourir à cette lâche feinte, Qui porte à la pudeur une sensible atteinte."
+        ]
+      },
+      "top_5_persons": [
+        "LUCILE",
+        "Celie",
+        "Valère",
+        "Lucile",
+        "Hypolite"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 25
+        },
+        "related_sentences": [
+          "C'est pourquoi puis qu'il y a tant de possibilité et de vraiisemblance dans l'évanouissement de Lelie, que l'on pourrait dire qu'il était absolument nécessaire qu'il s'évanoüist, puis qu'il aurait paru peu amoureux, si étant arrivé à Paris, il s'était allé amuser à manger, au lieu d'aller trouver sa Maîtresse: ils condamnent des choses qu'ils devraient estimer, puisque la conduite de cet incident avec toutes les préparations nécessaires, fait voir que l'Auteur pense meurement à ce qu'il fait, et que rien ne se peut égaler à la solidité de son esprit.",
+          "Et ledit Gabriel Quinet a associé audit Privilège, Thomas Joli, Charles de Sercy, Lys Bilaine, Guillaume de Luines, Jean Guignard fils, Étienne Loison, et Claude Barbin, aussi Marchands Libraires, pour en jouir pendant ledit temps, suivant l'accord fait entrait eux, Registré sur le Livre de la Commüuauté dél Imprimeurs, et Marchands Libraires de Paris suivant l'Arrest de Parlement, en datte du Avril 1653 Fait à Paris le 24-Mars 1666 S. mé, PIGET, Syne",
+          "En effet, il n'y arrive pas plutôt, que l'on voit la tristesse peinte sur son visage: Il fait voir que de la Campagne où il était, il s'est rendu au plustost à Paris, sur le bruit de l'Hymen de Celie Comme il est tout nouvellement arrivé, son Valet le presse d'aller manger un morceau devant que d'aller apprendre des nouvelles de sa Maîtresse;",
+          "Ja mais personne ne sut si bien démonter son visage, et l'on peut dire que dedans cette Pièce, il en change plus de vingt fois: mais comme c'est un divertissement que vous ne pouvez avoir à moins que de venir à Paris, voir représenter cet incomparable Ouvrage, je ne vous en dirai pas davantage, pour passer aux choses dont je puis plus aisément vous faire part.",
+          "À MONSIEURMONSIEUR HOURLIER, ÉCUYER SIEUR DE Mericourt, Conseiller du Roi, Lieutenant Général, Civil et Criminel au Bailliage du Palais à Paris Si cette Pièce n'avait reçu les applaudissements de toute la France, si elle n'avait été le charme de Paris, et si elle n'avait esté le divertissement du plus grand Momque de la Perre, je ne prendrais pas la liberté de vous l'offrir."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Turquie",
+        "Naples",
+        "France",
+        "Bologne"
+      ]
+    }
+  }
+}

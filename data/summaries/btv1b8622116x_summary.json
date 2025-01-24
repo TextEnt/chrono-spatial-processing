@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "author": "Rotrou, Jean de",
+    "title": "Le Belissaire tragedie, de Mr de Rotrou.",
+    "publication_date": "1644",
+    "document_id": "btv1b8622116x"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "BÉLISAIRE",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Dis-moi, qui t'obligeait à conspirer ma perte. \nLEONSE\n Outre l'indignité que Léonse a soufferte, Dont ie connais qu'à tort on te faisait l'auteur, D'on vra près entor, répois rexecuteur. \nBÉLISAIRE\n Quelle prospérité s'offense de la mienne? \nLEONSE\n J'ai promis le secret, souffrez que sans le tienne, En exigeant de moi cette confession, Vous me sollicitez d'une lâche action, Et ie vous ferais tort de plus passer pour traître, Luspunt pout oeprouvneys que cous m'obligez d'être.",
+          "Chacun veut voir l'auteur de tant d'illustres faits, Les arbres plains de monde en courbent sous le faix, Et ces hauts monts chargés des pieds jusqu' aux faîtes, Paraissent des Géants, tout de bras et de têtes, Quonnenumonuements, n ece jeute que pour vous, Seul la butte, l'objet et l'estime de tous. \nBÉLISAIRE\n Si quelque marque, Alvare, est due à mes vistoires, Laissons faire le peuple, et parler les histoires;",
+          "Comme le Ciel sur nous répand avec le jour Les secrets mouvements, et de haine et d'amour, Nous semblons l'H pour l'autre en tenir de naissance, Moi l'inclination, et vous l'indifférence: Vous souvient-il du temps qu'en pareil entretien, Je ne vous pussy nier de vous vouloir du bien? \nBÉLISAIRE\n Comme vous pressentiez l'éclattante Couronne, Qu'autant que votre hymen, votre vertu vous donne;",
+          "quel intérêt, ou plutôt quel caprice, neuna cous shtauper porler brormrice? \nBÉLISAIRE\n L'intérêt de Philippe à qui sa Majesté Dessous le joug d'Hymen promet cette beauté, Et ainsi ne doute point, puisque m'ôter la vie Serait certes bien moins que me l'avoir ravie, Que l'injuste attentat qui menace mon sein, Ne me soit un effet de son mauvais dessein;",
+          "Ty sais ce qu'un acier est entre deux aimants. \nBÉLISAIRE\n Écuiques moi te tronvie e enreS de peine. \nPHILIPPE\n Vous produisez l'amour dans le sein de la haine, Où ie tu la fureur toujours cède à la raison, Et un vous suis loyal dedans la trahison;"
+        ]
+      },
+      "top_5_persons": [
+        "BÉLISAIRE",
+        "Philippe",
+        "Théodore",
+        "Césars",
+        "Seigneur"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Gange",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "J'ai malgré leurs efforts sousmis à votre règne Ce que le Tibre laue et que le Gange baigne, Et l'Euphrate ravi d'un servage si doux Ne reconnaît plus rien que le Soleil et vous, La prise des deux Rois de Pare et de Médie, De cette guerre, enfin, ferme la tragédie, Et tous deux plus chargez d'opprobres que de fers, Vous viennent témoigner de quel bras ie vous serts.",
+          "Vous, dont le bras vainqueur, du Gange révéré, Vient d'en dre nos bords sur son sable doré, Et de teindre de sang le cristal de son onde, Glorieux conquérant de la moitié du monde;",
+          "Sont-ce là les lauriers qu'on doit à Bélissaire, D'avoir à vos États fait le Nil tributaire, Assujetti le Tibre, et récemment encor, De l'Euphrate et du Gange acquis les sables d'or.",
+          "Le Gange dont le jour voit la source en naissant, Par l'heur de mes travaux, vous est obéissant;"
+        ]
+      },
+      "top_5_places": [
+        "Gange",
+        "Rome",
+        "Paris",
+        "Constantinople",
+        "Nil"
+      ]
+    }
+  }
+}

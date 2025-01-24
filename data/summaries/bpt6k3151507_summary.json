@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "author": "Quinault, Philippe",
+    "title": "La Comédie sans comédie par le sr Quinault",
+    "publication_date": "1657",
+    "document_id": "bpt6k3151507"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "CLORINDE",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Et dans cette croyance à présent affermi, t vous suis comme Amant et non comme Ennemi, \nCLORINDE\n voit comme un Ennemi, soit comme Amant n'importe, rour ces deux noms ma haine est également forte: 18 n'y me que la Guerre, et de noble métier emande à qui l'exerce un grand Cœur tout entier;",
+          "Quiconque a le bonheur d'être à cette Beauté, Poit savoir qu'où ie suis il est en sûreté: Clorinde a fait retraite avec un soin extrême, suit ses pas et dis lui même que sans l'aime, \nARSACE\n Que sent dirai-je encor?",
+          "es Armes sans éclat me rendront inconnue, Dedans une entreprise où ie crains d'être veze, \nHERMINE\n l'entends quelqu'un qui marche, \nCLORINDE\n Arsace fait ce bruit, Avez -vous veu Tancrede SCÈNE V. ARSACE, CLORINDE HERMINE. \nARSACE\n ",
+          "Je sais que votre bras fut toujours indomptable Mais quand j'échapperais à ses coups furieux, Je n'échapperais pas aux traits de vos beaux yeux \nCLORINDE\n Qui donc es-tu, qui m'ose aborder de la sorte?",
+          "Moncœur que jusqu'ici l'on n'a peu surmonter, N'avait rien que Clorinde au monde à redouter: Ses fers ont tant d'éclat que j'ai l'âme trop vaine, si tu crois mérirer une si belle chaine;"
+        ]
+      },
+      "top_5_persons": [
+        "CLORINDE",
+        "HERMINE",
+        "ARSACE",
+        "Renaud",
+        "ISABELLE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Bien qu'il semble qu'une Fortune aussi grande que la vôtre, ne puisse être conservée que par des soins sans relâche et par des complaisances sans réserve, toute la France est justement persuadée qu'il n'y a point de belle Cognaissance que vous n'ayez acquise, ni des éclattante Vertu que vous n'ayez pratiquée.",
+          "Je suis né grâce au Ciel d'assez nobles parents, J'ai reçu dans la Cour mille honneurs différents: La France à m'admirer souvent s'est occupée;",
+          "À MONSEIGNEURMONSEIGNEURE MARQUIS M DE LA ILLLERAYE GRAND-MAÎTRE DE L'ARTILLERIE de France besoin pour être souffert"
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Paris",
+        "PARIS",
+        "Provence",
+        "Sicile"
+      ]
+    }
+  }
+}

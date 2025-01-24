@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "L'Amour médecin, comédie...",
+    "publication_date": "1669",
+    "document_id": "bpt6k1280475z"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "LYSETTE",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "M MOME'S, DES FONANDRE'S, LYSETTE \nLYSETTE\n Vois, Messieurs, vous voilà, et vous ne songez pas à réparer le tort qu'on vient de faire à la Médecine? \nM\n TOME'S. Coinment, queltce: \nLYSETTE\n Vn Insolent, qui a eu l'effronté rie d'entreprendre sur votre Métier;",
+          "Monsieur, mes Remèdes sont dierents de ceux des autres: Ils ont l'Hémétique, les Saignées, les Médecines, et les Lavements: mais moi ici guéris par des Paroles, pardes Sons, par des Lettres, mades Talismans, et par des Anneaux constellez. \nLYSETTE\n Que vous ai-je dit?",
+          "Lysette, j'avais tort de cuener mon ouveplaisir, et notre n'avais qu'à parler, pour avoir tout ce que sans souhaitais de mon Père: Tu levais. \nLYSETTE\n Par ma foi, voilà un vilain Homme;",
+          "Hypocrate dit, que ces sortes de Maladies ne se terminent qu'au quatorze, ou au vingt-un, et il n'y a que six jours qu'il est tombé malade. \nLYSETTE\n Hypocrate dira ce qu'il lui plaira;",
+          "ma Fille. \nLYSETTE\n À force de la tourmenter, ie l'ai fait revenir: mais cela quelque reprend de moment en moment, et ainsi crois qu'elle ne passera pas la journée."
+        ]
+      },
+      "top_5_persons": [
+        "LYSETTE",
+        "M",
+        "Seigneur",
+        "SGANARELLE",
+        "Malade"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Il est permis à Jean Baptiste Pocquelin de Molière, Comédien de la Troupe de notre très -cher et très famé Frère Unique le Duc d'Otis, de faire imprimer, vendre et débiter, pendant le temps et espace de cinq ans, par tel Libraire, ou Imprimeur que bon lui semblera, une Pièce de Théâtre qu'il a composée, intitulée l'AMOUR MED ECIN, avec défenses à toutes Personnes de réimprimer, ou contrefaire, vendre, ou distribuer ladite Pié, ou partie belle, sans sa permission, peine de san des Sa, et de amende portée dans Originalm Registré sur le Livre de la Communauté des Imprimeurs et Marchands Libraires de Paris, le 4. \nJanvier 1666\n ",
+          "Dieur Mortieu ceur, quitté et transporté son diolet de Paiullege a perre ravouillet, et Théodore Girard, Marchands Libraires à Paris, pour en jouir ainsi qu'il est porté par lesdites Lettres de Privilège, suivant l'accord fait entr'eux.",
+          "La Scène est à Paris, dans une salle de la Maison de Scanarelle PROLOGUE."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Champagne",
+        "Rome",
+        "Germain"
+      ]
+    }
+  }
+}

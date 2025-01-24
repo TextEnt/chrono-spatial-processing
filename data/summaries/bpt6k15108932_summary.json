@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Magnon, Jean",
+    "title": "Sejanus , tragédie de M. Magnon",
+    "publication_date": "1647",
+    "document_id": "bpt6k15108932"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "EIAN",
+          "frequency": 35
+        },
+        "related_sentences": [
+          "EIAN\n T bien, chère complice, La Fortune et les Dieux secondent nos désirs, Et ie vais dans ce jour consommer mes plaisirs, Par la posse ssion des beautés de Livie Jouissance, où belle mets le repos de ma vie!",
+          "8 Qu'elle expose à nos yeux ces tristes décadances Nous devons déplorer de telles insolences, N'est-ce point une vue à fondre tout en pleurs Et qu'on puisse nommer le comble des malheurs. \nEIAN\n ",
+          "La conjuration, en quel état est-elle? \nEIAN\n Tout m'obéit dans Rome, et ma profusion Range tous les soldats à ma dévotion;",
+          "confuiter-en ton âme s \nEIAN\n Seigneur, elle est séduite, et Druze a concerté.",
+          "EIAN\n Mais comme mes desseins veulent quelque longueur, Ne me rejettez plus dedans cette langueur?"
+        ]
+      },
+      "top_5_persons": [
+        "EIAN",
+        "César",
+        "Terence",
+        "Macron",
+        "DRUZE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 35
+        },
+        "related_sentences": [
+          "Puisque j'y suis réduit il faut que s'y périsse, Que toute ma maison s'ébranle avec moi Et qu'un poids si pesant te traine quand et soi Si je suis condamné plusieurs me doivent suivre Le coup dont sans mourrai les empêche de vivre, Je vois mes oppresseurs pompeux et triomphants Accabler mes amis, ma femme et mes enfants, Comme s'ils poursuivaient une longue victoire D'écrier de Séan jusques à sa mémoire, De tant d'indignité Rome les va louer Et la plupart des miens me va desaduoüer, D'âme me déroute horrible et va Ils envontrible tous ceux De nu caballe, Déjà sur ma ruine ils se dresient un plan Et dévorent entre eux les grands biens de Séjan, Le peuple s'y figure un monceau de richesses Que n'a point dissipé grand nombre de largesses, Un trésor composé de sang et de sueurs Un amas excessif formé de leurs labeurs, Mes papiers tous remplis de receptes et d'offres Et tout l'or de l'Empire enfermé dans mes coffres, Tibère pourra voir tout ce que j'ai laissé Et le nombre des biens que j'aurai ramassé, Je laisse trois enfants à cette prouidence Qui contre les puissan protege innocence, , vous estes grands Dieux des tuteurs éternels Ie commets mes enfans vos soins pr;",
+          "Il est bien apparant qu'il t'en dit l'importance, Qu'il t'aura découvert l'état de ses desseins Qu'il t'aura revelé le nom des assassins, Comme dans mon Empire il dressait ses parties Comme mes légions durent avoir averties, Et qu'au moindre courrier qu'on aurait ses avis Son ordre et ses drapeaux devaient être suivis, Que pendant que dans Rome il maintenait ses brigues Chez tous mes Généraux il sussitoit des ligues, Qu'il avait répandu grand nombre de presens Qu'il s'acquérait parle de puissants partisans, Qu'il avait corrompu, la Que et dAn Que mon Gaule et l' prochaine magne, 1 Qu'il viendroit m'assieger iusques dans mon Palais Et il me reduiroit demander la paix.",
+          "Qu'un nombre de soldats, iraient de place en place À son élection porter la populace, Que moitié par suffrage et moitié par terreur Rome l'honorerait du titre Ur, Qu'elle témoignerait de grandes complaisances Qu'elle metroit m'a mort dans ses magnificences, Et que par une pompe à dévorer son char Je servirais de marche à ce nouveau César, C’est ainsi que ce traître ordonnait ses pensées C'est dessus ce beau plan m'elles furent dressées, 'entreprise est sem è re, Et dans ces attentats qui se sont succédez, Ne te picque donc point constance extrême Et Loin de le sauuer guaranty",
+          "pourquoi m'en tiras-tu, Viens moi rendre à la mort redonne lui sa proie Rome qui de mes pleurs prends des sujets de joie, Mes douleurs à l'envi combattent tes plaisirs Et moi seul autre m'oppose à tes cruels désirs, La maison de Séan est de tous diffamée Je l'aimerai, veux l'aime, et l'ai toujours aimée, Cesar reprends ta grâce et revoque un tel don D'un esprit criminel Un te rends ton pardon, Je veux été coupable et mériter ma peine Je veux par ce refus me soumettre à ta haine, Et t'ayant irrité Seigneur te veux prévenir",
+          "Oui, Rome m'honorait avec idolâtrie Et tu suis le mépris de celui qui me prié, Ce Séian en faveur, ce Dieu des courtisans Étant lâchement trabi de tous ses partisans, Tous ses adorateurs lui manquent de parole Ils se vont prosterner aux pieds d'un autre idole, Allez la parfumer et de vœux et d'encens Lâches allez briguer le crédit des puissants, Et par une habitude à perdre tous vos maîtres Allez dire au Senat que vous êtes des traîtres, Que vous m'avez servi corrompus par mes dons Et que vos repentirs méritent vos pardons."
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "France",
+        "Paris",
+        "Grèce",
+        "Suede"
+      ]
+    }
+  }
+}

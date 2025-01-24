@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "author": "Boisrobert, François de",
+    "title": "Théodore, Reyne de Hongrie, tragi-comédie",
+    "publication_date": "1658",
+    "document_id": "bpt6k10901623"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "RAMÉE",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Me voyant emporté tu pouvais m'écouter, Mais tu ne devais pas si vite exécuter, colère aueugle, aueuglement suiuie, Me va coûter honneur, le repos et la vie, serviteur fidèle agit plus prudemment, \nRAMÉE\n Vous voulez qu'on vous serve en tout aveuglément : Je voyais bien, Seigneur, que votre ordre était Jude, Mais tu craignais l'effet de votre promptitude, J'en ai vu dans la Cour l'exemple dangereux, J'ai vu périr des Grands, tu me règle par eux, LE ROY.",
+          "LE ROY Cet ordre est surprenant, il est grand, il t'étonne, Mais, Ramèse, en un mot il faut l'exécuter, De ta fidélité Seigneur ne saurais douter, Va, lcrime est connu, 'ai tout su de mon frère, La Reylie a dals son tœur commis un Adultère, Elle est digne de mort, va donc de ce pas, Exécuter mon ordre et ne réplique pas. \nRAMÉE\n J'obéirai Seigneur, LE ROY.",
+          "Puis que ta main trop prompte a suivi ma pensée, Condamnons seulement celui qui l'a poussée, Tu suis un ordre injuste, et j'excuse ton bras, Mais, traître que je suis, tu ne m'excuse pas, Een le me parvome un coup n'étable. \nRAMÉE\n ",
+          "que m'apprendstu? \nRAMÉE\n u’on fait un double outrage à la même vertu, J'ai peur que ce récit, Seigneur, ne vous accable, 4 Vous voyez que ici tremble au seul nom du cou.",
+          "Cette lettre est du Prince, \nRAMÉE\n Elle est du suborneur: Comme il a vainement attaqué son honneur, Elle l'a menacé, mais il l'a prévenue, Sans songer que sa lettre un jour serait connue;"
+        ]
+      },
+      "top_5_persons": [
+        "RAMÉE",
+        "Irene",
+        "Irene",
+        "Théodore",
+        "Irène"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Asie",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "ennemis défaits attendent du secours, Mais pour le repos de nos jours, Amurat est-pressé de passer en Asie, Je ne crains donc plus rien de l'armée ennemie."
+        ]
+      },
+      "top_5_places": [
+        "Asie",
+        "Moni",
+        "Jap"
+      ]
+    }
+  }
+}

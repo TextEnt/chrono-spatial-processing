@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Du Rocher",
+    "title": "L'Indienne amoureuse, ou l'Heureux Naufrage, tragi-comédie",
+    "publication_date": "1636",
+    "document_id": "bpt6k10900242"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Philante",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "réuse Et la comdition d'une âme ma luEn fin tu vois Philante, où la rigueur du sort Réduit un pauvre amãt qui n'attẽd que la mort, Ici, cher confident, quelque effet qui succède, Apporte le dictame au mal qui me possède, Pognible tes conseils obligen m' iemment Serviront à mes feux de rafraîchissement: Cherche à ma passion quelque peu d'allégeance, Et donne à mon malheur ce peu de bien veillance. \nPHILANTE\n Mon Prince éloignez-vous de ce pays fatal, Quittez pour peude temps l'objet de votremal.",
+          "L'éloignement ne peut éteindre cette flamme, Qu'un objet amoureux allume dans mon âme, Et grande ne puis aller si loin avec toi Que quelque n'aie toujours mon tourment avec moi, Philante, cet exil, après l'auoirlaissée, L'ôtera de mes yeux, et nonde ma pensée: Aussi ie me tiendrais favorisé des Dieux, S'ils l'ôtaient à mon âme aussi bien qu'à mes THILANTE L yeux!",
+          ", assure toi que mes inventions Supplèront au défaut de mes affections. \nPHILANTE\n Croyez quole dessein qui butte à la surprendre N'aura point le succès qui s'en devrait attendre, Puis qu'une fois déjà l'on la prise en vos mains, Vous médités des vœux qui sont bien incertains Mais à quoi songez vous déchercher des conquêtes, Vous à qui le bonheur en offre de si prêtes?",
+          "Si toninuention rend un succès prospère, Je te ferai du bien plus que ju n'en espère. \nPHILANTE\n Ne vous en mettez point davantage en souci Et laissez moi le soin de penser a ceci, Faites moi ce plaisir seulement de me croire, Et mon invention vous promet la victoire.",
+          "Je sais que Rozémonde a beaucoup de mertes, Mais monamourchez elle a trouvé des limites Ses yeux n'ont point d'attraits qui captivent mes sens, Et ceux -là d'Axiane ont des charmes puissants. \nPHILANTE\n "
+        ]
+      },
+      "top_5_persons": [
+        "Philante",
+        "MÉANDRE",
+        "Seigneur",
+        "M",
+        "Mandre"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Floride",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Nfin nous arrivons en la Courde Floride, L Oùie dois encor voir cette belle homicide, Que ma simplicité condamna sans sujet: Éloigné de ses yeux ie suis près de l'ohiét: Voyez belle Princesse une étrange puissance",
+          "Et cette Isle agréable où l'équité préside, Pour la beauté des champs se nomme la Floride Et vous braves Guerriers, dites sans fiction, Quel est votre pays et votre extraction, Quuumomto",
+          "MÉANDRE, Prince de Mexique AATANVE,mît du Roi dejaFloride SINAME, Roi de la Ploride DIMANTE, Capitaine de la Floride ROZAMOND, 1.",
+          "Le changement d'habit en celui que tu vois, Je suis nièce du Roy qui règne en la Floride,",
+          "DORISTE, Reine de la Floride"
+        ]
+      },
+      "top_5_places": [
+        "Floride",
+        "Paris",
+        "Thrace",
+        "Rome",
+        "Louvre"
+      ]
+    }
+  }
+}

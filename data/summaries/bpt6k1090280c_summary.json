@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Bruno, Giordano",
+    "title": "Boniface et le Pedant, comedie en prose, imitée de l'Italien de Bruno Nolano",
+    "publication_date": "1633",
+    "document_id": "bpt6k1090280c"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "SACR",
+          "frequency": 10
+        },
+        "related_sentences": [
+          "Il est vrai cela, mais qu'appelez-vous fascination? \nSACR\n La fascination se fait par la vertu d'un esprit lucide et subtil, engendré de la chaleur du cœur, et du sang le plus pur, lequel à la façon de quelques rayons jalissant des yeux ouverts qui contemplent une chose avec une forte imagination, et venant à frapper la chose regardée parvient jusques au cœur, où il imprime été passion d'amour, ou de haine, d'envie, ou de mélancolie, ou quelque autré genre semblable de qualité passible: Or la fascination d'amour arrive lors que par de fréquents regards, ou même par un seul et instantané, mais qui soit fort, --.",
+          "Vous nous en comptez de belles, cela ne se peut faire. \nSACR\n J'en viendrai sans doute à bout, quand ie lui aurai dit commé l'affaire s'est passe, enfin suis si fort son ami, que s'il est couché ie me fais fort de le faire lever et de l'amener , et sans ferhi si bien qu'ils s'accorderont: mais Seigneur Boniface, il faut que vous lui demandiez pardon, et que vous lui fassiez quelque satisfactions convenable, de parole et d'effect, en vous jetant à ses pieds, parce que véritablement il a tout sujet de croire que vous l'avez grandement offensé.",
+          "Il m'en coûtera plutôt tout non bien que je n'en aie la raison. \nSACR\n Prenez garde à ce que vous dites, car ce n'a été la fauteni de l'une apprendre 'autre, ni la mienne non plus (car Je me doute hien que vous me voulez encore plus de mal qu'à pas un, quoi que vous le dissimuliez, ) mais peut-estée à ce esté vôtre faute à vous même. \nSACR\n Êtes vous bien assuré que les cheveux que je vous demandai pous mettre à la tête de l'image fussent de Vits torler L. eil Mar BON.",
+          "SACR\n Je ferai une exacte computationdes ans, des mois, et des heures, quand j'aurai pris avec le compas la proportion de la latitude du maître ongle avec la ligne vitale, et la distance qu'il y a du sommet du doigt annulaire au centre de la main où est désigné l'espace de Mars mais pour cette heure il suffit d'en avoir fait un jugement vniderier, dites mnoi quandavous fûtes épris de son amour, en quelle situation était -elle?",
+          "SACR\n Laissez -moi faire, car ainsi ne suis venu que pour vous apporter du remède: Et déjà vous imaginez-vous que sans le secours de mon art, j'aie pugagner celui-cy, pour me laisser parlerà vous en secret comme ce lai, ce pendant qu'on vous garde de fort loin: Sachez que de telles gens n'ont pas accoutume l'accorder ces courtoisies aux persõnes nême de leur connaissance, et qui sont eurs meilleurs amis."
+        ]
+      },
+      "top_5_persons": [
+        "SACR",
+        "BER",
+        "BONIFACE",
+        "LUC",
+        "SAN"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 10
+        },
+        "related_sentences": [
+          "Tout ce que j'en sais, c'est qu'il était un des plus grands Mathématiciens de son temps, comme ses livres de Mathematique en font foi, et (ce qui vient plus à notre propos ) qu'il fit imprimer à Paris cette Comédie sous le titre de CANDELAIO: Ceux qui l'auront lue en son original, reconnaîtront aisément combien de choses il m'a fallu retrancher, et ceux qui la regarderont de prés, telle qu'elle sort de mes mains, se douteront bien combien il en a fallu changer.",
+          "C'est sans doute grande grande misère que de vivre soubs ce climat de Paris où domine Mercure qui est le Patrõ et le nieu de ces sortes de gens -là, c'est pourquoi mon ami il faut que chacun prenne bien garde à sa bourse. \nLARI\n Pour moi pour plus grande sûreté, si peu d'argent que j'a ie le porte Joubs Tafssenle, voyez vous.",
+          "C'a été elle qui luia conseillé, et c'est à elle que s'adressent d'ordinaire les filles de Paris, elle leur donne des chapèlets, des grains bénits, et les gagne toutes par là, si elles font quelque vœu pour rencontrer quelque bon mari, c'est elle qui l'accomplit.",
+          "Pauvre homme tu feras mieux de te taire, autrement tout le monde t'estimera peu sage, et fera des contes de toi dans Paris, tu serviras de sujet de Comeure mommes aum enti, et si au bout du compte tu n'y gagneras rien.",
+          "là où vous en avez une jeune de vingt-cinq ans, et peut être des plus belles qui soient point dedans Paris, et cependant vous ne laissez pas de faire l'amour ailleurs."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Ascagne",
+        "Rome",
+        "Luxembourg",
+        "Parnasse"
+      ]
+    }
+  }
+}

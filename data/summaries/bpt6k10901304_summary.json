@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "author": "Aubignac, François Hédelin",
+    "title": "Sainte Catherine, tragédie",
+    "publication_date": "1681",
+    "document_id": "bpt6k10901304"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "MAXIMIN",
+          "frequency": 14
+        },
+        "related_sentences": [
+          "MAXIMINMadame, je la perds contre mon sentiment, Je fais tous mes efforts gour sauver cette Belle Mais elle est à soi-même entièrement cruelle, Et semble convertir par cette sole erreur Mes bontés en colère, et ma grâce en fureur. \nVALERIE\n Mais, Seigneur, voù pourrez l'exempter du suppliss Où sont tant de vertus on peut souffrir un viec \nMAXIMIN\n Je ne puis exemter nul Chrétien du trépas, \nVALERIE\n On ne peut être bon quand on ne le veut pas Grand Prince, qui régnez sur la terre et sur l'ondt Vous qui donnez des lois à la moitié du moult Avez vous oublié que tant de Nations Observent aujourd'hui vos inclinations?",
+          "Mais vous devez Empire au soin de son amour. \nMAXIMIN\n Je te dois ma fortune, et si veux le jour : Mais ce devoir m'anime encore plus contre-elle, C'est expos qui fait ma haine et la rend plus cruelle, Et c'est venir qui m'expose à l'injuste mépris De l'insolent orgueil dont son cœur est épris: Mais quelque vanité dont son orgueil se flatte, Et de quel ornement que la naissance éclate, Et quoi qu’elle prétende exiger de ma foi, Son espérance est vaine et sans pouvoir sur moi.",
+          "Toi qui donnes des biens qui ne périssent pas, Sur qui ne peuvent rien le temps, ni le trépas, Soûtiens jusques au bout mons courage invincible, Prends pitié de l'Égypte, et fais, s'il est possible, Qu'else, et toute la Terre, en confessant ta Loi, Aprenne à mon exemple à triompher pour toi. \nMAXIMIN\n Valère, fais soudain qu'on me défasle d'elle, Et m'en reviens toi-même apporter la nouvelle.",
+          "Si l'exemple fameux d'une Ajeule te flatte, S'il faut qu'un Empereur quite tout pour t'avais S'il faut qu'il se réduise au seul bien de te voir, S'il faut qu'il abandonne et son Trône et soymesme, Et sa vie, et sa gloire, enfin s'il faut qu'il t'aime, Puis qu'il n'ose le dire, et qu'il ne devrait pas, Vois comme Maximin adore tes appas;",
+          "MAXIMIN\n eu mépris des grandeurs vous occupe sans' humilité, ais c'est une vertu digne d'une Princesse, est qui l'humilité la fait plus élever: Ouis enfin, qu'avez-vons qui vous fait tant ruver? \nVALERIE\n est aisé de voir que mon cœur s'intéresse aussi le triste destin d'une jeune Princesse ue je vois toute prête à souffrir le trépas. \n"
+        ]
+      },
+      "top_5_persons": [
+        "MAXIMIN",
+        "VALERIE",
+        "SAINTE CATHERINE",
+        "MAXIME",
+        "MAXIME"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 14
+        },
+        "related_sentences": [
+          "Ces exemples fameux de générosité, Que la mémoire garde à la postérité, Qui bravèrent pouy Rome et les sers et les flimer En sa comparaison sont morts comme des Femmes, Mais jugez en sa mort, en ses derniers discouEt quelle était son âme en finissant ses jours.",
+          "ç est le sort deRomains, Il estirrevocable: et je crois qu'il est juste: Rome s'étant soumise aux successeurs d'Auguste Leur joug que s'imposa sa propre lacheté, Du plus pur de son sang fur par elle acheté.",
+          "Oui, c'est trop endurer que son pouvoir te brave, Rome, c'est trop longtemps soupirer en esclave Il fant faire un effort digne de ta vertu, Pour voir ce Maître injuste à tes pieds abittu?",
+          "dignité, puissance trop hardie, Trône de l'insolence et de la perfidie, Sous qui Rome soupire, et doit trembler d'effroi Ne pourrons-nous jamais nous défaire de toi?",
+          "faudrait plus d'un bras, d'une tête, et d'un Homme, out pouvoir rétablir la liberté de Rome Vous méprouvez, Maxime, et je le connais bien."
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Tibre",
+        "Alexandrie"
+      ]
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Le Misantrope, comedie. Par J. B. P. de Moliere",
+    "publication_date": "1667",
+    "document_id": "bpt6k1280468t"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ALCESTE",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "vous méritez sans doute, un Sort beaucoup plus doux, Et celle qui vous charme, est indigne de vous \nALCESTE\n Mais, en disant cela, songez -vous, je vous prie, Que cette Personne est, Madame, votre Amie? \nARSINOE\n Oui, mais ma Conscience est blesiée en effet, De souffrir, plus longtemps, le tort que l'on vous fait: L'état où je vous vois, Afflige trop mon Âme, Et tu vous donne avis, qu'on trahit votre flamme. \nALCESTE\n C'est me montrer, Madame, un tendre mouvement;",
+          "Mais, sérieusement que voulez-vous qu'on fasse? \nALCESTE\n Je veux qu'on loit sincère, et qu'en Home d'honeur, On ne lâche aucun mos qui ne parte du cœur. \nPHILINTE\n Lors qu'un Homme vous vient embrasser avec joie, Il faut bien le payer de la même monoie, Répundre, comine ou peut, à lcs einprencmens, Et rendre offre pour offre, et serments pour serments. \nALCESTE\n Non ici ne puis souffrir cette lâche méthode Qu'affectent la plupart de vos Gens à la modèle;",
+          "Je ne prends point de part aux intérêts des autres: mais Mionsleur, que, cuez vous, sixait vossre bonneur Venn Homme, comme lui, de mérite, et d'honneur, Et qui vous chérissait ici idolartie, Deuait-il. \nALCESTE\n Laissez moi, Madame, votre prie, Veider mes intérêts, moi mestre, là desias, Et ne vous chargez point de ces Goivus superflus Mon cœur a beau vous vois prédre ley la querelle, Il n'est point en état de poyer ce grardacle;",
+          "par vos soins, ne se chargera pas, Et puis que la Franchise a, pour vous tant d'appas, Je vous dirai tout franc, que cette maladie, l'ar tout ou vous allez, donne la comédie, \nALCESTE\n demande, rant mieux, morbleu, tant mieux, c'est ce que je Ce m'est un fort bon signe et ma joie en est grande: rous les Hommes me sont, à tel point odieux, Que lélérols luène déltre lage à lenis jeux.",
+          "Et de même qu'un cœur, d'une Vertu profonde. \nALCESTE\n Je sais que vous parlez, Mõsieur le mie du née, En beaux Raisonnements, vous abondez toujours, Mais vous pernez le temps, et tous vos beaux Discours: La Raison, pour mon bien, veut que je me retire, Je n'ai point, sur ma langue, un assez grand empire?"
+        ]
+      },
+      "top_5_persons": [
+        "ALCESTE",
+        "ARSINOE",
+        "Celimène",
+        "Prude",
+        "ARSINOE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Je dirais au Roi Henri, Reprenez votre Paris, J'a me mieux ma Mie, an gué, J'aime mieux ma Mie La Rime, feyt pas riene, de re Serre en ert vrex.",
+          "Je dirais au Roi Henri, Reprenez votre Paris, Jaime mieux ma Mie, augne, J'aime mieux ma Mie Voilà ce que peut dire un Cœur vraiment épris.",
+          "Et le dit oieur De MoL ÈRE à ceut joi uroict de Privilège à JEAN RIBOU, Marchand Libraite à Paris pour en jouir suivant l'accord fait entr'eux.",
+          "Si le Roi m'avait donné Paris sa grand'Ville, Et qu'il me fallut quitter L'amour de ma Mie;",
+          "La Scène est à Paris LE MISANTROPE Âla d MAis ACTE PREMIER."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Fontainebleau",
+        "Louvre",
+        "Tours",
+        "Rome"
+      ]
+    }
+  }
+}

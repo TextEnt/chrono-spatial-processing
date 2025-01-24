@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "author": "Nanteuil, D",
+    "title": "Le Comte de Rocquefoeuilles ou le Docteur extravagant, comédie...",
+    "publication_date": "1669",
+    "document_id": "btv1b52000590k"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Climène",
+          "frequency": 2
+        },
+        "related_sentences": [
+          ", Je décents dans de creux valons, Dedans des lieux que l'on appelle, Une garde une sentinelle, Ou mon pectorat entacé, ne viendra bientôt trespacé, Si Climène mon adorable, Ne m'est pas un peu favorable, L'amour me tourne dans le corps Tantôt dedans, tantôt dehors, Mais d'une force si picquante, Si maligne , si véhémente, Que je suis dedans le tombeau,",
+          "Est bien grande certainement, Le docteur Pancrace est amant, De ma Climene, qu'il adore, Et moi e allai qu'elle l'abore, Qu'elle aime un Cléandre sans bien, Mais l'honneur sans le bien n'est rien, Si je pouvois trouver un gendre, Que ma fille voulût bien prendre, Je serais heureux en effet.",
+          "Descendez -moi, pour le passé, N'en parlons plus, belle Climène, Au moins je suis bien à la gêne, Votre siège un peu le galant, Qui faite ici mon Lieutenant, Remenez dedans l'écurie, Monsieur mon âne, je vous prie, Et revenez présentement.",
+          "Je sais qu'il mocooptera, Pour être dedans peu sans peine, Votre mari, belle Climène, Mais vous n'y résisterez pas Car je connais que vos appas, S'ympatisent avec ma flamme Si vous pouviez voir dans mon âme, Vous voir mon Cœur.  CLIMENE.",
+          "à son Maître Monsieur je vais toucher au fait, Vous, écoutez ce qu'il va dire, Pour moi je m'envais faire écrire, Une patente de ce pas, à Climène et à Catin Et vous, Monsieur, suivez mes pas, Pour mieux achever notre affaire."
+        ]
+      },
+      "top_5_persons": [
+        "Climène",
+        "Catin",
+        "TIN",
+        "Crispin",
+        "GIBUS"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Pour votre fille Climène, Qu'elle se mette de son mieux, Afin qu'il se prenne des yeux, Car c'est un homme dans la France, Qui sans doute est de conséquence, Car il parle fort bien Français.",
+          "Je suis depuis peu dans la France, Mais las que je serais heureux,"
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Pays-bas",
+        "Rome",
+        "pô",
+        "Pontoise"
+      ]
+    }
+  }
+}

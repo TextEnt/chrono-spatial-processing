@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "author": "Baro, Balthasar",
+    "title": "La Parthénie , de Baro, dédiée à Mademoiselle",
+    "publication_date": "1642",
+    "document_id": "bpt6k63646887"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ALEXANDRE",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Grand Roi, quelque tourment qu'Hytaspe ait pu sentir, C'est trop que d'en avoir le moindre repentir, Le rang que vous tenez et ce superbe titre Qui vous rend des mortels ou le maître ou l'arbitre, Vous donne tout pouvoir de nous faire endurer, Et sans commettre un crime on n'en peut murmurer: Mais puisque vos bontés finissant mes supplices, Veulent que mes ennuis soient changés en délices, Ce que vous m'accordez m'est un bien si charmant, Qu'il fallait le payer encor plus chèrement. \nALEXANDRE\n Pour vous à qui ma flamme a coûté tant de larmes, Je vous rends vos États, triomphez de mes armes, Que vos myrthes fameux, riches de mes lauriers, Partagent le butin de mes exploits guerriers:",
+          "CARINTE Si j'ai rien oublié pour vaincre cette ingrate, Qu'en ce moment sur moi votre colère éclatte I ai parlé de la gloire ou l'Amour l'élevait, Si son cœur adouci vos flammes approuvait: Lais dépeint vos vérius plus fortes que vœux, armes, J'ai pou des sanglots, j'ai répandu des larmes, Enfin j' ai pratiqué pour votre allégement Tout ce que peut l'adresse avec le jugement. \nALEXANDRE\n En dussay-je augmenter mon amoureux supplice, Il faut que sur ce poir ton âme s'éclaircisse, Et si je dois mourir, comme j'y suis tout prêt, Qu' au moins sa belle bouche en prononce l'arrêt.",
+          "Si le Ciel a mes vœux eût été favorable Ale xandre eût mis fin à mon sort déplorable Mais les Dieux opposés à mon noble dessein M ont refase l'honneur de mourir de sa main J'ai recherché pourtant une gloire si haute, Grand Roi, sans ne crains point de confesser ma faute, Hytaspe a redouble son courage et ses coups Pour se faire un passage à donner jusqu'a vous, Et tâche par l'effait d' honneur de mourait D'immoler Alexandre, ou d' être sa me Ainsi, vaillant Héros, n'ayant rienmerite",
+          "Et quand à ce bonheur ie pourrais aspirer, Ce serait lâcheté que de le désiter, Comme ma volonté ma puissance est bornée, Je ne puis rétracter la foi que j'ai donnée, Élt est Ell est trop engagée, et Darie aujourd'hui Dans conmême topeau t'enserme toujours avec. \nALEXANDRE\n Darie a succombé sous l'effort de mes armes, J'ayregretté sa mort, j'en ai verse des larmes Mais autant que son nom fut digne de respect Autant à ma grãdeur son Sceptre était saspect, Vous avez satî fait Hyletaspe",
+          "Si ma bouche à toute heure aux sanglots est ouverte, Ils n'ont pour leur objet mon salut enfin ma perté, Celui qui m'a vaincu m'a réduit a ce poinct Que se porte des fers qui ne me pèsent point, Ma de faite est un mal dont contrai peu de conte, La gloire d' Alexandre en efface la honte, Et ici vois sans regret triompher en ces lieux n Monarque sorti de la race des Dieux: Mais hélas! Parthénie, ah!"
+        ]
+      },
+      "top_5_persons": [
+        "ALEXANDRE",
+        "Alexandre",
+        "Darie",
+        "Seigneur",
+        "Bellonne"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Perse",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "QuinteCurse arque de ce mauvais office devant que moi Et nous l'ayant représenté, après la cõqueste de la Perse, dans homme abandonnement à toutes sortes de volupté, il a semblé nous vouloir montrer combien est grande la faiblesse humaine, et qu'il n'y a point de si belle vie qui n'ait quelque intervalle fâcheux Encore crois-je avoir obligé la mémoire de ce Héros, puisque lui ayant fait concevoir quelque honte de sa mollesse, et de son oisiveté, j'ai suple à ce que l'Histoire deuoit dire: et même ai fait entreprendre par un principe de vertu la suite des grandes choses qu'il semble n'avoir faites que par hasard ou par intérêt.",
+          "Si dans le champ de Mars sa valeur ne c'exe ce, Il en faut accuser les plaisirs de la Perse Déjà de ses travaux il veut se délasser."
+        ]
+      },
+      "top_5_places": [
+        "Perse",
+        "Paris",
+        "Dombes",
+        "Chartres",
+        "champ de Mars"
+      ]
+    }
+  }
+}

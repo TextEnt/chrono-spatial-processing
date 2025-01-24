@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Longepierre, Hilaire-Bernard de",
+    "title": "Médée, tragédie",
+    "publication_date": "1694",
+    "document_id": "bpt6k10900405"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "CREON",
+          "frequency": 14
+        },
+        "related_sentences": [
+          "Je dos donc, profitant d'un rayon favorable, M'assurer en Creon un appui ferme et stable, Et l'attachant à moi par le nœud le plus fort, Prévenir et fixer l'inconstance du Sort.",
+          "Je sens, je sens alors, que mon trépas certain, Les bontés de Creon, le courroux du Destin, M'arrêtent moins ici que ne fait la Princesse;",
+          "MÈDE, Fille d'Hète, Roi de la Coiemde et fémine de Jason JASON, Prince de Thessalie CREON, Roi de Corinthe CREUSE, fille de Creon",
+          "\nCREON\n Quoi qu'elle ait mérité des maux plus rigoureux, Je consens à remplir vos désirs généreux;",
+          "Mais laissez-moi mon bien. \nCREON\n Ainsi donc, à l'oüir, Medée est innocente."
+        ]
+      },
+      "top_5_persons": [
+        "CREON",
+        "Jason",
+        "Jason",
+        "Creon",
+        "Rhodope"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Corinthe",
+          "frequency": 14
+        },
+        "related_sentences": [
+          "Et forçant l'avenir d'en garder la mémoire, Je veux lancer la foudre avant que de partir, Et voir Corinthe en cendre avant que d'en sortir, Mais Rhodoppe, l'Ingrat que j'aime et qui m'offense, A-t-il pu consentir.",
+          "L'ornement de la Grèce, et l'effroi de l'Asie, Le chef de nos Guerriers, la fleur de nos Héros, Dont le nom est vanté de Corinthe à Colchos Peut-être un doux penchant m'entraînerait sans peine.",
+          "Oui de leur joug pressant l'invincible contrainte, Fixe enfin mes destins et mes vœux à Corinthe En vain Medée en proie à ses transports jaloux, Se livre à la douleur, s'abandonne au courroux.",
+          "Et que Corinthe ainsi n'étant plus prophanée, Il se prête avec joie à ce doux hyménée.",
+          "Acaste le demande, et Corinthe m'en presse: À ce prix entre-nous la guerre affreuse cesse."
+        ]
+      },
+      "top_5_places": [
+        "Corinthe",
+        "Grèce",
+        "Lemnos",
+        "l'Isthme",
+        "Europe"
+      ]
+    }
+  }
+}

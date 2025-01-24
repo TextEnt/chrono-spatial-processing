@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "author": "Cormeil, De",
+    "title": "Le ravissement de Florise, ou L'heureux événement des oracles , tragi-comédie par le sieur de C.",
+    "publication_date": "1632",
+    "document_id": "bpt6k6283934q"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Sybille",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Pour s'esclaitcir de l'événement de leur amour, ils consultent tous deux la Sybille qui leur dit pour toute réponse que leur persévérance leur donnerait à la fin le fruit qu'ils espéraient de cueillir, et particuliement à Célidor qui posséderait un jour le véritable objet de celle dont il n'avait que le portrait, mais qu'il ne fallait pas pour tout cela que la vanité l'emportât, puis que ses désirs ne trouveraient point leur port que par une grâce très particulière des dieux immortels.",
+          "En effet l'événement cofirma tout aussi tôt la vien de l'oracle, car ils furent à peine sortis de l'Antre de la Sybille, qu'ils ouïrent dans la forêt la triste voix d'une personne qui se plaignait, et qui demandait du secours.",
+          "Pour cet effet il prend la même résolution que Célidor, et s'en va consulter l'oracle de la Sybille, sans que toutes les raisons que le lage Poète Amphion lui allegue soient capables de l'en détourner.",
+          "Ce qui fait que pour satisfaire à la violence de ses désirs il va consulter l'oracle de la Sybille Durant que cela se passe ainsi, voilà que le Capitaine Timandre revenu de la guerre, et re2.",
+          "Cendor porte au ter le portrait que la Sybille lui avait donné."
+        ]
+      },
+      "top_5_persons": [
+        "Sybille",
+        "Timandre",
+        "Pan",
+        "Poète",
+        "Amphion"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "L'exemple familier et la cause du mal Me font voir le chemin qui mène à l'hôpital: Je me veux marier, c'est l'unique remède, N'ayant qu'une beauté qui seule me possède, De qui puis-je a la cour faire une élection, Si ie vais m'embarquer dedans l'affection, L'ordinaire soupçon servira de dispense, Point de bien, point d'argent, et beaucoup de dépense: Si ici vais à Paris l'on veut un officier, Unhomme de finance, ou quelque Justicier, Toutefois maintenant le frison de Polette Donne souvent la fièvre au cœur d'une caillette: Si j'ose hasarder l'orgueildu partiz an, Ce n'est ce qui lui faut qu'un pauvre courtisan, L'un et l'autre suiuant vne vémbre fugitive, Qui tient entre ses mains leur fortune captive: Si ici prends le tombeau de quelque vieux péché, Il faut rendre dans l'an ce que l'on a touché.",
+          "Quel su jet te retient en ses lieux si déserts Que tu méprise ainsi l'esprit de l'Hivers, La maison du plaisir, des beautés le parterre Ce Paris l'abrégé du reste de la terre:",
+          "Puisque l'unique des beautés *Fait séjour en un hermitage, Il aura toujours l'avantage Sur les délices de Paris"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Rome",
+        "PARIS",
+        "Champagne",
+        "France"
+      ]
+    }
+  }
+}

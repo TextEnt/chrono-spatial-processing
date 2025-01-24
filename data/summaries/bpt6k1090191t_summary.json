@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Robinet, Charles",
+    "title": "Panégyrique de l'École des femmes, ou Conversation comique sur les œuvres de Mr de Molière",
+    "publication_date": "1664",
+    "document_id": "bpt6k1090191t"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "PALAMEDE",
+          "frequency": 10
+        },
+        "related_sentences": [
+          "PALAMEDE\n Que vous êtes maunaise, Bélise J'avais fait tomber la Compagnie dans cette Digression, pensant détourner l'orage que je voyais grossir sur la tête du pauvre Zoïle, et vous n'avez pu souffrir que m luy aie rendu ce bon osfice: Mais ici vous déclare que ici ne saurais consentir qu'il soit ici persécuté sans Défenseur, et que tu veux être le sien. \nCELANTE\n Si Lidamon demeure de notre côté, vous n'aurez qu'à vous bien tenir.",
+          "PALAMEDE\n Elles ne sont pas si sottes que de nous laisser mettre en usage, le remède d'Ovide: les Finettes ne nous permettent jamais de les visiter dans cette désavantageuse nudité de charmes, qui pourrait leur faire perdre l'Empire des cœurs: et de notre part, quoi que nous soyons persuadez qu'elles doivent ce qui touche souvent le plus, à ce qui leur appartient le moins, nous ne laisserons pas d'en être piquez, et d'en faire nos Souveraines.",
+          "PALAMEDE\n Lidamon, Seigneur souscris Seigneur plaisir, à ce que vous dites en faveur de Bélise et de Célante et quand vous aurez dessein que l'on vous croie, il ne vous faut qu'avancer des vérité aussi claires, et aussi aimables \nCELANTE\n Qu'en dites -vous Bélise nous ne nous attendions pas à de pareilles douceurs : et nous et nous sommes tout à fait obligées à la galanterie de Lidamon et de Palamède BELIZE en riant.",
+          "et l'on m'a dit que depuis peu, elle appelle le Vitrage, le Transparent de la maison, le Lit, le Domicile du sommeil et des songes, le Miroir, le fidèle Conseiller du visage, et les autres choses par des noms aussiogrenus. \nPALAMEDE\n Ô la ridicule Prétieuse! \nCELANTE\n J'en sais apprendre qui l'est bien autant.",
+          "PALAMEDE\n Je n'ai point d'autres sentiments à l'égard de Celante Je condamne hautement ce qu'a dit Zoule, que toute la puissance était du çosté de la Barbe: et pour le moins, vous n'aurez pas à craindre, belle Celante, qu'elle soit de longtemps plus de mon côté que du vôtre;"
+        ]
+      },
+      "top_5_persons": [
+        "PALAMEDE",
+        "Crysolite",
+        "BELIZE",
+        "BELIZE",
+        "Lysandre"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 10
+        },
+        "related_sentences": [
+          "Je n'avais qu'à vous renvoyer à celle que l'Auteur a luymesme faite de sa Pièce, qui pouvait servir de verte réplique, ou bien à l'approbation que tout Paris ainsi donne depuis six mois: Hommes et Femmes ne se pouvant lasser d'aller à cette Spirituerelle École, et les dernières que vous y croyez si outragées, quoi que je n'aie encor appris leurs plaintes que par votre bouche, en ayant même J'Imprimé entre les mains pour le lire dans le temps qu'elles l'écoutent, sans doute, afin de s'en rendre le plaisit plus sensible, et peut-être, pour s'en mieux imprimer dans l'esprit, les vtiles Leçons. \n",
+          "LYSANDRE\n J'avais cette curiosité, même en Angleterre et quand notre n'eusse point eu de sujet de venir à Paris, tu crois que j'y serais venu exprez, pour voir jouer l'École des Femmes, tant elle faisait de biuit en notre pays. \nCRYSOLITE\n Cette Pièce fait du brûit par tout le Monde, et c'est encor une preuve de sa bonté: Dites-nous L'ysandre, en quelle opinion elle est en Angleterre . \n",
+          "car il a augmenté les divertissements de Paris, par ce te Troupe de Comédiens, dont il est le Chés, qui est la meilleure du Monde, et donné en même-temps, se bel Ouvrage de l'École des Femmes, Dor aume cloitié de lui-même au Public, qui sont des bienfaits qui ne peuuent j mais se reconnaître. \nCRYSOLITE\n ",
+          "Il est permis à Charles de Cerci, Marchand Libraire à Paris d'imprimer ou faire imprimet une Pièce intitulée le Panégyrique de l'École des Femmer, etc. et ce, durant le temps et espace de sept annés, à compier du jour que ladite Pièce sera achevée d'imprimer pour la première fois;",
+          "Il est permis à Charles de Cerci, Marchand Libraire à Paris d'imprimer ou faire imprimet une Pièce intitulée le Panégyrique de l'École des Femmer, etc. et ce, durant le temps et espace de sept annés, à compier du jour que ladite Pièce sera achevée d'imprimer pour la première fois;"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "France",
+        "Angleterre",
+        "Parnasse",
+        "Louvre"
+      ]
+    }
+  }
+}

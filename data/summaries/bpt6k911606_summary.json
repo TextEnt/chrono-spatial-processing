@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "author": "Scudéry, Georges de",
+    "title": "L'amant libéral , tragi-comédie par monsieur de Scudéry",
+    "publication_date": "1638",
+    "document_id": "bpt6k911606"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "PAMPHILE",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Ma perte est trop sensible, et vous l'avez causée. \nPAMPHILE\n Mais un homme sans bien. \nRODOLPHE\n N'est jamais sans bonheur, Alors qu'il l'a perdu, pour sauver son honneur: Quelque incommodité que le corps en ressente, âme est en repos quand elle est innocente. \nPAMPHILE\n L'amour fit un péché, que Un connais trop tard: \nOLPHÉ\n Le vice est toujours laid, en dépit de son fard. \n",
+          "Quand c'est pour vous servir, j'ose, fais, et peux tou N'étant difficulté, dont une ne vienne à bout. \nLEONISE\n Mon Père est ences lieux, et l'avare Pamphile, M y Esclaves comme vous du Cadi de cette Île, De grâce en m'obligeant, servez l'Un yvez, Et ne songez à moi, qu'en prenant soin de vous.",
+          "Si vous vouliez m'entendre. \nRODOLPHE\n Ha Pamphile, une excuse Montre bien moins d'amour, qu'elle ne fait de ruse: Mais quoi que votre esprit s'estime assez rusé, Le mien dans sa douleur, n'en peut être abusé: Je vois ma fille esclaue, et la foi méprisée;",
+          "Va, ne m'approche plus, ton œil me désespère: Et si ce grand effet, n'est pas en ton pouvoir, N'augmente point mes maux, de celui de te voir. \nPAMPHILE\n Confus et repentât d'une faute innocente;",
+          "Si bien, qu'en s'éloignant des côtes de Sicile, L'un prît en son partage, et Rodolphe, et Pamphile, L'autre prît Léonise, et le tiers me reçut, Abusé de l'espoir, que son âme conçut."
+        ]
+      },
+      "top_5_persons": [
+        "PAMPHILE",
+        "IBRAHIM",
+        "RODOLPHE",
+        "Léandre",
+        "HAZAN"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Tours",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Ristes objets de mes regards, Superbes Tours fermes Remparts,",
+          "et L'image décès Tours, peinte en ta fãtaisie."
+        ]
+      },
+      "top_5_places": [
+        "Tours",
+        "Paris",
+        "PARIS",
+        "V",
+        "France"
+      ]
+    }
+  }
+}

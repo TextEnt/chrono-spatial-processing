@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "author": null,
+    "title": "Soliman ou l'Esclave généreuse, tragédie [par Jacquelin]",
+    "publication_date": "1653",
+    "document_id": "bpt6k8528590"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "SOLIMAN",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "À moi parler d'Amour, moi veuve de ton fils, Sans doute ta hautesse a perdu la mémoire, Ou bien elle n'a plus aucun soin de sa gloire, Le vice dans ton cœur succède à la vertu, Et nous voyons sous lui Soliman abattu: Éteins grand Empereur cette honteuse flamme, Dont avec raison la nature te blâme, Change, change pour moi ton Amour en horreur, Vois ce que ie te suis, et qu'elle est ton erreur, Reprime tes de sirs Seigneur, et considère, Que tu ne peux m'aimer, si ce n'est comme père, Puisque ayant eu ton fils pour légitime époux, Je passe pour ta fille au jugement de tous. \nSOLIMAN\n Donc à ce que Seigneur vois, vous êtes si crédule, Qu'un mensonge grossier, un conte ridicule, Qui n'a que sur le peuple acquis autorité, Passe dans votre esprit pour une vérité?",
+          "Enfin, ie suis vaincu pour la première fois, Je fais ce qu'on m'ordonne, et non ce que ie dois, Si ie usde à l'Amour, j'ai du moins l'avantage, Que souvent on a vuù triompher mon tourage, Et qu'encor que mes yeux fussent de son côté, Je me suis défendu jusque à l'extrémité: Voyons donc Aspasie ah que viens-je de dire, Mais, quoi -je ne fais plus ce que mon cœur désire, Je zvi les mouvements d'un tyran absolu, Et dois exécuter ce qu'il a résolu, À moi quelqu'un. \nNAPIGI\n Seigneur. \nSOLIMAN\n Amenez Aspasie, Je le confesse Amour, ta force est infinie, À celui qui peut tout, notre n'ai pu résister, Il ne fallait pas moins aussi pour me dompter.",
+          "On accuse mon fils, et te viens pomupprendre, Si l'Amour paternel a bien su le défendre, Je te viens demander si tu l'as condamné, Si l'on sacrifiera le cadet à l'aisné, Li folle tes soupçons déplorable victime Pres d'un père si bon l'imposture l'oprime. \nSOLIMAN\n L'imposture en ceci n'agit aucunement, Je le tiens criminel sur un vrai fondement, Et pleut au juste Ciel qu'il fut moins véritable, Mon cœur souffre beaucoup à le croire coupable, Aussi ne veux-je pas lui denier un point.",
+          "AInsi tu peux juger par ce commancement, Que l'on n'accuse pas Bajasjet faussement: Mais considère encor de plus prés cette affaire, Il tâche à perdre un frère, et fait revire un frère, Selin est un obstacle à sa prétention, Il le veut immoler à son ambition, Et craignant de manquer ce dessein détestable, Un infâme imposteur à Mustapha semblable, Se dit comme ce Prince aîné de Soliman, Légitime héritier de l'Empire Ottoman Ainsi de tous côtés la fortune conspire A porter Bajaset au Trône qu'il désire;",
+          "ROXELANE\n Hé bien pour empêcher, que ce cher fils ne meure, Je te confesserai tout ce que tu voudras, Mais aussi promès moi de ne le perte pas: Je te demande encor seconde grâce, Tire le de prison, afin que je l'embrasse, Et tu sauras de moi ce que tu veux savoir. \nSOLIMAN\n À la fin vous rentrez dedans votre devoir, Celte joumpion est ce que je demande, Je veux qu'on m'obéisse, alors que je commande."
+        ]
+      },
+      "top_5_persons": [
+        "SOLIMAN",
+        "ROXELANE",
+        "Selin",
+        "Mustapha",
+        "Aspasie"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Constantinople",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "La Scène est à Constantinople S V"
+        ]
+      },
+      "top_5_places": [
+        "Constantinople",
+        "Thrace",
+        "Syrie",
+        "Afrique",
+        "Asie"
+      ]
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "author": "Rosimond, Claude Rose",
+    "title": "Les Qui pro quo, ou le Valet etourdy, comédie",
+    "publication_date": "1673",
+    "document_id": "bpt6k1090230g"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "FABRICE",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Car par tes artifices, Possédant son esprit, tu détruis mes services: Il n'est rien de bien fait, si tu n'y mets la main, Qu'on fasse cent fois mieux, c'est travailler en vain, Monsieur Cliton est seul capable de lui plaire. \nCLITON\n Et c'est avec justice aussi qu'il me préfère. \nFABRICE\n Tu t'imagines donc le servir mieux que moi?",
+          "Une autre fois plus tant de liberté, y tu j'as le dessein de te voir mal traité, \nFABRICE\n Où tu veux gronder pour ce que j'ai su prendre, ffin de vivre en paix je m'envais te le rendre. \nNERINE\n lte là s'il te plaît, le jeu te semble bon, \nFABRICE\n le ne veux rien à toi. \n",
+          "TIMANTE\n Après un tel advu, sans doute je dois l'être. \nORONTE\n Eh, Timante, après tout vous devez me connalite Mais pour vous détromper, Fabrice \nFABRICE\n C'a. SCÈNE V. ORONTE, TIMANTE, FABRICE. \nORONTE\n CLiton, N'est-il point revenu de chez mon Père? \nFABRICE\n Non \nORONTE\n ",
+          "FABRICE, ORONTE, CLITON \nFABRICE\n MAlépeste à ce coup je n'ai pas lieu de rire. \nORONTE\n Que veut dire ceci Cliton \nCLITON\n Cela veut dire, Que tant que vous aurez avec vous ce brutal, Vos affaires, Monsieur, n'iront jamais que mal, Car c'est encor un tour de ce rare génie.",
+          "Nous en aurons. \nORONTE\n Et que je m'estimerai la personne du mone âme la plus heureuse, si répondant à ma tendresse vous voulez bien accorder votre Cœur à la personne qui vous le demande. \nLEONOR\n \nLeonor\n Ah le traître. \nFABRICE\n Et bien jamais valet servit-il mieux son maître?"
+        ]
+      },
+      "top_5_persons": [
+        "FABRICE",
+        "Clarice",
+        "LISETTE",
+        "NERINE",
+        "Leonor"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Et dans Paris il faut. \nFABRICE\n Tu t'en fais bien accroire, \nCLITON\n Je puis avec raison me donner quelque gloire.",
+          "La Scène est à Paris LES I"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Rome",
+        "PARIS",
+        "cantal",
+        "Saint Germain en Laye"
+      ]
+    }
+  }
+}

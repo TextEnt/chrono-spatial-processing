@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "author": "Passerat, François",
+    "title": "L'heureux accident ou la maison de campagne, comédie / par M. Passerat",
+    "publication_date": "1695",
+    "document_id": "bpt6k852855g"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "CRISPIN",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "finissez de grâce un pareil compliment, Et faites au plutôt sçavoir à cet Amant Que a teucidiager lon amouledle peds, Il peut entretenir tout le soir Celimène, Nous allons à sa chambre où chacun se rendra, Vous viendrez nous y prendre à l'heure qu'il faudra. \nCRISPIN\n ",
+          "Rien, Madame, en ceci laissez agir Valère, Demeurez en ces lieux jusques à son retour, Et croyez qu'il n'est rien d'impossible à l'amour, nia deninela, da nent eût de ma fenlces à Crispin Mais contes-nous comment la chose s'est passéca.",
+          "Car te voyant tes jours étaient en leur pouvoir. \nCRISPIN\n Je n'étais pas si sot que de me laisser voir, Peste, il y faisait chaud, je l'ai réchappé belle, J'en ai, Madame, encore une fraie mortelle.",
+          "COLIN. \nDuiin\n \nCRISPIN\n \nDLIN\n \nDu Viv\n CRIS \nCRISPIN\n Oh, non, je te proteste, Je bois beaucoup sans doute et je mange encor mieux Mais, Colin, entrenous raisonnons en ces lieux,",
+          "Ç Cit pour te faire entendre Qu'en dépit des raisons du traître de Crispin, Il te faudra tâter malgré toi de Colin \nCRISPIN\n Tu n'as pas grand sujet de te mettre en colère;"
+        ]
+      },
+      "top_5_persons": [
+        "CRISPIN",
+        "VALÈRE",
+        "LUCRECE",
+        "CHARLOTTE",
+        "Celimène"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Qu'il fait meilleur ici, cousine qu'à Paris, Qu'étant débarrassé du fracas de la ville Je dis On goûte à la campagne un plaisir plus tranquille, Tout y rit, tout y plaît, tout répond à nos vœux, Et j'en trouve pour moi les habitants heureux, Ces différents objets adoucissent leurs peines, Tous ces pren emhamés, ces affitraoles ioftames, La fraîcheur de ces bois, le murmure des eaux, L'agréable concert de mille et mille oiseaux, Ju cela en leurs ou iuspire allégresse",
+          "Pourquoi toujours rester dans cette humeur grossière Quelquefois à Paris que ne suis-tu Valère Ne peux-tu pat de jour y rem arce nous : COLIN toujours mangeant.",
+          "tu passer le plus beau de ton âge A demeurer sans cize à un méchant Village, Sans voir un peu Paris et les honnêtes gens?",
+          "De Paris jusqu'ici la dil gênée est belle. \nCRISPIN\n "
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "BRUSELLES",
+        "LUCRECE"
+      ]
+    }
+  }
+}

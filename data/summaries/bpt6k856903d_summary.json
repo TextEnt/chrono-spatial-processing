@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "author": "Mouffle, Pierre",
+    "title": "Le Fils exilé ou le Martyre de Sainct Clair, tragi-comédie chrestienne par Mr. Pierre Mouffle",
+    "publication_date": "1647",
+    "document_id": "bpt6k856903d"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "CLAIR",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "La Dame impudique, et CLAIR \nLa Dame\n À Reine de Sabavisita Salomon, L'Esprise de sa gloire et de son grand renom, Pour voir tous ses trésors et sa magnificence, Entendre ses discours et sa rare éloquence, Elle quitta ses biens, son peuple et son pays, Pour ouïr ses conseils et prendre son avis, Pour y faire (sçauant) expliquer ses emblèmes Elle n'y envoya, mais yfut elle -même, Voyant ce sage Roi, sa pompe, et l'apareil De son Palais Royal ais Royalais qui n' pareil, Estonnée d'entendre et voir tant de merveille, Elle se laissa prendre et gagner par l'elle.",
+          "CLAIR parlant à Odebert EST m'étais retiré à l'écart dans ce lieu, LÉloigne de tout bruit pour servir à mon Dieu, L'agréable douceur de cette vie plaisante Était à mon esprit si chère et ravissante, Que j'eusse préféré cet aimable séjour A tous les vains plaisirs qu'on reçoit à la Cour.",
+          "La mère de l'Enfant ressuscité, son fils, et CLAIR La Mère parlant à CLAIR À veuve et l'orphelin sont sous la sauvegarde DDe Dieu le Créateur qui toujours les regarde De son œil de pitié, il est leur réconfort, Leur refuge certain, leurde et leur suport.",
+          "Ne passe pas ce lieu, attends-moi à la porte, Macisette tuora jon teseu au sempo que j'en sorté, CLAIR ramène à la veuve son fils ressuscité.",
+          "LE PERE, LA MERE et CLAIR LE PERE, LA MERE et L'AFIDE, tous ensemble."
+        ]
+      },
+      "top_5_persons": [
+        "CLAIR",
+        "Clair",
+        "Clair",
+        "Seigneur",
+        "Jésus-Christ"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Normandie",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Pour se venger de belle, il suscite une Dame Effrontée, impudique, et lui met dedans l'Âme, L'envenime poison de la lubricité, Pour lui faire pécheur quitter la Chasteté. Lui qui voit ces appas quite son Abbaye, Errant parmi les Champs laisse la Normandie, Aimant mieux fugitif éviter ces aguets, Que de se laisser prendre en ces damnés fils: Après avoir couru de Province en Province, Il se retire enfin, non à la Cour d'un Prince, Ny souz les toits dorés de quelque grand' maison: Ain seul avec Cyrin son très-cher Compagnon, À l'écart dans un Bois prés la Rivière d'Épte 1 Construite de leurs mains;",
+          "Ainsi le Grand Saint CLAIR obtenu par prière, Ne fut pas pour servir aux vanités d'une père Qui le veut marier: car la nuit du festin, Par le conseil d'un Ange, avec Saint Cirin, Quite tous ses parents, ses grands biens, sa patrie, Traverse l'Océan, et vient en Normandie, Arrive à Cherebourg, de-là passe au travers Des Bois les plus toufus de leurs feuillages vers, Pour faire pénitence, et viure solitaire Comme H Acore, ou ainsi qu'un Saint Père.",
+          "CIRIN\n Je viens de voir au Port et au bord de la Mer, S'il y a des Vaisseaux qui soient prêts à voguer, J'en ai rencontré un, qui passe en Normandie Au Port de Cherebourg sans nulle compagnie, Il part sur la minuit, il ne faut pas tarder, Dans six heures d'ici, il faut l'aller trouver.",
+          "Livre que je vous dédie, Est d'un Martyr de Normandie, Dont vous êtes le Directeur."
+        ]
+      },
+      "top_5_places": [
+        "Normandie",
+        "Paris",
+        "Normandie",
+        "France",
+        "Pais"
+      ]
+    }
+  }
+}

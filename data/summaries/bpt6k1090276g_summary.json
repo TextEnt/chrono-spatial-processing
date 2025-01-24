@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Rotrou, Jean de",
+    "title": "La Bague de l'oubly, comédie",
+    "publication_date": "1654",
+    "document_id": "bpt6k1090276g"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "FABRICE",
+          "frequency": 9
+        },
+        "related_sentences": [
+          "Qui laisse entrer ces fous que ici ne connais pas? \nFABRICE\n Comme de son esprit la raison est bannie, Ô ie ne me plains plus, j'ai de la compagnie. \nLILIANE\n Ne vous parais-je plus avec ces mêmes yeux Qu'il vous plût de nommer vos Soleils et vos Dieux?",
+          "Achève promptement, tiré-moi de souci, Rassure tes esprits: mais que te vois-je ici \nFABRICE\n Sire, durant l'état de cette maladie, Où l'astre de vos jours à la fin remédie: J'ai vu, la larme à l'œil, que mille ont profité Aduantageusement de votre infirmité.",
+          "Je vois qu'elle a l'esprit comme le teint sans fard: Allons, marchons, courons; \nFABRICE\n  mais Sire, il est bien tard, Et c'est bien à regret qu'il faut que je vous voie, Par un autre discours modérer votre joie.",
+          "Si tu l'avais voulu, jette l'aurais signé. \nFABRICE\n Si cette bonne humeur longtemps vous continue, Ma bonne volonté vous sera mieux connue, Et si dans un moment ie vous retrouve ici, J'apporterai la plue et l'ordonnance aussi LE ROY.",
+          "Cher Fabrice, il est vrai que j'adore ses charmes: Mais qu'elle deité n'aurait mis bas les armes, Et quel esprit si fort aurait vu ses appas, Et se pourrait vanter de ne les aimer pas? \n"
+        ]
+      },
+      "top_5_persons": [
+        "FABRICE",
+        "LILIANE",
+        "LEONOR",
+        "LÉANDRE",
+        "MELITE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Sicile",
+          "frequency": 9
+        },
+        "related_sentences": [
+          "Nfin reconnais-tu l'infaïllible dessein ÉQue ce Prince amoureux à pour moi dans le sein, Et que cette prison de mon père et du Comte Est le chemin du trône où ma fortune monte, Melite, observe un peu ses yeux à mon abord, Juge par leur douceur, de celle de mon sort: Eut-il dans la pensée un prois difficile, Eut-il dessus le point de perdre la Sicile, Vît-il les étrangers entrer de tous côtés, Mon abord changerait ses soins en voluptés, Et quelques ennemis qu'il avait fallût combattre. \nMELITE\n Vous seriez le premier qu'il tâcherait d'abattre. \n",
+          "Enfin ma guérison semblant sans apparances, J'ai pour un bien commun désiré vos présences, Escoutez (chers amis le dessein que sans fais, Votre sceptre dans mes mains est un trop rude faix, Je connais mes défauts, et vois qu'il est facile, De pourvoir toutefois au bien de la Sicile, Pour achever mes jours avec plus de douceur, Je cède mes soucis, et mon sceptre à ma sœur: Sa naissance, et mes vœux la rendent souveraine, Recgnaissez la tous en qualité de Reine:",
+          "Cher démon des plaisirs, sorts du sain de ta Mère, N'habite plus, Amour, ni Paphe, ni Cythère, Rends nos cœurs fortunés entre tous les humains, Épanche sur nos lits des fleurs à plaines mains, Fais des arcs tous de soie, et détache la corde, Dont toujours l'amour tu pousses la discorde: N'établi dans ces lieux, que tes prus aontes toix, Et peuple par nous deux, la Sicile de Rois.",
+          "Où le Duc apprendra, qu'on rompt tous les traitez, Qui devaient par l'hymen joindre vos libertés: Cet accord denoüé rend le nôtre facile, Nous peut rendre absolus dans toute la Sicile Vous-en titre de Reine, et moi de Vice-Roi, Qui recevrai de vous une éternelle loi: Mais la perte du Duc me semble nécessaire, Pour la perfection de cette heureuse affaire;",
+          "Le Sceptre m'est bien cher en la main de mon frère, J'ai me à voir que sous lui a Sicile prospère: Mais il aurait pour moi des charmes bien plus doux, Si apprendre le pouvais mettre en la main d'un époux, LÉANDRE."
+        ]
+      },
+      "top_5_places": [
+        "Sicile",
+        "Rome",
+        "France",
+        "Lyon",
+        "Palerme"
+      ]
+    }
+  }
+}

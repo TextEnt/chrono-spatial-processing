@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "author": null,
+    "title": "Saint Hermenegilde, tragédie",
+    "publication_date": "1660",
+    "document_id": "bpt6k1090053s"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Durias",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "et j'aime mieux qu'on pense, Que j'ai voulu vous suivre avec quelque prudence, que ron fasse un reproche à la fidélité, Que je vous ai promise avec sincérité. \nDurias\n Grand Prince, je crains tout ;",
+          "Levigilde\n Vite, vite, au plûtôt qu'on le fasse arrêter; \nCardaces\n ji cet orait précis, grand Roi, je vais me rendre, Mais voici Durias, daignerés.",
+          "D'un superbe tombeau vous n'êtes point jaloux, Je vais prendre conseil sur ce que je dois faire. \nDurias\n Qui pourra désormais soulager ma misère, Hélas!",
+          "D'un superbe tombeau vous n'êtes point jaloux, Je vais prendre conseil sur ce que je dois faire. \nDurias\n Qui pourra désormais soulager ma misère, Hélas!",
+          "Mais il faut de sa mort qu'on ait devancé l'heure, \nDurias\n Quène ameule nouvenc apportes-vous ici ?"
+        ]
+      },
+      "top_5_persons": [
+        "Durias",
+        "Léonide",
+        "Cardaces",
+        "LEONIDE",
+        "Sophron"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Quand il aura reçu le Sceptre du Royaume, Il fera triompher le Pontife de Rome \nLevigilde\n "
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "louvre",
+        "Seville",
+        "Inde"
+      ]
+    }
+  }
+}

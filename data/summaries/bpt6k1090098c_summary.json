@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Boucher",
+    "title": "Champagne le Coeffeur, comédie",
+    "publication_date": "1663",
+    "document_id": "bpt6k1090098c"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "THOMAS",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Je saurai bien m'en garentir, Si l'on me force à me défendte. \nGUILOT\n Dites que vous eites ion Gendre, Aussi bien il s'en faut très-peu. \nTHOMAS\n eu n'ose me mêler au jeu.",
+          "Quelqu'in paraît à cette grinle, donc la remme du Commandant. \nLISETTE\n Quel est ce sot, cet impudent, Qui heurte auecque tant d'audace? \nTHOMAS\n C'est un ami de Boniface LISETTE ouvrant la porte.",
+          "Non, et c'est là ce qui m'achève: Cependant ie le veux chercher, Le prendre vif, et l'écorcher. \nTHOMAS\n C'est bien résoudre: mais, Compère, Il faut refrener la colère.",
+          "Et ainsi pour veiller sur elles. \nTHOMAS\n La Gazette a parlé de vous, Et ie vay gager entre nous Toutes les richesses aPagne, Que vous estes Monsieur Champagne CLÉANDRE.",
+          "myon denem me peuvexculer, \nGUILOT\n Pour rendre l'excuse parfaite, J'offre aussi d'épouser Lisette \nTHOMAS\n Je suis d'accord de l'Hion BONIFACE."
+        ]
+      },
+      "top_5_persons": [
+        "THOMAS",
+        "Lisette",
+        "Élise",
+        "Guillot",
+        "Boniface"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Champagne",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "d'imprimer, faire imprimer, vendre et débiter une Pièce de Théâtre, intitulée CHAMPAGNE LECORFFEVR, et ce durant le temps et espace de quinze années entières et accomplies, à commencer du jour que ladite Pièce sera achevée d'imprimer pour la première fois, en telle marge, caractère, et autant de fois que bon lui semblera:",
+          "ELISE, Fille de Boniface LISETTE, Servante d'Élise. \nM\n PrOmno, vonnce Ami de Boniface CLÉANDRE, Champagne, Amant d'Élise.",
+          "À jij 6 Champagne le Coffeur, Permets. \n",
+          "Champagne est mon nom de campagne. \n",
+          "Mais vous étiez tantôt Champagne CLÉANDRE."
+        ]
+      },
+      "top_5_places": [
+        "Champagne",
+        "Paris",
+        "Turquie",
+        "Italie",
+        "Champagne"
+      ]
+    }
+  }
+}

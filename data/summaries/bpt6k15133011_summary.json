@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "author": null,
+    "title": "Les Bergers de Marly, pastorale ornée de danses, mise en musique par M. Moreau, représentée devant Sa Majesté en son chasteau de Marly, le septembre 1687",
+    "publication_date": "Unknown",
+    "document_id": "bpt6k15133011"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Climène",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Une partie témoigne qu'elle est du sentiment d'Hilas et l'autre, qu'elle est de celui de Cloris Ensuite elle se réunit pour féliciter Tircis et Climène sur leur bonheur;",
+          "ARCAS, TIRCIS, HILAS, CLIMENE, CLORIS, un berger, deux bergères, Chœur et Troupe de Bergers et de Bergères, Troupe de Boheliennes.",
+          "Arcas conduit Climène au milieu des Bergers, ali qu'ène pume les von tous, et choisir pour époux celui qui lui plaira le plus.",
+          "Pireis et rillas s'approchent de Climène et Arcas se retire pour laisser à cette Bergère plus de liberté dans son choix.",
+          "UNE BERGÈRE à Tircis et Climène Heureux Amants, cessez de vous contraindre: Tout est permis à dot ronures désirs."
+        ]
+      },
+      "top_5_persons": [
+        "Climène",
+        "CLORIS",
+        "ARCAS",
+        "CIS",
+        "Bellone"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "LORIS",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Malheureux, lors que la fierté Le dispute à la tendresse! \nLORIS\n Tircis vient: de ton cœur l'amour veut prendre soin:",
+          "Tu ris, inhumaine, De ma douleur! \nLORIS\n "
+        ]
+      },
+      "top_5_places": [
+        "LORIS",
+        "Bergère"
+      ]
+    }
+  }
+}

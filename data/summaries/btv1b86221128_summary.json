@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "author": "Rotrou, Jean de",
+    "title": "L'Heureux naufrage, tragi-comédie de Rotrou",
+    "publication_date": "1637",
+    "document_id": "btv1b86221128"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Mars",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Candre, j'attendrai la fin de mon supplice De la force du temps, et de votre Justice, Ce pendant vous devez au bien de mes trais - -à-dire -dire -- -- Accorder vos conseils, et prêter votre bras, Votre propre intérêt vous joint à ma fortune, Et nous aurons la honte, ou la gloire commune, Sous le Prince d'Epire, un camp de jeunes Mars, Tient la ville assiegee, et couvre nos remparts, Consultons du moyen de dissiper de dions, Ou s'il y faut périr, faisons un beau naufrage;",
+          "Puis qu'un bonheur commun finit notre misère, Venez prendre chez moi les titres absolus ue le Ciel vous y donne et ne m'y laisse plus, Qu' éternelle paix fasse tomber nos armes, Qu'on ne souspire plus, on bannisse les larmes, Que de tous nos ennuis amour soit triomphant, Et que Mars soit vaincu par les mains d' enfant.",
+          "Il s'en offre un moyen: déjà toute l'Epire, Qui sais que dans ma Cour ce jeune Mars respire, Ne médite qu'horreur, que carnage, et qu'effroi, Si ie ne g remets dans les mains de son Roi.",
+          "Si mon espoir n'est vain, cette heureuse journe Bornera nos ennuis par un double hyménée, Vos armes céderont à ses moindres regards, Et de ce beau séjour l'amour chassera Mars SCÈNE",
+          "Espère une plus digne, et plus riche couronne, Que Mars t'aura gagnée, et que l'amour te doune -- Et"
+        ]
+      },
+      "top_5_persons": [
+        "Mars",
+        "Seigneur",
+        "Neptune",
+        "Jara",
+        "DAMIS"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "DE MONSEAUX, Il est permis à ANTHOINE DE SOMMAVILE, Marchand Libraire à Paris, d'imprimer ou faire imprimer, vendre et distribuer une pièce de Théâtre, intitulée, L'Heureux Naufrage Tragi-comédie, durant le temps et espace de neuf ans, à compter du jour qu'elle sera achevue d'imprimer.",
+          "Ar grâce et Privilège du Roi donné à Paris, le 7."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Dalmatie"
+      ]
+    }
+  }
+}

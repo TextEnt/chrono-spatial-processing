@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Chevreau, Urbain",
+    "title": "L'Innocent exilé . Tragi-comédie",
+    "publication_date": "1640",
+    "document_id": "bpt6k61251657"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Cleon",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Je ne te puis souffrir plus long temps dans les fers, Allés, indigne oviect, servir dans les Enfers, Mais que me veut Cleon et I SEPTIÈME. \nCLEON\n Jhe E",
+          "LE ROY, ARTABAZE, THEOMBRE, ORONTE, CLARIMANT, ARISTOBANNE, CLEON, ASTRAMOND, DEUX DE SES SES, ARTHÉNICE, DORIS, L'INFANTE, AMINTE, HÉRMODANTE, LES GARDES.",
+          "Qui le veut, hé! pourquei? \nCLEON\n Le Prince ainsi l'ordonne, ARTHENPCE, Attendons Hermodante HÉRMODANTE.",
+          "Ci Source gallicaibnf (Bibliothèque nation de France \nCLEON\n de bignore 5ovignour,ments ue semple être en peine.",
+          "ASTRAMOND parlant à Cleon VE l'on mande Théombre, L \nCLEON\n Hermodante auec luy."
+        ]
+      },
+      "top_5_persons": [
+        "Cleon",
+        "Seigneur",
+        "Doris",
+        "L",
+        "Belle"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Perse",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Et ce Héros n'est sorti de son pays qu'à dessein d'augmenter le nombre de vos adorateurs, et de se mettre en la protection de votre Altesse, permettez qu'il vous approche sous le titre de l'Innocent exilé, Sa disgrâce ne le touche point à légal de la crainte qu'il a de vous importuner du récit de ses aventures, ses moindres exploits servent encor d'exemple, et l'on n'a jamais fait de faute en l'imitant, il aima mieux obéir, que de résister à son Roi, affection quil eût pour sa de causa son infortune, et a constance aydée de la faueur Prince fait voir la Perse elle ne pouuoit assez reconnoistre ses victoires, apres ce son humilité que de tous ses combats, et hommage 'il vous rend au même instant il pou demande sa grace est effect de son zelle et non a de con ambition, soyez arbitre et le iuge de sa generosité: Je ne pouvais mettre ses intérêts en des mains plus augustes, et personne ne l'eusse jamais entrepris sans la permission que vous m'en avez donnée, qui doit apprendre que je suis, DE VÔTRE ALTESSE, Le tre mhmoue srères ouvensani et très-obligé serviteur PROUAIS.",
+          "LE ROY À ce compte int Subjet mépriserait sa Loi, Je serais son esclave, au lieu d'être son Roi, Et l'État renversé sans me pouvoir défendre, Il monterait au Trône, et m'en ferait descendre: Et la Perse apprendrait aux siècles avenir, Que tu l'aurais jugé sans le pouvoir punir, Me rendrai-je moi",
+          ", Marquera dans demain ta gloire et ta conquête, Un trophée élevé parlera de tes faits, Et l'on admirera tes glorieux effets, Au milieu de la place on lira ton histoire, Et de peur que la Perse en perde la mémoire, Si par tout l'univers ton beau nom a volé Que l'on vl'Innocent Exilé, E-",
+          "Fait voir ton innocence, et qu'on sache en tous lieux, Que la Perse te doit plus qu'à ses demi-Dieux.",
+          "La Scène est en Perse"
+        ]
+      },
+      "top_5_places": [
+        "Perse",
+        "France",
+        "Perse",
+        "Altesse",
+        "DORIS"
+      ]
+    }
+  }
+}

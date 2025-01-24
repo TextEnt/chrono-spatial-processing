@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "author": null,
+    "title": "La Sophronie, tragedie françoise, tiree de Torcato Tasco",
+    "publication_date": "Unknown",
+    "document_id": "bpt6k855192c"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Aladin",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Dans le rampar forcé, vous le pouviez bien faire 2l vous éton peruiis pal le dront jitaire, Mais sans quelque forfait de les faire mourir Sire, vous ne pouvez sans grand blâme encourir. \nAladin\n Bien, qu'ils vivent encor pour cette autre cause Que vous venez de diré et non pour autre chose, Je suspendrai l'arrêt que j'ai contre eux jeté Jusques au premier trait de leur déloyauté, Cependant il nous faut aduiser de détruire Les bâtiments prochains qu'ils ne nous puissent nuire, Avant que les Latins nous viennent assiéger Il les faut empêcher de si venir loger, Frrave bruner les bleds qui restent en la plaine Trou encores cueillis, trouver chaque fontaine, Mêlant dans leur cristal de son flot argenté Quelque horrible puanteur qui le rende infect,",
+          "De délivrer ton peuple, octroie que je puisse Par ma mort volontaire affranchir le supplice, Qui leur est préparé, un bon nombre de ceux Que tu as nettovez de ton sang cieux, Inspire dans mon cœur se force virille que la crainte ordinaire à mon sexe fragille, éloigne loing de moi, permets que constamment Ie prodigue ma vie et souffre le tourmont, Que le fier Aladin rage cruelle Destine iniustement la troupe fidelle, De mes frères Et, fais que mon seul trépas Appaise sa furie, et il enuoye pas, Tant de chefs baptisez desous la sépulture Mais que pour leur salut se supplice endure, Cheualier Payen est bien precipité Pour purger autrefois la Romaine Cité,",
+          "Que me pardonne tout que non chalant j'oublie Les affronts qu'on me fait sans point m'en ressentir C'est c'est l'autorité Royalle démentir, C'est n'avoir point de cœur pour effort de malhaiLaet pumance dentacau mlau tre lèvres \nOrcan\n Il vaut mieux excéder en bonté qu'en rigueur. \nAladin\n C'est malsait quel qu'il soit d'user trop de douceur.  \nOrcan\n Laclemence et bonté n'a tenu rang de vice.",
+          "Ah traître on t'apprendra. \nAladin\n Laissez, son arrogance Mérite que ma main seulle en prenne vengeance, Laissez le moi soldat, ô profeste écouté ouel profeste ou démon ta si bien incité, 14 Ces orkeres certullis de quel Dleu ta laïc croire que sur moi les Chrétiens obtiendront la victoirs, Liez le moi soldats et arrachez son cœur Et l'apportez ici, marque de ma rancœur.",
+          "Je ne t'en veux mentir n'en entre en défiance Le coulpable Aladin est ore en ta présence, C'est moi qui ai de nuit derobé le portrait Ces mains sont celles -là qui ont l'outrage fait, Ce bras en est moteur, dans ce sein loge l'âme qui a osé ourdir une si belle trame, T ayant vu ressortir de notre Temple hier C'est moi"
+        ]
+      },
+      "top_5_persons": [
+        "Aladin",
+        "Clorinde",
+        "Olinde",
+        "Ismen",
+        "Godefroi"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Jérusalem",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "LADIN, Roi de Iudee, ayant été avert y par quelques Courriers que l'armée Ch estienns que condu jait God froi, s'app ochait fort pour venir enceindre les murs de Jérusalem, fait exprès commandement de réparer quelques rumes, où pendant ce labeur Ismen Enchanteur se présente au Roi et dit, que s'il plaisait à sa Majesté d'aller prendre au Temple des Chrétiens, une Âme faite à la semblance de la Vierge Marie, et la porte lui -mène en leur Mose, la ville ne pourrait jamais être prise, ce que le Roy executte incontenent, mais la D'itmnité"
+        ]
+      },
+      "top_5_places": [
+        "Jérusalem",
+        "Oran",
+        "Ismen",
+        "Asie"
+      ]
+    }
+  }
+}

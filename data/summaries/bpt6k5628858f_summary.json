@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "author": "Le Breton, Guillaume",
+    "title": "Adonis , tragédie françoyse de Gabriel Le Breton,... seigneur de La Fon. Reveu & corrigé de nouveau par le mesme autheur",
+    "publication_date": "1611",
+    "document_id": "bpt6k5628858f"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "MONTAN",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "La déitt nous aime et tient le sort en bride. \nsilvin\n Thétit ne peut garder le vaillant Éatide, \nMontan\n Qi privera Veuus de son gentil Adont \nSilvin\n Quelque piteux basard que moint nout attendon, \nMontan\n Toujours nous souptonnons quand plus aises nouvi sommes, c'est un vice commun à la race des bommes, \nSilvin\n Comme souuentessois un navire étranger Sur les flamme Adriant vole prompt et léger, Le clè me se rit",
+          "Cela fait que du cœur tont souci autre m'arrache. \nsilvin\n Au verger plus berbu, la coulivre se catbe, \nMontan\n aze plaindrai-je du mal qu'ort Ne ne sent point? \nSilvin\n ",
+          "Il n'est temps de douloir, que la douleur nous polnt, \nMontan\n Fol est qui sa péril du péril se lamente. \nSilvin\n Prévoyant le péril la sagesse t'augmente.",
+          "baste de srauoit son enavi rigoureux Mentan ne t'enquiers plus, et lis ea mon visage Sant plus n'initrèguer le surplus d dommage. \nMontan\n compte.",
+          "De V. E. Très-humble et très obéissant serviteur, D'AMBOYS \nMONTAN\n \nSYLVIN\n \nCUPIDON\n L'OMBRE."
+        ]
+      },
+      "top_5_persons": [
+        "MONTAN",
+        "Venus",
+        "Adonis",
+        "CUPIDON",
+        "Diane"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Et m'assure qu'il m'é sçaura fort bon gré, et en sera incité de vous donner encore sa Tullie, sa Charite, sa Didon, sa Dorothée, et le reste de ses belles Pœsies, qu'il tient caches au grand regret de tous les bons esprits: Et d'autant Madame, que ainsi vois, qu'en cette grandeur houorable, où vous êtes élève, au Étuie jing des plus sages, belles, et vertueuses de toute la France, vous ne dédaignezpas les humaines Muses pour douces et agréables compagnes, eipere qu'a mou namble prière vous ne refuserez d'autoriser ce APISTRE.",
+          "des de si connaître à noître France, combien j'Tonore vos vertus et grâces divines, j'ai lonquement donté"
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Paris",
+        "Nil"
+      ]
+    }
+  }
+}

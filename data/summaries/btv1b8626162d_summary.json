@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Le mariage forcé. Comedie. Par I. B. P. de Moliere",
+    "publication_date": "1668",
+    "document_id": "btv1b8626162d"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "MARPHURIUS",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Elle m'en vais faire ma plainte, au Commissaire du Quartier, des coups que j'ai reçus. \nMARPHURIUS\n C'est toi, qui m'as traité ainsi.",
+          "Ferai-je bien, ou mal, de l'épouser? \nMARPHURIUS\n L'un, ou l'autre.",
+          ". \nMARPHURIUS\n Seigneur Séganarelle, changez, s'il vous plaît, cette façon de parler.",
+          "56 LE MARIAGE FORCE', et vous ne me parlez pas? \nMARPHURIUS\n ",
+          "mais qu'il vous semble que je vous ai battu. \nMARPHURIUS\n Ah!"
+        ]
+      },
+      "top_5_persons": [
+        "MARPHURIUS",
+        "ÉGYPTIENNE",
+        "Seigneur",
+        "Aristote",
+        "Geronimo"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Huit dans notre séjour à Rome, font trente-deux: Et vingt que vous aviez lors que nous nous connûmes, cela fait justement cinquante-deux.",
+          "Combien fûmes nous ensemble à Rome SGANARELLE."
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Angleterre",
+        "Hollande",
+        "PARIS",
+        "Paris"
+      ]
+    }
+  }
+}

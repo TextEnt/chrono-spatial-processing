@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "author": "Corneille, Thomas",
+    "title": "Stilicon, tragédie",
+    "publication_date": "1661",
+    "document_id": "bpt6k1336391"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Honorius",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Aux honneurs de sa sœur il n'a rien à prétendre, Vous la faites monter quand il me sait descendre, Et d'un Auguste hymen le différent appui, L'élevant jusqu'à vous, m'abaisse jusqu'à lui. \nHONORIUS\n Si l'éclat des grandeurs où le sang vous appelle, Oppose à son mérite une fierté rebelle, Je le mettrai si haut que de moi seul jaloux, Il baissera les yeux pour les jeter sur vous: Alors de vos mépris l'injurieux caprice Lui vaudra la douceur de s'en faire justice, Et de voir que vos vœux à leuntour méprisez Se flattent de l'espoir que vous lui -fusez.",
+          ", du Sort enfin la rage est assouvie, Ton fils est innocent, mais ton fils est sans vie: Et je tremble à t'ouïr tout bas me reprocher, Que sije vis encore, il t'en coûte bien cher. \nLICOE\n Seigneur, mon fils est mort, la Nature effrayée N'ose voir de quel prix votre vie est payée, Et quand vous le saurez, si dédaus votre erreur Vous tremblez de pitié, vous tremblerez d'horreur, D O* Ô \nHONORIUS\n Ah!",
+          "Mais, Seigneur, la prison dont vous ferez sa peine, S'il n'a point conspiré, rend l'imposture vaine, Et s'il est criminel, un long et dur remords Lui peut faire au lieu d'une endurer mille morts. \nHONORIUS\n Non, il ne mourra point, votre intérêt l'emporte, Si son crime est bien grand, ma tendresse est plus forte, Et ce qu'à l'amitié mon cœur aime à devoir Ne saurait plus laisser sa peine en mon pouvoir.",
+          "dans les divers honneurs que ses longs services avoir firent obtenir, il mérita que l'Empereur Théodose le laissât pour Tuteur à Honorius, qui daigna depuis se faire son Gendre, et il n'y aurait peut -être rien eu jusqu' à Mde plus éclatant que sa vie, s'il n'eût pas laissé surprendre son devoir aux tendresses inconsidérées de la Nature, et oublié ce qu'il devait à son Maître, pour rendre ce qu'il ne devait pas à son Fils.",
+          "J'estime Stilicomon, j'estime Eucherius, J'estime en tous les deux la vertu qu'on m'oppose, Mais j'estime encor plus le sang de Théodose, Et périrais plutôt qu'on me vît consentir Au moindre abaissement qui pût le démentir. \nHONORIUS\n Je l'ai donc démenti, quand épousant sa fille J'ai mis par cet hymen le Trône en sa famille, Et l'orgueil qui vous fait dédaigner un beau feu Est de ma lâcheté le secret désaveu?"
+        ]
+      },
+      "top_5_persons": [
+        "Honorius",
+        "Zenon",
+        "LUCILE",
+        "MARCELLIN",
+        "Félix"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Une seconde fois je te devrai l'Empire, Tes soins dans mon enfance à maintenir mes droits M'avaient su conserver le rang où je me vois, Par eux Rome toujours respecta mon peu d'âge,",
+          "On nous hait, Stilicomon, et tes sages advis En tout temps pour l'État écoutez et suivis, Dans mon gouvernement mêlent tant de faibiesse, Que Rome se trahit d'en souffrir la bassesse.",
+          "Après tant de combats dont les tristes alarmes Tiennent Rome inquiète, et l'Italie en armes, Le superbe Alaric formant d'autres projets, Cherche votre alliance, et demande la Paix.",
+          "La Scène est à Rome STILICON, TRAGÉDIE."
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "PARIS",
+        "France",
+        "Paris",
+        "STILICON"
+      ]
+    }
+  }
+}

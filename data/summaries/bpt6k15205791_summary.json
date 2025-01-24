@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "author": "Quinault, Philippe",
+    "title": "Isis : tragedie en musique, ornée d'entrées de ballet, de machines, & de changements de theatre / par Philippe Quinault ; musique de Jean-Baptiste Lully",
+    "publication_date": "1677",
+    "document_id": "bpt6k15205791"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Jupiter",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Jupiter, dans ces lieux, m'a donné de l'ombrage, J'ai traversé les Airs, j'ai percé le Nuage Qu'il opposait à mes regards: Mais en vain j'ai tourné les yeux de toutes parts, Ce Dieu par son pouvoir suprême M'a caché la Nymphe qu'il aime, Et ne m'a laissé voir que des Troupeaux épars, Non, non, je ne suis point une crédule Épouse Qu'on puisse tromper aisément, Voyons qui feindra mieux de Jupiter Amant, Ou de Junon jalouse.",
+          "Il est maître des Cieux, la Terre suit sa loi, Sous sa toute-puissance il faut que tout fléchisse, Mais puisqu'il ne prétend s'armer que d'artifice, Tout Jupiter qu'il est, il est moins fort que moi.",
+          "Je veux bien te parler enfin sans artifice, Ce Prince infortuné s'alarme avec justice, Le Maître souverain de la Terre et des Cieux Entreprend de plaire à mes yeux, Du Cœur de Jupiter l'Amour m'offre l'Empire;",
+          "Jupiter et Junon nous occupent sans cesse, [blesse, Nos soins sont assez grands sans que l'Amour nous Nous n'avons pas tous deux le loisir d'aimer bien.",
+          "Es Divinités de la Terre, des Eaux, et des LRichesses souterraines viennent magnifiquement parées pour recevoir Jupiter, et pour lui rendre hommage."
+        ]
+      },
+      "top_5_persons": [
+        "Jupiter",
+        "ARGUS",
+        "HIERAX",
+        "Junon",
+        "Syrinx"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "PARIS",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "À PARIS,"
+        ]
+      },
+      "top_5_places": [
+        "PARIS",
+        "Parnasse",
+        "Nil"
+      ]
+    }
+  }
+}

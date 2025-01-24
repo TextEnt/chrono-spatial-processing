@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Mairet, Jean",
+    "title": "La Silvanire, ou La morte-vive , du Sr Mairet, tragi-comédie pastorale... avec les figures de Michel Lasne",
+    "publication_date": "1631",
+    "document_id": "bpt6k56098141"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Silvanire",
+          "frequency": 9
+        },
+        "related_sentences": [
+          "En fin toujours IIylas Hylas se fait paraître. \nSILVANIRE\n Je veux que cet honneur que tu n'approuves pas Soit de mes actions la règle et le compas: \" Et si c'est une erreur dont notre sexe abonde \" Je veux suivre l'erreur de la moitié di: monde. \nÀLCIRON\n Non non, plutôt mourir que jamais offenser I jij à voir qu'on offensât votre chaste penser: Mais le Ciel qui vous sit l'objet de sa largesse Vouts a voulu donner cette rare sagesse Afin d'en assister votre rare beauté, Et non pour la confondre avec la cruauté: Paraître inexorable à ma juste demande, N'est pas une action que l'honneur vous commande.",
+          "Après avoir tenté tous les moyens pouvibles Afin de surmonter vos rigueurs invincibles, Et fait ce qu'un mortel peut faire humainement Pour s'obliger une âme, et le tout vainement, Sur tout ne voulant point qu'au mépris de ma flamme Théante eût le bonheur de vous avoir pour fâme, Pardonnez, Silvanire, à mon affection En fin femme résolus d'une d’invention, J'employai ce miroir, qui sans avoir magique 11e Cu lime léthargique, Somme en tous ses effets si durable et si fort, Qu'à bon droit on l'a pris pour celui de la mort: C'est ainsi qu'au cercueil on vous a descendue. \n",
+          "En effet il ressemble une pâle figure Dont l'aspect et l'abord sont de mauvais augure: Ç est on pnantosme ouut qu' une parressorts, Et qui rêve toujours comme rêvent sans corps Les malheureux amants dont la troupe sans nombre Bien tôt par tesmespris s'augmentera d'une ombre. \nSILVANIRE\n Ni ton discours, Hylas, Seigneur son affliction Ne font en mon esprit non plus d'impression, Que les peines qu'Amour dans cent ans pourrait faire Aux Pasteurs d'Arcadie, ou de l'autre hémisphère: Non qu'un bon naturel ne soit touché d'ennui",
+          "Secondement, pour l'ordre du temps, il est visible qu'elle est dans la juste règle, c'est à dire qu'il ne s'y treuue pas un seul effet qui vrai-semblablement ne puisse arriver entre deux Soleils: le suppose que Silvanire soit tombée en letargie sur le haut duiour, on la porte au tombeau le soir même, tant pour ôter promptement ce funeste objet aux yeux du père et de la mère, que pource que ce n'était pas encore la mode de laisser les morts vingt-quatre heures sur le lit;",
+          "Comme ils parlent, Ménandre et Lérice surviennent: Aglante qui s'était caché dans un Rocher, qui s'avançait sur le chemin, pour n'être pas aperçu de Ménandre, apprend par ses discours qu'il cherchait sa fille pour la faire résoudre au mariage d'elle et de Théante Après quelques plaintes il conjure Hylas de parler à Silvanire pour lui: Ce que le Berger fait au sortir de là; mais en apparence inv DE Le LA TL AU M Le HYLAS. \nAGLANTE\n "
+        ]
+      },
+      "top_5_persons": [
+        "Silvanire",
+        "Hylas",
+        "Terence",
+        "Poète",
+        "Virgile"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Lignon",
+          "frequency": 9
+        },
+        "related_sentences": [
+          "Alciron échappé de ses mains trouve un batteau de Pécheur sur le rivage de Lignon, à la faveur duquel il s'explique si bien au désespéré Tirinte, qu'ils vont ensemble au monument où Siluanire avait été mise, suivant la coutume du pays, qui voulait que les filles principalement portassent leurs habillements dans le tombeau, pour un plus grand témoignage d'honnêteté.",
+          "Je te tiens à ce coup ennemi de mon bien. \nÀLCIRON\n Je crois que pour ce coup tu ne me feras rien, Lignon de qui le cours s'oppose à ta furie Me met en sûreté. \n",
+          "\nMENAND\n Les esprits, non l'esprit causent ce mouvement, Tel qu'on voit au Lignon quand sa vague irritée Long temps après l'orage est encore agitée.",
+          "Uiens sûrement à bord si tu n'es point coupable, Lignon qui s'est plongé mon couteau dans le sein A diverti l'effet de mon premier dessein. \n",
+          "Ô fortuné Lignon ô terre bienheureuse En ta simplicité, Où l'Amour serait mort si la mort amoureuse Ne l'eût ressuscité."
+        ]
+      },
+      "top_5_places": [
+        "Lignon",
+        "Bergère",
+        "Rome",
+        "Paris",
+        "France"
+      ]
+    }
+  }
+}

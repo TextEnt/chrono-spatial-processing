@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "L'Imposteur, ou le Tartuffe, comedie. Par I. B. P. de Moliere",
+    "publication_date": "1669",
+    "document_id": "bpt6k1280539f"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "MADAME PERNELLE",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Je suis toute ébobie, et je tombe des nues; \nDORINE\n Vous vous plaignez à tort, à tort vous le blâmez, Et ses pieux desseins, par là, sont confirmez, Dans l'amour du Prochain, sa vertu se consomme, Il sait que très-souuẽt les biens corrompent l'homme Et par charité pure, il veut vous enlever, Tout ce qui vous peut faire obstacle à vous sauver, \nORGON\n Jaisez-vous, c'éit le morqu Il vous faut toujours dire \nCLÉANTE\n ",
+          "Et Tartuffe \nORGON\n \nDORINE\n Il reprit courage comme il faut, Et contre tous les maux fortifiant son âme, Pour réparer le sang qu'avait perdu Madame, Beut à son déjeuné, quatre grans coups de Vin Le pauvre home: \nORGON\n \nDORINE\n Tous deux se portent bien enfin Et je vais à Madame anoncer par avance, La part que vous prenez à sa convalescence, SCÈNE V. ORGON, CLEANTE \nCLÉANTE\n Votre nez, mon Frère, elle se rit de vous;",
+          "DAMIS, DORINE \nDAMIS\n VE la Foudre sur l'heure, achève mes S estins, Qu'on me traite par tout, du plus grand des Faquins, S'il est aucun respect, ni pouuoir, qui m'arrête, Et si je ne fais pas quelque coup de ma tête. \nDORINE\n De grâce, modérez un tes emportement, Votre Père n'a fait qu'en parler simplement: On n'exécute pas tout ce qui se propose;",
+          "Elle n'en fera qu'un Sot, je vous assure \nORGON\n Ouias, quels discours! \nDORINE\n Je dis qu'il en a l'encolûre, Et que Ion dicendant, Momnet, remportera Sur toute la vertu que votre fille aura. \nORGON\n Cessez de m'interrompre, et songez à vous taire, ounio me totre nez où vous n'avez que faire. \n",
+          "Songez à quels périls votre dessein vous livre. \nORGON\n le pous dis qui me laut apprendre d'elle à vivre; \nDORINE\n Vous n'en feriez que mieux, de suivre mes leçons, \nORGON\n Ne nous amusons point, ma Fille, à ces chansons, Je sais ce qu'il vous faut, et je suis votre Père."
+        ]
+      },
+      "top_5_persons": [
+        "MADAME PERNELLE",
+        "ORGON",
+        "CLÉANTE",
+        "M",
+        "DAMIS"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Grâce Privilège du Roi, donné à Paris",
+          "La Scène est à Paris AR"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Orgon",
+        "Normandie"
+      ]
+    }
+  }
+}

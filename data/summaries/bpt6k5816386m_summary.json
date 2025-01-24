@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "author": "Campistron, Jean Galbert de",
+    "title": "Achile et Polixene , tragedie en musique, representée par l'Academie royale de musique",
+    "publication_date": "1688",
+    "document_id": "bpt6k5816386m"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ARCAS",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Il te donne aujourd'hui son Empire et son Cœur, \nARCAS\n Hincesse, ce Héros ne cherche qu'a vous plaig Vous avez en vos mains et si veule et sa mort;",
+          "ARCAS  NOurons venger cet ami que je perds, Que de sang et de morus tous ces champs soient couverez!",
+          "ACHILE, ARCAS, POLIXENE, CHOEUR DE GRECS DE LA SUITE D'ACHILE, CHOEUR DE JROIENS ET DE FILLES TROYENNES",
+          "ARCAS, PRIAM, ANDROMACl. \nPonlaune\n \nARGAS\n Unes, marchez sans défionce,",
+          "BRISEIS, Chœur de Grecs qui sortent en désordre du Temple d'Apollon, ARCAS"
+        ]
+      },
+      "top_5_persons": [
+        "ARCAS",
+        "Thalie",
+        "Achille",
+        "AGAMEMNON",
+        "DIOMEDE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Grèce",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "E répondrez-vous point aux destu de la Grèce Il saut qu'en sa faveur voire colère cesse, esse ne peut tans vous miompner de Troyens, En vain nous assiégeons leur ville, Nos Dleux sont moine forts que les siens, Sa prise est reseivée à la valeur d'Achille \nACHILE\n De quel emploi vous chargez-voue!  ",
+          "\" Ont détruit les desseins de la Grèce, Un seul de vos regdrd à rangé sous vos lois Un Héros dont le noin fait trembler touises Rois.",
+          "suivons, suivons sans cesse Ce Hero, ce fameux valnqueur, C'est à son bras, que la Grèce Doit sa fozce et son bonheut.",
+          "les esforts de la Grèce, J'arrêterai ses desselns furieux;"
+        ]
+      },
+      "top_5_places": [
+        "Grèce",
+        "Troie",
+        "France",
+        "Throne",
+        "Paiz"
+      ]
+    }
+  }
+}

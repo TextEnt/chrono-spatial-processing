@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "L'Escole des femmes. Comedie. Par I. B. P. Moliere",
+    "publication_date": "1663",
+    "document_id": "btv1b8610785b"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "GEORGETTE",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Auriez-vous bien l'esprit de servir mon courroux? \nALAIN\n S'il ne tient qu'à frapper, Monsieur, tout est à nous, Vous verrez, quand ie bas, si j'y vais de main-morte. \nGEORGETTE\n La mieune, quoi qu'aux yeux, elle n'est pas si forte.",
+          "Vous n'oseriez après paraître en nul endroit, Et chacun vous voyant vous montrerait au doigt: Donc puisqu'autant que moi l'affaire vous regarde, Il faut de votre part faire une telle garde Que ce galant ne puisse en aucune façon. \nGEORGETTE\n Vous nous avez tantôt montré notre le çon. \n",
+          "AGNES, ALAIN, GEORGETTE, ORONTE ENRIQUE, ARNOLPHÉ, HORACE, CHRISALE VEnez, Belle, venez, Qu'on ne saurait tenir, et qui vous mutinez, Voici votre Galant, à qui pour récompense Vous pouvez faire une humble et douce révérence, jidieu, réuenement trompe un peu vos souhaits;",
+          "GEORGETTE, ENRIQUE, ORONTE, CHRISALDE, HORACE, ARNOLPHÉ \nGEORGETTE\n MOnsieur, si vous n'êtes auprès, Nous aurons de la peine a retennl Agnès, Elle veut à tous coups s'échapper, et peut-être Qu'elle se pourrait bien jeter par la fenêtre. \n",
+          "ARNOLPHÉ\n Quiconque de vous deux n'ouvrira pas la porte, N'aura point à manger de prus de quatle jours, Ha. \nGEORGETTE\n Par quelle raison y venir quand j'y cours. \n"
+        ]
+      },
+      "top_5_persons": [
+        "GEORGETTE",
+        "ALAIN",
+        "Agnès",
+        "Arnolphe",
+        "Alain"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Enrique",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Cet Enrique, dont hier ici m'informais à vous, Cause tout le malheur dont quelque ressens les coups;",
+          "HORACL. \nEnrique\n "
+        ]
+      },
+      "top_5_places": [
+        "Enrique",
+        "Ville de Paris",
+        "Rome",
+        "France"
+      ]
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "metadata": {
+    "author": "Fiot, A",
+    "title": "L'Amour fantasque ou le Juge de soy mesme, comédie en trois actes...",
+    "publication_date": "1682",
+    "document_id": "bpt6k857206n"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "LYSANDRE",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Je Pame quand j'entends ce qu'on dit de la Sphère Et ces doctes raisons que par tout on révère, Et je veux la délus, pour contenter mon cœur, Qu'un savant sur ce point devienne mon vainqueur \nLYSANDRE\n Amour, seconde moi dedans mon entreprise, La résolution, Madame, en est dont prise?",
+          "mais puis-je enfin soulager ton souci \nLYSANDRE\n On t'a fait depuis peu juge de ce lieu-cy, Et comme devant toi notre affaire est remise, Je souhaiterais fort pour la rendre surprise Qu'avec tes Conseillers, prenant ta place, moi Je décide l'affaire, et juge au lieu de toi.",
+          "Si pour ce haut savoir vôtte belle maîtresse À l'Astrologue seul rémoigne sa tendresse, L'Astrologue attitré, de son Tiltie démi Vous mettant en ces droits fera le coup d'ami Ainsi vous vous ferez aimer de votre Da me. \nLYSANDRE\n Par tes plaisants discouts tu me réjouis l'âme;",
+          "Si mon malte touchait -tu ne voudais pas ril \nPDILLE\n J''écoute tout de bon, vous n'avez rien qu'à di \nLYSANDRE\n Tu sais bien qu'Angélique avait charmé mes yeux, Que de tous mes rivaux, j'étais reçu le mieux, Mlais depuis peu pour moi",
+          "LYSANDRE\n J'en suis plus réjoüy puisque vous les goûtez, pour la philosophie apprenez par avance, Que ce n'est pas un Art, mais bien une Science Par elle je connais tous les quatre Éléments, Leur centre, leur substance, et tous leurs acc ends."
+        ]
+      },
+      "top_5_persons": [
+        "LYSANDRE",
+        "DOM",
+        "YSANDRE",
+        "Angélique",
+        "Bage"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "ce qui a tant de fois parlé pour notre grand Monarque, et qui a tant servi pour mainienir ses intérêts ravit tous les esprits: C'est elle qui engage toute la France à se féliciter de la gloire de vous posséder, et particulièrement le ClèbreParlement de Rouen, dont vous êtes la Bage et l'appui."
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Normandie"
+      ]
+    }
+  }
+}

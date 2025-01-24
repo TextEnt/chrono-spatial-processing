@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Regnard, Jean-François",
+    "title": "Attendez-moy sous l'orme . Comedie",
+    "publication_date": "1694",
+    "document_id": "bpt6k61486960"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Lisette",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Hon, quand l'amour s'est une fois emparé d'un cœur aussi simple que celui d'Agate, il est difficile de l'en chasser, il se trouve mieux logé là que chez une coquette. \nLISETTE\n J'avoue que les grands airs de ton Maître ont saisi la superficie de son imagination;",
+          "Vous sortirez tous deux de votre cache et vous lui direz Agathe, faut qu'on vous mariez rien qu'avec Colin tout seul, ou nous allons dire par tout qu'ous aimez deux hommes à la fois, ô à ne voudra pas. \nLISETTE\n Ô que si a voudra.",
+          "Attendez, nous: On avons fait: venir des habits de Paris, si j'aloisblé dire que mon Maître veut qu'elle les jette, la coëffure seule suffit pour amuser une femme toute la journée. \nLISETTE\n La voici qui vient, songe à la renvoyer chez elle.",
+          "Agathe dira, oui Colin N'est-il pas vrai ce l'y ferai-je, encore qu'un certain jour que l'épingli de votre collet était défaite, je le soulevis tout doucement, tout doucement. \nLISETTE\n Ô va donc plus vite, j'aime l'expédition.",
+          "le chaud et le froid ni dominent plus que par caprice. \nLISETTE\n Ô en Poit nous avons une règle certaine, c'est que le jour des noces le termometre de la tendresse est à son plus haut degré, mais le lendemain il descend bien bas."
+        ]
+      },
+      "top_5_persons": [
+        "Lisette",
+        "Agathe",
+        "Colin",
+        "Pasquin",
+        "Nanette"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Poitiers",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Je l'avoue franchement, à votre refus ' avois baissé les yeux sur une petite Fermière, parce que je trouvais une somme d'argent pour noyer de gros biens quej'ai en direction, mais d'honneur en honneur je ne l'ai jamais regardée que comme un enfant, une poupée avec quoi on se joue, et depuis les charmantes conversations de Poitiers, vous n'avez point désemparé mon cœur.",
+          "Sur la réputation qu'elle a dans Poitiers d'être fort riche, mon fanfaron s'est vanté qu'elle était amoureuse de Seigneur pour se venger elle a pris plaisir à se trouver masquée à deux ou trois assemblées où il était, de faire la passionnée;",
+          "donc enfin ce que vous m'avez tant de fois refusé à Poitiers, levez ce voile cruel. \nLISETTE\n Monsieur, l'affliction m'a si fort changée. \nDORANTE\n Hé je vous conjure.",
+          "DORANTE\n Je vais chanter pour me désennuyer un petit air que je fis à Poitiers pour cette charmante veuve.",
+          "ne t'ai-je pas dit que la sotte est devende ivilibie à Poitiers a Ci .  "
+        ]
+      },
+      "top_5_places": [
+        "Poitiers",
+        "Paris",
+        "Poitou",
+        "France",
+        "Grisettes"
+      ]
+    }
+  }
+}

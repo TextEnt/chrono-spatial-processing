@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Ferrier de La Martinière, Louis",
+    "title": "Anne de Bretagne, reine de France, tragédie",
+    "publication_date": "1679",
+    "document_id": "bpt6k10900939"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ISABELLE",
+          "frequency": 10
+        },
+        "related_sentences": [
+          "Ne se piquera plus d'une vaine constance, D'un œil moins prévenu verra tous vos appas, À se donner à vous ne barancera pas, Et s'ouvrant aux douceurs d'une flamme nouvelI Il sentira pour vous ce qu'il sentait pour elle. \nISABELLE\n mais comment, et par ou peut-on exécuter Ce que pour mon repos tu viens de projetter?",
+          "Au bonheur de ce jour vous refuseriez-vous? \nISABELLE\n Non ma sœur, le retour d'un Prince qui vous aime Allemène, Ne me touche pas moins qu'il vous touche vous Mais depuis quelque temps un long chagrin me suit, Loin du bruit il s'apaise, il s'accroît dans le bruit.",
+          "Mon erreur me flattait, elle l'a dissipée, Mon âme à le chagrin de se voir détrompée, La plus vive douleur dont je sente les traits, C'est d'être convaincu qu'on ne m'aima jamais. \nISABELLE\n Pleignez moins les malheurs ou l'amour vous expose.",
+          "Ne vous alarmez point d'un crime ima ginaiIl cesse d'être tel quand l'amour le sugère, On excuse aisément quiconque l'a commis, Les crimes amoureux sont des crimes permis. \nISABELLE\n Mais dis -moi, n'est-ce pas montrer trop de faiblesse?",
+          "A-t-il moins de raison de leur être contraire Que n'en eut autrefois le feu Duc votre père, L' être sœur enfin voudrait-elle aujourd'hui Perdre et son propre peuple et sa gloire pour lui? \nISABELLE\n Faibles"
+        ]
+      },
+      "top_5_persons": [
+        "ISABELLE",
+        "D'ALBRET",
+        "DUCHESSE",
+        "Charles",
+        "Adame"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 10
+        },
+        "related_sentences": [
+          "Le seul bruit de son nom et de son alliance A suspendu le cours des armes de la France Chlarieo cruignant toujours que le fer à la main Ce Prince en ses États ne s'ouvrit un chemin, Pour prévenir l'effet de ses ardeurs guerrières, A par des corps d'armée assuré ses frontières.",
+          "Oui, c'est par cette voie et plus noble et plus sûre Qu'entre la France et nous la paix se peut conclure, Que du Duc d'Orleans on peut briser les fers, Et voir finir des maux depuis longtemps soufferts.",
+          "Adame, instruit des vœux dont me charge géa la France, Je vous viens de sa joie assurer par avance, Vous dire quel bonheur elle attend de vos lois, Et combien votre hymen charme tous les Français.",
+          "Duc, que ces chagrins ont eu de violence, Sans cesse nous tournions nos regards vers la France Nous nous sommes cent fois reproché vos malheurs, Ne pouvant rien de plus, nous vous donnions des pleurs.",
+          "Quand la paix toujours mal assurée Entre la France et tu fut constamment jurée, Pour m'honorer d'un prix que je n'attendais pas, Il voulut qu'en ces lieux je suivisse ses pas."
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Bretagne",
+        "Rome",
+        "Rennes",
+        "Bretagne"
+      ]
+    }
+  }
+}

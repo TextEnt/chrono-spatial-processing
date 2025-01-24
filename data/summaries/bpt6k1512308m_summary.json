@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "author": "Montfleury",
+    "title": "Le garçon sans conduite, comedie. Par monsieur A. I. M***",
+    "publication_date": "1698",
+    "document_id": "bpt6k1512308m"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "CRISPIN",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Çà Attendans qu'au Logis les Conviés se vendent, Allons faire hâter vos Gens qui nous attendent, Allons voir s'il ont eu soin de se travestir, Et ne songeons à rien qu'à nous bien divertir, SCÈNE V. LAIS, DARGENTBREF, AMINTE, DAMON, 1104LUCRECE, CRISPIN, JUSTINE, LUCINDE, Eltiorrra H Monsieur.",
+          "Lui, Crispin, Fils d'un Père die Amoureux du trafic qu'il avait toujours fait, Sans avoir jamais vu Machine, ni Ballet, Qui sans cesse au travail n'alla voir de sa vie Specacre, Dailce, veuxi Pancos, ai Combule Prétend-il que toujours de tels entêtements.",
+          "Comment? \nPDAMON\n \nCRISPIN\n Tout est perdu vous dis-je s Nous pouvons vous et moi déserter la Maison, Et nous allons chanter sur un diable de ton.  ",
+          "Tant-mienx, car au Logis il n'en trouvera guère DAMON Père Que tous mes Gens auront, m'ayant tant attendu, De prainl à me volls \nCRISPIN\n ",
+          "Heurtons, je perds le temps quand il faut que je vole \nCRISPIN\n Montrons-nous, et sur tout jouons bien notre rôle Oh c'est main."
+        ]
+      },
+      "top_5_persons": [
+        "CRISPIN",
+        "LUCRECE",
+        "Diane",
+        "Damon",
+        "Sibille"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Grèce",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Quoi, sur tous les plaisirs dont notre âme est émue Faut-il toujours passer le fur en reçue, Mêler toujours de fiel ce qu'il a de douceur, Se livrer au plaisir dans les bras de la peur, Et vouloir se piquer avec tant de jeunesse De la sotte vertu des sept Sages de Grèce Pour moï, quoi que toujours prête à me divertir, Je crois avoir des yeux, et crois m'en bien servir;"
+        ]
+      },
+      "top_5_places": [
+        "Grèce"
+      ]
+    }
+  }
+}

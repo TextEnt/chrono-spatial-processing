@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Urfé, Honoré d'",
+    "title": "La Sylvanire, ou la Morte-vive, fable bocagère de messire Honoré d'Urfé,...",
+    "publication_date": "1627",
+    "document_id": "btv1b8606999n"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Men",
+          "frequency": 7
+        },
+        "related_sentences": [
+          "Et d'autres sa beauté. \nMen\n Car certes esprit puis dire De n'avoir jamais vu En cette jeune fille Ville seule action Qui ne soit à louer, Sinon pour le sujet dont votre te veux parler: Et c'est pourquoi chargé d'âge et de péiAinsi que tu me vois, Je vais toujours rêvant à son profit, ne, Sans pardonner à ces jambes tremblantes, Et sans flatter ces bras A moitié décharnez;",
+          "Si je ne vous réponds Comme vous le voulez L'affection que sans porte à tous deux, Ainsi que la nature Et mon devoir me tiennent obligée, M'empêche la parole, Et la voix me dérobe. \nMen\n Pourquoi l'affection Et le devoir, font-ils un tel effet?",
+          "Où vas-tu Syluanire Voyez côte arrogante, Voyez cette imprudente, Voyez l'outrecuidée, Elle s'en va sans répondre un seul mot, CÈNE IV LERICE. \nFossinde\n IIl n'en fut un plus cruel que le tien, Ô pauvre Syluanire \nMen\n ",
+          "Vous plaît-il pas accomplir le bonheur De notre mariage? \nMen\n À nouveau fait il faut nouveau J'avais promis à d'autres, Iconseil: Avant qu'à toi, ma fille Syluanire Chacun le sait assez Tu le peux demander À tous ceux du hameau.",
+          "Que il prends pour ta suie C'est la jeune Aline Almerine qui cherche Par ces buissons touffus, Et parmi ces rivages, La brebis la plus chère Qu'elle ait dans son troupeau. \nMen\n Almerine dis-tu, Et non pas Syluanire Tir."
+        ]
+      },
+      "top_5_persons": [
+        "Men",
+        "Hylas",
+        "SYLVANIRE",
+        "ADRASTE",
+        "Stelle"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Lignon",
+          "frequency": 7
+        },
+        "related_sentences": [
+          "Je te dis, Syluanire, Que Théante te veut, Théante le plus riche Des bergers de Lignon, Que son père déjà M'en a fait la demande, Que ta -mère y consent, Que ie ma le commande, Et qu'il ne tient qu'à toi Que les liens d'vn heureux hyménée Tous deux ne vous étreignent qu'est-ce que tu réponds: N'as",
+          "J'ai plus aimé tout seul Que n'ont pas fait, mais ie dis tous ensem Vos Bergers de Lignon, Carlis, et Stiliane, Aimée et Floriante, blé, Cloris, Circeine, et Florice et Dorindé, Chryséide, Madonte, Laonice, Phillis, Alexis, et tant d'autres Que pour la brièveté Je ne veux pas nommer, En rendront témoignage.",
+          "Si quand on dit, que le Dieu de Lignon Découvre de son lit En divers lieux les humides cachettes, Faute de l'eau qu'un Soleil trop ardent Lui seiche et lui consume;",
+          "Il me dit, En Forêts Sur les bords de Lignon, Aglante le berger Adore Syluanire, Et Fossinde Tirinte, Il n'y faut plus qu'un seul tour de ta roue.",
+          "A tant de cruautés Quoi qu'elles soient extrêmes, Encore ce tourment D'une importune fille, Que plutôt que d'aimer Dedans Lignon"
+        ]
+      },
+      "top_5_places": [
+        "Lignon",
+        "Rome",
+        "Lignon",
+        "France",
+        "Sparte"
+      ]
+    }
+  }
+}

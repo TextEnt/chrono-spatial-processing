@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "author": "Champmeslé",
+    "title": "Les Fragmens de Molière, comédie",
+    "publication_date": "1682",
+    "document_id": "bpt6k1090203k"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "CHARLOTE",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Mon Dieu, je n'en avais jamais vu s'habiller, que d'histoire et d'angin gorniaux ils boutons, ces Messieus-là Je me pardiais là -dedans, pour moi, et j'étais tout ébaubi de voir ça: Tiens Charlote, ils avons des cheveux qui ne tenants point à leurs têtes, et ils boutons çaaprés tout, comme un gros bonnet de filace.",
+          "D. \nIVAN\n Ma belle enfant souffrez qu'un baisé. \nCHARLOTE\n Ô Monsieur, ma mère m'a dit qu'il ne fallait pas baiser les hommes, je ne baise pas seulement Pierrot D. \nIVAN\n Tant mieux, ma belle, tant mieux, abandonnez-moi seulement votre main;",
+          "car il a du dor à son habit, tout dépis le haut jusqu'en bas, et ceux qui le servons son des Monsieux eux- mêmes, et stanpandant tout gros Monsieu qu'il est, il se serait ma igue noyé, si je n'avieme été -là. CHAR \nCHARLOTE\n Ardez",
+          "Si vous m'en croyez, Monsieur, évitons ce désordre, nous ne serions pas les plus forts ici; rengainez vos amours pour quelque temps, et à la première occasion d'une Barque qui partira nous enlèverons votre jeune Charlote sous un habit d'homme, ou quelque autre déguisement;",
+          "oui, j'aime mieux te voir créer, que de te voir à un autre. \nCHARLOTE\n Vava Pierrot, tu porteras des fromages cheux nous. \nPIERROT\n Ventredienne je n'y en porterai jamais quand tu m'en poirais deux fois autant qu'un autre;"
+        ]
+      },
+      "top_5_persons": [
+        "CHARLOTE",
+        "LIGNON",
+        "PIERROT",
+        "Pierrot",
+        "IVAN"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Jourdain",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Et moi, Pasteur, je m'appelle Jourdain \nLIGNON\n Hélas! faut-il que deux Fleuves soient réduits à se couper la gorge ensemble?",
+          "Ah, mon pauvre Lignon \nLIGNON\n Ah, mon pauvre Jourdain JOURDAIN."
+        ]
+      },
+      "top_5_places": [
+        "Jourdain",
+        "MOLIÈRE",
+        "Bergère",
+        "Rome",
+        "Lignon"
+      ]
+    }
+  }
+}

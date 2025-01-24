@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "author": "Fatouville, Anne Mauduit de",
+    "title": "Grapinian, ou Arlequin procureur, comédie",
+    "publication_date": "1684",
+    "document_id": "bpt6k1511988d"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "LE CLERC",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "pour faire connaître la chicane de la Demanderesse, il répète, la Chicane de la Demanderesse, produit quatre Pièces, produit quatre Picces, sous la Cotte G. lesquelles. \nLE CLERC\n On n'écrit pas doucement;",
+          "Quand il est à son Bureau, il dit, A-t-on envoyé enlever les Meubles de ce Maître à dancer? \nLE CLERC\n Non, Monsieur.",
+          "SCÈNE V LE MARQUIS, GRAPINIAN, UN PAGE, UN CLERC. \nLE CLERC\n Onsieur, un Page vÉdemande à vous parler.",
+          "LE CLERC\n Il dit qu'il ne peut tirer un double de ses ÉcoHe18.",
+          "LE CLERC\n "
+        ]
+      },
+      "top_5_persons": [
+        "LE CLERC",
+        "Pistoles",
+        "Arlequin",
+        "Causse",
+        "Rosse"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Oui, dix Maisons dans Paris et par -dessus cela, un bon Carrosse pour votre Périilllo GRAPINIAN.",
+          "Maisons dans Paris COQUINIERE."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Brandebourg",
+        "Versailles",
+        "Pérou"
+      ]
+    }
+  }
+}

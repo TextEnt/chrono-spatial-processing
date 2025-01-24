@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "author": "Chevillard, François",
+    "title": "La mort de Théandre, ou La sanglante tragédie de la mort et passion de Notre-Seigneur Jésus-Christ , enrichi de six cantiques, avec le massacre des Innocens",
+    "publication_date": "1649",
+    "document_id": "bpt6k1173055"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Pierre",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Le va seau sur les flots du fougueux éléments, Ne tessent jamais un pateil mouvement, Vous donc qui connaissé oti la douleurme blesse Amis, si voas m'aunés, foûtenez ma foihlesse Nous somme soulagez en notre afflection, Q and quelqu'an à pour nous de la compassion. \nPIERRE\n Seigneur, je suis tour piêt a dépouil ler ma vie \nESUS\n ",
+          "Pierre on verra bientôt détrange changement, S. \nPIERRE\n je ne erains pas le diable et tous ses instiuntont Avant qu'on puisle voir ta liberté ravie, Il faudra que it perde et mon gla.",
+          "Ait annoncé deux fois son aimable, tétour, Je te voi, Malheureux avoir bien l'assurancé, De rènier mon Nom trois fois en ma présence, S. \nPIERRE\n Ô Dieu, que!",
+          "Toi-même m'assuras que j'étais ue Pierre Quie l'Enfer contre moi ne serait que de verre, Qu' ut moi l'on vettrait pout une éternité;",
+          "S. \nJACQUES\n J'ai long-temi combattu, Mais onfin le sommeil ma fait tendre ica aimcio S. \nPIERRE\n On use assuremot ici de quelques charmei."
+        ]
+      },
+      "top_5_persons": [
+        "Pierre",
+        "JESUS",
+        "Achior",
+        "Pilate",
+        "MOSSE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "enuvrit suement leur noite passion, objectent l'interêt de Celar et de Rome, D'ailseurs je ieconnais innoer née de Homme reulent l'oprimer, car je sęni quel il est, est un hoams sans farda hort de tour intérêt Quui sait paroîtte au jour toute leur faurbetiss",
+          "Son cœur coûtant ne sauraient chancelez Eûtrant dans Rome il voît dans une RuE, En phemien tous accablé d'ennui : Dieu l'animant, sens crainte il le ?",
+          "Qu' ait que ce n'est pas une adrelle de Rome Qui pouy vou; suplanté ait aposté",
+          "César et de Rome"
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "PARIS",
+        "Loir",
+        "pô",
+        "France"
+      ]
+    }
+  }
+}

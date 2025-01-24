@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "L'Amour médecin, comédie, par J.-B. P. Molière",
+    "publication_date": "1674",
+    "document_id": "bpt6k1280465k"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "LYSETTE",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "que je ne sujet pas à fonds tous les sentiments de mon Père, et que le refus qu'il a fait porter à celui qui m'a demandée par un Ami, n'ait pas étouffé dans mon âme toute sorte a dpolrs \nLYSETTE\n Quoi, c'est cet Inconnu qui vous a fait demander, pour qui vous. \n",
+          "onde, n'onentez pas ces Messieurs-sa. \nLYSETTE\n Ma foi, Monsieur, notre Chat est réchappt depuis peu, d'un saut qu'il fit du haut de la Maison dans la Rue, et il fut trois jours sans manger, et sans pouvoir remuer ni pied ni patte;",
+          "Uoi, Messieurs, vous voilà, et vous ne y songez pas à réparer le tort qu'on vient de lulle à la Meucemle s \nM\n TOME'S. Comment, qu'est-ce? \nLYSETTE\n Un Insolent, qui a eu l'effronterie d'entreprendre sur votre Métier;",
+          "LYSETTE\n voitre rinle toute faine des paroles que vous Jui avez dites, et de la colère effroyable où elle vous a vu contre elle, est montée vite dans sa Chambre, et pleine de désespoir, a ouvert la fenêtre qui regarde sur la Rivie SGANARELLE.",
+          "ma Fille. \nLYSETTE\n À force de la tourmenter, je l'ai fait revenir: mais cela quelque reprend de moment en moment, et je crois qu'elle ne passera pas la journée."
+        ]
+      },
+      "top_5_persons": [
+        "LYSETTE",
+        "M",
+        "SGANARELLE",
+        "LUCRECE",
+        "GUILLAUME"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Champagne",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Champagne, Champagne, Champagne,"
+        ]
+      },
+      "top_5_places": [
+        "Champagne",
+        "Paris",
+        "Porte",
+        "Place Royale",
+        "Malade"
+      ]
+    }
+  }
+}

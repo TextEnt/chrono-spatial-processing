@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Poisson, Raymond",
+    "title": "Les Faux Moscovites, comédie",
+    "publication_date": "1669",
+    "document_id": "bpt6k1090002g"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "LUBINE",
+          "frequency": 12
+        },
+        "related_sentences": [
+          "heurte à la porte de Gorgibus JE viens pour vous servir, Monsieur. \nGORGIBUS\n Tant mieux, Lubine \nLUBINE\n Mais, Monsieur, qu'avez-vous, qu'est-ce qui vous chagrine, Vous êtes tout changé, le chagrin ne vaut rienIl faut se réjouir, vous avez tant de bien. \nGORGIBUS\n J'attends des Etrangers, des gens de conséquence, Et j'avance pour eux des sommes d'importance, Leurs Interprètes sont chez moi depuis huit jours, Qui levent des brocards, des satins, des velours;",
+          "Il est Crieur. \nLUBINE\n De vins. \nJOLICOEUR\n \nLUBINE\n Non, de noir à noircir, Le malheureux qu'il est, je sçay ce qu'il me coûte. \nJOLICOEUR\n C'est quelque ivrogne enfin, je n'en fais point de doute, Mais!",
+          "y Ous devriez mon père attendre encor un per. \nGORGIBUS\n Non, je n'attendrai plus, pour mieux couvrir mon jeu Je me suis adouci devant eux, c'est un lèvre Lubine amènera les Sergents tout à l'heure.",
+          "» \" Bijà. \nLUBINE\n C'est un sot, Monseigneur, que chacun montre au doigt, Il le sait, mais il l'est encor plus qu'il ne croit.",
+          ", LUBIN, GORGIBUS, IOLICOEVR, LA MONTAGNE, GORGIBUS, LARAME, SANS-SOUCY, SUZON, M. \nAMINTE\n LUBINE à l'Interprète aux piceds de Lubin Sieurs."
+        ]
+      },
+      "top_5_persons": [
+        "LUBINE",
+        "JOLICOEUR",
+        "Lubin",
+        "M",
+        "Casal"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 12
+        },
+        "related_sentences": [
+          "Vous savez si le fer et le feu nous font peur. \nJOLICOEUR\n Je sais votre bravoure, et connais votre cœur, Mais nous n'avons besoin ici que de finesse, Que nombre de gens et que d'un peu d'adresse, Ceux qui jadis vivaient de vol, d'assassinats, Dans Paris, à présent, sont gueux comme des rats.",
+          "Il faut que vous n'ayez d'un an sorti les portes, Tout autour de Paris on a mis cent cohortes, Les Archers à la ronde en mille endroits postés, Vous y battent l'Estrade encor de tous côtés, C'est bien pis qu'à Paris",
+          "Non, la peste me crève, Volez ce soir, demain on vous mène à la Greve, Paris ne vaut plus rien, le Guet est en tous lieux, Dedans les grands chemins on s'y sauve bien mieux.",
+          "Il est permis à GABRIEI VINET, Marchand Libraite à Paris, d'imprimer, ou faire imprimer une Comédie intitulée Les Moscouites, pendant le temps et espace de sept années:",
+          "Paris est tout de même, Il n'y faut plus user que d'une adresse extrême, Cela seul nous nourrit depuis plus de deux ans;"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Saint Germain",
+        "Tours",
+        "Blois",
+        "Canadas"
+      ]
+    }
+  }
+}

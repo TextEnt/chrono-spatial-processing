@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "author": "Néel",
+    "title": "L'illusion grotesque ou le point nécromancien, comédie / par M. Néel...",
+    "publication_date": "1678",
+    "document_id": "bpt6k852913n"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Ormin",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Mais puis qu'il faut agir, agissons de concert, Et montrons qu'a plopos ce enaugemient nous sert5 La ruse en est subtile, et tout ce qui m'étonne C'est que Philandre encor de rien ne vous soupçonne, Et que toute l'intrigue est conduite à ce point Qu'il se voit presque pris, et ne le connaît point, \nORMIN\n Mais sachez que Crispin, comme j'ai pu l'instruire, En faisant le Devin a bien su se conduire, Et que par là Philandre est fort embarrassé Autant sur son hymen, que sur le temps passé.",
+          "Quels devoirs nuit et jour le peuple me vient rendre, Et pour m'avoir déplu, combien j'en ai fait pendre? \nORMIN\n J'en ai dit encor plus afin de l'engager, Que tous vos sentiments n'allaient qu'à l'obliger;",
+          "Oui, cela se peut faire aussi tôt qu'un Commis? \nPHILANDRE\n je veux uile en prenant un habillement gris. \nORMIN\n Et quel nom prendrez-vous? \nPHILANDRE\n Ou quelque autre à ton choix.",
+          "\nORMIN\n Vous apprendrez que mon Maître Philandre, Qui se veut marier, ma fait malgré moi prendre Cette hient parure ce cet haait d'honneur, Pour être de ses vœux l'unique ambassadeur.",
+          "Parle moi nettement, je veux que l'on s'explique, \nORMIN\n Un Savetier, Monsieur, parlant avec honheur, M'ayant montré de loin où votre Devineur Avait accoutumé de faire résidence."
+        ]
+      },
+      "top_5_persons": [
+        "Ormin",
+        "ARMINDE",
+        "CRISPIN",
+        "Beatrix",
+        "Roselle"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Senlis",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Elle voudrait déjà bien me tenir. \nMASCARILLE\n De grâce, Tant plus je m'étudie aux traits de votre face, E j Et plus je vois l'objet que j'ai vu dans Senlis Ne lésait-ce point vous ? \nPHILANDRE\n Non, mais bien à Paris Dedans le Luxembourg, et même aux Tuilleries, Je m'y suis signalé par mille batteries;",
+          "J'arrive de Senlis pour épouser la fille, Tel que vous me voyez, de Monfieur Mascarille"
+        ]
+      },
+      "top_5_places": [
+        "Senlis",
+        "Chalons en Champagne",
+        "Paris",
+        "Luxembourg"
+      ]
+    }
+  }
+}

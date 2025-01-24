@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "author": "Puget de La Serre, Jean",
+    "title": "Thomas Morus, ou Le triomphe de la foy, et de la constance , tragédie en prose... par M. de La Serre",
+    "publication_date": "1642",
+    "document_id": "bpt6k5624589q"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "THOMAS MORUS",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "THOMAS MORUS\n Sire, puis que mon honneur et ma conscience ne relèvent point de votre Majesté, encoreque sans sois né son sujet, votre prends la liberté délui représenter qu'on ne. peut approuver la résolution qu'elle a prise de changer de Religion, en répudiant la Reine son Épouse, sans violer les Lois sacrées que le Ciel et la Nature nous ont imposées dès le berceau.",
+          "Je m'imagine bien qu'en l'âge où vous êtes les faveurs de la Fortune ne vous peuvent, tenter: mais songez un peu qu' vous abandonnez une Fille dont les intérêts vous doivent être en très forté considérationt * 7 Al de \nTHOMAS MORUS\n Ma Fille se consolera de ma perte, puis que Dieu la permet, et pour sa gloire, et pour mon salut.",
+          "4. \nTHOMAS MORUS\n Vous ne mettez pas en compte ceux que votre Conseience a déjà; fait naître dans votre sein, y pour tenir votre Âme à la gêne: les uns mêmes ven eront de la cruauté des autres.",
+          "si vous considérez le déplorable état où votre infortune m'a déjà réduite, vous aurez plus de pitié que de raison. \nTHOMAS MORUS\n ma pcreumt",
+          "THOMAS MORUS\n Quelle Justice et quelle Raison peut trouver V. M dans la ruve de son Honneur, et dans la perte de son Empire?"
+        ]
+      },
+      "top_5_persons": [
+        "THOMAS MORUS",
+        "M",
+        "M",
+        "Couronne",
+        "LE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "PARIS",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "À PARIS,"
+        ]
+      },
+      "top_5_places": [
+        "PARIS",
+        "V",
+        "Pa",
+        "Rome",
+        "V"
+      ]
+    }
+  }
+}

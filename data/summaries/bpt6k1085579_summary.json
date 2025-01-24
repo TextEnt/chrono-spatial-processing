@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "author": "Durval, Jean-Gilbert",
+    "title": "Panthée : tragédie / [par J.-G. Durval]",
+    "publication_date": "1639",
+    "document_id": "bpt6k1085579"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Cyrus",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Murmure punissable en cette multitude, Dont la plainte aujourd'hui se forme en habitude! \nCYRUS\n Or comme ie n'ai point à puyer ue tuisons, Ceux qui se font loger ès royalles prisons, Recommandant aux Dieux les autres qui pâtissent, Je tâche de pourvoir aux abus qui se glissent: Et si quelques méchants demeurent impunis, C'est qu'on ne peut tout faire à des maux infinis.",
+          "Vous devez imiter les Médecins Chimiques Et quant il faut guérir les misères publiques, Vous pouvez appliquer aux plus fortes poisons Len pen degenedor, é ue beuesraijons. \nCYRUS\n Je m'essaye en tous lieux de rendre la Justice Cultivant la vertu assez retranche le vice: Et tout ce que personne fais est de contrepeser, Un navire branlant sujet à se briser:",
+          "de quel tremblement on me sens tourmentée, Considérant en gros les malheurs de Panthée, Que direz vous Cyrus à ce triste rapport, Que mes cris et mes pleurs vous feront de sa mort? \nPANTHÉE\n Je n'ai plus qu'un soupir avec une parole, Et puis tu vous conjure.",
+          "Je n'avais homme les yeux ni le cœur abaissé Pour un mal qui bien tôt pouuoit être passé, Lors que le grand Cyrus fort en Cavalerie Vint faire le dégât par toute l'Assyrie, Et que nos champs couverts de bataillons espaix Cessèrent de porter les doux fruits de la paix.",
+          "Et pour un sale gain qui ne peut t'enrichira ç luy secrètement que tu m'as su fléchir, Tu mentiras flatteur, plein serai véritable Et peut -être Cyrus sera-t-il équitable Il me fera iustice et unira celui Qui se promer en vain de me livrer à lui."
+        ]
+      },
+      "top_5_persons": [
+        "Cyrus",
+        "CYRUS",
+        "CRÉSUS",
+        "Seigneur",
+        "RUS"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Perse",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Ainsi puissent toujours et la Perse et les Mèdes Adorer ta grandeur afin que tu leur aides:",
+          "Loin cette Maieste de Monarque de Perse, Je veux m'abandonner aux larmes que ie verse."
+        ]
+      },
+      "top_5_places": [
+        "Perse",
+        "Rome",
+        "Paris",
+        "Palais",
+        "Parnasse"
+      ]
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "author": "Rosimond, Claude Rose",
+    "title": "L'Advocat sans étude, comédie",
+    "publication_date": "1670",
+    "document_id": "bpt6k1090113m"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "LISE",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "j'ai bien d'autres connaissances: Et l'on peut m'appeler le trésor des sciences: Je connais Tirepied, Aleine, Machinoir, Dent de loup, Quarelet, Écoffrais, Embouchoir, Lise le tirant par le bras il se reprend.",
+          "ces gens n'en manquent pas, Sans qu'on y trouve à dire ils pêchẽt en eau trouble LISE J'en connais bien pourtant qui n'ont ici sou cy double.",
+          "CECHÊTE, FLORICE, LISE, ALCIDOR, CLITANDRE, LE SERGENT, CARILLE, CL EUR, JOLICOUR Durant l'entretien d'Égaste avec Alcidor Florice déclare tout à Clitandre ERGASTE",
+          "De m'ert beaucoup d'noneur d'entrer en votre race SCÈNE X. ÀLCIDOR, LISE, CARILLE, FLORICE ÀLCIDOR l'Est moi qui le reçois.",
+          "Père de Florice \nFLORTCE\n LISE Suivante de Florice ERGASTE, Gentilhomme, Amant de Florice CARILE, Savetier et feint Advocat."
+        ]
+      },
+      "top_5_persons": [
+        "LISE",
+        "CLITANDRE",
+        "Louis",
+        "Nicolas",
+        "Jeanne"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Ar grâce et Privilège du Roi, donné à Paris le T 19.",
+          "La Scène est à Paris À D À SANS ETUDE COMÉDIE."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Pont d'Avignon",
+        "Flandre",
+        "Bourges"
+      ]
+    }
+  }
+}

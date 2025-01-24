@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "author": "Troterel, Pierre",
+    "title": "Philistée, pastorale . De l'invention du sieur d'Aves",
+    "publication_date": "1627",
+    "document_id": "bpt6k1040425g"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Cris",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Vous le saurez en fort peu de discours, Déjà trois ans ont achevé leurs cours Depuis le jour qu'une prompte querelle Fît re en lui cette haine mortelle, Dont le sujet certes est bien léger: Comme il ioüoit apprendre Berger De mes amis, qui gagna trois oboles De son argent, ils vinrent aux paroles Et puis aux mains, moi il voyant charger Ce mien ami, j'allé le dégager De dessous bien qui l'avait mis par terre, Et le frappait avec une pierre, Il eut tel dueil de se le voir recous Qu'il m'attaqua transporté de courous, Me desserrant bien vérêt sur les oreilles, Mais tôt après il eut billes pareilles, Car ty sautant au collet rudement, Je l'étrillé certes honnêtement, Si que puis il m'abhorre et me A Pins mite jois que ta ' a. \nCris\n Il faut tâcher de vous rapatrier, Je le veux voir afin de l'en prier.",
+          "Comme l'on voit que la sage nature Donne en naissant à chaque créature Certain instinc, qui fait qu'elle poursuit Son propre bien et son contraire fuit: Ainsi, Cris, à la femme volage mune te anne vane en parlage, Si bien qu'il n'est aucunement besoin Qu'à M monstrer on prenne quelquehe soin. \nCris\n Certes ce point est hors de controuerse: Mais comme on voit la nature diverse Ne donner pas même tempérament A même espèce, ains fort diversement: Ainsi ie dis que le Ciel peut bien faire Qu'on trouvera quelque âme débonnaire Parmi leur sexe a qui notre amitié Et nos travaux pourront faire pitié, Mais aussi vrai c'est quelque chose rare Et qu'à bon droit au phœnix l'on compare.",
+          "L'occasion? \nLéonitte\n Ô le plaisant langage! \nCris\n Ce d'autant que pour vous J'ai secoué un servage si dous. \nLéonitte\n Me voilà bien, mais que cette aventure E tin bu trois jours tant seulement me dure, Mais j'ai bien peur qu'au premier beau sujet Que vous verrez -vous perdiez mon objet Comme le leur, ne me croyant pas telle Que ma beauté dessus la leur excelle. \nCris\n Comme le Lys surpasse en pureté Toutes les fleurs, ainsi votre beauté Dessus toute autre est la perle et l'Hique. \nLéonitte\n Vous- vous jettez dessus la retorique, Adieu",
+          "mon cœur ne te mets en derouse, Sois généreux et ne te laisse pas Ainsi gagner aux cypriens appas. \nCris\n Le Ciel bénin me favorise encore, Me faisant ouvoir la belle que j'adore, Bien que j'en sois dédaigné rudement, Se figurant par trop légèrement Que mon amour ne sera de durée, Si belle, si, soyez-en assurée, C'est tout de bon que je vay vous aimant, Je vous ser ai certes loi amant. \n",
+          "Que vous voyez que la marque j'en porte, Et me coûta pour me faire guérir v oit mes ouïr, ou te pénijà maohitr, Qu'il me le rende. \nCris\n Il est bien raisonnable, Après cela lui serez -vous traitable. \nHermon\n J'y penserai, mais cependant allez Faire vends le daly, si Oonl quhtes Que nous soyons en bonne intelligence, Ne tardez plus allez en diligence. \nCris\n Assurez moi devant mon partements un"
+        ]
+      },
+      "top_5_persons": [
+        "Cris",
+        "Hermon",
+        "Hermon",
+        "Minos",
+        "Cupidon"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Normandie",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Il faut, Lecteur, que sans te die Que ie demeure en Normandie Le lieu de ma Nativité"
+        ]
+      },
+      "top_5_places": [
+        "Normandie",
+        "Bergère",
+        "Hermon"
+      ]
+    }
+  }
+}

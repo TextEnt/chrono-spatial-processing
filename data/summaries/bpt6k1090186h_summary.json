@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "author": "Magnon, Jean",
+    "title": "Zénobie, Reyne de Palmire, tragédie",
+    "publication_date": "1660",
+    "document_id": "bpt6k1090186h"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "AURELIAN",
+          "frequency": 12
+        },
+        "related_sentences": [
+          "AURELIAN\n nés Je fais grâce à tous deux, Prince ie romps vos chais Vous, illustre Zabas, été veux finir vos peines, Zénobie est à vous, ie la cède à vos vœux Et mets toute ma gloire à faire un bienheureux, Princesse, vous voyez comme on tâche à vous plaire Votre amour à ce prix. \nODENIE\n Ch E40 muimour ère polontaire \nAURELIAN\n ",
+          "mon malheur, c'est toi qui l'as causé, \nAURELIAN\n C'est vous, de qui l'amour n'avait que trop osé, Couple ingrat et perfide, à la fin ma vengeante Vous veut abandonner à ma toute puissance, N'ayant pu vous fléchir par offre, Seigneur bienfait le piétends vous dompter par un contraire effet, Rome vous pourra voir, TIMAGENE.",
+          "Qui m'était inconnu me peut avoir trompée, AURELIAN, Vous vous connaissiez mal en Empereur Romain, \nLENOBIE\n Et vous en Zénobie \nAURELIAN\n On plaint un cœur si vain, Je suis maître du monde, \nZENOBIE\n Et ici suis ma maîtresse, \nAURELIAN\n Témoin, témoin vos fers; \nZENOBIE\n C'est par vonie fombiene, E j.",
+          "Vous donc qui d'Odénat condamnés les conquêt En voyant ce qu'il fut, voyez ce que vous êtes. \nAURELIAN\n Sachez que vous et avait conquîtes trop d'états \nZENOBIE\n Ne nous accusez-vous que de ces attentats, Si conquérir l'Asie était un si grand crime, Conquérir tout le monde est-il plus légitime?",
+          "Ce n'est pas aux vaincus à blâmer les vainqueurs, \nZENOBTE\n Ni ce n'est pas au sort à triompher des cœurs, \nAURELIAN\n Vous seriez en état de louer la fortune, Si, quand ie vous aimai, \nZENOBIE\n Ge reurige m'importune, Apprenez qu'un amant ne peut plaire à mes yeux"
+        ]
+      },
+      "top_5_persons": [
+        "AURELIAN",
+        "César",
+        "ILIONE",
+        "MARTIAN",
+        "Aurian"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 12
+        },
+        "related_sentences": [
+          "mon malheur, c'est toi qui l'as causé, \nAURELIAN\n C'est vous, de qui l'amour n'avait que trop osé, Couple ingrat et perfide, à la fin ma vengeante Vous veut abandonner à ma toute puissance, N'ayant pu vous fléchir par offre, Seigneur bienfait le piétends vous dompter par un contraire effet, Rome vous pourra voir, TIMAGENE.",
+          "Qu'il est beau, mon captif, quand par de fiers regards On voit ramper sous soi tout l'orgueil des Césars Levez-vous cependant, Rome étant ma Rivale, Je ne veux plus souffrir quvndes nens la Javasc Ji que le nom Romain étant comme abattu, a fortune à mes pieds réduise la vertu.",
+          "AURELIAN\n Votre insigne valeur a pu se signaler, es Dieux qui l'admiraient n'ont pas voulu permettre ès Rome cy la mort, aient pu se la soumettre;  s'en font un spectacle et d'un plus digne effort s ' ont triompher de Rome et de la mort;",
+          "De Rome, ni de vous semble ne prends point la loi Vous, Madame, c'est -vous, qu'en servant ma Prince De mon peu de valeul l'avais fait la inaîtresse, Comme de mon épée ordonnez de mon bras.",
+          "cette lâche ardeur Vous fait de votre sexe outrager la pudeur, Rome en est offensée et ma propre victoire: \nZENOBIE\n Ah!"
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Savoie",
+        "Turin",
+        "Perse"
+      ]
+    }
+  }
+}

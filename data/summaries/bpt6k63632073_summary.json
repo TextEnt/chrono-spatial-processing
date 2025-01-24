@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "author": "Fontenelle, Bernard de",
+    "title": "Bellérophon, tragédie, représentée par l'Académie royale de musique",
+    "publication_date": "1679",
+    "document_id": "bpt6k63632073"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Bellerophon",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Bellerophon fond une seconde fois sur la Chimère, au milieu du Théâtre, et après qu'il a disparu un moment en s'élevant sur le Cintre, il paraît pour la troisième fois, descend sur le devant du Théâtre, attaque de nouveau la Chimère, la blesse à mort, et se sauve en lair, faisant son vol en rond, et après trois tours, on le voit se perdre dans les nues.",
+          "BELLEROPHON\n Non, non, quoi qu'il ait ordonné, On ne verra jamais que mon amour s'éteigne, Je n'examine point ce qu'il faut que je craigne De v'Oracie sayat qui vient aêtre donne.",
+          "Les deux Dégrés et les Galleries qui les environnent, sont remplis des Peuples de la Lycie assemblés en ce lieu pour y recevoir Bellerophon que Pallas doit ramener après la défaite de la Chimère SCÈNE PREMIÈRE.",
+          "BELLEROPHON\n Ce Dieu qui chérit la Lycie Dans ses malheurs voudra la secourir, Et l'encens qu'en ces lieux vous a vez offrir Rendra du Ciel la colère adoucie.",
+          "Mais cet Oracle est éclairci, Bellerophon est le Fils de Neptune Pour nous le déclarer, dans son Temple, à nos yeux, Ce Dieu des Mers vient de paraître;"
+        ]
+      },
+      "top_5_persons": [
+        "Bellerophon",
+        "Bellerophon",
+        "PHILONOE",
+        "BACCHUS",
+        "Apollon"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Hélicon",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Le Théâtre représente une agréable Vallée, en forme de Costeaux délicieux, au fond desquels paront le Mont rarllane à doubie ionimet, et entre les deux, la Source de la Fontained'Hélicon"
+        ]
+      },
+      "top_5_places": [
+        "Hélicon",
+        "France",
+        "Argos"
+      ]
+    }
+  }
+}

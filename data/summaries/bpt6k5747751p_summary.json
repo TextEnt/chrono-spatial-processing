@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Guérin de La Pinelière",
+    "title": "Hippolyte , tragédie. Par de La Pinelière...",
+    "publication_date": "1635",
+    "document_id": "bpt6k5747751p"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Hippolyte",
+          "frequency": 8
+        },
+        "related_sentences": [
+          "Et déjà du Théâtre il j'est fait un Autel, Il nous a tous ravis, et ta Muse superbe Nous a fait iustemént craindre second Malherbe, Sénèque s'y voyant s'est lui mieux admiré, Et ne s'est pas connu se voyant siparé, Ne faits pas plus long temps ce tort à ton mérite, Et reçois de l'Encens en donnant Hipolite, Fais rougir tout ensemble et sucer nos Auteurs, Et que les adorés soient tes adorateurs, Cependant continue en ces rares mer, Qu'vntragique suject occupe encor tes veilles, Maintenant que le peuple en goûte entretien Et 'on voit de retour le Cothurne Ancien, Maintenant au plus graue on promet la couronne, Que la Scene gemit et que la Muse tonne, Qu' ce bel Hippolyte semblable soit y Et donne des pareils ce qui n'en a point, Le être au front de cette Tragédie;",
+          "Nous ne baisons pas une Maîtresse et nos enfants d'une même sorte, pour celles-là les carresses semblent extrêmement languissantes si elles ne vont jusques à l'excès: mais pour ceuxcy cõme nos ardeurs sont plus sainte, elles ne laisseut pas de se témoigner encore qu'elles soient modérées, il ne faut pas qu'elles aillent jusqu' aux saillies et aux insolences de l'Amour, et l'on juge ordinairement qu'il y à plus d'amitié au dedans quand il en paraît moins au dehors: Ainsi ie ne laisse pas d'aimer parfaitement Hippolyte pour ne te persuader pas qu'il soit connu dans ces Regions éloignées, où parmi des Peuples entiers on ne trouve pas quelques fois un homme qui sache lire;",
+          "qui pour avoir tant voyagé comme ils nous disent n'en sçauent pas plus de langues, et quint parlent jamais que Français, ont meilleure gruce dans le Cabinence d'une Dame, que dans celui d'un homme de lettres: Mais Hippolyte et qui le langagé, d'Athène este naturel, qui apprits celui de Rome dès l'Empire de.",
+          "Mais quoi, mon Hippolyte a de si puissants charmes, Mes yeux avec plaisir pour lui vers des larmes, Momme malme semble mieux un plaisir qu'un tourmêt, Mon feu sans me brûler m'échauffe doucement, C'est moi si ici languis qui cause mon martyre, Et un l'allégerais si personne le pouvais dire.",
+          "n'en aimez pourtant pas moins Hippolyte quoi qu'il en soit cause, et s'il se trouve encore quelque Monstre qui le veille perdre, aidez avoir à le combattre ie ainsi en supplie, donnez Se vn Azyle dans votre Cabinet, et pour comble de faveurs permettez que je me die, 3 .    "
+        ]
+      },
+      "top_5_persons": [
+        "Hippolyte",
+        "Senecque",
+        "Hippolyte",
+        "Hippolyte",
+        "THESEE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 8
+        },
+        "related_sentences": [
+          "Au reste pour la Poésie dont j'ai particulièrement dessein de parler, toute la France n'admireelle pas aujourd'hui Monsieur de RACAN ce grand Génie, qui sans astre éclairé des lumières des Grecs ni des Ainsi, voit aussi nettement les choses que ces Anciens les ont vues: et nous avons encore parmi nous un Cavaillier qui ne le céderait peut-être à pas un de notre siècle s’il faisait un peu plus de cas des carresses de sa Muse; et qui a mis un des plus beaux piliers à ce Templé que les Muses bâtissent à la gloire de cet homme extraordinaire, et de ce grand Ministré qui a toujours les yeux ouvers sur l'Europe, et que tous les AU LECIEUR.",
+          "Je puis parler de sa gloir sans ouvrir les tombaux de ses anciens Comtes qui ont tant conquesté de Royaumes, et sans fueilleter nos vielles Annales: Il n'est point nécessaire de parler des prétieux restes des Amphithéatres, et des belles traces qu'on y reconnaît encore de César et des Romains Il sera plis à propos de faire voir comme cette Prouinee n'a pas été plus stérile en bons esprits qu' aura autresnt que la France n'aura point de honte de la çonter entre ses plus belles parties.",
+          "Il n'y a point peut-être de ville en France qui ait ici jeunesse si polie et si bien faite que la nôtre: Ils ont quasi tous l'esprit vif et naturellement propre aux belles lettres, et puis qu'il y en a une douzaine bien haut au dessus de moi Angers donnerait incontinent de l'ombrage à la Normandie, s'ils pouvaient prendre la coutume d'aimer moins les Promenades et les Jeux de Paume que leurs Cabinets.",
+          "Il est vrai qu'elle a fait admirer du temps de nos Pères le grand Cardinal du PERON, Monsieur BERTAUT, et Monsieur de MALHÉRDE que l'on revère encore aujourd'hui comme l'Homère de la France, et à cette-heure que ces belles lunières sont éteintes, elle en fait luire d'autres qui n'éclairent pas moins vivement que les premières, AU LECTEUR.",
+          ", était un Suisse pour Yurongne dans la France pour être estimé autrefois poli dans la Grèce, il ne faillait qué se dire d'Athène, pour avoir la réputation, de vaillant il fallait être de Lacédémone, et maintenant pour se faire croire excellent Poète, il faut estré né dans la Normandie"
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Rome",
+        "Grèce",
+        "Normandie",
+        "Milan"
+      ]
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "author": "Marcassus, Pierre de",
+    "title": "Les pescheurs illustres",
+    "publication_date": "1648",
+    "document_id": "bpt6k5811892h"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ANTENOR",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Aille voir qui voudra les climats fréquentés, ceux que te chaut œuesote, et ceux où l'on endure Les extrêmes rigueurs d'une estreme froidure: Ennemi des clartés de l'astre qui nous luit Se cache qui voudra dans l'horreur de la nuit, S'il aime comme moi, quelque seul qu'il puisse être Toujours avec amour on le verra paraître. \nANTENOR\n Quelque peine qu'on mette à receler ce dieu Son insolente humeur le découvre en tout lieu.",
+          "Pour ne le pas conoistre il faudrait ignorer Jusqu'où va le savoir qui le fait adorer. \nANTENOR\n Avant que de tes jours la beauté nompareille Contante par ta mort cette jeune merveille, Tu dois sans plus tarder en ce triste accident Confuter cette part cet esprit si prudent.",
+          "ACRINE\n Elle doit bien changer, et nous devons l'attendre: Mais non pas en faveur du misérable Alcandre \nANTENOR\n Chan guast-elle en faveur de tous ceux dont les vœus Se trouvent engagés dans l'or de ses cheveux:",
+          "Tes yeux l'ont-ils pas vu s'échapper de nos mains? \nANTENOR\n Maintenant que l'orage est si grand dessus l'onde: Qu'une effroyable nuit envelope le monde: Que les flots irrités s'esleuent jusqu'aux cieux;",
+          ". \nANTENOR\n Des fleuves les plus lents la fuite vagabonde Tire des eaux du ciel tout l'orgueil de son onde: Et celles de nos yeux au gré de nos malheurs Du regret qui nous tue animent nos douleurs."
+        ]
+      },
+      "top_5_persons": [
+        "ANTENOR",
+        "Neptune",
+        "Thétis",
+        "M",
+        "Dele"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Sorbonne",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "MIIINYO, Chez GUILLAUME SASIER, Imprimeur et Libraire ordinaire du Roi, rue des Cordiers proche Sorbonne, aux deux Tourterelles."
+        ]
+      },
+      "top_5_places": [
+        "Sorbonne",
+        "Paris",
+        "Thrace",
+        "Corinthe"
+      ]
+    }
+  }
+}

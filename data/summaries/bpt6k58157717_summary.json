@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Gilbert, Gabriel",
+    "title": "Les amours d'Angélique et de Médor , tragi-comédie. Par M. Gilbert",
+    "publication_date": "1664",
+    "document_id": "bpt6k58157717"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ROLAND",
+          "frequency": 11
+        },
+        "related_sentences": [
+          "Avant que la Princesse, En faveur de Médor m'eût fat voir sa tendresse, A parler franchement j'en faisais peu d'état, Et cet amant obscur vivait sans nul éclat, Mais d'elle son mérite emprunte tant de lustre du Rende teus icommiins cnont rendide rRien ne peut l'égaler, et ce glorieux choix Met Médor au deluz des Héros et des Rois: Je prononce pour lui, puisque Madame l'aime. \nROLAND\n Quoi l'injuste Atimant parle contre M-même.",
+          "Le superbe Roland, malgré sa jalousie, Deurait aimer celui qui m'a sauvé la vie, Eeencone d' Iua ende j' uncimi, Peut-il faire un combat que je n'ai pas permis? \nROLAND\n Encor que d'une amante un cœur soit idolâtre, eu lèle pièrepahicherdecols quoiever se bave, D'un pareil procédé l'on rirait à la Cour, L'on consulte sa haine, et non pas son amour.",
+          "ROLAND\n J'ai fait pour vos beautés, que Mars cède à l'amour, J'ai par tout avec moi fait marcher la victoire, Et pour unique objet ie ay rien que la gloire, C'eit -elle qui par tout m'a fait être vainqueur, Elle est votre Rivale et partage mon cœur: Madame voyez donc aptez un tel partage, Si vous pouués encor recevoir mon hommage.",
+          "Mais sur quels différents peut-on vous accorder? \nROLAND\n La Princesse, pour nous injuste autant que belle, Nous soutient que Médor est autre seul digne d'elle, Et nous voulons tous trois auté grande équité, Lui disputet un cœur qu'il n'a point mérité, Prenint pour nous juger une juste balance, Ju plus parsald anant domez la preresence.",
+          "Suis-je obligé de vous en rendre conte? \nROLAND\n Puisque vous le scruez avec tant de chaleur, Comme ami de Mcédor, pour sauver son honneur, Vous devez l'avertir, que dans la Cour de France, C'est peu d'être galant, qu'il faut de la vaillance, Et qu'un homme sans cœur y paile mal le temps?"
+        ]
+      },
+      "top_5_persons": [
+        "ROLAND",
+        "Bradamante",
+        "Roland",
+        "MELINDE",
+        "ISABELLE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 11
+        },
+        "related_sentences": [
+          "Suis-je obligé de vous en rendre conte? \nROLAND\n Puisque vous le scruez avec tant de chaleur, Comme ami de Mcédor, pour sauver son honneur, Vous devez l'avertir, que dans la Cour de France, C'est peu d'être galant, qu'il faut de la vaillance, Et qu'un homme sans cœur y paile mal le temps?",
+          "De la voir au retour brûlant d'impatience, Sacltant que la Princesse était toujours en France, à je ne pouvais pas me rendre sûrement, J'y vins, cher Alidor, sous le nom d'Arimant, Fils du brave Aquillant, ce Paladin illustre e",
+          "Le rang que je dispuæ à la Fille de France, A fait donner cet ordre auec grande apparence, Et cet ordre cruel me prive du plaisir De pouvoir contenter mon généreux désir;",
+          "Conseiller en nos Conseils, grand Audiancier de France en quartier, un recepissé de notre Bibliotequaire, et du Sieur Cramoisy, commis par notre Chancelier de la délivrance actuelle",
+          "qui prêche ici la bienséance, Fut ercante elle melme avant que d'être en France, Elle court tout le monde, et se croit tout permit. \n"
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Paris",
+        "Lice",
+        "PARIS",
+        "Europe"
+      ]
+    }
+  }
+}

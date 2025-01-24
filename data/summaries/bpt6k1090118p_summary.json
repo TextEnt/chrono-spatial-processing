@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Discret, L",
+    "title": "Alizon, comédie, Dédiée cy-devant aux jeunes veusves, & aux vieilles filles, et à présent aux beurières de Paris",
+    "publication_date": "1664",
+    "document_id": "bpt6k1090118p"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "M",
+          "frequency": 17
+        },
+        "related_sentences": [
+          "OQuand Madame pense avancer ie tombe à reculons, Je porte mon espoir à posséder Fleurie Lors qu'un autre la sert sans craindre ma furie: Sus, il faut que sa mort satî fasse ma foi: Mais tout beau, parlons bas, ils sont proche de moi, Je les veux accoster sous un autre visage, Et par un feint discours remâcher mon courage: Que font ici tous levis cesdeux parlaits amants? \nMr AROLU\n dis accendent j'nonneur de vos commahdements. \nM\n \nJEREMIE\n Vos elleprits sont contents.",
+          "J'ai beaucoup plus tardé que l'heure entre nous prise \nMr AROLU\n J'ai cru que ta folie était un peu rassise, Et que depuis hier, ayant dormi la nuit, Tu pourrais oublier l'appel qui nous conduit. \nM\n \nJEREMIE\n Ia colère en ce cas trompe donc ton attente, lar plus elle vieillit, plus elle est violente, t sans un Fourbisseur qui m'a longtemps tenu, adubitablement tu t'aurais prévenu;",
+          "Regretaient l'aliment de leurs merts nourrices, Ils ne vivaient sinon de raves et de navets, Qu'ils s'en allaient cueillir la haut sur ces marais Li nie m'en souviens le Capitaine Iacques Me fit don d'une miche assez proche de Pasques \nM\n \nJEREMIE\n Sans doute que ce fut alors que deux batteaux Passèrent malgré nous à la faveur des eaux.",
+          "Allons, il faut passer la porte de Bussi SCLNVE -TII. \nM\n \nVAROLV\n Emblable à l'innocent que l'on mène au supplice, JIe ne saurais savoir de quoi -je suis complice, On me fait mon procès, on me condamne à mort, it l'on ne me dit point à qui j'ai fait du tort.",
+          "Même au danger de voir ma fortune achevée, Si par ton prompt secours elle ne m'est sauvée. \nM\n \nJEREMIE\n Que faut-il que jelfasse, aller droit au tombeau? \nBÉLANGE\n à lennqueuuerque tonchappca, Afin que déguisé j'esquiue la menotte. \nM\n TEREMIE."
+        ]
+      },
+      "top_5_persons": [
+        "M",
+        "JEREMIE",
+        "FLORIANE",
+        "Fleurie",
+        "Alison"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 17
+        },
+        "related_sentences": [
+          "Ces Messieurs maintenant s'offrent pour vol maris, Je crois qu'il s'en voit peu de pareils à Paris \nROSELIS\n Adorables sujets de l'amoureux servage, C'est mettre trop longtemps le silence en usage, Jusques ici, la peur apprendre les sanglots Dans avoir douteux retenait vos propos, Mais puis que le destin ne fait plus de menace, Et qu'il tourne rers nous une riante race: Ne pensons seulement qu'à Hre désormais, Et que du temps passé l'on ne parle jamais. \nFLORIANE\n Je confesse, Monsieur, que la peur et la crainte A",
+          "Et pour cet effet apprimé Dame de mes Amies m'ayant fait le récit des grotesques et véritables Amours de la veuve d'une pauvre Bourgeois de Paris, j'en ai traité l'Histoire en Rime sous le nom d'Ali Fleurie, auec des paroles les plus approchantes de la sorte de parler des personnages qui y sont introduits, et chacun selon sa condition, pour rendre le sujet plus risible: Quoi que de Seigneur-même il soit extrêmement récréatif, intrigué, et divertissant.",
+          "Or sus donc, mes enfants, hardiment que l'on sonne, Faisons un si grand bruit que Paris s'en étonne: Faisons que la rumeur de tous ces instruments Aille auecque frayeur rueiller ces Amaus: Mais à mon premier cri qu'aussitôt chacun cesse: C'a voilà la maison, frappons, le temps nous presse.",
+          "Après le mauvais tour que m'a joué Fleurie Il faut que ma raison cédant à ma furie, Pour venger cet affront fasse un chariuaris, Dont jamais on ait fait le semblable à Paris Je n'ose me montrer où la gloire m'appelle, Qu'à l'instant mes amis ne m'entretiennent d'elle?",
+          "Car après Henri trois, le grand Roi de Navarre, Des Princes vertueux l'exemple le plus rare, Sucédant à son sceptre aussi bien qu'à ses mœurs, Éprouva des Ligueurs les mauvaises humeurs: En venant à Paris on lui ferme la porte, Sous un prétexte feint on le traite de sorte,"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "France",
+        "Fontainebleau",
+        "Dreux",
+        "Valais"
+      ]
+    }
+  }
+}

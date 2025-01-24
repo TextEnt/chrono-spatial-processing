@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Les fragmens de Molière , comédie",
+    "publication_date": "1682",
+    "document_id": "bpt6k5754475d"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Pierrot",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "dee iiannleme la \nPIERROT\n Out doucement, Monsieur, tenez-vous, s'il vous plaît, vous vous échauffez trop, et vous pourriais gagner la puresie. \nLCB\n Qui m'amène ici cet impertinen: \nPIERROT\n le vous dis qu'ou vous teniais, et que vous ne caressiais pas nos atcordées.",
+          "Il y a que tu me chagrines l'esprit, franchement \nCHARLOTE\n Comment donc? \nPIERROT\n Peiteuieme, tu ne m'aime poine; \nCHARLOTE\n N'est-ce que c22 \nPIERROT\n Oui ce n'est que ça, et c'est bian assez.",
+          "PIERROT\n Je te dis toujours la même chose, parce que c'est toujours la même chole, comco nuicait pas toujours la même chose, je ne te dirais pas toujouis la ineine chole \nCHARLOTE\n Que veux-tu? \nPIERROT\n ",
+          "je veux que tu m'aimes. \nCHARLOTE\n Est-ce que je ne t'aime pas? \nPIERROT\n Non, tu ne m'aime pas, et si je fais tout ce que je pis pour ça.",
+          ", ma mère m'a dit qu'il ne fallait pas baiser les hommes, je ne baise pas seulement Pierrot D. \nJUAN\n Tant mieux"
+        ]
+      },
+      "top_5_persons": [
+        "Pierrot",
+        "LIGNON",
+        "CHARLOTE",
+        "Charlote",
+        "Pierrot"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Jourdain",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Ah, mon pauvre Lignon \nLIGNON\n Ah, mon pauvre Jourdain DOIDAXN.",
+          "Jourdain \nLIGNON\n soient réduits à se couper la gorge ensemble?"
+        ]
+      },
+      "top_5_places": [
+        "Jourdain",
+        "PARIS",
+        "Lignon",
+        "Bergère",
+        "Rome"
+      ]
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "author": "La Ferté, de",
+    "title": "Le Carnaval de Lyon, comédie",
+    "publication_date": "1699",
+    "document_id": "bpt6k8569801"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Angélique",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "mon industrie m'a fait marquis à Lyon en dépit de la fortune qui me fit naître au Mans assez obscurément, que de différents personnages il faut que je joüe tous les jours pour soutenir le Marquisat la vieille Araminte à la vérité à du goût pour moi, et elle sacrifiera quand je voudrai à la possession de mon cœur la personne et le bien de sa nièce Angélique mais outre qu'un établissement en ce pais",
+          ", je n'ai point de goût pour Angélique et n'en veux qu'a font argène, il faut que je tacne à m'en saisir sans me donner l'embarras d'une nopce: les choses sont déjà disposées pour ce dessein, allons travailler à nous en faciliter le succès.",
+          "Votre amour pour Angélique ne m'a point échappé, et je suis presque comvainche du fetour qu'il trouve dans son cœur.",
+          "Je vous ai surpris plus d'une fois lorgnant Ia jeune Angélique le morceau vous accommoderait.",
+          "Mais trouvez bon que je laisse à Angélique le plaisir de dans avec vous."
+        ]
+      },
+      "top_5_persons": [
+        "Angélique",
+        "Pasquin",
+        "Valère",
+        "Lise",
+        "Lyse"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Mans",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "mon industrie m'a fait marquis à Lyon en dépit de la fortune qui me fit naître au Mans assez obscurément, que de différents personnages il faut que je joüe tous les jours pour soutenir le Marquisat la vieille Araminte à la vérité à du goût pour moi, et elle sacrifiera quand je voudrai à la possession de mon cœur la personne et le bien de sa nièce Angélique mais outre qu'un établissement en ce pais",
+          "que cela ne vous embarrasse pas, les titres les plus nobles de sa maison sont les feuilles des piètes des mauvais auteurs qui enveloppent le poivre et la canelle chez son père: Mr. le Marquis eit le Ms d'un épicier du Mans PASQUIN."
+        ]
+      },
+      "top_5_places": [
+        "Mans",
+        "Lyon",
+        "Rouen",
+        "Marseille",
+        "Turquie"
+      ]
+    }
+  }
+}

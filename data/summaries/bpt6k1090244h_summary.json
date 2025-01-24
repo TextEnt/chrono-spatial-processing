@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "author": "Montauban, Jacques Pousset de",
+    "title": "Indegonde, tragédie",
+    "publication_date": "1654",
+    "document_id": "bpt6k1090244h"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Seigneur",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Oui, Seigneur vous parle instruit des volontés du Roi, Vous reprendrez le Sceptre en reprenant la foi: Ces glorieuses mains sous ces fers affligées, Reprendront ces lauriers dont on les vit ès Vous verrez à vos lois tous ces peuples soumis, Enfin votre bonheur n'aura plus d'ennemis, Mais si vous demeurez toujours inexorable, Si vous aimez l'erreur qui vous rend si coupable, Si, Prince, de l'Estit l' quittez l'intérêt, Hélas! par mon silence apprenez votre arrêt, Et puis qu'il faut parler, pour nous réduire en pou: dre, J'ai vu sortir l'éclair prêt d'entendre la foudre,",
+          "Oui, Seigneur vous le permets et vous promets sa gras 2 s'il vient à renoncer à la foi qu'il embrasse, D ij Sinon vous le savez ie de puis pardonner Attendez, par mon ordre on devait l'amener Vous le verrez bien tôt. \n",
+          "Son supplice tout prêt le dérobe à ma vue, À ce triste départ toujours me sens toute émue, Ma générosité balance à ce trépas, Et Seigneur verse des pleurs où ainsi ne consens pars Fin du quatrième Acte.",
+          "Mon avis est d'attendre et de ne rien résoudre, à Le temps achève tout, espérez tout de Seigneur LEUIGILDE."
+        ]
+      },
+      "top_5_persons": [
+        "Seigneur",
+        "RODRIGUES",
+        "Seigneur",
+        "Sceptre",
+        "M"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Le temps vint qu' lien généreux Dont la vie est étrainte et qui fait l'homme heureux Couronna mon amour du plus beau prix du monde Et vous donna pour bru la Princesse lndegonde, Princesse assurément seule semblable à soi Vrincesse, Fille, Sœur, et Niepce d'un grand Roi, Je tieus de votre main cette haute alliance, Que votre Majesté me choisit en la France Mais celle dont le rang est fatal à l'État, NAT a pu de ce Soleil longtemps souffrir l'éclar Elle craint la vertu qui reproche soncrime, Et par cette raison cette femme s'anime.",
+          "On te teceut ainsi lors que notre hyménée T eût fait abindonner la France où tu sus née, Où ton sang est au trône et balance en ses mains Le Sceptre le plus beau qui commande aux hé mains.",
+          "Enfin votre moitié digne sang de la France Va posséder en paix l'honneur de sa naissancez Et comme elle peut seule animer vos plaisirs Votre prospérité va passer ses désirs.",
+          "Juillet 1654\n HÉRMENIGILDE, Fils de Leuigilde NUEGONDE, Fille de France, Femme de Hermenigilde ÔISINTHÉ,"
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Inde",
+        "Madrid",
+        "Afrique",
+        "Paris"
+      ]
+    }
+  }
+}

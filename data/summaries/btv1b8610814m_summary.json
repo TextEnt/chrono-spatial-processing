@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Racine, Jean",
+    "title": "Bajazet, tragédie, par Mr Racine",
+    "publication_date": "1672",
+    "document_id": "btv1b8610814m"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Roxane",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Vous, de qui j'ai troublé la gloire, et le repos, Héros, qui deviez tous revivre en ce Héros, Toi, Mère malheureuse, et qui dès nôtre enfance, Me confias son cœur, dans une autre espérance, Infortuné Visir, Amis désespérez, Roxane, venez tous contre moi conjurez, Tourment à la fois une Amante éperdue, *Elle se Et * prenez la vengeance enfin qui vous est due.",
+          "Roxane se livrant toute entière à ma foi, Du cœur de Bajazet se reposait sur moi, M'abandonnait le soin de tout ce qui le touche, Le voyait par mes yeux, lui parlait par ma bouche, Et je croyais toucher au bienheureux moment, Où j'allais par ses mains couronner mon Amant.",
+          "Cependant croyais-tu, quand jaloux de sa foi, Il s'allait plein d'amour sacrifier pour moi, Lors que son cœur tantôt m'exprimant sa tendresse, Refusait à Roxane une simple promesse, Quand mes larmes en vain tâchaient de l'émouvoir, Quand je m'applaudissais de leur peu dde pouvoir;",
+          "Et quoi qu’après sa mort l'un de l'autre écartés, Conservant, sans nous voir, le désir de nous plaire, Nous avons su toujours nous aimer et nous taire, Roxane, qui depuis, loin de s'en défier, À ses desseins secrets voulut m'associer,",
+          "Il partit, et voulut que fidèle à sa haine, Et des jours de son Frère arbitre souveraine, Roxane au moindre bruit, et sans autres raisons, Le fît sacrifier à ses moindres soupçons."
+        ]
+      },
+      "top_5_persons": [
+        "Roxane",
+        "ZAÏRE",
+        "Amurat",
+        "Osmin",
+        "ZAÏRE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Babylone",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Amurat est heureux, la fortune est changée, Madame, et sous ses lois Babylone est rangée. \nATALIDE\n Hé quoi, Madame? \n",
+          "Cependant les Persans marchaient vers Babylone, Et bientôt les deux Camps au pied de son Rempart Devaient de la bataille éprouver le hasard.",
+          ", Il parlait de laisser Babylone tranquille, Et sans renouveler ses assauts impuissants",
+          "Babylone, Seigneur, à son Prince fidèle, Voyait",
+          "Avant que Babylone éprouvât ma puissance."
+        ]
+      },
+      "top_5_places": [
+        "Babylone",
+        "Constantinople",
+        "Lys",
+        "Rhodes",
+        "Danube"
+      ]
+    }
+  }
+}

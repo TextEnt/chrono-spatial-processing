@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Sganarelle ou Le cocu imaginaire. Comedie. Avec les arguments de chaque scene.",
+    "publication_date": "1660",
+    "document_id": "bpt6k1280398m"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Celie",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Séganarelle croit que sa femme vient pour défendre son galant, sa femme croit qu'il aime Celie, Celie croit qu'elle vît ingénument se plaindre d'elle, à cause qu'elle est avec Lélie, et et en fait des reproches, et Lelie enfin ne sait ce qu'on lui vient conter, et croit toujours que Celieu a épousé Sganarelle, quoi que cette Scène donne un plaisir incroyable à l'Auditeur, elle ne peut pas durer plus longtemps sans trop de confusion, et un gage que vous souhaités des de né de voir ces personnes sortiront del’embarras où ils se rencontrent;",
+          "cette Scène, Lélie, qui avait Défait dessein de s'en retourner, vient trouver Celie, pour lui dire un éternel Adieu, et se plaindre de son infidélité, dans la pensée qu'il a, qu'elle est mariée à Séganarelle lors que Célie, qui croit avoir plus de lieu de se plaindre que lui, tu reproche de son côté sa perfidie, ce qui ne donne pas un médiocre contentement à l'Auditeur, qui connaît l'innocence de l'Homme de l'autre, et comme vous la connaissez aussi, Vous crois que ces Vers vous pourront divertir.",
+          "CELIE, LELIE, GORGIBUS, SGANARELLE, SA FEMME, \nLELIE\n Onsieur, vous me voyez en ces lieux de reM en, Brhuslant des mêmes feux, et mon ardante amour vorla comme mu uun jal paumame dacomprie, Qui me donna l'espoir de l'hymen de Célie \nGORGEBUS\n Monsieur, que je rêvais en ces lieux de retour, Brussant des mêmes feux, et dont l'ardante amour, Verra que vous croyez la promesse accomplie, Qui vous donna l'espoir de l'hymen de Célie, Très-humble se ruiteur à votre Seigneurie.",
+          "Celie en s'évanouissant, ayant laissé tomber le portrait de son Amant, la femme de Séganarelle le ramasse, et com10 me elle le considère attentivement, son mari ayant aidé à reporter Célie chez elle, rentre sur la Scène, et regarde par -dessus l'épaule de la lents cat amuce néda 44 me, ce qu'elle considère, et voyant ce portrait, commence d'entrer en quelque sorte de jalousie, lors que safemme s'anise de le sentir, ce qui confirme ces soupçons, dans la pensée qu'il a qu'elle le baise;",
+          "dimlam SCANAAELLE, CELIE, regardant aller Lélie On peut dire que cette Scène en L contient deux, puisque Séganarelle fait une espèce de Monoloque, pendant que Célie, qui avait vu sortir son Amant d'avec lui, le conduit des yeux, jusqu'à ce qu'elle l'ait perdu de veuë, pour voir si elle ne s'est point trompée."
+        ]
+      },
+      "top_5_persons": [
+        "Celie",
+        "Sganarelle",
+        "Valère",
+        "M",
+        "Clélie"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Je tâcherai toutefois de vous en faire voir quelque chose aux endroits où il sera nécessaire, pour l'intélligence des Vers et du sujet, quoi qu’il soit assez difficile de bien exprimer sur le papier ce que les Poètes appellent Jeux de Théâtre, qui sont de certains endroits où il faut que le corps et le visage jouent beaucoup, et qui dépendent plus Comédien que du Poète, consistant presque toujours dans l'action: C'est pourquoi votre vous conseille de venir à Paris, pour voir représenter le Cocu Imaginaire, par son Auteur, et vous verrez qu'il y fait des choses qui ne vous donneront pas moins d'admiration, que vous aura donné la lecture de cette Pièce;",
+          "c'est pourquoi puis qu'il y a tant de possibilité et de vraie semblance dans l'éuanouiïssement de Lelie, que l'on pourrait dire qu'il était absolument nécessaire qu'il s'évanouit, puis qu'il aurait paru peu amoureux, si étant arrivé à Paris, il s'était allé amuser à manger, au lieu d'aller trouver sa Maîtresse: Ils condamnent des choses qu'ils devraient estimer, puisque la conduite de cet incident avec toutes les préparations nécessaires, fait voir que l'Auteur pense meurement à ce qu'il fait, et que rien ne se peut égaler à la solidité de son esprit.",
+          "JIE HOI Ganarelle, qui comme vous avez Ovu dans la fin de la belle Siène, (puis qu'elle n'an point, à présent d'autre nom dans Paris ) aol pris résolution de se venger de Lélie, vient pour cet effet dans cette Scène, armé de toutes pièces: Et comme il ne l'aperçoit pas d'abord, il ne lui promet pas moins que la mort, dès qu'il le rencontrera.",
+          "Il fait voir que de la campagne où il était, il s'est rendu au plutôt à Paris, sur le bruit de l'hymen de Celie Comme il est tout nouvellement arrivé, son valet le presse d'aller manger un morceau devant que d'aller apprendre des nouvelles de sa Maîtresse;",
+          "que vous 151 avez trouvé ces Vers tout à fait beaux, que vous ne vous êtes pes em0 T pescher de les relire encore une fois, et que vous demeurez d'accord que Paris a eu raison de nommer cette Scène, la belle Seène."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "France"
+      ]
+    }
+  }
+}

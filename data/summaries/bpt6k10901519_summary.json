@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "author": "Dorimond",
+    "title": "L'Amant de sa femme, comédie",
+    "publication_date": "1661",
+    "document_id": "bpt6k10901519"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Léandre",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Et bien vous le voyez, le jour m'est ennuyeux, Quand tu ne vous vois pas mon aimable Léandre, Vos belles qualités mettent mon cœur en cendre, Je puis aux yeux de tous auoüer mon amour, Je n'en ai point de honte en le mettant au jour.",
+          "4 ISABELLE, CALISTE, LÉANDRE CLIMENE, SCAPIN. \nTORRINE\n I9 la dhambre de Caliste doit paraître.",
+          "Voilà tous nos Amants qui sont dans l'embarras, Léandre va venir;",
+          "CLIMENE masquée, CALISTE, LÉANDRE, LUCIDOR, TRAPOLIN, SCAPIN.",
+          "SACPIN, ISABELLE, CALISTE, LUCIDOR, LÉANDRE LÉANDRE.  "
+        ]
+      },
+      "top_5_persons": [
+        "Léandre",
+        "ISABELLE",
+        "TORINE",
+        "CLIMENE",
+        "Louis"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Il est permis au Sieur DORIMOND, Comédien de Mademoiselle, de faire imprimer les Pièces de Théatres, par lui compose, et représentées par la Troupe de Mademoiselle à Paris, par tel Imprimeur et Libraire qu'il voudra, pendant cinq années: et défenses sont faites à tous autres de l'imprimer ni vendre d'autre Édition que celle de l'Exposant, ou de ceux qui auront droit de lui, à peine de deux milleIe livres d'amende, de tous dépens, dommages, et intérêts, comme il est porté plus amplement par lesdites Lettres.",
+          "Et ledit sieur Dorimond a cédé et transporté son Privilège à Jean Ribou et Gabriel Quines Marchands Libraires à Paris, pour en jouir suivant l'accord fait entr'eux.",
+          "Grâce et Privilège du Roi, donné à Paris T le 26"
+        ]
+      },
+      "top_5_places": [
+        "Paris"
+      ]
+    }
+  }
+}

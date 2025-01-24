@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "author": "Rotrou, Jean de",
+    "title": "L'Innocente infidélité, tragi-comédie de Rotrou...",
+    "publication_date": "1638",
+    "document_id": "btv1b8622113p"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Léonie",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "À qui ne l'a goûté, cet air est difficile, Mais la necessité rend la plainte inutile, Quel espoir de remède à ce malheur est joint, Et quet tertneromnou à te qui n'en à point. \nCLARIANE\n La mort est le seul mal qui n'a point de remède, À des esprits adroits toute infortune cède, Notre timidité fait nos pires malheurs, Et tout cœur généreux peut vaincre ses douleurs, Seconde mon dessein, et Seigneur tire la Reine Avant qu'il soit une heure, et nous-mêmes de peine, aldan jui lè devant ley de la jiaemles \nLÉONIE\n Où ne voudrais-je point servir sa Majesté? \n",
+          "C'est avoir de l'honneur ce qu'il en faut avoir, Parthénie, au besoin, comme une autre est capable D'obliger un amant à sa grandeur able, Et recevoir de jours ces amoureux ébats Que luy doit son époux,et ne le donne pas, Oblige de ton aide un amant qui l'adore Faisons à son amaumuigiuie qummpiore, Accepte cependant ce présent de sa part. \nLÉONIE\n Mais que puis-je pour venir? \nCLARIANE\n Quuun",
+          "CLARIANE, CLARIMOND, THÉRSANDRE E sort à vos desseins ne peut être plus doux LÉTout obstacle est forcé, Léonie est pour vous, Elle doit au besoing tenir la porte prête, Et livrer en vos mains cette riche conquête. \nCLARIMOND\n Au point d'exécuter ce glorieux desscin",
+          "C'est que Léonie est toujours à ma suitte Et pourrait ruiner toute notre conduite, Touiours loin de la Reine, elle éclaire mes pas, Sémie nom épier, et ne me quitte pas. \n",
+          "PARLHENTE, à Léonie À quelle heure dis-tu qu'il doit être introduit? \n"
+        ]
+      },
+      "top_5_persons": [
+        "Léonie",
+        "Seigneur",
+        "Reyne",
+        "Mars",
+        "Diane"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 3
+        },
+        "related_sentences": [
+          ", il me semble Sous mes timides pas voir la terre qui tremble, Une jetude mémonne, er le traim iuptmens D'un dessein téméraire un triste événement. \nCLARIANE\n Tel n'eût jamais Paris, entre les bras d'Hélène Amorti son ardeur, et soulagé sa peine, Ménageons seulement la faveur de la nuit, Soies prés a la targe, et fui moi sans bruict. \nCLARIMOND\n Si ici vous devançais?",
+          "1637 Signe, Par le Roi en son Conseil. \nDE MONSEAUX\n Il est permis à ANTHOINE DE SOMMAVFLLE, Marchand Libraire à Paris, d'imprimer ou faire imprimer, vendre et distribuer une pièce de Théâtre, intitulée, L'Innocente Infidélité Tragi-comédie, durant le temps et espace de neuf ans, à compter du jour qu'elle sera achevée d'imprimer.",
+          "Ar grâce et Privilège du Roi donné à Paris, le 7."
+        ]
+      },
+      "top_5_places": [
+        "Paris"
+      ]
+    }
+  }
+}

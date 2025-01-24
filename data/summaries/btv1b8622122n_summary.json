@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "author": "Rotrou, Jean de",
+    "title": "La Celiane, tragi-comedie de Rotrou.",
+    "publication_date": "1637",
+    "document_id": "btv1b8622122n"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "PAMPHILE",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Et puis-je, sans rougir, voir la façon hardie, Dont tu viens à mes yeux montrer ta perfidie? \nPAMPHILE\n J'atteste ces esprits, pour qui la vérité De nos intentions n'a point d'obscurité, Et qui savent l'état de mes longues misères, Que jamais vos beautés ne me furent si chères, Se ie baise mes fers, que jamais la raison Ne me conseilla moins de rompre ma prison, Par le dessein fatal, dont ie vous importune, Je creuse mon tombeau, Seigneur détruis ma fortune",
+          "Vous connaîtriez alors si ma constance est vraie, Si vos yeux peuvent faire une légère plaie, Él si te thangemeni à des cparmes asseS, Pour guérir les esprits que vous avez blessés. \nNE\n Les appas de ta voix me peuvent bien contraindre, D'avouer ion merve, et quein sçais pien indre: Mais un sujet t'arrête en ce bord étranger, Qui proue bien aussi que tu sais bien changer. \nPAMPHILE\n Cruelle, qu'espérai-je en ma juste défense?",
+          "\nPAMPHILE\n À ces mots grands ne puis que répondre, sinon Que tu te plains d'un homme ignorant de ton noms E. Ton œil (perfide auteur de mon cruel martyre Le lira sur ton sein ou ie le vais écrire. \nPAMPHILE\n ot jouffours tun orgueis Ah fareipurler ainsi, Le bras qui t'a servi, te pourrait nuire aussi. \nSE\n En telle occasion, dont la fin est douteuse, Le silence est louable, et la vie est honteuse.",
+          "Et même, quand le Ciel auoüeroit ton offense, Que Nise s'offrirait à tes vœux sans défense, Qu'elle oublirait Pamphile, et que cette beauté Se donnerait pour prix de ta déloyauté: Traître, aurais-tu le cœur si lâche, et si barbare Que de souller l'éclat d'une amitié si rare, Que d'oser assouvir ta sale passion Des faveurs qu'elle doit à son affection?",
+          "Le regret de vous voir dans le péril de l'être, Elle doit de ce bras les efforts limiter, Et pouvant l'employer, a droit de l'arrêter: Mais admirez Monsieur, le bonheur de ma vie, Celle qui sous ses toix tient mon âme asservie, Nise est: \nFLORIMANT\n Elle est: \nPAMPHILE\n Chez -vous?"
+        ]
+      },
+      "top_5_persons": [
+        "PAMPHILE",
+        "Nise",
+        "Julie",
+        "PHILIDOR",
+        "SE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "PARIS",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "À PARIS, Chez TOUSAINCT"
+        ]
+      },
+      "top_5_places": [
+        "PARIS",
+        "France",
+        "Navarre",
+        "Paris",
+        "Troie"
+      ]
+    }
+  }
+}

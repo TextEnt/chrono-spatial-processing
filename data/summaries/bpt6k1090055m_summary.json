@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "author": "Ternet, Claude",
+    "title": "Histoire et Martire de la Glorieuse Vierge Ste Reine d'Alize, tragédie",
+    "publication_date": "1683",
+    "document_id": "bpt6k1090055m"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "REINE",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "SITE. \nREINE\n Mton cher Père Dieu veux vous dire rondement, Que j'adore Jésus, facteur du Firmament, Qui prit notre nature us flancs d'une Pucelle, Pour lauer dans son Sang la coulpe Originelle, Toulpe hélas! qui privait les hommes malheureux, De l'aimable séjour des Anges bienheureux: Von fils de S. Joseph, Cher Époux de sa Mère: Mais da Dieu immortel engendré de son Père, Des toute éternité, et n'y en temps et lieu, De cette sainte Vierge, et vrai hommême, et vrai Dieu : Par l'opération, et mystère adorable, Du sacré saint Esprit, Dieu juste et immuable.",
+          "SITE. \nREINE\n Faites venir encor tous les Tigres affreux, Les Ours, et les Lyons, du chaorse pierreux, Pour démembrer ce corps d'une rage plus forte, Je ne les craindrai point, le Dieu qui me conforte Ne me refusera la force et le pouvoir, Pour toutes leurs fureurs de bon cœur recevoir. \nOLIBRE\n Soldats attachez -moi cette fille obstinée, Et que dans la prison elle soit emmenée, Vîtes dépêchez vous traîtez la promptement, Et que le Géollier la garde sûrement,",
+          "SITE. \nREINE\n Madame ne croyez, que nous manque de Foi, À mon aimé Sauveur, mon Seigneur, et mon Roi, Olibre qui a essayé par ses belles promesses, Ses discours décevants et ses feintes carresses, D'avoir quelque ascendant par -dessus mon esprit Je sens ai déclarai que c'était Jésus-Christ, Que j'avais pour Époux à la mort à la vie, Et d'autre que de même n'aurais tamais envte. \n",
+          "Aintenant que Phebus, la cãpagne redore NIFulce va en prison, et me ramène encore Reine qui ne fait cas de moi ici de nos Dieux, Ji jui faut préparer un tourment furieux: Je songe en mon esprit un genre de jupplice, Qui sera bien sortable à punir sa malice.",
+          "SITE. \nREINE\n Ô Barbare Tyran, nourri d'une Tibresse, Qui me vois maintenant en si grande détresse, Viens étancher ta soif de mon sang Virginal, Et n'estime pourtant que ainsi t'en veuille mal, As"
+        ]
+      },
+      "top_5_persons": [
+        "REINE",
+        "CLEMENT",
+        "LUCIE",
+        "Seigneur",
+        "TE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Gaulle",
+          "frequency": 1
+        },
+        "related_sentences": [
+          ", prit Naissance dans l'Illustre Cité d'Alise, Située en la Gaulle celtique au Diocèse d'Autun, et Pays d'Auxois, au Duché de Bourgongne d'une des plus nobles familles de la Province: Son Père s'appelait Clément, fort attaché à la superstition Païenne."
+        ]
+      },
+      "top_5_places": [
+        "Gaulle",
+        "France",
+        "Palestine",
+        "Marseille",
+        "Saone"
+      ]
+    }
+  }
+}

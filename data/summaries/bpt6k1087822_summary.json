@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "La Grange-Chancel, François-Joseph de",
+    "title": "Oreste et Pylade : tragédie / [par La Grange-Chancel]",
+    "publication_date": "1699",
+    "document_id": "bpt6k1087822"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Thoas",
+          "frequency": 9
+        },
+        "related_sentences": [
+          "Sa main va l'immoler, et dès ce moment même Elle pouze Thoas, et prend le Diadme: Si ce fatal hymen s'achève avant la nuit, De ma vengeance, ô Ciel: le projet est détruit, Le peuple qui redoute et chérit la Prêtresse, s'il la voit sur le Trône,oubliant sa Princesse, De la Religion se faisant une loi, Respectueux pour elle, osera moins pour moi.",
+          "Avant que l'Étranger soit conduit au supplice, Par l'ordte de Thoas on va faire un effort, Pour applenure son non, ja naissance, son sort, Je viens, par mes avis, l'exhorter à se taire.",
+          "J'atrive accompagné d'une escorte fidèle, De l'innocence, alors j'embjasse la querelle, Le Peuple autour de moi courant de toutes parts, Quand Thoas arrivé sur le fatai rivage, Aux siens épouvantez ramèint le courage.",
+          "Quoi que Thoas, avide et de sang et de crimes, N'ait pour Religion que ses fières maximes, Il n'ose, aux yeux du peuple, avec impunité, Découvrir tout l'excès de son impiété.",
+          "Pour me laisser tranquille en mes propres États, J'ai vu votre grand cœur résister à Thoas Vous avez dédaigné l'hymen qu'il vous propose, Charmée à ces refus, j'en admire la cause."
+        ]
+      },
+      "top_5_persons": [
+        "Thoas",
+        "PILADE",
+        "Oreste",
+        "Diane",
+        "Thoas"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Grèce",
+          "frequency": 9
+        },
+        "related_sentences": [
+          "Puisqu'n vous le pemet presez votre départ y Portez dans votre Grèce un écrit de ma part: Comptez mon infortune à ceux qui m'ont fait nalIls me viendront chercher, et se feront connaître, Suivis de plus de Rois, de Chefs, et de soldats, Qu'Hélène n'en a fair armer par Ménélas. \nPILA DE\n Contre votre Tyran prompt à tout entreprendre, Avec mes seuls Vaisseaux je viendrais vous reprendre: Dans ce monde où mon nom sans tache est parvenu, Je ne suit point entré, Madame, en inconnu.",
+          "Instruit de mon secret fit voile pour la Grèce Depuis un an entier qu'il a quitté ce port, Il ne m'a point encor informé de son sort: Le mien traîne par tout le chagrin qui m'accable: Ce jour même, ce jour qu'un hymen favorable, Va mettre dans mon lit cette sienne beauté, Ce prix de ma constance, et qui m'a tant coûté;",
+          "Je brûle de revoir la Grèce, ma patrie, D'admirer, d'adorer couiert de tant d'exploits, Ce grand-Agamemnon Chef des Grecs, Roi des Rois: D'entendre, d'embrasser-Clitemnêtre ma mère, Les Princesses mes sœurs, Oreste mon cher frère.",
+          "Pour bannir de ces lieux la crainte, et la tristesse, À ses ordres pressants je partis pour la Grèce Jugez de ma douleur, Madame, à mon retour, Lorsque j'apprends qu'épris-d’un malheureux amour, Thoas, sans respecter les Dieux;",
+          "Née au sein de la Grèce, où brillent mes a yeux, Je me vois, comme vous Etrangère en ces lieux: ij Un Tytan m'y retient."
+        ]
+      },
+      "top_5_places": [
+        "Grèce",
+        "Argos",
+        "Paris",
+        "Troie",
+        "Trone"
+      ]
+    }
+  }
+}

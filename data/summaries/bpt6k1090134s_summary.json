@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "author": "Saint-Évremond, Charles de Marguetel de Saint-Denis",
+    "title": "La Comédie des Académistes, pour la Réformation de la langue françoise, pièce comique, Avec le roole des Présentations, faites aux grands jours de ladite Académie ; suivi de Requeste présentée par les Dictionnaires à Messieurs de l'Académie pour la Réform",
+    "publication_date": "1650",
+    "document_id": "bpt6k1090134s"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Colletet",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "votre magnificence Ne permet, Monseigneur, une telle licence. \nGodeau\n Levez-vous promptement, te pénistent en courroux De vous voir devant moi si long temps à genoux. \nColletet\n Très révérend Seigneur il vaut mieux vous complaire. \nGodeau\n Attendant nos Messieurs que nous faudra-il faire? \nColletet\n Je suis prêt d'obéir à votre volonté. \nGodeau\n Parlons comme autrefois toujours liberté, Vous savez Colletet à quel point toujours vous aime. \nColletet\n Seigneur votre amitié m'est un honneur extrême. \nGodeau\n Colletet autre vous aime et chéri sur ma foi, Vouffrez donc un moment que ie parle de moi, Avez-vous vu mes vers, ces beaux vers qu'on adore? \nColletet\n ",
+          "Et qui m'accusera de la stérilité, N'a qu'à lire une fois mon Bénédicité: Ô l'ouvrage excellent! \nColletet\n ô la pièce admirable! \nGodeau\n Chef-d'œuvre précieux \nConet\n ô merveille adorable! \nGodeau\n Que peut-on désirer après un tel effort. \nColletet\n Ô ne sera content aura ma foi grand tort, M'aus jans parier ue mui lrop à mun avantage, Suis-je pas, Monseigneur, un très grand personnages \nGodeau\n Collet mon ami vous ne faites pas mal. \nColletet\n Quoi?",
+          "Je sais bien, Monseigneur, que les plus médisants, S'ils lisent vos écrits deviendront complaisants, \nGodeau\n Non pas, cher Colletet, cette méchante race, Peut aire que mes vers sont froids comme la glace. \nColletet\n Ils se feront moquer. \nGodeau\n orapement lis unt vean jeu, \nColletet\n Ils savent votre ardeur \nGodeau\n ",
+          "Il remplit bien la phrase, il coule doucement, Il met dans le discours un certain ornement, Et s'il n'est trouvé bon d'un homme cervelle, On le condamnera. \nColletet\n faisons langue nouvelle, Puis que l'Académie en a bien le pouvoir, 18 Tandis que nous voici faisons notre devoir;",
+          ", les blandices, Dont la vieille Gourne fait toutes ses délices. \nHabert\n On les a retranchés, non pas pour être vieux, Mais pource qu'aisément on pourra dire mieux. \nColletet\n Vraiment gentil Habert un homme de votre âge, Ne devrait point aimer cet antique langage;"
+        ]
+      },
+      "top_5_persons": [
+        "Colletet",
+        "Godeau",
+        "BOISROBERT",
+        "Sillon",
+        "Chapelain"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Qui n'agent dans le sang et cherchent leurs ébats, Dans les plus grands périls que montreht les combats, Je veux vivre en éclat et non pas à l'armée, J'aurai par mon sçauoirassez de renommée, Toutefois ie ne puis sans honte et sans mépris, Goûter en ce temps-cy les douceurs de Paris, Dieux!",
+          "C'est pour vous que du Ciel elle a daigné descendre, Sans vous, ô grand Séguier, nous aurions beau l'attendre, Faisans la sourde oreille à ses divins esprits, Sans vous elle n'eût pas devalé dans Paris Qui croira, Monseigneur, que ces enchanteresses, Que ces neuf belles Sœurs nos divines maîtresses;",
+          "C'est à tort, grands Auteurs, que la grâce se vante, Rome ne paraît plus en ce point triomphante: Mais vous aurez l'honneur, grands et divins Esprits D'avoir fait habiter la Déesse à Paris \nGodeau\n ",
+          "Je serais à présent grand homme de Justice, Loin du bruit importun qu'on oit dans la milice, It serais en tout temps gros bourgeois de Paris, Peut être, et que Sait-on quelqu'un des favoris.",
+          "l'étrange combat que je sens dans mon âme, Il faut quitter Paris où bien vivre en infâme, Pour un petit honneur s'abandonner au sort, Ai 24 CUMEDIL."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "France",
+        "Venise",
+        "Rome"
+      ]
+    }
+  }
+}

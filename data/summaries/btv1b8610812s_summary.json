@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "author": "Racine, Jean",
+    "title": "Britannicus , tragédie [de J. Racine]",
+    "publication_date": "1670",
+    "document_id": "btv1b8610812s"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Neron",
+          "frequency": 36
+        },
+        "related_sentences": [
+          "Non non, le temps n'est plus que Neron jeune encore Me renvoyait les vœux d'une Cour, qui l'adore, Lors qu'il se reposait sur moi de tout l'État, Que mon ordre au Palais assemblait le Sénat, Et que derrière un voile, invisible, et présente J'étais de ce grand Corps l'",
+          "Je vous nommerais, Madame, un autre nom, Si j'en savais quelque autre au dessus de Neron Oui, pour vous faire un choix, où vous puissiez souscrire, J'ai parcouru des yeux la Cour, Rome, et l'Empire.",
+          "Je le craindrais bientôt, s'il ne me craignait plus. \nALBINE\n Une injuste frayeur vous alarme peut-être Mais si Neron pour vous n'est plus ce qu'il doit être, Du moins son changement ne vient pas jusqu'à nous.",
+          "Quoy Madame, en un jour, où plein de sa grandeur Neron croit éblouir vos yeux de sa splendeur, Dans des lieux où chacun me fuit et le révère, Aux pompes de sa Cour préférer ma misère!",
+          "Neron, s'ils en sont crus, n'est point ne pour l'Empire, Il ne dit, il ne fait, que ce qu'on lui prescrit, Burrhus conduit son cœur, Sénèque son esprit."
+        ]
+      },
+      "top_5_persons": [
+        "Neron",
+        "NERON",
+        "Britannicus",
+        "ALBINE",
+        "Junie"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 36
+        },
+        "related_sentences": [
+          "Plus j'ai cherché, Madame, et plus je cherche encor En quelles mains je dois confier ce trésor, Plus je vois que César digne seul de vous plaire En doit être lui seul l'heureux dépositaire, Et ne peut dignement vous confier qu'aux mains À qui Rome a commis l'Empire des Humains.",
+          "Je vous nommerais, Madame, un autre nom, Si j'en savais quelque autre au dessus de Neron Oui, pour vous faire un choix, où vous puissiez souscrire, J'ai parcouru des yeux la Cour, Rome, et l'Empire.",
+          "Rome de ma faveur est trop préoccupée, Il veut par cet affront qu'elle soit détrompée, Et que tout l'Univers apprenne avec terreur À ne confondre plus mon fils et l'Empereur.",
+          "Que vous marchiez au Camp, conduit sous mes auspices, Dans Rome les Autels fumaient de sacrifices, Par mes ordres trompeurs tout le Peuple excité Du Prinée déjà mort demandait la santé.",
+          "Sur les pas des Tyrans veux-tu que je m'engage, Et que Rome effaçant tant de titres d'honneur Me laisse pour tous noms celui d'empoisonneur?"
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Junie",
+        "Paris",
+        "champ de Mars"
+      ]
+    }
+  }
+}

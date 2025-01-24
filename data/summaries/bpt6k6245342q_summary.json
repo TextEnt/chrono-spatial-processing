@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "author": "Rotrou, Jean de",
+    "title": "Laure persécutée , tragicomédie de M. de Rotrou",
+    "publication_date": "1639",
+    "document_id": "bpt6k6245342q"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Laure",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "super lus, Injurieux respects ainsi ne vous connais plus, Vos innutils soins irritent sa collère, Plus ie parais son fils, mois il paroist mon père Captif dans la prison, on me meurtrit dehors, Pour assiner Laure on enferme le corps Cruel, que Laure meure, et qu'avec la journée De ce soleil d'amour la course soit bornée, Ton pouvoir est trop faible, ou l'heure de ma mort, Deuait de ton dessein procéder le rapport, Tu n'as si forte tour ainsi garde si fidèle, Que je n'eusse forcée apres cette nouvelle, Et les Dieux soient bénir de nauoir et souffert Qu'a ma juste furie aucun se soitoffert, aynon, sans grand suite, san en cette auanture, aueugle attentat amour sur la nature, Etie noze asseurer en cette extremité, Serf de a passion, tu re respecté, Oste a mon désespoir ce funestes te, Pere ingrat, et rend Laure mes iustes prières, Retien toi, tes honneurs, ta Couronne et ton rang.",
+          "M'obstinant ce matin, contre son sentiment, Et blâmant sa folie, que son aveuglement, dutant qu'il l'estimait, ie lay dépeinte infâme, ai couvert sa vertu, de reproche et de blâme, Et j'ai promis de faire à ses yeux aveuglez Poirses débordements, honteux, et déreiglez Sa guérison dépend de cette connaissance, Mais cette prévue, Octaue, excede ma puissan Car, Laure, ce on dit, a trop honnesteté, Et passe tout son sexe, en cette qualité, estdonc, en ce besoin il faut que art agisse Et ie en attends rien, si tun’enés Vlisse, Auecque cet accez, qui est libre auprès deux, Et ton esprit adroit, tupeux tout, si tu veux, C'étici, que l'honneur est conjoint à la ruze, Un malade obstine, meurt silon ne l'abuse.",
+          "ut promettre a tous, et faire tout pour soi, rbien tromperle Prince, il faut tromperle Roi, loyons Laure même en cette Comédie, lvn prendra pour Laure, et l'autre pour Lydie, lestimportant, et j'ysaurai pourvoir, le Roi la voyant, ne sache pas la voir, ant qu'il la connut, j'exposeraissa vie rente fureur, dontil la pousuivie: un subiil enfant, seconde mon dessein, rise ma flamme, ou me l'ôte du sein, ardons tout, n'importe, au moins j'ai l'avanDe ne pouvoir périr, par un plus beau naufrage, De ne pouvoir briser contre un plus bel écueil, Nydans plus belle mer rencontrer mon cercueil.",
+          "la peur altere votre foi, Qui juge mal d'autrui, fait mal juger desoy, Moi, que venir vous perdisse, et qu'après cette perte On voulut qu'en mon lit, une autre fut soufferté, Ô l'effroyable montre, et l'horrible serpent, Que je croirais sentir, en ma couche rampant, Du penserseulement, son regard m'empoisonne, Je tremble et Seigneur frémis de l'horreur qu'il me donne Non, non, le Roi ne peut avec tout son courroux Faire que je ne vive, ou m auecque vous, , Laure nos destins auront même aduantur",
+          "la fureur qui me se, Aux si eux quil est, il montre seulement La moindre ra mon commandement, La peine quy me, et que ie lui pr Lupera de ma haine, exemple si rare, Et perescomme moi, bons, et comblez ennui, a slscontredisans, et mutins comme lui, Que tout langage humain, tout aage, et toute histoire En gardera horreurauecque la me, Sans rendre ni raison, ni conte de mes vœux le veux, ce que ie veux, pr que ie le veux. \nLAURE\n Retirez"
+        ]
+      },
+      "top_5_persons": [
+        "Laure",
+        "LAURE",
+        "Octave",
+        "Seigneur",
+        "LECOMTE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Hongrie",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Mais, tout ce long discours, dontie te solicite, AFIN tant obéissance, ôte de son mérite, Tusçais, oui, tu le sais, (ont toi seul de ma Cour Aveunaistes durerette funeste Amour, Pour quel indigne objet ce lâche cœursoupire Etde quelle puissance il révère l'Empire, D'une fille inconnue, et de qui les parents N'ont possse chez moi, ni dignité, ni rangs, Estrangere, sans biens, et sans bien avantage Que de quelques attraits qu'il tête en sonvisage, QU'il, tusçais acord en Son visage, Dont ' Ambassadeur par mon ordre traité, Que la Princesse vient, et que cette alliance D'toute la Hongrie est heur et espérance, oroienqque en Pologne a rompi, Rattends, en pa, mon éternelaffront.",
+          "ORANTE\n L faut être d'accord, beau sujet de mes peines, Que c'est à la Hongrie à produire des 12 Reines, Et qu'à tort la Pologne oZe faire à ses Rois Prétendre le bonheur de vivre sous vos lois.",
+          "La Scène est en Hongrie PERSÉCUTE -THRAGICOMEDIE."
+        ]
+      },
+      "top_5_places": [
+        "Hongrie",
+        "Pologne",
+        "Rome"
+      ]
+    }
+  }
+}

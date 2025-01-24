@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Montfleury",
+    "title": "L'ambigu comique, ou Les amours de Didon et d'Aenée , tragédie en 3 actes, mêlée de 3 intermèdes comiques, par A. J. Montfleury",
+    "publication_date": "1673",
+    "document_id": "bpt6k859814"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "PERRINE",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "J'en tremble encor, je n'avais point d'excuse. \nCLÉANTE\n Le Frère du Bailly \nPERRINE\n Cependant qu'il l'amuse, Afin deménager quelque moment plus dous, Sorrez, et soyez sûr que je suis toute à vous, Et qu'enfin il n'est rien que pour vous je n'essaye.  ",
+          "Il n'a plus de repos qu'au lit, ou bien à table, Il soupire toujours, Enfin, sinan l'en croit, Ses yeux varsont plus d'eau, que sa bouche n'en boit. \nPERRINE\n Reviendra-t-il bientôt? \n",
+          "Portez respect à la Justice, Ne parlez de ces Gens que la main au bonnet: Puis que je l'ai promis, je te le dis tout net, nlasion Marj \nPERRINE\n La voilà bien chanceuse.",
+          "THIBATUT\n \nPERRINE\n L'autre jour, pressé sur une affaire Qu'avait Simon Martin avec le grand Compère Il mit, sans la savoir, leurs Sacs de deux côtés.",
+          "Ce Galant moffondu, la Semainité dernière, Disait que pour la Noce il attendait son Frère, Qui doit être un Magot. \nTHIBATUT\n Pourquoi? \nPERRINE\n "
+        ]
+      },
+      "top_5_persons": [
+        "PERRINE",
+        "LUCIE",
+        "CLÉANTE",
+        "Barsine",
+        "MATHURIN"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Troie",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Hé bien, soyez l'appui d'un Trône prêt à choir, Immolez à Didon vos jours et notre espoir, Fermez, fermez les yeux sur les restes de Troie Mais si le Sort nous rend témoins de votre joie, Si cet hymen s'achève aux yeux des Phrygiens, leurs bras armés contre eux, à l'exemple des miens, Pres de venger sur eux un hymen qui les trompe, En pourront à us yeux ensanglanter le pompe.",
+          "Et lors que sa faveur nous réserve la joie De rétablir la gloire et la grandeur de Troie, Bornerez-vous l'effort de votre ambition À la douceur d'aimer et de plaire à Didon Ne vousin lauve des périls, du naufrage, Que pour vousvoir aux pieds d'une Reine à Carthagej Négliger tout pour elle, et trahir à ses yeux, Les Destins, votre Sang, les Troyens, et les Dieux?",
+          "Puis que c'est un Arrêt queles Dieux ont rendu, Les Destins qui vous ont sauvé des feux de Troie, Du Tibre, sur les flots, vous ouvriront la voie:",
+          "Que jamais Tyrien n'a vu les murs de Troie ouûlève les remords de ce perfide Amant, parsine, et le conduits dans mon Appartement.",
+          "NE Eppargnez à mes yeux ces funestes objets, Je me charge du soin de la grandeur de Troie, Prince;"
+        ]
+      },
+      "top_5_places": [
+        "Troie",
+        "Tibre",
+        "Carthage",
+        "Paris",
+        "Afrique"
+      ]
+    }
+  }
+}

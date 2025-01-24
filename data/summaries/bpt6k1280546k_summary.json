@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "L'Imposteur ou le Tartuffe, comédie par J. B. P. de Molière",
+    "publication_date": "1669",
+    "document_id": "bpt6k1280546k"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "DORINE",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Et que nous ne puissions à rien nous divertir, Si ce beau Monsieur-la n'y daigne consentir? \nDORINE\n S'il le faut écouter, et croire à ses Maximes, On ne peut faire rien, qu'on ne fasse des crimes, Car il contrôle tout, cc Critique zélé. \nM\n PERNELLE.",
+          "Et je veux vous aimer, Monsieur, malgré veux Ah! \nORGON\n \nDORINE\n Votre honneur m'est cher, et je ne puis souffrir Qu'aux brocards d'un chacun vous alliez vous offrir. \nORGON\n Vous ne vous tairez point? \nDORINE\n C'st une conscience.",
+          "L'Imposieur ! \nDORINE\n Comme il sait, de traîtresse manière, Se faire un beau manteau de tout ce qu'on révère! \nCLÉANTE\n Mais sst: il est si parfait que vous le déclarez, Ce zèle qui vous pousse, et dont vous vous parez;",
+          "Et Tartuffe \nORGON\n \nDORINE\n Pressé d'un sommeil agréable, ir pailid ins sa Chamnore, au lortit de la Pagle Et dans s on Lit bien chaud, il se mit tout soudain, Qu toujours tiouole n uomt jiques au Jendemain. \nORGON\n ",
+          "Je ne suis pas pour être, en ces lieux, importunMon abord n'aura rien, je crois, qui lui déplaise, Et je viens pour un fait dont il sera bien aise. \nDORINE\n Votre nom? \nM\n LOYAL."
+        ]
+      },
+      "top_5_persons": [
+        "DORINE",
+        "ORGON",
+        "CLÉANTE",
+        "DAMIS",
+        "M"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "La Scène est à Paris FLIPOTE, Servante de Madame Pernelle L'IMPOSTEUR, OMEDIE."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Orgon",
+        "Normandie",
+        "France"
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "author": "Du Fresny, Charles",
+    "title": "Le chevalier joueur , comédie en prose, par M. D* F*",
+    "publication_date": "1697",
+    "document_id": "bpt6k56289047"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Nerine",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Et toi, quel beau nom donnetu aux services que tu rends à l'amour masqué de cette héroïne de vertu? \nNERINE\n J'avoue qu'elle me fait des présents lorsque je réussis à briller Angélique avec le Chevalier: Mais puisque ji qu'elle me cache l'intention de sa libéraliré, je prétends que mon gain est honnête: Quand la pauvre Comtesse a donné ici un appartement au Chevalier, je te dis bien que le voisinage était dangereux, la bonne Dame croyait que le danger ne serait que pour elle; mais en ces occasions pelimomles, la plas eue ellet la pius exposée.",
+          "On se soucie bien de patrimoine, quand on a des talents pour les grandes fortunes; de l'air déterminé dont il joue, il est homme à gagner cent mille écus en trois coups de dé, cela s'appelle un grand parti: À la vérité ton Dorante a plus de bien en fonds mais les biens en fond ont des bornes, et le casuel d'un joueur n'en a Pomes \nNERINE\n Dorante est si honnête homme.",
+          "Tu t'es trompée, Nerine, je te l'ai déjà dit, Dorante est trop sage pour avoir de l'amour, et trop sincère pour cacher si longtemps un passions en tourcas, jen ictois au détcipon, cor je l'estime insiniment, et je ne pourrais pas le rondre heureux. \nL\nNERINE\n Et vous aimez mieux assez malheureuse aussi ila Chevaliét.",
+          "nayez-vous Dorante, je n'aime point les louanges, quoi que ce ne serait pas une grande vanité à moi de me croire moins femme que les Centt Aui \nDORANTE\n Pour moi je suis par ma faiblesse le plus nomme de tous les sommes. \nNERINE\n Qu'on sétait parfait en ce monde si on n'était ici homme ni femme.",
+          "Tu es folle, Nerine, je ne veux pays nonct darne pour: joute, \nNERINE\n  2 Vous ne devex point avoir cette incention-là, d'accord, vous lui en donnerez seulement dans la vu de rompre un mauvais Mariage, LA COMTESSE."
+        ]
+      },
+      "top_5_persons": [
+        "Nerine",
+        "Frontin",
+        "Angélique",
+        "Angélique",
+        "Comtesse"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Pérou",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Le jeu est un Pérou pour un homme qui a de la conduite.",
+          "Le jeu est un Pérou pour un homme qui a de la conduite."
+        ]
+      },
+      "top_5_places": [
+        "Pérou",
+        "Rome"
+      ]
+    }
+  }
+}

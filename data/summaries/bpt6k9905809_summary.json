@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Racine, Jean",
+    "title": "Oeuvres de Racine. Tome Premier. [ - Tome Second.]. Vol. 1",
+    "publication_date": "1676",
+    "document_id": "bpt6k9905809"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Neron",
+          "frequency": 34
+        },
+        "related_sentences": [
+          "Et si j'ai fait quelque chose de solide et qui mérite quelque louange, la plupart des Connaisseurs demeurent d'accord que c'est ce même Britannicus À la vérité j'avais travaillé sur des modèles qui m'avaient extrêmement soutenu dans la peinture que je voulais faire de la Cour d'Agripine et de Neron J'avais copié mes Personnages d'après le plus grand Peintre de l'Antiquité, je veux dire d'après Tacite Et j'étais alors si rempli de la lecture de cet excellent Historien, qu'il n'y a presque pas un trait éclattant dans ma Tragédie dont il ne m'ait donné l'idée.",
+          "Jeleiee. \nNERON\n Je vous nommerais, Madame, un autre nom Si j'en sçavois quelque autre au dessus de Neron Oui, pour vous faire un choix, où vous puilsiez souscrire, J'ai parcouru des yeux la Cour, Rome, et l'Empire Plus j'ai cherché, Madame, et plus je cherche encor En quelles mains je dois confier ce trésor, Plus je vois que César digne seul de vous plaire En doit été lui seul l'heureux dépositaire, Et ne peut dignement vous confier qu'aux mains À qui Rome a commis l'Empire des Humains.",
+          "Vos amis et les miens jusqu'alors si secrets, Tandis que nous perdions le temps en vains regrets Animés du courroux qu'allume l'inju stice Viennent de confier leur douleur à Narcisse, Neron n'est pas encor tranquille possesseur Der négrate, qu'il aime au mépris de ma Sœur Si vous êtes toujours sensible à son injure, On peut dans son devoir ramener le Parjure.",
+          "pour vous n'est plus ce qu'il doit être Du moins son changement ne vient pas jusqu'à nous Et ce sont des secrets entre César et vous, Quelques titres nouveaux que Rome avait défère, Neron n'en reçoit point qu'il ne donne à sa mère.",
+          "J'ai suivi en cela Tacite qui dit que Neron porta„ impatiemment la mort de Narcisse, parce que ce cet Afranchi avait une conformité merveil¬ „ leuze avec les vices du Prince encore cachés, ce Cujus abditis ahuc vitiis miré congruebat."
+        ]
+      },
+      "top_5_persons": [
+        "Neron",
+        "Alexandre",
+        "Pyrrhus",
+        "NERON",
+        "Britannicus"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 34
+        },
+        "related_sentences": [
+          "Jeleiee. \nNERON\n Je vous nommerais, Madame, un autre nom Si j'en sçavois quelque autre au dessus de Neron Oui, pour vous faire un choix, où vous puilsiez souscrire, J'ai parcouru des yeux la Cour, Rome, et l'Empire Plus j'ai cherché, Madame, et plus je cherche encor En quelles mains je dois confier ce trésor, Plus je vois que César digne seul de vous plaire En doit été lui seul l'heureux dépositaire, Et ne peut dignement vous confier qu'aux mains À qui Rome a commis l'Empire des Humains.",
+          "Si vous n'avez appris à vous laisser conduire, Vous êtes jeune encore et l'on peut vous instruire. \nRome\n \nNERON\n TouerEmphe d lalex, \nBRITANNICUS\n Rome met elle au nombre de vos droits Tout ce qu'a de cruel l'injustice et la force, Les emprisonnements, le rapt, et le divorce? \n",
+          "Rome encore une fois va connaître Agripine, Déjà, de ma faveur on adore le bruit, Cependant en ces lieux n'attendons pas la nuit, Passons chez Octavie, et donnons-lui le reste D'un jour autant heureux que je l'ai cru funesté Mais qu'est-ce que j'entends?",
+          "pour vous n'est plus ce qu'il doit être Du moins son changement ne vient pas jusqu'à nous Et ce sont des secrets entre César et vous, Quelques titres nouveaux que Rome avait défère, Neron n'en reçoit point qu'il ne donne à sa mère.",
+          "Et tandis que Burrhus allait secrètement De l'Armée en vos mains exiger le serment, Que vous marchiez au Camp, conduit sous mes auspices, Dans Rome les Autels fumaient de sacrifices, Par mes ordres trompeurs tout le Peuple excité Du Prince déjà mort demandait la santé."
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Grèce",
+        "Troie",
+        "Thebes",
+        "Junie"
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Dom Garcie de Navarre ou le Prince jaloux, comédie...",
+    "publication_date": "1689",
+    "document_id": "bpt6k1280418x"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ÉLISE",
+          "frequency": 7
+        },
+        "related_sentences": [
+          "Et quoi qu’à mes destins la fortune prépare, Crois que je ne puis être au Prince de Navarre, Que de ces noirs accès qui troublent sa raison, Il n'ait fait éclater l'entière guérison, Et réduit tout mon cœur que ce mal persécute, A n'en A n'eb plus redouter l'afront d'une fechleute. \nÉLISE\n Mais quel affront nous fait le transport d'unjaloux?",
+          "Si d'un Prince jaloux l'éternelle faiblesse, Reçoit indignement les soins de ma tendresse : Et semble préparer dans mon juste courroux Un éclat à briser tout commerce entre nous? \nÉLISE\n Aruioi de paître bouène il il a pompt seeu la gloire, Est-ce crime pour quelque que de n'oser la croire?",
+          "Qui deviendraient sans doute un Enfer pour tous \nÉLISE\n Bien que l'on pût avoir des sentiments tout autres, C'est au Prince, Madame, à se régler aux vôtres, Et dans votre biilet ils sont si bien marquez, Que quand il les verra de la sorte expliquez.",
+          "Et ce qui n'a pas peine à gagner la croyance, On entend publier que c'est la récompense, Dont il prétend payer le service éclatant Du bras qui lui fait jour au Trône qui l'attend. \nÉLISE\n ",
+          "Abandonnons l'ingrat à son propre caprice, Et puis qu'il veut périr, consentons qu'il périsse; \nÉlise\n À cet éclat vous voulez me forcer, Mais je vous apprendrai que c'est trop m'offenser."
+        ]
+      },
+      "top_5_persons": [
+        "ÉLISE",
+        "ALVAR",
+        "Léon",
+        "Sylve",
+        "ALVAR"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Castille",
+          "frequency": 7
+        },
+        "related_sentences": [
+          "Mais puisque vous voulez que je n'en touche rien, Je vous dirai, Seigneur, pour changer d'entretien, Que déjà dans Léon on voit chaque famille Lever le masque au bruit des Troupes de Castille, Et que sur tout le Peuple y fait pour son vrai Roi Un éclat à donner au Tyran de l'effroi.",
+          "Et je ne doute point que ce généreux zèle, Dont la chaleur vous pousse à venger ma querelle, N'eût contre les efforts d'un indigne projet Pû faire en ma faveur tout ce qu'un autre a fait, Mais sans cette action, dont vous étiez capable, Mon sort à la Castille est assez redevable;",
+          "Il faut que de ma main un illustre attentat Porte une mort trop due au sein de Mauregat, Que j'aille prévenir par une belle audace, Le coup, dont la Castille avec bruit le menace, Et j'aurai des douceurs dans mon instant fatal, De ravir cette gloire à l'espoir d'un Rival.",
+          "Il a tenté Léon, et ses fidèles trames, Des grands, comme du peuple, ont pratiqué les a. mes, Tandis que la Castille armait dix mille bras, Pour redonner ce Prince aux vœux de ses États;",
+          "Je m'opposais encor, ce qu'au sang de Castille, Du feu Roi de Léon, semble devoir la Fille;"
+        ]
+      },
+      "top_5_places": [
+        "Castille",
+        "Léon",
+        "Burgos",
+        "Castille"
+      ]
+    }
+  }
+}

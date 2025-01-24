@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "author": "Le Hayer Du Perron, Pierre",
+    "title": "Les Heureuses Advantures, trage-comédie ; suivi de Autres Œuvres du Sieur du Perron",
+    "publication_date": "1633",
+    "document_id": "bpt6k10900546"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Cleon",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "CLEON\n \nMYRTILAS\n \nCLEON\n Mour que tes rigueurs éprouvent ma IY constance, Qu'en ta glace mes feux trouvent de résistance, Depuis que j'ai quitté cent astre qui me luit, Il semble qu'un chaos ait ramené la nuit: Que mes esprits troublés en perdant la lumière, Soient aujourd'hui privés de leur force première: Et qu'en l'obscurité mes sentiments pérolus, Se plaignent que pour eux la clarté ne soit plus: Hélas!",
+          "Toute la Cour en deuil prend ses habits fune bres, Et ses plus beaux rayons sont changés en ténèbres: Atis, Dieu ie ne puis le dire sans douleur, Nous laisse en son départ un éternel malheur, Le généreux Cleon à suivi sa fortune, Ils se sont exposez aux fureurs de N'éptune Et les vents citoyens de ce traître élément, Ravissent à nos yeux tout leur contentement LA REINE.",
+          "Allons donc affermir notre sainte alliance. \nCLEON\n Accordez ces faveurs à mon impatience, L'ombrage de ces bois est trop plein de respect D'amour, de liberté, pour nous être suspect, Les Nymphes et l'honneur qui suit les belles âmes Uiendront autoriser nos légitimes flammes, Le ciel sera témoin de mes vœus solennels Tu verras que mes feux ne sont point crimi neis.",
+          "se m'en vais au Paiais ouit Constu muitent, Lâ ie m'éclaircirai de ce doute important. \nCLEON\n * Atis que t'on destin à de peines diverses, Que tes affections vont souffrir de traverses: Tu vas sentir l'effort d'un père injurieux, Qui te veut éloigner du Soleil de tes yeux.",
+          "Rendez ce bon office à mes désirs confus, Alphonse n'attend pas cet inhumain refus: Com êtes obligé de venger cette injure, Je suis un assassin, un voleur, un parjure, It ta pensais tronuer atvant que de mourir. \nCLEON\n Ne vous affligez plus ici vous veux secourir. \nALPHONSE\n "
+        ]
+      },
+      "top_5_persons": [
+        "Cleon",
+        "Polinice",
+        "ALPHONSE",
+        "PHILANTE",
+        "Atis"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Parme",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Il commandait à Parme, et d'une main puisquante, Se conservait toujours une paix florissante: Sa valeur était telle, et tel fut son renom, Qu'il ne saurait jamais oublier Florinon Le ciel qui sait borner les grandeurs de la vie, Et qui tient souz ses lois la nature asservie, Décocha tant de traits sur ce corps glorieux Que on me vi contrainte à lui fermer les yeux.",
+          "-même j'obtiendrai le pardon de sa bouche. \nALPHONSE\n En revanche, Berger, puissiez vous hériter Du bonheur que le ciel vous a fait mériter: La Parme fléchira soups votre obéissance",
+          "La beauté qui me sut arrêter sous sa loi, Se pourrait captiver le courage d'un RoiLa Parme reconnaît son illustre naissance",
+          "quus ont un puissants charme, \nALPHONSE\n Vous ni connaissez rien \nCLEON\n Sa naissance est de Parme"
+        ]
+      },
+      "top_5_places": [
+        "Parme",
+        "Sicile",
+        "Meaux",
+        "Rome"
+      ]
+    }
+  }
+}

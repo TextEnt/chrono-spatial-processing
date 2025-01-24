@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "author": null,
+    "title": "La Comédie des tromperies, finesses et subtilitez de Maistre Pierre Patelin, advocat à Paris, pièce comique",
+    "publication_date": "1656",
+    "document_id": "bpt6k1090175q"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Guillemette",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Car s'il convient que ainsi m'applique A bouter avant ma pratique, On ne saura trouver mon per. \nGuillemette\n Par saint laques uon de tromper Vous en êtes un fin droit maître. \nPatelin\n Par celui Dieu qui me fît naître Mais de droite avocasserie. \nGuillemette\n Par ma foi, mais de tromperie: Combien vraiment quant m'avise, Pour à vrai dire, sanaclergise Et sans sens naturel, vous êtes Jenu Ivre des saisges têtes",
+          "Car en ses résieries il parle cinq ou six sortes le langages, Limosin, Picard, Normand, Breton, Lorrain: Et r chaque langage Guillemette jit des commentaires si à proos pour montrer que son mari toit sur le point de rendre l'aie à Dieu, que non seulement le brapier s'en départ, mais à son partement supplie Guillemette de l'excuser, se faisant accroire que ç'avait été quelque Diable transformé en homme qui avait enlevé son drapait.",
+          "À Paris pres saint Innocent COMÉDIE DE MAÎTRE Pierre Patelin Maître Pierre Patelin commence Ainte Marrie, Guillemette, DPour quelque peine que sette A cabasser n'à ramasser, Nous ne pouvons rien amasser, Or vi-je que j'avocassoie. \nGuillemette\n Par notre Dame j'y pensaie Dont on chante en avocassaige: Mais on ne vous tient pas saise Des quatre parts, comme ou soûlait.",
+          "L'Auteur introduit Patelin Aduocat, Maître passé en tromperie, une Guillemette sa femme qui le seconde en ce métier, un Guillaume Drapiet, vrai badaut, An dirais volontiers de Paris, mais ainsi ferais tort à moi-même, un Aignelet Berger lequel discourant son fait en lourdois, et prenant langue de Patelin, se fait aussi grand Maître que lui.",
+          "Patelin\n le vous donne cet œil à traire 'il en a plus eu, ne n'aura, a si bien chanter ne saura. \nGuillemette\n qui est il \nPatelin\n C'est un Guillaume, Qui a surnom de Joceaume, Puis que vous le voulez sçauoit, \nGuillemette\n Mais la manière de l'avoir Pour un denier?"
+        ]
+      },
+      "top_5_persons": [
+        "Guillemette",
+        "Guillaume",
+        "sainte Marie",
+        "maître Pierre",
+        "saint Jean"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "À Paris pres saint Innocent COMÉDIE DE MAÎTRE Pierre Patelin Maître Pierre Patelin commence Ainte Marrie, Guillemette, DPour quelque peine que sette A cabasser n'à ramasser, Nous ne pouvons rien amasser, Or vi-je que j'avocassoie. \nGuillemette\n Par notre Dame j'y pensaie Dont on chante en avocassaige: Mais on ne vous tient pas saise Des quatre parts, comme ou soûlait.",
+          "L'Auteur introduit Patelin Aduocat, Maître passé en tromperie, une Guillemette sa femme qui le seconde en ce métier, un Guillaume Drapiet, vrai badaut, An dirais volontiers de Paris, mais ainsi ferais tort à moi-même, un Aignelet Berger lequel discourant son fait en lourdois, et prenant langue de Patelin, se fait aussi grand Maître que lui.",
+          "Depuis par succès de temps, tout ainsi qu'il ne se trouve plus de la monnaie du Parisi, aussi quand nous la voulons exprimer nous y ajoutons par exprez le mot de Parisi en queue, autrement soit à Paris ou ailleurs nous n'entendons parler que de sols tournois.",
+          "on l'entendait Parisi, qui valait quinze deniers tournais (car aussi était-il de Paris) et à tant que les 24."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Picardie",
+        "Navarre",
+        "Espagne",
+        "Rouen"
+      ]
+    }
+  }
+}

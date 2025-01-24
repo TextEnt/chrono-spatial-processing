@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "author": "Rotrou, Jean de",
+    "title": "Les sosies, comedie de Rotrou.",
+    "publication_date": "1638",
+    "document_id": "btv1b8626230s"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "CAPP",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "I. \nCAPP\n Tour moi, puis qu'a cepoint chacun reste confus, Dans ces doutes enfin, l'avis, où ie m'arrête, Est de suivre celui, chez qui la table est prête.",
+          "-même impuissant, j'exécute pour lui, Vaineurie le réclame, et le soir, sa couronne, Me prompte le secours, qu'au matin ie lui donne. \nCAPP\n des Gardes.",
+          "Voyez, comme troublez par cet étonnement, Ils ne peuvent asseoir, de certain jugement. \nCAPP\n Que dit-il? n'est-ce pas de votre courtoisie, Que du port ce matin;",
+          "Mourons, s'il faut mourir, mais qu'avec moi périsse, Donpjoisible affront l'auteur, et la complice. \nCAPP\n des Gardes.",
+          "I. \nCAPP\n Que ici vous die immot, laissez-le, je vous prie, Les divers accidents arrivez en ces lieux;"
+        ]
+      },
+      "top_5_persons": [
+        "CAPP",
+        "Amphytrion",
+        "Creon",
+        "Mercure",
+        "JE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "DE MONÇEAVX, Il est permis à ANTHOINE DE SOMMAVILE, Marchand Libraire à Paris, d'imprimer ou faire imprimer, vendre et distribuer une pièce de Théâtre, intitule Les SOSIES Comédie de Monsieur de Roir, durant le temps et espace de neuf ans à compter du jour qu'elle sera achève d'imprimer.",
+          "Aar grâce et Privilège du Roi donné à Paris le 7."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Thrace",
+        "Thèbes"
+      ]
+    }
+  }
+}

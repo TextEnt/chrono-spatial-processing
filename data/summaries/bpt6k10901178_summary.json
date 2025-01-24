@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "author": "Dorimond",
+    "title": "Le Festin de Pierre, ou l'Athée foudroyé, tragi-comédie",
+    "publication_date": "1665",
+    "document_id": "bpt6k10901178"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "AMARANTE",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "mon malheur s'accroît que je suis misérable \nBRIGUELLE\n le vous les vais nommer dans son pays natal L'aure dont le bel œil au vôtre estoit gal, Dorinde, Clorianne, Amarante, Isabelle, Selimene, Selye, et Lucresse et Marcelle, Angélique, Lucelle, Aminthe, Amarilis, Et celle dont on fit des chansons, c'est Filis, Glodine la boiteuse, et Catin la camuse Qui se laissa duper comme une pauvre buse;",
+          "Il en a dit autant à trente comme à vous, Sans les autres qu'il a pris d'assaut, pour tout dire, J'ai su de lui leurs noms à l'entendre médire, Car il faut que par tout quelque grands sois complaisant. \nAMARANTE\n Que me dis",
+          "JOUAN\n Je ne vous vis jamais, ie ne sais qui vous êtes, \nAMARANTE\n Bergère malheureuse, l'horreur de l'Univers, Va cacher ta douleur aux plus creux des désers, Que leur nuit rende office à toute la nature Y cachant pour jamais cette triste aventure.",
+          "Et qu'en voulez-vous faire Ne vous louvientel pius : \nDOM JOUAN\n Où s'adressent tes pas? \nAMARANTE\n Que vous importe-t-il? \nDOM JOUAN\n Ne t'effarouche pas, J'aimerais mieux mourir que te mettre en colère.",
+          "AMARANTE\n ouvronsieur, votre discours est si rempli de charmes, Qu'il faut vous avouer que ie vous rends les armes, Mais, ne m'abusez pas, étant sous votre loi. \nDOM"
+        ]
+      },
+      "top_5_persons": [
+        "AMARANTE",
+        "Seigneur",
+        "LUCIE",
+        "BLAISE",
+        "LE PÈLERIN"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "C'est vous gêner l'esprit d'une plainte inutile, La mort qui n'est jamais courtoise ni civille, Pourrait être pour vous et prompte et sans refus, Et quand vous la verriez vous seriez bien confus, Laissez là vôtre Fils, ou l'envoyez à Rome, J'ai fait ce que j'ai pu pour le rendre honnête homme, Mhais leroyant aur préds foulermes jentiinens, Me goutmer, et railler de mes enseignements: Me traiter d'ignorant, de coquin et de bête, our ma Joi lai cele dem y rompre la telte. \nDOM ALVAROS\n Briguelle laisse -moi dans l'état où tu suis, t. propes fapernus décroissent mes ennuis. \n",
+          "DOM TOUAN, Sais -tu que Rome le veux? \nBRIGUELLE\n Ô!",
+          "Et l'on ne pourra pas vous en absoudre à Rome \nDOM"
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "France",
+        "Flandre",
+        "Paris I",
+        "Paris"
+      ]
+    }
+  }
+}

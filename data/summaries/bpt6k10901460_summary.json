@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Scudéry, Georges de",
+    "title": "Arminius, ou les Frères ennemis, tragi-comédie",
+    "publication_date": "1644",
+    "document_id": "bpt6k10901460"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Flavian",
+          "frequency": 17
+        },
+        "related_sentences": [
+          "C'est trop, que de trahir son frère et son parse \nFLAVIAN\n Ces mup peut, pour l'Amour qui seul les a trabis, \nARMINIUS\n En cessant d'être Prince et quasi d'être un bomme Êtes vous le Bourgis, ou l'Esclaue de Rome Suivez -vous le Ti jomphe, et l'orgueil des Césars TEIETAINC Je suivrai leurs Drapeaux, et vous suivrez leurs Chars.",
+          "Et soit que personne m'atache, à l'un ou l'autre objet, Je vous vois mauvais frère, et plus mauvais sujet \nFLAVIAN\n Dans un mal violent, ie ne me saurais taire: L'amour est un effet, qui n'est pas volontaire: L'heure, l'occasion, la cause, le moment, L'objet, la volonté, rien n'agit librement.",
+          "Mais n'oubliez jamais, que cette insortunée, Sans crime et sans raison, se vit abandonnée: Et qu'après votre crime, elle conserve encor, Le Portrait d'un ingrat, comme son seul trésor. \nFLAVIAN\n Effacez effacés, cette image funeste, Qui perte dans le cœur, une mortelle pèle;",
+          "Non, non, sans te contraindre, et sans plus discourir Va-t-en, va-en barbare, et me laisse mourir. \nFLAVIAN\n Oui, la confusion m'ôte de cette place, Et mon front est couvert d'une sueur de glace, La force m'abandonne, en ces funestes lieux:",
+          "Je serai peu courtois, pour être obéissant, \nAGRIPINE\n J'ai promis de servir cette illustre Princesse, Mais le premier devoir, fait que tout autre cesse, Et puis que Flavian veut toujours la garder, Retenez-la Seigneur, pour ne rien bazarder. \n"
+        ]
+      },
+      "top_5_persons": [
+        "Flavian",
+        "Arminius",
+        "Germanicus",
+        "CECINA",
+        "Seigneur"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 17
+        },
+        "related_sentences": [
+          "Je vous dirai pourtant, sans trouble et sans fureur, Que le rang que personne tiens me fait esprit Empereur: Et qu'il m'importe peu, soit au Camp, soit à Rome, Que vous alliez monsirer la faiblesse d' Homme En présence des Dieux, qui francs de passions, Cemnoiseut vopre ument, Ç mt intuiions.",
+          "Mais rendons grâce aux Dieux, d'avoir ensin permis, Que la paix ait rejoint, LES FRÈRES ENNEMIS. \nN\n GERMANICUS, Lui répond de même J'espère, (T l'espérance, en mon cœur n'est pas vaine, Et vous faire voir Rome, et la voir à Ravenné \nARMINIUS\n ",
+          "Ayez compassion des maux que j'ai soufferts, Et tirez Hercinie, et la Vertu des fers, Il est de la grandeur, et de l'éclat de Rome, Elle que l'Univers, craint, regarde, et renomme De ne s'atacher point au sort d'un malheureux.",
+          "Je fis donc la LA MORT DE CÉSAR qui fut ma première Tragédie et si la voix Publique ne me flatta point, toutes les parties de cet Ouvrage, ne furent pas indignes de la Majesté de l'ancienne Rome, et de la grandeur de son Sujet.",
+          "Et quoi que l'ou résolue, et quoi qu’on délibère, J'irai porter ma plainte au Trône de Tibère J'irai jusque dans Rome, en présence des Dieux, Publier hautement, ce qu'on fait en ces lieux;"
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Tibre",
+        "Rhin",
+        "Fontainebleau",
+        "Tique"
+      ]
+    }
+  }
+}

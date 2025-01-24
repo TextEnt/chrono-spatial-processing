@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "author": "Cotignon, Pierre",
+    "title": "Les bocages du sieur de La Charnays . Pastorale ou lon void la fuite de Cirine, le duel de ses amants, les desdains & les ruses d'Amire, l'extravagance de Meliarque, la jalousie d'Eliandre, l'ardeur de Filenie, la froideur de Neristil, la vanité des charmes de Tholitris, sa mauvaise fin & les disgraces de Ponirot",
+    "publication_date": "1632",
+    "document_id": "bpt6k856878d"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Venus",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "c'est ma maîtresse Plus belle que Venus, plus chaste que Lucresse, Et pour qui l'amour eut un état de sergent Pour me itre en prison dans sa tresse d'argent Ma belle voulez -vous que je vous ressuscite Ou bien si vous voulez que je vous précipite, Comme on ferait quelque autre au ventre d'un cercueil?",
+          "Comme Venus s'enfuit, elle a peur qu'on l'atrappe Et son petit mignon permet qu'elle s'échappe: Ô l'agréable jeu!",
+          "Ho, c'est le Dieu d'amour et sa mère Venus"
+        ]
+      },
+      "top_5_persons": [
+        "Venus",
+        "Seigneur",
+        "Seigneur",
+        "Mercure",
+        "ROTROU"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Je l'aime autant que vous et vous autant que Rome, Mais ie ne puis régler les actions d'autrui, Mourez, ne mourez-pas à votre fantaisie"
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Loire",
+        "louvre"
+      ]
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Les Precieuses ridicules. Comedie. Representée au Petit Bourbon",
+    "publication_date": "1660",
+    "document_id": "bpt6k8548839"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "MAROTTE",
+          "frequency": 8
+        },
+        "related_sentences": [
+          "MAROTTE\n Par ma foi, Madame ne sais point quelle bête c'est là, il faut parler Chrétien, si vous voulez que ie votre entende.",
+          ", Nièce de Gorgibus Ç MAROTTE"
+        ]
+      },
+      "top_5_persons": [
+        "MAROTTE",
+        "Seigneur",
+        "Croisy",
+        "Provinces",
+        "Donzel"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 8
+        },
+        "related_sentences": [
+          "Et bien, Mesdames, que di tes-vous de Paris \nMAGDELON\n Hélas qu'en pourrions-nous dire ? il faudrait être l'antipode de la raison, pour ne pas confesser que Paris est le grand bureau des merveilles, le centre du bon goût, du bel esprit, elle de la galantène, \nMASCARILLE\n Pour moi, Seigneur tiens que hors de Paris, il n'y a point de salut, pour les honnêtes gens.  ",
+          "Ce sont eux qu'y donnent le branle à la réputation dans Paris et vous savez qu'il y en a tel dont il ne faut que la seule fréquentation, pour vous donner bruit de connaisse, quand il n'y aurait rien autre chose que cela.",
+          "un peu quaedll , veux, vvous verrez cofir de ma façon dans les belles Ruelles de Paris, deux cens Chansons, autant de Sonnets, quatre cens rames, et plus de mille mdrigaux, sans compter les Enygmes et les Portraits. \n",
+          "L'air précieux n'a pas seulement infecté Paris, il s'est aussi ré cendu dans les Provinces et nos Donzel les ridicules en ont humé leut bonne part.",
+          "MAGDELON\n Ne m'en parlez point, c'est un admirable lieu que Paris"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Louvre",
+        "Champagne",
+        "France"
+      ]
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "author": "Le Vert",
+    "title": "Le Docteur amoureux, comédie",
+    "publication_date": "1638",
+    "document_id": "bpt6k10901052"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Élise",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Vs cœur comme le sien par l'amour enflammé, Ose tout quand il perds ce qu'il a bien aimé: Sans crainte de paraître ou prompt, ou téméraire, Il suit les mouvements qu'inspire sa cholère: N'en a -t-il pas fait voir un exemple aujour d'hui Dans ce que ici t'ai dit de Philandre et de fin, \nADRASTE\n Rassure toi, peureuse, et banni cette crainte: Dont grande vois sans raison que ton âme est atteinte Et sache qu'avez tôt qu'il aur a su mon nom, Sans croire ou son courage, ou son affection, Il viendra s'excuser avec beaucoup de honte, De m'avoir méconnu sous celui de Cléonte Et dira que son cœur fut un audacieux, D'avoir osé prétendre au chef-d'œuvre dis Cieux. \nÉLISE\n Mais de peur que quelqu'amour ensemble ne nous voie, Adraste interrompons notre commune joie: Souffre que ie te quitte encor pour un moment, Va t'en tu t'en conjure, et tâche seulement, A l'heure destinée à faire ton passible, De venir su je pent jaus tût renurt vipbie. \nADRASTE\n ",
+          "Alors nous nous verrons sans aucune contrainte, Nos flammes n'auront plus cette importune crainte, Et bien loin de cacher notre puissant Amour, neine ie jamais purorpit aux genx insme du jour, Nous défierons le sort, nous braverons l'envie, Et nous commencerons à bien goûter la vie.  \nÉLISE\n Mais petit crains que Tircis si long temps abusé Ne se venge sur toi de se voir méprisé, Et perdant le respect en perdant l'espérance. \nADRASTE\n Arrête toi, mon cœur, cette crainte m'offense, Et tu ne saurais pas redouter ce malheur -- gans dnon bajoupton qursiegema paieure \nÉLISE\n ",
+          "À tout ce qu'il voudra, j'abandonne ma télé, Enfin Cloris reprend sa première conquête, Et quand vous arriviez, j'asseurais sa beauté, D'avoir d'oresnavant, plus de fidélité: Mais pour faire revivre une flamme ancienne, Qu'ici votre prière accompagne la mienne, Faites que son esprit, justement offensé, Perut le jontmr ataunavppate \nÉLISE\n Voudriez-vous refuser, cette juste requête? \nCLORIS\n S'il parle franchement, me voici toute prête.",
+          "une si longue feinte, Et ie m'ennuie enfin de voir que tous les jours Cette vieille importune empêche nos discours: \nÉLISE\n Laissc agir en ceci mon adresse ordinaire: Et quand tu la verras une fois en colère, Comme si tu craignais d'augmenter son dédain, Quoi qu'elle t'appelât, étoigne toi soudain. \nADRASTE\n Mais comme pourras-tu la porter à la haine!",
+          "Il est vrai, ton amour prévint un peu la miennez Ton cœur pour obéir aux volontés du sort Commença le lien qui nous être si fort, Et ce Oieu qui nous joint d'une commune flamme Fit l'essai de ja forct en captivant ton âme: Mais il avait raison de commencer par toi Comme la moins facile a recevoir sa loi. \nÉLISE\n "
+        ]
+      },
+      "top_5_persons": [
+        "Élise",
+        "ADRASTE",
+        "Fabrice",
+        "CLORIS",
+        "Hélène"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Non, non, mon cher Fabrice aute moments dt souci Vous pépé posséder ce que ie Rome présente. \n",
+          "Madame permetez que Rome vous blâme un peu D'avoir un sentiment si contraire à mon feu."
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "mer",
+        "Saxe",
+        "CLORIS",
+        "Paris"
+      ]
+    }
+  }
+}

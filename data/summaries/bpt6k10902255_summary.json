@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Dorimond",
+    "title": "La Roselie, ou le Dom Guillot, comédie",
+    "publication_date": "1662",
+    "document_id": "bpt6k10902255"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Torine",
+          "frequency": 7
+        },
+        "related_sentences": [
+          "Ne vous souvient-il plus que par commandement, Vous m'avez ordonné d'estimer cet Amant? \nTORINE\n Ne vous souvient-il plus de quelle sorte, et coms Vous lui dites d'aimer ce beau, ce galant homme. \nCARLOS\n Oui-dà, Seigneur m'en souviens, et nous serons heureur Mais malgré tout cela ie veux ce que On veux.",
+          "Dequoy vous servia tette modeste humeur, Votre bouche à trahi les sentiments du cœur. \nCARLOS\n Puisque vous vous plaisez en ce lieu solitaire, Je suis content. \nTORINE\n Et nous, nous ne le sommes guère J'appelle ce discours compte à dormir de bout, Il croit que comme lui nous n'avons plus de goût. \n",
+          "TORINE ANGELIQUE, CARLOS \nCARLOS\n NE serait un très-grand avantage, JD aomi ma mie un Prince en mariage, Que ie serais heureux s'il l'avait épouse, J'ai toujours dans l'esprit ce Prince déguisé, Je ne saurais manquer d'avoir un riche gendre, On dit qu'un grand Docteur y vient encor prétendre;",
+          "Non, Seigneur te fais justice, Et ainsi prendrai plaisir à te faire service. \nTORINE\n Vous vous devez aimer, vous êtes sœurs de lait, Madame à l'esprit beau, le vôtre n'est pas laid, Vous avez même mal, et mêmes aventures, Et le même moyen guérira vos blessures.",
+          "tu, Torine \nTORINE\n On me vient de charmer, Je viens de rencontrer proche de la fontaine, Les Bergers assemblés dont vous voyez la Reine, Jamais personne n'ai rien vu de si doux et si beau, L'un tient une musette et l'autre un chalumeau;"
+        ]
+      },
+      "top_5_persons": [
+        "Torine",
+        "Don",
+        "Seigneur",
+        "MADEMOISELLE",
+        "Mage"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Madrid",
+          "frequency": 7
+        },
+        "related_sentences": [
+          "Au bout de quinze jours, vous fîtes un voyage, D'un an sans voir Madrid, Seigneur recuoir ce bocage, Tous revîntes enfin, et fort alaigrement, I Madame voulut avec empressement, Avec grande ardeur, comme c'est l'ordinaire, A la mamfai d'avon des rentiments de mère, Voir sa chère pouponne, et voici mon aveu, Elle venait, hélas de tomber dans le feu, Et lors pour éviter votre juste colère, Je vous portai la mienne, et rien ne fut contraire, Madame l'embrassa, Ma dame l' embrassa, Vous en fîtes de même en l'appelant fanfant, Et nous ne pûmes plus vous rendre et fille;",
+          "ROSELIE, THIRSIS, CARLOS  N'écrit de Madrid, qu'en ce séjour chãpestre, OUn Prince est retiré sans se faire connaître, Vous me devez aider, Bergère, et vous Berger, A trouver s'il se peut cet Illustre Estranger, On le veut employer, on dit qu'il en est digne, Et l'Espagne a besoin de sa valeur insigne.",
+          "D'une façon ou d'autre, il faut que je vous tue, Ou bien si vous voulez éviter le trépas, Il faut quitter ces lieux, et partir de ce pas, étourner à Madrid, s'empêcher de me nuire.",
+          "CARLOS, Gentilhomme de Madrid ANGELIQUE, crue fille de Carlos ROSELIE, crue fille de Jean Gille et fille de Carlos DOM JOUAN, Amand d'Angélique DOM PEDRE, Rival de Dom Jouan TIRSIS, Prince déguisé.",
+          "Monsieur, il faut partir, afin que Madrid voie La cause de ma flamme, et celle de ma joie:"
+        ]
+      },
+      "top_5_places": [
+        "Madrid",
+        "Paris",
+        "Rome",
+        "France",
+        "Navarre"
+      ]
+    }
+  }
+}

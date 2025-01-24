@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "author": "Cheffault, F de",
+    "title": "Le Martyre de Saint-Gervais, poème dramatique / par M. F. de Cheffault",
+    "publication_date": "1670",
+    "document_id": "bpt6k1090177j"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "GERVAIS",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Ce beau raisonnement ferait voir un grand cou Si votre habit Romain n'en dément l'ardets Quittons ces vêtements qui nous couvrent de hont Et ne permettons plus que la peur nous surmette Si nous voulons souffrir cherchons-en les moyẽt Déglarons hautement que nous sommes Chresliẽ Liurõs nous au Tyran qui tâche de nous prẽdit \nGERVAIS\n Encore une victoire et nous irons nous rendre, Pour mériter le fruit de plusieurs beaux exploIl faut dans un combat vaincre plus d'une fois, Tant que nous respirons ici bas sur la terre, Ou le monde ou la chair nous font toujours guerre, les tienc l' et autre ses pieds abbat ourueu on leur oppose rẽpart de vertus;",
+          "Et bien, nous allons voir si ces cœurs inflexibles, Par l'excès des tourments deviendront plus sûsibles, Voutme forcés d'agir quelque sévérité. \nGERVAIS\n Non, non, selon vos Lois, Seigneur, j'ai mérité Qu'avec toute rigueur on me traite en coupable, Soyez pour me punir un Juge inexorable;",
+          "Peuple, s'écria-t-il, ceslez d'être interdit, DE S. \nGERVAIS\n S'il n'adore à l'instant nos Majestés suprèmes, Et son sang, et sa vie, expieront ses blasphèmes Puis il dit au coupable, il n'est point de milieu, Choisis la mort;",
+          "Nous reviendrons ensemble à l'abri de n palmes Prenter nos laurlers et rèdre grosaux Dieux De qui nous attendons un succès glorieur. \nGERVAIS\n Ce discours serait bon à des âmes yulgaires, Qui croient comme vous des Dieux imaginaiies;",
+          "GERVAIS\n Bien loinde méditer une honteuse fuite, C'est le même projet qu'avec vous je m'édus Et pour vous témoigner que je n'hésite pai PROTHAIS."
+        ]
+      },
+      "top_5_persons": [
+        "GERVAIS",
+        "César",
+        "Gervais",
+        "Seigneur",
+        "César"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "DArgrace et Privilège du Roi, donné à Paris le 24."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Bergère",
+        "Rome",
+        "Milan"
+      ]
+    }
+  }
+}

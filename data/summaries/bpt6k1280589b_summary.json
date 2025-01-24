@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Racine, Jean",
+    "title": "Andromaque, tragédie",
+    "publication_date": "1668",
+    "document_id": "bpt6k1280589b"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Pyrrhus",
+          "frequency": 22
+        },
+        "related_sentences": [
+          "Qui m'eût dit, qu'un rivage à mes vœux si funeste Présenterait d'abord Pylade aux yeux d'Oreste, Qu'après plus de six mois que tu t'avais perdu, À la Cour de Pyrrhus tu me serais rendu! \nPYLADE\n J'en rends grâces au Ciel, qui m'arrêtant sans cesse Semblait m'avoir fermé le chemin de la Grèce, Depuis le jour fatal que la fureur des Eaux, Presque aux yeux de Mycéne, écarta nos Vaisseaux.",
+          "Je ne crains pas, enfin, que Pyrrhus la retienne, Il n'a devant les yeux que sa chère Troyenne, Tout autre objet le blesse, et peut-être au jourd'hui Il n'attend qu'un prétexte à l'éloigner de Seigneur Nousn'avons qu'à parler.",
+          "Toute la liberté que j'ai prise, ç'a été d'adoucir un peu la ferocité de Pyrrhus, que Sénèque dans sa Trode, et Virgile dans le second de l'Eneïde, ont poussée beaucoup plus loin, que je n'ai cru le devoir faire.",
+          "Mais aussitôt ma main, à moi seule funeste, D'une infidèle vie abrégera le reste, Et sauvant ma vertu, rendra ce que ne moi, A Pyrrhus, à mon Fils, à mon Époux, à moi.",
+          "Dégage-vous des soins dont vous êtes chargé. \nORÊTE\n Les refus de Pyrrhus m'ont assez dégagé, Madame, il me renvoie, et quelque autre Puissance Lui fait du Fils d'Hector embrasser la défense."
+        ]
+      },
+      "top_5_persons": [
+        "Pyrrhus",
+        "ORESTE",
+        "Hector",
+        "Andromaque",
+        "Seigneur"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Grèce",
+          "frequency": 22
+        },
+        "related_sentences": [
+          "Qui m'eût dit, qu'un rivage à mes vœux si funeste Présenterait d'abord Pylade aux yeux d'Oreste, Qu'après plus de six mois que tu t'avais perdu, À la Cour de Pyrrhus tu me serais rendu! \nPYLADE\n J'en rends grâces au Ciel, qui m'arrêtant sans cesse Semblait m'avoir fermé le chemin de la Grèce, Depuis le jour fatal que la fureur des Eaux, Presque aux yeux de Mycéne, écarta nos Vaisseaux.",
+          "Qu'ils cherchent dans l'Épire une seconde Troie Qu'ils confondent leur haine, et ne distinguent plus Le sang qui les fit vaincre, et celui des Vaincus Aussi-bien ce n'est pas la première injustice, Dont la Grèce, d'Achille a payé le service.",
+          "Je veux croire avec vous, qu'il redoute la Grèce, Qu'il suit son intérêt plutôt que sa tendresse, Que mes yeux sur votre âme étaient plus absolus. \nORÊTE\n Non, Madame, il vous aime, et Seigneur n'en doute plus.",
+          "Son nom seul fait frémir nos Veuves, et nos Filles, Et dans toute la Grèce, il n'est point de Familles, Qui ne demandent compte à ce malheureux Fils, D'un Père, ou d'un Époux, qu'Hector leur a ravis.",
+          "J'ai songé comme vous, qu'à la Grèce, à mon Père, A moi-même en un mot ie deuenois contraire, Que lescicuais Troie, et rendais imparfait Tout ce qu'a fait Acmilie, et tout ce que j'ai fait."
+        ]
+      },
+      "top_5_places": [
+        "Grèce",
+        "Troie",
+        "Sparte",
+        "Troie",
+        "Paris"
+      ]
+    }
+  }
+}

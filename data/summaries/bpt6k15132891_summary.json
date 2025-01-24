@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "author": "Fontenelle, Bernard de",
+    "title": "Bellérophon, tragédie en musique, ornée d'entrées de ballet, de machines et de changements de théâtre, représentée devant Sa Majesté, à Saint-Germain-en-Laye, le 3e de janvier 1680. [Paroles de Th. Corneille et Fontenelle, musique de Lulli.]",
+    "publication_date": "1680",
+    "document_id": "bpt6k15132891"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Bellerophon",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Le Théâtre représente d'abord le Parnasse Français, Apollon y vient avec les Muses célébrer le retour d'une Paix si glorieuse à la France Pan et Bacchus y arrivent en même temps, et signalent leur joie par des Dances et par des Chants d'allégresses: Mais Apollon pour mieux divertir le plus Grand Prince de la Terre, imagine sur le champ un Spectacle, où même avec les Mûres yeut représenter l'Histoire de Bellerophon Chacun sais que ce Héros combattit autrefois la Chimère, monté sur Pégase, et que ce fut d'un coup de pied de ce Cheval que n'âquit ensuite la fameuse Fontaine qui inspire les Vers, et qui a fait naître la Poésie.",
+          "Bellerophon fond une seconde fois sur la Chimère au milieu du Théâtre, et après qu'il a disparu un moment en s'élevant sur le Cintre, il paraît pour la troisième fois, descend sur le devant du Théâtre, attaque de nouveau la Chimère, la blesse à mort, et se sauve en l'air, faisant son Vol en rond, et après trois tours, on le voit se perdre dans les nues: Cependant la Chimère tombe morte entre les Rochers;",
+          "On ne sais pas trop bien qui était le Père de Bellerophon Les uns tiennent que c'était Glaucus, et les autres le font Fils de Neptune et c'est sur cette diversité d'opinions qu'on a formé l'intrigue de cette Pièce, et l'oracle qui en fait le nœud.",
+          "TENOBE'E. Bellerophon m'a fait une mortelle injure, Le Roi la connaît et l'endure, Il le choisit pour Gendre au lieu de le punir, Troublons l'Hymen qui se prépare Par une vengeance barbare Domt te foens fou vonir Fasse trembler tout l'avenir.",
+          "Ton sort est marqué dans les Cieux, Viens, monte dans ce Char, et t'abandonne aux Dieux, Bellerophon monte dans le Char, et est enlevé sur le Cintre, avec Pallas Cependant on entend le Peuple qui exprime sa désolation par ces Vers."
+        ]
+      },
+      "top_5_persons": [
+        "Bellerophon",
+        "Bellerophon",
+        "Bacchus",
+        "Pallas",
+        "Chimère"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Ville de Paris",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "À CES CAUSES, bien informés de l'intelligence et grande connaissance que s'est acquis notre cher et bien amé Jean-Baptiste Lully au fait de la Musique, dont il nous a donné et donne journellement de très-agréables preuves depuis plusieurs années qu'il s'est attaché à notre service, qui Nous ont convié de l'honorer de la Charge de Sur Intendant et Compositeur de la Musique de notre Chambre: Nous avons audit Sieur Lully permis et accordé, permettons et accordons par ces présentes signées de notre main, d'établir une Académie Royale de Musique dans notre bonne Ville de Paris, qui sera composée de tel nombre et qualité de personnes qu'il avisera bon être, que nous choisirons et arrêterons sur le rapport qu'il Nous en fera, pour faire des Représentations devant Nous, quand il nous plaira, des pièces de Musique qui seront composées tant en Vers Français, qu'autres Langues étrangères, pareilles et semblables aux Academies et Italie Pour en jouir sa vie durant, et après avoir celui de ses enfants qui sera pourvu et reçu en survivance de ladite Charge de Sur-Intendant de la Musique de notre Chambre, avec pouvoir d'assier avec m qui bon ex semblera pour l'établissement de ladite Académie:",
+          "Comme aussi de prendre telle somme qu'il jugera à propos, et d'établir des Gardes et autres gens nécessaires aux portes des lieux ou se feront lesdites représentations: Faisant très-expresses inhibitions et défenses à toutes personnes de quelque qualité et condition qu'elles soient, même aux Officiers de notre Maison d'y entrer sans payer: Comme aussi de faire chanter aucune Pièce entière en Musique, soit en Vers Français ou autres Langues, sans la permission par écrit dudit Sieur Lully, à peine de dix mille livres d'amende, et de confiscation des Théatres, Machines, Décorations, Habits et autres choses, applicables un tiers à Nous, un tiers à l'Hôpital Général, et l'autre tiers audit Sieur Lully Lequel pourra aussi établir des Escoles particuliers de Musique en notre bonne Ville de Paris, et par tout où il jugera nécessaire pour le bien et l'avantage de ladite Académie Royale.",
+          "Jean-Baptiste Lully, Sur-Intendant de la Musique de notre Chambre, Nous a fait remontrer que les Airs de Musique qu'il a cy-devant composés, ceux qu'il compose journellement par nos ordres, et ceux qu'il sera obligé de composer à l'avenir pour les pièces qui seront représentées par l'Académie Royale de Musique, laquelle Nous nous avons permis d'établit en notre bonne Ville de Paris, et autres lieux de notre Royaume où bon lui semblera, étant purement de son invention, et de telle qualité que le moindre et ou obmission leur fait perdre leur grace naturelle;",
+          "Nous aurions, dans le dessein de la faire réussir avec tous ces avautages, par nos Lettres Patentes du 28. \nJuin 1669\n accordé au Sieur Perrin une Permission d'établir en notre bonne Ville de Paris, et autres de notre Royaume, des Academies de Musique, pour chanter en public des Pièces de Théâtre, comme il se pratique en Italie, en Allemagne et en Angleterre, pendant l'espace de douze années;"
+        ]
+      },
+      "top_5_places": [
+        "Ville de Paris",
+        "Pithie",
+        "France",
+        "Italie",
+        "Paris"
+      ]
+    }
+  }
+}

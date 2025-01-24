@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "L'Amour medecin, comedie, Par J. B. P. Moliere",
+    "publication_date": "1666",
+    "document_id": "bpt6k1280467d"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "LYSETTE",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Est-ce que les Médecins font mourir? \nLYSETTE\n Sans doute: et j'ai connu un homme qui prouvait, par bonnes raisons, qu'il ne faut jamais dire une telle personne est morte d'une fièvre et d'une fluxion sur la poitrine: mais elle est morte de quatre Médecins, et de deux Apothicaires.",
+          "LUCINDE\n Hé bien, Lysette, j'avais tort de cacher mon déplaisir, et notre n'avais qu'à parler, pour avoir tout ce que sans souhaitais de mon père: tu le vois. \nLYSETTE\n Par ma foi, voilà un vilain homme,",
+          "Hypocrate dit, que ces sortes de maladies ne se terminent qu'au quatorze, ou au vingt-un, et il n'y a que six jours qu'il est tombé malade. \nLYSETTE\n Hypocrate dira ce qu'il lui plaira;",
+          "Ah, ma fille! \nLYSETTE\n À force de la tourmenter ici l'ai fait revenir: mais cela y reprend de moment en moment, et ainsi crois qu'elle ne B ij Umera pue lu dunec.",
+          "Comment, le mariage; \nLYSETTE\n Ma foi, Monsieur, la Becasse est bridée, et vous avez cru faire un jeu, qui demeure une vérité."
+        ]
+      },
+      "top_5_persons": [
+        "LYSETTE",
+        "M",
+        "SGANARELLE",
+        "Seigneur",
+        "Seigneur"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Ledit Sieur Molière a cédé, quitté, et transporté son droit de Privilège à Pierre Trebouillet, Nicolas le Gras, et Théodore Girard Marchands Libraires à Paris pour en jouir, ainsi qu'il est porté par lesdites Lettres de Privilège, suivant l'accord fait entr'eux.",
+          "Registré sur le Livre de Communaute des Imprimeurs, Marchands Libraires de Paris, le 4 Janvier 1666",
+          "JAR grâce et Privilège du A Roi, donné à Paris, le 30.",
+          "La Scène est à Paris dans une Salle de la maison de Séganarelle PROLOGUE."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Rome",
+        "PARIS",
+        "Champagne",
+        "Faubourg"
+      ]
+    }
+  }
+}

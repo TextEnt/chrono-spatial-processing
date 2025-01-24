@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "author": "Rotrou, Jean de",
+    "title": "Les Sosies, comédie",
+    "publication_date": "1668",
+    "document_id": "bpt6k1090155z"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Amphytrion",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Amphytrion Exerce ta valeur ailleurs qu'à te détruire, Veille en d'autres plutôt, encor te reproduire, Tous deux épargnez-vous, calmez cette fureur, Je conçois le moyen de nous tirer d'erreur, Vous, parlez le premier.",
+          "Voici, voici, Thebains, la doute consommée, Ce seul Amphytrion commanda votre armée, Que votre gloire en lui connaisse son auteur, L'autre est un insolent, un fourbe, un imposteur.",
+          "Assemble, Amphytrion, et possède tes sens, R 'est bien ici le se coudre Dont j'ai mis les Titans en poudre, Mais il ne tombe pas dessus les innocents.",
+          "Quoi, par cet imposteur ma maison m'est ravie, Mes valets, mes amis, ma famille, mon nom, Et par Amphytrion périt Amphytrion",
+          "La faim me désespère? \nCÉPHALIE\n De l'œil Amphytrion a semblé m'avertir Que je l'obligerais de. MERCURE."
+        ]
+      },
+      "top_5_persons": [
+        "Amphytrion",
+        "JUPPITER",
+        "Creon",
+        "Mercure",
+        "Alcmène"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Thrace",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "VUelle témérité pareille à mon audace OPourrait entrer au sein du Dieu même de Thrace À quelle complaisance un serf est-il-réduit, Qu'il faille marcher seul, à telle heure, de nuit?",
+          "Que second Encelade il attaque les Cieux, Qu'à leur plus haute Sphrère il porte son audace, Et jette la frayeur au sein du Dieu de Thrace"
+        ]
+      },
+      "top_5_places": [
+        "Thrace",
+        "Cjel",
+        "Thebes",
+        "AMPHYTRION",
+        "mer"
+      ]
+    }
+  }
+}

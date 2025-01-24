@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "author": "Discret, L",
+    "title": "Les nopces de Vaugirard, ou Les naifvetéz champestres . Pastoralle dédiée à ceux qui veulent rire. Par L. C. D.",
+    "publication_date": "1638",
+    "document_id": "bpt6k6269158p"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Luciane",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Polidas qui croit qu'elle est morte se précipite dans la grotte des Demons, Amarille qui se doute qu'elle est trompée, voyant que Polidus était précipité, s'y jette pareillement, laissant tous leurs parents dans une confusion é pouuentable, et en fin Lidiane repeschée, et ramenée par les Pêcheurs au lieu où elle pensait retrouver Polidas, est à l'instant prise par les Députez de Vaugits qui faisaient la recherche d'eux, par le soupçon qu'ils avaient que Polidas avait été le boutte-feu, elle est menée deuant les Iuges qui lui font sonprocez, et quelques prières, et supplications que leur puissent faire les habitans du village, elle est par été condamnée d être precipitée dans la es grotte des Demons, qu y Polidas, et Amarille mais comme on vient pour exécuter cette sentence, l'ombre de Castrape Magicien qui avait bâti cette grotte, sort tenant Polidas d'une main, et Amarille de l'autre sains et sauves, arrête l'exécution de cette condamnation, et faisant le récit de toutes leurs aventures, ordonne des mariages du bon homme Pancrace avec la vieille Luciane, dont les crotesques amours sont naîfuement traite, red Arille à son Floridon Polidas à sa Lidiane, et Pysandre à Cléanide, et par ces mariages et par ces mariages de toutle rez, et et cause réjoüissance publique.",
+          "LUCIANE\n Ccable d'ennuis, de maux, d'afflictions, De douleurs, de malheurs, le but des passions, À qui me dois-je plaindre en ces peines extrêmes, Madresserai-je à vous divinités suprêmes Ou aux hommes mortels l'ouvrage de vos mains Non car votre pouvoir s'étend sur les humains: Ils ne peuvent sans vous agir en nulle sorte, C'est est donc contre vous que ma plainte ce porte, Puisque vous permettez qu'on violle les lois, De douceur et d'amour envers moi cette fois J'avais toujours vécu d'une telle manière, Que enfin n'espérais pas sentir votre colère: Las qu'ai-je fait (bons dieux) pour voir contre raison, Enlever mon enfant et brûler ma maison: Pac un traître pasteur un méchant, un perfide, Un brûleur de maisons un volleur homicide Que ne le tiens",
+          "Amitié d'un ami oblige à l'impossible, Il faudrait être ingrat, mais plutôt insensible, Pour ne le pas servir après que par effet, Il vous a témoigné son courage parfait, Pour servir Polydas mon ami plus inthime, J'offrirais à la mort mon âme pour victime, Je n'ai rien de plus cher que sa félicité, Aussi de ses amours fidèle député, Je vais faire tomber ce mot à Lidiane, J'ai crainte de trouver au logis Luciane Hasard j'ai prou déprit pour savoir déguiser, Et discourant de loin sa prunelle abuser:",
+          "Quand le pot est couvert c'est signe, ce dit-on, Que le feu en est loin et la chair se morfond. \nPANCRACE\n Ma callote vous fait parler de telle sorte, Man chacu teune foux par bien séance en porte: \nLUCIANE\n Vous vous riez toujours, \nPANCRACE\n Mignonne croyez hioy, Sur toutes les beautés après vous aime, ma foi: \nEUCIANE\n Nevous pensez moquer, autrefois j'étais belle \nPANCRACE\n À qui le dites -vous j'étais votre fidèle:",
+          "Nous ont fait découvrir au bord de la rivière Assez proche de nous cette jeune bergère: Fille de Luciane et la cause en effet, Du per nicieux tour que Polydas a fuit: Elle sait où il est, mais elle est sirusee, Qu'elle croit rendre encor la justice abée. \nLE IVGE\n Bergère approche toi, parle ici librement, Ne me recèle rien pour crainte du tourment:"
+        ]
+      },
+      "top_5_persons": [
+        "Luciane",
+        "Vaugirard",
+        "Diane",
+        "Seigneur",
+        "Zéphir"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Amis grands suis fâché qu'il faille qu'un adieu Me face incontinent abandonner ce lieu: Mais n'étant né berger, Paris qui me souhaite, M'obligerabien tôt d'y faire ma retraite:",
+          "Donné à Paris le vingt-deuxième Mai mil six cents trente-huit, et de notre règne le vingt."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "France",
+        "Silène"
+      ]
+    }
+  }
+}

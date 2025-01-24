@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "author": "Rotrou, Jean de",
+    "title": "La Doristée, tragi-comédie du Sr Rotrou",
+    "publication_date": "1635",
+    "document_id": "btv1b8622127q"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Diane",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "comme il vit en fin qu'il n'en pouvait rien tirer, il protesta de ne lui enparler jamais plus, et de faire en sorte qu'il recouvrerait bien tôt son Clagénor Philemand l'en ayant remercié, s'en alla trouver Dorante, à laquelle il découvrit qu'il était Doriste, et la violente amour de Thandre Pendant ces choses, un Commeiller ami de Cléagenor le tira de prison, résunire de même temps sit courir le bruit qu'il avait été tué par Ménadre, s'aidant à cette fin de Philacte son domestique, afin que de cette mort jointe au diorce, ou il était auec sa femme, il en tirât le sujet d'épouser le désolé Philond Sur ces entrefaites, Diane toute en alarmes, unt ours dire, que Gléagénor heurtoir à la porte: dequoy Théandre bien étonné, il commanda qu'on le fît entrer;",
+          "Mais par quel accident vous a -t-il reconnue, S'il ne vous connaissait devant motre venue, Du récit de vos maux contentez mes désirs, Et que sans participe a tous vos déplaisirs. \nILLEMOND\n Je vous conterai tout, mais parlons de Théandre, Et dans ce cabinet, tâchez de le surprendre, J'entends déjà du bruit, c'est Diane, écoute Si ainsi sais captiver vos seules liberté Apprenez de quel trait",
+          "Elle s'en va \nPHILEMOND\n Diane encore un mot: elle veut, l'impudique, Qu'on ferme des appas à son ardeur lubrique: Elle brûle d'amour, voudrait être en mes bras, Et meurt de déplaisir qu'on ne l'en presse pas.",
+          "Diane va quérir THÉANDRE, à Dorante Commandez qu'on l'amène. \nDoriste\n \nCLÉGENOR\n Quel effort, quel excès, assouvira munaine, Ma main de mille coups était percera le flanc, J'arracherai soncœur, et un boirai le sang SCÈNE VII.",
+          "Ve fait là ce cruel, ce beau, ce rigou reux, Qui donne tant d'amour, et n'est point amoureux. \nPHILEMOND\n Quoi, Diane est gausseuse, et qui m'ai moit me joue."
+        ]
+      },
+      "top_5_persons": [
+        "Diane",
+        "Philacte",
+        "Seigneur",
+        "Camarade",
+        "Cloris"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "J'ai suivi fans profit la fortune d'être Maître, Qu'entre les plus fameux la France a vu paraître Céliandre la gloire et l'honneur de la Cour, Mais qu'une faute insigne a fait priver du jour;",
+          "Chez ANTHOINE DE SOMAVILLE, au Palais dans la petite Sale, devant le second parler à l'Écu de France Q1 6 E NSTEUR",
+          "La France me regrette, et n'a point de PrincesQui n'eussent de leur âme acheté mes caresAussi"
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Florence",
+        "PARIS",
+        "Paris",
+        "Arles"
+      ]
+    }
+  }
+}

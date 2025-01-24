@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Sganarelle, ou le cocu imaginaire. Comedie. Avec les argumens de chaque scene.",
+    "publication_date": "1663",
+    "document_id": "bpt6k1280401n"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Celie",
+          "frequency": 11
+        },
+        "related_sentences": [
+          "Ans cette Scène, Lélie qui avait Dfait dessein de s'en retourner, vient trouver Celie, pour lui dire un éternel adieu, et se plaindre de son infidélité, dans la pensée qu'il a, qu'elle est mariée à Séganarelle lors que Célie, qui croit avoir plus de lieu de se plaindre que lui, tu reproche de son côté sa perfidie, ce qui ne donne pas un médiocre contentement à l'auditeur, qui connaît l'innocente délvir dès de l'auvre, et coinfle vous la connaissez aussi, sans crois que ces Vers vous pourront divertir.",
+          "Mon fils, dont votre fille acceptait l'hyménée, Sous des liens cachez trompants les yeux de tous, Vit depuis quatre mois était Lise en Époux, nt comméd phil leMeucen hamance M'ôtent tout le pouvoir d'en casser l'alliance, Je vous viens. \nGORGIBUS\n Brisons là, si sans vostré congé, Valère votre fils ailleurs s'est engagé, Je ne vous puis celer que ma fille Celie, Dès longtemps par moi-même est promise à Lélie, aunque Mène en pertus ron retour aujourd' empêche D'empêche d'agréer autte Espoux que mille.",
+          "Ans la quatrième Scène de cette UPie, la femme de Séganarelle, qui avait pris de la jalousie en voyant Celie entre les bras de son mari, vient pour lui faire des reproches (ce qui fait voir la merveilleuse conduite de cet ouvrage) jugés de la beauté qu'un agréable mal entendu produit dans cette Scène, Sganarelle croit que sa femme vient pour défendre son galant, sa femme croit qu'il aime Celieu, Celieu croit qu'elle vient ingénument se plaindre d'elle, à cause qu'elle est avec Lelie, et lui en fait des reproches;",
+          "Celie en s'évanoüissant, ayant laissé tomber le portrait de son Amant, la femme de Séganarele le ramasse, et comme elle le considère attentivement, son mati ayant aidé à reporter Célie chez elle, rentre sur la Scène et regarde par -dessus l'espaulle de sa femme, ce qu'elle considère: et voyant ce portrait, commence d'entrer en quelque sorte de jalousie, lors que sa femme s'avise de le sentir, ce qui confirme ses soupçons, dans la pensée qu'il a qu'elle le baise;",
+          "à l'amour, il fait parler dans celle-cy) afin de divertir l'Auditeur par la variété de la matière) une veuve suivante de Celie, et confidente tout ensemble, qui s'étonne de quoi sa Maîtresse répond par des larmes à des offres d'Hymen, et après avoir dit qu'elle ne ferait pas de même si l'on la voulait marier, elle trouve moyen de décrire toutes les douceurs du mariage;"
+        ]
+      },
+      "top_5_persons": [
+        "Celie",
+        "Sganarelle",
+        "Valère",
+        "Seigneur",
+        "Élie"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 11
+        },
+        "related_sentences": [
+          "c'est pourquoi puis qu'il y a tant de possibilité et de vraieemblance dans l'esuanoüissement de Lélie, que l'on pourrait dire qu'il était absolument nécessaire qu'il s'esuanoüist, puis qu'il aurait paru peu amoureux, si étant arrivé à Paris, il s'était allé amuser à manger, au lieu d'aller trouver sa Maîtresse: ils condamnent des choses qu'ils devraient estimer, puisque la conduite de cet incident avec toutes les préparations nécessaires, fait voir que l'Auteur pense meurement à ce qu'il fait, et que rien ne se peut égaler à la solidité de son esprit.",
+          "En effet, il n'y arrive pas plutôt, que l'on voit la tristesle peinte sur son visage: Il fait voir que de la campagne où il était, il s'est rendu au plustost à Paris, sur le bruit de l'hymen de Celie Comme il est tout nouvellement arrivé, son valet le presse d'aller manger un morceau devant que d'aller apprendre des nouvelles de sa Maîtresse;",
+          "Ganarelle, qui comme vous avez vu Odans la fin de la belle Scène, ( puis qu'elle n'a point à présent d'autre nom dans Paris) a pris résolution de se venger de Lélie, vient pour cet effet dans cette Scène, armé de toutes pièces: et comme il ne l'aperçoit pas d'abord, il ne lui promet pas moins que la mort dès qu'ilse rencontrera.",
+          "AR grâce et Privilège du Roi, donné à Paris, I le 26. \nJuillet 1660\n signé, par le Roi en son Conseil, LABORY: Il est permis au Sieur DE MOLIER, faire imprimer par tel Imprimeur et Libraire qu'il voudra, une Comédie intitulée Sganarelle ou le Cocu Imaginaire, avec les Arguments sur chaque Scène;",
+          "Aduoüez toujours maintenant la vérité, est-il pas vrai, Monsieur, que vous avez trouvé ces Vers tout à fait beaux, que vous ne vous êtes pu empêcher de les relire encore une fois, et que vous demeurez d'accord que Paris a eu raison de nommer cette Scène, la belle Scène?"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "France"
+      ]
+    }
+  }
+}

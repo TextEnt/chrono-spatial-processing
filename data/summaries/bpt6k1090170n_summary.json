@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "author": "Rotrou, Jean de",
+    "title": "Les Ménechmes, comédie",
+    "publication_date": "1661",
+    "document_id": "bpt6k1090170n"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Seigneur",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Il est saoulmaintenant, il discourt à son aise, Mepuis je contenter, faut -il que Seigneur me taise?",
+          "Toi, Seigneur t'auraisbrisé plus aysemens qu'un vérêt du moindre regard quelque t'aurais mis à terre.",
+          "Avec tout le monde elle vit tout de Seigneur, Et quiconque la voit estime qu'elle aime;",
+          "Il faut que Seigneur te serve à çagner tes maîtresses.",
+          "Adieu, Seigneur vous attends."
+        ]
+      },
+      "top_5_persons": [
+        "Seigneur",
+        "Valet",
+        "Carie",
+        "Mosque",
+        "Bacchus"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Sicile",
+          "frequency": 3
+        },
+        "related_sentences": [
+          ", Je n'éprouvai jamais sa rigueur, ni sa haine, Il m'obligea toujours de son assection, Et is fus hooré de sa succès, Je mes marié, j'ai vécu dans cette Isle, Avec dessein tant de révoir la Sicile, C'est à vous maintenant de m'ôter de souci, Que font tout nos parents?",
+          "La Sicile, l'endroit où vous prîtes le jour,",
+          "Siracuse, in Sicile"
+        ]
+      },
+      "top_5_places": [
+        "Sicile",
+        "Paris",
+        "Pars",
+        "EU"
+      ]
+    }
+  }
+}

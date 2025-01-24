@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Les Fascheux, comédie de J. B. P. Molière, représentée sur le théâtre du Palais Royal",
+    "publication_date": "1693",
+    "document_id": "bpt6k1280440r"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Damis",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Oui, Damis sont tuteur, mon plus rude fâcheux, Tout de nouveau s'oppose aux plus doux de mes vœux, À son aimable nièce a défendu ma vue, Et veut d'un autre Époux la voir demain pourvue.",
+          "Et les hommes seraient, sans cela, trop heureux. \nE RASTE\n Mais de tous mes Fâcheux, le plus fâcheux encoC'est Damis, le tuteur de celle que j'adore;",
+          "DAMIS\n Quoi, celui, dont j'avais résolu le trépas, Est celui, qui pour moi vient d'employer sen bras?",
+          "DAMIS, ERASTE, suites M ORPHISE venant avec un flambeax d'argent à la main.",
+          "DAMIS, L'ÉPINE, ERASTE, LA RIVIERE, et ses Compagnons. \n"
+        ]
+      },
+      "top_5_persons": [
+        "Damis",
+        "ORMIN",
+        "Cerf",
+        "MONTAGNE",
+        "ALCIPPE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Or l'avis dont encor nul ne s'est avisé, Est qu'il faut de la France, et c'est un coup aisé, En fameux ports de me mettre toutes lescôtes.",
+          "J'ai le bien, la naissance, et quelque emploi passible, Et fais figure en France assez considérable: Mais je ne voudrais pas, pour tout ce que je suis."
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Paris",
+        "Ville de Paris",
+        "Luxembourg"
+      ]
+    }
+  }
+}

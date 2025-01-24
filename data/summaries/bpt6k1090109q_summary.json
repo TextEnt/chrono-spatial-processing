@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "author": "Donneau de Vizé, Jean",
+    "title": "La Comète, comédie",
+    "publication_date": "1681",
+    "document_id": "bpt6k1090109q"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Comète",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "J'ai aussi par devers moi une grosse fluxion, et les fluxions de Comète sont bien pires que les autres; mais sans les nuages qui sont survenus, et par qui la Comète nous a été cachée, en eussai-je dû créver, je l'eusse observée jusqu'au bout. MATURIN.",
+          "’Est un bon Impertinent que ce Monsieur Taquinet Se moquer à mon nez de la Comète Les cheveux me dressent à la tête, de tous les blasphêmes qu'il a proférez. \nFLORICE\n Mon Père, faut-il que l'emportement de l'Oncle fasse tort au Neveu?",
+          "Ce pauvre Soleil ainsi encrousé, inhabile à toute chose, serait chassé du touraiton, dont n'occupe le centre, et s'en irait errant de tourbillon en tourbillon, et c'est ce qu'on appelle une Comète LA COMTESSE.",
+          "Y en a-t-il une plus grande que la vôtre, de vous inquêter du genre de la Comète, et de passer par -dessus tous les sujets de frayeur que Monsieur vient de nous marquer?",
+          "Si vous voulez bien que je vous réponde, ne m'avouerez-vous pas qu'il est bien arrivé de grands malheurs sans Comète, ou plutôt qu'ils sont presque tous arrivez sans Comète"
+        ]
+      },
+      "top_5_persons": [
+        "Comète",
+        "Maturin",
+        "Mme",
+        "Française",
+        "M"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Onsieur, on vient de vous apporter des Lettres de Rome L'ASTROLOGUE.",
+          "Qu'est-il donc arrivé de plus terrible à Rome qu'ici?"
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Paris",
+        "Pont-neuf",
+        "Faubourg"
+      ]
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "author": "Montluc, Adrien de",
+    "title": "La comédie de proverbes . Pièce comique. Troisiesme édition",
+    "publication_date": "1654",
+    "document_id": "bpt6k5783946x"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Philippin",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Les fugitifs d' Hommes côté essayant avec beaueveup de peine d'arriver à une métairie que Lidias avait aux champs, et comme ils se trouvèrent dans une campagne voyant que la faim ue leur permettait pas d'aller plus loin, ils se mettent à l'omhre de quelques arbres pour manger de la provision que Philippin avait eu soin d'apperter, bien test après leur repas, la gravde chaleur et lassitude lassitude les inuite à prendre le repos que l'agréable frescheur du lieu où ilt aient leur faisait espérer, et pour cet effetils se et des habite our ce incõmadoient des h. Or penda it leur sommeil, quatte Boèmiens qui étaient poursuivis du preuôt pour quelques larciul qu' HAavient fairs, sert icontrerent auprès d'eux et leur jouèrent un tour de leur métie c̃un de st sarerples disimont.",
+          "Aga était t'aime mieux que le cœur de mon ventre, tu es un bon garçon, tu as la jambe jusque au talon, et le bras jusques au coude, tu es de bonne amitié tu as le visage song. \nAlaigre\n Tu sais bien qu'autre chience hargneux a toujours les oreilles déchirées. \nFlorinde\n Ccela cit civange que ces gagnomont ty isiours quelque maille à départir, Philippin prends garde qu'Alaigre ne t'étrille, car il en mangerait deux comme toi. \nLidias\n S'il y avait songé il ne mangerait jamais pain. \n",
+          "Ce vous veux aussi conter la rencontre de certaine musique qui vous sera rire à gorge déployée, en trons donc ie nous prie. \nAlaigre\n Philippin un mot, voici des écogriffesqui ne nous apporterons rien, ne laissez pas traîner un chîton qui nous appartienne, sls ont la mine de le serrer et regardons plutôt à leurs mains qu'à leur pieds. \nPhilippin\n Aussi ferai-je car quand ils ne seraient pas larrous, tu crois qu'ils sont hardis preneurs.",
+          "Florinde, Philippin a gagné mon esprit, car il prend la matière à cœur, et à ãacquitte mieux quide planter déchoux, s'il était apprisil serait vrai, il a pourtant espérance qu'avec du pain et du vin il fera quelque chose ou il ne pourra. \nAlaigre\n Hales genoux gros il profiteta \nPbilipmn\n Vous y êtes laissez -vous y choir, vous avez Arapead vus, Etia ja, muez lane Gcorpe il est homme d'âge:",
+          "Je sais bien que tu es éffamé comme un chasseur qui n'a rien pris, mais tandis que Philippin étendra nos bribes sur l'herbe, dismoi un pusitu as vu ce mégeur dépétits enfants. \nAlaigre\n Si ici l'ai, vu, vraiment je vous en réponds et si j'ai eu belle escapée, car j'ai pensé être gratté depuis le misère jusques a vitulos."
+        ]
+      },
+      "top_5_persons": [
+        "Philippin",
+        "Alison",
+        "Fierabras",
+        "BERTRAND",
+        "Thesaurus"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "À Vx volleurs, aux volleurs, on enlève la fille du Docteur comme vntresor, ils ne sais si elle se moque ou si c'est tout de bon mais elle crie comme un aveugle qui a perdu son bâton, hélas mon voisin, plus l'on va en avant et pis c'est, il y a d'aussi méchants gens dans ce monde qu'en lieu ou on puisse aller, ô A iij \nBertrand\n Et eux fins les gros butors, il y fait chaut, ils sont armés comme des lacemarts et monDui ponmie onlle scurgo, in vas meuax faire comme on fair à Paris, laisser pleuvoir le n'ai garde de m'y aller faire frotter. csubuidi.",
+          ", Nous nous débattons de la chapé à l'Euesque, ils ont sait déjà hau le corps jaquette de gris,ils vont du pled comme des chats maigres, et comme s'ils avaient le feu au eul, à la presse jeuvont les fous, ils de putain qui ira. \nBertnend\n I est vrai qu'il va mieux être jeux qu'er mauvaise cônpagnie, pour trop gratrer il en cuit aux onrles qui garde sa semme et sa maison à assez d'assaires, mais cependanr on s'ostrangle, il est tard lacquer, retirons nous tretous ensemble chacunchez soi, bon y, bon soir ç'est pour deuxsois l'oncrio demain des cotrets à Paris Tbeseurus."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Alaigne",
+        "Chapon",
+        "Floriade",
+        "pays-bas"
+      ]
+    }
+  }
+}

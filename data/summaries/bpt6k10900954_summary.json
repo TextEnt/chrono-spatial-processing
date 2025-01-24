@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Lambert",
+    "title": "Les Sœurs jalouses, ou l'Escharpe et le Brasselet, comédie",
+    "publication_date": "1661",
+    "document_id": "bpt6k10900954"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Henri",
+          "frequency": 15
+        },
+        "related_sentences": [
+          "Vous venez, m'a-t-on dit, de visiter Julie Mais n'avez-vous rien vu passant dans la Prairie Je parle à vous, Camille Enfin ce beau Galant, Qui pour vous en conter fût toujours insolent, Lojet de vonre amoti de cerusde ma haine, Henri, par son retour, renouvelle ma peine, Cet heureux Favori revient briller en Cour.",
+          "Pour Henri, s'il s'obstine à l'aimer de la sorte, Contre lui ma fureur en deviendra plus forte: Plus Il fitimera, plus grands le veux haïr, Et croyez qu'en ceci ie ne puis vous trahir. \nCAMIDEL\n En effet, car pour lui notre amour est extrême. \n",
+          "J'aime Henri, Seigneur l'avoue, et prétends malgré vous Me railler auecjours de votre esprit jaloux. \nLYSIDE\n Vous ferez un beau coup, et j'ose vous promettre, Que si vous le pouvez, toujours veux vous le permettre;",
+          "Henri n'est qu'un perfide, Henri n'estqu'un infâme, Indigne de nos soins, indigne d'être au jour, Il écrivait à Nise une lettre d'amour, Et ainsi n'ai pu souffrir.",
+          "Vous aimez donc Henri vous voulez qu'il espère? \nLYSIDE\n Oui ici l'aime, et n'en fais un secret qu'à mon Père. BCENSEUJJ FABIE, LYSIDE, CAMILLE, NISE."
+        ]
+      },
+      "top_5_persons": [
+        "Henri",
+        "Camille",
+        "Nise",
+        "OCTAVE",
+        "PHILIPPIN"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Florence",
+          "frequency": 15
+        },
+        "related_sentences": [
+          "est-ce du Comte Henri Qui tient rang chez le Duc de pren jer Favori, Et depuis plus d'un an est absent de Florence De notre-même. \nLYSIDE\n N19E. Et vous deux l'aimez sans qu'il y penset our roniçant qu'a Madrid des procès importants, Sans qu'il ait d'autres soins, tufont passer le temps, Et vous n'avez de luiendre lettres, ni nouvelle. \nLYSIDE\n Vous croyez donc aussi que personne l'aime comme elle?",
+          "Mais si le juste sort s'accorde à mes désirs, Il doit porter ailleurs sa flamme et ses soupirs: B ij Un seul point m'embarrasse, il faut qu'en diligence Sans tarder d'un moment ie parte pour Florence, Le Duc m'en sollicite, et j'en ai l'ordre exprès;",
+          "Mais j'ai peine à juger d'où vient cette nouvelle Qui vous fait soupçonner qu'Alphonse est infidèles Il est par vos bienfaits entièrement soumis, Et ainsi sais qu'à Florence il a des ennemis, et ples de voitre Astteise ont dessein de notre nuire.",
+          "HENRY\n Je ne la connais point, est-elle de Florence \nOCTAVE\n De Pise, et depuis peu nous avons sa présence, Le logis de Fabie est le lieu bienheureux Où ie quelquefois cet objet de mes vœux;",
+          "Au milieu du chemin Alphonse le ramène, Et ce jeune Seigneur lui sauve ainsi la peine D'aller jusqu'à Florence, et d'y faire séjour, Puis qu'il prévient le Duc, et vie luinée en Cour."
+        ]
+      },
+      "top_5_places": [
+        "Florence",
+        "Prairie",
+        "Paris",
+        "Madrid",
+        "Pise"
+      ]
+    }
+  }
+}

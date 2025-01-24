@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Passerat, François",
+    "title": "Sabinus, tragédie / par Mr Passerat",
+    "publication_date": "1695",
+    "document_id": "bpt6k852851z"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Éponine",
+          "frequency": 10
+        },
+        "related_sentences": [
+          "Cet Époux si chéri, ce Sabinus que j'aime, Pour qui ma vive ardeur va jusques à l'extrême, Qui depuis si longtemps me coûte tant de pleurs, Qui m'a fait jusqu'ici mépriser les graudeurs, Ce Prince qu'on ne peut bannir de ma membire, Qui templit l'Univers du seul bruit de sa gloire, Pour qui j'ai fait cent fois éclater tant d'amour, Ce Héros qu'on croit mort, voit encore le jour. \nPAULINE\n Sabinus est vivant! \nEPONINE\n Oui, Pauline, il respire, Il revient disputer Éponine et l'Empire, Il va bientôt paraître, et dans ces mêmes lieux Reprendre le haut rang qu'ont tenu ses Aïeux.",
+          "et je crois qu'il ne sera pas difficile à ceux qui ont quelque intelligence de l'Antiquité de reconnaître Vespasien, Domitie, Éponine, Sabinus et Mucien On sait l'ascendant que ce dernier avait sur l'esprit de l'Empereur, et comme c'était par ses conseils et par son secours que, d'un état assez vil, Vespasien se voyait at faite de la grandeur, il ne faut pays ctonner s'il recevait avec indulgence les aigres remontrances d'un homme à qui il était redevable de l'Empire.",
+          "Mais de grâce, Madame, apprenez-moi le reste, Et par quelartifice, et quels soins spécieux Vous avez si longtemps ébloui tous les yeux. \nEPONINE\n Malgré les vains efforts d'une valeur parfaite Notre armée aguerrie ayant été défaite, Sabinus sans apui, sans espoir de secours, Ne songea plus d'abord qu'à terminer ses jours, Et sensible au malheur de sa chère Patrie Voulut la satisfaire aux dépens de sa vie.",
+          "Mais moins pour vous servir que pour me satisfaire Pour éteindre ses feux je suis prête à tout faire, Le laus tougdemander de nouvenesemrcer, Je vais, pour vous punir, suivre vos volontés. \nEPONINE\n Quel que soit l'intérêt qui vous pousse, Madame, A rompre les projets dont s'alarme mon âme, Brisez ce joug fatal dont on veut m'accablet, Et détournez l'hymen qui me force à trembler.",
+          "Le Séuat, il est vrai, de ma fureur complice, A semblé par sa voix couvrir mon injustice, Mais ce fatal amour dont je brule aujourd'hui, Pour perdre Sabinus a fait autant que lui, C'est l'amour, qui croyant me livrer Eponine D'un Prince malheureux avauce la ruine, Et qui s'est prévalu de cette occasion Pour le sacrifier à mon ambitior."
+        ]
+      },
+      "top_5_persons": [
+        "Éponine",
+        "Sabinus",
+        "Mucien",
+        "Sabinus",
+        "Vespasien"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 10
+        },
+        "related_sentences": [
+          "vous, qui commandez sur la Terre et sur l'Onde, Rome, qu'on voit encor la Maîtresse du Monde, Dont le soperbe aspect étoune les regards ReReconnaissez en moi le vrai sang des Césars De Jule mon Ayeul je dois suivre les traces, Et venger, si je puis, nos comunes disgrâces: Un Tyran odieux vous accable de fers, Son avide fureur fait gémir l'Univers, Il m'arracha le Sceptre, il atqua ma vie, Qu'il croit que dès longtemps la flamme m'a ravie, Et le Ciel aujourd'hui me ramène en ces lieux Pour punir le cruel, ou mourir à ses yeux.",
+          "Romains, de Jule en moi reconnaissez l'image, Ses ennemis secrets, par un assassinat, L'immoletent, jadis, au milieu du Sénat, Et luion aujauld nur le tans déce grand Homme Prêt à souriller les mains du fier Tyran de Rome Triste conformité que le Ciel en courroux Fait dans nos derniers jours éclater entre nous.",
+          "MARCELLUS\n Oui, Seigneur, j'y consens, mais avant d'entreprendre Puisque bientôt ici Sabinus doit se rendre, Allons le recevoir, amenons-le sans bruit, Et dès que le Soleil aura chassé la nuit En perdant le Jyran pour lervir ce grand fiomme Des maux qu'elle a soufferts ou irons ver Rome ACIE",
+          "-tôt que dans Rome ou le verra paraître Le peuple en le voyant l'acceptera pour Maître, Et lassé des excès d'un avare Empereur Nous le verrons bientôt s'armer en sa faveur.",
+          "Enfinje vins à Rome où bientôt nos amis Pour des infortunés se croyant tout permis, Prétendent, dans l'ardeur qui pour nous les inspire, Chasser Vespasien et nous rendre l'Empire."
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Gaule",
+        "Barbarie",
+        "France",
+        "Palestine"
+      ]
+    }
+  }
+}

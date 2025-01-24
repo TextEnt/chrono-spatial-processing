@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Le malade imaginaire, comedie meslée de musique, de chansons, & de dances. Par Mr. de Moliere",
+    "publication_date": "1683",
+    "document_id": "bpt6k8534188"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ARGAN",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Qu'il possède en un degré louable la vertu prolisique, et qu'il est du tempérament qu'il faut pour engendrer et plocseer des Enfants bien conditionnez. \nARGAN\n Reit-ce pas votre intention, Monsieur, de le pousser à la Cour, et d'y ménager pour venir une Charge de Médecin. \nM\n \nDYAFOIRUS\n Avous en parler franchement, notre métier auprès des Grands ne m'a jamais paru agréable, et j'ai toujours trouve qu'il valait mieux pour nous autres, demeurer au public.",
+          "et si je ne saurais que ma Mère était honnête Femme, je croirais que ce serait quelque petit Frère qu'elle m'aurait donné depuis le trépas de mon Père. \nARGAN\n Dis-lui qu'il prenne la peine d'entrer, c'est sans doute un Médecin qui vient de la part de Monsieur Purgon, pour nous bien remettre ensemble, il faut voir ce que c'est, et ne pas laisser échapper une si belle occasion de me raccommoder avec lui.",
+          "Là, parlons de sang noidt quelle est votre raison, s' il vous plaît, pour un tel Mariage?  \nARGAN\n Ma raison est, que me voyant infirme, et malade comme je suis, je veux me faire un Gendre, et des Alliés Médecins, afin de m'appuyer de bons secours contre ma Maladie, d'avoir dans ma famille les sources des Rèmèdes, qui me sont nécessaires, et d'être à même des Consultations et des Ordonnances.",
+          "je le ferai. \nBÉRALDE\n Et de me répondre sans chaleur précisément sur chaque cheie. \nARGAN\n Hé bien oui: voici bien du préambule. \nBÉRALDE\n Ainsi, mon Frère, par quelle raison, dites -moi, voulez-vous marier votre Fille à un Médecin? \nARGAN\n Par la raison, mon Frère, que je suis le Maître chez moi, et que je puis disposer à ma volonté de tour ce qur eit en mna puinanlce.",
+          "pourquoi, mon Frère, ne voulez-vous pas qu'un homme en puisse guérir un autre? \nBÉRALDE\n Parce que les ressors de notre machine sont mysières jusques ici inconnus, ou les hommes ne soient goute, de dont l'Auteurde toutes enoses s'est réservé la connaissance. \nARGAN\n Que faut-il donc faire lors que l'on est malade? \nBÉRALDE\n Rien que se tenir de repos, et laisser faire la nattuie;"
+        ]
+      },
+      "top_5_persons": [
+        "ARGAN",
+        "TOINETTE",
+        "M",
+        "POLICHINELLE",
+        "Cléante"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Bergères",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "TROUPEdeBERGÈRS, et de BERGERES \nFLORE\n OUittez, quittez vos Troupeaux, Venez Bergers, venez Bergères, Accourez, accourez sous ces tendres Ormeaux;",
+          "Les Bergères, de son côté font encore de même, après quoi les deux partis se métent.",
+          "nome tatronpe des beigers et Bergères, va se placer on cadence autour de Flore CLIMENE."
+        ]
+      },
+      "top_5_places": [
+        "Bergères",
+        "ARGAN",
+        "Bergère",
+        "Rome",
+        "France"
+      ]
+    }
+  }
+}

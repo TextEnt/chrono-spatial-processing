@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "author": "Boisrobert, François de",
+    "title": "Les coups d'amour et de fortune ou L'heureux infortuné : tragi-comédie",
+    "publication_date": "1656",
+    "document_id": "bpt6k858706"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "AURORE",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Vous n'y devez rien craindre en toute exttemité Madame, et si le Comre ose rien entreprendre, Nous Saurons tous mourir ici pour vous défendre. \nAURORE\n Brave Comte d'Urgel, puisque vous m'assurez, Je me ris des complors de tous nos conjurés, Et ce service un jour, quand j'aurai la puissance Ne s'échappera pas à ma reconnaissance, Mais d'où vient que ma sœur parmi les Catalans, Sans mérite et sans droit troune des Partisans, Sait-on dans quelle audace elle s'est emportée, Avec combien d'orgueil elle m'a rejettée, Quand tantôt sans la craindre, et sans lui rien devoir J'ai voulu dans ses mains partager mon pouvoir!",
+          "J'ai sur de tess mesprls aigtoment réparti, Enfin j'ai soutenu qu'il en avait menti, Et c'est pour ce luie que nédus titions l'épée. \nROGER\n Vous ne pouvez, Madame, votre préoccupée, Non vous êtes trop juste, et le cœur de Roger Qui vous est bien connu, vous en fait mieux juger, Hors dis nous vertons ca montrs ce préfane. \nAURORE\n Bien Roger, c'est assez retirons nous, Diane Madame, ROGER \nAURORE\n J'en sais trep.",
+          "Qui vive Amour ou Mars puis je enfin le Savoir? \nAURORE\n Jusqu'ici Mars tout seul exerce son pouvoir, Parmi la jalousie et l'ennui que me donne Celui qui, e'il m'aimait, mérite ma couronne, Ç y Si ainsi n'en veux pourreant consulter que mes yeux, Peu s'en faut que l'Amoun ne soit victorieux, Je souhaite Diane et cela peut bien être, Que Mars enfin succombe et qu'Amour soit le Maître: Mais que me veut Lothanlée .",
+          "me perlurt ja curionté, si vous voulez parler, vous serez écouté, Vous êtes fort sincère, et sais qu'on vous doit étoire. \nROGER\n Dispensez-en Madame, un Soldar sans mémoira, J'ai crainte d'oublier de petits incidents, Qui se sont échappez par l'injure du temps, \nAURORE\n J'ai su que dans Madrid vous aimiez une Dame Qui ne reconnut pas cette obligeante flamme, Et ie veux tout savoir parlez donc librement. \nROGER\n ",
+          "Jugez si ce graud cœur d'un mensonge est capable, Si comme il fut toujours sincère et véritable, Il voudrait commencer à faire ici le vain D'un exploit valeureux parti d'une autre main, 22 Madame au nom des Dieux souffrez qu'il se présente \nAURORE\n Diane, à vos désirs le suis trop complalsante et4 Les Coups d'Amour et de Fortune, Oui, qu'il vienne;"
+        ]
+      },
+      "top_5_persons": [
+        "AURORE",
+        "ROGER",
+        "LOTHAIRE",
+        "AURORE",
+        "Lothaire"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Barcelonne",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "J'aspire pleur *vous quà votre diadefâme Madame, et si les Dieux ne savorisent pas Pour donner ici Maîtresse et vos vœux et nos bras, Si le sort ennemi vous ôte Barcelonne, Vous regnérez chez moi vous aurez ma couronne, Mais le me promers plus de la saveur du sort, Vous régnerez chez vous, ou vous verrez ma mort.",
+          "Par notre grande forcerais mille obstacles divers, Et j'en aurais assez pour vaincre l'Univers, Si par le même droit que j'ai sur Barcelonne, J'ofois du monde entier espérer la Coutonne \nAURORE\n ",
+          "Il est dans Barcelonne où son sort est borné.",
+          "Roger dans Barcelonne GONSALE."
+        ]
+      },
+      "top_5_places": [
+        "Barcelonne",
+        "Madrid",
+        "Barcelone",
+        "France",
+        "Paris"
+      ]
+    }
+  }
+}

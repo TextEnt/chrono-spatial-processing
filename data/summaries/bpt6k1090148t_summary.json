@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Scudéry, Georges de",
+    "title": "Orante, tragi-comédie",
+    "publication_date": "1659",
+    "document_id": "bpt6k1090148t"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "FLORANGE",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "La foi de mon mari vous assure la sitnne. \nLUCINDE\n Puis que ie l'ai promis il faut que ainsi le tienne, On ne peut vous l'ôter, Orante est quelque bien, Espérez tout Florange, et ne craignez plus rion, Condamnez désormais cette plainte au silence, Aussi-tôt que son mil perdra sa violence, Guérissant la douleur par qui vous soupinta, 2e Jpauraj in ta me vous ta desitiz. \nFLORANGE\n Ce discours me ravit n'en parlons plus, Madame, L'excè s ce plaisir me deiobυνont l'âme.",
+          "J'aspirait après un bien qui n'a point d'apparince, C'est me nourrir de vent que vivre d'espérance, Orante infortunée, et bien ne vivons plus, Bornons ainsi nos jours cis regrets saperflus, Innecent criminel, vieil importun Florange, Par mon triste dessein, voulez où le tien me range, Ifimandre fidèle, apprends que ie le suis, Sans paitager ma mort, partage mes ennu, Et juge par le sang que promen vais répandre, Qu'Orante n'atma rien que le seul simandre, Vivant en ton penser;",
+          "Et que ses volontés règnent sur mes pensées, Que Florange n'ait plu ses flammes insensées, Puis qu'il déplaît à l'œil que tu veux adorer Le respect qu'il me doit ainsi défond d'espérer, Et mes commandements l'obligent à se taire, Ô toi de mes pensers, fidèle Secrétaire, Amour, qui les fau naître et seul les vois au cœur, Viens rendre une visite au bil œil mon vainqueur.",
+          "Tienne, Seigneur meurs mon Isimandre, Attends, Orante, attends mon âme qui te suit, Ne t'en va point sans elle en l'éternelle nuit, Remarque l'un et l'autre en mon obissance, Mais souffre que Un pousse en un même in, Et le traisire Florange, et le cruel Ormin, Permets que nous goûtions cette douce allégeance.",
+          "Florange la recherche, et sa mert y cousent, Juge par là des maux que son esprit ressint: nanu que fait (pmnanant en teitt songue absencs, \nCLINDOR\n Il désire la mort, il maudit sa naissance, Il accuse le sort, il attaque les Cieux Et croit que pour pleurer Nature fit lis yeux."
+        ]
+      },
+      "top_5_persons": [
+        "FLORANGE",
+        "Ormin",
+        "NERINE",
+        "ROSIMOND",
+        "Venus"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Naples",
+          "frequency": 6
+        },
+        "related_sentences": [
+          ", Dis-lui qu'ayant quitté le logis paternel, Je me suis repentr de me voir criminel, Et que par mes douleurs jugeant de sa souffrance, J'ai rompu le dessein d'un voyage de France Dis-lui que deux Guerriers m'ont tiré da danger, Où mettent les volleurs l'un et l'autre étranger, Du-lui quegie les mène, et qu'il fasse connaître, En les bien recevant, la grandeur de mon soins, La blessure que j'ai prouvera ton discours, Mais les meilleurs conseils sont ici les plus courts, Donne vite un cheval, que j'enlève ma proie, Elle vaut mieux qu'Helene et Naples mods que Tro Et premier que ie rende pr bien que j'ai vollé, Brusle comme mon cœur mon païs desolé .",
+          "On triomphe en la paix et nous sommes en guerre, On me veut enlever quil remède avons-nous? \nISIMANDRE\n On vous veut enlever! y consentirez -vous; \nORANTE\n Cherchez notre secours dedans votre industrie. \nISIMANDRE\n Sur les ails d'amour vollons en ma patris: Que Naples vous revoie en jeune Cavalier, Ce remède est fâcheux, mais il est singulier, L'amour s'est toujours pleu dans les métamorphoses, Le temps en s'enfuyant âme toutes choses;",
+          "Il n'est que trop certain qu'Orante aime Isimandre, Hais puis qu'elle est à moi, té sçauray la ffendre, Naples n'est pas si loin ici son bonheur si prée, Tel cherche du laurie?",
+          "N'en doutez nullemeur Mais Naples n'en a point, seion monty alqienc, Et si vous le savez, mon âme est iguorante. \nORANTE\n ",
+          "Mais quand Naples serait en ces plages désertes, Qui par les Matelots ne sont pas découvertes:"
+        ]
+      },
+      "top_5_places": [
+        "Naples",
+        "Pise",
+        "autun",
+        "Gange",
+        "Ami"
+      ]
+    }
+  }
+}

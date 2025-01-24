@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "author": "Benserade, Isaac de",
+    "title": "Ballet des Muses . Dansé par Sa Majesté à son chasteau de S. Germain en Laye, le 2. décembre 1666",
+    "publication_date": "1666",
+    "document_id": "bpt6k15262311"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Lycas",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "LENE\n Puis qu'autre même malheur aujourd'hui nous Allons partons ensemble Cassemble, À quatorzième Scène est d'un jeune Berger enjoüé, qui venant consoler Filène, et Lycas, chante.",
+          "Lycas voulant faire des Vers nomme le nom d'iris la Maîtresse en présence de Filène son Rival, dont Filène en colère chante. \nILENE\n Est",
+          "Les Sieurs Chicaneau, Bonard, Noblet le cadet, Arnald, Majeu, et Foignard À troisième Scène est entre Lycas et FiÉlène, riches Pasteurs.",
+          "La cinquième Scène est entre Lycas et un Pastre, qui aporte un cartel à Lycas de la part de Filène son rival.",
+          "La sixième Scène est entre Lycas et Coridon La septième Scène est entre Lycas et Filène Filène venant pour se battre chante."
+        ]
+      },
+      "top_5_persons": [
+        "Lycas",
+        "M",
+        "Coridon",
+        "Molière",
+        "LENE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Brie",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "de Brie \nMolière\n Destiual. \nBlondel\n \nChâteau-neuf\n ",
+          "de Brie \nZaide Esclave\n Madlle. \n"
+        ]
+      },
+      "top_5_places": [
+        "Brie",
+        "Parnasse",
+        "Paris",
+        "Bergère",
+        "France"
+      ]
+    }
+  }
+}

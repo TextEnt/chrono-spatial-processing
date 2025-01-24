@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "author": "Perrin, Pierre",
+    "title": "Première comédie française en musique, représentée en France . Pastorale mise en musique par M. Camber...",
+    "publication_date": "1659",
+    "document_id": "bpt6k57346959"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "SYLVIE",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "DIANE, PHILIS, SYLVIE DIANE, PHILIS, à Silvie E quoi, Silvie, Toute sa vie En amour changera? \nILVIE\n J'aimerai constamment quand Diane aimerane.",
+          "SYLVIE, ALCIDOR LE SATYRE survient qui se cache dans le bocage, à main droite.",
+          "DIANE, SYLVIE, ALCIDOR Rendez, le siècle d'or à ces belles çampagnes:",
+          "PHILANDRE\n \nÀLCIDOR\n \nSYLVIE\n SYLVIE, Sans apercevoir les Bergers.",
+          "VATRIESME. \nPHILANDRE\n ÀLCIDOR, SYLVIE DIANE."
+        ]
+      },
+      "top_5_persons": [
+        "SYLVIE",
+        "Bergères",
+        "Diane",
+        "CIS",
+        "Ari"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Et l'on verra sans doute avec étonnement et plaisir une chose du tout singulière et glorieuse à la Nation, que quelques particuliers parmi lesquels se trouvent assurément les plus belles voix du Royaume, et qui chantent le mieux, bien que ce ne soit pas leur profession, par un pur esprit de divertissement et de galanterie, aient donné à la France la première Comédie Française en Musique, et fait à leurs dépends ce qu'ailleurs les Souverains de l'Europe ont peine à faire auec des soins et des frais infinis.",
+          "Bibliothieque nat nale de France 3897 A piecu PREMIÈRE OMEDIE FRANOISE EN MUSIQ VE, Représentée en France PASTORALE."
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Paris",
+        "Bergères",
+        "Lys"
+      ]
+    }
+  }
+}

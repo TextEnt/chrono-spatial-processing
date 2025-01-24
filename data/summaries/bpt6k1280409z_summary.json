@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "La Comtesse d'Escarbagnas, comédie...",
+    "publication_date": "1689",
+    "document_id": "bpt6k1280409z"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Andrée",
+          "frequency": 7
+        },
+        "related_sentences": [
+          "Andrée, ayez soin tantôt de zaïre donner le fouet à ce petit fripon là, par mon Escuyer;",
+          "LE COMTE, JULIE, Mr. TIBAUDIER, MONSIEUR BOBINET, ANDRÉE, JEANNOT, CRIQUEIS \nJEANROY\n  ",
+          "MONSIEUR BOBINET, Mr. TIBAUDIER, hindomenou, un vadomes OLIE, ANDRÉE, CRIQUET.",
+          "Andrée faites porter cela à l'office, Tien mon enfant voilà pour boire.",
+          "LE VICOMTE, LA COMTESSE, JULIE, CRIQUET, ANDRÉE  NE VTCOMTE."
+        ]
+      },
+      "top_5_persons": [
+        "Andrée",
+        "Julie",
+        "JEANNOT",
+        "Cléante",
+        "ILIE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 7
+        },
+        "related_sentences": [
+          "et je viens de faire deux ou trois visites, où ils ont pensé me désespérer, par le peu de respect qu'ils rendent à ma qualité. \nILIE\n Où auraient ils appris à vivre, ils n'ont point fait de voyage à Paris",
+          "mais le mal que j'y trouve, c'est qu'ils veufent en igavon autant que moi, moi, qui ai été deux mois à Paris, et vu toute la cour.",
+          "Car pour Monsieur votre Vicomte, quoi que Vicomte de Province, c'est toujours un Vicomte, et il peut faire un voyage à Paris, s'il n'en a point fait;",
+          "Le petit voyage qu'elle a fait à Paris, l'a ramenée dans Angoulême, plus achevée qu'elle n'était.",
+          "Je pense, Madame, que durant votre siéjour à Paris, vous avez fait bien des conquêtes de qualité."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "France",
+        "Afrique",
+        "Asie",
+        "Angoulême"
+      ]
+    }
+  }
+}
