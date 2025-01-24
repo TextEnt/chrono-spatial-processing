@@ -1,3 +1,4 @@
+import dataclasses
 import spacy
 import random
 import operator
@@ -234,9 +235,26 @@ class Entity:
     mention_frequency: int # document-level mention frequency
     unique_surface_forms: List[str]
     short_desc: str
+    
+    def to_json(self, include_null=False) -> dict:
+        """Converts this to json. Assumes variables are snake cased, converts to camel case.
+
+        Args:
+            include_null (bool, optional): Whether null values are included. Defaults to False.
+
+        Returns:
+            dict: Json dictionary
+        """
+        return dataclasses.asdict(
+            self,
+            dict_factory=lambda fields: {
+                key: value
+                for (key, value) in fields
+                if value is not None or include_null
+            },
+        )
 
 class SalientSentenceSelector(object):
-    
     def __init__(self, spacy_doc: Doc):
         self.doc = spacy_doc
         self.person_entities = self._mentions2entities(ner_label='PER')
