@@ -3,7 +3,7 @@ spacy
 pandas
 tqdm
 spacyfishing
-dask[distributed]
 standoffconverter
 bokeh
 click
+aisuite[all]
