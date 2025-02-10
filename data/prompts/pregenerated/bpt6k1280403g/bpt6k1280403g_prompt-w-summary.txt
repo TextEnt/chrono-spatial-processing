@@ -1,0 +1,77 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Dépit amoureux. Comedie, representée sur le Theatre du Palais Royal. De I. B. P. Moliere",
+    "publication_date": "1663",
+    "document_id": "bpt6k1280403g"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Lucile",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Et, dans cette aventure où chacun m'intéresse, Vous allez voir plutôt éclater ma faiblesse, Connaître que le Ciel qui dispose de nous Ne me fit pas un cœur pour tenir contre vous, Et qu'il vous réservait pour victoire facile, De finir le destin du frère de Lucile Ou, Oui, bien loin de vanter le pouvoir de mon bras, Ascagne va par vous recevoir le trépas: Mais il veut bien mourir, si sa mort nécessaire Peut avoir maintenant dequoy vous satisfaire, En vous donnant pour femme en présence de tous Celle qui justement ne peut être qu'à vous. \n",
+          "Pourvu que bannissant toutes craintes frivoles, Deux mots de votre avett ceirnient nos paroles. \nLUCILE\n Que me vient donc conter ce coquin assuré? \nMASCARILLE\n Bon, me voilà déjà d'un beau titre honoré. \nLUCILE\n Sachons un peu, Monsieur, quelle belle saillie Fait ce conte galant qu'aujourd 'on publie. \n",
+          "Lucile, à mon avis, vous montre assez d'amour, Elle vous voit, vous parle, à toute heure du jour, Et Valère après-tout qui cause votre crainte, Semble n'être à présent souffert que par contrainte. \nERASTE\n Souvent d'un faux espoir un amant est nourri;",
+          "Si quelque intention le pressait pour Lucile, La recherche en pouvait être honnête et civile, Il fallait l'attaquer du côté du devoir, Il fallait de son père implorer le pouvoir, Et non pas recourir à cette lâche feinte, Qui porte à la pudeur une sensible atteinte.",
+          "Je ne sais, pour causer de si grands changements, Ce qui s'est pu passer entre ces courts momens. \nLUCILE\n Rien ne s'est pu passer dont il faille être en peine, Puisque rien ne le doit défendre de ma haine."
+        ]
+      },
+      "top_5_persons": [
+        "Lucile",
+        "Lucile",
+        "Valère",
+        "Marinette",
+        "Ascagne"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Si cette Pièce n'avait reçu les applaudissements de toute la France, si elle n'avait été le charme de Paris, et si elle n'avait été le divertissement du plus grand Monarque de la Terre, je ne prendrais pas la liberté de vous l'offrir.",
+          "Il n'aura plus l'honneur d'être sur mon oreille. \nMARINETTTE\n Et toi, pour te montrer que tu m'es à mépris, Voilà ton demi-cent d'épingles de Paris, Que tu me donnas hier avec tant de fanfarre.",
+          "Écuyer Sieur de Mericourt, Conseiller du Roi, Lieutenant Général Civil et Criminel au Baillage du Palais à Paris"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "France",
+        "ASCAGNE"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact dateof the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid ISO date in the form YYYY-MM-DD
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start":"The ISO-formatted start value of the historical period",
+    "timeframe_end": "The ISO-formatted start value of the historical period",
+    "location":"The geographic location where the action of the play takes place",
+    "location_reasoning":"The reasoning the model used to identify the geographic location",
+    "location_qid":"The Wikidata QID of the identified location"
+}
+```

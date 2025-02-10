@@ -1,0 +1,10 @@
+I have a play with the id {ID} happening in these places: {PLACES}, and with these characters: {PLACES}. Given this information, suggest me what could be the timeframe where the play takes place. I do not need the precise and exact date, but the timespan, formatted in ISO, of the period where the play could have taken place. If the information provided are not enough to determine a timeframe, give me your best guess. Respond only with valid JSON. Do not write an introduction or summary. For the JSON use the form:
+
+{
+    "reason": "why has been chosen",
+    "period": "period_identified",
+    "timeframe_start": "ISO value of the start",
+    "timeframe_end": "ISO value of the end"
+}
+
+The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid ISO date in the form YYYY-MM-DD

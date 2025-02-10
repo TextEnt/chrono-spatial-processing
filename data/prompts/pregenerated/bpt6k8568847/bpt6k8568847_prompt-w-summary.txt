@@ -1,0 +1,68 @@
+Look at the following JSON object describing a literary text in French (XVII century). It contains basic metadata about the text (author, title, publication date).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": null,
+    "title": "Les trophees de la fidélité, trage-comedie pastorale . Aux bons esprits",
+    "publication_date": "1632",
+    "document_id": "bpt6k8568847"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Timandre",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "L'espérance me faut, si tu n'as résolu D'éviter les effets d'un pouvoir absolu: Par cet expédiant qui s'offre à ma pensée, Si du même Démon notre âme est oppresse, In juiurãs mon conféit. \nSILAIRE\n Propose seulemant, Tu dois être certain de mon consentemant: Pour tirer mon esprit de ce fâcheux martyre, Que ie souffre entendant ce Prince qui soupire, Pour m'affranchir des lois de mes rudes parants, Pour faire que nos sorts ne soient point différants, Pour passer avec toi dans un séjour tranquille, Quelque faible que soit la raison d'une fille, En un si beau sujet, crois que ma passion Suivra facilement ta résolution. \nTIMANDRE\n L'éloignemant ici me semble nécessaire, [traire Il faut mettre à couvert sous un ciel moins conLes feux de nos amours;",
+          "TIMANDRE, J'ai de l'aversion pour ce qui n'est pas toi, Après que ici t'ai vu toute chose m'offense, Les pius rures ovjeis, que loin de ta presance Le sort ôfre à mes yeux les font siller d'horreur. \nSILAIRE\n Élise ne t'est pas un objet de terreur. \nTIMANDRE\n Bien qu'aux yeux du vulgaire elle paraisse belle, Parce que son amour me veut rendre infidèle, Elle semble à mes yeux plus laide qu'un Lutin, Quelque necessité qu'apporte le destin, S'il voulait avoir elle attacher mes années, Ma haine forcerait l'arrêt des destinées, J'abregerois mes jours, afin qu'en ce faisant J'arrachasse à mes yeux cet objet déplaisant.",
+          "Accorde à mon amour pour le moins cette grâce, Si trop rude Berger pour creuser mon tombeau, Tu n'avez aussi cruel comme tu parais beau, Si tu ne veux qu'ici devant tes yeux ainsi meure, Viens moi accompagner jusques à ma demeure, Puis que j'ai pris le soin de te venir chercher, Je crois que ta rigueur ne te peut empêcher D'octroyer à mon cœur cette faveur dernière. \nTIMANDRE\n Madame, que le jour refuse sa lumière Ymand À mes yeux criminels, si toujours choque jamais con- Ç'honneur que je vous dois, si mon cœur désormaû (Pourueu que mon amour soit des-intéressée) Ne suit les mouvements qu'aura votre pensée.",
+          "Oui, Seigneur te le dirai, mais c'est sous cette close, Que contre mon amour tu n'allégueras chose Qui l'irrite, ou du moins qui puisse m'affliger, Que tous tes sentiments tendront à m'obliger: Ou bien si tu ne peux divertir ta pensée, Tu ne blâmeras point le trait qui m'a blessée, Et si tu as dessein de plaire à ma fureur, Tu loueras ainsi ma flamme et mon erreur, Tu diras que Timandre est un objet capable D'émouvoir des rochers: qu'il est bien raisonnable Que pour lui mon amour surpasse le commun, Ton langage autrement me serait importun;",
+          "pour décevoir l'esprit de Timandre, et jeter les premières semances d'affection insensiblement dans son cœur, elle feignait que son amour s'était change en une amitié égale pour tous deux, dont elle leur demandait le reciproque: mais voyant un contraire succès à ses intentions, agitée des remors de sa mauvaise conscience, elle découvrit sa méchanceté, et la crainte du supplice se joignant à cette synderese, par une punition exemplaire de la main de Dieu, elle devint frénétique, et mourut dans des illusions étranges, s'imaginant d'avoir recev un coup de masse, de l'ombre du défunt."
+        ]
+      },
+      "top_5_persons": [
+        "Timandre",
+        "Élise",
+        "Cleogene",
+        "Seigneur",
+        "Damon"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Bergère",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Il emporte avec soi par mégarde cette pomme fatale, qui joue si bien son jeu, que Cleogene tombe malade, et persuadé aux derniers abois par son amour, que son corps avait succombé sous l'agitation de son esprit, et que la violance de sa passion causait sa mort: idolâtre de la cause, il en bénit l'effet, et dans ses derniers soupirs, pour témoignage de sa persévérance, il commanda à Philandre d'aller porter son sceptre, et sa couronne aux pieds de sa Bergère, et lui rendre cette pomme, dont il ignorait la vertu, que l'air avait rendue incapable de nuire d'avantage, Cleogene en ayant bu tout le venin, comme extrêmement subtil et délicat.",
+          "après avoir adoré la justice des Dieux, et connu par le récit de cette histoire tragique, que le Berger et la Bergère étaient sous leur protection, pliant leurs sens sous les volontés divines, accordèrent leur consentemant au mariage de Timandre et de Silaire, à qui ils firent donner les paroles reciproques en leur présence.",
+          "que les Dieux Puniront vos dédains qui leur sont odieux. \nTIMANDRE\n Où fuis-tu ma Bergère \nSILAIRE\n Une troupe inhumaine hananuu quepinbes omtnungenur ta plaine"
+        ]
+      },
+      "top_5_places": [
+        "Bergère",
+        "Sicile",
+        "Grèce",
+        "Nil"
+      ]
+    }
+  }
+}
+```
+
+Your role is...
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "reason": "why has been chosen",
+    "period": "period_identified",
+    "timeframe_start": "ISO value of the start",
+    "timeframe_end": "ISO value of the end"
+}
+```

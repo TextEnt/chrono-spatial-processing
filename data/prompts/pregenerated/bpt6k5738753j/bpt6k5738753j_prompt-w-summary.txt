@@ -1,0 +1,71 @@
+Look at the following JSON object describing a literary text in French (XVII century). It contains basic metadata about the text (author, title, publication date).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Corneille, Pierre",
+    "title": "Le Cid . Tragi-comédie",
+    "publication_date": "1644",
+    "document_id": "bpt6k5738753j"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Rodrigue",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "bnffr ( Bibliothèque Et mon amour flatteur déjà me persuade Queli le vois aussi au trône de Grenade Les Mores sujet, trembler en l'adorant, L'Aragon recevoir ce nouveau conquérant, Le Portugalse rendre, et ses nobles journées Porter de la les mers ses hautes destinées, Au milieu de l'Afrique arborer ses lauriers: Ensen tout pe qu'un au des prus fameux guerriers, Je l'attend de Rodrigue après cette victoire, Et fais de son amour un sujet de ma gloire. \nLEONOR\n Mais, Madame, voyez où vous portez, son bras, En faitte a uncompat qui peut étren'est pas, L'INFANTE Rodrigue est offensé, le Comte a fait l'outrage, Ils font sortis ensemble, en faut-il davantage? \nLEONOR\n Je veux que ce combat demeure pour certain, Votre esprit va-t-il point bien vite pour sa main? \nL'INDANCTE\n Que veux-tu?",
+          "Et toi de mes exploits glorieux instrument, Mais d'un corps tout de glace inutile ornement, Fer, jadis tant à craindre, et qui dans cette offense M'as servi de parade, et nonpas défense, Va, quitte désormais le dernier des humains, Passe pour me venger en de meilleures mains, Si Rodrigue est mon fils, il faut que l'amour cède, Et qu'une ardeur plus haute à ses flammes succède, Mon honneur est lemorte, est le mortel ont Qui tombe sur mon chefreiallit sur son fronte y CEITE A. D. DIGUE, DRODRIGUE L D IÉGYE.",
+          "Ta vie et ton honneur sont de faibles appas, Si jamais avoir t'aimai, cher Rodrigue, en revanche Défends toi maintenant pour m'ôter à Don Sanche, Combats pour m'affranchir d'une condition Qui me livre à l'objet de mon aversion, Te dirai-je encor plus? va, songe à ta défense, Pour forcer mon devoir, pour m'inposer silence, Et si jamais l'amour échauffa tes esprits, Sors vainqueur d'un combat dont Chimène est le prix.",
+          "À deux rivaux pour moi je fais prendre les armes, Le plus heureux succès me coûtera des larmes, Et quoi qu'en ma faveur en ordonne le sort, Mon père est sans venge, ou mon amants est mort, \nÉLVINE\n D'autre et d'autre côté je vous vois soulagée, Ou vous avez Rodrigue, ou vous êtes vengée, Et quoi que le destin puisse ordonner de vous, Il soutient votre gloire, et vous donne un époux.",
+          "* Non, sans vouloir mourir laisse -moi te poursuivre, Et défends ton honneurs tu ne veux plus vivre, I.  D. \nRODRIGUE\n Après la mort du Comte et les Mores défaits, Mon honneur appuyé sur dé grands effets Contre un autre ennemi n'a plus à se défendre: On sais que mon courage ose tout entréprendre, Que ma valeurput tout, et que dessous les Cieux, Quand mon honneur y va, rien ne m'est précieux."
+        ]
+      },
+      "top_5_persons": [
+        "Rodrigue",
+        "Chimène",
+        "ELVIRE",
+        "LEONOR",
+        "ARIAS"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Castille",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Ce qui fut bon alors ne l'est plus aujourd'hui, Rodrigue maintenant est notre Tique appui, L'espérance et l'amour d'un peuple qui l'adore, Le soutien de Castille et la terreur du More, Ses faits nous ont rendu ce qu'ils nous ont ôté, Et ton père en lui même se voit ressuscité, Et si tu veux enfin qu'en deux mots ie l'explique Tu poursuis en sa mort la ruine publique, Quoi?",
+          "Reille à tous moments leurs desseins généreux: C'est l'unique raison qui m'a fait dans Seuille Placer depuis dix ans le trône de Castille, Pour les voir de plus pres, et d'un ordre plus prompt Renverser au uss tost ce qu'ils entreprendront.",
+          "Grenade, et l'Aragon tremblent quand ce ferbrille, Mon nom sert de rempart à toute la Castille Sans moi",
+          "- Et croyant voir en toi l'honneur de la Castille, Mon âme avec plaisir te destinait ma fille.",
+          "que dira la Castille Vous souvenez vous bien de qui vous êtes fille?"
+        ]
+      },
+      "top_5_places": [
+        "Castille",
+        "Grenade",
+        "France",
+        "Rome",
+        "Paris"
+      ]
+    }
+  }
+}
+```
+
+Your role is...
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "reason": "why has been chosen",
+    "period": "period_identified",
+    "timeframe_start": "ISO value of the start",
+    "timeframe_end": "ISO value of the end"
+}
+```

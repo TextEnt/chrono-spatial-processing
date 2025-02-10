@@ -1,0 +1,71 @@
+Look at the following JSON object describing a literary text in French (XVII century). It contains basic metadata about the text (author, title, publication date).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Montfleury",
+    "title": "La Fille capitaine, comédie, par A.-J. Montfleury",
+    "publication_date": "1672",
+    "document_id": "btv1b86221054"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "CATO",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Elle y contriaitra, du moments c'ent ma pensée, \nCATO\n Reposez-vous sur nous du succès de vos feux, Nous allons le berner, en vous servant tous deux: Prenez-vous-en à moi, si vous n'êtes contente.",
+          "Quel Homme est-ce? \nCATO\n Un petit enragé, qui ferraille sans cesse: Jamais Homme ne fut de si méchante humeur, Caril est étourdi, mutin, fier, querelleur, Dlave Came un celai, nlais brutal, et capable.",
+          "Je croyais que tu m'allais apprendre Qu'il l'eût fait enrôler, pour l'envoyer en Flandre \nCATO\n Où voyez-vous qu'un Homme à qui l'on s'est fié, Cherche à tromper les Gens, quand il est marié?",
+          "Va, va, n'ie lucès peut seconder mes vœux, Je vous ferai bientôt mieux dormir toutes deux: Je veux que par mes soins vous soyez soulagées, Et que. \nCATO\n ntous vous feroris, Msoineur, pien obligées.",
+          "Avec un peu de temps, je veux pourvoir à tout: Mais puis qu'à me souffrir Lucinde se résout, Ne la verrai-je pas. \nCATO\n Dans la Chambre prochaine Je crois qu'elle entretient Monsieur le Capitaine."
+        ]
+      },
+      "top_5_persons": [
+        "CATO",
+        "CATO",
+        "Cato",
+        "Damon",
+        "Damon"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "MEt son honneur, je crois, fait bien marché du mien: Monaffront est certain, je sais trop qu'on m'offense, Mais je ne sais comment j'en dois tirer vengeance, Si je fais de l'éclat, tout Paris le saura, Et d'un doigt, pour le moins, chacun me montrera, Si je feins d'ignorer son amour et ma honte, Demain, sur nouveaux frais, j'en aurai pour mon",
+          "Quoi que vous ne lejer que le Inds d'un Banquier, Vous vous faites nommer Monsieur le Chevalier, Et vous êtes de ceux dont la Chevalerie N'eût jamais à Paris d'Ordre que l'Industrie;",
+          "Mon Frère, si le Sort seconde son envie, Doit à sa Garnison laisser sa Compagnie, Et venir à Paris passer le Carna val, Et du moins en ce temps.",
+          "B ij Il arrive à Paris dans peu pour voir sa Sœur:",
+          "LA BRIE, Laquais de Damon La Scène est à Paris"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Flandre",
+        "Luxembourg",
+        "Brie",
+        "Grisons"
+      ]
+    }
+  }
+}
+```
+
+Your role is...
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "reason": "why has been chosen",
+    "period": "period_identified",
+    "timeframe_start": "ISO value of the start",
+    "timeframe_end": "ISO value of the end"
+}
+```
