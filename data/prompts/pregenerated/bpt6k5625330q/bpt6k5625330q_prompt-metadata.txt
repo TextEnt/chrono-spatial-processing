@@ -2,7 +2,14 @@ Look at the following JSON object describing a theatre play in French (XVII cent
 
 INPUT:
 ```json
-{document_metadata}
+{
+  "metadata": {
+    "author": "Campistron, Jean Galbert de",
+    "title": "Acis et Galatée . Pastorale heroïque en musique, representée pour la premiere fois dans le château d'Anet devant Monseigneur le Dauphin. Par l'Academie roiale de musique",
+    "publication_date": "1690",
+    "document_id": "bpt6k5625330q"
+  }
+}
 ```
 
 Your role is to predict the location and historical period in which the action of the play is set. 
@@ -16,7 +23,7 @@ KEY RULES:
 
 Return your response and the underlying reasoning as a JSON object with the following structure:
 ```json
-{{
+{
     "period": "The historical period in which the play could have taken place",
     "period_reasoning": "The reasoning the model used to identify the historical period",
     "timeframe_start": "The ISO-formatted start value of the historical period",
@@ -24,5 +31,5 @@ Return your response and the underlying reasoning as a JSON object with the foll
     "location": "The geographic location where the action of the play takes place",
     "location_reasoning": "The reasoning the model used to identify the geographic location",
     "location_qid": "The Wikidata QID of the identified location"
-}}
+}
 ```

@@ -1,0 +1,78 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Boisrobert, François de",
+    "title": "La folle gageure, ou Les divertissemens de la comtesse de Pembroc / [par Boisrobert]",
+    "publication_date": "1653",
+    "document_id": "bpt6k858690"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "LISE",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Il est vrai qu'il a fait des traits de galant homme, Et qu'il mérite bien qu'on prenne soin de ton. \nPHILIPIN\n Madame, enfin j'ai tout, puisque j'ai votre appui, Et même s'il vous plaît ie posséderai Lise, Diane sait fort bien qu'elle me l'a promise.",
+          "LISE\n Monsieur, vous l'allez voir sans que pas un vous voie, Avam qu'on un foupe; pénuant qu'on sert le fruit, Coulez-vous au jardin, et suivez-moi sans bruit, Je men oui vons montrer du doigt la pallissade D'où vous les verrez, tous, gagnés, cette embuscade.",
+          "Madame, votre nom qui vole jusqu'aux Cieux, M'a fait passer les mers pour venir en ces lieux Ossrir à vos péausés iusrement Camirees, Ce qu'on voit de plus rare aux lointaines contrées. \nLISE\n Et bien, est-ce pas là debuté comme il faut?",
+          "Mais Tomire jamais ne la quitte d'un pas, \nLISE\n Dis par la cheminée, et ne nous raille pas, Outre qu'à double tour cette porte est fermée, Trois gardes sont devant. \nPHILIPIN\n Va, j'entends le grimoire.",
+          "Lise, si tu savais le sujet qui m'y porte, Tu serais la première à bien fermer ta porte, Car ie te crois fidèle, et mon honneur dépend De ceitt taucit gurut, et au fom isu'on en prend."
+        ]
+      },
+      "top_5_persons": [
+        "LISE",
+        "VALÈRE",
+        "Diane",
+        "Seigneur",
+        "M"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Londres",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "J'ai mis la Scène à Londres qui était à Naples, et j'ai cru qu'il serait mieux scéant de gager et de raillerie en liberté devant un Contesse de Pembroc qui entendait raillerie, et qui avait la réputation d'aimer la galanterie et les belles choses, que devant une grande Reine à qui on devait plus de respect, et qui ne devait pas permettre tant de familiarité.",
+          "La Scène est à Londres LA FOLLE"
+        ]
+      },
+      "top_5_places": [
+        "Londres",
+        "Rome",
+        "Seine",
+        "France",
+        "Paris"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid ISO date in the form YYYY-MM-DD
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The ISO-formatted start value of the historical period",
+    "timeframe_end": "The ISO-formatted start value of the historical period",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

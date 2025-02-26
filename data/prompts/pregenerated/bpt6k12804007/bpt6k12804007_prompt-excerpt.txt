@@ -1,8 +1,16 @@
-Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date).
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `excerpt` property contains an excerpt of 400 words sampled from around the middle of the document.
 
 INPUT:
 ```json
-{document_metadata}
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Sganarelle ou le Cocu imaginaire, comédie avec les arguments de chaque scène",
+    "publication_date": "1662",
+    "document_id": "bpt6k12804007"
+  },
+  "excerpt": " mari vous dis-je, et mari très marri, Vous en savez la cause et ie S'en vais lapprẽdre Sur 'heure à ses parents. \nAAMA\n LELIE seul. Élie se plaint dans cette Scène de l'inEfidélité de sa Maîtresse et l'outrage qu'elle avait fait, ne l'abbattant pas moins que les longs travaux de son voyage, le fait tomber en faiblesse. Plusieurs ont assez ridiculement repris cette Scène, sans avoir pour justifie"
+}
 ```
 
 Your role is to predict the location and historical period in which the action of the play is set. 
@@ -16,7 +24,7 @@ KEY RULES:
 
 Return your response and the underlying reasoning as a JSON object with the following structure:
 ```json
-{{
+{
     "period": "The historical period in which the play could have taken place",
     "period_reasoning": "The reasoning the model used to identify the historical period",
     "timeframe_start": "The ISO-formatted start value of the historical period",
@@ -24,5 +32,5 @@ Return your response and the underlying reasoning as a JSON object with the foll
     "location": "The geographic location where the action of the play takes place",
     "location_reasoning": "The reasoning the model used to identify the geographic location",
     "location_qid": "The Wikidata QID of the identified location"
-}}
+}
 ```

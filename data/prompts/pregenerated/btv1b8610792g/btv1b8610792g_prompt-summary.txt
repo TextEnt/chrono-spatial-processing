@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Les Fourberies de Scapin, comédie par J.-B. P. Molière",
+    "publication_date": "1671",
+    "document_id": "btv1b8610792g"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "OCTAVE",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "La découverte que l'Oncle a faite du secret de notre Mariage, et l'autre Mariage qu'on veut faire de même avec la Fille que le Seigneur Geronte a eue d'une seconde Femme qu'on dit qu'il a épousée à Tarente \nOCTAVE\n Et par -dessus tout cela, mets encore l'indigelice oti le trouve cetcentmianie Personne, et l'impuissance où je me vois d'avoir dequoy la secourir. \n",
+          "Le moyen de s'en empêcher? \nOCTAVE\n Après quelques paroles, dont je tâcha d'adoucir la douleur de cette charmante Affligée, nous sortîmes de là; et demandant à Léandre ce qu'il lui semblait de cette Personne, il me répondit froidement qu'il la trouvait assez jolie.",
+          "Je vois tout cela. \nOCTAVE\n Elle faisait fondre chacun en larmes, en se jetant amoureusement sur le corps de cette Mouranté, qu'elle appessait la chère Mère; et il n'y avait Perlonne qui n'eût l'âme percée, de voir un si bon naturel. \n",
+          "et s'il ne tient qu'à me jeter à tes genoua, tu m y vois, Scapi, pour te conjurer encore une fois de ne me point abandonner. \nOCTAVE\n Ah ma foi, Scapin, il se faut rendre à cela. \nSACPIN\n Levez-vous.",
+          "De lITIa Je ne vois pas encore où ceci veut aller. \nOCTAVE\n Un jour que je l'accompagnais pour aller chez les Gens qui gardent l'Objet de ses vœux, nous entendîmes dans une petite Maison d'une Rue écartée, quelques plaintes mêlées de beaucoup de sanglots."
+        ]
+      },
+      "top_5_persons": [
+        "OCTAVE",
+        "Scapin",
+        "Pistoles",
+        "Léandre",
+        "NERINE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Tarente",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "La découverte que l'Oncle a faite du secret de notre Mariage, et l'autre Mariage qu'on veut faire de même avec la Fille que le Seigneur Geronte a eue d'une seconde Femme qu'on dit qu'il a épousée à Tarente \nOCTAVE\n Et par -dessus tout cela, mets encore l'indigelice oti le trouve cetcentmianie Personne, et l'impuissance où je me vois d'avoir dequoy la secourir. \n",
+          "et je viens d'apprendre de mon Homme qu'elle est partie il y a longtemps de Tarente, et qu'on y croit qu'elle a péri dans le Vaisseau où elle s'embarqua. \nARCANTL\n Mais pourquoi, s'il vous plaît, la tenir à Tarente, et ne vous être pas donné la joie de l'avoir avec vous?",
+          "Les raisons ont cessé, qui m'avaient obligé à le prendre parmi vous à Tarente \nNERINE\n cas: que ce changénient de nom nous à causé de troubles et d'inquiétudes dans les soins que nous avons pris de vous venir chercher ici!",
+          "et un MMatelot qui vient de Tarente, m'a assuré qu'il avait vu mon Homme qui était près de s'embarquer.",
+          "Du Seigneur Géronte \nOCTAVE\n Et que cette Fille est mandée de Tarente ici pour cela?"
+        ]
+      },
+      "top_5_places": [
+        "Tarente",
+        "Alger",
+        "PARIS",
+        "Naples",
+        "Indes"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid ISO date in the form YYYY-MM-DD
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The ISO-formatted start value of the historical period",
+    "timeframe_end": "The ISO-formatted start value of the historical period",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

@@ -1,8 +1,8 @@
-Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date).
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `excerpt` property contains an excerpt of {excerpt_length} words sampled from around the middle of the document.
 
 INPUT:
 ```json
-{document_metadata}
+{document}
 ```
 
 Your role is to predict the location and historical period in which the action of the play is set. 

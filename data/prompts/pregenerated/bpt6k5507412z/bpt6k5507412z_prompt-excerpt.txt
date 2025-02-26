@@ -1,8 +1,16 @@
-Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date).
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `excerpt` property contains an excerpt of 400 words sampled from around the middle of the document.
 
 INPUT:
 ```json
-{document_metadata}
+{
+  "metadata": {
+    "author": null,
+    "title": "Le triomphe de l'Amour , opéra, ou pastorale en musique, imitée des amours de Diane, & d'Endymion, divisée en trois parties ; mêlées de deux intermèdes. Représentée devant Sa Majesté, en son château de St-Germain-en-Laye au mois de février 1672",
+    "publication_date": "1672",
+    "document_id": "bpt6k5507412z"
+  },
+  "excerpt": "bien Les serments que l'Amour fait contre l'Amour même, On les observe un temps, mais à la fin on aime, Et l'on aime plus ardemment. DÉDIMION. Oui, j'éprouve ce changement, Et je souffre un double mart ère J'aime sans espérer, j'aime sans l'oSer dire, Fut-il jamais un plus cruel tourment! \nARGAS\n Tout vous porte à l'Amour, Seigneur-même il se déclare, Tout ne parle ici que d'Amour, Et comment pour"
+}
 ```
 
 Your role is to predict the location and historical period in which the action of the play is set. 
@@ -16,7 +24,7 @@ KEY RULES:
 
 Return your response and the underlying reasoning as a JSON object with the following structure:
 ```json
-{{
+{
     "period": "The historical period in which the play could have taken place",
     "period_reasoning": "The reasoning the model used to identify the historical period",
     "timeframe_start": "The ISO-formatted start value of the historical period",
@@ -24,5 +32,5 @@ Return your response and the underlying reasoning as a JSON object with the foll
     "location": "The geographic location where the action of the play takes place",
     "location_reasoning": "The reasoning the model used to identify the geographic location",
     "location_qid": "The Wikidata QID of the identified location"
-}}
+}
 ```

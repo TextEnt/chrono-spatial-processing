@@ -1,0 +1,77 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Rosimond, Claude Rose",
+    "title": "L'Advocat sans étude, comédie",
+    "publication_date": "1670",
+    "document_id": "bpt6k1090113m"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "LISE",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "j'ai bien d'autres connaissances: Et l'on peut m'appeler le trésor des sciences: Je connais Tirepied, Aleine, Machinoir, Dent de loup, Quarelet, Écoffrais, Embouchoir, Lise le tirant par le bras il se reprend.",
+          "ces gens n'en manquent pas, Sans qu'on y trouve à dire ils pêchẽt en eau trouble LISE J'en connais bien pourtant qui n'ont ici sou cy double.",
+          "CECHÊTE, FLORICE, LISE, ALCIDOR, CLITANDRE, LE SERGENT, CARILLE, CL EUR, JOLICOUR Durant l'entretien d'Égaste avec Alcidor Florice déclare tout à Clitandre ERGASTE",
+          "De m'ert beaucoup d'noneur d'entrer en votre race SCÈNE X. ÀLCIDOR, LISE, CARILLE, FLORICE ÀLCIDOR l'Est moi qui le reçois.",
+          "Père de Florice \nFLORTCE\n LISE Suivante de Florice ERGASTE, Gentilhomme, Amant de Florice CARILE, Savetier et feint Advocat."
+        ]
+      },
+      "top_5_persons": [
+        "LISE",
+        "CLITANDRE",
+        "Louis",
+        "Nicolas",
+        "Jeanne"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Ar grâce et Privilège du Roi, donné à Paris le T 19.",
+          "La Scène est à Paris À D À SANS ETUDE COMÉDIE."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Pont d'Avignon",
+        "Flandre",
+        "Bourges"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid ISO date in the form YYYY-MM-DD
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The ISO-formatted start value of the historical period",
+    "timeframe_end": "The ISO-formatted start value of the historical period",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

@@ -1,8 +1,16 @@
-Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date).
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `excerpt` property contains an excerpt of 400 words sampled from around the middle of the document.
 
 INPUT:
 ```json
-{document_metadata}
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "L'Escole des maris, comedie, de J. B. P. Moliere. Representée sur le theatre du Palais Royal.",
+    "publication_date": "1661",
+    "document_id": "btv1b86107875"
+  },
+  "excerpt": "doutable. Je le crois. \nSunNARLLLE\n TAERE. Je n'ai garde à présent d'espérer, Je vous cède, Monfieur, et c'est sans murmurer. SGANARELLE. Vous faites bien. VALÈRE. Le droit de la sorte l'ordonne, Et de tant de vertus brille vôtre personne, Que j'aurais tort de voir d'un regard de courroux, Les tendres sentiments qu'Isabelle a pour vous. Cela s'entend. SGANARELLE. VALÈRE. Oui, oui, Seigneur vous qu"
+}
 ```
 
 Your role is to predict the location and historical period in which the action of the play is set. 
@@ -16,7 +24,7 @@ KEY RULES:
 
 Return your response and the underlying reasoning as a JSON object with the following structure:
 ```json
-{{
+{
     "period": "The historical period in which the play could have taken place",
     "period_reasoning": "The reasoning the model used to identify the historical period",
     "timeframe_start": "The ISO-formatted start value of the historical period",
@@ -24,5 +32,5 @@ Return your response and the underlying reasoning as a JSON object with the foll
     "location": "The geographic location where the action of the play takes place",
     "location_reasoning": "The reasoning the model used to identify the geographic location",
     "location_qid": "The Wikidata QID of the identified location"
-}}
+}
 ```

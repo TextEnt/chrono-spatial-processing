@@ -1,0 +1,78 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "L'Escole des maris, comedie, de J. B. P. Moliere. Representée sur le theatre du Palais Royal.",
+    "publication_date": "1661",
+    "document_id": "btv1b86107875"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ISABELLE",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Et pourquoi. \nISABELLE\n Lui voulez-vous donner à croire que c'est moi, Votre fille d'honneur doit toujours se défendre De lire les billets qu'un homme lui fait rendre, La curiosité qu'on fait lors éclater, Marque un secret plaisir de s'en ouïr conter, Et ie mue à propos, que toute cachetée, Cette lettre propos soit promptement reportée, Afin que d'autant mieux il connaisse aujourd'hui, Lé pris éclatant que mon cœur fait de lui, Que les leux aciolmais perdent toutc erperance, Plus pareille entreprennent plus pareille extravagance.",
+          "Il le mérite bien, et j'en suis fort ravi; \nISABELLE\n Enfin de cent raisons mon dépit s'est servi, Pour lui bien reprocher des bassesses si grandes, Et pouvoir cette nuit revietter ses demandes, Mais elle m'a fait voir de si pressants désirs, À tant versé de pleurs, tant poussé de soupirs, Tant dit qu'au désespoir tu porterais son âme, Si ieande refusais ce qu'exige sa flamme;",
+          "qui va-la? \nISABELLE\n Ne faites point de bruit, valele, on vous prulent, et le luis Ilabelle SGANARELL'E. Vous eu avez menti, chienne ce n'est pas elle, De l'honneur que tu fuis, elle suit trop les lois, Et tu prends faussement, et son nom, et sa voix, \nISABELLE\n Mais à moins de vous voir par un saint hyménée.",
+          "Oui tout ce que Monsieur, de votre part m'a dit, Madame, a bien pouvoir de surprendre un esprit, J'ai douté, Seigneur l'avoue, et cet arrêt suprême, Qui décide du sort de mon amour extrême, Doit m'être assez touchant pour ne pas s'offenser, Que mon cœur par deux fois le fasse prononcer. \nISABELLE\n ",
+          "Oui, tien baise ma main. \nISABELLE\n Que sans plus de soupirs, Il conclue un hymen qui fait tous mes désirs, Et reçoive en ce lieu, la foi que ie ans donne, De n'écouter jamais les vœux d'autre personne."
+        ]
+      },
+      "top_5_persons": [
+        "ISABELLE",
+        "ARISTE",
+        "LEONOR",
+        "LISETTE",
+        "Isabelle"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "! que je suis heureux, et que j'ai de plaisir, De trouver une femme au gré de mon désir, Oui, voilà comme il faut que les femmes soient faites, Et non comme j'en sais, de ces franches coquettes, Qui s'en laissent compter, et font dans tout Paris Monstrer au bout du doigt leurs honnêtes maris, Holà notre galant aux belles entreprises.",
+          "Ledit Sieur de Moliers à cédé et transporté son Privilège à Charles de Sercy, Marchand Libraire à Paris, ponnenioui séton tuccont fuit tir eux.",
+          "Avouons que Paris nous fait part De cent plaisirs charmants qu'on n'a point autrepart;",
+          "La Scène est à Paris SES DES I 2 MARTS."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "France",
+        "Fontainebleau"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid ISO date in the form YYYY-MM-DD
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The ISO-formatted start value of the historical period",
+    "timeframe_end": "The ISO-formatted start value of the historical period",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

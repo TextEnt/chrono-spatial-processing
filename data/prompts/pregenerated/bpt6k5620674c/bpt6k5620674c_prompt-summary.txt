@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Scudéry, Georges de",
+    "title": "Le prince déguisé . Tragi-comédie. Par M. de Scudéry",
+    "publication_date": "1636",
+    "document_id": "bpt6k5620674c"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ARISTE",
+          "frequency": 7
+        },
+        "related_sentences": [
+          "Si ton discours est faux, vois où tu te hasardes: Faites venir Ariste, et quatre de mes gardes, Jij à nombre suffira pour les saisir la nuit, Mais que cela se fasse auecque peu de bruit: Revenez dans ma chambre, où tu vais vous attendre: Sui -moi, tu seras prise, ou tu les feras prendre.",
+          "que ne dois-je point pour un si bonoffice! \nARISTE\n Mais veuillez recueilir le fruit de mon service, Et sans vous amuser en discours superflus, Uous étant présenté, ne vous renfermez plus: Et cette Infante à bon port arrivée, Songez a vous sauver aprestasoir sauhée: Où ferons nous retraite, étant lors dégagez? \nCLÉARQUE\n ",
+          "Mon Écuyer m'en garde en un bourg près d'ici: \nARISTE\n Sortons, vous le voulez, et Seigneur le veux aussi, M. ij Ma faute à mon avis n'est pas fort criminelle: Mais souffrez que venir parle à votre sentinelle,",
+          "Afin qu'après avoir satisfait mon envie, St le combat offert me laisse encor en vie, Je vienne me remittre en l'état ou ie suis, Et vous tirer de peine, en me tirant d'ennuis. \nARISTE\n ",
+          ", allons sécher ses larmes. \nARISTE\n Arxtuo jeroue pormentsonprenarez -vous des armes; \nCLÉARQUE\n "
+        ]
+      },
+      "top_5_persons": [
+        "ARISTE",
+        "M",
+        "MADEMOISELLE",
+        "Rutile",
+        "Seigneur"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Sicile",
+          "frequency": 7
+        },
+        "related_sentences": [
+          "Comme en effet, délors aux quittai la Sicile Et le même proposant, je le trouvai facile, Il approuva mon chom,untomuvigrueur, Et ne refusa rien à mes vœux pleins d'ardeur.",
+          "Et Seigneur me dois cacher à toute la Sicile Mais vous aurez l'honneur d'apprendre mon projet, Car mon père vous tient ami comme sujet:",
+          "Etqui trouve sa sin dedans celle d'un Roi, Que pleure la Sicile et que chacun regrette? \nLISANDRE\n ",
+          "Va toujours côtoyant la Sicile en ses bords, A dessein d'enfermer l'embouchure des ports;",
+          "TROUPE des Courtisans de Sicile IUGES de Camp."
+        ]
+      },
+      "top_5_places": [
+        "Sicile",
+        "Grèce",
+        "Naples",
+        "PARIS",
+        "Messine"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid ISO date in the form YYYY-MM-DD
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The ISO-formatted start value of the historical period",
+    "timeframe_end": "The ISO-formatted start value of the historical period",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

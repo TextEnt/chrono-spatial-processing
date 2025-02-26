@@ -1,8 +1,16 @@
-Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date).
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `excerpt` property contains an excerpt of 400 words sampled from around the middle of the document.
 
 INPUT:
 ```json
-{document_metadata}
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Les fragmens de Molière , comédie",
+    "publication_date": "1682",
+    "document_id": "bpt6k5754475d"
+  },
+  "excerpt": "ui m'amène ici cet impertinen: \nPIERROT\n le vous dis qu'ou vous teniais, et que vous ne caressiais pas nos atcordées. D. JUAN Ah que de bruit. \nPIERROT\n Jernidienne, ce n'est pas comme ca quifrait pouner les gens. \nCHARLOTE\n Laisse-le faire aussi, Pierrot \nPIERROT\n Comment, que je le laisse faire, je ne veux pas moi. Ah. \nDeJOAN\n \nPIERROT\n Testedienne, parce que vous êtes Monsieu, vous viendrez ca"
+}
 ```
 
 Your role is to predict the location and historical period in which the action of the play is set. 
@@ -16,7 +24,7 @@ KEY RULES:
 
 Return your response and the underlying reasoning as a JSON object with the following structure:
 ```json
-{{
+{
     "period": "The historical period in which the play could have taken place",
     "period_reasoning": "The reasoning the model used to identify the historical period",
     "timeframe_start": "The ISO-formatted start value of the historical period",
@@ -24,5 +32,5 @@ Return your response and the underlying reasoning as a JSON object with the foll
     "location": "The geographic location where the action of the play takes place",
     "location_reasoning": "The reasoning the model used to identify the geographic location",
     "location_qid": "The Wikidata QID of the identified location"
-}}
+}
 ```

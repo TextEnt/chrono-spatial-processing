@@ -1,0 +1,73 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Campistron, Jean Galbert de",
+    "title": "Acis et Galatée . Pastorale heroïque en musique, representée pour la premiere fois dans le château d'Anet devant Monseigneur le Dauphin. Par l'Academie roiale de musique",
+    "publication_date": "1690",
+    "document_id": "bpt6k5625330q"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Galatée",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Si vous ne m'aimez pas, Que vous peut importer ma vie ou mon trépas? \nGALATÉE\n Sans que pour vous l'amour me sollicite, Je puis souhaiter d'être iestruite De vos desseins secs. \nACIS\n Eh bien, apprenez donc que ma mort est certaine, Vous ne jouirez plus de mes tendres regrets, En terminant mes jours, je finirai ma peine.",
+          "Mais je vois Galatée, et mon âme interdite Perd toute sa fureur: Je me sens agité de trouble et de terreur. \nCÈNE VIII\n POLIPHÉME, GALATÉTÉE. \nPOLIPHÉME\n Que tardons nous? parlons de l'ardeur qui m'anime, Est-ce à moi de trembler, Si d'un cruel amour je deviens la victime, Qui pourrait me contraindre à le dissimuler ?",
+          "vous me haïssiez, je n'en saurais douter, Par cet ordre cruel votre haine s'explique. \nGALATÉE\n Suspendez vos regrets pour me laisser goûter L'heureuse paix de ce séjour rustique, J'y vents avec plaisir, tout y charme mes yeux, J'y vois les champs parez de mille fleurs que j'aime;",
+          "Vous voyez, charmante Déesse, Un Amant que vos yeux ont soumis à vos lois, J'ignorais le pouvoir de ce Dieu qui me blesse, Je l'éprouve aujourd'hui pour la première fois. \nGALATÉE\n Que dites-vous?",
+          "Je fais par tout voler le nom de Galatée, Je le répète mille fois, Je l'apprends aux Échos, aux Oiseaux de ce Bois, Loin de moi cependant trop longtemps arrêcée Seule elle semble ici méconnaître ma voix."
+        ]
+      },
+      "top_5_persons": [
+        "Galatée",
+        "ACIS",
+        "Acis",
+        "SCILLA",
+        "Apollon"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Château d'Anet",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Le Château d'Anet a été bâti pour Diane de Poitiers"
+        ]
+      },
+      "top_5_places": [
+        "Château d'Anet"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid ISO date in the form YYYY-MM-DD
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The ISO-formatted start value of the historical period",
+    "timeframe_end": "The ISO-formatted start value of the historical period",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

@@ -1,8 +1,16 @@
-Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date).
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `excerpt` property contains an excerpt of 400 words sampled from around the middle of the document.
 
 INPUT:
 ```json
-{document_metadata}
+{
+  "metadata": {
+    "author": "Puget de La Serre, Jean",
+    "title": "Pandoste ou la Princesse malheureuse, tragédie en prose, divisée en deux journées",
+    "publication_date": "1631",
+    "document_id": "bpt6k10902915"
+  },
+  "excerpt": "irs les vents, et mes larmes les ondes? que ici te noie donc dedans, à force de pleurer, et que de la sorte ta vie fasse naufrage comptre les écueils de ma mort. Hélas! que ne peux-tu marcher pour t'aller jeter aux pieds de ton cruel Papa, et Ah demander pardon de ton innocence, puis que c'est le plus grand de tes crimes? Mais le malheur ne t'a fait naître au monde que pour t'en faire ressentir le"
+}
 ```
 
 Your role is to predict the location and historical period in which the action of the play is set. 
@@ -16,7 +24,7 @@ KEY RULES:
 
 Return your response and the underlying reasoning as a JSON object with the following structure:
 ```json
-{{
+{
     "period": "The historical period in which the play could have taken place",
     "period_reasoning": "The reasoning the model used to identify the historical period",
     "timeframe_start": "The ISO-formatted start value of the historical period",
@@ -24,5 +32,5 @@ Return your response and the underlying reasoning as a JSON object with the foll
     "location": "The geographic location where the action of the play takes place",
     "location_reasoning": "The reasoning the model used to identify the geographic location",
     "location_qid": "The Wikidata QID of the identified location"
-}}
+}
 ```

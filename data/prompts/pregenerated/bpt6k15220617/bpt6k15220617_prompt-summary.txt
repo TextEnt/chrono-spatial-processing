@@ -1,0 +1,77 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Quinault, Philippe",
+    "title": "Thésée, tragédie en musique ornée d'entrées de ballet, de machines et de changemens de théâtre. [Paroles de Quinault, musique de Lulli.]",
+    "publication_date": "1698",
+    "document_id": "bpt6k15220617"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Arcas",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "ÉGLÉE', CLÉONE, et ARCAS Il n'est point de grandeur charmante Sans l'Amour et sans ses douceurs: Rien ne plaît, rien n'enchante, Sans l'amour et sans ses douceurs;",
+          "Si tu veux que je t'aime, Arcas, Fais ce que je souhaite, Et ne réplique pas. \nAS\n Pour un autre que moi Cléone s'intéresse?",
+          "CLÉONE, ARCAS, Combattant que l'on entend et que l'on ne voit point. \nLEONE\n Aissons aller la Princesse E Prier en paix la Déesse;",
+          "MINERVE, Chœur de Divinités qui accompagnent Minerve LE ROY, THÈSE, ÆGLE', CLÉLEONE, ARCAS, CHOEUR, et Troupe d'Athéniens.",
+          "Si tu connais, Arcas, le trouble qui me presse, Ne va point découvrir la peine où tu me vois. \nCLÉONE\n "
+        ]
+      },
+      "top_5_persons": [
+        "Arcas",
+        "DORINE",
+        "Minerve",
+        "Églé",
+        "Pallas"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Athènes",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Puissions-nous voir toujours Athènes triomphante, Puisse son Roi vainqueur des plus grands Potentats La rendre heureuse et florissante.",
+          "La Scène est à Athènes TETT 2 TRAGÉDIE."
+        ]
+      },
+      "top_5_places": [
+        "Athènes",
+        "Versailles",
+        "Palais de Versailles",
+        "France"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid ISO date in the form YYYY-MM-DD
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The ISO-formatted start value of the historical period",
+    "timeframe_end": "The ISO-formatted start value of the historical period",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

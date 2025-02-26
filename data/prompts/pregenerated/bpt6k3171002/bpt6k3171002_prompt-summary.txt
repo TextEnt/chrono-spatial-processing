@@ -1,0 +1,78 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": null,
+    "title": "Les pygmées , tragi-comedie ornee de musique, d'entrées de balet, de machines, & de changemens de theatre. Representée en leur hostel royal, au Marais du temple à Paris",
+    "publication_date": "1676",
+    "document_id": "bpt6k3171002"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Bélus",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Le Roi lui en sait bon gré, et commande à Microton de faire venir Pichonine Sémiandre s'entretient avec lui de la joie qu'il croit que cette Princesse doit ressentir de son mariage avec Bélus, la croyant informée de la vérité touchant le vainqueur et de la mort de Picolus mais il apprend que l'erreur de cette Princesse dure encore, et que le Roi l'y entretient exprès, pour la punir d'avoir été rebelle à ses volontés, au sujet de Picolus, qu'il lui parlait d'épouser, dans le temps que lui-même le croyait auteur de la victoire.",
+          "Timas y rend compte de ce qu'il a fait pendant son absence, et même explique par quel moyen il a secouru ses Armées, et contribué à la Victoire qu'on a remportée sur le Grues aussi le Roi veut qu'il triomphe conjointement avec Bélus, mais d'une autre manière, et quelque accorde la main de Parvulie dont il a tout le cœur.",
+          "Bélus reste dans une joie indicible, et dans des ravissements inconcevables: mais l'abord de son Rival, sa fausse bravoure, et ses railleries grossières, l'obligent à soutenir le caractère d'un véritable Héros et d'un Amant qui se connaît aimable autant qu'il est aimé.",
+          "Bélus s'imagine alors que ce secours extraordinaire est celui que Sémiandre a fait espérer de la part de Mars Il luitaît à propos pour empêcher ses soldats de prendre la fuite, et pour leur faire achever la victoire que Timas a commencé d'assurer.",
+          "Le Triomphe de Bélus, par terre, et de Timas en l'air, sur des Grues, se fait avec toute la pompe et toute la magnificence qui avait conviennent."
+        ]
+      },
+      "top_5_persons": [
+        "Bélus",
+        "Mars",
+        "Grues",
+        "Francine",
+        "Mercure"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "À la vérité, ce n'est que depuis qu'ils ont respiré l'air de France aussi nous remarquons qu'ils sont crus à vue d'œil, et qu'ils sont embellis de moitié: le propre de notre Soleil étant de faire profiter tous ceux qu'il regarde favorablement, sur tout les Nations étrangères.",
+          "Les Dieux viennent de tout entendre, Et je vous déclare pour eux, Qu'ils ne prendront jamais pour une offense, Que vous instituiez, des fêtes et des jeux En l'honneur du Dieu? de la France Que vous pouviez vers lui des vœux;",
+          "La France est à présent un si célèbre Empire, Que mes Co-éternels, s'il était question"
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Thrace",
+        "Marais du Temple",
+        "Paris"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid ISO date in the form YYYY-MM-DD
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The ISO-formatted start value of the historical period",
+    "timeframe_end": "The ISO-formatted start value of the historical period",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

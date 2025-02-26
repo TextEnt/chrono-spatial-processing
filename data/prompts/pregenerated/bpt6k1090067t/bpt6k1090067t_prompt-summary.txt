@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Villedieu, Marie-Catherine-Hortense de",
+    "title": "Manlius, tragi-comédie",
+    "publication_date": "1662",
+    "document_id": "bpt6k1090067t"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "TORQUATUS",
+          "frequency": 24
+        },
+        "related_sentences": [
+          "Oui femme assurément, Il est en mon pouvoir, n'en doutez nullement, Mais n'appréhendez pas cet injuste hyménée: Je sais qu'à Torquatus vous êtes destinée, Et que sans ce grand deuil qu'à présent vous portez Il vous aurait donné ce que vous méritez.",
+          "Le respect nécessaire à la vertu Romaine, Faites qu'on soit en paix à la vertu soûmis, Mais ie crains tout de moi s'il vient des endeimid ? \nTORQUATUS\n Ne me répliquez plus: sortez.",
+          "Que diroiteon de vousTle cner du Sénat, Mêlait son intérêt à celui de l'État? \nTORQUATUS\n Et de quel intérêt Rome accuserait -elle, Celui qui perd son fils, pour lui prover son zèle?",
+          "S'il faut pour Torquatus commettre une injustice Deuenir d'un forfait la cause ou le complice, Monter à ce haut rang par une lâcheté, Torquatus à ce prix serait trop acheté.",
+          "Depuis quand, juste Ciel, une faible captive Donne t'elle des lois qu'il faut que Rome suive? \nTORQUATUS\n Depuis que de vos yeux le pouvoir souverain."
+        ]
+      },
+      "top_5_persons": [
+        "TORQUATUS",
+        "Manlius",
+        "Torquatus",
+        "Omphale",
+        "Manlius"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 24
+        },
+        "related_sentences": [
+          "Sachant donc de mon fils la funeste aventure, J'ai senti ces transports que donne la nature, J'ai d'abord éprouvé, que le cœur d'un Romain, Pour notre illustre et grand, n'en est pas moins humain, qu'on n'en est pas plus dur, pour être né dans Rome, qu'un père est toujours père, et qu'un Consul est homme: Mais à tous ces effets des premiers mouvements Ont enfin succédé de plus grands sentiments;",
+          "Si personne pouvais, Seigneur, parler sans vous déplaire, Je vous prierais de voir si certain mouvement, N'est point de cette mort la cause ou l'instrument, Le précieux honneur que j'eus dès votre enfance, De prendre toujours part à votre confidence Me fait vous conjurer de voir si sur ce point, Quelque fausse clarté ne vous ébloüit point, Peut-être qu'en ceci Rome agit la dernière, Consultez là dessus votre âme toute entière:",
+          "-lui les armes, Je n'ai que trop souffert de vos rudes alarmes, Il est temps que mon cœur élise un souverain, Et qu'il soit aujourd'hui tout père ou tout Romain, Qu'entre ces deux partis mon âme est balancée Que de troubles divers règnent dans ma pensée, D'un et d'autre côté un vois briller un prix, Rome offre de la gloire et la nature un fils.",
+          "Je me suis souvenu, pour devenir sévère, que j'étais un Romain, avant que d'être père, que mon fils est à Rome, aussitôt comme à moi, que moi-même sans dois tout mon sang à la loi, Et qu'un Consul ayant adopté la patrie, Si mon fils échappoit au devoir qui me lie, Le moindre des Romains croirait impunément Pouvoir se dispenser de mon commandement.",
+          "Sur ce prétexte adroit secrètement Omphale En reçoit mille effets d'une ardeur sans égale: Pour moi, que les bontés de votre illustre Époux, Jusques à mon trépas attacheront à vous, Et qui dès en naissant appris de ce grand homme, Qu'il faut tout mépriser pour la gloire de Rome, Sachant qu'à Torquatus votre cœur est promis, Et qu'ainsi vous prenez intérêt en son fils;"
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Paris",
+        "Barbarie",
+        "TORQUATUS",
+        "Romes"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid ISO date in the form YYYY-MM-DD
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The ISO-formatted start value of the historical period",
+    "timeframe_end": "The ISO-formatted start value of the historical period",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

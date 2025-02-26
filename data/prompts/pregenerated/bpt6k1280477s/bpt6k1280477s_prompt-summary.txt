@@ -1,0 +1,80 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Le misantrope, comédie par I. B. P. de Molière",
+    "publication_date": "1668",
+    "document_id": "bpt6k1280477s"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ALCESTE",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Il n'est point suspendu, sans doute, entre vous deux, Et rien n'est sitôt fait que le choix de nos vœux, Mais ainsi souffre, à vrai dire, une gêne trop forte, A prononcer en face, un aveu de la sorte : Je trouve que ces mots, qui sont désobligeans, Ne se doivent point dire en presénce des gens: qu'un cœur, de son penchant, donne assez de lumière, Sans qu'on nous fasse aller, jusqu'à rompre en visière, Et qu'il suffit, enfim que de plus deux témoins Instreisent va amant, du masheur de les joins. \nORONTE\n Non, non, un franc aveu n'a rien que j'appréhende J'y consens pour ma part. \nALCESTE\n Et moi ici le demande;",
+          "Je veux qu'on me distingue, et pour le trancher net, L'Ami du Genre Humain n'est point du tout mon fait. \nPHILINTE\n Mais quand on est du monde, il faut bien que l'on rende Quelques dehors civils, que l'usage demande. \nALCESTE\n Non vousdis-je, on devrait châtier, sans pitié, Ce commerce honteux de semblants d'amitié: Je veux que l'on soit homme, et qu'en toute rencontre, Le fond de notre cœur, dans nos discours se montre: que ce soit Seigneur qui parle, et que nos sentiments Rèle maiquent jamais, fous de vains compliments.",
+          "Mais, sérieusement que voulez -vous qu'on fasse: \nALCESTE\n Je veux qu'on soit sincère, et qu'en homme d'honneur, On ne lâche aucun mot qui ne parte du cœur, \nPHILINTE\n Lors qu'un homme vous vient embrasser avec joie, Il faut bien le payer de la même monoie, Re pondre, comme on but à les emprenements 2 Et rendre offre pour offre et serments pour serments, \nALCESTE\n Non, Seigneur ne puis souffir cette lâche méthod eût qu'affectent la plupart de vos gens à la mode;",
+          "Et si du chois des mots, vous vous contenterez, \nALCESTE\n Nous allons voir, Monsieur, \nORONTE\n Au reste, vous saurez, que ici n'ai demeuré qu'un quart d'heure à le faire. \nALCESTE\n Voyons, monncur, le temps ne laitnen a Pahlane \nORONTE\n Espoir, il est vrai, nous soulage, LEt nous berce uns, notre ennui: Mais, Philis, le triste avantage, Lors que rien ne marche après avoir. \n",
+          "D'où vient que vos Riveaux vous causent de l'ennui; \nALCESTE\n G'est quevn cœur bien atteint veut qu on soit tout à luis Et tu ne viens ici, qu'à dessein de jours dire Tout ce que la dessus, ma passion m'inspire. \nPHILINTE\n Pour moi, si ici n'avais qu'à former des désirs, La couine Éliante aurait tous mes soupirs, Son cœur, qui vous estime, est solide, et sincère;"
+        ]
+      },
+      "top_5_persons": [
+        "ALCESTE",
+        "Celimene",
+        "ARSINOE",
+        "ARSINOE",
+        "Prude"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Et défenses sont faites à tous autres, de l'im primer, ni vendre, d̀ comme il est porté plus amplement par Exposant, ou de ceux qui aurontr ait de Seigneur, à peine de quinze cents livres d'amende, confiscation des Exemplaires contieraits, et de tous dépens dommages et intérêts, comme il est porté plus amplement par lesdites Lettres Et ledit Sieur De MOLIÈRE a cédé son droit de Privilège à IIAN RIBOU, Marchand Libraire à Paris, pour enjoüir suivant l'accord fait entr'eux, Registré sur le Livre de la Communauté Signé, PIGET, Syndic.",
+          "Si le Roi m'avait donn ès Paris sa grand Ville, Et qu'il me fallût quitter L'amour de ma Mie: Je dirais au Roi Henri, Reprenez votre Paris, J'aime mieux ma Mie, au gué, J'aime mieux ma Mle Voilà ce que peut dire un cœur vraiment épris:",
+          "que ce n'est qu'un jeu de Paroles qui ne signifient rien; mais que la Chanson dit beaucoup plus, puis qu'elle fait du moins voir un homme amoureux, qui abandonnetait une Ville, comme Paris, pour sa Maîtresse.",
+          "DU BOIS, Valet d'Alceste Là Stène est à Paris LE MISANTROPE, COMÉDIE."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Fontainebleau",
+        "Rome",
+        "France",
+        "PARIS"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid ISO date in the form YYYY-MM-DD
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The ISO-formatted start value of the historical period",
+    "timeframe_end": "The ISO-formatted start value of the historical period",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

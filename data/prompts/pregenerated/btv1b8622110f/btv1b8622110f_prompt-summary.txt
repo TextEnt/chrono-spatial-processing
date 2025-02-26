@@ -1,0 +1,79 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Rotrou, Jean de",
+    "title": "Cosroes. Tragedie. De monsieur de Rotrou.",
+    "publication_date": "1649",
+    "document_id": "btv1b8622110f"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "SYRA",
+          "frequency": 10
+        },
+        "related_sentences": [
+          "Ô Dieux, dont les décrets passent nos Jugements, Rendez vaine, l'horreur, de mes pressentiments! \nSYRA\n Si les Grands écoutaient, tout ce qu'envr propose, Ils ne résoudraient rien, et craindrois toute chose, Le peuple parle assez, mais exécute peu, Et s'alentit bientôt, après son premier feu.",
+          "Il suffit qu'un hymen, joignit les deux couronnes, Et que l'âge, le rang, et l'état des personnes, Treuuerent en Syra, tant de conformité, Que l'hymen, et la paix, ne furent qu' traité;",
+          "Je vous réponds pour lui, d'une fidélité, Qui le sacrifiera, pour votre Majesté; \nSYRA\n J'en demande une épreuve, et si j'en suis ingrate, Je veux voir sans essect, tispotr ouvont te me flatte;",
+          "C'est un pris que Madame dois, à l'amour de Syra Soutenez, bien le bras, qui vous couronnera, Aéempuisse Suignement, le trône, et notre attente, Et représentez, bien, celui qui vous présente.",
+          "Vous êtes souveraine, et Syra criminelle, Voyez, de qui des deux, vous prendrez la querelle, D'une mère arrêtée, ou d'Hannant tout prêt D'ouïr ses ennemis, prononcer son arrêt;"
+        ]
+      },
+      "top_5_persons": [
+        "SYRA",
+        "Pharnace",
+        "SIRA",
+        "IRA",
+        "RA"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Perse",
+          "frequency": 10
+        },
+        "related_sentences": [
+          "Prompt, et trompant les soins, et les yeux de la troupe, Avant qu'elle eut tout pris, s'est saisi de la couppe, Et bevant ce qui reste, il faut (nous à t'il dît, Voyant d'un œil troublé, Syra rendre l'esprit,) Et nager dans son sang, Mardesane sans vie, Il faut du sort de Perse, assouuir la furie, Accorder à mon Père, un tribut qu'il attend, Laisser à Syroés, le trône qu'il prétend, Et de tant de Tyrans, terminer la dispute;",
+          "Et qu'avant que la Perse, obéit à vos lois, Vous étiez déjà sœur, fille, et veuve de Rois Mais, enfin, devant vous, vous savez que ma mère, Possédait la puissance, et le cœur de mon père;",
+          "J'ai d'une homme horreur, ce dessein détesté, Et l'avis important à votre Majesté, ( Ont apprendre connais, qu'enfin, la Perse doibt dépendre) J'ai cherché Palmyras, pour venir vous l'apprendre;",
+          "La colère, Princesse, ou plutôt la raison, Qui me fait de mon père, ordonner la prison, Quelque rang, ou la Perse, aujourd'hui nous contemple, Nous ne pouvons régner, sans ce fameux exemple;",
+          "malgré vous, le destin de la Perse, Vous prote, et détruit, tout ce qui vous traanns y Qu'est-ce, encor ?"
+        ]
+      },
+      "top_5_places": [
+        "Perse",
+        "Perse",
+        "Paris"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid ISO date in the form YYYY-MM-DD
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The ISO-formatted start value of the historical period",
+    "timeframe_end": "The ISO-formatted start value of the historical period",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

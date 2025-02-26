@@ -1,8 +1,16 @@
-Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date).
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `excerpt` property contains an excerpt of 400 words sampled from around the middle of the document.
 
 INPUT:
 ```json
-{document_metadata}
+{
+  "metadata": {
+    "author": "Boisrobert, François de",
+    "title": "La folle gageure, ou Les divertissemens de la comtesse de Pembroc / [par Boisrobert]",
+    "publication_date": "1653",
+    "document_id": "bpt6k858690"
+  },
+  "excerpt": "ai fait tenu la porte close, Posant ages grand soin sentinelles par tout? Il n'est rien dont la femme enfin ne vienne à bout; En vain, se sa vertu n'est sa garde elle -même, On tâche a la garder s'il est conpant qu'elle aime. TELAME. Encor par quelle ruse et quelle invention, A-t-elle à ce galant montré sa passion. TOMIRE. Amour est grand ouvrier des pisges qui se tendent, Et rien n'est imposible "
+}
 ```
 
 Your role is to predict the location and historical period in which the action of the play is set. 
@@ -16,7 +24,7 @@ KEY RULES:
 
 Return your response and the underlying reasoning as a JSON object with the following structure:
 ```json
-{{
+{
     "period": "The historical period in which the play could have taken place",
     "period_reasoning": "The reasoning the model used to identify the historical period",
     "timeframe_start": "The ISO-formatted start value of the historical period",
@@ -24,5 +32,5 @@ Return your response and the underlying reasoning as a JSON object with the foll
     "location": "The geographic location where the action of the play takes place",
     "location_reasoning": "The reasoning the model used to identify the geographic location",
     "location_qid": "The Wikidata QID of the identified location"
-}}
+}
 ```

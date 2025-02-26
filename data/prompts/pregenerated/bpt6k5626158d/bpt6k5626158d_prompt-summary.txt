@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Bonarelli, Guido Baldo",
+    "title": "La Filis de Scire , comédie-pastorale, tirée de l'italien par le sieur Pichou,...",
+    "publication_date": "1631",
+    "document_id": "bpt6k5626158d"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Cloris",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Pendant ceci le Roi de Trace entre dans l'Île de Smyrne pour venger la perte de ces petits amants, ce qui cause que Melisse quitte le pays de Smyrne, s'en va eu l'Île de Scire d'où ses ancêtres étaient sortis, et y mene Cloris, qui ne savait pas que ce fût son pays, où étant arrivez Melisse fait connaissance avec Orin et Sirène D'autre côté Nise qui avait été baillé à Damète, étant sut un vaisseau est poussé par l'orage sur la plage de l'Île de Scire où ayant pris terre, encore étonné de cet événement il entend un voix lamentable qui le remplit de compassion: il entre dans la forêt voisine d'où il juge que viennent ces plaintes, et là trouve un Centaure en devoir de forcer une Bergère nommée Célie, il prend sa défense, et un Berger nommé Aminte chassant aux environs, au bruit qu'il entend le vient seconder.",
+          "chez qui l'amour assembla nos désirs, Nous te devons le bien de nos premiers plaisirs. \nCLORIS\n Après tant de bienfaits que cent fois je t'embrasse, Merveille des guerriers, rare honneur de la Trace, Que le sort est cruel qui nous a séparés, Que depuis ce temps -là j'ai de maux endurés: Mais que ton doux objet a d'agréables charmes, Et que ta vue est chère à mes yeux pleins de lar -- - \nORONTE\n À la fin le bonheur vous amis dans le port, Vous avez triomphé des injures du sort;",
+          "Cloris, Seigneur retombe en ma crainte première, Quand der les vois briller avec tant de lumière, Tune te peux cacher avec ces deux flambeaux Dont rien vois les rayons si luisants et si beaux: Oppose toutefois comme un sombre nuare Le crêpe des cheveux à l'éclat du visage, Accorde ce seul point à l'ardeur de mes vœux. \nCLORIS\n Et bien j'ai dénoué mon voile et mes cheveux. \nMÉLISSE\n Dieux!",
+          "CLORIS\n Bergère, on faisais des veux pour mon retour, Mais que désires-tu? \nNER\n Que tu sois favorable aaun jufic, mounemîtn, a un P'apcutisérable, \nCLORIS\n Tu veux parler d'amour, adieu, ne sais-tu pas Que j'ai toujours fermé l'oreille à ses appas: \nNER\n Écoute moi Cloris, attend belle mauvaise, Je ne parlerai point d'amour qui te déplaise.",
+          "Il voulut sur tous deux faire un dernier effort, Bijà 22 Mais il ne put forcer l'innocence et le sort Un arbre en ma faveur trompa sa violence, Et ses rameaux épais engagèrent sa lance: Alors il prit la fuite et tomba dans les rets Qu'Aminte avait tendus dux prochdinés forets. \nCLORIS\n Ainsi son châtiment fut égal à son crime, Le bonheur suit toujours un combat dégitime."
+        ]
+      },
+      "top_5_persons": [
+        "Cloris",
+        "Nise",
+        "NER",
+        "Celie",
+        "ORMIN"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Que peut-on ajouter à l'honneur de tes faits, Et que faut-il encor que la France désire Après ta guérison et le bien de la paix: \nPICHOU\n Laisse reposer tes guerriers A l'ombre de tant de lauriers Dont leur rare vaillance a peuplé ton Empire: Que peut-on ajouter à l'honneur de tes faits, Et que faut-il encor que la France désire Après ta guérison et le bien de la paix: \nPICHOU\n ",
+          "C'est un ouvrage, ou plutôt un double chef-d'œuvre composé d'un Italien et d'un Français son sujet le plus divers et le mieux imaginé qu'on ait encore vu paraître, a reçu sa forme de ce grand Guidobalde, qui pour ce genre de Poésie a mérité la préfèrece entre tous les Poètes Italiens, bien que peut -être ceux qui font les passionnés pour la gloire du Tasse ne soient pas de notre parti.",
+          "Je ne pense pas qu'il ait jamais été connu de personne qui ne confesse cette vérité, et qui ne rende ce témoignage à toute la France Monsieur le Prince, à qui le pauvre défunt avait consacré les premiers de ses travaux,lui fit l'honneur d'employer sa veine sur des diverses sujets, et de la récompenser d'une fort glorieuse approbation:",
+          "Accomplir comme toi tous les vœux de la France, Tu viens de conserver tes plus chers alliés Ils sont par ton moyen remis en assurance, Et tous nos ennemis se sont humiliez  S À TELS AU ROY.",
+          "Accomplir cõme toi tous les vœux de la France, Tu viens de conserver tes plus chers alliés Ils sont par ton moyen remis enassurance, Et tous nos ennemis se sont humilités."
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Paris",
+        "Dijon",
+        "LORIS",
+        "PARIS"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid ISO date in the form YYYY-MM-DD
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The ISO-formatted start value of the historical period",
+    "timeframe_end": "The ISO-formatted start value of the historical period",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

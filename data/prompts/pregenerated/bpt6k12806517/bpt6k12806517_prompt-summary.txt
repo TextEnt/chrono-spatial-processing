@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Regnard, Jean-François",
+    "title": "Attendez-moy sous l'orme , comedie",
+    "publication_date": "1694",
+    "document_id": "bpt6k12806517"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "LISETTE",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Hon, quand l'amour s'est une fois empare d'un cœur auni miple que celui d'Agate, il est difficile de l'en chasser, il se trouve mieux logé là que chez une coquetre. \nLISETTE\n j'avoue que les grands airs de ton Maître ont saisi la superficie de son imagination;",
+          "Vous sortirez tous deux de votre cache, et vous lui direz Agathe, faut qu'ou vous mariez rien qu'avec Colin tout seul, ou nous allons dire par rout qu'ous aimez deux hommes à la fois, ô à ne voudra pas. \nLISETTE\n Ô que si a voudra.",
+          "Agathe dira, oui Colin N'est-il pas vrai ce l'y ferai-je, encore qu'un certain jour que l'épingli de votre collet était défaite, je le soulevis tout doucement, tout doucement. \nLISETTE\n Ô va donc plus vite, j'aime l'expédition.",
+          "le chaud et le froid ni dominent plus que par caprice. \nLISETTE\n Ô en Poit nous avons une règle ctithe, c'est que le jour des noces le termometre de la tendresse est à son plus haut degré, mais le lendemain il descend bien bas. \n",
+          "mais avant toute choie, jiaut que vous désiez à Agathe, en ma présence, que vous ne l'avez jamais aimée. \nDORANTE\n En votre présence. \nLISETTE\n Quoi vous hésitez? \nDORANTE\n Nullement."
+        ]
+      },
+      "top_5_persons": [
+        "LISETTE",
+        "AGATHE",
+        "Colin",
+        "Pasquin",
+        "Nanette"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Mais vous me faites souvenir que j'ai ici le livre instructif que la Coëffeuse a envoyé de Paris, il s'intitule, Les clèmus de la Toillette, ou le Siste harmonique de la coëffure d'une femme. \n",
+          "Attendez, nous nous avons fait venir des habits de Paris, si j'alois toujours dire que mon Maître veut qu'elle les mette, la coffure jeule lumt pour amuser une femme toute la journée. \nLISETTE\n ",
+          "Les plus jolies filles de Poitou la consultent comme un oracle, parce qu'elle a fait ses études sous une coquerte de Paris, ccitiu sù elle est devenue amoureuse de moi. \n",
+          "Registré sur le Livre de la Communauté des Lipraires et Imprimeurs de Paris, le 4. \nAvril 1693\n ",
+          "Il faut que les femmes de Paris aient bien de l'esprit pour inventer de si jolis noms."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Poitiers",
+        "Poitou",
+        "Pont-Neuf",
+        "Grisettes"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid ISO date in the form YYYY-MM-DD
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The ISO-formatted start value of the historical period",
+    "timeframe_end": "The ISO-formatted start value of the historical period",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

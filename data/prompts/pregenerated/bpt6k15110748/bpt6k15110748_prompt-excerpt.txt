@@ -1,8 +1,16 @@
-Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date).
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `excerpt` property contains an excerpt of 400 words sampled from around the middle of the document.
 
 INPUT:
 ```json
-{document_metadata}
+{
+  "metadata": {
+    "author": "Tristan L'Hermite",
+    "title": "Panthée, tragédie de M. de Tristan",
+    "publication_date": "1639",
+    "document_id": "bpt6k15110748"
+  },
+  "excerpt": "u'on n'a point vu qu'en expiant mon crime T'offrisse à son Autel une indigne Victime, Et que voyant venir le coup de mon trépas, Je n'ai rien témoigné de faible ainsi de bas. Despein-lui ma constance, et la mets en son lustre; Jure avait que mon âme, était une âme illustre, Et que dès le moment que j'entrai sous sa loi, J'eus l'esprit, le courage, et la grandeur d'un Roi. Elle n'est point de marbr"
+}
 ```
 
 Your role is to predict the location and historical period in which the action of the play is set. 
@@ -16,7 +24,7 @@ KEY RULES:
 
 Return your response and the underlying reasoning as a JSON object with the following structure:
 ```json
-{{
+{
     "period": "The historical period in which the play could have taken place",
     "period_reasoning": "The reasoning the model used to identify the historical period",
     "timeframe_start": "The ISO-formatted start value of the historical period",
@@ -24,5 +32,5 @@ Return your response and the underlying reasoning as a JSON object with the foll
     "location": "The geographic location where the action of the play takes place",
     "location_reasoning": "The reasoning the model used to identify the geographic location",
     "location_qid": "The Wikidata QID of the identified location"
-}}
+}
 ```

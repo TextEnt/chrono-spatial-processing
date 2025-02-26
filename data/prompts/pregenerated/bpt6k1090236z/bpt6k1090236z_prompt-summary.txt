@@ -1,0 +1,76 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": null,
+    "title": "L'Antimoine purifié sur la sellette",
+    "publication_date": "1668",
+    "document_id": "bpt6k1090236z"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Momus",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "L'Antimoine étant une espèce, plombé de Saturne est le Père chez Chimistes, est réclamé par Mer cure qui a quelque affinité au avec l'amour et l'autre, on refuse chez Pluton de le lui remettre entre le mains, à cause de ses désordres Saturne dans l'impatience de revoin son fils passe procuration à Momus, pour le reclamer de sa part, Momus arrivant chez Pluton rencontre Mercure sur son départ qui avait témoigne qu'il n'a pu rien obtenir pour la liberté de son petit cousin, et qu'à moins que le conseil enhaut en ordonne, Plutton es pasdans la ute de leur, il retourne aux Cieux porter cette ouvelle, où Saturne présente requête à lupiter pour obliger Themis d'y faire une descente:",
+          "Si vous le désirez pour preuve de mon dire. \nTHEMIS\n Quoi donc, petit morveux, jusqu' appartie Empire, Sans avoir nul aveu, sans respect de ma loi, Vous disposez du sort qui n'appartient qu'à moi Quoi, ne savez-vous pas dans le siècle nous sommnes, Que seul et sans second ie dispose des hommes Ayant droit sur leurs biens. \nMOMUS\n Dans ces difficultés, Ceux de la Faculté seront sans facultés. \nTHEMIS\n Parlez, et répondez.",
+          "Pour réparer le tort de ces rudes effets Venus m'a dérobé l'infaillible remède, qui ramène en santé tous ceux qui vont en Suède Par ce subtil moyen, pour quinze réprouvez J'échange en même temps quarante enfar trouvez \nMOMUS\n Si les vieux ne pattaient lors qu'on a plu de guerte, Faudrait que lupiter fît encore une terte Pour loger les petits. \n",
+          "Je me tire du pair, enfia m'en volla quitte, e 'y rentrerai plus, si ce n'est à la suitte De Madame Thémis car sans elle en ces lieux amais notre Cousin ne reverra les Cieux \nMOMUS\n 1 J'ai procuration, peut-être qu'en ta place uton en ma faveur accordera sa grâce.",
+          "MOMUS\n Donnez-moi quelque agent on e contentera, Chez lupiter, Monsieur, tous nos hommes d'affaires 1 ont de ce temps jadis, et nos pauvres Notaires est peuvent en cent ans rencontrer un seul Clerc, out passe par deça, chez nous on voit trop clair;  eût chez les fupiers gâte la marchandise."
+        ]
+      },
+      "top_5_persons": [
+        "Momus",
+        "PLUTON",
+        "Eacus",
+        "Pluton",
+        "Caron"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Depuis trois mois en ça, dix Barques, toutes neuves N'auraient pas pu servir un tas de jeunes veuves, Qui vous ont envoyé tous leurs anciens maris, Dont on voit la plupart se dire de Paris",
+          "De Paris partisan."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Styx",
+        "LUTON"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid ISO date in the form YYYY-MM-DD
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The ISO-formatted start value of the historical period",
+    "timeframe_end": "The ISO-formatted start value of the historical period",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

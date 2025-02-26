@@ -1,0 +1,74 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Chevalier, Jean",
+    "title": "Le Cartel de Guillot. Comédie, représentée sur le Théâtre royal du Marais.",
+    "publication_date": "1661",
+    "document_id": "bpt6k15192961"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Guillot",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Mais pour cesser votre étonnement vous n'avez qu'a prendre la peine de vous ressouvenir que nature est une grande maîtresse, eu qu'elle nous montre plus de choses en un moment, que l'art ne fait en dix ans, sans examiner si Angélique demeure dans les bornes que la bienséance et la modestie prescrivent à celles de son exe, et si le sieur de la Rocra raison de se compromettre si légèrement avec un valet sur un sinple écrit, qu'un premier mouvement de jalousie a fait naître, ou si Guillot après la lecture du Carl, doit vrai",
+          "Car qui penserait qu'une fille se servirait de son valet pour venger un outrage qu'élIe croit avoir reçu de celui qu'elle aime de toutes les ardeurs de son âme, et que sous l'appas trompeur d'un poulet qu'elle lui peint rempli de douceurs, elle lui envoie un billet qui marque la grandeur de son ressentiment, et qui lui designe que Guillot est celui qu'elle a choisi pour tirer raison de son offense prétendue.",
+          ", La Rocra pas battre fait un outrage, Moi, Guillot, un de quoi j'enrage, Il faut pour nous bien venger d'eux, Les faire entre battre tous deux, Guillot ne se voudra pas battre: La Roque, assez opiniâtre, Imprimera sur son minois",
+          "Sachez, que Guillot, cet ivrogne, Dont tu veux maltraiter la trogne, Ma fait recevoir un affront, Qui n'a jamais eu de second : Pour ragaillardir ma vieillesse, J'avais prié quelque jeunesse, De venir dîner avec moi: Sais-tu?",
+          "sort d' Hôte, et la Rocque entre de l'autre, et Guillot ayant dit à sa Maîtresse j'y ouï, le ouun ece ne ta Rocque, eta hé le voyant pas, il lui donne de la tête dans le ventre."
+        ]
+      },
+      "top_5_persons": [
+        "Guillot",
+        "Rocque",
+        "Seigneur",
+        "Angélique",
+        "MADEMOISELLE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "PARIS",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "À PARIS"
+        ]
+      },
+      "top_5_places": [
+        "PARIS",
+        "Vienne"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid ISO date in the form YYYY-MM-DD
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The ISO-formatted start value of the historical period",
+    "timeframe_end": "The ISO-formatted start value of the historical period",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

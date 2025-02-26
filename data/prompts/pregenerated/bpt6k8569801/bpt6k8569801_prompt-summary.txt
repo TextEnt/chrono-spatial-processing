@@ -1,0 +1,78 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "La Ferté, de",
+    "title": "Le Carnaval de Lyon, comédie",
+    "publication_date": "1699",
+    "document_id": "bpt6k8569801"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Angélique",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "mon industrie m'a fait marquis à Lyon en dépit de la fortune qui me fit naître au Mans assez obscurément, que de différents personnages il faut que je joüe tous les jours pour soutenir le Marquisat la vieille Araminte à la vérité à du goût pour moi, et elle sacrifiera quand je voudrai à la possession de mon cœur la personne et le bien de sa nièce Angélique mais outre qu'un établissement en ce pais",
+          ", je n'ai point de goût pour Angélique et n'en veux qu'a font argène, il faut que je tacne à m'en saisir sans me donner l'embarras d'une nopce: les choses sont déjà disposées pour ce dessein, allons travailler à nous en faciliter le succès.",
+          "Votre amour pour Angélique ne m'a point échappé, et je suis presque comvainche du fetour qu'il trouve dans son cœur.",
+          "Je vous ai surpris plus d'une fois lorgnant Ia jeune Angélique le morceau vous accommoderait.",
+          "Mais trouvez bon que je laisse à Angélique le plaisir de dans avec vous."
+        ]
+      },
+      "top_5_persons": [
+        "Angélique",
+        "Pasquin",
+        "Valère",
+        "Lise",
+        "Lyse"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Mans",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "mon industrie m'a fait marquis à Lyon en dépit de la fortune qui me fit naître au Mans assez obscurément, que de différents personnages il faut que je joüe tous les jours pour soutenir le Marquisat la vieille Araminte à la vérité à du goût pour moi, et elle sacrifiera quand je voudrai à la possession de mon cœur la personne et le bien de sa nièce Angélique mais outre qu'un établissement en ce pais",
+          "que cela ne vous embarrasse pas, les titres les plus nobles de sa maison sont les feuilles des piètes des mauvais auteurs qui enveloppent le poivre et la canelle chez son père: Mr. le Marquis eit le Ms d'un épicier du Mans PASQUIN."
+        ]
+      },
+      "top_5_places": [
+        "Mans",
+        "Lyon",
+        "Rouen",
+        "Marseille",
+        "Turquie"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid ISO date in the form YYYY-MM-DD
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The ISO-formatted start value of the historical period",
+    "timeframe_end": "The ISO-formatted start value of the historical period",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

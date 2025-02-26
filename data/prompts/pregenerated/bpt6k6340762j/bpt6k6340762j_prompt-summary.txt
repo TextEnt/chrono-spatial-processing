@@ -1,0 +1,78 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "L'idylle et Les festes de l'amour et de Bacchus , pastorale. Représentée par l'Académie royale de musique",
+    "publication_date": "1689",
+    "document_id": "bpt6k6340762j"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Bachus",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "À Perspective s'ouvre, et laisse paroî-La PerspeEtre dans le fond du Théâtre une autre manière de voûte de Treille, sous laquelle laisse vois un Amphi- une multitude de Suivants de Bacchus sont placés, les uns sur des Tonneaux, et les autres sur une espèce d'Amphitheatre couvert de pampres de vigne, qui tous jouent de différents Instruments, tandis que plusieurs autres Satires, et Silvains du avancent au milieu du riatre pour L' deachyAmour, et pour en ce une plus solemnelle la gloire de L'A SCÈNE DEUXIE'ME.",
+          "Tandis que les Voix et les Instruments des deux Chœurs s'unissent, tous les Danceurs des deux Partis forment ensemble la dernière Entrée, et terminent agréablement les Fêtes de l'Amour et de Bacchus DERNIÈRE ENTRE'E. JATRE BERGERS, QUATRE BERGÈRES, JATRE SATIRES, ET QUATRE BACCHANTES.",
+          "Souffrons qu'en un Parti la Raison nous assemble: L'Amour à des douceurs, Bacchus a des appas, Ce sont deux Dités, qui sont fort bien ensemble, Ne les séparons pas.",
+          "À Bergère a changé, je veux changer XUT comme Elle. \nILVANDRE\n Sui les lois de Bachus, tu t'en trouveras bien.",
+          "Le Soleil chasse les ombres, Dont le Ciel est obscurci, Et des âmes les plus sombres Bacchus chasse le souci."
+        ]
+      },
+      "top_5_persons": [
+        "Bachus",
+        "RCIS",
+        "ARCAS",
+        "CLORIS",
+        "CIS"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Versailles",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Elle a rassemblé ce qu'il y avait de plus agréable dans les Divertissements de Chambord, de Versailles, et de saint Germain et Elle a cru devoir s'assurer que ce qui a pu divertir un MONARQUE infiniment éclairé, ne saurait manquer de plaire à tout le Monde.",
+          "Donné à Versailles le vingtiême jour de Septembre l'an de grâce mil six cents soixante-douze, et de notre règne le trentième."
+        ]
+      },
+      "top_5_places": [
+        "Versailles",
+        "Bergère",
+        "Navarre",
+        "Louvre",
+        "deFrance"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid ISO date in the form YYYY-MM-DD
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The ISO-formatted start value of the historical period",
+    "timeframe_end": "The ISO-formatted start value of the historical period",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

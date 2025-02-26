@@ -1,8 +1,16 @@
-Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date).
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `excerpt` property contains an excerpt of 400 words sampled from around the middle of the document.
 
 INPUT:
 ```json
-{document_metadata}
+{
+  "metadata": {
+    "author": "Boucher",
+    "title": "Alphée et Aréthuse : tragédie, représentée devant Sa Majesté à Fontainebleau au mois d'octobre 1686 / mise en musique par M. de Boësset,... ; et en vers par M. Boucher",
+    "publication_date": "1686",
+    "document_id": "bpt6k1511203w"
+  },
+  "excerpt": "'indifférence, Où dégager votre cœur AUNE. Allez, Allez, Partez, vollez, Le temps vous presse: Une Maîtresse A des moments Pour être tendre À ses Amants, ui sait les prendre En don attendre Un heureux temps. Le Cœur répète. Allez, Allez, Partez, vollez, Le temps vous presse: Une Maîtresse À des moments Pour être tendre À ses Amants ui sait les prendre En doit attendre Un heureux temps. E'. Arethus"
+}
 ```
 
 Your role is to predict the location and historical period in which the action of the play is set. 
@@ -16,7 +24,7 @@ KEY RULES:
 
 Return your response and the underlying reasoning as a JSON object with the following structure:
 ```json
-{{
+{
     "period": "The historical period in which the play could have taken place",
     "period_reasoning": "The reasoning the model used to identify the historical period",
     "timeframe_start": "The ISO-formatted start value of the historical period",
@@ -24,5 +32,5 @@ Return your response and the underlying reasoning as a JSON object with the foll
     "location": "The geographic location where the action of the play takes place",
     "location_reasoning": "The reasoning the model used to identify the geographic location",
     "location_qid": "The Wikidata QID of the identified location"
-}}
+}
 ```

@@ -1,0 +1,74 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Donneau de Vizé, Jean",
+    "title": "La Veufve à la mode, comédie",
+    "publication_date": "1668",
+    "document_id": "bpt6k1090181f"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "BEATRIX",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Il faut vous consoler, Et nous dire, pour vous, ce qu'il faut entreprendre, \nMIRIS\n La mort de mon Épous, a droit de me surprendre, Et comme, enfin, de notre mort n'ai point eu d'Enfants, Je per, en le perdant, des Biens tout à fait grans. \nBEATRIX\n ouitce qui toul afflige. \nMIRIS\n Eh! \nBEATRIX\n Croyez-moi, Madame, Votre douleur est juste, et vous pouvez, sans blâme Faire, un peu, votre main. \n",
+          "Elle le viens de prendre, Comme vous m'avez dit. \nMIRIS\n C'était pour le garder. \nCRISPIN\n l'ai cru que Dieu devais le prendre, sans tarder, Afin de vous servir. \nBEATRIX\n Si. \nMIRIS\n Gardez de rien dire, En l'état où tu suis, ne me faites pas rire. \nBEATRIX\n Tenez, donc, ce Biscue, que j'avais pris pour moi, Vous devez le manger. \nMIRIS\n Ah!",
+          "Au dernier, on fera force Chariuaris. \nLUCILE\n Le Temps fait dissiper la plus forte tristesse. \nCRISPIN\n CRIS PIN dit bas à Beatrix, pendant que Miris parle bas à Lucille Dis-moi, toi qui connais le Bien de ma Maîtresse En aura-t-elle assez pour nous en faire? \nBEATRIX\n Hélas!",
+          "Je le crois, entre nous, Et j'en ai vu Monsieur, presque, quasi jalous. \nBEATRIX\n l'aime, assurément, et j'ai su le connaître. \nDAME IEANNE\n tous n'avez pas, encor, entarré votre Maître, Qu'a sa Veusue, déjà, vous baillez un Épous. \n",
+          "Dont, souvent, les Défunts, fût un Présent aux Gardes. \nMIRIS\n Ne me fais point de brûlit, repose-toi sur moi, Tu ne t'en plaindras pas, et j'aurai soin de toi. \nBEATRIX\n Madame, il n'est plus temps de vous faire un Mystère;"
+        ]
+      },
+      "top_5_persons": [
+        "BEATRIX",
+        "Crispin",
+        "Miris",
+        "LUCILE",
+        "Alcipe"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Il est perm à léan Ribou Marchand Libraire à Paris, d'impr mer, ou faire imprimer, vendre et débiter, y Pièce de Théâtre, intitulée, La Veusue à la Moa pendaut le temps et espace de cinq ans entiers accomplis, à commencer du jour que ladite Pie sera achevée d'imprimer pour la première fois: défenses sont faites à tous autres Libraires et In primeurs, et autres personnes, de quelque qual et condition qu'elles soient, de l'imprimer, fait imprimer, vendre et débiter, sans le consenteme de l'Exposant, ou de ceux qui auront droit de li à peine aux contrevenants de 500.",
+          "Oui, tu ris comme on pleure à Paris ai l'Esprit plus ferme."
+        ]
+      },
+      "top_5_places": [
+        "Paris"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid ISO date in the form YYYY-MM-DD
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The ISO-formatted start value of the historical period",
+    "timeframe_end": "The ISO-formatted start value of the historical period",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```
