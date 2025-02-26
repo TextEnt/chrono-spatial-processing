@@ -1,0 +1,9 @@
+{
+    "period": "Ancient Persia/Classical Antiquity",
+    "period_reasoning": "Names like Cyrus and characters possibly referencing Babylonian or Persian culture suggest a setting in ancient Persia.",
+    "timeframe_start": "330-01-01",
+    "timeframe_end": "550-12-31",
+    "location": "Persia/Babylonian Empire",
+    "location_reasoning": "The mention of Cyrus, a prominent Persian king, and potential references to Babylon or Persia strongly point towards this region.",
+    "location_qid": "Q984"
+}

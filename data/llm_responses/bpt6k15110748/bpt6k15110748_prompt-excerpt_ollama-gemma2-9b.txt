@@ -1,0 +1,9 @@
+{
+    "period": "Early Modern Period",
+    "period_reasoning": "The play was written in 1639, which falls within the Early Modern period.",
+    "timeframe_start": "1450-01-01",
+    "timeframe_end": "1789-12-31",
+    "location": "France",
+    "location_reasoning": "The author is Tristan L'Hermite, a French playwright.",
+    "location_qid": "Q310"
+}
