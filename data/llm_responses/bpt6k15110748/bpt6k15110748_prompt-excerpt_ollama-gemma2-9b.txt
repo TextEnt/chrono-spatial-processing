@@ -1,9 +1,9 @@
 {
-    "period": "Early Modern Period",
-    "period_reasoning": "The play was written in 1639, which falls within the Early Modern period.",
-    "timeframe_start": "1450-01-01",
-    "timeframe_end": "1789-12-31",
-    "location": "France",
-    "location_reasoning": "The author is Tristan L'Hermite, a French playwright.",
-    "location_qid": "Q310"
+  "period": "16th-18th century Europe",
+  "period_reasoning": "The play is a French tragedy from the XVII century, indicating a European setting during that historical period.",
+  "timeframe_start": "1500-01-01",
+  "timeframe_end": "1800-12-31",
+  "location": "France or a European kingdom influenced by French culture",
+  "location_reasoning": "The author is Tristan L'Hermite, a French playwright. The language and style of the excerpt are consistent with 17th-century French literature.",
+  "location_qid": "None" 
 }

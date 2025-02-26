@@ -1,0 +1,9 @@
+{
+    "period": "XVII century",
+    "period_reasoning": "The metadata contains the publication date '1647', placing it firmly in the XVII century.",
+    "timeframe_start": "1601-01-01",
+    "timeframe_end": "1700-12-31",
+    "location": "None",
+    "location_reasoning": "The provided information does not specify the location where the play takes place.",
+    "location_qid": "None"
+}

@@ -1,9 +1,9 @@
 {
-    "period": "Ancient Persia/Classical Antiquity",
-    "period_reasoning": "Names like Cyrus and characters possibly referencing Babylonian or Persian culture suggest a setting in ancient Persia.",
-    "timeframe_start": "330-01-01",
-    "timeframe_end": "550-12-31",
-    "location": "Persia/Babylonian Empire",
-    "location_reasoning": "The mention of Cyrus, a prominent Persian king, and potential references to Babylon or Persia strongly point towards this region.",
-    "location_qid": "Q984"
+    "period": "17th century",
+    "period_reasoning": "The metadata indicates the play was published in 1639.",
+    "timeframe_start": "1600-01-01",
+    "timeframe_end": "1700-12-31",
+    "location": "Perse",
+    "location_reasoning": "The text mentions Cyrus and the play likely draws inspiration from Persian history and mythology.",
+    "location_qid": "Q895" 
 }

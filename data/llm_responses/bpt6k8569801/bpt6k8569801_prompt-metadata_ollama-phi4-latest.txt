@@ -1,0 +1,9 @@
+{
+    "period": "Late 17th century France",
+    "period_reasoning": "The play was published in 1699, and it is titled 'Le Carnaval de Lyon,' indicating that it likely reflects cultural or social events from around this time. The Carnival is an annual event, so the play could be set close to its publication date.",
+    "timeframe_start": "1698-01-01",
+    "timeframe_end": "1700-12-31",
+    "location": "Lyon, France",
+    "location_reasoning": "The title 'Le Carnaval de Lyon' directly suggests that the action of the play is set in Lyon, which was a significant city in France known for its vibrant cultural events during the 17th century.",
+    "location_qid": "Q1524"
+}

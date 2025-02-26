@@ -1,9 +1,9 @@
 {
-    "period": "Classical Antiquity",
-    "period_reasoning": "The title \"Panthée, tragédie de M. de Tristan\"  suggests a play based on Greek mythology, as Panthée is a figure from Classical Antiquity.",
+    "period": "Classical antiquity",
+    "period_reasoning": "The title 'Panthée' directly refers to Pan, a Greek god commonly associated with Classical Antiquity.",
     "timeframe_start": "1000-01-01",
-    "timeframe_end": "500-12-31",
+    "timeframe_end": "500-01-01",
     "location": "Ancient Greece",
-    "location_reasoning": "The play's title referencing Panthée, a figure from Greek mythology, strongly suggests the action takes place in Ancient Greece.",
-    "location_qid": "Q47985" 
+    "location_reasoning": "The mention of Pan, a Greek god, strongly suggests the action takes place in Ancient Greece.",
+    "location_qid": "Q394"
 }

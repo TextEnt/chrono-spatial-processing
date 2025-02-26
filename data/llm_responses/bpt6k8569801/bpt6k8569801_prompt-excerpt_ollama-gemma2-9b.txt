@@ -1,9 +1,9 @@
 {
     "period": "17th century",
-    "period_reasoning": "The metadata states that the play was published in 1699, placing it in the 17th century.",
-    "timeframe_start": "1601-01-01",
-    "timeframe_end": "1700-12-31",
+    "period_reasoning": "The metadata indicates the play was published in 1699, placing it firmly in the 17th century.",
+    "timeframe_start": "1600-01-01",
+    "timeframe_end": "1700-01-01",
     "location": "Lyon",
-    "location_reasoning": "The title of the play is 'Le Carnaval de Lyon, comédie', clearly indicating that the action takes place in Lyon.",
-    "location_qid": "Q476"
+    "location_reasoning": "The title of the play is 'Le Carnaval de Lyon', directly indicating that the action takes place in Lyon.",
+    "location_qid": "Q24683"
 }

@@ -1,0 +1,9 @@
+{
+    "period": "17th century France, during the late 1600s",
+    "period_reasoning": "The metadata specifies that the play 'Le Carnaval de Lyon, comédie' was published in 1699. The mention of social classes such as marquises and frequent references to nobility suggest a setting typical for late 17th century France, during the reign of Louis XIV (1643–1715), which was known for its emphasis on courtly life and aristocracy.",
+    "timeframe_start": "1690-01-01",
+    "timeframe_end": "1700-12-31",
+    "location": "Lyon, France",
+    "location_reasoning": "The title of the play, 'Le Carnaval de Lyon,' directly indicates that the events are set in Lyon. Additionally, within the related sentences, there is a mention of becoming a marquis at Lyon despite being born in Mans, further solidifying Lyon as a central location.",
+    "location_qid": "Q174"
+}

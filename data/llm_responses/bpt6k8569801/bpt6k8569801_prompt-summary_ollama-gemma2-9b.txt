@@ -1,0 +1,9 @@
+{
+    "period": "17th century",
+    "period_reasoning": "The metadata indicates that the play was published in 1699, placing it within the 17th century.",
+    "timeframe_start": "1600-01-01",
+    "timeframe_end": "1700-01-01",
+    "location": "France",
+    "location_reasoning": "The play mentions places like Lyon, Mans, and refers to a marquisate, all strongly suggesting France.",
+    "location_qid": "Q31"
+}

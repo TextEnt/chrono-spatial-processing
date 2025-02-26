@@ -1,0 +1,9 @@
+{
+    "period": "17th century (Baroque period)",
+    "period_reasoning": "The play was authored by Jean de Rotrou and published in 1647. Rotrou lived during the 17th century, a time known for the Baroque cultural movement in Europe, which is characterized by dramatic themes and elaborate stylistic elements commonly found in theater.",
+    "timeframe_start": "1600-01-01",
+    "timeframe_end": "1699-12-31",
+    "location": "Venice",
+    "location_reasoning": "The excerpt mentions 'Uénise,' which is a clear reference to Venice, Italy. This suggests that part of the play's setting includes Venice.",
+    "location_qid": "Q145"
+}

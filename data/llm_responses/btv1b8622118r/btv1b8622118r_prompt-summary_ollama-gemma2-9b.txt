@@ -1,0 +1,9 @@
+{
+    "period": "17th century",
+    "period_reasoning": "The metadata indicates that the play was published in 1647, firmly placing it in the 17th century.",
+    "timeframe_start": "1601-01-01",
+    "timeframe_end": "1700-12-31",
+    "location": "Turquie",
+    "location_reasoning": "The play repeatedly mentions 'Turquie' as a location, suggesting it plays a significant role in the plot.",
+    "location_qid": "Q56"
+}

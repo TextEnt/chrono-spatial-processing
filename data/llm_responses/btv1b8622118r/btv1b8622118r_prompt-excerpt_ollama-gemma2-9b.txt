@@ -1,0 +1,9 @@
+{
+    "period": "Early Modern Period",
+    "period_reasoning": "The play was written in 1647, which places it firmly within the Early Modern period.",
+    "timeframe_start": "1500-01-01",
+    "timeframe_end": "1800-01-01",
+    "location": "France",
+    "location_reasoning": "The author is Jean de Rotrou, a French playwright, and the play is titled in French.",
+    "location_qid": "Q31156"
+}
