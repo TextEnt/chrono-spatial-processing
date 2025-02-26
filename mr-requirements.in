@@ -6,4 +6,5 @@ spacyfishing
 standoffconverter
 bokeh
 click
+dotenv
 aisuite[all]
