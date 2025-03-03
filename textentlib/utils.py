@@ -11,10 +11,16 @@ from pathlib import Path
 from tqdm import tqdm
 from bs4 import BeautifulSoup as bs
 from spacy.tokens import Doc, Span, DocBin
+from spacy.language import Language
 from typing import List, Tuple
 
 nlp_model_fr = spacy.load("fr_core_news_lg")
 nlp_model_fr.remove_pipe('ner')
+nlp_model_fr.add_pipe(
+    "entityfishing", config={
+        "api_ef_base": "http://nerd.huma-num.fr/nerd/service"
+    }
+)
 
 def sample_files(folder: Path, n: int, files_to_exclude: List[Path] = None) -> List[Path]:
     """
@@ -42,7 +48,7 @@ def sample_files(folder: Path, n: int, files_to_exclude: List[Path] = None) -> L
     else:
         return list(all_files)
 
-def print_corpus_summary(corpus: DocBin, spacy_model: spacy.language.Language):
+def print_corpus_summary(corpus: DocBin, spacy_model: Language):
     """
     Print a summary of spaCy corpus (`DocBin`) by printing the number of documents, entities, and tokens.
 
@@ -362,88 +368,3 @@ class Entity:
                 if value is not None or include_null
             },
         )
-
-class SalientSentenceSelector(object):
-    def __init__(self, spacy_doc: Doc):
-        self.doc = spacy_doc
-        self.person_entities = self._mentions2entities(ner_label='PER')
-        self.place_entities = self._mentions2entities(ner_label='LOC')
-        self.sentences = {sent_i + 1: sent for sent_i, sent in enumerate(self.doc.sents)}
-        self.sent2ent_idx = self._build_sentence2entity_index()
-
-    def _mentions2entities(self, ner_label : str = 'PER') -> List[str]:
-        # transform the entity mentions from spacy into a dataframe for easier manipulation
-        self._mentions_df = pd.DataFrame(
-            [
-                {
-                    'mention': ent.text,
-                    'ner_label': ent.label_,
-                    'qid': ent._.kb_qid,
-                    'url_wikidata': ent._.url_wikidata,
-                    'nerd_score': ent._.nerd_score
-                }
-                for ent in self.doc.ents
-                if ent.label_ == ner_label
-            ]
-        )
-        linked_entities_df = self._mentions_df[self._mentions_df.qid.notna()]
-        n_nonlinked_entities = len(self._mentions_df[self._mentions_df.qid.isna()])
-        n_linked_entities = len(linked_entities_df)
-        print(
-            f'Document {self.doc.user_data["filename"]} contains {self._mentions_df.shape[0]} {ner_label} entities;',
-            f'{n_linked_entities} linked and {n_nonlinked_entities} non-linked'
-        )
-
-        # unique entities
-        unique_qids = linked_entities_df.qid.unique()
-        print(f'Document {self.doc.user_data["filename"]} contains {len(unique_qids)} {ner_label} unique entities')
-
-        entities = []
-        for qid in unique_qids:
-            mentions  = linked_entities_df[linked_entities_df.qid == qid].mention
-            mention_frequency = len(mentions.tolist())
-            ner_labels = linked_entities_df[linked_entities_df.qid == qid].ner_label.unique().tolist()
-            unique_surface_forms = mentions.unique().tolist()
-            entities.append(
-                Entity(
-                    qid=qid,
-                    ner_labels=ner_labels,
-                    mention_frequency=mention_frequency,
-                    unique_surface_forms=unique_surface_forms,
-                    short_desc=''
-                )
-            )
-        return {entity.qid: entity for entity in entities}
-
-    def _build_sentence2entity_index(self) -> dict:
-        sentence2entity_index = {}
-        for sent_i, sent in self.sentences.items():
-            for ent in sent.ents:
-                if ent._.kb_qid:
-                    if sent_i not in sentence2entity_index:
-                        sentence2entity_index[sent_i] = set()
-                    sentence2entity_index[sent_i].add(ent._.kb_qid)
-        return sentence2entity_index
-
-    # TODO: select sentences for people and places separately
-    def _find_sentences_for_entity(self, entity: Entity) -> List[str]:
-        sentences = []
-        for sentence_id, entity_qids in self.sent2ent_idx.items():
-            if entity.qid in entity_qids:
-                sentences.append(self.sentences[sentence_id])
-        sentences.sort(key=lambda x: len(x), reverse=True)
-        return sentences
-
-    # take the most frequent person|place and return the first `k`` sentences where the entity appears,
-    # ranked by sentence length (rationale: the longer, the more informative)
-    def select(self, entity_type : str  = 'person', top_k_sentences: int = 5) -> Tuple[Entity, List[str]]:
-        if entity_type == 'person':
-            sorted_person_entities = sorted(self.person_entities.values(), key=operator.attrgetter('mention_frequency'), reverse=True)
-            top_person = sorted_person_entities[0]
-            return (top_person, self._find_sentences_for_entity(top_person)[:top_k_sentences])
-        elif entity_type == 'place':
-            sorted_place_entities = sorted(self.place_entities.values(), key=operator.attrgetter('mention_frequency'), reverse=True)
-            top_place = sorted_place_entities[0]
-            return (top_place, self._find_sentences_for_entity(top_place)[:top_k_sentences])
-        else:
-            raise ValueError(f"Entity type {entity_type} not supported")
