@@ -6,13 +6,6 @@ from spacy.tokens import Doc
 import pandas as pd
 from textentlib.utils import Entity
 
-# the summary should contain:
-# document metadata: author, title, publication date
-# top 5 person mentions
-# top 5 place mentions
-# most salient person entity + top 5 sentences
-# most salient place entity + top 5 sentences
-
 class SalientSentenceSelector(object):
     def __init__(self, spacy_doc: Doc):
         self.doc = spacy_doc

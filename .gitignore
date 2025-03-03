@@ -3,7 +3,7 @@ Temp/
 Qlever.ipynb
 xml_input.ipynb
 wikidata.ipynb
-.DS_Store
+*.DS_Store
 .vscode/
 .ipynb_checkpoints
 .DS_Store
