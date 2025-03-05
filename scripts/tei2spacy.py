@@ -1,4 +1,5 @@
-# Description: Command-line script to convert TEI files (with NER information) to Spacy format
+"""Description: Command-line script to convert TEI files (with NER information) to Spacy corpus format"""
+
 import click
 from tqdm import tqdm
 from pathlib import Path

@@ -1,4 +1,4 @@
-"""Description: Command-line script to generate document prompts from a Spacy corpus"""
+"""Description: Command-line script to generate document prompts from a Spacy corpus."""
 
 # input: path to spacy corpus, path to output directory for doc summaries, path to output directory for prompts
 # sample size (optional)
