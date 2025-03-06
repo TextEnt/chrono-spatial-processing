@@ -1,0 +1,9 @@
+{
+    "period": "Neo-Babylonian Empire",
+    "period_reasoning": "The play is titled 'La mort de Baltazar, roy de Babilone' (The death of Baltazar, king of Babylon). This references Belshazzar (Baltazar/Balthazar), who was the last king of Babylon before its fall to the Persian Empire under Cyrus the Great. The mention of 'Cyrus' in the list of top persons also supports this historical context. This would place the action during the Neo-Babylonian Empire, specifically at its end.",
+    "timeframe_start": "-556",
+    "timeframe_end": "-539",
+    "location": "Babylon",
+    "location_reasoning": "The title explicitly mentions 'Babilone' (Babylon) as the setting, and the main character Baltazar is identified as 'roy de Babilone' (king of Babylon). References to characters like Baltazar (Belshazzar) and Cyrus (who conquered Babylon) further confirm this location. Babylon was the capital of the Neo-Babylonian Empire.",
+    "location_qid": "Q4989"
+}

@@ -1,0 +1,9 @@
+{
+    "period": "Ancient Rome - Flavian Dynasty",
+    "period_reasoning": "The title 'Tite et Titus' strongly suggests the play involves Emperor Titus Flavius Vespasianus (commonly known as Titus), who ruled the Roman Empire from 79-81 CE. The reference to 'Berenice' in the title further supports this, as Titus had a famous relationship with Berenice of Cilicia, a Jewish queen. This relationship was the subject of famous plays by Racine and Corneille in 17th century France.",
+    "timeframe_start": "0079",
+    "timeframe_end": "0081",
+    "location": "Rome",
+    "location_reasoning": "The play appears to be about Emperor Titus, who ruled in Rome. The subtitle 'Critique sur les Berenices' suggests it's commenting on or parodying the famous plays about Titus and Queen Berenice's relationship, which historically took place in Rome when Titus became emperor and had to send Berenice away for political reasons.",
+    "location_qid": "Q220"
+}

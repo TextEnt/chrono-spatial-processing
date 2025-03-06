@@ -1,0 +1,12 @@
+{
+    "period": "Babylonian Empire",
+    "period_reasoning": "The title 'La mort de Baltazar, roy de Babilone' refers to King Belshazzar (often anglicized as Baltazar) of Babylon. The historical account of King Belshazzar's reign and death is mentioned in the Book of Daniel in the Bible, specifically associated with the fall of Babylon to Cyrus the Great, which places the narrative during the period of the Neo-Babylonian Empire.",
+    "timeframe_start": "-539",
+    "timeframe_end": "-500",
+    "location": "Babylon",
+    "location_reasoning": "The play is explicitly about King Belshazzar of Babylon, indicating that its setting is in Babylon during his reign. The reference to Cyrus suggests the historical context involving the conquest of Babylon by Persian forces.",
+    "location_qid": "Q112"
+}
+
+
+This JSON response identifies the historical period as the Neo-Babylonian Empire around the fall of Babylon (circa 539-500 BCE). It bases this on the play's title referring to King Belshazzar, and the mention of Cyrus in the excerpt. The geographic location is identified as Babylon, supported by these references, with the corresponding Wikidata QID for Babylon provided.

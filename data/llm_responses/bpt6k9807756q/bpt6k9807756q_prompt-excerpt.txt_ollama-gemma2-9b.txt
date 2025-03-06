@@ -1,0 +1,9 @@
+{
+    "period": "Ancient Greece, specifically the Classical period",
+    "period_reasoning": "The excerpt mentions 'Sparte' (Sparta) and alludes to heroic deeds and glory, characteristic of ancient Greek society, particularly during the Classical period.",
+    "timeframe_start": "-480",
+    "timeframe_end": " -323",
+    "location": "Ancient Sparta, Greece",
+    "location_reasoning": "The excerpt explicitly mentions 'Sparte' (Sparta) as the setting.",
+    "location_qid": "Q157"
+}

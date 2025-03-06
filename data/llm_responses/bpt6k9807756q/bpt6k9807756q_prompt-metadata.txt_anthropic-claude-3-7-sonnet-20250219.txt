@@ -1,0 +1,9 @@
+{
+    "period": "Ancient Sparta",
+    "period_reasoning": "The title 'Zelonide, princesse de Sparte' explicitly mentions Sparta, which was a prominent ancient Greek city-state. Given that the protagonist is a 'princesse de Sparte' (princess of Sparta), the play is likely set during the period when Sparta was an independent state with its own royalty, which would be in ancient times before Roman conquest.",
+    "timeframe_start": "-800",
+    "timeframe_end": "-146",
+    "location": "Sparta",
+    "location_reasoning": "The title directly states 'Zelonide, princesse de Sparte', clearly identifying Sparta as the setting. Sparte is the French name for Sparta, the famous Greek city-state.",
+    "location_qid": "Q5690"
+}

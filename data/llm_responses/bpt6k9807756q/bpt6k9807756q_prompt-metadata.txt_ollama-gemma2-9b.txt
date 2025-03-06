@@ -1,0 +1,9 @@
+{
+    "period": "Ancient Greek",
+    "period_reasoning": "The title mentions 'Zelonide, princesse de Sparte', indicating the play is set in Sparta, a city-state in ancient Greece.",
+    "timeframe_start": "-500",
+    "timeframe_end": "146",
+    "location": "Greece",
+    "location_reasoning": "Sparta is located in Greece.",
+    "location_qid": "Q182"
+}

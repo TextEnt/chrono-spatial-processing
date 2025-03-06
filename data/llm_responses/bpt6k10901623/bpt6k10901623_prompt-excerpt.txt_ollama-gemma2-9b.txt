@@ -1,0 +1,9 @@
+{
+    "period": "Early Modern Period",
+    "period_reasoning": "The play was written in 1658 and is a tragi-comédie, typical of the French theatre during the Early Modern period.",
+    "timeframe_start": "1500",
+    "timeframe_end": "1800",
+    "location": "Hungary",
+    "location_reasoning": "The title explicitly states that the play is about 'Théodore, Reyne de Hongrie', meaning Theodore, King of Hungary.",
+    "location_qid": "Q348"
+}

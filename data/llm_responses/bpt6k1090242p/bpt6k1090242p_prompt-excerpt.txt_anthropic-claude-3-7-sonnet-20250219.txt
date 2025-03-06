@@ -1,0 +1,9 @@
+{
+    "period": "Ancient Rome",
+    "period_reasoning": "The title of the play 'Tite et Titus' refers to Roman historical figures. Titus was a Roman emperor who ruled from 79 to 81 CE. The reference to 'Berenice' in both the title ('Critique sur les Berenices') and the excerpt suggests this is about the historical relationship between Emperor Titus and Queen Berenice of Cilicia, a famous love story from Ancient Rome. The mention of 'Enée' (Aeneas) and 'Didon' (Dido) in the excerpt also refers to classical mythology and the founding myths of Rome.",
+    "timeframe_start": "0079",
+    "timeframe_end": "0081",
+    "location": "Rome",
+    "location_reasoning": "The play focuses on Titus (Tite in French), who was a Roman emperor, and Berenice, suggesting the setting is ancient Rome. The love story of Titus and Berenice historically took place in Rome. The references to classical figures like Aeneas and Dido in the excerpt further support a Roman setting.",
+    "location_qid": "Q220"
+}

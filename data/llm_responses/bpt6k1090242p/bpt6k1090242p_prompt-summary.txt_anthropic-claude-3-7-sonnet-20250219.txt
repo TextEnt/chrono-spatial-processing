@@ -1,0 +1,9 @@
+{
+    "period": "Ancient Rome - Imperial Period",
+    "period_reasoning": "The play mentions characters named Tite and Titus who are described as 'illustres Amants' (illustrious lovers). Titus was a Roman emperor (79-81 CE), and the title 'Tite et Titus' suggests a story set during the Roman imperial period. The mention of 'Berenice' among the top characters further supports this, as the historical Berenice was a Jewish princess who had a relationship with Emperor Titus. The character Titus is also referred to in a way that suggests he has authority.",
+    "timeframe_start": "79",
+    "timeframe_end": "81",
+    "location": "Rome",
+    "location_reasoning": "Rome is mentioned among the top places in the play. Given the characters Titus (a Roman emperor) and Berenice (likely the Jewish princess who was Titus's lover), the setting is almost certainly Rome during Titus's reign. The play appears to be a dramatic treatment of the famous historical relationship between Emperor Titus and Queen Berenice, which took place in Rome. The reference to 'Rome' in the top places list confirms this setting.",
+    "location_qid": "Q220"
+}

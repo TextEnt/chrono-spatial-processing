@@ -1,0 +1,9 @@
+{
+    "period": "17th century",
+    "period_reasoning": "The metadata indicates the play was published in 1658.",
+    "timeframe_start": "1600",
+    "timeframe_end": "1700",
+    "location": "Asia, potentially Hungary",
+    "location_reasoning": "The 'context' mentions 'Asie' and 'Théodore, Reyne de Hongrie', suggesting both locations.",
+    "location_qid": "None" 
+}

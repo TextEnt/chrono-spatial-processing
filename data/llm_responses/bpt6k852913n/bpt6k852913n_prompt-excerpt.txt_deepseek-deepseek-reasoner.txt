@@ -1,0 +1,9 @@
+{
+    "period": "17th century",
+    "period_reasoning": "The play was published in 1678 and is a French comedy, typical of the 17th-century theatrical tradition (e.g., Molière's era). The language and structure align with Early Modern French conventions of that period.",
+    "timeframe_start": "1601",
+    "timeframe_end": "1700",
+    "location": "France",
+    "location_reasoning": "The play is written in French by a French author (M. Néel) with a publication date in 1678. 17th-century French comedies were typically set in contemporary France unless explicitly stated otherwise.",
+    "location_qid": "Q142"
+}

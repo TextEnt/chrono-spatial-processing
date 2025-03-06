@@ -1,0 +1,12 @@
+{
+    "period": "Classical Antiquity",
+    "period_reasoning": "The title 'Zelonide, princesse de Sparte . Tragedie' suggests a setting in ancient Greece, specifically during the period known as Classical Antiquity. This era typically encompasses the timeframe from around 500 B.C. to 300 A.D., characterized by significant developments in Greek culture, politics, and warfare.",
+    "timeframe_start": "-500",
+    "timeframe_end": "0",
+    "location": "Sparta",
+    "location_reasoning": "The mention of 'princesse de Sparte' directly indicates that the setting is in Sparta, an ancient Greek city-state known for its military prowess and distinct social system.",
+    "location_qid": "Q1009"
+}
+
+
+This response identifies the historical period as Classical Antiquity based on the title's reference to a Spartan princess. The timeframe is set from 500 B.C. to the start of the Common Era, aligning with the general period of ancient Greek history. The location is determined to be Sparta due to the explicit mention in the title. The Wikidata QID for Sparta is provided as `Q1009`.

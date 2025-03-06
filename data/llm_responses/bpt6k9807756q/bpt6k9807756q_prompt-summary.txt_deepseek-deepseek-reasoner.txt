@@ -1,0 +1,9 @@
+{
+    "period": "Hellenistic period",
+    "period_reasoning": "The play mentions 'Pyrrhus' (likely Pyrrhus of Epirus, a Hellenistic king) as a key figure. His historical campaigns (early 3rd century BCE) align with Sparta's late independence struggles, referenced in sentences about defending the city.",
+    "timeframe_start": "-300",
+    "timeframe_end": "-200",
+    "location": "Sparta",
+    "location_reasoning": "The title specifies 'princesse de Sparte' (Sparta), and 'Sparte' is the most frequently mentioned place in the play, described as a sovereign city under threat.",
+    "location_qid": "Q5699"
+}

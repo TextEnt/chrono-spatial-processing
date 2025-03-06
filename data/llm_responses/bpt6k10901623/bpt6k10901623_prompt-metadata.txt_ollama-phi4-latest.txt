@@ -1,0 +1,9 @@
+{
+    "period": "Medieval to Early Modern Europe",
+    "period_reasoning": "The title 'Théodore, Reyne de Hongrie' suggests a medieval or early modern setting, as Hungary was ruled by kings and queens during this period. The genre of tragi-comedy is consistent with the literary styles popular in the 17th century.",
+    "timeframe_start": "-1000",
+    "timeframe_end": "1601",
+    "location": "Hungary",
+    "location_reasoning": "The title explicitly mentions 'Reyne de Hongrie' (Queen of Hungary), indicating that the setting is in Hungary. This aligns with historical periods when Hungary was ruled by monarchs.",
+    "location_qid": "Q1547"
+}

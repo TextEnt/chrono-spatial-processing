@@ -1,0 +1,9 @@
+{
+    "period": "Roman Empire (Flavian dynasty)",
+    "period_reasoning": "The play references Titus (Roman Emperor 79–81 CE) and Berenice, a historical Jewish queen linked to him. The critique likely engages with Roman imperial themes, aligning with the Flavian period.",
+    "timeframe_start": "70",
+    "timeframe_end": "81",
+    "location": "Rome",
+    "location_reasoning": "Titus was a Roman Emperor, and the setting of his rule (Rome) is implied. The critique of 'Berenices' (a common 17th-century theatrical subject) typically centers on imperial Rome.",
+    "location_qid": "Q220"
+}
