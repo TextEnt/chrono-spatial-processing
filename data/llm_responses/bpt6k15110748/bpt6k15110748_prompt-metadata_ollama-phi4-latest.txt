@@ -1,9 +1,0 @@
-{
-    "period": "Ancient Greece",
-    "period_reasoning": "Tristan L'Hermite's play 'Panthée, tragédie de M. de Tristan' is a tragedy, which suggests that it might draw inspiration from classical themes typical of ancient Greek tragedies. The title and style align with the conventions of 17th-century French neoclassicism, often emulating or referencing ancient Greek culture.",
-    "timeframe_start": "-800-01-01",
-    "timeframe_end": "-146-12-31",
-    "location": "Greece",
-    "location_reasoning": "Given that the play is a tragedy and likely inspired by classical themes, it is reasonable to infer that its setting would be in Ancient Greece, where many of these narratives originate.",
-    "location_qid": "Q48"
-}

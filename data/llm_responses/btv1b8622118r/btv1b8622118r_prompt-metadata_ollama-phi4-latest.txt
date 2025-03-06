@@ -1,9 +1,0 @@
-{
-    "period": null,
-    "period_reasoning": "The JSON object provides metadata about a play by Jean de Rotrou titled 'La soeur, comédie de M. de Rotrou' published in 1647. However, there is no information within the provided data regarding the historical period or setting of the play's action. The author's nationality and time do not inherently determine the play's timeframe without additional context.",
-    "timeframe_start": null,
-    "timeframe_end": null,
-    "location": null,
-    "location_reasoning": "The metadata does not contain any details about the geographic location where the play is set. Without specific references to places within the text or descriptions, it is impossible to determine the setting of the play.",
-    "location_qid": null
-}
