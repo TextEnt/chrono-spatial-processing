@@ -1,0 +1,79 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Fontenelle, Bernard de",
+    "title": "Psyché, tragédie représentée par l'Académie royale de musique. [Paroles de Th. Corneille et Fontenelle, musique de Lulli.]",
+    "publication_date": "1678",
+    "document_id": "bpt6k1521631v"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Psyché",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Lors que la Lampe étincelle, l'Amour s'éveille, et s'élève à plomb par un vol qui le dérobe aux yeux de Psyché La Décoration se change dans le même instant, et ne fait plus voir qu'un affreux Des Il y à vil",
+          "Viens, cher Amant, viens revoir ta Psyché \nVENUS\n Les maux dont tes soupirs marquent la violence al ta puiie pour toi aecroien mimtresjer, Mais le plaisir de là vengeance Est trop doux pour y renoncer.",
+          "On voit arriver une Troupe de Personnes désolées qui viennent vers la Montagne déplorer la disgrâce de Psyché Leurs plaintes sont exprimées de cette sorte par une Femme désolée et deux Hommes affligés.",
+          "Cessons de perdre des soupirs, Perdons Psyché sans que Psyché le sache, Elle brûle de voir cet Amant qui se cache, Il faut contenter ses désirs.",
+          "Un peu avant que Psyché se montre, la Forgeint toutes les choses dont on s'est servi pour achever le Palais, disparaissent."
+        ]
+      },
+      "top_5_persons": [
+        "Psyché",
+        "VENUS",
+        "Venus",
+        "FLORE",
+        "Psyché"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "ND ROT, quand l'Univers apprend avec surprise Qu'à tes ordres par tout la Victoire est soumise, Que sur les bords tremblants du Rhin et de l'Escaut Les Forts les mieux munis ne coûtent ne coût assaut, On a lieu de penser que la France occupée A s'étendre plus loin par le droit de vojpte, Pour cueillir les Lauriers de l' grands exploits Néglige des beaux Arts les paisibles emplois.",
+          "Mais quand on voit d'ailleurs que les Plaisirs tranquilles Regnent avec éclat au milieu de nos Villes, Pendant ces doux loisirs, qui n'assurerait pas Que la France ne peut accroître ses États?",
+          "Au plus fier Ennemi qu'ait jamais éù la France, Ce redoutable Gand qui pour être assiegé Demande"
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Gand",
+        "Rhin",
+        "Paris",
+        "Mons"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

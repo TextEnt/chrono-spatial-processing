@@ -1,0 +1,78 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": null,
+    "title": "Le martyre de sainte Reyne d'Alise , tragedie. Composée par un religieux de l'abbaye de Flavigny, où repose le corps de sainte Reine. Premiere edition",
+    "publication_date": "1687",
+    "document_id": "btv1b8614585w"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "REINE",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "On conspire à te perdre, on conjure ta mort, Ton Dieu pour te sauver ne fait aucun effort. \nREINE\n Vos discours sont mauvais, votre amour est funeste Qui veut me séparer de mon amour céleste, Vous m'est ennemis et trop injurieux, De me persuader le culte des faux-Dieux, l'aime mieux exposer aux ardeurs de la flamme, La beauté de mon corps que de perdre mon âme, susion Époux pour le prix de ma fidélité, Me fera part aux dons de sa Divinité, Si j'expose mon corps à la mort temporelle, Mon esprit jouira de la vie éternelle. \nOLIBRE\n Voïés les sentiments d'un esprit forcené, admire les élans de ce cœur obstiné, Malgré les bons avis élle est plus endurcie, A mépriser les Lois de l'empereur Décie, Cette ingrate et farouche après tant de mépris, A causé ce transport de haine à mes esprits;",
+          ", Je ai que désir ' un commandement, A vôtre bon plaisir ne suis réfractaire, Si a Foi du vrai Dieu ordonne le y. \nOLIBRE\n Reine tous ses discours sont pleins d'honnêteté, Des marques de candeur et de civilité, Des traits d'humilité, des signes de sagesse, Qui se font mériter l'effet de ma tendresse, Je jure sur ma faite que je n'ai de désir, Que pour te rendre riche, et te faire plaisir, Accepte ce présent comme un vrai témoignage, Que je veux contracter avec toi Mariage, Afin qu'étant unis par des vœux innocents, Nous puissions à nos Dieux présenter de rencens. \nREINE\n Ah!",
+          "Reine je suis chargé de l'exécution, Olibre m'a donné cette commission, Nous devons aujourd'hui te conduire au suplice, Toute-fois si tu veux que je te lois propice, Adore Jupiter, corrige ton délit, Déteste ton erreur, renonce à Jésus-Christ \nREINE\n Adorer les démons ce serait un grand crime, Qui me ferait gémir avec eux dans l'abîme, Je désire mourir en la Foi constamment, Et suivre Jésus-Christ en son couronnement;",
+          ", qu'enle runeite envie, De tenir un pendu pour l'Auteur de la vie: Ma fille écoute-moi, sois soumise à nos Lois, Si tu ne veux mourir comme lui dans la Croix. \nREINE\n De le suivre en la Croix, c'est ce que je désire, je ne mérite pas la palme de Martyre;",
+          "Qu'il ne faut épargner, ni le sexe, ni l'âge, César l'a commandé par ses justes Édits, Les Chrétiens sont des Dieux, et des hommes maudits Mais sur tout nous devons par amour et par haine, Réduire à son devoir la jeune fille Reine Commençons sans tarder la persécution, Théopiste est chaige de reccucion."
+        ]
+      },
+      "top_5_persons": [
+        "REINE",
+        "CLEMENT",
+        "REINE",
+        "Jésus-Christ",
+        "LUCILLE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Gaule",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "REUERIAN\n Nge dont la vertu fait naître dans la Gaule, AADu culte du vrai Dieu la florissante écolle, Chasse l'aveuglement, et dissipe l'erreur, Allume le désir du vrai bien dans le cœur, Ministre du Très-haut, Ambassadeur céleste, Instrument du salut, le secours manifeste, Du peuple élu de Dieu et des prédestinez,",
+          "Reine tu veux causer par ta Religion, Le trouble dans la Gaule et la rébellion, Offenser de nos Dieux la Majesté suprême, Ils ne peuvent laisser impuni ton blasphême;"
+        ]
+      },
+      "top_5_places": [
+        "Gaule",
+        "Bretagne",
+        "Saxe",
+        "Milan",
+        "Perse"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

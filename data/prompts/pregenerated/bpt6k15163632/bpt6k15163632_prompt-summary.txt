@@ -1,0 +1,77 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Les Festes de l'Amour et de Bacchus, pastorale [Divertissements des Amants magnifiques, de George Dandin et Pastorale comique, de Molière, arrangés par Quinault et Lully] précédée de la Grotte de Versailles, représentées à l'Académie royale de musique",
+    "publication_date": "1696",
+    "document_id": "bpt6k15163632"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Bachus",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "À Perspective s'ouvre, et laisse paraître-La PerspeE tre dans le fond du Théâtre une autre manière de voûte de Treille, sous laquelle laisse voir un Amphi- une multitude de Suivants de Bacchus sont placés, les uns sur des Tonneaux, et les autres sur une espèce d'Amphitheatre couvert de pampres de vigne, qui tous jouent de différents Instruments, tandis que plusieurs autres Satires, et Silvains s'avancent au milieu du Théâtre pour interrompre la Fête de l'Amour, pour en ç plus foremnelle la Sibne de Dacellus SCÈNE DEUXIE'ME.",
+          "Tandis que les Voix et les Instruments des deux Chœurs s'unissent, tous les Danceurs des deux Partis forment ensemble la dernière Entrée, et terminent agréablement les Fêtes de l'Amour et de Bacchus Tandis que les Voix et les Instruments des deux Chœurs s'unissent, tous les Danceurs des deux Partis forment ensemble la dernière Entrée, et terminent agréablement les Fêtes de l'Amour et de Bacchus",
+          "Les Suivants de Bacchus qui dancent font un combat contre les Danceurs du parti de l'Amour, tandis que les Bergers et les Satires disputent en chant en faveur du Dieu que chacun veut honorer.",
+          "À Bergère a changé, je veux changer Mm conse Enca \nILVANDRE\n Sui les lois de Bachus, tu t'en trouveras bien.",
+          "Et faisons répéter aux Échos d'alentour, Qu'il n'est rien de plus doux que Bacchus et l'Amour."
+        ]
+      },
+      "top_5_persons": [
+        "Bachus",
+        "IS",
+        "CIS",
+        "IRIS",
+        "RCIS"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Versailles",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Le Théâtre représente la Grotte de Versailles, où vient une Troupe de Bergers qui jouent de divers imeruments, pour y faire un Concert à leur mode.",
+          "Fin de la Grotte de Versailles LESFESTES DE L'AMOUR E T DE BACCHUS PASTORALE."
+        ]
+      },
+      "top_5_places": [
+        "Versailles",
+        "Bergère",
+        "Bergères",
+        "LORIS"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

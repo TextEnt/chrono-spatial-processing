@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Corneille, Pierre",
+    "title": "Le Cid, tragédie",
+    "publication_date": "1651",
+    "document_id": "bpt6k1280315b"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Rodrigue",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Mais quoi que sa valeur t'ait conquise aujourd'hui, Il faudrait que deux fusse ennemi de ta gloire Pour lui donner si-tôt le prix de sa victoire, Cé Hymen différé ne rompt point une loi Qui sans marquer de temps quelques destine ta foi, Prends un an, si tu veux pour essuyer tes larmes, Rodrigue, cependant il faut prendre les armes, Apres avoir vaincu les Mores sur nos bords, Renversé leurs desseins, repoussé leurs efforts, Va jusqu'en leur pays leur reporter la guerre, Commander mon armée, et rang leur terre, A ce seul nom de ils tomberont effroi, Ils ont nommé Seigneur, et te ont pr Roy, Mais parmi tes hauts faits sois lui tousiours fidelle, Re-en, il de peut, encor plus digne delle, Et par tes grands exploits fay-toi si bien priser Quhluj tore gturieun uiors de tepoulere D. \nRODRIGUE\n Pour posséder Chimène, et pour votre service Que peut-on m'ordonner que mon bras n'accomplisse?",
+          "d'un triste devoir la juste violence ui me fait malgré moi poursuivre ta vaillance, récrit à ton amour une si forte loi Qu'il te rend sans défense à qui combat pour moi : en cet aveuglement ne perds pas la mémoire, Qu'ainsi que de ta vie, il y va de ta gloire, it que dans quelque éclat que Rodrigue ait vécu, Quand on le saura mort, on le croira vaincu, l'honneur te fut plus cher que ieans te suis chère, Puis qu'il trempa tes mains dans le sang de mon père, Et te fit renoncer malgré ta passion A l'espoir le plus doux de ma possession :",
+          "C'est peu de dire aimer, Elvire, où l'adore Ma passion s'oppose à mon ressentiment, Dedans mon ennemi nous trouve mon amant, Et quelque sens qu'en dépit de toute ma colère Rodrigue dans mon cœur combat encor mon père, Il l'attaque, il le presse, il cède, il se défend, Tantôt fort, tantôt faible, et tantoit triomphant : Mais en ce dur combat de colère et de flamme Il déchire mon cœur sans partager mon âme, Et quoi que mon amour ait sur moi de pouvoir Je ne consulte point pour suivre mon devoir, Je cours sans balancer où mon honneur m'oblige;",
+          "Apec impatience attend leur Hyménée, Tu vois que mon repos en dépend aujour d'hui: Si l'amour vit d'espoir, il meurt avec beau, C'est un feu qui s'éteint faute de nourriture, Et malgté la rigueur de ma triste aventure, Si Chimène a jamais Rodrigue pour mari Mon espérance est morte et mon esprit guéri, Je souffre cependant tourment incroyable, Jusques à cet Hymen Rodrigue m'est aimable, Je travaille à le perdre, et le perds à regret, Et de là prend son cours mon déplaisir secret.",
+          "Ne parlons plus d'Hoù choix dont votre esprit s'irrite, La faveur l'a pu faire avant que le mérite, Vous choisissant peut-être on eût pu mieux choisir, Mais le Roi m'a trouvé plus propre à son désir, A l'honneur qu'il m'a fait ajoutez-en un autre, Joignons d'un sacré nœud ma maison à la vôtre, Rodrigue aime Chimène, et ce digne sujet De ces affections est le plus cher objet: Consentez-y, Monsieur, et l'acceptez pour gendre."
+        ]
+      },
+      "top_5_persons": [
+        "Rodrigue",
+        "ELVIRE",
+        "Chimène",
+        "Chimène",
+        "LEONOR"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Castille",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Par tes yeux chaque jour se découvrait aux miens, Et croyant voir en toi l'honneur de la Castille, Mon âme avec plaisir te destinait ma fille, Je sais ta passion, et suis ravi de voulant Pour tous ses mouvements cèdent à ton devoir, Qu'ils n'ont poinr affaibli cette ardeur magnanime, Que ta haute vertu répond à mon estime, Et que voulant pour gendre un cavalier parfait je ne me trompais point au choix que j'avais fait.",
+          "Ce qui fut bon alors ne l'est plus aujourd'hui, Rodrigue maintenant est notre Tique appui, L'espérance et l'amour d'un peuple qui l'adore, Le soutien du Castille et la terreur du More, Ses faits nous ont rendu ce qu'ils nous ont ôté, Et ton père en lui même se voit ressuscité, Et si tu veux enfin qu'en deux mots ie l'explique Tu poursuis en sa mort la ruine publique.",
+          "Vous perdez en la mort d'Hommes homme de sou rang, Vengez-la par un autre, et le sang par le sang Sacrifiez Don Dégue, et toute sa famille, À vous, à votre peuple, à toute la Castille Le Soleil qui voit tout ne voit rien sous les Cieux Qui vous puisse payer un sang si précieux.",
+          "Et ce bras du Royaume est le plus ferme appui Grenade, et l'Aragon tremblent quand ce fer brille, Mon nom sert de rempart à toute la Castille, Sans moi vous passeriez bientôt sous d'autres lois, Len vous ne m'aviez vous n'auriez plus de Rois.",
+          "Énereux héritier d'une illustre famille, *Qui fut toujours la gloire et l'appui de Castille, Race de tant d'aïeux en valeur signalés Que l'essai de la tienne a sitôt égalés,"
+        ]
+      },
+      "top_5_places": [
+        "Castille",
+        "Grenade",
+        "France",
+        "ELVIRE",
+        "Rome"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

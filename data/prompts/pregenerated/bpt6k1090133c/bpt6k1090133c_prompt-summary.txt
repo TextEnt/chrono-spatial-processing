@@ -1,0 +1,76 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Rosimond, Claude Rose",
+    "title": "La Dupe amoureuse, comédie",
+    "publication_date": "1671",
+    "document_id": "bpt6k1090133c"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ISABELLE",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Mais quel est son dessein? \nMARINE\n Il veut vous épouser, C'est à ce seul honneur, qu'ose aspirer sa flamme, Et si vous le voulez, vous deviendrez la femme \nISABELLE\n Hriavora vonsulter mes parents, mes amis! \nMARINE\n Cependant que eniez rous racées lay soit permis, C'est un homme. \n",
+          "Mais au moins, que l'honneur n'y sont point offensé. \nMARINE\n L'honneur de tons les deux n'y sera point blessé. \nISABELLE\n dmulo tu sais queis loupçons fait naître l'apparence. \nMARINE\n Et qu'importe, après tout, que le monde s'offense?",
+          "que l'homme est aveugle en sa prospérité! \nMARINE\n Que rien ne vous éltonne en cette extrémité, Et sachez que votre Oncle adore ma maîtresses 1 Il m'aime! \nISABELLE\n 4 MARINE.",
+          "Que cet àdieu m'est doux d'une ji belle bouche. \nISABELLE\n Et malgré mes parents a pretens que demain, Polidore reçoive, et mon cœur, et ma main.",
+          "Vous l'aviez déjà vu, mais vous ne içaviez pas Que son cœur fut charmé de vos divins appas. \nISABELLE\n Mon cousin, vous raillez."
+        ]
+      },
+      "top_5_persons": [
+        "ISABELLE",
+        "Gusman",
+        "Isabelle",
+        "Isabelle",
+        "Clitandre"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "DAr grâce et Privilège du Roi donné à Paris T le 19. \nNovembre 1670\n Signé, DALENCE, Il est permis au Sieur de ROSIMOND Comédien, de la Troupe du Marais, de faire imprimer, vendre et distribuer par tel Imprimeur et Libraire qu'il lui plaira une pièce de Théâtre de sa composition, intitulée La Dupe Amoureuse, durant le temps de cinq années;",
+          "Monsieur, il est sans prix, C'est le plus hardi vin qui soit de dans Paris, Je m'y connais un peu.",
+          "La Scène est à Paris JIE 7 TE"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "ISABELLE"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

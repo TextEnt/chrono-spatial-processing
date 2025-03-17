@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Mairet, Jean",
+    "title": "L'illustre corsaire , tragicomédie de Mairet",
+    "publication_date": "1640",
+    "document_id": "bpt6k6106679r"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ARMILLE",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Mais c'est à son bonheur, plutôt qu'à son mérite, PAGE, à Dorante Seigneur, un Estrangerlà-dehors vous attend, Pour -vous donner, dit-il, un pacquet important, Au reste son habit, samine et sa présance, Font croire que lui-même est homme d'importance. \nLIPAS\n C'est possible un Courier de votre Majesté, Roi Nicas \nRoi Lypas\n \nLÉPANTE\n At est vrai, ju dis lavérité, \nARMILLE\n Il le dit comme il se l'imagine.",
+          "ARMILLE\n N'effet, il est vrai que vous avez raison, Et quede sa gaieté dépend sa guérison, Tant qu'elle sera triste, elle sera mal saine, Et ce sang échauffé qui cause sa migraine Lui fait mal recevoir les caresses du Roi: Car n'était ce chagrin, Seigneur ne sais pas pourquoi Elle aurait à dégoût l'hymen et la personne Qui avait met sur la tête une double Gouronne, Si bien que par raison d'État et de santé",
+          "La leurestant vraiment de nature amoureuse, Il est à présumer qu'ils n'ont rien de méchant, Outre que ie le crois sur la foi du Marchand, Homme de probité, de moyens et d'estime, Depuis trente ans, ou plus, monhôte et monintime, -à- \nARMILLE\n Et le prix, à propos, vous l'a-t-il fait savoir?",
+          "Mais Ténare et son Maître ont volé droit auport, Avec tant de bonheur, de vaillance et d'adresse, Qu'ils ont gardé Lypas d'embarquer la Princesse Et par cette actiondonné temps d'arriver Ais peuple, que leurs cris avosent fait soulever.  \nARMILLE\n Mais la chaîne du port, empêchait sa sortie.",
+          "Quoi, vous oubliez donc que par votre prière Je luiviens d'envoyer un habit de mon frère, Et quun a poimognonm aitsie denant moi À moins d'être couvert é receu comme un Roi? \nARMILLE\n Madame, excusez-moi, la chose est si plaisante Qde ten aurailongtemps la mémoire présente;"
+        ]
+      },
+      "top_5_persons": [
+        "ARMILLE",
+        "NICAS",
+        "Felice",
+        "Celie",
+        "Seigneur"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Sicile",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "DORANTE\n Il sortira, dit-il, hors de votre héritage, Si tôt que par un ample et constant témoignage Il saura plainement que vous êtes l'aîné De la sage Vrsinie et du grand Prytané, Vous aurez cependant deux places en Sicile, Et ainsi pour sa prison, mon Palais et ma Ville Mais touchant cette dette",
+          "Car avec la justice et les forces qu'il a, Selon toute apparence il lui sera facile De reprendre en deux mois la Corse et la Sicile, Et puis l'usurpateur est à notre merci: Mais Dieux j'entends sa voix, le brutal vient ici, Fuyons;",
+          "Enfin qui non content de m'aven abusé, M'amène un faux Lépante, un Prince suposé, Asin de partager la Sicile et la Corse Avec cet héritier dont le drois est la force. \n",
+          "C'est pourquoi ( l'honneur sauf) espérez, tout de nous, Comme si la Sicile était encore à vous. \n",
+          "Car, comme vous savez, la chose est difficile, Et l'onvit en Provence autrement qu'en Sicile   §"
+        ]
+      },
+      "top_5_places": [
+        "Sicile",
+        "Marseille",
+        "Provence",
+        "Paris",
+        "Ligurie"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

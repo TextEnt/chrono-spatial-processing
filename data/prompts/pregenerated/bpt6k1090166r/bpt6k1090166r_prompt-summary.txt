@@ -1,0 +1,74 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Boyer, Claude",
+    "title": "Le Grand Alexandre, ou Porus, roy des Indes, tragedie",
+    "publication_date": "1666",
+    "document_id": "bpt6k1090166r"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ALEXANDRE",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Si ici dois triompher est-ce d'Hel assassin? \nPORUS\n Mon âme dedépit et de rage enflammée M'oblige à te chercher au cœur de ton armée, N'ayant pu jusqu'ici te rencontrer ailleurs. \nALEXANDRE\n Donne à ta trahison de meilleures couleurs, De ton noir attentat usais mal te défendre, Il n'est pas malaisc de trouver Alexandre Tu ne le peux trouver, lui, qui dans les combats S'expose tous les jours au moindre des soldats;",
+          "Malgré sa trahison voyant encor ses charmes, Je me pe suadai que mes yeux impôt Enveloppaient mes sens en des songes trompeurs: Mais en in ma raison se voyant dégagée De cette aveugle amour où tu l'avais plongée, Et traînant après elle te suite d'horreurs, Me fit voir de plus prés son crime et mes malheurs Mon âme en ce moment sembla voir Alexandre, Qui malgré mes efforts voulait tout entreprendre.",
+          "tu me perds, loin de me secourir, Abandonne mes jours et prends soin de ma gloire. \nALEXANDRE\n duon dapcièle, \nARSACIDE\n Sa mort flétrira ta mémoir Et c'est pour ton malheur que le Ciel a permis Qu'on conte un vil esclaue entre tes enncis, ponu d'autres objets à ta noble colère;",
+          "Elle ne m'écrit plus que ses fers sont pesants, Et ne m'entretient plus que de riches presens, Que du bon traitement que sans fait Alexandre Que sa prison n'a rien qui puisse la surprendre, Qu'il n'appartient qu'à avait de ranger sous ses lois Par sa rare douceur les Reines et les Rois.",
+          "Puisque mon innocence a perdu l'avantage De se faire connaître à celui qui l'outrage, Suivez aveuglement votre jalouse humeur: Argire aiment Alexandre, Argire est dans son cœur, Je presse votre haine, et sers votre vengeance, J'arme votre fureur contre mon innocence: Mais ici puis mettre fin à mon sort inhumain;"
+        ]
+      },
+      "top_5_persons": [
+        "ALEXANDRE",
+        "PORUS",
+        "Arsacide",
+        "Porus",
+        "Perdiccas"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Quand la Reine eut mandé Phradate devers Rome Pour ici faire savoir l'excès de votre ennui, Le Roy triste et pensif fait en ouvrant sa lettre Tout ce qu'en ce moment la douleur peut permettre, S'engage bien avant dedans vos déplaisirs, Et mêle à vos sanglots ses pleurs et ses soupirs;"
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Grèce"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

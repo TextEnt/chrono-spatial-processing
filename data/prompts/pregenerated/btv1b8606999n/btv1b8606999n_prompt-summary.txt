@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Urfé, Honoré d'",
+    "title": "La Sylvanire, ou la Morte-vive, fable bocagère de messire Honoré d'Urfé,...",
+    "publication_date": "1627",
+    "document_id": "btv1b8606999n"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Men",
+          "frequency": 7
+        },
+        "related_sentences": [
+          "Et d'autres sa beauté. \nMen\n Car certes esprit puis dire De n'avoir jamais vu En cette jeune fille Ville seule action Qui ne soit à louer, Sinon pour le sujet dont votre te veux parler: Et c'est pourquoi chargé d'âge et de péiAinsi que tu me vois, Je vais toujours rêvant à son profit, ne, Sans pardonner à ces jambes tremblantes, Et sans flatter ces bras A moitié décharnez;",
+          "Si je ne vous réponds Comme vous le voulez L'affection que sans porte à tous deux, Ainsi que la nature Et mon devoir me tiennent obligée, M'empêche la parole, Et la voix me dérobe. \nMen\n Pourquoi l'affection Et le devoir, font-ils un tel effet?",
+          "Où vas-tu Syluanire Voyez côte arrogante, Voyez cette imprudente, Voyez l'outrecuidée, Elle s'en va sans répondre un seul mot, CÈNE IV LERICE. \nFossinde\n IIl n'en fut un plus cruel que le tien, Ô pauvre Syluanire \nMen\n ",
+          "Vous plaît-il pas accomplir le bonheur De notre mariage? \nMen\n À nouveau fait il faut nouveau J'avais promis à d'autres, Iconseil: Avant qu'à toi, ma fille Syluanire Chacun le sait assez Tu le peux demander À tous ceux du hameau.",
+          "Que il prends pour ta suie C'est la jeune Aline Almerine qui cherche Par ces buissons touffus, Et parmi ces rivages, La brebis la plus chère Qu'elle ait dans son troupeau. \nMen\n Almerine dis-tu, Et non pas Syluanire Tir."
+        ]
+      },
+      "top_5_persons": [
+        "Men",
+        "Hylas",
+        "SYLVANIRE",
+        "ADRASTE",
+        "Stelle"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Lignon",
+          "frequency": 7
+        },
+        "related_sentences": [
+          "Je te dis, Syluanire, Que Théante te veut, Théante le plus riche Des bergers de Lignon, Que son père déjà M'en a fait la demande, Que ta -mère y consent, Que ie ma le commande, Et qu'il ne tient qu'à toi Que les liens d'vn heureux hyménée Tous deux ne vous étreignent qu'est-ce que tu réponds: N'as",
+          "J'ai plus aimé tout seul Que n'ont pas fait, mais ie dis tous ensem Vos Bergers de Lignon, Carlis, et Stiliane, Aimée et Floriante, blé, Cloris, Circeine, et Florice et Dorindé, Chryséide, Madonte, Laonice, Phillis, Alexis, et tant d'autres Que pour la brièveté Je ne veux pas nommer, En rendront témoignage.",
+          "Si quand on dit, que le Dieu de Lignon Découvre de son lit En divers lieux les humides cachettes, Faute de l'eau qu'un Soleil trop ardent Lui seiche et lui consume;",
+          "Il me dit, En Forêts Sur les bords de Lignon, Aglante le berger Adore Syluanire, Et Fossinde Tirinte, Il n'y faut plus qu'un seul tour de ta roue.",
+          "A tant de cruautés Quoi qu'elles soient extrêmes, Encore ce tourment D'une importune fille, Que plutôt que d'aimer Dedans Lignon"
+        ]
+      },
+      "top_5_places": [
+        "Lignon",
+        "Rome",
+        "Lignon",
+        "France",
+        "Sparte"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

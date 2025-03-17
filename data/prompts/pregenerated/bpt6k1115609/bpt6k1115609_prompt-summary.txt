@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Gillet de La Tessonerie",
+    "title": "La comédie de Francion",
+    "publication_date": "1642",
+    "document_id": "bpt6k1115609"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Laurette",
+          "frequency": 10
+        },
+        "related_sentences": [
+          "Et dont ici reconnais que les puissants effort Peuvent tout sur mon âme et rien dessur mon corps S'y tôt que je la vois ou lors que sans l'embrasse Mon ardeur s'alantît ie me trouve de glace, Et je ne puis savoir quel étrange malheur Change si promptement ma boüillante chaleur, Je me trouve immobile et plus fraid qu'une souche Je baise ses beaux yeux ie mme sur sa bouche, Et lors que ie sans m'enivrait de plaisirs C'en quand il suis réduit à faire des désirs, Car loin de contenter mon amoureuse en Ie meurs du déplaisir de conserver la vie, Et de ne pouuoir pas faire ce que ie veux Lors que occasion se te aux cheueux, Car sans ter enfin ennui qui m on Ie blêmis de colère et ie us de en, De ne pas contenter m brûlantes amours Lors que ie suis encore aux plus forts de mes iours, Et que ie ne cons aucune défaillance Qui doiue authoriser ve telle impuissance, Puis que ie suis pourueu de tout ce qui me faut Que la nature en moi n'a vi fait de défaut, Et vois aymé de ma ne Pen Au comme ie aime et que te le souhaitte, Et v hymen sacré me rendant son époux Me permet de cueillir ce quil a de plus doux, Ha Le! à ce penser mon mal se rend extrême Et ie souffre un tourment pire que tu mort même, -à- est- d mon -y-elle Malheureux Valantin quel crime as tu commis Pour te rendre l'amour et le Ciel ennemis, Et toi chère beauté mon unique pensée Rendrai je ton amour si mal récompensée, Et que tu ne puis pas te faire bientôt voir Qu'ayant la volonté quelque manque du pouvoir, Encore ce qui m'attriste et tout ce qui me fâche C'est la crainte que j'ai que quelqu'un ne le sache, Puisque si ie pouuois découvrir mon tourment J'en pourrais espérer un prompt alégement (Laurette paraît) Mais j'aperçoit Laurettei ah Dieux qu'elle est aimable Que son aspeor m' es iude et qu 'est agréable.",
+          "FRANCION\n N'en doutez nullement, mais à propos mon âme, Sache que ton époux ma découvert sa flamme, * Qu'il croit que mon savoir peut ranimer son corps Qu'il ma tout raconté ses impuissants efforts Et que j'ai si bien feins de le tirer de peine Qu'il se mit dans mes mains toute la nuit prochaine Pour faire des secrets qu'il estime puissants Afin de réchauffer ses esprits languissants. \nCAURETTE\n Comment donc nest-il pas sorti de ce village. \nFRANCTON\n Avon mon enge, il y a tenet. \nLAURETTE\n La ruse. \n",
+          "vous méritez encor de plus grandes langes Je crois que votre esprit tient de celui des Anges, Et que les justes Dieux vous ont conduit ici Pour aleger ma peine et finir mon souci, Mais Laurette saproche ô venue importune Pouvait -il m'arriver quelque pire infortune. \nFRANCION\n C'est elle dit la vois cet objet nompareil Qui m'éblouit les yeux comme un autre soleil, Que de divins apas, que d'adorables choses Que d'extrêmes beautés que de lys et de roses Toi qui mis autrefois son portrait dans mon sein Amour fais prospérer mon généreux dessein.",
+          "LAURETTE\n Bien mon cœur ie te crois Mais sors vite dicy, sauve toi, sauve moi, Car tu peux bien penser que quoi qu'il advienne En attaquant ta vie ons attaque à la mienne, Et que tu ne saurais tomber en ce malheur Saus procurer ta honte et me perdre d'honneur, Carencore que tu sois innocent de ce crime Dont ce vieux radoteux t'accuse par maxime, Tu ne laisseras pas de tomber en ses mains Ducure purre uitimes tes momneurs que ie crains, \nFRANCION\n ",
+          "que l'inhumain Nupuint fatct uesfur nous queique coup de sa main, Qu'il n'a point pris son temps pour nous ôter la vie Et mieux exécuter sonexécrable envie, \nVALANIN\n Je m'en étonne aussi mais pour trouver l'auteur Je crois qu'il faut s'en prendre à notre Opérateur, \nLAURETTE\n Quoy croyez -vous qu'il soit complice de ce crime, Oui."
+        ]
+      },
+      "top_5_persons": [
+        "Laurette",
+        "LAURETTE",
+        "OLIVIER",
+        "BERTRAND",
+        "ANSELME"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 10
+        },
+        "related_sentences": [
+          "Signé le Brun, il est permis à Anthoine de Sommaville, Marchand Libraire à Paris, d'imprimer une pièce de Théâtre, intitulée La Mort d'Asdrubal, Tragédie du sieur de Mont-Fleuri, et ce durant l'espace de cinquants, avec défense à toutes sortes de personnes, de quelque qualité qu’ils soient, de l'imprimer ou faire imprimer, sur les peines porte par ledis Privilège.",
+          "mõ répond et ma maison Uous verrez qu'il m'accuse avec peu de raison, Et puis pour éclaircir ce que j'ai dedans l'âme Vous saurez qu'a Paris j'ai chéri cette femme, Et quelle m'engagea sa parole et sa fo De ne prendre jamais d'autre mari que moi.",
+          "Que ie suis malheureux, Parlez parlez Madame, \nLAURETTE\n Feignons de la tristesse, Ah malheureuse femme Il est vrai qu'à Paris ie lui donnai ma fo Et Ne meurs de regret de n'être plus à moi.",
+          "Uà autre n'y songe plus Mais sans nous amuser en discours superflus, Retournons à Paris afin que la Justice Juge de votre hymen qu'il faut quelle abolisse, Afin que sans possède en toute liberté",
+          "Ledit de Sommauille a associé avec lui Toussaint Quinet, aussi Marchand Libraire à Paris, suivant l'accord fait entr'eux."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "France",
+        "Navarre",
+        "champ de Mars",
+        "Angleterre"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

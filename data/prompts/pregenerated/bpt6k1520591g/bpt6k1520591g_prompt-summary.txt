@@ -1,0 +1,78 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "La Motte, Antoine de",
+    "title": "Issé : pastorale héroïque en musique, représentée devant S. M., à Trianon, le 17 de décembre 1697, par l'Académie royale de musique [par A. Houdar de La Motte]",
+    "publication_date": "1697",
+    "document_id": "bpt6k1520591g"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Apollon",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Apollon, en ces lieux hâtez-vous de paraître, Par des attraits pompeux tâchez de m'attendrir, Ce Berger de mon cœur sera toujours le maître, Et les vœux éclatants que vous viendrez m'offrir Ne serviront.",
+          "Elle sçait mes tourments secrets, Que ne peut-elle, Hélas! répéter mes regrets Pour vous tirer d'inquiétude. \nAPOLLON\n En vain votre cœur s'est flatté De mépriser pour moi la suprême Puissance;",
+          "Le Théâtre représente un Bocage, dont la vue est terminée par la Forêt de Dodone \nAPOLLON\n De Vand on a souffert une fois L'amoureux esclavage, Ah!",
+          "Que dites-vous, et que viens-je d'entendre? \nAPOLLON\n Mon cœur brûle pour vous de l'amour le plus tendre;",
+          "APOLLON, ISSE' AN DORIS, Troupes d'Européens, d'Européennes, de Chinois, d'Amiquains, d'Amériques, dEgyptiens."
+        ]
+      },
+      "top_5_persons": [
+        "Apollon",
+        "E",
+        "AN",
+        "Issé",
+        "Hercule"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "ISSE",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Ô Ciel! \nISSE\n \nAPOLLON\n Sous l'habit d'un Berger s'ai voulu séparer mon amour de ma gloire.",
+          "Qu'entends-je? \nISSE\n \nAPOLLON\n Dans l'Objet de votre amour extrême Connaissez le Dieu qui vous aime.",
+          "APOLLON, ISSE, PAN et DORIS \nAPOLLON\n IOn, je ne puis me rassurer;",
+          "ISSE endormie, HILAS \nHILAS\n ",
+          "ISSE se réveillant."
+        ]
+      },
+      "top_5_places": [
+        "ISSE",
+        "Paris"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

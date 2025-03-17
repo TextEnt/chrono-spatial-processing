@@ -1,0 +1,78 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Nanteuil, Denis Clerselier de",
+    "title": "Le Comte de Rocquefoeuilles, ou le Docteur extravagant, comédie",
+    "publication_date": "1672",
+    "document_id": "bpt6k1090097z"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Catin",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "-pripare a vous faire vire dans les coliments qu' fat a sa Maîtresse brilpin et Catin dans leurs amours et les débats qu'elle a été le boceur enfin tout contribuera si j'en crois le sentiment de quelques uns de me ami Ie vous prie Monsieur de le ur faire lustice et de me dire s'ils ne se sont point irompez et de pardonner quelques petit fautes qui pourreient y être rest es a foible Muse qui ne fait que de naître Mais cõme tnon but est que de vous diveriir pour pu que ma petite die puisse vous plaire y auray assez de quoi intimider tous les critiques uoudroient censurer ce prrit ouvrage",
+          "Et puis l'on verra les enfants, De ma Catin en fourmillaire, Venir comme unt pépinière, Embrasser leur Papa Cryspin Cependant songons au festin, Et que toute cérémonies, Entre nous autres soient banies: Puis que Catin donne à mes vœu Un gros pucelage amoure GLORGIBUS Et ie te commande aujourc'hui De conserver l'amour pour lui, Que tu gardais.",
+          "Ose tu te jouer à moi Cesse de me vexer bagasse, Ou j'étrillerav a carcasse, Je te déchirerau la peau De ton gros malautru museau, CATIN voyez uune ce qu' nous veut dire, Il nous feroir cruer de rire, Avec son diable de Latin.",
+          "Et puis l'on verra les enfants, De ma Catin en fourmillaire, Venir comme unt pépinière, Embrasser leur Papa Cryspin Cependant songons au festin, Et que toute cérémonies, Entre nous autres soient banies: Puis que Catin donne à mes vœu Un gros pucelage amoure",
+          "CRYSPIN Ô que ce serait un bean coup, Ma chère Catin ie t'adore, Et at’aymerois plus encore, Si tu voulais un peu rosser, Ce villain qui nous veut succer."
+        ]
+      },
+      "top_5_persons": [
+        "Catin",
+        "Climène",
+        "CRISPIN",
+        "Muse",
+        "Pompée"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Car c'est un homme dans la France Qui sans doute est de conséquence, Car il parle fort bien Français Est-il loin.",
+          "Je suis depuis peu dans la France, Mais las que je serais heurebz,"
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "mer noire",
+        "Catia",
+        "Rome",
+        "Pontoise"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

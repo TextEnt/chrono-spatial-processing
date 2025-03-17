@@ -1,0 +1,78 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Mary, Nicolas",
+    "title": "Orphise, ou La beauté persécutée , tragi-comédie. Par le sieur Desfontaines",
+    "publication_date": "1638",
+    "document_id": "bpt6k5713889d"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Thage",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Les princes comme vous pour perdre un misérable Rendent quand il leur plaît un innocent coupable, Mais quoi que vous disiez, Thage est trop bien ne Peur croire qu'il en soit justement soupçonné On l'acuse pourtant, et là bouche prophane D'un rival envieux le juge, et le condamne: Mais croyez (Ligédamis) que ces lâches moyens Bien qu'ils soient spécieux aux yeux des Cytoyens Ne trouveront jamais monme assez, crédulePour a faire étouffer le beau feu qui me brûle;",
+          "Est-il besoin encor de te nommer Orphise \nOrphise\n \nZARALINDE\n \nLIGDAMIS\n Ah chère sœur si tu veux m'obliger Approuve ce dessein quine peut plus changer: Amour nout a rendus d'une égale puissance, Et sa rare vertu relève sa naissane, Mais j'apperçois Thage, allons le recuoir.",
+          "Et si Thage peut prouver son innocence Je veux qu'Orphise aussi l'ait pour sa récompense, Qu'on le fasse venir. \nORPHISE\n Grand Prince le voici Quid'un pas triste, et lent témoigne son souci.",
+          "Un crime Ligédamis n'autorise pas l'autre, Et la tache du sien nefface pas la vôtre: Thage estcriminel, et vous l'êtes aussi, Mais rendez sur ce point mon esprit éclairci.",
+          "Vois Thage est-ce ainsi que tu chéris Orphise 122 Ou plustost est-ce ainsi que ton cœur la MoNe méprise, 2 Ouyouy, suis desseins, to peux m'abandonner;"
+        ]
+      },
+      "top_5_persons": [
+        "Thage",
+        "Seigneur",
+        "Seigneur",
+        "Loing",
+        "Sale"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Il est permis à ANTOINE DE SOMMAVILLE, Marchand Libraire à Paris, d'Imprimer ou fairelémprimer,vendre et distribuer une pièce de Théâtre Intitulec, ORPHISE, ou la Beauté Persecutée Tragi-Comédie du Sieur DESFONTAINES, durant le temps de neuf ans à compter du jour qu'elle sera achevue d'Imprimer:",
+          "AR grâce et Privilège de Roi donné à Paris le L 7."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Grèce",
+        "Thebes",
+        "PARIS",
+        "France"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

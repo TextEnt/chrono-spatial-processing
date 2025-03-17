@@ -1,0 +1,78 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Mouqué, Jean",
+    "title": "L'amour desplumé, ou La victoire de l'amour divin . Pastorelle chrestienne. De l'invention de I. M. Boulenois",
+    "publication_date": "1612",
+    "document_id": "bpt6k8570103"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Cloris",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Là -dessus il rencontre son Cloris qu'il aimait fort uniquement: ils s'embrassent pour avoir été long temps absent l'un de l'autre, et après mille caresses, Doris assure son Cloris qu'il jouirait de sa Bergère, et lui de la sienne: le Satire peu après trouve bien à propos Claricée qui se plaignait de Cloris, et pensant de la réduire à son Berger il en devient amoureux, et la veut forcer: Elle faisant la rebelle il change son amour en rage, et la métamorphose en rocher.",
+          "Que crains-tu jamais, Cloris, ta Francine sans doure Bien tôt entre tes mains aux te rends quoi qui coute, Alors tu la feras mirer dedans c'eau, Aussi tôt changera d'Amour: Tout beau, tout beau Ne te hâte point tenez Clo Ahibons Dieux il me semble Que nous sommes déjà sous ce fueillage ensemble Do Courage, mon Cloris, Tu dois bien espérer. \n",
+          "Cloris, Doris \nCloris\n Heure en heure j'attends le secours de la mory, Pour en fin bien heureux arriver à son port: Mais, cruauté) iepré elle ny veut entendre.",
+          "C'est par trop lamenter, c'est trop vivre en langeurs, Il faut mon cher Cloris, qu'encore un coup ie tente Pour savoir si personne doibs perdre en fin mon attente.",
+          "que tes pas, entends à moi Cloris \nClo\n Je ne veux pas de toi, va cercher ton Doris, Ne m'importune plus Nymphe ie te supplie."
+        ]
+      },
+      "top_5_persons": [
+        "Cloris",
+        "Francine",
+        "Doris",
+        "Cupidon",
+        "Clar"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Si tu ne le veux faire, il faudra que Rome meure, J'aurai le fier tombeau pour unicque demeure: Je me consomme, hélas!",
+          "Clo tu peux ratifier, Ce que Rome te requiers?"
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Gange",
+        "Bergères",
+        "Bergère",
+        "France"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Somaize, Antoine Baudeau",
+    "title": "Les Veritables Pretieuses, comédie, Seconde édition reveuë, corrigée et augmentée d'un dialogue des deux Pretieuses, sur les affaires de leur communauté",
+    "publication_date": "1660",
+    "document_id": "bpt6k10901942"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ISABELLE",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Oüy, bain intérieur ou agrément donné entre les deux sœurs, peu-a Lausuent maintenant empêcher la métempsycose de mon âme, qui va bien-tôt émanciper de sa demeure, si on ne la secoure par de ses Oui, un bai vous nerieur ou l' goûte ment do la entre Le- deux samour permis,  \nISABELLE\n Voyez!",
+          "puisque vous avez cette pensée, l'envie me prend de disputer contre vous: et pour vous montrer qu'il n'y a rien de plus extravagant que cette façon de parler, quelque m'en vais vous dire de certains mots que j'ai retenus qui choquent tout à fait notre langue naturelle. \nISABELLE\n ",
+          "mais j'ai assez d'indulgence pour vous tirer de l'errreur ou vous a précipité l'épaisseur de votre esprit. \nBEATRIX\n Je suis ravie que vous ayez des indulgences chez vous, vous m'épargnez la peine d'en aller quérir à Rome \nISABELLE\n ",
+          "quand les filles et les garçons ont donné dans l'amour permis, qui est selon le langage de vos Prétieuses le mariage. \nISABELLE\n En vérité votre désordre est terrible.",
+          "point de quartier ici de trêve, toujours cette juppe modeste m'empêchera de contempler la friponne. \nISABELLE\n Vraiment vous êtes aujourd'hui sur votre grand fécond."
+        ]
+      },
+      "top_5_persons": [
+        "ISABELLE",
+        "BEATRIX",
+        "Bourbon",
+        "Isabelle",
+        "Poète"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Mon Maître étant mort, je me trouvé fort embarrassé de ma personne, parce que ie me trouvais fort gueux, et que je n'avais gagné à son service que la méthode de faire des vers coci, coci, le Sieur de la Force, dit Gilles le Niais, voyant que deux ne savais où donner de la tête, et que ie luy jours être ait dans sa troupe, me pria d'y entrer: j'y résistai d'abord ne voulant point passer pour un Farceur, mais il me représenta que toutes les personnes les plus Illustres de Paris, allaient tous les jours voir la farce au petit Bourbon, et me persuada si bien que les siennes étaient aussi honnêtes que plusieurs de celles que Mascarille a faites, que ici me laissai vaincre, et que j'entrai dans sa troupe.",
+          "Il est permis à JEAN RIBOU, Marchand Libraire à Paris, d'imprimer où faire imprimer une Comédie intitulée Les Véritables Pretieuses, pendant le temps et espace de sept ans entiers, à compter du jour qu'elle sera imprimée:",
+          "Il est permis à JEAN RIBOU, Marchand Libraire à Paris, d'imprimer où faire imprimer une Comédie intitulée Les Véritables Pretieuses, pendant le temps et espace de sept ans entiers, à compter du jour qu'elle sera imprimée:",
+          "MONSIEUR, Greval Bourgeois voisin d'Iscarie La Scène est à Paris LES ERITABLES PRETIEUSES.",
+          "AR grâce et Privilège du Roi, donné Ia Paris"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Louvre",
+        "France",
+        "Rome",
+        "Sicile"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

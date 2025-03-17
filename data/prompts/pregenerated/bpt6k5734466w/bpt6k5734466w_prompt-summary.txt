@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Bernard, Catherine",
+    "title": "Brutus , tragedie",
+    "publication_date": "1691",
+    "document_id": "bpt6k5734466w"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Brutus",
+          "frequency": 38
+        },
+        "related_sentences": [
+          "Ilest permis à M. B. de faire imprimer, veudie et débiter, par tel Imprimeur ou Libraire qu'elle voudra choisir, une Pièce de Théâtre de sa composition, intitulé Brutus, Tragédie, pendant le temps de six années, à compter du jour qu'elle sera imprimée pour la première fois, pendant lequel temps faisons très",
+          "Il vous ôte à son gré vos superbes faiceaux, Lorsqu'il fit choix d'abord de ses Maîtres nouveaux, Brutus et Collatin occupaient cette place, Depuis un vain soupçon, une inconstante audace Dégrada Colatin, et vous donna Seigneur, Pour peu de temps, peut-être, un dangereux honneur;",
+          "Mon cœur de vos douleurs ne blâme pas l'excès, Du plus grand des Romains j'ai vu l'âme heroî̈que S'abattre sous le poids d'un devoir tyrannique, De son funeste arrêt Brutus épouvanté, A laissé du Héros la noble dureté",
+          "Je puis à son hymen destiné pour mon père, néc ui rendie des lomo, petuener de Seigneur plaite, Mais vous à qui Brutus destine d'autres nœuds, De quel droit refuser de souscrire à ses vœux?",
+          ", Il perd le souvenir de sa gloire passée, De J'efort qu'il a fait sa vertu s'est lassée, L'homme reprend ses droits pour sentir son malheur, Brutus par son silence exprime sa douleur."
+        ]
+      },
+      "top_5_persons": [
+        "Brutus",
+        "Titus",
+        "Tiberinus",
+        "Aquilius",
+        "VALERIE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 38
+        },
+        "related_sentences": [
+          "La haine, les frayeuts, ou les soupçons d'un homme, Étoyen tles seules lois qu'on reconnût dans Rome, Des meilleurs citoyens l'éxil ou le trépas, Causoïent par tout des pleurs qui ne se montraient pas, La vertu la plus haute était la plus coupable, Et Brutus aujourd'hui si graud, si respectable, Ne fur-il pas réduit à la nécessité D'emp unter les dehors de la stupidité?",
+          "Il peut beaucoup dans Rome, et par de doux moyens On se doit assurer de pareils citoyens. \nVALERIUS\n J'admire une vertu si pure et si solide, L'amour de la Patrie est tout ce qui vous guide, Pour naître, pour régner à jamais parmi nous, La liberté, Seigneur, avait besoin de vous;",
+          "Un péril si pressant peut le faire trembler. \nBRUTUS\n Dans deux heures, Seigneur, il se doit assemb'er: Mais n'en attendez rien qui vous soit favorable, Soyez surer de trouver le Sénat implacable, Rome n'a qu'un esprit.",
+          "Ce n'est pas vainement, que chez AquiNous avons fait tantôt entrer Vindicius Aquilius chez lui rassemblait des perfides, Qui prétoient aux Tarquins leurs armes parricides, Plautine, ils conspiraient, et leurs soins criminels Remettaient Rome en proie à des Maîtres cruels.",
+          "Tarquin par ce forfait n'est pas seul offensé: Et si de Porsenna la valeur éclatante Ne pouvait accabler Rome encore naissante, D'un Roi dépossédé l'exil et les malheurs De tous les autres Rois quelque feraient des vengeurs. \n"
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Paris",
+        "PARIS",
+        "Tragédie",
+        "France"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

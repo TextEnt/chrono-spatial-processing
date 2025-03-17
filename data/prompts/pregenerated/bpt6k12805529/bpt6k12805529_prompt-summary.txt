@@ -1,0 +1,79 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Amphitryon, comédie par J. B. P. de Molière",
+    "publication_date": "1669",
+    "document_id": "bpt6k12805529"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Amphitryon",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Et tandis qu'au milieu des Beotiques Plaines, Amphitryon, son Épous, Commande aux Troupes Thebaines, Il en a pris la forme, et reçoit là-dessous Un soulagement à ses peines, Dans la possession des plaisirs les plus doux.",
+          "Ou bien que de Seigneur-même, il soit venu sans guide, Vers celle qu'il a sçu qu'on en voulait parer. \nAMPHITRYON\n Ô Dieux, dont le pouvoir sur les choses preside, Quelle eit cette atenture!",
+          "Et me voilà déterminée, A souffrir qu'en ce jour, nos liens soient rompus. \nAMPHITRYON\n Après l'indigne affront que l'on me fait connaître, C'est bien à quoi, sans doute, il faut vous préparer.",
+          "Sosie, un Moi, de vos ordres jalous, Que vous avez du Port envoyé vers Alcméne, Et qui de nos secrets à connaissance pleine, Comme le Moi qui parle à Vous. \nAMPHITRYON\n Quels contes!",
+          "Il n'en sera, Monsieur, que ce que vous voudrez. \nAMPHITRYON\n Çà, je veux étouffer le courroux qui m'enflamme, Et, tout du long, t'oüir sur ta Commission."
+        ]
+      },
+      "top_5_persons": [
+        "Amphitryon",
+        "Jupiter",
+        "Mercure",
+        "JE",
+        "M"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Thebes",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Thebes en a pour moi de tout autres que vous: Et je vais en trouver, qui partageant l'injure, Sauront prêter la main à mon juste courrous.",
+          "SOSIE, Valet d'Amphitryon ARGATIPHONTIDAS, NAUCRATES, PDLIDAS, POSICLES, La Scène est à Thebes, devant la Maison d'Amphitryon AMPHITRYON, COMÉDIE.",
+          "Et les remercier des succès glorieux, Dont Thebes, par son Bras, goûte les avantages."
+        ]
+      },
+      "top_5_places": [
+        "Thebes",
+        "Thebe",
+        "France",
+        "V",
+        "Rome"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

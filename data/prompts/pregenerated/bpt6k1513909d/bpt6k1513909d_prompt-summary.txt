@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Mareschal, André",
+    "title": "Le dictateur romain , tragédie...",
+    "publication_date": "1646",
+    "document_id": "bpt6k1513909d"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "LUCILE",
+          "frequency": 82
+        },
+        "related_sentences": [
+          "Valère, qui croyait tout tendre à son dessein, N'empêcha pas le mien qu'il eût pu rendre vain: Ce stratagème étrange et difficile à croire Par les siens, malgré lui, nous ouvrit la victoire, Si grande que la Mer en vit rougir ses ports, Qu'Ortone eut dans ses champs tous les Samnites morts, Que Fabie est ravi, que Valère lui-même Et m'envie et s'impute un si beau stratagème, Par qui j'ai reparé dans ce combat dernier, Avec mon erreur, la honte du premier. \nLUCILE\n Deserteur d'un Ami, dont la gloire est flétrie Mais pour ne l'être point plutôt de ta patrie, Que ce discours, Comine, et ta fidélité À Fabie ont rendu ce qu'il a mérité! \nAMILLE\n ",
+          "Et pour mieux résister contre vous et contre elles De tous comptez s'assemble un nombre de Rebeles Prêts de se retirer sur le Mont Aventin, Teun eunjermer Pavit, on suivre jou desin. \nLUCILE\n Nous-même avons vu, presque au sortir du Temple Leur extrême fureur, et qui n'a point d'exemple: Demettons, disent-ils, ce rude Dictateur Jaloux de la victoire autant que de l'auteur;",
+          "Qui va jusques au Nom détruire les Samnites, Au delà des deux Mers étendre nos limites, Et montrer à notre Aigle agile, impatient Et inemin de la Orete Ô de tout l'Oriens. \nLUCILE\n Cette double victoire et si grande et si pleine A fait toute ma joie, et fait toute ma peine;",
+          "Quois ooutis vont pusser pour esprit violent? \nIRE\n Comme étant Dictateur, je veux passer pour homme Qui ne voit que les lois et l'intérêt de Rome \nLUCILE\n a eunt jer jront par ème perr amari.",
+          "Qu'est-ce qui peut causer un si soudain retour? \nLUCILE\n Que ait de Paière, on peut-être l'amour. \nMINE\n C'est toute une autre cause, et qui va vous surprendre."
+        ]
+      },
+      "top_5_persons": [
+        "LUCILE",
+        "LUCILLE",
+        "CAMILLE",
+        "Valère",
+        "MARTIAN"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 82
+        },
+        "related_sentences": [
+          "J'en reçois, Papyrie, Elle agréable office, Honteux d'être réduit à ce faible exercice, Tandis que votre Père au milieu des combats Rend à Rome un devoir qui demandait mon bras: Ma vertu parle seule, et vous défend de croire Qu'un si juste intérêt soit jaloux de sa gloire, Puis qu'en lui résignant, et Rome et mes emplois, Le créant Dictateur j'ai tout mis sous ses lois, Que mon mal l'a rendu seul Maître de l'Empire;",
+          "Pourrais-je l'avoir vu, ce Mars humilié, D'un cœur doux, sans orgueil, de soi-même oublié, Applaudi du Sénat, au milieu de sa gloire, Demander au Consul pardon de sa victoire, Mettre tout son triomphe à fuir le trépas, Se montrer si louable à ne se louer pas, Envers Rome excuser un mal si profitable?",
+          "Si Fabie a vaincu ce n'est que pour Papire Ce Dictateur, absent d'un Corps qui suit ses lois, À Rome, et sans combattre a vaincu par deux fois Le bruit de son grand Nom, sa seule renommée A plius fait que Fabie, et que toute l'Armée;",
+          "Qui seul porte en son cœur les cœurs de tous les siens Et qui digne héritier fait revivre en un homme Ces trois cents dans un jour sacrifiés pour Rome Mais sans rien feindre aussi, sans flatter votre Époux, Papire est tout Romain, le plus grand d'entre nous;",
+          "Puis que l'un de nos Rois; c'est Tuelle, je le nomm Deuant tout le Sénat, à la face de Rome, Céda bien à l'Appel, et montra le pouvoir Que le Peuple a par fois de juger et de voir;"
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "France",
+        "Paris",
+        "Guyenne",
+        "V"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

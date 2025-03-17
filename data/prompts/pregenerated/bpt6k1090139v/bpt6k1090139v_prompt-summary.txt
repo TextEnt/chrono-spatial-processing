@@ -1,0 +1,78 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": null,
+    "title": "La Cocue imaginaire, comedie",
+    "publication_date": "1662",
+    "document_id": "bpt6k1090139v"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ALCIPPE",
+          "frequency": 13
+        },
+        "related_sentences": [
+          "mais si plein de douceur, Qu'extasié soudain par des transports de flamme, pour rentirez l'ainoul le gimier dans voitse âme, Et vous confesserez en goûtant ces douceurs Que quand ce sexe veut, il sait gagner des cœurs. \nALCIPPE\n Celles qui près de nous font ainsi les Zatteuses, Ont des motifs cachés et sont fort dangereuses, Et lors que leur amour nous fait voir tant d'ardeur Notre bource est leur but, plutôt que notre cœur.",
+          "Si vous ne répondez bientôt à mon envie, Si d'un oui que j'attends je ne la vois suivie, Avant qu'il soit deux jours je vous ferai sçauoir Combien sur ses enfants un père à de pouvoir. \nALCIPPE\n Si pour moi vous gardez encor quelque tendresses Ah! daignez m'empêcher de mourir de tristesse, Veuillez ne point forcer mon inclination, Me donnant à l'objet de mon aversion.",
+          "ce point c'est à tort s'alarmer, Puis qu'on tient qu'il n'est pas possible d'exprimer L'amour qu'à son mari porte une jeune femme, Quand une fois il a pu surprendre son âme, Lt laprant goûter jes sectes douceurs Dont amour sçait toujours faire jouïrir deux cœurs. \nALCIPPE\n Quand elle m'aimerait et me serait fidèle, Mon cœur ne peut avoir de tendresse pour elle.",
+          "On ne se repend point de rendre obéissance À ceux à qui nous doit soumettre la naissance, Puisque le temps enfin souvent nous fait bien voir Qu'ils n'vsent dessus nous d'être absolu pouvoir Que pour notre intérêt et notre propre gloire. \nALCIPPE\n Oui, mais l'on est contraint avant que de le croire De soupirer longtemps.",
+          "Si j'eusse sur le champ pu trouver des témoins, Mais puisque j'en manquais, tu devais tout du moins Alcippe s'approche peu à peu d'elle et attend que son truaspont jair f émar tuer parte Arracher ses cheveux, et pour soûler ma rage, De la bonne façon souffleter son visage."
+        ]
+      },
+      "top_5_persons": [
+        "ALCIPPE",
+        "Paquette",
+        "BEATRIX",
+        "Prétieuses",
+        "M"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 13
+        },
+        "related_sentences": [
+          "mais encore dans le temps du Mariage du Roi, ou la curiosité avait attiré tout ce qu'il y a de gens de qualité en cette Ville: elle n'en a toutefois pas moins réussi, et quoi que Paris fut se semble désert, il s'y est néanmoins encor trouvé assez de personnes de condition pour remplir plus de quarante fois les loges et le Théâtre du petit Bourbon, et assez de Bourgeois pour remplir autant de fois le Parterre Jugez quelle réussite cette Pièce aurait eue, si elle avait été jouée dans un temps plus favorable, et si la Cour avait été à Paris Elle aurait sans doute été plus admirée que les Pretieuses, puis qu'encor que le temps lui fut contraire, l'on doute si elle n'a pas eu autant de succès.",
+          ", BEATRIX. \nBEATRIX\n Ous voici dans Paris, souvenez-vous NN Madame, que vous devez eniin m'ouvrir toute votre âme, Et que vous m'avez dit que je saurais aussi Qui vous a fait presser votre retour ici, \nCÉPHISE\n Oüy homme m'en ressouviens, et ton tiens ma promesse, Apprends donc le sujet de l'ennui qui me presse.",
+          "c'est pourquoi presque tout Paris a souhaité de voir ce qu'une femme pourrait dire, à qui il arriverait la même chose qu'à Séganarelle, et si elle aurait autant de sujet de se plaindre, quand son mar y manque de foi, que Un quand elle lui est infidèle.",
+          "ÀLCITTE, Assiant de Céphise ROGVESPINE, Ion Valet GÉRONTE, son Père Bourgeois de Paris CÉPHISE, Amante d'Alcippe SPADARILLE, mari de Paquette, Bourgeois de Paris LVCRESSE, Parente de Paquette BEATRIX, Suivante de Céphise LES AMOURS D'ALCIPPE ET DE CÉPHISE, OU LA COCUE IMAGINAIRE, COMÉDIE.",
+          "Cependant cette Pièce a été jouée, non seulement en plein Été, ou pour l'ordinaire chacun quitte Paris, pour s'aller divertir à la Campagne;"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Parterre"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

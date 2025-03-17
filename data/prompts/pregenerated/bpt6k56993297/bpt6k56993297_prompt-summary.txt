@@ -1,0 +1,79 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Quinault, Philippe",
+    "title": "Proserpine, tragédie en musique ornée d'entrées de ballet, de machines et de changements de théâtre , représentée devant S. M., à Saint-Germain en Laye, le [3e] de février 1680",
+    "publication_date": "1680",
+    "document_id": "bpt6k56993297"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Proserpine",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "a-yjour Les Chœurs répètent ces quatre derniers Vers, et les Divinités Célestes, Terrestres et Infernales, témoignent par leurs chants et par leurs Dances la joie qu'ils ont de voir l'intelligence rétablie entre les plus grands Dieux du Monde, par le Mariage de Pluton et de Proserpine Fin du cinquième et dernier Acte.",
+          "Messieurs, Faüre, Magny, Pécourt, Létang cadet, Germain et Dumirail \nPROSERPINE\n Eres va nous ôter sa divine présence, ( Ces lieux vont perdre leurs attraits, Ceres, savorable Ceres, Faités cesser bientôt vôtre cruelle absence, C'ères, favorable Ceres lesnie",
+          "ou Ceres va prenure place pres de la Mie, une Troupe de Divinités Infernales richement parées, accompagnent Pluton Et une Troupe de Divinités de la Terre viennent prendre part à la joie de Ceres, et à la gloire de Proserpine SCÈNE VI.",
+          "Mais de peur qu'il ne les reprenne Je le veux engager en des liens nouveaux: J'ai vu l'aimable Proserpine On connaît à l'éclat de sa beauté divine Que am au pie des Dieux elle a reçu le jour.",
+          "TOus Elle Partagera sont sa accord, pour vous tout s'intere, Proserpine verra le jour, Elle suivra Cerrez et Pluton tour à tour, Elle partagera son temps et sa tendresse Entre la Nature et l'Amour."
+        ]
+      },
+      "top_5_persons": [
+        "Proserpine",
+        "Alphée",
+        "CERES",
+        "PLUTON",
+        "Pluton"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Sicile",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Il est malaisé qu'on oublie Ce qu'on a tendrement aimé, 13 Il admire les dons que vous venez de faire En cent climats divers, L'abondante Sicile heureuse de vous plaire De vos riches moissons voit tous ses champs couverts, À y Mais la Mère des Dieux se plaint que la Phrygie Quelle a toujours chérie, Ne se ressente pas de vos soins bienfaisants;",
+          "CERES, Troupes de Nymphes et de Dieux Champêtres, Troupe de Suivants de Ceres, troupe de Peuples de Sicile",
+          "TROUPE d'Hahitants de Sicile PLUTON, Dieu des Enfers. \n",
+          ", Troupes de Divinités et de Peuples de Sicile",
+          "Six Habitants de Sicile dançants."
+        ]
+      },
+      "top_5_places": [
+        "Sicile",
+        "PARIS",
+        "Rome"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

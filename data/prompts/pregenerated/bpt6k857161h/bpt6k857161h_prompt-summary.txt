@@ -1,0 +1,77 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Ollenix du Mont-Sacré",
+    "title": "Joseph le Chaste, comedie : Par Le Sieur du Mont-Sacré, Gentilhomme du Main.",
+    "publication_date": "1601",
+    "document_id": "bpt6k857161h"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Joseph",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Écoutez peur ne vous déplaire, Je veux ce que Elle fais défaire, N'êtes-vous pas de cet avis? \nGautier\n Oui pour moi. \nErnier\n Et moi si suis. \nJoseph\n Avant, Briant, que l'on me die Comme va de ta bergerie, Comme se porte ton troupeau, Et ton ménage torpionrs bétu, Si les prés sont plains de verdure, Et tes chiens gras, et quelle cure Tu as de servir en honneur Putifar, notre cher seigneur. \nBriant\n Tous les aigneaux sont gras de sorte, 'il faut souvent que je les porte B 13 Dedans le pré, ils sont si gras Que j'en ferais un bon repas, Les chères sont très belle, Ma foi si j'étais en cuisine Et qu'une on dounât volontiers, J'en mangerais quatre quartiers, Nos moutons sont couverts de laine, Que la forte fiéure quartaine Puisse étrangler de part en part, Qui en mangerait sans ma part: Nos brebis sont grasses et belles, Et pour faire des escarcelles La peau serait de riche pris, Nos chéureaux grands et petits, Sautent comme font les gensd'armes Ayant trouvé parmi leurs armès Quelque pillage affriandé, Mais quelque grand chien Fouquaudé",
+          "Hé, attendez, avant que vous défaire Je vois plutôt à votre veueil complaire, Vous faire avoir le fruit de vos désirs, Et rendre tout conforme à vos plaisirs, Plutôt vous faire avoir la jouissance De mille humains, et en votre puissance Mettre et Joseph, et encore tous ceux Donc votre cœur deviendra amoureux: », Car il ne faut suir aucune peine „ Pour éviter à la mort inhumaine, »A rien ne faut pardonner ici bas \" Pour nous tirer des griffes du trépas, „ Car toute chose étant au monde née 5, À nous servir se trouve destinée, \" Et faut briser loi, et respect humain, 9, Au parauant que mourir par sa main, „ Mettre sous pied tout de, toute envie, » Au parauant que voir finir sa vie, Car estant morte, elle ne reuient pas, tout se peut recouurer bas, Plustost, plustost iouyssez la suite De tous les preux de la terre Egypte, De tous humains, si est le gré du sort, Al parauant que vous sentiez la mort, Et parauant que le trépas vous touche, Plustost ie de Putifar la couche, ,,Voire et cent fois, il est crime si fort »",
+          "Elle est ioyeuse, et ainsi suis à mon aise Puis qu'elle vit exempte de malaise, Car le seul bien du serviteur soigneux, Est voir son maître et content et joyeux, Mais toi Joseph que sur tous mille révère, Tu semble tout à mes yeux solitaire, Triste, et pensif, et semble que ton cœur Soit travaillé d'aillé soucy rauisseur, Qui ainsi rend soucieuse ton âme, C'est volontiers l'amour de quelque dame, Car la jeunesse est compagne d'amour, Et dans ses feux a mme fait seiour, Car ieune il veut la ieunesse compagne, Ainsi Ca de son pair accompagne, Elle veut la qui je une ainsi, Se à pro de chasser ton soucy, Et de si, en ce ha la ieunesse De son secours de la vieillesse, Car elle si les tours et les retours, Four en amour auoir passe sesvours, Or, -moi donc si lamour te domine? \n",
+          ", Joseph, j'y travaille sans fin, Jl est tout verd, et mainte riche plante Ores y croît en bon fruit abondante, Le bâme y est, qui les plaies guarist, Et la santé heureusement nourrît, Les bons sucrins y sont en abondance, Les artichaux, les pois à suffisance, Les choux, le tin, sebues, pourpier aussi, Et le saffran, mon plus chéri souci, Asperges, lin, choux pommez et lectues Oignons, persil, et arroces point, Gagné poree, et et romarin, Bettes, ressorts, naueaux, serfueil bien fin, Sauge, soucy, et, et mariolaine, Et mille fruits pour mi la bedaine, De bons citrons, erg en tout temps, Fruits de grenade, pommiers rougissans, Mais par ma foi ie suis en grand le Contre In le poltron infidelle, Qui a vuidé ma bouteille coup, Comme allois courant apres le loup:",
+          "Les songes vrais, qui occupent nos yeux, Qui nos esprits en leurs obicts étonnent, Et qui douleur ou liesse nous donnent, Hà, deux te pri le mien interpréter, Que ie te venx en denx mois raconter. \nJoseph\n Dis, mon ami, et par l'aide divine, Je te dirai ton bien ou ta ruine. \nBoulenger\n Il me semblait porter tout à la fois Dessus le chef, trois corbeilles de bois Dont deux étaient de pain toutes remplies, L'autre de chair, et viandes choisies, Telles qu'on a accoutumé toujours Servir aux Rois, en leurs opulents jours, Lors les oiseaux volants dessus ma tête, Et de leurs cris faisant mainte tempête, Ont tout mangé, ravi, et emporté Ce qui était en mes penniers porté, Et n'ai jamais peu leur donner la chasse, Quoi que promisse, et de mains et de face."
+        ]
+      },
+      "top_5_persons": [
+        "Joseph",
+        "Robillard",
+        "Gautier",
+        "Joseph",
+        "Briant"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "ROUEN",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "À ROUEN, DE L'IMPRIMERIE, De Raphaël du PetitVal, Libraire et Imprimeur ordinaire du Roi."
+        ]
+      },
+      "top_5_places": [
+        "ROUEN",
+        "Grèce",
+        "Perse",
+        "Paphos",
+        "Lyon"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

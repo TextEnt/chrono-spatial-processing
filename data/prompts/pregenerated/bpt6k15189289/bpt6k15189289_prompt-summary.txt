@@ -1,0 +1,80 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Racine, Jean",
+    "title": "Esther tragédie tirée de l'Escriture sainte",
+    "publication_date": "1689",
+    "document_id": "bpt6k15189289"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Aman",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Plein d'une juste horreur pour un Amalecite, Race, que notre Dieu de sa bouche a maudite, Il n'a, devant Aman, puis fléchir les genous, Ni lui rendre un honneur qu'il ne croit dû qu'à vousDe là contre les Juifs, et contre Mardochée, Cette haine, Seigneur, sous d'autres noms cachée.",
+          "Il revoit tous, ces temps si remplis de sa gloire Depuis le fameux jour qu'au trône de Cyrus Le choix du Sort plaça l'heureux Assuerus 28 \nAMAN\n Ce songe, Hydaspe, est donc sorti de son idé YDASPE.",
+          "Le Roi, que j'ai laisse plus calme dans son lit, D'une oreille attentive écoute ce récit. \nAMAN\n De quel temps de sa vie a-t-il choisi l'histoire?",
+          "Ce n'est donc pas, Seigneur, le sang Amalecite, Dont la voix à les perdre en secret vous excite? \nAMAN\n ",
+          "Il peut confondre Aman, il peut briser nos fers Par la plus faible main qui soit dans l'Univers."
+        ]
+      },
+      "top_5_persons": [
+        "Aman",
+        "Assuerus",
+        "Élise",
+        "Sion",
+        "Esther"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Perse",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Son témoignage est expressément détruit par l'Écriture, aussi bien que par Xenophon beaucoup mieux instruit que lui des mœurs et des affaires de la Perse, et enfin par Quinte Curse On peut die que rumte de Lieu eit obiervée dans cette Pièce, en ce que toute l'action se passe dans le Palais d'Assuerus Cependant comme on voulait rendre ce divertissement plus agréable à des Enfants, en jetant quelque variété dans les décorations, cela a été cause que je n'ai pas gardé cette unité, avec la même rigueur que aay fait autrefois dans mes Tragédies.",
+          "Mais ce Sujet zélé, qui d'un œil si subtil Sut de leur noir complot développer le fil, Qui me montra sur moi leur main déjà levée, Enfin par qui la Perse avec moi fut sauvée;",
+          "Étrangers dans la Perse, à nos Lois opposés Du reste des humains ils semblent divisés N'aspirent qu'à troubler le repos où nous sommes, Et détestez par tout détestent tous les hommes.",
+          "ASSUERUS, Roi de Perse ED PIIDIE, stenie de Perse MARDOCHÉE, Oncle d'Éther."
+        ]
+      },
+      "top_5_places": [
+        "Perse",
+        "Versailles",
+        "Jérusalem",
+        "Israël",
+        "Babylone"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

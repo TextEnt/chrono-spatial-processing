@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Mairet, Jean",
+    "title": "Le grand et dernier Solyman, ou La mort de Mustapha , tragédie par M. Mairet. Représenté par la Troupe royalle",
+    "publication_date": "1639",
+    "document_id": "bpt6k5609755m"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Mustapha",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "En vain le Ciel et moi savons votre innocence Si la terre et le Roi n'en ont pas connaissance, Les Rois quoi que d'unsang le plus proche des Cieux N'ontpour voirdans nos cœurs que de terrestres yeux, G jiv Et dans l'Estat qu'ils sont et celui que nous sommes Nous commandent en Dieux mais nous tugent en hommes, Euitez, donc Seigneur danger apparent Contre qui l'innocence est un mauvais garant Éie ne doute point si vous me voulez croire Que l'art des imposteurs ne serve à votre gloire, 2 quel oertre cerre fllle dils tempo, Tadioute vn toujours lustre à vos iours esclatans à \nMUSTAPHA\n Non brave Baiazet, quelque sort qui m'attende INOCirai Par le Roi, puis que le Roi me mande, À pres l'ordre reçu de son commandement Lavance ses soupçons par mon retardement, Et suivant vos conseils ie perds mon innocence Par le crime qui suit la désobéissance.",
+          "Le rapport que j'y tiruve avec le vraisemblable, Uous savez, que Rustan est enragé de voir Que vous nous commandez avec tant de pouvoir, Et qu'ilse voit réduit de puis votre arrivée Avivre auecsà charge en personne privée, Orie ne doute point que ce lâche et malin Ne sache que la Reine, aimant son fils Selin Par une conséquance évidente et certaine Vous regarde en marâtre avec des yeux de haine, Et ne ta fasse asii comme on puissant rejori A remuer l'esprit du vieillard qu'elle endort. \nMUSTAPHA\n Mais commentsçauroient ils le mettre en défiance D'un qui vitsants reproche avec sa conscience, Leur charme est-ilsi fortsur le sens paternel Que d' ils innocent en faire un criminel?",
+          "Hermine, ce malheur me touche autant que sans Que si par de hauts cris, et d'excessiues plaintes, Je n'en témoigne pas les mortelles attaintes, Aprends que pour un temps les extrêmes douleurs Étourdissent l'esprit, et restraignent les pleurs, Suffit que Soliman avant que le jour vienne Connaîtra ma douleur si semblable à la sienne Que telqui me déteste, et mon ambition Passera de la haine à la compassion. \nHERMINE\n Mais la Courdésormais doit être satisfaite De la confession que l'Imposteur à faite, Paris vous déchargeant, cet espritdetesté Garde encor la justice à votre Majesté, Qui plainonnant Mustapha commelefils d'une autre Ralas de M aleuss pea jusssasense tendes SULTANE.",
+          "Marchand Libraire à Paris, d'imprimer,vendre et distribuer un Livre intitulé, Le Grand et dernier Solyman, où la mort de Mustapha, Tragédie par Monsieur de Mairet Représente par la troupe Royale, Faisant très expresses inhibitions et défenses à tous Libraires et Imprimeurs, ou aucres de nos Subjets, de quelque qualité et condition qu'ils soient, d'Imprimer, où faire Imprimer ledit Livre, le vendre, faire vendre, débiter par notre Royaume, durant le temps et espace de dix ans, à compter du jour qu'il sera achevé d'imprimor;",
+          "Ou possible une erreur ou mon désir me plonge. \nDÉPINE\n Non non, tatruautémareduite à ce point Augré de ton désir qui ne t'abuse point, Oui mon cœur estoutré de véritables peines, Oui mon corps est charge devéritables chaînes, Oui, ma mort qui me plaît, puis qu'il te plaît ainsi Sera dans peu de temps très véritables aussi. \nMUSTAPHA\n Ô"
+        ]
+      },
+      "top_5_persons": [
+        "Mustapha",
+        "SOLIMAN",
+        "HERMINE",
+        "OSMAN",
+        "Mustapha"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Perse",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Est-ce à toi répond il son confident infâme A me représenter ni l'honneur ni le blâme, Ua, ne t'offres jamais à mon royal aspect Et retourne en ta Perse apprendre le respect, Pour Despine, dy quelque, qu'aux filles de sa sorte On ne peut trop blâmer l'ardeur qui la transporte, Et que j'ai trop de gloire, et trop de jugement Poursuivre une beauté qui vit peu sagement, Aujourd'hui que le feu de nos dernières guerres Ua répandre sa flamme au milieu de ses terres, Illui si bien mieux dêtre m les siens Que ra la mercy des bien, D'allois lui repartir quand regard par De respect et de crainte m ferme la bouche, y de les jeha a parlz",
+          "il est venu suivi de trente 3 M Princes Qui pour le suivre en Perse ont quitté leurs Provinces, Si bien que jamais Roi n'a mis en moins de temps Ny tant d'amis sus pied ni tant de combattants, Regardez maintenant si le danger vous presse Et s'il vous faut avoir une molle tendresse, SULTANE.",
+          "De me laisser en Perse abandonner ma vie, Pendant que de la guerre y portant tout le faix Vous goûteriez, en Thrace une profonde paix, D'ou vos seules vertus sans partir d'une place Nous pourraient inspirer la conduite et l'audace.",
+          "qui m'étais promis qu'au seul bruit Ç de nos armes La Perse espouuentée aurait recours aux larmes, Elle qui tant de fois auec tant de malheur A de mes Conquérants éprouvé la valeur.",
+          "L'effétu Sceptré d'or que vous avez en main Faites marcher vos gens tout droit au sein de Perse, Et moi qui veut tenirvne route diverse Aussitost après vous avoir conduirai les miens"
+        ]
+      },
+      "top_5_places": [
+        "Perse",
+        "Thrace",
+        "Paris",
+        "Perse",
+        "France"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

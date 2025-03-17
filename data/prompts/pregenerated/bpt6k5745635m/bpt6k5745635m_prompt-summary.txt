@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Rotrou, Jean de",
+    "title": "La Célimène , comédie de Rotrou",
+    "publication_date": "1636",
+    "document_id": "bpt6k5745635m"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Florante",
+          "frequency": 7
+        },
+        "related_sentences": [
+          "Vous ignorez, ces noms, et dans cette innocence, Le discours que je faits vous trouble, et vous offense. \nFLORANTE\n Que n'est-il vrai, Filandre \nORANTE\n Haussez un peu la voix. \nÉLORANTE\n Je dis qu'il fait beau voir l'épaisseur de ce bois, A j à ces oiseaux divers dont la douce musique dajoeron pespiit le pina Mhetantondae, \nORANTE\n Ô Dieux qu'elle est rusée!",
+          "La plus forte froideur, cède à son éloquence, Et contre ses écrits une âme est sans défense, J'en lirai quelques-uns, Écoutez; \nFLORANTE\n Ô malheur! \nORANTE\n Son visage à ces mots a changé de couleur.",
+          "Je recevrais chez, vous des traitements meilleurs, autan on secret ue pin pone mes vteux ailleurs. \nFLORANTE\n Dis qu'un secret destin, porte ailleurs ta folie: PAs1vORhus Florante est toujours gaie, et sans mélancolie. \n",
+          "FLORANTE\n Je ne t'oblige à rien, et faits cette entreprise, Sans dessein que ton cœur me rende sa franchise, Ne dis point qui te suus aux Beautés, de ce lieu, Et m'envoie unhabit.",
+          "Mais Le vois le Celimène, admire sa beauté, Et ne condamne piva mon infaes. \nFLORANTE\n Va, Barbare à mes yeux, Seigneur conter ton martyre, Obtien de cet objet"
+        ]
+      },
+      "top_5_persons": [
+        "Florante",
+        "LYSIS",
+        "Celimène",
+        "Lysis",
+        "Félicie"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 7
+        },
+        "related_sentences": [
+          "Marchand Libraire à Paris, d'imprimer ou faire imprimer,vendre et distribuer une pièce de Théâtre de la composition du Sieur de ROTROU, intituléc LA RLIMENE, durant le temps et espace de sept ans, à comptet du jour qu'elle sera achevée d'imprimer.",
+          "Ce lieu, comme Paris, a toutes ses délices, La Cour n'a rien de plus, que des soins et des vices;",
+          "Tu treuuois Paris des traits si délicats, Et tu m'as sçeu si Tu trouver ce qui n'est pas, FILANDRE.",
+          ". Quand ton affection s'offrait à ma mémoire, Je croyais tout Paris envieux de ma gloire.",
+          "Et ne m'obligez point aux mêmes compliments, Que celles de Paris rendent à leurs amants:"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "France",
+        "PARIS",
+        "Seine",
+        "rives"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

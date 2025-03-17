@@ -1,0 +1,73 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Montfleury",
+    "title": "Le garçon sans conduite, comedie. Par monsieur A. I. M***",
+    "publication_date": "1698",
+    "document_id": "bpt6k1512308m"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "CRISPIN",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Çà Attendans qu'au Logis les Conviés se vendent, Allons faire hâter vos Gens qui nous attendent, Allons voir s'il ont eu soin de se travestir, Et ne songeons à rien qu'à nous bien divertir, SCÈNE V. LAIS, DARGENTBREF, AMINTE, DAMON, 1104LUCRECE, CRISPIN, JUSTINE, LUCINDE, Eltiorrra H Monsieur.",
+          "Lui, Crispin, Fils d'un Père die Amoureux du trafic qu'il avait toujours fait, Sans avoir jamais vu Machine, ni Ballet, Qui sans cesse au travail n'alla voir de sa vie Specacre, Dailce, veuxi Pancos, ai Combule Prétend-il que toujours de tels entêtements.",
+          "Comment? \nPDAMON\n \nCRISPIN\n Tout est perdu vous dis-je s Nous pouvons vous et moi déserter la Maison, Et nous allons chanter sur un diable de ton.  ",
+          "Tant-mienx, car au Logis il n'en trouvera guère DAMON Père Que tous mes Gens auront, m'ayant tant attendu, De prainl à me volls \nCRISPIN\n ",
+          "Heurtons, je perds le temps quand il faut que je vole \nCRISPIN\n Montrons-nous, et sur tout jouons bien notre rôle Oh c'est main."
+        ]
+      },
+      "top_5_persons": [
+        "CRISPIN",
+        "LUCRECE",
+        "Diane",
+        "Damon",
+        "Sibille"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Grèce",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Quoi, sur tous les plaisirs dont notre âme est émue Faut-il toujours passer le fur en reçue, Mêler toujours de fiel ce qu'il a de douceur, Se livrer au plaisir dans les bras de la peur, Et vouloir se piquer avec tant de jeunesse De la sotte vertu des sept Sages de Grèce Pour moï, quoi que toujours prête à me divertir, Je crois avoir des yeux, et crois m'en bien servir;"
+        ]
+      },
+      "top_5_places": [
+        "Grèce"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

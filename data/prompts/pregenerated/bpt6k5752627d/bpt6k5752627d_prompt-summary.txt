@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Saint Yon, Monsieur de",
+    "title": "Les bourgeoises à la mode , comédie, de M. Dancourt",
+    "publication_date": "1693",
+    "document_id": "bpt6k5752627d"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "LISETTE",
+          "frequency": 7
+        },
+        "related_sentences": [
+          "LISETTE\n oustes bicmeureule que ce ne soit pai un Intendant, vous attendriez bien davantage. \nM\n \nAMELINV\n Mais Madame joue quel quefois, et quand elle gagne. \nLISETTE\n Oh quand elle gagnerait mille pistoles, elle aimerait mieux mourir que d'en acquititer la moindre detre, c'est une chose sacrée que l'argent du jeu, diantre ce sont des sonds pour le plaisir, où l'on ne touche point pour le nécessaire. \nM\n \nAMELIN\n Comment ferons-nous donc ? \nLISETTE\n ",
+          "donc votre fils, vous avez des enfants qui se portent au bien comme cela, Madame Amelin \nM\n \nAMELIN\n Que voulez-vous, c'est un enfant gâté que Janot, qui fait quelquefois de pérîtes méviétez, et dals le lonu pourvu qu'il le mette à bien je ne m'en soucie pas. \nLISETTE\n Oh à ce compte vous avez raison, et Monsieur Janot aussi, Madame Amelin \nM\n \nAMELIN\n vous ne igavez pas tout te qu'il Içair faire;",
+          "N'est-ce pas une cnole noinbie que je ne lois que la remme d'un Notaire. \nLISETTE\n Oui, et d'un Notaire qui s'appelle L. onsieur Simon encore, cela est chagrihuneypebusravouss, ce v œuvez ni l'air, ni les manières d'une Madame Simon \nANGELIMUE\n N'est-il pas vrai que j'étais née pour être rout au moins Marquise, Lisette \nLISETTE\n Assurément.",
+          "LE CHAVALIÈR, LISETTE FRONTIN, \nLISETTE\n E vous ai fait attendre, mais j'ai attendu moi- même que le Maître Gecgraphie fut parti, ne perdez point de temps, montez par ce petit escalier, Frontin sait le diule, voua doMmanes \nRONTIN\n Jie, qu'ai-je amc la mór, sal te plai, \nLISETTE\n Tu seras le guet pour assurrer leur conversarion.",
+          "Il n'y a pas de manière plus sûre et plus galante que celle-la. A1. \nCMIIlllRI\n Mais je serais bienaise, Lisette, qu'elle taus que c'est à moi qu'elle aura l'obliL0B. \nLISETTE\n He dès, allez Monsieur, elle le sauta de tête dans la suite, je me charge de lui dire ntoi. \n"
+        ]
+      },
+      "top_5_persons": [
+        "LISETTE",
+        "M",
+        "Amelin",
+        "Frontin",
+        "Mariane"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 7
+        },
+        "related_sentences": [
+          "Hé bien n'en parlons plus, Lisette, ç'en est fait, me voilà Eoterminée. \nLISETTE\n Nous avons déjà dans nos intérêts un Commissaire, Madame, le Mari d'Araminte, et ce n'est pas peu de col Paris pour des joüeuses de piosession, que la faveur d'un Commissaire.",
+          "Ah, que je connais de gens à Paris qui voudraient avoir une occasion comme celle-cy: mais je ne leur en parlerai point: Je caio cempur vos ailís pourne vous pas laisser la préférence.",
+          "La petite fille de Monsieur le Notaire, chez qui nous sommes, l'aimable et jeune Mariane, est un des meilleurs partis qu'il y ait à Paris FRONTIN.",
+          "Il y a à Paris quelques Orfévres de ma commolance,cc ue ieiramtans, dont je suis nanti, je ne m'embarrasse pas de trouter eux cents pastolesenun quait",
+          "Je venais vous en rendre compte, Madame, et tout Paris viendra chez vous si tôt du cmia mia duun j joue. \n"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "France",
+        "PARIS",
+        "Pont-Neuf",
+        "PARIS"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

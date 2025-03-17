@@ -1,0 +1,75 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Auvray, Jean",
+    "title": "La madonte du sieur Auvray . Tragi-comédie dédiée à la Reine",
+    "publication_date": "1631",
+    "document_id": "bpt6k6295468p"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Damon",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Tu n'auras point d'argument du sujet que tout le monde s'est rendu curieux d'apprendre par la bouche d'Astre, elle a fait de ses aventures, et des amours des autres compagnes la science des Dames d'aujourd'hui: et d'ailleurs ceux qui verront cette pièce (sans les arrêter trop l' temps à la porte du cabinet pour les entrerenir des suiets qui s'y trouvent) connaîtront assez dans la suite des vers l'invincible constance de Damon, les chastes amours de Madonte, les ruses et les fureurs de Leriane, les fidélités d'Haladin, et l'ambition de Thersandre ACTEURS.",
+          "Je suis tropsat: sait dans le contentement De rendre avant ma mort Madonte à son amant Tu dois vivre, Damon, assuré que ta Dame A bien moins de beautés en son corps qu'enson Âme, L'honneur sans l'Amour fut son commun vainqueur Et partagea toujours l'Empire de son cœur: Le Ciel qui m'en chargea m'oblige à te la rendre, Mais pardonne sur tout aux erreurs de Thersandre, À qui l'extrémité de son afection Donna pour son malheur trop de présomption;",
+          "Après avoir perdu tant de jours et de nuits Sans avoir vu ton cœur touche de mes ennuis Tu le sauras, Damon, qu'une femme abée Venge aux occasions son amour méprisée La beauté quit'a pris et sousmis à sa Loi Ne veut pas que tu brûle et pour elle, et pour moi: Prends-tu point mon Amour pour un feu d'artifice Où pour un jeu enfant mes offres de service?",
+          "Si l'Amour n'était point une science infuse Icites jeunes ans te serviraient d'excuse Mais ce Dieu des ardeurs se rend notre vainqueur Si tôt que la Nature a me notre cœur Notre corps est plutôt dans celui de la femme Échauffe par l'Amour qu'animé par une Anle: Je sais bien que Damon épris de tes beautés Te donnerait son cœur était ses loi autez En joignant à propos aux traits de ton visage",
+          "Pour exprimer ici mon amoureux martyre Il me faudrait avoir de ces fleurs de bien dire Mais si tu savais l'art de pénétrer le cœur Aussy bien que celui de t'en rendre vainqueur Mon fidèle Damon ie te ferais paraître Tous les beaux mouvements que tes yeux m'ont fait Que Ne tour de granat il nous faut rettrer (naitre Ou l'absence pourtant ne nous peut séparer."
+        ]
+      },
+      "top_5_persons": [
+        "Damon",
+        "ARCAS",
+        "Damon",
+        "Mars",
+        "Diane"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "au moins suis-je assuré que nous n'avons pas ce privilège en France, ou les années ne se confondent point l'une dans l'autre, ou les hommes de jour en jour se rendent plus parfaits, et selon les degré de l'age font voir de moindres ou de plus grands sujets à se faire admirer.",
+          "L'Amour le rendra triomphant Et fera connaître à la France Qu' ilui peut venir de la part d'Heure enTout l'État a repris courage Et se promet bien qu'à la fin On verra sortir un Daufin, Du milieu des flots de l'orage;"
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "rivière"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

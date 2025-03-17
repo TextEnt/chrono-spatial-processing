@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Corneille, Pierre",
+    "title": "Cinna, tragedie.",
+    "publication_date": "1664",
+    "document_id": "bpt6k1280294m"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Auguste",
+          "frequency": 49
+        },
+        "related_sentences": [
+          "J'ajoute en peu de mots: Toutes ces cruautés, La perte de nos biens et de nos libertés, Le ravage des champs, le pillage des villes, Et les proscriptions, et les guerres civiles, Sont les degré sanglants dont Auguste a fait choix Pour monter dans le trône, et nous donner des lois: Mais nous pouvons changer un Destin si funeste, Puisque de trois Tyrans c'est le seul qui nous reste, Et que juste quelque fois il s'est privé d'appui Perdant, pour régner seul, deux méchants comme lui.",
+          "Maxime a vu sa faute, il m'en fait avertir, Et montre un cœur touché d'un juste repentir, Mais Cinna \nEUPHORBE\n Cinna seul dans sa rage s'obstine, Et contre vos bontés d'autant plus se mutine, Lui seul combat encor les vertueux efforts Que sur les conjurés fait ce juste remords, Et malgré les frayeuis a jeu grets mêlées Il tâche à raffermir leurs âmes ébranlées. \nAUGUSTE\n Lui",
+          "Puis soudain dans le Tibre il s'est précipité, Dont l'eau grosse et rapide, et la nuit assez noire, M'ont dérobé la fin de la Frrque ihrton, \nAUGUSTE\n Sous ce pressant remords il a trop succombé, Et s'est à mes bonté lui-même dérobé, Il n'est crime envers moi qu'un repentir n'efface: Mais puisqu'il a voulu renoncer à ma grâce, Atsez pourvon au féite;",
+          "Oui, va, n'écoute plus ma voix qui te retient, Mon trouble se dissipe et ma raison revient, Pardonne à mon amour cette indigne faiblesse, Tu voudrais fuir en vain, Cinna, Seigneur le confesse, Si tout est découvert, Auguste a su pourvoir À ne te laisser pas ta fuite en ton pouvoir.",
+          "D'un si lâche dessein myon âme eit incapaole, Il perd trop d'innocents pour punir un coupable, J'ose tout contre lui, mais tu crains tout pour eux. \nEUPHORBE\n Auguste s'est lassé d'être si rigoureux, Ences occanons emnuie de luppnie, Ayant puni les Chefs, il pardonne aux complices."
+        ]
+      },
+      "top_5_persons": [
+        "Auguste",
+        "Maxime",
+        "Cinna",
+        "César",
+        "Maxime"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 49
+        },
+        "related_sentences": [
+          "Je les peins dans le meurtre à l'envi triomfants, Rome entière noyée au sang de ses enfants, Les uns assassinés dans les Places publiques, Les autres dans le sein de leurs Dieux domestiques, Le méchant par le prix au crime encouragé, Le mari par sa femme en son lit égorgé, Le fils tout dégouttant du meurtre de son père, Et sa tête à la main demandant son salaire, Sans pouvoir exprimer par tant d'horribles traits, Qu'horribles traits , Qu' un paix.",
+          "Ioignons à la douceur de venger nos parents La gloire qu'on remporte à punir les Tyrans, nôtre ranous purlier par toute l'Italie, La liberté de Rome est l'œuvre d'Amilie, On a touché son âme, et son cœur s'est épris, Mais elle n'a donné son amour qu'à ce prix. \nFULVIE\n Votre amour à ce prix n'est qu'un présent funeste Qui porte à votre amant sa perte manifeste.",
+          "Oui, Seigneur, dans son mal Rome est trop obstinée, Son Peuple qui s'y plaît en fuit la guérison, Sa coutume l'emporte, de hon pas la raison, Et cette vieille erreur que Cina veut abattre Est une heureuse erreur dont il est idolâtre, Par qui le Monde entier asservi sous ses lois L'a vu cent fois marcher sur la tête des Rois, Son Épargne s'enfler du sac de leurs Provinces;",
+          "Apprends à te cõnoistre, et descends en toi-même, On t'honore dans Rome, on te courtise, on t'aime, Chacun tremble sous toi, chacun t'offre des vœux, Ta fortune est bien haut, tu peux ce que tu veux, Mais tu ferais pitié, même à ceux qu'elle irrite, Si grande t'abandonnais à ton peu de mérite.",
+          ", leur ai-je dit, voici le jour heureux Qui doit conclurre enfin nos desseins généreux, Le Ciel entre nos mains a mis le sort de Rome, Et son salut dépend de la perte d'un homme, Si l'on doit le nom d'homme à qui n'a rien d'humain, À ce Tigre altéré de tout le sang Romain."
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Paris",
+        "Tibre",
+        "Italie",
+        "ROUEN"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

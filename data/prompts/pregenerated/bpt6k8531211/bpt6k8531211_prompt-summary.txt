@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": null,
+    "title": "L'Amour berger, comédie pastorale par le S. I...",
+    "publication_date": "1687",
+    "document_id": "bpt6k8531211"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Momus",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Il n'est rien moins que ce que tu veux dite, Des cœurs qui sont à moi je renonce à l'Empire Je n'en veux qu'à ces Gens qui rejettent mes lois, Qu'à ces cœurs endurcis qui sont sourds à ma voix, Dt qui ine rerorants Monneur de leur deraite Rendent mes efforts vains et ma gloire imparfaite, Qui trouvent du scrupule à se laisser chariner, Qui se font un honneur de ne jamais aimer, \nMOMUS\n Oh oh! est-il beaucoup de ces Messieurs au monde Qui s'empêchent d'aimer ou la Brune ou la Blonde, Et qui moins ignorants que le sieur Jupiter Sachent mieux que deux l'art de s'en bien exemter?",
+          "AMARILLE\n Je ne le dirais pas si l'on nous écoutait Mais notre solitude à cela me convie Oui Dieu je vous chéris cent fois plus que ma vie, jamais je ne vous vois que je ne sois ravie, de ne vous perus jamnais de vue qu'a regret. \nMOMUS\n Voyez la petite friponne, Vous en dites pouttant plus que vous n'en pensez. \nAMARILLE\n Non et je crois Dieu me pardonne N'en dire pas encore assez. \nMOMUS\n Mais si tu m'aimais tant, petite Bergerote, Di, t'amuserais tu si longtemps à jaser, Et songerais tu pas plutôt à me baiser Qu'à rajuster ainsi ta cotte.",
+          "icon, n'u est point de gione acte gloire égale, Et je l'achèterais au prix de cent trépas MOMUS, Cent trépas: c'est trop pussy mais si tu veux pour mile suis prêt de t'aimer tout autant qu'Amarille [le ZELIDE, Quoi vous pourriez, Seigneur, vous résoudre à MOMUS [m'aimer A t'-aimer en mourant gaie comme Lucre Afin de m'assurer de toute ta tendresse, Et combienje t'ai su charmer.  \n",
+          "Oui, Seigneur, il n'a pu souffrir votre présence, Et du moment qu'il vous a vu, Le femods de la comcience A fait qu'il a disparu. \nMOMUS\n Le perfide a bien fait, car je suis en colère De son infâme procédé: Et dans le noir courroux dont je suis obsédé, eu l'autons teuun eu poumère.",
+          "Vous seriez d'humeur ptesque à lui faire la cour, Mais si pour ce mataut vous avez tant d'amour que dites-vous de son Maûtre \nMOMUS\n »Te suis-je pas bienfait, n'ai-je pas bonne mine, Et si je suis un peu petit, N'ai-je pas l'air fott noble et la taille bien fine? \n"
+        ]
+      },
+      "top_5_persons": [
+        "Momus",
+        "Daphnis",
+        "Dave",
+        "MOMOS",
+        "Zélide"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Thrace",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Le Thrace à ce qu'on dit est tustique et grossier, Et son humeur farouche en tous lieux semble étrange Mais il faut qu'en passant j'avoue à sa lange, Qu'en cela Coridon de Thrace est le premier Daphnis n'est pas exempt de cette humeur sauvage Que le climat attache à chaque homme en naissant anavit demomulo tuiti den ent re point en rage Quand une femme l'en teprend.",
+          "Si le Dieu de la Thrace à vous suivre l'engage, Atrendez que de moi vous teniez quelque gage, Qui puisse un jour poussé de votre même orgueil Garantir votre nom de l'oubli du cercueil: C'est alors que sans crainte, et sans faire de crime Vous pourriez cont enter votte ardeur magnanime.",
+          "Il est certains côteaux vers les climats de Thrace Où l'on me connaît moins que je n'ai résolu: Je ne crois pas pour peu de séjour que j'y fasse Que les cœurs y restent de glace, Et qu'on n'y suive pas mon pouvoir absolu.",
+          "À vous voir dans la tête un si plaisant dessein Qui ne s'étonnetoit, je vous prie en ma place De vouloir renoncer à tout plaisir humain, Et de faire périr la race Des braves habitants de Thrace En éloig naut 'ici le sexe féminin?",
+          "Oh cela n'est pas bien: il faut faire l'amour, Et c'est bien la raison qu'on la danse à son tour, Mais êtes-vous bien sûr qu'en Gaule comme en [Thrace"
+        ]
+      },
+      "top_5_places": [
+        "Thrace",
+        "Gaule",
+        "Bergères",
+        "Bergère",
+        "Grèce"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

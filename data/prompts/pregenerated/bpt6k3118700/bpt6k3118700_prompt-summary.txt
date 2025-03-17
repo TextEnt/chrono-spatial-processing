@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Campistron, Jean Galbert de",
+    "title": "Achile et Polixene , tragedie en musique, representée par l'Academie royale de musique",
+    "publication_date": "1687",
+    "document_id": "bpt6k3118700"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ARCAS",
+          "frequency": 7
+        },
+        "related_sentences": [
+          "ACHILE, ARCAS, POLIXENE, CHOEUR DE GRECS DE LA SUITE D'ACHILE, CHOUN DE -THROTENS ET DE FILLES TROYENNES QUI SUIVENT PRIAM ET POLIXENE. \n",
+          "ARCAS\n Y Énez, marchez sans défiance, Les Grecs vous ont donné leur foi, Achille est généreux, craignez moins sa présence;",
+          "ARCAS\n Princesse, ce Héros ne cherche qu'à vous plaire Vous avez en vos mains et sa vie et sa mort,",
+          "ACHILE, ARCAS JOurons venger cet ami que je perds, Que de sang et de morts tous ces champs soient couverts!",
+          "En est fait, cher Arcas, j'adore Polixène, Quoi qu'il en coûte enfin, je veux la posséder;"
+        ]
+      },
+      "top_5_persons": [
+        "ARCAS",
+        "DIOMEDE",
+        "AGAMEMNON",
+        "Achille",
+        "Thalie"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Grèce",
+          "frequency": 7
+        },
+        "related_sentences": [
+          "Tantõt son bras invincible, Fait rougir de leur sang, et la terre et les eaux, Il court de victoire en victoire, Chaque jour, le bruit de sa gloire, Va remplir l'Univers et vole jusqu'à vous: Des honneurs qu'il obtient, n'êtes -vous point jaloux? \nACHILE\n Je vois avec plaisir les pertes de la Grèce, La valeur d'Hector m'a vangé, Le fier Agamemnon connaîtra sa faiblesse, Et se repentira de m'avoir outragé.",
+          "Rassurez-vous, calmez la douleur qui vous presse, Emportez dans vos murs ce Héros glorieux, Ne craignez-point les efforts de la Grèce, J'arrêterai ses desseins furieux: Suivez l'ardeur qui vous anime, Rien ne vous troublera dans ce soin légitime: Je ne vais songer désormais Qu'à vous donner une éternelle paix.",
+          "Non, non, je me souviens sans cesse Des maux que m'a causé sa funeste valeur, Et le vainqueur d'Hector, le vengeur de la Grèce Ne peut avoir aucun droit sur mon cœur.",
+          "y Os beaux yeux, adorable Princesse, V Ont détruit les desseins de la Grèce, Un feus to os roguroguo umtugé sous vos lois Un Héros dont le nom fait trembler tous ses Rois.",
+          "C'est à son bras, que la Grèce Doit sa force et son bonheur."
+        ]
+      },
+      "top_5_places": [
+        "Grèce",
+        "Troie",
+        "Cythère",
+        "Troie",
+        "Throne"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

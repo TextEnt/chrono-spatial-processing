@@ -1,0 +1,80 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": null,
+    "title": "Tragédie nouvelle de la perfidie d'Aman, mignon et favori du roi Assuérus : sa conjuration contre les juifs, où l'on voit naïvement représenté l'état misérable de ceux qui se fient aux grandeurs, le tout tiré et extrait de l'ancien testament du livre d'Esther",
+    "publication_date": "1622",
+    "document_id": "bpt6k6291085k"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Aman",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Le Roi Assuerus le premier Empereur de l'Hivers, avait fait dresser des banquets superbes en sa ville de Susan, pour faire paraître ses grandeurs, ou pendant qu'il entretenait le monde de ses magnificences, Aman son mignon fit commandement par toute la ville, qu'on eut à plier le genoutre deuant tant que Mardochee seul,oncle de la Royaine Ester, ne veut obéir à son commandement:",
+          "Aman\n Je te prie boureau aie un peu plus d'égard A moi qu'à un autre homme, hélas que d'amertume, nid moments puisque je immeurs,niluois une plume J'écrirais à ma femme, hélas j'estois si haut Esleué entre tous, voici un pauure assaut Boureau.",
+          "Aman\n Ah pauvret que Madame suis, je suis bien misérable, Il me faut aujourd'hui que toujours serve de fable, Et de riches atours, à tout le moins hélas, Si rien ne sentais point de si âpres combats: Si le Roi rigoureux m'eût fait trancher la tête.",
+          "Le Roi sçachant que ledit Aman avait fait faire un gibet pour pendre Mardochée ayant deux lburs au paravant fait faire un honneur audit Mardochée, pour la conjuration par lui fois découverte) fît pendre ledit Aman au propre gibet qu'il avait dressé pour Mardochée LES NOMS DES ENTREPARLEURS.",
+          "Aman\n He Madame, implorez, implorez du secours, Faudra-il donc finir si pauvrement mes jours."
+        ]
+      },
+      "top_5_persons": [
+        "Aman",
+        "Florentine",
+        "Pluton",
+        "Ester",
+        "Aman"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Indes",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "IN campagne, en campagne, foi d'homme Lil n'est que de faire trafique: J'ai pris une résolution d'aller aux Indes, il faut nécessairement que ie parte mes vaisseaux m'attendẽt, tout est équipé, il n'y a qu'une chose qui me baille du soin en la tête, j'ai une petite friande au logis, sans crains puis que son honneur est déjà fendu, qu'il ne se casse du tout, toutefois j'en veux demidet conseil à Turlupis \nTurlupin Turl\n Qui va là, oros g.",
+          "Ô le gros Alne: c'est par la mer qu'il faut que j'aille aux Indes, mais ce n'est pas là ou un me veux arrêterie te veux donner en garde ma petite Florentine, tu sais qu'elle est jeune, il ne faut que faire un faux pas pour glîler dans un bourdeau, et puis l'honneur serait répandu.",
+          "Que faire, vous faut-il sortir la ville de Paris Gros g. Ô la bête, les Indes sont éloignées d'ici d'un grand espace.",
+          "Je te veux communiquer un affaire d'importance, j'ai résolu d'aller aux Indes Turl."
+        ]
+      },
+      "top_5_places": [
+        "Indes",
+        "PARIS",
+        "Trinité",
+        "Gange",
+        "Tage"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

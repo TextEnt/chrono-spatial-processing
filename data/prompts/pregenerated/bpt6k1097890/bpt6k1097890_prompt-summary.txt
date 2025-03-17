@@ -1,0 +1,80 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Puget de La Serre, Jean",
+    "title": "Climene ou Le triomphe de la vertu. Trage-comedie en prose Dediee a madame la duchesse de Sully. Par Monsieur de La Serre",
+    "publication_date": "1643",
+    "document_id": "bpt6k1097890"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Climène",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Et tu m'auoüeras que quand le Nature durait fait de ses mains propres ces deux merveilles sous un même visage, Climène serait toujours l'original du porttrait de sa sœur. \nPOLIARQUE\n Quand il n'y aurait autre différence que celle que votre Majesté ymet, elle sera toujours assez grande, pour diminuer l'estime de l'une, en faveur de l'autre.",
+          "POLIARQUE\n Saches qu'à l'arrivée de Climène et de Pampilie, ces deux grandes Princesses, qui bannies de leur pays par la trouver de Clyamas, ont cherché leur protection dans cette Cour, pour la trouver en la bonté du Roi;",
+          "J'ai offensé votre vertu Climène Mais si mon amour m'en a donné le Conseil, et votre beauté la hardiesse, elles -mêmes encore pour vous satisfaire m'en donnent maintenant le repentir CLIMENE.",
+          "J'avais fait dresser un bûcher pour y réduire en cendre Climène, sans considérer qu'en possédant mon cœur, j'eusse esté aux bien qu'elle la victime de ce sacrifice.",
+          "Allons donc, puis qu'il le faut, allons dire à Climène que le Roi est son Amant, pour lui faire connaître que personne ne porte plus ce titre?"
+        ]
+      },
+      "top_5_persons": [
+        "Climène",
+        "Seigneur",
+        "M",
+        "Seigneur",
+        "Adame"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "-trois Ledit Sieur de la Serre a cédé son Privilège à Antoine de Sommaville et Augustin Courbé, Marchands Libraires à Paris, suivant l'accord fait entr'eux.",
+          "-trois Ledit Sieur de la Serre a cédé son Privilège à Antoine de Sommaville et Augustin Courbé, Marchands Libraires à Paris, suivant l'accord fait entr'eux.",
+          "Ar grâce et Privilège du Roi, donné à Paris le L 22.",
+          "Ar grâce et Privilège du Roi, donné à Paris le L 22."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Climène",
+        "PARIS",
+        "France",
+        "Coronne"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

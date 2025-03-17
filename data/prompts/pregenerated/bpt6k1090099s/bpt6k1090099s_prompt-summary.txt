@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Chillac, Timothée de",
+    "title": "La Mort du Cid, et l'Ombre du comte de Gormas, tragi-comédie",
+    "publication_date": "1696",
+    "document_id": "bpt6k1090099s"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Rodrigue",
+          "frequency": 8
+        },
+        "related_sentences": [
+          "Et avec un cartel se portant sur la place, Comme deux fiers Luons pleins de rage et daudace, Tous deex de même force et de même chaleur Témoigne leur adresse avec leur valeur, L'honneur de ce combat dans le sort se balance, L'un s'attend à la gloire, et lautte à la vengeance, L'un combat pour le sang, et l'autre pour l'honneur, Et Rodrigue en passant est blessé sous le cœur, Et quoique la blessure en fit assez légère Sa plaie et la douleur échauffa sa colère;",
+          "Faire un raisonnement étant dans la manie, Et traiter un malade avec la tyrannie, Ingrate radoreuse avec tes sots discours, Tu redouble mes feux avec mes amours: Parle mieux de Rodrigue, et crois que son courage A fait d'un Cavalier un Héros de notre âge, Et que sa renommée et ses faits immortels Auront un jour un Temple avec mille Autels: Mais pendant que ma flamme aussi chaste que grande Lui couserve ma vie et mon cœur en ontande;",
+          "ÉLVIRE Le Comte est Général et commande l'Armée, La nouvelle est certaine on le croit en la Coir, Je m'étonne comment Rodrigue y fait séjour: Ils joindront la querelle avec la jalousie, Et c'est la seule peur dont mon âme est saisie, Et s'il est dans Seville ou s'approche de nous, Je jure sur l'Autel que j'en sais moins que vous.",
+          "J'attends de ce combat une double victoire, Je vois déjà mourir à mes pieds son second, Et pars pour les conduire oú l'honneur les semond, oeignez un refuge en cas d'une poursuite, Et que leur mort honteuse honore notre fuite, Rodrigue à le suport et les faveure de Roi, La colère du Prince est pire que sa loi.",
+          "L'ombre me suit par tout, et marchant flanc à flanc, Me montre en soupirant et ses plaies et son sangée Me le en son silence, et triste me reproche Un sentiment de ladre et une âme de roche, Que ma flamme est un crime, et de voir seulement Rodrigue, c'est seigner son cœur au monument."
+        ]
+      },
+      "top_5_persons": [
+        "Rodrigue",
+        "FERNAND",
+        "LEONOR",
+        "More",
+        "Chimène"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Castille",
+          "frequency": 8
+        },
+        "related_sentences": [
+          "Je suis auprès de lui comme un autre lui-même, J'ai le commandement et lui le Drademle FERNAND Attends plus de fortute, et un meilleur parti, Ton cœur nous a fait voir de sang qu'il est sorti, Pour triompher du More et finir nos alarmes, La Castille a besoin des Exploits de tes Armes.",
+          "Et marchant sot les pas et le rang de Pompée Tenir un Sceptre en main égal à sou épée, Et faire un seul Royaume en ses explous divers, Qui commar de aux États de tout cet Univers, Et que peur la Castille à ma gloire redire, Si j'aime le Héros qui maintient son Empire?",
+          "Que le Merre vous prenne ayant changé d' habit, Pour le Mars de Castille, et non pas pour le Cid, Et quayant levi ainu ce et leur force étouffée Leurs Rois et leurs captifs honorent vos trophées;",
+          "La Castille aujourd' hui qui tes haurs faits admire, Et doit à ta valeur la paix de son Empire, Pour ne paraître ingrate à tes faits glorieux, T ouvre avec son cœur ses trésors préciéux?",
+          "Fais voir encor Seville à ce brave Bacon Qui remplit la Castille et nos cœurs de lon nom, Et que le bruit publie allant de place en placé."
+        ]
+      },
+      "top_5_places": [
+        "Castille",
+        "Seville",
+        "Perse",
+        "Chimène",
+        "Ur"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Les femmes savantes , comédie, par J.-B. P. Molière",
+    "publication_date": "1672",
+    "document_id": "btv1b8610790n"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "HENRIETTE",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "ne ois bien que j'ai tort, mais je n'y puis que faire, Et tout ce que sur moi peut le raisonnement, C'est de me vouloir mal d'un tel aveuglement, \nTRISOTIN\n 1 Le don de votre main où l'on me fait prétendre, Me livrera ce cœur que possède Clitandre Et par mille doux soins, j'ai lieu de présumer, Que je pourrai trouver l'art de me faire aimer. \nHENRIETTE\n Non, à ses premiers vœux mon âme est attachée, Et ne peut de vos soins, Monsieur, être touchée.",
+          "Elle mérite assez une telle franchise, Et toutes les hauteurs de sa folle fierté Sont dignes tout au moins de ma sincérité: Mais puis qu'il m'est permis, je vais à votre Père, Madame. \nHENRIETTE\n Le plus sûr est de gagner ma Mère: Mon Père est d'une humeur a consentir à tout, Mais il met peu de poids aux choses qu'il résout, Il a reçu du Ciel certaine bonté d'âme, Qui le soumet d'abord à ce que veut sa Femme;",
+          "Sachez que le devoir vous soumet à leurs lois, Qu'il ne vous est permis d'aimer que par leur choix, Qu'ils ont sur votre cœur l'autorité suprême, Le qu'hent ciierd’en diposer vous-même. \nHENRIETTE\n Je rends grâce aux bontés que vous me faites voir, De m'enseigner si bien les choses du devoir, Mon cœur sur vos leçons veut régler sa conduite, Et pour vous faire voir, ma Sœur, que j'en profite;",
+          "Et lors qu'à mon amour je vois chacun se rendre. \nHENRIETTE\n Je sais le peu de bien que vous avez, Clitandre, Et je vous ai toujours souhaité pour Épous, Lors qu'en satisfaisant à mes vœux les plus dous, J'ai vu que mon Hymen ajustait vos affaires: Mais lors que nous a vons les Destins si contraires, le vous chéris anez dals cette catmite, Pour ne vous charger point de notre aversité. CLITANDRE.",
+          "Son Monsieur Trissotin me chagrine, m'assomme, Et j'enrage de voir qu'elle estime un tel Homme, Qu'elle nous mette au rang des grands et beaux Esprits Un Benêt dont par out on sifle les Écrits, Un Pédant dont on voit la plume libérale D'officieux papiers fournir toute la Hale. \nHENRIETTE\n Ses Écrits, ses discours, tout m'en semble ennuyeux,"
+        ]
+      },
+      "top_5_persons": [
+        "HENRIETTE",
+        "BELIZE",
+        "ARISTE",
+        "MARTINE",
+        "Clitandre"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Eh, mon Dieu, tout cela n'a rien dont il s'offense, Il entend raillerie autant qu'Homme de France Et de bien d'autres traits il s'est senti piquer, Sans que jamais sa gloire ait fait que s'en moquer, \nTRISOTIN\n Je ne m'étonne pas au combat que j'essuie, De voir prendre à Monsieur la Thése qu'il appuie.",
+          "Où voyez-vous, Monsieur, qu'elle l'ait si mauvais? \nTRISOTIN\n Ce que ici vois, Monsieur, c'est que pour la Science Rasius et Baldus font honneur à la France, Et que tout leur mérite exposé fort au jour, N'attire point les yeux et les dons de la Cour.",
+          "Il a des vieux Auteurs la pleine intelligence, Et sait du Grec, Madame, autant qu'Homme de France PIEHINTE.",
+          "Leur sçavoir à la France est beaucoup nécessaire, Et des Livres qu'ils font la Cour a bien affaire.",
+          "quelle barbarie au milieu de la France Mais au moins en faveur, Monsieur, de la Science."
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Paris",
+        "Rome",
+        "Pontoise",
+        "Pathos"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

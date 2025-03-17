@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Rayssiguier, De",
+    "title": "Tragicomedie pastoralle, où les Amours d'Astrée et de Celadon, sont meslees à celles de Diane, de Silvandre & de Paris, avec les inconstances d'Hilas ; suivi de Autres Œuvres poëtiques du mesme autheur",
+    "publication_date": "1630",
+    "document_id": "bpt6k1090290r"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Diane",
+          "frequency": 81
+        },
+        "related_sentences": [
+          "Dans le premier Acte, Céladon qui n'osait paraître de jour, depuis qu'il s'était sauvé de chez Galathe, par le moyen d'Adamas et de Léonide, se plaind de l'injustice de son sort, et prend occasion de parler du commandement qu'il avait reçu de son Astre, de ne se faire jamais voir à ses yeux, et du désespoir qui l'obligea en sa présence de se jeter dans Lignon Durant sa plainte Siluandre survient, qui depuis la gageure faite avec Philis, était véritablement demeuré amoureux de Diane, et qui après avoir couru toute la nuit, lassé du travail s'endort sans voir Céladon, qui se servant de l'occasion met une lettre sur le sein de Silvandre sans y mettte son nom été son chifre, cette lettre trouvée à son réveil met ce Berger en peine ne pouvant juger d'où elle était venue, mais en la lisant la trouvant conforme à sa passion, croit que son bon démon l'ait écrite en sa faveur, et sur cette imagination, et sur la ce voir Diane il rencontre auec Te: Mais Astre recognoissant la lettre de Céladon, et ayant su de Silvandre l'endroit où il l'avait trouvée, y vont ensemble, et sont rencontrez de Paris, qui amoureux de Diane se joint à leur compagnie: Silvandre qui les conduisait, s'étant écarté, en voulant prendre un sentier, rencontre le Temple que Céladon avait dedic à la Déesse Astre, où ils trouvent de nouveaux écrits de ce berger, qui leur persuade que ombre de Céladon errait dans ces lieux.",
+          "Siluandre sur le point de se précipiter est arrêté par Céladon qui s'en allait à la font taine de la vérité d'amour pour finir la vie, et l'emmenant quand et Seigneur, ren contren leurs bergères endormies, après quelque discours, ils passent outre contre les lions et les licornes, en ce temps Adamas, Paris, Léonide, Hil et Bellinde arrivent, et voient le changement qui se fait, l'air se trouble, et après les éclairs et la foudre l'air se rassérénant, Amour paraît, qui commande qu'on remporte les corps de ces bergers et de ces bergeres qui et morts, de marier Ce auec Astree, Diane auec Paris, et de lui sacrifier le lendemain Siluandre par les mains Adamas, exécution de ce rigoureux commandement, est le subiect du dernier Acte Siluandre sur le poinct être sacrifié, est recogneu pour fils Adamas et pour le vrai Paris, et Paris pour Ergaste fils de Bellinde, et frère de Diane, ainsi accordent les oracles, et la volonté des Dieux est exécutée, Celadon épouse Astreeg Diane est mariée après Paris, Érgaste avec Léonide",
+          "Et que le vieil Charon leur refuse sa barque, de ujant pount jours trtout qu'on doit é jon Monarque: Mais après ce détour nous voici toutefois Arrivez, grâce aux Dieux à l'entre du bois, Ou nous voulions aller. \nHilas\n Berger tes révériez Nous vont faire coucher loin de nos bergeries. \nSilvandre\n Prophane prends bien garde à n'irriter le Dieu, Qui montre ciatrement d'habiter en ca tieu, \nSilvandre\n Et toi de ne te perdre aux détours du bocage, Puisque toute la terre a changé de visage, Et que déjà, la nuist a fait mourir le jour, Dont nous devons attendre en ce lieu le retour, Ou au moins que ta unt ancunément éclaire, Afin que nous voyons ce que nous devons faire, \nParis\n Brave Hilas, votre avis sera suivi du mien, \nDiane\n Et nous suivrons le vôtre Paris At faut pour être bien, Que vous vous reposiez toutes deux sur leur sayes, Jandis que nous irons coucher pres de ces hayes.",
+          "Sur rette croyance se fonde le dessein de lui faire e vain tombeau, dont l'on fait la cérémonie u second Acte, où Adamas et Léonide oblijent après beaucoup de peine le triste Célalon à se déguiser en fille, et de se dire fille du grand Druide, sous cet habit, en cette qualité estvisité au troisième Acte des bergers et bergers de la contrée, et entre autres d'Astres et de Diane Paris qui avait pressé Diane touchant leur mariage ne pert point temps et se servant de l'occasion et des paroles de Diane, qui avait remis cest affaire à Belinde sa mère, la va trouver: et après l'oracle consulté qui dit, qu'il faut marier Paris avec Diave, oblige Bellinde d'aller trouver Adamas, qui consent aisément à ce mariage;",
+          "Astreée\n Cachons nous donc ici sous ces fueillages verds, Qui nous donnent du jour pour voir tout au travers. \nAdamas\n Me pourrai-je acquitter d'un si este office, Et faire sans mourir ce triste sacrifice? \nSilvandre\n hrompert pourjatut Cyus Dieux qui l'ont voulu Vous ont ils point encor à ce point résolu? \nDiane\n Aduançons nous un peu, y ai peine à les entendre. \nAdamas\n Si fait, mais il vous faut en patience attendre, Le coup qu'à mon regret vous recevrez trop tôt. \nDiane\n Attends moi mon berger, Seigneur te suivrai tantôt, \nCéladon\n Quel courage de fer a d'assez fortes armes, Pour pouvoir en ce point était refuser des larmes. \n"
+        ]
+      },
+      "top_5_persons": [
+        "Diane",
+        "Alexis",
+        "Adamas",
+        "Léonide",
+        "Alexis"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 81
+        },
+        "related_sentences": [
+          "Dans le premier Acte, Céladon qui n'osait paraître de jour, depuis qu'il s'était sauvé de chez Galathe, par le moyen d'Adamas et de Léonide, se plaind de l'injustice de son sort, et prend occasion de parler du commandement qu'il avait reçu de son Astre, de ne se faire jamais voir à ses yeux, et du désespoir qui l'obligea en sa présence de se jeter dans Lignon Durant sa plainte Siluandre survient, qui depuis la gageure faite avec Philis, était véritablement demeuré amoureux de Diane, et qui après avoir couru toute la nuit, lassé du travail s'endort sans voir Céladon, qui se servant de l'occasion met une lettre sur le sein de Silvandre sans y mettte son nom été son chifre, cette lettre trouvée à son réveil met ce Berger en peine ne pouvant juger d'où elle était venue, mais en la lisant la trouvant conforme à sa passion, croit que son bon démon l'ait écrite en sa faveur, et sur cette imagination, et sur la ce voir Diane il rencontre auec Te: Mais Astre recognoissant la lettre de Céladon, et ayant su de Silvandre l'endroit où il l'avait trouvée, y vont ensemble, et sont rencontrez de Paris, qui amoureux de Diane se joint à leur compagnie: Silvandre qui les conduisait, s'étant écarté, en voulant prendre un sentier, rencontre le Temple que Céladon avait dedic à la Déesse Astre, où ils trouvent de nouveaux écrits de ce berger, qui leur persuade que ombre de Céladon errait dans ces lieux.",
+          "Siluandre sur le point de se précipiter est arrêté par Céladon qui s'en allait à la font taine de la vérité d'amour pour finir la vie, et l'emmenant quand et Seigneur, ren contren leurs bergères endormies, après quelque discours, ils passent outre contre les lions et les licornes, en ce temps Adamas, Paris, Léonide, Hil et Bellinde arrivent, et voient le changement qui se fait, l'air se trouble, et après les éclairs et la foudre l'air se rassérénant, Amour paraît, qui commande qu'on remporte les corps de ces bergers et de ces bergeres qui et morts, de marier Ce auec Astree, Diane auec Paris, et de lui sacrifier le lendemain Siluandre par les mains Adamas, exécution de ce rigoureux commandement, est le subiect du dernier Acte Siluandre sur le poinct être sacrifié, est recogneu pour fils Adamas et pour le vrai Paris, et Paris pour Ergaste fils de Bellinde, et frère de Diane, ainsi accordent les oracles, et la volonté des Dieux est exécutée, Celadon épouse Astreeg Diane est mariée après Paris, Érgaste avec Léonide",
+          "Et que le vieil Charon leur refuse sa barque, de ujant pount jours trtout qu'on doit é jon Monarque: Mais après ce détour nous voici toutefois Arrivez, grâce aux Dieux à l'entre du bois, Ou nous voulions aller. \nHilas\n Berger tes révériez Nous vont faire coucher loin de nos bergeries. \nSilvandre\n Prophane prends bien garde à n'irriter le Dieu, Qui montre ciatrement d'habiter en ca tieu, \nSilvandre\n Et toi de ne te perdre aux détours du bocage, Puisque toute la terre a changé de visage, Et que déjà, la nuist a fait mourir le jour, Dont nous devons attendre en ce lieu le retour, Ou au moins que ta unt ancunément éclaire, Afin que nous voyons ce que nous devons faire, \nParis\n Brave Hilas, votre avis sera suivi du mien, \nDiane\n Et nous suivrons le vôtre Paris At faut pour être bien, Que vous vous reposiez toutes deux sur leur sayes, Jandis que nous irons coucher pres de ces hayes.",
+          "Sur rette croyance se fonde le dessein de lui faire e vain tombeau, dont l'on fait la cérémonie u second Acte, où Adamas et Léonide oblijent après beaucoup de peine le triste Célalon à se déguiser en fille, et de se dire fille du grand Druide, sous cet habit, en cette qualité estvisité au troisième Acte des bergers et bergers de la contrée, et entre autres d'Astres et de Diane Paris qui avait pressé Diane touchant leur mariage ne pert point temps et se servant de l'occasion et des paroles de Diane, qui avait remis cest affaire à Belinde sa mère, la va trouver: et après l'oracle consulté qui dit, qu'il faut marier Paris avec Diave, oblige Bellinde d'aller trouver Adamas, qui consent aisément à ce mariage;",
+          "C'est le jeune Paris, qui bien souvent s'habille De même qu'un berger pour mieux plaire à ma fille Tout seul, Monsieur, tout seut: \nParis\n Madame, les ennuis, Me tiennent compagnie en l'état où je suis. \nBellinde\n D'où vient dons le sujet de l'ennui qui vous presse Paris \nParis\n Des froideursque me vient de montrer ma maîtresse, \nBellinde\n Vous est-elle plus froide aujourd'hui qu'autrefois? \nParis\n Elle a changé pour moi de visage et de voix, Députs que de ma bouche élût a su que l'afaire, De notre mariage était si préte à faire. \n"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Lignon",
+        "France",
+        "Bergères",
+        "Bearn"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Scudéry, Georges de",
+    "title": "Ibrahim ou l'Illustre Bassa, tragi-comédie",
+    "publication_date": "1643",
+    "document_id": "bpt6k10902344"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Soliman",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "C'est te faire un outrage, et c'est trop m' \nSOLIMAN\n Isabelle en mon cœur, a mis baivcoup à flamme, (blasæE n'a rien mis en lui, qui soit digne Mais il faut que j'avoue, en blâmant son erreur, Qu'enfin sa cruauté, me porte à la fureur: t que personne suis capable, en cette peine étrange, De perdre, et perdre tout, pourvu que ie me venge. \nISABELLE\n eigneur, ce sentiment ne t'est jamais permis: come menace point, avec mes amis, La crainte ne peut rien, sur une Âme afligée:",
+          "Juincible Sultan, ne fais rien en tumulte: Que ton cœur généreux, joi -même se consulte: trouvera sans doute, en faisant quelque éfort, ue ta bouche auec lui, est nullement accort: c'elle le veut trahir; qu'il n'est point d'avec elle, Et qu'Ibrahim y règne, et non pas Isabelle Que sa Vertu le charme, et vou pas ma beauté, Et qu'il est toujours bou, l'ayant toujours été \nSOLIMAN\n Non, ce n'est point ainsi, que tu me justisie:",
+          "Mais d'un penser fâcheux, passons daust plus doux : Il fera pour autrui, ce qu'il a fait pour nout Quoi que le Grand Vis, de tout l'Esia dispose, Il suffit de Savoir, qu'ils aiment mes chose : C'est par là que l'espoir, nous peut être prémis : Car ensin deux rivaux, ne sont jamais dmus Or pour faciliter cette belle entreprise, Enflammez Soliman, encor qu'on le mépriss Vantez beau cet objet, qu'on lui voit adorin ites",
+          "Et j'ai tort de répondre, avec tant de tristesse, À ce qui n'est qu'un jeu, qui plaistà ta Hautesse. \nSOLIMAN\n Plût au cruel destin, qui s'oppose à monbis Que pour votre repos, ainsi que pour mien, Vous fusiez véritable, et cette flamme feixIe serais sans douleur, et vous seriez crainte: Mais aimable Isabelle, il n'est que tropes tain, Que tu porte vos fers, et le Sceptre Anni!",
+          "En l'état qu'est la chose, en l'état qu'est mon sort, Il fant le laisser vivre, et désirer sa mort: Et malgré les essects, de mon impatience, Il faut songer au Ciel, comme à sa conscience. \nROXELANE\n Mais avant que choisir, l' ou autre parti, Ne précipite rien, coutulte le Muphti Il est dans le Serrail \nSOLIMAN\n Va Rûtan, fais qu'il viene. \n"
+        ]
+      },
+      "top_5_persons": [
+        "Soliman",
+        "Ibrahim",
+        "ISABELLE",
+        "ROXELANE",
+        "Isabelle"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Perse",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Que tu l'as vu cent fois, couvert au pré, mier rang, Du sang des ennemis, et de son propre sant Qu'il à vaincu la Perse, et peut vaine la t erre;",
+          "Et quel que soit enfin, le mal qui nous traverse, (en Perse Nous en avons bien moins, que quand tu fus LaGuerre était douteuse, et le sort dangereux;",
+          "Dire qu'il a trop tôt, abandonné la Perse Que pour se maintérir, il élève et renverse;",
+          "ur depuis ce grand jour, tout céda, tout reconquis la Perse, et Tauris se randit.",
+          "Çui me fait vaincre en Perse, à l'instant ui, ie sçay que ses jours"
+        ]
+      },
+      "top_5_places": [
+        "Perse",
+        "MONACO",
+        "Constantinople",
+        "Grèce",
+        "Tigre"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

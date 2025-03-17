@@ -1,0 +1,78 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Desmarets de Saint-Sorlin, Jean",
+    "title": "Les visionnaires . Comedie. Seconde edition",
+    "publication_date": "1639",
+    "document_id": "bpt6k55303536"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "LYSANDRE",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "LYSANDRE\n N'ont-ils point de lignée? \nPHALANTE\n Il ont tous des enfants. \nLYSANDRE\n À dieu, belle maison, et beaux a triomphants, Adieu courts, anticours, Adieu belle avenue, Vous, sonraines, Adieu, qui rouchiez à la nue, Adieu lambris dorez, Adieu meubles divers, Logements des Estez, logements des Hivers, Adieu cet ordre égal de colomnes Doriques, Adieu",
+          "Je veux plutôt la mort. \nLYSANDRE\n Modérez ce courroux. \nMÉLISSE\n Je souffrirais qu'en moi quelqu'un osât prétendre, Après ce que j'ai lu du vaillant Alexandre Mon cœur qui dès longtemps adore sa grandeur, Pourrait se voir épris d'une plus vile ardeur: Mille coups perceraient ce cœur traître et volage, S'il avait entrepris d'effacer son image. \nÀLCIDON\n Hélas!",
+          "Les meubles somptueux, éclatants et divers, Feraient croire à vos yeux que de tout l'Univers On a fait apporter les plus riches ouvrages, Pour rendre à ce beau lieu de signalés hommages. \nÀLCIDON\n Vous nous contez sans doute un palais enchanté, Écoutons, LYSANDRE \nPHALANTE\n Les jardins n'ont pas moins de beauté.",
+          "Et cent petits ruisseaux coulent d'vn doux murmure, Qui d'un œil plus riant font briller la verdure. \nÀLCIDON\n L'abord est agréable: \nLYSANDRE\n On peut avec raison te prîtine de là quelque belle maison. \nPHALANTE\n De foin l'on apergort un portail magnifique.",
+          "Non, notre n'en ferai rien, Seigneur n'ai pas ce courage: Je me veux pour jamais priver du mariage. \nÀLCIDON\n Est-ce ainsi que l'on suit mon vouloir absolu? \nLYSANDRE\n Vous voyez, Alcidon, ce qu'elle a résolu."
+        ]
+      },
+      "top_5_persons": [
+        "LYSANDRE",
+        "Alexandre",
+        "Seigneur",
+        "Cassandre",
+        "Cloris"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "On se plaint de l'auteur: il m'a fait un outrage: Je pensais être à Rome, il m'enlève à Carthage Vous avez beau chanter, et tirer le rideau: Vous ne m'y trompez pas, je n'ai point passé l'eau, Ils défirent aussi que d'une haleine égale On traite sans détour ion principale.",
+          ", c'est ce que Rome dosire. \nPHALANTE\n Ce lieu se peut nommer séjour des voluptés, où l'Art et la Nature étalent leurs beautés;"
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "France",
+        "Carthage",
+        "Perse",
+        "Troie"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

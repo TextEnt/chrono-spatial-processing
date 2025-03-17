@@ -1,0 +1,76 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": null,
+    "title": "Les Coups du hazard, comédie",
+    "publication_date": "1691",
+    "document_id": "bpt6k852922m"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "MERLIN",
+          "frequency": 3
+        },
+        "related_sentences": [
+          ", Que toute ma raison se perd en y songeant. \nMERLIN\n Dis-moi, comment sais-tu qu'il vient? \nLISETTE\n Par unc Lettre, Que l'on vient d'apporter, adressée à mon Maître: Elle est de Coraton, il y joint son Portrait, \nMERLIN\n Est-il beau ? \nLISETTE\n Non, fort laid: \nMERLIN\n Tu n'en voudiais done pas Étette, que t'en Iemble? \n",
+          "j'aurai l'argent? \nMERLIN\n Ouï, vous l'aurez demain, Quant aux deux mille écus dont on vous fait avance, On n'exige de vous qu'un mot pour assurance, Où vous vous obligiez de rendre s'il vous plaît Dans sixmais au plus tard la somme et l'intérêt, Si vous y consentez c'est une affaire faite. \nGERASTE\n Volontiers.",
+          "On envie à mes feux la moindre liberté, Et quoi que de nos cœurs la douce intelligence D'être unis à jamais, marque l'impatience, Un Père trop ervel s'oppose à notre espoir, Rart agil contre nous um uololu pouvoir, Menace, violence, il met tout en usage: \nMERLIN\n Ouï, c'est là pour vos feux un très-mauvais présage;",
+          "Quoi les femmes chez vous eutrent au Cabaret \nMEREIN\n Elles vont bien ailleurs \nISABELLE\n Tan-pis pour qui le fait s Être folle à ce point? \nMLREIN\n Si c'est une folie, Croyez-moi, j'ai bien voit des folles en ma vie. \nISABELLE\n Que disent les Maris de cette liberté. \nMERLIN\n ",
+          "DH Dieux! \nMERLIN\n D'abord je l'interroge, et me faisant connaître Qu'il venait de la part de Coraton sen Maître, j'ai sçù tout doucement l'introduire chez nous, Il y ronfle, Dieu serait: Eh bien, qu'en ditesvous ? \nISABELLE\n Que le coup est heureux!"
+        ]
+      },
+      "top_5_persons": [
+        "MERLIN",
+        "Lisette",
+        "ISABELLE",
+        "MERLIN",
+        "MATHIEU"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Toulon",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "mon Père le regarde d'un autre œil, prévenez son pouvoir par tout ce que l'Amour, peut vous sugèret, Isabelle vous avoue de tout, et consent même à se laisser enlever, Adieu Maudit soit le moment que je quittai Toulon PICARD Quor, ç elt done vous, saurenfeur qu'on nomme Coraton ZORATON Moi",
+          "Il demeure à Toulon, Et le Père et le Fils se nomment Coraton Le Fils viendra demain conclure l'Hyménée, Mon Maître après tout, sa parole est donnée, Outre encor sa parole, il a fait un dédit De douze mille francs. \n",
+          "MERLIN, Valet de Géraste CORATON, Fils d'un Marchand de Toulon, promis à Isabelle L'ÉPINE, Valet de Coraton, ivrogne, MITHIEU, Paysan, Valet de Dãmon."
+        ]
+      },
+      "top_5_places": [
+        "Toulon",
+        "Paris"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

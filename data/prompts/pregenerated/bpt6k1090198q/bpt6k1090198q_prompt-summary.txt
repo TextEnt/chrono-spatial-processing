@@ -1,0 +1,78 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Rotrou, Jean de",
+    "title": "La Célimene, comédie [...], accommodée au théâtre sous le tiltre d'Amarillis, pastorale",
+    "publication_date": "1661",
+    "document_id": "bpt6k1090198q"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Amarillis",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Je ne vous entends plus estimer vos liens, Célidan n'a plus part en tous vos entretiens, Votre humeur chaque jour devient plus solitair, Je m'abuse, ma sœur, ou cette amour s'altère, Et l'humeur de Cléonte a de certains appas, Qui, si vous l'avouez, ne vous déplaisent pas. \nDAPHNE\n Il plaît à tout le monde. \nAMARYLLIS\n Il faut donc qu'il me plaise. \nDAPHNE\n Mais ne craignez-vous plus ce tyran de notre aise, Cet aveugle Démon, ce poison des esprits, Dont les fausses douceurs vous étaient à mépris? \nAMAMLIS\n Je craignez-vous, ma sœur? \nDAPHNE\n J'ai franchi cet orage. \nAMARYLLIS\n Pour le franchir de même ai-je moins de courage?",
+          "Qui dans un sain asile ont cherché du repos, Mais ne m'accuse point d'être à tort infidèle, Puisque tu la causas, tu sais bien ma île, Doras étant mort, sans longtemps consulter Pour venir en ces lieux il fallut s'absenter, Tandis que mes parents s'employant pour ma grâce, Par ie ne sçay quel sort, m'en allant à la chasse, Dont vis Amarillis, dont l'éclat me ravit, Elle me fit changer de Maîtresse et d'habit.",
+          ". Qu'à la fin mon martyre Vous avait disposée à l'hymen où j'aspire. \nAMARYLLIS\n Vous croyez, Philidas, un peu légèrement, Je ne l'ai point chargé de ce commandement, L'amour ne permet pas à votre réuerie De discerner le vrai d'avec la raillerie, Cléonte vous gaussait.",
+          "Juine Amarillis, honneur de nos Bergères, JModérez tant soit peu la rigueur de vos lois, y dans ma passion l'excès de mes misères Ne m'interdisait point l'usage de la voix, éleuerois si haut vos ès sans exemple, Que vous auriez un Temple. \nDAPHNE\n atounleMtes \n",
+          "AMARYLLIS\n le reçois, Philidas, votre cœur de sa main, Vous n'accuseren plus, ni rigueur était dédain, Me voilà disposée à vous rendre justice, Et vous devez ce bien à ce doux artifice: Adieu, retirons-nous, et vivons tous contents."
+        ]
+      },
+      "top_5_persons": [
+        "Amarillis",
+        "DAPHNE",
+        "BELIZE",
+        "PHILIDAS",
+        "AMARYLLIS"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Lignon",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "CLIMANTE, Domestique de Daphné LIScène est au bord de Lignon AMARYLLIS, PASTORALE.",
+          "Lignon n'en a point vu qui lui soit comparik IRENE.",
+          "Lignon n'en a point vu qui lui soit comparik IRENE."
+        ]
+      },
+      "top_5_places": [
+        "Lignon",
+        "Niepce",
+        "Bergères",
+        "Paris"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

@@ -1,0 +1,80 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": null,
+    "title": "La Comédie des tromperies, finesses et subtilitez de Maistre Pierre Patelin, advocat à Paris, pièce comique",
+    "publication_date": "1656",
+    "document_id": "bpt6k1090175q"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Guillemette",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Car s'il convient que ainsi m'applique A bouter avant ma pratique, On ne saura trouver mon per. \nGuillemette\n Par saint laques uon de tromper Vous en êtes un fin droit maître. \nPatelin\n Par celui Dieu qui me fît naître Mais de droite avocasserie. \nGuillemette\n Par ma foi, mais de tromperie: Combien vraiment quant m'avise, Pour à vrai dire, sanaclergise Et sans sens naturel, vous êtes Jenu Ivre des saisges têtes",
+          "Car en ses résieries il parle cinq ou six sortes le langages, Limosin, Picard, Normand, Breton, Lorrain: Et r chaque langage Guillemette jit des commentaires si à proos pour montrer que son mari toit sur le point de rendre l'aie à Dieu, que non seulement le brapier s'en départ, mais à son partement supplie Guillemette de l'excuser, se faisant accroire que ç'avait été quelque Diable transformé en homme qui avait enlevé son drapait.",
+          "À Paris pres saint Innocent COMÉDIE DE MAÎTRE Pierre Patelin Maître Pierre Patelin commence Ainte Marrie, Guillemette, DPour quelque peine que sette A cabasser n'à ramasser, Nous ne pouvons rien amasser, Or vi-je que j'avocassoie. \nGuillemette\n Par notre Dame j'y pensaie Dont on chante en avocassaige: Mais on ne vous tient pas saise Des quatre parts, comme ou soûlait.",
+          "L'Auteur introduit Patelin Aduocat, Maître passé en tromperie, une Guillemette sa femme qui le seconde en ce métier, un Guillaume Drapiet, vrai badaut, An dirais volontiers de Paris, mais ainsi ferais tort à moi-même, un Aignelet Berger lequel discourant son fait en lourdois, et prenant langue de Patelin, se fait aussi grand Maître que lui.",
+          "Patelin\n le vous donne cet œil à traire 'il en a plus eu, ne n'aura, a si bien chanter ne saura. \nGuillemette\n qui est il \nPatelin\n C'est un Guillaume, Qui a surnom de Joceaume, Puis que vous le voulez sçauoit, \nGuillemette\n Mais la manière de l'avoir Pour un denier?"
+        ]
+      },
+      "top_5_persons": [
+        "Guillemette",
+        "Guillaume",
+        "sainte Marie",
+        "maître Pierre",
+        "saint Jean"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "À Paris pres saint Innocent COMÉDIE DE MAÎTRE Pierre Patelin Maître Pierre Patelin commence Ainte Marrie, Guillemette, DPour quelque peine que sette A cabasser n'à ramasser, Nous ne pouvons rien amasser, Or vi-je que j'avocassoie. \nGuillemette\n Par notre Dame j'y pensaie Dont on chante en avocassaige: Mais on ne vous tient pas saise Des quatre parts, comme ou soûlait.",
+          "L'Auteur introduit Patelin Aduocat, Maître passé en tromperie, une Guillemette sa femme qui le seconde en ce métier, un Guillaume Drapiet, vrai badaut, An dirais volontiers de Paris, mais ainsi ferais tort à moi-même, un Aignelet Berger lequel discourant son fait en lourdois, et prenant langue de Patelin, se fait aussi grand Maître que lui.",
+          "Depuis par succès de temps, tout ainsi qu'il ne se trouve plus de la monnaie du Parisi, aussi quand nous la voulons exprimer nous y ajoutons par exprez le mot de Parisi en queue, autrement soit à Paris ou ailleurs nous n'entendons parler que de sols tournois.",
+          "on l'entendait Parisi, qui valait quinze deniers tournais (car aussi était-il de Paris) et à tant que les 24."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Picardie",
+        "Navarre",
+        "Espagne",
+        "Rouen"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

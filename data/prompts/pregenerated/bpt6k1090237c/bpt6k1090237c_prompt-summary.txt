@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Chrétien, Nicolas",
+    "title": "Albouin ou la Vengeance, tragédie",
+    "publication_date": "1608",
+    "document_id": "bpt6k1090237c"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Longin",
+          "frequency": 7
+        },
+        "related_sentences": [
+          "vous pouviez dedans mon æne lire Vous verriez que le même en pareil avait désire. \nLongin\n , Ausi de l'amitié c'est le pro re jounioun \" D'être plusieurs en un, de la vie le cours \" Sans la société, n'est que désagréable, 1 Et l'homme sans ami, toujours est misérable. \nRoseni\n , Tout est facilité par ce juste devoir, \" Quand on peut des amis tous les secrets savoir, \nLongin\n Il est bien plus séant pour celui que l'on aime, 9, Se mitre en un péril que non pas pour soi -même. \nRosemonde\n \" Plusieurs ont enduré pour leurs amis la mort. \nLongin\n \" Faus suivre ses amis au bon et mauvais sort.",
+          "Je suis bien averti que sa femme Sophie, De ma fidélité trop à tort se défie, Car elle à fait donner à Longin mes États, Et de cet acte là ne se contentant pas, M'a fait savoir encor tant est folle sa haine Qu'elle veut m'employer à M filer sa laine, Mais ainsi ainsi ay trame pour troubler son repos, Et dextrement ourdi quelque toile à propos Qu'elle ne pourra pas demester, ni défure Pendant qu'elle vivra quoi qu'elle puisse faire.",
+          "Or allez acomplir votre belle entreprise, Je prends congé de vous, nieu vos desseins con luise. \nAlboullin\n Adieu donc cher Narcez, que puissiez, vous tousioun Deuider en repos le reste de vos jours, Vous entendrez en bref que mes gens en Campagne Inuestiront Toscane, et toute la Romagne, Je vais tout à l'instant mes chefs faire assembler Dont le nom seulement fera Longin trembler, Adieu Pnnce",
+          "C'est le chemin d'honneur de gloire, et de louange \" D'être de ceux aimé qui ament point le chage. \nLongin\n \" J'ai toujours retherche telles geus pour amus. \nRosemonde\n Pour tels entre vos bras nous sommes nous pas mis? \nLongin\n Edelles vous jugeamt de mes biens, de ma vie Et de mon honneur même à vous ie me confie. \n",
+          "Que les Cors enroüez sanfarant leurs alarmes, iment au combat les moins hardis gensdarmes, Je Zéphre doux se joite des drapeaux, même le bleu Neptun des Dauphins sous les eaux: eu de tous côtés la jeunesse s'assemble, Casser ce Longin qui déjà de peur tremble."
+        ]
+      },
+      "top_5_persons": [
+        "Longin",
+        "Almach",
+        "Mars",
+        "Lomb",
+        "Al"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 7
+        },
+        "related_sentences": [
+          "Jus l'honneur emperle du Coihurne Français, Tu fay revivre encor la cendre des grands Tois comme ont fait ceux que Rome, et qu'Aihenes avir, Ausi leur as s guerdonnera ta voix.",
+          "Je souhuiterou bien la Rom igné ocuper Et devant la gruid Rome aller aussi camper, Mus vous y conmandez et l'Empereur s'assure été sous votre pouvoir cette Province",
+          "Mus trop ingrate Rome en me pleignant de toi, me uumque janmnt maranu sa foi.",
+          "Acheminez y donc vos guerrières Cohortes, Rome tout aussi tôt vous ouvrira ses portes. \n",
+          "De Rome êtes vous pas assez prothe voisin Pour conjoindre le Tibre auecques le Tesin"
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Tibre",
+        "Ravenne",
+        "Romagne",
+        "Milan"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

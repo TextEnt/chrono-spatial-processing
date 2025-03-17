@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Corneille, Pierre",
+    "title": "Polyeucte martyr, tragédie chrestienne",
+    "publication_date": "1652",
+    "document_id": "bpt6k1280316r"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Pauline",
+          "frequency": 12
+        },
+        "related_sentences": [
+          ". Dieux frivoles, Infensibles et sourds, impuissants, mutilez, le voulez : C'est le Dieu des Chrétiens, c'est le mien, c'est le vôtre, Et la terre et le Ciel n'en connaissent point d'autre. \nPAULINE\n Aublez-le dans J'âme et n'en témoignez rien, \nPOLYEUCTE\n Que quelque sois tout ensemble idolâtre et Chrétien! \nPAULINE\n Ne féis ez qu'Hommes moment, laissez partir Sevère, Et de inez lieu d'agir aux bontés de mon père. \nPOLYEUCTE\n Les bontés de mon Dieu sont bien plus à chérir, Il m'ôte des périls que j'aurais pu courir, Et sans me laisser lieu de tourner en arrière Sa faveur me couronne entrant dans la carrière, Du premier coup de vent il me conduit aujport Et sortant du Baptême il m'envoie à la mort Si vous pouviez comprendre et le peu qu'est la vie Et de quelles déceurs cette mort est suivie.",
+          "Si de son inconstance il faut qu'enfin j'espère Le bien que j'espérais de la bonté d'un père? \nFELIX\n Je lui fais trop de grâce encor de consentir Qu'il éuite la mort par un prompt repentir, La même peine est due à des crimes semblables, M Et mettant différence entre ces deux coupables J'ai trahi la justice à l'amour paternel, Je me suis fait pour lu y-même criminel, Et j'attendais de vous au milieu de vos craintes nide de remterolemens que ien' accenus ut plaintes. \nPAULINE\n Dequoy remercier qui ne me donne rien?",
+          "STRATONICE E vous ai plaint tous deux, j'en verse encor Y des larmes, Mais du moins votre esprit est hors de ses alarmes, vons voyez ciailement que votre songe est vain, Seuere ne vient pas la vengeance à la main. \nPAULINE\n Laisse-moi respirer du moins si tu m'as plainAu fort de ma douleur tu race duelles ma crainSouffre un peu de relâche à mes esprits troublés, Et ne m'accable point par des maux redoublés.",
+          "Est-ce trop l'achepter que d'une triste vie, Qui tantôt, qui soudain me peut être ravie, Qui ne me fait jouir que d'un instant qui fuit, Et ne peut m'assurer de celui qui le suit? \nPAULINE\n Voilà de vos Chrestiens les ridicules songes, Voilà jusqu'à quel point vous charment leurs mensonges, Tout votre sang est peu pour un bonheur si doux, Mais pour en disposer ce sang est-il à vous?",
+          "-même il a fallu me faire, Quels combats j'ai donnés pour te donner un cœur Si justement acquis à son premier vainqueur, Et s'ingratitude à ton cœur ne domine, Fais quelque effort sur toi pour te rendre à Pauline, Apprends d'elle à forcer ton propre semiment Prend sa vertu pour guide en ton aveuglement, Souffre que de toi-même elle obtienne ta vie vu Do viure sous tes lois à jamais asservie."
+        ]
+      },
+      "top_5_persons": [
+        "Pauline",
+        "POLYEUCTE",
+        "FELIX",
+        "Félix",
+        "Nearque"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 12
+        },
+        "related_sentences": [
+          "Il n'était point couvert de ces tristes lambeaux Qu'une ombre désolée emporte des tombeaux, Il n'était point percé de ces coups pleins de gloire Qui retranchant sa vie assurent sa mémoire, Il semblait triomphant et tel que sur son char Victorieux dans Rome entre notre César Après un peu d'effroi que m'a donné sa vue, Porte à qui tu voudras la faveur qui m'est due, Ingrate, m'a-t-il dit, et ce jour expiré Pleure à loisir l'époux que tu m'as préféré.",
+          "leurs secrets comme eux à Rome et dans la Grèce, Encor impunément nous souffrons en tous lieux Leur Dieu seul excepté toute sorte de Dieux, Tous les monstres) d'Égypte ont leur Temple dans Rome, Nos aïeux à leur gré faisaient un Dieu d'un homme, Et leur sang parmi nous conservant leurs erreurs Nous remplissons le Ciel de tous nos Empereurs Mais à parler sans fard de tant d'Apothéoses, L'effet est bien douteux de ces Métamorpholes.",
+          "Il ne vous laisse espoir, ni crainte, ni scrupule, Mais il passe dans Rome au authorité Pour fidèle miroir de la fatalité. \nPAULINE\n Le mien est bien étrange, et quoi qu'Armenienne Je crois que ta frayeur égalerait la mienne or de tenez nontait c'avaient frappé l'esprit, Si tu c'en avais fait seulement le récit.",
+          "Et laisse la vertu la plus rare à vos yeux 1 Qu'une femme jamais peut recevoir des Cieux Aux mains du plus vaillant et du plus honnesté homme Qu'ait adoré la terre, et qu'ait vu haistré Rome Vous êtes digne d'elle, elle est digne de vous, Ne la refusez pas de la main d'un époux",
+          ", et jamais notre Rome N'a produit plus grand cœur, était vu plus honnête homme : Puisque tu le connais ie ne t'en dirai rien, Je l'aimai, Stratonice, il le méritait bien, Mais que sert le mérite où manque la fortune ?"
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "France",
+        "Arménie",
+        "Die",
+        "Thionville"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

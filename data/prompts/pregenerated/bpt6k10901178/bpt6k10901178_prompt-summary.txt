@@ -1,0 +1,79 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Dorimond",
+    "title": "Le Festin de Pierre, ou l'Athée foudroyé, tragi-comédie",
+    "publication_date": "1665",
+    "document_id": "bpt6k10901178"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "AMARANTE",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "mon malheur s'accroît que je suis misérable \nBRIGUELLE\n le vous les vais nommer dans son pays natal L'aure dont le bel œil au vôtre estoit gal, Dorinde, Clorianne, Amarante, Isabelle, Selimene, Selye, et Lucresse et Marcelle, Angélique, Lucelle, Aminthe, Amarilis, Et celle dont on fit des chansons, c'est Filis, Glodine la boiteuse, et Catin la camuse Qui se laissa duper comme une pauvre buse;",
+          "Il en a dit autant à trente comme à vous, Sans les autres qu'il a pris d'assaut, pour tout dire, J'ai su de lui leurs noms à l'entendre médire, Car il faut que par tout quelque grands sois complaisant. \nAMARANTE\n Que me dis",
+          "JOUAN\n Je ne vous vis jamais, ie ne sais qui vous êtes, \nAMARANTE\n Bergère malheureuse, l'horreur de l'Univers, Va cacher ta douleur aux plus creux des désers, Que leur nuit rende office à toute la nature Y cachant pour jamais cette triste aventure.",
+          "Et qu'en voulez-vous faire Ne vous louvientel pius : \nDOM JOUAN\n Où s'adressent tes pas? \nAMARANTE\n Que vous importe-t-il? \nDOM JOUAN\n Ne t'effarouche pas, J'aimerais mieux mourir que te mettre en colère.",
+          "AMARANTE\n ouvronsieur, votre discours est si rempli de charmes, Qu'il faut vous avouer que ie vous rends les armes, Mais, ne m'abusez pas, étant sous votre loi. \nDOM"
+        ]
+      },
+      "top_5_persons": [
+        "AMARANTE",
+        "Seigneur",
+        "LUCIE",
+        "BLAISE",
+        "LE PÈLERIN"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "C'est vous gêner l'esprit d'une plainte inutile, La mort qui n'est jamais courtoise ni civille, Pourrait être pour vous et prompte et sans refus, Et quand vous la verriez vous seriez bien confus, Laissez là vôtre Fils, ou l'envoyez à Rome, J'ai fait ce que j'ai pu pour le rendre honnête homme, Mhais leroyant aur préds foulermes jentiinens, Me goutmer, et railler de mes enseignements: Me traiter d'ignorant, de coquin et de bête, our ma Joi lai cele dem y rompre la telte. \nDOM ALVAROS\n Briguelle laisse -moi dans l'état où tu suis, t. propes fapernus décroissent mes ennuis. \n",
+          "DOM TOUAN, Sais -tu que Rome le veux? \nBRIGUELLE\n Ô!",
+          "Et l'on ne pourra pas vous en absoudre à Rome \nDOM"
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "France",
+        "Flandre",
+        "Paris I",
+        "Paris"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

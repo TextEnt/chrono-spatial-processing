@@ -1,0 +1,79 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Quinault, Philippe",
+    "title": "La Comédie sans comédie par le sr Quinault",
+    "publication_date": "1657",
+    "document_id": "bpt6k3151507"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "CLORINDE",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Et dans cette croyance à présent affermi, t vous suis comme Amant et non comme Ennemi, \nCLORINDE\n voit comme un Ennemi, soit comme Amant n'importe, rour ces deux noms ma haine est également forte: 18 n'y me que la Guerre, et de noble métier emande à qui l'exerce un grand Cœur tout entier;",
+          "Quiconque a le bonheur d'être à cette Beauté, Poit savoir qu'où ie suis il est en sûreté: Clorinde a fait retraite avec un soin extrême, suit ses pas et dis lui même que sans l'aime, \nARSACE\n Que sent dirai-je encor?",
+          "es Armes sans éclat me rendront inconnue, Dedans une entreprise où ie crains d'être veze, \nHERMINE\n l'entends quelqu'un qui marche, \nCLORINDE\n Arsace fait ce bruit, Avez -vous veu Tancrede SCÈNE V. ARSACE, CLORINDE HERMINE. \nARSACE\n ",
+          "Je sais que votre bras fut toujours indomptable Mais quand j'échapperais à ses coups furieux, Je n'échapperais pas aux traits de vos beaux yeux \nCLORINDE\n Qui donc es-tu, qui m'ose aborder de la sorte?",
+          "Moncœur que jusqu'ici l'on n'a peu surmonter, N'avait rien que Clorinde au monde à redouter: Ses fers ont tant d'éclat que j'ai l'âme trop vaine, si tu crois mérirer une si belle chaine;"
+        ]
+      },
+      "top_5_persons": [
+        "CLORINDE",
+        "HERMINE",
+        "ARSACE",
+        "Renaud",
+        "ISABELLE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Bien qu'il semble qu'une Fortune aussi grande que la vôtre, ne puisse être conservée que par des soins sans relâche et par des complaisances sans réserve, toute la France est justement persuadée qu'il n'y a point de belle Cognaissance que vous n'ayez acquise, ni des éclattante Vertu que vous n'ayez pratiquée.",
+          "Je suis né grâce au Ciel d'assez nobles parents, J'ai reçu dans la Cour mille honneurs différents: La France à m'admirer souvent s'est occupée;",
+          "À MONSEIGNEURMONSEIGNEURE MARQUIS M DE LA ILLLERAYE GRAND-MAÎTRE DE L'ARTILLERIE de France besoin pour être souffert"
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Paris",
+        "PARIS",
+        "Provence",
+        "Sicile"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

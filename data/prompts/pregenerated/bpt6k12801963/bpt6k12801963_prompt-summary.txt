@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Corneille, Pierre",
+    "title": "Oeuvres de Corneille. Première [-Troisième] partie",
+    "publication_date": "1652",
+    "document_id": "bpt6k12801963"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Lysandre",
+          "frequency": 15
+        },
+        "related_sentences": [
+          "On cherche si souvent le bien de sa présence Qu'on en fait habitude, et qu'au point d'en sortie Quelque regret commence à se faire sentir: On revient tout rêveur, et notre âme blessée Sans prendre garde à rien cajole sa pensée, Ayant rêvé le jour, la nuit à tous propos On sent ie ne sais quoi qui trouble le repos, On souffre doucement l'illusion des songes, Notre esprit qui s'en flatte adore leurs mensonges Sans y trouver encor que des biens imparfaits Qui le font aspirer aux solides effets: Là consiste à son gré le bonheur de sa vie, Et le moindie lalcin pémis à ion envie Arrête le larron, et le met dans les fers. \nDORIMANT\n Ainsi tu fus épris de celle que tu sers? \nLYSANDRE\n C'est un autre discours, à présent un ne touche Qu'aux ruses de l'Amour contre un esprit farouche Qu'il faut apprivaiser comme insensiblement, Et contre ses froideurs combattre finement.",
+          "Allez, Lysandre, allez, c'est assez de contraintes, (tes, J'ai pitié du tourment que vous donnent ces feinSuivez ce bel objet dont les charmes puissants Sont, et seront toujours absolus sur vos sens, Quoj qu'en peu dé dépit devant ene publie, Son mérite est trop grand pour souffrir qu'on l'oublie, Elle a des qualités et de corps et d'esprit Dont pas un cœur donné jamais ne se reprit. \nLYSANDRE\n Mon change fera voir l'avantage des vôtres, Qu'en la comparaison des unes et des autres Les siennes désormais n'ont qu'un éclat terni, Que son mérite est grand, et le vôtre infini. \n",
+          "Et qu'on en voit mourir pour un peu de rigueur! \nCELIDE\n le connais mon Lysandre, et sa flamme est trop forte Pour tomber en soupçon qu'il m'aime de la sorte: Toutefois un dédain éprouvera ses feux, Ainsi, quoi qu'il en soit, j'aurai ce que pr veux, Il me rendra constante, ou me fera volage, S'il m'aime, il me retient, s'il change, il me dégage, Suivant ce qu'il aura d'amour ou de froideur, le suivrai ma nouvelle ou ma première ardeur. \nHYPPOLITE\n en tain tu ty ferous, ton âme vu peu contrainte",
+          "Qu'il a presque arraché Lysandre de ce lieu? \nCHRYSANTE\n Et Lysandre tient ainsi à faveur singulière Cette peine qu'il prend pour un de ses amis. \nHYPPOLITE\n Mais voyez cependant que le Ciel a permis (tifice Que pour mieux vous montrer que tout n'est qu'arLysandre me faisait ses offres de service. \nCHRYSANTE\n Aucun des deux n'est homme à se jouer de nous, querque leclet Mylèle ent euene la denons, Allons, pour en tirer la vérité plus claire, Seules dedans ma chambre examiner l'affaire, lei quelque importun nous pourrait aborder.",
+          "Tout-beau, coureur, tout- -H beau, On n'est pas quitte ainsi pour un coup de chapeau, Vous aimez l'entretien de votre fantaisie, Mais pour un Cavalier c'est peu de courtoisie, Et cela messied fort à des hommes de Cour, De n'accompagner pas leur salut d'un bonjout. \nLYSANDRE\n Puis qu'auprès d'int sujet capable de nous plaire La présence d'un tiers n'est jamais nécessaire, De peur qu'il n'en reçût quelque importunité, J'ai mieux aimé manquer à la civilité. \n"
+        ]
+      },
+      "top_5_persons": [
+        "Lysandre",
+        "CLORIS",
+        "ISABELLE",
+        "Amarante",
+        "HYPPOLITE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 15
+        },
+        "related_sentences": [
+          "Le joli passetemps D'être auprès d'une Dame, et causer du beautẽps, Lui jurer que Paris est toujours plain de fange, Qu'un cerfain a in de fort bonne eau d'Ange, Qu'vn Cavalier regarde un autre de travers, Que dans la Comédie on dit d'assez bons vers, Qu'Aglante avec Philis dans un mois se marie, Change, pauvre abusé, change de batterie, Conte ce qui te méne, et ne t'amuse pas A indre sottement tes discours et tes pas. \nPHILISTE\n ",
+          "Çà -moi mes soins, tu le sais, furent pour Celidée, La nuit ne m'autre jamais retracé d'autre idée, Et tout ce que Paris a d'objets ravissants N'a jamais ébranlé le moindre de mes sens, Ton exemple à changer en vain me solicite, Dans ta volage humeur j'adore ton mérite, Et mon amour plus fort que mes ressentiments Conserve sa vigueur au milieu des tourments.",
+          "Elles et vous dehors, il n'est rien dans Paris, Et tu n'en sache point, pour belles qu'on les nomme, Qui puissent attirer les yeux d'un honnête homme \nCELIDE\n Je ne suis pas d'humeur bien propre à t'écouter, Je veux des gens mieux faits que toi pour me flatter, Sans que ton bel esprit tâche plus d'y paraître,",
+          "MELITE acquitter en quelque sorte, mais seulement pour les publier à toute la France Quand esprit considère le peu de bruit qu'elle fit à son arrivée à Paris, venant d'un homme qui ne pouvait sentir que la rudesse de son pays, et tellement inconnu qu'il était avantageux d'en taire le nom;",
+          "Il vous prit quelque argent, mais ce petit butin À peine avait dura du soir juqu'au matin, Et pour gagner Paris, il vendit par la plaine Des brevets à chasser la fièvre et la migraine, Dit la bonne-aventure, et s'y rendit ainsi."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Corinthe",
+        "LORIS",
+        "HYLIS",
+        "Grèce"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

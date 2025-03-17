@@ -1,0 +1,78 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Le Vert",
+    "title": "Aristotime , tragédie",
+    "publication_date": "1642",
+    "document_id": "bpt6k5448626v"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ÉLISE",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Qu'il hâte donc ma mort puis qu'elle est si certaine, Ma résolution épargnera sa peine, Je protestai d'abord que sans le haïssais, Je ne changerai point le dessein que j'avais, Ae le plorejre enter , le derène son ovmle 5 Et aime mieux souffrir la mort, qu'Aristotime. \nÉLISE\n Madame, Seigneur sais bien qu'une si noble courroux Est digne du grand cœur que l'on remarque en vous, Que votre haine est juste, en ce qu'elle se fonde A haïr un objet funeste a tout le monde, Et qu'une femme ayant un mari glorieux, Qui veut les séparer Seigneur doit être odieux.",
+          "n'en doutons plus, notre trépas est prêt, Et cette injuste mort qu'il excuse en un autre, Est le signe fatal qui précède la nôtre. \nÉLISE\n Madame, vous craignez un peu légèrement, Il a frop d amifie pour vons e MÉGISTE.",
+          "PHILINTE\n \nÉLISE\n SOLDATS. \nMYRONE\n E bien, Madame, en fin êtes -vous satisfaite?",
+          "ME MYRONE, MEGISTE. \nÉLISE\n \nPHILINTE\n \nMYRONE\n Vis",
+          "ÉLISE\n \nÉLISE\n Adame, si la chose est encor incertaine"
+        ]
+      },
+      "top_5_persons": [
+        "ÉLISE",
+        "Timoleon",
+        "Adame",
+        "Seigneur",
+        "ARISTON"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Grèce",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Oui, pour le mieux pousser où son malheur le porte, Je veux l'accompagner, et avoir servir descorte, Et lauer dans son sang, en m'attachant à lui, Mon amour négligé, ma honte, et mon ennui, \nTRASIBULE\n Nos desseins vont servir et soulager la Grèce Allons les appuyer de toute notre adresse:",
+          "oublier un mari, Que tous les gens de bien et la Grèce ont chéri?"
+        ]
+      },
+      "top_5_places": [
+        "Grèce",
+        "PARIS",
+        "France",
+        "Megiste",
+        "Paris"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

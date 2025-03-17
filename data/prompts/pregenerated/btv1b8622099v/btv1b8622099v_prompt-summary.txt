@@ -1,0 +1,79 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Rotrou, Jean de",
+    "title": "Clorinde : comédie/de Rotrou",
+    "publication_date": "1637",
+    "document_id": "btv1b8622099v"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Clorinde",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "cette creãce n'a point besoin d'être prêchée, pour être suivie, elle s'établit assez d'elle même, il ne faut que vous voir pour vous adorer, et Seigneur ne saurais souhaiter qu'on vous connaisse, sans craindre en rendre temps un rival: vous -même, quelque achève que soit votre vertu, je m'assure que vous n'avez pas assez de modestie pour vous voir sans vous aimer, et quand vous seriez plus enfermée que le Roides Indes, puisque vous ne pouvez être invisible à voù prendre, j'aurais pour le moins Ç-à - même Civale mais était souffre cette commence sans jalousie, et j'aime egalemẽt ma rivale, et ma maîtresse, puisque vous êtes l'une et l'autreIe commence mes hommes par le mauvais presẽt que sans vous envoie de ma Clorinde, si vous y treuuez quelque chose qui vous agré, venez me le dire à Paris, où vous êtes impatiement attendue de commence serviteurs, et d'autant de compagnes;",
+          "Si ici n'obtiens dans peu son inclination, Blâme moi de faiblesse, et de présomption. \nORINDE\n Et bien par ce moyen, ton adresse infinie Me fera d'une faible, une forte ennemie, Au lieu que j'ai d'une de racquérir ses vœux, Il recevra les tiens, est-ce ce que tu veux? \nLYSANTE\n Voyez, combien l'amour trouble sa fantaisie, Elle a déjà de l'ombre, et de la jalousie, \nCLORINDE\n Je sais que ta froideur est sans comparaison Et que rien n'a du droit sur toi que ta raison, Mais si contre ta force il employait ses charmes Tu jes éprounerais oien puis fontosque tes armes",
+          "Quoi qu'on doive juger de votre ardeur nouvelle, En un si beau sujet, vraie, ou feinte, elle est telle: Mais ici feinte, ni vraie, elle ne peut toucher, Un malheureux qui perd tout ce qu'il a de cher: Rien ne plaît à mes yeux, la beauté m'épouvante, J'ignore si on vois Celimène, ou Lysante, Au pitoyable état, où mes jours sont réduits, Je doute de l'endroit, et du temps où je suis: Et si ma triste voix, de quelque ordre est conduite, Le hasard seulement en ageance la suite: Je vois par tout Clorinde, et par tout ses mépris",
+          "Toi, qui lis en son cœur, et qui voise sa pensée, Crois-tu qué mon image y soit toute effacée, Qu'au dessein de Se plaire, et de le rapprocher, Mes pleurs, Seigneur mes soupirs, ne le puissent toucher? \nLYSANTE\n Juge par ces discours, de sa froideur extrême: Clorinde (m'a-t-il-dit) croit encor que je l'aime: Et son orgueil, sans doute, attendait en ces lieux Des plaintes de ma bouche, et des pleurs de mes yeux:",
+          "Suivons aveuglement cette ardeur insensée, Ce charmeur de mes sens, est juste en ses refus, Et si ieande déplais, je ne m'estime plus: Je renonce à Clorinde, et j'aime Celiandre, S'il la hait, que la hait, et ne la puis défendre: Et pouvant bien mourir pour son contentement, Je pourrai bien pour lui forcer mon sentiment: \nANTE\n On eût prisé jadis l'ardeur qui vous transporte, Audetioesjeeebe ne'es panseu epimen use ceure sorte;"
+        ]
+      },
+      "top_5_persons": [
+        "Clorinde",
+        "POLYDOR",
+        "Venus",
+        "Mars",
+        "ANTE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "cette creãce n'a point besoin d'être prêchée, pour être suivie, elle s'établit assez d'elle même, il ne faut que vous voir pour vous adorer, et Seigneur ne saurais souhaiter qu'on vous connaisse, sans craindre en rendre temps un rival: vous -même, quelque achève que soit votre vertu, je m'assure que vous n'avez pas assez de modestie pour vous voir sans vous aimer, et quand vous seriez plus enfermée que le Roides Indes, puisque vous ne pouvez être invisible à voù prendre, j'aurais pour le moins Ç-à - même Civale mais était souffre cette commence sans jalousie, et j'aime egalemẽt ma rivale, et ma maîtresse, puisque vous êtes l'une et l'autreIe commence mes hommes par le mauvais presẽt que sans vous envoie de ma Clorinde, si vous y treuuez quelque chose qui vous agré, venez me le dire à Paris, où vous êtes impatiement attendue de commence serviteurs, et d'autant de compagnes;",
+          "Moi, Seigneur tiens qu'il n'est point si rare, et si charmant, Qu'une fille ne put s'en défendre aisément, Paris a bien du peuple, et parmi ce grand nombre J'ai vu mille Soleils, dont il est moins que l'ombre; \nCLORINDE\n ",
+          "Marchand Libraire à Paris, d'imprimer ou faire imprimer,vendre et distribuer une pièce de Théâtre, intitulée la Clorinde Comédie de Monsieur de Rotrou, durant le temps et espace de neuf ans, à compter du jour qu'elle sera achève d'imprimer.",
+          "Joints en deux cents encor auecques Céliandre, Qu'avec lui tout Paris conspire à me toucher Ces efforts importuns, heurteront un rocher;",
+          "Ar grâce et Privilège du Roi donné à Paris le 7."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Florante",
+        "Ours"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

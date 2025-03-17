@@ -1,0 +1,78 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Rotrou, Jean de",
+    "title": "La Célimène , comédie de Rotrou. Accomodée au théâtre, sous le titre d'Amarillis, pastorale",
+    "publication_date": "1653",
+    "document_id": "bpt6k5734490j"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "AMARYLLIS",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Les Bergers de ces lieux sont d'illustre: Héros, Qui dans un sain azile ont cherché du repos, Mais ne m'aceuse point d'être à tort infidèle, Puisque tu la causas, tu sais bien ma querelle, Donlas étant mort, sans longtemps consulter Pour venit en ces lieux il fallut s'absenter, Tandis que mes parents s'emploient pour ma grâce, Par ie ne sais quelsort, m'en allant à la chasse, Je vis Amarillis, dont l'éclat me ravit, Elle me fit changet de Maîtresse et d'habit.",
+          "Un mot bene beigeigie, Je sais que vous auez des bontés pour mon frère, Et prends part à l'honneur qu'il a reçu de vous, \nAMARYLLIS\n de Tentmie ocavcoup, en êtes-vous jalous?",
+          ", Et peut plus que ta voix. \nDAPHNE\n Et tu ne t'y rends pas? \nAMARALEIS\n En voudrais tu jurer? \nDAPHNE\n oui, si belle te dois erolte \nAMARYLLIS\n ",
+          "cruelle, oyez ma plalnte, Donden vamsotuumandont mon ante ent sainte, \nAMARYLLIS\n Dieux que ces importuns me dérobent de temps, le les fais tous souffrir, ils sont tous mécontents.",
+          "Ces cheveux toutefois Me doivent confirmer le rapport de sa voix, Il a reçu pour moi ce favorable gage, Par qui vous témoignez de chérir mon setuage, \nAMARYLLIS\n "
+        ]
+      },
+      "top_5_persons": [
+        "AMARYLLIS",
+        "DAPHNE",
+        "BELIZE",
+        "Philidas",
+        "AMARYLLIS"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "PARIS",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "À PARIS, Chez GUILLAUME DE LUINE, sous la montée de la Cour des Aydes. \nM\n DC.",
+          "Marchand Libraire à Paris"
+        ]
+      },
+      "top_5_places": [
+        "PARIS",
+        "Lignon",
+        "Lyon",
+        "Rome",
+        "MONCEAUX"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

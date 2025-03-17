@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Boursault, Edme",
+    "title": "Germanicus : tragédie, représentée par les comédiens du Roy / [par E. Boursault]",
+    "publication_date": "1694",
+    "document_id": "bpt6k859380"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Pison",
+          "frequency": 30
+        },
+        "related_sentences": [
+          "On dirait que le jour disparaît tout exprêts: Il fait place à la nuit, qu'une main criminelle Au premier des humains allait rendre éternelle, Si Pison, toujours prêt à faire son devoir, De la part de Divfus ne l'esloit venu voir, Pout lui dire en secret que Ce par envie",
+          "J'ai beaucoup de sujet de me louer de lui Pison ît sage, ardent, civil, soumis, fidèle: Par les soins qu'il me rend il m'instruit de son zèle: Avecan çœur sinçerę il me dit ģ Ce qu'on m'écrit du Rhin, ç iel y:",
+          "Pison, il y va de ma gloire, Vous checchez à me plaire, et Je cherche à le croire: Pour conquire en secret ce Prince en d'autes lieux, Ç'est sur vous seul, enfin que je jette les yeux.",
+          "GRIPI Pardonnez, chet Pison, si l'horreur d'un tel crime Vous a pout un moment dérobé mon estime: Duns les ptemiers transports d'un si juste courroux, J'aurais fait même Injure à tont avère, que vous.",
+          "Si vous avez aimé, Pison, vous savez bien Qu'aux pleurs d'une Maîtresse on ne refuse rien: De ces pleurs tout-puissants le charme imperceptiDans le cœur le plus dur trouve un endroit sensible;"
+        ]
+      },
+      "top_5_persons": [
+        "Pison",
+        "Germanicus",
+        "César",
+        "GERMANICUS",
+        "Drus"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 30
+        },
+        "related_sentences": [
+          "Non qu'il ne soit grand homme, et qu'il n'ait des vertuis: Quoi que fils de Tibère, on estime Drus On la vu dans l'Armée au sortit de l'enfince Signaler sa valeur, et proptre sa prudence: C'est un Héros naissant, u cœur poble, élevé Mais l'Amant que je perds en est un achevé: Rome n'a jamais vues quoique l'envie en dise, Homnte plus glorieux, ni ncolte mieux acquise:",
+          "Non, Madame, mon cœur plein de votre mérite, Condamne votre amour, s'il veut que je vous quitte: Mon trépas est douteux, et ne le sera plus Si je vous abandonnc au pouvoir de Drus Rome, quoi qu'on m'apprête, est mon plus sûr asile: Tout autte en vous quittant me serait inutile: Mes jours, que vos bontés ont soin de ménager, Éloigné de vos yeux, sont-ils hors de danger?",
+          "Une erreur si grollière est enlin dissipée: J'apprends pat votre choix que je m'étais tromptte, Madime Et je viens rendre au mérite éclatant, Qui vous met au déllus du soit qui vous attend, Tout ce qu'on peut devoir à l'Épouse d'un homme, Trouvé digue à vingt ans d'étie Cousul de Rome GRIPINE.",
+          "J'étais pâti de Rome, et déjà l'âme emcue, Je voyais l'Aventin disparoistré à ma vue, Lorsqu'avec ce grand aît, qui fait pâlit d'effroi, j'ai vu Geimmâts à vanccepits de moi Malgré des désespoir où ma flamme est réduite, Votre gloire en danger m'a fait blâmer ma fuite:",
+          "Je vous l'ai déjà dit, Rome changea de face, Aussitôt que d'Anguste il occupa la place, Et que son artifice, aptés de vains refus, Hérita de sou yang, et non de ses vertus."
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Paris",
+        "Danube",
+        "Pologne",
+        "France"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

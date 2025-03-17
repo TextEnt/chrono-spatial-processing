@@ -1,0 +1,79 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Noguères, de",
+    "title": "La Mort de Manlie, tragédie...",
+    "publication_date": "1660",
+    "document_id": "bpt6k853060q"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Emile",
+          "frequency": 53
+        },
+        "related_sentences": [
+          "Qu'il voit en deuil, en pleurs, en regrets consumée, Cet objet l'attendrit, j'en vois frémir son cœur Qu'on voyait insensible à son propre malheur: Il exorte un chascun, il aucue son crime, Fait voir son père juste, et sa mort légitime, Lors insensiblement portant ses yeux sur moi, Il me jette un regard plein d'amour, et d'effro Emile (me dit-il) si tu me fus fidèle, Si tu me pus jamais témoigner quelque zèle: Sois témoin de ma mort, et ne t'expose pas, Sans euoir ma Princesse au hasard du trépas.",
+          "C'en est trop, Emile sçiche mieux Qu'à soutenir leur cause on se rend odieux, Après ce que j'ai dit, laisse là leur défense, L'horreur de leur forfait t'ordonne le silence, Leurs discours auront pu peut-être t'abuser, Mait le veuxdeuant toi qu'on les vienne accuser Qu'ils auoüent leur crime, et qu'un juste supplice Punisie leur audace, et m'en fasse justice, Car s'il faut les convaincre avant que les punir, Tu seras Tatisfait, va fais les moi venir. ÉMILE.",
+          "Ah homme t'entends Emile Je fais de ma vengeance un dessein intyle, Leur fuite a prenu sans doute mon courorux, Mais dois je après cela me reposer sur vous, Ou soit par industrie, ou soit par négligence Que vous me ravissiez l'espoir de ma vengeance, Ou que vons m'ayez pu trahir, ou négliger, A -on si peu de soin d'exécuter mes ordres: Ne verra ie en ce camp que trouble et que de sordres:",
+          "Je me connais Emile, et ainsi n'ai fait pour Rome Que ce qu'eût entrepris des Romains le moindre homme, Sache sans me flatter que le premier combat Est celui qui la sauve, ou celui qui l'abat, Qu'après ce premier choc il n'est plus d'espérance, Qu'en vain étant vaincus nous ferions résistance;",
+          "Emile tu me rends ma toie avec usure, Tu bannis ma frayeur, ton discours me rassure: Tu me montre assez, laissant à part la loi, Que j'ai produit un fils brave, et digne de moi?"
+        ]
+      },
+      "top_5_persons": [
+        "Emile",
+        "Tulle",
+        "Manlia",
+        "Seigneur",
+        "Seigneur"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 53
+        },
+        "related_sentences": [
+          "Le Gaulais n'a cédé qu'a son puissant destin, Par lui facilemert nous vaincrons le Latin, Le déplot able état ou ie la considère Loin de m'intimider fait qu'encore j'espère, Si Rome eût périr, Rome ne serait plusEt n'eût pu résister aux coups qu'elle a reçus, Après que l'ennemi dans ses propres entrailles Couvert du sang des siens, d'heureur, de funerailés, N'a pas pu la soumettre, et que dans uné tourné Trois Romains renfermez l'ont contraint au retour, Après qu'elle s'est vue a demi consumée, être parmi le sang qué flame, et que fumée, Et elle a subsisté par lon puinane destin TORQYATE.",
+          "Aussi ici ne pouvais sans honte et sans remords Espouser Décia parmi l'horreur des morts, Joindre au malheur des miens la joie et d'hyménée, Et comme le Gaulais braver leur destinée, Ainsi si té mouvais au combat qui m'attend Oster à l'ennemi la gloire qu'il prétend, Mon retour me ferait d'un feu tout légitime Posséder Dia sans scrupule, et sans crime Rome pendent ce temps essuyerait ses pleurs, Perdrait le souvenir de ses derniers malheurs, Et le fruit quelle aurait seule victoire Pourtoit en effacer le aurait de sa mémoire?",
+          "a Enaimai L. Sans le lu Ay ierû, Songez plutôt à vaine, et que votre retour Est nécessaire à Rome autant qu'à votre amour, Que vous ne pouvez pus prodiguer une vie, Dont la perte rendrait notre Ville affaiblie, Que vous la misez devez, quelle n'est plus à vous, Quind on la croit vile ou pour elle, ou pour nous , Que on imputeroit même vôtre mémoire, auoir mal soustenu sa deffence et sa gloire, enfin pour se venger de vos lâches desseins Rome vous osteroit du nombre des Romains;",
+          "Elle tire un papier ou sont ces vers Tu peux avec raison t'assurer la victoire, Le superbe ennemi, combattra, mais en vain, Ton père en ce combat aura le plus de gloire, Pat un des plus beaux sorts qu'ait jamais eu Romain, Tu verras ton amant de cette troupe altière Triomphant, mais toujours soumis, Torquate justement méprisant Rome entière Donnera malgré sa prière Ason fils ton amant ce qu'il aura promis.",
+          "Mais que Rome s'oppose à voir notre bonheur, C'est la ma juste crainte, ou bien c'est mon erreur, Que Rome persécure, et que Rome supsie Torquate de me perdre aussi bien que Manlie, Rome qui nous chérit, Rome de qui les vœux Ne tendent qu'à nous voir, h eua nous Rome heureux, Rome, Rome qui doit son salut à nos pères Pour perdre notre amour leur ferait des priètes ?"
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Tulle",
+        "Manlia"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

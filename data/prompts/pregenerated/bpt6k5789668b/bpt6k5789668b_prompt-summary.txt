@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Rotrou, Jean de",
+    "title": "Clarice ou L'amour constant. Comedie de Mr. de Rotrou.",
+    "publication_date": "1643",
+    "document_id": "bpt6k5789668b"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Clarice",
+          "frequency": 7
+        },
+        "related_sentences": [
+          "Mon nom en me nuisant me servira peut- être, Et me faisant périn me fera reconnaître, Jaurai peut -être mort l'honneur d'être pleuré, Des yeux qui m'ont vu vif et qui m'ont ignoré: Mais pour ce faux honneur faut il perdre Clarice, Éprouvons tout -mourelle, employons l'artifice, Le sortput si tu vis seconder mes efforts, Mais tout puissãt qu'il ne peut rien pour les morts, La mort estle seul mal qui n'a point de remède;",
+          "Larice, enfin vos pleurs me forcent de vous dire, Qu'un indigne sujet, cause vostrète martyre, Et qu'il n'est, ni de sang, ni de condition, A mériter l'honneur de votre affection, Car s'il en faut en fin dire ce que Un pense,) J'ai découvert la trame, et vous aimez Hortense \nCLARICE\n Indiscrète, impudente, avec quel front peux tu, D'un si fol sentiment sogentermu vertu?",
+          "De là dépend mon bon et mon mauvais destin, Je ne t'ai fait entren au service d'Horace, Que pour y voir Clarice, et m'obtenir sa grâce: Pour elle seulement ie mire le jour, C'est mon ambition, c'est mon Prince, et ma Cours J'ai renoncé pour elle aux charmes de Lutrece, Et mille renoncerais à ceux d'une Princesse.",
+          "Peut-être. \nLEONSE\n \nALEXIS\n Il est trop vrai: tu dois Savoir aussi, Que je n'ai souhaité qu'il entrât chez Horace, Que pour y voir Clarice, et m'obtenir sa grâce; Et quand, s'il t'en souvient, ils t'en ouvris mon sein, Tu ne pus t'empêcher d approuver mon dessein.",
+          "Je sais qu'Alfonse aussi \nALEXIS\n Cher Anselme en deux mot,s Et sans vous emporter, faites -moi voir Léandre La beauté de Clarice est un prix à défendre, Et dailleurs notre Hymen se concluant ce soir, Si l'on me la dispute, il est temps de se voir."
+        ]
+      },
+      "top_5_persons": [
+        "Clarice",
+        "ALEXIS",
+        "LUCRECE",
+        "LÉONIN",
+        "Léandre"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Florence",
+          "frequency": 7
+        },
+        "related_sentences": [
+          "Tu disparus, en fin, mais le bruit n'était pas, Que devers ce pays s'adressassent tes pas, Et l'on parlait d'Espagne, et non pas de Florence HORTENSE.",
+          "RINOCERONTE. \nLÉONIN\n Et d'où vient donc, qu'on vous chassa de France, D'ou l'on vous vi st tôt de retour à Florence RINOCERONTE: Moi chasser?",
+          "Tu t'enfuis, et me dis, qu'entre Florence, et Gennes, Tu preterois l'oreille, au récit de mes peines.",
+          "Arrête, ne voici que la sixième Lune, Que Florence me conte entre ses habitants.",
+          "Le bruit courut enfin, qu'ils tiraient vers Florence, Ou auomtoonap noneuu"
+        ]
+      },
+      "top_5_places": [
+        "Florence",
+        "Paris",
+        "Pise",
+        "Rome",
+        "France"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

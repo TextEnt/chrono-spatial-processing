@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Quinault, Philippe",
+    "title": "Atys. Tragédie en musique, ornée d'entrées de ballet, de machines et de changements de théâtre, représentée devant S. M. à Saint Germain en Laye, le 10e jour de janvier 1676. [Paroles de Quinault]",
+    "publication_date": "1676",
+    "document_id": "bpt6k6524930f"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Cybele",
+          "frequency": 18
+        },
+        "related_sentences": [
+          "De ne s'exprimer pas bien, Un cœur qui n'aima jamais rien Sait peu comment l'amour s'exprime. \nCYBELE\n Sangaride est aimable, Atys peut tout charmer, Ils témoignent trop s'estimer, Et de simples parents sont moins d'intelligence: Ils se sont aimés dès l'enfance, Ils pourraient enfin trop s'aimer.",
+          "Je prétends m'éclaircir leur feinte sera vaine. \nMÉLISSE\n Quels secrets par les Dieux ne sont point pénétrés Deux cœurs à feindre préparés Ont beau cacher leur chaîne, M y jemle, Les Dieux par l'Amour éclairez. \nCYBELE\n nus métisse , ô ururt t'aimable Zephire Dattompiir promplement tout ce qu'Atys desire.",
+          "Mélisse se retire. \nCYBELE\n Que les plus doux Zéphyr, que les Peuples divers, Qui des deux bouts de l'Univers Sont venus me montrer leur zèle, Clèbrent la gloire immortelle Du Sacrificateur dont Cybele a fait choix, Atys doit dispenser mes lois, Honorez le choix de Cybele SCÈNE SCÈNE QUATRIÈME.",
+          "CYBELE, CELÆNVS, MÉLISSE, Troupe de Prêtresses de Cybele \nCYBELE\n E veux joindre en ces lieux la gloire et l'abondance, D'un Sacrificateur je veux faire le choix, Et le Roi de Phrygie aurait la préférence Si je voulais choisir entre les plus grands Rois.",
+          "Il faut tout un cœur pour Cybele, À peine tout le mien peut suffire à l'Amour. \nCYBELE\n Portez a cosère amti ta premtert nouvelle De l'honneur éclatant ou ma faveur l'appelle."
+        ]
+      },
+      "top_5_persons": [
+        "Cybele",
+        "Atys",
+        "Cybele",
+        "Flore",
+        "YS"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Cybele",
+          "frequency": 18
+        },
+        "related_sentences": [
+          "De ne s'exprimer pas bien, Un cœur qui n'aima jamais rien Sait peu comment l'amour s'exprime. \nCYBELE\n Sangaride est aimable, Atys peut tout charmer, Ils témoignent trop s'estimer, Et de simples parents sont moins d'intelligence: Ils se sont aimés dès l'enfance, Ils pourraient enfin trop s'aimer.",
+          "Je prétends m'éclaircir leur feinte sera vaine. \nMÉLISSE\n Quels secrets par les Dieux ne sont point pénétrés Deux cœurs à feindre préparés Ont beau cacher leur chaîne, M y jemle, Les Dieux par l'Amour éclairez. \nCYBELE\n nus métisse , ô ururt t'aimable Zephire Dattompiir promplement tout ce qu'Atys desire.",
+          "Mélisse se retire. \nCYBELE\n Que les plus doux Zéphyr, que les Peuples divers, Qui des deux bouts de l'Univers Sont venus me montrer leur zèle, Clèbrent la gloire immortelle Du Sacrificateur dont Cybele a fait choix, Atys doit dispenser mes lois, Honorez le choix de Cybele SCÈNE SCÈNE QUATRIÈME.",
+          "CYBELE, CELÆNVS, MÉLISSE, Troupe de Prêtresses de Cybele \nCYBELE\n E veux joindre en ces lieux la gloire et l'abondance, D'un Sacrificateur je veux faire le choix, Et le Roi de Phrygie aurait la préférence Si je voulais choisir entre les plus grands Rois.",
+          "Il faut tout un cœur pour Cybele, À peine tout le mien peut suffire à l'Amour. \nCYBELE\n Portez a cosère amti ta premtert nouvelle De l'honneur éclatant ou ma faveur l'appelle."
+        ]
+      },
+      "top_5_places": [
+        "Cybele",
+        "Cybele",
+        "Fleuve",
+        "PARIS",
+        "Belone"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

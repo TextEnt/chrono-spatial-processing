@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Benesin, De",
+    "title": "Luciane ou La credulité blasmable .Tragi-comedie pastorale. Dediée a monsieur de Villemontée",
+    "publication_date": "1634",
+    "document_id": "bpt6k852916s"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "LUCIANE",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Lui même, Qui brûle encor pour vous de celt ardeur extrême Approchons vous verrez \nLuciane\n Ce peut -il que les morts Ombres sans sentiment deuestus de leurs corps Brûlent encor pour nous d'une amoureuse flamme, \nPhédon\n Il n'est mort et son corps est informé de l'âme \nLuciane\n Celidan n'est pas mort, \nCelidan\n Non Bergère son cœur et se Conserve encor pour vous quelque peu de vigueur Autant qu'il en faudra pour vous dire sa plainte Et je ieile à vos pieds piaun d'amour etde trainte Pour vous la faire ouïr, \nLuciane\n Hé quoi ce vêtement Loing de me l'assurer m'objecte et vous dément. \nPhédon\n L'habit n'a point de preuve où l'on voit le visage, Retognoisses le dont jans errer d avantage, Vous voyez qu'il se meurt à vos pieds étendu Le bien qu'il y prétend est par trop attendu; \nCelidan\n Peut même me croyant encore être coupable Elle tarde estimant que ici n'en sois capable.",
+          "SCÈNE I. \nÉLPIN\n \nLUCIANE\n \nFÉLISE\n ERGERÊ vous voyez à qu'elle extrémité Un amant est réduit par votre cruauté Vous voyez quel effort vous causez en son âme Quand d'un ingrat dédire vous rejettez sa flamme Et qu'à la fin privé d'espoir et de raison Il recoure a la mort fuyant votre prison Cetidan vous te mongré aujoura hui belle ingrate Et s'il ne me restait quelque espoir qui me flatte Entre tant de douleurs qu'on souffre soubs sa loi Félise n'en devrait moins espérer de moi \nL\n \nFélise\n Ta mort ne serait pas un sujet de tristesse Non plus que toi d'amour. \nÉlpin\n Hé bien, hé bien tigresse",
+          "L'un d'iceux s'appelait ERASTE Escuyer de l'autre, qui se nommait ARMIDAN, lequel fut mis sur la place d'un coup d'épée reçu par cet Éraste, duquel Célidan apprit la cause de ce combat avoir été une Bergère, dont entrant en cette contrée ils avaient été épris en un même instant, pour ne se la vouloir céder ni l'un ni l'autre: selon le rapport plus ample qu'Eraste femme fit des habits de cette Bergère, il connut que c'était Luciane Il te apprend la cruauté d'icelle, avec la résolution du précipice qu'elle a faisoit prendre;",
+          "Mesprisant les efforts de sa persévérance: Qui rempli de douleur et privé d'espérance, Picqué de l'éguillon d' généreux effort, Estait tout disposé de se donner la mort, Mais toujours en désir de vous faire service La voulut différer jusques à cet office, Par Par lequel vous voyez que même en le tombeau Il s oient de vons \nLuciane\n De quel revers nouveau Le destin me veut il affliger d'avantage Quel Phantôme hé bons Dieux! \nCelidan\n Entsente vesage Ma belle et vous verrés? \nLuclane\n ",
+          "Il me semblait déjà privé de sa clarté Estre avec les défunts sous la re arresté. Bergère entèque vopeiner ut mu avute pensée, En qui mon âme vit heureusement blessée, Le Ciel verse sur toi tout ce qu'il a de doux. \nLuciane\n Et que le Ciel sur toi verse tout son courroux. \nCelidan\n Que j'aurais à souffrir un pénible martyre, ouivnveeut approuvil te que ju viens de dire, Mais il te plaît ainsi de te moquer de moi. \n"
+        ]
+      },
+      "top_5_persons": [
+        "LUCIANE",
+        "CLARICE",
+        "M",
+        "Bergère",
+        "Roche"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Bergère",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Et vous belle Bergère en satisfaction De ma faute, prenez la même intention, Un supplice en l'état auquel je me présente N'est pour notre rivale ains pour votre servante. \nLuciane\n Le déplaisir en moi pour jamais effacé Me fait mettre en oubli tout ce qui s'est passé Ne t'en mets point en peine: et prends part à la joie Que le Ciel tout bénin maintenant nous envoie.",
+          "Mais maintenant ici vois ma fortune changée, Je vois dessoubs mon joug ma Bergère rangée, Et mes maux dissipés font place à mes plaisirs: Et vois l'effet suivi de mes plus chers désirs.",
+          "Il me ravît ma force et me laisse sans vie. \nCelidan\n À qu'elles lois te rend le destin asservie Bergère hélas!",
+          "Mais un cruel succès contraire à notre envie, Rend Élpin sans amour et Celidan sans vie. \nÉlpin\n Bergère arrête;",
+          "Comment Bergère \nLuciane\n "
+        ]
+      },
+      "top_5_places": [
+        "Bergère",
+        "Poitou",
+        "France",
+        "Frise",
+        "Poictiers"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

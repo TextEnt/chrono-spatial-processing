@@ -1,0 +1,79 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Quinault, Philippe",
+    "title": "Proserpine : tragédie en musique ornée d'entrées et de ballet, de machines, & de changemens de théâtre : représentée devant sa majesté à Saint Germain en Laye le troisième février 1680",
+    "publication_date": "1680",
+    "document_id": "bpt6k6363208h"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ALPHÉE",
+          "frequency": 7
+        },
+        "related_sentences": [
+          "Du Maître des Enfers je veux aller me plaindre, Craignez en me suivant d'attirer son courroux. \nALPHÉE\n Pour moi rien n'est tant à craindre Ç 'istro donné de vous.",
+          "Si vous ne m'aimez plus, que vous sert de connaître Le secret de mop cœur? \nALPHÉE\n Faut-il que votre Cœur à l'Amour moins rebelle Récompense un Amant",
+          "-nous à ses yeux, Les Nymphes et les Dibuuοdος Bois, se cachent, Alphée et Arcthuse descendent auk Enfers, le Char volant auempucutreite, et ja (Déesse en descend.",
+          "Alphée à mon repos a déclaré la guerre: Diane propice à mes vœux, En tuin pour me catner à te Fleuve amoureux, Fit ouvrir le sein de la Terre:",
+          "De ugerame limom: que je te veux de mal Du trouble qu'il me cause! \nCERES\n À vec Alphée ici je veux vous arrêter ARETHÉS."
+        ]
+      },
+      "top_5_persons": [
+        "ALPHÉE",
+        "Proserpine",
+        "Proserpine",
+        "Arethuse",
+        "Pluton"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Sicile",
+          "frequency": 7
+        },
+        "related_sentences": [
+          "CERE Sa Troupes de Nymphes et de pieux Champestres, Troupe de Suivants de pères, roupe de Peuples de Sicile jy 3107 1 Les suivyants de Gères rompeno les Arbres, et en prennent des branches et enpfont des flambeaux qu'ils allument au feu qui sort du Mont Éta Ils en brûlent les bleds, malgré des efforts et les cris des Nymphes, des pieux champestees, et des Peuples.",
+          "Il est malaisé qu'on oublie Ce qu'on a tendrement aimé, Il admire les dons que vous-venez de faire En cent climets divers, L'abondante Sicile heureuse de vous plaire De vos riches moissons voit tous ses champs couverts: Mais la Mère des Dieux se plaint que la Phrygie Quelle a toujours chérie, Ne se ressente pas de vos soins bienfaisants;",
+          "Cyané et Crinise vont de deux côtés différents appeler les Divinités et les Peuples de Sicile, pour venir ensemble célébrer la victoire de Jupiter \nM\n 2 CON DE Mercure descend dù Ciel.",
+          "LSORINE, ALPHÉE, ARETHUSE, CYANE, CRISE, Troupe de Divinités et de Peuples de Sicile",
+          "TROUPE d'Hâbitans de Sicile PLUTON, Dieu des Enfers. \n"
+        ]
+      },
+      "top_5_places": [
+        "Sicile",
+        "PARIS",
+        "Rome"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

@@ -1,0 +1,76 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Robbe, Jacques",
+    "title": "La Femme testuë, ou le Médecin holandois, comédie",
+    "publication_date": "1686",
+    "document_id": "bpt6k1090122k"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ISABELLE",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Ils vous viennent toujours rebattre les oreilles, Feu ma femme par çi, feu ma femme par-là. Elle faisait ceçi, s'abstenait de cela, Et cependant on sait que cent fois en alarmes, Les voisins sont venus apaiser leurs vendre. \nPANDOLPHÉ\n Et Damis qu'en dis-tu? \nISABELLE\n ",
+          "Pour voir. \nISABELLE\n S'il est si fin, hé bien, tant mieux, ma Mère, Il le sera pour moi, car je ne la suis guère.",
+          "avec que vous ce fripon serait joint? \nISABELLE\n Voulez -vous qu'a mes yeux en prison l'on vous traîne! \nMADAME PANDOLPHÉE\n Qu'on traine.",
+          "De tous ceux qui te sont mieux coPour qui ton cœur touché pancerait-il le plus? \nISABELLE\n Moi? je ne les ai pas examinez encore. \n",
+          "Dame, je ne saurais fairé à la fois deux choses, \nISABELLE\n Fais de grâce Lubni, à tes pleurs quelques pauses, t parle nous."
+        ]
+      },
+      "top_5_persons": [
+        "ISABELLE",
+        "VALÈRE",
+        "ALCIPPE",
+        "CLÉANTE",
+        "Isabelle"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "J'en aure fait fenir une de mon pays Qui doit faire bientôt ein giand bruit tans Paris",
+          "La Scène est à Paris dans la maison de Pandolphe LA",
+          "Il faudrait qu'à Paris n jue"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "France"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

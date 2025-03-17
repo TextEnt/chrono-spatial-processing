@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Colonia, Dominique de",
+    "title": "Germanicus, tragédie",
+    "publication_date": "1693",
+    "document_id": "bpt6k10901126"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Germanicus",
+          "frequency": 38
+        },
+        "related_sentences": [
+          "Mes yeux l'ont vu, Seigneur, prêt à verser son sang Pour maintenir vos droits courir de rang en rangg, Et pour forcer ema leul la zelcel à le laire, Attester les saints noms d'Auguste, et de Tibère Non, Seigneur, j'en réponds, jamais l'heureux Drusus M'aura pour concurrent son cher Germanicus \nDRUSUS\n Sur nos droits, ah grands Dieux!",
+          "La M \nPIMI\n CINNA, Seigneur, mille rares vertus, Rendent cher à vos yeux l'heureux Germanicus, Vous avez que pour vous plein d'ardeur, et de zèle, D'entre tous vos sujets il est le plus fidèle, Qu'il a jusqu'à ce jour à vos ordres soumis, Joint au cœur d'un Héros, tout l'amour d'un bon fils.",
+          "Si d'un tas de mutins? \nJELIE\n Mon Fils, détrompez-vous, Tous les chefs corrompus sont armés comtre nous, 2 adroit Germanicus par de justes mesures, Aussy dans la révolte engager ces parjures, Par ses ordres pressins, Oton, Sylla, Varus, Et ses autres amis se sont ici rendus. \nDRUSUS\n Par son ordre Madame, ah!",
+          "Son nom (vous m'ordonnez Seigneur d'être sincère) Leur est aussi sacré que le nom de Tibère, Et je ne réponds pas qu'un jour Germanicus, Ne dispute le trône à votre fils Drus Oui, Seigneur, cet éclat de gloire, et de puissance, Laisse entre vous, et et même peu de différence.",
+          "Oui Seigneur, comme vous je ressens votre gloire, Je jouis comme vous du fruit de la victoire, Votre honneur fait le mien, et ma tendre amitié, Cher Prince, en fait sur moi rejaillir la moitié. \nGERMANICUS\n Oublions ces faveurs d'une aveugle fortune, J'ai trouvé loin de vous la victoite importune,"
+        ]
+      },
+      "top_5_persons": [
+        "Germanicus",
+        "DRUSUS",
+        "Pison",
+        "Cinna",
+        "Drus"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 38
+        },
+        "related_sentences": [
+          "GERMANICUS, DRUSUS, ACRIPINE. \nDRUSUS\n TAndis qu'autour de vous Rome entière s'empresse, Et qu'ici tout éclate en transports d'allégresse, Pardonnez moi Seigneur, si dans cet heureux jour J'applaudis le dernier à votre heureux rerour: Je revois donc enfin un ami si fidèle, Et je le vois brillant d'une gloire nouvelle.",
+          "SCLNL V. GERMANICUS, AGRIPINE, CINA \nAGRIPINE\n JOur mon cher époux Rome enfin s'intéresse, Pour vous contre un Tyran tout s'arme tout s'empresse Le sort en est jeté, Prince, et sans différer Dans ce fatal moment il vous faut déclarer, Le destin est changé.",
+          "AGRIPINE\n Du cœur de ce Héros Rome un peu mieux instruite Ne le soupçonne pas d'une telle injustice, Et l'Univers entier qui connaît ses vertus Juge autrement que vous du grand Germanicus Vous le voyez assez, Rome en cette occurrence Entre Tibère et lui met quelque différence.",
+          "Tout l'Univers entier vous demande de pour Maître, C'est pour ce grand dessein que le ciel vous sit naître, Rome connaît trop bien un Héros li parrait Pour endurer qu'il vive, et qu'il meure en sujet. \nGERMANICUS\n Ah Prince!",
+          "Quelque soit le motif, mon Fils, qui vous âme, Un père tel que moi vous excuse sans peine, Je vous aime, il suffit, vos services, mon cœur, Rome, tout à la fois parle en votre faveur."
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Rhin",
+        "Rhin",
+        "Lyon",
+        "rue Mercière"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

@@ -1,0 +1,77 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Ternet, Claude",
+    "title": "Histoire et Martire de la Glorieuse Vierge Ste Reine d'Alize, tragédie",
+    "publication_date": "1683",
+    "document_id": "bpt6k1090055m"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "REINE",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "SITE. \nREINE\n Mton cher Père Dieu veux vous dire rondement, Que j'adore Jésus, facteur du Firmament, Qui prit notre nature us flancs d'une Pucelle, Pour lauer dans son Sang la coulpe Originelle, Toulpe hélas! qui privait les hommes malheureux, De l'aimable séjour des Anges bienheureux: Von fils de S. Joseph, Cher Époux de sa Mère: Mais da Dieu immortel engendré de son Père, Des toute éternité, et n'y en temps et lieu, De cette sainte Vierge, et vrai hommême, et vrai Dieu : Par l'opération, et mystère adorable, Du sacré saint Esprit, Dieu juste et immuable.",
+          "SITE. \nREINE\n Faites venir encor tous les Tigres affreux, Les Ours, et les Lyons, du chaorse pierreux, Pour démembrer ce corps d'une rage plus forte, Je ne les craindrai point, le Dieu qui me conforte Ne me refusera la force et le pouvoir, Pour toutes leurs fureurs de bon cœur recevoir. \nOLIBRE\n Soldats attachez -moi cette fille obstinée, Et que dans la prison elle soit emmenée, Vîtes dépêchez vous traîtez la promptement, Et que le Géollier la garde sûrement,",
+          "SITE. \nREINE\n Madame ne croyez, que nous manque de Foi, À mon aimé Sauveur, mon Seigneur, et mon Roi, Olibre qui a essayé par ses belles promesses, Ses discours décevants et ses feintes carresses, D'avoir quelque ascendant par -dessus mon esprit Je sens ai déclarai que c'était Jésus-Christ, Que j'avais pour Époux à la mort à la vie, Et d'autre que de même n'aurais tamais envte. \n",
+          "Aintenant que Phebus, la cãpagne redore NIFulce va en prison, et me ramène encore Reine qui ne fait cas de moi ici de nos Dieux, Ji jui faut préparer un tourment furieux: Je songe en mon esprit un genre de jupplice, Qui sera bien sortable à punir sa malice.",
+          "SITE. \nREINE\n Ô Barbare Tyran, nourri d'une Tibresse, Qui me vois maintenant en si grande détresse, Viens étancher ta soif de mon sang Virginal, Et n'estime pourtant que ainsi t'en veuille mal, As"
+        ]
+      },
+      "top_5_persons": [
+        "REINE",
+        "CLEMENT",
+        "LUCIE",
+        "Seigneur",
+        "TE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Gaulle",
+          "frequency": 1
+        },
+        "related_sentences": [
+          ", prit Naissance dans l'Illustre Cité d'Alise, Située en la Gaulle celtique au Diocèse d'Autun, et Pays d'Auxois, au Duché de Bourgongne d'une des plus nobles familles de la Province: Son Père s'appelait Clément, fort attaché à la superstition Païenne."
+        ]
+      },
+      "top_5_places": [
+        "Gaulle",
+        "France",
+        "Palestine",
+        "Marseille",
+        "Saone"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

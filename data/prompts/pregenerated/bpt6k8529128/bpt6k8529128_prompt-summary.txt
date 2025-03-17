@@ -1,0 +1,78 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": null,
+    "title": "La belle cabaretière ou le procureur à la mode, comédie",
+    "publication_date": "1692",
+    "document_id": "bpt6k8529128"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "CRISPIN",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "MANON, TOINETTE, CRISPIN, CLEANTE CLEANIE h Madame, que j'ai de plaisir de vous voir ACT de pouvoir vous dire de bouche, ce que depuis un temps notre n'ai peu vous faire Içavoit que par lettre, vous devez être instruite par ma dernière de tout ce qui se passe.",
+          "-Je le voudiais pour me venger de sa fille qui me boit, cat toujours tiens que c'est la faite assez de ma de la marier, et me faire beaucoup de bien que de m'en déburasser. \nCRISPIN\n ",
+          "CRISPIN Monsieur, tel que vous me voyez, j'ai été autres fois à l'armée, et si vous me dépeignez Monsieur eur voste Fils je pourrais peu- vous ures de peine.",
+          "CRISPIN, il tend les deux mains: Vous donnez de si bonne grâce, qu'on ne peut se défénare de réséevorr de vous.",
+          "Mais j'entends ce fou de Gascon, retirons-nous et allons voir si Crispin a trouvé Cleante CHEVALIER Soureinleyan inemicur, SCÈNE XV."
+        ]
+      },
+      "top_5_persons": [
+        "CRISPIN",
+        "TOINETTE",
+        "Cléante",
+        "NICOLAS",
+        "Louis"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Je produis au priocipal, et dans ma production j'y fais couler une Pièce fausse, la partie ne manque pas de s'inscrire en faux, demande que la Pièce soir mise au Grffe parasse ( nô variétur) icelle mise, il zigue son inscription, et moi mes soutiens de vérité, fais ensuite ordonner qu'il garnirait l'amande portée par l'Ordonnance ArT. V. Mais au lieu de Rome donner trois jours pour faire cette consignatlon d'amande;",
+          "C'est un âne que Rome vais décrier par tout, SCÈNE VI."
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Normandie",
+        "Bourgogne",
+        "Trianon",
+        "Champagne"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

@@ -1,0 +1,79 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Saint-Glas, Pierre de",
+    "title": "Les Bouts-Rimez, comédie",
+    "publication_date": "1682",
+    "document_id": "bpt6k1090188b"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Crispin",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "On fait à savoir à tous Poètes, prés et à ven, que le temps s'en va expirer dans un quart d'heure, de donnet es Sonnets sur les rimes qu'il a propoées, afin que s'il y en a encore quelqu'un faire enrôller, on ait à le présenter au lus vite à moi Crispin ici présent, Tamour de sa Compagnie de Bouts-Rimez.",
+          "Ah! \nCrispin\n Il faut voit dans les livres qui nous en restent les beaux Rondeaux, les belles Complaintes, les belles Balades, les beaux Lais, et les beaux Virelets pleins de belles pointes qui divertissaient les honnêtes gens, et le plus souvent tout cela en Acroces belles choses à la fois, ce serait trop.",
+          "Mais c'est qu'aves ra manière nouvelle de le faire tu me fait venir dans l'esprit quatre ou cinq autres be les modes pour les Sonnets, auxquelles ! veux donner cours tandis que le monde est en train, jur tout à une que je veux appeler des Anti-bouts-Rimez. \nCRISPIN\n Ah que cela sera beau!",
+          "On jugera au premier jour en cravate, il faut seulement que tu me lises avant toutes choses les Rimes à hauste voix, pour m'en bien remettre l'idée. \nCRISPIN\n Ô",
+          "Il faudra le faire mettre dans le Mercure Galant, qui se servira même de cette occasion, pour dire de toi cent autres louanges. \nCRISPIN\n Et il ne me connaît pas."
+        ]
+      },
+      "top_5_persons": [
+        "Crispin",
+        "Rimet",
+        "Lisette",
+        "Parafe",
+        "Monsieur"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Parlez-lui de Paris, des champs, de bled, de Foin, Parlez-lui bon Français, parlez-lui.",
+          "Ce Sonnet a été fait par quelqu'un qui n'a jamais été à Paris DO YMEYII.",
+          "La Scène est à Paris LES BOUTS"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "France",
+        "Parnasse",
+        "Chantilly",
+        "Ville de Paris"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

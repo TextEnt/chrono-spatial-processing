@@ -1,0 +1,79 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": null,
+    "title": "Sur le martyre des SS. Innocens, tragédie",
+    "publication_date": "1660",
+    "document_id": "bpt6k10900561"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Aristobule",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Dans le quatrième Acte, Aristobule apprend à Hircanus, l'état affreux auquel Hérode est réduit depuis qu'il ne l'a vu, il lui fait un détail de ses maux, qui loin d'adoucir sa fureur, le portent encore à de plus grandes cruautés, après celle qu'il a ordonné contre les enfants de, etc. dont il a de grandes inquiétudes et soupçons, de ce qu'il n'a point encore de nouvelles de l'exécution, et le fait croire qu'on ne l'a point faite, ce qui le porte à de grands reproches de ses Sujets qui lui sont rebelles, à mander les Docteurs de la Lois à comparaître devant lui pour leur en témoigner son indignation, les croyant d'intrigues avec les Rois d'Orient, en faveur de ce prétendu Roi des Juifs, qu'on dit être né depuis peu, à faire brûler tout vif Mathias grand Sacrificateur pour avoir par un ôle de la gloire du Seigneur, fait ôter un aigle or il avoit fait mettre sur la porte du Temple;",
+          "Pour n'avoir pas du Ciel voulu croire à la voix, Zacharie en devint muet pendant neuf mois, Ce qu'il lui déclarait par la bouche d'un Ange, Etoit si merveilleux qu'il le trouvait étrange. \nARISTOBULE\n Cependant, Sire, alors l'Ange lui prédisait, Ce que son fils un jour dans le monde serait, Qu'il devait précéder le Christ dans votre Empire, Qu'il s'appelerait Jean, comme on vient de le dire Serait grand devant Dieu rempli du saint Esprit: Mais lui doutant du fait dont l'Ange le reprit, Pour preuve qu'il est vrai, jusqu'à ce qu'il arrive, De l'usage, dit-il, de parler",
+          "Nous aurions eu, grand Roi, lieu de vous satisfaire Alors on aurait pu le jaifir de Tenfant, Ou s'informer du lieu qui le cache à présent, Le chercher avec soin, l'arrêter par prudence, Et dans un lieu secret le mettre en assurance. \nARISTOBULE\n Mais s'il est envoyé du Monarque Éternel, à il vient pour denvrer je reuple d'yael, Comme le saint Viellard Simeon le publie, ( Lui que l'on ne doit pas accuser de folie;",
+          "Je voudrais l'éviter, parce qu'il est criant: Mais pour sauver l'État, il est expédient, Il m'occupe, et sans cesse il est dans ma pensée, De rage et de fureur mon âme est traversée, Mon cœur tout pénétré d'une vive douleur, Me fait, vous le voyez, bien changer de couleur. \nARISTOBULE\n Dites-nous ce moyen, afin qu'il nous rassure, Gardez-vous avec nous encore quelque mesure?",
+          "De grâce, dites-moi ce que vous en Savez, Faites-vous un effort, puisque vous le pouvez. \nARISTOBULE\n C'est pour vous obliger que je m'en vais vous dire, Que d'un asthme oppressé, l'air à peine il respire, Qu'un feu qui le dévore en son intérieur, Et qui cueno au denors renées de ion ardeur, Le met, comme on le voit dans d'étranges tortures;"
+        ]
+      },
+      "top_5_persons": [
+        "Aristobule",
+        "Christ",
+        "Alexandre",
+        "GASPARD",
+        "DAVID"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Jérusalem",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Ce fut à la faveur de son astre brillant, Que nous sommes venus jusqu'ici d'Orient, Et comme il s'éclipsa proche de cette Ville, Nous y crûmes devoir chercher son domicile, Nous y sommes entrés sans craindre nul danger, Pensant qu'un Louvre était plus propre à le joger, Et que Jérusalem dès longtemps si fameuse, Pour lui plus que tout autre était avantageuse;",
+          "N' represente dans le premier Acte deux Confidents Ô d'Hérode qui confèrent ensemble de la manière qu'ils s'y prendront, pour annoncer l'arrivée des Mages dans Jérusalem, qui demandent où est né le Roi des Juifs, qu'ils viennent pour l'adorer: le Roi vient à eux, ils lui annoncent cette nouvelle qui le trouble;",
+          "Grand Prince c'est par eux que nous devons le croire, Du Prophète Isaïe examiné l'histoire, Trois Rois viendront, dit-il, droit à Jérusalem, Et trouveront le Christ au Bourg de Bethléem;"
+        ]
+      },
+      "top_5_places": [
+        "Jérusalem",
+        "Jerusalem",
+        "Peine",
+        "Syrie",
+        "Rome"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

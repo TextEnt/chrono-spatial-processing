@@ -1,0 +1,76 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "George Dandin, ou le Mary confondu, comédie par J.-B. P. de Molière",
+    "publication_date": "1669",
+    "document_id": "btv1b8610793w"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "George Dandin",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "De vous épouser. \nMr DE SOTENVILLE\n Et ici vous promets de mieux vivre à l'avenir. \nGEORGE DANDIN\n Et ici vous promets de mieux vivre à l'avenir. \nMe DE SOTENVILLE\n Prenez-y garde, et sachez que c'est ici la dernière de vos impertinences que nous souffrirons. \nMe DE SOTENVILLE\n Jour de Dieu, si vous y retournez, on vous apprendra le respect que vous devez à votre femme;",
+          "mais moi de quoi y ai imité, je vous prie, que d'avoir alongement de nom, et au lieu de George Dandin, d'avoir recev par vous le titre de Monsieur de la Dandinière \nMr DE SOTENVILLE\n rye côtés-vous rien, mon gendre, l'avantage d'être allié à la maison de Sotenville \nMe DE SOTENVILLE\n Et à celle de la Prudoterie, dont j'ai l'honneur d'être issue.",
+          "C'est par là que nous trouverai moyen de me venger de vous, et je ne suis pas la première qui ait su recourir à de pareilles vengeances, qui n'ait pas fait difficulté de se donner la mort, pour perdre ceux qui ont la cruauté de nous pousser à la dernière extremitè. \nGEORGE DANDIN\n Je suis votre valet.",
+          "Qu'elle même est tout à fait obligée de l'affection qu'il a pour elle, et qu'à cause de son mari qui est fantasque, il garde d'en rien faire paraître, et qu'il faudra songer à chercher quelque invention pour se pouvoir entretenir tous deux, \nCEORGE\n \nGEORGE DANDIN\n à part.",
+          "GEORGE DANDIN\n cet innocent de la pensée que l'avais, Mais le nouvel avis qui lui est échappé ferait la même chose, et si le Galant est chez moi, ce serait pour avoir saison aux yeux du père et de la mère, et le convaincre pleinement de l'ef fron fronterie de leur fille."
+        ]
+      },
+      "top_5_persons": [
+        "George Dandin",
+        "CLAUDINE",
+        "Claudine",
+        "Seigneur",
+        "Colin"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Ar grâce et privilège du Roi, donné I à Paris le dernier jour de Seprembre 1668 signé par le Roi en son Conseil GUILIERE de faire imprimer, vendre et débiter une Comédie parlui composée intitulée George Dandin, ou le mari confondu, pendantssept années,",
+          "Marchand Libraire à Paris, suivant l'accord fait entre eux."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "PARIS",
+        "Nancy"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

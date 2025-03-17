@@ -1,0 +1,76 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Marcassus, Pierre de",
+    "title": "Les pescheurs illustres",
+    "publication_date": "1648",
+    "document_id": "bpt6k5811892h"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ANTENOR",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Aille voir qui voudra les climats fréquentés, ceux que te chaut œuesote, et ceux où l'on endure Les extrêmes rigueurs d'une estreme froidure: Ennemi des clartés de l'astre qui nous luit Se cache qui voudra dans l'horreur de la nuit, S'il aime comme moi, quelque seul qu'il puisse être Toujours avec amour on le verra paraître. \nANTENOR\n Quelque peine qu'on mette à receler ce dieu Son insolente humeur le découvre en tout lieu.",
+          "Pour ne le pas conoistre il faudrait ignorer Jusqu'où va le savoir qui le fait adorer. \nANTENOR\n Avant que de tes jours la beauté nompareille Contante par ta mort cette jeune merveille, Tu dois sans plus tarder en ce triste accident Confuter cette part cet esprit si prudent.",
+          "ACRINE\n Elle doit bien changer, et nous devons l'attendre: Mais non pas en faveur du misérable Alcandre \nANTENOR\n Chan guast-elle en faveur de tous ceux dont les vœus Se trouvent engagés dans l'or de ses cheveux:",
+          "Tes yeux l'ont-ils pas vu s'échapper de nos mains? \nANTENOR\n Maintenant que l'orage est si grand dessus l'onde: Qu'une effroyable nuit envelope le monde: Que les flots irrités s'esleuent jusqu'aux cieux;",
+          ". \nANTENOR\n Des fleuves les plus lents la fuite vagabonde Tire des eaux du ciel tout l'orgueil de son onde: Et celles de nos yeux au gré de nos malheurs Du regret qui nous tue animent nos douleurs."
+        ]
+      },
+      "top_5_persons": [
+        "ANTENOR",
+        "Neptune",
+        "Thétis",
+        "M",
+        "Dele"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Sorbonne",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "MIIINYO, Chez GUILLAUME SASIER, Imprimeur et Libraire ordinaire du Roi, rue des Cordiers proche Sorbonne, aux deux Tourterelles."
+        ]
+      },
+      "top_5_places": [
+        "Sorbonne",
+        "Paris",
+        "Thrace",
+        "Corinthe"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

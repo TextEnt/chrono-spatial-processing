@@ -1,0 +1,77 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Chevalier, Jean",
+    "title": "Les barbons amoureux, et rivaux de leurs fils. Comedie",
+    "publication_date": "1663",
+    "document_id": "bpt6k1520228p"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Guillot",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Apprends, mon cher Guillot, que j'aime Polixène, Que ce charmant objet cause toute ma Mais Lucidor son frère, aimant ma sœur aussi, Nous pourrons, que sans crois, nous rèdre heureux ainsi. \nGUILOT\n Courage, nous voilà tous remplis d'amourette, Lucidor aime Aminte, et son valet Lisette, Vous aimez Polixène, et j'aime Beatrix, A ce que je puis voir, nous sommes tous d'un prix;",
+          "Vous vous radoucissez d'une façon bigotte, Cher Guillot, dites-vous, rien n'est égal à toi, Tu mérites beaucoup, Se igaime plus que moi: Quoi que simple valet, tu ne tiens rien du rustre, Mille perfections qui te rendent illustre, Me font avoir pour toi tout à fait du penchant;",
+          "Mais alors que Guillot vous dit qu'il vous adore, Vous le dédaignez Caigne, et faites la Pécore On voit paraître en vous un certain air honteux, Vous faites la fâchée, et vous baissez les yeux, Comme si grande n'étais pas de votre calibre;",
+          "MOCAINV\n Tire tire, Guillot \nPOLICARPE\n Ne tire pas, si non, point de miséricorde, Je te vais assommer. \nGUILOT\n Ragot, tire la corde.",
+          "RAGOTIN\n Celle que je chéris n'anne au monde que moi, Je t'en réponds, Guillot \nGUILOT\n C'est bien répondre à toi."
+        ]
+      },
+      "top_5_persons": [
+        "Guillot",
+        "Beatrix",
+        "Polixène",
+        "BONIFACE",
+        "Lucidor"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Ville de Paris",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Notre cher et bien amé GUILLAUME DE LUYNE, Marchand LibraireIuré en notre bonne Ville de Paris Nous a fait remontrer, qu'il aurait depuis peu recouvré une Pièce de Théâtre, intitulé:",
+          "d'amande, applicable un tiers à nous, un tiers à l'Hôtel-Dieu de nôtredite Ville de Paris,"
+        ]
+      },
+      "top_5_places": [
+        "Ville de Paris",
+        "Château du Louvre",
+        "France",
+        "Rome"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

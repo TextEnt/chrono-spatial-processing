@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Gilbert, Gabriel",
+    "title": "Arie et Petus, ou Les amours de Néron . Tragédie par M. Gilbert,...",
+    "publication_date": "1660",
+    "document_id": "bpt6k6251467x"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "NERON",
+          "frequency": 21
+        },
+        "related_sentences": [
+          "Et pour voir dans ma Cour courrôner tes vitus, Ce Dieu veut assembler et Sabine et Petus Laisse descendre donc ces deux jalouses ombres, Dans les Royaumes vains, sur les rivages sonbres, Tandis qu'Arie et Moi dans ces aimables lieux, Jouirons en repos d'un destin glorieux. \nARIE\n Sans obscurcir sa gloire, une âme généreuse, Par le malheur d'autrui pourrait-elle être heureuse? \nNERON\n Détouries-en les yeux, au rieu d'y prendre part, Er pense à devenir compagne de César \nARIE\n Oserai-je traiter un nouvel hyménée, Dans le temps qu'un Époux finit sa destinée. \nNERON\n Avant que notre hymen couronne nos amours, Pour regretter Petus, il te donne vingt jours;",
+          "que viens-je d'entendre, Quoi, du Thrône, César me voudrait voir descendre: Qui me consolera dans ma juste douleur, À qui me dos-je plaindre, en un si grand malheur: Si c'est mon propre Époux, qui me fait cette injure. \nNERON\n Ne t'en plains qu'à toi -même, accuse la Nature, Qui fais moins voir en toi de grâce et de vertus, Que n'en montre à mes yeux la femme de Tecus L'IMPÉRATRICE.",
+          "En favoriser deux c'est trop de la moitié. \nNERON\n Je te veux doublement montrer mon amitié: Tu veux savoir pourquoi, Seigneur m'en vais te l'apprendre, Le service important que ton bras me va rendre, M'obige à conserver pour n'être pas ingrat, La même de ceni qui vu à Lieat Je sais dans quel ennui te mettra son absence, Mais tuenée me servir de ton impatience:",
+          "Si la triste Sabine est pour toi sans appas, De même qu'Octavie, elle veut le trépas: Comme au trône, au cercueil ie suis prêt à la suivre, Aton amour éteint, Seigneur ne saurais suruiure: Redonne moi cruel, le trône et ton amour, Et rendi moi maice rutre , ou me prive du jour: Prend pitié de mes maux, et vois couler mes larmes. \nNERON\n ",
+          "Mais ici sais que César dans mes liens soupire: N'attends donc, s'il est vrai que personne règne en ton cœur, Que mépris pour mépris, et rigueur pour rigueur. \nNERON\n Belle et charmante Arie, apaise ta colère, La grâce que tu veux, à toi même est contraire: Car sans perdre celui que tu voudrais sauver, Aux faîtes des grandeurs personne ne puis t'élever;"
+        ]
+      },
+      "top_5_persons": [
+        "NERON",
+        "Arie",
+        "César",
+        "Neron",
+        "Sabine"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 21
+        },
+        "related_sentences": [
+          "Et le peuple Romain ne se ferait que rire, De se voir gouverner par un ioüeur de Lire: Si tu n'inondais Rome au milieu de tes jeux, Dans des fleuves de sang, et de torrents de feux: De ces lugubres feux, tu fais tes feux de joie, Et chante sur un luth l'embrasement de Troie Par ton règne odieux, tes lâches actions, Tu fais des vérités des tristes fictions: Par plus d'un parricide, et par plus d' Hôte, Ta vie imitte Édipe, Atrée, Égiste, Oreste",
+          "Je veux dès ce soir même achever l'entreprise, Thulle et Bhurrus est prêts, et l'heure est déjà prise: Quand ici serais certain d'y trouver le trépas, Mã résolution ne se changera pas: Je veux braver la Mort et faire pour Arie, Tout ce que Régulus a fait pour sa Patrie: Je veux été témoigner la grandeur de ma foi, Et que Rome aujourd'hui soit Carthage pous moi.",
+          "Avoir un air modeste, une belle apparence, Se faire un art d'aimer de lart de bien séance: Témoigner des froideurs, pour donner plus d'amour, En habit déguisé s'éloigner de la Cour: Pour croître savez désirs mettre César en peine, Sortir de Rome exprès afin qu'on l'y ramène: Retourner à propos pour se trouver aux jeux, Séduire un Empereur et recevoir ses vœux:",
+          "Et les Destins de Rome écrits dans ses beaux yeux, Rendaient ce demi-Dieu par tout victorieux. \nNERON\n Souz Seigneur les Légions par deux fois mutinées, Ont tâché d'obscurcir ses belles destinées: Sa femme en ce malheur fut son plus grand souci, Et la cièse en danger te troubserait aussi.",
+          "Quoi que ici doive à Rome, et quoi que dise Arie, Ma femme m'est plus chère encor que ma Patrie: Je ne puis voir sa gloire et mon honneur trahis, Mes maux me pressent plus que ceux de mon pays:"
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Tibre",
+        "Grèce",
+        "France",
+        "Paris"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

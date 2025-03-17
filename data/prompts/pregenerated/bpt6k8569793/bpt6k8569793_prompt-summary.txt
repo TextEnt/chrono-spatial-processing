@@ -1,0 +1,79 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Romain, Nicolas",
+    "title": "Maurice tragoedie. Dediée à tres-haut, & tres-genereux prince monseigneur de Vaudemont François de Lorraine. Par Nicolas Romain docteur és droicts, conseiller de mondict seigneur, capitaine, prevost, & gruyer du Pont-à-Mousson",
+    "publication_date": "1606",
+    "document_id": "bpt6k8569793"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Phocas",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "le troubla fort avec les présages de son infortune qui précédèrent sa mort: car les Astres, et les mõstres qui naissoient l'en menaçoient, Herodian lui en parlh, vi Hermite tenant glaiue en sa main 6 en signe de iustice lui predict, et les auã, courriers de ses malheurs arriuoient de toutes pars, toutefois il lui restoit encon I quelque esperãce de vaincre ces désastres re et regaigner le dessus, par le moyen de son de armée qui estoit debout en Mysie, soule se la conduicte de Pierre son frère, quandi la entendit les nouuelles que la plus grandi part icelle s'estoit reuoltée, et auoit esle fic pour Empereur certain Capitaine tenier nommé Phocas, et que le reste qu' çauoit les receuoir Phocas, et les mon Theodose qui nais pour gouuerner l'Ena re, et ôsonprou Germain son du Monde , qui le fit sai et Hermite tellemen a site un car m nu en sa main A ct a N Signe de ju Tragœdie même prédôter et les a Vance, et conçeut presque de ses mal-talent ur son fils arril voulut de toute de pars, tout que fois il auroiét, ait eoccasion par les que au milieu de es calamité, aspiré la courõne, a née il est impossible de forcer le ces, et dé détourner la vengeance qui le ce) ses propres et re gagner le, m bien ail , contrainct d'absenter le moyen de Son, et ébout en port M mer, si estoit se la conduite de Pierre, et quan dil trouueroit es ente plus de cõstance et dit sur les ondes inconstantes",
+          "les honneurs, et la grâce Parmiles citoyens me faisait faire place, J'avais le sein rempli de roses et d'œillets, Et mes yeux résemblaient deux astres iumelets Qui ne sont à présent que fontaines jumelles Qui me baignent le seing de larmes éternelles Le sort ma fait ainsi pour mes maux étancher Comme une source d'eau la fille d rocher Or maintenant Phocas que fortune prospere Tufaict (nous dechassant) de nôtre Empire Pere Pense que tu peus être aussi bien comme nous Miserable butin du celeste courrous, Et que dessus ton chef se roulent les désastres La fange plus espèce, et la boüe des astres Ainsi ne lève pas le sourcil pour te veoir Assis Royallement dans trône yuoir Cesar y fût assis, aussi fût bien Pompée Qui pourpra de son sang la riue Canopée, Et tant autres vaillans qui sans veines sans es Sont maintenant la bas despoüilles de Minos Ou il y reste eux, ce est poussiere ' tombeau decharné la puante H, C'est le destin léger qui nous coupe an, Et nous ç resembler aux fueilles du Printemps, Qui ieunes de saisons vertes sur larbre croissent Puis Automne suiuant sur terre apparoissent Que le iouet des vens, et infâme aideur D' iardin despoüillé de sa belle verdeur.",
+          "Mais Phocas lui ôtant tout le fruit de ses larmas lamis entre les mains de cinq ou six gendarmes, Jour la faire mourir, qui lui ont pour maison, la elle lamente toujours les ténèbres Battendant la mort, ses encombres pure, lui se tousiours elle voit ses enfans, Et son mary noyé dans des fleuues de sangs Aussi leurs corps meurtris sans digne sépulture le pense uils secont des poissons la re, Car ils sont mesurant la rive de la mer Ee peuple qui le voit n'ose s'en approches Pour empoudrer leur sein d'areneuse pouviers, Il ni à que les flots de l'onde marinière, Qui vont léchant les corps plus doux que le meurtries, Et mille font par pitié c'est office dernier, Le Tyran ne se peut soûler de voir les faces Du Père, et des enfants mâchant mille menaces Encontre leur fauteurs, et jure qu'il fera Ruisseler tant de sang que l'on en parlera Aux siècles avenir, et la race fut Race fut Race fut que payer et iniure.",
+          "Phocas avait rangé sur le bord du rivage Le Père avec les fils pour en faire carnagé, Tout ainsi qu'un pasteur disposant ses troupeaux Met à part les moutons d'avec les cheureaux, Une troupe y accourt, qui en rond estalée Imprime le sablon de la rive salée, Soigneuse à regarder du Tyran le maintienLe visage allumé qui ne respire rien, Que tout ce que Pluton recele dans sa salle, Encor n'est elle pas à sa poitrine égale, Le feu lui sort des yeux, comme quand Jupites",
+          "Ne le permettez pas pitoyable Phocas Par le trône étoilé, ne le permettez pas, J'embrasse vœux genoux enfin me met contre terre, Voyez devant vos pieds la fille de Tibère Race de tant de Rois, tant de Princes guerriers Et de tant d'Empereurs voz braves devanciers Ne foulez pas aux pieds la Royal semence, Regardez (à mon dam) des astres l'inconstance Qui fus fille de Roi, et maintenant qui suis La serve de douleurs, la mère des ennuis Las!"
+        ]
+      },
+      "top_5_persons": [
+        "Phocas",
+        "Pierre",
+        "Maurice",
+        "Maurice",
+        "Mars"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Thrace",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "tu veux ce pen dant que la Thrace venteuse Couvre ses monts hautains d'une toison neigeuse Nous faire les jets des borées félons, Des glaces, des frimats, du Nort, des Aquilons, Est-ce ainsi, est-ce ainsi, montre de Barbarie, Est-ce ainsi que tu veux martyrer notre vie, Est-ce ainsi que tu veux, perdre ceux qui te font (Sans ton mérite) avoir le Laurier sur le front?",
+          "Empereur homme ne sais si la céleste face, Ne veut plus œillader sur notre pauvre Thrace, Mais quasi tous les jours quelque monstre nouveau Espouvante nos yeux, nous troublant le cerveau, Notre commune mère en maux opiniâtre Ne nous produit rien plus que des fruits de maran",
+          "Thrace"
+        ]
+      },
+      "top_5_places": [
+        "Thrace",
+        "Danube",
+        "Rome",
+        "Constantinople",
+        "Tigre"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

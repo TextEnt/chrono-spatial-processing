@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Discret, L",
+    "title": "Alizon, comédie Desdiée au jeunes veufves & aux vieilles filles",
+    "publication_date": "1637",
+    "document_id": "bpt6k58122453"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "FLORIANE",
+          "frequency": 13
+        },
+        "related_sentences": [
+          "Ces Messieurs maintenant s'offrent pour vos maris, Je crois qu'il s'en voit peu de pareils à Paris \nROSELIS\n Adorables sujets de l'amoureux servage, C'est mettre trop longtemps le silẽce envsage, Jusques içi, la peur avec les sanglots Dans avoir douteux retenait vos propos, Mais puis que le destin ne fait plusde menace, Et qu'il tourne vers nous une riante face: Ne pensons seulement qu'à rire désormais, Et queumtent Pyjeu jamais. \nFLORIANE\n Je confesse, Monsieur, que la peur et la crainte À nos faibles esprits ont donné telle atteinte, gucomme moi mes suurs onfontes",
+          "que parfaitement vous savez obliger, Je vois bien que par là vous voulez -vous venger: Ilousie, Mais quoi que vous fassiez, je veux par jaVoir céder vos désirs à notre courtoisie. \nFLORIANE\n La bonne volonté ne manquera jamais, Et si vous n'envoyez quelqu'effet désormais, Accusez-le destin dont la noire malice Nous ravit le bonheur de vous radre service. \nBÉLANGE\n À faire l'impossible on n'est point obligé, N'impute à la raison le sujet de la faute.",
+          "donc pour ce jour Reine de ma pensée, samats vos péante n'en pent isiic essacée. \nFLORIANE\n Monsieur, ce n'est un bien qui purt d'Han naturel Plus courtois qu'amoureux: toutefois il est tel Que j'en ferai toujours une estime incroyable, Afin qu'en vous servant, enfin vous sois agréable.",
+          "Veut que présentement je sois votre mari Recez ce baiser d'une bouche enslamee D'un doux feu dont pour vous mon âme est consommée. \nFLORIANE\n Puis que votre baiser doit être si ardent, Permettez-moi, Monsieur, d'éviter l'accident Que ie pourrais courir d'une si vive flamme: Ponte",
+          "Certaine opinion ou mon âme est plonge, Me qu'ajenremen la vonie erengagee, \nBÉLANGE\n Je meurs si j'aimai jamais en aucuns lieux, Sinon depuis hier que ici vis vos beaux yeux. \nFLORIANE\n Mions qn'ontoutusan ouvesirt nous surprendé Ilest fort malaisé des en pouvoir défendre."
+        ]
+      },
+      "top_5_persons": [
+        "FLORIANE",
+        "Fleurie",
+        "M",
+        "Bellange",
+        "Alison"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 13
+        },
+        "related_sentences": [
+          "Ces Messieurs maintenant s'offrent pour vos maris, Je crois qu'il s'en voit peu de pareils à Paris \nROSELIS\n Adorables sujets de l'amoureux servage, C'est mettre trop longtemps le silẽce envsage, Jusques içi, la peur avec les sanglots Dans avoir douteux retenait vos propos, Mais puis que le destin ne fait plusde menace, Et qu'il tourne vers nous une riante face: Ne pensons seulement qu'à rire désormais, Et queumtent Pyjeu jamais. \nFLORIANE\n Je confesse, Monsieur, que la peur et la crainte À nos faibles esprits ont donné telle atteinte, gucomme moi mes suurs onfontes",
+          "Après le mauvais tour que ma joue Fleurie Il faut que ma raison cédant à ma furie, Pour venger cet affront fasse un chariuaris, Dont jamais on ai fait le semblable à Paris Je n'ose me montrer où la gloire m'appelle, Qu'à l'instant mes amis ne m'entretiennent d'elle: L'un dit que Œarolu seul a causé ce mal, Qu'il a surpris l'esprit de ce sot animal;",
+          "Si est-ce que pourtant yen en ai point d'envie: La Ligue plusieurs fois ma presque ôté la vie: Dun comunt fonptennite puisi de mon Roi Les femmes de Paris se bandans contre moi M'eussent défiguré: mais par une sortie Pour éviter débat a quittois la partie.",
+          "Or sus donc mes enfants, hardiment que l'on sonne, Faisons un si grand bruit que Paris s'en étonne: Faisons que la rumeur de tous ces instruments Aille était frayeur réveiller ses Amants: Mais à mon premier cri qu'aussi tôt chacun cesse: presse.",
+          "Chanson de Fleurie J'ai bien le meilleur homme Qui soit dedans Paris, En tous lieux il me nomme Sa gentille Cloris Nous pissons dans même pot, Acons nous purions à xogo, Mous chantons tan-tire-li-lire Sans jamtais nous dire mot."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "France",
+        "PARIS",
+        "Flandre",
+        "Dreux"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "L'estourdy ou Les Contre-temps, comedie. Representée sur le Theatre du Palais-Royal. Par J. B. P. Moliere.",
+    "publication_date": "1663",
+    "document_id": "btv1b8610788k"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "CELIE",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Ne va directement qu'à vous rendre service: Que ce conseil adroit qui semble était sans fard, Jette dans le panneau l'un et l'autre vieillard: Que mon soin par leurs mains ne veut avoir Celie, Qu'à dessein de la mettre au pouvoir de Lelie Et faire que l'effet de cette invention Dans le dernier excès portant sa passion.",
+          "Pourtant ici n'en ai point sujet \nLELIE\n Je vois bien ce que c'est, Celie en est la cause, \nAERICDRE\n Mon esprit ne court pas après si peu de chose. \nLELIE\n Pour elle vous aviez pourtant de grands desseins, Mais il faut dire ainsi, lors qu'ils se trouvent vains.",
+          "Songez à vous tantôt, Léandre fait parti Pour enlever Celie, et j'en suis averti, Qu'il a mis ordre à tout, et qu'il se persuade D'entrer chez Trufaldin par une mascarade, Ayant su qu'en ce temps, assez souvent le soir, Des femmes du Quartier en maique l'assoient voir.",
+          ", C'est, qu'ici votre amour étrangement s'oublie Prés de Celie, il est ainsi quela bannie, Qui par un trop grand feu s'enfle, croit jusqu'au t bords, Et de tous les côtés se répand au dehors. \nLELIE\n Pourrait-on se forcer à plus de retenue!",
+          "Si vous n'étiez pas une cervelle folle, Quand vous avez parie n'aguère à votre idole, Vous auriez aperçu Jeannette sur vos pas, Dont l'oreille subtile a découvert le cas. \nLELIE\n On aurait pu surprendre un mot dit à Celie \nMASCARILLE\n Cifai Et d'ou doncques viendrait"
+        ]
+      },
+      "top_5_persons": [
+        "CELIE",
+        "Léandre",
+        "HYPOLITE",
+        "Anselme",
+        "Seigneur"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Naples",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Lors que Naples vous vit quitter votre famille, J'avais, vous le savez, en mes mains votre fille, Dont j'élevais l'enfance, et qui par mille traits, Faisait voir dés quatre ans sa grâce et ses attraits;",
+          "Mais, ou vous a-t-ildit qu'il reçut la clarté? \nMASCARILLE\n Naples est un séjour qui paraît agréable: Mais, pour vous, ce doit être un lieu fort haïssable TRVFALDIN.",
+          "Né peux-tu sans parler, souffrir notre discours? \nLELIE\n Dans Naples son destin a commencé son cours.",
+          "Trufaldin ZanobioRuberty, dans Naples Citarlin;",
+          "Mais dans Naples, hélas!"
+        ]
+      },
+      "top_5_places": [
+        "Naples",
+        "Bologne",
+        "Paris",
+        "Turquie",
+        "Thunis"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

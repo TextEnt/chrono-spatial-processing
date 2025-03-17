@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Rotrou, Jean de",
+    "title": "Crisante tragedie de Mr de Rotrou",
+    "publication_date": "1640",
+    "document_id": "bpt6k57899298"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "MARCIE",
+          "frequency": 14
+        },
+        "related_sentences": [
+          "Quelsoin mal à propos me rend à la douleur, Et fait renaître, hélas, ma vie, et mon malheur? \nMARCIE\n C'est trop vous affliger, l'animez le courage, Dont vous devez venger un si sensible outrage, Pour perdre le coupable, il vous faut conserver, Et respirer le jour, afin de l'en priver. \nCRISANTE\n Presse plutôt la fin de mon sort lamentable, Tu me peux accorder ce bien si souhaitable;",
+          "Ces vaincueurs insolents, à leur brutale envie, Peut-être immoleront mon honneur et ma vite, EEioignan ce maineur ates autres malheurs, Fourniront bien hélas de matière à ses pleurs. \nMARCIE\n Le ciel quoi qu'irrité jamais ne nous délaisse, Ses soings dissiperont ce frivole soupçon, Et volire liberté n'attend que sa rançon. \nCRISANTE\n Plaiseas nos Dieux hélas! que ma crainte soit vaine, Et que nos maux passés aient assouuyleurhayne.",
+          "un peu ma vigueur abattue, tan Laforce n'ayant pu, la faiblesse me tuc, Ô mort, mon seul remède, et mon dernier bonheur, Que ne prévenais tu celle de mon honneur? \nMARCIE\n Ô sévère destin, elle meurt, elle tombe, Et son corps palle, et froid, à la douleur succombe;",
+          "{SCREEEV CRISANTE, MARCIE, aux pséds de MANILIE Epourueuë au besoin du secours des mortels, Je viens à vos genoux comme aux pieds des Autels, Non pas comme autrefois en titre de Princesse, Ence que j'ai perdu toute magloire cesse;",
+          "MARCIE\n Plutôt dessous mes pas le ciel ouvre la terre, Et plutôt sur mon chef éclatte son tonnerre, Madame, releués votre esprit languissant, Et faites plus de grâce à ce corps innocent;"
+        ]
+      },
+      "top_5_persons": [
+        "MARCIE",
+        "Cassie",
+        "César",
+        "Cæsar",
+        "César"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 14
+        },
+        "related_sentences": [
+          "Quoi l'on verra noircir par le crime d'Homme, L'éclat de tant d'exploits, et la gloire Rome Et des gens dont l'ardeur s'épandait en tous lieux, Ondira (pour un seul) ce peuple est vicieux: Mais de plus près que tous cet affront me regarde, Qui ne vous choisis pas une plus sûre garde, Et qui ne pus juger du lubrique dessein, Dont ce jeune insolent sentait brûler son sein;",
+          "C'est peu que de paraître en un danger extrême, Qu'atiaquer un pays, qu'affronter lamort même, Ces expleits sont communs aux autres nations, M'ai Rome seulement dompte les passions, Et quelqu'autre dessein que sa grandeurrespire, Elle sait sur soi-même étendre son Empire, Oiryee diinejulrey esssme siyoteso.",
+          "Non, non, défére plus, au Dieu qui teconsomme Qu'à toi, qu'à tes ais, qu'à César, et qu'à Rome, Et te faits sujet, de ce tyran d'honneur, Ois le stupide seul, établit son bonheur;",
+          "DORE\n Quoi, tout respect est vain, et la gloire de Rome Perdra ce grand éclat pour l'intérêt d'un homme, Quoi, vons relâchez par de folles amours, Cette seuerité qu'elle observa toujours;",
+          "Là bas, d'aucunsouci l'esprit ne se consomme, On s'y trouve à couvert des injures de Rome, On n'y relève point de l'Empire Latin, Et Cæsar quelque jour aura même destin."
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "PARIS",
+        "Paris",
+        "Monceaux",
+        "Grete"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

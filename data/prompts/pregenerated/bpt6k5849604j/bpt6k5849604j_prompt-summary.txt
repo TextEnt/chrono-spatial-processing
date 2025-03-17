@@ -1,0 +1,77 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Quinault, Philippe",
+    "title": "Armide tragedie, representée par l'Academie royale de musique établie a Lyon. Et jouée cy-devant en presence de Sa Majesté",
+    "publication_date": "1698",
+    "document_id": "bpt6k5849604j"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Armide",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Au mois comme ennemi, si ce n'est comme Amant, Emmenez Armide captive, J'irai dans les Combats, j'irai m'offrir aux coups, Qui leront dessinez pour vous: Renaud, pourvu que je vous suive Le sort plus affreux me paraîtra trop doux.",
+          "OÙBALDE, Chevalier qui va chercher Renaud, Le Chevalier Danois, qui va avec Vbalde chercher Renaud Un démon sous la figure de Lucinde fille Danoise, aimée du Chevalier Danois TROUPE de démons, transformés en Habitants Champôtres de l'isle ous Armide retient Renaud enchanté.",
+          "Si votre sort est en votre puissauce, vo73 Faites choix de l'indifférence, Elle assure un repos heurẽux. \nARMIDE\n \" 179 Non, non, il ne mæt plus possible De passer de mou trouble en un état paisible.",
+          "La belle Armide a su vaincre aisément De fiers Guerriers plus craints que le Tonnerre, Et ses regards ont en moins d'un moment Donné des lois aux Vainqueurs de la terte.",
+          "En vain, de mille Amaos je me voyais suivie, Aucun n'a fléchi ma rigueur, Se peut-il que Renaud tienne Armide asservie?"
+        ]
+      },
+      "top_5_persons": [
+        "Armide",
+        "RENAUD",
+        "PHENICE",
+        "Godefroi",
+        "SIDONIE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Damas",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "ARONTE, HIDRAOT, ARMIDE, Peuples de Damas ARONTE. \n"
+        ]
+      },
+      "top_5_places": [
+        "Damas",
+        "Fleuve",
+        "Rome",
+        "Valde",
+        "Tigre"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

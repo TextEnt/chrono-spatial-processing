@@ -1,0 +1,79 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": null,
+    "title": "L'Impromptu de la Garnison de Namur, comédie",
+    "publication_date": "1694",
+    "document_id": "bpt6k856885m"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "MERLIN",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Mais comment ferons-nous, Marton ? \nMÁRTON\n Il faut tromper votre Tante et nous débarrasser de votre Espagnol, les Espagnols gardent mieux les Femmes que les Villes. \nMENLIN\n Mais s'il y a des Français pour prendre leurs Villes, il y a des Martons pour enlever leurs Femmes. \nMÁRTON\n Mais toi qui fais le raisonneur, es-tu bon à quelque chose? \nMERLIN\n Tu n'as qu'à me mettre à l'épreuve.",
+          "MENLIN\n Mon petit Ami, Monsieur Julien D. \nJULIEN\n 1la, na, hion petie rinn y la fierté vous sied mal, Seigneur Français, c'est pourtant l'apanage de notre Narion que la fierté. \nMERLIN\n Par la morbleu, c'est trop de patience,ir faut casser la tête à cet Animal-là, Madame.",
+          "MERLIN\n Nous faisons tout en impromptu, nous dutres, M amle tur dis: \nMÁRTON\n ol je t'aile, et le moyen de s'en défendre. \nMERLIN\n Encore autre impromptu, je t'épouse, et vivent les Français, Marton, il n'y a ni Vines n Femmes qui leur résistent. FIN.",
+          "A 5 \nMAR\n \nMÁRTON\n Mon bonheur est grand, Monsieur Merlin, d'avoir à travailler sous une personne comme vous: mes lumières ont besoin des vôtres, Monsieur Merliv \nMERLIN\n Nous travaillerons à frais communs, et par parenthèse, vous avez reçu déjà trente pistoles.",
+          "MATON Que parlez-vous d'Oncle, de Testament Que voulez-vous dire 2 \nARAMINTE\n Expliquez-vous, Monsieur leMar quis \nMERLIN\n C'est le Testament d'un Oncle mon Adorable, qui fait obstacle à mot bonheur. \nARA\n \nARAMINTE\n Comment? \nMERLIN\n "
+        ]
+      },
+      "top_5_persons": [
+        "MERLIN",
+        "MÁRTON",
+        "Marton",
+        "ARA",
+        "MERLIN"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "lot a rheure qu'il est j'ai à Paris vingt Garçons qui travaillent en mon absence. \nMÁRTON\n Retirez-vous, nous n'avons pas de temps à perdre.",
+          "E me donne au Diable, Madame, si je regrette les Belles de Paris, V puis qu'on trouve en ce Pays-cy des avorables comme vous.",
+          "c'est vous, Monsieur Clitandre Vous étiez Abé à Paris et un éveillé petit collet, je ne sai ce que vous êtes avec une épée.",
+          "La peste m'étouffe, tout l'esprit du monde n'est pas à Paris"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "France",
+        "Flandre",
+        "Chouteau"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

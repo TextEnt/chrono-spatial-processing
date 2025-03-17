@@ -1,0 +1,79 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Boyer, Claude",
+    "title": "Le Jeune Marius, tragédie",
+    "publication_date": "1669",
+    "document_id": "bpt6k10902559"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Marius",
+          "frequency": 72
+        },
+        "related_sentences": [
+          "Ne cherche point en amour l'amoureuse tendresse, Que j'aime en Marius et qu'il nomme faiblesse: La gloire toute seule attache ses désirs, Et si son cœur pour moi pousse quelques soupirs, Il croit que Cecilie est entre les Romaines, Ce qu'est Scylla mon père entre nos Capitaines, Et que tout grand qu'il est, sans ma possession Il manque quelque chose à son ambition. \nSABINE\n À ces traits, dont notre voy que votre âme est frappée, Il n'est pas malaisé de connaître Pompée Mais dans ce grand Héros où brillent tant d'appas, Tout manque selon moi, quand l'amour n'en est pas.",
+          "Faudra -t-il nous commettre avec des Chefs jalous, Qui déjà dans leurs cœurs conspirent contre nous, A cent braves Romains préférer un seul home Et le fils d'un Tyran au déf enseur de Rome Non, j'aurai soin de vous, et ie veux à mon tour Vous sauver, malgré vous et malgré votre amour. \nMARIUS\n Quiconque est comme toi né pour la tyrannie, Sait auec ces couleurs farder sa perfidie.",
+          "Le bruit de votre paix m'a fait tout entreprendre: Voyant Rome en péril vous forcer d'accorder Le prix que Marius osait vous demander, Pour prévenir ce coup, toute notre jeunesse Malgré l'effroi de Rome, et malgré sa faiblesse, Fond sur les ennemis avec tant de vigueur, Que presque sans combat i’en sans combat vainqueur.",
+          "Mais quand ici vois qu'il faut du haut de ma grandeur Décendre à Marius et flatter son bonheur, Je sens cette grandeur, heureuse indépendante, En devenir jalouse, ingrate et violente, Et prés d'un ennemi, quelque rougis, quand ie voy, Que son bienfait le met un peu plus haut que moi.",
+          "Sur l'ordre de ce choix Seigneur vous dirai bien plus, Quand il se sert de vous pour trahir Marius, Tout injuste qu'il est, trop jaloux de sa gloire, Il veut par vos refus garantir sa mémoire, Combatre une pitié, qui le veut secourir, Et trouver un prétexte à le faire périr."
+        ]
+      },
+      "top_5_persons": [
+        "Marius",
+        "Pompée",
+        "Marius",
+        "Sylla",
+        "MARCELLE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 72
+        },
+        "related_sentences": [
+          "Sache enfin que ici dont son seul soin de lui plaire Tous les soins que ie dois à combattre son père: Depuis qu'elle est ici, pour servir ma valeur, Je ne retrouve plus ni mon brasrit mon cœur, Et toujours possédé de mon amour extrême Je ne sais rien qu'aimer auprès de ce que j'aime. \nMAXIME\n Le fils de Marius sept fois Consul Romain, Lui déjà successeur de ce rang souuerain, Lui le sils d'un Héros plus grand que Rome assez Ne sait qu'aimer auprès de la beauté qu'il aime!",
+          "Mais enfin ne pouvant plus diérer de satisfaire à ma gratitude, j'ai ramassé toutes mes forces avant que d'entreprendre l'ouvrage que je vous destinais, j'ai pris la Scène la plus magnifique, j'ai choisi un des Héros de l'ancionne Rome, et pour vous le rendre plus agréable, j'ai tâché de le représenter avec quelques-uns de ces traits, que nous admirons dans votre incõparable Héros, Je parle de notre grand Roi, qui rassemble en était seul tout ce que l'Histoire a de plus incroyable et de plus merveilleux.",
+          "Faudra -t-il nous commettre avec des Chefs jalous, Qui déjà dans leurs cœurs conspirent contre nous, A cent braves Romains préférer un seul home Et le fils d'un Tyran au déf enseur de Rome Non, j'aurai soin de vous, et ie veux à mon tour Vous sauver, malgré vous et malgré votre amour. \nMARIUS\n Quiconque est comme toi né pour la tyrannie, Sait auec ces couleurs farder sa perfidie.",
+          "Il croit qu'en envoyant le seul Pompée à Rome Il la peut confier aux soins d'une si grand home, Imités son exemple: en des périls si grans, rulfetours n'est honteux pour vaincre les Tyrans, \nMARIUS\n Le Ciel m'eut-il permis de l'employer sans crime, Ce secours quel qu'il soit injuste ou légitime, Ai-je la liberté d'agir en ma faveur?",
+          "Et cependant Pompée, un Héros que l'on nomme L'enfant le plus zélé l'adorateur de Rome, Me donne son suffrage et couvre adroitement Son indignation d'un faux consentement, Il semble négliger la liberté mourante, L'offre quelque-même aux fers que ma main Seigneur Seigneur, Flate une ambition qui sert à me trahir, Et me laisse embrasser ce qui me fait haïr."
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Paris",
+        "Grèce"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

@@ -1,0 +1,79 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Le misantrope. Comede [sic]. Par J. B. P. de Moliere",
+    "publication_date": "1668",
+    "document_id": "bpt6k12804786"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ALCESTE",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Qu'il doit senir la bride aux grands empressements Qu'on a de faire éelat de tels amusements Et que par la chaleur de montrer les Cuvroges, On s'expose à jouer de mauvais Personnages. \nORONTE\n Est-ce que vous voulez me déclarer par là Que j'ai tort de vouloir. \nALCESTE\n Je ne dis pas cela Maïs ie cy disais, moi qu'un froid écrit assemme, Qu'il ne faut que ce Foible a écrier un Homme;",
+          "Il m'a dit que d'ici votre péril vous chasse, Et que d'être arrêté le s'ort vous y menace. \nALCESTE\n Mais quoi, n'a -t-il voulu te rien spécifier? DU BOIS Non il m'a demandé de l'ancre et du Papies, Et vous a fait un mot où vous pourrez, venir pense, Du font de ce mystère avoir la connaissance.",
+          "Et si, par un malheur, r'en avais fait autant, Je m'irais, de regret, pendre tout à l'instante \nPHILINTE\n le ne vors pas pour moi que le cas joit pendable, Et je vous suplirai d'avoir pour agréable Que ie me face un peu grâce sur votre Arrêt, Et ne me pendre pas pour cela s'il vous plaît. \nALCESTE\n ",
+          "Je ne sais si le style Pourra vus en paraître assez net et facile, Et nun chois des Mots vous-vous contenterez; \nALCESTE\n Nous allons voir monneur. \nORONTE\n Au reste vous saurez Que ici n'ai demeuré qu'un quart-d'heure à le faireée \nÀLCISTE\n Voyons, Monsieur, le temps ne fait rien à l'affaire.",
+          "ALCESTE\n Mais ce Flegme, Monsieur, qui raisonne si bien, Ce selgme pourra-t-il ne s'échauffer de rien Et s'il raut par hatard qu'un ami vous trahisse, Que pour avoir vos Biens on dresse un artifice, Ou qu'on tâche à Iemer de méchant orums de vous, Verrez-vous tout cela sans vous mettre en courroux?"
+        ]
+      },
+      "top_5_persons": [
+        "ALCESTE",
+        "ARSINOE",
+        "Prude",
+        "Celimene",
+        "Molière"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Il avait fait voir que son Sonnet vaut moins qu'un vieux couplet de Chanson qu'il lui dit que ce n'est qu'un jeu de patoles qui ne signisienv rien mais que la Chanson dit beaucoup plus, puisque elle fait du moins voir un homme amoureux qui abane donnerait une Ville, comme Paris, pour sa MaîtresseIe ne crois pas qu'on puisse voir rien de plus agréa.",
+          "le Roi m'avait donsó AParis sa grand Ville, Et qui me fallût quites L'Amour de ma Mie: Je dirais au Roi Henfi, Reprenez votre Paris J'aime ma Mie augué, J'aime mieux ma Mie 12 La Rime n'est pas riche, et le Style en est viebx.",
+          "Je d'rais au Roi Henri, Reprenez voitre Paris, 1-moi 2 J'aime mieux ma M agué, J'aime mieux ma Mie Voilà ce que peut dire un cœur vraiement épris.",
+          "Si le Roi m'avait donné E2 Paris"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Louvre",
+        "Grasse",
+        "Rome"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

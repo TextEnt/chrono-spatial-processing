@@ -1,0 +1,77 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Brécourt",
+    "title": "La Feinte Mort de Jodelet, comédie",
+    "publication_date": "1660",
+    "document_id": "bpt6k1090150w"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Fabrice",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "n'ayez point de peur, Avant que le secret on m'arracherait l'âme. \nFABRICE\n Sachez depuis six mois que Florice est ma femme, Voyez si vous voulez encore l'épouser? \nJODELT\n Diable à la pendaison se serait m'exposer, Je ne suis pas si sot que de m'en aller prendre Une femme, pour qui l'on pourrait bien me pendre On m'appelle à présent le gendre prétendu, Et tu serais dans peu peut-être le pendu.",
+          ", Elle a tous ces défauts, Monsieur, je vous promets, Quoi qu'elle ait l'esprit fin, et qu'elle soit bien faire, Elle est un peu mutine et beaucoup plus coquette, Et ainsi m'assure bien que si vous l'épousez, Avant qu'il soit fort peu vous vous repentirez. \nJODELT\n Si ce n'est que cela, déjà apprenant m'y prépare. \nFABRICE\n à part.",
+          "FABRICE\n Tout réussit? \nJODELT\n Ou ie me mortifie Allez l'invention m'en semble assez jolie, Rentrez, et soyez sûr que ici vais m'employer Pour servir votre amour à me mortifier. \nFABRICE\n Et toi pour m'obliger et pour servir ma flamme, Il faudra que du mort tu contrefasse l'âme;",
+          "JODELT\n Vous en avez menti vous l'avez dit vous même \nCARPOLLIN\n Bien loins de s'amoindrir sa folie est extrême. \nFABRICE\n J'y vas remédier, Monseigneur Iodèlet, Remettez vos esprits, cette âme est mon valet, Et par mon ordre seul, il vous était semblable. \nTURLUPIN\n ",
+          "J'avais bien un secret, mais il m'est échappé. \nFABRICE\n Turlupin, Seigneur te jure, et foi de Gentilhomme Que dès demain ie dois recevoir une somme, Dont assez te fais toucher au moins trente ducats. \nTURLUPIN\n MIe pourrais la toucher et ne les avoir pas."
+        ]
+      },
+      "top_5_persons": [
+        "Fabrice",
+        "PAQUETTE",
+        "E",
+        "MONS",
+        "IE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "La Scène est à Paris LA FEINTE MORT 6 DE LET",
+          "DONNE à Paris"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Navarre",
+        "Tho",
+        "Mauritanie"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

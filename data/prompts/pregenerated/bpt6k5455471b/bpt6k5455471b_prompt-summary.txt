@@ -1,0 +1,75 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Chappuzeau de Baugé, Daniel-Paul",
+    "title": "Coronis , pastorale héroïque, représentée par l'Académie royale de musique, le 23e mars 1691",
+    "publication_date": "1691",
+    "document_id": "bpt6k5455471b"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Coronis",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Coronis A repris sa première chaîne, Ni son dépit, ni sa haine Rien n'a pu résister à l'amour de Daphnis L'espoir d'un sortbrillant, votre ardeur, tout deux cède, Dans ces valons à Venus consacrez Je viens d'être témoin du plaisir qui succé de Au chagrin dont leurs cœurs ont été pénétrés.",
+          "Non, belle Coronis, que l'amour vous enflamme, Mais faites un glorieux choix, Daphnis est un ingrat qui renonce à vos lois, Et je viens vous offrir l'empire de mon âme.",
+          "Mais Coronis est infidèle, Duo ouve poumtuy ou moumour pour elle, Et je voudrais vous voir contents.",
+          "Sans Coronis peut-être il eût été sensible À la fidèle ardeur dont je brûlais pour lui: Ah!",
+          "Je croyais Coronis pour tout autre inflexible, Et cependant l'ingrate a su se dégager."
+        ]
+      },
+      "top_5_persons": [
+        "Coronis",
+        "Daphnis",
+        "Coronis",
+        "Daphnis",
+        "CLIO"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "CORAX",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Nymphe du Pinde, Amante de Daphnis DAPTINTS, fitz au Fleuve Penée, Amant de Coronis APIDAMIE, fille du FleuveApidamie, Amante de Daphnis CORAX, consident d'Apollon."
+        ]
+      },
+      "top_5_places": [
+        "CORAX",
+        "Fleuve",
+        "Corax"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

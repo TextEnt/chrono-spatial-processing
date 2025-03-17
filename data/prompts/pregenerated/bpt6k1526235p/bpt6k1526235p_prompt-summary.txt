@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Félibien, André",
+    "title": "Relation de la feste de Versailles. Du dix-huitiéme juillet mil six cens soixante-huit / [par A. Félibien]",
+    "publication_date": "1668",
+    "document_id": "bpt6k1526235p"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Bachus",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "À ces mots l'on vit s'approcher du fond du théâtre int grand rocher couvert d'arbres, sur lequel avait assise toute la troupe de Bachus composée de quarante Satyres, * l'Heure d'eux s'avançant à la tête chanta fièrement ces paroles, Arrêtez, c'est trop entreprendre, Un autre Dieu dont nous suivons les lois, S puse à ett nonneur qu'a l'Amour osent rendre Vos musettes et vos voix:",
+          "Plusieurs du parti de Bachus mêlaient aussi leurs pas à la Musique, et l'on vit un combat des Dans et des Chantres de Bachus, contre les Danleuis et les Chantres qui soutenaient le parti de l'Amour. \nCloris\n C'est le Printemps qui rend l'âme",
+          "C'est trop, c'est trop, Bergers, hé pourquoi ces Souffrons qu'en un parti la raison nous assemble, L'Amour a des douceurs, Bachus a des appas, Jauvune même qui fom fun ensemble, Ne les séparons pas.",
+          "et l'on voit parmi les Bergers et les Bergères quaDolivet, tre des suivants de Bachus * avec des thyrses, et quatre Bacchantes avec des espèces de tambours de Basque, qui représentent ces cribles qu'elles portaient anciennement aux fêtes de Bachus",
+          "en Nous suivons de Bachus le pouvoir adorable, Nous suivons en tous lieux Ses attraits glorieux, Il est le plus aimable Et le plus grand des Dieux."
+        ]
+      },
+      "top_5_persons": [
+        "Bachus",
+        "Cloris",
+        "Climène",
+        "Bufet",
+        "Tour"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rocher",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "De quelque côté qu'on regardât ce Rocher, l'on y voyait toujours différents effets d'eau, et les lumières dont il était éclairé étaient si bien disposées, qu'il n'y en avait point qui ne contribuassent à faire paraître toutes les figures qui étaient d'argent, et à faire briller davantage les divers éclats de l'eau et les différentes couleurs des pierres et des cristaux dont il était composé.",
+          "Cette eau qui se précipitait avec violence et par gros bannons parmi les pointes du Rocher, le rendait tout blanc d'écume et ne s'y perdait que pour paraître ensuite plus belle et plus brillante: Car résortant avec impétuosité par des endroits cachés, elle faisait des chûtes d'autant plus agréables qu'elles se paraient en plusieurs petits ruisseaux parmi les cailloux et les coquiles.",
+          "Il y avait même des lumières si industrieusement cachées dans les cavités de ce Rocher, qu'elles n'étaient point aperçues, mais qui cependant le faisaient voir par tout, et donnaient vn lustre et un éclat merveilleux à toutes les gouttes d'eau qui tombaient.",
+          "Il sortait de tous tous les endroits les plus creux du Rocher mille gouttes d'eau, qui, avec celles des cascades venaient à inonder une plouse couverte de mousse et de divers coquillages qui en faisait l'entrée.",
+          "Dans les quatre coins du Rocher et au dessous de la chute de ces fleuves, il y avait quatre figures couchées qui en représentaient les Divinités."
+        ]
+      },
+      "top_5_places": [
+        "Rocher",
+        "Versailles",
+        "Portugal",
+        "Bergères",
+        "Saint Germain"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

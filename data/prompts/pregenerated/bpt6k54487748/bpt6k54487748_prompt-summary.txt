@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "La Fontaine, Jean de",
+    "title": "Astrée , tragédie, par monsieur de La Fontaine. Représentée par l'Académie royale de musique",
+    "publication_date": "1691",
+    "document_id": "bpt6k54487748"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ASTRE",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Vous avez plus d'appas que n'en a l'amour même, Des traits à tout ravir, des yeux à tout charmer, Sucent ouvtez si je vous aime! \nHILIS\n Décrarer si bien son ardeur Ce n'est pas ce qui nous engage: Les vrais interprètes du cœur Ne sont pas les traits du langage. \nASTRE\n Ma Sœur, j'ose aujourd'hui te garantir sa foi.",
+          "ASTRE\n et Nfin me voilà seule, et j'ai trompé Philis VeneZmonstres cruels, cen'estpas que j'espère Que ma beauté faible et légère tohoDs Sumt miomte u des sorts par l'Enfer établis.",
+          "Que pour le prix des pleurs qu'il y verse à toute heure Puisse Astrée être heureuse et n'en verser jamais! \nASTRE\n Quoi de son ennemie",
+          "Ne le soupçonnez-pas, ma Sœur. \nASTRE\n noiey pourtune seo tiomios pomeiv les méconaistres \nPHILIS\n Je connais encor mieux son cœur.",
+          "Qu'un véritable Amant à de peine à mentir! \nASTRE\n Eh! qu'il ne mente plus. \nPHILIS\n Sait-il votre pensée?"
+        ]
+      },
+      "top_5_persons": [
+        "ASTRE",
+        "LEONIDE",
+        "GALATÉE",
+        "ASTRÉE",
+        "Astrée"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Seine",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "ja funts LRSEO D4 Le Théâtre représente la vue de Marli dans l'éloignement, et les bords de la Seine sur le devant.",
+          "Et cependant je vois les Nymphes de la Seine S'occuper à l'envi de Musique et de Vers.",
+          "Qu'eurent Astrée et Céladon Faites voir aux bords de la Seine",
+          "Nymphes suivantes de la Seine \nZÉPHIRE\n FLORD Ô",
+          "La Nymphe de la Seine Chœurs des Muses."
+        ]
+      },
+      "top_5_places": [
+        "Seine",
+        "Lignon",
+        "Bergère",
+        "PARIS",
+        "Palais Royal"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "La Fosse, Antoine de",
+    "title": "Les Petits Maistres d'été, comédie",
+    "publication_date": "1696",
+    "document_id": "bpt6k1090089d"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Frontin",
+          "frequency": 29
+        },
+        "related_sentences": [
+          "si la naissance suffisait pour se faire un mérite auprès des Dames, peut-être aurais moins de réserve: mais comme le bien fait toute la noblesse d'a cette heure, et que je ne brille pas par cet endroit, je veux acquérir toute fa tendresse, avant qu'elle sache que je ne suis que Gentilhomme et Capitaine de Dragons \nFrontin\n Oui da, oui da, il semble qu'un Dragon n'est pas né pour être un martyr d'amour, et que les filles et les femmes ne sont pas plus en fureté avec lui, que les poules et les dindons. \nLéandre\n Ne vois-je pas Isabelle, Frontin \nFrontin\n Non, Monsieur, c'est la spirituelle Aminte, et l'enjouée Cidalise \nLéandre\n rendez -vous, qui m'est donné dans ç le lieu, SCÈNE II.",
+          "un petit Prothée \nMarthon\n J'ai toujours une Toilette de réserve ici proche, à la grande maison. \nFrontin\n Et moi une gadérobe chez notre ami l'Ami \nAsarthon\n Quand il me prend quelques démangeaisons d'aventures, avec un habit de remarque, du rouge et des mouches, nous savons, dieu-mercil, nous donner des airs de Financière \nFrontin\n Lors que je me sens quelque tentation de bonne fortune, j'accompagne domestiquement mon Maître jusqu'au pont Roial, je me devalletaille chez l'Ami, et j'entre Gentilhomme aux Thuilleries \nMarihon\n Fais-moi connaître seulement le Père de ton Maître, et me laisse faire. \nPremtin\n Montre-moi l'Oncle de ta Maîtresse, et tu verras beau jeu. \n",
+          "LÉANDRE, FRONTIN. \nFrontin\n OUS voici de bonne heure aux I Thuilleries, Monsieur, et il n'y a encore quasi de beau monde que vous et moi. \nLéandre\n Grâce aux bontés de mon père, Frontin, et à mon congé qu'il a obtenu de la Cour, je puis y jouir des plaisirs de la belle saison, et des rendez vous qui m'y sont donnez par la charmante Isabelle \nFrontin\n L'honnête homme de père, Monsieur, l'honnête homme de père! \nLéandre\n Il arrive demain pour me donner un Regiment, qu'elle bonté Frontin, se dépouiller ainsi en ma faveur, du peu de bien qu'il a. \nFrontin\n Il entre bien de la sagesse dans cette conduite.",
+          "Un périt Maître, c'est une plaisante occuparionlqueicelle d'un petit Mastre \nFrontin\n Malpeste, il faut me voir à ma toilette prendre toutes sortes de figures, et ne m'arrêter à aucune, et dans nos Temples volant de belle en belle, tantôt sur un pied et tantôt sur l'autre, sans savoir sur Je danser, courir les spectacles à bride abattue, et les voir tous en un jour sans payer à pas un.",
+          "Oui, voyons si l'union que nous nous proposons est faisable. \nFrontin\n Elle est riche ta Maîtresse, n'est-ce pas? \nMarthon\n Il est de qualité ton Maître, dis? \nFrontin\n Malpeste, il compte des aïeuls au delà du déluge. \nMarthon\n Elle a plus de sacs de mille livres roulants, qu'il ne roule de carosses dans Pa lris."
+        ]
+      },
+      "top_5_persons": [
+        "Frontin",
+        "MARTHON",
+        "Léandre",
+        "Isabelle",
+        "Marcou"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Brie",
+          "frequency": 29
+        },
+        "related_sentences": [
+          "Mr. de la Brie Parbleu il n'échappe aucune action à ma Nièce, qui ne soit d'une fille bien née. \nGéronte\n Je suis bien'aise que vous la croyez telle, mais je vous la rend, et n'en veux point pour ma blu.",
+          "Au ah, vous êtes formaliste, et bien je vous donnerai du Monsieur par le nez, et du Messire même, si vous le voulez, Monsieur Messire de la Brie donc, je ne suis pas connu de vous.  ",
+          "Mr. de la Brie Savez-vous bien, Monsieur Géronte, que je le serai quand je voudrai. \nGéronte\n Je voudrais bien savoir, par ou vous avez cru trouver une dupe en moi.",
+          "Mr. DE LA BRIE, ISABELLE Mr. de la Brie 1107 É voilà dans une colère épouvan12 \nIsabelle\n Je ne vois personne, et je n'entend point de nouvelles qui me retire du trouble.",
+          "Mr. de la Brie À qui en veut ce Gentilhomme là? \nFrontin\n Oui, le voilà comme on me la dépeint, assez mal partagé de nez, mais largement pourvu de barbe."
+        ]
+      },
+      "top_5_places": [
+        "Brie",
+        "Paris",
+        "rue de Seine",
+        "Meuse",
+        "Lys"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

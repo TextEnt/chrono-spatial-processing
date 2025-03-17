@@ -1,0 +1,78 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Rotrou, Jean de",
+    "title": "Les Sosies, comédie",
+    "publication_date": "1668",
+    "document_id": "bpt6k1090155z"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Amphytrion",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Amphytrion Exerce ta valeur ailleurs qu'à te détruire, Veille en d'autres plutôt, encor te reproduire, Tous deux épargnez-vous, calmez cette fureur, Je conçois le moyen de nous tirer d'erreur, Vous, parlez le premier.",
+          "Voici, voici, Thebains, la doute consommée, Ce seul Amphytrion commanda votre armée, Que votre gloire en lui connaisse son auteur, L'autre est un insolent, un fourbe, un imposteur.",
+          "Assemble, Amphytrion, et possède tes sens, R 'est bien ici le se coudre Dont j'ai mis les Titans en poudre, Mais il ne tombe pas dessus les innocents.",
+          "Quoi, par cet imposteur ma maison m'est ravie, Mes valets, mes amis, ma famille, mon nom, Et par Amphytrion périt Amphytrion",
+          "La faim me désespère? \nCÉPHALIE\n De l'œil Amphytrion a semblé m'avertir Que je l'obligerais de. MERCURE."
+        ]
+      },
+      "top_5_persons": [
+        "Amphytrion",
+        "JUPPITER",
+        "Creon",
+        "Mercure",
+        "Alcmène"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Thrace",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "VUelle témérité pareille à mon audace OPourrait entrer au sein du Dieu même de Thrace À quelle complaisance un serf est-il-réduit, Qu'il faille marcher seul, à telle heure, de nuit?",
+          "Que second Encelade il attaque les Cieux, Qu'à leur plus haute Sphrère il porte son audace, Et jette la frayeur au sein du Dieu de Thrace"
+        ]
+      },
+      "top_5_places": [
+        "Thrace",
+        "Cjel",
+        "Thebes",
+        "AMPHYTRION",
+        "mer"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

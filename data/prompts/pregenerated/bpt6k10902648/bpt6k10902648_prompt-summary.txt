@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Gilbert, Gabriel",
+    "title": "Les Amours d'Ovide, pastorale heroique",
+    "publication_date": "1664",
+    "document_id": "bpt6k10902648"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "HYACINTHE",
+          "frequency": 18
+        },
+        "related_sentences": [
+          "eu jeune Iphidamas que lans Cypre on admire, je sa savante main touche sa douce Lire, t'répand dans les airs un son mélo dieux bont l'agréable bruir monce jusques aux Cieux, a Nimphe qui fait voir une grâce infinie, our accorder ses pas avec cette harmonie ' ord mouvement léger du Tapis fait le tour, t race de son pied mille chiffres d'amour out le monde loüant sa merveilleuse adresse, ' victoire sèvre elle flatte la Grece qui pense voir bien-tôt couronner a desseïns lais reste d'espoir flate encore les Romains, \nHYACINTHE\n Chacun Roi raison peur son pays incline.",
+          "t crois avec moi pour braver les hasards, que l'Amour est un Dieu qui commande aux Césars \nHYACINTHE\n uisque votre vertu, votre beauté divine ait voir des sentiments dignes d'une Héroïne, suis prêt de vous suivre, et traînerai mes fers es rivages de Cypre aux bouts de l'Univers, ans craindre que jamais les Tyrans, ni l'en, uisse troubler le cours de nôtre illustre vie, lais Ouide paraît, dans mon transport jaloux, J'ai peine a modérer l'ardeur de mon courroux.",
+          "Mna dnpucérénecur e en ide tameralluo \nHYACINTHE\n Je sais que l'art d'aimer fait bruit de toutes pars, Et qu'il vous rend fameux à la Cour des Césars, Mais l'on doit auoüer, à moins que d'être injusse Que la Cour de Venus vaut bien celle d'Auguste, L'air qu'on respire en Cyprême est si pur, si charmant, Qu'on n'y peut être un jour sans devenir Amant, Et selon votre aveu;",
+          "Son père ambitieux approuvant ses desseins, Veut en dépit du Ciel s'allier aux Romains, Et lui-même dans peu la veut condune a Romème \nHYACINTHE\n Céphise donc en vain a remporté la pomme, Et les Grâces en vain aussi m'ont couronné, Puisque de mon Rival l'orgueil trop obstiné Jusque dans Cypre même a bravé la Déesse, Et voudrait me ravir ma divme mialtrele: On la conduit à Rome, hélas!",
+          "Et tu ne puis souffrir qu'on veuille injustement Me unputer le nom du pius parlait Am ut , Je veux sur Hyacinthe emporter la victoire, Triompher d'à Rival qui veut ternir ma gloire, \nCORINE\n Ainsi qu'Ouide, aussi ici prétends remporter Le prix que dans cette Île on me voulait ôter. \nHYACINTHE\n Les prix étaient donnés justement ce me semble, Mais ie lor que tous deux vous cabalés ensemble."
+        ]
+      },
+      "top_5_persons": [
+        "HYACINTHE",
+        "CORINE",
+        "Corinne",
+        "Corinne",
+        "Venus"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 18
+        },
+        "related_sentences": [
+          "Son père ambitieux approuvant ses desseins, Veut en dépit du Ciel s'allier aux Romains, Et lui-même dans peu la veut condune a Romème \nHYACINTHE\n Céphise donc en vain a remporté la pomme, Et les Grâces en vain aussi m'ont couronné, Puisque de mon Rival l'orgueil trop obstiné Jusque dans Cypre même a bravé la Déesse, Et voudrait me ravir ma divme mialtrele: On la conduit à Rome, hélas!",
+          "Mais pour se consoler, elle a quelque compagné A Rome dans la Gaule, en Afrique, en Espagne Comme ici suis touché des rares qualités, Le fais par tout ma cour aur prus grandes beautés, Et ie veux quelque jour vous en donner la liste. \nCÉPHISE\n Nous y verrons les noms d'Olympe, de Caliste D'Albine, d'Emilie OVIDÉ.",
+          "des Césars sous la domination d'Hommes Prince plus parfait qu'Auguste, et sous les auspices d' Allas favorable aux Gens de Lettres, les Armes et les Sciences fleuriront dans cet Empire avec plus d'éclat qu'elles n'ont fait autrefois dans Rome Ouide, cet illustre malheureux, après en avoir été injustement exilé, vient chercher un asile dans cette Cour;",
+          "PREMIER BILLET À CORINNE, N Ourinne, si votre mérite, Ô St dans Rome admirt de tous, La Nymphe pour qui ie vous quine, Brille dans ces lieux plus que vous, CumMutequ adieanalle, Pour aimer ce que Cy pré a de plus glorieux, Accusez seulement la Naiure et les Dieux, Qui vous firent naître moins belle.",
+          "C'est celle qui prétend de remporter la pomme Sur toutes les beautés et de Grèce et de Rome, Qui connaît vos vertus, mais qui jusqu'à ce jour v a int encor toutu voux montrer ion amour, Et s'est toujours fait voir aussi fière que belle."
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Cypre",
+        "Grèce",
+        "Tibre",
+        "France"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

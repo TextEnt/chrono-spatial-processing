@@ -1,0 +1,78 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Somaize, Antoine Baudeau",
+    "title": "Les Veritables Pretieuses, comédie",
+    "publication_date": "1660",
+    "document_id": "bpt6k1090193n"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ISABELLE",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Oui, un bain intérieur ou l'agrément donné entre les deux sœurs,: peuvent maintenant empêcher la métempsycose de mon âme, qui va bientôt s'émanciper de sa demeure, si l'on ne la secoure par l'un de ses remèdes, ou si vous ne souffrez que je goûte avec vous la volupté de l'amour permis. \nISABELLE\n Voyez!",
+          "Il n'est pas encorre temps de m'intérompre et ici n'ai pas encorre fini. \nISABELLE\n Poursuivez donce et rendez vite votre discours complet. \nBEATRIX\n ",
+          "mais été méprise si fort cette façon de parler que je ne m'en saurais donner la peine. \nISABELLE\n Ah!",
+          "Quelle ne l'âme et qu'elle m'en cen- c'enfadre le Cœur. \nISABELLE\n ",
+          "de la Taupinière \nBEATRIX\n suivante d'Artemise \nISABELLE\n suivante d'Iscarie."
+        ]
+      },
+      "top_5_persons": [
+        "ISABELLE",
+        "BEATRIX",
+        "Poète",
+        "Bourbon",
+        "PANTAGRUEL"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Marchand Libraire à Paris, d'imprimer ou faire imprimer une Comédie intitulée Les Véritables Pretieuses, pendant le temps et espace de sept ans entiers compter du jour qu'elle sera imprimée:",
+          "ARgrace et Privilège du Roi, I donné à Paris le 12 Janvier 1660 Signé, par le Roi en son Conseil, RENOUARD Il est permis à lEAN RIBOY",
+          "La Scène est à Paris LES VÉRITABLES PRETIEUSES"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Rome",
+        "Sicile",
+        "Louvre"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

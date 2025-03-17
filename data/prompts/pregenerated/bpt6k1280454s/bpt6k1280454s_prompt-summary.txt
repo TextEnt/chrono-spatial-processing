@@ -1,0 +1,78 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "L'Escole des maris, comedie, de J. B. P. Moliere. Representée sur le theatre du Palais Royal.",
+    "publication_date": "1664",
+    "document_id": "bpt6k1280454s"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ISABELLE",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Il le mérite bien, et j'en suis fort ravi. \nISABELLE\n Enfin de cent raisons mon dépit s'est servi, Pour lui bien reprocher des bassesses si grandes, Et pouvoir cette nuit rejetter ses demandes: Mais elle m'a fait voir de si pressants désirs, À tant verse de pleurs, tant poussé de soupirs, Tant dit qu'au désespoir Seigneur porterais son âme, Si ie ju sais ce qu'exige sa flamme, Qu'à céder malgré moi, mon cœur s'est vu réduit;",
+          "Vous le voyez, Madame ne lui fais pas dire, Ce n'est qu'après moi seul que son âme respire.  ll néd lede Hé bien, Madame, hé bien, c'est s'expliquer assez, Je vois par ce discours dequoy vous me pressez, Et été aurai dans peu vous ôter la présence De celui qui vous fait si grande violence. \nISABELLE\n ",
+          "Vous en avez menti, chienne, ce n'est pas elle, De l'honneur que tu fuis, elle suit trop les lois, Et tu prends faussement, et son nom, et sa voix. \nISABELLE\n Mais à moins de vous voir par un lant Aymenée.",
+          "Et par toi-même enfin j'ai voulu, sans retour, Le tirer d'une erreur qui nourrit son amour. \nISABELLE\n Quoi, mon âme à vos yeux ne se montre pas toute, Et de mes vœux encor vous pouvez être en doute?",
+          "Oui, pour l'amour de toi, on retiens mes transports, Mais dès le même instant qu'elle sera dehors, Je veux sans différer, aller trouver mon frère, J'aurai joie à courir ainsi dire cette allaire. \nISABELLE\n "
+        ]
+      },
+      "top_5_persons": [
+        "ISABELLE",
+        "ARISTE",
+        "LEONOR",
+        "LISETTE",
+        "Valère"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Qui s'en laissent conter, et font dans tout Paris Montrer au bout du doigt leurs honnêtes Maris.",
+          "La Scène est à Paris",
+          "Marchand Libraire à Paris,"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "France",
+        "Navarre",
+        "Fontainebleau"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

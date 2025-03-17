@@ -1,0 +1,75 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "La Morelle, de",
+    "title": "Philine, ou L'amour contraire . Pastoralle. Dediee a madame la princesse de Guémené. Par le sieur de La Morelle",
+    "publication_date": "1630",
+    "document_id": "bpt6k856904s"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "PHILINE",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "ha Dieux que de bon heur, vois devant mes yeux ma Philine si chère, J'admirais étonné d'où venait la lumière Qui éclairait ces lieux, mais en voyant ton front Et tes yeux, ainsi vois bien que sont eux qui la font. \nPhiline\n Plût à Dieu que mes yeux fussent de force telle Que j'en pusse percer l'âme trop infidèle Un cergerque j'adore, alors deux vanterais Leur pouvoir plus divin aux Deesses des bois. \nLéandre\n Il faudrait qu'il eût l'âme ou le cœur d'une roche S'il ne se fléchissait quand vos beaux yeux l'approche Et quand cela serait vos daras font si pointus Qu'ils ne pourraient pourtant en être rabattus. \nPhiline\n Il a donc l'estomach d'une chose plus dure, Car il ne s'émut point dù tourment que t'endure. \nLéandre\n Endurez-vous du mal? \nPhiline\n Oui, si c'est mal qu'aimer. \nLéandre\n upidon a donc su votre cœur entamer péjentrares enenanten. \nPhiline\n Ma plainte coutumière émoigne assez ma peine et douleur meurtrière. \nLéandre\n À qui vous plaignez-vous? \nPhiline\n Telle plainte à dessein",
+          "Clorin\n Mon âge tout grison me le permet aussi. \nPhiline\n Oui d'être sousbsonneux. \nClorin\n Mais d'avoir du souci De ma fille chérie, et soigneux prendre garde Qu'elle n'oublie pas son honneur par mégarde, On voit tant de muguets, et déjà par nos champs On voit tant de bergers, qui trompeurs et méchants Feignent d'être épris d'une beauté légère' Une des attraits mignards d'une jeune bergère, Tant de corruptions, et tant de vains serments, De feintes passion, et de faux jurements Pour se l'atraire à soi, puis l'ayant abuse On moque sa bonté qui s'est trop amuse A leur age sot: et voilà cependant Que l'on va son honneur çà et là gourmandant, En veux-tu faire ainsi, en rendant diffamée",
+          "Montre-moi la douceur que ta pauvre Philine Se promettait voyant cette face divine: Il ne se fera pas que désous ta beauté Loge pour mon malheur aucune cruauté, Quand il serait ainsi, j'espère que ma flamme Quand ie te la dirai excitera ton âme, Je ne croirai jamais qu'il se trouve un berger Qui ne veuille (prié) sa bergère alléger, Mais ne le vois-je pas, pasteur rend moi contente, dumoi que venu ine, et éte quorevemiente, \nAmattanthe\n Je n'ai rien, je n'ai rien, que plût au Ciel plus doux Que j'eusse qu'elleque chose. \nPhiline\n Ha! de quelque courroux V ôtre âme est asstige, e samu'une laforte Qu'un berger comme vous s'afflige et se transporte? \n",
+          "Léandre, Satire, Philémon, Amaranthe, Philine Ocente prlisère, Léandre, le Satire, Philemon \nLéandre\n E prisonnier qui vit dans vne chartre obscure, τευσο Parmy les cruauté, la peine et la torture, S'il vit en quelque espoir que sa captivité Éclora quelque jour sa douce liberté, Se console en son mal et allentît sa rage Qui doibt bien tôt finir son malheureux servage: Mais s'il est sans attente il vit en déconfort Attendant que ses jours finissent par sa mort: H ij 50 L'AMOUR",
+          "L'espérais qu'en aimant nous devions, plus contents, Jouir heureusement sous un saint Hyménée, De la douceur qu'Amour nous aurait destinée, Mais tu porte autre part ton amour véhément, Et tu n'écoute pas Philine consommant D'un doux feu de tes yeux, ha berger si encore Tu as quelque pitié de celle qui t'adore, Écoute ma prière et ne dédaigne pas Celle qui fut surprise à tes charman de, Delaisse et Florelle ui aime en récompense P'hiline qui qui telle et demande allegence. \n"
+        ]
+      },
+      "top_5_persons": [
+        "PHILINE",
+        "Léandre",
+        "AMARANTHE",
+        "FLORELLE",
+        "PHILEMON"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "la mignardise des vers, et les rares inventions de l'Auteur, ont contenté l'esprit des plus judicieux cenceurs du monde, ie croy que in ne reçeuras pas moins de contentement à la lecture qu'à la représentation, c'est un sujet facile à représenter, et qu'il n'y a personne qui ne sache, pour avoir été jouer dans les meilleures maisons de la France, tous ceux qui l'ont vue avant que de sortir de mes mains, ont pris un singulier contentement à la lire, aussi croyie que tu y prendras extrême plaisir, est ce en partie a forcé autheur de la mettre au iour apres asseurance que lui ont donnée beaucoup de ses amis (etnotãment Monsieur de Malherbe) elle seroit bien receuë, et si par hazard tu en scais le suiect qui est des plus beaux qui ait iamais esté mis en lumière, tu apprendras par la lecture, car il y falloit faire argument il faudroit main de papier entière, ioinct que la principale raison pourquoi on en fait point, est le peu de curiosiré que beaucoup de personnes ont en achepter apres que tout matin ou apresdisnee ils en ont leu argumẽt sur la boutique Libraire qui leur apprend pour rien ce ils ne sçauroient que pour de argent, chacun aime son profit ne en étonne pas: Adieu.",
+          "Y Hiline a tant couru le monde Qu'en beaucoup de lieux chacun dit, Que cette beauté sans seconde N'a plus en France de crédit."
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Paris"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

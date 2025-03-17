@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Rayssiguier, De",
+    "title": "La Bourgeoise, ou la Promenade de S. Cloud, tragi-comedie",
+    "publication_date": "1633",
+    "document_id": "bpt6k1090286v"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Cloris",
+          "frequency": 9
+        },
+        "related_sentences": [
+          "CLORIS\n Crise nédit mot, mais dans ce grand silence Onvait bien ques õ cœur sont de la violence Ces soupirs qu'on lui voit si fréquement tirer Alors qu'il fait semblant de vouloir respirer, Encor qu'ils soient coupez font voir que s'il rePire 2 C'est pour montrer qu'il aime, et que son cœut soupire, Il a beau le cacher, son teint pâle et défait, Sans dessein sans discours faire tout ce qu'il fait, Être si fort tombé dans la mélancolie Qu'à peine on le croirait sans peu de folie, Rechercher d'être seul, et ne se plaire à rien Fuir de ses amis et de leur entretien, ( -dire, Sont de marques d'amour que l'on ne pût de Acrise aime sans doute, et cache son martyre, Je l'en informerays’il me vient à propos, Mais le voilà couché dans un profond repos: Il a mal pris sõtẽps, l'herbe est mouillée encore Et l'on y voit par tout des larmes des l'aurore, Il le faut éveiller, Acrise, hélas il dort, Mais c'est du long sommeil que nous cause la mort, Ses yeux déjà ferme, sa bouche toute ouverte Et ses bras étendus m'assurent de sa perte, Acrise, c'est en vain, il est déjà passé, Sõ corps sans mouvement sẽble un marbre glace Acrise, s'en est faict, sa vigueur est éteinte Et l'on voit sur son front la pâle mort dépeinte, Hélas Acrise, hélas qui t'a privé du jour, Je vois byenée que c'est, c'est un effaict d'amour.",
+          "E ne sais que juger de cet affaire ici, Mille nouveaux pensers augmentent mon souci, Mon fils de quel côté que mon pouvoir le presse Ayme toujours Florise et sa beauté le blesse, Cloris même répugne à suivre mon désir, Et retient dans le sein un secret déplaisir, On dit qu'elle aime Acrise et que mon fils la fâche, Qu'Acrise aime Clore quoi que son feu se cache: Le Ciel qui cõduit tout pour le bien des humains, Dans ces amours ici fait un coup de ses mains La prudence de l'homme aux Dieux n'est que sottise, Pourquoi veux-je empêcher qu'Atis n'aime Florise Sa passion l'y porte et ainsi veux toutefois Lui faire aimer Cloris qui fait un autre chois, La Bourgeoise à qui seule elles se communiquent, M'a dit que toutes deux dans ces amours se piquent, Je veux sur ce sujet voir Florise et Cloris, Et sonder en passant doucement leurs esprits, aisé aisément découvre sa pensée, Lors que dans le discours elle est intéresse, Les voici toutes trois: vos secrets impor: tants, Il parle à la Bourgeoise à Florise et Saint à bien deviner des affaires du temps, a cionis LA BOURGEOISE.",
+          "Cet innocent entretien en deux ans fit naître en leurs jeunes cœurs une amour réciproque et si grande, que le père de Silvie s'en aperçut: et craignant que cette affection croissant avec l'âge ne fût un sujet pour renouueler leurs vieilles dissentions, se résolut d'emmener Silvie aux champs, et de là, la faire conduire secrètement en France chez son ami Clandre, avec lettre qui suis laisait içauoir la raison pour laquelle il la vôtre envoyait, et le dessein qu'il avait de passer Roy-même les monts, et de renouveler leur ancienne amitié, par le mariage d'Atis fils unique de Clerandre, et de Saillirait sa fille, qu'il désirait être dess appellée Cloris Cependant il fait courir le bruit que sa fille est malade, et quatre ou cinq jours après qu'elle était morte: et pour mieux faire passer sa feinte, il fait porter à Florence un fantôme dans une bête, et le fait enterreravec tant de cérémonies et de témoignages d'vn vrai déplaisir, que chacun crut la moit de sa fille.",
+          "Celui que vous avez eu chez vous si long temps, Pour qui vous reseruiés le seul bien que j'attends, Que vos nommez Acrise, est Camille, dont l'âme A brûlé pour Cloris d'une secrète flamme, Son père est ce Seigneur qui pressé de l'ennui, Qu'il a souffert sept ans sa voir près de lui' Avoir près en auoir eu de nouvelle certaine A quité l'Italie eu beaucoup de peine, Pour chercher ce qu'il a trouvé dessus le point, Qu'il falloit, ou Qu'Acrise ou moi ne fussions point, Tant ma jalouse humeur avait eu de puissan \nCLERANDRE\n Ne parlons désormais que de réjouissance, Vous soyez bien venus en ces événements, Je preuoi des sujets de grands contentements, \nCLORIS\n Ah",
+          "Je n'ai pas moins d'appas, qu'elle en pourrait auôss, La gloire des aïeuls, n'est qu'un titre inutile, Qui n'a pas grand éclat dans une bonne ville, Étant riche on se fait, Damoiselle toujours, Il ne nous faut ôter, que deux doigts de velours, La Noblesse à Paris, est tellement confuse, Que pour la discerner, le plus sage s'abuse, Et puisse à sçauray bien, ève ment, Ce qui sera contraire, à mon contentement, Quoi qu'il aime Cloris, il suis bien assurée, Que son amour n'est pas, pour être de Clore, Et de qui Clor, doit être femme iour, Elle d sonsein, ces pelits re a amour, LA SOEUR."
+        ]
+      },
+      "top_5_persons": [
+        "Cloris",
+        "Atis",
+        "Camille",
+        "Acrise",
+        "Bourgeoise"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 9
+        },
+        "related_sentences": [
+          "Cet innocent entretien en deux ans fit naître en leurs jeunes cœurs une amour réciproque et si grande, que le père de Silvie s'en aperçut: et craignant que cette affection croissant avec l'âge ne fût un sujet pour renouueler leurs vieilles dissentions, se résolut d'emmener Silvie aux champs, et de là, la faire conduire secrètement en France chez son ami Clandre, avec lettre qui suis laisait içauoir la raison pour laquelle il la vôtre envoyait, et le dessein qu'il avait de passer Roy-même les monts, et de renouveler leur ancienne amitié, par le mariage d'Atis fils unique de Clerandre, et de Saillirait sa fille, qu'il désirait être dess appellée Cloris Cependant il fait courir le bruit que sa fille est malade, et quatre ou cinq jours après qu'elle était morte: et pour mieux faire passer sa feinte, il fait porter à Florence un fantôme dans une bête, et le fait enterreravec tant de cérémonies et de témoignages d'vn vrai déplaisir, que chacun crut la moit de sa fille.",
+          "Je veux que cela soit, et pour plaire à son père, Qu'Atis prenne Cloris, comme chacun l'espère, Cléandre qui chérit, à l'égal de son fils, Acrise qui pour eux, à fait plusieurs défis, Qui le veut obliger, et l'arrêter en France De Florise et de gloire, conclura l'alliance, Il est proche parent, et son autorité, Y faira consentir cette jeune beauté, Ainsi vous ne sauriez, y trouver votre conte, Et votre amour jamais ne finira sans honte.",
+          "Camille qui véritablement aimait Siluie, et qui la croyait morte, en fût telle ment affligé, qu'après avoir mouillé de ses larmes le funeste tombeau où il la croyait enfermée, quitta Florence, au déçu même de son père, et fût long temps en Holande où sous le nom d'Acrise, il acquit par sa valeur l'amitié des plus honnêtes gens, et particulièrement celle d'un jeune seigneur Français qui était allé en Hollande pour trouver les occasions d'y laisser les marques de son courage.",
+          "Et ce grand homme, à qui la France doit le repos qu'elle avait si long temps perdu, et dont elle jouit aujourd'hui par son moyen, à témoigné cent fois que jamais homme n'avait conduit ses actions avec plus de prudence que vous, qui dans les moindres choses avez fait voir que l'esprit et le jugement étaient en vous des qualités beaucoup plus excellentes qu'elles ne sont aux autres hommes.",
+          "Secrétaire du Roi, Maison et Couronne de France, Seigneur de Bagnolet 11 NSIEUR, Dans les habitudes et es conversations que j'ai eu à la urdepuis que j'y suis, et dans la lecture des livres, qui nous ont laissé la vie des plus grands hommes des siècles passés;"
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Paris",
+        "Florence",
+        "Saint Clou",
+        "saint Germain"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

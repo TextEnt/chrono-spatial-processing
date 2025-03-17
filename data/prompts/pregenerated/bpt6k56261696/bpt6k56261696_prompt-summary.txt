@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Scudéry, Georges de",
+    "title": "Ligdamon et Lidias, ou La ressemblance . Tragi-comédie. Par M. de Scudéry",
+    "publication_date": "1631",
+    "document_id": "bpt6k56261696"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "SYLVIE",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "SYLVIE\n Qumeuten me voyant an Aesoign tessenx, Ou s'il n'en veut partir, qu'il se crève les yeux. \nÀLCIDOR\n Un jour, qu'il t'en soituienne, on te verra punie De l'excès inhumain de cette tyrannie, Lors que le temps vengeur qui volle diligent Changera ton poil d'or en des sillons d'argent, Que l'humide et le chaud manquant à ta poitrine Accroupie au foyer t'arrêteront chagrine, Que tendre front plus ridé que Neptune encourroux, Que tes yeux enfoncez n'aurait plus riẽ de doux, Et que si dedans eux quelque splendeur esclatte, Elle prendra son être en leur bord d'escarlatte, Que en leur ebeint, et tes dents de charbon auront plus rien de beau, ne sentiront plus bon, Que ta taille si droitte et si bien adiustée Se verra comme d' en arcade voutée, Que tes iambes seront grêles comme rozeaux, Que tes bras deuiendront ainsi que des fuzeaux, Que dents, teint, et cheueux restãs sous la toilette Tune mettras au lit vndescharné squelette;",
+          "Oemsoiuensumdldinme jo: \nSYLVIE\n \nÀLCIDOR\n 2 SYLVIE Effaite d'Hannant dont l'ardeur m'importune, Conduite par la main de la bonne fortune, Je reviens dans ces lieux si propres à réuer, Dans ces lieux où le jour ne me saurait trouver, Dans ces lieuxoù l'esprit s'endort et se repose, Aussi bien que le corps dessus un lit de rose: Beaux lieux où la Nature émaille le chemin D'un rouge d'enémone et d'Han blanc de jasmin;",
+          "Avonne tenenea pas, semen vais vom trensei, J'expire en ce soupir sur vos le vres décloses, Et laisse mon esprit dans ce tombeau de roses. \nSYLVIE\n Ligédamon, Ligdamon, aujourd'hui ici dois voir Si j'eus dess des sensblé absolu pouvoir, Vous m'avez cent fois dit que la voix de Silvie Pour vous rappeler de la mort à la vie, Et que malgré le sort qui command aux Votre Votre destin était enfermé dans mes mains;",
+          "Vous m'appelez d'Hommes nom qui m'est fort inconnu, Et pour vous faire voir tout mon destin à nu, Je suis né Nustrien qui pressé de désastre 3 Viens chercher en Forêt l'aspect d'un meilleur Lidias est mon nom, contente en vos esprits Souffrez moi d'achever le voyage entrepris. \nSYLVIE\n Hal ne me traitez point de cette indifférence, Plutôt, cher Ligédamon, ôtez moi l'espérance, HAsdolente",
+          "Mais dis pourquoi ton œil son unique vainqueur Ne veut-il accepter le présent de son cœurs \nSYLVIE\n Qu'ilgarde ce beau don, pour moi -même le renvoie, Je ne veux point passer pour un oiseau de proie Qui se repaît de cœurs, et ce n'est mon dessein De ressembler un monstre ayant deux cœurs à ALCIDOR sein."
+        ]
+      },
+      "top_5_persons": [
+        "SYLVIE",
+        "MEROUE",
+        "M",
+        "Seigneur",
+        "Minerve"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Sire, s'il est permis de conseiller un Roi, Dont l'esprit va passant lupiter en prudence, J'ose vous assurer de la part de la France, Que tous vos bons sujets fâchez de l'attentat, Veulent que leur Roi soit tout où rième dans l'État: Oeil de ce beau Royaume, admirable Monarque, Qui passez sur le ventre à lImplacapte Parque, Faisons leur demain voir les allant affronter MEROUE Inous, Mais puis qu'ils vont craignant de s'attaquer à Ne vaudrait-il point mieux prendre un remède doux, Et sans rien hasarder leurdonner sa relâche?",
+          "Si quelqu'un est captif de ton bel œil vainqueur, Je trouve qu'il a bien iuste sujet de craindre, Car comme quoi peut-il se croire dans le cœur D'une qui fait métier de tromper et de feindre: Pour moi de qui l'humeur ne se va point liant, Si tu n'y suis porté d'une forte espérance, Je me contenterai de t'aller publiant L'honneur, l'âme et l'esprit du Théâtre de France  DEASETUED SUR LE BALET DU BANT 6su ) VÊT de la Vertu et de l'Enuie.",
+          "Il n'est pas jusqu'à des serpens Qui ne prennent leur robe neuve: Ayant appris pour mon malheur, Comme le vert est la couleur Qui plaît au plus bel œil de France, Les monts, les près s'en sont couverts, Et les arbres par complaisance Ont tous des habillements vers.  Maintenant 2 Maintenant on va voir l'Aurore *: Quitter plus matin son Tithoni Zéphir fait enfler le téton À la fécondité de Flore 24.",
+          "Vous qui les surpassez, rare ornement de France, Cœur plus grand que le corps, âme de la vaillance, Roy sans comparaison digne de posséder Tout ce que le Soleil a pouvoir d'œillader, Endossez le harnais, à cheval, grand Génie, Faites que tout d'un coup la guerre soit sinie, Paraissez sur les rangs, et sans plus discourir Resoluõs-nous Résaller les vaincre, ou bien mourir:",
+          "Ncorque Ligédamon en dépeignant Silvie ELui donne assez d'appas pour charmer l'Univers, Sa beauté toutefois dont la France est ravie Ne me toucherait point sans celle de tes vers.   À MONSTEUR DE SCUDERY, sur son Ligdamon Ontre les plus siers animaux, OLIGDAMON défendant sa vie La seule pitié de ses maux Adoucit l'humeur de Silvie"
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "PARIS",
+        "Rome",
+        "Paris",
+        "Lyon"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

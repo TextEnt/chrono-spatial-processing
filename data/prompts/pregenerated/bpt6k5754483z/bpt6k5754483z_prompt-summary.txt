@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Brueys, David-Augustin de",
+    "title": "Le grondeur , comédie",
+    "publication_date": "1693",
+    "document_id": "bpt6k5754483z"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "M",
+          "frequency": 8
+        },
+        "related_sentences": [
+          "puisque vous voulez absolument vous marier, et que Clarice vous plaît, à la bonnt heute. \nM\n \nGRICHARD\n Vous allez voir quelle différence il y a d'eye à vos goguenaides de immnes qui ne songent qu'a la bagatelle. \nARISTE\n Je le veux croire. \nM\n \nGRICHARD\n J'ai besoin d'une personne comme elle, ARSIL Il faut-vous satisfaire. \nM\n \nGRICHARD\n Je ne puis pas suffire moi seul à tenir en crainte une famille, et à pourvoir aux affairesz du dehiors.",
+          "vous aurez de la peine à vus en drer, je vous l'ai dit mille fois, votre mauvaise humeur »auy ucuste ccujeulas dise \nM\n \nGRICHARD\n Ah! courage, il est question de chercher des expédients pour qu'on ne nous mène Frillon et moi à Madagascar, et la démangeaison de morasiser vous prend. \nARISTE\n Pour mois, je ne vois pas quels expédients employer où l'argent est inutile: aux maux sans temède le plus court est de prendre patience.",
+          "oh je vous réponds qu'il fera bon avec elle; que tout aille de travers dans un ménage, elle ne s'émut de rien: c'est la meilleure des femmes, tenez, Monsieur, depuis cinq ans que je la sers, je ne l'a rue quhier en colcres \nM\n \nGRICHARD\n Mais dis-moi, son père serait-il pas cause? \nROSINE\n Monsieur, je vous demande pardon, il faut que j'essaie aussi mon habit de masque.",
+          "Pourquoi s'y mettait-il? \nARISTE\n Vous serez comdamné à de grands dommages et intérêts. \nM\n \nGRICHARD\n Oh, vous ne les paierez pas pour moi \nARISTE\n Non, mais. \nM\n \nGRICHARD\n Après ce que j'ai vu de Clarice, quand il m'en devrait coûter tout mon bien, et que toute la terre s'en mêlerait, j'aimerais mieux être pendu, roué, grillé que d'épouser cette créature.",
+          "même: par massieur, il est procsie parent de ce Capitaine. \nM\n \nGRICHARD\n Je sais qu'il est son oncle, achève. \nTERIGNAN\n Eh bien, il s'est allé plaindre à son neveu que vous lui avez manqué de parole, et que c'est le plus sensible affiont qu'en pusse Jasse à un Gthomme \nM\n \nGRICHARD\n Le maudit vieilsard? \n"
+        ]
+      },
+      "top_5_persons": [
+        "M",
+        "ARISTE",
+        "Clarice",
+        "M",
+        "MONDOR"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Madagascar",
+          "frequency": 8
+        },
+        "related_sentences": [
+          "vous aurez de la peine à vus en drer, je vous l'ai dit mille fois, votre mauvaise humeur »auy ucuste ccujeulas dise \nM\n \nGRICHARD\n Ah! courage, il est question de chercher des expédients pour qu'on ne nous mène Frillon et moi à Madagascar, et la démangeaison de morasiser vous prend. \nARISTE\n Pour mois, je ne vois pas quels expédients employer où l'argent est inutile: aux maux sans temède le plus court est de prendre patience.",
+          "TERIGNAN, M. GRICHARD Ail1ol le \nTERIGNAN\n On père, je sais le tour qu'on vous Ma joüé, j'ai découvert d'où cela vient, et je viens vous dire qu'il ne tiendivre sans rous ue ne pomis asler à Madagascar, et de rasse mon frère sans qu'il rous en coute neu. \nM\n \nGRICHARD\n Comment? \n",
+          ". Tenez, Monsieur, de peur de l'oublier je me le suis fait écrire sur cette carte, vojeL. \nM\n \nGRICHARD\n A. à Madagascar Brillon à Madagascar CATAU.",
+          "Savez-vous bien, Monsieur mon frère, que j'aimerais mieux aller mille fois à Madagascar, à Siam, et à Monomotapa, que d'entendre moraliser si hors de saison.",
+          "Quoi, Monsieur, vous joi aussi à Madagascar \nM\n \nGRICHARD\n J'enrage."
+        ]
+      },
+      "top_5_places": [
+        "Madagascar",
+        "PARIS",
+        "Pont-Neuf",
+        "France",
+        "Seine"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

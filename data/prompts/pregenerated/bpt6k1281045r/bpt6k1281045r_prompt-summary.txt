@@ -1,0 +1,79 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Corneille, Pierre",
+    "title": "Andromède, tragédie représentée avec les machines sur le théâtre royal de Bourbon",
+    "publication_date": "1660",
+    "document_id": "bpt6k1281045r"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Andromede",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Les deux Vents qui étaient à ses côtés suspendus en l'air, s'envolent, l'un à gauche, et l'autre à droite, deux autres remontent avec lui dans le Ciel sur le même nuage qui les viem dportemident autres qui étaient à sa main gauche sur les ailes du Théâtre, j'avancent au milieu de l'air, ou ayant fait un tour ainsi que deux tourbillons, ils passèrent au côté droit du Theatre, d'ou les deux derniers fondent sur Andromede, et l'ayant saisie chacun par un bras, l'enlèvent de l'autre côte iusques dans les nuës. \nCÉPHÉE\n Ils l'ont saisie, et l'enlèvent en l'air.",
+          "Assiope semme de Cephée Roi d'Ethiopie fut si vaine de sa beauté, qu'elle osa la préférer à celle des Nereides, dont ces Nymphes irrité firent sortir de la Mer un Monstre, qui fit de si étranges ravages sur les terres de l'obéissance du Roy son mari, que les forces humes ne pouvant donner aucun remède à des misères si grandes, on recourut à l'Oracle de Juppiter Amon La réponse qu'en recevrent ces malheureux Princes fut un commandement d'exposer à ce Montre Andromede leur fille unique, pour en être dévorée.",
+          "J'ose tout, Seigneur puis tout après un tel Oracle. \nTIMANTE\n La Reine est hors d'état d'y joindre aucun obnuere, Surprise comme vous d' tel événement, Elle en a de douleur perdu tout sentiment, Et sans doute le Roy iivrera la Princène Étant qu'on l'ait pu voir sortir de sa faiblesse. \nPHINE\n Et bien, mon amour seul Saura jusqu'au trépas, Malgré tous. \nANDROMEDE\n ",
+          "Ah, Seigneur découvre enfin d'où provient tant de haine, Vous en êtes jaloux plus que éclair n'en fus vaine, Si vous la laissiez vivre, envieux Tout-puissants, Elle aurait plus que vous, et d'Autels, et d'encens, Chacun préférer le ait au modèle, Et bientôt l'Univers n'adorerait plus qu'elle. \nANDROMEDE\n En l'état où belle suis le Sort m'est-il trop doux,",
+          "Ces Vents, ces mêmes Vents qui vous ont enlevée, Vont rendre de tout point ma victoire achevée, L'ordre que leur prescrit mon père Jupiter Jusqu'en votre Palais les force à vous porter, Les lorce a voudo remettre ou lon vous a vu prise. \nANDROMEDE\n D'une frayeur mortelle à peine encor remise, Pardonnés, grand Héros, si mon étonnement N'a pas la liberté d'aucun remerciement."
+        ]
+      },
+      "top_5_persons": [
+        "Andromede",
+        "PHINE",
+        "Phinée",
+        "Persée",
+        "CASSIOPE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Préparez-vous seulement à la recevoir, non pas tant comme un des plus beaux spectacles que la France ait vus, que comme une marque respectueuse de l'attachement inviolable à votre service, dont fait vœu, MADAME, Votre très-humble, très-obeïssant, et très-obligé serviteur, \nCORNEILLE\n \nAR\n Tiré du quatrième et cinquième Livre des Métamorphoses d'Ouide.",
+          "J'ai réuni, pour la faire admirer, Tout ce qu'ont de plus beau la France et l'Italie, De tous leurs Arts mes sœurs l'ont embellie, Preste-moi tes rayons pour la mieux éclairer.",
+          "IN. \nFrance\n ance eu France eu France"
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Argos",
+        "Perse",
+        "Palais Royal",
+        "Vestibule"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

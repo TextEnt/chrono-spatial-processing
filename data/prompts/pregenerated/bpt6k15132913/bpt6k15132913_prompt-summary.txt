@@ -1,0 +1,80 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Fontenelle, Bernard de",
+    "title": "Bellérophon, tragédie, représentée par l'Académie royale de musique",
+    "publication_date": "1679",
+    "document_id": "bpt6k15132913"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Bellerophon",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Bellerophon fond une seconde fois sur la Chimère, „ au millieu du Théâtre et après qu'il a disparu un moment en s'élevant sur le Cintre, il paraît pour la troisième fois, descend sur le devant du Théâtre, attaque de nouveau la Chimère, la blesse à mort, et se sauve en l'air, faisant son vol en rond, et après trois tours, on le voit se perdre dans les nues: Cependant la Chimère tombe morte entre les Rochers;",
+          "Après que Stenobée est sortie, on voit entrer quelque Troupe d'Amazones, et de Solymes enchaînés, dont ceux qui les conduisent portent les Arliest na Miarone que cette Troupe fait sur le Théâtre est une espèce de Triomphe pour Bellerophon qui entre après que les Amazones et les Solymes ont passé devant le Roi, et pris leur place.",
+          "Ton sort est marqué dans les Cieux, Uiens, monte dans ce Char, et t'abandonne aux Dieux, Bellerophon te dans le Char, et est enlevé sur le Cintre, avec Pallas Cependant on entend le Peuple qui exprime sa désolation par ces Vers.",
+          "Les deux Dégrés et les Galleries qui les environnent, sont remplis des Peuples de la Licye assemblés en ce lieu pour y recevoir Bellerophon, que Pallas doit ramener après la deraite de la Ciinere SCÈNE PREMIÈRE.",
+          "Sa mort en est le prix, Mais oublions et son crime et sa peine, Voici Bellerophon que Pallas nous ramène, Son Triomphe doit seul occuper nos esprits."
+        ]
+      },
+      "top_5_persons": [
+        "Bellerophon",
+        "BELLEROPHON",
+        "PHILONOE",
+        "Pallas",
+        "BACCHUS"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Ville de Paris",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Nous y permettons de donner au public toutes les pièces qu'il aura composées, même celles qui auront été représentées devant Nous, sans néanmoins qu'il puisse se servir pour l'exécution dédites Pièces, des Musiciens qui sont à nos gages: Comme aussi de prendre telle somme qu'il jugera à propos, et d'établir des Gardes et autres gens nécessaires aux portes des lieux où se feront lesdites Représentations: Faisant tresexpresses inhibitions et défenses à toutes personnes de quelque qualité et condition qu'elles soient, même aux Officiers de notre Maison d'y entrer sans payer: Comme aussi de faire chanter aucune Pièce entière en Musique, soit en Vers Français, ou autres Langues, sans la permission par écrit dudit Sieur Lully, à peine de dix mille livres d'amende, et de confiscation des Théatres, Machines, Décorations, Habits, et autres choses, applicables un tiers à Nous, un tiers à l'Hospital Général, et l'autre tiers audit Sieur Lully Lequel pourra aussi établir des Escoles particulières de Musique en notre bonne Ville de Paris, et par tout où il jugera nécessaire pour le bien et l'avantage de ladite Académie Royale.",
+          "Nous les avons honorés des marques de notre estime et de notre bienveillance: Et comme entre les Arts Libéraux, la Musique y tient un des premiers rangs, Nous aurions dans le dessein de la faire réussir avec tous ces avantages, par nos Lettres Patentes du 28. \nJuin 1669\n accordé au Sieur Perrin une Permission d'établir à notre bonne Ville de Paris, et autres de notre Royaume, des Académies de Musique pour chanter en public des Pièces de Théâtre, comme il se pratique en Italie, en Allemagne et en Angleterre, pendant l'espace de douze années: Mais avant été depuis informé que les peines et les soins que ledit Sieur Perrin a pris pour cet établissement n'ont pu seconder pleinement notre intention, et élever la Musique au point que Nous nous l'étions promis;",
+          "Notre bien am Jean-Baptiste Lully, Sur-Intendanr de la Musique de notre Chambre, Nous a fait remontrer que les Airs de Musique qu'il a cy-devant composés, ceux qu'il compose journellement par nos ordres, et ceux qu'il sera obligé de composer à l'avenir pour les pièces qui seront représentées par l'académie Royale de Musique, laquelle Nous lui avons permis d'établir en notre bonne Ville de Paris, et autres lieux de notre Royaume où bon lui semblera, étant purement de son invention.",
+          "permis et accordé, permettons et accordons par ces présentes signées de notre main, d'établir une Académie Royale de Musique dans notre bonne Ville de Paris, qui sera composée de rel ombre et qualité de personnes qu'il avisera bon être, que Nous choisirons et arrêterons sur le rapport qu'il Nous en fera pour faire des Représentations devant Nous, quand il nous plaira."
+        ]
+      },
+      "top_5_places": [
+        "Ville de Paris",
+        "Navarre",
+        "Paris",
+        "Versailles",
+        "Helicon"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

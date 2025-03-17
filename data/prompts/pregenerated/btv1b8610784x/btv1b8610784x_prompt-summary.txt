@@ -1,0 +1,77 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Dépit amoureux comedie, representée sur le theatre du Palais Royal. De J. B. P. Moliere",
+    "publication_date": "1663",
+    "document_id": "btv1b8610784x"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Lucile",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Et, dans cette aventure où chacun m'intéresse, Vous allez voir plutôt éclater ma faiblesse, Connaître que le Ciel qui dispose de nous Ne me fit pas un cœur pour tenir contre vous, Et qu'il vous réservait pour victoire facile, De finir le destin du frère de Lucile Oui, bien loin de vanter le pouvoir de mon bras, Ascagne va par vous recevoir le trépas: Mais il veut bien mourir, si sa mort nécessaire Peut avoir maintenant dequoy vous satisfaire, nn vous donnant pourfemme en présence de tous Celle qui justement ne peut être qu'à vous VALÈRE.",
+          "et puis que votre haine Chasse un cœur tant de fois que l'amour vous ramène, e ie la delmeleley de Mpeltamcen Que vous aurez jamais de mes vœux rebutez. \nLUCILE\n Vous pouvez faire aux miens la grâce toute entière, Monsieur, et m'épargner encore cette dernière. \nERASTE\n Hé bien, Madame, hé bien, ils seront satisfaits: Je romps apprêt vous, et j'y romps pour jamais, Puisque vous le voulez;",
+          "la belle raillerie! \nEUCILE\n Et que s'est-il passé, montre d'effronterie, Entre ton maître et moi? \nMASCARILLE\n veux dener, que le cioi, En savoir un peu plus de nouvelles que moi, Et pour vous cette nuit fut trop douce, pour croire Que vous puissiez si vite en perdre la mémoire. \nLUCILE\n C'est trop souffrir, mon père, un impudent valet.",
+          "Pourvu que bannissant toutes craintes frivoles, Deux mots de votre aveu confirment nos paroles. \nLUCILE\n Que me vient donc conter ce coquin assuré? \nMASCARILLE\n Bon, me voilà déjà d'un beau titre honore. \nEUOTER\n Sachons un peu, Monsieur, quelle belle saillie Fait",
+          "Et vous devriez mourir d'une telle infamie. \nLUCILE\n Un semblable discours me pou rait affliger, Si apprendre n'avais en main qui m'en saura vengers Voici venir Ascagne, il aura l'avantage De vous faire changer bien vite de langage, Et sans beaucoup d'effort."
+        ]
+      },
+      "top_5_persons": [
+        "Lucile",
+        "Lucile",
+        "Valère",
+        "Marinette",
+        "Ascagne"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "AVEC PRIVILÈGE À MONSIEURMONSIEUR HOURLIER, ÉCUYER SIEUR DE Mericourt, Conseiller du Roi, Lieutenant Général Civil et Criminel au Baillage du Palais à Paris si elle n'avait été le charme de Paris, et si elle n'avait été le divertessement du plus grand Monarque de la Terre, ie ne prendrais pas la liberté de vous l'offrir.",
+          "EXTRAIT DU PRIVILÈGE an Rai AR grâce et Privilège du Roi donné à Paris le dernier jour de May 1660 signé LE IVGE, Il est permis au sieur MOLIÈRE de faire Imprimer une Pièce de Théâtre intitulée Le Dépit Amoureux, pendant l'espace de cinq années, a commencer du jour que ledit Livre sera achevé d'imprimer:",
+          "Il n'aura plus l'honneur d'être sur mon oreille. \nMARINETTTE\n Et toi, pour te montrer que tu m'es à mépris, Voilà ton demi-cent d'épingles de Paris, Que tu me donnas hier avec tant de fanfarre.",
+          "Et ledit sieur MOLIÈRE a cédé et transporté son droit de Privilège à CLAUDE BARBIN et GABRIEL QUINET Marchands Libraires à Paris, pour en jouir le temps ponte pariceraj."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "PARIS"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

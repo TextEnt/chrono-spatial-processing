@@ -1,0 +1,78 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Boursault, Edme",
+    "title": "Phaéton : comédie en vers libres / [par E. Boursault]",
+    "publication_date": "1694",
+    "document_id": "bpt6k859427"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "MOMUS",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Si se m'entais là-dessus Je demeure d'accord que je serais trompte: Mals pout des Dieux tels que Momus Qui n'ont que la Cape et l'Épte, Dũsses-tu nommer cela Orgueil, faiblesse, folie, Je crois être assez jolie Pour prétendre jusques-la.",
+          "Je sais encor, Momus, le setment d'Apollon, Et coin pour le tompre il s'est donné de peine: s'il savait quel est Phae on Il se it prochetait une frayeur si vaine.",
+          "Je sais que de Momus la langue int disarte En que que tang qu'on soit pousse chacun à bout: Mais eut-elle an édite une plus fone pente Elle n'a rien qui m'épouvante ;",
+          "Le Palais de la Lumière S'il est tel qu'ou le dit, ne te déplaira pas : Et Momus, à ma priète Ne témusera point d'y conduite tes pas.",
+          "De peur de le manquet je préviens son teveil, Daignez favoriser une si belle audace. \nMOMUS\n Voyez donc vite, de gtace S'il fait jout chez le Soleil."
+        ]
+      },
+      "top_5_persons": [
+        "MOMUS",
+        "MOMUS",
+        "EPAPHUS",
+        "Phaéton",
+        "Thone"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Parnasse",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "J'a montré ma Pièce, depuis le jugement qu'on en a fait, à des gens qui sont sur la Cime du Parnasse, et qui ne voient qu'Apollon au dessus d'eux: et la plus solide loïanque je puisse vous donner est qu'ils ont été de même sentiment que vous.",
+          "et du bas de Parnasse, où Apollon a l'in: dulgence de les souffrir, ils cherchèrent à me faire tomber d'une place qui, toute médiocre qu'elle est, leur semble élevée par rapport à celle qu'ils y occupent."
+        ]
+      },
+      "top_5_places": [
+        "Parnasse",
+        "Rome",
+        "Paris",
+        "Thone",
+        "Mondo"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

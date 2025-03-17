@@ -1,0 +1,77 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Nanteuil, Denis Clerselier de",
+    "title": "L'Amante invisible, comédie",
+    "publication_date": "1673",
+    "document_id": "bpt6k10900635"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Dom Carlos",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Ce que vous m'avez dit n'a rien qui m'embarrasse: On peut par ses amis savoir ce qu'il se passe, On né glige rien pour ce qu'on veut sçavoir : On étudie un homme, on s'empresse à le voir, La conversation n'est ponit la tis myitere, Et ici sais la dessus tout ce que l'on peut faire. \nLEONOR\n t si ici vous fais voir qu'avec vous j'ai dancé, le doute en votre esprit sera t'il efface: \nDOM CARLOS\n ladame, il faut prouver, ce n'est rien que de dire, faut me faire voir cette preuve ou j'aspire, DLONOR om Fernand n'est -il pas votre ami? \nDOM CARLOS\n ",
+          "DOM CARLOS\n Madame c'est en vain que ainsi voudrais vous taire, ue je m'estimerais trop heureux de vous plaire, Si grande l'étais assez pour vous pouvoir aimer, Lors qu'avec tant d'appas vous pouvez tout charme le vois bien que ie quitte une belle personne, Pour avoir au hasard ce que l'amour me donne, Dont la beauté sera selon ma passion, Et que me donnera l'imagination: Mais qui pourrait enfin mériter votre estimeSi l'infidélité par malheur est son crime: Qui pourrait se montre digne de votre amour, Si par une inconstance il paraissait au jour?",
+          "je ne suis trompé l'affaire est en bon train: lle a des ja touché la corde Principale. \nDOM CARLOS\n à chose, „ mon avis, n'est point du tout égale, t' pour toit éclaircir en peu de mots ce point: ous me voyez Madame, et je ne voue tos point, ous sçauez qui je suis, je ne sais qui vous êtes, j'entends seulement les discours que vous faites, elle jugement de vous ferai je sur le soin, vous cacher sans cesse et parler sans témoin;",
+          "plus ici vous promets que si c'est Leonor Pourvez Pour prix de l'amitié que vous m'avez jureé Votre flamme en ma foi peut être rassurée, Je ne reverrai plus ce qui m'a su charmer, Et pout vos intérêts sans cesserai d'aimer. \nLEONOR\n Si quelqu'un parle vous faittes il se retire. \nDOM CARLOS\n Vous avez entendu ce qu'elle vient de dire: Pour vous mieux éclaircir allez jusqu'au balcon: vous jugerez après des choses tout de bon;",
+          "Il y va de la vie, et ainsi ne comprends pas Pour ce qu'on ne voit point qu'on cherche le trépas D'ailleurs vous voyez bien que cette dame est belle, Et pour mille beauté ie serais infidèle, oi pour prendre ou laisser il me fallait périr, Et ie promettrais tout plutôt que de mourir. \nDOM CARLOS\n Si l'infidélité fait voir qu'un homme est lache, Me pouriez -vous aimer si j'avais cette tache?"
+        ]
+      },
+      "top_5_persons": [
+        "Dom Carlos",
+        "BEATRIX",
+        "LEONOR",
+        "Gusman",
+        "SCE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Naples",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Dom Carlos aurait peine a trouver son semblable, Son air est si galant, qu'on a peine a juger, S'il est de Naples même, ou s'il est étranger:",
+          "DOM CARLOS Mais Naples est rempli de gens de qualité:",
+          "Tout Naples m'est ami, découvres moi ta peine.",
+          "Et dans Naples jamais on ne fut tant aimé.",
+          "La Scène est à Naples"
+        ]
+      },
+      "top_5_places": [
+        "Naples"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

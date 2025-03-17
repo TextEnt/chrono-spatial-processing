@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Montauban, Jacques Pousset de",
+    "title": "Zénobie, reyne d'Arménie , tragédie",
+    "publication_date": "1653",
+    "document_id": "bpt6k57447399"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "RHADAMISTE",
+          "frequency": 33
+        },
+        "related_sentences": [
+          "Pour conserver vez jours il n'est rilen que le n'ose, Et contie son courroux que mon amour n'oppose, \nZENOBIE\n Seigneur, n'affligez plus ni mon cœur ni mes yeux, Sucu, mimt décès lleux, \nRHADAMISTE\n Mourous, si par ton choix on m'oblige de vivre, TIRIDATPe C'est là mon sentiment \nZENOBIE\n Et bien, Seigneur le vais suivre, selgneur, un vn coup faites les retirer, HÉLVIDIUS.",
+          "et qui me fât aujourd'hui méconnaître Ce n'est pas que par là apprendre veuille rien de toi, Mais mourrai du moins, et ton Père, et ton Roïr. \nRHADAMISTE\n Peut être est ce de moi qu'elle a reçu la vie, D'elle chez un Pêcheur accoucha Zénobie Ce secret important sans doute m'est oi trt, Er",
+          "RHADAMISTE\n Dispensez vous, Seigueur, de la peine du choix, Une Femme le veut, fallttes mourir deux Rois, Puis que Rome y consent, que son pouvoir éclate, Même ardeur de mourir échausse Tyiidates Ou si vout ne voulez vous en salre raison",
+          "peut-estse, elle est à ton \nRHADAMISTE\n vten nous en aeuses, jahumaine, cruels. \nZENOBIE\n Dequoy vons plaignez -vous ?",
+          "Et petit lioc sousfrirai du Consul et de joi 1 Avons umon, itaor qui nuspian pavoscluo Soiæz pour Rhadamiste, et moi pour Tirdate PHRARTE."
+        ]
+      },
+      "top_5_persons": [
+        "RHADAMISTE",
+        "BERENICE",
+        "Tiridate",
+        "Consul",
+        "Consul"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 33
+        },
+        "related_sentences": [
+          "5 a Vous me voyez ici pour essuyer vos larmes, Et Rome m'a commis son pouvoir, et ses aimes. \nZENOBIE\n Je rends grâces au CichScignous, que ler Remains Ont mis mon intérêt en de meilleures mains, Et qu'en vous aujourd'hui ma douleur trouve un homme Digne de la grandeur du Sénat et de Rome Certes, ils ne font pas toujours de si bons choixs Et Rome, et le Sénat se trompent quelque fois, Témoin Héluidius, qu'une Fille surmonte, Et qui du nom Romain est la tache, et la honte;",
+          "Oui, Selgneur, par amour j'ai vain ce grand homme Et pour mou lnterest, et pout celui de Rome, Qui rougirait un jour d'avols prêté son beas, Pour commeutre en ces lieux ces deux asiaslimts: Mais à vous qui veuez pour appuyer la Reine Pour vain rendre un secouis que j'ôtais à sa haine, À vous, ô Corbulon, armé contre ces Rois De toute la rigueur de vos sévères lois, Pour fléchir votre cœur qu'est ce que je puis dire?",
+          "le çommerce secret M'en a fait dès ce temps appréhander l'effect, Et cralgnant que ce s 'allumant davantage Apres rant de ravaux renversa mon ouvrage, À Rome eueoz un cour exprès j'ai députés Ç:  J'ai fait volr du Consul le peu de sermeté, Et j'attent Corbulon, dont l'âme Inacceslible À l'intérêt de Rome est seulement sensible, Dont le cœur généreux ne peur lamais uauit Qui ne sait point aimer, et sait bien obelt:",
+          "donne, Et blesser un peu trop l'honneur de la couronne, Que de nous appeler, loin de nous écouter Pour plaire à vorte haine et pour nous insulter, Pour voir deux souverains pleurer vi ctoirel, Pour faite dans leur honte éclatter votre gloires Pour fouler à vos pieds la Majesté des Rois Qui sont indépendans de vous et de vos lois, Et pour nous voir au gré des caprices d'un hommeLes divertissements d'une Femme et de Rome HÉLVIDIUS.",
+          "Toi, qu'ici teclamoit mon âme insortunée, Et par les moits de Rome enfin qui m'es donnée, Mon cœur pour ces tyrans dignes de cet aveu N' est plus qu'un ciel d'or,ge qu'un trône de feu, Qu'un siège empoisonné de haine et de divorce, Qu'un soleil sans chalęur, et qu'un astre sans force!"
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Arménie",
+        "Paris",
+        "Ville de Paris",
+        "Tibre"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

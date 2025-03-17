@@ -1,0 +1,76 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Quenel, Léon",
+    "title": "Selidore ou l'amante victorieuse tragicomédie pastorale / fait par Léon Quenel",
+    "publication_date": "1639",
+    "document_id": "bpt6k8529230"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Diane",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Si personne ne me vengeais les faunes seraient pires, Mes Nymphes tomberaient dans les mains des satires, Diane serait seule, et le moindre chasseur Prendrait la liberté de lui donner la peur, Son visage sacré se trouverait prophane, Et ie ne serois plus l'immortelle Diane, Al jali donc auionra maispanir cermaijèrei, La fête le défent, ie le fais à regret. \nLusidan\n De punissez ce Pasteur misérable, Le plus cruel tourment me sera favorable, La mort terminer a les mortelles douleurs, Que mon cœur tous les jours témoigne par des pleurs Mais qu'il me soit per mis Deesse que j'adore, Dévant que de mourir de voir ma Selidore, Et de Seigneur demander pour ma déloyauté, Un pardon que j'attends de sa chaste beauté. \n",
+          "Rosamire\n Mon cœur se réjouit de voir que ros plaisirs, Commencent à revivre auecques mes désirs, Oubliez vos douleurs éprenez très affage De votre liberté. \nMénador\n pour vous en faire hommag \nRosamire\n C'est un don précieux que nous devons garder, \nMéliador\n On vous l'offre aussi tôt qu'on teur consrégardes \nRosamire\n Il faut parler ainsi, ce vous semble pour plaire Dans la civilité: Je crois mieux le contraire, Votre esprit peu constant ne peut légèrement, Oublier le sujet qu'il aime fortement, Excusez moi Berger il faut trouver Diane, Et vous digne d'honneur sage Magicienne, At trunenomon cijconis muis sa Divinité Que je sers me deffen de l'incivilité.",
+          "Il offense la Majesté des Autels de Diane à se trouver présent à des cérémonies dont la vue était défendue aux hommes sur peine de la vie, elle détourne aussi les affections de Rosamire des poursuites de Lusidan, quelle lui fait connaître en la trompant plein d'hypocrisie et défeintise, l'un et l'autre reussit comme elle désirait et encor plus heureusement, car ayant quelque reste d'amour pour Lusidan, elle eut bien voulu qu'il eut reconnu son infidélité, et qu'il se vit redevable de sa vie à sa bonté sans la perdre ce qui arry par v de ses a qui pouuant aliour de ceste fête demander quelque don Diane, lui se la vie pour ce prisonnier;",
+          "Les Nymphes viennent en troupe avec la tête de l'animal porté dans un bassin orné de fleurs, les autres portant chacun un présent: ils entrent dedans leTemple que l'on ouvre à leur arrivée ou Diane est assise dessus un théâtre ils Jui présent tout, et se placent à ses pieds: Selidore et Rosamire seront debout aux deux côtés de la Déesse tenant chacune une cassolette et du feu qui parfumeront la Déesse et les autres, puis descendant en bas crieront à la porte que tous les hommes sur peine de la vie s'éloignent du Temple et que l'on va commencer le service ayant fermé les portes on commence la musique.",
+          "Le Ciel le vit mourir sur vos liquides bras, Homicides cruels: mais quoi le feu vous tue, Et le feu de l'amour vivoir dedans sa vue, 8 Ne parlez plus ma langue on n'entend point les morts, Mons esprit parle mieux bien qu'il n'ait point de corps Diane ma dé écoute mes complaintes, Et vous bocages verts, que vos deïtez saintes, concnees aux raisons de mes justes regrets Ne me refusent point la nuit de ces forêts, Ce rocher entrouuert qui forme une caverne, Plus noire mille fois que celle de l'Auerne Elle entre dans la caverne."
+        ]
+      },
+      "top_5_persons": [
+        "Diane",
+        "M",
+        "Lidan",
+        "Rolanet",
+        "Alcide"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 2
+        },
+        "related_sentences": [
+          ", mes Compagnes me dirent aussi tôt, que puis que la France possédait les mérites de toutes les grâces, et les délices de tout ce qu'il y a de beau au monde en ce seul enfant, qu'un jour.",
+          "eu nationale de France e nationale de France"
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Liban",
+        "V"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

@@ -1,0 +1,78 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Baro, Balthasar",
+    "title": "La Clarimonde de Baro dédiée à la reyne",
+    "publication_date": "1643",
+    "document_id": "bpt6k62614839"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Clarimonde",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Clarimonde eût paru doublement criminelle, De mépriser l'ardeur dont vous brûlez pour elle, Et tu suis trop heureux de voir que sa vertu, Releue la spendeur de mon trône abattu: À vos contentements toutes choses sont prêtes, Je cède avos désirs ainsi qu'a vos conquêtes, Et sais prêt comme vous de jurer une paix, Que la suitte des temps n'interrompe jamais. \nÀLMAZAN\n Ne différons donc plus ce merveilleux ouvrage, Étoussons ouvant touvti tinfotent et l'outrage, Pardonnons toute chose, et faisons à ce jour mon nujune momeue um immortelle amour.",
+          "Les malheurs que ce Prince avait sujet de crainMais jevi Clarimonde et ses charmants attrait, Me livrèrent la guerre en parlant de la paix Te beauté diumaine encharmes si puissante Alluma dans mon cœur ne splame innocente, Mais de qui le pou toir est si est et si fort uil vaincra la rigueur du re et de la et Ie comparaycent si ma fortune a la sienne, Ie mesurai mon sanga sa race ancienne, Maus l'Amour se de ces respects humainsUe ur du temps combats furent vains.",
+          "Et tu me vois tout prêt à te rendre ton bien, Grand Prince permettez que mon prix soit le sien Qu'aujourd'hui Clarimonde à mes vœux destinée Contracte avec Alcandre un plus doux hyménée Pour le récompenser de m'avoir conservé, Je me donne après moi l'État qu'il asauué, Je l'adopte atemptre, et veux qu'en sa personne Le Sa enfin N'une et l'autre couronne, N'y vous pas?",
+          "Le respect, ce fâcheux ennemi Ne me laisse e aler ma flamme qu'a demi Clarimonde en un mot que j'aime et que j'adore Est le juste sujet pour qui suis vous implore, Nous sommes deux captifs soubs de divère liens, Son corps est dans vos fers, mon âme est dans les siens, Et quand cette beauté qui vous est a Deuroit causer ma mort, je demande sa vie.",
+          "Mais l'amour et la mort égalent tout le monde, Si ce Dieu qui me blesse a blesse Clarimonde, Cet obstacle fâcheux se verra surmonté, Ou par votre infortune, ou par votre bonté: Courez belle Princesse ou ma foi vous convie, Vous êtes aujourd'hui l'arbitre de ma vie, Aton sort est dans vos mains, et mon contents ment No dépend de sormais que d'un mot seulement CLARIMONDE."
+        ]
+      },
+      "top_5_persons": [
+        "Clarimonde",
+        "Lydiane",
+        "Almazan",
+        "Mars",
+        "Seigneur"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Parmi ceux-là, MADAME, votre insigne piété doit être particulièrement considérée: aussi voyons-nous bien que c'est à elle que le Ciel a été comme forcé de se rendre, et que pour accomplir les vœux que nous avons mêlés durant si longtemps aux prières de Votre Majesté, il a fallu qu'il ait donne à la France deux Princes qui doivent sans doute après avoir été les sujets de sajoie, était les appuis de sa grandeur.",
+          "France"
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Paris",
+        "Thunis",
+        "Rome",
+        "Palais Royal"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Nanteuil, Denis Clerselier de",
+    "title": "La Fille Viceroy. Comédie héroïque. Par D. C. de Nanteuil,...",
+    "publication_date": "1672",
+    "document_id": "bpt6k8414817"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Dom Carlos",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Je m'assurais déjà de vous porter sa tête, j'espérais que l'amour en ferait ma conquête, Et je me figurais avec quelque raison, Que ma flamme avait pris un conseil de saison: Puisque ici combattais pour une juste cause, Que je ne de vois plus que ménager la chose, Apeler Dom Carlos, et faire un noble effort, Pour venger votre offense en lui portant la mort:",
+          "Ou bien se pourrait -il qune nouvelle flamme Vous eut fait oublier un feu qui fut si fort, Dont sien ne vous dévolt léparer que la lllort; \nDOM CARLOS\n Seigneur considérez qu'elle était infidèle, Quelle ne m'aimait point, que notre n'adorais qu'elle, Et qu'après avoir vu son manquement de foi, jeuevelriaiincamieveml toucamas \" Et quitter un amour dont on ne tenait conte.",
+          "DOM CARLOS, DOM JANCHÉE \nDOM CARLOS\n C'est ainsi que de moi la fortune se joue, Aujourdhuy dans l'éclat, et demain dans la boue: Mais cela de vroit peu m'alarmer en ce jour, Puis qu'enfin ce sont là les faveurs de la cour, Sur quoi je puis fonderfort peu de confiance: Après en avoir fait la triste expérience.",
+          "Il se peut par hasard, ou par d'étranges coups, Que sans manquer de foi l'on manque aux rẽdez vous. \nDOM CARLOS\n eui inen alleulela: \nSOpHIe\n Si l'on vous justifie, Il faut tout son honneur pour vous sauver là vie. \nDOM CARLOS\n ",
+          "Je ne te puis sauver, si ce n'est que Sophie Ne parole en mème, et ne te juitille. \nDOM CARLOS\n Pour me justifier, elle ne le peut pas, S'il faut qu'elle ait trouvé, comme on dit, le trépas."
+        ]
+      },
+      "top_5_persons": [
+        "Dom Carlos",
+        "Sophie",
+        "Carlos",
+        "DOM",
+        "LUCIE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "valence",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Si tu ne pouvais pas prouver ton innocence, Quel sujet t'obligeait à venir à valence Quoi ne devais -tu pas un peu t'examiner, Si ici fais mon devoir, votre te dois condamner, Il faut que malgré moi avoir t'envoie au supplice, Si tu ne me résous a faire une injustice.",
+          "Par un coup qui passa toute mon espérance, Il me fit aussi tôt Vicerai de valence Étant prête à partir jette trouvai Dom Carlos Pour ici à mon service il s'offrit aussi tôt.",
+          "Je n'espérais jamais retourner à valence, Il semblait qu'a ces maux vous preniez quelque part, Je voyais que pour moi vous aviez quelque égart.",
+          "De plus née à valence, et de qui les parents Ont voulu de son cœur se rendre les tyrans.",
+          "Le rang que vous tenez l'un et l'autre à valence Met sur ce procédé mon esprit en balance."
+        ]
+      },
+      "top_5_places": [
+        "valence",
+        "Afrique",
+        "BRON",
+        "DOM CARLOS",
+        "SopHie"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

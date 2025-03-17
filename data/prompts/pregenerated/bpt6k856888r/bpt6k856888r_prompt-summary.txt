@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Basire, Gervais",
+    "title": "Le berger inconneu, pastoralle . Où par une merveilleuse adventure, une bergere d'Arcadie, devient reine de Cypre. De l'invention du sieur de B.",
+    "publication_date": "1621",
+    "document_id": "bpt6k856888r"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Lycoris",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Je me tairai quand il en sera temps, Tu veux passer sans aimer, ton Printemps, Tuis quand les ans ta face auront ridée, Sans passion de chacun regardée, Te repentant, tu maudiras le jour Que tu fus onc adversaire d'amour. \nLycoris\n nomme ue anet mau cese tuiveur inop forte De ton Damon, qui l'aveugle, et transporte: C'est fort bien fait: Ne ne veux pas blâmer Les amoureux, mais tu ne veux aimer. \nPhirilis\n Je ne suis pas pour t'induire au contraire, N'y te forcer à chose volontaire, Demeure ainsi jusqu'à tant qu'un Amants Venange les maux donc tu vas consommant Ton Dalis, et pour moi -même proteste A l'avenir ne t'en rompre la tête, Mais si l'on peut le fut deviner, de le cenai onter copionère SCÈNE -TROISIÈME DU PREMIER ACTE. \nLycoris\n \nHylas\n \nPhiliris\n \nLycoris\n Epuis",
+          "Lycoris\n N'espère pas une telle aventure, Quoi tu crois donc par tes pleurs m'acquérir? \nDoralis\n Dure Beauté qui détournez ma plainte De la pitié, de peur d'en être attainte: Vous n'aurez pas un grand contentement, Quand vous m'avez conduit au monument, N'y grand plaisir d'être Vierge et de suivre Cette Diane en sa façon de vivre: \" L'Amour tout seul adoucissant nos maux, „ Nous fait trouver repos de nos travaux, ,, Sans ses beaux traits, dõt chère est la blessure, \" Et les Bontés dont s'orne votre front, „, Sans son pouvoir rien ne vous serviront, 2 Non plus que font les perles dessous l'onde \", Que Thétis cache aux yeux de tout le monde?",
+          "Le Berger Inconnu, Au live d'aller son l'iran accusant, Va dans les feux ses louanges disant: Il commença d'une façon essrange, Voire incroyable, à chanter ta louange, Il commença de conjurer les Cieux, Pour oublier toncrime vicieux, Et puis me dît: Arcadin, Seigneur te prie, Fais -moi ce bien, à la fin de ma vie, À tout le moins que sans puisse baiser Ce fer aimé, dont tu vas diviser D'avec mon corps mon âme languissante: Et garde bien que ta lame sanglante Perçant mon cœur, n'offense le portrait, De Lycoris, qu'amour fît de son trait.",
+          ", L'ire de Dieu sent bien tôt sur sa tête. \nLycollo\n \" Promettre mal n'oblige à l'observer. \nPhiliris\n Si fait qui veut de blâme se laver. \nLycoris\n Miin pour un mal deux il faudrait commettre. \nPhiliris\n Paut yjongerauamt que dépromelre. \nLycoris\n Et l'accomplir bien que ce fut un tort? \nPhiliris\n Pour n'y manquer il faut souffrir la mort. \nLycoris\n Je mourrai donc: la mort inexorable Sera pour moi piteuse, et favorable: J'aime bien mieux souffrir sa cruauté:",
+          "ne Bergel Inconnu, Dis le moi donc, ne me le cert point, \nHylas\n À vous le dire un autre mal est joint, Chaste Bergère: il vaut mieux que j'élance Mes chauds soupirs, et meure en mon silence, Que vous le dire, aussi bien le disant Mon dur tourment n'ira s'en apaisant. \nLycoris\n Quoi quimen fou te veux ouïr le conte De ta douleur, et dusse être à ma honte, \nHylas\n Je le veux donc: mais ô rare Beauté Ne preneZ garde à ma témérité."
+        ]
+      },
+      "top_5_persons": [
+        "Lycoris",
+        "Hylas",
+        "Philiris",
+        "Damon",
+        "Pan"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Bergère",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Hylas\n Je ne sais pas ô gentille Bergère, „Tout vent est bon à qui nul port n'espère. \nDoralis\n Je comprends bien t'oyant ainsi parler, Qu'un désespoir t'en fait ore exiler: Mais cher Hylas, par cette amitié rare Dont apprendre t'honore ainsi ne t'en sépare: Tous ces Bergers t'en vont priant aussi:",
+          "Si je suis prompt, ne t'en étonne pas, Je vais pour être au funèbre trépas D'une Bergère inhumaine et cruelle, Fille de Mope, et d'Aleine la belle: Pan aujourd'hui la doit faire mourir. \nHylas\n Quels vains propos me viens-tu discourir?",
+          "Il est certain que Doralis aimait Cette Bergère, et sur tout l'estimait, Elle au contraire, ingrattement farouche, Un doux prépos ne sortait de sa bouche, De fiers dédains sans plus elle payait Son amour sainte, et de lui s'enfuyait.",
+          "* ! \nDoralis\n Et comment donc pourras-tu satisfaire Ornx mors exprès, quer a dirma Bergère \nArcadin\n Je ne sçaypas. \nDoralis\n Non, non achève mo Tiens",
+          "à ce toup, ô Bergère inhumaine, Que ton amour doit terminer ma peine, C'est à ce coup que ma fidélité Doit"
+        ]
+      },
+      "top_5_places": [
+        "Bergère",
+        "Cypre",
+        "Paphos",
+        "rue",
+        "Parnasse"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

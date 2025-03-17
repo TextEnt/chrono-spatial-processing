@@ -1,0 +1,77 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Donneau de Vizé, Jean",
+    "title": "La Comète, comédie",
+    "publication_date": "1681",
+    "document_id": "bpt6k1090109q"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Comète",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "J'ai aussi par devers moi une grosse fluxion, et les fluxions de Comète sont bien pires que les autres; mais sans les nuages qui sont survenus, et par qui la Comète nous a été cachée, en eussai-je dû créver, je l'eusse observée jusqu'au bout. MATURIN.",
+          "’Est un bon Impertinent que ce Monsieur Taquinet Se moquer à mon nez de la Comète Les cheveux me dressent à la tête, de tous les blasphêmes qu'il a proférez. \nFLORICE\n Mon Père, faut-il que l'emportement de l'Oncle fasse tort au Neveu?",
+          "Ce pauvre Soleil ainsi encrousé, inhabile à toute chose, serait chassé du touraiton, dont n'occupe le centre, et s'en irait errant de tourbillon en tourbillon, et c'est ce qu'on appelle une Comète LA COMTESSE.",
+          "Y en a-t-il une plus grande que la vôtre, de vous inquêter du genre de la Comète, et de passer par -dessus tous les sujets de frayeur que Monsieur vient de nous marquer?",
+          "Si vous voulez bien que je vous réponde, ne m'avouerez-vous pas qu'il est bien arrivé de grands malheurs sans Comète, ou plutôt qu'ils sont presque tous arrivez sans Comète"
+        ]
+      },
+      "top_5_persons": [
+        "Comète",
+        "Maturin",
+        "Mme",
+        "Française",
+        "M"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Onsieur, on vient de vous apporter des Lettres de Rome L'ASTROLOGUE.",
+          "Qu'est-il donc arrivé de plus terrible à Rome qu'ici?"
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Paris",
+        "Pont-neuf",
+        "Faubourg"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

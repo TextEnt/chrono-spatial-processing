@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": null,
+    "title": "Recueil de pièces diverses et galantes par Mascré",
+    "publication_date": "1671",
+    "document_id": "bpt6k856901n"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Dargin",
+          "frequency": 8
+        },
+        "related_sentences": [
+          "Et en effet ce malheureux Amant, soit qu'il voulut épargner la réputation de sa Maîtresse, ou n'osât avouer en présence de Dargin l'outrage qu'il voulait faire à son honneur, plutôt que de rien dire, aima mieur se laisser traîner en prison, où il passa le reste de la nuit en 111 49 un état plus déplorable que celui dans lequel il avait prétendu la passer avec la belle Dargin Pendant tout ce temps, le Chevalier qui était moins entré chez Dargin pour le secourir, que pour voir sa Femme, ne l'avait point abandonnée.",
+          "La belle Dargin lui demanda son avis sur l'habit dont elle devait être parée: Elle avait dit qu'elle se voulait travestir en Homme, et que pour cet effet elle aurait un grand Juste-au-corps bleu, brodé par tout, une Cullotte rouge garnie de dentelle d'or, un ruban de couleur de feu à sa Cravatte, et des Plumes d'incarnat et blanc;",
+          "Dans cette erreur il aborda le Jaloux, il lui prit la main fort familièrement, et le tira à l'é cart, pendant que la belle Dargin s'occupait à regarder si elle ne reconnaîtrait point quelques habits qu'elle eût déjà vu à Ablancour He bien, belle Dargin, dit notre passioné à son Mari, suis je toujours bien dans votre esprit?",
+          "en tremblant elle était venue à la porte de celle où était Dargin, pour se coucher dans son Lit avant que l'on apportât de la clarté, et avait soutenir qu'elle y avait toujours été: mais ayant entendu parler son Mari et sa Servante ensemble, elle avait écouté leur dialogue, par lequel elle avait appris ce qu'elle devait faire.",
+          "L'espoir étant plus fort que la peur dans l'esprit de Derville, il se flattait que le Fâcheux ne serait pas plutôt endormi, que sa Maîtresse le viendrait délivrer de sa prisone: mais Dargin par une toux perpétuelle, lui faisait bien juger qu'il n'était pas encor prêt d'en sortir."
+        ]
+      },
+      "top_5_persons": [
+        "Dargin",
+        "Cleon",
+        "Jaloux",
+        "Marigny",
+        "Comtesse"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 8
+        },
+        "related_sentences": [
+          "Ayant pris pô session de son Gouvernemer il feignit être malade de s'é tre trop échauffé dans lès exe cices qu'il avait fait, soit à course de la Bague ou autre ment, il fut visité des prin cipaux de la Province, il con manda ensuite de faire publie qu'il allait prendre des eau qui prendre des nécessaires, au lieu de prendre la route Bourbon, n vinle on postée Paris incogntio, pour voir la Comtesse.",
+          "La Reine du Bal ter rompit leur conversation, en venant prendre Ablancour pour danferm amuigui emrage de ce qu'il venait d'apprendre, prit l'occasion, et ramena sa Femme à Paris",
+          "L'Automne éltait lur la lin, F 2 66 et l'on sait qu'en cette saison aux petits Villages des environs de Paris, les divertissements de la Promenade dége.",
+          "Dargin avait dit qu'il y avait à Paris un nombre insiny de Galants, dont l'approche était fort dangereux;",
+          "Et ne s'étudiant qu'à fuir ce qui sait plaire, Au milieu de Paris veut été solitaire."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "France",
+        "Saint Cloud",
+        "Lyon",
+        "Niepce"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Les Precieuses ridicules. Comedie. Representée au Petit Bourbon",
+    "publication_date": "1663",
+    "document_id": "bpt6k12804148"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "MAROTTE",
+          "frequency": 12
+        },
+        "related_sentences": [
+          "si vous êtes en commodité d'être visibles. \nMAROTTE\n Dame, notre n'entends point le Latin, et notre n'ai pas appris, comme vous, l. Filofie dans le grand Cyre.",
+          "le moyen de soufn tela! et qui est-il le Maître de ce laquais! \nMAROTTE\n a ici ra homme le Marquis de Masvarille \nMAGDELON\n Ah ma chère!",
+          "MAROTTE\n Par ma foi, Seigneur ne sais point quelle bente c'ent-la, il faut parser Chrétien si vous voulez, que je vous entende. \n",
+          "JODELT, MASCARILLE, CATHOS, MAGDELON, MAROTTE \nMASCARILLE\n À H Vicomte! \nJODELT\n s'embrassant l'embrassant l'autre. \nMASCARILLE\n ",
+          "MAROTTE\n rOila un laquais, qui demande, vous n ' êtes au logis, x dit que son Maître vous veut venir voir."
+        ]
+      },
+      "top_5_persons": [
+        "MAROTTE",
+        "Seigneur",
+        "ALMANZOR",
+        "Vers",
+        "M"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 12
+        },
+        "related_sentences": [
+          "J'offenserais mal à propos tout Paris, si ici l'accusais d'avoir pu applaudir à une sottise, comme le public est le Juge absolu de ces sortes d'ouvrages, il y aurait de l'impertinence à moi, de le démentir, et quand j'aurais eu la plus mauvaise opinion du monde de mes Précieuses Ridicules, avant leur représentation, je dois croire maintenant, qu'elles valent quelque chose, puisque tant de gens en en ont dit du bien: mais comme une grande partie des grâces, qu'on y a trouvées, dépendent de l'action, et du ton de voix, il m'importait, qu'on ne les dépouillât pas de ces ornements, et Seigneur trouvais que le succès, qu'elles avaient eu dans la représentation, était assez beau, pour en demeurer là.",
+          "Pour moi, tel que vous me voyez, Seigneur m'en escrime un peu quand tu veux, et vous verrez courir de ma façon dans les belles Ruelles de Paris, deux cents Chansons, autant de Sonnets, quatre cents Épigrammes, et plus de mille Madrigaux, sans compter les Enigmes et les Portraits. \n",
+          "Ce sont ceux qui donnent le branle à la réputation dans Paris et vous savez qu'il y en a tel, dont il ne faut que la seule fréquentation, pour vous donner bruit de connaisseuse, quand il n'y aurait rien autre chose que cela.",
+          "Il faudrait être l'antipode de la raison, pour ne pas confesser que Paris est le grand Bureau des merveilles, le centre du bon goût, du bel esprit et de la galanterie. \nMASCARILLE\n Pour moi, Seigneur tiens que hors de Paris",
+          "mais ne vous mettez pas en peine, je veux établir chez vous été Académie de beaux Esprits, et un vous promets, qu'il ne se fera pas un bout de Vers dans Paris, que vous ne sachiez par cœur avant tous les autres."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Liure",
+        "Louvre",
+        "Champagne",
+        "France"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

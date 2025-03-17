@@ -1,0 +1,77 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Soret, Nicolas",
+    "title": "L'election divine de S. Nicolas a l'archevesché de Myre avec un sommaire de sa vie en poème dramatique sentencieux et moral",
+    "publication_date": "1624",
+    "document_id": "bpt6k856984j"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Nicolas",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "L'EXCUSE, ET LE REFUS QUE FAIT S. NICOLAS D'ACCEPTER la charge Archiepiscopale, et les raisons persuasives des Euesques qui le fléchirent à la fin. \nDION\n  chasseur bocager allouir de la proie (Comme de beau butin le soldat qui guerroie) Retient court enlessez ses alants, ses limiers, Qu'ils ne vaucrent, errants, au galop de couLes gardant souple-frais pour la bête l'ancée, Découverte au matin au pié de sa passée, Ne leur permettant pas de mordre ici flairer Iers, Tout ce qu'ils pourraient bien gloutonnement bauffer.",
+          "Mais dévots envers Dieu ils a font des prières Entremeslans aussi mille pleureux hélas: Dout élever at pute,au vout uc teurs carricres Il leur donne un enfant, qu'ils nomment Nicolas Dès son tremblant berceau sa sainteté de vie Parut grande déjà: car enfançon mollet, Combien que de téter il eut fassent envie, Certain jour jusques au soir il s'abstenait de lait.",
+          "Ce paquet est à moi, qui, garanti d'aveu, Dois épier chacun, qui vient rendre son vœu, Pour en faire rapport, et mener la personne Vers ce pourpré Sénat, d'un, de qui le nom son Clairement Nicolas, dans le Ciel renommé, Puis qu'Euesque d'ici Dieu même l'a nommé.",
+          "Les Euesques s'en vont bien joyeux chan ter ce Cantique, puis se disposeront de sacrer S. \nNICOLAS\n Lus on souffre de maux à poursuivre ardemment de pénravissant objet, plus à t'on dé lices, Quand on peut l'emporter sans fraudes ni malices, Pour en jouir longtemps à son contentement.",
+          "Comme ils étaient en grande difficulté de donner dignement leurs suffrages à quelqu'un, ils furent avertis du Ciel de prendre celui qui Iendemain viendrait le premier en l'Église se nommant Nicolas, et commandez de le sacrer Archèvesque de Myre Ce qui fut fait avec applaudissement de tout le peuple."
+        ]
+      },
+      "top_5_persons": [
+        "Nicolas",
+        "DION",
+        "Jésus-Christ",
+        "Seigneur",
+        "Christ"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Palestine",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "La mort l'ayant privé d'iceux en son adolescence florissante, il distribua, charitable, la plupart de son patrimoine aux pauvres: puis s'en alla en Palestine visiter les saints lieux, où notre Seigneur avait travaillé aux Mystères de l'humaine redienption.",
+          "En Palestine va: afin qu'il y révère Les lieix saints du Pais, trestous chacun à part."
+        ]
+      },
+      "top_5_places": [
+        "Palestine",
+        "Louvre",
+        "Indes",
+        "Jue"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

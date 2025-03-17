@@ -1,0 +1,77 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Sganarelle ou le Cocu imaginaire, comédie avec les arguments de chaque scène",
+    "publication_date": "1662",
+    "document_id": "bpt6k12803991"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "CELIE",
+          "frequency": 8
+        },
+        "related_sentences": [
+          "cette Scène Lélie qui avait fait dessein de Ds'en retourner, vient trouver Célie pour venir dire un un éternel adieu, et se plaindre de son infidélité, dans la pensée qu'il a, qu'elle est mariée à Séganarelle, lors que Celie, qui croit avoir plus de lieu de se plaindre que lui, ces reproche de son côté sa perfidie, ce qui ne donne pas un médiocre contentement à l'Auditeur, qui connaît l'innocence de l'un et de l'autre, et comme vous la conné aum je croy que ces Vers vous pourront divertir. \n",
+          "Celieu en s'évanoüissant, ayant laissé tomber le portrait de sa Amant, la femme de Séganarelle le ramasse, et comme elle le considère attentivement, son mari ayant aidé à reporter Celie chez elle, rentre sur la Scène, et regarde par -dessus l'épaulle de sa Femme, ce qu'elle considère, et voyant ce portrait, commence d'entrer en quelque sorte de jalousie, lors que sa Femme s'avise de le sentir, ce qui confirme ces soupçons dans la pensée qu'il a qu'elle le baise, mais il ne doute baise",
+          "Il fait voir que de la campagne où il était, il s'est rendu au plustost à Paris, sur le bruit de l'Hymen de Celie Comme il est tout nouvellement arrivé son valet le presse d'aller manger un morceau devant que d'aller apprendre des nouvelles de sa Maîtresse, mais il n'y veut pas consentir et voyant que son valet l'importune, il l'envoie manger, cependant qu'il va chercher à se délasser des fatigues de son voyage auprès de sa Maîtresse.",
+          "Comme les Vers de cette Scène donnent à l'auditeur un plaisir extraordmane, il ne lerait pas juite de vous priver de ce contentement, c'est pourquoi en jetant les yeux sur les lignes suivantes, vous pourrez reconnaître que l'Auteur Sait parfaitement bien conduire un euquivoq; SGANARELLE sans voir Celie Ce n'est point s'exprimer en termes ambigus.",
+          "Cependant que Séanarelle se tourmente ainsi ex-même, Celie et son Amant n'ont pas moins d'inquiétude que mille, et ne se reprochent que par des regards enflammés de courroux, leur infidélité imaginaire, la colère quand elle est montée jusqu'à l'excès, ne nous laissant pour l'ordinaire que Je pouvoir de dire peu de paroles."
+        ]
+      },
+      "top_5_persons": [
+        "CELIE",
+        "SGANARELLE",
+        "Valère",
+        "Pie",
+        "Femme"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 8
+        },
+        "related_sentences": [
+          "c'est pourquoi puis qu'il y a tant de possibilité et de vraieemblance dans l'évanoüissement de Lelie, que l'on pourrait dire qu'il était absolument nécessaire qu'il s'esvanoüist, puis qu'il aurait paru peu amoureux, si étant arrivé à Paris il s'était allé amuser à manger, au lieu d'aller trouver sa Maîtresse: Ils condamnent des choses qu'ils devraient estimer, puisque la conduite de cet incident avec toutes les préparations nécessaires, fait voir, que l'Auteur pense meurement à ce qu'il fait, et que rien ne se peut égaler à la solidité de son esprit.",
+          "Il fait voir que de la campagne où il était, il s'est rendu au plustost à Paris, sur le bruit de l'Hymen de Celie Comme il est tout nouvellement arrivé son valet le presse d'aller manger un morceau devant que d'aller apprendre des nouvelles de sa Maîtresse, mais il n'y veut pas consentir et voyant que son valet l'importune, il l'envoie manger, cependant qu'il va chercher à se délasser des fatigues de son voyage auprès de sa Maîtresse.",
+          "Ganarelle, qui comme vous avez vu dans la fin Ô de la belle Scène (puis qu'elle n'a point à présent d'autre nom dans Paris) a pris résolution de se venger de Lélie, vient pour cet effet dans cette Scène, armé de toutes pieçes: et comme il ne l'aperçoit pas d'abord, il ne lui promet pas moins que la mort dès qu'il le recontrera.",
+          "Advoüez-moi maintenant la vérité, est-il pas vrai, Monsieur, que vous avez trouvé ces vers tout à fait beaux, que vous ne vous êtes pu empêcher de les relire encore une fois, et que vous demeurez d'accord que Paris a eu raison de nommer cette Scène la belle Scène.",
+          "C'est pourquoi je vous conseille de venir à Paris, pour voir représenter le Cocu Imaginaire par son Auteur, et vous verrez, qu'il y fait des choses, qui ne vous donneront pas moins d'admiration, que vous aura donné la Lecture de cette Pieçe;"
+        ]
+      },
+      "top_5_places": [
+        "Paris"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

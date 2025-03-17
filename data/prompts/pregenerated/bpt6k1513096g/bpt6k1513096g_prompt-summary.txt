@@ -1,0 +1,76 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Rayssiguier, De",
+    "title": "Alidor et Oronte. Tragi-comedie du sieur de R.",
+    "publication_date": "1636",
+    "document_id": "bpt6k1513096g"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Seigneur",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Non, Seigneur sais que le Ciel, et toutes ses clartés Qui de nuit et de jour nous mõstrẽt leurs beautés Sont œuvres de vos mains, pour notre seul Jerce, Et que de les aimer ne fût jamais un vice, Et pour cette raison, j'ai cru que sans pouvais Soumettre mon esprit aux amoureuses lois, Pue faus rous offenser, j'avais rendu les armes A l'ouvrage divin, dont j'adore les charmes.",
+          "Il tient dans la prison celle qui te captive, Et lors que ie te fuis, il faut que ie le suive, Je ne puis Florintor, souffrir ton entretien, Encor que par mon mal Seigneur connaisse le tien, Voici le malheureux, qui selon sa coutume Me vient importuner du feu qui le consume, Ha!",
+          "Non, non, Seigneur te crois traître, et quoi que tu me dies, Après de trahisons si la schement ourdies, Si tu te croyais plus, j'aurais bien mérité Le mal que m'a causé ton infidélité. \nORONTE\n ",
+          "Parce qu'à l'adorer Seigneur mets toute ma gloire. \nMELISEE\n Quelque beauté qu'elle ait, quelques charmes puissants, Qui soient ab olument maîtres de tous vos sens, Elle s'en rend indigne, et vous êtes blâmable,",
+          "dans un moment, par l'aide de tes mains, Mettra finã Ma peine: Pousse-le hardiment, et dans ton propre cœur Va ce cét ingrat vainqueur, Et venge dessus Seigneur ta douleur inhumaine."
+        ]
+      },
+      "top_5_persons": [
+        "Seigneur",
+        "Cloris",
+        "Melisse",
+        "Adame",
+        "Alior"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Angleterre",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "et Ronte aimoit Calirie dés le ceau, également aimé elle, rant la force, de leur affectic Alidor son nepueu reuient A gleterre, il auoit esté long temps, et bord il voit Calirie en dévient reux, sans se souuenir, ni de amitié que se oncle lui portoit, ni des obligations lui auoit, sa passion vint tel poinct, que y osant descouurir, de peur offenser oncle, son mal caché se rendant plus vie lent, il tombe malade, Oronte qui aimoit nepueu, comme si eût esté son fils, en ploye toute la médecine pour sa guarisoi et voyant que estoit inutilement, il en le Medecin de ses amis, auec de si gray marques de son déplaisir, que autre blige descouurir le sujet du mal Alior cét effet, il se tient deux ou et iours iprés a malade, et que le obseruaons particulières à son bodu pouls, et des changemens t aimé d'Elle, d' elle Ra entroit la force, de que leur de Calirie rendoit malade, cette son noblige dire ouOronte, que d'A vouloit err on nepueu, il où il a Vay, ce iscours été Longtemps, et dès çaaitié qu'il voit pourson nepueu le fait pasr ie en de vien de amour de Calirie, et se ans se lui sauuer a nir, en se ni de ce l' amit de que se, et pour nyclé était de temps, il oit Ait, la ni des visiter souuent qu' y, avait , sa caresseron vint il à tel Put, que j' os aduantages lu mariage deson nepueu et de sa fille, de peur d'ossen la conclusion, et de l' nouuelles Alidor, qui il tombe de Malade, commençait à se remettre, ce qui le remit tout à fait sur pied: durant que cela se passe, Cintille qui aimait Alidor, et qui en avait été aimée en Angleterre, pressée de sa passion, et aidée de la ressemblance qu'elle avait à son frère Alcandre, avait pris des habits d'homme, et était venue en France, où ne pouvant voir Alidor, à cause de son mal, elle fit connaissance avec un jeune Gentilhomme François nommé Florintor, amoureux de Melisse, et qui pour divertir, le feint Alcandre l'avait souuent conduit chez sa Maîtresse Melisse, qui n'ayant peu résister à la force des yeux de cette fille desguisee en dévient amoureuse, la croyant Alcandre, et pour obliger, parce elle en auoit priée, fait bonne mine Florintor, non pas sans donner des témoignages Cintille de sa passion, mais cette fille qui auoit que aH 10 AROVMEICT."
+        ]
+      },
+      "top_5_places": [
+        "Angleterre",
+        "France",
+        "Prance",
+        "Oran"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

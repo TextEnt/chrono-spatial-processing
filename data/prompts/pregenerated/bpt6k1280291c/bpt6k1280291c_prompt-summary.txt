@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Corneille, Pierre",
+    "title": "Cinna, ou la Clémence d'Auguste, tragédie (par P. Corneille)...",
+    "publication_date": "1643",
+    "document_id": "bpt6k1280291c"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Auguste",
+          "frequency": 40
+        },
+        "related_sentences": [
+          "Mais quoi que ie l'aimasse et qu'il brûlât pour V aine plus forte à tous deux fit la loi, Tmoi, Je ne voulus jamais avoir donner d'espérance Qu'il ne m'eût de mon père assuré la vengeance, Je la femme sis jurer, il chercha des amis, Le Ciel rompt le succès que votre m'étais promis, Et tant vous viens, Seigneur, offrir une victime, Non pour sauver sa vie en me chargeant du crionS trépas est trop juste après son attentat, (même, Et toucevreule en vamle en virermie d'état: Mourir en sa présence et rejoindre mon père C'est tout ce qui m'amène et tout ce que j'espère, \nAUGUSTE\n Jusqu' à quand, ô Ciel, et par quelle raison Prendrez-vous contre moi des traits dans mon maison?",
+          "Oui, va n'écoute plus ma voix qui te retient, Mon trouble se dissipe et ma raison revient, Pardonne à mon amour cette indigne faiblesse, Tu voudrais fuir en vain, Cinna, je le consesse, Si tour est découvert Auguste a che voir À ne te laisser pas ta fuite en ton pouvoir: Porte, porte chez-lui cette mâle assurance Digne de notre amour, digne de ta naissances Meurs, s'il y faut mourir, en citoyen Romaix Et par un beau trépas couronne un beau desseins Ne crain pas qu'après toi rien ici me retienne, Ta mort emportera mon à me vers la tienne, Moin Gunède camntuis punède due amories coups ô CINNA.",
+          "Aussi ici ne dirai rien des avantages de votre naissance, ni de votre courage qui l'a si dignement soutenue dans la profession des armes à qui vous avez donné vos premières années, ce sont des choses trop connus de tout le monde: Je ne dirai 6 rien de ce prompt et puissant secours que reçoïuent châque jour de votre main tant de bonnes familles ruinées par les désordres de nos guerres, ce sont des choses que vous voulez tenir cachées: Je dirai seulement un mot de ce que vous avez particulièrement de commun avec Auguste C'est que cette générosité qui compo- 8 -moi --",
+          "Rome avec une joie et sensible et profonde Se met en vos mains de l'Empite du monde, Vos Royales vertus avoir vont trop enseigner Que son bon heur consiste à vous faire régner, D'une si longue erreur pleinement affranchie Elle n'a plus de vœux que pour la Monarchie, Vous prépare déjà des Temples, des Autels, Et le Ciel une place entré les immortels, Et la postérité dans toutes les Provinces Donnera votre exemple aux plus généreux Princes. \nAUGUSTE\n J'en accepte l'augure, et j'ose l'espérer, Ainsi toujours les Dieux vous daignent inspirer;",
+          "Auguste est fort troublé, l'on ignore la cause, Chacun diversement soupçonne quelque chose, Tous présument qu'il aie un grand sujet d'ennui Et qu'il mande Cina pour prendre avis de lui: Mais ce qui plus m'étienne et que je viès d'apprendre, C'est que deux inconnus se sont saisis d'Euandre, Qu'iuphorbe est arrêté sans qu'on sçache pourquoi, Que mêmes de so maître on ait été ne içay quoi, On lui veut imputer un désespoir funeste, On parle d'eaux, de Tibre, et l'on se taît du reste."
+        ]
+      },
+      "top_5_persons": [
+        "Auguste",
+        "MAXIME",
+        "Cinna",
+        "Maxime",
+        "Cinna"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 40
+        },
+        "related_sentences": [
+          "Rome avec une joie et sensible et profonde Se met en vos mains de l'Empite du monde, Vos Royales vertus avoir vont trop enseigner Que son bon heur consiste à vous faire régner, D'une si longue erreur pleinement affranchie Elle n'a plus de vœux que pour la Monarchie, Vous prépare déjà des Temples, des Autels, Et le Ciel une place entré les immortels, Et la postérité dans toutes les Provinces Donnera votre exemple aux plus généreux Princes. \nAUGUSTE\n J'en accepte l'augure, et j'ose l'espérer, Ainsi toujours les Dieux vous daignent inspirer;",
+          "Oui, maît pour le braver jusque dans les Enfers, Quand nous aurons vengé Rome des maux souffEt que par son trépas Seigneur l'aurai méritée, [ ferts, Je veux joindre à sa main ma main ensanglantée, L'épouser sur sa cendte, et qu'après notre effort Les presens du tyran soient le prix de sa mort. \nMAXIME\n Mais lapparenee, ami, que vous parmiez homme plaire Teint du ség de celui qu'elle aime cõme un père, Car vous n'êtes pas homme à la violenter?",
+          "Conservez-vous, Seigneur, notre conservant un maître Sous qui son vrai bonheur commence de renaître, Et daignez assurer le bien commun de tous Laissant un successeur qui soit digne de vous, \nAUGUSTE\n N'en délibérons plus, cette pitié l'emporte, Mon repos m'est bien cher, mais Rome est la plus forte, Et quelque grands malheur qui m'en puisse arriver, Je consens à me perdre afin de la sauver.",
+          "Sylla quittant la place enfin bien usurpée N'a fait qu'ouvrir le champ à César et Pompée, Que le malheur des temps ne nous eût pas fait 1 vois S'il eût dans sa famille assuré son pouvoirs Qu'a fait du grand César le cruel parricide Qu'lever contre vous Antoine ap Lepide Qui n'eusset pas détruit Rome par les Romains Si César eût laissé l'empire entre vos mains?",
+          "N'écoutez plus la voix dommes tyran qui vous aime, Et vous veut faire part de son pouvoir suprême, Mais entendez crier Rome à votre côté, Rends moi, rends moi, Cina, ce que tu m'as Ersi tu m'as tantôt préféré ta maîtresse, (ostéNe me préfère pas le tyran qui m'oppresse."
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "PARIS",
+        "Fontainebleau",
+        "Sicile",
+        "Tibre"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

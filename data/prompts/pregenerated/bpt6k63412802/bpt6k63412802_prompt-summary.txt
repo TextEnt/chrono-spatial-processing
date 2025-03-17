@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Mareschal, André",
+    "title": "Le Dictateur romain : tragédie dédiée à Mgr le duc d'Espernon / [A. Mareschal]",
+    "publication_date": "1647",
+    "document_id": "bpt6k63412802"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "LUCILE",
+          "frequency": 84
+        },
+        "related_sentences": [
+          "Valère, qui croyait tout tendre à son dessein, N'empêcha pas le mien qu'il eût pu rendre vain : Ce stratagème étrange et difficile à croire Par les siens, malgré lui, nous ouvrit la victoire, Si grande que la Mer en vit rougir ses ports, Qu'Ortone eut dans ses champs tous les Samnites morts, Que Fabie est ravi, que Valère lui-même Et m'envie et s'impute un si beau stratagème, l'ar qui j'ai reparé dans ce combat dernier, Avec mon erreur, la honte du premier, \nLUCILE\n Deserteur d'un Ami, dont la gloire est flétrie, Mais pour ne l'être point plutôt de ta pâtrie, Que ce discours, Comine, et ta fidélité À Fabie ont rendu ce qu'il a mérité!",
+          "Le destin à ses vœux accorde la victoire Si prompte qu'il n'a pas loisir de l'emporter, Si grande que les morts ne se peuvent compter: Qui va jusques au Nom détruire les Samnites, Au delà des deux Mers étendre nos limites, Et montrer à notre Aigle agile, impatient Le chemin de la Grèce et de tout l'Ollent \nLUCILE\n Cette double victoire et si grande et si pleine A fait toute ma joie et fait toute ma peine : Puis que d'entre mes bras elle enlève un Époux, Et qu'après la bataille il s'en retourne aux coups.",
+          "J'ai pour venir de la Joie, et pour moi -même soupire De voir qu'étant Consul ie manque à mon pays, Et que ma maladie ait mes desseins trahis: En un si faible état peux-tu, superbe Ville, Connaître ton Consul, connaître enfin Camille \nLUCILE\n Ces regrets, vrais enfants d'un noble sentiment, Partent d'un cœur Romain, qu'on connaît aisément, D'une égale ouvertu, parfaite, et confirmée;",
+          "Rome ne devait voir ce Vainqueur glorieux, Qu'en vn char qui porta si souvent ses Aïeux: C'est ce qu'il dût attendre, et c'est ce qu'il mérite. \nLUCILE\n Cette gloire dût été à ses travaux prescrite: Mais cet honneur si grand et si bien mérité, À son retour sans bruit ainsi précipité, Lui peut-être sans doute envié par Valère CAMILLE.",
+          "Et pour moi, suppliant envers le Dictateur J'aimerai le coupable, et le persécuteur, Et nous joignant ensemble et la Fille et la Mère Nous serons importuns autant qu'il est sévère: m'aura pour partie en un si grand courroux, Et lamele, dlaTe, e le Sénat, cnous. \nLUCILE\n Avec un tel appui craindrez-vous de combattre : Papire sera seul;"
+        ]
+      },
+      "top_5_persons": [
+        "LUCILE",
+        "Valère",
+        "Camille",
+        "LUCILLE",
+        "MARTIAN"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 84
+        },
+        "related_sentences": [
+          "Cet état trop indigne et d'elle et de ces lieux Né dompte point mon cœur, mais il blesse mes yeux, Voyez, voyez, Tribuns, où vous l'avez jetée, Où vous la descendez, où vous l'aviez montée: Regardez son orgueil, et son abaissement: Comme elle m'a traité, comme elle se dément: Mais regardez plutôt ce qu'elle me demande, Et quel fruit malheureux il faut qu'elle en attende. \nMARTIAN\n Rome préfère un homme à ce grand intérêt, Et demande un Héros, tout criminel qu'il est;",
+          "Rome était en péril, et Fabie en danger:  Quand j'eus ordre, au secours de son Infanterie D'aller faire avancer notre Cavalerie: L'aîle gauche deux fois, comme tout se perdait Où comme Lieutenant Valère commandait, Contre un gros d'Ennemis qui commençait de craindre Fit quelques vains efforts, et témoigna de feindre, Alors n'épargnant plus mes soins, sans mes travaux Je fis ôter par tout les brides aux Chevaux, Et les faisant pousser d'une horrible furie, Tout plia, tout fit jour à la Calerie.",
+          "Que ta voix annoblit, que ta rigueur illustre, Qu'elle fera passer de l'un à l'autre lustre, Ce crime, honneur de Rome, et dont l'accusateur, Ou plutôt l'envieux, est un grand Dictateur, Ce crime, qui la sauve, et que le Camp renomme, Pour qui l'on dût ouvrir tous les Temples de Rome, Pour faire sacrifice, et rendre grâce aux Dieux Des victoires qui vont perdre un Victorieux: Je ne le nomme point ton ilnij ton",
+          "J'en reçois, Papyrie, Elle agréable office, Honteux d'être réduit à ce faible exercice, Tandis que votre Père au milieu des combats Rend à Rome un devoir qui demandait mon bras: Ma vertu parle seule, et vous défend de croire Qu'un si juste intérêt soit jaloux de sa gloire, Puis qu'en lui résignant, et Rome et mes emplois, Le créant Dictateur j'ai tout mis sous ses lois.",
+          "Rome ne devait voir ce Vainqueur glorieux, Qu'en vn char qui porta si souvent ses Aïeux: C'est ce qu'il dût attendre, et c'est ce qu'il mérite. \nLUCILE\n Cette gloire dût été à ses travaux prescrite: Mais cet honneur si grand et si bien mérité, À son retour sans bruit ainsi précipité, Lui peut-être sans doute envié par Valère CAMILLE."
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "France",
+        "PARIS",
+        "Guyenne",
+        "V"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

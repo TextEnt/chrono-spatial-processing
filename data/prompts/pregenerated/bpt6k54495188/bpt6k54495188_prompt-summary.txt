@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Montfleury",
+    "title": "La mort d'Asdrubal , tragédie du sieur de Montfleury,...",
+    "publication_date": "1647",
+    "document_id": "bpt6k54495188"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Scipion",
+          "frequency": 42
+        },
+        "related_sentences": [
+          "Sache donc, Scipion, que je suis Afriquaine, Que j'ai toujours choqué la puissance Romaine, Que ie suis Sophronie et du sang d'Hannibal, Princesse de Carthage et femme d'Asdrubal Qui, Seigneur suis de ce sang, je sors de ce grand homme Que Carthage éleva comme le fléau de Rome, Dont le premier abord fît trembler les Romains, Et de qui la mort seule arrêta les desseins.",
+          ", Dessus tous ses ramparts fais descendre ta foudre, J'ai pour la divertir employé mes efforts, J'ai couvert la campagne et de sang et de morts, Tu m'as vu, Scipion, sur la rive Affriquaine Combattre sans pâlir, la puissance Romaine.",
+          "En foi de Scipion, réponds-moi de leur grâce, Sur celle d'Asdrubal, pleins te rends cette place, Sans perdre aucun des tiens, je vais perdre en ce jour Mon peuple pour mon sang, et l'honneur pour l'amour. \n",
+          "Tu permis Scipion, les lâchetés d'un Prince, D'avoir trahi pour toi sa femme et sa province: Tu m'ôtes mes enfants, ils ne m'étaient point dus, La main qui te servit les a mal défendus.",
+          "Mais songez, Scipion, que ce peuple vaincu Pour le repos de Rome à déjà trop vécu, Qu'on ne peut sans le perdre assurer sa victoire, Que le Sénat le veut, et que c'est votre gloire."
+        ]
+      },
+      "top_5_persons": [
+        "Scipion",
+        "AMILCAR",
+        "Asdrubal",
+        "Caton",
+        "Seigneur"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 42
+        },
+        "related_sentences": [
+          "Mais ce lâche destin qui traverse mes jours Fit qu'en tous nos combats tu me vainquis toujours, N'ayant puù résister au bonheur de tes armes, Comme les impuissants, ainsi recourus aux larmes, Je crûrent qu'en m'abaissant, sans fléchirais ton cœur, Qu'un vaincu par ses pleurs, donnait sonvainqueur, Et qu'un langage humain adoucirait un homme, Mais tu j'avez revêtu des sentiments de Rome Elle est toure barbare en ce qu'elle entreprend, Et tâche d'opprimer un peuple qui se rend.",
+          "À SDRVBAE Oui, le destin de Rome en porte l'avantage, Son demon a vaincu le démon de Carthage \nFlaceule\n Elle homme cede enfin après tant de travaux, Les Romains sont défaits de leurs plus grands rivaux, Ie à la auiourd’e en Rome est aux seconde, Et qu'elle seule a droit sur l'Empire du monde, S'il est bais de périr par quelques belles mains, Carthage a de la gloire en cédant aux Romains.",
+          "Sache donc, Scipion, que je suis Afriquaine, Que j'ai toujours choqué la puissance Romaine, Que ie suis Sophronie et du sang d'Hannibal, Princesse de Carthage et femme d'Asdrubal Qui, Seigneur suis de ce sang, je sors de ce grand homme Que Carthage éleva comme le fléau de Rome, Dont le premier abord fît trembler les Romains, Et de qui la mort seule arrêta les desseins.",
+          "Cet offre avantageux ne me saurait surprendre Je sais ce que de Rome un vaincu doit attendre, Tant d'illustres Captifs après des Chars traînés Et comme des forçats couple à couple enchaînez, Honteusement conduits aux fond de vos galères Où tous chargés de fers accable de misères, Ils attendent la mort de moment en moment, Me font prévoir de Rome un pareil traitement.",
+          "Oui, Rome vous fera l'honneur qui vous est dev, Elle vous rendra plus que vous n'avez perdu, Ses biens-faits envers vous répareront l'outrage Que vous avez souffert aux guerres de Carthage  Et vous et vos enfants, vos amis, votre Époux, A l'abri du Sénat aurez un sort plus doux.  SOPHRONIE."
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Carthage",
+        "Carthage",
+        "Paris",
+        "Guyenne"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

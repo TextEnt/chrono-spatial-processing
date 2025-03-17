@@ -1,0 +1,80 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Rosimond, Claude Rose",
+    "title": "Le Volontaire, comédie",
+    "publication_date": "1676",
+    "document_id": "bpt6k1090115f"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "M",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Madame votre mère, assez, est bonne, humaine, Et ici vois à son air, qu'elle est de votre avis. \nM\n \nVALTOQUET\n Je ne sais que penser de tout ceci mon fils, Et ce prompt changement n'a pas lieu de me plaire: Mais me veux bien encor vous être bonne mère.",
+          "Je sais bien que j'ai toit, il est vrai, mais, ma Mère, Que l'on fasse venir sur le champ le Notaire, Je signerai. \nM\n \nVALTOQUET\n \nMonsieur Finaut\n SCÈNE XIV. \nM\n VALTOQUET, DOROTHÉE, LES PARENS, M. FINAUT, CARILLE, ACASTE, LES VIOLONS.",
+          "Il meurt servant sa patrie, et son Roi. \nCanaLB\n N'avoir que ce seul fils, est-ce être bonne mère? \nM\n \nVALTOQUET\n La gloire est plus que tout, et si défunt son père M'eût cru, il en aurait sans doute fait autant;",
+          "Votre mère, peut-être, était d'une humeur tendre, Et se laissa porter par nos Galants de Cour, Croyant se faire honneur, querque botte d'amour. \nM\n \nVALTOQUET\n Insolent, Savez-vous que. \nM\n \nVATOQUET\n Eh là là, sans colère.",
+          "Tu dis. \nM\n \nVALTOQUET\n \nCARILE\n Je dis, qu'il faut être de Barbarie, Pour vouloir sans pitié mettre à la boucherie Un fils unique, bon, doux comme un jeune Agneau, Qui ne peut voir du sang sans pleurer comme un Veau. \n"
+        ]
+      },
+      "top_5_persons": [
+        "M",
+        "DAMIS",
+        "BELIZE",
+        "MELITE",
+        "ROSETTE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Mais quoi roder toujours en différents p. Lys, Y trancher du Baron, du Comte, du Marquis, Affectant le bel air débiter la fleurette A Lucinde, à Clélie, à Marine, à Lizette, S'abîmer en crédit pour les bien divertir, Leur escroquer l'honneur, pester, jurer, mentir, Promettre en même jour le mariage à trente, Et s'évader la nuit quand la mine s'évente, Revenir à Paris faire le chien couchant, Pattre l'un, battre l'autre, affronter le Marchand, Prendre ni, plutôt, crocheter la cassette, Et de peur de prison déloger sans trompette!",
+          "Il est d'autres objets pour moi dedans Paris \nCARILE\n Qu'il a bien fait de fuir!",
+          "Tour d'enfant de Paris Cependant à la fin on y peut être pris.",
+          "Notaire, La Scène est à Paris"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "France",
+        "Castille",
+        "Canada",
+        "Pays-bas"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

@@ -1,0 +1,73 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Campistron, Jean Galbert de",
+    "title": "Alcide, tragédie en musique (paroles de Campistron, musique de Lulli et Marais), représentée par l'Académie royalle de musique",
+    "publication_date": "1693",
+    "document_id": "bpt6k5629556w"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Déjanire",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Croyez-vous qu'il vous soit facile De voir sans vous troubler tous mes enchantements? \nDEJANIRE\n S'ils peuvent finir mes tourments, Je les verrai d'un œil tranquille. \n",
+          "par les nœuds qui m'attachent à vous Prenez des sentiments plus doux. \nDEJANIRE\n Dans le désespoir qui m'anime, Puis-je avoir quelque égard aux plus sacrés liens;",
+          "punissons Déjanire, Sa colère a plus fait que tous mes ennemis. \nPHILOCTETTE\n Elle s'est punie elle-même D'un crime que Nessus et le sort ont commis.",
+          "DEJANIRE\n Tous ces ménagements sont vains Dans l'état où je suis réduite, L'Hymen d'un ingrat qui me quitte Est le seul objet que je crains.",
+          "Iole me charmait et j'avais su lui plaire, J'allais devenir son époux. \nDEJANIRE\n Ah que vous me portez de redoutables coups!"
+        ]
+      },
+      "top_5_persons": [
+        "Déjanire",
+        "Alcide",
+        "IOLE",
+        "Nessus",
+        "Junon"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "PARIS",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "À PARIS cI9 cIO XCII."
+        ]
+      },
+      "top_5_places": [
+        "PARIS"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

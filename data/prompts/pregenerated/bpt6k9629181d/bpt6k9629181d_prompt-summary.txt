@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Scudéry, Georges de",
+    "title": "La mort de César. Edition 2 / , tragédie, par M. de Scudéry, 2e édition",
+    "publication_date": "1637",
+    "document_id": "bpt6k9629181d"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Brute",
+          "frequency": 12
+        },
+        "related_sentences": [
+          "Il faut avertir Brute ô Dieux qui connaissez, Que d'un juste désir nos esprits sont poussés, Regardez de bon œil l'entreprise avance, Et la faites finir comme elle est commencée, A 4 TX IE CRSAR, ANTHOINE, LÉPIDE, BRVTE, CALPHURNIE, PORCIE, ARTEMIDORE, ALBIN, CASSIE, LABEO, QUINTUS, CHOEUR D'AUTRES SÉNATEURS.",
+          "N'attendez pas de moi des marques de faiblesse, Je hai trop le Tyran, s'il vous choque, il me blesse: L'image de Caton qui me suit en tous lieux, Semble offrir son poignard, et son sang à mes yeux: Mais Brute, ma douleun n'est pas sans allégeance;",
+          "Déjà depuis long temps on l'oyait soupirer, Dans les pensers d'un bien qu'il n'osait espérer: Mais puis que Brute parle, et qu'une si grande âme, BrÎle du même feu dont la mienne est en flamme, Est-il quelque plaisir qui se compare au mien?",
+          "Elle doit s'adresser à de faibles esprits, Mais non pas à Cæs qui sans craindre personne, Suit toujours les conseils que la vertu lui donne: Quoi Brute, est-ce la donc ce qu'on vous a promis?",
+          "L'œil de Brute m'inspire, un désir violent, Qui trouve que le temps n'a son vol que trop lent: Une juste colère excite mon courage, Après ce haut exploit qui va finir l'orage;"
+        ]
+      },
+      "top_5_persons": [
+        "Brute",
+        "CÆSAR",
+        "ANTHOINE",
+        "Cæsar",
+        "PHILIPUS"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 12
+        },
+        "related_sentences": [
+          "Et qui peut justement se plaindre de cet homme, Ilentend Qui semblait s'immoler pour la grandeur de Rome Demons dont la fureur est sans comparaison, Parlez, ils sont muets, à faute de raison: \ncésar\n Mais traîtres, cachez -vous dans le centre du monde, Mesurez la grandeur de la terre et de l'onde, Fuyez, fuyez, toujours, tuâchez de vous sauver, Le bras puissant des Dieux vous saura bien trouver Portant en votre sein l'oiseau de Promethe, Par un cuisant remords, votre âme tourmentée, Vous faisant endurer des tourments éternels, Vous serez les bourreaux comme les criminels.",
+          "Mais revenant au point que la clarté s'allume, Mon œil a vu Cæsar, plus grand que de coutume, D'un port maiestueux, d'un regard éclatant, Qui s'élevait sur Rome et qui dans un instant, Par cette agilité dont une âme est pourueuë, A trauersé les airs, ayant lassé ma vue: cours est tiré de l'histoire Romaine Mais au même moment s'est fait voir à mes yeux, Un Astre tout nouveau qui brillait dans les Cieux, Ce dis  ",
+          "Sui le respect, et le désir, Et viens voir avec plaisir, RICHELIEU, dont l'esprit est au dessus de l'homme: Et confesse, en voyant ce divin Cardinal, Qu'il n'eut jamais d'égal, Parmi ces grands Héros qu'on adorait à Rome BNUTE, Sénateur.",
+          "Vous avez un esprit qui s'étonne de rien: Et si ici ne voyais votre chef et le mien, Je saurais vous tirer de merveille et de doute: Mais nous sommes dans Rome, et Cæsar nous écoute. \nLÉPIDE\n ",
+          "J'aurai le même sort du fondateur de Rome Car ce nom de Cæsar n'ôte point celui d'homme: Mais ici ne me plains pas d'Hommes si faible pouvoir;"
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Tibre",
+        "France",
+        "Danube",
+        "Gange"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Berthrand, François",
+    "title": "La Tragédie de Pryam, Roy de Troye, [in Le Théâtre des tragédies françoises nouvellement mis en lumiere ?]",
+    "publication_date": "1611",
+    "document_id": "bpt6k10902166"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Agamemnon",
+          "frequency": 27
+        },
+        "related_sentences": [
+          "Calchas\n Un Prince comme toi puissant et valeureux, Doibt avoir dedans l'âme un désir généreux De venger son injure et arroser ses armes Du sang de l'ennemi, non de ses propres larmes, Car ce n'est pas outrage, ou injure ou forsaict, (sait, Quand nous vengeous le tort qu'un étranger nous Veu que le droit permet lissant la simple écorce, De chasser vivement la force par la sorce, Mais bien c'est un forfaict quand le désir d'avoix Nous sait par une saute oublier le devoir, Que la raison nous montre, et contre la nature Offenser nos voisins de cins et iniure: Tout brave cœur ne peut soussir qu'un étranger vaant vonnn farat, e sa gloire outrager. \nAgamemnon\n courage",
+          ", Et emporte par mer celle qu'il m'a ravie, Et me doune la mort jouissant de mavie: La parole me faut, et non pas le désir De payer de cent morts un si lâche plaisir. \nAgamemnon\n Quoi ce brave voleur suivant ceux de sa race Juit craignant le danger, et ne craint la menace Qui tallonne sa faute, et le malheureux tour De violer ta semme et voler ton amour.",
+          "Permettrai-je bons dieux que ce Troyen infâme, Me laisse plein de glace et s'allume en ma slamme, Sans punir son ossence, et vengeur consumer Son impudique stime au milieu de la mer, Plutôt dedans les sots Neptun m'enseuvelisse, Et dans son large sein la terre m'engloutisse. \nAgamemnon\n Quelle ardente surie, et cuisante douteur Te fait ouvrir la bouche, et réserrer le cœur?",
+          "Comme il trouble ma vie au beau milieu des siots, Et bien que sans sois veuf de semme et d'espérance, Les dieux ne rendront veuf mon esprit de vue, \nAgamemnon\n Ne trouble ton esprit d'un si sâcheux discours. \n",
+          "Que sacrifirons nous Cal Le souvenir me point \nAgamemnon\n Hardiment dis le moi calchâ, et ne trains point. \nCalchas\n Il faut sacrisser la belle Iphigénie, Et rendre en la tuant à ton frère la vie."
+        ]
+      },
+      "top_5_persons": [
+        "Agamemnon",
+        "Calchas",
+        "Menelaus",
+        "Venus",
+        "Junon"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 27
+        },
+        "related_sentences": [
+          "Pres du petit cerveau réside la mémoire, Qui procède des deux, qui donne de la gloire A celui qui l'bonore, et qui est anobli Per sa propre vertu qui ne tombe en oubli: Outre jes trois, trésore, admirable richesse, Miou ère m'a donne la force et la sagesse, Lorsque Vulcan ouvrant son front d'une grand coutean Me zist comme un gendarme yssir de sou cerveau: Juge donc bien Paris comme Juge équitable Des yeux du lugement ma beauté perdurable, Beaute tbresor de fait, et non tbresor de nom, Non sujet au destin comme celle a Junon, Qui ens même ta vue ainsi qu'une sujet, Ou coume une vapeur en va rien consumée: Et si mes yeux sont verts juge par équité Que c'est la chastelé, et non la cruauté: Or si en ma saveur tu donnes la sentence, Tu seras docte et sort et plein déc sapience, Favori de Python, et traînant après toi, Les rochers sous ta volx, les hommes sous ta loi, Alairants ton esprit, donne moi donc la Pomme, Un bieu ie te ferai au lieu que tu es homme. \n",
+          "Quoi ne parlez-vous plus: le mal qui vous affole Vous remplit-il la bouche au lieu de la parole, Pour savoir votre mal Paris parlez à moi: Au lieu de sentiment êtes-vous plein d'e moi, Plein d'avi, plein d'amour sas voix, ni sale haleine, Reprenez vite haleine, et quittez vostie Hèleine, Fuyez d' tel sabiect l'éclandicux souvenir, „5 Prenez le temps présent, prévoyez l'avenir. \nParis\n Quoi que ici quitte aiusi la beauté la plus belle, Que jamais la nature ourdit sur le modèle De sa perséction, modèle qu'en dèspit De la terre et du tiel la nature rompis Pour zaïre son ouvrage uniq en ses merveilles, Esmerueiller nos yeux, étouner nos oreilles, C'est cette beauté la qui me ruine d'émoi, Qui sans ravissement me dérobe de moi, Qui se rue en mon cœur plus vite que la foudre, Plus te qu'un éclair qui se réduit en poudre, Que te dira ie plus taît la perfection, c'est la divinité de mon assection, C'est moi, ce n'est pas moi, c'est une belle imagé",
+          "Non tu es a Thesee ou ay le sens perdu, Quoy rais-tu pas ce que tu a rendu, m donc qui tu es, et ne me laisse en peine, Sor moiait suis Deesse, et ie pa Heleine \nParis\n Princesse de mérite et de perséction, Ne pense que votre sois Grégeois de nation, Natif comme Thesee de Cornthe ou d'Athenes 12 Mais crois que ta beauté, le goussre de mes peines, Ma sait tourir la mer, ardant de voir les yeux, Furieux a blesser, à guérir gratieux, Je ne suis pas ce Grec, ni ne voudrais pas l'être Qui pour te faire, omant, sa siamme reconnaître, Ourdit un beau desscin, et ne l'acheva pas, Soit qu'il manquât d'amour, ou craignît le trépas.",
+          "ACTE III. \nParis\n \nHèleine\n \nParis\n Ay vogué sur les eaux d'amour et de Neptune, TTourmenté ne Junon, battu de la sortune, J'ai couru les dangers des Cieux et de la mer, Et j'ai cerchant l'aimer, trouvé beaucoup d'amer, Forcé de ta beauté j'ai sorce la Nature, Mon Dieu que peut sur nous la belle créature, Car l'ire de la mer, et la fureur des Cieux N'ont peu sléchir mon cœur amoureux de jes yeux, Neptun boussant en l'âme orageait mon Nauire, LAvire, L' dessus flot s' elle et se roule, Et se ais ré ma nef, comme un can",
+          "De puis donner a semme une belle maître, S'il permet que Paris sans mal ni sans danger, voise la moit daus Troie et sa flamme loger, Fait mourir votre joie, et naître votre ennui, Ung jour le ciel perdit des ravines de l'onde Le monde trop enclin aux délices du monde, Et nous verrons sortis des gouffres de l'enser, Amour pour perdre Troie en la flamme et au fer, Le regret que j'en ame faict naître l'envie De perdre avant l'honneur: mon esprit et ma vie, Honneur qu'ex violant Ajàx me volera, Quand la fureur du seu les corps dévorera:"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Grèce",
+        "Troie",
+        "Troie",
+        "Die"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

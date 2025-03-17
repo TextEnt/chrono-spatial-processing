@@ -1,0 +1,79 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Chevalier, Jean",
+    "title": "L'intrigue des carosses à cinq sous : comédie représentée sur le Théâtre royal du Marais / [par Chevalier]",
+    "publication_date": "1663",
+    "document_id": "bpt6k15193029"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Clarice",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "J'allais expressément dedans cette voiture, A dessein de savoir ce que fait mon mari, Quand il trouve un objet digne d'être chéri, Et comme j'y voyais deux assez belles Dames, Pour s'attirer de même des soupirs tout de flammes, le irise eu jamais ereu qu 'heur merveilleux, L'eût rendu malgré tant de sa femme amoureux. \nBEATRIX\n Madame vos façons ne sont pas trop honnêtes, De chercher en Carosse à faire des conquêtes, Car enfin toutes deux nous en sommes témoins. \nCLARICE\n Le lâche!",
+          ", s'il vous plaît, mon service et ma foi \nCLARICE\n Je ne refuse point ce qui n'est dev qu'à moi, d dit dhie vamte, mais comme le vous aimette, Ce serait me trahir si vous n'aimiez de rendre, Ainsi deux cœur Tris ne doivent être qu'un. \nGUILOT\n Ils vont mettre bientôt tout leur bien en commun, Mai comme irfait l'amour a la chère poupine, Qu'à lui conter douceur le drolle se caline, Si pour moi vous vouliez avoir le cœur bénin.",
+          "Madame, ce que j'ai de plus considérable, Daignez -vous en servir s'il vous est agréable, ana pertonne, mon dien, letour coue dût aequs \nCLARICE\n furouurois seulement quatre ou cinq cents Loüis \nGUILOT\n Seulement, ce n'est rien, non redoublés la docoze Vous n'avez rien, Monsieur qu'à rayer cette claus Qui ne passera point de mon consentement.",
+          "Que sais-tu? \nLISETTE\n Beatrix m'apprit tout hier au soir, Et me dit qu'elle était de voir un tel volage, Dans emportement, qui va jusqu'à la rage, Que Clarice viendrait vous trouver aujourd'hui cour voui faire igadoir l'excès de son ennui.",
+          "Ah, que ici suis heureux de vous revoir, Madame, Être en un lieu sans vous, c'est être sans son âme \nCLARICE\n Pour un homme qui dit aimer si puissamment, vous devien ceme fembit agn tout autfement Me suivre en m'en allant."
+        ]
+      },
+      "top_5_persons": [
+        "Clarice",
+        "LISETTE",
+        "Beatrix",
+        "Guillot",
+        "Louis"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Quoi que j'en sois maintenant possesseur, je ne me fusse point hâté de mettre cette Comédie sous la presse sans la juste impatience que témolgne ce qu'il y a d'honnêtes gens dans Paris, de digérer à loisir toutes les beautés qu'ils y ont remarquée en peu de temps, pour y rencontrer tout le plaisir qu'ils y trouveront quand ils y appliqueront des reflections nécessaires.",
+          "Marchand Libraire à Paris, d'imprimer ou de faire imprimer en tel volume et caractère, et autant de fois que bon lui semblera, une Comédie intitulée L'iNTRIGUE DES CAROSS A CINQ SOUS, représentée sur le Théâtre Royal du Matais, composée par le sieur Chalier Comédien, ordinaire de sa Majesté par tel Imprimeur qu'il voudra, pendant le temps de cinq années:",
+          "Grâce et Privilège du Roi, donné à Paris le 7. \nDécembre 1662\n Signé Par le Roi en son Conseil NOBLET;"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Théâtre du Marais",
+        "Ville de Paris",
+        "Luxembourg",
+        "Pyrénées"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

@@ -1,0 +1,80 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Quinault, Philippe",
+    "title": "Atys , tragedie en musique ornée d'entrées de ballet, de machines, & de changements de théatre. Représentée devant Sa Majesté à Saint Germain en Laye, le [ ] 1676. Et remise au théatre par l'Académie royale de musique le dernier jour de l'année 1699",
+    "publication_date": "1699",
+    "document_id": "bpt6k15132112"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "CYBELE",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Où peut-on jamais être mieux, Qu'aux lieux où l'on voit ce qu'on aime? \nMÉLISSE\n Tous les Dieux ont aimé, Cybelle aime à son tour, Vous méprisiez trop l'Amour, Son nom vous semblait étrange, À la sin il vient un four Où l'Amour se venge. \nCYBELE\n J'ai cru me faire un coeur maître de tout son sort, Un cœur toujours exemt de trouble et de tendresse. \nMÉLISSE\n ",
+          "De ne s'exprimer pas bien, Un cœur qui n'aima jamais rien Sait peu comment l'amour s'exprime. \nCYBELE\n Sangaride est aimable, Atys peut tout charmer, Ils témoignent trop s'estimer, Et de simples parents sont moins d'intelligence: Ils se sont aimés des l'enfance, Ils pourraient enfin trop s'aimer.",
+          "et mon choix te surprend? \nMÉLISSE\n Alys vous aoit veaucoup, et son vonheur est grand. \nCYBELE\n J'ai fait encor pour lui plus que tu ne peux croire. \nMÉLISSE\n Est-il pour un Mortel un rang plus glorieux? \nCYBELE\n Tu ne vois que sa moindre gloire?",
+          "Mélisse va éxécuter les ordres de Cybelle \nCYBELE\n Que les plus doux Zéphirs, que les Peuples divers Qui des deux bouts de l'Univers Sont venus me montrer leur zèle, Cctevrent la gioirt immortette Du Sacrificateur dont Cybelle a fait choix:",
+          "Il faut tout un cœur pour Cybelle, À peine tout le mien peut suffire à l'amour. \nCYBELE\n Portez à votre Ami la première nouvelle De l'honneur éclatant où ma faveur l'appelle."
+        ]
+      },
+      "top_5_persons": [
+        "CYBELE",
+        "Cybelle",
+        "Atys",
+        "DORIS",
+        "Flore"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Fleuve",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Un Dieu de Fleuve et une Divinité de Fontaine, dancent et chantent ensemble.",
+          "Le Dieu du Fleuve Sangar.",
+          "Le Dieu du Fleuve Sangar.",
+          "Le Dieu du Fleuve Sangar."
+        ]
+      },
+      "top_5_places": [
+        "Fleuve",
+        "Cybele",
+        "Cybelle",
+        "Paris",
+        "Palais"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Racine, Jean",
+    "title": "Bajazet, tragédie, par Mr Racine",
+    "publication_date": "1672",
+    "document_id": "btv1b8610814m"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Roxane",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Vous, de qui j'ai troublé la gloire, et le repos, Héros, qui deviez tous revivre en ce Héros, Toi, Mère malheureuse, et qui dès nôtre enfance, Me confias son cœur, dans une autre espérance, Infortuné Visir, Amis désespérez, Roxane, venez tous contre moi conjurez, Tourment à la fois une Amante éperdue, *Elle se Et * prenez la vengeance enfin qui vous est due.",
+          "Roxane se livrant toute entière à ma foi, Du cœur de Bajazet se reposait sur moi, M'abandonnait le soin de tout ce qui le touche, Le voyait par mes yeux, lui parlait par ma bouche, Et je croyais toucher au bienheureux moment, Où j'allais par ses mains couronner mon Amant.",
+          "Cependant croyais-tu, quand jaloux de sa foi, Il s'allait plein d'amour sacrifier pour moi, Lors que son cœur tantôt m'exprimant sa tendresse, Refusait à Roxane une simple promesse, Quand mes larmes en vain tâchaient de l'émouvoir, Quand je m'applaudissais de leur peu dde pouvoir;",
+          "Et quoi qu’après sa mort l'un de l'autre écartés, Conservant, sans nous voir, le désir de nous plaire, Nous avons su toujours nous aimer et nous taire, Roxane, qui depuis, loin de s'en défier, À ses desseins secrets voulut m'associer,",
+          "Il partit, et voulut que fidèle à sa haine, Et des jours de son Frère arbitre souveraine, Roxane au moindre bruit, et sans autres raisons, Le fît sacrifier à ses moindres soupçons."
+        ]
+      },
+      "top_5_persons": [
+        "Roxane",
+        "ZAÏRE",
+        "Amurat",
+        "Osmin",
+        "ZAÏRE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Babylone",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Amurat est heureux, la fortune est changée, Madame, et sous ses lois Babylone est rangée. \nATALIDE\n Hé quoi, Madame? \n",
+          "Cependant les Persans marchaient vers Babylone, Et bientôt les deux Camps au pied de son Rempart Devaient de la bataille éprouver le hasard.",
+          ", Il parlait de laisser Babylone tranquille, Et sans renouveler ses assauts impuissants",
+          "Babylone, Seigneur, à son Prince fidèle, Voyait",
+          "Avant que Babylone éprouvât ma puissance."
+        ]
+      },
+      "top_5_places": [
+        "Babylone",
+        "Constantinople",
+        "Lys",
+        "Rhodes",
+        "Danube"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

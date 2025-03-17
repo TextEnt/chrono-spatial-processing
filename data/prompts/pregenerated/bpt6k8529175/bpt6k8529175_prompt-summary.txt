@@ -1,0 +1,75 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Montgaudier",
+    "title": "Natalie ou la Générosité chrestienne, tragédie par le Sr de Montgaudier",
+    "publication_date": "1654",
+    "document_id": "bpt6k8529175"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Maximian",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "MARTIAN\n Seigneur elle a changé sans renoncer au vhge, Le sexe la condamne à l'instabilité, L'erreur ton déplaira comme la vérité, Et pour l'en retirer le temps est un remède Auquel après l'amour tout autre moyen cede, L'un et l'autre est puissant, mais ce dernières ici Est pour y parvenir un chemin racourci, ne votre emjesté va savoir tout à l'heure Moyennant qu'avec nous personne ne demeure, ar il n'est pas besoin de découvrir à tous Les mystères d'amour. \nMAXIMIAN\n Ei pren terirtorcoss Et qu'on nous laisse seuls.",
+          "Si là perte du sang lui ravit l'enbonpoint La force de l'esprit ne s'en affaiblit point, Mon âme inuiôble aux plus fortes atteintes Est dans une assiette inaccessivie aux tratnits, Et ainsi viens derechef me présenter à vous Prêt Prêt de servir de viant tont -je ue nueaux coups. \nMAXIMIAN\n Et moi plus qu'attendri par ta misère extrême Te conjure d'ouïr un Empercur qui t'aime, Et que de ta valeur l'importun souvenir Ne pouvant te sauver retarde de punir.",
+          "Cependant n'employez ici fer ni cruauté Cemre verre superbe ce enurmante beauté, Laissez à mon amour un objet honorable Et souffrez un moment un telle coulpable. \nMAXIMIAN\n Oui te te le promets e ne permettrai pas Que la moindre contrainte altère ses appas, Je suis en ta faveur résolu de l'attendre Je te dois cette grâce et ne m'en puis défendre.",
+          "Seigneur vous allez faire un coup irre parable, La raison d'Adrian n'est point encor traitable, La fureur le conduit et dans son entretien Mêlera sans respect un sentiment Chrétien, Il peut dans sa chaleur lâcher quelque blaspheme Et vous mettra sans doute en un courroux extrême: Différez de le voir. \nMAXIMIAN\n Martian qu'en dis-tu?",
+          "Alors la vie pèse et pour svnir à vous Les plus cruels trépas sont des liens trop doux, D'ineffables douceurs une âme possédée Vous aime, vous désire, et n'a plus d'autre idée. \nMAXIMIAN\n Tu m'en apprendrais plus que je n'en veux savoir, Cesse de discourir et pense à mon pouvoir;"
+        ]
+      },
+      "top_5_persons": [
+        "Maximian",
+        "Adrian",
+        "Natalie",
+        "Martian",
+        "Adrian"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Grèce",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Oui des Marchands Chrétiens enlèvent sa richesse Et vont de sa dépouille orner toute la Grèce Leurs vaisseaux sont chargés des corps de nos Martyrs, Et le vent attentif à ré ses souspirs Les pousse dans Bisance, on dirait que la flotte À quelque Ange établi pour servir de pilotte, Votre cousine suit d'être regard empressé Ce que l'éloignement n'en a point effacé, Et pour courir après retient sur le rivage Un Navire chargé d'un précieux bagage;",
+          "Je ne reuoque point vos volontés en doüte, Je sais qui me conduit, toujours sais qu'elle est ma routte, Et quitte sans regret le lieu de mon berceau Pour aller dans la Grèce emprunter un tombeau, Un généreux désir forme en moi l'espérance Que vous allez changer la face de Bisance, Qu'un Empereur Chrétien renversera ses Dieux, Et dessus le débris de leur culte odieux Arborera la Croix;"
+        ]
+      },
+      "top_5_places": [
+        "Grèce",
+        "MONTAUSIER"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

@@ -1,0 +1,78 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Mareschal, André",
+    "title": "La généreuse Allemande , ou le triomphe d'amour, tragi-comédie, mise en 2 journées, par le sieur Mareschal, où, sous noms empruntés, et parmi d'agréables et diverses feintes, est représentée l'histoire de feu M. et Mme de Cirey. Seconde journée",
+    "publication_date": "1631",
+    "document_id": "bpt6k6363209x"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ADRASTE",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "ADRASTE\n Ne tente plus mon âme auecque ce discours, Mais conduis moi plutôt au lieu de mes amours, Voyons. \nFELISMON\n Vous la verrez dans ses larmes profondes Comme un Soleil couche reluire sous les ondes. \nADRASTE\n Pamgtumone et danteau jes jeux portent mau31 Et personne l'adorerais même dans les Enfers. \nCLORIANDE\n I Parlant bas, et l'ayant écouté.",
+          "ROSELINE, CORYLEON, CLORIANDE, ARISTANDRE, ADRASTE, CAMILLE \nROSELINE\n Menant par la main le Duc son Mari, qu'elle a tiré de Prison, et suivie d'Aristandre et de Camille ] JOus voyez, Monseigneur, comme tout est changé, Que le Ciel à mes væux pitoyable rangé ouronne ma prison de gloire en mon martyre;",
+          "Camille, Seigneur vais joindre La menace aux effets, et montrer qu'elle est moindre: Va d'un proche scours de ce pas l'avertir. \nFELISMON\n Que puisse notre vous la fortune partir, que ta glout par tout actompagne oosarmes. \nADRASTE\n Un Ciel à conquérir m'offrirait moins de charmes.",
+          "Mais deux sents jour à jour que mon espoir s'abat, Que le malheur détruit ma constance plus ferme, me Que ma longue douleur ne trouvant point de terElle se rend plus forte, et croît avec le temps: Quandte verrai-je, Adraste, et tes drapeaux flottants?",
+          "Seigneur m'engage. \nADRASTE\n Mes armes n'ont rien fait que sous votre courage: Mon Frère, après le Ciel, par elle vous vivez, Elle vous a conquis deux fois, vous lui devez Hors de vos passions) et l'honneur, et la vie;"
+        ]
+      },
+      "top_5_persons": [
+        "ADRASTE",
+        "Roseline",
+        "Camille",
+        "Seigneur",
+        "Camille"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Boheme",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "j'avoule Ma que la mienne du commencement et pendant les deux premiers Actes est en la Ville de Prague, et presque tout le reste en celle d'Aule, en un mot qu'elle passe de Boheme en Syllesie De plus qu'ils jurent qu'une sujet, pour être juste ne doit contenir d'actions qui s'étendent au delà d'un jour, et qui ne puissent avoir été faites entre deux Soleils;",
+          "j'avoule Ma que la mienne du commencement et pendant les deux premiers Actes est en la Ville de Prague, et presque tout le reste en celle d'Aule, en un mot qu'elle passe de Boheme en Syllesie De plus qu'ils jurent qu'une sujet, pour être juste ne doit contenir d'actions qui s'étendent au delà d'un jour, et qui ne puissent avoir été faites entre deux Soleils;"
+        ]
+      },
+      "top_5_places": [
+        "Boheme",
+        "PARIS",
+        "Tyr",
+        "Sidon",
+        "Perse"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

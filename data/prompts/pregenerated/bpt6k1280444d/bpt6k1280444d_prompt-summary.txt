@@ -1,0 +1,76 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "L'Escole des femmes, comédie par J. B. P. Molière",
+    "publication_date": "1669",
+    "document_id": "bpt6k1280444d"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ALAIN",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "ARNOLPHÉ\n *on Holà, c'est assez. \nGEORGETTE\n Puis jepus comiie il faut; \nALAIN\n Est-ce de la façon que vous voulez l'entendre?",
+          "ALAIN\n E ne sais ce que c'est, Monsieur, mais il me semble IQu’Agnès et le corps moit s'en sont allés ensemble. \n",
+          "lee \nALAIN\n Nous vous avons rendu, Monsieur, obéissance, \nARNOLPHÉ\n De cette excuse en vain vous vou lez armer;",
+          "Vas-y toi. \nGEORGETTE\n \nALAIN\n vaa y ouvoi. \nGEORGETTE\n Ma foi ici n'irai pas.",
+          "Dou vient qu'a tout le monde lnteuttant la cacher, Et qu'il ne saurait voir personne en approcher; \nALAIN\n "
+        ]
+      },
+      "top_5_persons": [
+        "ALAIN",
+        "GEORGETTE",
+        "Agnès",
+        "Arnolphe",
+        "MAXIME"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Enrique",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Cet Enrique, dont hier ici m'informais à vous, Cause tout le malheur dont quelque ressens les coups;",
+          "HORACE. \nEnrique\n "
+        ]
+      },
+      "top_5_places": [
+        "Enrique",
+        "Rome",
+        "France"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

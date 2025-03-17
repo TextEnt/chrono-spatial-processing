@@ -1,0 +1,80 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": null,
+    "title": "Tragedie des amours de Zerbin et d'Isabelle, princesse fuitive . Ou il est remarqué les perils & grandes fortunes passées par ledit Zerbin, recherchant son Isabelle par le monde : et comme il est delivré de la mort par Rolland",
+    "publication_date": "1621",
+    "document_id": "bpt6k856891f"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Zerbin",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Il recame la Dame, et lans celle il l'appelle, Je croirais bien qu'amour nous tienne soubs même loi Il m'en faut en quérir, roi Chevalier dis -moi Quel crime, et quel malheur te guide or au supplice \nZerbin\n dunacène créfarmur feeuriani a point de vice, \nRolland\n Pour la distinction ici le demande aussi Et ne te nuirai point me l'ayant éclarci Si On vois que sans fraude au vrai tu me die. \nZerbin\n Un malheureux destin m'a cette peine ourdie, Si tu meurs que le Ciel perds avec le corps, Mon âme descendue aux plutonniques bords Hélas! partant de fois j'ai discourn me peine Rafraîchissant mon mal par une attente vaine. \nRolland\n a déreudelds caamai damals dasamdase Que ta cause ira de troit et d'équité, \nZerbin\n Il n'y à pas long temps que chatouillé de gloire Iemportai d'un tournoi la fameuse victoire, Abandonnant exprées d'Écosse mon pays Or ses premiers labeurs ne furent point trahis Dans Bayonne arrivé, ou ma dextre guerrière",
+          "D'un sujet aussi faux comme il t'est peu nuisible, Isabelle plutôt souhaite que la nuit Marche sus l'univers son humide surcuit Et que le vaissean prêt, à ta faveut le rende, Au lieu ou ton Zerbin et ton amour demande. \nZerbin\n Amis ie suis mandé au secours des Français, Une flotte m'attend au tivage Écossais: Agramant est campé, et la fleur Sarrasine, Pres des murs de Paris, que la faim avaisine, Ungrand flot orageux de leurs scadrons épars, Charles à ja réduit dans l'enceint des rempars, Et le commun péril me contraint que ie parte Hélas, et que partant mon âme ores j'écarte, Je vous laisse Madame, et pour la recavoir J'aure votre foi: faite votre devoir, Vous savez du dessain une bonne partie, Or de ce mien départ, toujours craindrais qu'avertie Elle ne se voulut sous-mettre à M foy.",
+          ", Que plustost ne me voit à elle accuse Vers le pere du meurtre, Ô la fière Medeuse \nZerbin\n Lui brûlant de colère envié de fureur, Rolland Ce laisse transporter à ce crédulle erreur Ne veut aucunement que ici me justifie, Ainsi sans nulle égard personne vois perdre la vie, \nRollant\n C'est trop de cruauté, soldats il faut surfait Telle cacurion au niomns julqu'a ce soir Descendez le de la, plein le veux, reconduire, Et la caule pour lui à ce seignour déduire. \nLe Soldat\n Nous ne le pouvons faire. \nRolland\n Et moi ici le peux bien, Lâchez-le, ou de vous il ne restera rien.",
+          "Zerbin\n Je retourvois vainqueur pour rerrouuer ma belle Quand ie trouve en chemin c'est vielle bourrelle, Une jeuve Cheualiet pour elle m'attaqua Et de tompre une lance à l'heure m'incira, Par tel pac que vaincu cette futeur masquée, Demeurerait à moi lors s'étant attaquée, 4 L'escarmouche entre nous ainsi ie fus vaincu Sa lame me faussant le harnais et l'écu, Et abattu d’ au conp fus contraint de la prendre La voyant, vergongneux ie cuidai rendre l'âme renlr Neantmoins de la foi par ' âme lié Contre toute ranceur disparut oublié' Ie ne leus pas v heure",
+          "RO 3 Un naissante traict d'Amour dedans l'âme blessée, (sée A versée Aussi un se porte ma penLa hôte, le soubçon, la peur et le souci Bourreaux continuels, me travaillent Qu'un vaisseau agité de contraires haleines, (ainsi Battu à dos, à flanc, par les vageuses plaines) Ils sont égaux de rage, et pourtant le Pilot Ne sait lequel des deux doit maîtriser son flot, Voila comme ie suis un ma naissante flamme, Comme Comme de ses pensers seigneurie mon âme, Zerbin se sont tes yeux, ra vaillance et ton port."
+        ]
+      },
+      "top_5_persons": [
+        "Zerbin",
+        "Odoric",
+        "Isabelle",
+        "Isabelle",
+        "Rolland"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Il la faut devaller au creux de ce rocher, Et d'épineux buissons son y ssuë bouclier, Me ll èrre Rolland \nIsabelle\n Deux Maladrins. \nRolland\n Isérable Rollant à ta poursuite vaine M Le Ciel injurieux se moque de ta peine, Angélique cachée en la voulte des Cieux Fait deux Astres nouveaux maintenant de ses yenx, La terre n'était pas de sa beauté capable, T'aimant ie me rendais plus qu'Ixion coulpable, T'aimant, pourquoi cela, n'ai-je assez de valleur, La France connaît é laux armes ur.",
+          "C'était autant de fait, si le cruel destin, D'un accident sujet n'eût trenché le dessein, Fus mandé au secours de Paris assiégée Or que la Miiens aije Payant lors enchargée Pour l'emmener en France, alors soudain enfin pars, Dont a quelque secours tous les Païens épars Et rompus ont lève honteusement le siège Vous pouvez bien avoir tout vu.",
+          "Aura dessus les eaux Phœbus précipité, Au vaisseau prépaté ma Déesse rendue Sera de mon abscence à l'impourvu deceuë, Mettez la voile au vent, lubez l'ancre, et soudain Vers la France singlant, son regard sera vain Vous la conforterez peu à peu d'espérance",
+          "Puiru France"
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Bayonne",
+        "Paris",
+        "Gaulle",
+        "Nil"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

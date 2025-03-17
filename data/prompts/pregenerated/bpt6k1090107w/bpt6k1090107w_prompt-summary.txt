@@ -1,0 +1,80 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Villiers, Claude Deschamps",
+    "title": "Les Costeaux, ou les Marquis frians, comédie",
+    "publication_date": "1665",
+    "document_id": "bpt6k1090107w"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Damis",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Qu'aux moindres de mes gens sans cesse ils font carest \nDAMIS\n On ne le peut nier, et même je confesse, Qu'ils font encore plus, mais après tout, Monsieur, Chez eux vôtre cuisine est en fort bonne odeur, Et prés beaucoup de gens, tenant lieu de mérite, Elle est cause, souvent, qu'ils vous rendent visite.",
+          "Et pour l'amour de nous \nDAMIS\n Non, sa faute est trop grande, et n'est pas pardonnabl Illui doune vu coup.",
+          "DAMIS\n Mon esprit ne saurait comprendre ce mystère, Ni deviner pourquoi vous au ordonné, Que l'on vous apprêtât un superbe dîné.",
+          "Mais j'ai peur \nDAMIS\n Ah! qu'on me laisse faire, Mais écoute, avec toi Un veux mener l'affaire;",
+          "DAMIS\n J'en ai le pouvoir de Thersandre CLIDAMANT en arrêtant Damis Qu'a fait ce malheureux ne le peut-on apprendre? \n"
+        ]
+      },
+      "top_5_persons": [
+        "Damis",
+        "LUCILE",
+        "Lucille",
+        "CRISPIN",
+        "Seigneur"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Mais il prise sa Table auecque trop d'ardeur, Et fait connaître assez qu'il à l'esprit malade, En louant tout chez lui jusqu' à la salade. \nORONTE\n Quoi traiter ainsi ceux dont vous mangez le bien Rougissez une fois d'un pareil entretien, Farites d'honneur, qui dans la France entière.",
+          "Ce font gens déficats aimants les bons morceaux, Et qui les connaissants, ont par expériance, Le goût le plus certain et le meilleur de France Des friands d'aujourd'hui, c'est l'élite et la fleur, En voyant du gibier, ils disent à l'odeur, De quel pays il vient.",
+          "Ces palets délicats, ces vrais amis des Tables, Et qu'on en peut nommer les dignes souverains Savent tous les Costeaux ou croissent les bons vins, Et leur goût leur ayant acquis cette science, Du grand nom de Costeaux on les appelle en France CLIDAMANT.",
+          "Un homme seul en France a de ces canardières, Ils avait viennent d'Holande."
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Paris",
+        "DAMIS",
+        "Louvre",
+        "Saint Laurent"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

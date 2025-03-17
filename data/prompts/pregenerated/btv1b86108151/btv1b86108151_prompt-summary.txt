@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Racine, Jean",
+    "title": "Mithridate , tragédie par M. Racine",
+    "publication_date": "1673",
+    "document_id": "btv1b86108151"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Pharnace",
+          "frequency": 28
+        },
+        "related_sentences": [
+          "Comment m'offririez-vous l'entrée et la Couronne D'un Pays que la Guerre, et leur Camp environne, Si le traité secret qui vous lie aux Romains Ne vous en assurait l'Empire et les chemins? \nPHARNACE\n De mes intentions je pourrais vous instruire, Et je sais les raisons que j'aurais à vous dire, Si vous rendre laissant ces vains déguisements Vous m'aviez expliqué vos propres sentiments.",
+          "Il ajoute que ce Projet fut le prétexte dont Pharnace se servit pour révolter toute l'Armée, et que les Soldats effrayez de l'entreprise de son Père, la regardèrent comme le désespoir d'un Prince qui ne cherchait qu'à périr avec éclat.",
+          "j'ai vu de toutes parts, Vaincus, et renversez les Romains, et Pharnace, Fuyant vers leurs vaisseaux abandonner la place, Et le Vainqueur vers nous s'avançant de plus près, À mes yeux éperdus a montré Xipharés.",
+          "Rinces, toute la Mer est de vaisseaux couverte, 1 Et bientôt démentant le faux bruit de sa mort Mithridate lui-même arrive dans le Port. \nMithridate\n MONIME. \nXIPHARES\n Mon Père! \nPHARNACE\n Ah!",
+          "Quoi l'amour de régner en sa place Rend déjà Xiphares ennemi de Pharnace \nXIPHARES\n Non, je ne prétends point, cher Arbate, à ce prix D'un malheureux Empire acheter le débris."
+        ]
+      },
+      "top_5_persons": [
+        "Pharnace",
+        "Xiphares",
+        "Mithridate",
+        "Mithridate",
+        "ARCAS"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 28
+        },
+        "related_sentences": [
+          "Pour tenter encor de nouvelles conquêtes Quand der ne verrais pas des routes tout prêtes, Quand le sort ennemi m'aurait jeté plus bas, Vaincu, persécuté, sans secours, sans États, Errant de mers en mers, et moins Roi que Pirate Conservant pour tous biens le nom de Mithridate, Apprenez que suivi d'un nom si glorieux Par tout de l'Univers j'attacherais les yeux, Et qu'il n'est point de Rois, s'ils sont dignes de l'être, Qui sur le trône assis n'envient peut-être Au dessus de leur gloire un naufrage élevé, Que Rome, et quarante ans ont à peine achevé.",
+          "C'est moi, qui les rendant l'un de l'autre jaloux, Vins allumer le feu qui les embrase tous, Tison de la Discorde, et fatale Furie, Que le Démon de Rome a formée et nourrie.",
+          "Ce Fils victorieux que vous favorisez, Cette vivante image en qui vous vous plaisez, Cet Ennemi de Rome, et cet autre vous-même Enn ce Xipharez que vous voulez que j'aime.",
+          "Ainsi ce Roi, qui seul a durant quarante ans Lassé tout ce que Rome eut de Chefs importants Et qui dans l'Orient balançant la fortune Vengeait de tous les Rois la querelle commune.",
+          "Nfin après un an, tu me rêvais, Arbate, ENon plus comme autrefois cet heureux Mithri date, Qui de Rome toujours balançant le destin, Tenais entre-elle et moi l'Univers incertain."
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Monime",
+        "Bosphore",
+        "Grèce",
+        "Pharnace"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

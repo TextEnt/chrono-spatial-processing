@@ -1,0 +1,77 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Lespine, Charles de",
+    "title": "Le mariage d'Orphée, sa descente aux enfers, sa mort par les bacchantes . Tragédie : et autres oeuvres poétiques du sieur de Lespine,...",
+    "publication_date": "1623",
+    "document_id": "bpt6k5744744m"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Orphée",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "son arc et son flambeau, Je n'aspire plus rien qu'a me voir au tombeau. \nBacchante II\n Changez de volonté, délaissez cette envie, De quelque autre beauté ranimés votre vie, Sormontez le malheur, contentez vos esprits, Ioupssez désormais des douceurs de Cypris \nOrphée\n Orphe.",
+          "Car de lui seul dépend notre heureux hrmène. \nOrphée\n Non, non, ne craignez point puis que cette journée Ensemble nous avons tant de présents des Cieux Qui nous peut offenser en ce rond spacieux?",
+          "Orphée\n Je suis tout éperdu, peu s'en fant qu'à cette heure Par ces tristes propos de crainte quelque meure, Qu'un este accident sur ma Belle arriné",
+          "Orphée\n Je veux jusqu'à la fin de mon heure dernière, Les femmes abhorrer tout ainsi que Démons, En finissant mes jours dessur ces tristes monts",
+          "Orphée\n J'arrêterais plutôt Phœbus faisant son cours, Et plutôt a perdrais la lueur de cet astre, Que pouvoir oublier ce malheureux désastre."
+        ]
+      },
+      "top_5_persons": [
+        "Orphée",
+        "Orphée",
+        "Phœbus",
+        "Pluton",
+        "Orphée"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "NAVARRE",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "LA GRACE DE DIEUROY DE FRANCE ET-DE NAVARRE, A nos âmez et féaux"
+        ]
+      },
+      "top_5_places": [
+        "NAVARRE",
+        "Toloze",
+        "Ren",
+        "Bordeaux",
+        "Dijon"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

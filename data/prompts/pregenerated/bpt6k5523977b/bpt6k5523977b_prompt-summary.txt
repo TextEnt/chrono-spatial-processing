@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Scarron, Paul",
+    "title": "Le Jodelet, ou Le maistre valet . Comédie de M. Scarron",
+    "publication_date": "1684",
+    "document_id": "bpt6k5523977b"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "DOM JUAN",
+          "frequency": 10
+        },
+        "related_sentences": [
+          "Quelque las que tu sois, quelque faim qui te tue, Je ne suis pas d'avis de sortir de la Rue, Sans avoir vu de près l'objet de mon amour, Le deuslay-je chercher jusques au point du jour. \nODELET\n Ressouvien-toi, mortel, qu'il est tantôt une heure Qu 'on n'ouvrira point où Dom Fernand demeure, Que nous sommes partis ce matin de Burgos, Que tantôt sur Mulets, et tantôt sur Chevaux Nous avons vous et moi, grâce à votre Hyménée, Couru comme des foux le long de la journée, Et que toute la nuit faire le Chat-huan Est très-grande folie au Seigneur Dom Juan \nDOM JUAN\n Ressouvien-toi, mortel, que n'aimer que sa gueule, Qu ' aille ici bas rien que pour elle seule, Est être pis que bête;",
+          "Dom Fernand, vous montrez ici peu de cervelle, Il faut que vous soyez certes un Maître fou. \nDOM EERNAND\n Courage, Dom Juan mais puis-je savoir d'où Vous pouvez inférer que je ne sois pas sage? \nJODELT\n De venir sottement m'avertir d'un outrage Que je ne savais point, et ne voulais savoir. \nDOM FERNAND\n Apprenez en cela que j'ai fait mon devoir, Et que si vous voulez-vous acquititer du vôtre, Il faut, sans vous servir de la valeur d'un autre, Aujourd'hui, s'il se peut, voir l'épée à la main Celui qu'on fait avon tue vonle Germains Ille tua la nuit, soit hasard, soit vaillance, Veus devez vitement en faire la vengeance.",
+          "Vous Savez si je suis, ou puis être votre Honune, \nDOM FERNAND\n Oui, nous vous promettons ce que vous désirez, Mon Neveu. \nDOM LOUIS\n Je ferai tout ce que vous voudrei Je donne ma parole. \nDOM JUAN\n Et je donne la mienne due jen avance nen que Dom quan ne Mème. \nDOM LOUIS\n je n'ai donc qu'à chercher votre Maître demain? \nDOM JUAN\n Vraiment vous n'aurez pas à faire grand chemin.",
+          "rmnangeuu couvo didiane, ve bavant com pe un troù, Paré de chaîne d'or comme un Roi de Pérou, Sans prendre aucune part à ma mélancolie. \nODELET\n Je commence à trouver l'invention jolie. \nDOM JUAN\n Chez le bon Dom Fernand tu seras régalé, Et moi, de mes soupçons sans cesse boulé, Je me verrai réduit à te porter envie, Sans espoir de guérir durant ma triste vie. \nODELET\n ",
+          "Ha, maintenant fureur je m'abandonne à vous, Et Dom Fernand est-il pour nous, on coutre nous? \nJODELT\n D. Louis est son sang, mais pour l'honneur du vôtre Il fait ce qu'on ne fit jamais pour pas un autre, Il veut que Doin Louis vous en fasse raison, Et Dom Lolis m'attend près de cette Maison, Qui me croit Dom Juan. \nDOM JUAN\n "
+        ]
+      },
+      "top_5_persons": [
+        "DOM JUAN",
+        "ISABELLE",
+        "Isabelle",
+        "Valet",
+        "Valet"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Burgos",
+          "frequency": 10
+        },
+        "related_sentences": [
+          "Quelque las que tu sois, quelque faim qui te tue, Je ne suis pas d'avis de sortir de la Rue, Sans avoir vu de près l'objet de mon amour, Le deuslay-je chercher jusques au point du jour. \nODELET\n Ressouvien-toi, mortel, qu'il est tantôt une heure Qu 'on n'ouvrira point où Dom Fernand demeure, Que nous sommes partis ce matin de Burgos, Que tantôt sur Mulets, et tantôt sur Chevaux Nous avons vous et moi, grâce à votre Hyménée, Couru comme des foux le long de la journée, Et que toute la nuit faire le Chat-huan Est très-grande folie au Seigneur Dom Juan \nDOM JUAN\n Ressouvien-toi, mortel, que n'aimer que sa gueule, Qu ' aille ici bas rien que pour elle seule, Est être pis que bête;",
+          "Vous m'avez envoyé tantôt zaïre à Burgos Des crimes assez noirs pout n'avoir point d'égaur, Vous m'avez reproché ma flâme criminelle, Comme si je trouvais quelque autre Fille bell A pres vous avoir vue, ou celle que j'y vi, Dont pour passer le temps je me feignis ravi, Ne posséda jamais que des appas vulgaires, Qu'elle estimait charmands, et qui ne l'étaient guère.",
+          "JODELT\n C'est bien fait, Raisonnons, aussi bien j'en ai très-grande envie, Et je ne pense pas durant toute ma vie A voir été jamais en mes risons si fort: Raisonnons donc, mon Maître, et raisonnons bien fort. \nDOM JUAN\n Je suis né dans Burgos, pauvre, mais d'une race Exempte, jusqu'à moi, de honte et de dilgrace.",
+          "Letties de la veur, nous paitimes de Flaudre bien. \nDOM JUAN\n \nJODELT\n Écoutez donc, et vous l'allez apprendre: Je désit violent de vous voir à Burgos ous fit aller bien vite, et pai mons et par vaux.",
+          "Ah! ne te flatte point dedans ta jussicn, Tu ue setas jamais que inou avision: Va, va-t-en à Burgos faire des persidies, Va, va-t-en à Burgos jouer tes Tragédies;"
+        ]
+      },
+      "top_5_places": [
+        "Burgos",
+        "Madrid",
+        "PARIS",
+        "Castille",
+        "Pays-bas"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

@@ -1,0 +1,74 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Rayssiguier, De",
+    "title": "La Celidée sous le nom de Calirie, ou de la Générosité d'amour",
+    "publication_date": "1635",
+    "document_id": "bpt6k1090288p"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Seigneur",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "quelques-je trouvent mauvais que j'aie mêlé quelques autres amours dans l'histoire de Célide, de Tamire, et de Célidon, et que sans ne l'aie pas traie de même qu'elle est dans Monsieur d'Vrfé, Seigneur les prie auparavant que de me blâmer de considérer qu'elle était de soi trop nue pour le théâtre, que l'embellissement que je lui donne n'est point désagréable, et ne rend pas le sujet moins intelligible, que la conduite en est si judicieuse, que les honnêtes gens qui l'ont vue représenter gen estimée, que est la ' satisfaction ts l'en attendois, et que çattens de ceux qui prendrontla peine dela lire.",
+          "J'aime sans espérer, et l'objet que je sers Voit mes peines diverses, Et pourtant ne sait pas que assez sois dans ses fers Je meurs, et Seigneur n'ose parler Du feu dont ie me sens brûler, Avec tant de violence: Mon ardeur criminelle aprebende le jour, Et m'oblige au silence De peur d'être blâmé d'un indiscret amour.",
+          "Non, non, Ô ronte, non, j'aime bien mieux la mort, Au moins ie n'aurai plus l'horreur de vous déplaire, Laissez-moi dõc Seigneur, notre n'ai qu'un pas à faire.",
+          "moin Parce qu'à l'adorer Seigneur mets toute ma gloire. \n"
+        ]
+      },
+      "top_5_persons": [
+        "Seigneur",
+        "Cloris",
+        "MELISE",
+        "Oran",
+        "M"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Angleterre",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Calirie dés le berceau, également aimé elle, rant la force de leur affection Alidor son nepueu reuient Angleterre, il auoit esté long temps, et abord il voit Calirie en dévient amouteux, sans se souuenir, ni de amitié que son oncle lui portoit, ni des obligations il lui auoit, sa passion vint tel poinct, que ne osant descouurir, de peur offenser son oncle, son mal caché se rendant plus violent, il tombe malade, Ô ronte qui aimoit ce nepueu, comme si eût esté son fils, employe toute la médecine pour sa guarison, et voyant que estoit inutilement, il en parle Medecin de ses amis, auec de si grandes marques de son déplaisir, que autre oblige descouurir le sujet du mal Alidor cét effet, il se tient deux ou trois iours auprés du malade, et faisant des aimait particulières dès lextraordinaire berce au, et des changemens t aimé d'Elle, lors du Calirie entroit la sa for, il ce de leur de Calirie on rendoit malade, cette son noblige de vie ntIon, à l' Anglet err son nepueu, il où il a Vay, ce discours été Longtemps, et toutesfois d'abord qu'il voit pour son en de vi passer pardessus toutes les ors de quamour de Calirie, et se ans se lui sauuer la nir, ni de l' ami ce quil son de plus était, et pour ny des point de temps' il lui Avait, sa prie de visiter on vin nepueu, à te le caresser, que ne l' va chezOuvrir, et de les ur d' mariage deson nepueu et on sa fille, eton ma iusqu’ la conclusion, il hé se ren à Alidor, us vi souuent de Calirie, il e se remettre, vis qui ce ne m a la sur de, durant que cela se passe, Cintille qui aimait Alidor, et qui en avait été aimée en Angleterre, pressée de sa passion, et aidée de la ressemblance qu'elle avait à son frère Alcandre, avait pris des habits d'homme, et était venue en France, où ne pouvant voir Alidor, à cause de son mal, elle fit cognoissance auec vn Ameune Gentilhomme François nommé Florintor, amoureux de Melisse, et qui pour divertir, le feint Alcandre l'avait souuent conduit chez sa Maîtresse Melisse, qui n'a peu y la force des yeux de cette fille desguisee en dévient amoureuse, la et Alcandre, et pour obliger, parce quelle en y priee, fait bonne mine Florintor, non pas sans donner des témoignages ' Elle de sa passion, mais cette fille qui auoit que amour Alidor dans esprit se feint, attendant occasion de voir son Amant, elle le voit en fin, mais en est receuë, comme si table elle eût esté son frère a, sans que parmi leurs discours Alidor nommât iamais Cintille, ce qui la picqua si fort, elle le quitte tout en re, et prend résolution de retourner dans sollitude elle auoit esté quelque temps:"
+        ]
+      },
+      "top_5_places": [
+        "Angleterre",
+        "France",
+        "Lorraine"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

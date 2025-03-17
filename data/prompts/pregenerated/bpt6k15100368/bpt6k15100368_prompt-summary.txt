@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Hardy, Alexandre",
+    "title": "Le théâtre d'Alexandre Hardy,.... Volume 2",
+    "publication_date": "1626",
+    "document_id": "bpt6k15100368"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Achille",
+          "frequency": 37
+        },
+        "related_sentences": [
+          "Achille\n Mieux appris aux effets, Déesse, ne présume D'entendre un long discours, ce n'est pas ma coutume, Outre mon naturel, ma forte passion, La langue béguayante ôte à la fonction, Les foudres dêcochez des yeux d'une Méduse, Me serviront encor de trop valable excuse, D'homme Seigneur ne me sens qu'un stupide rocher, Et mon étonnement redouble à l'approcher: Puissance de l'amour, merveilleuse, incroyable, Que celui qui la mort épouvante effroyable, Que Belone redoute, et qui sur les hasards Triomphe sans pareil ès orages de Mars, Cede à l'aimable aspect d'une céleste face, Tremble perclus de voix, tu voulant rendre grâce, Accident qui te peut à la pitié plier, Et plus la qualité de qui prie oublier, Jadis âpre ennemi du Monarque d'Asie.",
+          "cõtenãt Achille, Coriolan, Cornelie, Arsacome, Mariãne, Alcée, le Ravissement de Proserpine, la Force du sang la Gigantomachie, Félismène, Simère, et le Jugement d'Amour, avec défenses à tous Libraires, Imprimeurs, et autres, de quelque qualité et conditiõ qu'ils soient, d'imprimer ou faire imprimer, vendre ni débiter ledit livre de Théâtre d'Alexandre Hardi, Tome second, ni aucunes des susdites pièces, separément, ou en aucune forme que ce soit, pendant le temps et espace de six ans, peine de confiscation des exemplaires, et de cinqcens liures amende, comme il est plus au long contenu en original.",
+          "Nestor\n Vous y pouvez beaucoup, mais tout passe la borne, Fait à des Rois égaux un remarquable écorne : Se connaître soi-même est un don souver ain, n oonnettuxoeneye qun surpusse enumain. \nAchille\n tui porte ta piuspurt au faix de tête guerre, \nNestor\n La plupart de l'honneur au ciel et en la terre Éternise le nom d'Achille notre appui. \nAchille\n Mes travaux n'ont reçu que moleste, qu'ennui, Qu'affront dessur affront, ingrate récompense. \nNeltor\n De mon consentement cela n'est que venir pense. \nAchille\n Aussi votre respect a retenu des coups. \n",
+          "Nirée\n Grand Prince on a reçu tes offres proposeZ, Priam de t'obéir et les siens disposés, Heureux de s'allier au foudre des alarmes, Qui peut tarir d'un coup la discorde et les larmes, Tels ou semblables mots les derniers m'a tenu Dans son trône le Roi vénérable et chenu, Assisté de deux fils, qui montraient au visage Consentir à cela par un muet suffrage, Adiousant qu'il te pleut lui renvoyer soudain En termes plus exprès, un abrégé certain Es articles requis à faire quelque mariage, Çest ma charge, mon charge, et mon voyage. \nAchille\n Ô réponse agréable!",
+          "Rien que de juste droit, encontre int adversaire, Qui prothe devaleur t'adstraignait au pis faire, Repose ce Héros, qui mort au lit d'honneur, Au lit de piété eut un double bonheur, D'expirer, sujugué du plus vaillant des hommes, Tôt ou tard nous suiurons ces pas tant que nous sommes, Il n'en faut plus parler, il ne faut plus songer Qu'en la commune paix du destin se ranger, Qu'eût nos pleurs, nos pleurs, nos funérailles, Puis qu'il te plaît ainsi, dedans ces épousailles. \nAchille\n Ô charmeuse réplique!"
+        ]
+      },
+      "top_5_persons": [
+        "Achille",
+        "Anthoine",
+        "Alcée",
+        "Mariamne",
+        "Coriolan"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 37
+        },
+        "related_sentences": [
+          "Donnons, leur avant-garde à le carmouche vient, Et de grande roideur au Temple nous pré vient. \nParis\n Courage mes amis, sus, que l'honneur de Troie Vous incite vainqueurs a remporter ta proie. \nAjàx\n Preux Salaminiens suivez, ils sont à nous, À la fuite déjà apprenant voy qu'ils branlent tous, Ne faites que frayer la sente que je trace, Tournam fouuain te dos tôts quitteront la place. \nParis\n Ô furie incroyable!",
+          "Hymen, qui nos aiscoras aura tous composé: C'est pourquoi mes enfants, ores un vous assemble, Tour à tour dites moi libres qu'il vous en semble \nParis\n SIRE, l'expérience acquise vous conduit Comme fanal toujours allumé dans la nuit, Consulter que vous seul premier offense l'âge, En second lieu le rang, et après le lignage.",
+          "Paris\n L'Océan tarirait auparavant son onde, Phœbus se lasserait au milieu de sa ronde, Premier que deux Amants, à leurs privez discours, Imposent quelque borne, et ne les trouvent cours, D'épreuvesois le tiens, ô indomté Pelide, Protecteur désormais de la Gent Priamide Résous du principal, tu auras le loisir De satisfaire mieux à ce boullant désir.",
+          "SCÈNE I. Paris, Polixène, Diphobe, Paris Ujourd’hui, chère sœur, les désolés PérIY gâmes N'espèrent se sauver des Argoliques flammes, Troie n'a de refuge, et ses Pénates saints, Qu'au tutélaire effet, elle ne dis de tes mains, Hector, le vôtre Hector éveillé de la tombe, Ne pourrait soutenir cest Empire qui tombe.",
+          "Paris, et autres enfants de Priam, l'induisent d'accepter telle alliance, afin que ce leur fût une occasion de venger la mort de leur frère Hector, et en Achille mort contraindre l'ennemi de lèver le siège, comme destitué de son premier et plus redoutable Capitaine;"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Rome",
+        "Bosphore",
+        "PARIS",
+        "Grèce"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

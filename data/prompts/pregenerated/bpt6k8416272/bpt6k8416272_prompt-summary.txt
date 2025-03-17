@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Pradon, Nicolas",
+    "title": "Statira, tragédie par Mr Pradon",
+    "publication_date": "1680",
+    "document_id": "bpt6k8416272"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Roxane",
+          "frequency": 8
+        },
+        "related_sentences": [
+          "Madame, Ce Prince doit la vie à l'ardeur de sa flamme, Sans l'amour de Roxane il allait succomber, Et sous ce bras peut-être on l'aurait vu tomber, Mais il faut qu'il réponde à notre juste envie, Qu'il avait donne son cœur pour le prix de sa vie, Ah Dieux!",
+          "J'ai vu de loin voler Roxane à son secours, Son cœur (n'en doutez point) dans ce péril extrême, L'entraîne et la comduit pour sauver ce qu'elle aime, Elle içaurà casier la jureur des Soidats, Et dérober sa vie au fer de Perdiccas Oui, Madame, espérez.",
+          "JE vois qu'on nous brave tous deux, Roxane nous insulte et méprise mes feux, Perdiccas m'abandonne et s'unit avec elle, Je les quite, Seigneur, et prends votre querelle, Dans une heure je puis délivrer Statira, Ou dans ce grand dessein Cassander périra. \n",
+          "Songez à votre vie, Roxane vous rendra le maître de l'Asie, Oubliez-moi, Seigneur, laissez-moi dans les fers, ni Plelos terque vous le dolt a Tonvero, Et si vous périssiez par une mort si prompte, L'Univers, de vos jours me demanderait conte.",
+          "Madame, en vous voyant, faites qu'il y renonce, Roxane méprisée en cet instant fatal Est plus à craindre encor que le bras d'un Rival, arraut Jalis balancer les unirl un et l'autre, Ou que je perce un cœur qui m'arrache le vôtre."
+        ]
+      },
+      "top_5_persons": [
+        "Roxane",
+        "LEonatus",
+        "Perdiccas",
+        "Roxane",
+        "Perdiccas"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Babylone",
+          "frequency": 8
+        },
+        "related_sentences": [
+          "Elle prétend, Seigneur, régner dans Babylone, Elle est contre mou Fils, ma Rivale à ce Trône, Nos dessrins sont pareils, nos intérêts égaux, Mais le Trône, Seigneur, ne veut point de Rivaux, qène la puis lourtil, je la nais, et je tremole. \n",
+          "Elle ne vit qu'autant que Perdiccas l'adore, Il prend mes intérêts, je dois prendre les siens, Et sans-doute ils me sont aussi chers que les miell \nLEONATUS\n Madame, j'avais crû que cédant Babylone, Vous borniez vos désirs à l'espoir de ce Trône;",
+          "Il faut que notre adresse à nos forces réponde, Maîtres de Babylone, il faut l'être du Monde;",
+          "Vous en avez un Fils, vous lui devez un Trône, Madame, choisissez la Perse et Babylone Ar 11j3",
+          "Avec Léonatus qu'allez -vous entreprendre, Seigneur? \nCASSAND'ER\n Dans Babylone il doit bientôt se rendre."
+        ]
+      },
+      "top_5_places": [
+        "Babylone",
+        "Macédoine",
+        "Perse",
+        "Perse",
+        "Amaut"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

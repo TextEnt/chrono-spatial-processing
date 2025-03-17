@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Boyer, Claude",
+    "title": "La Feste de Venus, comédie",
+    "publication_date": "1670",
+    "document_id": "bpt6k1090256q"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Galatée",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Je l'ignore, Alcidon \nÀLCIDON\n N'importe c'est assez que femme sache son nomIl n'est point de retraite en cette solitude, Il n'est rien qui la cache à mon inquiétude: Ces beaux yeux peuvent-ils nous cacher leur séjour, S'ils sèment en tous lieux tant d'éclat et d'amour? \nGALATÉE\n Pour vous en oélanen fairons ren neamdre. \n",
+          "Qu'à la belle Philis j'avais sauvé le jour, À la même Philis pour qui j'eus tant d'amour. \nGALATÉE\n Seigneur, je vous entends, vous voulez me le rẽdres Pour Philis à vos yeux ie fis passer Léandre, Et par une autre feinte afin de vous venger, Vous voulez que Philis passe pour ce Berger.",
+          "Enfin ici trouve en tout vos Bergers si charmants Que j'en aime l'habit comme les sentiments. \nGALATÉE\n Cet habit tant vanté cache quelque mystère: Mais avec cet habit -il faut être sincère, Parlez, vous vous troublez: cette prompte rougeur Me fait voir. \nÀLCIDON\n Je veux bien vous découvrir mon cœur.",
+          "Et puis qu'il faut enfin nommer votre vainqueur, J'ai bien dit qu'il aurait et la pomme et le cœur. \nÀLCIDON\n Quoi me soupçonnez-vous d'aimer uneBergère \nGALATÉE\n Vous pouvez l'avouer, Seigneur, sans me déplaire. \nÀLCIDON\n Quoi j'avouerais, Madame. \nGALATÉE\n Alcidon",
+          "Vous serez donc Venus si j'imite Pâris à llalx lene, Ue autre fait Nus c'est Philis qu'on la nomme. \nÀLCTDON\n Philis sera Venus, et vous aurez la pomme. \nGALATÉE\n rous la traitere mieux. \nÀLCIDON\n Avec un autre nom j'aurai les mêmes yeux. \n"
+        ]
+      },
+      "top_5_persons": [
+        "Galatée",
+        "Venus",
+        "Léandre",
+        "DAMIS",
+        "Venus"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Vous savez la coutume, et demain est le jour Qu'on destine aux honneurs de la mère d'amour, Oui Berger c'est demain, qu'ici l'on renouvelle Le combat où Paris couronna la plus belle.",
+          "Il est permis à GABRIEL QUINET, Marchand Libraire à Paris, d'imprimer, ou faire imprimer une Comédie intitulée La Fêted e Venus, pendant le temps et espace de sept a nées:",
+          "Alcidonquilera le luge entre nous trois Pour imiter Paris vous donnera sa voix.",
+          "ÀLCIDON habillé en Paris GALATÉE habillée en Junon AMAZIE",
+          "Paris"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Bergère",
+        "Paphos",
+        "Paphos",
+        "France"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

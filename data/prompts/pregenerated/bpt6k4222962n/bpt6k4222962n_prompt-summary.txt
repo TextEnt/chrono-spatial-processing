@@ -1,0 +1,78 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Regnard, Jean-François",
+    "title": "La Sérénade , comédie",
+    "publication_date": "1695",
+    "document_id": "bpt6k4222962n"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "CHAMPAGNE",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "CHAMPAGNE\n Maraut, voilà quelqu'un qui me connaît, je suis plus pesant que de coutume, et je ne sais si mes jambes pourront porter au logis tout le vin que j'ai bu. \nMrGRIFON\n Ne serait-ce point quelque émissaire de mon coquin de fils qui viendrait ici pour troubler la fête, je veux m'en éclaircir. \nCHAMPAGNE\n Holà l'ami, qui parlez tout seul, suis-je loin de chez moi, par paranthese. \n",
+          ", rien ne la domine, ell e a du goût pour toutes les belles manières elle vend pour jouer tout ce qu'elle a, elle met ses nières en gages pour aller à l'Opera et à la Comédie, elle court le Bal sept fois la semaine seulement, elle fesse son vin de Champagne à mervénie;",
+          "CHAMPAGNE\n Je me suis associé d'un fort honnête homme, qui est, je pense, Seigneur, associé d'un autre fort nomeite nomie enez qui il m'envoie prendre deux mille huit cens livres \nCAPIN\n \nDeux mille huit cens livres\n Serions- nous assez heureux.",
+          "La retraite est méritoire. \nCHAMPAGNE\n Ma foi il n'y a plus que ce métier là pour faire quelque chose, il n'y a rien de tel, quand on a de l'argent d'en aider des partieuners danis leurs llecessitez prêtantes.",
+          "CHAMPAGNE\n Par une espèce de scrupule, une lettre de cachet du Châtelet m'avait défendu de paraître à la Ville, elle me prescrivait un temps pour voyager, mes voyagés sont finis, je reparais sur nouveaux frais. \n"
+        ]
+      },
+      "top_5_persons": [
+        "CHAMPAGNE",
+        "LEONORE",
+        "SCAPIN",
+        "Valère",
+        "Marine"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Champagne",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "CHAMPAGNE\n Maraut, voilà quelqu'un qui me connaît, je suis plus pesant que de coutume, et je ne sais si mes jambes pourront porter au logis tout le vin que j'ai bu. \nMrGRIFON\n Ne serait-ce point quelque émissaire de mon coquin de fils qui viendrait ici pour troubler la fête, je veux m'en éclaircir. \nCHAMPAGNE\n Holà l'ami, qui parlez tout seul, suis-je loin de chez moi, par paranthese. \n",
+          ", rien ne la domine, ell e a du goût pour toutes les belles manières elle vend pour jouer tout ce qu'elle a, elle met ses nières en gages pour aller à l'Opera et à la Comédie, elle court le Bal sept fois la semaine seulement, elle fesse son vin de Champagne à mervénie;",
+          "CHAMPAGNE\n Je me suis associé d'un fort honnête homme, qui est, je pense, Seigneur, associé d'un autre fort nomeite nomie enez qui il m'envoie prendre deux mille huit cens livres \nCAPIN\n \nDeux mille huit cens livres\n Serions- nous assez heureux.",
+          "La retraite est méritoire. \nCHAMPAGNE\n Ma foi il n'y a plus que ce métier là pour faire quelque chose, il n'y a rien de tel, quand on a de l'argent d'en aider des partieuners danis leurs llecessitez prêtantes.",
+          "CHAMPAGNE\n Par une espèce de scrupule, une lettre de cachet du Châtelet m'avait défendu de paraître à la Ville, elle me prescrivait un temps pour voyager, mes voyagés sont finis, je reparais sur nouveaux frais. \n"
+        ]
+      },
+      "top_5_places": [
+        "Champagne",
+        "France"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

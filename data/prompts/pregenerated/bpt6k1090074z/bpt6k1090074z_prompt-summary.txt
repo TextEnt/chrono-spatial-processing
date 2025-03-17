@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Le Clerc, Michel",
+    "title": "Iphigénie, tragédie",
+    "publication_date": "1676",
+    "document_id": "bpt6k1090074z"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "AGAMEMNON",
+          "frequency": 12
+        },
+        "related_sentences": [
+          "Cher Ulysse, les Dieux apaisant leur courroux Vont finir tous nos maux par un destin plus doux, Lassé du calme affreux qui regne en ce rivage, Et des champs Phrygiens nous ferme le passage, J'ai voulu voir Calcas pour apprendre de rendre De grands devons longtemps languir dans cet ennui, Achille m'a-t-il dit, ne soyez plus en peine, Je vois déjà les Vents prêts à briser leur chaine, Voici le jour fatal, où régnant sur les eaux Ils sçauront seconder nos vœux et nos vaisseaux, Æole seulement pour leur lâcher la bride Attend Iphigenie arrive dans Aulide S'il est vrai que sa voix soit l'organe des Dieux, J'apprends qu'Iphigénie arrive dans ces lieux, Ulysse, Agamemnon m'en a fait un Mystère, C'est un mépris pour moi dont je ne puis me taire, \nULISSE\n ",
+          "Qui vous dit que sa voix soit la voix de Diane Il en faut mieux juger, Calcas n'est qu'un profane Qui par quelque grand coup cherche à s'autoriser, Et qui par cette mort veut s'immortaliser. \nAGAMEMNON\n Vous faites à Calcas une injure cruelle, De la Déesse il est l'interprète fidèle, Et je ne sais que trop que rien ne peut changer Le rigoureux dessein qu'elle a de se venger, Qu'on a pu l'offenser, qu'on a pu toujours déplaire, Et que rien que mon sang n'éteindra sa colère. \nACHILLE\n Si Diane en courroux nous arrête en ces lieux, Il faut pour en sortir implorer d'autres Dieux: Des Dieux comme des Rois les liens se détruisent, Et divers intérêts bien souvent les divisent.",
+          "J'ai redoublé mes soins, et j'ai fait mille efforts Pour donner un cours libre à leurs nobles transports, J'avais crû que mes vœux forçant cette barrière Pourraient aux grands exploits nous ouvrir la carrière, Mais j'ai perdu mes vœux, mes soins et mes travaun, Et ce n'est pas encor le plus grand de mes maux. \nORONTE\n Quelle infortune est jointe à ce calme funeste, Où j'avais crû, Seigneur, que le courroux celeste Vait jusqu'à ce jour borné tous vos ennuis? \nAGAMEMNON\n Ah!",
+          "Ma Fille par tes soins, par ton obéissance De mon vœu violé va réparer l'offense, Et toi juste Déesse excuse mes douleurs, Et si sa perte encor m'arrache quelques pleurs. \nAGAMEMNON\n N'allez point par vos pleurs faire un nouvel obstacle, Ma Fille vit heureuse et j'ai rempli l'Oracle, J'entends, j'ents déjà le murmure des sots, Allons à Troie et vous retournez en Argos, Madame, et secosier nos élorts légitimes Par des vœux plus constans et par d'autres Victimes.",
+          "Mais je ne vois que trop, que l'ordre qu'on m'impose Part d'un prétexte adroit dont on cache la cause, Qui lors que cet Hymen se célèbre en ces lieux Ne saurait m'en bannir sans être injurieux, Car doit-on dans le calme où repose l'Empire, Craindre que contre vous votre peuple conspire, Cette Mer si tranquille est bien moments en repos que n'éit l'éitat présent de Mycène et d'Argos \nAGAMEMNON\n Maume, suivez mieux les avis qu'on vous donne."
+        ]
+      },
+      "top_5_persons": [
+        "AGAMEMNON",
+        "ACHILLE",
+        "ACHILLE",
+        "Diane",
+        "Iphigénie"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Grèce",
+          "frequency": 12
+        },
+        "related_sentences": [
+          "Il a trouvé que le sujet était trop nu s'il ne donnait une rivale à Iphigénie, et il m'a paru que les irrésolutions d'un Père combattu par les sentiments de la Nature et par le devoir d'un Chef d'Armée qui exigeait le sang d'une Fille qui lui avait si chère: Que le désespoir d'une Mère qui apprend qu'elle l'a conduite au sacrifice, lors qu'elle s'attendait à la voir l'Épouse du plus fameux Héros de la Grèce Que la constance de cette Fille qui s'offre si généreusement à être la Victime des Grecs quelque secrète joie qu'elle ressentit à se voir aimée d'Achille: Enfin que la juste colère de cet Amant de qui le nom avait servi pour la conduire à la mort.",
+          "que je suis à plaindre en l'état où je suis, Oronte, tu me vois le Chef de tant de Princes Que la Grèce a choisis de toutes ses Provinces, Un Camp presque innombrable obeït à mes lois, Lt jar eniant jur mes pas se règle par ma voix, Mais de tant de maineur certe gloire est luivic, Qu'elle devient fatale au repos de ma vie, Et j'achete bien cher l'éclat le ce haut rang, Puisqu'il faut malgré moi le payer de mon sang. \nORONTE\n ",
+          "Par un juste rapport l'une et l'autre abusée Prit pour un ordre exprès la lettre supposée, De l'Hymen proposé le prétexte trompeur Acheva de gagner leur esprit et leur cœur, Si bien que de mes soins le bonheur où l'adresse Assure une Victime au salut de la Grèce \nMENELAS\n Ô surprise agréable enfin qu'avez-vous fait? \nULISSE\n Un coup, dont Ménélas doit être satisfait, J'ai conduit dans Aulide et la Fille et la Mères \nMENELAS\n Elles sont dans Aulide ULIDSE.",
+          "Je l'ai toujours prévu, que sa lâche tendresse N'accorderait jamais ce secours à la Grèce, Aussi dès que je veis son esprit incertain Me refuser son ordre, et changer de dessein, Je peignis sur mon front une feinte colère, J'abandonnai le camp touché de sa misère, Et pour exécuter tout l'ordre concerté, Je courus vers Argos d'un pas précipité;",
+          "La Grèce des Troyens veut punir l'arrogance, Mais de cet appareil dressé pour sa vengeance Monarque infortuné, quel fruit espères -tu, S'ils triomphent déjà sans avoir combattu, Si tu verses ton sang pour expier leur crime, Si ta Fille devient leur première Victime, Si pour premier exploit ton courage inhumain, Ne peut les approcher qu'en était perçaut le sein?"
+        ]
+      },
+      "top_5_places": [
+        "Grèce",
+        "Argos",
+        "Troie",
+        "Clytie",
+        "Troie"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

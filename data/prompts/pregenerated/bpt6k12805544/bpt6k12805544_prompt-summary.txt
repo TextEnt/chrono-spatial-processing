@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Monsieur de Pourceaugnac, comédie faite à Chambord pour le divertissement du Roy, par J. B. P. Molière",
+    "publication_date": "1670",
+    "document_id": "bpt6k12805544"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "M",
+          "frequency": 15
+        },
+        "related_sentences": [
+          "on n'a pas envie de vous enlever votre Fille, et vos grimaces n'atraperont rien. \nORONTE\n Toutes les vôtres n'auront pas grand effet. \nM\n \nPOURCEAUGNAC\n Vous êtes-vous mis dans la tête que Léonard de Pourceaugnac soit un Homme à acheter Chat en poche? et qu'il n'ait pas là-dedans quelque morceau de judiciaire pour se conduire, pour se faire informer de l'histoire du monde, et voir en se mariant si son honnut a bien toutes ses sûretés? \nORONTE\n Je ne sais pas ce que cela veut dire: mais vous êtes-vous mis dans la tête, qu'un Homme de soixante et trois ans ait si peu de cervelle, et considère si peu sa Fille, que de la marier avec un Homme qui a ce que vous savez, et qui a este mis chen dil Meucem pour être pensé. \nM\n \nPOURCEAUGNAC\n C'est une pièce que l'on mn a faîte, et je n'ai aucun mal. \nORONTE\n ",
+          "et la grâce avec laquelle vous mangiez votre pain, m'a fait naître d'abord de l'amitié pour vous: Et comme ie sais que vous n'êtes jamais venu en ce Pays, et que vous y êtes tout neuf, je suis bien aise de vous avoir trouvé pour vous offrir mon service à cette arrivée, et vous aider à vous conduire parmi ce Peuple, qui n'a pas par fois pour les honnêtes Gens toute la considération qu'il faudrait. \nM\n \nPOURCEAUGNAC\n C'est trop de grâce que vous me faites.",
+          ", tu ne te souviens mie de chette pauvre ainfainr, nô petite Madelaine, que tu m'as laichée pour gag de na foi? \nM\n \nPOURCEAUGNAC\n Voilà deux impudentes carognes! \nLUCETTE\n Béni Françon, béni Jeanet, béni toustou, béni toustoune, beny fais beire à un Payre, dénaturat, la duretat quel a per nautres. \nNERINE\n venez Maulaine, mon n'ainfrain, venezvesen ichy faire honte à vo Père de l'inpudainche qu'il a. LES ENFANS.",
+          "Il n'y a pas un Pourceaugnac à Limoges que je ne connaisse, depuis le plus grand jusques au plus petit, je ne fréquentais qu'eux dans le temps que j'y étais, et j'avais l'honneur de vous voir presque tous les jours. \nM\n \nPOURCEAUGNAC\n C'est moi qui l'ai reçu, Monsieur. \nERASTE\n Vous ne vous remettez point mon visage; \nORCEAUGNAC\n ",
+          "et puis il y a des Gens, après tout, qui se mettent au dessus de ces sortes de choses, et qui ne croient pas que leur honneur dépende. \nM\n \nPOURCEAUGNAC\n Je suis votre serviteur, je ne me veux point mettre sur la tête un chapeau comme celui-là, et l'on aime à aller le front levé dans la Famille des Pourceaugnacs SERIGANI."
+        ]
+      },
+      "top_5_persons": [
+        "M",
+        "NERINE",
+        "LUCETTE",
+        "Monsieur de Pourceaugnac",
+        "Julie"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "SUISSE",
+          "frequency": 15
+        },
+        "related_sentences": [
+          "1. \nSUISSE\n Llons ,dépéschons, Camerade, li faut A Y allair tous deux nous à la Crève pour regarter chouticier sti Monsieur de Pourcegnac qui muasté contanné par Or tonnance à l'être pendu par son cou.",
+          "2. \nSUISSE\n Ah pon chour, Mamèlelle I. \nSUISSE\n Que faire fous la tout seul? \nM MOURCEAUGNAC\n J'attends mes Gens, Messieurs.",
+          "I. \nSUISSE\n Ly disent que l'on fait rejà planter un grand potence tout neuve pour l'y accrocher sti Porcegnac G jijà 2.",
+          "2. \nSUISSE\n L'est un Gentilhomme Limossin qui sera pendu chantiment à un grand potence. \n",
+          "I. \nSUISSE\n Sti diafle li vouloir trois Femmes à li tout lun ij eit blenamhedne."
+        ]
+      },
+      "top_5_places": [
+        "SUISSE",
+        "Limoges",
+        "Paris",
+        "Cuisine",
+        "Naples"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

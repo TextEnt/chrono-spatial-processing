@@ -1,0 +1,77 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Bordelon, Laurent",
+    "title": "La baguette de Vulcain Comedie",
+    "publication_date": "1693",
+    "document_id": "bpt6k859543c"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ROGER",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "je vous aime d'aimer la réforme à votre âge. \nIZABELLE\n Croiriez-vous bien qu'elle ne veut pas que je mange toute sorte de ragoûts, elle dit que de son temps les femmes ne vivaient que de fruit et de laitage. \nROGER\n Eh mais c'est bien la même chose à présent, il est vrai que les femmes ont trouvé le moyen de se rafraîchir avec des Jambons de Mayence, des Artichaux, des Truffes, des Mortadelles, et des Saucissons de Boulogne, et pour leur laitage elles boivent du vin de Bourgogne, et du vin de Champagné \nIZABELLE\n Fi donc, Monsieur, du vin, on dit que cela gâte le teint, et je n'en bois plus depuis que ma coussne m'à applis à boire du Ratafia \nROGER\n Comment donc vous buvez du Ratafia, en vérité vous avez une aimable cousine, et vous êtes fort bien moriginée. \nIZABELLE\n Mais, Monsieur, si votre baguette ne peut pas endormir ma mère, dites-moi donc ce qu'y faut que je fasse pour l'emperner de gronder. \nROGER\n LE DRUIDE va vous donner un conseil là-dessus.",
+          "Eh dites-moi un peu comment vivait le mari avec sa femme, de votre temps? \nBRADAMANTE\n Dans une union parfaite, la joie, la tristesse, les biens, les honneurs, tout devenait commun sitôt qu'on s'était donné la foi. \nROGER\n Ho que ce n'est plus le temps, lorsqu'on se marie, la communauté ne sujet que dans les Articles du Contrat, et le mari n'a rien de commun avec sa femme que le nom et la qualité, il a sa chambre seule, son carrosse seul, il n'y a que son lit qu'il n'a pas toujours tout seul;",
+          "vraiment ils font bien pis à présent, ils n'épargnent pas dans leurs Comédies les Princes, les Rois, les Empereurs, ni les maîtres à danser. \nBRADAMANTE\n Mais après avoir répondu a toujours nos questions, ne saurai-je point à qui je dois le bonheur de revoir la lumière. \nROGER\n C'est à moi qui suis ROGER, l'élite des Chevaliers, c'est à moi qui suis ce fameux Magicien, qui avec cette Baguette enchantée découvre les trésors les plus cachés.",
+          "mais pardonnez belle Bradamante, si je vous interromps dans queique reres donc tous auriez peut-être été bien aise de voir la fin. \nBRADAMANTE\n 1 ois, il y a deux cents ans que je n'y vu le jour. \nROGER\n Assurément. \nBRADAMANTE\n l' on revje ne retrourerarconc plus l'amant qu'on m'avait destiné pour époux. \nOGER\n Ho! pour des Amants vous n'en manquerez pas, la plus laide en a dans ce pays-cy;",
+          "SCÈNE X. ROCANTIN, ROGER, COLOMBINE, PIEAROT \" \nROCANTIN\n ONSIEUR, Je vais vous expliquer mon affaire en deux mots, voici le fait, quoi que j'aie été fort méconterrt de mes deux preieres lemines, je suis dans le dessein d'en prendre une ttoisiéme. \nROGER\n Que peut ma Baguette pour vous dans cette occasion? \n"
+        ]
+      },
+      "top_5_persons": [
+        "ROGER",
+        "OGER",
+        "Bradamante",
+        "Colombine",
+        "GER"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Lyon",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Si cette Baguette À tant de renom La raison est nétie st que dans Lyon, Et par toûte terre Il n'est point d'humain, Qui ne cherche à faire Son voisin Vulcain.",
+          "IN, La raison est nettie st que dans Lyon, Et par toujours terre"
+        ]
+      },
+      "top_5_places": [
+        "Lyon",
+        "Boulogne",
+        "Bourgogne",
+        "Rabat"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

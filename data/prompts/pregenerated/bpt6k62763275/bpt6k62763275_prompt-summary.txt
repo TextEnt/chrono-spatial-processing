@@ -1,0 +1,75 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Brécourt",
+    "title": "La nopce de village . Comédie",
+    "publication_date": "1681",
+    "document_id": "bpt6k62763275"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "NICOLAS",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Hayer, com pge veni d'au te prairie, entris cheul grand Français pour viriter not mie, Margué j'apercevi par le trou du grand huis, Que tu batifolais tout l'en viron du puis A veuc elle. \nNICOLAS\n Aveuc qui?",
+          "Margué -t-as bien du plaid, Mais vois-tu, Nicolas je suis, pargué, bon Léli Veux-tu sçavoir pourquoi que je suis en colère? \nNICOLAS\n Et bien, pourquoi? dis donc.",
+          "Nicolas, tu sais bien que je son bon amis, Et tu sais bien encore que je somme pormis La fille au grand Français aveuc moi par enensemble.",
+          "Déchausson le rabat, margué, bon pied, bon ceil, tam ia fait tout. \nNICOLAS\n Fi donc, Colin, n'en te regarde.",
+          "Mais bref, tanquia, n'importe, Or donc, car ventrigué, vois-tu bien, Nicolas Je ne suis point un gînais."
+        ]
+      },
+      "top_5_persons": [
+        "NICOLAS",
+        "NICOLAS",
+        "CLAUDINE",
+        "Colin",
+        "JEAN"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Aubervilliers",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Lequel Guillaume Battan non ici présent pour être détenu au lit d'un coup de pierre au beau milieu du dos, a donné et donne à Colin Battan son fils et futur époux, par ces présentes, en faveur de mariage un arpent d'héritage assis audit Aubervilliers Plus une charrue attelée d'un Bœuf et d'un Asne gez de quarante cinq ans ou environ;",
+          "Aubervilliers et Perrète"
+        ]
+      },
+      "top_5_places": [
+        "Aubervilliers",
+        "PARIS"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

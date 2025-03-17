@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Prévost, Jean",
+    "title": "Les Tragedies et Autres Œuvres poëtiques de Jean Prevost [...]",
+    "publication_date": "1618",
+    "document_id": "bpt6k10902700"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Turne",
+          "frequency": 12
+        },
+        "related_sentences": [
+          "fils de Faune, et Roi des Latins, adLmonesté par l'oracle de son père, de ne marier Lavinie sa fille unique, et héritiers de ses états anec aucun Prince du pays, et d'attendre un gendre étranger, bien qu'elle fût fiancée a Turne fils de Daune, Roi des Rutuliens, la promet a Enée chef des Troyens abordez en Italie après le sac de leur ville, Ce mécontentement avait un guerre sanglante entre ces deux Princes, qui après divers échets de Mars commun, s'accordent de terminer leur different par vn combat singulier, ils se préparent.",
+          "Tournant par tout les yeux il retenait sa main Flechy de la prière, alors qu'il voit parroître Le baudrier qui l'a fait souvenir de son maître, Du Prince Éuandrien, que Turne avait dompté, Et des ce jour avait sa dépouille porté, Mais si tôt qu'il a vu cette armeure cherie, Terrible il s'est épris de rage et de furie, Et tant de forcené, quoi m'échapperais tu Meurtrier de mes amis, de leurs armes vêtu?",
+          "Là Turne ecervelé d'une audace mutine Rédoublait le courage à la gent Laurentine, Animant au combat tout ce peuple offensé De la plaie d' cerf par mégarde blécé, Lors (s'il vous en souvient) ie dis au fort du trouble Que Turne payerait en fin sa peine au doub le De son sang sacrilège, et que son oraison Recognoistroit les Dieux, mais hors de sa saison.",
+          "Ainsi Turne se rue, et s'en court aux remparts, Où la plaine rougit de plus de sang épars, Où de traits élancés on entend plus l'air bruire, Où l'assaut est plus chaut, c'est l'endroit où il tire, Puis au lieu le plus haut porté d'un pied dispos, Il fait signe à ses gens, et leur tient ce propos.",
+          "mais pourtant leur Justice Presse combien que tard la vengence du vice: Turne viila la fin de ton forcènement, Voilà Turne le fruit d'un parjure serment, Voilà l’ vtilité que vous avez tirée De rompre contre dronct la promesse jurée, Voici ton dernier jour, de qui le souvenir Doit servir d' un exemple aux peuples avenir."
+        ]
+      },
+      "top_5_persons": [
+        "Turne",
+        "Ed",
+        "Am",
+        "Seigneur",
+        "Phœbus"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Troie",
+          "frequency": 12
+        },
+        "related_sentences": [
+          "n'avaient-ils point assez Échappé de dangers, sous les murs renversez Du superbe Ilion est-ce ainsi qu'on octroie Le repos tant promis à la cendre de Troie Ô trois et quatre fois bien heureux celui-là Que la Grégeoise espee en l'Orque dévala Aux yeux de ses parents, tirant la destinée Qui nous devait détruire en la dixième année?",
+          "Polydore restait seul de tous, que son père Loin de Troie assiegée, alors qu'il désespère De la force Troyenne, et que de tous côtés Il voit Ilion ceint de Grègeais indompté, En la Thrace eacha, mendant au Roi de Thrace Ses trésors, et son fils demeurant de sa race.",
+          "ce faux Polymnestor Quand il vit quelque perte, et que Troie assiegée Eut encore par les Grocs encore niuict saccagée, Qu'il fut de ce mèches quelque fois averti, Te traître incontivent en changeant de parti Aux vainqueurs se donna, sa sain non assouuie",
+          "J'avez celui l'avais vu, ô malheur, nos Pergames Ardre sous la fureur des Argoliques flammes, Flamber nos grands palais qui s'élevaient aux Cieux, Cendroyer Ilion la demeure des Dieux, Forcener le vainqueur, et à sa fantaisie",
+          "Enée il faut chasser cet inutil souci, Et penser à bâtir une autre Troie ici, D'un autre Simoïs, autre Xante arrouse, À la merci des Grecs moins que l'autre expose."
+        ]
+      },
+      "top_5_places": [
+        "Troie",
+        "Paris",
+        "Thebes",
+        "France",
+        "Thèbes"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

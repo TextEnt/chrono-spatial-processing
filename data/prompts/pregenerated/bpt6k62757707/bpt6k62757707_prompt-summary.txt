@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Corneille, Thomas",
+    "title": "D. Bertran de Cigarral , comédie",
+    "publication_date": "1652",
+    "document_id": "bpt6k62757707"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Bertran",
+          "frequency": 11
+        },
+        "related_sentences": [
+          "C'est dequoy j'ai été bien aise de cons uduertir avant que de vous assurer que sans suis, MONSIEUR, Votre très-humble serviteur, T \nCORNEILLE\n AR Grâce et Privilège du Roi, T donné à Paris le 24. \nDécembre 1651\n Signé, Par le Roi en son Commeil, MARTIN, Il est permis au Sieur Corneille Aduocat en notre Cour de Parlement de Ren, de faire imprimer par tel Imprimeur qu'il voudra choisir, trois Pièces d' Theatre, intitulées, Pertarite Roi des Lombards, D. Bertran de Cigarral, et l'Amour à la mode, pendant le temps et espace de neuf ans, à compter du jour qu'elles seront achevées d'imprimer: Défends très-expressément à toutes personnes de quelque qualité et condition qu'elles puissent être, d'imprimer ou contrefaire lesdites trois Pièces de Théâtre, à peine aux contrevenants de deux mille livres d'amende, dépens, dommages et intérêts, et confiscation des exemplaires qui se trouuęront d'autre impression que de la sienne, ainsi qu'il est porté plus au long par lesd.",
+          "il m'a tout déQue depuis plus d' an ce D. Félix la sert, Et qu'ayant d'un valet appris que D Garcie Avec D. Bertran en secret la marie, Et qu'ils s'étaient ici donné le rendez-vous, Il est parti soudain, désespéré, jaloux, Mais par quelques motifs qu'il on laisse conduire Aîmez en assurance, il ne vous saurait nuire, Il a beau protester qu'il est prêt de mourir, Isabelle s'en moque, et ne le peut souffrir, Poussez à cela prés vôtreabonne fortune.",
+          "D. \nFELIX\n Quoi, mon rival se rend, Quoi, j'aurai même appris de votre propre bouche Que son feu vous déplaît, que mon amour vous touche, Et tout cela, Madaie, à ja confunon: D. BERTRAN à D \nFélix\n Vous ai-je pas bien dit que c'était vision, Qu'elle croyait parler à son galant d'Idée?",
+          "Un message pareil de sa part me surprend, Il n'est pas mon époux pour être son parent, D'où lui vient ce pouvoir? \nGUZMAN\n D. Bertran le Seigneur donne. \nISABELLE\n Que ne me le vient-il expliquer en personne? \nVZMAN\n L'ordre est ainsi donné, Madame, il n'oserait, Avec D Bertran",
+          "Dmimrenru, MmHLIX, LEONOR, GUZMAN D. \nBERTRAN\n AH, ma sœur la mutine, Vous traitez donc ainh l'amour à la sourdine, Tête a tête de nuit, et vous faites complot De mettre voile au vent tous deux sans dire mot? \nLEONOR\n al veas nédec thaines D. \nBERTRAN\n Parlez-vous, Seigneur vous prie."
+        ]
+      },
+      "top_5_persons": [
+        "Bertran",
+        "GUZMAN",
+        "ISABELLE",
+        "LEONOR",
+        "ALVAR"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Madrid",
+          "frequency": 11
+        },
+        "related_sentences": [
+          "Peut-être que vous me blâmerez de ne m'être pas assez étroitement attaché à ces lois sévères du Théâtre qui demandent un lieu fixe pour la Scène, et que vous trouverez étrange que mon premier Acte se passe à Madrid, et les autres dans l'hôtellerie d'Yllescas, moité chemin de Madrid et de Tole, mais souvenez-vous que je mar che sur les pas d'un Espagnol, et que comme l'unité de lieu, et l'observation des vingt et quatre heures sont des règles que le fameux Lope de Vega a y negligées, iusqu’ faire exprés Arte ô de hazer Comedias, tous ceux qui ont écrit es lui ne sen ont pas mis dauantage en peine, deus qu'à milieu de leurs Iournées ils font quelquefois peu de scrupule de a plein saut Re en Allemagne, et de faire en moins quart heure leurs Acteurs es ré plus de dix années.",
+          "Des coups que vous portez on veut me garantir, Madame, et si l'on cache à ma débile vue Les célestes attraits dont vous êtes pourvue, L'on connaît que l'éclat n'en peut être souffert, Que ainsi pourrais me perdre où tout autre se pert, Et malgré le respect où mon âme est forcée Permettre pour le moins un crime à ma pensée. \nISABELLE\n Vous me confirmez bien ce qu'on m'a toujours dit Que la civilité n'est pas toute à Madrid",
+          "Quoi, ce brave inconnu qui vous sauva la vie Par la peur d'un Taureau déjà presque ravie Lors qu'au déçu d'un père et sans me l'avoi dit, Une parente et vous sortîtes de Madrid, Ajij Mer qu' une destin vous pensa bien cher vendre Ce peu de liberté que vous ôtes prendre, Serait-ce bien celui qui vous fait soupirer?",
+          "J'avais mandé croire pense, en termes fort exprès Qu'Isabelle s'en vint bien et duement masquée, Bien loin de m'obéir elle s'en est moquée, Et partant de Madrid n'a mis sur son minois Pour me faire enrager qu'un masque de trois doigts.",
+          "En un jour de Taureaux, hors Madrid, dans la pleine, Un Cavalier suivait une route incertaine Lors qu'un digne spectacle ayant frappé ses yeux Réveilla tout à coup son esprit curieux."
+        ]
+      },
+      "top_5_places": [
+        "Madrid",
+        "Tolède",
+        "Allemagne",
+        "Paris",
+        "Rome"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Nerée, Richard Jean de",
+    "title": "Le triomphe de la Ligue . Tragoedie nouvelle",
+    "publication_date": "1607",
+    "document_id": "bpt6k57349337"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Val",
+          "frequency": 45
+        },
+        "related_sentences": [
+          "Je meurs au souvenir d'une vision telle. \nVal\n Mais d'une illusion qui votre esprit martelle: Ce sont larves, Demons, et fantômes qui lors, Qu'ils nous veullẽt tromper se façonnée des corps, Qui n'ont rien de solide: ains la vaine apparence De quelque ami defunct, en qui de jour on pense.",
+          "Mais plutôt qu'on le craint, qu'on l'aime et qu'on l'adore. \nVal\n Celui qui est fort craint, est to isicurs sort haï.",
+          "Leurs forces ne pourront aux nôtres ressemhler. bler. \nVal\n On leur donne sixmais pour leur sorce assemNum.",
+          "Ô prodigieux songe, ambassadeur d'angoisses, Ô usager d'ennuis. \nVal\n Que sert toujours detr istesses?",
+          "Val\n Monsieur retirez -vous, (ble Fuiez de votre Roi, et du ciel le courroux,"
+        ]
+      },
+      "top_5_persons": [
+        "Val",
+        "Val",
+        "Nic",
+        "Gal",
+        "Seigneur"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 45
+        },
+        "related_sentences": [
+          "L'enfant n'est point ores sûr Des cruels aguets du père: Le père a de l'ensant peur Le frère livre son frère, Le cari en sa maison oubte s.  Doubte sa femme meurtrière, Et la parricide mère Donne a son fils la poison, Nos Princes sont assaillis Dautant qu'ils sont redoutables, Or de serpents en leurs lits, Or de venins à leurs tables: Et tels miangent or le pain De leurs grandeurs favorables Qui sont gagnés exécrables D'un Castillan ou l'Orain La maudite ambition Qui au sein ligueur s'élance, A été invention D'armer France contre Frances Ainsi des Romains jamais L'on n'eût borné la puissance, Si leur superbe vaillance Ne les eût été défaits.",
+          "Or que France quiragée et m'abhorre et déteste, Pour être le flambeau, le bourreau et la peste, Qui de feu, qui de fer, qui de sourde poison Brûle, meurtrit, éteinct les Français et leur nom: S'ière déloyauté, parricidèle damnable, Igratte recompense à la France amiable, Pour m'avoir allaité, rechaussé et nourri, Arraché du bourbier ou ainsi feusse pourri, A France qui a fait d'une trop douce cure DIEux si mauvais ensant mauvaise nourriture.",
+          "Que si on lui dit que la France est au dessuis du vent, au couvert de l'orage, et de la torniente, à l'abri des vagues et des tempêtes civiles, releuéc de l'accouchement de ses ruines, toute drue, toute belle, en ses habits nuptiaux en son en bon point: qu'elle a changé sa crois en gloire: ses aigreurs en douceurs: sa tristesse en liesse: ses cris en ris: ses afflictions en sétons et girlamdes.",
+          "Ô Cieux malencentr eux St vous avez lugé mon trépas bdieux: Aidez au moits la Ligue, et prenez la défense Du parti commencé dès que j'étais en France Ici manque la force et cent mille sanglots Étouffent son parler bien qu'en bégayants mots Elle nomme sortune, et cruelle, et marâtre A Quand l'impiteux boureau pour fin de son désastre Roidit son blas meurtrięr lui couppant alu soit Le Ches, les pleurs, les crut, et la vie et la voix.",
+          "Le Duc mon cher germain, faisant de Castillon Foudroyer les ramparts par le tonnant canon Les perdait à milliers puis fit à sa retraite Un trophée orgueilleux de la troupe défaite: Et France toutesais fourmille de soudarts, Cest un vrai magasin des nour rions de Mars Et tant plus on l'assaut plus les travanx supporte, Plus sa force on abat, plus on la trouve forte. \n"
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Paris",
+        "Gies",
+        "Rome",
+        "Dronne"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

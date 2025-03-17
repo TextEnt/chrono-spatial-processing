@@ -1,0 +1,74 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Psiché, tragédie ballet, par J.-B. P. Molière (P. Corneille et Quinault)",
+    "publication_date": "1673",
+    "document_id": "bpt6k1280564h"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ZÉPHIRE",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "J'ai dans ce doux climat un souverain empire, Comme vous l'avez sur mon cœur: L'Amour m'est favorable, et c'est en sa faveur Qu'à mes ordres Æole a soumis le Zéphire C'est l'Amour qui pour voir mes feux récompensez Lui-même à dicté cet Oracle, Par qui vos beaux jours menacés D'une foule d'Amand se sont débarassez, Et qui m'a délivré de béternel obstacle De tant de soupirs empressez, Qui ne méritaient pas de vous être adressez.",
+          "Ce Prince qui vous aime, et qui commande aux Vents, Qui nous donne pour Char les aime du Zéphire, Et de nouveaux plaisirs vous comble à tous moments, Quand il rompt à vos yeux l'ordre de la Nature, Peut-être à tant d'amour mêle un peu d'imposture Peut-être ce Palais n'est qu'un enchantement;",
+          "Et pour en exprimer l'amoureuse langueur, Et cacher ce que je puis être Aux yeux quim'impaient des lois, J'ai pris la forme que tu vois. \nZÉPHIRE\n En tout vous êtes un grand Maître, C'est ici que je le connais.",
+          "Ce qu'elle a de plus doux appas, Zéphire vole aux ordres qu'elle donne, Et son Amante et lu en laissant trop charmer, Quittent pour la servir les soins de s'entre autour.",
+          "ZÉPHIRE\n Vous pouvez vous montrer pour finir son martyre, Lui découvrir son destin glorieux, Et vous dire entre vous tout ce que peuvent dire Les soupirs, la bouche, et les yeux."
+        ]
+      },
+      "top_5_persons": [
+        "ZÉPHIRE",
+        "VENUS",
+        "AGENOR",
+        "Vénus",
+        "Venus"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "le Livre de la Communauté des Imprimeurs et Marchands Libraires de Paris, suivant l'Arrêt de la Cour de Parlement du 8. \nAvril 1653\n aux charges et conditions portées ès présentes Lettres.",
+          "Grâce et Privilège du Roi, Donné à Paris le T31."
+        ]
+      },
+      "top_5_places": [
+        "Paris"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

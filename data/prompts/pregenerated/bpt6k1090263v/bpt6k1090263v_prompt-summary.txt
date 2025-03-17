@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Gilbert, Gabriel",
+    "title": "Chresphonte, ou le Retour des Heraclides dans le Peloponese, tragi-comédie",
+    "publication_date": "1659",
+    "document_id": "bpt6k1090263v"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Merope",
+          "frequency": 15
+        },
+        "related_sentences": [
+          "Pour posséder l'illustre Merope, dont la beauté ne cédait pas à celle d'Hélène, il a fait une guerre aussi fameuse que celle de Troie Il a rétabli par sa valeur la race d'Hercule dans le Péloponèse, et la fait remonter sur les Thrônes, de Missène, d'Argos et de Sparthe, cent ans après qu'elle en avait été dépossédée.",
+          "Si vous l'êtes de moi, je n'en suis point en peine, uhrerphonte doit au monis restre de Ejiamenc Car j'ai pour son Hymen la parole du Roi, Et Merope y consent, et m'a donné sa foi.",
+          "Chresphonte, sans vouloir sur vous rien entreprendre, Dans un Char triomphant ment tous onti un Gendre, Pour la belle Merope, il veut vaincre ou mourir.",
+          ", Roi d'Arcadie MEROPE, Fille de Cyple CHRÉPHONTE, Amoureux de Merope TYSAMENE, Roi d'Argos, Rival de Chresphonter.",
+          "Prenez l'occasion, faites qu'en sa présence, Merope à vos vertus donne la préférence."
+        ]
+      },
+      "top_5_persons": [
+        "Merope",
+        "Merope",
+        "Hercule",
+        "Mars",
+        "Hercule"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Grèce",
+          "frequency": 15
+        },
+        "related_sentences": [
+          "Avec beaucoup d'attraits était crus que j'étais née, Puis qu'aux yeux de la Grèce on m'avait couronnée, le commençai d'avoir des dédains, dey orgueil, Je receuois des Rois avec un froid accuil, Et quoi qu'entr’eux le Roi voulut choisireau Gendre, Je les haïssais tous horsmis le seul Scandre Dès que je le voyais, ie changeais de couleur, Lors qu'il était absent, j'avais de la douleur, Sans cesseaux parlois du Fils du Roi d'Asie Ses Rivaux maltraités en prenaient jalousie, J'avais honte pourtant de leurs vouloir du bien, Et le nommais tousiouts leur vainqueur non le mien.",
+          "Pour le fameux dessein que j'allais entreprendre, Dans le Peloponese on me nommait Scamandre Ainsi sans nul soupçon j'arrivai sur ces bords, Ainsi apprendre reconnus leurs villes et leurs ports: Mais dans ces jeux fameux où s'assemblela Grèce, J'éprouvai votre force en cherchant leur faiblesse;",
+          "La Grèce divisée armera pour mes droits, Et l'on verra périr le dernier de ses Rois, Mon adresse, ma Fille, et l'amour, et la guerre, N'en laisseront pas un vivant dans cette terre.",
+          "Dont les charmants attraits arment toute la Grèce Et de qui le bel œil est le fatal flambeau, Qui met depuis huit ans, tous ses Rois au Tombeau!",
+          ", est compté entre les plus grands Héros de la Grèce Jamais Prince ne s'est rendu plus célèbre par ses combatsrit par ses amours."
+        ]
+      },
+      "top_5_places": [
+        "Grèce",
+        "France",
+        "Troie",
+        "Sparte",
+        "Peloponese"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

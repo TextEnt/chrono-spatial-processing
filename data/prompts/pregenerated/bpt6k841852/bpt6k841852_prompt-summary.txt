@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Scarron, Paul",
+    "title": "L'escolier de Salamanque, ou Les généreux ennemis , tragi-comédie de Mr Scarron, dédiée à... Mademoiselle",
+    "publication_date": "1655",
+    "document_id": "bpt6k841852"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Crispin",
+          "frequency": 9
+        },
+        "related_sentences": [
+          "En peu de mots, voilà de votre fiss la vie. \nLEONORE\n De sa Relatton, pour moi -même suis ravie. \nDOM FELIX\n Pour un sot de Collège, il parle plaisamment: Mais n'a-t-il rien de bon, ce mauvais garniment! \nCRISPIN\n De bon!",
+          "Mais a l'nomne de cuur es n'est que bagatelle. \nCRISPIN\n affaire, s'il vous plaît, soit secrète Intet nés \nZAMORIN\n Con lisenza Patron, Je vais dire deux mots, A J'homme que . \nCRISPIN\n Et moi Mosi somir.",
+          "L'Avocat sit pourtant, rompre le mariage, Et sans mes bons amis j'étais long temps en cage. \nZAMORIN\n Tous les hommes d'honneur sont malheureux ainsi: Mais aujourd'hui pourquoi vous a-t-on mis ici? \nCRISPIN\n Pour aimer par excès.",
+          "N'ai-je pas fait sortir le Comte adroitement. \nCRISPIN\n Sa sœur n'a-t'-elle pas tremblé cruellement, Voyant à ses talons sot: frère et non Lizette Elle aura bien pesté contre vous, la coquette.",
+          "DOM PEDRE, Elle prend mal son temps, et peut bien s'en aller \nCRISPIN\n flle n'en fera rien: car elle est résolue De vous voir, ex dût -elle être ici retenue."
+        ]
+      },
+      "top_5_persons": [
+        "Crispin",
+        "LEONORE",
+        "ZAMORIN",
+        "CRISPIN",
+        "LEONORE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Tolède",
+          "frequency": 9
+        },
+        "related_sentences": [
+          "Il bat présentement le pavé dans Tolède, Et sans considérer que son Père grison A changé brusquement depuis peu de maison, Et que moi seul j'en sais le quartier, et la rue, Ayant sa Lettre seul, reçue, ouuerte et leuë;",
+          "Un ami depuis peu, m'a de la Cour écrit, à Que celui que j'avais offensé dans Madrid Afin de se venger est parti pour Tolède Une Dame que j'aime, et de qui notre possède.",
+          "Puis que votre bras m'aide, Je ferais tête à tous les braves de Tolède Allons après, Crispin \nCRISPIN\n Allons, quoi que bien las: Car ici n'avais jamais tant remué les bras.",
+          "Mais différons encor cet extrême remède, Rappelons cependant Dom Pédre dans Tolède Ce fils que Dieu me laisse, est jeune, et courageux, Il saura bien venger un mépris outrageux.",
+          "qu'as-tu fille la moins traitable Des filles de Tolède, et la moins conversable? \nBRATRIS\n Va-t'-en chercher ton Maître. \n"
+        ]
+      },
+      "top_5_places": [
+        "Tolède",
+        "Paris",
+        "PARIS",
+        "France",
+        "Rome"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

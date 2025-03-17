@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": null,
+    "title": "Le Contre impromptu de [...], comédie",
+    "publication_date": "1696",
+    "document_id": "bpt6k852918j"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "CLAUDINE",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Écoute Claudine tu sais que je t'ai toujours fait la grâce de te distinguer du commun, et que je ne te conconsidère point comme une simple soubrette, mais comme une fille de jugement, et de quelque esprit, et c'est pour cette raison que je t'ai mise auprès de ma nièce, veille donc un peu sur ses actions, examine les moindres de ses démarches jusqu'à ses manières de regarder quand elle voit de jeunes hommes, et m'en fais un fidèle rapport, je tremble de peur qu'elle ne tombe dans les filets de quelque nouveau venu, étant encore dans une si grande jeunesse, et sans expérience des choses du monde, sonde son cœur sur son a Espagnol, car est un bon party que je tâche de lui conserver, et la detourne de toute autre inclination.",
+          "Je n'ai pas de peine à le croire, mais comment le sais-tu? \nCLAUDINE\n J'écoutais à la porte quand elle m'a appelée, et elle a régalé mes oreilles des plus beaux raisonnements du monde, enfin elle en à tant dit que je suis convaincuë qu' elle en est amoureuse, et nous devons bien rendre grâces à l'amour, car sans lui il y aurait eu bien d'autre bruit au logis, enfin l'affaire s' est passée bien doucement, le Cavalier Seigneur a fait de grandes soumissions, elles les a bien reçues, il s'est donné tout le tort, et il doit revenir bien tôt, j'entens age quelqu’un, à c'est Monsieur le ChevaAIer SCÈNE III.",
+          "CHRISTINE Enfin, quoi qu'il en soit pense bien à ce que je t'ai dit, il y a mille raisons importantes qui m'obligent, a veiller sur les actions de ma Nièce, je lui remarque si je ne me troinpe quelque penchant à la coquetterie, mais j'y donnerai bou ordre où j'y perdrai mon laryn, écoute si quelqu'un vient me demander, dis que je suis sortie, je vas me retirer pour quelque temps dans mon cabinet, afin d'y faire mes dépêches pour Madrid SCÈNE V. CLAUDINE, seule.",
+          "JE puis vous avouer Mademoiselle que j'ai presque mis toute ma retorique a bout auprès de vous, et que je n'ai jamais vu une Dame plus inébranlable que vous êtes, j'ai déjà eu une longue conversation avec vous, ou j'ai mis en usage tout ce qu'un amour violent peut inspirer, et j'ai rouvé jusqu'ici une résistance extraordinaire à ma flamme. \nCLAUDINE\n ",
+          "Puis qu'on en est tant aujourd'hui sur les impromptus, écoute Claudine, jion maître vient d'en zaïre un avec ta maîtresse, faisons en un tous deux aussi. \nCLAUDINE\n Qui moi avec toi, tu n'y penses pas voyez un peu quel visage pour un impromptu d'amour, sauf le respect que je dois à Mr. le Comte, tu eît un vilain mâle."
+        ]
+      },
+      "top_5_persons": [
+        "CLAUDINE",
+        "l'Épine",
+        "Junie",
+        "CHRISTINE",
+        "CLAUDINE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Namur",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Omme les Français en parlant de leur conquête de Namur, l'appelaient un Impromptu, pour donner à entendre, qu'ils en ẽtoient bientôt venus à bout, et les Allié leur ayant aprés repris cette Place, en assez peu de temps pour pouvoir A 2 donner aussi à leur prise le nom de d'Impromptu.",
+          "On y fait voir par des intrigues amoureuses, la prise de cette Place par les Français, en introduisant un Cavalier de cette Nation, qui se rend maître par son adresse et par sa subtilité du cœur d'une jeune Dame de Namur qu' represente la Ville, quoi qu'elle soit attachée à un Seigneur Espagnol",
+          "En effet Monsieur je vous avoue que vos airs sont un peu Cavaliers, les Dames de Namur ne sont pas si accessibles que vous pensez.",
+          "On a pris de là ocasion de faire cette Comédie, et de l'intituler le Contr'Impromptu de Namur",
+          "vous ne saviez L'pas que Namur renfermait dans son sein une telle merveille."
+        ]
+      },
+      "top_5_places": [
+        "Namur",
+        "France",
+        "Madrid",
+        "Ville de Paris",
+        "Pays-bas"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

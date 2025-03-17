@@ -1,0 +1,78 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Amphitryon, comédie par J. B. P. Molière",
+    "publication_date": "1668",
+    "document_id": "btv1b86070014"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Amphitryon",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Que le moi quę voiti, charge de famude, A trouvé l'autre moi, frais, gaillard et dispos, Et n'ayant d'autre inquiétude, Que de batue, à canes desos. \nAMPHITRYON\n Il faut être, je le confesse, D'un esprit bien posé, bien tranquille, et bien dous, Pour souffrit qu'un valet, de chansons me repaisse.",
+          "À LCMENE Quoi! de retour sitôt! \nAMPHITRYON\n Certes, c'est en ce jour, Me donner de vos feux un mauvais témoig nage, Et ce, Quoi sitôt de retour, En ces oecasions n'est guère le langage D'un cœur bien enflammé d'amour.",
+          "Vous avez raison, et la chose à chacun, Hors de créance doit paraître, C'est un fait à n'y rien cunhornis, Vn conte extravagant, ridicule, importun, Cela choque le sens commun: Mais cela ne jaisse pas d'être. \nAMPHITRYON\n ",
+          "Et me voilà déterminée, A souffrir qu'en ce jour nos liens soient rompus. \nAMPHITRYON\n Après l'indigne affront que l'on me fait connaître, C'est bien à quoi sans doute il faut vous préparer.",
+          "Elle a besoin de six grains d'Élébore, Monsieur, son Esprit est tourné! \nAMPHITRYON\n Alcène au nom de tous les Dieux, Ce discours à d'étranges suites, Reprenez vos sens un peu mieux;"
+        ]
+      },
+      "top_5_persons": [
+        "Amphitryon",
+        "Jupiter",
+        "Mercure",
+        "Amphitryon",
+        "Alcmène"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Barbarie",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Ce discours est plus raisonnable, Alémène, que vous ne pensez: Mais un plus long séjour me rendrait trop coupable, Et du tour au port, les moments sont pressez, Adieu, de mon devait l'étrange Barbarie, Pour un temps, m'arrache de vous, Mais belle Allemène, au moins, quand vous verrez l'Épous, Songez à l'Amant je vous prie.",
+          "Et je parle d'un vieux Sosie, Qur lut javis de mes parents, Qu'avec très grande Barbarie, A l'heure du dîné l'on chassa de céans."
+        ]
+      },
+      "top_5_places": [
+        "Barbarie",
+        "Thebes",
+        "PARIS",
+        "V",
+        "Saint Germain en Laye"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

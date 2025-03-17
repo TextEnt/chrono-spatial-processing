@@ -1,0 +1,78 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Quinault, Philippe",
+    "title": "Thésée , tragédie en musique ornée d'entrées de ballet, de machines et de changements de théâtre, représentée devant S. M., à Saint-Germain-en-Laye, le onzième jour de janvier 1675",
+    "publication_date": "1675",
+    "document_id": "bpt6k55309731"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ARCAS",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "ÉGLÉE', CLÉONE, et ARCAS Il n'est point de grandeur charmante Sans l'Amour et sans ses douceurs: Rien ne plaît, rien n'enchante, Sans l'Amour et sans ses douceurs: Rien ne contente",
+          "MINERVE, Chœur de Divinités qui accompagnent Minerve, LE ROY, THESEE, ÉGLÉE, CLEONE, ARCAS, Chœur, et Troupe d'Athéniens.",
+          "Aubri\n CLÉONE, Confidente d'Églé \nMadelle Brigogne\n ARCAS, Confuent IEgee Roy Ainenes \nMr Morel\n mu Gianat Presbrejje ve Oramen",
+          "Roène tlirls er jélisats, LE ROY, CLÉONE, et ARCAS Que l'Amour répare Tous les maux qu'il vous a faits.",
+          "MEDE’A, CLÉONE, ARCAS, DORINE MÈDE. nomme morroue poim, qu'on leur ouvre un 2 passage."
+        ]
+      },
+      "top_5_persons": [
+        "ARCAS",
+        "DORINE",
+        "Minerve",
+        "VENUS",
+        "MARS"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Versailles",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Le Théâtre représente les Jardins et la Façade du Palais de Versailles Chœur d'Amours, de Grâces, de Plaisirs, et de leux.",
+          "La Scène du Prologue est dans les Jardins de Versailles  2"
+        ]
+      },
+      "top_5_places": [
+        "Versailles",
+        "Athènes",
+        "Saint Germain en Laye",
+        "PARIS",
+        "France"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

@@ -1,0 +1,79 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": null,
+    "title": "Mélisse, tragi-comédie pastorale...",
+    "publication_date": "1658",
+    "document_id": "bpt6k1280578j"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ALEXIS",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Que ne poursuivez-vous votre premier projet? \nPHILENE\n J'aime jusqu'aux dédains de mon ingrat objet. \nALEXIS\n Jouissez donc en paix d'une douleur si chère, „On ne plaint point un mal quand il est volontaire. \nPHILENE\n ,Les Prez veulent des eaux, les Abeilles des fleurs, „La Brebis cherche l'herbe, et l'Amour vit de pleurs.",
+          "Les Dieux ne veulent pas qu'une ingrate prospère. \nALEXIS\n das ner guvrorène pumt vi ceur iempni d'amoura \nMÉLISSE\n Qui hait ce qui l'adore est indigne du jour. \nALEXIS\n Qui connaît son défaut, facilement se change. \nMÉLISSE\n Quand un crime est commis, il faut que l'on le venge. \nALEXIS\n ",
+          "Et je vois clairement, que mon esprit jaloux Me faisait défier injustement de vous: Ce que présentement je vous demande en grâce, Est que de ce projet la mémoire s'enace, Et qu'à jamais Melisse ignore, qu'en ces lieux Nous la vinsmes chercher d'une dessein furieux. \nALEXIS\n Déjà vouo repenti, coût mamtenant Philène",
+          "Pour moi qui connaissant combien le sort est doux Alors que nous aimons ce qui n'aime que nous, Aï fui qui m'adorait, et par un sort bizarre Suivi qui me fuyait, et qui m'était barbare, de dule le ver, par val juice trerpas, Les plus cruels tourments ordonnez aux ingrats. \nALEXIS\n ",
+          "Qu'il n'en ait ressenti du moins quelque étincelle. \nOrante\n \nMÉLISSE\n Ingrat poursui, dis même, si tu veux, Que je porte tes fers, que tu causes mes feux, Tu n'en obtiendras rien, puisque toujours mon cœur Pour un fidèle Amant n'eût que haine et rigueur. \nALEXIS\n "
+        ]
+      },
+      "top_5_persons": [
+        "ALEXIS",
+        "Alexis",
+        "Alexis",
+        "Melisse",
+        "Alexis"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Bergère",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Cette Bergère tourmentée de sa passion, sort de grand matin du hameau, et va entretenir ses pensées amoureuses sur le bord du fleuve Penée, où elle est rencontrée par Orante son amie particulière, à qui elle déclare l'origine de son amour: Comme elles discourent, elles aperçoivent Alexis endormi au pied d'un arbre, et en même temps un sanglier furieux s'approche du Berger pour le déchirer.",
+          "TIRCIS\n Seigneur, je ne sais point de Bergère en ces lieux, À qui soit imputé ce forfait odieux;",
+          "Cet objet dédaigneux, cette fière Bergère, Ne sera plus bientôt que cendre, et que poussière;"
+        ]
+      },
+      "top_5_places": [
+        "Bergère",
+        "ANDIS",
+        "fleuve",
+        "Rocher",
+        "Atalante"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

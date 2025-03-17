@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Millet, Jean",
+    "title": "Pastorale et tragi-comedie de Janin",
+    "publication_date": "1692",
+    "document_id": "bpt6k1090060x"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "PIERO",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Quand un home sariét lo plu valien du mondo, S'u n'at que son travei u l'est ( je vo tépondo) Mépreisia de chacun, si ben que vo ben mey Lt logie fenement, ou apprendre pénia jameusei, \nPIERO\n Je veio que Janin lo mopet de Guillaume Et pro riche per lei, car quatro saume, Quatto peyre de vache, et trey peyre de bo : V l'at un grand eisar environna d'arbo.",
+          "qu'u tour de ceu garçon, La Lhauda mau nourtia devindre una grolà, Puisqu'huiqu'at pa de sare ben bénuilli l'ola. \nPIERO\n Dis ce que tu voudrez, quand y debvriet avi Fauta du bien du mondo é ne volo point vei De Monsieur verchié Monsieur, car u volon (Thievena)",
+          "SCÈNE PREMIÈRE, \nPIERO\n Ve sarat-to céci, tout lo mondo me piche, Ma fena contra mi de mal en pi Jaffiche, I me mey qu'un molen qui ne pot tempora, Ma filli d'autro flan ne fat ren que ploura.",
+          "PIERO\n I ne sarat , vollet-y ou nons I ne pot qu' à mi, et puy per le marnon Quinte reison que l'aie, et quintou géi qu'y fasse, E faut que per iqui eille passe et repasse.",
+          "je juipant. \nLHAUDA\n Vat pro ben, parlon ba de tout ce que se passe. \nPIERO\n Vei-tu ben ceu mottet, u n'at paya toujours prey, Sa via d'un mémo pan, trop bien apprey."
+        ]
+      },
+      "top_5_persons": [
+        "PIERO",
+        "Janin",
+        "JANIN",
+        "LOREN",
+        "Piero"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Bergère",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Cependant Piero et Thievena, père et mère de la Bergère, avertis de la recherche d'Amidor, entrent en dissention, le père pour sourenir le parti de Janin, et la mère celui d'Amidor, parce que comme les femmes ne démordent jamais à lut opiniâtreté, elle persiste en son inclination pour Amot, ambitieuse des honneurs, dont Piero irrité, menace la mere menace la fille, et les frappe: si bien que Jappetta et Pernetta",
+          "Au retour de la chasse Amidor n'ayant dans son esprit que les idées des beautés de sa nouvelle maîtresse, ne peut trouver aucun repos, et court la nuit sur les rochets, attendant le jour et l'heure assignée que Thono par son entremise le doit faire jouir de la présence de sa Bergère à quoi étant parvenu Amidor, après plusieurs serments et protestations de son amour, il obtient d'elle la faveur de ses bonnes grâces:",
+          "Et parce que c'est la coutume Auparavant que l'on consume Les Mariages, de doter Les filles, pour mieux supporter Les charges d'un nouveau menage, Tandis que l'un sur l'autre nage: Se constitue meurement, Et du tout volontairement, Piero père de la Bergère, Laboureur, voisin de l'Isère, Qui pour rendre ce couple tel, Que jadis le couple immortel Était auparavant le crime, Donne à sa fille légitime",
+          "et la Bergère affligés de l'opposition de Piero, se laissent gagner au déplaisir, dont Amidor tombe évanoür, ce qui mut la Bergète à pitié, elle le relève, et lui donne avis de se déguiser en berger pour tromper son père;",
+          "Je n'en espère moins de la belle Bergère, À qui ma volonté, s'est rendue hommagère."
+        ]
+      },
+      "top_5_places": [
+        "Bergère",
+        "Grenoble",
+        "Voiron",
+        "PIERO",
+        "Avignon"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

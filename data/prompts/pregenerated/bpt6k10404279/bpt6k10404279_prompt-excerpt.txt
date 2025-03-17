@@ -1,0 +1,36 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `excerpt` property contains an excerpt of 400 words sampled from around the middle of the document.
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Troterel, Pierre",
+    "title": "La Driade amoureuse, pastorale. De l'invention de P. Troterel sieur d'Aves",
+    "publication_date": "1606",
+    "document_id": "bpt6k10404279"
+  },
+  "excerpt": " Soleil le visage Au monde, aprez le cours d'un tonnerreux brage, Pour m'être, ce que sont les deux frères jumeaux, À ceux qui vont siotant sur l'écume des eaux. Si l' ut de mes désirs, doux Soleil de mon âme, Qui te tient si longtemps estoigné de ta dame, Que tu ne viens la voir, la baiser, la chérir, Et de ta passion un peu sens discourir. Quoi? peux-tu tant de jours d'un objet disparaître, De q"
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

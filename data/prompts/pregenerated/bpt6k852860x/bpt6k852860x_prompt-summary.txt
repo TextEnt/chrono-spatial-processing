@@ -1,0 +1,80 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Auger, Jacques",
+    "title": "La mort de Caton, ou L'illustre desespéré tragedie",
+    "publication_date": "1648",
+    "document_id": "bpt6k852860x"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "César",
+          "frequency": 63
+        },
+        "related_sentences": [
+          "Il faut sans passion considérer les choses, Et jugeant des effets n'ignorer pas les causes, Je dis fort peu du reste, il fuffit qu'on sait bien, Si César nous apporte ou du mal ou du bien: Mais j'ose vous jurer que ie ne peux sans larmes, Voir l'injuste progrès de ses cruelles armes, Dévant son pavillon, entouré d'estandars,Ai voyoit du combat le reste des fuyards, Et ce cœur généreux cryait parmi la plaine, Sauvez soldats, sauvez la iennesse Romaine.",
+          ", il nous faut voir parmi tant de rigueurs, A SI notre procéder peut finir nos malheurs, Accorder à César la fin de sarequête, N'est pas le vrai moyen d'accoiser la tempête, Il serait à propos qu'il se rendît submis, Sans se rendre cruel plus que nos ennemis, Voyant qu'il continue à renforcir ses armes, Nous devons redouter quelques tristes alarmes, Le tenant pour suspect, ie croy pour le certain.",
+          "faute d'en avoir on nous verra subis Nous le sommes déjà, César pense sans crime Acquérir dessus nous un pouvoir légitime, Et pour avoir un prix digne de ses exploits, Rome doit se résoudie à recevoir ses lois, Et son âme superbe autant qu'on le peut être, Ne peut plus endurer de reconnaître en maistié À moins que l'univers, un cœur comme le sien Ne trouvera jamais de reposagez de bien.",
+          "L'on parle assurément lors qu'on a l'avantage, Un succès plain de gloire anime d'avantage, Et personne ne peut vous choquer en un point, Que César nous déguise et qu'on ne connaît point: Toutefois l'artifice où son esprit s'amuse, N'est pas assez subtille à déguiler sa ruse, Il faut n'avoir point d'yeux, nimême de raison, Pour ne découvrir pas quelle est sa trahison.",
+          "Dans des tortents de sang roulants de toute parts, Dessus des monts de corps tombés dessous les darts, Parmi la même horreur, dans Pharsale étalée, Ma vertu s'y trouva sans s'y voir accablée: Mais ici le destin m'oblige au désespoir, La valeur m'abandonne autant que le pouvoir, Et toute mon attente étant ptesque étouffée, Voulez-vous que ie ue à César de trophée;"
+        ]
+      },
+      "top_5_persons": [
+        "César",
+        "Caton",
+        "Pompée",
+        "Lucius",
+        "César"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 63
+        },
+        "related_sentences": [
+          "Qui décident bientôt le destin d'une guerre Et l'ennemi s'étonne en voyant à ses yeux Le sang de son parti qui coule en mille lieux: Pendant que la pitié homme donne des alarmés, Nous allons faire voir les efforts de nos armes l' Avants notre infortune et l'orgueil de César, Sans craindre les périls qui suivent le basard, Ainsi l'on connaîtra que le sang de Pompée Nous porte à le vanger avec Rome usurpée, SEXTUS.",
+          "Caton le considère en ses prétentions, Et saait assiés juger de ses ambitions, Son âme à mon esprit se montre toute nue, Dans ses plus grands secrets elle m'est trop connue, Mais puis que le destive le féconde en ce poit, Qu'il règne absolument, tu ne l'empêche point, Cepédant qu'il s'élever, il faut que mille m'abaisse, Et que Si que Rome devienne ciciave, de maîtresse. \n",
+          "faute d'en avoir on nous verra subis Nous le sommes déjà, César pense sans crime Acquérir dessus nous un pouvoir légitime, Et pour avoir un prix digne de ses exploits, Rome doit se résoudie à recevoir ses lois, Et son âme superbe autant qu'on le peut être, Ne peut plus endurer de reconnaître en maistié À moins que l'univers, un cœur comme le sien Ne trouvera jamais de reposagez de bien.",
+          "César est vaincu, l'on surprend Ptolomée, Et l'Égypte déjà succombe à notre armée, Notre Rome triomphe, et des peuples subis Suivent par tout ses chart comme ses ennemis: Victoire imaginée, et conquêtes frivoles, Qui n'ont point d'autre bruit qu'au vent de tes paroles Puis que ce grand vainqueur n'a que trop de vertu, Pour maintenir son soit, rirle toit combattu;",
+          "La fortune autrefois nous fut aussi fatale, Rome éprouva sa haine aux combats de Pharsale, Là du sang des Romains se fit presqu'une mer, Vous nageâtes dedans, mais sans vous abîmer: Là Lypie aujourd'hui nous est pas plus aire, Venn semblable accident, et le même adversaire, noiuost tronuer Caton était autant de cœur, Qu'il en fit voir alors contre ce fier vainqueur."
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "PARIS",
+        "César",
+        "Bonte"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

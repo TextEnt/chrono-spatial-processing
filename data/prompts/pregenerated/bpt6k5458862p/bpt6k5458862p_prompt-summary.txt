@@ -1,0 +1,79 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Richemont-Banchereau, De",
+    "title": "Les Passions esgarées, ou le Roman du temps, tragi-comédie, par le Sr de Richemont-Banchereau,...",
+    "publication_date": "1632",
+    "document_id": "bpt6k5458862p"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Guillaume",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "MIAICERAMS Ô ruisseaux, si Bacchus vous avait fait la grâces De-cous faire de vin, votre boirais à longs tratts. \nCalyante\n Si la couleur du lys, si l'éclat de ses roses Pouvaient représenter un peu de sa beauté, \nGuillaume\n Mais si toures ces fleurs, par des métamorphoses, Me fournissaient du vin pour boire à leur Janté. \nCalyarie\n Mais objets impuissants de mon inquiétude, Vous n'avez de l'amour que pour la solitude, Vous voulez bien jouir de pleurs est de soupirs, Vous faites bien l'amour aux grâces des Zéphyrs, Et vous ne souffrez pas que le feu de mon âme Puisse se faire voir aux beaux yeux de ma Bâme;",
+          "On reconnaît bien mieux a lesclat dune couppe Tout ce que fait Bacchus auecque les mortels, \nCalyante\n Tout adore içi bas cette fureur divine, Et l'horreur de la mort y trouve des appas. \nCalkissalaime\n Cette liqueur est bien vnɇ autre médecine Pour jouer un trousse, au pouvoir du trépas. \nCalyante\n Quand la fidélité minute un mariage On ne voit rien d'égal au bonheur d'Homme amants. \nGuillaume\n Quand de mille poinçons ma gorge a le triage, Tout n'a rien de pareil à ce contentement. \nCalyante\n C'est en l'honneur d'amour qu'une âme généreuse Ç Ci  SONS \nGuillaume\n Cent",
+          ", l'on voit en toi cette métamorphose? \nGuillaume\n Ah, mon ami, qu'aimer est une belle chose, Si vous saviez l'état où votre vis maintenant, Je ne fais plus de vœux à Carême-prenanf, Bacchus m'est ennemi, je fais geler les treilles, J'ai hanni les festins, j'ai rompu les bouteilles, Je ne vis que d'amour, de cipre, et d'ambregris, Je pense que le Ciel est tombé dans Paris, Ne parlez plus de vous tant de vos Artenices, On n'a jamais rien venger d'égal à mes supplices, Comme elle vous trahit en quittant ce seiour.",
+          "Amour a tant vaincu, les remèdes sont vains OLors que ce Dieuttelet a blesse des humains, L'on n'a jamais rien vu d'une plus belle taille Que moi, pour soutenir l'effont d'une battaille, L'on ne saurait trouver, fût-ce chez Mardi gras, Vîn visage d'humain mieux plus grosgez plus gras, D'estomac plus épais, de charnure plus forte, Et toutefois amour m'a blessé de la sorte, Que si sa cruauté me vient plus harrasser, Ses flèches n'auront plus de Guillaume à blesser: Mais faut-il qu'un guerrier qui fait trembler unt âme, Consacre ses lauriers aux attraits d'unefemme?",
+          "Enfin tout applaudit à votre destinée, nt tommuaur, oufomu unt Été qu'Hymène, \nGuillaume\n Il resterait encor une difficulté, F Et que te sais es pris de sa rare te, \nCalyante\n Je conçois un dessein où mon ingratitude Doit passer tous mes ans dans une solitude, Un remors me bourrelle et me donne des fers Ou la crainte et l'horreur me montrent les enfers: Depuis qu'on est rongé d'un ver de conscience, V autouretervel blesse la patience, Et notre désespoir a de la passion De faire succomber à sa tentation, On souffre mille morts aux moments aux vne vie"
+        ]
+      },
+      "top_5_persons": [
+        "Guillaume",
+        "Guillaume",
+        "Flore",
+        "Bacchus",
+        "Diane"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 3
+        },
+        "related_sentences": [
+          ", l'on voit en toi cette métamorphose? \nGuillaume\n Ah, mon ami, qu'aimer est une belle chose, Si vous saviez l'état où votre vis maintenant, Je ne fais plus de vœux à Carême-prenanf, Bacchus m'est ennemi, je fais geler les treilles, J'ai hanni les festins, j'ai rompu les bouteilles, Je ne vis que d'amour, de cipre, et d'ambregris, Je pense que le Ciel est tombé dans Paris, Ne parlez plus de vous tant de vos Artenices, On n'a jamais rien venger d'égal à mes supplices, Comme elle vous trahit en quittant ce seiour.",
+          "tu me désespère Dans les délices de Paris, Où ie suis touché de Cloris Comme un roche d'H vipère, Toutes les nuits rêvant à toi Je t'appelle mon périt Roi, Je parle avec ton image, Et te fais croire à mes desseins Que le Ciel approuve l'hommage Que sans voir onfait à ses saints.",
+          "Paris en fit de même, et son Heleine aussi Souffrait innocemment par un même souci, Mon amour y consent, qu'est-ce, bien qu'un supplice Quand il est question de servir Artenice."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "PARIS",
+        "Troie",
+        "France",
+        "Loire"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

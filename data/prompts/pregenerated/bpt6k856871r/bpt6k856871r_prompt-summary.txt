@@ -1,0 +1,80 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Giboin, Gilbert",
+    "title": "Tragecomedie sur les amours de Philandre et Marisee . Par Gilbert Giboin, harpeur, arithmeticien, & maistre escrivain en la ville de Molins en Bourbonnois",
+    "publication_date": "1619",
+    "document_id": "bpt6k856871r"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Phil",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Ami, Seigneur te mets en la garde Du Dieu porte-brandon, vois-le, sa flèche il darde, Dessille un peu tes yeux, et tu verras combien La fortune aujourd'hui te procure de bien. \nPhil\n Je pensais qu'un sommeil m'eût rapporté un songe, Qui voilant mon cerveau d'un crêpe de mensbnge, M'eût fait voir clairement, que mon aimé destin Receuoit avec moi un somptueux festin, Et que pres de nous deux paraissait en Idée La plus rare beauté, qui fut au monde née: Hal ie suis bien déçu.",
+          "[ mets; \nPhil\n Le sçaués -vous, Filin Filin, Tres-bien, je vous propres YNAGECOMEDIE, S'il n'est ainsi, Monsieur, du tout toujours me soumets 2 A mourir maintenant. \nPhilan\n Mais de quelle assurance Plus forte pouvez-vous en rendre ma créance? \nFilin\n C'est qu'hier me trouvant pres d'elle à son mesçeu T'ouïs qu'elle disait: Si mon cœur n'est aeceu, Philandre m'aime fort;",
+          "Un désir, qui est bon, n'encourt point de disgrâce, Bien qu'un fatal destin ne l'eût pas en sa grâce, Si dans le contrepoix de raison tu te mets, Fidel ie ferai voir tout ce que ie promets. \nPhil\n Mais, lasten quel endroit trouverai-je la belle, À qui j' dois ver mon service fidèle?",
+          "Je m'en vais à Loretue Phil Vous en perdez le train, il faut prendre à main droitu. \nFleuri\n Bon Père, Seigneur le sais: mais ici suis sous les vœux De mon vouloir forcé en passant les saints lieux. \nPhil\n Forcez-vous votre cœur, qui doit d'un saint offie Offrir au Souverain un plus grand sacrifice?",
+          "A tort vous accusez le Ciel, et la Nature, Qui ont tracé sur vous plus subtile peinture, Vous formant un miroir de si belles vertus, Qu'on ne peut un mortel trouver en avoir plus. \nPhil\n En ce rang éminent les Dieux vous ont faït naîtr, L Os soleils mes doux feux le font du tout paraître;"
+        ]
+      },
+      "top_5_persons": [
+        "Phil",
+        "Filin",
+        "Cupidon",
+        "Mar",
+        "Didon"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Nîmes",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Monsieur, excusez-moi, si je prends l'hardiesse De rompre vos discours, mon voyage me presse: Car il faut sans faillir que ici sois dans un jour, Ou dans demain au soir à Nîmes de retour. \nPhilandre\n Qui a-il donc, Laquais?",
+          "L'Oncle\n Je trouverais meilleur sauf votre jugement, D'envoyer un laçais à Nîmes vitement, Pour la faire venir: car de prendre la peine D'aller si loin, cela serait de longue haleine:",
+          "Je n'ai presques été proche du grand verger, Qu'à mon regret j'ai vu un triste Messager, Qui de Nîmes venait apportant déplorable Une nouvelle autant rude, que pitoyable.",
+          "Or étant arrivé à Nîmes de bonne heure, Je trouve de chascun la nouvelle très -sèvre, Nomme sans un grand regret. \nL'Oncle\n Ne disait-on pourquoi?"
+        ]
+      },
+      "top_5_places": [
+        "Nîmes",
+        "Alpes",
+        "Nil",
+        "Gange",
+        "Paris"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

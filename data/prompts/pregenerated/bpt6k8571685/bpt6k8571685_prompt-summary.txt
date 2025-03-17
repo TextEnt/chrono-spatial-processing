@@ -1,0 +1,78 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Virey, Jean de",
+    "title": "La Machabee Tragedie du martyre des sept freres, & de Solomone leur mere. Par Jean de Virey, sieur du Gravier.",
+    "publication_date": "1603",
+    "document_id": "bpt6k8571685"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Le Roi",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Car le soleil se baisse, alors vous me verrez Plus joyeux au tourment, que vous n'avez d'envie De me persécuter, et d'arracher ma vie. \nLe Roi\n Que maudit soit le jour que je fus curieux De faire appréhender ces obstinez Hebrieux: Il me font enrager: à celui qui blapheme Qu'on lui coupe la langue, et puis de veux moymesme L'atacher au poteau: car vous êtes lassez.",
+          "Que je vous baise encor une fois seullement Car c'est le dernier bien que je vous pense faire. \nLe Roi\n Fa ites -moi retirer cette fâcheuse mère Et soudain lui coupez les jambes et les bras. \n",
+          "Perpirt\n Reçois-la, s'il te plaît, au nombre des elleeus. \nLe Roi\n Compagnons, on perdrait sa peine et sa parole De penser amollir le cœur de cette sole.",
+          "Le Roi\n Or sus, sus compagnons chacun de vous regarde À l'étriller si bien paluve tumepne pompt. \nSosander\n Pour ici mieux dispos, mettez -vous en pourpoint",
+          "Le Roi\n Sus, qu'il soit empoigné et mis dans ce vaisseau Avec presse à vis, son corps en un monceau Soit ramené en bas faisant toucher sa tête"
+        ]
+      },
+      "top_5_persons": [
+        "Le Roi",
+        "Jacob",
+        "Machir",
+        "Aber",
+        "Achar"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Hierusalem",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Combien nous avons vu de tels Gabaonites Dedans Hierusalem, combien d'I selites Ont méprisé les lois des pères anciens, Pour suivre de nos jours l'erreur des Syriens, Premier que l'Éternel se soit mis en colère, Pour armer contre nous ce cruel adversaire? \nAchar\n Peut-il pas susciter un Cenez, l'immortel Pour remettre en honneur le vénérable autel, Pour remettre en honneur le superbe édifice Bâti par Sqlomon l'hostie et sacrifice?",
+          ", Si de Hierusalem vénérable cité Pour avoir l'Éternel tant de foisrite, Et de nos chers voisins vous pleurez, la ruine, Consolons-nous, Madame, en la bonté divine Qui nous peut visiter de son luisant Soleil, Et chasser ce nuage en un petit cuina dit. \nJudas\n Je ne fais point de doute, ô mère pitoyable!"
+        ]
+      },
+      "top_5_places": [
+        "Hierusalem",
+        "Murs",
+        "Parnasse",
+        "Gironde",
+        "Palestine"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

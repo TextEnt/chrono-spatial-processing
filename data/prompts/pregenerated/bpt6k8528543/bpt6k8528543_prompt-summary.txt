@@ -1,0 +1,73 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "La Motte, de",
+    "title": "Le Grand Magus, tragi-comédie",
+    "publication_date": "1656",
+    "document_id": "bpt6k8528543"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "DOROTHÉE",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Mais pour cela pas moins, il faudra s'y résoudre. \nDorothée\n dre, Et bien quand je saurais qu'on me mettrait en pouQu’il fut ou ma Maîtresse, ou plaît du Balais, Ma foi, dans ce péril ne vous lairra jamais: Et comme de tout temps elle vous est promise, Ma personne par tout vous sera toute acquise.",
+          "Oui, je l'aime bien, et ma secrète flamme, Se veut communiquer à toi pour ce sujet, Et ne mérite pas qu'on en fasse rejet. \nDorothée\n C'est à toit, c'est à toit, vous m'imposez un crime D'y penser, le sujet étant si légitime.",
+          "Cloridor\n Commandez de fermer, pour éviter toujours ce qui se peut tramer. \nFloriste\n Dorothée, fermez. \nDorothée\n Je vais vous satisfaire: \nCloridor\n C'est à ce coup qu'il faut vous déclarer l'affaire, Vous ne l'ignorez pas: mais je ne puis tarder.",
+          "Vous savez que depuis que j'aime Dorothée, Sous le nom d'un Hymen, qui charge ma pensée, Je n'y ai jamais pu voir des galants à l'entour: Enfin vous savez bien ce que c'est de l'amour. \nCloridor\n Mais tu ne penses pas;",
+          "Il a goûté ton charme, et se laissant surprendre, Par la douceur qu'il aime, il a fallu se tendre. \nDorothée\n Puis que vous-vous rendez pour moi si favorable, Ne dois-je pas quitter ce malheur qui m'accable."
+        ]
+      },
+      "top_5_persons": [
+        "DOROTHÉE",
+        "Alexandre",
+        "Magus",
+        "Pluton",
+        "Adame"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "C'est un brave valet, s'il y en a en France Nous en avons besoin, usons de patience:"
+        ]
+      },
+      "top_5_places": [
+        "France"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

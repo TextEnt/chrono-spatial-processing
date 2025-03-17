@@ -1,0 +1,80 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Aure, François d'",
+    "title": "Dipné, infante d'Irlande , tragédie, dédiée à madame Eleonor de Roham,...",
+    "publication_date": "1668",
+    "document_id": "bpt6k56197532"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Armide",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Qu'un Armide qui tient une pauvre Taverne, Hier sur le tard fut vu traitant avec Gerberne, Qui le sollicitait de pourvoir à sa faim, Iui mettant pour l'achappt, or et joyaux en main: Qu'aussitôt le suluant avec cettain Argante, Il n'avait pas atteint sa demeure présente: Mais que son compagnon en courant plus avant.",
+          "Mais tu me pressais crop, et j'étais occupé: Après t'avoir oui je voulais voir Armide Pour sçauoir de sa bouche où Gerberne réside, Quels joyaux en ses mains il peut avoir témis, Et tu peux témoigner qu'il me les a promis.",
+          "ARMIDE\n Je parle de ceux-là, ces hommes merveilleux Se sont faits maintenant habitants de ces lieux, Et des endroits voisins où leur famille habite Je les dois voit ici recevoir ma visite. \n",
+          "Armide a déclaré qu'au soir un étranger (C'est Gerberne sans doute) afin de l'obliger À ses provisions, lui fit grande largesse Des joyaux que je tient être de la l'rincesse.",
+          "ARMIDE\n Je ne sais si grande dois ou répandre des pleurs, Ou m'échapper en tis, ayant l'âme occupéo Moins en mon bien perdu qu'en ma vie écbappée."
+        ]
+      },
+      "top_5_persons": [
+        "Armide",
+        "MOGALE",
+        "Nearque",
+        "Colombe",
+        "M"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Mogale",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Il est vrai qu'on en fait de commuus entretiens, Et qu'il est soupçonné Sectaire des Chrétiens: Mais pendant que le Roi sous ces bruits le tolère, Pour les fruits de la fille et les vœux de la mère, Mogale voyant bien si le Prince mourait Que (les fils défaillants) la fille hériterait, Et que dans ses grandeurs qui le feraient décroître Cette illustre Disciple éleueroit son Maître;",
+          "mais encor je n'ai pas contenté Dans tous nos entretiens ma curiosité: Car j'attendais toujours quelque réponse mâle Dont Gerberne arrêtât le discours de Mogale, Lois qu'il lui proposa par tant d'empressements Ce conseil coloré de ses beaux compliments, Si la crainte du Roi;",
+          "S'il va bien c'est le Roi, s'il va mal c'est Mogale Sans avoir ręcherché ces illustres honneurs, Leur acquêt nous acquiert le nom de suborneurs: Ainsi nous ne croissons qu'au péril de décroitre.",
+          "Mogale était à pied, et se croit à cheval (En chatoüillant le Roi) s'il détruit son rival: C'est pour ce beau conseil sans donte qu'il s'apprête Apadle ceRvarqu a toujouls ententes TROPHIME.",
+          "Je veux vous faire voir, Monsieut (poursuit Mogale) un trait de mon devoir Au bien de la Punces aregner destinée, Le Conseil lui pourchasse un royal hyménée."
+        ]
+      },
+      "top_5_places": [
+        "Mogale",
+        "Dublin",
+        "Gange",
+        "Rhin"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

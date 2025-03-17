@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Bauter, Charles",
+    "title": "La Rodomontade, Mort de Roger, tragédies et Amours de Catherine",
+    "publication_date": "1605",
+    "document_id": "bpt6k10900724"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Roger",
+          "frequency": 34
+        },
+        "related_sentences": [
+          "Mais quoi que mon mérite ait trop peu de puissãce, Je vous veux, et dans bref donner la connaissance Que le français état ma tellement rengé, Et désoubs sa douceur tellement obligé, Que vous direz un jour les armes ennemies Du Roi Bulgarien, me sontores amie: Ma vie, mes moyens, mon honneur, mon état, Et mon cœur désormais feront de France état, Et vous Prince honoré dont j'ai l'âmefachée D'avoir ma Bradamante en amour recherchée, Vous verrez, et direz, ô bien heureux le jour, Que ma fille, et Roger feurent conjoints d'Amour: Vous vaillant Paladins qui avez pris querelle Pour mon faible parti, pour me conserver celle Que vous m'aviez jurée, alors qu'aurez besoing D'un peu faible Roger, vous rendre verrez au point Au simple mandement la forte coutelasse, Le casque sur le chef, et au dos la cuirasse",
+          "Sire ie reconnais Le trouble de la Court, c'est pourquoi tu veux vivre Affranchi de ce trouble, et ne veux point surviure A l'honneur de Roger, qui à seul méritté Le bien qu'il à pour moi ce jour celui conquesté. Cessez Princes Français, cessez tout ce tumulte, Roger est le sujet de toute la dispute: Vous demandez Roger, vous aurez ce Roger, Je vous veux envers moi à ce jourobliger, Tenez voilà Roger que votre cœur désire, Tenez voylà Roger où tout chacun aspire, C'est ainsi qui sous mon nom de mes armes armé Vous a fait voir ce jour le combat renommé, Cest toujours qui à Vaincu et non moi Bradamante, Doncques donnez-là lui: car mon âme contente D'obliger ses valeurs, ores la veut quitter, Et veult de cette amour du tout se déporter.",
+          "? qu'avons nous fait mon amiable Roger À ces Princes, qu'ainsi ie les vois s'obliger A secourir l'état le sceptre d'Andrinople L'unique successeur du grand Constantinople Nous donne ses faveurs, qui en ce surmontant, Va tant d'affections devers nous arrêtant. \nAYM\n Mais il est de besoin et tile qu'un prince Nouvellement élev dedans une province Aille de son état prendre possession: Sire, vous le savez, et qu'une occasion Facilement se trouve afin qu'on se mutine, Une nef sur les flots de la fière marine Quand les contraires vents agitent ses côtés, Sans philotte, et nochers, est mise aux cruautés Des flots injurieux?",
+          "Par elle ce Roger conduit à sa plaisance Charles, et tout l'état, et ores dans Paris Chassant d'auprès du Roy tous les plus favoris, Il commande à baguette, et moi qui soulois être Le premier pres le Roi, et qui soulois paraître Entre les Cavaliers, comme cet œil des Cieux Paraît sur les clartés des flambeaux radieux, Je reste mal voulu, et la mauditte race, De ce perfide ATymon s'enorgueillit d'audace?",
+          "Or Seigneur fus donc conduit à la Princesse Alcine, Alcine de vos maux la sûre médecine, Alcine qui vous peut tout en un coup venger De Charles, de Roland, et de votre Roger Ainsi que vous savez par son art de Magie, Par son enchantement toute chose est régie: Elle voulut savoir en quelle part j'allais, Et si d'un Cavalier nouvelle te sçauois, Que l'on nommait Roger, qui l'avait abusée:"
+        ]
+      },
+      "top_5_persons": [
+        "Roger",
+        "Roger",
+        "AYM",
+        "ROGER",
+        "Léon"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 34
+        },
+        "related_sentences": [
+          "Mais quoi que mon mérite ait trop peu de puissãce, Je vous veux, et dans bref donner la connaissance Que le français état ma tellement rengé, Et désoubs sa douceur tellement obligé, Que vous direz un jour les armes ennemies Du Roi Bulgarien, me sontores amie: Ma vie, mes moyens, mon honneur, mon état, Et mon cœur désormais feront de France état, Et vous Prince honoré dont j'ai l'âmefachée D'avoir ma Bradamante en amour recherchée, Vous verrez, et direz, ô bien heureux le jour, Que ma fille, et Roger feurent conjoints d'Amour: Vous vaillant Paladins qui avez pris querelle Pour mon faible parti, pour me conserver celle Que vous m'aviez jurée, alors qu'aurez besoing D'un peu faible Roger, vous rendre verrez au point Au simple mandement la forte coutelasse, Le casque sur le chef, et au dos la cuirasse",
+          "Ne vous affligez point, peut-même quelque jour Vous vengerez le tort qu'il fait à votre amour, H yu Oïtre art ne manque point, vous avez la puissance De voler d'un clin d'œil jusques dedans la France Pour trouver Gannelon, et vous joignant à lui Auec votre pouvoir vous sortirez d'ennui: Il peut, joint avec vous, dedans vos bras le rendre, Et lors que vous l'aurez, alors vous pourrez prendre Vengeance par sa mort des étranges forfaits Que son volage amour, et ses ruses ont faits.",
+          "Je ne l'ai vu duiour, pour ce voyage faire Amour le rend assez hâtif et téméraire, Le petit impudent, une vais courir après: J'atteste si ici puis le rencontrer de pres Qu'il payera mes pas, ie le ferai plus sage Éviter derechef un euité dommage. \nROGER\n Mon père ici vois bien qu'Hommes désir de reueoir La France vitement, vous met en ce devoir Envers notre Empereur?",
+          "Mais il faut cette nuit Combattre vaillamment avec plus de duit, Ses combats sont plaisants, ses charges amou reuses, Sesprises ne sont pas sanglantes et fâcheuses. \nOLIVIER\n Sire, il est déjà tard, tous vos sujets joyeux Vous viennent au devant, élevant jusqu'au Cieux Le nom de ce vainqueur, allons en diligence, Ils disent ces propos: voici de notre France Les vrais libérateurs.",
+          "Après tant de traverses, Tant de cruels combats, de peines, de tristesses Ou cette pauvre France allait se consommant, Par les cruels efforts du superbe Agramant, C'est bien quelque raison qu'ores on s'esiouisse, Et que toute douleur de nous s'évanouisse: Que l'on passe huit jours en plaisirs, en ébats, En tournais amoureux, en dances, en combats."
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Paris",
+        "Bulgarie",
+        "Espagne",
+        "grèce"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

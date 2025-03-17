@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Basire, Gervais",
+    "title": "Lycoris, ou L'heureuse bergere. Tragedie pastoralle. A neuf personnages",
+    "publication_date": "1627",
+    "document_id": "bpt6k856887c"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Hylas",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Diane, Lycoris, Hylas, Arcadin, Doralis Damon, Myrtine, Philirie, Messager, Diane Où l'heureuse Bergère Qu'il plaise au Ciel tes fautes oublier: Et que ce feu qui de prés te menace Des dieux fâchez te remettent en la grâce: Prends bon courage, il n'y a plus qu'un pas Pour vivre heureuse aux regrets de là-bas. \nLycoris\n Puis que douceur, est morte en toi, Déesse, Etque ta grâce est sourde à ma tristesse Jène veux plus de vœus t'importuner, Mon pleur t'enflamme, au lieu de retourner Faut que mon jour hélas: pauvre chétive?",
+          "Ay dit Adieu, je l'ai vus s'en aller, Le mien Hylas, sans vouloir consoler, Son âme triste, ô Bergère cruelle, A tort le Ciel te fît jadis si belle, Tu n'es pas fille, il faut que la rigueur, T'ait mis au seinfin roc au lieu d'un cœur, Jeune tu as teté ta félonnie, Ou quelque sere aux déserts d'Herganse, Puis que tu peux voyant tant d'amitié, Astre insensible aux coups de la pitié.",
+          "Je n'ai souri que d'autres vont l'aimant, Pourvu qu'elle ait pitié de mon tourment: Pour un rival nom m'entre en jalousie, Un tel martel n'est en ma fantaisie, Qu'un Doralis, qu'un amoureux Hylas, L'aillent pressant toute nue en leurs bras, Ce m'est tout-un: ie ne trouble leur aise.",
+          "S'il n'est ja fait, on n'en puis que douter. \nHylas\n Allon chétif, allon donc misérable, Sauver son jour, par ma mort secourable S'il est trop tard, Seigneur mourrai malheureux, En contoignant à sa cendre mes feux.",
+          "le suis nette du fait, Je te le jure, et si j'ai connaissance D'un tel ingrat j'en ferai la vengeance, Dy le moi donc ne me le cèle point, Hylas Mu trop parler un malheur est conioint Chaste Bergère"
+        ]
+      },
+      "top_5_persons": [
+        "Hylas",
+        "Lycoris",
+        "Damon",
+        "Diane",
+        "Bergère"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Bergère",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Diane, Lycoris, Hylas, Arcadin, Doralis Damon, Myrtine, Philirie, Messager, Diane Où l'heureuse Bergère Qu'il plaise au Ciel tes fautes oublier: Et que ce feu qui de prés te menace Des dieux fâchez te remettent en la grâce: Prends bon courage, il n'y a plus qu'un pas Pour vivre heureuse aux regrets de là-bas. \nLycoris\n Puis que douceur, est morte en toi, Déesse, Etque ta grâce est sourde à ma tristesse Jène veux plus de vœus t'importuner, Mon pleur t'enflamme, au lieu de retourner Faut que mon jour hélas: pauvre chétive?",
+          "Où l'heureuse Bergère Cela qui fut un Paradis aimable, Est un enfer tristement effroyable, Un Purgatoire, ou les pauvres damnés, Vont lamentant par l'amour enchaînez, Tant seulement leur sort est dissemblable, Des exilez chez Pluton intraitable, Par ce que là aucun ne peut mourir, Ici l'on peut le trépas encourir, Quand les ennuis en suscitant l'envie Et que les maux nous font haïr la vie,",
+          "Je m'avisai d' Homme stratagème, Qu'il se cachât quelque temps en ces bou, Et moi tandis son trépas était faindrais. \nDoralis\n Il était saint, antant qu'est vraie, et forte, L'affection qu'a Lytoris homme porte, \nDiane\n Où l'heureuse Bergère Pauvre Berger, las: ou mets-tu ton cœur?",
+          "Dessus les bords se présente une barque, Lors redoutants moins l'onde que la Parque, Qui nous suivait restant en nos hameaux, Nous nous jetons à l'abandon des eaux, Entre le doute, ou de mort, ou de vie:  Où l'heuteuse Bergère Durant ce tour Thétis toujours adoucié",
+          "N'était-ce assez qu'un sort inexorable, Eut Doralis, eût Lycoris estaincts, COstant tout l'heur de ces boccages saints, Où l'heuteuse Bergère Sans que le Ciel, par le piteux naufrage De Philyrie, augmentât le dommage?"
+        ]
+      },
+      "top_5_places": [
+        "Bergère",
+        "Cypre",
+        "Rome",
+        "Rhin",
+        "Lyco"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

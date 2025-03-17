@@ -1,0 +1,76 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Montgaudier, De",
+    "title": "Natalie, ou la Générosité chrestienne, tragédie",
+    "publication_date": "1657",
+    "document_id": "bpt6k1090120r"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Maximian",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Seigneur, sans vous priver d'un homme de Capitain J'ai trouvé le moyen de vous mettre hors de peine, La force ne peut rien contre un homme de cœur, Daus les pias grads eseues sour coure ge est vainqueut Mau la volupté seule a droit de le corrompre, Il n'est point d'escadrons qu'elle ne puisse rompre, Et quelque fermeté qu'il témoigne aujourd n, Puisse attraits enchanteurs viendront à bout de lui, C'est -elle qu'on a vu mettre Inibal en fuite, Qui vainquit Marc Antoine aut toute Egypte, Et au toute L' vsant de trabison, Dans son Et tharmé versera son poison, Qui fera voir vaineu par l'effort des délices Celuy qui surmontoit les plus bruels supplices, \nMAXIMIAN\n Tout ce raisonnement ne me satî fait pas, Préta plus tuuite rojout in etvena liijpaz, Car le moindre bourreau peat finir à ma vue Le travail importun qui m'accable et me tue.",
+          "Ha Seigneur j'aime mieux, Oui l'horreur de ces lieux étonne ma constance, Mais s'agissant d'un choix d'une telle importante, Permettez-moi Seigneur d'y panser mourement, Et me donnez délai de trois jours seuliment. \nMAXIMIAN\n approuue ta demande elle est iuste et espere Que ton obiïssance éteindra ma eslere, Que tu préféreras le beau feu d' Amant Aux sales cruauté honteux châtiment, Et que ton cœur épris douce espérance Se rira du vefuage et de indiffirence, Va pèze auec loisir et sans affection, Ce qui fait pour ou contre en ton élection, Ressouuiens-toi tout que Martian adore, Que malgré sa froideur sa flame dure encore, il est dans ma faueur J'approuve ta d me",
+          "Hélas Seigneur excusez sa manie, Ou puisqu'il voit le jour comme un objet d'ennui, Né le panissez pas pour vous venger de lui. \nMAXIMIAN\n Moi souffrir un Chrétient qu'une insolente secte, De sa contagion toute la terre insecte, Et que dégénérant de mon aversion, J'abandonne les Dieux à leur discrétion, Que ie sois soupçonné d'être d'intelligence, Et devant sigualer mon nom par ma vengeance, Deuant noyer l'erreur dans des fleuves de sang, pans especi d'amtie, de sext, ni de rang, Deuant à la pitié tenir mon amt close, Qu'une lâche tendresse à mes désirs s'oppose.",
+          "Et pour l'en retirer le temps est un remède, Auquel après l'amour tout autre moyen cede, L'un et l'autre est puissant, mais ce dermier ici, Est pour y parvenir un chemin racourci, Que votre Majesté va savoir tout à l'heure, Moi ennant qu'auet nous personne ne demeure, Car il n'est pas besoin de découvrir à tous, Les mysler d'amour. \nMAXIMIAN\n Εtbιεπππσιινεz-voudre, Et qu'on nous laisse seuls SCÈNE MAXIMIAN, MARTIAN.",
+          "Si la perte du sang luy ravit l'enbonpoin, La fête de l'espeit ne en affaiblit point, Mon âme inuiolablt aux plus fôtes attaintes, Est dans une assiette inaccefible aux traintes, ne le vitlar alemmgequuers vom 216 Prêt de servir de blanc contre de nouveaux coups. \nMAXIMIAN\n Et moi plus qu'attendri par ta misère extrême, Te conjure d'il empereur qui t'aime, Et que de ta valeur l'importun souvenir Ne pouvant te sauver retarde de punir."
+        ]
+      },
+      "top_5_persons": [
+        "Maximian",
+        "Adrian",
+        "MARTIAN",
+        "Seigneur",
+        "Natalie"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Grèce",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Oui des Marchands Chrétiens enlèvent sa richesse, Et vont de sa dépouille orner toute la Grèce, Leurs vaisseaux sont chargés des corps de nos MarEt le vent attentif à régler ses soupirs tirs, Les pousse dans Bisance on dirait que la flotte A quelque Ange établi pour siruir de piloite, Vosire cousine suit d'H regard empressé, Ce que l'éloignement n'en a point effacé, Et pour courir après retient sur le rivage, Un Navire thargé d'un precieux bagage, Elle n'attend que vous, ou pour vous dire adies, Ou pour fuir ensemble si mal-beureux lieu.",
+          ", Je sais qui me conduit sais sais quelle est ma route, Et quitte sans regret le lieu de mon berceas Pour aller dans la Grèce emprunter un tombtas."
+        ]
+      },
+      "top_5_places": [
+        "Grèce",
+        "Rome",
+        "Egypte"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

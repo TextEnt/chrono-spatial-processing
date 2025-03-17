@@ -1,0 +1,79 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Chappuzeau, Samuel",
+    "title": "L'Académie des femmes, comédie",
+    "publication_date": "1661",
+    "document_id": "bpt6k1090075c"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Guillot",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Nous cracher au visage, en nous baisant nous mordre, Crier haro sur nous, mettre tout en derorure, Sachez qu'en fait d'argent Guillot et Ragotin, veulent ielolument avon put aubutin. \nALIX\n Que nous veulent ces foux, ces enragés, ces rustres?",
+          "Guillot, quoi que ie pusse avec bonne justice Te donner tout le sou de l'eau pour ton supplice, Te fermer la cuisine, et te bien tétonner, le veux plus fatle encor que de te pardonner.",
+          "LEARQUE, HORTENSE, LA ROQVE EMILIE, À MINTE, LUCE, CORNELIE, GUILLOT, LISETE LA ROQUE, IE est temps d'approcher, \nBAJETE\n Ah le voici, Madame!",
+          "À la porte, Guillot, vite. \nGUILOT\n Vas-y toi-même, Je prends dans le cellier deux verres d'Aposème.",
+          "Il n. Guillot, encore un coup, tu t'en repentiras, Et tu sais le pouvoir que j'ai dans la cuisine. \n"
+        ]
+      },
+      "top_5_persons": [
+        "Guillot",
+        "ALIX",
+        "Lisette",
+        "LUCRECE",
+        "Sénèque"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Se divertit-on bien à Rome il me souvient Que j'y passai fort bien le temps dans un voyage Qu'avec l'Ambassadeur j'y fis en mon jeune âge.",
+          "De Rome, ou de Turin si quelque autre revient;",
+          "est extrême, Plus cruelle que Rome"
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Paris",
+        "Théâtre du Marais",
+        "Hongrie",
+        "Turin"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

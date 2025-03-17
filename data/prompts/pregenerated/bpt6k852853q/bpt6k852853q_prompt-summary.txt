@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Lapoujade",
+    "title": "Faramond ou le Triomphe des Héros, tragicomédie",
+    "publication_date": "1672",
+    "document_id": "bpt6k852853q"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "FARAMOND",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "FARAMOND, Suis-je absous, ou coupable encorequ'ô me dessille! \nL'ALTORUNE\n vous, de qui la vertu jusque dans le Ciel brille, llonarque sans pareil que nous voyons assis Sur un trône qui rend les autres obscurcis, Apprennés, apprennez que vous n'êtes coupable que du crime d'aimer un objet tout aimable, ais ce crime est si noble et plein de tant d'apas q’on peut l'avoir commis, et ne le nier pas, lle Ciel pour Faramond fit naître xosémonde, Et le seul Bamir est digne d'auguste unimonde, Ces qu'auguste union de ces qu' Heros, Tout Vnivers ensemble à fondé son repos, Contentés, donc le y, fie la terre, lievenez les mal urs une plus songue guerre, Etbornant y lecours de vos amours Passés heureusement le reste de vos iours, \nBALAMIR\n Entendez-vous ma sœur, ce que dit Melusine Celle dont le savoir tous nos sens illumine, ROSEMONDE.",
+          "N'accusez pas vos sens, Seigneur, ils sont fidèle Je l'ai dit, et s'il faut vous le dire deux fois Je suis l'ordre du Ciel, j'obéis à sa voix, Ic ie ne fais point de contrainte à mon âme, Je cède sans effort aux traits de votre flamme, Enfin nous n'avons plus à combattre des morts Ces phantomes d'horreur ont fait tous leurs effait Et ces sombres tableaux de colère et d'envie N’ont plus à ménager le cours de notre vie, Si ie me dois régler, c'est par ce frère ici, Il veut que ie vous a, et ie le veux aussi. \nFARAMOND\n Divine nosémonde, est-ce fable?",
+          "j'ai désespère, la prière en est jetée, Mon âme se résoud d'être persécutée, ruiqu'a ce que la parque ait borné ses soupirs, Jugez-donc si l'amour flatte encor mes désirs? \nBALAMIR\n ll les viendra flatter cette muite rourne, Lorsque nous vous errons trancher la destinée Des faperbes jivaux qui courent sur vos pas. \nFARAMOND\n ce glorieux emploi n'est dû qu'à votre bras, \nBALAMIR\n Vous en avez déjà couché sur la poumère. \nFARAMOND\n Plût aux bieux que ma vie eut péri la première, Et que je n'eusse pas par un coup trop fatal.",
+          "S'il ne m'avait paru dans di verses alarmes, Glacant les plus hardis au seul bruit de ses armes: Je pourrais me flatter, quoi qu'assez vainement D'un espoir qui ne doit avoir de fondement Qu'en la rare valeur du puissant Roi de France C'est lui seul qui nourrit notre juite espérance, La victoire à le suivre à trop d'attachement Pour ne présager pas un bon événement, Que la fortune même inhumaine et barbare Dans cette occasson contie lui un décrare, Il porte à son côté dequoy la surmonter. \nFARAMOND\n C'est m'attaquer par où tu ne puis résister.",
+          "our les autres on croit que le fier Varanez Plain de ressentiment les a tous amenez pe laint des érats du prince de Suve , fût hors Briomer contre lui se souleve peigneur en peu de mots voilà ce qu'un soldat eau s'a dit confusément sur la fin du Combat. \nFARAMOND\n Ouel ordre prendrons nous si la nouvelle est vraie? \nBALAMIR\n felsous resterons ici si Faramond l'agrée, \nFARAMOND\n quelleuittez ce sentiment et songez à partir, imprudence produit toujours du repentir."
+        ]
+      },
+      "top_5_persons": [
+        "FARAMOND",
+        "Polixène",
+        "Théobalde",
+        "Seigneur",
+        "MÉLUSINE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Cologne",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Ce timide vaincu d' ton mal asseuré, Levant les mains au Ciel en suite m'a juré Que le Roi de Suëve et celui de Bourgogne Avoint rompu devant la prise de Cologne, Et que le Bourguignon quittant le Suvais, L'appelant ennemi mortel à haute voix, l'avait fort menacé d'une guerre éternelle Sans que personne sut d'où venait leur querelle;",
+          "Ne crois que Ciel et témantre Se sont bandés ce jour pour nous faire la guerre \nÀLBISINDE\n Ma sœur, la Ville est prise, et nous sans doute auls ach Si nous ne travaillons à nous ôter d'ici, J'ai vu les ennemis entrer tous pèle et messe Aux portes de Cologne ROSEMONDE.",
+          ", di devant le combat ont déserté Cologne niero de na aigneurs, un repentant pourrait-il obtenir.",
+          "Que Balamir et lui, d'un mouvement égal, Préparent à Cologne un assaut général.",
+          "La Scène est à Cologne FARAMOND, ) LE TRIOMPHE DES HÉROS, IRIIEICEMEDIE."
+        ]
+      },
+      "top_5_places": [
+        "Cologne",
+        "Rome",
+        "France",
+        "V",
+        "Cologne"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

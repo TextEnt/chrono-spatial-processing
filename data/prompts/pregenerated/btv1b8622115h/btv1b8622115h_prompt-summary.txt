@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Mairet, Jean",
+    "title": "Le Roland furieux, tragicomedie de Mairet",
+    "publication_date": "1640",
+    "document_id": "btv1b8622115h"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ISABELLE",
+          "frequency": 9
+        },
+        "related_sentences": [
+          ", Je m'abandonne donc au pouvoir de votre art. \nISABELLE\n Après ce grand serment tenez-vous à l'écart, Pendant qu'à deux genoux et la tête tournée Du côté que l'Aurore annonce la journée, J'invoquerai pour vous et dirai ce qu'il faut A l'accomplissement d'un mystère si haut, Qui sans herbes ni soins consiste en trois paroles Dont la moins énergique ébranlerait les Poles, Il n'entre en tout le sort qu'un simple toujours vert, Désia par auanture a-prés découvert, Qu'il faut tremper trois fois dans un eauëpure é laire",
+          "Oui, ma fille, achevez ce vertueux dessein Puisque l'Esprit divin vous l'amis dans le sein, Et que depuis la mort de votre Amant fidèle Un vœu de chasteté, dont la garde est si belle, Comme undon fait au Ciel qu'on ne peut révoquer, Vous oblige à mourir plutôt que d'y manquer. \nISABELLE\n C'est de Seigneur que j'attends la force et la constance Que veut une action de si haute importance:",
+          "Chacun me blâmera, mais dès qu'on aura vu La grâce et la beauté dont mon ange est pourvu Sur tant, quand pour sa gloire on aura connaissance Du sujet dont ma flamme a tiré sa naissance, Les plus rudes censeurs des amoureux appas, S'ils n'approuvent mon choix, ne le blâmeront pas: Mais le voici qui vient en diligence extrême. \nISABELLE\n Éi, cotre en Amants ANGELIQUE.",
+          "Mais qui vous a parlé de cette circonstance? \nISABELLE\n Un miracle d'honneur, d'amour et de constance, Le généreux Zerbin, qui vous aurait sauvé, Et dont votre assassin eût le glaiue éprouvé, S'il n'en eût euité par une heureuse fuité, Et la juste colère, et la chaude poursuite.",
+          "L'HÉRMITE\n Vous parlez de le suivre, et vous courez devant Quoi ne voyez-vous pas qu'il est encor vivant, Et que son œil qui craint et cherche la lumière Ouvre et ferme aussitôt sa pesante paupière? \nBERTRAND\n It faut d'un peu a eau sraisène eueiuer ses esprits. \nISABELLE\n Ha!"
+        ]
+      },
+      "top_5_persons": [
+        "ISABELLE",
+        "Zerbin",
+        "Roland",
+        "BERTRAND",
+        "ROLAND"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 9
+        },
+        "related_sentences": [
+          "et faisons très-expresses défenses à toutes personnes de quelque qualité et condition qu'elles soient, de l'imprimer, faire imprimer, vendre ni distribuer en aucun endroit de ce Royaume, durant ledit temps, sous prétexte d'augmentation, correction, changement de titre, ou ment, en quelque sorte et manière que ce soit, à peine de quinze cens livres d'amende, payables sans déport par chacun des contrevenants, et applicables tiers à nous, un tiers à nô-Dieu de Paris, et uautre tiers à l'expõsant, de confiscation de Par contrefairs, et l' au despens, de et intérêts;",
+          "Moi qui seul éviterai par un saut incroyable Cette bouche d'Enfer, cette fosse effroyable, Où dix mille des miens à l'assaut préparés Furent jusqu'au dernier par les feux dévorés: Moi qui perçant Paris jusques dans les entrailles Y causai tant de pleurs et tant de funérailles, Et l'embrasai si bien de l'un à l'autre bout Que le sang et la flamme y coururent par tout;",
+          "Mais à la veille d'être pris, L'amour dont mon cœur est épris Me force de suivre Angélique, Et ne veut pas que je m'applique À la défense de Paris Après tout, à bien discourir, C'est moi qu'il faudrait secourir, Et pour moi donner des batailles;",
+          "Mais quand tu pourrais seul ce qu'ils peuvent ensemble, Apprends que Rodomont dans Paris si vanté N'a jamais rien connu qui l'ait épouvanté;",
+          "Donne à Paris le vingt- troisième de Feburier, l'an de grâce mil six cens trenteneuf, et de notre règne le vingt-neuvième."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "France",
+        "Maine",
+        "Landes",
+        "Gange"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Rotrou, Jean de",
+    "title": "L'Heureuse constance , tragi-comédie de Rotrou,...",
+    "publication_date": "1636",
+    "document_id": "btv1b8622133f"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "TIMANDRE",
+          "frequency": 17
+        },
+        "related_sentences": [
+          "C'est avec cet espoir que j'attends l'arrive De celle dont mon a re est si long temps privée, Qui vient charmer la Cour de ses appas exquis, Et posséder chez nous ce qu'elle s'est acquis, Avant que de paraître, et recevoir à Bude Cét agréable objet de mon inquiétude, Puis qu'elle dîne ici, ie puis facilement Satisfaire à mes yeux, en ce faux vêtement, Voyant cette beauté qui n'a point de pareilles, Et dont l'Ambassadeur m'écrit tant de merveilles, Beaucoup se trouveront, en ce village, se Trouver voir des premiers exprès y attraits: Timandre, ai-je assez bien déguisé mon visage?",
+          "Selon votre désir, disposez de mon âme, Vous seul la pouvez rendre, ou de glace, ou de flamme, Puisque l'obéissance est aveugle, et sans voix. \nTIMANDRE\n J'espère ainsi de vous, et ce remède unique Peut détourner du Roi le pouvoir tyrannique: Mais il vous faut, ma sœur, retirer de ces lieux, J'appréhende pour vous, les Rois ont beaucoup d'yeux.",
+          "Moi qui ne ressens point de pareilles douleurs, Qui n'ai jamais appris à répandre des pleurs, Qui trouve toute chose à mon dessein propice, Mimte on maiheureux, et uartisice, Comment pourra l'amour finir heureusement Ce que nous commençons par un déguisement. \nTIMANDRE\n Pour goûter un bonheur que le Ciel nous envoie, Il faut qu'un peu de mal en molère la joie;",
+          "c'est trop m'outrager, L'honneur mal gré l'amour m'oblige à me venger. \nSonono\n LE ROY entre avec des serviteurs, et les retenant, dit: Où courez -vous, animez de la sorte, \nIS\n Sire, un juste sujet à ce courroux me porte, Timandre m'a tenu des mots injurieux, Qui du plus modéré feraient un furieux.",
+          "Je jure par le Ciel que cet objet vainqueur, Gouvernera mon Sceptre aussi bien que mon cœur \nTIMANDRE\n Sire, nous chérirons d'une amour éternelle La chaste intention que vous avez pour elle, Et ce point seul nous manque en un bonheur si doux, Qu'elle a trop peu d'attraits pour un si digne Époux."
+        ]
+      },
+      "top_5_persons": [
+        "TIMANDRE",
+        "ARIS",
+        "FLORINE",
+        "ARIS",
+        "Ogier"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 17
+        },
+        "related_sentences": [
+          "De toutes qualités, de tous noms, de tous aages, Sachez ce que Uenus avait de plus charmant, Paris vous en dût-il dire son sentiment: Après tout il faudra que tout le monde avoue, Qu'un regard de la Reine, un œillet de sa jours, Un des lys de son sein, un poil de ses cheveux, Passent tous les objets qui méritent des vœus.",
+          ", Si vous avez dessein de nous tant honorer;  Serais-je encor Paris, refusant cette gloire, Monsieur, demandez -vous si Tantale veut boire, Je meurs d'impatience, en des accès si forts, Quand j'aurai vu le Roi, traitons ces doux accords.",
+          "TIi leNDre ne Paris vient s'acquitter d'un soing plus important, Quand il aura parlé, je vous rendrai content. \nARIS\n Tout vous succède, Sire, en la gloire où vous êtes, On reçoit dans le Ciel tous les veux que vous faites;",
+          "Paris, depuis longtemps idolâtre vos charmes, Vous savez ses désirs, vous avez vu ses larmes, Nous joindrons votre sort à sa condition, Si vous êtes sensible à son affection.",
+          "Ces charmes n'ont-ils pas mes beauté effacées: Voyez, voyez Paris, ce miracle d'amour, Et méprisez la nuit quand vous voyez le jour."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "PARIS",
+        "LORIS",
+        "Dalmatie",
+        "Bude"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

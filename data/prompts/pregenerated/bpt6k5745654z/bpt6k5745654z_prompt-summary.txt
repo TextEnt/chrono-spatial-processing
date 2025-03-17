@@ -1,0 +1,79 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Regnard, Jean-François",
+    "title": "\"Scènes françoises de la comédie italienne intitulée \"\"la Foire S.-Germain\"\" , comme elles ont paru dans les premières représentations\"",
+    "publication_date": "1696",
+    "document_id": "bpt6k5745654z"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Lucrece",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "C'est-à -dire que vous avez présentement la conscience à la glace, et moi pour le répo, de la mienne j'attrape ici l'aigent du passant, c'est moi qui fais voir la bonche de la vérité, la mort de Lucrece, le Quadran du Loaque, le Sertail de l'Empereur duCap verd, et autres niaiseries lucratives Huroute datorlos \nCOLOMBINE\n Quoi Celt toi qui.",
+          "Jugez en ce moment de l'excès de sa flamme Dachepter des faveurs trois cens Loüis comptant, Qu'il pourrait obtenir ailleurs pour quinze francs, \nLUCRECE\n N'était tout le respect que j'ai pour vostra Maîtie, Vous poulées bien, spigneur, sortir par la fenêtre. MELÉPEIN.",
+          "Mais quoi, pour me punir n'ai- je donc pas un bras, Que ce poignard encor tout fumant de sagesse, Immole en même temps et Tarquin et Lucrece, Frappons ce lache cœur qui me retient la main, Perçons.",
+          "Que voulez-vous, Seigneur? \nLUCRECE\n Puisque rien ne saurait atêter ta fureur, Approche, et vois en moi l'action la plus rare Dont jamais l'Univers ait ouï parler.",
+          "J'ai trop fait pour titer mon épingle du jeu. \nLUCRECE\n Avant qu'à tes desseins mon coeur se détermine, Ce fer de mille coups m'ouvrira la poitrine."
+        ]
+      },
+      "top_5_persons": [
+        "Lucrece",
+        "Colombine",
+        "COLOMBINE",
+        "Tarquin",
+        "Pistoles"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Apprenez si vous ne le savez que je suis la première cousine du premier Clerc d'un Huissier à verge au Châtelet de Paris ARLEQUIN.",
+          "À Paris \nCOLOMBINE\n ARLEQUIN.",
+          "la circulation de Paris MEZETIN."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "France",
+        "GRENOBLE",
+        "Allemagne",
+        "verd"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

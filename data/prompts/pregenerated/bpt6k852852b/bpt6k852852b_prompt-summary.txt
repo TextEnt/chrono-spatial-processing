@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Faure, Le sieur",
+    "title": "Manlius Torquatus tragedie",
+    "publication_date": "1662",
+    "document_id": "bpt6k852852b"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "SABINE",
+          "frequency": 11
+        },
+        "related_sentences": [
+          "Sabine\n Madame c'est pour moi un peu trop de faveur Quand vous me faites voir le fond de votre cœur, Ses nobles sentiments marquent son origine Si le brasier est grand la flamme en est divine Manlius est connu pour l'honneur de la Cour Des uns il a l'estime, et des autres l'amour Mais chacun est d'accord de sa vertu qui brille Dans la luperbe Rome il n'est point de famille, Qui ne prenne des soins pour en avoir l'appui Ainsi c'est justement que vous brûliez pour lui. \nSulpicie\n prars babîme le eranis qui ne loit lore le maître De ce feu violent qu'il fait si bien paraître",
+          "Les cœurs comme le sien qui sont nés glorieux Ne se rendent jamais qu'aux soins laborieux À jij à peines, les travaux, les vertus militaires Dans ces occasions sont toujours necessairès Et vous savez Seigneur qu'aux projets importants Vous autres Héros Heros auez besoin du temps. \nManlius\n Si comme tu le dis elle m'est favorable À quoi te suis apprendre bon, de quoi suis apprendre capable minpropé mon dit propose librement Tout ce qui peut servir à ton avancement. \nSabine\n Seigneur c'est trop pour moi, je n'ai dans cet affaire",
+          "Je veux ici ne veux pas Et le crains de lavoir TArrelt de mon cre pas, Et bien me diras-tu quelque grande nouvelle L'aimable Sulpicie est elle aussi cruelle Parmi tant de froideurs dy moi puis ie espérer? \nSabine\n Oui, Mais il faut Seigneur toujours persévérer On ne peut vous donner d'avis plus salutaire Je crois que vous pensez trouver l'art de Seigneur plaire Si vous établissez votre félicité A suivre ses destins et servir sa beauté Son airait froid, sa façon, dont votre âme est troublée Ne pourront souptenir ardeur redoublée",
+          "Quand Livie tantôt paraissait revenir, Vous l'avez empêchée, il en faut convenir. \nSabine\n Il s'est perdu au mesme en servant Sulpicie, Son combat insensé ruinait mon devoir, Sa fourbe était trop grande et il l'a trop fait voir, il eût ce déloyai bien lulajà meine pente, Son attente aujourd'hui ne serait pas usée, Il serait dedans peu le plus heureux humain, Qui respire le jour dans tout l'État Romain. \n",
+          "Je sens dans mon amour quelque chaleur nouvelle Voyant de ces deux cœurs une amitié si belle Fecœurde diicie ainsi bien assorti Sans se tromper jamais a pris le bon parti L'Efclat de sa vertu l'a charmé cher Ariste Et sur ce fondement leur amitié subsiste. \nSabine\n Cet excès obligeant de vos civilités Ne se peut imputer qu'à vos grandes bontés Je vous quitte Seigneur craignant que Sulpicie De mon retardement justement ne s'ennuie."
+        ]
+      },
+      "top_5_persons": [
+        "SABINE",
+        "Manlius",
+        "Ariste",
+        "Consul",
+        "Manlius"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 11
+        },
+        "related_sentences": [
+          "Sabine\n Madame c'est pour moi un peu trop de faveur Quand vous me faites voir le fond de votre cœur, Ses nobles sentiments marquent son origine Si le brasier est grand la flamme en est divine Manlius est connu pour l'honneur de la Cour Des uns il a l'estime, et des autres l'amour Mais chacun est d'accord de sa vertu qui brille Dans la luperbe Rome il n'est point de famille, Qui ne prenne des soins pour en avoir l'appui Ainsi c'est justement que vous brûliez pour lui. \nSulpicie\n prars babîme le eranis qui ne loit lore le maître De ce feu violent qu'il fait si bien paraître",
+          "Il devrait pour le bien de cette République Changer de nos voisins la forme tyrannique, Porter dans leurs États la douceur de nos lois, Et ramener vaincus dedans Rome leurs Rois: Son âme à nul objet ne doit être engagée Qu'à voir nos ennemis en bataille rangée, Qu'à donner à propos les ordres du combat Et bien récompenser la vertu du Soldat: 118048 Qu'à marcher dans les rangs d'une si bonne grâce, Que son feu des poltrons fonde toute la glace;",
+          "Le Consul n'aura pas toujours l'esprit altier, Il aime fort son fils, sans doute à sa prière Il pourra bien descheoir de son humeur sévère, \nSabine\n Madame, Seigneur le vois qui marche assez rêveur, Vous connaissez aussi cette méchante humeur, S'il vous voit se peut-il que cela n'embarrasse, Un esprit qui dans Rome a la première place.",
+          "Il sera désormais un sujet si pompeux Qu'il fera chanceler la foi de nos neueux: Vous avez tant fait voir de vertus dans un homme Que vous êtes le seul Héros dans notre Rome, Après ces grands succès, et ces prospérités Je pourrais consentir à quelques vanités;",
+          "C'est peut-être par là qu'il est resté vainqueur: C'est peut-être par là qu'étant fait gallant-homme, Il vaincra sûrement les ennemis de Rome Je connais que l'amour est un grand agrément Quand celui qui le sent en use prudemment;"
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Linie",
+        "Navarre",
+        "France",
+        "Paris"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

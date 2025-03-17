@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Benserade, Isaac de",
+    "title": "Les plaisirs de l'isle enchantée , course de bague : collation ornée de machines ; comédie, meslée de danse et de musique, ballet du palais d'Alcine ; feu d'artifice : et autres festes galantes et magnifiques, faites par le Roy à Versailles, le VII. may M.DC.LXIV et continuées plusieurs autres jours",
+    "publication_date": "1673",
+    "document_id": "btv1b8626216h"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Moron",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "que ses belles qualités avaient touché ce cœur superbe, et commencé à fondre une partie de cette glace qui avait résisté jusques alors à toutes les ardeurs de l'Amour: et plus il affectait ( par le conseil de Moron qu'il avait gagné, et qui connaissait fort le cœur de la Princesse) de paraître insensible, quoiiqu'il ne fût que trop amoureux, plus la Princesse se mettait dans la tête de l'engager, quoiqu'elle n'eût pas fait dessein de s'engager elle-même.",
+          "Ces heureux Chasseurs n'eûrent pas plutôt remporté cette victoire, que Moron, devenu brave par l'éloignement du péril, voulut aller donner mille coups à la bête, qui n'était plus en état de se défendre, et fit tout ce qu'un fanfaron, qui n'aurait pas été trop hardi, eut pu faire en cette occasion;",
+          "Que si l'on y disait, Voilà l'illustre place, Où le brave Moron, d'une héroïque audace, Affrontant d'un Sanglier l'impétueux effort, Par un coup de ses dents vit terminer son sort.",
+          "Cette Chasse où, pour fuir la foule qui l'adore, Tu sais qu'elle est allée au lever de l'Aurore, Est le temps dont Moron, pour déclarer mon feu, A pris.",
+          "Moron ne fut pas satisfait de cette Chanson, quoi-qu'il la trouvât jolie: il en demanda une plus passionnée;"
+        ]
+      },
+      "top_5_persons": [
+        "Moron",
+        "Moron",
+        "Pyle",
+        "Roger",
+        "Apollon"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Grèce",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "et je n'ai proposé les Fêtes et les Jeux que je fais célébrer ici, qu'afin d'y pouvoir attirer tout ce que la Grèce a d'illustre, et que parmi cette noble jeunesse, tu puisses enfin rencontrer où arrêter tes yeux, et déterminer tes pensées.",
+          "ARISTOMENE\n Le Prince d'Ithaque, Madame, vient de m'asseûrer tout à l'heure que votre cœur avait eu la bonté de s'expliquer en ma faveur, fur ce ceteore cnoix qu'attend toute la Grèce LA PRINCESSE.",
+          "Et je couvre un effet de mes vœux enflamés Du désir de paraître à ces jeux renommez, Où l'Illustre Iphitas, père de la Princesse, Assemble la plupart des Princes de la Grèce ARBATE.",
+          "Si ces lieux fortunés ont tout ce qu'eût la Grèce De gloire, de valeur, de mérite et d'adresse;",
+          "N'aime rien que la Chasse, et de toute la Grèce Fait soupirer en vain l'héroïque jeunesse."
+        ]
+      },
+      "top_5_places": [
+        "Grèce",
+        "France",
+        "Paris",
+        "Lice",
+        "Bergères"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

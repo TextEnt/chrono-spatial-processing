@@ -1,0 +1,78 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Villiers, Claude Deschamps",
+    "title": "Les ramonneurs. Comédie . Comédie. Par Mr de Villiers. Représentée sur le Théâtre royal de l'Hostel de Bourgogne",
+    "publication_date": "1662",
+    "document_id": "bpt6k62514727"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "CAPITAN",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "On ne se trompe pas, car vous êtes bien haut. \nCAPITAN\n Par le ventre, aujourd'hni quelqu'un fera le saut, Secoüons ce Bouquet vite, et sans plus attendre, Voyons ce que par là nous en pourrons apprendre, orina bouren pagne, ce n'pour nos malheurs L'Aspic n'est point ici caché dessous les fleurs. \nGALAFRE\n Ha!",
+          "aucun, il vienne me trouver, l'Hôtel Scanderbec, demain à mon lèver;  toi de Capitan, j'engage ma parole est plus que son argent, Seigneur rendre une pistole, our sa livrée un bas incarnat de Milan, ne épée argentée, et façon de Midan, t pour 'en retourner en son logis grande erre, e plus beau Guilledin",
+          "Nous en sommes aussi, Galaffre viens, de grâce, Fais-moi ton compliment, afin que tu t'embrasse. \nGALAFRE\n Très-volontiers, pourvu qu'après sans nous trõper On nous die où l'on veut apprêter le souper, \nCAPITAN\n est à moi, c'est à moi d'accepter cette charge, veux",
+          "? c'est qu'en effet Vous vous allez, Monsieur, n'en déplaise à la vôtre, Marier d'un côté, comme elle a de l'autre. \nCAPITAN\n Comitient, infaiie, après ni avoir perdu d'honneur, Tu penserais encor faire ici le railleur?",
+          "J'aime tant la Musique, et c'est si fort mon tendre, Que je me luerais à minuit pour l'entendre, Sur tout celle qu'on fait avec des Intruments, Qui bien plus que les voix me paroment charmants. \nCAPITAN\n Des Instruments?"
+        ]
+      },
+      "top_5_persons": [
+        "CAPITAN",
+        "Laure",
+        "Celimène",
+        "LÉANDRE",
+        "Camarade"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Marchand Libraire à Paris, d'imprimer pu faire imprimer, vendre et débiter, quatre Pièces de Théâtre, intitulées, Le Bien Perdu recouvré, La Magie sans Magie, Les Sœurs Jalouses, et les Ranonneurs, en telle mar g,sel caractère, et autant le fois que bon lui semblera, et ce pendant le temps le neuf ans entiers et acco moin, à commencer du our que lesdites Pières seront achevées d'imprimer à la première fois.",
+          "La Scène est à Paris"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Louvre",
+        "PARIS",
+        "Savoie",
+        "Rome"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

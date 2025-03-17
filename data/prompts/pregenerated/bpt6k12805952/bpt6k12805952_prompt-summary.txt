@@ -1,0 +1,78 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Le Malade imaginaire, comédie meslée de musique et de dance, par Mr de Molière",
+    "publication_date": "1674",
+    "document_id": "bpt6k12805952"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ARGAN",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Oui, je le ferai. \nBÉRALDE\n Et de me répondre sans chaleur précisément sur chaque chore. \nARGAN\n né bien oui, voici bien du préambule. \nBÉRALDE\n Ainsi, mon frère, par quelle raison, dites-moi, voulez-vous marier votre fille à un Médecin. \nARGAN\n par la raison, mon frère, que je suis le maître chez moi, et que je puis dilposer à si volonté de tout ce qui est en ma puissance. \nBÉRALDE\n Mais encore, pourquoi choisir plutôt un Médecin qu'un autre. \nARGAN\n parce que dans l'état où je suis, un Médecin m'est plus nécessaire que tout autre;",
+          "Mais vous savez, Monsieur. \nM\n DIADOINUS, pans l'honneur, Monsieur, \nARGAN\n Ce que c'est qu'un pauvre malade \nM\n \nDYAFOIRUS\n De toitre amance. \nARGAN\n qui lle peut lane autie enore. \nM\n \nDYAFOIRUS\n Et vous assurer. \nARGAN\n que de vous dire ic y \nM\n \nDYAFOIRUS\n que dans les choses qui dépendront de notre métier. \nARGAN\n qu'il cherchera toutes les occasions. \nM\n \nDYAFOIRUS\n ne rendre qu'en toute autre \nARGAN\n ne vous faire connaître, Monsieur. \nM\n DIHTCIRUS.",
+          "Là, parlons de lanig lolui quèneit voitie ranon, s 'vous plaît, pour un tel mariage. \nARGAN\n Ma raison est, que me voyant infirme et malade comme je suis, je veux me faire un Gendre, et des Alliés Médecins, afin de m'appuyer de bon secours contre ina maladle, d'avoir dals la rainille les sources des Rèmèdes qui me sont nécessaires, et d'être à montre des Consultations et des Ordonnances. \nTOINETTE\n Hé bien, voilà dire une raison, et il y a plaisir à se répondre doucement les uns aux autres.",
+          "Madame, vous m'avez interrompu dans le milieu de ma période, et cela m'a troublé la mémoire, \nM\n \nDYAFOIRUS\n THomas, IcleNveecela pour die auticiolss \nARGAN\n Je voudrais, ma mie, que vous eussiez esté ici tantôt. \nTOINETTE\n Ah, Madame, vous avez bien perdu de n'avoir poit élite au féconu père y a la Ratde dt Mémnon, et à la rleur nommée Héliotrope \nARGAN\n Allons, ma fille, touchez dans la main de Monfieur, et lui donnez votre foi comme à votre mari.",
+          "qu'il possède en un degré Jouable la vertu politique, et qu'il est du tempérament qu'il faut pour engendrer et prociéer des enfants bien conditionnez. \nARGAN\n N'est-ce pas votre intention, Monsieur, de le fousser à la Cour, et d'y ménager pour venir une charge de Médecin \nM\n \nDYAFOIRUS\n À vous en parler franchement, notre métier auprès des crands ne m'a jamais paru agréable, et j'ai toujours trouvé qu'il valait mieux, pour nous autres, demeurer au public."
+        ]
+      },
+      "top_5_persons": [
+        "ARGAN",
+        "TOINETTE",
+        "M",
+        "POLICHINELLE",
+        "Cléante"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "parce que la Coutumne jienite yeela ferore bon par tout ailleurs et dans le pays de proit écrit: mais à Paris et dans les pays Coutumiers, cela ne se peut;",
+          "La Scène est à Paris"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Bergère",
+        "Rome",
+        "France",
+        "Grèce"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

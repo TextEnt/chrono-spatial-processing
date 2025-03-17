@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Brueys, David-Augustin de",
+    "title": "Gabinie, tragedie chretienne",
+    "publication_date": "1699",
+    "document_id": "bpt6k886812s"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Galerius",
+          "frequency": 37
+        },
+        "related_sentences": [
+          "Et je prends part, Seigneur, à cet honneur jusigne, Que Rome vous défère, et dont vous êtes digne. \nGALERIUS\n Ceque Rome, Madame, aujourd'hui fait pour moi, N'égale pas l'honneur qu'à présent je reçois. \nSERENA\n Mais après tant d'honneurs que les Peuples vous rendent, Vous savez bien, César, de vous ce qu'ils attendent: L'Empereur, que je viens d'informer de vôs feux, Y consent, et j'en fais le plus cher de mes vœux. \nGALERIUS\n Madame, permettez que j'ose vous le dire;",
+          "Enfin il est certain, que ce fut peu de temps après, que le grand Constantin, qui avait appris le métier de la guerre sous Galerius, fut le premier Empereur Chrétien, sous qui l'Église jouit d'une grande tranquillité, et commença à établir à Rome avec éclat le Siège de l'Empire de JESUSCHRIST Constantin ayant donné au Pape S. Melchiade, pour sa demeure, une maison Impériale qui s'appelait le Palais de Latran, avec un Domaine et des revenus convenables pour loutemf nortorablement la suprême dignité de Chef visible de l'Église.",
+          "Vous me connaissez mal, si vous le pouvez croire. \nGALERIUS\n Et bien, Madame, et bien, une cruelle loi, Puisqu'il faut l'avouer, m'entraîne malgré moi: Ce qui redouble encor le remord qui me presse, C'est de voir que votre âme exemte de faiblesse, Et par les sentiments d'une naute vertu, Soutient tranquillement.",
+          "Ta secte va tomper, n'attends pas ton secours. \nGABINIUS\n Persécute, Tyran: tu la verras toujours, Malgré tes vains efforts, et contre ton attente, Partout persécutée, et par-tout triomphante. \nGALERIUS\n Puisqu'on ne daigne ici répondre à mes souhaits, Je cours.",
+          "Je n'osais en parler. \nGALERIUS\n Le bouheur de ma vie, Il est vrai, cher Carus, dépend de Gabinie Lorsque j'aimai Camille, et que j'en fus aimé, Je n'avais jamais vu les yeux qui m'ont charmé."
+        ]
+      },
+      "top_5_persons": [
+        "Galerius",
+        "César",
+        "Césars",
+        "SERENA",
+        "Gabinius"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 37
+        },
+        "related_sentences": [
+          "Et je prends part, Seigneur, à cet honneur jusigne, Que Rome vous défère, et dont vous êtes digne. \nGALERIUS\n Ceque Rome, Madame, aujourd'hui fait pour moi, N'égale pas l'honneur qu'à présent je reçois. \nSERENA\n Mais après tant d'honneurs que les Peuples vous rendent, Vous savez bien, César, de vous ce qu'ils attendent: L'Empereur, que je viens d'informer de vôs feux, Y consent, et j'en fais le plus cher de mes vœux. \nGALERIUS\n Madame, permettez que j'ose vous le dire;",
+          "Enfin il est certain, que ce fut peu de temps après, que le grand Constantin, qui avait appris le métier de la guerre sous Galerius, fut le premier Empereur Chrétien, sous qui l'Église jouit d'une grande tranquillité, et commença à établir à Rome avec éclat le Siège de l'Empire de JESUSCHRIST Constantin ayant donné au Pape S. Melchiade, pour sa demeure, une maison Impériale qui s'appelait le Palais de Latran, avec un Domaine et des revenus convenables pour loutemf nortorablement la suprême dignité de Chef visible de l'Église.",
+          "Rome n'aura donc, par les droits de la guerre, Étendu son pouvoir jusqu'aux bouts de la terre, Répandu tant de sang, employé tant de bras, Détrôné tant de Rois, renvessé tant d'États, Bâti, de leur débris, la grandeur qu'on admire, Que pour voir aux Chrétiens tiens tarder son Empire?",
+          "que Galérius fut amoureux de la fille de Gabinius, laquelle était Chrétienne, et mourut Martyre à Rome que la Légion Thebaine se convertît à la Foi avec Maurice qui en était le Chef: que cette Légion souffrit le martyre, et y fut exhortée par le Pape S. \nMarcellin\n que Diocletien, après 20.",
+          "Je sais d'où vient le bruit, qu'on répand dans la Ville, Et tantôt en secret j'en instruirai Camille \nCAMILLÉ\n Mais cependant, Seigneur, pour le voir arrêté Informés le Sénat de votre volonté: Rome ait votre choix, faites qu'on le publie;"
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Paris",
+        "Perse",
+        "Berry",
+        "Dalmatie"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

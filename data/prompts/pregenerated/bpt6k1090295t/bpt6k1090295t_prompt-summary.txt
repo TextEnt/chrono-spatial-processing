@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Hardy, Alexandre",
+    "title": "Le Théâtre d'Alexandre Hardy, Parisien, tome quatriesme",
+    "publication_date": "1626",
+    "document_id": "bpt6k1090295t"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Alexandre",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Sa perte ne le fait que sage à l'avenir, N'anime que les siens d'un honteux souvenir, Qui font plusieurs miliers, incomparable nombre, Deuant qui notre armée apparaît comme une omère, Digne que son salut nous tienne soucieux, N'ayant ressource aucune après dessous les cieux. \nPerdice\n Telle confusion de Barbares, ressemble Aux thoreaux indomtez, que même joug assemble, Discordans à tirer, le laboureur en vain Les flatte de la voix, les presse de la main, Sans en pouvoir jamais retirer de service A fendre les guérets de la terre nourrice: Sa multitude ainsi difficile à régir, Dans le port de nos vœux nous fait plutôt surgir, Elleleur facilite quelque victoire belle, Éta demthic qice au tomoal noux appeut. \nAlexandre\n Adiouston que réduits en montagneux détroits, Avec un embarras infini de charts, L'imprudence du chef ses forces diminue, Veu qu'à nous joindre égaux, la poucière menue Ne s'écarte plutôt des sifflants tourbillons, Que notre premier choc ra leurs bataillons, Libres, deuvere (y sans trainté iue ie nvre Nous se, enueloppeZ, apporter de l'encombre.",
+          "Repos incompatible à l'honneur de ce jour, Repos qui nous perdrait at plus de séjour, Voyons, Sire, debout, Sire, quelle apparence De prendre ce repos comme en pleine assurance, Le Soleil déjà haut, éveillez-vous grand Roi, L'ennemi qui remplit les campagnes d'effroi, Et votre armée encor à ranger en bataille, Le dormir ne sied pas lors qu'il faut qu'on travaille, Lors qu'on péril extrêmelaque de si prez, Gardons que nos lauriers ne tournent en courez, La fortune s'irrite en qui la médite, Et faut que le labeur couronne mentreprise' Où est donc au besoin cette vigueur d'esprits, qui les plus vigilants à d'iviller appris, Le Soldat emporté d'impatience et d'ire, Que vus tommandements, pour vaincre, ne respire, \nAlexandre\n Suffit que cette ardeur dedans l'âme même bat, Donnez par la Trompette signal de combat, Mais mon père crois-tu que tel somme me presse Sans qu'avoir des soucis fendu la triste presse, Diort, joyeux, anquine et jeu à entendement;",
+          "Alexandre\n Détourne, Jupiter, dessus nos adversaires, Ces imprécations, au coupable, ordinaires, Qu'une fin précipite en la fleur de mes ans, Ne m'emporte commune à celle des Tyrans: Tu sais, juge témoin, que ma vie innocente Mérite chez Charon sa paisible descente, Si Mars ne la butine, exorable à mes vœux, Que si me prolonger son terme tu ne veux, Si les fatales sœurs ordonnent que sans meure, Comme tous les mortels sont incertains de l'heure: Oste père, du moins, ces paniques terreurs, Ces signes coup à coup tristes avant-coureurs D'un trépas attendu que mille autres précédent, Reprime ces assauts qui mes fontes eattutmi, Qui font que le courage abattu se dément, „ Sous la crainte sans plus d'expirer lâchement, De ne pouvoir venger ma perte inopinée, Et languir dans un lit (honteuse destine) \nAristandre\n L'extrême en chaque chose estimé vicieux, Ne soyons arrogants ne superstitieux, La crainte de la mort montre une âme timide, Et son mépris l'approuve insolente ou stupide:",
+          "Ainsi le bon Pilote au fort de la tempête, Craint pour les passagers, non pour sa propre tête, Et règne le port plutôt qu'il ne ferait, Si de sa seule vie un hasard s'encourait: Ainsi ta Ma jesté, Babilone éloignée, À notre sauveté doit la sienne épargnée, Sauvette qui m'importe encore plus qu'à tous, Me conservant un père, un Prince et un Époux, \nAlexandre\n N'afflige ton esprit de ce soin, ma lumière, Phœbus n'accomplira sa seconde carrière, Que ta charmeuse voix me trouve obéissant, Ce qu'à peine obtiendrait Jupiter tout-puissant, Je croirai ton avis, Roxane, à qui mon âme Donne la primauté d'une jugale flamme, Oui, mon honneur défère à ton fervent amour, L'échange de la ville à quelque autre séjour: joi que l'homme n'ait point de retraite asJearee, Contre le dard brandi d'Atrope colerée, Dard qui pénètre tout, qu'elle tire à clos yeux Sans faillir, nonobstant lauisunbe lues ueux. \n",
+          "Ou si l'on s'abandonne à semblable relâche, Ce n'est qu'afin que l'arc de nos travaux se lâche, Travaux que ne pourrait supporter un Atlas, Bien que tu ne serais de vaincre jamais las, Que le principal fruit nous résulte de faire v ne trêve, aux labeurs journaliers, nécessaire, Et nommément à ceux de l'homicide Mars, Qui nous verra plus fors retenter ses hasards. \nAlexandre\n Ah qu'un juste regret me dévore dans l'âme, Atteint chez les neueux du reprochable blâme, Après Pore vaincu, de n'avoir au retour Achevé d'asservir le terrestre contour: Pareille occasion chauve n'a de reprise, Négligée, elle rompt ma plus belle entreprise, Négligée au refus du soldat insolant, Le respect vers son Prince à l'heure violant,  2 A l'heure que ma gloire à son plein parvenue, N'avait rien d'opposé qu'une légère nue, Que le reste du monde ébranlé pâlissait, Et sous le juste mors de ce bras fléchissait. \n"
+        ]
+      },
+      "top_5_persons": [
+        "Alexandre",
+        "Straton",
+        "Tite",
+        "Le",
+        "Daire"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Thrace",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Or la charge en un mot prescrite la voici, Du plutôt que Titan replongé dessous l'onde, Ramenera la nuit et le silence au monde, Pren ceux que tu voudras de ma suite auec toy, Dd 2 Ceux chez qui tu connus a immuable foi: Sans trêve de labeur, que la Thrace gangnée, Et telle escorte après inutile épargnée, Tu ne rendes ce couple à la chaste beauté Qui void le recevant un trait de loyauté, Qui remémorera mes paroles dernières Venues à l'effet envers ces prisonnières, Outre qu'une missiue écritte de ma main, La vue promettra du jour au lendemain, De son plus humble esclaue, or tel vrgent affaire En exécution ne veut que on differe, Fay ton préparatif, mais sans le moindre bruit, Ores que tu le peux en faueur de la nuit. \nCalistene\n Iaçoit que tel dessein hasardeux à l'extrême, Paraise en son esset",
+          "Corinthe au demeurant ville de ma naissance, Qu'aucune autre Cité ne surmonte en puissance, Ma fortune voulut arrêter pour néant, Capital ennemi d'être repos fainéant, Né sous l'aspect du Dieu que la Thrace ruère, Chez qui la belle ardeur constante persévère De vouloir, hasardeux, mourir au lit d'honneur, Là bornent mes desseins leur suprême bonheur. \n",
+          "Les forçes d'une ville où se retire y maire, Aprez si le public souffre à notre sujet, Son elle fureur n'aura point d'autre objet, Elle a de pô y et de ma race, Ce qui fut fait dOrphée en ' au Thrace, Vous ne pouuez auoir plus fauorable sort, bons Dieux!",
+          "Thrace vraiment barbare, ôque tu n'as au pris Qu'un terroir de guerriers aux cruautés appris, Sans grâce, sans avoir des bonnes mœurs l'usage, Sans presque rien tenir d'humain que le visage, Où ce jeune héros forçeroit à l'aimer Ces rucs inanimeg qui font borne à la mer;",
+          "Or le destin permet que ma course dernière, Reprenne un peu d'haleine en la Thrace guerrière, Ses peuples ont au moins tittre de belliqueux, Bien que nos Macédons l'emportent dessur eux, Vaincus autant de fois qu'une auauet manne À vouloir éprouver nos forces les obstine."
+        ]
+      },
+      "top_5_places": [
+        "Thrace",
+        "Paris",
+        "Perse",
+        "Rome",
+        "France"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

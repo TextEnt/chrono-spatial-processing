@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Rotrou, Jean de",
+    "title": "Antigone , tragédie de Mr. de Rotrou",
+    "publication_date": "1639",
+    "document_id": "bpt6k57544369"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "CREON",
+          "frequency": 8
+        },
+        "related_sentences": [
+          "après redouble mon émoi, Et quelques plumes m'esmé en ont tombé sur moi  Nijà Je cours au Temple à lors, où la lampe allumée, Jette au lieu de lumière notre noire fumée, Dont l'épaisseur corrompt la pureté de l'air, Et presque m'étouffant, m'empêche de parler: L'encens n'y peut brûler quelqu'effort que j'essaie, La victime a l'hôtel, n'y rendrien par sa plaie, Que quelque goutte, ou deux, d'une jaune liqueur, Dont la corruptionm'a fait faillir le cœur: Monguide, qu'à cesoin, à mon défaut j'emploie, S'écrie épouvanté, qu'il n'y voit point de foie: En fin, tout n'est qu'horreur, et que confusion, Et tout, Creon, et tout, à votre occasion:",
+          "De vous, qui vrai Cerbère, ôtant ce droit aux corps, Empéchez le passage en l'empire des morts, Qui, cruel, attaquez qui ne se peut défendre, Et commandeZ un mal, que vous devriez reprendre: Satisfaiteiles Dieux, par votre amandement, Et srachez-moi bon gré décet enseignement. \nCREON\n Sur tout autre, toujours votre art me persécute, Vous m'entre prenez, seul, seul Seigneur vous suis en butte.",
+          "Hémon s'est fait passage en la funeste roche, Où devait Antigone expier son forfait: Elle en est quitte, Sire, et c'en est déjà fait, Le Prince sur son corps deteste votre Empire, Et ainsi crains, et et ainsi quelque chose de pire: J'en uoulois approcher, mais s'élançant sur moi: \nCREON\n Ô tropcertain augure l ô misérable Roi?",
+          "mais depuis qu'en ces Ci Aéha, Sa voix rend aux mortels les réponses des Dieux: Et qu'ilenuoye au Gielles encens de nos Temples, Les fautes de sonart n'ont point encor d'exemples. \nCREON\n Je tiempie, n premi, iedemtunc interdit, Et cet effet s'accorde avec uil a dit?",
+          "C'est à moi, Sire, à moi, qu'en est dû le supplice, Je suis auteur de tout, elle n'est que complice, \nCREON\n Et ne savez-vous pas que cet acte, en effet, Était contrevenant à l'arrêt que j'ai fait!"
+        ]
+      },
+      "top_5_persons": [
+        "CREON",
+        "Polynice",
+        "JOCASTE",
+        "CREON",
+        "Antigone"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Thebes",
+          "frequency": 8
+        },
+        "related_sentences": [
+          "Le Roi tombe, et son sang coule sur la pousière, Mais en sa chute encor sa haine se soutient Et son cœur veut éclore un espoir qu'il retient: Couleur, ni mouuement ne reste à son visage, Il semble que des sens ilait perdu l'usage: Ille réserve tout pour un dernier effort, Et sait encor tromper dans les bras de la mort, Polynice, ravi d'une fausse victoire, Dont bien tôt sa défaite effacera la gloire, Leuant les mains au Ciel, s'écrie à haute voix, Soyez bénis, ô Dieux, jusqu' ices des Rois: Thebes, dessus mateste, apporte ta Couronne, Elle est mienne, et le sang par deux fois me la donne;",
+          "Ô Thebes autrefois l'objet de mes désirs, Maintenant Maintenant le sujet de tous mes déplaisirs, À qui, pourtant le Ciel, soit encore propice, Si ta pitié me rend le corps de Polynice Tu vois en quelétat, femme, et sœur de tes Rois, Je me présente à toi pour la première fois: Vois, perfide cité, quelle pompe environne, Celle qui justement prétendait ta couronne:",
+          "À, si ton lâche cœur, enfin se peut résoudre Tu laisseras la vie, ouj'y mordrai la poudre: Là ton sang, ou le mien signera notre foi, Là, de la main des Dieux, Thebes prendrason Roi.",
+          "L'infection des corps vient déjà jusqu' à nous: Ici furent portez, et rendus tant de coups: Voici le champ fertile en tunt de funérailles, Thebes n'est pas fort loin, j'entrevais ses murailles, ARGIE.",
+          "Thebes, sur qui jamais nulne régna sans crime, Le sort te madonner un Prince légilime: Voyonss' ilm' ôtera le nom que j'en ai pris, Que léchamp du combat ensait aussi le prix."
+        ]
+      },
+      "top_5_places": [
+        "Thebes",
+        "Grèce",
+        "Thebes",
+        "France",
+        "Allemagne"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

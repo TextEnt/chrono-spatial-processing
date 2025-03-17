@@ -1,0 +1,77 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Jobert, F",
+    "title": "Balde, reine des Sarmates . Tragédie",
+    "publication_date": "1651",
+    "document_id": "bpt6k1510696m"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Balde",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Et comme il vous forma pour le commandement, Il combla de faveurs votre Gouvernement: Mais soit qu'il soit jaloux de nos succès prospères, Soit qu'il veuille aujourd'hui nous rendre nos misères, Craignant que le repos que par vous nous avons Ne nous fasse oublier ce que nous nous devons: Soit qu'il soit amoureux d'une si belle vie, Il la veut, soit qu'il l'aime, ou soit qu'il nous l'envie. \nBALDE\n En me donnant la mort c'est comme il faut parler, Vous me parez Adolphe, avant que m'immoler: Ainsi sur la Victime on met un Couronne;",
+          "Un cœur ne le craint pas quand il pût vous aimer, Et le mien qui vécut dans une flamme ardente, Perdra le sentiment avant qu'il la ressente: Mais s'il a résisté brûlé par vos beaux yeux, Quel feù le détruira si vous n'aidez aux Dieux? \nBALDE\n Cette difficulté que vous avez prévue, Savez -vous, cher Espoux, que les Dieux l'ont connue, Et qu'enfin ils vous ont exempté du trépas.",
+          "Qui donc de cette amour peut retarder l'effet, Que ne l'épousez -vous? \nBALDE\n Et si c'en était fait. \nMELITE\n Ah Dieux c'en serait fait! \nBALDE\n Mélite s'émerveille, Quand je dis que j'ai fait ce qu'elle me conseille: Tous deux enfants nourris dans la même maison, Nous eûmes de l'amour sans avoir de raison.",
+          "Affaibli par le sang qui lui coulait d'Hô bras, Ce Prince malheureux nous disait assez bas, Je meurs aveuchonneur, Seigneur vivrais avec honte, L'on blâmera le Sort dans la mort de Traste On dira seulement, il n'était pas heureux, Et s'il vit, on dira qu'il n'est pas généreux. \nBALDE\n Vous deviez contenter une si noble envie. \n",
+          "mais la mort nous sépare, C'est le dernier essai que peut faire Voltare \nBALDE\n Cher Espoux, c'est le seul qui ne t'est pas permis, Et ne m'allégue point que Ne te l'ai promis: J'ai promis, il est vrai, on ne puis m'en défendre, Mais de te donner tout, et non pas de rien prendre;"
+        ]
+      },
+      "top_5_persons": [
+        "Balde",
+        "ADOLPHE",
+        "MELITE",
+        "MELITE",
+        "Cambise"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Les Finances qu'on peut appeler le sang et les forces d'un État, avaient passé par diverses mains, et ne s'étaient bien trouvées en pas une: il fallait trop de bonnes qualités jointes ensemble pour composer un parfait Surintendant: l'on n'en avait point vu jusques ici de Copie achevée: vous nous en gardiez l'Original: vous seul pouviez remplir dignement cette Place: et nous pouvons dire que la France vous a moins choist pour cet emploi, qu'elle ne vous en a trouvé seul capable.",
+          "Elle a sujet de croire qu'elle ne sera pas mal reçue, puis qu'elle vient à la suite de la France qui s'étant, comme Balde, trouvée toute épuisée de son sang et de ses forces, a eu depuis peu, comme elle, recours à vos Autels.",
+          "Il avait bien coûté à la France à faire des Surintends achevés, ene rient de rous rencontrer tout fait.",
+          "- rein que la France espère de refleurir;"
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Rome"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

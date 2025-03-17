@@ -1,0 +1,75 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Heudon, Jean",
+    "title": "Pyrrhe , tragédie, de Jean Heudon,... reveüe & recorrigée de nouveau",
+    "publication_date": "1620",
+    "document_id": "bpt6k5754196j"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Hermione",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "vous rendez encor plus grand voflère ruælhes, Lenn vous laissant ainsi aller à la douleur. \nHermione\n À son gré malgri moi, cette dévuleur m'emxperte: Je n'y puit résisler, tant elle est grande et forte, Si je noy efforçais, ce serait perdre temps, Corme les nautonniers sur les ondes finans, Quandils voient jarger au milieu de leur cérersi, Le veut qui les suivrit de l'Orient à l'Ourse, Courbent premièrement le voile trop tendu, Pœr tirer du biais aussi cheniin prétendu: Ils l'abaissent du tout:  lors à vive force Bras et d'avirous contre l'onde et le ans S'efforcent de pousser lerx nævire en avant, Jusqu'àians qu'à la sin la cruelle tormente S'ensle de plueuts en plus, et se rend umhècenu, Tau un grand tintamarre, ets lue à grosmceeux Ainsi amexonis bossiu, les mugissantes ceux, Qui beurs n le avire, et de grands vagoût le Navire, peur eensendrer, de les guæres rrortts, Alorsures Gagnes",
+          "Que si j'avais deffr qu'après la mort félonne On dends à ce cruel rendre mon Hermione, Pyrait tout maintenant lui plonger dans le sein, Afin de l'empêcher, ainsi poignard assasin, Et le tirant après hors son est mach âme, Je me le planteroeïs jusqu'aux gardes moi -même, E je vous ie -vous pri de ne m'en parler plus.",
+          "Car nous devons enhui un sacrifice faire Au temple d'Apollon où il se trouvera, Et moment vous manderai si-tort -il y sera, Vous ne sauriez avoir commodité plus sûre De venger sans hasard, dessus lui vostre injure, Et mettre votre épouse Hermione en repos, Qui pour vous bien aimer sonffre tant de travaux.",
+          "cαsuibie c' pradrí. \nHermione\n Tus ces propos hautaius ne me sont plus de cræjure, Lu ce quui se pouvait j'ai été l contrainte: Par sorce ce mien cerps est en uastre poormir, Jène puis Ia pêcher: m' ajour que ποn voit, Soyez seuxr",
+          "Au véeil et aux soncis qui naineut peu à puLe vigneur de vas ans, corome à son prapre seu Neus voyons consexer la chandelle luisante, duuu ils d ûulmia dues \nHermione\n Qui pourrait an malheus où tu suis n'égayer?"
+        ]
+      },
+      "top_5_persons": [
+        "Hermione",
+        "Oreste",
+        "Oreste",
+        "Andromache",
+        "Hermione"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Il soupire, il gémit, mais plus il se tourmiente, Plus la flamme amoureuse en son âme s'augmente, Et tellenient en fin s'accroît sa passion, Qu'elle le fait entrez dans les murs d'Ilion Tout seul, et désarmé parmi les adversaires, Qui parjurant leur soi, se montrèrent faussaires, Car s'étant ubligez un solennel serment, De lui faire espeuser a son contmement Celle qui lus causoit sa peine innoderée, Polixme eux beaux ycux, de lui tant desirée, Pans le temple sacré d'A pollen Thymbrean, Paris le plus couard des ensanr de Priam, .  Troyens et des Grecs, lursire une saçette, Qui dessiss les carrtaux jout reidède ort le jets.",
+          "Il aidera lui même à des le fils, Commune à tuer le perc il secourut Paris Conduisant de sa main la flesche et l'entreprise, Car Phabus ne ueut pas recemir en franchise Dedans son tém plein saint cet honme disseli, 1 Qui malheureusiment l'a le premier polu, Y faisant élever un image à son père, Prés celle d'Apollon, qu'il vent que l'on réuere, Agnec pareil honneur, que celle-la du Dieu."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "France"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

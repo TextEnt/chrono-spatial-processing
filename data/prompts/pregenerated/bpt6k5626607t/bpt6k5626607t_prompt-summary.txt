@@ -1,0 +1,79 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Quinault, Philippe",
+    "title": "La généreuse ingratitude , tragi-comédie pastorale. Par le Sr Quinault",
+    "publication_date": "1657",
+    "document_id": "bpt6k5626607t"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Zaide",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Oui, mais je suis trop fière Pour accepter un cœur, qu'un avire a surmonté, Ee dusicioie auei Pas la lencicie ô Mais si j'osais aimer. \nMÉDINE\n Achevez. \nZAIDE\n de Colo sulso d sescée Ah, Médine MÉDINÉj Etiigi, le juger ocume, L'amour vous a touchée, et j'ai lieu de juger, Que c'est pour Almandor, cet aimable Étranger. \nZAIDE\n Moi, de l'amour pour lui? \nMÉDINE\n ",
+          "Le Prophète qui sait combien je vous révère, Connaît bien à quel point apprendre crains vôtre colère, Et les soins que ie prends, vous doivent assurer Que le ne viensrey que pour vousémonorer, Puis-je vous dire à part un secret d'importancer \nZAIDE\n Rien ne m'est important comme la bienséance, Qui ne peut me permettre au jugement de tous D'écouter des secrets d'un homme et que vous, ADIBAR.",
+          "Mais j'ai des passions qui sont des verlés, Ma flamme dans mes yeux vous a paru trop claite, Pour la pouvoir cacher à force de la taire, 2u Et l'ingrate sroideur que vous me faites voir, N'estelnt pas mon amour ainsi que mon espoir. \nZAIDE\n Cette amour vient fort tard et j'en suls affligée, vous içadez osen qu'ameuis le me Moude engagée. \n",
+          "Dès que vous partirez pour le fatal voyage Où se doit accomplir votre heureux marlage, Sachez qu'au même instant dans l'excès de mon deuil, vousne vence paus pour avéra ceiceuir, Où les restes du feu qui m'y fera descendre, Après ma mort encore échaufferont ma cendre. \nZAIDE\n La fortune vous doit un sort beaucoup plus doux, de la sesaépiss.",
+          "Un Amant bien constant peut faire l'impossible, Et le premier ressus ne doit pas étonner Quiconque a de l'amour, assez pour en donner, ÀL'MANSOR, Ah, c'est m'en dire assez! \nZAIDE\n ne tan conout me monte, Je n'en ai que trop dit et j'en rougis de honte. \n"
+        ]
+      },
+      "top_5_persons": [
+        "Zaide",
+        "ORMIN",
+        "MÉDINE",
+        "Zegri",
+        "MEDINE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Thunis",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Je veux que de Thunis nous prenions le chemin, Je serai trop content, pourvu que sans la voie, secroi qu'ene prendra queique paît à ma joie, Elle eut de mon départ un regret assez grand, Et ie ne lui suis pas, sans doute indifférend, \nORMIN\n Sa flamme assurément ne sera pas éteinte: ZÉGRY.",
+          "Et qui voyant Thunis par Charles-Quint conquise, Consétuent dans ces lieux leur gloire, et leur fûtanchise, Disposent en secret les Rois les plus zélé, A chasses les Chrétiens de ces lieux désolez;",
+          "Mais j'ai su qu'à Thunis, elle est avec son père, Et bien que ce seiour posse mille appas, Je n'y vois rien de beau quand personne ne la vois pas."
+        ]
+      },
+      "top_5_places": [
+        "Thunis",
+        "France",
+        "Alger",
+        "PARIS",
+        "Guyenne"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Le Malade imaginaire [version orale], comédie en trois actes [de Molière] mêlez de danses et de musique. - Le Malade imaginaire [prologue et intermèdes]",
+    "publication_date": "1674",
+    "document_id": "btv1b86107949"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ORGON",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "ne demandent que plaie et bosse, et vous voyez que celui que je vous avais amené, ne parlait d'abord que de vous couper un bras et de vous faire mourir de faim. \nORGON\n Vous avez beau me dire, je ferai mon possible pour renonger avec Monsieur Turbon Son neveu me plaît fort, il est sage et modeste, j'aurai en même un Médecin affidé, et ma femme, qui m'aime passionnément, goûte fort ce marlage. \nORONTE\n Mon frère, les femmes ne disent pas à leurs maris tout ce qu'elles pensent, et j'ai de la peine à croire que vous soyez autant aimé de la vôtre que vous l'êtes de ma nièce votre fille, que vous ne devez pas contraindre d'épouser un homme pour qui elle n'a point d'affection.",
+          "Je vous ai bien dit, mon père, que toutes sortes de maris ne me sont pas propres, et je ne vous cache point que j'ai une aversion mortelle pour la Médecine et les Médecins. \nORGON\n Mais, ma fille, vous ne songez pas qu'étant toujours malade, j'ai besoin d'un Médecin dans ma maison, et qu'ayant pour mon gendre Monsieur Diafoirus, ce me lera dil grend soulagement, et une très -grande épaigile; \nCATO\n Ce n'est pas donc, Monsieur, l'intérêt de votre fille que vous considérez en cette rencontre, c'est le vôtre propre, et ce n'est pas pour elle que vous la vouiez hari, cet pour vous-même. \nORGON\n Madame Cato, voulez-vous vous taire?",
+          "Il com- Que vos charmes et vos célestes appas, qui sont en vérité, sans flatterie, et sans grossir les objets comme à hésiter font les lunettes de Gal, ont dedans son quoi éblouir la vue la plus ferme, et des yeux aussi vifs que ceux de l'Oiseau qui enleva Ganimède, et Esculape, à qui j'ai désormais dévoyé toutes mes veilles. \nORGON\n Monsieur, laissons-là, je vous prie, Esculape et Ganimède, nous sommes tous bien persuadez de votre capacité, et ma fille à qui je veux épargner la peine de vous répomune pour ne pas raire jouffrir sa pudeur, a assurément pour vous tous les sentiments d'estime qu'elle doit avoir.",
+          "Je ne m'étonne plus, mon frère, de ce qu'il vous faut tant de médecines et de lavements, et à manger ce que vous dites il faut faire de grandes évacuations. \nORGON\n Dans mon régime, comme dans les remèdes, je suis les ordonnances de Monsieur Turbon, et il ne défend jamais ni le vin, ni la viande solide à ses malades. \nCATO\n Et moi, Monsieur, si vous vouliez suivre mes avis, je vous ordonnerais une bonne diète de quatre ou cinq jours sans manger ni boire, avec un petit remède spécifique qui vous rendrait le corps neuf.",
+          "Car enfin il faut, s'il se peut, guérir mon frère de la rone, ce nous viendrons après aisément à bout du reste. \nCATO\n Je l'entends, disposez les choses, et je vais me pleparel de lon coité.  él le l Maa ORGON, ORONTE \nORGON\n On frère, je me plaignais hier IV Ide vous, de ce que me sachant malade vous ne m'êtes point venu voir depuis huit jours, et même que vous n'avez pas daigné vous informer comme je me porte."
+        ]
+      },
+      "top_5_persons": [
+        "ORGON",
+        "CATO",
+        "POLICHINELLE",
+        "CATO",
+        "ISABELLE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Orgon",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "ne demandent que plaie et bosse, et vous voyez que celui que je vous avais amené, ne parlait d'abord que de vous couper un bras et de vous faire mourir de faim. \nORGON\n Vous avez beau me dire, je ferai mon possible pour renonger avec Monsieur Turbon Son neveu me plaît fort, il est sage et modeste, j'aurai en même un Médecin affidé, et ma femme, qui m'aime passionnément, goûte fort ce marlage. \nORONTE\n Mon frère, les femmes ne disent pas à leurs maris tout ce qu'elles pensent, et j'ai de la peine à croire que vous soyez autant aimé de la vôtre que vous l'êtes de ma nièce votre fille, que vous ne devez pas contraindre d'épouser un homme pour qui elle n'a point d'affection.",
+          "Je vous ai bien dit, mon père, que toutes sortes de maris ne me sont pas propres, et je ne vous cache point que j'ai une aversion mortelle pour la Médecine et les Médecins. \nORGON\n Mais, ma fille, vous ne songez pas qu'étant toujours malade, j'ai besoin d'un Médecin dans ma maison, et qu'ayant pour mon gendre Monsieur Diafoirus, ce me lera dil grend soulagement, et une très -grande épaigile; \nCATO\n Ce n'est pas donc, Monsieur, l'intérêt de votre fille que vous considérez en cette rencontre, c'est le vôtre propre, et ce n'est pas pour elle que vous la vouiez hari, cet pour vous-même. \nORGON\n Madame Cato, voulez-vous vous taire?",
+          "Il com- Que vos charmes et vos célestes appas, qui sont en vérité, sans flatterie, et sans grossir les objets comme à hésiter font les lunettes de Gal, ont dedans son quoi éblouir la vue la plus ferme, et des yeux aussi vifs que ceux de l'Oiseau qui enleva Ganimède, et Esculape, à qui j'ai désormais dévoyé toutes mes veilles. \nORGON\n Monsieur, laissons-là, je vous prie, Esculape et Ganimède, nous sommes tous bien persuadez de votre capacité, et ma fille à qui je veux épargner la peine de vous répomune pour ne pas raire jouffrir sa pudeur, a assurément pour vous tous les sentiments d'estime qu'elle doit avoir.",
+          "Je ne m'étonne plus, mon frère, de ce qu'il vous faut tant de médecines et de lavements, et à manger ce que vous dites il faut faire de grandes évacuations. \nORGON\n Dans mon régime, comme dans les remèdes, je suis les ordonnances de Monsieur Turbon, et il ne défend jamais ni le vin, ni la viande solide à ses malades. \nCATO\n Et moi, Monsieur, si vous vouliez suivre mes avis, je vous ordonnerais une bonne diète de quatre ou cinq jours sans manger ni boire, avec un petit remède spécifique qui vous rendrait le corps neuf.",
+          "Car enfin il faut, s'il se peut, guérir mon frère de la rone, ce nous viendrons après aisément à bout du reste. \nCATO\n Je l'entends, disposez les choses, et je vais me pleparel de lon coité.  él le l Maa ORGON, ORONTE \nORGON\n On frère, je me plaignais hier IV Ide vous, de ce que me sachant malade vous ne m'êtes point venu voir depuis huit jours, et même que vous n'avez pas daigné vous informer comme je me porte."
+        ]
+      },
+      "top_5_places": [
+        "Orgon",
+        "Paris",
+        "Palais Royal",
+        "Grèce",
+        "Champagne"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

@@ -1,0 +1,80 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Rotrou, Jean de",
+    "title": "Le Filandre , comédie de Rotrou",
+    "publication_date": "1637",
+    "document_id": "bpt6k5745557v"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "NERE",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "De la part de ma sœur, il en serait charmé, Mais venant d'un objet qui n'en est plus ai Il en peut seulement tirer la vaine gloire, De vaincre, et de pouvoir, mépriser sa victoire \nNERE\n Tu m'offenses cruelle, et ce dernier discours Qui dément les premiers, oblige à son secours, Tu peux joindre, inhumaine, insensible courage, À ces autres malheurs le titre de volage;",
+          "Mais il travaille en vain. \nNERE\n Oyant cette imposture, Que sert un foudre au Ciel auteurs de la nature: \nThymante\n \nCÉPHISE\n Ohi, ion snré, \nNERE\n Adore tes appas, Tu le dis à Nère, et tu ne rougis pas? \nCÉPHISE\n Je ne rougis, Nère, au sujet de personne, Tu connaît peu l'amour, st ce discours t'étonne;",
+          "Que Née, imposteur, t'importunait de plaintes, Mais, que tu résistais à ses douces atteintes, Que tu pleinais son mal, et ne l'allègeais pas, Pour ce que tu languis, pour de plus doux apDa J  \nNERE\n Ô le doux entretien! \nÉLANDRE\n Cemoyen mulousiène Causse d'illusions en notre fantaisie!",
+          "mais, que ta passion, Exerce, à mes dépens ton indiscrétion, *tonnae Jeu aumio, ouvena vu fportable, Et d'autres t'en feraient, une plainte équitable. \nNERE\n T'imputai-je les maux, dont mes jours sont suivis, Et t'ai-je reproché, ce que tu me ravis?",
+          "Bannissez tous souprons, et croyez que Géphise, De bamtrun toinun plaisir de ma prise, Ie ne méprise point ses rares qualités, Mais vos charmes plus doux, ont mes yeux enchantés. \nNERE\n Ente s'en esi."
+        ]
+      },
+      "top_5_persons": [
+        "NERE",
+        "Neree",
+        "M",
+        "Née",
+        "Seigneur"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Seine",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "J'ai vu sans mouvement, sans force, et sans haleine, Ce corps flottant au gré du vent,et de la Seine, Ce spectacle d'horreur m'arrestoit sur ces bords, Et mon étonnement retardait mes efforts: Mais enfin j'ai forcé la frayeur inutile, Qui laissait en ma main cette rame immobile, J'ai d'un bras animé fait courir mon basteau?",
+          "s'ai vu ce jeune àmant, les yeux mouillez de pleurs Fouler à pas pressez les herbes et les fleurs Et redoubler sa course à six pas de la Seine, Prêt de l'enseuelir en son humide plaine, Ses sens étaient saisis de l'horreur du trépas, Passant",
+          "Toi, qui sais, où la Seine, a termine sa vie Condui nous en ce lieu, contente mon envie, Et voyant sur le sien nos corps privés du jour, Uiens apprendre chez nous ce triste effet d'a \nAuBeiger\n FILANDRE.",
+          "Enfin le vaste sein de Marne, ou de la Seine, S'offre d'enseuelir, et ton corps, et ta peine;",
+          "NERE, courant vers la Seine Ô"
+        ]
+      },
+      "top_5_places": [
+        "Seine",
+        "Paris",
+        "France",
+        "Marne"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

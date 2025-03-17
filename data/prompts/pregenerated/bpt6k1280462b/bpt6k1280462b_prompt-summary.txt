@@ -1,0 +1,75 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "L'Escole des femmes, comédie par J. B. P. Molière",
+    "publication_date": "1663",
+    "document_id": "bpt6k1280462b"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ALAIN",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Je ne suis pas un homme à vouloir rien pour rien, Je sais quand on me sert en garder la mémoire: Cependant par avance, Alain, voilà pour boire, Et voilà pour t'avoir, Georgette, un cottillon, Ils tendent tous deux la main, et prennent l'argent.",
+          "Le pie qu'iiin lait qu'ièle belle caliette, Et l'argent qu'en ont eu notre Alain et Georgette, Vous l'aimeriez sans doute, et diriez comme nous. \n",
+          "parlez, dépêchez, vite, promptement, tôt, B 2 Sans LESCOHE HRO EDAMES, ALAIN et GEORGETTE AN,AII. \nGEORGETTE\n Le cœur me faut.",
+          "Auriez-vous bien l'esprit de servir mon courroux? \nALAIN\n S'il ne tient qu'à frapper, Monsieur, tout est à nous.",
+          "Fais-je pas comme il faut? \nALAIN\n Est-ce de la façon que vous voulez l'entendre? \n"
+        ]
+      },
+      "top_5_persons": [
+        "ALAIN",
+        "Georgette",
+        "Arnolphe",
+        "Agnès",
+        "Horace"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Mais ces lieux et cela ne s'accommodent guère, Allons dans la maison débrouiller ces mystères, Payer à notre ami ces soins officieux, Et rendie grâce au Ciel qui sais tore meye me mieus. \nFrance\n eu de France eu de France"
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Enrique",
+        "Rome"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

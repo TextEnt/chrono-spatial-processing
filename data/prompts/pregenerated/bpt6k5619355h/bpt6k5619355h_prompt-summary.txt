@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Aure, François d'",
+    "title": "Geneviève, ou L'innocence reconnue , tragédie, dédiée à madame la duchesse de Roannez. Par messire Fr. d'Aure,...",
+    "publication_date": "1670",
+    "document_id": "bpt6k5619355h"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "CLOTILDE",
+          "frequency": 18
+        },
+        "related_sentences": [
+          "qu'enfin par un dernier eftort, Et la meie et le fils ont été mis à mort. \nHENRY\n Ce n'est pas tout, sachez de quelle mort âme Nous avons fait mourir le fils auec la mère. \nCLOTILDE\n De quel gente de mort puis-je m'imaginer Que vous ayiez pris soin de les assassiners Les auet-vous noyez? \nHANRY\n Ncotts \nCLOTILDE\n Brûlés, mis en cendre? NenniMENRT. \n",
+          "Ç en notre pisque je vois au mar qui pulte, Que de l'apercevoir lors qu'il est sans remède; \nCLOTILDE\n C'est assez soupiré, ce n'est que trop gémi, 2maulocuvoroue Al y Jon mérite vaut bien qu'une face riante Vous fasse voir content afin qu'il s'en contente SIFROY.",
+          "Et vraiment par ce don que je ne veux qu'en prêt, Me donnant ce qu'il a, je teçois ce qu'il est: Mais j'aperçois Clotilde, et si j'ai bonne vue, dans laes a la layon la sompt von toute émues SCÈNE III.",
+          "Le Prince surieux de cet énorme excès, Enjoignit à Golo par des termies auvères, De purger sa maison de ces deux adultères, Le traître étant ravi de ses ordres préllants S'avance, \nCLOTILDE\n Et que fît-il de ces deux innocents?",
+          "Madame, elle n'aurait qu'à me donner sa foi Pour pouvoir librement le réduire chez moi. \nCLOTILDE\n si c'était tout de bon, vous voyez, ma Germaine Qu'Oton vous fait un offre à vous tirer de peine."
+        ]
+      },
+      "top_5_persons": [
+        "CLOTILDE",
+        "GOLO",
+        "RODOLPHE",
+        "BENONI",
+        "Biche"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Golo",
+          "frequency": 18
+        },
+        "related_sentences": [
+          "Bepuis voyant Golo je lus en son visage Des oppositions à notre mariage, Soupçonnant que les faits me setaient découverts, Il ne me regardait que des yeux de travers: Et voulant arrêter notre noce avancée, Car Germaine (à son gré) m'avait été fiancée, Il ne lui paclait plus que d'un ton rencheti, Montrant un fiel couvert, comme j'anpris d'Héni.",
+          "Et s'étant retité comme il pût dans l'attente Du matin ensuivant fouffrit cette épouvante: Mais lors qu'il eut atteint le jour du lendemair, Il se rendit témoin du désordte inhumain Ordonné par Golo car découvrant la place Où l'esprit disparut, il y vit la carcasse Du pauvre Cuisinier qu'on avait confiné Soubs cette terre aptés qu'on l'eut empoisonné;",
+          "Ce qu'un ne connaît pas, l'autre le peut cognoistre, En quel connaît le Valet peut cotriger le Maître. \nGOLO\n Et Sujet et Valet par une double loi, l'ai cru qu'étant à vous je n'étais plus à moi: Et sans avoir des yeux où prendte connaissance, Je vous devis en tout ma simple obéissance;",
+          "Je l'avoue pourtant, j'ai toit, et pour ce point Sans vouloir t'excuser je ne t'accuse point, Et demeure confus voyant la même offense En mon commandement qu'en ton obéissance: Mais mon cœur démembré souffre le refultat Du mal qu'à métité notre double attentat. \nGOLO\n Depuis que votre Altesse au Bassin prophétique Vid",
+          "Il sais si je dis vrai. \nRODOLPHE\n Chacun le croit ainsi, Mais Henti, vous voilà, que faites-vous ici, Il tourne les yeux sur Henri On parle bien de vous, le Prince vous regarde Comme agent de Golo, pensez d'y prendre garde. \nHENRY\n Je ne puis le nier;"
+        ]
+      },
+      "top_5_places": [
+        "Golo",
+        "France",
+        "Romé",
+        "Paris",
+        "Narbonne"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

@@ -1,0 +1,80 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Grandval, Nicolas de",
+    "title": "Le Quartier d'hyver, comédie en prose mêlée de musique & de danses",
+    "publication_date": "1697",
+    "document_id": "bpt6k1090140h"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "MÁRTON",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Monsieur fait son Quartier auprès de Madame, pendant que Mrs les Officiers sont Oil Gumpagne Mon Quartier dure toute l'année à moi, Marton \nMÁRTON\n Il est vrai que vous autres xessieurs ne quittez guère Paris \nMr DE LA RICHARDIERE\n Je fais de temps en temps de petites Campagnes, où je vais toujours en Parti, bleu, rouge, verd, selon la saison, \nMÁRTON\n Ouï, vous êtes un bon Partisan vous, on sait bien cela vous allez fourager à Boulogne, à Saint Clou, à Vincennes mais les combats que vous donnez en ces lieux-là ne sont pas dangereux.",
+          "Oh bien, bien, quand je serai remariée ce qui arrivera bien tôt, si 'ai des Enfants comme jertipère, j'en ferunde pesits Officiers de bonne heure. \nMÁRTON\n Voilà qui est bien louable, Madame, de vous marier ainsi pour le Ser vice du Roi, il faudra vous faire coucher sur l'État \nMe SIMONET\n ",
+          "merci de ma vie, sortez d ici \nMe SIMONET\n Fais-moi parler à ta Maîtresse? \nMÁRTON\n Hélas bitu m engarde. \nMe SIMONET\n voyons donc Mr le Baron ? \nMÁRTON\n Ilest sorti \nMe SIMONET\n Je veux parler à Mr son Fils, LA ROSE.",
+          "L'expérience m'a rendu sçavante, Madame, et je devine à vos manières nobles et héroïques, que vous en aimez quelqu'un? \nMC IMIONET\n Ah, Marton, tu devines juste, et . \nMÁRTON\n Oh, oh!",
+          "Ah, Madame, pendant la Guerre, vive le Quartier d'Hiver. \nMÁRTON\n Sur tout pour celles qui comme vous ont uiniimiancen campagne, et qu'attendent que le retour pour être mariées."
+        ]
+      },
+      "top_5_persons": [
+        "MÁRTON",
+        "Marton",
+        "Rose",
+        "Mars",
+        "V"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Monsieur fait son Quartier auprès de Madame, pendant que Mrs les Officiers sont Oil Gumpagne Mon Quartier dure toute l'année à moi, Marton \nMÁRTON\n Il est vrai que vous autres xessieurs ne quittez guère Paris \nMr DE LA RICHARDIERE\n Je fais de temps en temps de petites Campagnes, où je vais toujours en Parti, bleu, rouge, verd, selon la saison, \nMÁRTON\n Ouï, vous êtes un bon Partisan vous, on sait bien cela vous allez fourager à Boulogne, à Saint Clou, à Vincennes mais les combats que vous donnez en ces lieux-là ne sont pas dangereux.",
+          "Quand ils seront venus, tu iras chercher les Hauts bois de la Compagnie, avec nos Musiciens et nos Dans Dragons, on ne leur a donné congé de venir à Paris que pour nous divertir: ils doivent être arrivés.",
+          "Ouï morbleu, c'est l'usage: toutes les Coquettes de Paris sont en Fiacres sur la route, qui attendent leurs Amants. \nMÁRTON\n Es",
+          "DE LA RICHARDIERE\n Non, Madame, à Paris, derrière les Chartreux"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Suisse",
+        "Flandre",
+        "Boulogne",
+        "Saint Clou"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

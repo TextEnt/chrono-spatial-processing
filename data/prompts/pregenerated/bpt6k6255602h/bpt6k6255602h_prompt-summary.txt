@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Hauteroche, Noël Lebreton",
+    "title": "L'amant qui ne flatte point , comédie du Sr de Hauteroche, représentée sur le théâtre royal de l'Hostel de Bourgogne",
+    "publication_date": "1669",
+    "document_id": "bpt6k6255602h"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ARISTE",
+          "frequency": 11
+        },
+        "related_sentences": [
+          "mais ne pouvant comprendre Qui de vous est le fourbe, et vient pour me surprendre, Il vous dôme à tous deux la même noerté, Pourvu qu'on ne s'emporte à nulle extrémité. \nGERASTE\n Par là ie me ferais un trop grand préjudice, Et le temps seul, Monsieur, doit me rendre justice. \nARISTE\n ",
+          "Quel dessein vous oblige à ces métamorphoses? \nARISTE\n J'aurais tort à présent de déguiser les choses, L'Amour à ce dessein a su contribuer, J'aime, j'aime Lucrece, il le faut auoüer: Pour l'ôter à Géraste, et la rendre ma Femme, Je ferais ce que peut me suggérer ma flamme;",
+          "De vous faire pendre. \nFLORENCE\n N'oubliez rien d'ailleurs. \nARISTE\n Va, j'une saurai pourvoir, Prépare ta M'ustrefse à nous blen recevoir, Il faut pour être mieux ce Monsieur de Bretagne, Me vêtir, ce me semble, en habit de campagne. \n",
+          "Et pense bien plutôt à quelque prompt remède Pour tâcher à guérir le mal qui me possède. \nHILIPIN\n Méd'Ioi, vous abuiez de mon dop de bonté. \nARISTE\n le suis au désespoir, de t'avoir mal traité. \nPHILIPIN\n ",
+          "je vous trouvais moins triste Et jé croyais en vous revoir un autre Ariste. \nARISTE\n Le retour de mon Père, et le gain d'Hô Procès, Semblaient flatter mes feux de quelque heureux succé Cependant tu levais, neperus toute éjpe ance."
+        ]
+      },
+      "top_5_persons": [
+        "ARISTE",
+        "FLORENCE",
+        "Lucrece",
+        "ANSELME",
+        "Seigneur"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 11
+        },
+        "related_sentences": [
+          "jour de Décembre 1668 Signé, Par le Roi en son Conseil, MARGERET Il est permis à Charles de Sercy, Marchand Libraire à Paris, d'imprimer, ou faire imprimer, vendre et débiter une Pièce de Théâtre, intitulée, l'Amant qui ne flatte point, et ce pendant le temps et espace de cinq années entières et accomplies, à compter du jour que ladite Pièce sera achevée d'imprimer pour la première fois:",
+          "Après avoir bravé diverses destinées, Couru bien des périls, et souffert bien des maux, Je revenais chez moi pour prendre du repos: En arrivant, Seigneur sçeus cette triste nouvelle: Ce qui me la rendit encore plus cruelle, Et qui fit tout mon mal, ce fut lors que j'apprès is Que Géraste pouvait être près de Paris, Qu'il y venait exprès épouser votre Fille;",
+          "Depuis un temps, mon Maître est si peu suportable, Qu'enfin dans tout Paris, il n'a point son semblable, Irmie ruit ému ger et la nuit, et le jour.",
+          "ni Ut n'e fenta atvre ut gouults nua pirai et au mains, une n'aurais pas manqué de me rendre à Paris pour être aux nopces de ma Nicce, votre Fille.",
+          "Il vous enfermera dedans quelque Chaumière, Car de ces Campagnards c'est assez la manière: Souvent quand ils ont pris une Femme à Paris, Mille soupçons jaloux occupent leurs esprits."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Florence",
+        "Bretagne",
+        "PARIS",
+        "Rome"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

@@ -1,0 +1,75 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Rotrou, Jean de",
+    "title": "L'Heureux naufrage, tragi-comédie de Rotrou",
+    "publication_date": "1637",
+    "document_id": "btv1b86221128"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Mars",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Candre, j'attendrai la fin de mon supplice De la force du temps, et de votre Justice, Ce pendant vous devez au bien de mes trais - -à-dire -dire -- -- Accorder vos conseils, et prêter votre bras, Votre propre intérêt vous joint à ma fortune, Et nous aurons la honte, ou la gloire commune, Sous le Prince d'Epire, un camp de jeunes Mars, Tient la ville assiegee, et couvre nos remparts, Consultons du moyen de dissiper de dions, Ou s'il y faut périr, faisons un beau naufrage;",
+          "Puis qu'un bonheur commun finit notre misère, Venez prendre chez moi les titres absolus ue le Ciel vous y donne et ne m'y laisse plus, Qu' éternelle paix fasse tomber nos armes, Qu'on ne souspire plus, on bannisse les larmes, Que de tous nos ennuis amour soit triomphant, Et que Mars soit vaincu par les mains d' enfant.",
+          "Il s'en offre un moyen: déjà toute l'Epire, Qui sais que dans ma Cour ce jeune Mars respire, Ne médite qu'horreur, que carnage, et qu'effroi, Si ie ne g remets dans les mains de son Roi.",
+          "Si mon espoir n'est vain, cette heureuse journe Bornera nos ennuis par un double hyménée, Vos armes céderont à ses moindres regards, Et de ce beau séjour l'amour chassera Mars SCÈNE",
+          "Espère une plus digne, et plus riche couronne, Que Mars t'aura gagnée, et que l'amour te doune -- Et"
+        ]
+      },
+      "top_5_persons": [
+        "Mars",
+        "Seigneur",
+        "Neptune",
+        "Jara",
+        "DAMIS"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "DE MONSEAUX, Il est permis à ANTHOINE DE SOMMAVILE, Marchand Libraire à Paris, d'imprimer ou faire imprimer, vendre et distribuer une pièce de Théâtre, intitulée, L'Heureux Naufrage Tragi-comédie, durant le temps et espace de neuf ans, à compter du jour qu'elle sera achevue d'imprimer.",
+          "Ar grâce et Privilège du Roi donné à Paris, le 7."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Dalmatie"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

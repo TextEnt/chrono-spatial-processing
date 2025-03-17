@@ -1,0 +1,78 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "La Critique de l'Escole des femmes, comedie. Par I. B. P. Moliere",
+    "publication_date": "1663",
+    "document_id": "bpt6k12804415"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ÉLISE",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Je les a lues, Dieu merci, autant qu'un autre, et je ferais voir aisément que peut-être, n'avons-nous poit de pièce au Jilcatre plus régulière que celle-là. \nÉLISE\n Courage, Monfieur Lysidas, nous sommes perdus si vous reculez.",
+          "et petit pense que je vis d'une air dans le monde, à ne pas craindre d'être cherchée dans les pémtures qu'on fait là des femmes qui se gouvernent mal. \nÉLISE\n Assurément, Madame, on ne vous y cherchera point;",
+          "Je goûte ceux qui sont railonnables, et me divertis des extravagants. \nÉLISE\n Ma foi, les extravagants ne vont guère loin sans vous ennuyer, et la plupart de ces gens -là ne sont plus plaisants dés la seconde visite.",
+          "Peut-on, ayant de la vertu, trouver de l'agrément dans une Pièce, qui tient sans cesse la pudeur en alarme, et salit à tous moments l'imagination? \nÉLISE\n ",
+          "La délicatesse est trop gran A I de, de ne pouvoir souffrir que des gelis trêleE. \nÉLISE\n Et la complaisance est trop générale, de souffrir indifféremment toutes sortes de personnes."
+        ]
+      },
+      "top_5_persons": [
+        "ÉLISE",
+        "Seigneur",
+        "GALOPIN",
+        "Agnès",
+        "Molière"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Madame, vous êtes dans la Place Royale, et tout le monde vous voit de trois lieues de Paris, car chacun vous voit de bon œil;",
+          "et l'on vore vhe rentude effroyable aux grands ouvrages, lors que des sottises ont tout Paris"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Ville de Paris",
+        "Louvre",
+        "Place Maubert",
+        "Place Royale"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

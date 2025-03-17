@@ -1,0 +1,79 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Donneau de Vizé, Jean",
+    "title": "Les Amours de Vénus et d'Adonis, tragédie",
+    "publication_date": "1670",
+    "document_id": "bpt6k10900687"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "VENUS",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "et tantôt Chrise \nVENUS\n Hé bien donc, Chrise Parle, que veux-tu dire? \nADONIS\n Que cette Nymphe sais que pour vous je soupire, Qu'elle nous a souvent vus ensemble en ces lieux, Et sait bien que pour moi vous descendez des Cieux. \nVENUS\n Puis que mon feu t'honore, apprends qu'il ne m'importe Que l'on sçache ici bas l'amourque je te potte, Que je ne la voudrais pouvoir cacher qu'aux Dieux, Qui de notre bonheur seraient trop envieux.",
+          "Sa faiblène cirdit plus que je m'éir dois dire. \nADONIS\n Que nous allons avoir ensemble de plaisirs! \nVENUS\n Que nous aurons de joie à mêler nos soupirs! \nADONIS\n L'Amour n'aura pour nous que d'agréables peines. \nVENUS\n Que nous aurons tous deux de plaisirs dans nos chaînes! \nADONIS\n Que nous serons heureux! \nVENUS\n Que nous serons contents!",
+          "tout cela pour vous ne peut toucher mon âme, Je ne ressens plus rien de ma première flamme, Je n'aime qu'Adonis, et je sens que mon cœur Soûpirera longtemps pour ce charmant Vainqueur. \nMARS\n Après m'avoir loué, j'attendais autre chose. \nVENUS\n De tout ce que je fais, l'Amour seul est la cause.",
+          "Si le fer à la main, on entrait dans les cœurs, vous en pourriez, lans doute, éitte aiféirient le Maître. \nMARS\n Quand il en sera temps, je me ferai connaître. \nVENUS\n Ah! vous ne pourrez pas vous faire aimer sitôt, Puis que jamais les cœurs ne se prennent d'assaut.",
+          "Mais si je m'abandonne à ma juste colère, Si je perds une fois le désir de vous plaire, Si je me livre entier à mon emportement. \nVENUS\n Quand on veut plaire, on doit parler tout autrement, Les cœurs veulent oüir un langage plus tendre;"
+        ]
+      },
+      "top_5_persons": [
+        "VENUS",
+        "ADONIS",
+        "Adonis",
+        "MARS",
+        "Mars"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Il est permis à THOMAS JOLLY, Marchand Libraire à Paris, d'imprimer, faire imprimer, vendre et débiter une Pièce de Théâtre, intitulée, Les Amours de Venus et d'Adonis, représentée sur le Théâtre du Marais, pendant le temps et espace de cinq ans, à compter du jour que ladite Pièce sera achevée d'imprimer pour la première fois:",
+          "Et ledit Thomas Jolli a associé aud it Privilège, Guillaume de Luynes, Étienne Loisson, et Claude Barbin, aussi Marchands Libraires à Paris, pour en jouir conjointement suivant l'accord fait entr'eux.",
+          "J'espère que si la Cour vient à Paris l'Hy ver prochain, vous le viendrez voir avec tous ses Ornements;"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Portugal",
+        "Flandre",
+        "Laye",
+        "ADONIS"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

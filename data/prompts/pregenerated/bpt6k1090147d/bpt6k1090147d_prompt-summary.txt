@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Mary, Nicolas",
+    "title": "Perside, ou la Suitte d'Ibrahim Bassa, tragédie",
+    "publication_date": "1649",
+    "document_id": "bpt6k1090147d"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "SOLIMAN",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Seigneur, ton nom, et ma mémoire, Soubémis à ton Empire un Royaume puissant, Et forcé le Soleil à croître le Croissant. \nSOLIMAN\n Tu me fais tort, Eraste, et ton respect m'offense, Si retournant vainqueur de l'effioi de Bizance, Après ce grand exploit tu peux encor douter, En quelle qualité tu te dois présenter, Ton insigne valeurte peut aner arprenuie, Au prise de Soliman le rang que tu dois prendre, Et nonobstant l'orgueil d'un suptéme pouvoir, Je sais bien de quel front ie te dois recevoir, Je lis sur ces drapeaux le destin des Rebelles, La prise de Bellegarde, et la mort de Gazelles Our lans ouvte en jes muis ajina mieus s'enter Que d'attendre sa prise ou que s'en retirer. \nERASTE\n Tu las dit, Soliman, il est mort ce rebelle, Oui, Seigneur, il est mort, mais sa mort est si belle, Et son dernier moment le rend si glorieux.",
+          "Ne fais point cet effott dont ton rang te dispense, L'honneur de re servir m'est trop de récompense, Dètes contentements, Seigneur forme mes plailirs, Et ce rare bonheur borne tous mes désirs. \nSOLIMAN\n Eraste, encor un coup, Seigneur t'avouerai sans feinte, Que pour cette beauté ie ressens quelque atteinte, Mais quelques doux attraits qu'ait vn bien si charmant, Ton insigne valeur me touche également, Et voyant ton ardeur, et si pure et si forte, Sur mes affections ton mérite l'emporte Puis que tes volontés se forment de mes vœux Ne me conteste plus ce laurier que je veux J'ai fait sur mon amour triompher ta vaillance, Laisse toi maintenant vaine à ma bienveillance.",
+          "Eraste n'est pas mort, il vit dedans mon âme, Il règne, il règne encor dedans mon souvenir, Et malgté ton pouvoir rien ne l'en peut bannir: Change donc si tu veux ta fatale ordonnance, Demande un autre effet à mon obéissance, Ne d'y pas à ce cœur ils veux que vous aimiez, Gruer dis même plutôt, Seigneur veux que vous mouriez, En ce point Soliman sans suivrai ton envie, Ojàj commanur ates yeux qu'on m'atrache la vis, Je suis prête à mourir si tu me le permets, Mai Eruite entane hiait, te d anise rai jamais. \nSOLIMAN\n Perside un grand mérite à beaucoup de puissance.",
+          "Non Seigneur, ton Eraste est la même prudence, Il est noble, il est franc, il est sans insolence, Et bien qu'il n'ait jamais jeté les yeux sur moi, Je sais pourtant qu'il est plein d'ardeur et de foi, Que sa discrétion jointe à sa modestie, Ne de fes quaines que la momentané partie, Et qu'il n'est point de cœur quelque orgueil n' ait èche, Qui n'ait plus d'une fois en sa vertu. \nSOLIMAN\n Pourquoi donc auprès d'elle êtes-vous sans atteintes HÉRMINIE.",
+          "Soudain elle mettra son Éraste en alarmes Qui te venant combattre avec tes propres armes, Te ravira peut-être avec cette beauté, Et l'Empire et le Trône, où tu te voy onté. \nSOLIMAN\n J'approuve vos raisons, et votre prévoyance, Dans vos sages avis, ie vois mon imprudence, Je reconnais ma faute, et été veux aujourd'hui Malgré ses luiti aherme denale de suis."
+        ]
+      },
+      "top_5_persons": [
+        "SOLIMAN",
+        "Herminie",
+        "Pyrrus",
+        "Achmat",
+        "Seigneur"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rhodes",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Des l'ouvre du Théâtre, paraîtront des deux côtés les drapeaux de Rhodes, et ceux de Bellegarde \nERASTE\n N quel état, Seigneur, faut-il que je paraisse?  Quel rang dois-je tenir auprès de ta bautesses Si devers ces drapeaux elle tourne les yeux, Elle me recevera comme victorieux;",
+          "Ta générosité ne se peut trop louer, Et Rhodes que le sort et mon bras m'ont donnée, Après tes hauts exploits est bien infortunée, D'être aujourd'hui contraints à relever de moi, Ayant pout citoyens des hommes comme toi.",
+          "Vous savez qu'Amurat était donna la naissance, Que son père étant mort elle quitta Bizance, Et que pour dissiper la peur qui la saisit, Rhodes sut le séjour qu'alors elle choisit;",
+          "Rhodes, par ta valeur à tes lois asservie, Est moins digne à mes yeux de pitié, que d'envie,",
+          "Non, ne te flattes point d'une vaine espérance, Rhodes à succombé, mais non pas ma constance,"
+        ]
+      },
+      "top_5_places": [
+        "Rhodes",
+        "Bizance",
+        "Grèce",
+        "Herminie",
+        "Constantinople"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

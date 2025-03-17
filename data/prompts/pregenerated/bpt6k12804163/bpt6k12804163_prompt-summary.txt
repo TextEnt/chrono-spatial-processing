@@ -1,0 +1,75 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Dépit amoureux. Comédie, representée sur le Theatre du Palais Royal. De J. B. P. Moliere",
+    "publication_date": "1674",
+    "document_id": "bpt6k12804163"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Lucile",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Et, dans cette aventure ou chacun m'intéresse, Vous allez voir plutôt éclater ma faiblesse, Connaître que le Ciel qui dispose de nous Ne me fit pas un cœur pour tenir contre vous, Et qu'il vous réservait pour victoire facile, De finir le destin du frère de Lucile 2 Oui, bien loin de vanter le pouvoir de mon bras, Ascagne va par ous recevoir le trépas: Mais Mais il veut bien mourir, si sa mort nécessaire Jeut avoir maintenant dequoy vous satisfaire, En vous donnant pour femme en présence de tous Celle qui justement ne peut être qu'à vous.",
+          "et, puisque votre haine Chasse un cœur tant de fois que l'amour vous ramène, C'est la dernière ici des importunités Que vous aurez jamais de mes vœux rebutez. \nLUCILE\n Vous pouvez faire aux miens la grâce toute entière, Monsieur, et m'épargner encor cette dernière. \nERASTE\n Hé bien, Madame, hé bien, ils seront satisfaits: Je romps avec vous, et j'y romps pour jamais, Puisque vous le voulez;",
+          "Je le quitte, ma sœur, pour embrasser le vôtre: Je sais qu'il est rangé dessous les lois d'un autre, Et ce serait un trait honteux à vos appas, Si vous le rappeliez et qu'il ne revint pas. \nLUCILE\n Si ce n'est que cela, j'aurai soin de ma gloire;",
+          "Lucile, à mon avis, vous montre assez d'amour, Elle vous voit, vous parle, à toute heure du jour, Et Valère après-tout qui cause vôtre mainte, Semble n'être à présent souffert que par contrainte. \nERASTE\n Souvent d'un faux espoir un amant est nourri;",
+          "Je ne sais, pour causer de si grands changements, Ce qui s'est pu passer entre ces courts momens. \nLUCILE\n Rien ne s'est pu passer dont il faille être en peine, Puisque rien ne le doit défendre de ma haine."
+        ]
+      },
+      "top_5_persons": [
+        "Lucile",
+        "Lucile",
+        "Valère",
+        "Marinette",
+        "Ascagne"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "À MONSIEUR MONSIEUR HOURLIÈR, Escuyer Sieur de Mericourt, Conseiller du Roi, Lieutenant Général Civil et Criminel au Baillage du Palais à Paris BrAten ONSIEUR, Si cette Pièce n'avait reçu les applaudissements de toute la France, si elle n'avait été le charme de Paris, et si elle n'avait été le divertissement du plus grand Monarque de la Terre, je ne prendrais pas la liberté de vous l'offrir.",
+          "Il n'aura plus l'honneur d'être sur mon oreille. \nMARINETTTE\n Et toi, pour te montrer que tu m'es à mépris, Voilà ton demi-cent d'épingles de Paris, Que tu me donnas hier avec tant de fanfare."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "France"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

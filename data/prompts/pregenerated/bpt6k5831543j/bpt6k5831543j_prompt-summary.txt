@@ -1,0 +1,77 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Auvray, Jean",
+    "title": "La Dorinde du Sr Auvray . Tragi-comédie. Dédiée à la Reine",
+    "publication_date": "1631",
+    "document_id": "bpt6k5831543j"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "DARINE",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Le Roi vous aime, c'est tout dire Moqueuse! \nDORINDE\n \nDARINE\n Vous avez au moins sujet de rire. \nDORINDE\n On trompe votre esprit, et sans doute l'Auteur De tout ce béau secret se trouveramenteur, Encor qui vous apprend cette heureuse nouvelle? \nDARINE\n Ardilan, un Amant que j'ai connu fidèle, Le favori du Roi qui tendre chaque jour, De donner à mes yeux une preuve d'Amouri Et dont le beau discours promet à Darinée De joindre nos deux cœurs par les nœux d'Hy meue, Le temps qui vous doit mettre au comble des plaisirs, Est celui qu'il prescrit à nos justes désirs. \nDORINDE\n Hâ ma fille, on vous troupe, et si ici ne m'abuse Peu de subtilité découvrira la ruse, Si vous m'en voulez croire, il vous faut prudemment, Observer les façons de ce nouvel Amant, Et presser son amour sur la belle promesse Qu'il a si souvent faite au bien de sa maîtresse: Alors sans doute alors vous le vierrez surpris En peine d'assurer son geste, et ses esprits, Et apprendre eveux que le Ciel jamais ne me consolę Aussi nous ne -tôt ne dément la parole, Ce salutatre avis n'est pas à rejetter, Si votre Âme à loisir le veut un peu goûter.",
+          "Pourraient par vos leçons vivre comme des Rois, Les désirs coûtent peu, les moyens sont faciles De bâtir dedans l'air des châteaux et des viltes9 Mais tout cela t'est suivre un songe décevant Et porter ses desseins dans l'empire du vent. \nDARINE\n C'est trop dissimuler cette belle espérance, Qui doit récompenser vue persévérance, Un secret qui rendra tant de partis jaloux, Et dont personne ne suls pas moins satante que vous. \nDORINDE\n Comment cela? DARINER.",
+          "Vous cherchez, Darinée, une beauté bien loinQue vous trouvez en vous avec bien moins de Joileur, Autant de fois qu'Amour. \nDARINE\n st usse furtes fables, Passons à des discours qui soient plus véritables.",
+          "Darinée, on nous trompe, et ce perfide Amant ve moquait ut ints seuxsusenmoquait, autremet. \nDARINE\n Patience, Madame, il nous cherche peut-être, \nDORINDE\n La clarté cependant commence à disparaître.",
+          "La fueille sur la branche à peine ose branler, Et le vent qui la baise a peur de trop parler. \nDARINE\n Attendant Sigismon, considérons de grâce Toutes les raretés de cettebelle place:"
+        ]
+      },
+      "top_5_persons": [
+        "DARINE",
+        "Marcilly",
+        "Godomar",
+        "Mars",
+        "Amasis"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "J donné à Paris le trentième jour deMai 164. Seellé du grand seau de cire jaulne: il est permis à ANTOINE DE SOMMAVILLE, Marchand Libraire à Paris, d'imprimer, faire imprimer, vendre et débiter liure intitulé, La Dorinde, Composé par le sieur AURAY, et ce pendant le temps de six ans entiers et consécutifs, à compter du jour que ledit livre sera achevé d'imprimer pour la première fois, pendant lequel temps sa Majesté fait expresses inhibitions et défenses à tous Libraires, Imprimeurs et a personnes de ce Royaume ires, faire Imprime, contrefaire ni altérer ledit ur, vendre et et au exemplaires iceluy, autre impression, que de ceux imprimez par leditSOMMAVILLE, peine de confiscation de exemplaires ce, et de trois mille liures me, dépens' dommages et intérêts, et que mettant à commencement la fin de chacun exemplairedudit liure, v extraict desdites lettres, elles soient tonitses pour deuement signifiées, et la collation, foi soit à comme original desdites lettres sus-dattées, ainsi il est declaré plus au long par icelles."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "PARIS",
+        "Lyon",
+        "Bergères",
+        "Rhone"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

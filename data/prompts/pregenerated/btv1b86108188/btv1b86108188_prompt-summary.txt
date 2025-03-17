@@ -1,0 +1,79 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Racine, Jean",
+    "title": "Esther, tragédie tirée de l'Escriture sainte",
+    "publication_date": "1689",
+    "document_id": "btv1b86108188"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Assuerus",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Hé! se peut-il qu'un Roi craint de la Terre entière, Devant qui tout fléchit, et baise la poussière, Jette sur son Esclave un regard si serain, Et m'offre sur son cœur un pouvoir souverain? \nASSUERUS\n Croyez-moi, chère Esther, ce sceptre, cet Empire, Et ces profonds respects que la terreur inspire, À leur pompeux éclat mêlent peu de douceur, Et fatiguent souvent leur triste possesseur.",
+          "Au reste, quoi que j'aie évité soigneusement de mêler le profane avec le sacré, j'ai cru néanmoins que je pouvais emprunter deux ou trois traits d'Hérodote, pour mieux peindre Assuerus Car j'ai suivi le sentiment de plusieurs Savants Interprètes de l'Écriture, qui tiennent que ce Roi est le même que le fameux Darius fils d'Hystaspe, dont parle cet Historien.",
+          "Et son pays? \nASSUERUS\n \nASAPH\n Seigneur, puis qu'il faut vous le dire C'est un de ces Captifs à périr destinez, Des rives du Jourdain sur l'Euphrate amenez. \nASSUERUS\n ",
+          "J'oserai devant lui rompre ce grand silence, Et j'ai, pour m'expliquer, besoin de sa présence. \nASSUERUS\n Dans quelle inquiétude, Éther, vous me jetez!",
+          "ASSUERUS\n Pproche, heureux appui du trône de ton A Maistre, Âme de mes conseils, et qui seul tant de fois Du sceptre dans ma main as soulagé le poids."
+        ]
+      },
+      "top_5_persons": [
+        "Assuerus",
+        "AMAN",
+        "Élise",
+        "Esther",
+        "Sion"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Perse",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Son témoignage est expressément détruit par l'Écriture, aussi bien que par Xenophon beaucoup mieux instruit que lui des mœurs et des affaires de la Perse, et enfin par Quinte Curse On peut dire que l'unité de Lieu est observée dans cette Pièce, en ce que toute l'action se passe dans le Palais d'Assuerus Cependant comme on voulait rendre ce divertissement plus agréable à des Enfants, en jetant quelque variété dans les décorations, cela a été cause que je n'ai pas gardé cette unité, avec la même rigueur que j'ai fait autrefois dans mes Tragédies.",
+          "Mais ce Sujet zélé, qui d'un œil si subtil Sçeût de leur noir complot développer le fil, Qui me montra sur moi leur main déjà levée, Enfin par qui la Perse avec moi fut sauvée;",
+          "Étrangers dans la Perse, à nos Lois opposez, Du reste des humains ils semblent divisez;"
+        ]
+      },
+      "top_5_places": [
+        "Perse",
+        "Versailles",
+        "Paris",
+        "Rhin",
+        "Jérusalem"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

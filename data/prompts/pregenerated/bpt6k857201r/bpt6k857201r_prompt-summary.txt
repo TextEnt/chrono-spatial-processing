@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Millotet, Hugues",
+    "title": "Chariot de triomphe, tiré par deux aigles, de... Ste Reine d'Alise, vierge et martyre... tragédie",
+    "publication_date": "1664",
+    "document_id": "bpt6k857201r"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Reine",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Théophile se voyant libre, voulut savoir ce qui se passait dans Alize sur la venue d'Olibrius, granc Prefect de Marseille, sous Diocletan Empereur Romain, et étant aux écoutes pour apprendte ce qu se passait contre les Chrétiens, s'en retourna tout étonné, et tremblant de crainte pour l'amour qu'y portait à Reine, il déclara à Alichriste sa femme ce qu'il avait appris depuis deux jours dans la Cité d'Alise, et qu'ils auraient entraieux bien de la peine de conserver et cacher Reine, pour la garantir de quelque fa rencontre, autant que la persécution elloi commancer sur les Chrestiens, Alichriste te fait portée pour la foi de Iesus-Christ, eût point autre repartie, que de lui dire, auec résolution admirable, il falloit mouris en viay Chrestien pour viure éternellement au Ciel.",
+          "Ta pureté au Ciel te prépare une place, Redoublant ta couronne en faveur de tes ans, À la virginuté conjointe à tes tourments, Ne te défiant point, ô vertueuse fille, dentés entrts compagnes unte Iitopile L'amour qui les retiens constamment pour la foi, Les boucle d'une combat pour la Divine Loi. \nREINE\n Ô glorieux support, Ange mon allégresse, Faites-vous d'un clin d'œil tomber votre vîtesse, De cœur enfin vous embrasse, et ne puis-je de bras, mu tu its font emnaijneZ attendans le trépas, Que Théophile eût vu votre sainte lumière, S'il ne manque de foi pour lui soit ma prière, Aussi têmoignez-lui votre saynète amitié.",
+          "On ne vous connaît plus, et la vraie amitié Qui vous appelle ici, est auec grand pitié: \nREINE\n Amitié, et pitié, par ces mots va vous prie, Mon aimable Nourrice au reste de ma vie, Je sais que les soucis que vous avez pour moi, Ne me procurent rien que d'agir pour la Foi: J'embrasse les travaux, et avec efficaces, En recherchant les feuets plutôt que les menaces, Et me résignant toute au vouloir de mon Dieu, M'arrivent tous les fléaux s'ils se doivent en ce lieu, Jamais ne m'advint mieux que l'habit de Bergère, Que de changer de nom, de Noble en Boccage:",
+          "Quant au reste toujours nos aimables aumôniers, \nÀLICHRISTE\n Tout vous est élargi, et sous votre puissance. \nREINE\n En notre sainte Foi ne plaignez mon enfance, Car attendant venir sans reculer d'un pas, Les rigueurs du martyre, et ne m'enfuirai pas, Dieu compasse mon temps s'il lui plaît que je vive, Soient accidents divers, m'arrive qui m'arrive. \nÀLICHRISTE\n Et moi si vous voulez me voir en ces trarsports, De vouloir triompher sur de pareils efforts, Vous reconnaîtrez bien par la persénérance, Que la mort nous renvoie où gît notre espérance, Dieu nous délivre jo de la captiuté.",
+          "Favorite du Ciel reçois ce beau Laurier, Je suis apprendre toi, tu suis à t assister, Je viens te faire voir du Paradis l'entrée, Je suis le Messager, l'Ange à ta destinée, Reine n'aie ouvono penancenoutamons, fuis moi, Le Royaume des Cieux est maintenant à toi. \nREINE\n Ange de Dieu bénît, compagnie assurée, J'endure volontiers devant cette assamblée, J'entends que votre voix me console en ces maux, J'ai su votre secours paruip jonn us travaux, Mon corps tout deschirè, ma langue vous rend grâce, Comme des saints Martyrs après dois suivre la trace: LE PEUPLE."
+        ]
+      },
+      "top_5_persons": [
+        "Reine",
+        "CLEMENT",
+        "Théophile",
+        "DALALAN",
+        "Amelin"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Bergère",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "avec un vilage constant et tout à fait admirable et de là montrant et faisant paraître une force très-grande et un cœur nérorque pour la loi et la loi de JésusChristl'Époux de la virginité, Olibrius pour la détorner de sa Religion, lui promet de l'épouser, en cas qu'elle vint adorer et sacrifier à ses Dieux: elle allegue incontinent cette belle parole de saint Hierosme en son premier livre contre Jouinian Nuptiæ terram replent, virgines paradisum: les mariages et les nopces remplissent la terre, mais les vierges sont les vrais ornements qui embellissent le Paradis, et dit après ce, qu'on s'amuse inutilement après une fille qui a voüé sa virginité à Jésus-Christ, ainsi cette inébraulable et illustre Bergère sut soustenir la foi Chrétienne que sa Nourrice lui avait apprise: si bien que s'avançant en âge elle sut fouler sous les pieds la superstition des Païens, et détester leurs simulacres par ce passage de la sainte Écriture.",
+          "Il l'aborde, il l'embrasse, il la baise comme son propre enfant, avec des tendresses et caresses de père, représentant à sa femme qu'il faut l'assujettir le mieux qu'il se pourra à leur vie rustique, et qui de plus il est expédient de lu faire changer d'habis et la déguiser en Bergère aussi bien qu'Algeride sa suivante, étant inséparables et d'amour, et de foi, et que ce vêtement empruné les mettrait facilement à couvert, de peur d'être reconnues, ce qui fut arrêté entreux.",
+          "Les la reçois, et pour juste raison, Vinant tant soit peu habillée en Bergère, Et noble comme elle est servante en ma maison, OÙ Sauveur je vous fais Prière, Que vous nous soyez si prospère, Conservant parmi nous ce miracle du jour, L'éclatante vertu en elle fait paraître, Que vous la visiez bien d'un trait de votre amour, Elle se veut faire connaître, Qu'en mourant elle veut chercher son vrai amant, le la v9 maintennent.",
+          "Notre illustre Bergère triomphe sur l'eau comme parmi les flammes et les divers tourments que l'on ces venait de faire souffrir, pendant lesquels elle ne cessait de confesser le saint Nom de Dieu, et de chanter d'à ton tout à fait mélodieux, ce beau verset du Psalmiste royal David, Domine in voluntate tua præstitisti de meo virtem. \nPsal\n 29.",
+          "Je me réjouis bien qu'elles vivent avec moi, De tel bien que sans pues en gardants votre loiMa femme voyons Reine et la belle Algeride, Leur faisant des leçons de la foi qui nous guide Et par nôs vœux secrets veillons les déguiser Sous l'habit de Bergère, et nous les assurer, C'est sans les offenser, puis que par telle voie;"
+        ]
+      },
+      "top_5_places": [
+        "Bergère",
+        "Alger",
+        "Rome",
+        "Bergères",
+        "Autun"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

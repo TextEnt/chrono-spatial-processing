@@ -1,0 +1,78 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Sganarelle, ou le cocu imaginaire. Comedie. Avec les argumens de chaque scene.",
+    "publication_date": "1665",
+    "document_id": "bpt6k1280447n"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Celie",
+          "frequency": 9
+        },
+        "related_sentences": [
+          "Ans cette Scène, Lélie qui avait fait I dessein de s'en retourner, vient trouver Celie, pour lui dire un éternel adieu, et se plaindre de son infidélité, dans la pensée qu'il a, qu'elle est mariée à Séganarelle lors que Célie qui croit avoir plus de lieu de se plaindre que tu, lui reproche de son côté sa perfidie;",
+          "et Lélie enfin ne sait ce qu'on lui vient conter, et croit toujours que Celie a épousé Sganarelle Quoi que cette Scène donne un plaisir incroyable à l'Auditeur, elle ne peut pas durer plus longtemps sans trop de confusion, et ainsi gage que vous souhaitez déjà de voir comment toutes ces personnes sortiront de l'embarras où ils se rencontrent;",
+          "C'est ici que l'équivoque divertit merveilleusement l'Auditeur, puis que Celie détestant la perfidie de son Amant, jetant feu et flammes contre lui, et sortant à dessein de s'en venger, Séganarelle croit qu'elle prend sa défense, et qu'elle ne court à dessein de le punir, que pour l'amour de lui.",
+          "Cependant que Séanarelle se tourmente ainsi luymesme, Celie et son Amant n'ont pas moins d'inquiétude que lui, et ne se reprochent que par des regards enflamés de courroux, leur infidélité imaginaire, la colère quand elle est montée jusqu'à l'excès, ne nous laissant pour l'ordinaire que le pouvoir de dire peu de paroles.",
+          "Ette Scène n'est pas plus longue que la Cprécédente, et la Femme de Séganarelle, regardant par la fenêtre, prend de la jalousie de son Mari, à qui elle voit tenir une Femme entre ses bras, et décend pour le surprendre, cependant qu'il aide à remporter Celie chez elle."
+        ]
+      },
+      "top_5_persons": [
+        "Celie",
+        "Sganarelle",
+        "Valère",
+        "M",
+        "Seigneur"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 9
+        },
+        "related_sentences": [
+          "c'est pourquoi puis qu'il y a tant de possibilité et de vraiisemblance dans l'évanouissement de Lelie, que l'on pourrait dire qu'il était absolument nécessaire qu'il s'éuanoüist, puis qu'il aurait paru peu amoureux, si étant arrivé à Paris, il s'était allé amuser à manger, au lieu d'aller trouver sa Maîtresse: ils condamnent des choses qu'ils devraient estimer, puis que la conduite de cet incident avec toutes les préparations nécessaires, fait voir que l'Auteur pense meurement à ce qu'il fait, et que rien ne se peut égaler à la solidité de son esprit.",
+          "Jamais personne ne sut si bien démonter son visage, et l'on peut dire que dedans cette Pièce, il en change plus de vingt fois: mais comme c'est un divertissement que vous ne pouvez avoir à moins que de venir à Paris, voir représenter cet incomparable Ouvrage, je ne vous en dirai pas davantage, pour passer aux choses dont tu puis plus aisément vous faire part.",
+          ", est-il pas vrai, Monsieur, que vous avez trouvé ces Vers tout à fait beaux, que vous ne vous êtes pu empêcher de les relire en core une sois, et que vous demeurez d'ac cord que Paris a eu raison de nommer cette Scène, la belle Scène.  SCÈNE XVIII.",
+          "Mhouvi Ganarelle, qui comme vous avez vu Odans la fin de la belle Scène, ( puis qu'elle n'a point à présent d'autre nom dans Paris) a pris résolution de se venger de Lélie vient pour cet effet dans cette Siène, armé de toutes pièces;",
+          "C'est pourquoi votre vous conseille de venir à Paris, pour voir représenter le Coci IMAGINAIRE par son Auteur, et vous verrez qu'il y fait des choses qui ne vous donneront pas moins d'admiration, que vous en aura donné la lecture de cette Pièce;"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "France"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

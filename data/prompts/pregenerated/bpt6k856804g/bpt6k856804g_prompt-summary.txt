@@ -1,0 +1,79 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Croisilles, Jean-Baptiste de",
+    "title": "Chasteté invisible, bergerie en prose",
+    "publication_date": "1633",
+    "document_id": "bpt6k856804g"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Thyris",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "si la rigueur du sort est toute seule à l'assaillir, il en triomphera par le moyen de celle qui le peut rendre heureux: mais de dompter en même temps deux enne mis si puissants, c'est ce qu'Hercule même n'eut pas entrepris: la nature ne nous a donné qu'un cœur, présuppo sant que nous n'aurions chasque fois qu'un adversaire, le courage de Thyris était en donne un qui en vaut mille, mais la rage de la cruauté n'en saurait blesser qu'un de tous ceux- là.",
+          "C'est là que Thyris fut si fort épris des perfections d'Unranie, que la fête qui assemble aujourd'hui ses amis, pour tâcher de servir à ses justes intentions semble plutôt les convier à ses obsèques: mais parce qu'une vertu ne peut être contraire à l'autre, la constance de Thyris et la résolution de sa Maîtresse se trouvent à la fin satisfaites sans que ni l'une esprit l'autre souffre aucune diminution.",
+          "On tient pour une merveille qu'autrefois les roseaux parlèrent d'un secret quourcuravait confié, et moi -tu trouve qu'il n'y a rien qui ne parle d'amour hormis Vranie AMARILLE, Le mérite de Thyris, le jugement de son choix, la constance de sa recherche, les souhaits publics, et le bonheur qui naîtra de votre mariage.",
+          "En punition de ce qu'il badine au lieu de se picquer du désir de s'instruire, Philis, ne lui permets de plus d'une heure d'ici de te baiser les mains. \nPHILID\n Et non ma Mignonne, on réciterai si bien les vers que Thyris composa hier pour ma Maîtresse et pour moi.",
+          "Psaphon était alors le nom de Thyris que son exemple nous sace sages, l'Aigle déchire les Agneaux, les Mésanges avalent les Abeilles, semblablement amour est un oiseau de proie qui dévore jour et nuit le corps et l'âme des jeunes gens. \nPHILID\n Ma"
+        ]
+      },
+      "top_5_persons": [
+        "Thyris",
+        "ARISTE",
+        "Seigneur",
+        "Tiris",
+        "Jupiter"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "LICANDRE, Veux -tu que Seigneur fasse Ruènelos,Éinto LICANDRE, Veux -tu que Rome fasse parler les rochers et les arbres?",
+          "si la cruauté de sa Maîtresse est toute seule contre Rome il l'emportera par sa persévérance;",
+          "LICANDRE, Veux -tu que Rome fasse marcher les ombres?"
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Lyon",
+        "Bergère",
+        "Paris",
+        "Clytie"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

@@ -1,0 +1,79 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Le bourgeois gentilhomme, comédie-balet faite à Chambort, pour le divertissement du Roy . Par J.-B. P. Molière",
+    "publication_date": "1673",
+    "document_id": "bpt6k5783830q"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "MONSIEUR JOURDAIN",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Tout ce qu'il faisait, c'est qu'il était fort obligeant, fort officieux; et com me il se connaissait fort bien en étoffes, il en alloir chiorfirue touo les côtés, les faisoir aporter chez Seigneur, et en donnait à ses Amis pour de l'argent \nMONSIEUR JOURDAIN\n Je suis ravi de vous connaître, afin que vous rendiez ce témoignage-la que mon Père estoir Gentilhomme.",
+          "; mais tu me pousses en tierce, avant que de pousser en quarte, et tu n'as pas la patience que je pare. \nMADAME JOURDAIN\n Vous êtes fou, mon Mari, avec toutes vos fantaisies, et cela vous est venu depuis que vous vous messez de hanter la Noblesse. \nMONSIEUR JOURDAIN\n Lors que je hante la Noblesse, je fais paraître mon jugement;",
+          "DORANTE\n C'est fort bien dit Et afin, Madame Jourdain, que vous puissiez avoil l'esprit tout-à-fait Madame, et que vous perdiez aujourd'hui toute la jalousie que vous pourriez avoir conçue de Monsieur votre Mari, c'est que nous nous servirons du même Notaire pour nous marier Madame, et moi. \nMADAME JOURDAIN\n Je consens aussi à cela. \nMONSIEUR JOURDAIN\n ",
+          "Je ne veux point tous ces caquets, et je veux un Homme en un mot qui m'ait obligation de ma Fille, et à qui je puisse dire, Mettez-vous là, mon Gendre, et dînez avec moi. \nMONSIEUR JOURDAIN\n Voilà bien les sentiments d'un petit Esprit, de vouloir demeurer toujours dans la bassesse.",
+          "La voix, V, se forme en raprochant les dents sans les joindre entièrement, et allongeant les deux lèvres en dehors, les approchant aussi l'une de l'autre sans les joindre tout-à-fait, V. \nMONSIEUR JOURDAIN\n V,V. Il n'y a rien de plus véritable, y.  MAÎTRE DE PHILOSOPHIE."
+        ]
+      },
+      "top_5_persons": [
+        "MONSIEUR JOURDAIN",
+        "LUCILE",
+        "Nicole",
+        "Prose",
+        "Mamamouchi"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Le Privilège cy-dessus a été cédé à CLAUDE BARBIN, suivant les Actes passez pardevant les Notaires au Châtelet de Paris Registré sur le Livre de la Communauté des Imprimeurs et Marchands Libraires de Paris, suivant l'Arrest de la Cour de Parlement du 8. \nAvril 1653\n aux charges, clauses et conditions portées ès présentes Lettres.",
+          "La Scène est à Paris LE BOURGEOIS GENTILHOMME.",
+          "Donné à Paris E le31"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Jourdain",
+        "Suisse",
+        "PARIS",
+        "Tibre"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Gougenot, Nicolas",
+    "title": "La comédie des comédiens , tragi-comédie, par le Sr Gougenot",
+    "publication_date": "1633",
+    "document_id": "bpt6k5813513g"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "CAL",
+          "frequency": 8
+        },
+        "related_sentences": [
+          "Qui vous donne le droit d'user de ce langage? \nSYM\n Mon amour, que vos yeux connaissent sans pareil \nCAL\n Et qui seul me doit luire ainsi que le Soleil, Symandre, je vois bien que votre erreur s'attise De petits traits de feu que produit masottise, Mais pour mieux éviter la rigueur de vos lois, Croyez que sans serai plus froide une autrefois.  Nijà \nSYM\n Vous ne fûtes jamais pour moi que de la glace, Rappelez ce beau fils, ie luy veux faire place.",
+          "Il est vrai, mais Symandre est coulpable de tout. \nFLOR\n L'Amour, et vos beautés, en viendrez bien à bout. \nCAL\n Monsieur, j'aime Symandre, et ie le dis sans feinte, Sans Amour toutefois, mais d'une amitié sainte, Qu'il meure en mon amour, je ne le puis guérir, Mais pour son amitié sans suis prête à mourir.",
+          "Je n'ai plus de plaisir que dans mon espérance, Je n'ai plus de douleur que parmi mes soupçons, Je crains que mes ardeurs rencontrent des glaçons, Je crains que mon amour trouble votre pensée, Je crains que mon humeur vous paraisse insen eue, Et que voulant atteindre au Ciel de vos beautés, Je ne trouve l'enfer de mies témérités. \nCAL\n ",
+          "Qu'il n'était pas mon père, et que j'étais de France, -- - ans sçauoir de quel . \nFLOR\n oilà trop d'assurance, ons en snanits blen tôt jappure vérité, \nCAL\n En fin m'ayant remise en pleine liberté, Le bon homme rendit le tribut à Nature. \nFLOR\n ous me venez d'apprendre une étrange aventure!",
+          "Je ne veux pas ici faire la délicate, Plusieurs de notre sexe, en qui l'Amour éclate Alors qu'on leur en parle en feignent de l'ennui, Pour moi, j'ai de l'Amour, mais ce n'est pas pou 69. \nFLOR\n Vous ne sauriez parler était plus de franchise \nCAL\n Symandre ne me peut accuser de feintise."
+        ]
+      },
+      "top_5_persons": [
+        "CAL",
+        "FLOR",
+        "SYM",
+        "CRIS",
+        "M"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Venise",
+          "frequency": 8
+        },
+        "related_sentences": [
+          "C'est que depuis trois mois que je suis à Venise, Je n'ai jamais changé qu'une fois de chemise, C'est que tous mes habits sont engagés pour vous, C'est qu'un écornifleur me gourmande à tous coups, C'est que sans n'ose plus entrer dans les tavernes, C'est que tous les logis sont pour moi des Cavernes, C'est que l'hiver arrive et que je suis tout nu, C'est qu'à faute d'argent vous n'êtes plus connu, C'estes qu'Argant et l'Amour vous donnent tant d'Amou, D'il faut que bien feint que ie dîne par ue.",
+          "Mais avant cette reconnaissance, Clarinde ayant vu au col de Caliste le Joyau qu'elle avait, et y voyant les mêmes chiffres que ceux d'un anneau qu'elle avait eu des promis, elle la fit reconnaître pour Perside fille de Cristome et sœur de ce promis nommé Symandre, que Cristome était venu chercher à Venise sur le bruit qui courait qu'il faisait l'amour à une courtisane.",
+          "de me donner du cuir doré ou quelques étoffes peintes et chamarrées de clin quan faux, et au lieu de perles fines de: grains de Venise Cette appréhension, Messieurs, diminuera de beaucoup l'inclination et le courage que sans me promettrais à l'étude et à l'avance mesit d'une si belle proression que cel le de la Comédie. \nM\n GAUL.",
+          "Et au lieu d'une manteaude droguet tu en auras un de baraquan et le tout sera neuf, Et pour tes mémoires, ie ai bien que tu'en as plus en ta cervesse que tous les Maquinons de Venise \nTURL\n Grand merci mon maître.",
+          "La renégat mort et Trasile retourné à Venise à bon port avec Caliste, elle prend quelque changre et une servante, elle est réputée Courtisane, Trasile sort vieil, riche et veuf, est fort enflammé de son amour, qu'elle dédaigne."
+        ]
+      },
+      "top_5_places": [
+        "Venise",
+        "Marseille",
+        "France",
+        "Paris",
+        "Dauphiné"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

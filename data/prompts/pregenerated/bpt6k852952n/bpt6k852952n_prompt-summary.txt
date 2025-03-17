@@ -1,0 +1,77 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": null,
+    "title": "Le Mercier inventif, pastorale",
+    "publication_date": "1632",
+    "document_id": "bpt6k852952n"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Mercier",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Si bien qu'en fin le rat eut pour moi la noblesse: Or sont de ces Seigneurs qu'il convient aborder, Et à eux qu'il nous faut l'aumône demander. \nFloridon\n Donc enseigne moi la façon plus subtille De demander ainsi pauvre de ville en ville, port pruseque le Hame di Aime rens maisseurcux. \nMercier\n Pren que ici sois un noble et tu feras le Gueux, Cependant que monté sur mon coursier homme passe, Que dire pourras-tu d'une assez bonne grâce? \nFloridon\n sronmen aice plae",
+          ", une femme sans homme: Je sais si vous voulez que ce sera bien tôt, Qu'en votre saint Hymen ie rongeray les os: Sus donc débauchez-vous, à celle fin qu'ensemble L'ryilien enveunle à vous un gros frêlaut assemble. \nFlorice\n Tu te moques Mercier. \nMercier\n Ha non fais par ma foi: 2",
+          "La voilà Dieu merci: Cachats, fine tablette, Aiguilles, curedents, épingles, pelons, Couvercles à lexive, écuelles, hannetons, Achetez, achetez, aussi bien femme veux vendre. \nFlorice\n Ha j'entends ce Mercier, allons vers deux nous rendre \nCaliante\n Vraiment ie le veuxbien. \n",
+          "Comme un marchant Mercier trafiquant sur les mers l'ai vu de mon grenier maints pays étrangers, l'ai passé Canada, Vaugirard, Hetrurie, 2 Mont-marthe, Papagosse, et toute la Suerie J'ai vu les plus grands monts hérissez de forêts, Plus hautes que le fond de nos plus creux retraits;",
+          "Fiurvaoste Sus, sus allons ma belle embrasés de sa flamme Offrir à sa bonté et nos vœux et notre âme. \nMercier\n Et moi ores avoir vay fort bien sacrifier Mon ventre à la cuisine, ou plutôt dédier La cuisine à mon ventre ou en tournant la broche"
+        ]
+      },
+      "top_5_persons": [
+        "Mercier",
+        "Mercier",
+        "Mercier",
+        "Mercure",
+        "Seigneur"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Canada",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Comme un marchant Mercier trafiquant sur les mers l'ai vu de mon grenier maints pays étrangers, l'ai passé Canada, Vaugirard, Hetrurie, 2 Mont-marthe, Papagosse, et toute la Suerie J'ai vu les plus grands monts hérissez de forêts, Plus hautes que le fond de nos plus creux retraits;"
+        ]
+      },
+      "top_5_places": [
+        "Canada",
+        "Bergères",
+        "louvre",
+        "Milan",
+        "Cythère"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Corneille, Pierre",
+    "title": "Horace, tragédie (par P. Corneille)",
+    "publication_date": "1647",
+    "document_id": "bpt6k12802899"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "SABINE",
+          "frequency": 66
+        },
+        "related_sentences": [
+          "Un oracle jamais ne se laisse comprendre, On l'entend d'autant moins que plus on croit l'entendre, Et loin de s'assurer sur un pareil arrêt, Qui n'y voit lien d'opieur dont crone que tout l'est. \nSABINE\n Sur ce qui fait pour nous prenons plus d'assurance, Et souffrons les douceurs d'une juste espérance, Quand la faveur du Ciel ouvre à demi ses bras, Quène s'en piomet nen ne la métite pas, Il empêche souvent qu'elle ne se déploie, Et lors qu'elle descend son refus la renvoie.",
+          "En vain d'un sort si triste on les veut garantir, Ces cruels généreux n'y peuvent consentir, La gloire de ce choix leur est si précieuse Et charme tellement leur âme ambitieuse, Qu'alors qu'on les déplore ils s'estiment heureux, Et prennent pour affront la pitié qu'on a d'eux, Le trouble des deux camps soupille leur renommée, lio conibutront prurlost et l'une et l'autre armée, Et mourront par les mains qui les ont séparez, Que quitter les honneurs qui leur sont déferez. \nSABINE\n Quoi?",
+          "Je m'en vais à Sabine en porter la nouvelle, Ce coup sera sans doute assez rude pour elle, Et ses trois frères morts par la main d'un époux Lui donneront des pleurs bien plus justes qu'à vous : Mais j'espère aisément en dissiper l'orage, Et qu'un peu de prudence aidant son grande courage, Fera bientôt régner sur un si noble cœur Le généreux amour qu'elle doit au vainqueur.",
+          "Ainsi, ma sœur, du moins vous avez dans vos plaintes, Où porter vos souhaits, et terminer vos craintes, Mais si le Ciel s'obstine à nous persécuter, Pour moi j'ai tout à craindre et rien souhaiter. \nSABINE\n Quand il faut que l'un meure, et par les mains de l'autre, C'est un raisonnement bien mauvais que le vôtre.",
+          "Et laissant à ses pleurs vaincre ce grand courage L'amenez-vous ici chercher même avantage? \nSABINE\n Non non, mon frère, non: leurs ne viens en ce lieu Que pour vous embrasser, et pour vous dire Adieu, Votre sang est trop bon, n'en craignez rien de lâche, Rien dont la fermeté de ces grands cœurs se fâche;"
+        ]
+      },
+      "top_5_persons": [
+        "SABINE",
+        "Horace",
+        "Albe",
+        "VALÈRE",
+        "Camille"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 66
+        },
+        "related_sentences": [
+          "Si bien que pour laisser une illustre hone, La mort seule aujourd'hui peut conserver ma gloire, Encor la fallait-il si tôt que j'eus vaincu, Puisque pour mon honneur j'ai déjà trop vécu, Vn homme tel que moi voit sa gloire ternie Quand il tombe en péril de quelque ignominie, Et ma main aurait su déjà m'en garantir, Mais sans votre congé mon sang n'ose sortir, Comme il vous appartient, votre aveu doit se prendre, C'est vous le dérober qu'autrement le répandre, Rome ne manque point de généreux guerriers, Assez d'autres sans moi soustiendront vos lauriers, Que vôtre Majesté désormais en dispense, Et si ce que ay fait vaut quelque recompense, Permettez, grand Roy, que de ce bras vainqueur Ie immole ma gloire, et non pas ma sœur.",
+          "Je m'attache un peu moins aux intérêts d'un homme, Je ne suis point pour Albe, et ne suis plus pour Rome, Je crains pour l'une et l'autre en ce dernier effort, Et serai du parti qu'affligera le sort, Égale à tous les deux jusqu' à la victoire, Je prendrai part aux maux, sans en prendre à la gloire, Et garde, en attendant ses funestes rigueurs, Mes larmes aux vaincus, et ma haine aux vainqueurs.",
+          ", il veut encor braver : J'en viens d'immoler deux aux Manes de mes frères, Rome aura le dernier de mes trois adversaires, C'est à ses intérêts que sans vais l'immoler, ( Dit-il) et tout d'un temps on le voit y voler, La victoire entr'eux deux n'était pas incertaine, L'Albain percé de coups ne se traînait qu'à peine, Et comme une victime aux marches de l'Autel Il semblait présenter sa gorge au coup mortel;",
+          "Le seul amour de Rome a sa main animée, Il serait innocent s'il l'avait moins aimée, Qu'ai-je dit, Sire, il l'est, et ce bras paternel L'aurait déjà puni s'il était criminel, J'aurais su mieux user de l'entière puissance Que me donnent sur lui es droits de la naissance, J'aime trop l'honneur, Sire, et ne suis point de rang A souffrir ni d’affront, ni de crime en mon sang.",
+          "Pour moi je l'ose dire, et vous l'avez pu voir, Je n'ai point consulté pour suiure mon devoir, Notre longue amitié, l'amour, ni l'alliance N'ont pu mettre un môme mon esprit en balance, Et puisque par ce choix Albe montre en effet Qu'elle m'estime autant que Rome vous a fait, Je crois faire pour elle autant que vous pour Rome J'ai le cœur aussi bon, mais en fin ils suis homme."
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "V",
+        "Tulle",
+        "Paris",
+        "PARIS"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

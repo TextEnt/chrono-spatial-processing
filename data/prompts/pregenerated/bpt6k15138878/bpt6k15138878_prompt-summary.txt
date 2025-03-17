@@ -1,0 +1,74 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Bretonneau, François de Paule",
+    "title": "David et Jonathas , tragedie en musique, qui sera representée sur le théatre du college de Louis le Grand, le XXVIII. février",
+    "publication_date": "1688",
+    "document_id": "bpt6k15138878"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "David",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "DAVID, persécuté par Saül JOADAB, un des Chefs de l'armée des Philistins, ennemi de David CHOEURS de la suite de Saül, d'Achis, de David, de Jonathas et de Jadab DAVID ET JONATHÂS, ARALDTL.",
+          "AUL d'autant plus animé contre David, qu'il le voit plus soutenu par le Roi des Philistins, et prenant de là même de nouveaux soupçons, se déclare enfin pour la Bataille.",
+          "Amis heureux, Cessez de craindre: Amis heureux, Tout suit vos vœux. \nÔADAB\n David au comble de la Gloire, Cherche à jouir en paix de ses nobles travaux.",
+          "David se retirant dans le camp des Philistins, est rencontré par Jonathas Quelle douleur à l'un et à l'autre d'être ainsi obligez de se séparer.",
+          "Elle fit paraître Samuel, qui prédit à Saül sa mort, celle de ses enfants, et le couronnement de David, qu'il persécutait."
+        ]
+      },
+      "top_5_persons": [
+        "David",
+        "DAVID",
+        "Jonathas",
+        "Saül",
+        "Samuel"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Israël",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Tout ce qu'en craint Israël alarmé, eut toujours que peut un vras a vaincre accoutumé.",
+          "Achevez de soumettre Israël à vos lois. \n"
+        ]
+      },
+      "top_5_places": [
+        "Israël"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

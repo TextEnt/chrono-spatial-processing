@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Mairet, Jean",
+    "title": "La Sylvie du sieur Mairet . Tragi-comédie pastorale...",
+    "publication_date": "1628",
+    "document_id": "bpt6k65466206"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "SYLVIE",
+          "frequency": 8
+        },
+        "related_sentences": [
+          "Vous savez les tourments que mon âme asoufferts Depuis deux ans passez qu'elle est dedahs vos fers, Vous connaissez le feu dont elle est consommée, Feu dont autre que vous n'a la flammée allée, Et qui pour un objet plus ingrat ou plus beau Ne peut être couvert des cendres du tombeau. \nYLVIE\n Je veux d'oresnavant afin de vous complaire Croire que vous m'aimez d'un amour exemplaire, Et qu'à mon grand regret vous portez dans le sein Vn mal que d'y causer jusqu'eus jamais dessein, Au contraire le Ciel m'est témoin que j'essaie Par fuite et par mépris à guérir votre plaie. \nPHILENE\n Ô façon de guérir mille fois augmentant La cruauté du mal! \nSYLVIE\n Nécessaire pourtant. \n",
+          "Comme il avient souvent, te l'aura voulu prendre Pour se donner après le bien de te la rendre, En t'obligeant par là de le récompenser Au moins d'un grand merci, comme tu peux penser. \nSYLVIE\n Si quelqu'un m'avait fait la fourbe, Elle te jure Qu'au lieu de compliments ie luy dirais injure, Semblable privauté ne m'obligerait pas Qui auroit tant vousie de joncies de pas \nDORISE\n La ruse en cas d'amour ne peut être blâmable À qui n'en veut user que pour se rendre aimable, On peut se prévaloir de jes inventions Pour parvenir au but de ses intentions.",
+          "je vous ferai du bien abondamment \nPHILENE\n Pour mon Prince et pour vous qu'est-il que y ne fisse? \nDORISE\n Que vous rendrai-je, hélas! pour un si bon office Que jamais le chagrin ne trouble vos plaisirs, Que vos contentements surpassent vos désirs, En fin qu'à tous moments que le Ciel vous envoi Par de nouveaux bonheurs nouveaux sujets d oie. \nSYLVIE\n Adieu, vivez contents, et n'ayez soin de rien, Le Prince vous chérit, il vous fera du bien Un Garde.",
+          "je vous ferai du bien abondamment \nPHILENE\n Pour mon Prince et pour vous qu'est-il que y ne fisse? \nDORISE\n Que vous rendrai-je, hélas! pour un si bon office Que jamais le chagrin ne trouble vos plaisirs, Que vos contentements surpassent vos désirs, En fin qu'à tous moments que le Ciel vous envoi Par de nouveaux bonheurs nouveaux sujets d oie. \nSYLVIE\n Adieu, vivez contents, et n'ayez soin de rien, Le Prince vous chérit, il vous fera du bien Un Garde.",
+          "Que le nuisible éclat des beautés de Sylvie Avait au fils du Roi la liberté ravie, Que ce Prince amoureux son entretien goûtait, ceuqu ç mmmmi- l ait à l'écart, et qu'elle l'écoutoil: Considérant le temps, le lieu, le personnage, Tout cela ne vaut rien à celles de son âge, Et crois que ce Seigneur ne daignerait la voir 3 Que pour passer son temps et pour la décevoir: De moi cela me trouble et me tient en cervelle. \nMACE\n "
+        ]
+      },
+      "top_5_persons": [
+        "SYLVIE",
+        "MACE",
+        "SYLVIE",
+        "Seigneur",
+        "Seigneur"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Sicile",
+          "frequency": 8
+        },
+        "related_sentences": [
+          "La Sicile est l'aimable et fortuné séjour Où ce bel Astre donne et respire le jour, Cenx que fgavène son nont t'apptuent Meliphile Fille unique du Roi de la même Sicile \nFLORÊTAN\n Maintenant ici soupire avec contentement Sachant que j'ai le bien d'aimer si hautement, Puis qu'elle est comme moi d'une Royale tige",
+          "Il s'embarque secrètement à dessein de l'aller trouver en Sicile, où Thelame frère de la Princesse Meliphile prend tous les jours l'habit de Berger pour vivre plus librement avec la BergèreSyluie, dont l'esprit ne le ravit pas moins que la beauté.",
+          "Sire ie crois pour moi le Prince si bien né, Que quelque empêchement dont il soit deJeourne S'il connaît que l'affaire importe à la Sicile, On ne le trouvera nullement difficile.",
+          "Florêtan quelque temps après arrès -là é ue en Sicile par un naufrage, il apprend de Philène et de Dorise les circonstances de cette aventure;",
+          "DORISE\n On l'appelle Sicile \nFLORÊTAN\n Quoi voici la Sicile, hal Seigneur ne le crois point,"
+        ]
+      },
+      "top_5_places": [
+        "Sicile",
+        "France",
+        "Paris",
+        "Chypre",
+        "Candie"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

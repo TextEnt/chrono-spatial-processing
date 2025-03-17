@@ -1,0 +1,80 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Mary, Nicolas",
+    "title": "Le prince Hermogène, tragi-comédie",
+    "publication_date": "1640",
+    "document_id": "bpt6k5715547n"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Oriane",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "ne vous montrez, point ces bontés souveraines Qui ne font qu'augmenter nos regrets et nos peines, Espargnez nous, Madame, et nous laissez partir Sans les vives douleurs que vous faites sentir: Plus vous nous faites voir vos vertus adorable, Plus en notre destin nous sommes déplorables, Car alors que l'on perd quelque bien par malheur Il est avantageux d'ignorer sa valeur. \nORIANE\n Si le ciel m'eût donné des qualités sibelles, Il ne m'eût pas soumise à des lois si cruelles, Et mon père touché d'un meilleur sentiment Et laissé sans contrainte agir mon jugement: Mais comme il à pense que j'étais incapable De faire pour la Cypre un choix considérable, Par ce rare secret qu'ont inspiré les Dieux, Il destine à sonsceptre un Prince ingénieux, Dont l'esprit pénétrant sache avec prudence peuple dissolu corriger insolence, Et loing de se servir de force ou de rigueur, Se plaisé de le vaincre auecque la douceur. \nFALANTE\n Madame obéissez aux vœux de Zénophire, Et selon ses souhaits gouvernés, cet Empire, Car seule vous avez l'aimable qualité, De vaincre tout le monde avec votre bonté: Dans le trône un second vous serait inutile, Venus fut bien jadis la reine de cette Isle, Et ce peuple paisible en a reçu la loi, Sans quelle ait eu secours de mari, ainsi de Roi: Imitez Oriane, imitez le courage D'une divinité dont vous êtes l'image, Et montrez que le faix d'un sceptre souverain, Naura pas moins de grâce envotre auguste main. \nORIANE\n ",
+          "LYSIDE\n Je sais bien que je n'ai que de faibles appas, Que ma beauté n'a point ces adorables marques, Qui savent asservir les esprits des Monarques, Et que ma vanité n'aurait point de raison, D'ozer avec vous faire comparaison: Toutefois Oriane excusez mon audace Si ce que je vous dis est de mauvaise grâce, N'aguère Poliante au mépris de sa foi, Ma juré que son cœur ne brûlait que pour moi, dîn cumtnuquoopriisNPempemmsfante, Ma froideur à rendu son ardeur plus puissante.",
+          "Madame, quittez, l'erreur qui vous possède, Et n'ayez pas recours à ce fâcheux remède, Ce malheureux objet qui fait votre courroux, Mérite à mon avis un traitement plus doux, \nORIANE\n Ce malheureux objet qu'amour rend ma rivale Doit attendre asoncrime une vengeance égale, Et croire qu'Oriane est de condition, À ne pas endurer une lâche action: Mais que différetu, nomme moi la perfide, Qu'idolâtre le Roi?",
+          "Si la belle Oriane est fatale à votre aise, Qu'au lieude sa beauté sa couronne vous plaise, Et puisque votre erreur vous là fait déclaigner, Du moins laissez vous vaincre au désir de régner: À il Bannissez cette peur dont votre âme est atteinte, Le trône est un asile où ne va pas la crainte, Et si vous parvenez à ce haut rang eur, Vous serez Polyante, au dessus du malheur;",
+          "Mais vous détiez, savoir que mon intention, N'était pas de me rendre à l'assignation, Pour elle mon amour n'était rien qu'une seinte, Et vos yeux ont déjà cendamné votre plainte Puis qu'ils vous ont fait voir ce crédule étranger Quuuncamnen dons om fun negiger. \nORIANE\n Mais pour quelles raisons à t'il pris votre place? \nPOLIANTE\n Trop de crédulité était donna cette audace."
+        ]
+      },
+      "top_5_persons": [
+        "Oriane",
+        "Seigneur",
+        "Cypre",
+        "Venus",
+        "M"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Cypre",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Il est vrai Poliante, et la même couronne, Que votre esprit nous rend, la Cypre vous la donne. \nFALANTE\n Recez, cette pourpre, et comme souverain Avec le pouvoir prenez lesceptre en main. \nPOLIANTE\n Je reçois ces honneurs, et les illustres marques Dont la Cypre à toujours honoré ses Monarques, Mais braves Cypriens ie veux vous témoigner Que mon ambition est bien moins de régner, Que de vous faire voir que mon âme n'aspire Qu'à l'affermissement de ce superbe empire, Et que dorénavant vous trouuerez, en moi L'affection d'un frère, et le support d'un Roi.",
+          "Aussi ne veux-je pas en user de la sorte, Un fardeau si pesant veut une main plus forte, Et ie croyque la Cypre à d'assez bons esprits Pour emporter l'honneur d'un si superbe prix, Vous les verrez Seigneur;",
+          "Tu te trompe Falante, Je ne suis pas: l'objet qui borne ton attente, Je n'ai point dans la Cypre int pouvoirsouverain, Point de couronne en tête, ou de sceptre en la Méabla)",
+          "ordonne Que pour régner à Cypre on tire la couronne Est compose en rond de cinq cercles divers Dont les ressors encor ne sont pas découvert, Et porte sur son front en riche caractère",
+          ", Et ce Prince en mourant vous eût laissé l'empire, Si des dieux immortels il n'eût reçeu la loi Qui veut que le hasard donne à la Cypre un Roi."
+        ]
+      },
+      "top_5_places": [
+        "Cypre",
+        "France",
+        "pô",
+        "Chypre"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

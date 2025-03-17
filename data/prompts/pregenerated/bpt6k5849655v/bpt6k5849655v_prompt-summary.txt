@@ -1,0 +1,80 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Lavalise, De",
+    "title": "La farce des courtisans de Pluton et leur pèlerinage en son royaume",
+    "publication_date": "1649",
+    "document_id": "bpt6k5849655v"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Pluton",
+          "frequency": 16
+        },
+        "related_sentences": [
+          "je vous prie Je n'en ai pas besoin, ie vous en remerciet \nPluton\n Peste soit du coquin qui si impudemment Quand Je parle se rit de mon commandement, Toi, à ce que tu dis, qui t'appelles la Pointe, Respons: mais souviens toi que si ta contrepointe Tu recevras de moi un juste châtiment, À ce que personne dirai répons directement.",
+          "Moi: le luis vit pauvre homme à votre humble service, Il faut se consoler, pauvreté n'est point vice, On m'appelle la Broche, et mon premier métier (Que j'exerce à présent) c'est celui de Fripier \nPluton\n Et toi qui fais ici une triste grimace, Qui est tu! \n",
+          "Mais personne ne saurais croire en ces habillements Quir s y puhle eceneraueans des parcilants, Au reste sondez les, et vous pourrez apprendre En quatre petits mots ce qu'ils ont dans le ventre. \nPluton\n Viens ça ici bon homme, approche, qui est tu?",
+          "est faite Si nous pouvons chez vous avoir quelque retraite. \nPluton\n Je commence par vous, et ce n'est pas en vain, Car c'est vous des voleurs, qui étiez souverain, Je n'ai jamais trouvé aucune Créature",
+          "Oui, Seigneur suis un Bourgeois, qu'infinité de drôles Ont fait mourir de faim par mille Monopoles. \nPluton\n Dis -moi donc, n'est tu pas ce fameux partisan Que Pai taiit entieni des brens du Paysan."
+        ]
+      },
+      "top_5_persons": [
+        "Pluton",
+        "Caron",
+        "Jules",
+        "Germain",
+        "Bosque"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 16
+        },
+        "related_sentences": [
+          "Je faisais avec deux le plus ample trafique Que jamais fit sorcier avec son art magique, Pourvu qu'il me donnât grand’ quantité d'argent Je a ay accordé et prêté le serment Qu'il aurait les porteurs de cette marchandise, En suite de cela aimant ma chalantise, Il me fit dans la France intendant des voleurs, Et de là sont venus tant de monopoleurs, Car s'il me suggérait par ses grandes largesses V en d'amasser de nouvelles richesses Aussi-tôt ie cherchais deux mille Partisans Qui volaient hardiment les pauvres paysans: Ainsi pour chaque impôt que j' ai mis dans la France J'ai mis deux mils voleurs en sa pleine puissance, Et comme compagnons de mes méchancetés, Assurez -vous d'avoir ce que vous méritez.",
+          "Et voilà le sujet qui a pu m'obliger, puisqu'il nous sommes tous dans un même danger, A tenir aujourd'hui la présente assemblée, Affin que dans le temps que la France est troublée, Nous puissions sûrement faire notre pacquet De peur d'être bientôt pris dans le trébuchet, Dites donc sur ce point qu'elle est votre pensée, D'autant que votre vie en est intéressée.",
+          "et c'est de cela seul que les femmes de France Poursuivent votre flute avec tant d'outrance: Que, si elles pouvaient, sans aucune pitié elles enmangeraient une double moitjé, Cal clles laauentuienquevous éltes latouice Qui des pauuies marits a épuisé la bourse, et nous neuiterons jamais malheur présent Qu'en gagnant le taillis, ou en rendant l'argent.",
+          "Car deux et vous et eux qui ont volé en France Seraient ici venus seulement à patence, Car tous les Parisiens contre vous irtitez, Peut été vous aurolent si rudement traitez Et auraient tellement mis vos membres en pièces Qu'en l'air il eut fallu passer votre viellesse Pour vous mieux soutenir, riez mes bons enfants",
+          "Il est bien vrai, Monsieur, que j'ai grand connaissance Avec tous les pendards d'Italie et de France, I en ai bien trente mille qui me rendent tribût Et j'ai dessus eux tous un pouvoir absolu, Mais après tout ce sont des forces bien débiles Pour pouvoir résister contre quatre cens milles."
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Paris",
+        "Italie",
+        "Picardie"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

@@ -1,0 +1,77 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Du Ryer, Pierre",
+    "title": "Cléomédon , trage-comédie. Par P. Du Ryer,...",
+    "publication_date": "1636",
+    "document_id": "bpt6k57496902"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "BELIZE",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Lon dirait que ses fers s'étendent jusqu'à vous, Et tout capiif qu'il est, qu'il triomphe chez nous. \nBELIZE\n La commune pitié que l'on doit aux misères, Me fait pousser pour venir des plaintes si légères. \nCELANIRE\n Et de Cléomédon l'invincible secours M'oblige à M dõner pour le moins mon discours.",
+          "Rien ne nous est cruel quand les Dieux nons sont doux, Et la terre fléchit quand le Ciel est pour nous. \nBELIZE\n J'ai senti de nos maux les efforts tyranniques, J'ai donné de mes pleurs aux misères publiques Et depuis que le Ciel accomplit nos désirs L'allégresse commune a fait tous mes plaisirs.",
+          "Et qu'enfin ce conseil me vienne de Bélise Grands juges de nos maux, ê Dieux qu'ai-je commis, Pour voir m a Sœur entre mes ennemis? \nBELIZE\n Croyez, ma chère Sœur, qu'à sa seule présence J'ai donné malgré moi ce trait de complaisance:",
+          "Ctire, J'aurai d'assez grãds biens même dans mon marSt vn si tris te accord vient la paix de l'Empire, Et Seigneur croirai mon Sort d'autant moins rigoureux, Si par mes déplaisirs un grand peuple est heureux. \nBELIZE\n ",
+          "Si j'aimais ce Tyran, j'en serais déteste, Et j'aurais justement la haine méritée: \nBELIZE\n Quoi que de mon discours on puisse présumer, Je vous aime, ma Sœur, et je vous veux a, --"
+        ]
+      },
+      "top_5_persons": [
+        "BELIZE",
+        "Sceptre",
+        "Alcide",
+        "CREON",
+        "ANTHOINE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Chez ANTHOINE DE SOMAVILLE, au Palais dans la petite Salle, à l'Écu de France LM."
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Martigues",
+        "Paris",
+        "pau",
+        "Pau"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

@@ -1,0 +1,78 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Chevreau, Urbain",
+    "title": "La Suitte et le Mariage du Cid, tragi-comédie",
+    "publication_date": "1638",
+    "document_id": "bpt6k10901037"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Rodrigue",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Rodrigue cependant instruit le Roi de la victoire de ses ennemis qui se propose mille profusions dans son es prit pour la récompense de Rodrigue Chimène croyant son Amant perdu, veut recourir aux dernières extrémités, et dans ce temps même elle voit Rodrigue ce qui la rend si confuse, qu'à pene peut-elle trouver dequoy faire un raisonnement: leur joie est troublée par la nouvelle véritable que leur donne D Arias de la colère du Roi qui avait changé les premiers desseins qu'il avait faits à l'avantage de Rodrigue, à cause des assurances que Leonor lui avait données de l'amour de rimunte, et pour la crainte dont il était prévenu que cette passion apporterait un grand désordre dans son état.",
+          "et se console dans l'espérance que lui donne D Diègue de la fidélité, et de là valeur de Rodrigne Comme cette nouvelle fut bien tôt épandue, l'Infante se servit de l'ocasion, et pria Leonor de perluader à Chimène la mort de Rodrigue, croyant par cette feinte la porter au désespoir, et s'imaginant que son délein reüssitoit par ce moyen dans le premier qu'elle avait fait de posséder Rodrigue D. Sanche cependant amoureux de Chimène non content d'avoir épreuué la valeur et la courtésie de Rodrigue, fait de nouveaux proiets pour cette beauté, et malgré le devoir et toutes les civilités que sans défendait cette amour, se propole de J'aimer encore.",
+          "Quelque effort que fâle Leonor pour l'en divertir, elle se promet tout à son avantage: et demeure dans la résoiution de ne rien épargner pour son repos: Chimène après le départ de Rodrigue combattue des ressentiments de l'hon- reur et de l'amour, se trouve étonnée, et ne sait encore si elle doit plus à la mort de son père et à la pitié, qu'à la foi qu'elle avait jurée à son Amenez Neantmois par quelques douces violences qu'elle se fait, elle ne peut oublier ce dernier, et consent presque par force à suivre le premier dessein qu'elle avait pour lui.",
+          "ne te laisse point de matière de craindre, Mais tu dois confesser que mon mal est à plaindre, Que l'honneur et le sang me contraignent d'agir Contre un feu qui me brûle, et qui me fait réu Et que pour dire tout la loi de la nature Condamnent mon esprit dedans cette aventure, Mais malgré ces respects ta passion me plaît, Et j'entretiens mon vœu tout injusie qu'il est D. \nRODRIGUE\n C'est dedans ces plêfirs que mon âme se noie, Mais tache d'augmenter, et ma glaire, ma joie.",
+          ", Et ma raison s'oppose à l'horreur de mon crime: Je sais bien dès longtemps qu'elle a donné sa foi, Que avoir m'en vais trabir, et Rodrigue, et le Roi, Que si le Ciel est juste il faut que je périste, Que la honte ou la mort doit avoir mon suplice, Que les plus grands malheurs ne m'abandonnent pas, Et qu'ils suitent par tout, et mon ombre, et mes pas, N'importe, il vaut bien mieux même son homicide, - --a -- *"
+        ]
+      },
+      "top_5_persons": [
+        "Rodrigue",
+        "Chimène",
+        "Leonor",
+        "Elvire",
+        "ARIAS"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Castille",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Mais parlons sainement, qui peut aimer ma fille, Afin de commander à toute la Castille Dom Diègue, C'est Rodrigue et par ce trait d'amour Qui peut se rendre indigne et des Dieux et du jourt C'est Rodrigue Chimène Il est vrai assez l'avoue Rodrigue est généreux tout le monde le loie, Mais suborner l'Infante, usurper sur ses sens Un pouvoir tyranique, et des droits si puissants, Pratiquer cent moyens, s'assurer de retraites Pour rendre insolemment ses flammes plus secrètes.",
+          "Don Dégue ie sais bien le nombre de vos faits, Votre âge ne rend pas vos exploits imparfaits, La Castille les sait, et moi -je les publie A fous ceux de ma Cour, de peur qu'on les oublie?",
+          "D. FERNAND, Roi de Castille D. ARIAS, Gentilhomme de Castille D. DIÉGUE, Père de Rodrigue D. SANCHE, amoureux de Chimène D. ALONSE, Gentilhomme de Castille LA S ET LE TE MARE DU.",
+          "Oui cette vérité se doit bien auoüer, Mais vous ten nez bien parler sans le louer À la Cour, en Castille, ou bien dedans l'armée;"
+        ]
+      },
+      "top_5_places": [
+        "Castille",
+        "Chimène",
+        "Rome"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

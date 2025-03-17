@@ -1,0 +1,79 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": null,
+    "title": "Le Duelliste mal-heureux. Tragicomedie. Piece nouvelle plaine [sic] d'instricues [sic] a la mode suivant le temps, non jamais veuë ou imprimée.",
+    "publication_date": "1636",
+    "document_id": "bpt6k8529052"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Venus",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "que l'amour m'affolle, Que j'entre en esclavage, et quittant le dieu Mars, Pour servir Cupidon, ses Flesches, et ses Darts Esleué dans l'honneur, nourri dans les batailles, Dans les bras de Venus faire mes funérailles, Croupir d'oisiveté, renoncer aux combats, Étant alicié de Venus aux appas, Ce n'est pas faire l'homme, ains c'est faire la bête, Sans raison, sans raison, sans cervelle, sans tête;",
+          "Tamuis ne fit fi veau, t'atr, le vent et les Cieux, N'ont point encor paru cet an si gratieux Hâtons nous, car du lit cette plume mollace, Dédiée à Venus est contraire à la Chasse, Notre Roy diligent accuse vos langueurs, Et chérit entre tous, ceux qui sont bons piqueurs, Je vais faire l'essai, et puis couvrir sur table.",
+          "T pleurant les regrets dont tu suis possédé D'y voir que mes desseins aient mal succédé: Le Dieu Mars et Venus, à mon bien trop contra ires M'affligeants à l'envi des malheurs ordinaires;",
+          "Mon lit est maintenant tout baigné de mes larmes, De Mars et de Venus j'abandonne les armes, Les jours les plus luisants me sont des tristes nuits,",
+          "Puisque Mars et Venus vous sont du tout contraires, Portez vrai Pénitent, les Cilices, les Haine, Je suis promise ailleurs"
+        ]
+      },
+      "top_5_persons": [
+        "Venus",
+        "Mars",
+        "Lydie",
+        "Cupidon",
+        "Seigneur"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Si ta valeur t'étouffe et le sang dans tes vaines, Boüillonne de fureur, si tu souffre des paines, De vivre en patience, et ne peux t'empêcher D'un éclarcissement, que ne vas tu chercher Le gîte de l'honneur, de Province en Province, Pour y servir ton Dieu, ton Pays, et ton Prince, Là tu le trouverras, et dans ces nations, Tu pourras contenter tes chaudes passions, Eternisant ton nom, et la gloire de France Bien mieux que d'être en Cour escrimeur par outrance.",
+          "Qui par trop répandu me rendait tanguissant: M'ayant chez un Seigneur doucement fait conduire, J'y fus si bien reçu qu'il ne se peut mieux dire, Bien pensé, bien guéri, le congé de lui pris, Je voulus achever, LE À P UDENT.  \nTANAPHILE\n mon voyage entrepris, De sortir hors de France évitant le supplice, Que j'eusses dev souffrir par exemple en Justice, Absent depuis cinq ans",
+          "et croyez d'assurance, Que je vous vengerai plutôt qu'homme de France, Quel qu'il soit, vous verrez qu'elle punition, Je lui ferai souffrir pour sa présomption: LE DUELLISTE LE BRAS EN écharpe s'appuyant d'Hô bâton."
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Paris",
+        "Normandie",
+        "Piémont",
+        "Mer rouge"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

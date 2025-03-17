@@ -1,0 +1,78 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Vion, Charles de",
+    "title": "L'Aminte du Tasse, fidellement traduitte de l'Italien en vers François, & enrichie de figures",
+    "publication_date": "1632",
+    "document_id": "bpt6k1090283m"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Daphné",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Jamais, comme il le faut, ne seront respectez Que par l'étonnement, et par la révérence Qui nous tiennent ravis dans un sacré silence: Mais que toujours l'encens qu'on doit aux immortels, Mais que toujours mes fleurs parfument ses autels, Et lors que de mon cœur pourront être effacées, Par un ingrat oubli ces dévotes pensées, Que le Cerfaisse en l'air, que l'eau change sontouis, Et que. \nDaphné\n Que tu vas haut, reviens à nos discours. \nTirsis\n Le point gît en ceci, qu'allant à la fontaine, Tu tâches d'attendrir cette belle inhumaine, Et moi de mon côté, je vais faire savoir A notre pôvre Aminte, en ceci son devoir, Et le presser si fort qu'à la fin il y vienne, Ma peine ne sera moindre ici que la tienne, Or va-t-en. \nDaphné\n Je m'en vais, mais nos derniers discours Si tu t'en ressouviens, traitaient d'autres amours. \nCE\n \nTirsis\n Si je discerne bien de loing sa face blême, Voici venir Aminte, il est vrai, C'est luiours.",
+          "te voilà jeune encore, Depuis peu ton menton de ce beau poil se dore, Veux-tu donc demeurer dans ce morne loisir Sans apprendre en aimant, ce que c'est de plaisir? \nTirsis\n Celui ne quitte pas Venus Seigneur ses délices, Qui s'affranchit d'Amour, et qui fuit ses supplices, Mais exempt de l'aigreur qu'on épreuve en aimant, Jl recueille d'Amour les douceurs seulement, \nDaphné\n Fades sont les uoncenis que t'aigreurn'assaisemne, Et ne peuvent longtemps plaire au goût de personne. \nTirsis\n Il vaut mieux se faouler à la fin, que non pas Toujours été affamé, même après le repas. \nDaphné\n Non, si ce qu'on possède à l'aimer nous convie, Et que plus on en goûte, on en ait plus d'envie. \nTirsis\n Mais qui possède ainsi l'object de son plaisir, Qu'il en puisse à toute heure assouvir son désir? \nDaphné\n Mais qui sans le chercher d'être heureux sproppose? \nTirsis\n ",
+          "Change, change, crois -moi, change d'avis, Syluie, Et désormais renonce à ta première vie. \nSyluie\n Bien, Seigneur lairrai l'amour de mon cœur s'emparer, Alors que j'entendrai les arbres soupirer. \nDaphné\n \nDaphné\n Mes fidèles conseils te servent de risée, Et font que tu me tiens pour femme peu rusée, Ô fille également sourde, et simple en amour, Mais je asseure bien, il viendra quelque jour Que tu regretteras de en auoir fait conte: Je ne dis pas alors que la crainte, et la honte, De voir ton front chargé des nuages épais Et des rides que l'âge y mettra pour jamais, T'éloigneront des eaux, où souvent tu te mires, Et peut-être où souvent maintenants tu t'admires: Car bien qu'il soit certain que ce mal t'aduiẽdra, Et que le feu brillant de ces yeux s'éteindra Un soûlas toutefois reste à cette infortune, Que si la perte est grande, au moins elle est commune:",
+          "Et deux tout ce qu'il veut, pour vous il le désire \nSyluie\n Parle moi d'autre chose, ou bye, Daphne, tais to Plutôt que de tenir tels discours devant moi. \nDaphné\n Ne voilà pas toujours votre façon de faire, mhun encor je queiqu'autre éfuyou de cua plaire, Lui feriez-vous sentir tant d'inhumanité? \nSyluie\n Quiconque entreprendra sur ma virginité, Doit attendre de moi semblable récompense, Car il est ennemi, non amant, comme on pense. \nDaphné\n Tu crois donc les béliers, des brebis, ennemis: Donc dans le Toreau, la Nature aura mis, Pour la jeune Génisse une haine immortelle: Donc la Tourte fuira la chaste Tourterelle: Le Printemps se doit donc dire après raison.",
+          "Ctpenuunt éon tien qui jou pius déplora blé Que de forcer de vivre un homme misérable? \nDaphné\n Souffre, souffre ce mal, et seulement afin, D'espreuuer quoi qu'il tarde, un plus heureux destin: Attends pour le loyer de ta persévérance, 2 Si tu vis, et vivant maintiens ton espérance, Tani demiracies vents jur te véan corps vont nu, \nAminte\n Momme malheur m'était donc encor trop peu connu, À ce qu'en ont jugé l'Amour, et ma fortune, S'ils ne m'en assuraient par la vue importune"
+        ]
+      },
+      "top_5_persons": [
+        "Daphné",
+        "Nerine",
+        "Daphne",
+        "Diane",
+        "Daphné"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "C'est quelque imitation d'une Poème Grec de Moschus, intitulé l'Amour Fugitif, en quoi celui qui l'a fait n'a pas malimité le Tasse, qui s'est fort heureusement servi des anciens Auteurs: de sorte que ce n'était pas sans raison que quelqu'un disait, qu'il avait fort de l'air de l'ancienne Rome J'ai traduit aussi les Chœurs du troisième et du quatrième acte qui sont passables, et qui sont, à mon avis, de celui-la même qui a fait l'Épilogue, notre Auteur n'en ayant point fait pour ces deux Actes non plus que pour le dernier, parce qu'il s'est contenté de le faire parler dans les Scène de ces trois derniers Tes, sans le faire encore parler à part à la fin de chacun.",
+          "Je le suivis aussi, mais il fuyait si fort, Que de devant mes yeux il disparut d'abord, Et depuis j'ai cent fois couru toute la place, Et tâché vainement à découvrir sa trace: Ou veux-tu donc aller si on ne trouve pas Pour nous conduire à Rome, le moindre de ses pas? \nSyluie\n Si l'une de nous deux dedans peu ne le trouve, Il fera de son bras une homicide épreuve. \n"
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Bergère",
+        "Paris",
+        "Dauphin",
+        "Seine"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

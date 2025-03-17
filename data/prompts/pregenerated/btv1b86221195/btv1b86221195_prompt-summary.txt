@@ -1,0 +1,79 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Rotrou, Jean de",
+    "title": "\"Dom Bernard de Cabrère, tragi-comédie de Rotrou [avec une \"\"Élégie\"\" de l'auteur à Mazarin]\"",
+    "publication_date": "1648",
+    "document_id": "btv1b86221195"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "LOPE",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "D. BERNARD embrassant D \nLope\n DLût au ciel, cher de Lune, et ainsi le dis sans T feinte, Que le sort qui vous livre toujours si rude atteinte, Et contre qui pour vous, touts mes souhaits sont vains, Suivist son inconstance, et nous changeast de mains La disgrâce du Roi, me serait moins sensible, Que le mépris qu'il fait de ce bras invincible;",
+          "Et nous faire tribut de votre liberté: D. \nLOPE\n Il paraît par l'acçuil que m'a fait Violante, Que cette qualité me serait messeante, Et l'on redoute peu la rigueur d'un Amant, Anon ne daigne nonoreru un tegaru seulement. \nDOROTHÉE\n Qui manque un rendez-vous, fait bien voir qu'il néglige Les plus chères faveurs dontvne Amante oblige.",
+          "D. \nLOPE\n NFIN, cher Lazarille, un plut heureux Génie MN Nous va, de nos destins, forcer la tyrannie, Et ce bras l'aura mise au rang des ennemis, Qu'au joug de cet État ses exploits ont sousmis.",
+          "Au reste cette amour tendant à l'hyménée, Jugez de la grandeur qui vous est destinée, \nM\n D. \nLOPE\n Puis-je si malheureux n'avoir pas pour suspect, D'un astre si malin ce favorable aspect? \n",
+          "D. \nLOPE\n Quand l'appareil fut prêt, et que de vos vaisseaux Dom Bernard eut couvert l'humide sein des eaux, Les vents en même instant, furent sans violence, Et volontairement s'imposèrent silence;"
+        ]
+      },
+      "top_5_persons": [
+        "LOPE",
+        "Leonor",
+        "Dom Bernard",
+        "D",
+        "DOROTHÉE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Il est permis à ANTOINE DE SOMAUILLE, Marchand Libraire à Paris, d'imprimer ou faire imprimer une Comédie intitulée, Dom Bernard de Cabre, et ce durant le temps et espace de cinq ans, à compter du jour que ledit Livre sera achevé d'imprimer.",
+          "Il est permis à ANTOINE DE SOMAUILLE, Marchand Libraire à Paris, d'imprimer ou faire imprimer une Comédie intitulée, Dom Bernard de Cabre, et ce durant le temps et espace de cinq ans, à compter du jour que ledit Livre sera achevé d'imprimer.",
+          "Et ledit de Sommauille a associé audit Privilège Toussaint Quinet, aussi Marchand Libraire à Paris, suivant l'accord fait entr'eux.",
+          "Et ledit de Sommauille a associé audit Privilège Toussaint Quinet, aussi Marchand Libraire à Paris, suivant l'accord fait entr'eux.",
+          "Grâce et Privilège du Roi, donné à Paris le 11."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Navarre",
+        "Saragosse"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

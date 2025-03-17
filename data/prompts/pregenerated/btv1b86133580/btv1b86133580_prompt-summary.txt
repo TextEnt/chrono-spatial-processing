@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Frénicle, Nicolas",
+    "title": "L'entretien des illustres bergers . Par N. Frenicle",
+    "publication_date": "1634",
+    "document_id": "btv1b86133580"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Camarine",
+          "frequency": 8
+        },
+        "related_sentences": [
+          "mais cette fille qui avait déjà disposé de son affection en faveur de Celinte, se résolut de s'en aller auecque quelque, et de se marier plutôt suivant son inclination, que par l'ordonnance d'Astibule au même temps Calirias Prince de Thessalie vit cette jeune bergère en allant à la chasse, et devenant amoureux d'elle, tâcha de la faire débaucher par un de ses esclaves, qui à l'aide de la vieille Camarine fit dessein de l'enlèver pour donner toute sorte de satisfaction à son maître;",
+          "Vous ferez à mon maître un plaisir nompareil. \nCAMARINE\n À ce gentil seigneur puis-je rendre service? \nJEL\n Si par votre moyen il possède Lérice \nCAMARINE\n En est-il amoureux?",
+          "Emeurez-là voleurs, je vous ferai sentir T Qu'un acte si méchant suivi de repentir Est la perte de ceux qui l'osent entreprendre, \nCAMARINE\n À peine seulemant vous pourrez -vous défendre;",
+          "je suis toute troublée Des impudents discours que vous m'avez tenus. \nCAMARINE\n Ses ébas font goûter des douceurs merveilleuses, Et t'esi tut qui tenut tes fives",
+          "Il a déterminé ce qu'il fallait élire, Et nul autre sur moi n'aura jamais d'empire: Mais d'ou vient Camarine et qui l'amène ici;"
+        ]
+      },
+      "top_5_persons": [
+        "Camarine",
+        "Tamaris",
+        "Belle",
+        "Diane",
+        "Venus"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Arcadie",
+          "frequency": 8
+        },
+        "related_sentences": [
+          "puis ayant embrassé Ménalque deux ou trois fois, il lui dit que le sujet de sa visite était de s'acquiter des devoirs que tous les bergers de la contrée étaient tenus de Seigneur rendre, et qu'ayant sçeu la peine en laquelle la fuite d'Anaximène l'avait mis, il eût creu manquer à l'amitié qu'ils avaient jurée, s'il n'eût fait son possible de le faire chercher, et qu'en effet ayant été si heureux que de le rencontrer, et le détourner du voyage qu'il avait entrepris de faire en Arcadie, il avait voulu luime le meiner au lieu où il sçauoit qu'il était si fort desiré:",
+          "chacun désirait savoir qui il était, et et les premières démonstrations d'amitié que l'on a accoutumé de faire en de semblables rencontres, Tamaris satisfit à la commune curiosité de ces pasteurs, et le fit connaître pour Stimphale l'un des meilleurs amis de ce même Anaximène dont ils regretaient la perte, et qui s'éloignant de la conversation des hommes pensait toujours aux délices qu'il avait laissées en Arcadie Autrefois, leur dit-il, nous nous sommes vu en Italie sur les bords de la rivière d'Arne la nature a mis sur le visage des hommes une secrète vertu qui fait que l'on aime plutôt les uns que les autres;",
+          "l'absence d'Anaximene fit qu'on lui donna plus de liberté, et en apparence elle reprit son premier embonpoint, se repaissant d'espoir que son cher Anaximène reviendrait bientôt en Arcadie aussitôt qu'on la vit se bien porter, sa mère se résolut de la marier, et sans délibérer lui commanda d'aimer un jeune homme de son voisinage à qui elle fut accordée peu de jours après;",
+          "je m'en retournai tout confus, et je fusse mort de tristesse, si devant que partir je n'eusse su qu'elle se portait mieux: il me serait impossible de vous conter ce que je vis en mon voyage, je n'y remarquai rien, mon esprit demeurait en Arcadie, et je laissai conduire mon corps où l'on voulut;",
+          "à main gauche paraissait Titre les délices de Mantue, et l'honneur de la belle Parthenope qui se glorifie de posséder son tombeau, et contre lui était ce docte pasteur qui transporté en Arcadie a fait résoner ses chalumeaux sur les rivages du délicieux Ladon, et dans les antres de Parthie haute montagne de ce fameux pays;"
+        ]
+      },
+      "top_5_places": [
+        "Arcadie",
+        "Grèce",
+        "fleuve",
+        "France",
+        "Seine"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

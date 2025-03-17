@@ -1,0 +1,77 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Bridard",
+    "title": "Uranie, tragi-comedie pastorale",
+    "publication_date": "1631",
+    "document_id": "bpt6k10900472"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Diane",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Ce Prince après s'être dégagé de cette importune Bergère, va treuuer Vranie, qui lui fait à l'abord un si froid accueil, que ne avait donnant pas le temps de quelques demander la cause d'un si froid chamègement, elle s'échappe de ses mains, laissant par malheur choir la letrre qu'elle avait écrite pour Diane, Florilme tout confus de voir que la mort lui donnait le trépas était des traits de plume, se laisse conduire par son désespoir dans la nuit au haut d'une rocher pour se précipiter, comme il se donne le bransse, Echo il prend pour le Demon du lieu se sert de ses ane, l' il le Demon du lieu se se rail a de se plaindre: mais connaissant ce que s'en était, et donnant au vent ce qui venait de l'air, il se jette du roc en bas après s'être percé l'estomacacheur poignard, où des épines plus sensible à la pitié que cette cruelle jalouse, le retiennent et l'empêchent de trouver la mort au milieu des tombeaux, dont les montagnes d'alentour étaient affreuses.",
+          "que ici suis heureux, quels riches vêtements, Que d'odeurs, que de fleurs, et de contentements, Un nombre de Seigneurs en tous lieux m'environne, Voyez quels dioments brillent en ma couronne, Ce Sceptre glorieux qui régit les humains, Ne l'élimez-vous pas très-digne de mes mains: Mais quel affreux Lyon, hérissant sa crinière veut mettre dans ses flancs Diane prisonnière, Courage amis, assez voy le montre qui s'enfuit, C'est assez, c'est assez, ma colère le suit, Mes maux croissent toujours, et jamais ne finissent, Ne voy ie pas là bas des gens qui la ravissent: Demeurez assassins, indignes que je crois (Roi, De mourir bienheureux par les mains d'un grand Je voyais maintenant qu'en ma juste colère Le Soleil se cachait de peur de me déplaire;",
+          "Car étant venue à l'endroit d'un bois pour y attendre Florilhame qui ne manquait jamais de s'y trouver à pareille heure, cette malicieuse Diane l'attend au passage, l'arrête, l'importune, le conjure d'avoir pitié de son mal, avait fait présent d'une couronne de laurir, qu'il reçoit pour la contenter, et tire de même quelques baisers par force au même temps qu'Vranie sort d'un sommeil qui l'avait entretenue en l'attente de son Prince, qui voyant Florilorme faire des caresses à cette Bergère elle appelle a compagne en amour, aussi bien qu'en affection, sécoule tout en amou taillis, au elle entend leurs discours la façon y bien ialouse.",
+          "et l'entretien des Anges, Laisse là s'il te plaît ces craintes trop étranges, Ton Amant changera ton objet glorieilie, Quand la Divinité voudra quitter les Dieux, Alors que tu verras mon amitié perdue Cette roche sera parmi l'air suspendue, Le silence crois moi dès l'heure a, L'eau ne sera que feu, le bruit s'endormira: Diane ira chasser en la forêt d'Erice, Avant que mon humeur s'attache à ce caprice, Ou tre qu'ayant mon cœur en ta possessinées Je ne le puis donner sans ta permission.",
+          "Et de même que les contentements ne viennent jamais seuls ainsi que les traverses, Lucidant et Tersange arrivent en ce lieu, et les assurent que le Roi et la Princesse Melante n'attendent que leur retour pour se rendre contents après eux, à peine ceux-cy sont ils venus que Diane et Lisidor leur viennent demander pardon, qu'ils obtiennent librement, à condition que Diane épouse Philandre qui était revenu à son bon sens, et Lisidor Doris qu'il avait tant mesprisee."
+        ]
+      },
+      "top_5_persons": [
+        "Diane",
+        "Diane",
+        "FLORIMOND",
+        "Doris",
+        "Apollon"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Arcadie",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Ces Amants cependant se voient secrètement, se parlent, se donnent la foi, se resoudent d'aller en Arcadie, et exécutent leur dessein, laissent le Roi dans les mouvements que la haine et la douleur soufflent à un père offensé, qui envoie des gens à leur recoutse au même tẽps que les Ambassadeurs du Royaume de Pheacie qui venaient demander Vranie au nom de leur maître, perdant leur vaisseaux dans la fureur de l'orage de sauuent à la nage au port de Phrigie, qu'ils reconnaissent par la représentation du plan qu'ils en ont.",
+          "LUCIDAN, Capitaine des gardes du Rcoi TITILANDRE, Deigerd'Arcadie, amoureux dé",
+          "venus en Arcadie pour chercher ses Amants."
+        ]
+      },
+      "top_5_places": [
+        "Arcadie",
+        "Rome",
+        "Paris"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

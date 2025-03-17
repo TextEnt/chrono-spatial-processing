@@ -1,0 +1,80 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Baussays",
+    "title": "La Cydippe de Monsieur le Chevalier de Baussays, pastorale",
+    "publication_date": "1632",
+    "document_id": "bpt6k853059s"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "LYCORIS",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "LYCORIS\n Sans doute il est vivant, ie le veux secourir: Melindor n'est pas mort? \nMELINDOR\n Non, mais ils veux mourir, Puis qu'hélas j'ai perdu cette aimable Bergère, qui m'est encore en l'âme et si belle et si chère, Et non pas sans sujet;",
+          "Car tu pourras goûter d'aussi rares merveilles, Dont les parfaits accords enchantent les oreilles. \nMELINDOR\n Je veux, ma Lycoris, suivre tes volontés, Combien que je pensasse à d'autres volupté, Plus douce que la voix de ces Nymphes marines Qui charment les Nochers de leurs chansons divines;",
+          "CYRENE\n \nLYCORIS\n \nMELINDOR\n L'Ar vu ce bon vieillard, l'effet de son remède Termine ma douleur, mon salut en procède, Le Dieu de la Lumière éclairant l'Orison N'eût été mieux rẽdre un mal en douce guérison.",
+          "Ce trésor merveillenx d'appas doux et chéris, Cette rare beauté ne peut être rendue Aux vœux de Melindor \nLYCORIS\n Crois-tu l'avoir perdue À cause qu'un Berger se pâme en son beau sein?",
+          "tu sur mon trépas troubler ma fantaisie De regrets et d'ennuis si puissamment saisie? \nLYCORIS\n Elle est vivante au moins, si d'un ravissement Eule n'a rendul âme au donx émorassemeut"
+        ]
+      },
+      "top_5_persons": [
+        "LYCORIS",
+        "Palemon",
+        "Venus",
+        "l'Aurore",
+        "Cythère"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Bergère",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Comment t'es-tu rendu? se, \nMELINDOR\n Sur un fier élément, Où je n'espérais plus revoir ta chère tête, Car étant loin du bord une étrange tempête Étonnant les Nochers d'Un prodige nouveau, Rompait les durs écueils comme un frêle vaisseau: Non ici n'espérais plus te revoir ma Bergère, Sinon durant la nuit ombre, triste et légère.",
+          "LYCORIS\n Sans doute il est vivant, ie le veux secourir: Melindor n'est pas mort? \nMELINDOR\n Non, mais ils veux mourir, Puis qu'hélas j'ai perdu cette aimable Bergère, qui m'est encore en l'âme et si belle et si chère, Et non pas sans sujet;",
+          "Lu me verras, chère ombre, en ce triste séjour, Pour te montrer encor une excesive amour, Tu m'y verras sans cesse, ô Bergère adorable, Si l'Enfer à ma voix se trouve inexorable.",
+          "Une aimable Bergère au Printemps de son âge, nont la fâcheuse absence et le doux souvenir M'ont défendu d'attendre un temps calme à venir."
+        ]
+      },
+      "top_5_places": [
+        "Bergère",
+        "Paris",
+        "Seine",
+        "Rhin",
+        "Cythère"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

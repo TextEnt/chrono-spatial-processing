@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": null,
+    "title": "Geneviève, ou L'innocence reconnue , tragédie chrestienne",
+    "publication_date": "1669",
+    "document_id": "bpt6k5745520t"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Golo",
+          "frequency": 9
+        },
+        "related_sentences": [
+          "-même l'ai vengu, lavsoreuuuloresola cemro cucreveuse, J'ai su comme Golo s'en voulant faire aimer Eut recours aux démons afin de la charmer, Et ainsi ctois que ce fut par le même artisice Que le Comte trotupé sit hâter son supplice, \nCLEON\n Ce soupçon, Orismond, pourrait bien être vrai, Er voici là -dessus un secret que ie éclai, Vous connaissez tous deux cette fameuse Argine -A Hôtesse de nos bois, mais luive d'origine, Que ses prédictions et ses enchantements Font estimer l'oracle et l'effroi de ce temps.",
+          "Et dans l'affliction et l'état ou tu suis Je viens seul en ce bois promener mes ennuis \nGOLO\n vous n'avez oue pas vu panélici le Conite, \nORISMOND\n Par quel lieu voulez-vous qu'un Cavalier y monte? \nGOLO\n Nous pensions avoir oui sa voix sur cérocher. \nOMiodlne\n C'est le silence seul que l'on y doit chercher. \nGOLO\n Mais parmi le silence et cette paix profonde, N'entretenez vous point ces gens de l'autre monde? \nORISMOND\n ",
+          "Dont un ruisseau d'argent en deuxbras est couCée sera sur sa cime, et dans ses grottes sombres Que ie vous ferai voir la plus belle des ombres, Je m'en vais le premier m'y rendre de ce pas, Vous m'attendrez au pied si je n'y parais pas, Adieu, voici Golo \nCLEON\n Prenez votre avantage, Cachez jours ce péril où ce complot l'engage.",
+          "Je veux qu'elle ait failli, plus sa faute fut grande, Ilus de compassion sa peine vous demaude. \nGOLO\n Conservez-en pour vous ces belles passions: Mais ne vous chargez pas de ces commissions, Aucremenc oimono, l ' vousdesonce Que vous en porterez vous même la réponse. \nLERIS\n Laissons le là dessus rêver tout à loisir, Et suivons cependant notre innocent plaisir.",
+          "Sur une vision c'est beaucoup entreprendre. \nLYSANDRE\n Qui don, vou, cnancoren de peruren déltein Où vous avez promis et le cœur et la main? \nCLEON\n Vous connaissez Golo, si par quelque artifice Ilsait qu'un de nous deux soit de ceci complice, Vous savez son crédit, vous savez son pouvoir Comme il s'en servira vous le pouvez prévoir. \n"
+        ]
+      },
+      "top_5_persons": [
+        "Golo",
+        "Cleon",
+        "Benoni",
+        "LYSANDRE",
+        "GOLO"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Golo",
+          "frequency": 9
+        },
+        "related_sentences": [
+          "-même l'ai vengu, lavsoreuuuloresola cemro cucreveuse, J'ai su comme Golo s'en voulant faire aimer Eut recours aux démons afin de la charmer, Et ainsi ctois que ce fut par le même artisice Que le Comte trotupé sit hâter son supplice, \nCLEON\n Ce soupçon, Orismond, pourrait bien être vrai, Er voici là -dessus un secret que ie éclai, Vous connaissez tous deux cette fameuse Argine -A Hôtesse de nos bois, mais luive d'origine, Que ses prédictions et ses enchantements Font estimer l'oracle et l'effroi de ce temps.",
+          "Et dans l'affliction et l'état ou tu suis Je viens seul en ce bois promener mes ennuis \nGOLO\n vous n'avez oue pas vu panélici le Conite, \nORISMOND\n Par quel lieu voulez-vous qu'un Cavalier y monte? \nGOLO\n Nous pensions avoir oui sa voix sur cérocher. \nOMiodlne\n C'est le silence seul que l'on y doit chercher. \nGOLO\n Mais parmi le silence et cette paix profonde, N'entretenez vous point ces gens de l'autre monde? \nORISMOND\n ",
+          "Dont un ruisseau d'argent en deuxbras est couCée sera sur sa cime, et dans ses grottes sombres Que ie vous ferai voir la plus belle des ombres, Je m'en vais le premier m'y rendre de ce pas, Vous m'attendrez au pied si je n'y parais pas, Adieu, voici Golo \nCLEON\n Prenez votre avantage, Cachez jours ce péril où ce complot l'engage.",
+          "Je veux qu'elle ait failli, plus sa faute fut grande, Ilus de compassion sa peine vous demaude. \nGOLO\n Conservez-en pour vous ces belles passions: Mais ne vous chargez pas de ces commissions, Aucremenc oimono, l ' vousdesonce Que vous en porterez vous même la réponse. \nLERIS\n Laissons le là dessus rêver tout à loisir, Et suivons cependant notre innocent plaisir.",
+          "Sur une vision c'est beaucoup entreprendre. \nLYSANDRE\n Qui don, vou, cnancoren de peruren déltein Où vous avez promis et le cœur et la main? \nCLEON\n Vous connaissez Golo, si par quelque artifice Ilsait qu'un de nous deux soit de ceci complice, Vous savez son crédit, vous savez son pouvoir Comme il s'en servira vous le pouvez prévoir. \n"
+        ]
+      },
+      "top_5_places": [
+        "Golo",
+        "France",
+        "Paris",
+        "PARIS",
+        "Brabant"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

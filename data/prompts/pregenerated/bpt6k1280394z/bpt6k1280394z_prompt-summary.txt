@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": null,
+    "title": "Les Pretieuses ridicules comedie. Representée au Petit Bourbon. Nouvellement mises en vers. Seconde edition.",
+    "publication_date": "1661",
+    "document_id": "bpt6k1280394z"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "MAROTTE",
+          "frequency": 10
+        },
+        "related_sentences": [
+          "Un laquais, que voilà, souhaite qu'on lui dise Si vous êtes céans, afin qu'il en instruise Son maître, qui l'envoie ici, pour le savoir, Parce, dit-il, qu'il veut bientôt vous venir voir, \nMAGDELON\n Et vous apprenez sotte, à moins parler vulgaire, Et dites pour nous mieux annoncer d'ordinaire, Ven nécessaire est là, qui demande instamment Si vous ne pourriez pas être présentement En commodité d'être visibles. \nMAROTTE\n Ah!",
+          "MAROTTE\n Que ce mot vient mal pour m'embrouxiller, Ma foi, je ne sais point si c'est là quelque bête, Il faut parler Chrétien pour mettre dans ma tête Ce que vous voulez dire. \nCATHOS\n Apportez le miroir Pécore, et gardez bien en vous y faisant voir D'en obscurcir la glace;",
+          "JODELT, MASCARILLE, CATHOS, MAGDELON, MAROTTE, LUCILE \nMAGDELON\n On Dieu, vous nous devez mes chères M pardonner, Ces Sieurs ayant eu dessein de nous donner Chez nous l'âme des pieds, nous vous avons choisies Pour pouvoir mieux répondre a telles fantaisies, Et pour remplir aussi les vides incongrus",
+          "Qu'on les fasse venir. \nMAROTTE\n Dedans leur Cabinet.",
+          "MAGDELON, CATHOS, MAROTTE \nMAROTTE\n \nJR MAGDELON\n Quoi?"
+        ]
+      },
+      "top_5_persons": [
+        "MAROTTE",
+        "MADEMOISELLE",
+        "Seigneur",
+        "Clélie",
+        "Prose"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 10
+        },
+        "related_sentences": [
+          "Que c'est le grand Bureau, de toutes les merveilles, le centre du bon goût, le charme des oreilles, te plaisir des esprits, le lieu des agréments, et le refuge enfin, des plus nobles amants. \nMASCARILLE\n Je tiens qu'hors de Paris, pour les hommes illu stres, Iin ent point de salut, les campagnards sont ru stres.",
+          ", ne m'en parlez point, Paris, est bien char mant, Tous les jours il s'y passe, et fort euidem ment Cent choses que toujours en Province on ignore, Quelque spirituelle, et quelque soin encore Que lon puîné appolter. \nCATHOS\n C'est assez il suffit, Personne à tout cela, n'a jamais contredit;",
+          "Sans doute elle me touche, et de telle façon Que devant qu'il soit peu, j'en veux tirer raisor Je connaît ce que c'est, l'air Pretieux sans doute Dans la campagne aussi, vient de prendre sa route, Et de Paris enfin courant, de part en part Nos donzelles en ont humé leur bonne part;",
+          "Le renom parle juste, en contant vos vertus Par là, les plus galants, seront bientôt battus, Vous allez faire pic, repic, et capot mesme, Tout ce que dans Paris, l'on chérit et l'on aime, \nMAGDELON\n Nous n'attendions pas moins, d'un homme tel que vous;",
+          "Et comme dans Paris, nous venons d'arriver, vous devez, s'il vous plasit, sious sasser achever De notre beau Roman, le tissu sans exemple, Et n'en pas tant presser, par un pouvoir trop ample"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "France",
+        "Louvre",
+        "Malthe",
+        "Arras"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

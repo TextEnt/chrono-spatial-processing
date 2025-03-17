@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": null,
+    "title": "La Rochelois [i. e. Rocheloise] tragedie . Où se voit les heureux succez & glorieuses victoires du roy tres chrestien Louys XIII, depuis l'advenement de Sa Majesté à la couronne de France, jusques à present. Par P. M.",
+    "publication_date": "1629",
+    "document_id": "bpt6k57347539"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Le Roi",
+          "frequency": 11
+        },
+        "related_sentences": [
+          "Qui m'aurait empêché de ne la prendre pas. \nComte Chombergt\n Du siècle des Vallois ce selour des Rebelles t anqué de tant de Citadelles, De Remparts, de Fossez; de Tours, de Gabions, Ravelins, Parappels, de Forts, et Bâtions. \nLe Roi\n Sl ce n'eût pas été invincible Plare, Nous n'eussions si longtemps supporté la culrasse, Nous n'eussions supporté sur la terre et les eaux Tanc umnoutez, de peiles, srauaui, Aussi en auons-nous glolre immotelle Plus le combat est grand, plus la victoite est belle, \nCardinal de Richelieu\n Sire, les Arcs-boutants de la Religion Remplis de vanité, enflez d'ambitson 7 Pensaient que nous n'eussions seulement l'art ni l'industrie De rendre leur Geneüe auz Lys assubjetie, u Mais Dieu lassé de voir ces Typhons terrenez Post, En leur Rebellion: doublemenr obstinez: À métamorphosé leur superbe insolence, (2 Et leur aveugle orgueil enhumble obéissance.",
+          "Le Roi\n J'y avais fait veiller, puis l'altère valeur De Prince de Condé retenait la licence De ceux du Languedoc, Vivarés, et Provence, Montmorency d'ailleurs veillant de tous côtés A tant et tant de fois les Rebelles domptez, qu'ils restent maintenant sans cœur et sans courage, Semblables aux Nochers prêts de frère naufrage: Mais c'est trop arrêté, allons dans le quartier Voir si de Marillac et le sieur du Hallier Aremis en devoir cette Villeinsaiente, S'y tenant de l'humeur d'une volage Evante, Elle ne veut tenir ce qu'elle à projecté, Dedans peu nos Népueux et la posterlté, Diront volla ou fut autressois la Rochelle Qu'un Roi fit ruiner pour lui rendre rebelle.",
+          "Le Roi\n Chacun en va parlant assez diversement, Les uns les vont blâmant d'avolr été Rebelles, Puis qu'ils ne pouvaient pas garder leurs Citadelles, Et les autres plus lots ne les excusant pas Proposent qu'ils dévoient endurer le trépas, Plutôt que de leur rendre, ainsi que fît Ance, nhaonauouonisaemi rompno diguotance Puis qu'ils vont contemnans les écrits sacré-saints Qui veulent que l'on de aux Princes élus. \nComte Chombergt\n Toute l'Europe aubit les yeux sur cette Vssle Croyant qu'elle enfantât une guerre clulle, Dans le cœur de la France, ou quelque autre malheür. \n",
+          "Le Noi, Cardilarde Rieheneu, Monsieur Frère du Roi, Comte de Chomberg \nLe Roi\n Omme j'ai tromphé dans les champs de Bearn, De Pau, de Navarin, d'Ortez, et de l'écart, De Guyen, de Gergeau, d'Argenton, de Sancerre, De Cleron, de Tourax, Momon, et Sauveterre, Comme chez les bretons j'ai dompté Tosselon, Et tint en leur devoir, Pouton, Vitré, Bélin, Comme j'ai subjugué passant par la Guyenne, Assisté jour et nuit du grand Duc de Mayennes ma",
+          "auoir vaincu Cesar et ses Soldats vaillans, Lettre Aux Au Slèvre, la renommée entonne vos louanges De sa trompe d'Alrain, jusqu'aux peuples Étranges Qu'Alexandre le Grand ne conquêta jamais, \nLe Roi\n Qu'honneur en soit à Dieũ et non pas à moi"
+        ]
+      },
+      "top_5_persons": [
+        "Le Roi",
+        "Mars",
+        "M",
+        "Cesar",
+        "Neptune"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 11
+        },
+        "related_sentences": [
+          "même, ar comme on va gardant des Rois le Désadesme, Lé Sceptre, la Couronne, et fait florir leurs Lois, Il doit chang honoré avec respect des Rois, Les Rois sont ses mignons, il est seul leur défense, Et vêlant dessus eux veut qu'onne les offense, Pensez-vous que sans lui (endsant le harnais) Lors que le me fis voir dans les Champs Bearnois, J'eusse peu emporter cette belle Victoire, Qui rend mon Nom Te au Temple de Memolre, Que j'eusse tant de fois sur l'humide Lement, Les peuples Alblon vaincu honteusement, Peuples qui dans la France espérant leur fortune Ont eu pour monument les gouffres de Neptune Ains qui pensant Aulnix prendre en leurs ameçons Ont servi de repas aux auides Poissons, Ont leur Bouquinquant chery de leur a, Et les plus Grands des leurs, esclaues de la Parque, Non, non, fay donc grand Dleu que cét Ange inualncu, Par qui Sennacherib veld tout son Mp valncu, alsiste déoeller celte luperbe place, Qui se rend résistant indigne de ma grace, Mais elle en peut plus, vains lui sont ses efforts Dieu combattant pour moi enfait champ de morts, \nCcote Chombergt\n Premier que le Soleil voie la Pèle, Votre bras domptera cette Place perfide, L'Anglais est la de guerre, et l'homicide falm Lui faisant mal aux dents la tient des ja en frain.",
+          "c'est fait, à nos pleds sont tombés nos courages, Nous ne voyons sinon que les tristes images De l'effroi, de la faim, de la pâle Antropos Qui trouble de nos gens le repos sans repos, Maudit soit le consell, le jour, l'heure fatale, et neuite fît témoigner à ton Roi déloyale, Maudits solent les Auteurs de qui l'ambition, Fît sortir les Anglols de l'heure d'Alion, Anglos qui des-glos de qui des-criage DE Leur écrivan ts, pippez d doux le Ur tous les D' un vain es eaur , porgueilleuxaspect de leurs fastesVaisseaux: Mais qui battus en fin de l'Ange de la France N'ont reçu que des coups pour toute récompense, N'ont eu que du dommage, et un insigne affront qui éternellement restera sur leur front, Pour avoir selllonnans les ondes de Nerée Rompu (premiers) la paix si sal n' jurée, Et attaqué un Roi en l'Auril de ses jours EN l'Hyménée obligeait à aider du secours, Tadusse les Anglais faut celer ma complainte Et masquer ma douleur d'une apparence felnte.",
+          "Fit luer aux Camp de devant Orleans, Lors que presque il estoir surpris ans nos llens, Mena Charles septième Relms prendre son Sacie, Et fit de nos soldats si sanglant massacreque nos preux Paladins de Mars mesnie cherls Le peu a va hors de Parls, Il est vrai que surpris en certaine sortle Elle fut dans Roüen bruslée en bûcher Cuidant nos malheur par sa l' empêcher, Mais son cœur a pur quauoit esté son âme Ne peust iamais brûler à milieu de la flame, Iugez donc maintenant siestans assiégez, De la faim, de la et, ce la pente aiiuger, Nous sommes en estat de conquester la France, Non, non, ayons plustost recours la clémence De ce sa Ma In, rendons lui la y Afin en disposer selon sa volonté, Car le suls très",
+          "L'ont fait choir de la gloire aux Paluds stygieux, Mals ce broullard passé, un plus cruel orage Menace derechef la France de naufrage, Je délaisse Paris, l'arrue dans Ren, * Dieppe trouble son calme, et le Château de Caen, et Semble se retirer de mon obéissance: Mais mille voulant montrer quelle était ma puissance, Et que pour son suject l'avais pris le harnais, Après avoir quitté le peuple Rouennais: Comme un autre César qui se plaît à la peine, Je m'embarque aussi tôt sur le fleuve de Seine, Qui se va le pré Hâure engouffrant dans la Mer:",
+          "Le Roi\n Chacun en va parlant assez diversement, Les uns les vont blâmant d'avolr été Rebelles, Puis qu'ils ne pouvaient pas garder leurs Citadelles, Et les autres plus lots ne les excusant pas Proposent qu'ils dévoient endurer le trépas, Plutôt que de leur rendre, ainsi que fît Ance, nhaonauouonisaemi rompno diguotance Puis qu'ils vont contemnans les écrits sacré-saints Qui veulent que l'on de aux Princes élus. \nComte Chombergt\n Toute l'Europe aubit les yeux sur cette Vssle Croyant qu'elle enfantât une guerre clulle, Dans le cœur de la France, ou quelque autre malheür. \n"
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Rochelle",
+        "Rochelle",
+        "Paris",
+        "Bergerac"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

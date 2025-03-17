@@ -1,0 +1,76 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "La Roque, Siméon-Guillaume de",
+    "title": "La Chaste bergere. Pastorale nouvelle. De l'invention du sieur de La Roque,...",
+    "publication_date": "1629",
+    "document_id": "bpt6k8568368"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Coridon",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "ARDENIE\n Coridon c'est chose assurée Que Lucile s'est retirée Dans le temple des chastes vœux, Ayant ja coupé ses cheveux, Et fait le serment qu'on doit faire A ce saint et sacré mystère, Mettant dessous les pieds soudain Le monde et tout espoir mondain: Tu sais la loi qu'on y observé, Et comme l'entre on conserve, Coridon, et ne puis montrer Qu'homme mortel y puisse entrer, Si tu veux que sans te déguise Pour aider à ton entreprise, Je le ferai soudainement: Je prendrai un accoutrement De ma sœur qui est de ma taille, Toi de la tienne, et ne t'en chaille Nous ne serons pas reconnus.",
+          "Je cours au temple de Diane Pour n'en ouïr jamais parler, Ne vous y pouvant consoler, Cherchez un autre que Lucile, De qui l'humeur douce et facile Vous puisse éteindre cette ardeur, Et fuyez l'étrange froideur De quoi ma poitrine est remplie, Et me laissez à vous supplie, Car je dedans ce chemin Alexis, Flora et Celin, Qui pourraient penser quelque chose, Çest pourquoi, Coridon, ie n'ose Que plus long-temps.",
+          "ne vois-je pas, ma compagne, I JAu travers de cette campagne S'en aller droit à nos forêts, Avec ses chiens et ses rets, Le beau Coridon qui surpasse Adonis des traits de sa face, Ayons le plaisir aujourd'hui De nous en aller auec quelque Prendre quelque bête sauvage: Laissons un peu au pastur age Notre doux et frisé troupeau Le long de ce plaisant ruisseau.",
+          "Et c'est pourquoi vous devez croire Que ie sçay la présente histoire De ces amants que vous voyez p- Que les ouront ie Et rendu leur peine inutile: Coridon saches que Lucile \" Est ton sang et ta propre sceur, De cela tu dois être sûr, Et soudain éteindre en ton âme Cette Cole ardeur qui t'enflamme, Bannissant cette passion, Transportant ton affection A cette constante",
+          "Et donc sans plus en parler Laissons maintenant aller Coridon et Ardénie Avec la joie infinie De jouir de ce désir Qui donne tant de plaisir: Laissons Lucile et Damette Que l'amoureuse sagette Ne saurait plus entamer, Puis qu'elles veulent aimer Ce lieu saint qui les convie De vivre une chaste vie:"
+        ]
+      },
+      "top_5_persons": [
+        "Coridon",
+        "LUCILE",
+        "ALEXIS",
+        "LUCILE",
+        "CLAUDIN"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "PARIS",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "PARIS,"
+        ]
+      },
+      "top_5_places": [
+        "PARIS",
+        "Arcadie",
+        "Bergères",
+        "Rome"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

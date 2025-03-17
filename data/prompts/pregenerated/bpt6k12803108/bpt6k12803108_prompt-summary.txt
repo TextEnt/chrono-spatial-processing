@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Corneille, Pierre",
+    "title": "Polyeucte martyr, tragédie de Monsr Corneille",
+    "publication_date": "1648",
+    "document_id": "bpt6k12803108"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Pauline",
+          "frequency": 11
+        },
+        "related_sentences": [
+          "Pour subsister en Cour c'est la haute science, Quaud un homme vne fois a droit de nous haïr Nous devons présumer qu'il cherche à nous trahir, Toute son amitié nous doit être suspecte, Si Polieute, en fin n'abandonne sa secte, Quoi que son protecteur, ait pour toujours dans l'esprit, Je suivrai hautement l'ordre qui m'est prescrit, \nÀLREN\n Grâce, grâce, Seigneur, que Pauline l'obtienne. \nFELIX\n Celle de l'Empereur lèle iuyvroit pas la mienne, Et loin de le tirer de ce pas hasardeux Ma bonté ne ferait que nous perdre tous deux, \nÀLBIIN\n Mais Sévère promet. \nFELIX\n Albin",
+          "Vous réveillez les soins que je dois à la mienne, Adieu, je vais chercher au milieu des combats Te immortalité que donne un beau trépas, Et remplir dignement par une mort pompeuse De mes premiers exploits l'atteinte avantageuse, Srtoutefois après ce coup mortel du sort J'ai de la vie assez pour chercher votre mort. \nPAULINE\n Et moi dont votre vue augmente le supplice, Je la veux éviter mêmes au sacrifice, Et seule dans ma chambre enfefment mes regrets Je vais pour vous aux Dieux faire des vœux secrets.",
+          "Qu'elle m'eût garanti d'un état déplorable, Si quelque espoir me reste il n'est plus aujourd'nui, Qu'en l'absolu pouvoir qu'il te donnait sur quelques: Ménage en ma faveur l'amour qui le possède, Et d'où provient mon mal fais sortir le remède. \nPAULINE\n Moi, moi, que je revoie un si puissant vainqueur, Et m'expose à des yeux qui me perçent le cœur!",
+          "Un soupir, une larme à regret épandue M'aurait déjà guéri de vous avait perdue Ma raison pourrait tout sur l'amour affaibli, Et de l'indifférence irait jusqu'à l'oubli, Et mon feu désormais se réglant sur le vôtre, Je me tiendrais heureux entre les bras d'un autre, AIS trop aimable objet qui m'avez trop charmé, Est-ce la comme on aime, et m'avez-vous aime? \nPAULINE\n ",
+          "Votre ardeur vous séduit, mais quoi qu’elle vous die, Quand vons la sentirez une fois refroidie, Quand vous verrez Pauline, et que son désespait Par ses pleurs et ses cris pourra vous émouvoir. \nFELIX\n Tu me fais souvenit, qu'elle a suivi ce traître, Et que ce désespoir qu'elle fera paraître De mes commandements pourra troubler l'effets: Va donc y donner ordie et voir ce qu'elle fait."
+        ]
+      },
+      "top_5_persons": [
+        "Pauline",
+        "POLYEUCTE",
+        "FELIX",
+        "Félix",
+        "Nearque"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 11
+        },
+        "related_sentences": [
+          "Et laisse la vertu la plus rare à nos yeux Qu'une femme jamais pût recevoir des Cieux Aux mains du plus vaillant et du plus honnêt homme Qu'ait adoré la terre, et qu'ait vu naître Rome Vous ès digne d'elle, elle est digne de vous, Ne la refusez pas de la main d'un époux, S'il vous a désunis, sa mort vous va rejoindre, Qu'un feu jadis si beau n'en devienne pas moin d'en Devez-levez votre cœur, et recevez sa fo, y , elle et mourez comme est D'aimle bien qu'a tous deux Mou re.",
+          "leurs secrets comme eux à Rome et dans la Grèce, Encor impunément nous souffrons en tous lieux Leur Dieu seul excepté toute sorte de Dieux, Tous les monstres d'Égypte ont leur Temple dans Rome, Nos aïeux à leur gré faisaient un Dieu d'un homme, Et leur sang parmi nous conservant leurs erreurs Nous remplissons le Ciel de tous nos Empereurs, Mais à parler sans fard de tant d'Apotheoses, L'effet est bien douteux de ces Metamorphoses.",
+          "Un songe en notre esprit passe pour ridicule, Il ne nous laisse espoir, ni crainte, sans scrupule, Mais il passe dans Rome avec autorité Pour fidèle miroir de la fatalité. \nPAULINE\n Le mien est bien étrange, et quoi qu'Armenienne Je crois que ta frayeur égalerait la mienne Si de telles horreurs t'avaient frappé l'esprit,",
+          "PAULINE\n Hélas, c'était deux même, et jamais notre Rome N'a produit plus grand cœur, ni vu plus honnête homme: Puisque tu le connais, je ne t'en dirai rien, Je l'aimai, Stratonice, il méritait bienMais que sert le mérite ou manque la fortune?",
+          "Mais ce même devoir qui le vainquit dans Rome Et qui me range ici dessous les lois d'un homme Repousse encor si bien l'effort de tant d'appas Qu'il déchite mon âme et ne l'ébranle pas."
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "France",
+        "Arménie",
+        "Sévère",
+        "PARIS"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

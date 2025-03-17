@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Mareschal, André",
+    "title": "Le Railleur, ou La satyre du temps , comédie",
+    "publication_date": "1638",
+    "document_id": "bpt6k6255892m"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "CLORINDE",
+          "frequency": 17
+        },
+        "related_sentences": [
+          "L'un vous entraine au bal, l'autre à l'Académie Que le Cours, ou chacun trouve à se contenter, Sert à vous divertir moins qu'à vous tourment Que le Louure vous geine aux devoirs nécessaires, L'Église, le Palais, les sermons, les affaires, Que mon objet, ma chambre est tout vôtre élément, Et que vous ne jurez que par moi seulement: Tandis qu'au Cabinet, et sans vouloir paraître, Clorinde est solitaire et comme dans un Cloître, Qu'attendant vos chevaux de cent lieux embourbez Elle se plaint d'un temps que vous lui dérobez:",
+          "vous me rendez la vie en cet Arrêt, Puis qu'un commun accord doit faire que j'obtienne Votre Sœur en partage en vous donnant la mienne: Les biens aux deux partis sont assez de raison, Et nous ferons des deux de seule Maison, Quoi que lon puisse ôter ou joindre à mon estime, neprjantte amour rend mon vœu légitime, Et Clorinde avouera que jamais un AMant. \nCLARIMAND\n ",
+          "Ajfin miuemtar llecero, cous jes épruacontents M'en donnent chez Clytie, où ici passe mon temps, \nCLORINDE\n Donc vous nous jouez ainsi l'une pour l'autre, Pour aller à sa sœur, vous lui donnez la vôtre.",
+          "Laisse mieux dire au moins (Ie meurs, on vous proteste, Et tous ses autres mots qui était seront de reste: Aantte mes fueneua uliou ja leçon. \nCLORINDE\n Ne le trouvez-vous pas d'une belle façon? \n",
+          "cueillir les fruits d'une amour que mon Frère Clarimand n'approuve point, que l'honneur me défend, mais que ma passion plusforte ne peut refuser à Amédor \nCLORINDE\n AMEDOR, Quti Astie, que Demont, quel sort malicieux Me"
+        ]
+      },
+      "top_5_persons": [
+        "CLORINDE",
+        "DUPRE",
+        "Seigneur",
+        "CLYTIE",
+        "Iris"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Clytie",
+          "frequency": 17
+        },
+        "related_sentences": [
+          "Mes vrais supplices sont ma constance, et ma soi, Qui me forcent, rendant mes peines Pternelles, De mourir en moi -même, et de revivre en elles: Quelques traits que Clytie emploie à ma langueur, J'aiplus de fermeté qu'elle n'a de rigueur, Le désir de souffrirs augmente par ma peine, Ma gloire va plus haut, plus elle est inhumaine;",
+          "Apprenez, que Clytie enfin vous est contraire Par les seuls mouvements que lui mon son Frère Que ce jeune éventé sa sigure à tous coups Les Poètes sans courage, et mi au rang des foux, Que leur soin, leur esprit n'est qu'en la réuerie, Que l'art en est honteux, et le nom les décrie;",
+          "LETTRE DE CLYTIE à Clarimand Velque impression diffieile, cher Amant, que Qvotre hume ir légère ait faite en mon esprit, et de quelque jeu dont le vôtre l'ait entretenu, je ne feint point aujourd'hui d'auoüer, que j'ai quité mes froideurs à mesure que vous êtes sorti de vosfeintes.",
+          "Voici qui vous va rendre et l'espoir, et la vie, Que ce premierbillet vous a presque ravie, Clytie en ses faveurs dissipera ce fiel, Souffrez qu'après l'Enfer je vous ouvre le Ciel, Il fallait modérer l'excès de vos délices;",
+          "Ajfin miuemtar llecero, cous jes épruacontents M'en donnent chez Clytie, où ici passe mon temps, \nCLORINDE\n Donc vous nous jouez ainsi l'une pour l'autre, Pour aller à sa sœur, vous lui donnez la vôtre."
+        ]
+      },
+      "top_5_places": [
+        "Clytie",
+        "Rome",
+        "France",
+        "Paris",
+        "Louvre"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

@@ -1,0 +1,77 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Dorimond",
+    "title": "La Femme industrieuse, comédie",
+    "publication_date": "1661",
+    "document_id": "bpt6k1090154j"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ISABELLE",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "De ne la yoir jamais rien cours donc un grand risque, Quitter mes bons amis, les bons vins, les chapons, Une longe de veau vaut mieux que cent leçons, Jeuner, je suis trop pâle, Isabelle est si maigre, Je veux m'entretenir dans mon humeur alaigre, Gardez votre billet, il me met en courroux, Belle, ieusné pour moi, ie mangeray pour vous, \nISABELLE\n Laisse-moi, Madame te prie, avec ce bon père, J'aime de ce Docteur le conseil salutaire.",
+          "Vos printanières appas, vos attraits sans quartier, Qui font brûler les gens dans le mois de Janvier \nISABELLE\n Monsieur, le bruit commun qui court de vostie estime, Me fait avoir recours à vostte esprit sublime: Vous êtes Précepteur d'un jeune homme bien fait, Mais qui sait mal son monde, et sais peu ce qu'il fait.",
+          "Que mon honneur s'offense à l'y voir si souvent, Et que je ne suis pas une tête à l'évent, Que l'honneur m'est cent fois plus que ne m'est n vies Qu'il cesse, s'il ne veut voir punir sa folit \nISABELLE\n Je connais bien l'amour, et j'y suis fort sensible;",
+          "Voilà la place en ordre, et j'en laisse la garde Au brave Trapolin mais d'ou vient qu'il retarde! \nISABELLE\n C'est qu'il sait que tu suis une femme de bien, Qu'il n'appartiêt qu'à moi de me garder fort bié.",
+          "À Dieu. \nISABELLE\n Faites, Amour, le succès de ma flamme, S'ils captivent mon corps, ils n'ont riẽ sur moname, Et mon aimable Amant sous peine autorité, Peut tout seul se venter de ma captivité."
+        ]
+      },
+      "top_5_persons": [
+        "ISABELLE",
+        "LÉANDRE",
+        "CAPITAN",
+        "Seigneur",
+        "Louis"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Mars 1661\n Signé par le Roi en son Conseil DE SAYES, Il est permis au Sieur DORIMOND, Comédien des Mademoiselle, de faire imprimer les Pièces de Théatres, par un composée, et représentées par la Troupe de Mademoiselle à Paris, par tel Imprimeur et Libraire qu'il voudra, pendant cinq années: et défenses sont faites à tous autres de l'imprimer ni vendre d'autre Édition que celle de l'Exposant, ou de ceux qui auront droit de lui, peine de deux mille livres d'amende, de tous dépens, dommages, et intérêts, comme il est porté plus amplement par lesdites Lettres.",
+          "à Jean Ribou Marchand Libraire à Paris,",
+          "La Seène est à Paris V A"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Paris I",
+        "GAP"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

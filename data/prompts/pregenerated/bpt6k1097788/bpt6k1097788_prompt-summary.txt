@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Mairet, Jean",
+    "title": "La Sophonisbe / tragédie de Mairet, dédiée à Monseigneur le garde des seaux [sic]",
+    "publication_date": "1635",
+    "document_id": "bpt6k1097788"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "SYPHAX",
+          "frequency": 9
+        },
+        "related_sentences": [
+          "Tandis que leurs esprits la vengeance respirent, Il les faudrait mener au combat qu'ils désirent, De peur qu'à différer ils ne perdent sans fruit, Cette boüllante ardeur que la victoire suit. \nSYPHAX\n Allons, et plai se aux Dieux qu'un trépas honorabls Me délivre bientôt d'un sort si déplorable. \nPHILON\n Quoi, Sire, et depuis quand votre cœur abattu, Laisse-t-il au malheur accabler sa vertu?",
+          "Bien plus, l'aveuglement de sa raison est tel, Qu'il entre dans le lit d'un ennemi mortel, D'un Syphax, d'un tyran, de qui l'injuste épée, A sur son père mort la couronne usurpée: Certes si pour venger la mort de nos parents, Il fallait épouser les véfues des tyrans, Les vôtres qu'il perdit, ont toute l'allégeance Qu'ils pourraient désirer d'une telle vengeance:",
+          "Vous n'êtes pas encor si mal-traicté du sort, Que vous soyez réduit à désirer la mort: Et aoy qe qu' y ta Portune contraître, Nous ait fait tout du pis qu'elle nous pouvait faire, Si faut-il espérer que sa légèreté, La fera revenir à votre Majesté: \nSYPHAX\n Ha!",
+          ", Peut-être que Syphax a perdu son Empire, Et que dans peu de temps: mais voici de retour Orces fives fans touteur, qui vrennent ue la tour: Leur crainte me fait peur: n'importe, allons entendre Ce qu'il faut que sans sache, et que personne n'ose apprendre.",
+          "La vefue de Syphax est trop infortunée, moment oijinjinge en second Hyménée Et son cœur généreux formé d'être trop bon sang, Pour faire une action indigne de son rang: Car en fin lai Fortune avec toute sa rage, M'a bien osté le Sceptre, et non pas le courage."
+        ]
+      },
+      "top_5_persons": [
+        "SYPHAX",
+        "PHENICE",
+        "Sophonisbe",
+        "SYPHAX",
+        "PHILON"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 9
+        },
+        "related_sentences": [
+          "Toi fidèle sujet, si ma chute certaine, Me laisse encor sur toi la qualité de Reine, Emploie ton épée à cet acte d'amour, (Puis que c'est m'aimer bien que me priver du jour,) De spêche, et n'attends pas que Rome ait l'avantage De triompher en moi de l'honneur de Cartage \nCALIODORE\n Pour tels commandements mon cœur a protesté, De n'obe yr jamais à votre Majesté.",
+          "En effet il est vrai, je serais plus qu'ingrat, Si tu ne répondais aux biens-faits du Sénat: Mais était serais moins qu'homme, ou bien plus que barbare, Si personne ne frémissais du mal qu'on me prépare: Et bien n'en parlons plus, m'y voilà résolu, At paut ciente bomoir,quund Rome l'a voulu.",
+          "C'est à vous maintenant à vous l'imaginer, Vous savez du Sénat l'ordonnance dernieré, Par laquelle arrivant qu'elle fut prisonnière, Il nous est à tous deux expre ssement enjoint, De l'envoyer à Rome, et de n'y manquer point:",
+          "Oui, Lélic, il importe à la gloire d'un homme, Que ma femme elle-même aille esclaue dans Rome Et que sa vanité seule semblable à soi, Triomphe à même temps de Syphax et de moi.",
+          "N'est-ce point à mes jours une gloire assez grande, Que tous obscurs qu'ils sont Rome les appréhende?"
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "FRANCE",
+        "Paris",
+        "Cartage",
+        "Afrique"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

@@ -1,0 +1,75 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "La Fontaine, Jean de",
+    "title": "Je vous prens sans verd : comédie / [par La Fontaine et Champmeslé]",
+    "publication_date": "1699",
+    "document_id": "bpt6k1081483"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "MONTREUIL",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "non, non, que l'on changte, q uon danse, Nous venons prendre part à la réjouissance, Bergert été Bergerse, que tout se rendeici, Et ma Fille et Montreil, et Céliane aussi, Reprenez un air gay, voicy la compagnie \nCÈNE XV\n D'ORAME, S. AMANT, JULIE, MONTREUIL, etc. \nDORAME\n Llons ma Fille, allons menez joyeuse vie, 2 E",
+          "cet habillée: \nMONTREUIL\n Tout s'empresse en ces lleux pour faire la cour, L'air est serain, le Ciel nous promet un beau jour.",
+          "Parlez sincèrement. \nMONTREUIL\n À ne déguiser sien, Si certain homme était dans la nuit éternelle, je croitois démer quénie en la Tourterelle;",
+          "Je jure, je promets d'en observer la loi. \nCELIANE\n À ces conditions je me soumets. \nMONTREUIL\n Et moi.",
+          ", je pense, épargné les couleurs. \nMONTREUIL\n Chez l'Ami, c'est un lieu fertil en Blasonceurs."
+        ]
+      },
+      "top_5_persons": [
+        "MONTREUIL",
+        "Flore",
+        "Julie",
+        "Lubin",
+        "Lansquenet"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "PARIS",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "À PARIS Chez PIERRE RIBOU, sut le Quay des Augustins, à lai descente du Pont-neuf, à l'Image S. \nLouis\n \nM\n DC."
+        ]
+      },
+      "top_5_places": [
+        "PARIS",
+        "Flandre",
+        "Paris"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

@@ -1,0 +1,78 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Baro, Balthasar",
+    "title": "La Clorise, pastorale",
+    "publication_date": "1632",
+    "document_id": "bpt6k1090014p"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Elian",
+          "frequency": 7
+        },
+        "related_sentences": [
+          "Phil\n Elle est égale à ton mérite, Elian Berger, elle a donc bien petite, Phil Elle est parfaite comme toi. \nElian\n Et si tu mens, Phil Que le Ciel me punisse, Éliante et Philidan ensemble.",
+          "inventez un supplice Pour les parjures amants. \nElian\n Combien en durera le cours? \nPhil\n Autant que durera mon âme, Elian Le temps éteindra cette flamme, .",
+          "ÉLIANTE ET PHILIDAN \nElian\n Quel est ton amour, réponds moi? \n",
+          "Plutôt il éteindra mes jours. \nElian\n "
+        ]
+      },
+      "top_5_persons": [
+        "Elian",
+        "Seigneur",
+        "Phil",
+        "Seau",
+        "Pan"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Lignon",
+          "frequency": 7
+        },
+        "related_sentences": [
+          "Et toi qui dans l'excès de ma douleur âme As porté mes regrets jusqu'au sein de ta -mère, Lignon, s'il avait que ce couple d'amants Vinst profaner tes bords de ses contentements, Venge moi quelque te prie, et dans tes bras humides Étouffe en ma faveur leurs flammes homicides.",
+          "Alidor n'est plus Qui l'a tué? \nCLORISE\n \nÉLIANTE\n C'est moi, mon injuste prière Est cause que ses yeux ont perdu la lumière, Et que, précipité du haut de ce Rocher, Lignon a triomphé de ce gage si cher. \n",
+          "Lignon n'a plus qu'Hommes pas qui sépare ses rives, On ne voit plus le cours de ses ondes suives, Et les Nymphes des eaux ne me connaissant point Comparent ma grandeur Sei celle d'un point.",
+          "Et pour mieux terminer ma peine sans seconde, Lignon à leur défaut me prêtera son onde, Qui ne saurait faillir de noyer mes douleurs Quand elle aura reçu le secours de mes pleurs. \nPHILIDAN\n ",
+          "Toi Lignon dont les eaux triomphent de mon bien Ne crains pas de faillir en recevant le sien, SCÈNE CINQUIÈME."
+        ]
+      },
+      "top_5_places": [
+        "Lignon",
+        "Paris",
+        "France"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

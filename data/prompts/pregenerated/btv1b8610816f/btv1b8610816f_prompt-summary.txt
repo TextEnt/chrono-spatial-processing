@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Racine, Jean",
+    "title": "Iphigénie , tragédie par M. Racine",
+    "publication_date": "1675",
+    "document_id": "btv1b8610816f"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Achille",
+          "frequency": 13
+        },
+        "related_sentences": [
+          "Mais on sais que pour prix d'un triomphe si beau Ils ont aux champs Troyens marqué quelque tombeau Que vôtre ie ailleurs et longue, et fortunée, Devant Troie en la neur doit éitre niomonnée. \nACHILLE\n Ainsi pour vous venger tant de Rois assemblés D'un opprobre éternel retourneront comblez, Et suin touronnant son insolente flamme.",
+          "Du sang de Juppiter issu de tous côtés, L'hymen vous lie encore aux Dieux dont vous sortez, Le jeune Achille enfin vanté par tant d'Oracles, Achille à qui le Ciel promet tant de miracles, Recherche votre Fille, et d'un Hymen si beau Veut dans Troie embrasée allumer le flambeau.",
+          "Qu'est-ce que j'entends? \nACHILLE\n Seigneur, qu'osez -vous dire? \nAGAMEMNON\n Qu'il faut, Princes, qu'il faut que chacun se retire, Que d'un crédule espoir trop long temps abusez Nous attendons les vents, qui nous sont refusés.",
+          "Mais vous, qui me parlez d'une voix menaçante Oubhez-vous ici qui vous interrogez ? \nACHILLE\n Oubliez-vous qui j'aime, et qui vous outragez? \nAGAMEMNON\n Et qui vous a chargé du soin de ma Famille?",
+          "La Thessalie entière ou vaincue, ou calmée, Lesbos melme conquise en attendant l'Armée, De toute autre valeur éternels monuments, Ne sont d'Achille ouïr que les amusemiel, \nACHILLE\n Seigneur, honorez moins une faible Conquête."
+        ]
+      },
+      "top_5_persons": [
+        "Achille",
+        "Agamemnon",
+        "Achille",
+        "Calchas",
+        "ARCAS"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Grèce",
+          "frequency": 13
+        },
+        "related_sentences": [
+          "Et quand de toutes parts assemblez en ces lieux, L'honneur de vous venger brille seul à nos yeux, Quand la Grèce déjà vous donnant son suffrage, Vous reconnaît l'Auteur de ce famneux ouvrage, Que ses Rois, qui pouvaient vous disputer ce rang, Sont prêts pour vous servir de verser tout leur sar Le seul Agamemnon ressusant la victoire, N'ose d'un peu de sang acheter tant de gloire?",
+          "Vous m'en voyez moi -même en cet heureux moment Saisi d'horreur, de joie, et de ravissement Jamais jour n'a paru si mortel à la Grèce Déjà de tout le Camp la Discorde maîtresse Avait sur tous les yeux mis son bandeau fatal, Et donné du combat le funeste signal, De ce spectacle affreux votre Fille alarmée Voyait pour elle Achille, et contre elle l'Armée.",
+          "Vous savez, et Calchas mille fois vous l'a dit, Qu'un Hymen clandestin mit ce Prince en son lit, Et qu'il en eut pour gage une jeune Princesse, Que sa Mère a cachée au reste de la Grèce Mais non, l'amour d'un Frère, et son honneur blessé Sont les moindres des soins, dont vous êtes pressé.",
+          "Mes spectateurs ont été émus des mêmes choses qui ont mis autre fois en larmes le plus savant peuple de la Grèce, et qui ont fait dire, qu'entre les Poètes, Euripide était extrêmement tragique, τραγικώτατος, est dire il sçavoit merveilleusement exciter la compassion et la terreur, qui sont les véritables effets de la Tragédie.",
+          "De la Grèce déjà vous vous rendez l'Arbitre, Ses Rois, à vous ouïrir, m'ont paré d'un vain titre Fier de votre valeur, tout, si je vous en crois, Doit marcher, doit fléchir, doit trembler sous vos lois Un Biens reproché tint oujours lieu d'offense."
+        ]
+      },
+      "top_5_places": [
+        "Grèce",
+        "Troie",
+        "Troie",
+        "Argos",
+        "Paris"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

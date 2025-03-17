@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "La Grange-Chancel, François-Joseph de",
+    "title": "Oreste et Pylade : tragédie / [par La Grange-Chancel]",
+    "publication_date": "1699",
+    "document_id": "bpt6k1087822"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Thoas",
+          "frequency": 9
+        },
+        "related_sentences": [
+          "Sa main va l'immoler, et dès ce moment même Elle pouze Thoas, et prend le Diadme: Si ce fatal hymen s'achève avant la nuit, De ma vengeance, ô Ciel: le projet est détruit, Le peuple qui redoute et chérit la Prêtresse, s'il la voit sur le Trône,oubliant sa Princesse, De la Religion se faisant une loi, Respectueux pour elle, osera moins pour moi.",
+          "Avant que l'Étranger soit conduit au supplice, Par l'ordte de Thoas on va faire un effort, Pour applenure son non, ja naissance, son sort, Je viens, par mes avis, l'exhorter à se taire.",
+          "J'atrive accompagné d'une escorte fidèle, De l'innocence, alors j'embjasse la querelle, Le Peuple autour de moi courant de toutes parts, Quand Thoas arrivé sur le fatai rivage, Aux siens épouvantez ramèint le courage.",
+          "Quoi que Thoas, avide et de sang et de crimes, N'ait pour Religion que ses fières maximes, Il n'ose, aux yeux du peuple, avec impunité, Découvrir tout l'excès de son impiété.",
+          "Pour me laisser tranquille en mes propres États, J'ai vu votre grand cœur résister à Thoas Vous avez dédaigné l'hymen qu'il vous propose, Charmée à ces refus, j'en admire la cause."
+        ]
+      },
+      "top_5_persons": [
+        "Thoas",
+        "PILADE",
+        "Oreste",
+        "Diane",
+        "Thoas"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Grèce",
+          "frequency": 9
+        },
+        "related_sentences": [
+          "Puisqu'n vous le pemet presez votre départ y Portez dans votre Grèce un écrit de ma part: Comptez mon infortune à ceux qui m'ont fait nalIls me viendront chercher, et se feront connaître, Suivis de plus de Rois, de Chefs, et de soldats, Qu'Hélène n'en a fair armer par Ménélas. \nPILA DE\n Contre votre Tyran prompt à tout entreprendre, Avec mes seuls Vaisseaux je viendrais vous reprendre: Dans ce monde où mon nom sans tache est parvenu, Je ne suit point entré, Madame, en inconnu.",
+          "Instruit de mon secret fit voile pour la Grèce Depuis un an entier qu'il a quitté ce port, Il ne m'a point encor informé de son sort: Le mien traîne par tout le chagrin qui m'accable: Ce jour même, ce jour qu'un hymen favorable, Va mettre dans mon lit cette sienne beauté, Ce prix de ma constance, et qui m'a tant coûté;",
+          "Je brûle de revoir la Grèce, ma patrie, D'admirer, d'adorer couiert de tant d'exploits, Ce grand-Agamemnon Chef des Grecs, Roi des Rois: D'entendre, d'embrasser-Clitemnêtre ma mère, Les Princesses mes sœurs, Oreste mon cher frère.",
+          "Pour bannir de ces lieux la crainte, et la tristesse, À ses ordres pressants je partis pour la Grèce Jugez de ma douleur, Madame, à mon retour, Lorsque j'apprends qu'épris-d’un malheureux amour, Thoas, sans respecter les Dieux;",
+          "Née au sein de la Grèce, où brillent mes a yeux, Je me vois, comme vous Etrangère en ces lieux: ij Un Tytan m'y retient."
+        ]
+      },
+      "top_5_places": [
+        "Grèce",
+        "Argos",
+        "Paris",
+        "Troie",
+        "Trone"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

@@ -1,0 +1,76 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Du Ryer, Pierre",
+    "title": "Lisandre et Caliste, tragi-comédie",
+    "publication_date": "1632",
+    "document_id": "bpt6k1090032m"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Adraste",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "ADRASTE\n Ne me contestez plus, et suivez mes conseils Qui sont de votre mal les meilleurs appareils, Tous les amis que j'ai, le temps les a fait naître Et l'un et l'autre sort me les a fait connaître. \nLISANDRE\n Pour trainure jouiessais qu'its cénaget a jeur tour C'est assez de savoir qu'ils sont nés à la cour. \nADRASTE\n Gardez que ce discours n'ajoute a vôtre peine Le honteux déplaisir de tomber dans ma haine. \nLISANDRE\n Le respect, que personne doibs au nom que vous portez, M'exemptera des maux dont vous m'espouuantez;",
+          "Si ses attraits vainqueurs de tant de belles âmes Ne pouvaient rien sur moi par leurs divines flammes, Vos seules volontés qui me peuvent charmer Auraient assez d'appas pour me la faire aimer. \nADRASTE\n P'ourquoi donc au mépris d'une beauté parfaite Vous montrez -vous si froid au bien qu'on vous souhaite? \nLISANDRE\n Mon honneur offensé des discours qui se font Vous fait voir malgré moi ces froideurs sur mon front, Et mon renom blesse défend à mon courage De sentir d'autre mal que celui qui l'outrage;",
+          "et vous Lisandre ordonnez en effet La réparation du crime paurui fait. \nADRASTE\n Ne parlons plus de crime ou parcije l'innocence. \nDORILAS\n Et qu'un parfait accord prenne ici sa naissance. \nADRASTE\n Mon fils que Seigneur t'embrasse après tant de soupir: Que ton heureux retour convertit en plaisirs. \nLISANDRE\n Ma fuite m'arendu digne de mille géines Alors qu'elle a causé vos soupirs et vos peines.",
+          "Et pour vous assurer que mon obéissance Ne fléchira jamais soubs une autre puissance, J'irai voir hypolite avec des discours Dont l'ardeur fera voir celle de mes Amours. \nADRASTE\n Tenez vous donc ainsi dans le soin de me plaire, Et mon affection en sera le salaire.",
+          "Nous avons obtenu la grâce de Lisandre \nADRASTE\n Há que cette nouvelle est selon mes désirs, Et que votre discours fait naître de plaisirs! \nLIDIAN\n À la charge pourtant qu'après sa longue absence Il viendra dans un mois prouver son innocence. \n"
+        ]
+      },
+      "top_5_persons": [
+        "Adraste",
+        "Hypolite",
+        "LEON",
+        "HYPPOLITE",
+        "Léon"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Ar grâce et Privilège du Roi, Il est permis LETTRE à Pierre David marchand Libraire à Paris, d'imprimer ou faire imprimer un livre intitulé Liste et Caliste Tragicomédie, et ce pendant six ans à compter du jour que ledit livre sera achevé d'imprimer, et cependant deffences à tous Libraires, Imprimeurs tant de ce Royaume qu'autres étrangers, d'imprimer, vendre ni distribuer ledit livre ny partie d'icelui, sinon de l'impression qu'autait fait faire le Daud, ou autres ayãs droit et authorité de lui, peine de mil liures d'a et de confiscation des exẽplaires, et de tous dépens, dommages et intérêts, comme plus plain est porté dans ledit uilege, la charge que ledit exposant mettra moun cnemplalee cithontre Hionueneque Donne a Paris le .",
+          "Paris"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "bois de Boulogne",
+        "France"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

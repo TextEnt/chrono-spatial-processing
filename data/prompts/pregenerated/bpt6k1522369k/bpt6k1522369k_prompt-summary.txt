@@ -1,0 +1,77 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Rousseau, Jean-Baptiste",
+    "title": "Vénus et Adonis , tragédie en musique représentée par l'Académie royale de musique",
+    "publication_date": "1697",
+    "document_id": "bpt6k1522369k"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "MARS",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "MARS, BÉLLONE \nBÉLONE\n JE Ar mes empressements connais quel est mon zèle, Je vole où ta fureur m'appelle, Bien- tôt mes cruautéz appuyant ton courroux, Vont détruire un peuple coupable, Pour le cœur de Blone est-il un bien plus doux Qu'une vengeance impitoyable.",
+          "Ah faut-il que nos pleurs vous trouvent insensible, Et le courroux tues Duun doit-il être infléxible. \nMARS\n Non non, rien ne peut m'attendrir, Vos peuples insolents ne sauraient trop souffrir:",
+          "UN SUIVANT DE MARS Chœur et Troupe de Peuples de différents endroits de l'Île de Cypre LA JALOUSIE Suite de la Jalousie, les Soupçons, le Dépit, la Fureur, la Haine, etc.",
+          "Prenez pitié de notre peine, Dieux puissants que nos pleurs apaisent votre haine. \nMARS\n se vou a tes vry pieins d'horreur, Que le montre déjà fait sentir sa fureur.",
+          "IVANT DE MARS Un cœur qui s'abandonne à son inquiétude, Se repent bien souvent d'en avoir trop appris, Et peu d'Amands savent le prix D'une flatteuse incertitude."
+        ]
+      },
+      "top_5_persons": [
+        "MARS",
+        "Venus",
+        "VENUS",
+        "Mars",
+        "Adonis"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paphos",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Je vais quitter ces lieux pour me rendre à Paphos, Je jouirai bientôt de l'heureux avantage De revoir le Dieu qui m'engage.",
+          "Les Peuples de Paphos s'assemblent dans ce jour Pour célébrer celui de ma naissance:"
+        ]
+      },
+      "top_5_places": [
+        "Paphos",
+        "MARS",
+        "Thrace",
+        "Belone"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

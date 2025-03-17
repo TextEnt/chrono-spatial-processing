@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Bigres de Jussy, Pierre-Louis",
+    "title": "Adolphe ou Le bigame genereux . Tragi-comedie.",
+    "publication_date": "1650",
+    "document_id": "bpt6k857183z"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Adolphe",
+          "frequency": 8
+        },
+        "related_sentences": [
+          "Quand on dépeint les coups d'une si rude guerre, Un Chef heureux sur mer, et malheureux sur terre, Un appui de la Foi pressé d'un mauvais sort, Un Héros fait captif, ou victime de mort, Je ressens ces reuers, ces morts, ces esclavages, Je pleure mon Adolphe en ses tristes images;",
+          "Plutôt que mavoner, Seigneur traître s y résout. \nLEON\n Et si ici vous convains ? \nADOLPHE\n Je me soumets à tout. \nLEON\n Voulez-vous s'il avient qu'éjle vous le soutienne, Que ma main l'en punisse? \nADOLPHE\n Employez",
+          "Et vous dont le retour nous ramène un tourment ADolphe Pire que les ennuis de votre éloignement, Qui deviez demeurer dans les prisons d'Afrique, Tlûtost que nous causer ce trouble domestique, Qui porteriez des fers sous un joug étranger Mieux qu'vn sent chez moi pour nous enoutrager.",
+          "Elle te recevra comme un prix de ma mort, \nADOLPHE\n Interrogez son cœur, consultez sa tendresse, Pour qui plutôt des deux son devoir l'intéresse, Pour l'auteur de son trouble, ou celui de ses jours. \n",
+          "ADOLPHE\n S'il se rompt j'aime mieux que mon trépas le rompe, Et que de vos soupçons ma perte vous détrompe, Qu'un Prince furieux me traite en scélérat, Pourvu que vous disiez tu ne meurs point ingrat;"
+        ]
+      },
+      "top_5_persons": [
+        "Adolphe",
+        "LEON",
+        "Albert",
+        "EUGÉNIE",
+        "Irène"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 8
+        },
+        "related_sentences": [
+          "C'est moi qui te condamne, et Seigneur te défendrais Quand ta peine devient le plus beau de mes droits, Quand tu m'as fait errer fugitive étrangère, Bannie et de mon rang et du Prince mon Père, Pour m'épouser dans Rome, ou plutôt m'affronter De ta foi qu'à tes yeux on m'ose contester, Quand pour recompenser mes pertes et ma fuite, Tant de périls de mort passez sous ta conduite, Je rencontre chez toi pour ma réception Ma rivalle, ta fraude, et ta confusion;",
+          "Dans Rome il m'épousa comme veuf d'Eugénie, L'étouffant dans son cœur par sa fourbe impunie, Et noirci de deux parts d'un abus criminel Trahissait elle et moi, l'honneur, Rome et le Ciel;",
+          "Voyez que de respects violés par un homme, Vengez une affligée, ou votre Cour ou Rome, Vengez vos sainte Lois qu'il brave et que sans suis.",
+          "Votre Cour, ma Patrie, et Rome et trop de lieux Ont vu sa trahison qui vient jusqu'à vos yeux;",
+          "Il veut sous votre aveu mettre son crime au jour, Et du mépris de Rome abreuver votre Cour;"
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Afrique",
+        "Eugénie",
+        "Allemagne",
+        "Crete"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

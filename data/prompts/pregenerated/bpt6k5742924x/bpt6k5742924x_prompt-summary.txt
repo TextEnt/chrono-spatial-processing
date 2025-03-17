@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Abeille, Gaspard",
+    "title": "Coriolan , tragédie. Par M. Abeille",
+    "publication_date": "1676",
+    "document_id": "bpt6k5742924x"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Coriolan",
+          "frequency": 66
+        },
+        "related_sentences": [
+          "Mars 1676\n Signé, Par le Roi en son Conseil, DESVIEUX: Il est permis au Sieur GASPARD ABEILLE, de faire imprimer, vendre et débiter, par tel Imprimeur ou Libraire qu'il voudra choisir, un Livre intitulé Coriolan, pendant le temps et espace de six années, à commencer du jour qu'il sera achevé d'imprimer pour la première fois;",
+          "Dites-lui qu'eu ses niains Je mets absolument le destin des Romains: Que usqu'à ce moment un scrupule de gloire A sur Coriolan retardé ma victoire: Qu'il faut qu'en ma faveur elle renonce aux droits Qu'un sermut sur son cœur lui avait autrefois:",
+          "De vos bontés pour moi Coriolan surpris, Honteux de devenir l'objet de vos mépris, Sans espoir de trouver ailleurs un autre asile, Suivi de quelques Chefs s'est sauvé dans la ville.",
+          "Et si de vos progrès Coriolan jaloux Prenait pour les Romains des sentiments plus doux, Croyez-vous que ce cœur charme de vos promesses, Ne rallumerait point ses premières tendresses?",
+          "On vit Coriolan on parla d'alliance: De mon penchant secret on a fit confidence: Et s'il n'eût pas encor disposé de sa foi."
+        ]
+      },
+      "top_5_persons": [
+        "Coriolan",
+        "Camille",
+        "Albin",
+        "Sabine",
+        "Valerie"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 66
+        },
+        "related_sentences": [
+          "Dans le sang des Ingrats dont l'audace m'affronte, Il faut de mon ex il aller laver la honte: Et leur faire expier l'oubli de mes bienfaits, Par un long souvenir des maux que j'autai faits, À LRIN Oui, si Rome n'obtient la paix qu'elle demande, À vos efforts, Seigneur, il faut qu'elle se tende: Mais si pour se défendre elle manque de bras, Croyez-vous que les Dieux ne la défendent pas?",
+          "il veut vous obéir sans feinte, Madame: mais craignant qu'on ne zvi vût ses pas, Du bruit de son départ amusant les soldats, Il a pris loin de Rome une route secrète, Et va chez les Veïens chercher une retraite: D'où bientôt sans péril achevant ses desseins, Il prétend avec vous se rejoindre aux Romains.",
+          "Et toutes vos rigueurs me donnent peu d'effroi, Si vous ne pouvez plus être cruel qu'à moi. \nAUFIDE\n Ah! de quelque façon que votre orgueil me nomme, Vous verrez qui personne suis sur les cendres de Rome Si contre-elle autrefois mes cffurts furent vains, Je n'avais point alors à punir vez dédains.",
+          "Il est certain que ce fût dans la même année, et sous les mêmes Consuls qui gouvernaient Rome durant le Siège: et depuis cette mort jusqu'à la fin de l'année il se passa tant de choses, qu'il faut croire que la mort de Coriolan suivit de bien pres son retour au pays des Volsques.",
+          "Nous nous flattions tandis qu'il aimait parmi nout Que son amour pourrait balancer son courroux: Mais enfin vos appas engageant ce grand homme, Rompent le seul lien qui l'attachait à Rome Nous perdons tout espoir de détourner ses coups, Et Rome est à vos pieds, si son cœur est à vous."
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "France",
+        "Tibre",
+        "Candie",
+        "Rhin"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Rotrou, Jean de",
+    "title": "Iphygénie , tragédie de Mr de Rotrou,...",
+    "publication_date": "1641",
+    "document_id": "bpt6k5789985w"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "AGAMEMNON",
+          "frequency": 22
+        },
+        "related_sentences": [
+          "Non, non, il est aux Grecs un trop solide appui, Espérons mieux pour nous, et augeons mieux de lui S'il faut encore Élitre avec Iphygénie, meUoruiguone panquupauuocy quu nous l'adente, Tous doivent tout pour lui, seul il doit tout pourtous, Tout notre sang est sien, tout le sien est à nous. \nAGAMEMNON\n J'avais sans ce discours assez de connaissance, De l'adresse d'Unisse et de son éloquence: Mais il éprouverait en un pareil ennui, Que le sang est encor plus éloquent que lui, Puis, qu'il faut de Diane accomplir la requête, Prépares le bûcher votre victime est prête, Mais faites s'ilse peut et prieZ en cachette, Que ce funeste bruit ne se répande pas, Et soit toujours l'effet ignoré de la Reine, Sa peine me serait une seconde peine.",
+          "Tu l'oieras, allons un peu plus loin: Deesse du repos, noire mère des ombres, Ô nuit rends si tu peux ces lieux encor plus sombres, Et de peur que quelqu'un n'adresse ici ses pas, Du moindre de tes feux ne nous éclaire pas, \nAMYNTAS\n Ce doit être, grand Prince, une affaire importante, Qui vous ait si matintiré de votre tente, Tout votre camp repose, et de tant d'yeux divers, Le sommeil n'a laissé que les vôtres ouverts. \nAGAMEMNON\n Heureuse ta fortune, heureuse ta vieillesse, Qu'aucun danger ne suit, et qu'aucun soing ne DEI2.",
+          "Assurez-vous d' homme et discret et fidèle, Que son propre intérêt n'a jamais assailly, Et dont la probité n'a point encor failly, Je fus un des présents de Tyndare a sa fille, Quand ce jeune Soleil, l'honneur de sa famille, Et pour l'heur de la Grèce, et pour votre repos, Vous vint de Laconie éclairer en Argos \nAGAMEMNON\n Et dans ma Cour depuis, j'ai su quelle créancel, T'acquit en son esprit ton âgé, et tà prudence.",
+          "RAND Prince, que le ciel ne peut sans jaA lousie, Voir si craint et si prêt de foudroyer l'Asie, Dieu futur de la Grèce, ami de tant de Rois, Ol ont sous vos drapeaux signaler leurs exploits: Oyez ce Messager avec ce grand courage, Qui vous fit en Migupouit jui voyage, Et que ce noble cœur qu'enferme votre sein, Soit tel pour le succès qu'il fut pour le dessein. \nAGAMEMNON\n Ha!",
+          "L.  \nAGAMEMNON\n Prend garde ou le chemin se pourra diviser, À choisir le plus sûr et ne pas t'abuser, Si de loin quelque train ou quelque char se montre Voy quelle route il tient, et va à sa rencontre, Si ma fille est dedans détournes-en le cours, Arège son chemin pour prolonger ses jours, C'est le plus digne soin que je te puis commettre: Garde -moi ce cachet co fermes-en ma lettre."
+        ]
+      },
+      "top_5_persons": [
+        "AGAMEMNON",
+        "Achille",
+        "AMYNTAS",
+        "CALCHAS",
+        "ACHILLE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Troie",
+          "frequency": 22
+        },
+        "related_sentences": [
+          "Il devait aux rivaux, jaloux de son bon heur, Pour se voir bien venge souhaiter cet honneur, À peine il s'est rangé sous cet Hymen funeste, Que le juge mortel du différent celeste, Par qui fut adiugé le prix de la beauté, (Si ce que l'on en dit est une vérité En superbe appareil brillant d'or et de soie, Vient faire montre aux Grecs des richesses de Troie, Il va chez Menelas voir cet objet charmant, Et de son hôte enfin devenu son Amant, Résout de t'emener e sans peaucoup de peine Se declare, lui plaît, lui plaie, lemmeine' AMTAS.",
+          "Comme celui de tous dont le Zèle et l'adresse, Deuait porter plus loin de intérêt de la Grèce, Et qui doit embrasser avec plus d'ardeur, Le pénible travail qui soutient sa grandeur, S'il s'expose sans crainte et s'il porte avec joie, Tout ce qu'il a de sang à labreche de Troie, Qu'à-il de précieux qu'il ne doive exposer, Et quel plus digne sangnous peut-il refuser: Diane pour les Grecs ont demande sa fille: Mais que mille sont les Grecs, sont-il pas sa famille:",
+          "Oui pour votre regard, et son propre intérêt, Mais Diane elle-même en a donné l'arrêt, Et chacun y souscrit comme à la seule voie, Qu'elle a marqué aux Grecs pour arriver à Troie Ce triste sacrifice est l'hymen spécieux, Dont il vous a mandé qu'on traitait en ces lieux, miconuporuicie, corgucumuruprument à sa perte, Puis que de votre nom l'embûche était couverte, ue puote prurtuvequi,umoit le dessein, Qui doit au lieu de vous mettre un fer en son sein.",
+          "Par tout où la raison réglera la puissance, On pourra s'assurer de mon obéissance: Ou ici verrai manquercette condition, La manquera mon Zèle et masousmission, La raison est le chef qui ma conduit à Troie, Bien plus qu'Agamemnon c'est elle qui m'emploie, Et ce bras tout ardent et tout bannant qu'il est Est a foudre immobile ou la raison se taît, Arrêtez, donc le cours de ce torrent de larmes.",
+          "De ce meurtre le Roi rétractera l'envie, Et d'autres que sa fille y laisseront la vie, Par tout un suis Achille et le fer s'il le faut, N'attendra pas à Troie à montrer ce qu'il vaut: Quiconque de ce bras voudra forcer l'asile, À sa honte apprendra quel est le bras d'Achille, Et ne publira pas que de la main des Dieux, Le tonnerre lance tombe plus furieux."
+        ]
+      },
+      "top_5_places": [
+        "Troie",
+        "Grèce",
+        "Argos",
+        "Paris",
+        "PARIS"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

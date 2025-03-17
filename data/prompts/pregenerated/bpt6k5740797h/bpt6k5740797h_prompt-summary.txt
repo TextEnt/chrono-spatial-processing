@@ -1,0 +1,77 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Prade, Jean Le Royer",
+    "title": "Arsace, roi des Parthes , tragédie. De M. de Prade. Représentée par la troupe du Roy",
+    "publication_date": "1666",
+    "document_id": "bpt6k5740797h"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Arsace",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "ARSACE\n Le refus de sa main et celui de l'Empire Quoi que vous en croyez vous en fera dédite, Soyez mon interprète, et faites lui savoir, Que pour m'acquitter mieux, je veux moins tu devoir: Mais allons consultet toute nostte prudence, Pour couut ce refus d'une belle apparence, Et joignons à ce coup tant d'afait et de douceur, Qu'il puisse chang porté de la main d'une sœur.",
+          "ARSACE\n N veut que le combat montre nostre innocences CMais, si vous m'e croyez, tous deux prêts à périt, Avant que de combattre on nous verra mourir, Un peut faire verser et mon sang et le vôtre, Mais non pas nous contraindte à périr l'un par l'autre, Cat nos mains qu'on destine à cette cruauté Relèvent seulement de notre volonté;",
+          "t ne pouvant m'aimer sans perdre un Diadême. \nARSACE\n Ç'ai prévu cette crainte, et vous viens témoigner déce impre qu'auce pous quiedandeicuer, ambition ne peut commander à ma flamme, t mon plus cher Empire est celui de votre âme: ais le Sceptre d'ailleuts étant tel en effet, peine on consent au refus on en fait.",
+          "Mais Aisace m'offrant de ne combattre pas, À ma priète aussi mettez les atmes bas, D'un et d'autre côté mon fort serait à plaindre, J'autais pour mon supplice également à craindre Que vaincu par Arsace, ou d'Atsace vainqueur, Mon Amant n'y petit, ou n'épousât ma sœur.",
+          "Et veux tout avouer de peur de vous confondre, J'évitai mon trépas qui vous eut fait périr: Mais pour vous conserver ainsi suis prêt à mourir. \nARSACE\n Certes je suis surpris, cette impudence extrême Me pourrait faire entrer en soubon de moi"
+        ]
+      },
+      "top_5_persons": [
+        "Arsace",
+        "Arsace",
+        "Sceptre",
+        "Seigneur",
+        "M"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "PARIS",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "À PARIS, Chez THEODORE GIRARD, dans la grand Salle du Palais, à l'Enuie."
+        ]
+      },
+      "top_5_places": [
+        "PARIS",
+        "Montauban",
+        "Perse",
+        "France",
+        "Rome"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Monsieur de Pourceaugnac, comédie faite à Chambord pour le divertissement du Roy, par J. B. P. Molière",
+    "publication_date": "1670",
+    "document_id": "bpt6k1280556z"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "M",
+          "frequency": 20
+        },
+        "related_sentences": [
+          "M\n \nPOURCEAUGNAC\n Croyez-vous, Monneur Olonte, que les Limosins soient des sots? \nORONTE\n Croyez-vous, Monsieur de Pourceaugnac, que les Parisiens soient des bêtes? \nM\n \nPOURCEAUGNAC\n Vous imaginez-vous, Monsieur Oronte, qu'un Homme comme moi loit n'anme de femme? \nORONTE\n Vous imaginez-vous, Monsieur de Pourceaugnac, qu'une Fille comme la mienne soit si affamée de Mari?",
+          "ERASTE\n Voilà toujours six Pistoles d'avance, en attendant ce que j'ai promis. \nM\n \nPOURCEAUGNAC\n Non, s'il vous plaît, je n'entends pas que vous fassiez de dépense, et que vous entais len sien âcheter pour moi. \nERASTE\n Mon Dieu, laissez faire, ce n'est pas pour te que vous pensez. \nM\n POUR \nM\n \nPOURCEAUGNAC\n ",
+          "Et comme je sais que vous n'êtes jamais venu en ce Pays, et que vous y êtes tout neuf, je suis bienaise de vous avoir trouvé pour vous offrir mon service à cette arrivée, et vous aider à vous conduire parmi ce Peuple, qui n'a pas parfois pour les honnêtes Gens toute la considération qu'il faudrait. \nM\n \nPOURCEAUGNAC\n ",
+          "niaut bien pou parser amn, que vous ayez étudié la Pratique. \nM\n \nPOURCEAUGNAC\n Point, ce n'est que le sens commun qui me fait juger que je serai toujours reçu à mes Faits justificatifs, et qu'on ne me saurait condamner sur une simple accusation, sans un recollement et confronsation",
+          "Ho, ho, quelle égrillarde! \nORONTE\n Je voudrais bien, dis-je, Seigneur par quelle raison, s'il vous plaît, vous avez la hardiesse de. \nM\n \nPOURCEAUGNAC\n Vertu de mavie: \nRONTE\n Encor, qu'est-ce à dire cela? ULIE."
+        ]
+      },
+      "top_5_persons": [
+        "M",
+        "Nerine",
+        "Monsieur de Pourceaugnac",
+        "LUCETTE",
+        "SCE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "SUISSE",
+          "frequency": 20
+        },
+        "related_sentences": [
+          "SUISSE\n À Llons dépêchons, Camerade, li faut allair tout deux nous à la Crève pour regarter un peu chouticier sti Monsieur de Pourcegnac qui l'a été contané par Ortonnance à l'être pendu par son cou.",
+          "SUISSE\n Ly disent que l'on fait téjà planter un grand potence tout neuve pour li acrocher sti Porcegnac 2.",
+          "2. \nSUISSE\n L'est un Gentilhoume Limossin qui sera pendu chantiment à un grand potence.",
+          "2. \nSUISSE\n Ly faut nous loer un fenêtre pour soir sti Chouitie 1. \n",
+          "SUISSE\n Li sira, ma foi, un grand plaisir, dis régarter pendre sti Limosin."
+        ]
+      },
+      "top_5_places": [
+        "SUISSE",
+        "Limoges",
+        "Paris",
+        "Naples",
+        "Louvre"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

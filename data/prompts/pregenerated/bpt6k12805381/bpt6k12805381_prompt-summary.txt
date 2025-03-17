@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "L'Avare, comedie. Par J. B. P. Moliere",
+    "publication_date": "1669",
+    "document_id": "bpt6k12805381"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Cléante",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "et il m'a témoigné que ce sont vos emportements qui l'ont mis en colère; qu'il n'en veut seulement qu'à votre manière d'agir, et qu'il sera Poit divre à vous atcorder ce que vous souhaitez, pourvu que vous vouliez vous y prendre par la douceur, et et rendre les déférences, les respects, et les soumissons qu'un Fils doit à son Père. \nCLÉANTE\n Ah, Maître Iaques, tu lui -même assurer, que s'il m'accorde Mariane, il me verra toujours le plus plus soumis de tous les Hommes;",
+          "et parmi mes Confrères, que je vois se mêler de beaucoup de petits commerces, toujours sais tirer adroitement mon épingli du jeu, et me démêler prudemment de toutes les galanteries qui sentent tant soit peu l'échelle: mais, à vous dire vrai, il me donnerait par ses procédez, des tent ations de le voiet, et été croirais, croirais, en le volant, faire une action méritoire. \nCLÉANTE\n Donne-moi un peu ce Mémoire, que .",
+          "On ne veut point du tout dire son nom, et l'on doit aujourd'hui l'aboucher avec vous, dans une Maison empruntée, pour ense miuit, par -voitle pouene, se vôtre bien, et de vôtre Famille, et ie ne doute point que le seul nom de vôtre Pere ne rende les choses faciles. \nCLÉANTE\n Et principalement notre Mère étant morte, dont on ne peut m'ôter le bien.",
+          "Mais si vous souhaitez que ici perde le souvenir de votre dernière fredeine, je vous recommande, sur tout, de régaler d'un bon visage cette Personne-là, et de lui faire enfin tout le meilleur accueil qu'il vous sera possible. \nCLÉANTE\n À vous dire le vrai, mon Père, je ne puis pas vous promettre d'être bien-aise qu'elle devienne ma Belle Mère.",
+          "Je vous prie de m'excuser, ma belle, si ici n'ai pas songé à vous donner un peu de colation avant que de partir. \nCLÉANTE\n J'y ai pourvu, mon Père, et j'ai fait apporter ici quelqees pamns d'Orangre de la Chine, Chine, de Citrons doux, et de Confitures, que j'ai envoyé quérir de votre part."
+        ]
+      },
+      "top_5_persons": [
+        "Cléante",
+        "M",
+        "JACQUES",
+        "Élise",
+        "FLÈCHE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Naples",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "que j'ai vu pour ma vie, à retourner à Naples, m'a fait y renoncer pour toujours, et ayant su trouver moyen d'y faire vendre ce que ravais, Seigneur me suis habitué ici, où sous le nom d'Anselme m'ai voulu m'éloigner les chagrins de cet autre nom qui m'a causé tant de traverses.",
+          "Après dix ans d'esclauage une heureuse fortune nous rendit notre liberté, et nous retournâmes dans Naples où nous trouvâmes tout nôtre bien vendu, sans y pouvoir trouver des nouvelles de notre Père.",
+          "Sachez que j'ai le cœur trop bon, pour me parer de quelque chose qui ne soit point à moi, et que tout Naples peut rendre témoignage de ma naissance.",
+          "et vous parlez devant un Homme à qui tout Naples est connu, et qui peut aisément voir cian daus lrintone que vout lelcue VALÈRE, en mettant fièrement son Chapeau.",
+          "et si Naples vous est connu, vous savez qui était D \nThomas d'Alburci\n ANSELME."
+        ]
+      },
+      "top_5_places": [
+        "Naples",
+        "Rome",
+        "Paris",
+        "Chine",
+        "France"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

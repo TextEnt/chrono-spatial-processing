@@ -1,0 +1,80 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "L'Amour medecin, comedie, Par J. B. P. Moliere",
+    "publication_date": "1666",
+    "document_id": "bpt6k1280467d"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "LYSETTE",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Est-ce que les Médecins font mourir? \nLYSETTE\n Sans doute: et j'ai connu un homme qui prouvait, par bonnes raisons, qu'il ne faut jamais dire une telle personne est morte d'une fièvre et d'une fluxion sur la poitrine: mais elle est morte de quatre Médecins, et de deux Apothicaires.",
+          "LUCINDE\n Hé bien, Lysette, j'avais tort de cacher mon déplaisir, et notre n'avais qu'à parler, pour avoir tout ce que sans souhaitais de mon père: tu le vois. \nLYSETTE\n Par ma foi, voilà un vilain homme,",
+          "Hypocrate dit, que ces sortes de maladies ne se terminent qu'au quatorze, ou au vingt-un, et il n'y a que six jours qu'il est tombé malade. \nLYSETTE\n Hypocrate dira ce qu'il lui plaira;",
+          "Ah, ma fille! \nLYSETTE\n À force de la tourmenter ici l'ai fait revenir: mais cela y reprend de moment en moment, et ainsi crois qu'elle ne B ij Umera pue lu dunec.",
+          "Comment, le mariage; \nLYSETTE\n Ma foi, Monsieur, la Becasse est bridée, et vous avez cru faire un jeu, qui demeure une vérité."
+        ]
+      },
+      "top_5_persons": [
+        "LYSETTE",
+        "M",
+        "SGANARELLE",
+        "Seigneur",
+        "Seigneur"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Ledit Sieur Molière a cédé, quitté, et transporté son droit de Privilège à Pierre Trebouillet, Nicolas le Gras, et Théodore Girard Marchands Libraires à Paris pour en jouir, ainsi qu'il est porté par lesdites Lettres de Privilège, suivant l'accord fait entr'eux.",
+          "Registré sur le Livre de Communaute des Imprimeurs, Marchands Libraires de Paris, le 4 Janvier 1666",
+          "JAR grâce et Privilège du A Roi, donné à Paris, le 30.",
+          "La Scène est à Paris dans une Salle de la maison de Séganarelle PROLOGUE."
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Rome",
+        "PARIS",
+        "Champagne",
+        "Faubourg"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

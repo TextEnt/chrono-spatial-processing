@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Rotrou, Jean de",
+    "title": "La pelerine amoureuse, tragi-comedie de Rotrou.",
+    "publication_date": "1637",
+    "document_id": "btv1b8622111v"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ERASME",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Q Z a pâli ERASME N ne peut sans horreur voir ses dérèglements, Son geste, et ses discours changent à tous moments, Tantôt l'esprit remis, l'œil riant, la voix saine, Elle dément nos yeux, rit de nous voir en peine, Et niant ses discours sçayt si bien contester Qu'elle met les plus sains aux termes d'en douter: Mais que ces bons momens sont de peu de durée, instant faict reuoir sa raison altérée, Lors son geste confus et l'horreur de ses cris De crainte, et de pitié saisissent les esprits, -Ô- A la voir ardent, les cheueux en désordre Tordre tantôt bras, et tantôt le détordre, Se accourcir le corps, meurtrir son sein de coups, Et sauter furieuse la face de tous, Un homme est bien barbare et bien Mai, Si la que ces lui treuue ons môme insensible, Sont De, peu de ma dure, Si Un In peut fait revoir sa raison, Ses",
+          "Uiuons où Jon pouvoir m'a voulu destiner Il commença mon cours, et le doit terminer, Vous qui vous opposez à cette loi fatale Et trouvez du désordre en ma course inégale, Essayés une fois ces glorieux travaux, Et vous mêlés de l'art de régir mes chevaux, Hu em tonu ronoue yvu juisons perverties Ces costaux désolés, et ces plaines rôties Mais, où parlai-je, ou fuis-je, ou fuis-ce que ie voy? \nERASME\n Ô malheur de mes jours!",
+          "ERASME\n Un Seigneur de renom A commun homme même son dessein, et son nom, Mais son espoir est vain, et Celie est acquise A ce rival subtil même avant que promise, Son adresse est fatale aux vœux de ses rivaux, Il s'est donné déjà le fruit de ses travaux, Et la nécessité de conjoindre leurs âmes Laisse le change libre au sujet de vos flammes, Si votre bien dépend de cet heureux vainqueur",
+          "ERASME\n L'assurer que j'ai la Médecine, Qui peut guérir Celie, et que sa charité S'est acquise sur moi beaucoup d'autorité, Mais que sans juge en l'air sur cette incertitudé Lucidor, qu'elle traite avec ingratitude Qu'elle ne peut souffrir, et qui s'est toujours plaint De la voir insensible autant qu'il est atteint, Est-il est intelligence avec cette ruse?",
+          "Et le Ciet me te rend en cet heureux séjour, \nERASME\n Ô divin changement! \nCELIANTE\n Accordez cette belle Aux sainte passions d'un amant si fidèle, C'est lui, n'en doutés plus, et sa condition Le rend digne ma sœur de son ambition, Ses biens, et son mérite égalent sa naissance, Et son chaste dessein, répare son offense."
+        ]
+      },
+      "top_5_persons": [
+        "ERASME",
+        "Celie",
+        "Lucidor",
+        "Léandre",
+        "Fidan"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Florence",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Et ainsi n'emprunte rien d'une vaine apparence, leonis est mon père, et le Prince du jour A fait de ses maïsons vingt fois le rés te, Depuis que dans Bizance un rigoureux servage Exerce ma constance, et consomme mon âge, Enfin, et mon courage, et ma fidélité Ont fait au grand Seigneur signer ma liberté, J'ai voulu voir Florence, où les yeux de Madame Ont été les auteurs de ma pudique flamme, Et la peine que j'eus de la voir librement Ma depuis faict résart a tt tueguifement.",
+          "Sous un prétexte saint, on suivie, dans ce voyage Les violents efforts d'une amoureuse rage, Florence doit borner ou combler mes malheurs Et ainsi trouve en ce lieu le sujet de mes pleurs, Lucidor, cet ingrat, qui réclame mon aide Luy même m'a blessée et me doit du remède, Je vivais à Lion dans les plus doux plaisirs Que possse un esprit qui manque de désirs, Mes sens, et ma raison, sous une loi commune",
+          ", illustre de naissance, Dont les plus beaux esprits vantent la cognoissan Qui se fait renommer sans espoir d'intérêts, Et dont la charité débite les secrets, Mais il faut au plustost consulter sa science, Car on dit que demain, elle part de Florence, Dorise est son hôtesse; \nERASME\n Ô",
+          "Adieu qu'il vive heureux: ainsi mon espérance En un même moment naît, et meurt dans Florence, Ainsi le désespoir, les pleurs, et le tourment Me restent pour faveurs de ce perfide amant, Célie aime ce traître et cette âme rusée",
+          ", Vous passez en bonheur les amours de Florence, Celie est en état de n'à vous mat de vous."
+        ]
+      },
+      "top_5_places": [
+        "Florence",
+        "Lyon",
+        "Paris",
+        "Pô",
+        "Cythère"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

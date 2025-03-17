@@ -1,0 +1,75 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Fontenelle, Bernard de",
+    "title": "Bellérophon, tragédie, représentée par l'Académie royale de musique",
+    "publication_date": "1679",
+    "document_id": "bpt6k63632073"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Bellerophon",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Bellerophon fond une seconde fois sur la Chimère, au milieu du Théâtre, et après qu'il a disparu un moment en s'élevant sur le Cintre, il paraît pour la troisième fois, descend sur le devant du Théâtre, attaque de nouveau la Chimère, la blesse à mort, et se sauve en lair, faisant son vol en rond, et après trois tours, on le voit se perdre dans les nues.",
+          "BELLEROPHON\n Non, non, quoi qu'il ait ordonné, On ne verra jamais que mon amour s'éteigne, Je n'examine point ce qu'il faut que je craigne De v'Oracie sayat qui vient aêtre donne.",
+          "Les deux Dégrés et les Galleries qui les environnent, sont remplis des Peuples de la Lycie assemblés en ce lieu pour y recevoir Bellerophon que Pallas doit ramener après la défaite de la Chimère SCÈNE PREMIÈRE.",
+          "BELLEROPHON\n Ce Dieu qui chérit la Lycie Dans ses malheurs voudra la secourir, Et l'encens qu'en ces lieux vous a vez offrir Rendra du Ciel la colère adoucie.",
+          "Mais cet Oracle est éclairci, Bellerophon est le Fils de Neptune Pour nous le déclarer, dans son Temple, à nos yeux, Ce Dieu des Mers vient de paraître;"
+        ]
+      },
+      "top_5_persons": [
+        "Bellerophon",
+        "Bellerophon",
+        "PHILONOE",
+        "BACCHUS",
+        "Apollon"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Hélicon",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Le Théâtre représente une agréable Vallée, en forme de Costeaux délicieux, au fond desquels paront le Mont rarllane à doubie ionimet, et entre les deux, la Source de la Fontained'Hélicon"
+        ]
+      },
+      "top_5_places": [
+        "Hélicon",
+        "France",
+        "Argos"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

@@ -1,0 +1,79 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Dancourt",
+    "title": "Le mari retrouvé . Comédie",
+    "publication_date": "1698",
+    "document_id": "bpt6k5817834x"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "LEPINE",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "qu'il est amoureux de la fille d'un Cabaretier; qu'il y a trois ans que cet amour-là lui trotte dans la cervelle, yy queconiuioulauuo pom Mladame Julienne, et que Madame Julienne ne l'ime point, il a trouvé à propos de devenir veuf, sans qu'il mourst personne, et de se remarier en survivance, \nLEPINE\n Cela est fort commode: mais le Meûnier est fort indisèret. \n",
+          "et pour vous faire voir qu'on ne vous craint guères, c'est que je veux btu voue urotth que mou lauseto vouse aujouta d'hui Colette entendez-vous? \nCHARLOT\n Il épouse aujourd'hui Colette, Monsieur de Lépeine \nLÉSINE\n Qui, vous dis -je. \nCHARLOT\n Et il l'épouse en vrai mariage? \nLEPINE\n En vrai mariage.",
+          "LEPINE Oui, oui, vous avez raison, un secret est bien entre vos mains, Madame Agathe \nM AGATHE\n Oh, je ne manque ni de discrétion, ni de jugement, n de conanitor ve vous dis adieu, Monsieut le Lépine MENETI 7Oilà un inident qui change la situation de ynos affaires;",
+          "et si parmi tout ça charchez-moi une bonne femme, vous n'en trouverez morgué pas tant seulement la queue d'une. \nLEPINE\n Vous êtes prévenu contre le sexe, Monsieur Junen jar pourtant ourdne qu'a Iscmours j'y avoive d'assez bonne pâte de filles, et qui promettaient.",
+          ", je gagnez \nJULIENNE\n Vous irez cela, Monsieur de Lépeine \nLEPINE\n Oui, vous vous êtes si mal trouvée de ce mari-là. \nJULIENNE\n Ile voniont, ce serait pour être mieux, que je voudrais en prendre un autre."
+        ]
+      },
+      "top_5_persons": [
+        "LEPINE",
+        "CHARLOT",
+        "JULIENNE",
+        "JULIEN",
+        "COLETTE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "De deux Meûniers, et de deux Meûnieres. \nMe AGATHE\n Les maris qu'on voit parmi nous Sont marchandise bien mêlée, Pour bien faire, il faudrait les noyer presque tous Et la France, saute d'époux, N'en serait pas moins peuplée.",
+          "Source gal ale de France \nCOLETTE\n Parle, parle, je ne te crains point: quand noua jouions à la Cleumisette que veux-tu dire? \nCHARLOT\n On nous trouvait tous deux dans la même cacne.",
+          "fr ( Biblic ale de France CHARLOT",
+          "de nationale de France SCÈNE XVIII."
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Montargis",
+        "LEPINE",
+        "Nemours"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

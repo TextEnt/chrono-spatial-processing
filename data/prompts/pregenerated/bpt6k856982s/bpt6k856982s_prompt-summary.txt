@@ -1,0 +1,79 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Olry de Loriande, Claude",
+    "title": "Le Heros tres-chrestien dedié a son altesse de Turenne . Par le Sieur Olry de Loriande, ingenieur du Roy.",
+    "publication_date": "1669",
+    "document_id": "bpt6k856982s"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "MAXIME",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "C'est moi qui se présente en ce malheur extrême Pour sauver cet État qui par sur tout vous aime: J'entreprend de combattre et monstres et malheurs, de dimbrer lon sang à vos vives douleurs, Et vous faire connaître en dépit des Oracles, Que ce bras peut encor de plus puissants miraeles. \nMAXIME\n Si les Dieux sont sans cœur et sans ressentiment, Et que ce monstre soit un conte seulement, Je crois bien que ce bras pourra sauver la Reine, De ce monstre qui fait le sujet de sa peine;",
+          "Je tiens qu'il faut braver tous ces ressentiments Et montrer à vos Dieux que c'est avec justice Qu'on vous a destiné l'honneur du sacrifice: Que tout cet Univers doit fléchir devaut vous, me que e ert lans janon qu' s s en rendet jaloux \nMAXIME\n Seigneur, vous donnez trop au feu qui vous consomme, node rouien lane ley toue de memme qu'a Rome, Quand Diocletian, le peuple et le Sénat.",
+          "Et puis que pour ce mal il est quelque remède, Je consens que ce bras à qui la crainte cède, Combatte hardiment le montre et sa fureur, Et qu'en le surmontant il gagne aussi mon cœur, cous promettat, Seigneur, qu'il sera la conquête De celui qui pourra m'en apporter la tête. \nMAXIME\n ",
+          "OVoyent Sébaste au dessus de leurs divinités, nont a leur malheur conu que ce grand homme Est aussi brave ici comme il l'était à Rome \nMAXIME\n Aussi ici suis venu trouver sa Majesté Pour le féliciter de l'avoir surmonté;",
+          "Vous avez tout, Seigneur, mais moi j'aspire à plaire, Et quand d'une pur aiour vi cœur ert enflammé, Tous scrupules sont vains pour un objet aimé. \nMAXIME\n Toujours braver les Dreux SÉBASTE."
+        ]
+      },
+      "top_5_persons": [
+        "MAXIME",
+        "Sébaste",
+        "MAXIME",
+        "Léonce",
+        "Venus"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Je tiens qu'il faut braver tous ces ressentiments Et montrer à vos Dieux que c'est avec justice Qu'on vous a destiné l'honneur du sacrifice: Que tout cet Univers doit fléchir devaut vous, me que e ert lans janon qu' s s en rendet jaloux \nMAXIME\n Seigneur, vous donnez trop au feu qui vous consomme, node rouien lane ley toue de memme qu'a Rome, Quand Diocletian, le peuple et le Sénat.",
+          "Oui Sebaste, qui fait le destin des combats, Qui détruit ou relève à son gré les États: À qui tout Rome doit le comble de sa gloire, Par qui seul elle obtient victoire sur victoire: Tout redouté qu'il est tout chargé de lauriers, Et l'arbitre du sort des plus vaillants Guerriers, Vient pour me consacrer son bras et son épée.",
+          "OVoyent Sébaste au dessus de leurs divinités, nont a leur malheur conu que ce grand homme Est aussi brave ici comme il l'était à Rome \nMAXIME\n Aussi ici suis venu trouver sa Majesté Pour le féliciter de l'avoir surmonté;"
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Paris",
+        "Grèce",
+        "Amazone",
+        "Dreux"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

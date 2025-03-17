@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Brinon de Beaumartin, Pierre de",
+    "title": "La tragédie des rebelles, où sont les noms feints",
+    "publication_date": "1622",
+    "document_id": "bpt6k57342347"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "CLORIS",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Il me souvient que l'an passé encor, Quand mon Louis sacre fils de Hector, Voulut entrer dedans toutes ses villes, Cette Révolte en finesle subtille: Lui dénia l'entre en plusieurs lieux: Mais c'est en vain: épar tout victorieux, Il a réduit à soi plus de cent places, Qui ont plie et perdu leurs audaces. \nCloris\n Mais c'est assez il se faut réjouir Et de ce fruit heureusement jouir, Je vous promets que tandis que ce Prince Et sa Cypris régit ont ma Province, Et que le Ciel me fera ce bon heur, De voir toujours son courage vainqueur, Que l'âge d'or et la paix assurée Lo uscroncley é Olenguocase ACTE, III.",
+          "Cloris\n Nenni ma sœur j'étais dans les forêts De la grand Crête ou un portais les rets De ma Diane et treschere compagne, Qui s'en allait au haut de la montagne, Grosse de darts pour delascher son coup, Sur quelque tigre ou bien sur quelque loup: Depuis j'allai aux fêtes solennelle, Qui se consacre à l'antique Cybelle, Ou tous les Dieux s'assemblent tous les ans À la façon des anciens Coribants, Ce qui causa que quittant la contrée De nos Français Seigneur ne vis point l'entre à ce grand Roi et de ce beau Soleil Qui réjouit vôtre cœur de son œil: N'a soutenu",
+          "An II\n acte on verra la France et la ville de Paris sous le nom de deux Nymphes, savoir est, de Dotis et Cloris se bienveigner par ensemble et s'entretenir, tant du retour du Roi à Paris l'hiver passé, que de son nouveau acheminement et de l'heureux succès de son voyage.",
+          "Trouver repos qu'avec le Roi de France C'est mon Aaile ou ainsi veux désormais Vivre tranquille et demeuret en paix, ÀOTE, V. DORIS, ET CLORIS Déris.",
+          "CLORIS\n la Tragédie."
+        ]
+      },
+      "top_5_persons": [
+        "CLORIS",
+        "Palemon",
+        "AMILCAR",
+        "Mars",
+        "Hecate"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "les cris de tes enfants Ouvre aureille à nos tristes complaintes, Et des haut Cieux favorises nos plaintes: Tu vois Seigneur, notre Roi généreux, Aller aux coups d'un esprit valeureux, Tu vois la France empourpre et sanglante, Guide son bras et la dextre puissante, De ce grand Prince afin qu'un même Autel Aille adorant ton saint nom immortel, Conduis les pas de ce jeune Monarque, Fais qu'il engrave une immortelle marque, De ion courage et de son grand renom Sur les fauteurs de la rébellion:",
+          "An II\n acte on verra la France et la ville de Paris sous le nom de deux Nymphes, savoir est, de Dotis et Cloris se bienveigner par ensemble et s'entretenir, tant du retour du Roi à Paris l'hiver passé, que de son nouveau acheminement et de l'heureux succès de son voyage.",
+          "Cent et cent fois sur les troupes de France, Pour abollir sa gloire et sa puissance.",
+          "Car en toi seul repose l'espérance Que nous avons pour le bien de la France Déris.",
+          "J'ai toujours vu tout ce peuple mutin, Haïr la France et son heureux destin:"
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Rochelle",
+        "Tours",
+        "PARIS",
+        "Rochelle"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

@@ -1,0 +1,79 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Gilbert, Gabriel",
+    "title": "Opéra pastorale héroique, des peines et des plaisirs de l'amour, en vers lyriques",
+    "publication_date": "1672",
+    "document_id": "bpt6k1090260m"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Climène",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Pleurés ses fidèles Compagnes, Pleurez Amour, pleurez Venus, Climène ne vit plus. \nAPOLLON\n Si l'amour d'un mortel essayant l'impossible A sur son luth plaintif rendu la mort sensible Destin, écoutez à son tour Le Soleil qui languit, pâlit et meurt d'amour, I. PRÊTRESSE.",
+          "Apollon est incomparable Et Climène adorable. \nAPOLLON\n Avant que de donner le prix que je prépare En faveur d'un objet si rare, Pour me mettre en repos Je veux que de Climène on emporte l'Image en l'Île de Dolos Deux petits AMOURS.",
+          "Pour finir ce beau jour en l'honneur de Climène Que tous les habitants des monts et de la plaine, Des Bois et des Vergers, Satyres, Bergères, Bergers, Viennent se réjouir de la revoir vivante Et dansent devant elle une danse galante.",
+          "Favorisé d'Amour Et chéri de Climène, Je ne me flattais pas d'une espérance vaine, J'étais Roi, j'étais Dieu, l'on m'aimait ardienment Et je ne suis plus rien qu'un malheureux Amant.",
+          "LA blessure n'est pas légère Que m'a fait la Bergère Climène me causait cette mène langueur Elle a son air, son port, elle a sa voix charmante, La Morte et la Vivante Ont partagé mon cœur."
+        ]
+      },
+      "top_5_persons": [
+        "Climène",
+        "Apollon",
+        "APOLLON",
+        "VENUS",
+        "Venus"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Mais bien que ces pièces de Théâtre aient été admirées de toute la France, et des Nations étrangères: je ne puis m'empêcher de dire que la Musique est une beauté essencielle qui leur manque, et qui est le plus grand cimmem otubvène.",
+          "Je ne puis l'adresser à personne plus justement qu'à vous, MONSEIGNEUR, qui prenez le soin sous les ordres du Roi, de faire fleurir en France les Sciences et les Arts.",
+          "Apollon dans la France m'amène Ô Le Soleil des Français, Qui dans le champ de Mars soumet tout à ses Lois Et dans un char pompeux en Vainqueur se promène."
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "BERGERES",
+        "Arcadie",
+        "Bergère",
+        "PARIS"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

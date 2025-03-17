@@ -1,0 +1,77 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Puget de La Serre, Jean",
+    "title": "Le nouveau Parnasse ou Les tragédies en prose de monsieur de La Serre, conseiller du Roy en ses conseils, & historiographe de France. Thomas Morus, ou Le triomphe de la foy et de la constance",
+    "publication_date": "1646",
+    "document_id": "bpt6k15106882"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "THOMAS MORUS",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Notre bien amé le Sieur de la Serre, nous a remontré, qu'il a composé un Livre intitulé, Thomas Morus, ou le Triomphe de la Foi et de la Constance, Tragédie en Prose lequel il désirerait faire imprimer, s'il avait nos Lettres sur ce nécessaires, lesquelles il nous a très-humblement supplié de même accorder: ACES CAUSES, Nous avons permis et permettons par ces présentes audit exposant de faire imprimer, vendre et débiter ledit Livre en tous lieux de notre obéissance, par tel Imprimeur ou Libraire qu'il voudra choisir, et en telles marges, en tels caractères, et autant de fois que bon lui semblera, du- même l'espace de cinq ans entiers et accomplis, à compter du jour qu'il sera achevé d'imprimer pour la première fois: Et faisons très-expresses défenses à toutes persournes de quelque qualité ou condition qu'ils soient, d'imprimer, faire imprimer, vendre ni débiter en aucun lieu de notre obéissance",
+          "THOMAS MORUS\n Sire, puisque mon honneur et ma conscience ne relèvent point de votre Majesté, encor que ie sois né son sujet, on prends la liberté de lui représenter qu'on ne peut approuver la résolution qu'elle a prise de prise de Religion, en répudiant la Reine son Épouse, sans violer les Lois sacrées, que le Ciel et la Nature nous ont imposées dès le berçeau.",
+          "Mie vouiez -vous laisser pour héritage, les malheurs et les misères qui vous suivront dans le Tombeau? \nTHOMAS MORUS\n Je vous aime plus que jamais; et pour une nouvelle preuve de mon amour, je vous laisse l'exemple de ma constance, mourant fidèle à Dieu: C'est le plus riche Trésor que je vous puis donner.",
+          "Si vous voulez moben, je vous fendrai ici plus fehe, et le plus grand de mon Royaume. \nTHOMAS MORUS\n Mon obéissance n'est point à prix, où il y va de l'intérêt de mon salut.",
+          "Ne savez -vous pas que celui qui fait les Lois est au dessus d'elles? \nTHOMAS MORUS\n Je sais bien que les hommes qui font les Lois les peuvent violer quandil leur plaît: mais celles de notre Religion"
+        ]
+      },
+      "top_5_persons": [
+        "THOMAS MORUS",
+        "M",
+        "M",
+        "Seigneur",
+        "Vertu"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "V",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "POLEXANDRE\n Je sais bien qu'imiour éit viie flaiadie qui trouble également l'Esprit et les Sens: mais à toute extrémité la jouissance en est le remède: sa conquête ne coûtera à V \nM\n qu'un peu de patience: le temps la lui livrera entre les mains. \nLE\n LE ROY."
+        ]
+      },
+      "top_5_places": [
+        "V",
+        "Rome",
+        "V",
+        "Navarre",
+        "Paris"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

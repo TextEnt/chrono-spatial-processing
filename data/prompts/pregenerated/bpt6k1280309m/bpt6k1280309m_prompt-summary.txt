@@ -1,0 +1,80 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Chevreau, Urbain",
+    "title": "La suitte et le mariage du Cid : tragi-comédie / [par U. Chevreau]",
+    "publication_date": "1638",
+    "document_id": "bpt6k1280309m"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Rodrigue",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Puis qu'on ne trouve point de remède à sa pêne: Tache à me consoler en me voyant périr, Et diminue un mal qu'on ne peut pas guérir: Ne te ressouviens plus de ce malheur funeste, Puis qu'il m'est trop sensible, et qu'il t'est manifeste Pour un cruel tourment qu'on veut dissimuler, Sache que le meilleur est de n'en point parler, Mais tu confesseras que Rodrigue a des charmes, Contre qui la raison n'a pas de fortes armes, Qu'on se défend très mal quand il attaque bien, Qu'on ne voit point d'esprit qui soit semblable au si, Enteil a des qualités à tenter un barbare, Et sa fortune est belle, et sa vertu très -rare. \nELVIRE\n Oui cette vérité se doit bien avouer, Mais vous en pouvez bien parler sans le louer A la Cour, en Castille, ou bien dedans l'armée;",
+          "me fournira d'excuses: Peins moi comme une Hélène, et pour bien mieux agir, Fais un portrait de moi qui mefasse rougir, Entretien bien le Roi du tourment qui me presse, Va le rendre ennemi du beau trait qui meblesse, Perfide, fais d' Un impudique objet, Dis que les infâme, et que j'aime un sujet, Et raconte par tout que dans ma jalousie Mille dereglemens troublent ma fantaisie, Que cette amour me perdez, que je sors de mon rangs Que mon cœur tout brûlé ne respire que sang, Qu'à cause que Chimène empéche et attente' On trépas seulement me doit rendre me, Et denfin cét ren a charmé mes esprits, Mais rien ne peut jamés me porter ' mépris, Ie veux aimer Rodrigue, et malgré ces obstacles.",
+          ": Je sais bien dès long temps qu'elle a donné sa foi, Que je m'en vais trahir, et Rodrigue, et le Roi, Que si le Ciel est juste il faut que je périsse, Que la honte ou la mort doit être mon supplice, Que les plus grands malheurs ne m'abandonnent pas, Et qu'ils suivent par tout, et mon ombre, et mes pas N'importe, il vaut bien mieux même son homicide, Celui qui veut la mort, du moins n'est pas timidé, Et pour cette beauté le trépas est si beau, Qu'un trône à mon âuis à moins que ce tombeau : Mais ije trahis Rodrigue, et le seul nom de traître, Pour cette lé me doit faire connaître.",
+          "Rodrigue cependant instruit le Roi, de la victoire de ses ennemis, qui se propose mille profusions dans son esprit pour la récompense de Rodrigue Chimène croyant son Amant perdu, veut recourir aux dernières extrémités, et dans ce temps même elle voit Rodrigue ce qui la rend si confuse, qu'à pene peut-elle trouver dequoi faire un raisonnement: leur joie est troublée par la nouvelle véritable que leur donne D Arias de la colère du Roi qui avait changé les premiers desseins qu'il avait faits à l'avantage de Rodrigue, à cause des assurances que Leonor lui avait données de l'amour de l'Infante et pour la crainte dont il était prévenu que cette passion apporterait un grand désordre dans son État.",
+          "et se console dans l'espérance que lui donne D Diègue de la fidélité, et de la valeur de Rodrigue Comme cette nouvelle fut bientôt épandue, l'Infante se servit de l'occasion, et pria Leonor de persuader à Chimène la mort de Rodrigue, croyant par cette feinte la porter au désespoir, et s'imaginant que son dessein reüssiroit par ce moyẽ dans le premier qu'elle avait fait de posséder Rodrigue D. Sanche cependant amoureux de Chimène, non contant d'avoir épreuué la courtesie de Rodrigue, fait de nouveaux projets pour cette beauté, et malgré le devoir et toutes les civilités que lui défendait cette amour, se propose de l'aimer encore."
+        ]
+      },
+      "top_5_persons": [
+        "Rodrigue",
+        "Chimène",
+        "Leonor",
+        "ELVIRE",
+        "ARIAS"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Castille",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Puis qu'on ne trouve point de remède à sa pêne: Tache à me consoler en me voyant périr, Et diminue un mal qu'on ne peut pas guérir: Ne te ressouviens plus de ce malheur funeste, Puis qu'il m'est trop sensible, et qu'il t'est manifeste Pour un cruel tourment qu'on veut dissimuler, Sache que le meilleur est de n'en point parler, Mais tu confesseras que Rodrigue a des charmes, Contre qui la raison n'a pas de fortes armes, Qu'on se défend très mal quand il attaque bien, Qu'on ne voit point d'esprit qui soit semblable au si, Enteil a des qualités à tenter un barbare, Et sa fortune est belle, et sa vertu très -rare. \nELVIRE\n Oui cette vérité se doit bien avouer, Mais vous en pouvez bien parler sans le louer A la Cour, en Castille, ou bien dedans l'armée;",
+          "Vous l'avez estimé, vous l'estimez encore, Depuis qu'il a vaincu, votre père et le More, Il a tué le Comte, il mourut pour l'honneur, C'est pourquoi vous devez procurer son bonheurs Mais parlons sainement, qui peut mer ma fille, Afin de commander à toute la Castille Dom Diègue, C'est Rodrigue et par ce trait d'amour Qui peut se rendre indigne et des Dieux et du jour?",
+          "Et pour tout achever que l'on die en Castille Que vous fîtes mourir, et le père et la fille, Quẽ sentit votre reçut vos coups, et l'autre votre cœur, Mais qu'à la fin chacun sentit votre rigueur:",
+          "Dom Diègue ie sais bien le nombre de vos faits, Votre âge ne rend pas vos exploirs imparfaits, La Castille les sait, et moi que les publie A tous ceux de ma Cour de peur qu'on les oublie:"
+        ]
+      },
+      "top_5_places": [
+        "Castille",
+        "France",
+        "Castille",
+        "Navarre",
+        "Paris"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

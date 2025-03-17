@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Morel",
+    "title": "Timoclée, ou La générosité d'Alexandre , tragi-comédie",
+    "publication_date": "1658",
+    "document_id": "bpt6k6255600p"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Alexandre",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Etre respectueux, et lui faire comprendre Le rang que tu tenais pres du grand Alexandre nire que sans l'avoir pour ta ch re moitié, Ton pouuoir en élevait borné par la pitié, Et que de ses beautés la garde difficile T'empêchait autrement de deux trouver d'asile, Mais que malgré l'effit de sas inimitiés, D'une ou d'autre façon tu mourrais à ses pendants Que si loin de céder, ton barbare coutage Sur cet honneur puislant voulait pousser sa ra Et si tu résolvais d'arracher ses très, Elle en portait assez en son précieux corps se Pou voir contenter la la plus mondaine Quar méme sa maison n'en eút pas été pleine, Saus aller ton puits a auidité crime que tu veux chercher la verité Ha!",
+          "pour joindre l'vnité du temps de cette pièce homme l'Histoire, que puis que Diodore dit que la Ville de Thèbes sut emportée en un jour j'ai pu sans forcer les cuenements en rensemer la prise dans cet espace (encor qu'Anan y fasse employer trois jours) ce qui se devant entendre du jour artificiel, puis que ce sut la nuit que Timoelée reçut cet asfront dont elle se vengea en même temps auec tant de cœur: J'ai pu rentermer toute l'action dans l'espace du jour naturel, pour cette raison que cet Dame fut aussitôt traînée devant Alexandre qui rendit en sa faveur un Jugement si juste et si louable.",
+          "Oui, je puis bien eucor aure la liberté, Par la faveur d'Aminte, avoir cette beauté: Car de croire qu'il pût concevoir quelque envie D'une femme qu'il craint avoir été ravie, Fr qu'après Alexandre honoré le premier, Il s'exposât à suivre un simple Cavalier, Serait-ce pas juger sans trop de faiblesse De celui qui verrait la plus libre Princesse Prosternée à ses pieds, embrasser ses geneux, S'il daignait toujours souffit la qualité d'Époux: Mais lâche reconsort qui vient flatter mon âme, Quelles fausses raisons apporte ici ta flamme?",
+          "Aussi bien, croyez-moi, malgré votre secours, Alexandre dans peu sera maître des Tours Mais prenez un milieu, lui demandant la grâce n'être libre en un point qui votre âme embarrasse nites, bien qu'abhorant votre rébellion, que vous craignez de faire une horrible action, Et que vous redoutez l'infernale furie, Pallant lcrun",
+          "Il ne pressera rien, croyez moi, cher Trâile, Car sçachant que le Roi veut conserver la Ville, Et voyant qu'en effet on n'y pillera rien, Il croira par loisir aller chercher son bien, It ne manquera pas de conduire Alexandre Dans tous les bâtions qu'ils auront vu désendre."
+        ]
+      },
+      "top_5_persons": [
+        "Alexandre",
+        "Phénix",
+        "DORITE",
+        "Seigneur",
+        "AZE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Grèce",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Je voudrais vous voir tur un Traine de marbre Tout couvit de lautiers, et moi come un grad arbres Redouter votre loudre après nôtre grand Roi, Voir la Perse et la Grèce en armes contre moi, Voir tout pour vous servir, et même cette Belle, Ce sujet de plaisirs et de nôtre querelle, Je serais pus heureux, étant plus assuré Quenle ne veirait nenle ne virait n'eut dchic ROTHITE, Cette belle pensée est ici fort veule, Après que vous avez laissé perdre la Ville.",
+          "Il faut qu'ou ait vameu le Tyran de la Grèce, Si l'on veut obteuir de m'avoir pour Maîtresse, Cat ce que jusqu'ici votre valeur a faît, Pour notre liberté n'a qu'un débile effet Combattez néanmoins faites le pour la gloire, Et soit que vous gagniez ou perdiez la v Ctoire, Vous rendrez votre nom pour jamais glorieux.",
+          "Fait commencer par nous la perte de la Grèce Puis donc que des Destins il était arrêté Que vous triompheriez de notre liberté, Et que l'on nous ferait des traitements indignes De personnes sortis de familles insignes, Me voici toute préte à finir mes malheurs, Loin de les augmenter avec des lâches pleurs.",
+          "Car les Tribaliens, avec toute la Grèce, Vaincus, ont fessenti votre humaine tendresse, Et l'orgueil Alleman est par vous suporté, Comme ayant quelque trait de générosité.",
+          "Croyez-vous éviter seuls de toute la Grèce, Et même de l'Âme, une main vengeresse?"
+        ]
+      },
+      "top_5_places": [
+        "Grèce",
+        "Tours",
+        "Perse",
+        "Thebe",
+        "Rome"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

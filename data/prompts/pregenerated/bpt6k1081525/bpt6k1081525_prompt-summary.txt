@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Cyrano de Bergerac, Savinien de",
+    "title": "La mort d'Agrippine : tragédie / par Mr de Cyrano Bergerac",
+    "publication_date": "1654",
+    "document_id": "bpt6k1081525"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "SEIANUS",
+          "frequency": 24
+        },
+        "related_sentences": [
+          ", Si véritablement Agripine vous aime. \nSEIANUS\n Enfin, quoi que César puisse faire aujourd'hui, La peur dont j'ai tremblé retombera surfois, Il faut que je me rende auprès de sa personne, De peur qu'un entretien si secret ne l'étonne, Vous sortez en public pour tromper le Tyran, Et guérissez un mal qui n'est pas assez grand, Contre trois Legions qui frappent à nos portes, Tous les Pretoriens et cinquante Cohortes, Nos gens espouuentez, ne feraient que du bruit, Et n'en recueilleraient que la mort pour tout fruit, Attendons que l'aspect d'elle As moins contraire, Dedans son Isle infâme urs encor Tibere SCÈNE S Ô TENE AGRATIRESCORNELIE, LIVILLA.",
+          "Agripine arrêtez, de désordre augmente, Yn desaueu puplic aux yeux de ces mutins, En vous justifiant, calmera nos dès, Vos efforts feront voir si le ver qui vous ronge, Méditait le récit d'un complot ou d'un songe, Esteignez au plutôt le feu que ie éclair, Ou un refoint et vom at enr unce moi, C'est pour l'intimider, les rayons de ma vue, Comme ceux du Soleil, résoudront cette nuie.  \nSEIANUS\n ",
+          "Quand'i'ai de mauvais sang Rome me le fais tirer. \nSEIANUS\n Prends garde aussi de perdre Agripine innocente, D'vn vertu si dangereux la suitte m'épouvante, Rome publie a faux par de si prompts effets, Que pour t'abandonner à de plus grands forfaits, Tu chasse le témoin de qui l'aspect t'affronte, Et punis la vertu dont l'éclat te fait honte.",
+          "Vois comme aveuglément il vient chercher l'Autel, Frappons, cette victime attend le coup mortel: Mais gardons qu'échappant au couteau du Ministre Sa fuite ne devienne un présage sinistre. \nSEIANUS\n Sans avancer nos jours, pour avancer sa mort, Regardons son naufrage à couvert dans le port.",
+          "Tu connais cependant que Rome est Monarchique, Qu'elle ne peut durer dans l'Aristocratique, Et que l' Une Romaine aura peine à monter, Quand elle aura sur soi plus d'un homme à porter, Respecte et crains des Dieux l'effroyable tonnerre. \nSEIANUS\n "
+        ]
+      },
+      "top_5_persons": [
+        "SEIANUS",
+        "Germanicus",
+        "César",
+        "NERVA",
+        "Seigneur"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 24
+        },
+        "related_sentences": [
+          "Je pourrais l'entreprendre: Mais quelque t'offenserais si j'osais me défendre Ce serait été preuve à la postérité, Que ta mort était juste et pleine d'équité, Si ton cœur témoignait par la moindre surprise, Soupçonner ma vertu de l'avoir entreprise, Je veux donc a ta gloire épargner cet assront, Tu vois mon innocence et la lis sur mon front, Agrippine, Cesar attenter sur ta vie, Non, tu ne le crois pas, mais ce Monstre d'Enuie, Dont le souffle ternit la candeur de ma foi, À sans doute aposte des témoins contre moi: Car tout Rome connaît qu'il veut par ma ruine, Eslever sa maison sur celle d'Agripine TIBERE.",
+          "Qui pour se consoler en foule s'étouffants, Iront voir à leur rage immoler tes Enfants: Ton fils ton héritier à la haine de Rome, Va tomber, quoi qu'enfant, du supplice d'un homme, Et te perçant du coup qui percera son flanc, Il éteindra ta race et ton nom dans son sang: Ta fille devant toi par le Bourreau forcée, Des plus abandonnés blessera la pensée, Et de ton dernier coup la nature en suspens",
+          "Quand'i'ai de mauvais sang Rome me le fais tirer. \nSEIANUS\n Prends garde aussi de perdre Agripine innocente, D'vn vertu si dangereux la suitte m'épouvante, Rome publie a faux par de si prompts effets, Que pour t'abandonner à de plus grands forfaits, Tu chasse le témoin de qui l'aspect t'affronte, Et punis la vertu dont l'éclat te fait honte.",
+          "Des Soldats Allemands,et des Pretoriens: Et l'on croit que demain, nous verrons à nos portes Réi tit jes Dégions, est cmume Généries. \nAGRIPINE\n C'est un sujet de joie, et non pas de douleur: Ennuyé de l'attendre il court à son malheur, Et n'approche de Rome en homme de courage.",
+          "Ce rusé Politique, Le cache aux yeux de Rome et de la République, Son amitié travaille à le faire oublier, De l'asile qu'il donne il se fait le Geolier, Et vous des-unissant à faux titre de Père, Oste la mère au fils et le fils à la mère."
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Paris",
+        "PARIS",
+        "Malthe",
+        "Constantinople"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

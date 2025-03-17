@@ -1,0 +1,79 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Chevalier, Jean",
+    "title": "Les amours de Calotin , comédie, représentée sur le Théâtre royal du Marais",
+    "publication_date": "1664",
+    "document_id": "bpt6k57416324"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ROSETTE",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Et lors que vous m'osez faire votre jouet, N'appr ehendez-vous point d'avoir aussi le fouet? Qu'en bonne compagnie, ô trop maligne bête, le ne vous salle voir le delflere nu celtes \nROSETTE\n Apprenez, s'il vous plaît, Monseigneur Ragotin, Qui m'osez menacer du fouet de votre main, Que si de vous frotter personne me mets en posture, Que ie vous donnerai bien de la tablature.",
+          "J'avouerai qu'étant Fille, Je ne croyais pas être un jour Porte-mandille, B iq Et que l'on me vetrait dans un habillement Où la méchanceté loge ordinairement. \nROSETTE\n Oui, car qui dit Laquais, c'est à dire une graine Plus maligne cent fois que la fièvre quartaine: Mais un Page, Madame, est d'une autre valeur.",
+          "Et comme il a besoin d'une Page et d'Han Nais, Il nous acceptera, nous voyant si bien faits. \nROSETTE\n Hé qui noul ituira de Parent, ou de Père, Pour nous offrir?",
+          "TERSANDRE, GORGIBUS, BONIFACE, POLICARPE, CLIMENE, GUILOT, RAGOTIN, ROSETTE \nTERSANDRE\n LE Père de Climène ici, d'où vient? \nGORGIBUS\n Connaissez-vous Monsieur? \nTersandre\n Monsieur.",
+          "Alors qu'on aime bien, qu'est-ce qu'on ne fait point? \nROSETTE\n Mais qu'est-il de besoin d'être en cet équipage?"
+        ]
+      },
+      "top_5_persons": [
+        "ROSETTE",
+        "Molière",
+        "Guillot",
+        "Beatrix",
+        "Lisette"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Il est permis à Charles de Sercy, Matchand Libraire à Paris, d'imprimer, faire imprimer, vendre et débiter une Pièce de Théâtre, intitulée Les Amours de calotin, Comédie, pendant le temps et espace de cinq années, à commencer du jour que ladite Pièce sera achevée d'imprimer pour la première fois:",
+          "Rode Pla la suidamejentse, IVLIE, Fille de Policarpe LISETTE et DEATRIA, suivante de Julie GUILOT, Valet de Tersandre et Amant de Lisette RAGOTIN, Valet de Clarimond, et Amant de Beatrix La Scène est à Paris LES AMOURS DE CALOTIN COAVTEDTD.",
+          "Donné à Paris le T 30"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "PARIS",
+        "Europe",
+        "Marais",
+        "Lorraine"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

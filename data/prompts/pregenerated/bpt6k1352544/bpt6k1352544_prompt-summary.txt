@@ -1,0 +1,78 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Chevalier, Guillaume de",
+    "title": "Philis, tragédie . A monsieur de Bassompierre, seigneur et baron dudit lieu, Harouel, Remouille, Baudricourt &c. colonel de quinze cens chevaux reistres entretenus pour le service du Roy",
+    "publication_date": "1609",
+    "document_id": "bpt6k1352544"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Tim",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Il ne s'en fera rien qu'il ne soit destiné, Mais à quoi songez-vous, à vos antiques fllames? \nTim\n Aux nouvelles plutôt pour obliger les Dames, Aimer encor le sexe en l'arrière saison Que j'ai du tout changé cette jeune toison, C'est l'Amour et la Mort rendre bons camarades, On a bien qu'on soit vieux quelquefois des boutades. \nSoph\n On dit que le poil blanc est un bon passeport, Mais de vos beaux discours faites moi lerapport. \nTim\n Jourdissais un prois que ainsi désire vrile, Je pensais à Philis, Philis toute gentile, A ce nouueau croissant dont la nette splendeur Promet tant de Beautez s'il vient à sa rondeur.",
+          "Tim\n Je me tiens pour vaincu, Madame, et ne désire Conter contre vous craignant d'avoir du pire, que tes puise-te voir (bienheureux soient mes vœux) Des liens de Junon bien attachez tous deux, Et que tamais le temps, le temps qui tout efface, De leurs cœurs bien unis les forts nœuds ne déface.",
+          "Tim\n Je m'en vais de ce pas, Seigneur ferai le pouvible. \nOreste\n Ne laissez l'immortel pour l'onde corruptible, Les aises de çà bas sont des flus et reflus Qui se perdent soudain, par la nuent nous plus Que le son d'un Écho qui s'enfuit par la nue.",
+          "Je sors comme d'un songe En saut éveillé, les yeux demi ouverts, De sommeil et d'humeur encore tous couverts, Les esprits endormis: après mille traverses, Apres avoir senti tant de peines diverses, Aurai-je donc Philis \nTim\n Il n'en faut plus douter.",
+          "Tim\n Toujours le jugement est d'une force égale. \nSoph\n Les objets différents la rendent inégale. \nTim\n Le sage pour autrui ne peut faillir pour soi. \nSoph\n Les circonstances font qu'on molère la loi. \n"
+        ]
+      },
+      "top_5_persons": [
+        "Tim",
+        "Ol",
+        "Oreste",
+        "Dor",
+        "M"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Caucase",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "et l'homme est le vaisseau, Le monde est l'Aquilon, et l'homme l'arbrisseau, Le monde est le Caucase, et Prométhec est l'homme, J'ombre du songe vain qui procède d' Homme, Une bulle sur l'onde, Un souffle s'enfuyant, Le murmure d' bois mme fait un ai bruyant.",
+          "Des manques plus communs au chemin plus tracé, De ce Caucase humain sur le pendant glacé, L'homme choit tous les jours: mais en faute importante L'excuse à mon avis, n'est pas assez puissante."
+        ]
+      },
+      "top_5_places": [
+        "Caucase",
+        "PARIS",
+        "France",
+        "Paris",
+        "Rome"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

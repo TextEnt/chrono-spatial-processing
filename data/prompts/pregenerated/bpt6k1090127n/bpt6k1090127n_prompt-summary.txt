@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Regnault, Charles",
+    "title": "Marie Stuard, Reyne d'Écosse, tragédie",
+    "publication_date": "1639",
+    "document_id": "bpt6k1090127n"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Marie",
+          "frequency": 11
+        },
+        "related_sentences": [
+          "Mais puissa ie à vos yeux pr présentement Si celane j'est fait par un enchantenent, Ou pær le noir esset de quelque persidie, C'est ce que le soupçon me permet que j'en die Je cegnais son esprit il est trop généreux Pour avoir entrepris rien de si dangereux, Je nelespaurais troire et ie eose prometne Que d'autres que Marie ont écrit cette lettre, Est-il croyable aussi qu'elle eût jamais commis A ces Comtes ingrats ses mortels ennemis, L'espoir qui lui restait, et puis se fût jette Entre les mêmes mains qui l'est si mal traitée, Il n'est pas vrai",
+          "Et me porta l'esprit à changer de dessein Jeus plus de conscience et moins d'effronserie Que d'accuser à faux l'innocente Marie, Et pour donner conire elle un passage à mæ vois Trois fois Pouvris la bouche et la sermai frois fois Enfin continuant l'Erreur que j'avais saiche Ma bouche devint seche et ma langue muette, Chaque luge pour lors s'osa licensur En Un temps que moi, de la justifier. \n",
+          "La naissance de l'hérésie du sieur Florimond de Raymond parut en suite et fit sçauoir à toute la terre la longue tyrannie d'Élisabeth, et la constante patience de Marie Depuis peu les Reuerens Pères Caussin et Hilarion, ont fait des trait- té particuliers de la vie et de la mort de cette grande Reine, à qui tous les Écrivains ensemble ne reprochent qu'un excès de bonté.",
+          "ELIZABETH\n E vous ai dit cent fois que ie seroicontente De pouvoir achever le proiet queie 2 tente, Et d'augmanter l'Éclat que le Ciel m'a donné Aux dépens d'un Royaume et d'un front couronné: Mon âme qui languit ne peut être guérie, Que par l'heureux succès de la mort de Marie, Moi devant qui des Rois se sont humiliés",
+          "ELIZABETH, LE COMTE DE UR, LE MARÉCHAL DE SHÉROBERY, LE VICOMTE DEHERRIN, L'AMBASSADEUR, ŒNEDE, Troupe d'Officiers de Marie, tous en habits de Dueil 42 MELVIN E trépas de Marie, aurrefois notre Roin  LENEDE."
+        ]
+      },
+      "top_5_persons": [
+        "Marie",
+        "Élisabeth",
+        "MELVIN",
+        "Seigneur",
+        "M"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 11
+        },
+        "related_sentences": [
+          "j'ose avancer que sa lecture ici rarprésentation n'ont pas mal reüssy, puis qu'elles ont tiré des larmes des premiers, et des plus beaux yeux de la France il est vrai que chacun voit les choses biẽ différemment, tel méprise ce qu'un autre estime, tous les visages sont inégaux, et tous les esprits ne se ressemblent pas, Seigneur ne veux point v ser de tyrannie sur le tien, ni t'obliger d'adorer l'ouurage de mes mains;",
+          "Si vous ensanglantiez son sacré dyade, Cette hydre pær sept fois renaîtrait de soi-même, Et peut-être sa mort tirerait après soi La perte de nos lois et celle de la foi, Les troupes de la France, et les flottes d'Espagne, Couvriront de soldats l'une et l'autre campagne, Lacouverde Lorraine et les Princes Gars Armeraient contre vous les Rois de toutes pars.",
+          "T fit de ma personne une si grande estime, Qu'ilme mit sous le joug des amoureuses lois Avec Français son fils, digne sang des Valais Mais le sort nous trahit et la même journée Que l'on solennisait un si bel Hymène, Au milicu des Tournais, des Pompes, des festins Paris v. d de ce Prines achever les destins.",
+          "L'AMBASSADEUR de France Quoi cet illustre sang d'Écosse descendu Sur un triste échasaut vient d'être répandu, Celle que nous aivons poir régente recené, Digne de tant de Rois dons elle était issuence, Celle à qui l'on voyait tant d'Empires en main A servi de spectacle à son peuple inhomacle?",
+          "Et les Cieux esteignans les flambeaux de la guent Joignaient déjà la France avec l'Angleterre, Cette Isle si fatale, ou, par les lois du sort, Il était résolus que nous vissions sa mort, Ô trépas regretable d toute la nature!"
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Londres",
+        "Paris",
+        "PARIS",
+        "MONTAUBAN"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

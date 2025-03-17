@@ -1,0 +1,76 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Corneille, Thomas",
+    "title": "Festin de Pierre, comédie mise en vers sur la prose de feu Mr de Molière",
+    "publication_date": "1683",
+    "document_id": "bpt6k1090190d"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Leonor",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Tous les jours de soufflets avait pleine mesure, Cutenpive D. \nJUAN\n Bientôt, Dieu merci, la voilà Erempte an m'épousant de tous ces chagrins-là. Monsieur. \nLEONOR\n D. \nJUAN\n C'est à mes yeux la plus aimable",
+          "Quand une chose est faite, elle n'est pas à faire. \nLEONOR\n Oh, ma Tante et ma Sœur seront bien en colère, Car jaurai pour ma part plus de vingt hsille éeus Bien des Gens me l'on dit.",
+          "Vos écus sont pour venir des beautés peu touchantes. \nLEONOR\n J'ai dans le Bourg voisin une de mes Parentes, Qui veut qu'on mène marie, et qui a toujours dit, Que si quelqu'un m'aimait.",
+          "Rei \nLEONOR\n À cause de ma Sœur qu'on aime plus que moi, On la mariera mieux, quand on n'aura plus qu'elle D. \nJUAN\n Vous êtes pour cela trop aimable et trop belle.",
+          "quirert prêtr, pour laire crève aux coups, D'épouser, s'il le faut, votre Tante avec vous, \nLEONOR\n Ah, qu'il n'en fasse rien, elle est"
+        ]
+      },
+      "top_5_persons": [
+        "Leonor",
+        "M",
+        "CHARLOTE",
+        "PIERROT",
+        "CHARLOTE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Prose",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "fit jouer en Prose quelque temps avant sa mort."
+        ]
+      },
+      "top_5_places": [
+        "Prose",
+        "Mer",
+        "Ville",
+        "Rome"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

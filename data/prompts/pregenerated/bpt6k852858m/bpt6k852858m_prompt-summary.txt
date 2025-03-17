@@ -1,0 +1,74 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Le Grand, Alexandre",
+    "title": "Le triomphe de l'amour divin de Sainte Reine, vierge et martyre, tragédie en machine... / par Alexandre Le Grand...",
+    "publication_date": "1671",
+    "document_id": "bpt6k852858m"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "CLEMENT",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "J'entends ceux que tu fais endurer aux Chrétiens, ui souffrant pour Jésus une mort douloureuse: Vivront à tout jamais d'une façon heureuse, Au lieu que ces tourments dedans l'Éternité, Puniront ton esprit de ton impiété, Ton âmeincessamment souffrant dans cet outrage Un excès rigoureux de fureur et de rage, Se moura du regret de ne pouvoir mourir, Et que nul ne pourra jamais te secourir, Cependant que tu peux éviter ce supplice, rais toi grâce a toi -même en te faisant justice, Changeant en un saint zelle une injuste fureur, Reconnoissant Jésus pour ton divin sauveur. \nOLIBRE\n Elle est ensorcelée et captive du Diable. \nCLEMENT\n Puninez",
+          "Algeride N'avez -vous rien gagné sur ce cœur endurci. \nÀLGÈRYDE\n Non, Seigneur, elle n'a plus d'elle aucun souci, Et si vous la traitez encore de la sorte, Je crois qu'en peu de temps, vous la trouverez morte. \nCLEMENT\n Plût aux Dieux, que déjà j'en fusse délivré Je n'aurais pas l'esprit, et le cœur si navrez: Car tant qu'elle sera dedans cette manie, De troubrer monrepos par la maudite rèle.",
+          "C'est à ce coup enfin qu'il te fraudra mourir, Sans croire que ton Dieu te puisse secourir, \nCLEMENT\n Qu'on me coupe cet arbre et quoi qu'il en arrive Livrez-là dans nos mains promptement morte ou vive, Et si vous n'en pouvez ainsi venir à bout Et que vos instruments soins puissent rien du tout, Il nous la faut brûler ainsi qu'une sorcière, Afin de nous venger d ' oente re.",
+          "Craignons donc s'il vous plaît, un pire événement, Et laissons faire aux Dieux justice seulement. \nCLEMENT\n S'ils ne me vengeaient point d'un si sensible outrage, Je ne les voudrais pas honorer davantage, Ni jamais leur offrir ni de vœux ni d'encens Et crois qu'il seraient tout à fait impuissants.",
+          "Tonne imne Ciamut cument que veut tuer Reine. \nCLEMENT\n y cruelle il est juste, et puisque tu le veux, QIe me vais satisfaire et venger nos grands Bieur Mon frère, PROLINE \nCLEMENT\n Laissez -moi tuer cette méchante, Elle me pousse à bout."
+        ]
+      },
+      "top_5_persons": [
+        "CLEMENT",
+        "REINE",
+        "Seigneur",
+        "OTINE",
+        "Clément"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Bergères",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "REINE et ALGERIDE en Bergères"
+        ]
+      },
+      "top_5_places": [
+        "Bergères",
+        "Bergère"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

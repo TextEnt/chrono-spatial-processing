@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Genest, Charles-Claude",
+    "title": "Zelonide, princesse de Sparte . Tragedie",
+    "publication_date": "1682",
+    "document_id": "bpt6k9807756q"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Pyrrhus",
+          "frequency": 52
+        },
+        "related_sentences": [
+          "Mais cette jeune ardeur qui vous porte aux combats, Seigneur, aurait besoin d'armes et de Soldats Malgré ces hauts désirs notre Ville déserte Sans pouvoir se défendre à Pyrrhus est ouverte.",
+          "Il va chercher Pyrrhus, en implorer l'appui, J'y consens, je le porte à traiter avec lui, Il réussit.",
+          "Aux Armes de Pyrrhus sans défense livrée, Sa honte est infaillible, ou sa perte assurée.",
+          "Quand Pyrrhus nous ferait succomber, Tout l'État avec nous n'est pas prêt à tomber.",
+          "si le fier Pyrrhus ose nous outrager, Ne délibérons point, et courons nous venger;"
+        ]
+      },
+      "top_5_persons": [
+        "Pyrrhus",
+        "Pyrrhus",
+        "Pyrrhus",
+        "Phillus",
+        "Spartiates"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Sparte",
+          "frequency": 52
+        },
+        "related_sentences": [
+          "D'autres ont prétendu disputer à Zélonide le titre de parfaite Héroïne Outre que la perfection absolue n'est pas toujours nécessaire aux Héros de la Tragédie, j'ai à répondre encore qu'on ne sait pas bien toutes les circonstances de la rupture de Zélonide avec Cléonime, et de son engagement avec Acorate mais que toutes les langes qu'on lui donne à Sparte, et les aclamations que font pour elle tant de Sages Vieillards, montrent assez qu'ils la regardaient comme une Princesse Héroïque:",
+          "Mais ce qui était inconnu à Sparte, et en quoi vous l'emportez sans doute sur Elles, c'est d'avoir toute la grandeur et toute l'élévation de leurs sentiments, sans rien perdre de cette charmante douceur, et de cette délicate bienséance qui sont si propres à nêtre Sexe, et qui sont le dernier trait, et l'accomplissement des Grâces et des Vertus.",
+          "Que Sparte toujours libre, et toujours souveraine, Pouponhonreloi ne tut pon raccepter, Et pour son Ennemi ne peut le redouter. \nLISIMACUS\n Vous quitterez bien tôt cet orguëil téméraire, Quand vous verrez sur vous éclater la colère D'un Roi que sa clémence a voulu retenir, Et tel qu'un Dieu vengeur forcé de vous punir. \nACORATE\n ",
+          "Mon Père et nos Guerriers qu'à luivis la victoire, Reviendront venger Sparte, et rétablir sa gloire, Ou se feront enfin un Thrône et des Remparts, Par Part où s'étendra la pointe de leurs dards. \nPHILUS\n Que nos Enfants il eners, nos illustres Spartaines Évitent promtement et la mort et les chaînes.",
+          "C'est pour la proposer que vient Lisimacus Il tient le premier rang à la Cour de Pirrhus Songez en était parlant au pouvoir de son maître, Songez qu'un Camp nombreux dans nos champs va paraître, Que Sparte aux Ennemis s'ouvre de toutes parts, Vuide des Habitants qui sont ses seuls Remparts."
+        ]
+      },
+      "top_5_places": [
+        "Sparte",
+        "Grèce",
+        "France",
+        "Paris",
+        "Rome"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

@@ -1,0 +1,78 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Gilbert, Gabriel",
+    "title": "Téléphonte , tragi-comédie, représenté par les deux trouppes royalles",
+    "publication_date": "1643",
+    "document_id": "bpt6k5448678k"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Merope",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Vous n'avez pas voulu parler de la rudesse de mon style, mais de la beauté de l'invention, et ce ne sont pas mes vers que vous avez louez, mais le courage, de Merope, et la constance de suuclée.",
+          "SCÈNE DERNIÈRE, TELEPHONTE, TYRENE, MEROPE, PHILOCLE 27 LELERTIONTE.",
+          "TÉLÉPHONTE, Fils de Merope et de Créphonte PHILOCLEE,",
+          "MEROPE, CÉPHALIE, PHILOCLE MEROPE."
+        ]
+      },
+      "top_5_persons": [
+        "Merope",
+        "MEROPE",
+        "Lycas",
+        "Seigneur",
+        "Chalcis"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Grèce",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Comme lui notre bras imite un Père illustre, Votre cœur généreux dès son troisième lustre S'est acquis le renom des plus fameux guerriers, Vous êtes comme lu y tout couvert de lauriers, Un peu ple tout entier vous doit sa délivrance, Et la Grèce admirant votre haute vaillance, Vous a vu triompher dans ces riches Citez, Traînant après un char des ennemis domptez.",
+          "Pour l'élever au trône il s'apprête à descendre, Et semble pour mourir n'attendre plus qu'Han gendre, De force, ou d'amitié, c'est toi qui le seras, Par cet illustre Hymen, mon fils, tu régneras, Et la Grèce verra deux Rois dans ma famille.",
+          "Dans le Péloponeze, et dans toute la Grèce Vous révère-t on pas comme grande Princesse?"
+        ]
+      },
+      "top_5_places": [
+        "Grèce",
+        "Paris",
+        "Scythe",
+        "Perse",
+        "Tigre"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Hauteroche, Noël Lebreton",
+    "title": "La dame invisible , comédie. Par M. de Hauteroche",
+    "publication_date": "1685",
+    "document_id": "bpt6k6263758w"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "LISETTE",
+          "frequency": 14
+        },
+        "related_sentences": [
+          "Vous n'avez rien à craindre, Je les ai bien instruits de ce qu'ils doivent frindre, S'il les presse, ils diront d’un ton détetminé, Qu'au quartier de S. Roch, ils l'auront amené, Et pour l'embarrasser nommeront une rue, Que personne jamais à Paris n'a connue, La poite de derrière où je le recevrai, L'empêchera de voir qu'ils n'auront pas dit vrai, estant point aveity de cette doubse entrée, omment la soupçonner? \nLISETTE\n ",
+          "rai mangé de l'Ail souffrez-moi de la Pour vous parler de près j'ai l'haleine trop forte. \nLISETTE\n Avec ce que l'on aime on ne se plaint de rien, In ioufaitmis me voir, a tu me vois, et bien, Qu'en dis-tu? \nSACPIN\n J'ai perdue l'usage de la vue, eit turti, ce je sens le sommeil qurie tuue, \nLISETTE\n Poustant du coin de l'œil certain élancement, APIN.",
+          "Mais il sera surpiis encor d'u ne autre sorte Dans son appartement j'ouvre une fausse porte, Par où Lisette et moi sans qu'on nous puisse voir, Quand nous voulons entrer nous avons tout pouvoir, Mesine une fausse clef qu'en nos mains on a mise Nous est très-favorable, elle ouvre sa valise, Et c'est là que tantôt un b lèle enfermé, Du dessein que j'ai pris l a 'abord info.",
+          "Et quei eit cet ami pour qui Il promptement, On fait tout préparer dans cet appartement. \nLISETTE\n Je n'en sais point le nom, seulement votre frère M'a dit qu'il est hien fait et très-digne de plaire, Et que s'il le voyait jeter les yeux sur vous, Il vous conseillerait d'en faire votre époux.",
+          "Quoi tu l'as vu? \nSACPIN\n Non, mais je l'ai senti, N'allez pas avancer, Monsieur, il est tout proche, Et s'il faut qu'une fois sa griffe vous accroche. \nONTIGNAN\n Ou éjprit: ya voyons ceque reipen prétend, Sauvons-nous. \nLISETTE\n PONT IGNAN prévant la Corbeille."
+        ]
+      },
+      "top_5_persons": [
+        "LISETTE",
+        "LEONOR",
+        "Scapin",
+        "Flamand",
+        "Damis"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 14
+        },
+        "related_sentences": [
+          "Vous n'avez rien à craindre, Je les ai bien instruits de ce qu'ils doivent frindre, S'il les presse, ils diront d’un ton détetminé, Qu'au quartier de S. Roch, ils l'auront amené, Et pour l'embarrasser nommeront une rue, Que personne jamais à Paris n'a connue, La poite de derrière où je le recevrai, L'empêchera de voir qu'ils n'auront pas dit vrai, estant point aveity de cette doubse entrée, omment la soupçonner? \nLISETTE\n ",
+          "qu'il vous plaira, mais raisonnons de grâce, Rien n'est moins naturel que tout ce qui se passe, Vous venez à Paris où nous entrons de nuit, Et dès le lendemain une Dame vous suit, Et se voyant en lieu propre à la confidence, Vous demande à quartier un moment d'audience, Là sans lever sa coffe elle vous fait savoir, Qu'une haute fortune est en votre pouvoir;",
+          "Comme tout voyageur est d'un accès facile, Lorsque Pontignan part, il le joint hors la Ville, Et son jargon Flamand ayant pour lui son prix, rous deux de compagnie arrivent à Paris La Forêt qui se loge en même Hôtellerie, Feignant de ne rien voir, observe, écoute, épie, Pe des le sendemain ir nous vrent avertir De l'heure où Pontignan a dessein de sortir;",
+          "Oui j'ai dois jois dais la marène oui sonuer l'horloge. \nPONTIGNAN\n Quand on n'a comme toi jamais vu que Limoge Comme ou s'arrête à tout, on perd beaucoup de temps. \nSACPIN\n Paris eit mervemeux;",
+          "Une Dame qui porte un garnissement bleu, L'est-là tout prêt de moi, je li regarde un peu, Son visage est bien blanc, et moi li trouve belle, Vous étranger, Monsieur, à Paris, me dit-elle?"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Limoge",
+        "France",
+        "Chaste",
+        "Château de Versailles"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

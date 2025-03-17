@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Scudéry, Georges de",
+    "title": "Orante , tragi-comedie. Par monsieur de Scudery",
+    "publication_date": "1636",
+    "document_id": "bpt6k6262823q"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ORMIN",
+          "frequency": 8
+        },
+        "related_sentences": [
+          "Et grande ne la reprends que pour vous la donner, \nORANTE\n Mon sitence, et monteint vous parten ue ma honte: \nLUCINDE\n Soyez désormais sage, ayant été trop prompte: Ou nant le passé qui ne nous sert de rien, Ne parlons plus d'un malqui nous produit un bien. \nORMIN\n ",
+          "Pour faire que mon Être, ait un aspect plus dous, Ooixta jai myon aAinonr qr sennecomme voms. \nORANTE\n Songez que le Sépulcre est près de votre couche, Et qu'Ormin vous défend d'en ouvrir plus la bouche; \nFLORANGE\n Ormin peut tout sur moi, mais rien sur mon amour:",
+          "ORANTE\n Je devais recevoir ce présent à genous: \nORMIN\n sent puis rien donner, moi me sme étant à vous, \nORANTE\n L'excès de vos bontés me rend toute confuse: \nORMIN\n Croyez Ormin sans cœur, si je vous le refuse.",
+          "Il la suit, elle fuit, et va de toutes parts, La robe retroussée, et les cheveux épars, \nORANTE\n Que me demandez vous de ces quatre Peintares? \nORMIN\n Allez chercher ailleurs vos bonnes aduantu rés;",
+          "Je vous suivrai par tout: \nNERINE\n voici venir Ormin \nISIMANDRE\n Madame, remarquez comme encette peinture, L'Art plus divin qu'humain, imite la Nature: Voyez comme Adonis semble admirer Venus"
+        ]
+      },
+      "top_5_persons": [
+        "ORMIN",
+        "FLORANGE",
+        "NERINE",
+        "ROSIMOND",
+        "Seigneur"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Naples",
+          "frequency": 8
+        },
+        "related_sentences": [
+          "manstrie: \nISIMANDRE\n Sur les ailes d'Amour volons en ma patrie: Que Naples vous revoie en yenne Cavalier, Ce remède est fâcheux, mais il est singulier;",
+          "Elle vaut mieux qu'Hélène, et Naples moins que Troie Et premier que personne rende un bien que j'ai volle, Brûle comme mon cœur mon pays désolé.",
+          "Naples vous peut revoir, y venant quant et moi: \nORANTE\n Je marche sans frayeur, marchant sur votre foi.",
+          "Y consentiriez -vous? \nPOLIANTE\n N'en doutez nullement: Mais Naples n'en apoint, selon mon jugement;",
+          "Mais quand Naples serait ences Plages désertes, Qui par les Matelots ne sont pas découvertes;"
+        ]
+      },
+      "top_5_places": [
+        "Naples",
+        "Pise",
+        "Pise",
+        "Rome",
+        "Florence"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

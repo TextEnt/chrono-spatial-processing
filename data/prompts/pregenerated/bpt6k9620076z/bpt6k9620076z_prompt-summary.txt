@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Scudéry, Georges de",
+    "title": "Eudoxe , tragi-comédie par M. de Scudéry",
+    "publication_date": "1641",
+    "document_id": "bpt6k9620076z"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Eudoxe",
+          "frequency": 11
+        },
+        "related_sentences": [
+          "Il me fit plus heureux que les Rois ne le sont, Et me fait plus souffrir que les damnés ne font: Enfin ici vis Eudoxe, et contre l'apparence, Quoi qu'un Sceptre entre nous mît de la différence, Que sonrang, et te mien, n'eussent aucun rapport, Il fallut obéir aux volontés du sort.",
+          "Notre bien amé Augustin Courbé Libraire à Paris, nous a fait remontrer qu'il désirerait imprimer La Tragi-Comédied'Eudoxe, par le sieur de Scuderi, s'il avait sur ce nos Lettres nécessaires, lesquelles il nous a très-humblement supplié de M accorder:",
+          "Mais dans le désespoir, qui mon âme possède, SouueneZ-vous Vrsace, en me disant adieu, Que vous laissez Eudoxe ence funeste lieu: Qu'elle y voulut mourir, pour vous être fidèle, Et qu'elle y va mourir pour être toujours telle.",
+          "C'est là cruel, c'est là, ( faut-il que Elle le die) Que l'une et l'autre Eudoxe, avec ta Placidie, Dans l'effroyable flamme, ont trouvé leur tombeau;",
+          "Eudoxe, belle Eudoxe, objet incomparable, Au milieu de la flamme, au milieu du courroux, Q Voyez votre bourreau, qui souffre plus que vous."
+        ]
+      },
+      "top_5_persons": [
+        "Eudoxe",
+        "ASPAR",
+        "Genseric",
+        "Seigneur",
+        "AR"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Rome",
+          "frequency": 11
+        },
+        "related_sentences": [
+          "Je vous conjure donc, par Rome surmontée, Par ce haut rang de gloire, où la vôtre est montée, Par les fameux lauriers, qui vous ceignent le front, Par ce bras généreux, si vaillant et si prompt, Par le titre de Roi, par l'honneur, par vous rendre, De poignarder ce cœur, sans vouloir qu'il vous aime.",
+          "Il engagea si bien cette jeune beauté, Que la suitte des ans en augmentant son âge, N'a fait que l'obligerunutiner uuuumngee Mais en ce même temps, un funeste accident Ravit Honorius, Empereur d'Ocrident 4- Monmaître prend la route où son désir aspire, Afind'aller à Rome établir son Empire:",
+          "Prince qu'à bon droit tout l'Hivers renomme, Ici doit la vertu, vaincre vnvainqueur de Rome, Ici vous surmontant, sachez que sans flatter, Vous surmontés celui, qu'on ne peut surmonter.",
+          "Je pris Rome, il me prit, et possédant moncœur, Il me fit voir captif, lors que j'étais vainqueur.",
+          "Avez-vous pris enmain les intérêts de Rome Prétendez-vous passer pour son libérateur, Et disputer de gloire avec son fondateur?"
+        ]
+      },
+      "top_5_places": [
+        "Rome",
+        "Carthage",
+        "Carthage",
+        "Afrique",
+        "Carthage"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

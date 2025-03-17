@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Scudéry, Georges de",
+    "title": "Le Vassal généreux, poème tragi-comique ; suivi de Autres Œuvres de Monsieur de Scudéry",
+    "publication_date": "1636",
+    "document_id": "bpt6k1090011f"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ANDROPHILE",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Aschez de luyturr téne éjume u tœur, Mais ne le traités pas avec trop de rigueur, Car au lieu d'y servir elle nous pourrait nuire: \nANDROPHILE\n Laissez -moi seulement, Seigneur saurai m'yconduire.",
+          "L'honneur que j'ai reçu m'oblige désormais, A chercher un renom qui ne meure jamais. \nANDROPHILE\n La guerre des Danois contre nous allumée, y ous oyre terenom sans partir de tarmée.",
+          "ANDROPHILE\n Je suis fâché de voir deux choses en votre âme, Fort indignes d'un Prince, et bien dignes de blâme, Et qui vous porteront un jour dans le malheur,",
+          "Et que le souvenir d'un père généreux, Vous empêche de rendre un Prince malheu. \nreux\n Androphile est-il mort avec toute sa gloire?",
+          "Une folle. \nEvCIbhn\n \nANDROPHILE\n Tout beau: votre âme bien reglée, Faisant ce jugement ne s'est point aveuglée;"
+        ]
+      },
+      "top_5_persons": [
+        "ANDROPHILE",
+        "MADEMOISELLE",
+        "Sceptre",
+        "Artesie",
+        "l'Aurore"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Ne même d'en extraire aucune chose, ou d'en contre faire le titre, à peine de quinze cens livres d'amende, payable par chacun des contrevenants, et applicables un tiers à l'Hôtel-Dieu de Paris et l'autre tiers",
+          "Retournons à Paris, remettre votre Cour, Je vous ferai régner, ou personne perdraile jour:",
+          "Et sortant de Paris comme des Étrangers, Gn entcuaventriants tions conrons tes dangers.",
+          "0 Retournons à Paris, empêcher ce malheur;",
+          "Donné à Paris le onz iesme jour d'Août"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Rome",
+        "Rheims",
+        "champ de Mars",
+        "France"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

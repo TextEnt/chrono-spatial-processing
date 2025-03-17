@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Boyer, Claude",
+    "title": "Policrate, comedie heroyque",
+    "publication_date": "1670",
+    "document_id": "bpt6k10902574"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ÉLISE",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "de LE ROYvono J'ai blessé ma grandeur par cette déférence, Et ne l'ai bazardé que par le seul espoir Qu'on saurait respecter ma flamme, et mon pouvoir, Pour venger l'un et l'autre, il faut enfin, Madame, Affranchir ma puissance, en faveur de ma flamme: J'ai honte d'être Esclave au milieu de ma Cour, Et ne veux d'autres fers que ceux de mon amour \nÉLISE\n Par votre ordre l'État vient de faire un Reytre: 1A Vous n'y pouvez plus rien, et votre plainte est vaine.",
+          ". \nOLIMPIE\n Si j'ai quelque secret, il ne l'est pas pour vous. \nÉLISE\n Vous pourriez craindre en moi des sentiments jalous, Tant de bonheur pourrait m'en donner pour un autre, \nOLIMPIE\n Mon amitié ne peut mal juger de la voitie, Et s'il naissait jamais quelque envie entre nous, re tois juiteient en prendre un peu pour vous.",
+          "Que veut Arcas \nARCAS\n Le Roi chez vous vient de se rendre. \nPHENICE\n Vous tremblez, quand il faut songer à se défendre, \nÉLISE\n J'y ferai mes efforts, mais hélas! pour le Roi, L'Honeur, l'Amour, mon cœur, tout s'entend comtre moi. \nPHENICE\n Pouvez-vous oublier quels devoirs, quelle gloire.",
+          "d'un si faible devait. \nÉLISE\n Par ces civilités mon désordre s'augmente, Madame, et vos bontés surpassent mon attente: Je sais ce que Madame dois au sang d'où vous sortez. \nOLIMPIE\n Le rang de la faveur, et vos rares beautés, Valent auprès du Roi la plus haute naissance. \n",
+          "et quand j'aurais cette lâche espérance, Puis qu'entre Élise et moi le Roi doute aujourd'hui, Te nenouutaist d norseur quereus d'amour pour lui. \nPHILISTE\n Mais échapperez-vous aux yeux de Tyridate S'il a craint vos rigueurs, il revient, il se flatte;"
+        ]
+      },
+      "top_5_persons": [
+        "ÉLISE",
+        "OLIMPIE",
+        "CLEON",
+        "PHENICE",
+        "ARCAS"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Olympie",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Et le Tyran qui craint la Guerre également, Dolsie a lIijhien du ieoy tout ion vonsentement, Et pour mieux assurer cette Paix qu'il désire, Le fait après sa mort Maître de mon Empire. \nPHILISTE\n Cependant, vous voulez -vous éloigner de lui. \nOLIMPIE\n Et contre mon Tyran refuser son appui, Ne me l'ayant offert que pour servir son Frère. \nPHILISTE\n ",
+          ". \nOLIMPIE\n Si j'ai quelque secret, il ne l'est pas pour vous. \nÉLISE\n Vous pourriez craindre en moi des sentiments jalous, Tant de bonheur pourrait m'en donner pour un autre, \nOLIMPIE\n Mon amitié ne peut mal juger de la voitie, Et s'il naissait jamais quelque envie entre nous, re tois juiteient en prendre un peu pour vous.",
+          ", l'amoureux Tyrate Ne trouve plus en vous qu'une Princesse ingrate, \nOLIMPIE\n Tyridate est aimable, et ainsi pensais l'aimer: Mais le Roi sais si bien le secret de charmer, Et Elle prends tous les jours tant de soin de soins plaire, Qu'à peine il me souvient d'avoir aimé son Frère.",
+          "d'un si faible devait. \nÉLISE\n Par ces civilités mon désordre s'augmente, Madame, et vos bontés surpassent mon attente: Je sais ce que Madame dois au sang d'où vous sortez. \nOLIMPIE\n Le rang de la faveur, et vos rares beautés, Valent auprès du Roi la plus haute naissance. \n",
+          "Quand esprit le vi brûler d'un feu tendre et jiètre, Et même quand nous vois dans votre enlèvement D'un amour qui vous sert, l'heureux emportement, Son mérite envers vous au dessus de tout autre, Ocuioinpas \nOLIMPIE\n Seigneur, vous oubliez le vôtre."
+        ]
+      },
+      "top_5_places": [
+        "Olympie",
+        "Thrace",
+        "Ville de Paris",
+        "Thrace",
+        "Grèce"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

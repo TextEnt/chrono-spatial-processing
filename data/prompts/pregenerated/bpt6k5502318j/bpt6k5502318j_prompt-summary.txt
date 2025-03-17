@@ -1,0 +1,78 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Corneille, Thomas",
+    "title": "Circé , tragedie . Ornée de machines, de changemens de théatre, & de musique . Par T. Corneille . Representée par la Troupe du Roy, établie au fauxbourg S. Germain",
+    "publication_date": "1675",
+    "document_id": "bpt6k5502318j"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Circé",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "C'est là que Palémon fait une Scène d'enjouement avec Astérie, qui vient y chercher Mélicerte, qu'elle n'a pu trouver ailleurs, pour lui donner l'Anneau qu'elle a reçu de Circé Cet Amant qui était venu déplorer son infortune dans ce Bois, touche a peine cet Anneau enchanté, qu'il retombe dans sa première passion pour Sylla, sans se souvenir qu'il ait jamais offert des vœux à Circé et dans l'empressement qu'il a de la voir, sur ce qu'il a su qu'elle devait arriver au Palais, il quitte Asterie qui raille Florise, autre Nymphé de Circe, sur son humeur prude, qui suis fait condamner l'entretien qu'elle vient d'avoir avec Mélicerte dans un lieu aussi inhabité que le Bois où elle l'a surprise avec lui.",
+          "Sylla y consent, et elle n'est pas sitôt au milieu de l'air, soutenue de quatre Esprits qui l'emportent par l'ordre de Circé, que quatre des Amours que Venus a dispersez autour du Palais, viennent à sa rencontre, et après un combat en l'air où les Esprits sont forcés de céder, ils font changer de route à Scylla, et l'enlèvent aux yeux de Circé C'est dans ce combat, où l'on ne saurait assez admirer l'incomparable Génie de celui qui a daigné donner ses soins à trouver les moyens de l'exécuter: on l'avait proposé d'abord comme impossible, et il a fait voir que rien ne le saurait été à ses moindres applications.",
+          "Circé écoute le Soleil, et apprend de Seigneur que c'est en vain qu'elle avait reproche de n'être point sensible aux outrages qu'elle reçoit, puis que celui dont elle voudrait avoir venge est Glaucus, qui s'est caché sous le visage et le nom du Prince de Thrace Cette nouvelle fait prendre d'autres mesures à Circé, qui déguise son ressentiment, et se contente de se plaindre à Glaucus qui survient, amené par un des Amours qui s'envole en suite, de ce qu'il ne l'a pas assez estimée pour M dècouvrir",
+          "Il n'en obtient que de nouveaux mépris, et la suivant après qu'elle s'est lassée de l'entendre, il fait place aux Nymphes de Circé, qui en attendant leur Maîtresse qui cueille quelques herbes sur la Montagne pour des Enchantements qu'elle prépare, témoignent la crainte qu'elles ont qu'ils ne soient employés contre Mélicerte que Circé avait enlevé, et pour qui elle avait pris de l'amour, par la force de ce penchant qui lui faisait mettre sa gloire dans le nombre de ses Conquêtes.",
+          "Ce Dialogue qui exprime les douceurs qu'une parfaite union fait goûter en aimant, donne occasion à Glaucus de redoubler ses prières pour obtenir de Circé qu'elle daigne changer le cœur de Sylla Circè le oppose le peu d'avantage qu'il aurait à ne devoir qu'à ses Charmes la récompense de son amour; et en l'assurant qu'il trouverait des Nymphes qui ne seraient pas insensibles pour venir, elle va si loin, qu'il ne peut plus se déguiser qu'elle parle pour elle-même."
+        ]
+      },
+      "top_5_persons": [
+        "Circé",
+        "Sylla",
+        "Glaucus",
+        "SYLVIE",
+        "Circe"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Par T. \nCORNEILLE\n Représentée par la Troupe du Ro établie au Fauxbourg S. \nGermain\n ES grandes Conquêtes du Roi, et les importantes Victoires qu'il a remportées sur ses Ennemis, ayant mis la gloire de la France au plus haut point où elle ait jamais été, tout le monde a tâché à l'envi d'en témoigner sa joie en dierentes occasions, ou par des Réjouissances particulières, ou par des Divertissements publics.",
+          "En vain, Dieu des Guerriers, dont la fière puissance Vous fait redouter des Mortels, Vous prétendez, détruire les Autels Que j'ai fait élever au Héros de la France Il mérite encor plus, et n'est point comme vous Incessamment rempli d'un aveugle courroux.",
+          "Qu'à célébrer le Nom du Grand Roi de la France, Tous les Exploits que les autres feront, Ace compte demeureront Ensevelis dans le silence.",
+          "Avec de si grands avantages, il est difficile que Circé n'en ait beaucoup à venir faire en France un nouvel essay de sa Magie."
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Paris",
+        "Chine"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

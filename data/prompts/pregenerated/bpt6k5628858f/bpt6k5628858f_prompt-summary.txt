@@ -1,0 +1,76 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Le Breton, Guillaume",
+    "title": "Adonis , tragédie françoyse de Gabriel Le Breton,... seigneur de La Fon. Reveu & corrigé de nouveau par le mesme autheur",
+    "publication_date": "1611",
+    "document_id": "bpt6k5628858f"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "MONTAN",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "La déitt nous aime et tient le sort en bride. \nsilvin\n Thétit ne peut garder le vaillant Éatide, \nMontan\n Qi privera Veuus de son gentil Adont \nSilvin\n Quelque piteux basard que moint nout attendon, \nMontan\n Toujours nous souptonnons quand plus aises nouvi sommes, c'est un vice commun à la race des bommes, \nSilvin\n Comme souuentessois un navire étranger Sur les flamme Adriant vole prompt et léger, Le clè me se rit",
+          "Cela fait que du cœur tont souci autre m'arrache. \nsilvin\n Au verger plus berbu, la coulivre se catbe, \nMontan\n aze plaindrai-je du mal qu'ort Ne ne sent point? \nSilvin\n ",
+          "Il n'est temps de douloir, que la douleur nous polnt, \nMontan\n Fol est qui sa péril du péril se lamente. \nSilvin\n Prévoyant le péril la sagesse t'augmente.",
+          "baste de srauoit son enavi rigoureux Mentan ne t'enquiers plus, et lis ea mon visage Sant plus n'initrèguer le surplus d dommage. \nMontan\n compte.",
+          "De V. E. Très-humble et très obéissant serviteur, D'AMBOYS \nMONTAN\n \nSYLVIN\n \nCUPIDON\n L'OMBRE."
+        ]
+      },
+      "top_5_persons": [
+        "MONTAN",
+        "Venus",
+        "Adonis",
+        "CUPIDON",
+        "Diane"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Et m'assure qu'il m'é sçaura fort bon gré, et en sera incité de vous donner encore sa Tullie, sa Charite, sa Didon, sa Dorothée, et le reste de ses belles Pœsies, qu'il tient caches au grand regret de tous les bons esprits: Et d'autant Madame, que ainsi vois, qu'en cette grandeur houorable, où vous êtes élève, au Étuie jing des plus sages, belles, et vertueuses de toute la France, vous ne dédaignezpas les humaines Muses pour douces et agréables compagnes, eipere qu'a mou namble prière vous ne refuserez d'autoriser ce APISTRE.",
+          "des de si connaître à noître France, combien j'Tonore vos vertus et grâces divines, j'ai lonquement donté"
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Paris",
+        "Nil"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Prévost, Jean",
+    "title": "Les Secondes Œuvres poetiques et tragiques de Jeahn Prevost [...], Imprimees nouvelement",
+    "publication_date": "1613",
+    "document_id": "bpt6k1090271d"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Hercule",
+          "frequency": 12
+        },
+        "related_sentences": [
+          "et l'entends qui m'appelle, Pour aller habiter sa demeure éternelle: Père me voici prêt, son visage en parlam Plus qu'à l'accoutumé semblait étincelant, Adonc homme prends la torche, et d'ine main tremblante Viens au tour du bûcher poser la slamme ardante: Le sapin secrétire, et les feux allumés Ont horreur de toucher ses membres entamés: Mais Hercule les suit, et ceux qui le regardent Pensent voir Pinde, Athos, ou Caucase qui ardent Tant il est assuré, sa voix tant seulement Ne s'étiamais rompue en nul gémissement.",
+          "j'entent ie nir bien, Hercule est remonté du creux Tanarien, Le Chaos est forcé, la mort Acheronte, Pour la seconde fois encore est surmonte, Je t'entends mon ensant, et recounoi ta voix, Toas seul le pouvoir de repasser deux fois Le Cocyte pleureux, ta valeur reconnue Neput être, mon sils, aux has lieux rerenue, Le destin contre toi n'est pas assez puissant, Tuas, forcé les lois de l'Enser pallissant.",
+          "Ce me dît Nesse a lors qui regardait après Qu'Hercule en théminant ne le suivait de pres Ilredouble le pas et sur sa croupe large Me teant embrasse- il m'omporte pourcharge Hercule voit cela qui cbellre et sumeux Niesprisant lasureur du torrent écumeux Soudain traversel eauze met à la poursuite Déloyal passager (ce dit -il) que ta suite Te scruira de peu 'le trait volle devant Ces discours envoyez à Nesse en le sayuant,",
+          "Ma mère, c'est ainsi qu'il te faut endurer, C'est ainsi qu'ilte faut ton Hercule plorer, (Ce dit-il à sa mère,) et parmla fumée, Et les noires vapeurs de la Pryre enflamèse Se tient en même état, et sans point se mouvoir Admoneste un chacun d'y faire son devoir: Il attise le bois, notre bande affige Voyant son grand courage en est encouragie.",
+          "Que ne viens tu Junon d'un grandcoup de tempête Me perdre, m'assommer m'acravanter la tête, Je t'ai ravi l'honneur que tu recherchais taut, Entre mille dangors mon Hercule jettant, Dont il sortait vainqueur triomphant de ta honte: Triomphe ores d'Hercule et de moi qui le domte, Tu le pus à ce coup"
+        ]
+      },
+      "top_5_persons": [
+        "Hercule",
+        "Nour",
+        "Junon",
+        "Ch",
+        "Léon"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 12
+        },
+        "related_sentences": [
+          "Or ie suis tout exprès Venu vers le château, et demeure à la porte Pour savoir de quelqu'unsi elle est vive ou monte, Je veux par ma prière ores la secourir, Ou soit qu'elle soit morte, ou proche de mourir Sa soi, ses saintes mœurs, sa bonté, son mérite, Le bien commun de France à ce devoir m'ixcite, C'est l'office des bons d'avoir compasion, Lors que les gens de bien sont en affliction.",
+          "il fait à tous les coups Que nous avons besoin des miracles pour nous Li c'est ce qui m'anime, et me donne espérance De joindre leur domaine au domne de France, Et crois que Dieu le veut, et veut que le soutin De son Église sainte, et du saint nom chrétien Soit en la France aussi, mille et mille miracles Me font prophétiser, et dire ces oracles.",
+          "Courage enfants des Rois, armés vous d'assurance Que ce bon heur est deu à un enfant de France, Le Ciel qui des vertus vous élevez au sommet A des guerriers exploits ces victoires promet, Votre race puissante en demi Dieux féconde Pour y donner ses lois n'a pas asseZ d'un monde, Elle ira rechercher entre les slots chenus, sousbs un autre Colil des peuples inconnus.",
+          "Iladuint que la Royne enceinte et proche de son accouchement s'y blessa de telle façon qu'on désespérait d'elle, et de sonfruit, dont Clovis fort extrêmement déplaisant, quand le bien heureux S Leonard, issu du sang de France, qui pour lun iemonde vestoit retiré en ce désert la sauva par sa prière, après s'être délivrée d'un sils.",
+          "Et que tout devant eux de crainte frenuissait Puiientuiure jei que la peur ne reçoit, C'était, c'était alers, qu'entrant en défiance Il me devait laisser an giron de la France Le Roi devait à l'heure avoir crainte pour moi, Tuvr ja"
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Lerne",
+        "Rome",
+        "Thrace",
+        "Mans"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

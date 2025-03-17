@@ -1,0 +1,77 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": null,
+    "title": "Les advantures de Thyrsis, tragi-comedie pastorale.",
+    "publication_date": "1639",
+    "document_id": "bpt6k857209s"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Diomede",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "DIOMEDE, SEREZ, THYRSIS, \nDIOMEDE\n E mon fils bien aimé le duresloignement DAit couler à mon goût le jour trop lentement, Je n'ai point de repos en mes dernières peines, Un feu lent peu à peu va desseichant mes veines, Consolé seulement de l'espoir du trépas, Je traîne languissant sur la terre mes pas, Les su odeurs des fleurs de nos prairies, Me puent maintenant autant que les voiries.",
+          "DIOMEDE, SEREZ. \nDIOMEDE\n E temps nous fait mûrir, l'honneur nous fait Erevivre, Nous sommes doncmortels, bienheureux de le suivre: J'entends J'entends l'honneur acquis sous le fais du harnais, Dans un juste combat pour le maintien des Lois, Autourd'hui que la Grèce en beaux esprits seconde Passe dans l'Univers pour la gloire du monde.",
+          "Oui, Seigneur te suis fans ouit, et n'aysuvi que changer En habit de Soldat, mon habit de Berger. \nDIOMEDE\n Il me plaît de te voir en ce brave équipage, L'espoir d'être bon succès m'enfle tout le courage, Couvert de cet harnais tu plais fort à mes yeux, Ainsi tous mes desseins favorisent les Dieux;",
+          "DIOMEDE\n Mafille approchez-vous il faut que je vous baise, Tout caduc que ici suis vous me ravissez d'aise: Thyrsis si j'eusse su ton amour si bien mis, De servir ces beautés te te l'eusse permis. \nYLVIE\n Mon Berger sans mentir, cette seule journée, Ma presque autant duré qu'eût peu faire une année THYRSIS.",
+          "Qui vit content du sien emporte la victoire. \nDIOMEDE\n La pauvreté toujours se loge dans les bois. \nES\n Et l'orgueil ne part point de la suite des Rois. \nDIOMEDE\n Quel bien peut-on avoir dessous un toit de chaume?"
+        ]
+      },
+      "top_5_persons": [
+        "Diomede",
+        "Doris",
+        "Sylvie",
+        "Thyrsis",
+        "Daphnis"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Bergère",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Thyrs ayant recouvré ses armes, avec sa liberté, mais non pas sa Bergère, se disposa d'aller à la guerre et d'exposer sa vie aux plus dangereux combats: se voyant séparé de sa chère Syluie et dans l'excès de ses regrets, l'ardeur en est si extrême, qu'est-elle -même- --",
+          "Mais Thyrsisobéissant au commandement de son père, son amour pour Syluie n'y peut consentir, dont cette Bergère étant avertie, continua en sa résolution, lui donnant assurance d'être compagne de sa fortune comme de sa personne.",
+          "Il me prend pour Bergère, et me parle d'amour."
+        ]
+      },
+      "top_5_places": [
+        "Bergère",
+        "Grèce",
+        "Rouen"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

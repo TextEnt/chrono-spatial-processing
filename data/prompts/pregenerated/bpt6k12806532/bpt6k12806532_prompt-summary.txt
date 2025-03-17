@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Regnard, Jean-François",
+    "title": "Le Joueur",
+    "publication_date": "1697",
+    "document_id": "bpt6k12806532"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Nerine",
+          "frequency": 11
+        },
+        "related_sentences": [
+          "Il est des nœuds formés sous des astres malins, Qu'on chérit malgré soi: Je cède à mes destins La raison, les conseils, ne peuvent m'en distraire, Je vois le bon parti, mais je prends le contraire. \nNERINE\n Hé bien Madame, soit, contentez votre ardeur, y consens, acceptez pour époux un joueur, Qui pour porter au jeu son tribut volontaire, Vous laissera manquer assez du nécessaire.",
+          "NERINE\n Je veux moi reformer cet abus, Je ne souffrirai pas qu'on trompe ma Maîtresse, Et qu'on profite ainsi d'une tendre faiblesse, Qu'elle épouse un Joüeur, un petit brelandier, Un franc dissipateur, et dont tout le métier Est d'asser de cent lieux lalte l'uecouraite, Ou de jeux et d'amour ontient boutique ouverte, Et qui le conduiront tout droit à l'Hôpital.",
+          "Nous ne te craignons guère, Lt ta Mastrencencor mel promit a valère, De lui donner dans peu pour prix de son amour, Son portrait enrichy de brillants tout au tour, Nous l'attendons ma chère avec impatience, Nous aimons les bijoux avec concupiscence. \nNERINE\n Le portrait est tout prêt, mais ce n'est pas pour lui, Et Dorante en sera possesseur aujourd'hui.",
+          "Que dis-tu! \nDORANTE\n \nNERINE\n Qu'Angélique est une âme légère, Et s'est mieux que jamais rengagée à Valère \nDORANTE\n Quoi que pour mon amour ce coup soit assommant, Je ne suis point surpris d'un pareil changement, Je sais que cet Amant toute entière l'occupe, De ses ardeurs pour moi je ne suis point la dupe;",
+          "Oui, je vous le promets, Que la fureur du jeu sortira de mon âme, Et que j'aurai pour vous la plus ardente flamme. \nNERINE\n Pour faire des serments il est toujours tout prêt. \nAjuduRoB\n Il faut encor, ingrat, vouloir ce qui vous plaît;"
+        ]
+      },
+      "top_5_persons": [
+        "Nerine",
+        "Valère",
+        "Sénèque",
+        "Hector",
+        "Hector"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 11
+        },
+        "related_sentences": [
+          "Il est permis à THOMAS GUILLAIN, Marchand Libraire à Paris, de faire imprimer le Recueil des Comédies du Sieur D*** pendant le temps de six aunées, à compter du jour qu'elles seront achevées d'imprimer pour la première fois, en vertu des présentes, pendant lequel temps trèsexpresses inhibitions et défenses sont faites à toutes personnes de quelque qualité et condition qu'elles soient, de faire imprimer, vendre ni débiter dédites Comédies, d'autre Édition que celles seront d'Exposant, ou de ceux qui auront droit de lui, peine de quinze cens livres amende, payable lans depoit par chacun des Contrevenans, et de tous dépens, dommages et intérêts, et à peine portées plus au long par lesdites Lettres de Privilege.",
+          "Là vous trouvez toujours des gens divertissants Des femmes qui jamais n'ont pu fermer la bouche, Et qui sur le prochain vous tirent à cartouche Des oisifs de métier, et qui toujours sur eux Portent de tout Paris le lardon scandaleux Des Luvreces du temps, la, de ces silles veuves, Qui veulent imposer et se donner pour neuves, De vieux Seigneurs roujours prêts à vous cajoler, Des plaisants qui font rire avant que de parler, Plus agréablement peut-on passer la vie.",
+          "Il y avait contr'elle une cabale très- forte, et d'autant plus à crain qu'elle était composée des plus séditieux frondeurs des Spectacles, et suscitée par les injustes plaintes d'un Plagiaire qui produisait une autre Pièce en Prose sous le même titre, et qui la lisait tous les jours dans les Caffe de Paris",
+          "c'est une médisance, Je sais que ce serait blesser ma conscience Pour des nantissements qui vaillent bien leur prix, De la vieille vaisselle au point de Paris, Des diamia dien, de qu'on ne içaurois endre, Sans risquer mon honneur je crois que j'en puis prendre.",
+          "La rencontre est plaisante, Je l'ai démarquisé bien loin de son atrente, J'en voudrais faire autant à tous les raux Marquis. \nNERINE\n Vous auriez par ma foi bien à faire à Paris"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Rome",
+        "France",
+        "PARIS",
+        "Ville de Paris"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

@@ -1,0 +1,79 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Rotrou, Jean de",
+    "title": "La belle Alphrede comedie de Rotrou.",
+    "publication_date": "1639",
+    "document_id": "bpt6k6493091d"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "RODOLPHE",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Il a doit été doux de perdre un imposteur, Un semeur de faux bruits, un traître, un affronteur, Et t'ayant obligé d'un bien illégitime, Elle aurait peu d'honneur d'être le prix d'un crime. \nACACSTE\n Ne dissimulez point votre ressentiment, Et que la jalousie, est son seul fondement, En effet cher Rodolphe, il faut que sans confesse, Qu'unindigne moyen m'acquiert votre maîtresse, Mais pour le réparer, une juste action, Est prête de la rendre à votre passion.",
+          "Il parle à Rodolphe Certes mon cher Rodolphe, il faut que votre confesse, Que la vie à chacun est une belle hôtesse, Et qu'un homme bien sain, ne peut qu'imprudemment, S'exposer au hasard de son bannissement, Elle s'aimechez nous, mais depuis qu'on la chasse En Elle sort pour jamais, et jamais ne repasse, Soyone plus ménagers d'un bien si précieux, Et songeons s'il se peut à vous contenter mieux;",
+          "Mais, ô vaine fureur, vengeur lâche, et timi de, De chercher hors de toi l'auteur de l'homicide, Rodolphe, quel bourreau, que ta déloyauté, A le coup de sa mort en sonbeau sein porté, Contre ici ton remords injustement t'anime, Neluisouhaite point la peine de ton crime, Il est bien moins cruel, que tu n'es inhumain, Et ton cœur a failly beaucoup plus que sa main;",
+          "quelle est ta rêverie, Que veue avant l'hymen, tu veilles que ie rie? \nTE\n Japprends bien aujourd'hui, que fort souvent nos pleurs, Naissent de lacoutume et non de nos douleurs, Et vos naifuetés passent bien ma créance, Que vous pensez ma sœur, pleurer parbienseance, Vous songes à Rodolphe, et vous pleignes son sort, Plus parce qu'on vous voit, que parce qu'il est mort?",
+          "RODOLPHE\n TOy, qui de tant d'amoureus un si triste prix, De grâce, et d'attraits agréable débris, Alphrède, beau sujet des soupirs que j'élance Enfin de monremords connais la violence, ue ma douleur appaise, et que cette action, Ie tienne lieu pour moi de satisfaction;"
+        ]
+      },
+      "top_5_persons": [
+        "RODOLPHE",
+        "ISABELLE",
+        "AMYNTAS",
+        "ACASTE",
+        "Isabelle"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Angleterre",
+          "frequency": 3
+        },
+        "related_sentences": [
+          "Ce n'est pas tout, le fils de ce barbare, À yant su vos mépris pour vnobiet si rare, À cru que le sujet de votre changement, Doit être quelque objet encor bien plus charmant, Si bien, qu'ayant appris qu'elle est en Angleterre, Et croyant voir enelle une Déesse en terre, rrieravet at grands biens qu'il se fait la porter, Il partit pour la voir, et pour vous supplanter. \nDOLPHÉ\n Ocruel accident!",
+          "ÀLPHREDE\n Barcelonne, en Espagne est ma natale terre, D'oùce mien frère et moi passons en Angleterre, Pour annoncer la mort du plus parfait amant, À qui jamais la parque ouvrît le monument.",
+          "il passeen Angleterre, Se fait voir quelques mois en ce fatal séjour, Et comme il vaut beaucoup, charme toute la Cour."
+        ]
+      },
+      "top_5_places": [
+        "Angleterre",
+        "Barcelonne",
+        "Londres",
+        "Oran",
+        "Calais"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

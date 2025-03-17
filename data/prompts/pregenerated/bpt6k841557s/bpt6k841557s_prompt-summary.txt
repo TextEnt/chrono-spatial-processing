@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Boisrobert, François de",
+    "title": "La belle Lisimène , tragi-comédie de M. de Boisrobert,...",
+    "publication_date": "1642",
+    "document_id": "bpt6k841557s"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Dorine",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Dorine, l'Ingrat m'achève de trahir: Il arrive à l'échelle, il y monte, il y vole, Et me ravit l'espoir, le ceur et la parole. \nARISTON\n Monsieur, ne craignez point, montez en sûreté, Madame dans sa chambre est seule, et sans clairté. \n",
+          "Mais tu vois après tout si j'ai quelque raison, D'avoir le cœur sensible à tant de trahison. \nDORINE\n J'ai par sa feinte été la première attrapée: Courons après, Madame, et de sa propre épée, Allons devant les yeux d'Orante l'égorger: \n",
+          "Mais le Roi, pour ioreipect du titre qu'il avait porté, et pour récompenser aussi les services de son père, avait donne la charge de Chevalier d'honneur de la Princesse, et Dorine, une de ses filles d'honneur, en mariage.",
+          "Oui, Dorine, au défaut de tout autre secours, Je le veux regretter jusqu'au bout de mes jours. \nDORINE\n Madame, cet ennui plus que vous me possède, Mais ie cede aux malheurs qui n'ont point de remède.",
+          "Je le fais Chevalier d'honneur de la Princesse, Et grands donne de plus Dorine pour Maîtresse. \nDORINE\n Puis qu'il est honore de cette qualité, Sire, je vous rends grâce en toute humilité."
+        ]
+      },
+      "top_5_persons": [
+        "Dorine",
+        "Seigneur",
+        "ARISTON",
+        "Ariston",
+        "Seigneur"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Thrace",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Quand vous ne seriez pas une des plus considérables, comme vous êtes, il suffit que vous soyez le premier dans mon cœur, et dans mon estime, pour m'obliger à rendre ce témoignage public, que sans suis, et que tu fais gloire d'être, MONSIEUR, Votre très-humble, et très- passionné serviteur, OIS-ROBERT ARGUMENT Es guerres de Thrace étant achevées par la valeur de Pyrandre, soldat de fortune, qui s'était élevé par sa vertu jusqu' à la généralité de l'Armée, et qui en plusieurs batailles heureusement terminées, avait défait tous les ennemis de l'Estat;",
+          "Puis qu'il t'emmemène en Thrace, où ses illustres fais Ont en fin rétabli le repos et la pais, Fais qu'il m'emmeine aussi, permets que sans te suive, Flate ma passion, si tu veux que je viue:",
+          "Que vous êtes pressé de retourner en Thrace, Et qu'il vous faudrait bien, et du temps, et des pleurs, Pour ramener son cœur, qui se détourne ailleurs, Prenez l'occasion que l'Amour vous présente;",
+          "Le Roi, qui sans nous trois ne peut vivre content, Avec impatience en Thrace nous attend: Sans cesse dans les bois ce jeune Amant soupire, Les Arbres, les Rochers savent tous son martyre;",
+          "J'ai bien acquis en Thrace une gloire infinie, Mais tu suis plusheureux encor en Albanie Et ici n'attendais pas tant de félicité De ce rare succès de ma fidélité."
+        ]
+      },
+      "top_5_places": [
+        "Thrace",
+        "Albanie",
+        "Pont de l'Arche",
+        "France",
+        "Navarre"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

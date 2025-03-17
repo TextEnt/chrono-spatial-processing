@@ -1,0 +1,76 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Le Breton, Guillaume",
+    "title": "Adonis, tragédie francoyse",
+    "publication_date": "1606",
+    "document_id": "bpt6k10901764"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Adonis",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Et le beau Cropien pour jamais endormi Fut allé rencontrer Pyrithoys son ami Adonis qui de loin voit apprêcher la bête Aduance le pied gauche et sur l'autre j'arête,Il se plante debont, et brandit assuré Contre le porc fameux, son trenchant aceré, Lequel exempt du coup à côté se dévoie Et naurant Adonis se à terre l'onvoie.",
+          "Ou es-tu mon Adon out'iraiieæAdouis, Adonis réponds mon ami cher (da Tespons s'il te souvient de notre douce slams Jaitu ne me dis mot, et ces roches sans âme Ces antres et ces bous ont quelque impression Redoublant les accents de mon affliction.",
+          "Il n'est que de raser de ses ailes la terre, Craignant des immortels les dards et le tonnerre, Souvent ces feux divins par la mort sont sinus, Iaqnihęle sait, et toipauvre Adonis",
+          "cette mort brassée, Mavie leur garderai toujours sourde pensée Tamort se ven cera, Je le jure et promets, Adieu man Adonis, adieu denc à tamaus.",
+          "hélas ou belle me trompe, Ou bien c'est Adonis qui entonne sa trompe, Pur aller aux sorêts. \n"
+        ]
+      },
+      "top_5_persons": [
+        "Adonis",
+        "VENUS",
+        "CUPIDON",
+        "Venus",
+        "ADONIS"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "ADAME, ayant ya singulier désir de faire connaître à * nôtre France, combien j'hot nore vos vertus et grâces divines, j'ai longuement douy ainsi devoi faire cetort à votre excelnce, à cet auteur, et à moi"
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Paris",
+        "Nil",
+        "Mavie"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

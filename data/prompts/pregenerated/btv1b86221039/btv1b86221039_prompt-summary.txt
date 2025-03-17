@@ -1,0 +1,78 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Montfleury",
+    "title": "La femme juge et partie . Comedie. Par A. J. Montfleury",
+    "publication_date": "1669",
+    "document_id": "btv1b86221039"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "BEATRIX",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "il faut me résoudre, Et puis que sans Témoins on ne saurait m'absoudre, Que je ne puis enfin me sauver qu'à ce prix, Que l'on prenne le soin de chercher Beatrix, Et qu'on l'amène ici. \nOCTAVE\n Dans peu ici vous l'amène;",
+          "BERNADILLE\n lliuoene récore, Esprit contrariant, dis-moi pourquoi tu veux Qu is le moquent de moi, quand On serai comme eux? \nBEATRIX\n Hé bien, ordonnez donc ce qu'il faut que sans die. \n",
+          "Il faut donc, tout serupule vaincu, Décrarer nautement qu'elle m'a fait Cocu. \nBEATRIX\n Qu'est-ce domme qu'un Cocu, Mõsieur, ne vous déplaise \nMM aANRoruEG\n La question est neuve!",
+          "Plutôt que de mon cœur Bernadille soit maître, Le transport d'un amour caché jusques ici, Éclatela. \nBEATRIX\n Tout doux, Madame, le voici: Renguainez, il vous faut jouer un autre Rôle.",
+          "Morbleu, tu le diras, quand tu devrais mentir. \nBEATRIX\n Je n'ai garde, Monsieur, l'infamie est trop grande, \nBERNADILLE\n Tu ne les diras pas?"
+        ]
+      },
+      "top_5_persons": [
+        "BEATRIX",
+        "OCTAVE",
+        "LOPE",
+        "Julie",
+        "Constance"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Signé, Par le Roi en son Conseil, D'ALENCE': Il est permis à Gabriel Quinet Marchand Libraire à Paris, d'imprimer, ou faire imprimer, vendre et débiter, une Pièce de Théâtre intitulée, LA FEMME IVGE ET PARTIE, et ce durant le temps de sept ans, à commencer du jour qu'elle sera achevée d'imprimer pour la première fois:",
+          "Grâce et Privilège du Roi, donné à Paris le T24"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Venise",
+        "Rome",
+        "France",
+        "Indes"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

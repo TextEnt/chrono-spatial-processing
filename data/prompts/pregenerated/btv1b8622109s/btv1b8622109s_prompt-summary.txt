@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": null,
+    "title": "Le Théâtre italien ou le recueil de toutes les scènes françoises qui ont esté jouées sur le théâtre italien de l'Hostel de Bourgogne",
+    "publication_date": "1694",
+    "document_id": "btv1b8622109s"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Colombine",
+          "frequency": 58
+        },
+        "related_sentences": [
+          "Tout le sené et la rubarbe de ma boutique, purgent moins mes malades, que la vivacité de vos yeux ne corrige les humeurs acres et mordicantes d'un amour enflammé dont vous serez la pillule purgative, puisque votre humeur enjouée est un Orvietan soucram bntre les ecen mélancoliques d'un cœur opilé de vos rares vertus et de vos éminentes qualité. \nCOLOMBINE\n Je ne croyais pas, Monsieur Cusiffle, être un remède si souverain contre la folie : de ce train-là vous m'allez faire passer pour un emplâtre à tous maux.",
+          "LE JUGE. \nCOLOMBINE\n Messieurs, il est assez nouveau que l'effronterie d'une jeune fille, secourue par des larmes obéissantes, entreprenne d'attendrir les Juges par des mouvements de compassion, et qu'une simple servante avec un chiffon de papier, se propose d'épouser un homme du mérite et de la qualité du sieur Marquis de Sbrouffadel Une servante épouser une Marquis, comblé des grâces et des bontés de son Prince!",
+          "Mais tu ne sais donc pas que je ferai la guerre à l'œil, et que je serai témoin oculaire de tout ce qui se passera? \nCOLOMBINE\n C'est -à -dire, Seigneur, que vous êtes tout prépaté à bien avaler des couleuvres Mais tous vos yeux ne serviront de guères: L'amour est un drolle qui vient à ses fins imperceptiblement, et les plus Argus tont de viais euia utimgt qualid",
+          "Dans une pareille extrémité, je ne puis répondre que d'une inflexibilité de rocher à ne jamais demor dre dre de la haine que j'aurai conçue une fois pour le vieillard qui osera attenter à ma libetté. COLOMBINE veut défendre les Vieillards, en faveur de Monsieur Tuetout Mais Rome qui connaît son ironie l'en empêche; et renonçant au Mariage d'Isabelle, dégage Bassemine de la parole qu'il lui avait donnée.",
+          "Je veux contrefaire un de ces soupirants du bel air. \nISABELLE\n Tu as des saillies impayables. \nCOLOMBINE\n Si j'avais le loisir, je serais trop drolle: mais ma foi il y a tant d'ouvrage pour moi au logis, que je n'ai pas le temps de rire. \nISABELLE\n Mais encore, comment t'appellerai-je? \nCOLOMBINE\n Vous m'appelez Chevalier."
+        ]
+      },
+      "top_5_persons": [
+        "Colombine",
+        "ISABELLE",
+        "ROGER",
+        "PIERROT",
+        "Pierrot"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 58
+        },
+        "related_sentences": [
+          "Vous direz tout ce qu'il vous plaira: mais une jeune fille comme moi n'est pas un gibier à Commis Si j'avais voulu prêter l'oreille aux sornettes, il hantoit peut-être chez nous d'aussi beau monde qu'en aucune maison de Paris Mais grâces au Ciel, les hommes ne m'ont jamais tentée. \nPIERROT\n Mais dis-moi, ma bonne, n'as-tu jamais servi des gens de quasité?",
+          "si vous n'y I prenez garde, avec vos millions, vous allez devenir la risée de tout Paris On sais bien que dans la vie il n'est si petit ici si grand qui n'ait par fois quelque chose en sa tête: mais c'est une honte de vous voir sans sujet lamenter votre vie, et lésiner depuis le matin jusqu'au soir sur le plus nécessaire de la maison.",
+          "Commencerai-je par le Déluge, le Jugement de Paris, les malheurs de Pyrame et Thisbée, l'incendie de Troie, les erreurs d'Ulisse, le passage d'Ænée, le sac de Carthage, la mort de Tarquin, les triomphes de Scipion, la conjuration de Gatiillia, elle pas des Thermopiles, la bataille de Marathon Arlequin dit non à chaque demande.  ARLEQUIN.",
+          "Qu'autour de mon Buffet, vingt coquins de vallégs Fe ont voler Ragouts, Grillades, Entremets, Hors d'œuvre, et puis enfin tout ce qui peut raire Un Palais engourdis du trop de bonne chère: Quand ma femme passant dans le cœur de Paris Rendra par ses brillants tout le monde surpris: Que nos Coursiers fringants se faisant faire place.",
+          "dont la fortune est un labyrinthe, qui tout d'un coup a paru dans le monde avec deux Charges et un Carosse magnifique, Carosse qui dès le jour de fa naissance a connu toutes les rues de Paris, et qui a furieusement éclaboussé la réputation de deux riches veuves, dont son maître passe pour le grand veneur?"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "PARIS",
+        "France",
+        "Champagne",
+        "champ de Mars"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

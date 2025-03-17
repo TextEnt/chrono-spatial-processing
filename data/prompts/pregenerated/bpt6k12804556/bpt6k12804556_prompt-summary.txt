@@ -1,0 +1,79 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "Les Facheux. Comedie de J. B. P. Molliere. Representée sur le theatre du Palais Royal.",
+    "publication_date": "1662",
+    "document_id": "bpt6k12804556"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Lysandre",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "On le voit. \nERASTE\n \nLYSANDRE\n Les pas donc. \nERASTE\n N'ont rien qui ne surprenne. \nLYSANDRE\n Veux-tu, par amitié, que sans te les apprenne? \nERASTE\n Ma foi pour le présent, j'ai certain embarras. \nLYSANDRE\n Et bien donc, ce sera, lors que tu le voudras.",
+          "LYSANDRE, ERASTE \nLYSANDRE\n Ous ces arbres, de loin, mes yeux t'ont re3 connu, Cher Marquis, et d'abord enfin suis à toi venu.",
+          "Une autre fois. \nERASTE\n \nLYSANDRE\n Adieu, Baptiste le très-cher N'a point vu ma courangte, et notre le vais chercher.",
+          ", le plus fâcheux encore, Est Lysandre, tuteur de celle que j'adore;",
+          "LYSANDRE\n Je me moque, pour moi, des maîtres Baladins."
+        ]
+      },
+      "top_5_persons": [
+        "Lysandre",
+        "Damis",
+        "ORMIN",
+        "Cerf",
+        "M"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "J'ai le bien, la naissance, et quelque emploi passable, Et fais figure en France assez considérable; muis le ne vourais pas, pour tout ce que je suis N'avoir point fait cet air, qu'ici après te produis.",
+          "Or l'avis dont encor nul ne s'est avisé, Est qu'il faut de la France, et c'est un coupaisé, En fameux ports de me mettre toutes les côtes.",
+          "et deux crois qu'en quelque façon ce n'est pas être inutile à la France, que de contribuer quelque chose au divertissement de son Roi.",
+          "France\n "
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Paris",
+        "Ville de Paris",
+        "Luxembourg"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

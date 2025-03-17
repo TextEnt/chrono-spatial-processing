@@ -1,0 +1,80 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Guérin d'Estriché, Nicolas-Armand-Martial",
+    "title": "Myrtil et Mélicerte , pastorale heroique",
+    "publication_date": "1699",
+    "document_id": "bpt6k97930799"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "DAPHNE",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Pour elle, passe encor: les filles là-dessus Ont, comme vous savez, assez d'expérience: Mais Elle, c'est un jeune éventé, Le jeu l'occupe tout, je pense, Et le plaisir de se voir ajusté, Ainsi que les Bergers de haute qualité. \nDAPHNE\n Ennous, par le nœud d hyinenee Avec une pareille ardeur, Nous prétendons l'unir à notre destinée, Et nous assurer son cœur.",
+          "SCÈNE V. EROXENE, DAPHNE, MIRTIL \nDAPHNE\n Nfin nous sommes seuls, et nous pouvons sans L feinte, Expliquer de nos cœurs les tendres sentiments, Il faut nous parler sans contrainte, Voyez qui de nous deux a le plus d'agréments. \n",
+          "EROXENE\n \nEROXENE\n Pourquoi Ménalque et toute sa tendresse N'ont-ils pu fléchir ta rigueur ? \nDAPHNE\n Je ne prétends donner mon cœur Qu'a queique Amant, dont ja lageise Lui fasse goûter son bonheur. \n",
+          "Ç'Est ainsi qu'on punit les gens, Loriqu'iis font les ipertinents. \nDAPHNE\n Le Ciel tienne, Pasteur, vos brebis toujours saines. \nDAPHNE\n Cerrez enrichrisse vos plaines!",
+          "Tout ce qu'il fait est mêlé d'innocence. \nDAPHNE\n Il n'est point tant enfant, qu'à le voir chaque jour, Je ne lui croie un peu d'amour:"
+        ]
+      },
+      "top_5_persons": [
+        "DAPHNE",
+        "CORINE",
+        "THALIE",
+        "APOLLON",
+        "CLORIS"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Fontainebleau",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Cependant, MADAME, Votre Altesse Serenissime voulut mettre le comble à ses bontés, après avoir entendu lire Mélicerte elle en parla à Monseigneur si favorablement qu'elle eut l'honneur de paraître devant quelque Fontainebleau elle en prit le parti, et la décision avantageuse qu'elle en fit ferma la bouche à mes Critiques.",
+          "ce c'est cependant qu'en tremblant que j'ose vous parler encor des Bergers de la Vallée de Tempé ils supplient tous Votre Altesse Sérénissime de les honorer de sa protection: ils quitteront avec joie leurs petits Hameaux, pour venir à Fontainebleau, si Monseigneur le souhaite, et qu'il daigne les ecoûter;",
+          "Je ne puis oublier ici l'accueil favorable que vous fîtes aux deux Contes de Fés que j'eus l'honneur de vous présenter à Fontainebleau, et la bonté avec laquelle vous receviez les petits Vers que j'offrais quelquefois à Votre Aitesse Sérénissime.",
+          "Madame la Princesse de Conty Sur la bonté qu'elle a eu de faire jouer Mélicerte à Fontainebleau, et de reboun fuoruiement jes deux Contes de Fée Ontre"
+        ]
+      },
+      "top_5_places": [
+        "Fontainebleau",
+        "Bergère",
+        "BERGERS",
+        "Paris",
+        "Perse"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

@@ -1,0 +1,77 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Troterel, Pierre",
+    "title": "La Driade amoureuse, pastorale. De l'invention de P. Troterel sieur d'Aves",
+    "publication_date": "1606",
+    "document_id": "bpt6k10404279"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Mirtin",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "qui m'a dix ans aimée, Et qui mêmes encor en a l'âme enflamène, Qui fait tout ce qu'il peut pour penser me gagner, Mais au lieu de cela, il se fait dédaigner: Car ce trompeur amour par un fin stratagème, Est or' Roi de mon cœur: et fait qu'autreois n'aime, Que Mirtin le Chasseur, qui demeure en ces bois, Et d'autre que de lui ie méprise les lois, Bien qu'il face refus d'une façon mignarde De cet ardant amour que mon âme lui garde, Disant qu'il a fait vu à la sœur d'Apollon, De ne sentir jamais de Venus l'a guillon.",
+          "La Dryade Celà n'est rien, au pris de cil que je vous veux, Mais si jamais le ciel veut entendre mes vœux, Humble, ie lui requiers qu'un jour il m'accomplie Je pouuoir, et moyen de vous faire seimite Selon qu'est le pouvoir de mes affections: Car ici n'en puis assez pour vos perfections. \nMirtin\n Ô belle, c'est à vous que telle chose est due: Vous dis-je, que le ciel si parfaite a rendue, Que depuis que du jour j'ai vue le clair flambeau, Je me puis bien vanter, n'avoir rien vu si beau:",
+          "tu es donc hors de pipe, Me voici pour ton bien. \nM\n Je crois que quelque haine Tu couves contre moi, ayant bien tant été De temps de ton Mirtin, tristement absenté, 813u puy f vounduimommeque t monde, Pour la sainte vortu qui dans ton cœur abonde. \nCelidon\n De la haine, Mirtin, je n'en pourrais avoir Contre un qui comme toi à sur moi tout pouvoir, Et que j'aime plus fort que Damon son Pitie, Et qui est de mon cœur la plus grande partie, Pource tu me sais tort de me parler ainsi.",
+          "que j'étais prez ces bois, à reçois, Solitaire et pensif, discourant à part-moi De la nouvelle ardeur qui mon esprit enflamme, Par la grande beauté d'une gentille Dame: Et comme ici prenais la résolution De lui porter discours de mon affection, Voici tout aussi-tôt mon Mirtin qui arrive, Qui de mon cher dessein la pratique me prive, Pource qu'il m'arrêta pour lui donner secour Allencontre Terpin, qui lui joua d'un tour, Votre fois qu'il chassait d'une robuste peine, Dedans cette forêt, le faon d'une Dainne.",
+          "Les Bergères aussi, et les Nymphes, compagnes Des bous, et des jardins des champs et des montagnes, Y vont toutes en hot, avec leurs amoureux, Qui de l'occasion se trouvèrent bienheureux, Pour avoir le moyen et le temps de leur dire Combien pour leur amour ils souffrent de martyre: y olti témi lapu, qajine, nenraa Mais adieu, Seigneur me tiens trop longuement ici. \nCelidon\n Adieu, voilà qui vient ainsi qu'on le désire. \nMirtin\n Taissez-vous Seigneur vous vois tantôt bien faire rire."
+        ]
+      },
+      "top_5_persons": [
+        "Mirtin",
+        "Arbas",
+        "Celidon",
+        "Herlin",
+        "Terpin"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Bergères",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Les Bergères aussi, et les Nymphes, compagnes Des bous, et des jardins des champs et des montagnes, Y vont toutes en hot, avec leurs amoureux, Qui de l'occasion se trouvèrent bienheureux, Pour avoir le moyen et le temps de leur dire Combien pour leur amour ils souffrent de martyre: y olti témi lapu, qajine, nenraa Mais adieu, Seigneur me tiens trop longuement ici. \nCelidon\n Adieu, voilà qui vient ainsi qu'on le désire. \nMirtin\n Taissez-vous Seigneur vous vois tantôt bien faire rire."
+        ]
+      },
+      "top_5_places": [
+        "Bergères",
+        "Nil",
+        "Paphos",
+        "Bergère",
+        "Indes"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

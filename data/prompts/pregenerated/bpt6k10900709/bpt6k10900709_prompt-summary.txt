@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Regnard, Jean-François",
+    "title": "Le Distrait, comédie",
+    "publication_date": "1698",
+    "document_id": "bpt6k10900709"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "LISETTE",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Oh parbleu, si je ris ce n'est pas sans sujet, Lévandre, ce rêveur, cet homme si distrait Vient d'arriver en poste ici couvert de crotte: Le bon est qu'en courant il a perdu sa botte, Et que marchant toujours, enfin il s'est trouvé on botte de mois quand n'est arrive. \nLISETTE\n De ces distractions il est assez capable.",
+          "Mais ce n'est rien encor, et son valet m'a dit, Je le crois aisément, que le jour qu'il partit Pour aller voir mourir son oncle en Normandie, Il suivit le chemin qui mène en Picardie, Et ne s'aperçut point de sa distraction Que quand il découvrît les clochers de Noyon \nLISETTE\n Il a pris le plus long pour faire sa visite.",
+          "Rodillard de Choupille Noble au bec de corbin, grand Gruyer de Béri, Et qui fut votre Père, étant bien mon Mari, M'enleva malgré moi: Sans cela, de ma vie De me donner un maître il ne m'eut prit envic. \nLISETTE\n La même chose un jour pourra nous arriver.",
+          "Ne savoir pas encore faire la révérence Depuis trois ans, et plus qu'ène apprend a danser! \nLISETTE\n Son Maître tous les jours vient pourtant l'exercers Mais que peut-on apprendre en trois ans? \nMe GROGNAC\n À se taire. \nLISETTE\n Elle a bien aujourd'hui l'esprit attrabilaire.",
+          "LE CHEVALIER, CLARICE, LISETTE \nLISETTE\n Onjour, Monsieur, depuis votre maudit jargon La Madame Gronnac est pire qu'un dragon, Et je viens vous chercher ici pour vous apprendre Qu'elle veut dès ce soir finir avec Léandre Elle m'a coinmandé de lui faire venir Un Notaire."
+        ]
+      },
+      "top_5_persons": [
+        "LISETTE",
+        "CLARICE",
+        "ISABELLE",
+        "Léandre",
+        "Carlin"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Ledit Sieur GUILLAIN a cédé son droit de Privilège à PIERRE RIBOU Marchand Libraire à Paris, suivant l'accord fait entr'eux.",
+          "Et tout Paris témoin de vos traits de folie, Rit plus cent fois de vous que de la Comédie.",
+          "Regisire fur te Lion de eu cummunnuté des Libraires et Imprimeurs de Paris signé, P. AUBOUIN, Syndic.",
+          "C'est cette nonchalance qui nourrit la concorde, et fait que dans Paris",
+          "La Scène est à Paris daus"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Champagne",
+        "Normandie",
+        "Picardie",
+        "France"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

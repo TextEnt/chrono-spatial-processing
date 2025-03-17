@@ -1,0 +1,77 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Cheffault, F",
+    "title": "Le Martyre de saint Gervais, poème dramatique, par M. F. de Cheffault,...",
+    "publication_date": "1685",
+    "document_id": "bpt6k4223000r"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "César",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Madame, il est Chrétien, Les Dieux veulent sa mort, et nous n'y pouvons rien, On combat vainement leur puissance absolue, L'airêt en est donné, sa perte est résolue, Le blâme qu'il vient encor de prononcer, Loin d'apaiser le Ciel, sert à le couroucer, Il se livre soi-même au malheur qui l'accable, César veut qu'à leur secte on soit inéxorable.",
+          "Puis qu'il était Chrétien, sa mort est légitime, Quand même de son crime il se fut repenti, César à son pardon n'aurait pas consenti, Outre qu'il s'est offert au malheur qui l'accable, On a du le punir puis qu'il était coupable, Mais son trépas vous touche et ce que j'en ai dit, Veut qu'à votre pitié j'épargne ce récit.",
+          "Peut-être voudrez-vous quand nous irons au Temple, Vous conduire au supplice imiter cet exemple, Ou bien vous en voudrez appeler à César Mais attendre ce temps c'est différer bien tard, Quand l'obstination à ce point vous accable, L'Arrest que je prononce étant irrévocable, En ayant de César un pouvoir absolu, Il faut exécuter ce que j'ai résolu, [de grâces.",
+          "Soyez trop indulgent, complaisant téméraire, Attirez-nous du Ciel la hain et la colère, Pour vous voir couronné cessez d'être Romain, La seule ambition vous met dans le chemin, Vous êtes indulgent pour une secte impie, Infidèle à César, traître à votre Patrie, Facile et complaisant pour ouïr les ie, D'une Reine qui vient mandier du secours.",
+          "Faites que j'y renonce, ou pour le dédaigner, Cachez à mon orgueil qu'il a trop de faiblesse, Pour m'élever au Trône où César s'intéresse, Et que pour des raisons, ou d'Amour ou d'État, Combatre injustement, c'est faire un attentat, Puisqu'aussi-bien les Dieux ont fait taire l'Oracle"
+        ]
+      },
+      "top_5_persons": [
+        "César",
+        "GERVAIS",
+        "César",
+        "Tiridate",
+        "Maurie"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Milan",
+          "frequency": 2
+        },
+        "related_sentences": [
+          "Et la Reine à présent est elle avec ses troupes? \nTHRASE\n Quoi vous ne savez pas qu'ayant le vent en poupe, arvec quatic omercis qu'enc à plle pour ramer, Du côté de Milan elle fait voile en mer, On la dit à Madame, DORITILLE.",
+          "La SCÈNE est près de Milan, dans le Camp d'Astase \n"
+        ]
+      },
+      "top_5_places": [
+        "Milan",
+        "Rome",
+        "Pavie",
+        "GERVAIS"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

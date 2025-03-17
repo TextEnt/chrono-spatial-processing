@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Scudéry, Georges de",
+    "title": "Le Trompeur puny, ou l'Histoire septentrionale, tragi-comédie",
+    "publication_date": "1635",
+    "document_id": "bpt6k1090017x"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "NERE",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "Engagé par un Dieu dedans cette amitié, Je tâche de le vaincre, en vous faisant pitié, Joint que dans un combat où le danger m'appelle, La victoire ou la mort m'en semble toujours belle. \nNERE\n Lors qu'on peut espérer à l'instant qu'on se bat, De se voir couronner à la findu combat, Ence cas il estbon de tenter la Fortune: Mais toi qui sais défia que ton feu m'importune, Que je hais ton visage autant que ton dessein, Que ne travailles-tu pour te l'ôter du sein?",
+          "Pour voir si j'ai flatté le sujet de ma flamme, Regarde dans cette onde, ou bien dedans mon âme, L'une et l'autre à l'instant te feront auouer, Que tout ce que j'ai dit est trop peu te louer. \nNERE\n Garde qu'une louange excesivement prise, Me donnant trop d'orgueil fasse qu'on te méprise. \nARSIDOR\n Pour redouter ce mal ton œil est trop bénin, Et l'Abeille, des fleurs ne fait poins de venin. \nNERE\n Nous nous laissons tromper souvent aux belles chose:",
+          "ÀLCANDRE Je m'étonne de voir, en sa pâle couleur, Les marques d'un esprit où règne la douleur: Je m'étonne de voir qu'en pleurs elle se noie, Ayant tant de sujet de nager dans la joie: Elle qui doit avoir un Espoux aujourd'hui, Dont le rare mérite est seul semblable à lui. \nNERE\n Qu'il soit aussi parfait que tu le crois infâme, Il-épouse une morte en me prenant pour femme: Megère, et mon Hymen, allume son flambeau, Grient veuxounei que dedans toujours tombeau.",
+          "Par la perfection qui vous rend adorable, Par l'excès des malheurs qui me font misérable, Par cet heureux Amant que vous aimez le mieux, Par tout ce que ruvre, et te jont vos beaux yeux, Par les vœux que j'ai fais d'une éternelle flamme, Ne me commandez point de dégager mon âme, Car ens serais contraint de vous désobéir. \nNERE\n À force de m'aimer tte feras haïr: Adieu, n'obtenant pas une requête aise, Crois que jamais deux fois ne suis suis tefusee.",
+          "Si mon travail fut vain, ma fourbe n'est pas vaine: Chaque mot porte coup, et sur son teint appris lis, Une lettre de Rose, et du papier de Lis La rougeur que je vois dans ce front que le, Soleil ne va Point sans l' point Et le aurore, Et le nuage épois qui commence à monter, Témoigne que la foudre est prête d'éclatter. \nNERE\n Infamme et lâche enfant, d'un père qui m'affolle, T on ferts uesemree tomme"
+        ]
+      },
+      "top_5_persons": [
+        "NERE",
+        "CLARINE",
+        "Neree",
+        "M",
+        "Seigneur"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 5
+        },
+        "related_sentences": [
+          "MONSIEUR DE DOvA de da Pres tant d'hommages divers 1 IDe plus grands esprits de la France, Vous faire espérer de beaux Vers, C'est avoir trop de suffisance: Ma Muse est muette en ce point, Aussi ne le prétends-je point: Car quoi que l'amitié m'ordonne, Promettre un digne éloge à l'honneur infini Que le Trompeur Puni nous donne, C'est passer justement pour un Trompeur Puni.",
+          "D À MONSIEUR DE SCUDERY To que toute la France estime, Et qu'elle prend pour le démon, Qui montre a bien polir la Rime, Et pour tout dire en fin père de Ligédamon, Quoi que ce Héros dans sa vie Donne aux plus sages de l'envie",
+          "Dans ce temps rempli d'ignorance, Peu de pinceaux sont assez bons Pour peindre l'honneur des Bourbons, Et le mérite de la France Ces beaux Meubles de cabinets, Ces petits faiseurs de Sonnets, Qui ne vont jamais à la guerre",
+          "Toute la France émue au bruit de ses merveilles, Lui destine esia ses loisirs et ses veilles,",
+          "pour bien fermer la France Vous en donner une des clefs."
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Angleterre",
+        "Navarre",
+        "Rouen",
+        "Bordeaux"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

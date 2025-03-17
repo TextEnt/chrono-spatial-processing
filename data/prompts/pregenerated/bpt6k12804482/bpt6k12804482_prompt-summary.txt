@@ -1,0 +1,79 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Molière",
+    "title": "L'Escole des maris, comedie, de J. B. P. Moliere. Representée sur le theatre du Palais Royal.",
+    "publication_date": "1663",
+    "document_id": "bpt6k12804482"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ISABELLE",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Il le mérite bien, et j'en suis fort ravi. \nISABELLE\n Enfin de cent raisons mon dépit s'est servi, Pour lui bien reprocher des bassesses si grandes, Et pouvoir cette nuit rejetter ses demandes: Mais elle m'a fait voir de si pressants désirs, A tant versé de pleins, tant poussé de soupirs, Tant dit qu'au désespoir sens porterais son âme, Si ie ju refusois ce qu'exige sa flamme, Qu'à céder malgré moi, mon cœur s'est vu réduit;",
+          "Vous en avez menti, chienne, ce n'est pas elle, De l'honneur que tu fuis, elle suit trop les lois, Et tu prends faussement, et son nom, et sa voix. \nISABELLE\n Mais à moins de vous voir par un saint hyménée.",
+          "Et par toi-même enfin j'ai voulu, sans retour, Le tirer d'une erreur qui nourrit son amour. \nISABELLE\n Quoi, mon âme à vos yeux ne se montre pas toute, Et de mes vœux encor vous pouvez être en doute?",
+          "Oui, pour l'amour de toi, on retiens mes transports, Mais dès le même instant qu'elle sera dehors, Je veux sans différer, aller trouver mon frère, J'aurai joie à courir ainsi dire cette allaire. \nISABELLE\n ",
+          "Ne t'afflige point tant; va, ma petite Femme, Je meen vais le trouver, et Seigneur chanter sa gamme. \nISABELLE\n Dites"
+        ]
+      },
+      "top_5_persons": [
+        "ISABELLE",
+        "ARISTE",
+        "LEONOR",
+        "LISETTE",
+        "Valère"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 6
+        },
+        "related_sentences": [
+          "Je me sumposé silence, pour trouver voit indroit plus propre à placer de si belles choses, et tout ce que ai prétendu dans cette Épître, c'est de justifier mon action à toute la France, et d'avoir cette gloire de vous dire à vous-même, MONSEIGNEUR, avec toute a soumission pouvible, que je llιs, DE VÔTRE ALTESSE ROYALE, Le très-humble, très-obeïssant, et très-fidelle serviteur.",
+          "OYIS par la grâce de Dieu, Roi de E France et de Navarre À nos âmez et féaux Conseillers, les Gens tenants nos Cours de Parlement, Maître des Requêtes de notre Hôtel, Baillifs, Seneschaux, leurs Lieutenants, et tous autres nos Officiers et Justiciers qu'il appartiendra, SALUT.",
+          "Ô ONSEIGNEUR, Je fais voir Ura la France des choses bien peu pron ortionnées.",
+          "ance \nFrance\n \nFrance\n \nFrance\n "
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "Paris",
+        "Navarre",
+        "Fontainebleau"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

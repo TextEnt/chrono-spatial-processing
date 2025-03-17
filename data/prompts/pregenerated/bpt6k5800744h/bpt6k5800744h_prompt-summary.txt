@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Donneau de Vizé, Jean",
+    "title": "La devineresse, ou Les faux enchantements , comédie représentée par la troupe du roy",
+    "publication_date": "1680",
+    "document_id": "bpt6k5800744h"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Jobin",
+          "frequency": 8
+        },
+        "related_sentences": [
+          ", je nie il sens portée d'inclination à vous A. servir, et quand. \nMme\nNOBLET\n Non, Même Jobin, ce que je viens de vous donner ne sera compté à rien, et les trois cens Louis ne vous en seront pas moss payez, Il le Marsage que je vous ai prié de rompre, ne se fait point.",
+          "En effet, ayant appris il y a six jours par le Démon ordinaire de la Jobin qu'il ne tenait qu'à deux mille Écus payez comprant, que le Diférend qui faisait plaider la Dame, ne s'accommodât à son avantage, je lui portai les deux mille Écus.",
+          "J'ai des Procès qui me ruinent, et je suis venu à Paris en poursuivre un qui Hétentre lie illeta à la bentec, \nM\n \nJOBIN\n Hé bien, mon Frère, il faut faire solliciter pour vous, j'ai de bons Amnis. \nMf",
+          "et comme la gloire de le Mareahnen de coticeo vu taites de Femmes est d'autant plus grande que la chose paraît impossible, c'est pour cela que je vous demande un Secret, Même JOBIN Je ne veux pas vous dire que je n'en ai point;",
+          ". L'Esprit à fait des mer veilles, et Ivrattame ne doute point à présent que vous ne conillarianes à tous les Mémlonos Même JOBIN Qu'il faut peu de chose pour duper les Gens! \nMlle\nDU VERDIER\n la."
+        ]
+      },
+      "top_5_persons": [
+        "Jobin",
+        "Mr",
+        "GILET",
+        "M",
+        "OBIN"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Paris",
+          "frequency": 8
+        },
+        "related_sentences": [
+          "car sa Parente m'a averti qu'elle vieut partioulièrement vous trouver à la prière d'une Comtesse qu'elle a vue depuis une heure, et qui l'a fortement assurée qu'elle ne vous densndera sien que vosis ne faillez, ne Mr IGBIN Est-elle tout-à-fait persuadée que vous le loyez point à Paris LE CHEVALIER.",
+          "Je suis parti en effet, et après avoir passé deux jours à vingt lieues dicy, où plusieurs Personnes qui lui écrivent m'ont vu, je suis revenu en secret, et je demeure caché à Paris depuis six jours, afin qu'elle iné croie toujours à la Campagne.",
+          "J'ai des Procès qui me ruinent, et je suis venu à Paris en poursuivre un qui Hétentre lie illeta à la bentec, \nM\n \nJOBIN\n Hé bien, mon Frère, il faut faire solliciter pour vous, j'ai de bons Amnis. \nMf",
+          "Voyez, vous, mon Frère, Paris est le lieu du monde où il y a le plus de Gens d'esprit, et où il y a aussi le plus de Dupes.",
+          "Tout franc, Madame, on ne fait point venir les Gens à Paris pour les faire enfler. \nme D FRANÇOISE\n Outre dix Pistoles que je te dounera H dès aujourd'hui"
+        ]
+      },
+      "top_5_places": [
+        "Paris",
+        "Rome",
+        "Alcove",
+        "France",
+        "Montpelier"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

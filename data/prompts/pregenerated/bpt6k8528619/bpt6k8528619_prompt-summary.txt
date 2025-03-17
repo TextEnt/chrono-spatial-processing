@@ -1,0 +1,73 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Passerat, François",
+    "title": "Amarillis petite pastoralle mêlée de récit, de musique et de danse... / par M. Passerat",
+    "publication_date": "1695",
+    "document_id": "bpt6k8528619"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "Amarillis",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Mais je vois ce Berger, Honneur, fierté, vertu, daignez me protéger, Et ne permetez pas à l'amour de paraître. \nTIRCIS\n Puis-je vous demander, sans trop être indiscret, Qui vous force à chercher ainsi la solitude? \nAMA\n \nAMARYLLIS\n Me pourriez-vous, Berger, confiet en secret Le sujet important de votre inquiétude? \nTIRCIS\n ji tye certais apprends qu'on s'efforce à cacher, Mais on n'est pas certain d'en être longtemps maître. \n",
+          "AMARYLLIS\n On éprouve du sort les plus rigoureux coups Quand par un ner honneur on ert reudit à feindre. \nTIRCIS\n Sous les dehors trompeurs d'insensibilité J'ai caché jusqu'ici la plus ardente flamme. \nAMARYLLIS\n mar ces ceruts pompeur dorguen de de nerte, J'ai tâché d'étouffer les désirs de mon âme. \nTIRCIS\n Mais malgré mes efforts je connais en ce jour Qu'on ne peur résister au Dieu qui fait qu'on aime. \n",
+          "TIRCIS\n M Mirons-nous, Idas, on va finir la fête, E A inter ces beaux lieux Amarillis s'apprête, Quand un heureux destin me permet de la voir Le plaisir que je sens ne se peut concevoir;",
+          "AMARYLLIS\n Je n'ose me flatter de cet heureux espoir, Je crains tout, et mon cœur en cette inquiétude Pour calmer mes ennuis veut de la solitude, Laissez moi seule, allez, ne suivez point mes pas.",
+          "AMARYLLIS, Le doux printems de fleurs horncra prus la tête, Nos timides agueaux feront trembler les loups, L'orageux Occan n'aura plus de tempête, Quand je romprai des nœuds si charmant et si doux. \nTIRCIS\n "
+        ]
+      },
+      "top_5_persons": [
+        "Amarillis",
+        "Climène",
+        "Idas",
+        "IRIS",
+        "Diane"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Bergère",
+          "frequency": 1
+        },
+        "related_sentences": [
+          "Quand on a combattu, Bergère, assez longtemps, On peut enfin parler sans être téméraire."
+        ]
+      },
+      "top_5_places": [
+        "Bergère"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

@@ -1,0 +1,81 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "Boyer, Claude",
+    "title": "Ulysse dans l'isle de Circé, ou Euriloche foudroyé . Tragicomédie, représentée sur le théâtre des machines du Marais...",
+    "publication_date": "1650",
+    "document_id": "bpt6k5738216j"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "CIRCE",
+          "frequency": 8
+        },
+        "related_sentences": [
+          "Tulsque ma mort vous plaît, j'aime à perdre le jour, C'est tout ce que j'ai pu donnor à votre amour: CIRCE -Tu mourras, mais avant que de t'ôter la vie Je veux savoir, ingrat, en quoi tu m'as servie.",
+          "CIRCE' à Vlisse E l'avoue aujourd'hui, vous m'avez attendue, Mais toujours cette ardeur ne m'a pas preuentté: Je la préviens souvent, et peut-être mon cœur Peut reprocher au vôtre un peu plus de froideur.",
+          "PreueneZ les malheurs que présage ma crainte, Votre chaîne auec Roi n'est pas si fort étrainte, Que si Circé ni moi n'en sommes point d'accord, Vous ne la puissiez rompre avec un peu d'effort.",
+          "ne puis-je espéren en ce fatal moment La gloire de servir votre ressentiment? \nCIRCE\n Vous le pouvez, allez; où l'honneur vous appelle;",
+          "Mais la perte du traître est bien plus mal aisée, Il est déjà si loin qu'il échappe à mes yeux. \nCIRCE\n Levit"
+        ]
+      },
+      "top_5_persons": [
+        "CIRCE",
+        "Circé",
+        "PERIMEDE",
+        "Pénélope",
+        "CIRCE"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "Grèce",
+          "frequency": 8
+        },
+        "related_sentences": [
+          "Pour revoir tes beaux yeux, pour revoir notre Grèce J'attends de mon amour ce qu'a fait son adresse, Vous en qui le Ciel mit tout le pouvoires Dieux Qui savez mille endroits pour sortir de ces lieux, Sans qu'il doive à Gircé cet effort favorable.",
+          "Notre Grèce où le luxe et la magnificence Étalent leurs trésors avec tant d'abondance, N'a rien de comparable aux douceurs de ces lieux.",
+          "Au retour nous usaurons s'il faut revoir la Grèce Cependant pour tâcher d'apaiser la Princesse Embrassez Élpenor, Circé fera la paix.",
+          "Non, Seigneur, notre Grèce en délices fertile N'a rien de comparable aux douceurs de cette Ile.",
+          "Je retombe, et crains ce que ie fais, N'importe malgré moi je vous rends à la Grèce"
+        ]
+      },
+      "top_5_places": [
+        "Grèce",
+        "Paris",
+        "Troie",
+        "PARIS",
+        "France"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```

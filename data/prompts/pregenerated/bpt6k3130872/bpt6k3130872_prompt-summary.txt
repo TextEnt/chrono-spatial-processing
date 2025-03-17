@@ -1,0 +1,77 @@
+Look at the following JSON object describing a theatre play in French (XVII century); the `metadata` property contains basic information about the play (author, title, publication date), while the `context` property contains information about the people and places that are most frequently mentioned in the play (such as label, mention frequency, and salient sentences where it appears).
+
+INPUT:
+```json
+{
+  "metadata": {
+    "author": "E",
+    "title": "Pastorelle pour le bout de l'an, de Henry le Grand . Dedié à la Royne regente par E. G. T.",
+    "publication_date": "1611",
+    "document_id": "bpt6k3130872"
+  },
+  "context": {
+    "people": {
+      "top_1_person": {
+        "entity": {
+          "label": "ELPIS",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "LLisièce la donne, Et en te la donnant de biens ie te foisonne Va vertueux ELPIS, et rallume un beau jour À tes Champs languissant minez de ton Amour. \nELPIS\n Ha ie connais ta voix, et les rays de ta face Grand Maître des Pasteurs, gtand Pan ces t'en rend grâce on beau nom, puisque par mon moyen re pays t'as versé tant de bien jou jours d'une œillade propice.",
+          "que te faisant passer les Nones annuelles de ce mois en regrets de notre perte, ie te dispense pour aux suivantes Alendes du même mois prendre les habits de couleur verde pour symboliser, et congratuler à l'Esperance de notre jeune ELPIS, ELPIS (qui ne signifiant qu'Espérance) nous doibt autant apporter de contentement en sa mémoire comme les annuelles parentions ou obsèques que nous faisons au tombeau de ce Grand MEGALIN",
+          "En te voyant ici prends un extrême plaisir, Mais tu ne peux soûler la soif de mon désir. \nELPIS\n Le Ciel sera la Mer, et la Mer porte-voiles Parsemera son dos de brillantes étoilles, Phœbus crairora les vinbres de la nuice, Sa sœur allumera le beau jour qui nous luit, Et le Lis noircira dans la plaine argentée Quand ELPIS oublira sa chère Protatée.",
+          "Le beau Printemps perdra sa beauté et sa grâce, Et de gros tourbillons boursouflera sa face: L'hiver nous versera une moisson de fleurs, \nELPIS\n peaux, C'est assez mon doux cœur, allons voir nos trouCherchons le beau séjour des argentines eaux, Où les petits oiseaux tapis sur les bocages D'un gosier emmiellé entonnent leurs ramages.",
+          "En toi vit mon plailir, et meurent mes regrets. \nELPIS\n Tes yeux, astres brillants, les flambeaux de mon an Nourrissent dedans moi une très-saincte flamme, L'honneur de ta beauté, cet yvoire poli Qui reluist sur ton front richement embeli, Me dient sénle lur"
+        ]
+      },
+      "top_5_persons": [
+        "ELPIS",
+        "Seigneur",
+        "Ceres",
+        "Phœbus",
+        "Cyprine"
+      ]
+    },
+    "places": {
+      "top_1_place": {
+        "entity": {
+          "label": "France",
+          "frequency": 4
+        },
+        "related_sentences": [
+          "Si que par ce moyen ce ne serait autre chose que mettre le sel sur la plaie, ja par quelque longueur de temps aucunement endurcie et encroûtée, (signes et marques premières denotãtes les inflammations éteintes, ou pour le moins aucunement apaise) Mais si armant tes considérations à la Française, et d’ ce cœur vraiment Français, tu entre dans la connaissance de ton débuoir, je crois que tu jugeras raisonnable, si en la personne d'un MEGALIN nous de plorons celui que les plus brillantes perles de la France (nos conseils d'Estat et y,) pour ses Heroiques et Martiales vertus ont honoré de ce nom de HENRY LE AN, que te servant de plus viues et fortes raisons ou en effect, ou en apparence, tu Guge les larmes et regretz, sanglos et ) parties in egrantes de dueil, être mal estalees en ce Mois, auquel le gazoüillis des oiseaux entrecouppe ses meilleurs fredons, et la terre halenee des germe fleurs Zephirs, ne presente nos yeux que le vermeillon des Roses et des oilletz.",
+          "Exposant aux yeux de la France et ainsi rafraîchissant la mémoire de ce qu'il lui coûte si cher, donnant cette annuel à Dieu, aux cendres, et à la mémoire de ce Monarque que la peste de la France allaite des mamelle de l'Enfer et nourrie en son giron nous a ravi, et que légitimement tu ne dît toujours raison",
+          "Qu'un semblable jour coulant A ravi à notre France, 4 Ll 3 Pour tout gage nous laissant De notre LOIS l'enfance."
+        ]
+      },
+      "top_5_places": [
+        "France",
+        "PARIS",
+        "Syracuse"
+      ]
+    }
+  }
+}
+```
+
+Your role is to predict the location and historical period in which the action of the play is set. 
+
+KEY RULES:
+- Predict the timespan and not the precise and exact date of the period where the play could have taken place
+- Do not write an introduction or summary 
+- The response must contain only valid JSON
+- The values in the JSON "timeframe_start" and "timeframe_end" should always be a single valid date in the form [±Y]YYYY; negative values should be used for years before common era B.C.E. (e.g. `300 B.C.` should be represented as `-300`)
+- if the provided information is not sufficient to determine historical period and/or location, the following values can be set to `None`: `period`, `timeframe_start`, `timeframe_end`, `location`, `location_qid`
+
+Return your response and the underlying reasoning as a JSON object with the following structure:
+```json
+{
+    "period": "The historical period in which the play could have taken place",
+    "period_reasoning": "The reasoning the model used to identify the historical period",
+    "timeframe_start": "The start value of the historical period, formatted as [±Y]YYYY",
+    "timeframe_end": "The end value of the historical period, formatted as [±Y]YYYY",
+    "location": "The geographic location where the action of the play takes place",
+    "location_reasoning": "The reasoning the model used to identify the geographic location",
+    "location_qid": "The Wikidata QID of the identified location"
+}
+```
