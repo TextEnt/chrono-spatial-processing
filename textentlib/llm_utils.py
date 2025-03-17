@@ -65,7 +65,7 @@ def query_llm(client: aisuite.Client, model: str, requests: List[LLMrequest], ou
     responses = []
     for request in requests:
         # Avoid asking the model, if an answer file already exists
-        filename = f"{request.document_id}_{request.prompt_id}_{model.replace(':', '-')}.txt"
+        filename = f"{request.document_id}_{request.prompt_id}_{model.replace(':', '-')}.json"
         filepath = output_path / request.document_id / filename
         if filepath.exists():
             #print(f"Found file {filepath} for document {request.document_id}")
