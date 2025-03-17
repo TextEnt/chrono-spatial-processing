@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k9807756q",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"Ancient Sparta\",\n   \"period_reasoning\": \"The title \\\"Zelonide, princesse de Sparte\\\" explicitly mentions Sparta, indicating a setting related to ancient Sparta.\",\n   \"timeframe_start\": \"-800\",\n   \"timeframe_end\": \"-146\",\n   \"location\": \"Sparta\",\n   \"location_reasoning\": \"The title explicitly names Sparta as the location.\",\n   \"location_qid\": \"Q13284\"\n}",
+  "duration_seconds": 5.530955076217651,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10901623",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"Medieval Period\",\n   \"period_reasoning\": \"The title \\\"Th\u00e9odore, Reyne de Hongrie\\\" (Theodore, King of Hungary) indicates a historical subject matter related to Hungary, a kingdom with a history rooted in the medieval period. The play is a \\\"tragi-com\u00e9die\\\", a common genre in the 17th century, often drawing inspiration from historical events and figures of the medieval era.\",\n   \"timeframe_start\": \"-1000\",\n   \"timeframe_end\": \"1500\",\n   \"location\": \"Hungary\",\n   \"location_reasoning\": \"The play's title explicitly references Hungary, indicating that the action is set there.\",\n   \"location_qid\": \"Q181\"\n}",
+  "duration_seconds": 7.757335186004639,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

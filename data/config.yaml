@@ -3,7 +3,6 @@ validation:
   pregenerated_prompts_path: "data/prompts/pregenerated/"
   models:
     - "ollama:phi4-mini:latest" # replaced `ollama:phi4:latest`  
-    - "ollama:gemma2:9b" # should replace with gemma3 (`ollama:gemma3:12b`) 
     - "ollama:gemma3:12b"
     - "ollama:mistral-small:24b"
     - "ollama:deepseek-r1:14b"

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k9807756q",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Classical Antiquity\",\n  \"period_reasoning\": \"The play mentions historical figures and locations associated with ancient Greece, such as Pyrrhus and Sparta. These elements are characteristic of Classical Antiquity.\",\n  \"timeframe_start\": \"-800\",\n  \"timeframe_end\": \"500\",\n  \"location\": \"Sparta\",\n  \"location_reasoning\": \"The play is titled 'Zelonide, princesse de Sparte' and frequently mentions Sparta. The context also includes sentences that refer to Sparta.\",\n  \"location_qid\": \"Q134692\"\n}",
+  "duration_seconds": 12.229203462600708,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090242p",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"XVII century\",\n   \"period_reasoning\": \"The play's metadata indicates a publication date of 1673, placing it firmly within the 17th century. The text also references contemporary French culture and language.\",\n   \"timeframe_start\": \"1600\",\n   \"timeframe_end\": \"1700\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"The text mentions 'France' and references French language and culture. The play also takes place on 'Parnasse', which is a symbolic location often associated with French literary tradition.\",\n   \"location_qid\": \"Q159\"\n}",
+  "duration_seconds": 9.904351949691772,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

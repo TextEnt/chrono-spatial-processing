@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10901623",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Medieval or Early Modern Period\",\n  \"period_reasoning\": \"The play is a tragi-comedy from the XVII century, which suggests it is set in a historical period that aligns with medieval or early modern themes. The characters and plot elements, such as royalty and political intrigue, are common in this era.\",\n  \"timeframe_start\": \"-100\",\n  \"timeframe_end\": \"+1700\",\n  \"location\": \"Hungary\",\n  \"location_reasoning\": \"The title of the play mentions 'Reyne de Hongrie,' which indicates that the action takes place in Hungary. Additionally, the character names and political intrigue suggest a European setting.\",\n  \"location_qid\": \"Q28\"\n}",
+  "duration_seconds": 39.67614960670471,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}
