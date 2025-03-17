@@ -1,6 +1,7 @@
 import dataclasses
 import spacy
 import random
+import yaml
 import operator
 import pandas as pd
 from dataclasses import dataclass
@@ -342,6 +343,19 @@ def load_or_create_corpus(spacy_corpus_path: str) -> DocBin:
     else:
         spacy_corpus = DocBin(store_user_data=True)
     return spacy_corpus
+
+def read_configuration(config_path: Path) -> dict:
+    """
+    Reads a YAML configuration file and returns its content as a dictionary.
+
+    Args:
+        config_path (Path): Path to the YAML configuration file.
+
+    Returns:
+        dict: Parsed content of the YAML file.
+    """
+    with config_path.open("r", encoding="utf-8") as file:
+        return yaml.safe_load(file)
 
 @dataclass
 class Entity:
