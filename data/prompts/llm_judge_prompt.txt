@@ -1,0 +1,51 @@
+
+
+PREDICTION:
+```json
+{prediction_json}
+```
+
+REFERENCE:
+```json
+{prediction_json}
+```
+
+ASSESSMENT RULES:
+1. Score for period string (`score_period_string`)
+- compare the prediction (field ``) against the reference (field ``)
+- assign 1 point if ...
+- assign 0.5 points if ...
+- assign 0 points if ...
+- store this score in the field `score_period_string` of your output JSON document 
+
+2. Score for period interval (`score_period_interval`)
+- compare the prediction (field ``) against the reference (field ``)
+- assign 1 point if ...
+- assign 0.5 points if ...
+- assign 0 points if ...
+- store this score in the field `score_period_interval` of your output JSON document 
+
+3. Score for location string (`score_location_string`)
+- compare the prediction (field ``) against the reference (field ``)
+- assign 1 point if ...
+- assign 0.5 points if ...
+- assign 0 points if ...
+- store this score in the field `score_location_string` of your output JSON document 
+
+4. Score for location QID (`score_location_qid`)
+- compare the prediction (field ``) against the reference (field ``)
+- assign 1 point if ...
+- assign 0.5 points if ...
+- assign 0 points if ...
+- store this score in the field `score_location_qid` of your output JSON document 
+
+Return your assessment and the underlying reasoning as a JSON object with the following structure:
+```json
+{{
+    "score_period_string": "The score for the period string; it must be a value between 0-1",
+    "score_period_interval": "The score for the period interval; it must be a value between 0-1",
+    "score_location_string": "The score for the location string; it must be a value between 0-1",
+    "score_location_qid": "The score for the location QID; it must be a value between 0-1",
+    "score_reasons": "A brief explanation of the reasoning behind the scores you assigned"
+}}
+```
