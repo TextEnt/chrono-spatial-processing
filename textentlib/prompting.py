@@ -93,6 +93,20 @@ def build_metadata_prompt(spacy_doc: Doc, prompts_base_path: Path, summaries_bas
     metadata_as_string = json.dumps(metadata, indent=2, ensure_ascii=False)
     return metadata_prompt.format(document_metadata=metadata_as_string)
 
+def build_llm_judge_prompt(prediction: Dict, reference: Dict, prompts_base_path: Path) -> str:
+    # load LLM judge prompt
+    judge_prompt_path = prompts_base_path / "llm_judge_prompt.txt"
+    with open(judge_prompt_path, "r") as file:
+        llm_judge_prompt = file.read()
+
+    # JSON to pretty string
+    prediction_as_string = json.dumps(prediction, indent=2, ensure_ascii=False)
+    reference_as_string = json.dumps(reference, indent=2, ensure_ascii=False)
+    return llm_judge_prompt.format(
+        prediction_json=prediction_as_string,
+        gt_annotation_json=reference_as_string
+    )
+
 def build_prompts(spacy_doc: Doc, prompts_base_path: Path, summaries_base_path: Path) -> List[Tuple[str, str]]:
     """
     Builds prompts based on a spaCy document.
