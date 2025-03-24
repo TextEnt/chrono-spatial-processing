@@ -11,3 +11,9 @@ validation:
     - "openai:gpt-4o"
     - "deepseek:deepseek-reasoner"
     - "anthropic:claude-3-7-sonnet-20250219"
+
+llm-judge:
+  models:
+    - "openai:o1-mini"
+    - "deepseek:deepseek-reasoner"
+    - "anthropic:claude-3-7-sonnet-20250219"
