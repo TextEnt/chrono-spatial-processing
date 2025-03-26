@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090242p",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Ancient Rome\",\n    \"period_reasoning\": \"The play references mythological characters such as En\u00e9e (Aeneas) and Didon (Dido), which are associated with ancient Roman mythology, indicating that the action is set during the period of Ancient Rome.\",\n    \"timeframe_start\": \"-753\",\n    \"timeframe_end\": \"476\",\n    \"location\": \"Ancient Rome\",\n    \"location_reasoning\": \"The characters and mythological references (En\u00e9e, Didon, Berenice) suggest that the play's action takes place in Ancient Rome.\",\n    \"location_qid\": \"Q220\"\n}",
+  "duration_seconds": 9.952251195907593,
+  "prompt_tokens": 599,
+  "completion_tokens": 1495,
+  "total_tokens": 2094
+}

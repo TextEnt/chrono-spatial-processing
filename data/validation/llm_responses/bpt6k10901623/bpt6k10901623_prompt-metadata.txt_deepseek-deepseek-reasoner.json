@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10901623",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"High Middle Ages\",\n    \"period_reasoning\": \"The title references a queen of Hungary, suggesting a medieval setting typical of tragicomedies from the 17th century that often dramatized historical or legendary figures. Hungary's prominence as a kingdom in the High Middle Ages (11th-13th centuries) aligns with the likely timeframe.\",\n    \"timeframe_start\": \"1000\",\n    \"timeframe_end\": \"1300\",\n    \"location\": \"Kingdom of Hungary\",\n    \"location_reasoning\": \"The title explicitly states 'Reyne de Hongrie' (Queen of Hungary), indicating the play is set in the historical Kingdom of Hungary.\",\n    \"location_qid\": \"Q28\"\n}",
+  "duration_seconds": 41.520442724227905,
+  "prompt_tokens": 448,
+  "completion_tokens": 593,
+  "total_tokens": 1041
+}

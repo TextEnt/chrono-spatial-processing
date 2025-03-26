@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090242p",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Ancient Rome, First Century\",\n    \"period_reasoning\": \"The play appears to be about the Roman Emperor Titus (or Tite in French) who ruled from 79-81 CE. The characters include Titus, Berenice (likely referring to Berenice of Cilicia, a Jewish queen who had a relationship with Titus), and references to Rome. The play seems to be a 17th century French adaptation of this historical relationship.\",\n    \"timeframe_start\": \"79\",\n    \"timeframe_end\": \"81\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"Rome is mentioned as one of the top places in the text. Moreover, since the play centers around Titus, who was a Roman Emperor, the setting is likely Rome. The characters and plot clearly indicate a Roman setting, with the frame possibly being Mount Parnassus (mentioned most frequently) as a literary device where discussions about the main story take place.\",\n    \"location_qid\": \"Q220\"\n}",
+  "duration_seconds": 5.224477052688599,
+  "prompt_tokens": 1915,
+  "completion_tokens": 242,
+  "total_tokens": 2157
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5772699f",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Neo-Babylonian Empire\",\n    \"period_reasoning\": \"The play is titled 'La mort de Baltazar, roy de Babilone', which suggests it is about the historical figure Belshazzar, who was a prince of Babylon. Belshazzar is associated with the Neo-Babylonian Empire, particularly during the reign of his father, Nabonidus, in the 6th century B.C.E.\",\n    \"timeframe_start\": \"-0605\",\n    \"timeframe_end\": \"-0539\",\n    \"location\": \"Babylon\",\n    \"location_reasoning\": \"The title of the play mentions 'Babilone', which is the French name for Babylon. This indicates that the action of the play is set in Babylon, the capital of the Neo-Babylonian Empire.\",\n    \"location_qid\": \"Q2448\"\n}",
+  "duration_seconds": 4.003875732421875,
+  "prompt_tokens": 584,
+  "completion_tokens": 188,
+  "total_tokens": 772
+}

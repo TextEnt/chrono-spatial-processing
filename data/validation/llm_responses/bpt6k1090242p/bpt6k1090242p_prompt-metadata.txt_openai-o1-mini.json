@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090242p",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Roman Empire\",\n    \"period_reasoning\": \"The play references historical figures Titus and Berenice, who were prominent during the Roman Empire in the late 1st century CE.\",\n    \"timeframe_start\": \"79\",\n    \"timeframe_end\": \"81\",\n    \"location\": \"Alexandria\",\n    \"location_reasoning\": \"Berenice was the queen of Alexandria, and the play discusses her relationship with Titus, indicating the setting is Alexandria during the Roman Empire.\",\n    \"location_qid\": \"Q411\"\n}",
+  "duration_seconds": 9.10354495048523,
+  "prompt_tokens": 463,
+  "completion_tokens": 773,
+  "total_tokens": 1236
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k852913n",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was published in 1678, and the language and style are consistent with 17th-century French theatre. The use of characters with names like 'Philandre' and 'Polemon' suggests a setting typical of classical or early modern European plays.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1699\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play is written in French and was published in 1678, a time when French theatre was prominent. The names of the characters and the style are consistent with French comedies of the 17th century.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 4.249858856201172,
+  "prompt_tokens": 593,
+  "completion_tokens": 162,
+  "total_tokens": 755
+}

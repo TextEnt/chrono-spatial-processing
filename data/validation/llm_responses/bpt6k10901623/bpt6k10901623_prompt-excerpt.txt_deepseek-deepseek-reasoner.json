@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10901623",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Medieval Hungary\",\n    \"period_reasoning\": \"The title refers to a queen of Hungary (Th\u00e9odore, Reyne de Hongrie), and medieval Hungary (1000\u20131526) aligns with the likely historical context for a tragicomedy involving royal intrigue. The play's themes of repentance and royal authority suggest a pre-modern setting.\",\n    \"timeframe_start\": \"1000\",\n    \"timeframe_end\": \"1400\",\n    \"location\": \"Kingdom of Hungary\",\n    \"location_reasoning\": \"The title explicitly states the setting as Hungary (Hongrie), and the excerpt references a king and queen, consistent with the medieval Kingdom of Hungary.\",\n    \"location_qid\": \"Q28\"\n}",
+  "duration_seconds": 53.17471885681152,
+  "prompt_tokens": 603,
+  "completion_tokens": 942,
+  "total_tokens": 1545
+}

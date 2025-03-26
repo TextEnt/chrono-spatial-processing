@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10901623",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"16th century\",\n    \"period_reasoning\": \"The play references 'Asie' and 'Amurat', likely alluding to the Ottoman Empire's conflicts with Hungary. The Ottoman-Hungarian wars peaked in the 16th century, particularly after the Battle of Moh\u00e1cs (1526). The mention of a 'Reine de Hongrie' (Queen of Hungary) and Ottoman figures suggests this period.\",\n    \"timeframe_start\": \"1501\",\n    \"timeframe_end\": \"1600\",\n    \"location\": \"Hungary\",\n    \"location_reasoning\": \"The title explicitly mentions 'Reyne de Hongrie' (Queen of Hungary), and the Ottoman-Hungarian wars context reinforces Hungary as the primary setting.\",\n    \"location_qid\": \"Q28\"\n}",
+  "duration_seconds": 62.10369515419006,
+  "prompt_tokens": 1188,
+  "completion_tokens": 1119,
+  "total_tokens": 2307
+}

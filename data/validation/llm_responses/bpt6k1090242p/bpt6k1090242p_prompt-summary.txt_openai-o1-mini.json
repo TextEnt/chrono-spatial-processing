@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090242p",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"The play references ancient figures and places such as Titus, Berenice, Apollon, Rome, Carthage, and Parnasse, which are indicative of the Classical Antiquity period.\",\n    \"timeframe_start\": \"-500\",\n    \"timeframe_end\": \"500\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"Rome is prominently mentioned among the top places, and the characters and context suggest a setting within the Roman Empire.\",\n    \"location_qid\": \"Q220\"\n}",
+  "duration_seconds": 9.444010972976685,
+  "prompt_tokens": 1586,
+  "completion_tokens": 1356,
+  "total_tokens": 2942
+}

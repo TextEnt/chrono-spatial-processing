@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5772699f",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Neo-Babylonian Empire\",\n    \"period_reasoning\": \"The play is titled 'La mort de Baltazar, roy de Babilone,' referring to Belshazzar, who was a ruler during the Neo-Babylonian Empire. Belshazzar is historically associated with the fall of Babylon to the Persian Empire in 539 B.C.E.\",\n    \"timeframe_start\": \"-626\",\n    \"timeframe_end\": \"-539\",\n    \"location\": \"Babylon\",\n    \"location_reasoning\": \"The title specifies that Baltazar is the king of Babylon, indicating that the action takes place in Babylon.\",\n    \"location_qid\": \"Q3746\"\n}",
+  "duration_seconds": 6.16387677192688,
+  "prompt_tokens": 472,
+  "completion_tokens": 610,
+  "total_tokens": 1082
+}

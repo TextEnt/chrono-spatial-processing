@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5772699f",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Neo-Babylonian Empire\",\n    \"period_reasoning\": \"The play references Balthazar, King of Babylon, which aligns with the Neo-Babylonian Empire period in ancient Mesopotamia.\",\n    \"timeframe_start\": \"-626\",\n    \"timeframe_end\": \"-539\",\n    \"location\": \"Babylonia\",\n    \"location_reasoning\": \"The title of the play explicitly mentions Babylon, indicating that the action is set in Babylonia.\",\n    \"location_qid\": \"Q1644\"\n}",
+  "duration_seconds": 5.514386892318726,
+  "prompt_tokens": 1363,
+  "completion_tokens": 771,
+  "total_tokens": 2134
+}

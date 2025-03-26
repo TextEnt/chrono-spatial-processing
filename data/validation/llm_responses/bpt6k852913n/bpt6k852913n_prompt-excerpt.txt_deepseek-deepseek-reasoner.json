@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k852913n",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Early Modern France\",\n    \"period_reasoning\": \"The play was written in 1678 (17th century) by a French author, and French comedies of this era often reflected contemporary society or used timeless settings without explicit historical markers. The excerpt lacks specific historical references but uses French names and classical dialogue structures typical of 17th-century French theater.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play is written in French by a French author (M. N\u00e9el) with a French title, and 17th-century French theater typically centered on domestic settings unless otherwise specified. No geographic clues in the excerpt contradict this assumption.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 54.7709059715271,
+  "prompt_tokens": 614,
+  "completion_tokens": 961,
+  "total_tokens": 1575
+}

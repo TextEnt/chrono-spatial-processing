@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10901623",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Middle Ages\",\n    \"period_reasoning\": \"The play is set in Hungary, and the title refers to a queen, suggesting a monarchical system. The Middle Ages were characterized by such systems in Europe, and the reference to a 'Reyne' (queen) aligns with this period.\",\n    \"timeframe_start\": \"0400\",\n    \"timeframe_end\": \"1500\",\n    \"location\": \"Hungary\",\n    \"location_reasoning\": \"The title of the play explicitly mentions 'Reyne de Hongrie', indicating that the setting is in Hungary.\",\n    \"location_qid\": \"Q28\"\n}",
+  "duration_seconds": 3.7016561031341553,
+  "prompt_tokens": 587,
+  "completion_tokens": 138,
+  "total_tokens": 725
+}

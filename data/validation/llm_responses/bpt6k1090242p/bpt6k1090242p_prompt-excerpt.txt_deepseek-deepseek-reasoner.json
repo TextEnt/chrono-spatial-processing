@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090242p",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Roman Empire (Flavian dynasty)\",\n    \"period_reasoning\": \"The play references Titus (Roman Emperor) and Berenice, a historical figure from the 1st century CE. The excerpt mentions En\u00e9e (Aeneas) and Didon (Dido), tying it to Roman mythological/historical themes. The title and context suggest it critiques works like Racine's 'B\u00e9r\u00e9nice' (1671), which is set in ancient Rome.\",\n    \"timeframe_start\": \"70\",\n    \"timeframe_end\": \"80\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"Titus was a Roman Emperor, and the Berenice narratives (referenced in the title) are historically associated with Rome. The mention of Aeneas and Dido further anchors the setting to Roman mythology/history.\",\n    \"location_qid\": \"Q220\"\n}",
+  "duration_seconds": 37.82446002960205,
+  "prompt_tokens": 588,
+  "completion_tokens": 622,
+  "total_tokens": 1210
+}

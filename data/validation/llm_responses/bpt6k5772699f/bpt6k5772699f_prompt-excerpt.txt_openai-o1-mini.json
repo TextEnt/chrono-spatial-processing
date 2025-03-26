@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5772699f",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Neo-Babylonian Empire\",\n    \"period_reasoning\": \"The play is set during the reign of Baltazar, king of Babylon, which places it in the Neo-Babylonian period.\",\n    \"timeframe_start\": \"-626\",\n    \"timeframe_end\": \"-539\",\n    \"location\": \"Babylon\",\n    \"location_reasoning\": \"The title indicates Baltazar, king of Babylon, so the action is set in Babylon.\",\n    \"location_qid\": \"Q2330\"\n}",
+  "duration_seconds": 8.037199974060059,
+  "prompt_tokens": 604,
+  "completion_tokens": 511,
+  "total_tokens": 1115
+}

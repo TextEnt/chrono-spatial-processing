@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k9807756q",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Ancient Sparta\",\n    \"period_reasoning\": \"The excerpt mentions 'Sparte' (Sparta) and refers to a throne, suggesting the play is set during the monarchical period of Sparta. The title 'Zelonide, princesse de Sparte' confirms that the setting is Sparta and involves royalty. Ancient Sparta was ruled by kings from its founding until its incorporation into the Roman Empire.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"-146\",\n    \"location\": \"Sparta\",\n    \"location_reasoning\": \"The text explicitly mentions 'Sparte' (Sparta) in the excerpt, and the title directly identifies the protagonist as 'princesse de Sparte' (princess of Sparta). Sparta was a prominent city-state in ancient Greece.\",\n    \"location_qid\": \"Q5690\"\n}",
+  "duration_seconds": 4.219483137130737,
+  "prompt_tokens": 656,
+  "completion_tokens": 213,
+  "total_tokens": 869
+}

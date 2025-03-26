@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10901623",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Medieval Period\",\n    \"period_reasoning\": \"The play is titled 'Th\u00e9odore, Reyne de Hongrie' (Theodore, Queen of Hungary), which suggests a medieval Hungarian setting. In the excerpt, there are references to a 'Roi' (King) and a 'Prince', indicating a monarchical system typical of medieval Europe. The play was written in the 17th century (1658), but typically French classical drama of this period was set in earlier historical periods.\",\n    \"timeframe_start\": \"1000\",\n    \"timeframe_end\": \"1500\",\n    \"location\": \"Hungary\",\n    \"location_reasoning\": \"The title explicitly mentions 'Reyne de Hongrie' (Queen of Hungary), directly indicating that Hungary is the setting of the play. The main character Theodore is described as the Queen of Hungary, and the dramatic situation involves court intrigue with mentions of a King and Prince, which would be set in the royal court of Hungary.\",\n    \"location_qid\": \"Q28\"\n}",
+  "duration_seconds": 4.807462215423584,
+  "prompt_tokens": 678,
+  "completion_tokens": 244,
+  "total_tokens": 922
+}

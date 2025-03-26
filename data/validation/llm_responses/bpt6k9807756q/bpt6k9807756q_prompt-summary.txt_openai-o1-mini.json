@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k9807756q",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"The play is set in Sparta and frequently mentions Pyrrhus, a prominent figure from ancient Greece, indicating a setting in Classical Antiquity.\",\n    \"timeframe_start\": \"-500\",\n    \"timeframe_end\": \"-300\",\n    \"location\": \"Sparta\",\n    \"location_reasoning\": \"The play frequently mentions Sparte (Sparta) and centers around Spartan characters and events.\",\n    \"location_qid\": \"Q778\"\n}",
+  "duration_seconds": 5.385911703109741,
+  "prompt_tokens": 1310,
+  "completion_tokens": 701,
+  "total_tokens": 2011
+}

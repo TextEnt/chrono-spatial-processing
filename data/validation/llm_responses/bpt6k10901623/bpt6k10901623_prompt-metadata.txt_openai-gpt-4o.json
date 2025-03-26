@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10901623",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Middle Ages\",\n    \"period_reasoning\": \"The title 'Th\u00e9odore, Reyne de Hongrie' suggests a historical setting involving a queen of Hungary. Given the play is a tragi-comedy from the 17th century, it is likely set in a historical period that predates the publication. The Middle Ages is a common setting for plays involving European royalty.\",\n    \"timeframe_start\": \"0400\",\n    \"timeframe_end\": \"1500\",\n    \"location\": \"Kingdom of Hungary\",\n    \"location_reasoning\": \"The title explicitly mentions 'Reyne de Hongrie', indicating that the setting is in Hungary. During the Middle Ages, the Kingdom of Hungary was a significant political entity.\",\n    \"location_qid\": \"Q28\"\n}",
+  "duration_seconds": 3.533734083175659,
+  "prompt_tokens": 447,
+  "completion_tokens": 169,
+  "total_tokens": 616
+}

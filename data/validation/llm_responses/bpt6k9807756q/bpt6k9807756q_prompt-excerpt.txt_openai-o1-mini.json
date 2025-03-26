@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k9807756q",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Ancient Greece\",\n    \"period_reasoning\": \"The play is set in Sparta, a prominent city-state in Ancient Greece, as indicated by the title referencing a Spartan princess.\",\n    \"timeframe_start\": \"-500\",\n    \"timeframe_end\": \"-300\",\n    \"location\": \"Sparta\",\n    \"location_reasoning\": \"The title mentions Sparta, indicating that the setting of the play is in this ancient Greek city-state.\",\n    \"location_qid\": \"Q817\"\n}",
+  "duration_seconds": 6.664585113525391,
+  "prompt_tokens": 592,
+  "completion_tokens": 955,
+  "total_tokens": 1547
+}

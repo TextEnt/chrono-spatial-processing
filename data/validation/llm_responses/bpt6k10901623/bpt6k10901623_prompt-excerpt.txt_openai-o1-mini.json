@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10901623",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": null,\n    \"period_reasoning\": \"The provided information does not specify the historical period in which the play is set.\",\n    \"timeframe_start\": null,\n    \"timeframe_end\": null,\n    \"location\": \"Hungary\",\n    \"location_reasoning\": \"The title of the play references the 'Reyne de Hongrie' (Queen of Hungary), indicating the action takes place in Hungary.\",\n    \"location_qid\": \"Q28\"\n}",
+  "duration_seconds": 7.34616494178772,
+  "prompt_tokens": 607,
+  "completion_tokens": 820,
+  "total_tokens": 1427
+}

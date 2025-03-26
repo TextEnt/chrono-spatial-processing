@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k9807756q",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Classical Greece\",\n    \"period_reasoning\": \"The play references Sparta, a prominent city-state in ancient Greece. The mention of Pyrrhus (possibly Pyrrhus of Epirus, 318\u2013272 BCE) and Sparta's status as an independent power aligns with the Classical to early Hellenistic periods of Greek history.\",\n    \"timeframe_start\": \"-500\",\n    \"timeframe_end\": \"-300\",\n    \"location\": \"Sparta\",\n    \"location_reasoning\": \"The title explicitly states the protagonist is a princess of Sparta, and 'Sparte' (Sparta) is the most frequently mentioned place in the play's context.\",\n    \"location_qid\": \"Q5699\"\n}",
+  "duration_seconds": 52.7393000125885,
+  "prompt_tokens": 1372,
+  "completion_tokens": 823,
+  "total_tokens": 2195
+}

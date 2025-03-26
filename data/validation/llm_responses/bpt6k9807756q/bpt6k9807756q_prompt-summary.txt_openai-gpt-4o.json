@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k9807756q",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Classical Greece\",\n    \"period_reasoning\": \"The play frequently mentions Pyrrhus, a historical figure from the Hellenistic period, and is set in Sparta, a prominent city-state in ancient Greece. Pyrrhus was a Greek general and statesman of the Hellenistic period, and his interactions with Sparta suggest a timeframe around the 3rd century B.C.E.\",\n    \"timeframe_start\": \"-300\",\n    \"timeframe_end\": \"-200\",\n    \"location\": \"Sparta\",\n    \"location_reasoning\": \"The play is titled 'Zelonide, princesse de Sparte' and frequently mentions Sparta as the central location of the action. Sparta was a significant city-state in ancient Greece, known for its military prowess.\",\n    \"location_qid\": \"Q102933\"\n}",
+  "duration_seconds": 3.271448850631714,
+  "prompt_tokens": 1290,
+  "completion_tokens": 177,
+  "total_tokens": 1467
+}

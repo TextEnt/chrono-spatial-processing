@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090242p",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Roman Empire\",\n    \"period_reasoning\": \"The title references Titus (Roman Emperor 79-81 CE) and Berenice (a historical Jewish queen linked to Titus), suggesting a 1st-century Roman Imperial context.\",\n    \"timeframe_start\": \"70\",\n    \"timeframe_end\": \"100\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"The Roman emperors Titus and Vespasian (implied by 'Tite', French for Titus) were based in Rome, and the play's critique likely mirrors classical Roman settings common in 17th-century French drama.\",\n    \"location_qid\": \"Q220\"\n}",
+  "duration_seconds": 32.57527804374695,
+  "prompt_tokens": 443,
+  "completion_tokens": 536,
+  "total_tokens": 979
+}

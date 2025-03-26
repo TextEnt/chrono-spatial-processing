@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k9807756q",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"The play features a Spartan princess, indicating it is set during the Classical period of ancient Greece, specifically between the 5th and 4th centuries B.C.\",\n    \"timeframe_start\": \"-500\",\n    \"timeframe_end\": \"-300\",\n    \"location\": \"Sparta\",\n    \"location_reasoning\": \"The title references a Spartan princess, suggesting the action takes place in Sparta during ancient times.\",\n    \"location_qid\": \"Q3502\"\n}",
+  "duration_seconds": 6.173570871353149,
+  "prompt_tokens": 465,
+  "completion_tokens": 835,
+  "total_tokens": 1300
+}

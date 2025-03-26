@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5772699f",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Neo-Babylonian Empire\",\n    \"period_reasoning\": \"The play's title references the death of Belshazzar, a historical figure associated with the fall of Babylon to Cyrus the Great in 539 BCE, placing the action during the Neo-Babylonian Empire's decline.\",\n    \"timeframe_start\": \"-626\",\n    \"timeframe_end\": \"-539\",\n    \"location\": \"Babylon\",\n    \"location_reasoning\": \"The title explicitly identifies Belshazzar as 'roy de Babilone' (King of Babylon), and the historical event referenced (Babylon's fall) is tied to the city of Babylon.\",\n    \"location_qid\": \"Q5684\"\n}",
+  "duration_seconds": 83.36350297927856,
+  "prompt_tokens": 1424,
+  "completion_tokens": 1575,
+  "total_tokens": 2999
+}

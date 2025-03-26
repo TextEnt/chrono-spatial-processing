@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k9807756q",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Classical antiquity\",\n    \"period_reasoning\": \"The play references Sparta ('Sparte') as a political entity with active military ideals, typical of its classical Greek period. The text emphasizes martial virtues and glory, aligning with Sparta's historical reputation during its classical prominence.\",\n    \"timeframe_start\": \"-500\",\n    \"timeframe_end\": \"-300\",\n    \"location\": \"Sparta\",\n    \"location_reasoning\": \"The title explicitly identifies Zelonide as a princess of Sparta ('princesse de Sparte'), and the excerpt directly references Sparta ('Sparte') as the cultural and political context.\",\n    \"location_qid\": \"Q5699\"\n}",
+  "duration_seconds": 29.180882930755615,
+  "prompt_tokens": 589,
+  "completion_tokens": 441,
+  "total_tokens": 1030
+}

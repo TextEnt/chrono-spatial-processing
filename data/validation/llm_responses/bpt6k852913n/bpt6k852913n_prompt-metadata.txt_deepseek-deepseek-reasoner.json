@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k852913n",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"17th century France\",\n    \"period_reasoning\": \"The play was written and published in 1678 by a French author, and 17th-century French theater often reflected contemporary settings unless explicitly historical/mythological. The title does not suggest a specific alternative period.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play is written in French by an author with a French-sounding name ('N\u00e9el') and published in France. 17th-century French plays typically defaulted to French settings unless otherwise specified.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 47.4694242477417,
+  "prompt_tokens": 453,
+  "completion_tokens": 785,
+  "total_tokens": 1238
+}

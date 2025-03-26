@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k852913n",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"17th Century France\",\n    \"period_reasoning\": \"The play was published in 1678 (from metadata) and appears to be set in contemporary times. The language, character names (Philandre, Ormin, Crispin), and social contexts (discussions of marriage arrangements, mentions of Commis/officials) align with 17th century French society. The play's style as a com\u00e9die matches the theatrical traditions of that period.\",\n    \"timeframe_start\": \"1650\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Senlis, France\",\n    \"location_reasoning\": \"Senlis is explicitly mentioned twice in the related sentences as a location characters come from or have visited. It is the most frequently mentioned place in the 'top_places' list. Other French locations mentioned include Paris, Luxembourg, and Chalons en Champagne, but Senlis appears to be the primary setting based on the frequency and context of mentions.\",\n    \"location_qid\": \"Q154689\"\n}",
+  "duration_seconds": 5.627733945846558,
+  "prompt_tokens": 1412,
+  "completion_tokens": 247,
+  "total_tokens": 1659
+}

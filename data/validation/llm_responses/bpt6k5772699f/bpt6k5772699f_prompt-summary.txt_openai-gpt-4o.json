@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5772699f",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Ancient Babylonian period\",\n    \"period_reasoning\": \"The play is titled 'La mort de Baltazar, roy de Babilone', which translates to 'The Death of Balthazar, King of Babylon'. Balthazar is a historical figure associated with the Neo-Babylonian Empire, which existed around the 6th century BCE.\",\n    \"timeframe_start\": \"-0600\",\n    \"timeframe_end\": \"-0539\",\n    \"location\": \"Babylon\",\n    \"location_reasoning\": \"The title of the play explicitly mentions 'Babilone', which is the French term for Babylon, indicating that the action of the play is set in Babylon.\",\n    \"location_qid\": \"Q2448\"\n}",
+  "duration_seconds": 3.603105068206787,
+  "prompt_tokens": 1343,
+  "completion_tokens": 161,
+  "total_tokens": 1504
+}

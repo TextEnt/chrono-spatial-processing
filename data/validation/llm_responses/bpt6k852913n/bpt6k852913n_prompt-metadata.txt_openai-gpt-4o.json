@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k852913n",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": null,\n    \"period_reasoning\": \"The title 'L'illusion grotesque ou le point n\u00e9cromancien, com\u00e9die' does not provide specific historical context or references to a particular historical period. Without additional context or content from the play, it is not possible to determine the historical period in which the play's action is set.\",\n    \"timeframe_start\": null,\n    \"timeframe_end\": null,\n    \"location\": null,\n    \"location_reasoning\": \"The title and metadata do not provide specific information about the geographic location where the action of the play takes place. Without further content or context from the play, it is not possible to determine the location.\",\n    \"location_qid\": null\n}",
+  "duration_seconds": 3.0978379249572754,
+  "prompt_tokens": 450,
+  "completion_tokens": 157,
+  "total_tokens": 607
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10901623",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Medieval Hungary\",\n    \"period_reasoning\": \"Based on the title 'Th\u00e9odore, Reyne de Hongrie' (Theodore, Queen of Hungary), the play likely takes place during medieval Hungary when the kingdom had independent monarchs. The play was written in the 17th century (1658), and French tragicomedies of this period often dramatized historical or semi-historical events from the medieval period.\",\n    \"timeframe_start\": \"1000\",\n    \"timeframe_end\": \"1526\",\n    \"location\": \"Kingdom of Hungary\",\n    \"location_reasoning\": \"The title explicitly states 'Reyne de Hongrie' (Queen of Hungary), clearly indicating that the setting is the Kingdom of Hungary. The protagonist Theodore is presented as a queen of this realm.\",\n    \"location_qid\": \"Q28513\"\n}",
+  "duration_seconds": 4.399536848068237,
+  "prompt_tokens": 499,
+  "completion_tokens": 205,
+  "total_tokens": 704
+}

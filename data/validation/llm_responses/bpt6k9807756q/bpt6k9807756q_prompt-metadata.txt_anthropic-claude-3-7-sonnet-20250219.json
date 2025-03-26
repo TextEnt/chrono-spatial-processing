@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k9807756q",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Ancient Sparta\",\n    \"period_reasoning\": \"The title of the play 'Zelonide, princesse de Sparte' explicitly mentions Sparte (Sparta), which was a prominent city-state in ancient Greece. French classical theatre of the 17th century often drew inspiration from ancient Greek and Roman settings and stories. The protagonist being a princess of Sparta suggests the play is set during the period when Sparta was an independent and powerful city-state.\",\n    \"timeframe_start\": \"-700\",\n    \"timeframe_end\": \"-200\",\n    \"location\": \"Sparta\",\n    \"location_reasoning\": \"The title directly identifies the setting as 'Sparte' (Sparta), and the protagonist is described as 'princesse de Sparte' (princess of Sparta). This clearly indicates that the action takes place in ancient Sparta, a city-state in Greece.\",\n    \"location_qid\": \"Q5690\"\n}",
+  "duration_seconds": 4.558253049850464,
+  "prompt_tokens": 496,
+  "completion_tokens": 227,
+  "total_tokens": 723
+}

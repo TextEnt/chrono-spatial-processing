@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10901623",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": null,\n    \"period_reasoning\": \"The provided information does not specify the historical period of the play's action.\",\n    \"timeframe_start\": null,\n    \"timeframe_end\": null,\n    \"location\": \"Hungary\",\n    \"location_reasoning\": \"The title of the play references the Queen of Hungary, indicating the action is set in Hungary.\",\n    \"location_qid\": \"Q28\"\n}",
+  "duration_seconds": 7.431686878204346,
+  "prompt_tokens": 467,
+  "completion_tokens": 811,
+  "total_tokens": 1278
+}

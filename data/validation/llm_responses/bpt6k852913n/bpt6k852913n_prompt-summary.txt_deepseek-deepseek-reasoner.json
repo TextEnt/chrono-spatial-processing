@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k852913n",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"17th century France\",\n    \"period_reasoning\": \"The play was published in 1678 by a French author, and mentions locations like Luxembourg and Paris (Tuileries), which were prominent in the 17th century. The dialogue style and character names (e.g., Crispin, Philandre) align with French comedic traditions of the era, particularly under Louis XIV's reign.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Senlis\",\n    \"location_reasoning\": \"Senlis is the top-mentioned place (frequency: 2), referenced in sentences involving travel and marriage plans. Other locations like Paris and Luxembourg are mentioned but less centrally. Senlis was a historic town in northern France during this period.\",\n    \"location_qid\": \"Q21187\"\n}",
+  "duration_seconds": 60.76980996131897,
+  "prompt_tokens": 1195,
+  "completion_tokens": 1096,
+  "total_tokens": 2291
+}

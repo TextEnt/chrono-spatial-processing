@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090242p",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Ancient Rome\",\n    \"period_reasoning\": \"The play mentions characters such as Titus and Berenice, who are associated with Ancient Rome. Titus Flavius Vespasianus was a Roman emperor, and Berenice was a Jewish queen who had a relationship with him. These references suggest the setting is during the Roman Empire.\",\n    \"timeframe_start\": \"0001\",\n    \"timeframe_end\": \"0200\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"The play frequently mentions Rome and characters associated with the Roman Empire, indicating that the action likely takes place in Rome.\",\n    \"location_qid\": \"Q220\"\n}",
+  "duration_seconds": 3.274916172027588,
+  "prompt_tokens": 1566,
+  "completion_tokens": 148,
+  "total_tokens": 1714
+}

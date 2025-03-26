@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k9807756q",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Ancient Greece - Hellenistic Period\",\n    \"period_reasoning\": \"The play involves Pyrrhus, who appears to be a king or military leader, and mentions of Spartiates (Spartans). The context suggests a post-Alexandrian Greek setting during the Hellenistic period when Pyrrhus of Epirus (319-272 BCE) was active. The mentions of 'Thr\u00f4ne', military conflicts, and references to Sparta's independence point to this era.\",\n    \"timeframe_start\": \"-305\",\n    \"timeframe_end\": \"-272\",\n    \"location\": \"Sparta\",\n    \"location_reasoning\": \"The play is explicitly titled 'Zelonide, princesse de Sparte' and Sparte (Sparta) is the most frequently mentioned place with 52 occurrences. The related sentences clearly establish Sparta as the setting, mentioning 'notre Ville' (our city) in relation to Sparta, 'Spartiates', and 'Spartaines'. Characters discuss defending Sparta against Pyrrhus's forces.\",\n    \"location_qid\": \"Q5690\"\n}",
+  "duration_seconds": 6.204216957092285,
+  "prompt_tokens": 1596,
+  "completion_tokens": 274,
+  "total_tokens": 1870
+}

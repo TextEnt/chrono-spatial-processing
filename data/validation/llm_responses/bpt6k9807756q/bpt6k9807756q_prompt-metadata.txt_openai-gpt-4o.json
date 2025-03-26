@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k9807756q",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Classical Greece\",\n    \"period_reasoning\": \"The play is titled 'Zelonide, princesse de Sparte', indicating it is set in Sparta. Given the context of a tragedy and the reference to a Spartan princess, it is likely set during the Classical Greek period when Sparta was a prominent city-state.\",\n    \"timeframe_start\": \"-500\",\n    \"timeframe_end\": \"-300\",\n    \"location\": \"Sparta\",\n    \"location_reasoning\": \"The title of the play explicitly mentions 'princesse de Sparte', suggesting that the action takes place in Sparta, a well-known city-state in ancient Greece.\",\n    \"location_qid\": \"Q102818\"\n}",
+  "duration_seconds": 6.748347043991089,
+  "prompt_tokens": 445,
+  "completion_tokens": 152,
+  "total_tokens": 597
+}

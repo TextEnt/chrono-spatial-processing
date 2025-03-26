@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10901623",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Middle Ages\",\n    \"period_reasoning\": \"From the context provided, the play mentions a 'Reyne de Hongrie' (Queen of Hungary) named Th\u00e9odore in the title. There are references to a character called 'LE ROY' (The King), and mentions of courts, nobles ('Grands'), and medieval warfare elements. The presence of Amurat (likely referring to an Ottoman ruler) who is 'press\u00e9 de passer en Asie' (rushing to cross to Asia) suggests a medieval setting during Ottoman expansion. The themes of royal intrigue, adultery accusations against a queen, and court politics are consistent with medieval dramas.\",\n    \"timeframe_start\": \"1000\",\n    \"timeframe_end\": \"1500\",\n    \"location\": \"Hungary\",\n    \"location_reasoning\": \"The title explicitly states 'Th\u00e9odore, Reyne de Hongrie' (Theodore, Queen of Hungary), indicating Hungary as the primary setting. This is reinforced by references to court intrigue within a Hungarian royal court. The text also mentions Amurat passing to Asia, which suggests potential conflicts with the Ottoman Empire, which would be historically accurate for medieval Hungary.\",\n    \"location_qid\": \"Q28\"\n}",
+  "duration_seconds": 6.142004013061523,
+  "prompt_tokens": 1364,
+  "completion_tokens": 291,
+  "total_tokens": 1655
+}
