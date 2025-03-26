@@ -59,7 +59,7 @@ def serialize_llm_responses(responses: List[LLMresponse], output_path: Path) -> 
             file.write(json.dumps(response_dict, indent=2))
     return
 
-def query_llm(client: aisuite.Client, model: str, requests: List[LLMrequest], output_path: Path, temperature: float = 0.2) -> List[LLMresponse]:
+def query_llm(client: aisuite.Client, model: str, requests: List[LLMrequest], output_path: Path, temperature: float = None) -> List[LLMresponse]:
     # pass over the requests to a given model and gather the responses
     responses = []
     for request in requests:
@@ -67,25 +67,49 @@ def query_llm(client: aisuite.Client, model: str, requests: List[LLMrequest], ou
         filename = f"{request.document_id}_{request.prompt_id}_{model.replace(':', '-')}.json"
         filepath = output_path / request.document_id / filename
         if filepath.exists():
-            #print(f"Found file {filepath} for document {request.document_id}")
             print(f"Skipping request for document {request.document_id}[{request.prompt_id}] using model {model} as it already exists")
             continue
             
-        print(f"Processing prompt {request.prompt_id} for document {request.document_id} using model {model}")
+        print(f"Processing prompt {request.prompt_id} for document {request.document_id} using model {model} (temp={temperature})")
         
         # Capture the start time
         start_time = time.time()
-        # TODO: for certain models do not set the temperature (e.g. o1-mini)
-        response = client.chat.completions.create(
-            model=model,
-            messages=[{"role": "user", "content": request.prompt}],
-            temperature=temperature
-        )
+        
+        # Temperature is not applicable to reasoning models; so we use the default temperature if not provided
+        if temperature:
+            response = client.chat.completions.create(
+                model=model,
+                messages=[{"role": "user", "content": request.prompt}],
+                temperature=temperature
+            )
+        else:
+            response = client.chat.completions.create(
+                model=model,
+                messages=[{"role": "user", "content": request.prompt}]
+            )
+        
         # Capture the end time
         end_time = time.time()
         # Calculate the duration
         duration = end_time - start_time
-        print(f"Time taken to get response: {duration:.2f} seconds. Total tokens: {response.usage.total_tokens if hasattr(response, 'usage') else None}")
+        
+        try:
+            if isinstance(response.usage, dict):
+                info_prompt_tokens = response.usage['prompt_tokens']
+                info_completion_tokens = response.usage['completion_tokens']
+                info_total_tokens = response.usage['total_tokens']
+            else:
+                info_prompt_tokens = response.usage.prompt_tokens
+                info_completion_tokens = response.usage.completion_tokens
+                info_total_tokens = response.usage.total_tokens
+        except Exception as e:
+            print(f"Error extracting usage info: {e}")
+            info_prompt_tokens = None
+            info_completion_tokens = None
+            info_total_tokens = None
+
+
+        print(f"Time taken to get response: {duration:.2f} seconds. Total tokens: {info_total_tokens}")
         
         llm_response = LLMresponse(
             document_id=request.document_id,
@@ -94,9 +118,9 @@ def query_llm(client: aisuite.Client, model: str, requests: List[LLMrequest], ou
             model_name=model,
             response=response.choices[0].message.content,
             duration_seconds=duration,
-            prompt_tokens=response.usage.prompt_tokens if hasattr(response, 'usage') else None,
-            completion_tokens=response.usage.completion_tokens if hasattr(response, 'usage') else None,
-            total_tokens=response.usage.total_tokens if hasattr(response, 'usage') else None,
+            prompt_tokens=info_prompt_tokens,
+            completion_tokens=info_completion_tokens,
+            total_tokens=info_total_tokens,
         )
         responses.append(llm_response)
         serialize_llm_responses([llm_response], output_path)
@@ -173,7 +197,10 @@ def process_llm_responses(llm_responses_path: Path) -> pd.DataFrame:
 
 def llm_responses_to_dataframe(responses_base_path: Path) -> pd.DataFrame:
     df = process_llm_responses(responses_base_path)
-    df.drop(columns=['response'], inplace=True)
+    try:
+        df.drop(columns=['response'], inplace=True)
+    except Exception as e:
+        print(e)
     
     # fusion timeframe_start and timeframe_end into a single column
     df['timeframe'] = df['timeframe_start'].astype(str) + ', ' + df['timeframe_end'].astype(str)
