@@ -4,7 +4,7 @@ validation:
   responses_path: "data/validation/llm_responses/"
   temperature: 0.2
   models:
-    - "ollama:phi4-mini:latest" # replaced `ollama:phi4:latest`  
+    - "ollama:phi4-mini:latest"
     - "ollama:gemma3:12b"
     - "ollama:mistral-small:24b"
     - "ollama:deepseek-r1:14b"
