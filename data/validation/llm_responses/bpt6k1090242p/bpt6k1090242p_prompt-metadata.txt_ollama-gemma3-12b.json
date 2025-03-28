@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090242p",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"Classical Antiquity and French Baroque\",\n   \"period_reasoning\": \"The title \\\"Tite et Titus\\\" refers to Titus and Titus, Roman figures. The subtitle \\\"Critique sur les Berenices\\\" refers to Racine's play \\\"Berenice\\\", which is set in ancient Rome. The publication date (1673) places the play within the French Baroque period, which often drew inspiration from classical antiquity.\",\n   \"timeframe_start\": \"-44 B.C.\",\n   \"timeframe_end\": \"1673\",\n   \"location\": \"Rome, France\",\n   \"location_reasoning\": \"The play references Roman figures (Titus), suggesting a Roman setting. The play was written in France, so it is likely that the play is a French interpretation of Roman history.\",\n   \"location_qid\": \"Q183\"\n}",
+  "duration_seconds": 13.5038321018219,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

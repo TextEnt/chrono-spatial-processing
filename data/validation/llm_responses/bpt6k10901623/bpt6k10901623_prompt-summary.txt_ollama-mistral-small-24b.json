@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10901623",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Medieval or Early Modern Period\",\n  \"period_reasoning\": \"The play is a tragi-com\u00e9die, a genre popular in the early modern period. The mention of 'Asie' and the names of characters like Th\u00e9odore and Irene suggest a historical setting that could be medieval or early modern.\",\n  \"timeframe_start\": \"-100\",\n  \"timeframe_end\": \"+1700\",\n  \"location\": \"Hungary\",\n  \"location_reasoning\": \"The title mentions 'Reyne de Hongrie,' which indicates that the play is set in Hungary. The character names and the context suggest a European setting, likely in Central Europe.\",\n  \"location_qid\": \"Q24\"\n}",
+  "duration_seconds": 59.66365146636963,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

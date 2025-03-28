@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10901623",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Middle Ages\",\n  \"period_reasoning\": \"The title of the play, 'Th\u00e9odore, Reyne de Hongrie', suggests a medieval setting. The term 'Reyne' (King) and the reference to Hungary indicate a historical context that aligns with the Middle Ages.\",\n  \"timeframe_start\": \"-1000\",\n  \"timeframe_end\": \"+1500\",\n  \"location\": \"Hungary\",\n  \"location_reasoning\": \"The title explicitly mentions 'Hongrie', which is the French word for Hungary. This directly indicates that the play's setting is in Hungary.\",\n  \"location_qid\": \"Q27\"\n}",
+  "duration_seconds": 36.4719033241272,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

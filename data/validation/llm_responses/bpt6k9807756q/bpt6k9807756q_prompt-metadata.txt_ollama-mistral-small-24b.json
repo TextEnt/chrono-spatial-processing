@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k9807756q",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Ancient Greece\",\n  \"period_reasoning\": \"The title mentions 'Sparte', which is the French name for Sparta, a prominent city-state in ancient Greece. The term 'princesse' (princess) and the tragic genre suggest a historical or mythological setting typical of ancient Greek tragedies.\",\n  \"timeframe_start\": \"-800\",\n  \"timeframe_end\": \"-146\",\n  \"location\": \"Sparta\",\n  \"location_reasoning\": \"The title explicitly mentions 'Zelonide, princesse de Sparte', indicating that the play is set in Sparta.\",\n  \"location_qid\": \"Q2397\"\n}",
+  "duration_seconds": 27.086001873016357,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

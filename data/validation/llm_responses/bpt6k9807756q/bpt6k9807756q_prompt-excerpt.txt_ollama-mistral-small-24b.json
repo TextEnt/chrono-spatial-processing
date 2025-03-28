@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k9807756q",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Ancient Greece\",\n  \"period_reasoning\": \"The play is titled 'Zelonide, princesse de Sparte', which suggests a setting in ancient Sparta. The themes and language used are consistent with classical Greek tragedy.\",\n  \"timeframe_start\": \"-800\",\n  \"timeframe_end\": \"-146\",\n  \"location\": \"Sparta\",\n  \"location_reasoning\": \"The title mentions 'princesse de Sparte', indicating that the play is set in Sparta. The reference to a princess and the mention of supporting a throne also align with historical accounts of ancient Sparta.\",\n  \"location_qid\": \"Q18423\"\n}",
+  "duration_seconds": 26.218027114868164,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

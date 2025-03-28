@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090242p",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Roman Empire\",\n  \"period_reasoning\": \"The title 'Tite et Titus' refers to Titus and Titus Flavius Vespasianus, both prominent figures in Roman history. The mention of 'Berenices' likely refers to Berenice, a historical figure from the Roman era.\",\n  \"timeframe_start\": \"-100\",\n  \"timeframe_end\": \"+200\",\n  \"location\": \"Rome\",\n  \"location_reasoning\": \"The characters Titus and Berenice are historically associated with Rome during the Roman Empire period.\",\n  \"location_qid\": \"Q197\"\n}",
+  "duration_seconds": 25.672321557998657,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

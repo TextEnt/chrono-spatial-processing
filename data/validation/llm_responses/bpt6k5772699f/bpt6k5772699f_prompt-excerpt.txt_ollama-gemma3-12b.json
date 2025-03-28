@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5772699f",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"Ancient Near East\",\n   \"period_reasoning\": \"The title \\\"La mort de Baltazar, roy de Babilone\\\" (The Death of Baltazar, King of Babylon) explicitly references Baltasar (Belshazzar), a figure from the Book of Daniel in the Bible, who was king of Babylon. This places the setting in the ancient world, specifically the kingdom of Babylon.\",\n   \"timeframe_start\": \"-600\",\n   \"timeframe_end\": \"-539\",\n   \"location\": \"Babylon\",\n   \"location_reasoning\": \"The play's title directly names Babylon as the location of the events.\",\n   \"location_qid\": \"Q469\"\n}",
+  "duration_seconds": 13.186603546142578,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

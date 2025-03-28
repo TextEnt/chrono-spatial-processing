@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k9807756q",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"Ancient Sparta, as reimagined through a 17th-century French perspective\",\n   \"period_reasoning\": \"The title \\\"Zelonide, princesse de Sparte\\\" (Zelonide, princess of Sparta) explicitly references Sparta. The play was written in 1682, indicating a French interpretation of ancient Spartan history and mythology.\",\n   \"timeframe_start\": \"-800\",\n   \"timeframe_end\": \"-400\",\n   \"location\": \"Sparta (ancient Greece)\",\n   \"location_reasoning\": \"The title explicitly names Sparta, which was a city-state in ancient Greece.\",\n   \"location_qid\": \"Q469\"\n}",
+  "duration_seconds": 11.509456396102905,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5772699f",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"XVII century\",\n   \"period_reasoning\": \"The play's metadata indicates it was written by Charenton, De, and published in 1662, placing it firmly within the 17th century. The language and themes are consistent with the French Baroque period.\",\n   \"timeframe_start\": \"-1601\",\n   \"timeframe_end\": \"-1701\",\n   \"location\": \"Paris\",\n   \"location_reasoning\": \"The text explicitly mentions 'Paris' multiple times, including references to 'Libraires \u00e0 Paris' and 'gr\u00e2ce et Privil\u00e8ge du Roi donn\u00e9 \u00e0 Paris'.\",\n   \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 16.834519386291504,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

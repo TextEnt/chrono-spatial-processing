@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5772699f",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Ancient Near East\",\n  \"period_reasoning\": \"The play mentions 'Baltazar, roy de Babilone', which refers to King Belshazzar of Babylon. This historical figure is associated with the ancient Near East.\",\n  \"timeframe_start\": \"-604\",\n  \"timeframe_end\": \"-539\",\n  \"location\": \"Babylon\",\n  \"location_reasoning\": \"The title and excerpt mention 'Baltazar, roy de Babilone', indicating that the play is set in Babylon.\",\n  \"location_qid\": \"Q12647\"\n}",
+  "duration_seconds": 33.734633445739746,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

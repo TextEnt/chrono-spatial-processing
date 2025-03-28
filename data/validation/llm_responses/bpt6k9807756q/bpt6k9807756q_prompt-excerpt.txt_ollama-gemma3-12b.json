@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k9807756q",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"Ancient Sparta\",\n   \"period_reasoning\": \"The play title \\\"Zelonide, princesse de Sparte\\\" explicitly mentions Sparta, indicating a setting related to ancient Sparta. The excerpt references 'Sparte nous a form\u00e9es', further reinforcing this connection.\",\n   \"timeframe_start\": \"-800\",\n   \"timeframe_end\": \"-146\",\n   \"location\": \"Sparta\",\n   \"location_reasoning\": \"The play's title and excerpt directly reference Sparta, a city-state in ancient Greece.\",\n   \"location_qid\": \"Q422\"\n}",
+  "duration_seconds": 11.785597324371338,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5772699f",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Ancient Near East\",\n  \"period_reasoning\": \"The title mentions 'Baltazar, roy de Babilone', which refers to Belshazzar, the king of Babylon. This places the play in the context of ancient Mesopotamia.\",\n  \"timeframe_start\": \"-605\",\n  \"timeframe_end\": \"-539\",\n  \"location\": \"Babylon\",\n  \"location_reasoning\": \"The title explicitly mentions 'Babilone', which is the French term for Babylon. This indicates that the play's setting is in ancient Babylon.\",\n  \"location_qid\": \"Q17062\"\n}",
+  "duration_seconds": 35.327356815338135,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

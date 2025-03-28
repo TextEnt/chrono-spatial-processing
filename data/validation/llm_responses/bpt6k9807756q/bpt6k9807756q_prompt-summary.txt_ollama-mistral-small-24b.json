@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k9807756q",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Ancient Greece\",\n  \"period_reasoning\": \"The play mentions 'Sparte' (Sparta) and 'Gr\u00e8ce' (Greece), which are significant locations in ancient Greek history. The characters and themes, such as Pyrrhus and the Spartan warriors, align with historical figures and settings from ancient Greece.\",\n  \"timeframe_start\": \"-800\",\n  \"timeframe_end\": \"-300\",\n  \"location\": \"Sparta\",\n  \"location_reasoning\": \"The play is titled 'Zelonide, princesse de Sparte' (Zelonide, Princess of Sparta), and the text frequently mentions 'Sparte' (Sparta). This indicates that the action primarily takes place in Sparta.\",\n  \"location_qid\": \"Q13429\"\n}",
+  "duration_seconds": 37.6186306476593,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

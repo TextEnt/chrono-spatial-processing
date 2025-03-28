@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090242p",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:phi4-mini:latest",
+  "response": "{\n  \"period\": null,\n  \"period_reasoning\": \"Insufficient data in metadata or context fields regarding historical period. The publication date '1673' is provided, but it does not specify a broader time frame for when this play could have been set.\",\n  \"timeframe_start\": None,\n  \"timeframe_end\": None,\n  \"location\": null,\n  \"location_reasoning\": \"The top_1_place field contains the entity label 'Parnasse' which is associated with Mount Parnassus in Greece. However, there are no specific historical events or references that would help to determine a precise time period for when this play could have been set.\",\n  \"location_qid\": None\n}",
+  "duration_seconds": 7.031631946563721,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

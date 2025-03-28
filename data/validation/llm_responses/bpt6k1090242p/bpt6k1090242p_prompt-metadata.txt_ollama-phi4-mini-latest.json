@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090242p",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:phi4-mini:latest",
+  "response": "{\n  \"period\": \"XVII century French Renaissance and Baroque era\",\n  \"period_reasoning\": \"Based on the publication date (1673) which is during this historical period, it can be deduced that 'Tite et Titus' was written in a time when there were significant developments in theatre.\",\n  \"timeframe_start\": \"-1612\",\n  \"timeframe_end\": \"+1689\",\n  \"location\": \"France/Parisian stage\",\n  \"location_reasoning\": \"The title suggests it may be related to French comedy and the publication date points towards France as its place of origin. The 'com\u00e9die' genre is commonly associated with Parisian theatre in that era.\",\n  \"location_qid\": null\n}",
+  "duration_seconds": 4.718461513519287,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

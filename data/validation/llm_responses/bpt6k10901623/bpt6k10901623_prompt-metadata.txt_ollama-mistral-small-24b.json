@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10901623",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Middle Ages\",\n  \"period_reasoning\": \"The title mentions 'Reyne de Hongrie' (King of Hungary), which suggests a medieval setting, as Hungary was a kingdom during the Middle Ages.\",\n  \"timeframe_start\": \"-476\",\n  \"timeframe_end\": \"+1453\",\n  \"location\": \"Hungary\",\n  \"location_reasoning\": \"The title explicitly mentions 'Reyne de Hongrie,' indicating that the play is set in Hungary.\",\n  \"location_qid\": \"Q28\"\n}",
+  "duration_seconds": 17.511001348495483,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090242p",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Ancient Rome\",\n  \"period_reasoning\": \"The play mentions 'Berenice', which is a reference to Berenice, Queen of Judea, who lived during the Roman Empire period. Additionally, the mention of 'Titus' and 'Tite' suggests a connection to the Flavian dynasty, particularly Titus Flavius Vespasianus, who was Roman Emperor from 79 to 81 AD.\",\n  \"timeframe_start\": \"-0079\",\n  \"timeframe_end\": \"+0081\",\n  \"location\": \"Rome\",\n  \"location_reasoning\": \"The play mentions 'Rome' as one of the top places, and the characters and events are closely tied to Roman history and mythology.\",\n  \"location_qid\": \"Q232\"\n}",
+  "duration_seconds": 40.78563141822815,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

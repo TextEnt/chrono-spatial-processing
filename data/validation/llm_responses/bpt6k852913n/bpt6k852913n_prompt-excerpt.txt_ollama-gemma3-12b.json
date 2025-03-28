@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k852913n",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"17th Century\",\n   \"period_reasoning\": \"The play's metadata indicates it was published in 1678, placing it firmly within the 17th century. The author's name (N\u00e9el) and the style of the excerpt are also consistent with French theatre of that era.\",\n   \"timeframe_start\": \"[+1600]1600\",\n   \"timeframe_end\": \"[+1700]1700\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"Given the play is a French theatre play from the 17th century, it is highly probable that the action takes place in France.\",\n   \"location_qid\": \"Q144\"\n}",
+  "duration_seconds": 13.855823278427124,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

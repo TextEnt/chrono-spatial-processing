@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k9807756q",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"Ancient Greece, specifically the Hellenistic period\",\n   \"period_reasoning\": \"The play mentions Pyrrhus, a historical figure who lived during the Hellenistic period (3rd century BC). The frequent references to 'Sparte' (Sparta) further solidify the setting in ancient Greece. The context suggests a time of conflict and political maneuvering characteristic of the Hellenistic era.\",\n   \"timeframe_start\": \"-323\",\n   \"timeframe_end\": \"-281\",\n   \"location\": \"Sparta, Greece\",\n   \"location_reasoning\": \"The play is explicitly set in 'Sparte' (Sparta), a city-state in ancient Greece. The context heavily revolves around Spartan characters and events.\",\n   \"location_qid\": \"Q469\"\n}",
+  "duration_seconds": 17.57788109779358,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

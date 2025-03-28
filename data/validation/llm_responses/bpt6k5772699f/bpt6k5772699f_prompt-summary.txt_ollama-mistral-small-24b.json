@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5772699f",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Ancient Near East\",\n  \"period_reasoning\": \"The play is titled 'La mort de Baltazar, roy de Babilone', which refers to Balthazar, one of the last kings of Babylon. This historical figure lived during the ancient period in Mesopotamia.\",\n  \"timeframe_start\": \"-625\",\n  \"timeframe_end\": \"-539\",\n  \"location\": \"Babylon\",\n  \"location_reasoning\": \"The title mentions 'roy de Babilone', indicating that the play is set in Babylon. Additionally, the character Nabal and other references suggest a setting in the ancient Near East.\",\n  \"location_qid\": \"Q13259\"\n}",
+  "duration_seconds": 34.3370201587677,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}
