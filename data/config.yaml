@@ -15,7 +15,13 @@ validation:
     - "anthropic:claude-3-7-sonnet-20250219"
 
 llm-judge:
+  scores_output_path: "data/validation/llm_judge_scores/"
+  temperature: 0.2
   models:
+    - "ollama:phi4-mini:latest"
+    - "ollama:gemma3:12b"
+    - "ollama:mistral-small:24b"
+    - "ollama:deepseek-r1:32b"
     - "openai:o1-mini"
     - "deepseek:deepseek-reasoner"
     - "anthropic:claude-3-7-sonnet-20250219"

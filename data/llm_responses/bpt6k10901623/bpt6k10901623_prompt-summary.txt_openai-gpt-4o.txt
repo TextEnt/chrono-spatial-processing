@@ -1,0 +1,9 @@
+{
+    "period": "Early modern period",
+    "period_reasoning": "The play is set in the context of a royal court and involves themes of adultery, loyalty, and execution orders, which are characteristic of early modern European royal and noble conflicts. The presence of a character named 'LE ROY' (The King) and the mention of a prince further support this setting. This aligns with the early modern period, roughly covering the Renaissance to the early Enlightenment.",
+    "timeframe_start": "1450",
+    "timeframe_end": "1750",
+    "location": "Hungary",
+    "location_reasoning": "The title of the play, 'Théodore, Reyne de Hongrie,' explicitly indicates that the action takes place in Hungary. The play’s context and themes suggest a setting in the realm of medieval or early modern Hungary, rather than in a broader or different geographical setting.",
+    "location_qid": "Q28"
+}

@@ -1,0 +1,9 @@
+{
+    "period": "Middle Ages",
+    "period_reasoning": "The play's title references the Queen of Hungary, suggesting a setting during the medieval period when monarchies were prevalent in Hungary.",
+    "timeframe_start": "500",
+    "timeframe_end": "1500",
+    "location": "Hungary",
+    "location_reasoning": "The title 'Reyne de Hongrie' translates to 'Queen of Hungary,' indicating that the setting is in Hungary.",
+    "location_qid": "Q28"
+}

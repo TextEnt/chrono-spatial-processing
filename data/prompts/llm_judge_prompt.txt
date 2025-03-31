@@ -39,7 +39,7 @@ ASSESSMENT RULES:
 - compare the prediction (field `pred_location_qid`) against the reference (field `gt_preferred_location_QID`)
 - assign 1 point if if the location QID in the prediction is the same as the one in the reference
 - assign 0.5 points if the location in the prediction is contained in the field `gt_acceptable_location_QIDs`
-- assign 0 points if the prediction location QID and the reference location QID differ, and if the prediction location QID is not contained in the field 
+- assign 0 points if the prediction location QID and the reference location QID differ, and if the prediction location QID is not contained in the field `gt_acceptable_location_QIDs`
 - store this score in the field `score_location_qid` of the output JSON document 
 
 Return your assessment and the underlying reasoning as a JSON object with the following structure:
