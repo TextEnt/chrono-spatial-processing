@@ -126,16 +126,23 @@ def query_llm(client: aisuite.Client, model: str, requests: List[LLMrequest], ou
         serialize_llm_responses([llm_response], output_path)
     return responses
 
-def query_llm_judge(client: aisuite.Client, model: str, requests: List[LLMrequest], temperature: float = 0.2) -> List[LLMresponse]:
+def query_llm_judge(client: aisuite.Client, model: str, requests: List[LLMrequest], temperature: float = None) -> List[LLMresponse]:
     # pass over the requests to a given model and gather the responses
     responses = []
     for request in requests:
         print(f"Processing prompt {request.prompt_id} for document {request.document_id} using model {model}")
-        response = client.chat.completions.create(
-            model=model,
-            messages=[{"role": "user", "content": request.prompt}],
-            temperature=temperature
-        )
+        # Temperature is not applicable to reasoning models; so we use the API's default temperature if not provided
+        if temperature:
+            response = client.chat.completions.create(
+                model=model,
+                messages=[{"role": "user", "content": request.prompt}],
+                temperature=temperature
+            )
+        else:
+            response = client.chat.completions.create(
+                model=model,
+                messages=[{"role": "user", "content": request.prompt}]
+            )
         llm_response = LLMresponse(
             document_id=request.document_id,
             prompt_id=request.prompt_id,
