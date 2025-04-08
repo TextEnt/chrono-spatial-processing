@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k12801807",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Renaissance\",\n    \"period_reasoning\": \"The play is a faithful translation from Italian, and the pastoral genre was prominent during the Renaissance period.\",\n    \"timeframe_start\": \"1300\",\n    \"timeframe_end\": \"1600\",\n    \"location\": \"Italy\",\n    \"location_reasoning\": \"The original work is in Italian, and pastoral plays are typically set in Italian or idealized rural landscapes.\",\n    \"location_qid\": \"Q38\"\n}",
+  "duration_seconds": 8.598846912384033,
+  "prompt_tokens": 478,
+  "completion_tokens": 1463,
+  "total_tokens": 1941
+}

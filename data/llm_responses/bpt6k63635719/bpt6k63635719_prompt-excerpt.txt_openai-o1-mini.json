@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k63635719",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Ancient Greece\",\n    \"period_reasoning\": \"The play is an adaptation from a Greek source, suggesting the action is set in Ancient Greece.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"500\",\n    \"location\": \"Ancient Greece\",\n    \"location_reasoning\": \"The play is based on a Greek history, indicating the setting is Ancient Greece.\",\n    \"location_qid\": \"Q547\"\n}",
+  "duration_seconds": 7.731082916259766,
+  "prompt_tokens": 642,
+  "completion_tokens": 1266,
+  "total_tokens": 1908
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090060x",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was published in 1692, which suggests it is set in a contemporary or slightly earlier time period. The themes and language used in the play are consistent with those of the 17th century.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1699\",\n    \"location\": \"Dauphin\u00e9, France\",\n    \"location_reasoning\": \"The mention of places like Grenoble and Voiron, which are located in the historical province of Dauphin\u00e9 in southeastern France, suggests that the play is set in this region.\",\n    \"location_qid\": \"Q12707\"\n}",
+  "duration_seconds": 3.9456799030303955,
+  "prompt_tokens": 1468,
+  "completion_tokens": 150,
+  "total_tokens": 1618
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8614585w",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Roman Empire\",\n    \"period_reasoning\": \"The play mentions Emperor Decius ('l'empereur D\u00e9cie') who was a Roman emperor who ruled from 249 to 251 CE. The play also mentions persecution of Christians, which was notable during Decius's reign. There are references to Roman gods like Jupiter, and the characters are discussing religious conflict between Christianity and Roman polytheism.\",\n    \"timeframe_start\": \"249\",\n    \"timeframe_end\": \"251\",\n    \"location\": \"Gaul\",\n    \"location_reasoning\": \"The play repeatedly mentions 'Gaule' (Gaul) as the setting. The character Reine (probably Saint Regina of Alise) is associated with Gaul, and there's mention of religious conversion happening in Gaul. The title also mentions 'sainte Reyne d'Alise', with Alise being a location in Gaul (modern France).\",\n    \"location_qid\": \"Q58086\"\n}",
+  "duration_seconds": 5.31290602684021,
+  "prompt_tokens": 1839,
+  "completion_tokens": 241,
+  "total_tokens": 2080
+}

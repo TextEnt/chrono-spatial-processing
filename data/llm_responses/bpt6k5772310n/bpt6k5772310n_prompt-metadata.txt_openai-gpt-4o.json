@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5772310n",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"The play 'Ariane' by Thomas Corneille is based on the myth of Ariadne, which is rooted in Greek mythology. This suggests that the setting is likely during the time of ancient Greece, which is part of Classical Antiquity.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"-146\",\n    \"location\": \"Ancient Greece\",\n    \"location_reasoning\": \"The myth of Ariadne is part of Greek mythology, indicating that the setting of the play is in Ancient Greece.\",\n    \"location_qid\": \"Q11772\"\n}",
+  "duration_seconds": 2.6197659969329834,
+  "prompt_tokens": 445,
+  "completion_tokens": 142,
+  "total_tokens": 587
+}

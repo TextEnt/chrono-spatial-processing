@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090131j",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"The excerpt references names like Cleomene and themes of divine justice (e.g., 'le juste Ciel'), military victory, and state recovery, typical of ancient Greek or Roman tragedies. French 17th-century tragedies often drew on classical settings.\",\n    \"timeframe_start\": \"-500\",\n    \"timeframe_end\": \"-300\",\n    \"location\": \"Sparta\",\n    \"location_reasoning\": \"Cleomene (Cleomenes) is a name associated with Spartan kings (e.g., Cleomenes I), and the military-political context aligns with Spartan history.\",\n    \"location_qid\": \"Q5699\"\n}",
+  "duration_seconds": 45.82080888748169,
+  "prompt_tokens": 595,
+  "completion_tokens": 826,
+  "total_tokens": 1421
+}

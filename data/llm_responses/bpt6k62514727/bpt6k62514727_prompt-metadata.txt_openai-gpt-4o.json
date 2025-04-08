@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k62514727",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was published in 1662, which suggests it is likely set in the same century, as plays often reflect the contemporary society and issues of the time.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris, France\",\n    \"location_reasoning\": \"The play was represented at the Th\u00e9\u00e2tre royal de l'Hostel de Bourgogne, which was located in Paris, France. This suggests that the play is likely set in Paris or at least in France.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 2.440990924835205,
+  "prompt_tokens": 466,
+  "completion_tokens": 143,
+  "total_tokens": 609
+}

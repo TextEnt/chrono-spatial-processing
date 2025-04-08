@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090061b",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Early Modern Period\",\n    \"period_reasoning\": \"The play references locations like Paris and Rome as contemporary seats of governance, mentions the Duc de Venise (Duke of Venice), and includes characters like Paladin and Capitan, which align with early modern European settings. The publication date (1629) and the blend of classical references (e.g., Cicero, ancient Rome) with early modern institutions suggest this period.\",\n    \"timeframe_start\": \"1500\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"Rome is the most frequently mentioned place (frequency: 8) and is discussed in contexts like governance, historical comparisons to ancient consuls, and the Pope's influence. Other mentions (e.g., Paris, France) are secondary, suggesting Rome as the primary setting.\",\n    \"location_qid\": \"Q220\"\n}",
+  "duration_seconds": 181.22309494018555,
+  "prompt_tokens": 3259,
+  "completion_tokens": 3869,
+  "total_tokens": 7128
+}

@@ -1,9 +1,0 @@
-{
-    "period": "Medieval Hungary",
-    "period_reasoning": "The play's title references a queen of Hungary, suggesting a setting during the Kingdom of Hungary's medieval period, likely before the Ottoman conquests.",
-    "timeframe_start": "1000",
-    "timeframe_end": "1526",
-    "location": "Hungary",
-    "location_reasoning": "The title explicitly mentions 'Hongrie' (Hungary), indicating the geographic focus of the play.",
-    "location_qid": "Q28"
-}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280452z",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Early Modern France\",\n    \"period_reasoning\": \"Moli\u00e8re's plays typically reflect 17th-century French society, and the publication date (1674) aligns with Louis XIV's reign. The dialogue and character dynamics are consistent with contemporary social critiques of the era.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"Moli\u00e8re's works are set in France, often satirizing Parisian bourgeois society. The French language, names (Arnolph\u00e9, Horace), and cultural context in the excerpt reinforce this.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 49.582844257354736,
+  "prompt_tokens": 618,
+  "completion_tokens": 953,
+  "total_tokens": 1571
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k857183z",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was published in 1650, and the language and style suggest it is set in a contemporary or near-contemporary setting to its publication. The themes of vengeance, honor, and personal conflict are typical of 17th-century French drama.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1699\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The author, Pierre-Louis Bigres de Jussy, is French, and the play is written in French. The themes and style are consistent with French literature of the 17th century, suggesting the setting is likely France.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 3.580622911453247,
+  "prompt_tokens": 579,
+  "completion_tokens": 162,
+  "total_tokens": 741
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k57346959",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": null,\n    \"period_reasoning\": \"Insufficient information to determine the historical period of the play's setting.\",\n    \"timeframe_start\": null,\n    \"timeframe_end\": null,\n    \"location\": \"France\",\n    \"location_reasoning\": \"The metadata and context mention France as a prominent location, indicating the setting is in France.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 4.311662197113037,
+  "prompt_tokens": 1001,
+  "completion_tokens": 616,
+  "total_tokens": 1617
+}

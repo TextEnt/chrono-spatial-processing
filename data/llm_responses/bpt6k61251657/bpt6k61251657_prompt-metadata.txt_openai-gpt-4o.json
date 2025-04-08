@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k61251657",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": null,\n    \"period_reasoning\": \"The title 'L'Innocent exil\u00e9 . Tragi-com\u00e9die' does not provide sufficient information to determine the specific historical period in which the play is set. The play could be set in a variety of historical contexts typical of tragi-comedies of the 17th century.\",\n    \"timeframe_start\": null,\n    \"timeframe_end\": null,\n    \"location\": null,\n    \"location_reasoning\": \"The title and metadata do not provide enough information to determine the specific geographic location where the action of the play takes place. Without additional context or content from the play, it is not possible to ascertain the setting.\",\n    \"location_qid\": null\n}",
+  "duration_seconds": 4.684545040130615,
+  "prompt_tokens": 444,
+  "completion_tokens": 157,
+  "total_tokens": 601
+}

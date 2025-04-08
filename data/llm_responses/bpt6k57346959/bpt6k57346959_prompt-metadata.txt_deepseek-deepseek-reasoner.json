@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k57346959",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Classical antiquity\",\n    \"period_reasoning\": \"The play is a pastoral (pastorale), a genre often set in an idealized rural environment, typically associated with classical antiquity or a timeless mythical past. Such works frequently evoke ancient Greek or Roman pastoral traditions.\",\n    \"timeframe_start\": \"-300\",\n    \"timeframe_end\": \"200\",\n    \"location\": \"Arcadia (region of Greece)\",\n    \"location_reasoning\": \"Pastoral works commonly take place in Arcadia, a symbolic locus amoenus in Greek literature representing an idyllic natural setting. The genre's conventions strongly suggest this location.\",\n    \"location_qid\": \"Q170295\"\n}",
+  "duration_seconds": 71.50618100166321,
+  "prompt_tokens": 455,
+  "completion_tokens": 1347,
+  "total_tokens": 1802
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5772310n",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"The play's title 'Ariane' (Ariadne) refers to a figure from Greek mythology, specifically linked to the myth of Theseus and the Minotaur, which is set in ancient Crete during the Minoan era. French classical tragedies of the 17th century often drew on ancient Greek or Roman themes.\",\n    \"timeframe_start\": \"-2000\",\n    \"timeframe_end\": \"-1000\",\n    \"location\": \"Crete\",\n    \"location_reasoning\": \"The myth of Ariadne is centrally tied to Crete, where she helped Theseus navigate the Labyrinth to defeat the Minotaur. French classical tragedies typically retained the original settings of their mythological or historical sources.\",\n    \"location_qid\": \"Q34374\"\n}",
+  "duration_seconds": 21.82755136489868,
+  "prompt_tokens": 446,
+  "completion_tokens": 475,
+  "total_tokens": 921
+}

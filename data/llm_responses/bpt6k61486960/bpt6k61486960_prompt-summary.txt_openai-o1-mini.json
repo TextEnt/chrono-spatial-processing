@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k61486960",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was published in 1694 and is set in contemporary French society, indicating a 17th-century setting.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Poitiers, France\",\n    \"location_reasoning\": \"The play frequently mentions Poitiers, suggesting that the action is set there.\",\n    \"location_qid\": \"Q30656\"\n}",
+  "duration_seconds": 7.220645904541016,
+  "prompt_tokens": 1288,
+  "completion_tokens": 1146,
+  "total_tokens": 2434
+}

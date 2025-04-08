@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8569793",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Late Antiquity\",\n    \"period_reasoning\": \"The play mentions Phocas, who was a Byzantine Emperor from 602 to 610 CE. This places the events in the Late Antiquity period, which is characterized by the transition from Classical Antiquity to the Middle Ages.\",\n    \"timeframe_start\": \"0600\",\n    \"timeframe_end\": \"0700\",\n    \"location\": \"Byzantine Empire\",\n    \"location_reasoning\": \"The play references locations such as Thrace and Constantinople, which were significant regions within the Byzantine Empire during the time of Emperor Phocas.\",\n    \"location_qid\": \"Q12544\"\n}",
+  "duration_seconds": 4.337246894836426,
+  "prompt_tokens": 2119,
+  "completion_tokens": 144,
+  "total_tokens": 2263
+}

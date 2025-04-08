@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k12804007",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Early to mid-17th century\",\n    \"period_reasoning\": \"Moli\u00e8re was a 17th-century French playwright, and this play was published in 1662. Moli\u00e8re's comedies typically depicted contemporary society of his time, so it's reasonable to assume the play is set in the early to mid-17th century, shortly before or around its publication date.\",\n    \"timeframe_start\": \"1620\",\n    \"timeframe_end\": \"1662\",\n    \"location\": \"Paris, France\",\n    \"location_reasoning\": \"Moli\u00e8re was a French playwright whose works were typically set in France, often in Paris. 'Sganarelle ou le Cocu imaginaire' (Sganarelle or the Imaginary Cuckold) is a comedy that follows the conventions of French theater of the period, which commonly depicted urban French settings. Without specific information to indicate otherwise, Paris is the most likely setting given Moli\u00e8re's typical practice and the cultural context of French comedy of the period.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 7.208122730255127,
+  "prompt_tokens": 499,
+  "completion_tokens": 254,
+  "total_tokens": 753
+}

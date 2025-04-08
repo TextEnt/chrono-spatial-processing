@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090049w",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"The play is a pastoral (pastorale) featuring characters (Damon and Cloris) typical of classical pastoral literature, which often drew inspiration from ancient Greek and Roman settings.\",\n    \"timeframe_start\": \"-500\",\n    \"timeframe_end\": \"0\",\n    \"location\": \"Arcadia\",\n    \"location_reasoning\": \"Pastoral works like this often idealize Arcadia, a region in ancient Greece associated with idyllic rural life. The names Damon and Cloris align with Greek pastoral traditions.\",\n    \"location_qid\": \"Q170284\"\n}",
+  "duration_seconds": 90.97553586959839,
+  "prompt_tokens": 460,
+  "completion_tokens": 1589,
+  "total_tokens": 2049
+}

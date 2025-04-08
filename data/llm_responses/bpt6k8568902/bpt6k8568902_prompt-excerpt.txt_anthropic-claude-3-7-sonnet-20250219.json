@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8568902",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Ancient Rome/Greece\",\n    \"period_reasoning\": \"The play 'Hypsicratee, ou La magnanimite' appears to reference Queen Hypsicratia (or Hypsicratea), who was the wife of Mithridates VI of Pontus, a king who fought against the Roman Republic in the 1st century BCE. The title and themes of magnanimity, cruelty, and warfare suggest a classical setting consistent with the Mithridatic Wars. Also, 17th century French theater often drew inspiration from classical antiquity.\",\n    \"timeframe_start\": \"-100\",\n    \"timeframe_end\": \"-63\",\n    \"location\": \"Pontus (Ancient kingdom in Asia Minor)\",\n    \"location_reasoning\": \"Hypsicratia was the queen of Pontus, wife of Mithridates VI. The name 'Hypsicratee' in the title strongly suggests the play is about her, which would place the action in Pontus (present-day northern Turkey) during the Mithridatic Wars against Rome. The text mentions themes of war, cruelty, and bloodshed which aligns with this tumultuous period in Pontic history.\",\n    \"location_qid\": \"Q186319\"\n}",
+  "duration_seconds": 6.725091218948364,
+  "prompt_tokens": 677,
+  "completion_tokens": 303,
+  "total_tokens": 980
+}

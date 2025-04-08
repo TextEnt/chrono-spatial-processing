@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280445t",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"17th century France\",\n    \"period_reasoning\": \"La Critique de l'\u00c9cole des Femmes (The Critique of the School for Wives) is a one-act play by Moli\u00e8re written and first performed in 1663. As a play by Moli\u00e8re, who was writing during the reign of Louis XIV, and published in 1674, it would be set contemporaneously in the 17th century France. Moli\u00e8re's plays typically depicted the society of his time.\",\n    \"timeframe_start\": \"1650\",\n    \"timeframe_end\": \"1680\",\n    \"location\": \"Paris, France\",\n    \"location_reasoning\": \"Moli\u00e8re's plays were typically set in Paris, where he lived and worked. 'La Critique de l'\u00c9cole des Femmes' specifically is set in a Parisian salon, as it depicts a discussion among members of French high society following a performance of Moli\u00e8re's earlier play 'L'\u00c9cole des Femmes'. The play features conversations among aristocrats and intellectuals in a domestic setting typical of urban French society.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 5.917623043060303,
+  "prompt_tokens": 502,
+  "completion_tokens": 270,
+  "total_tokens": 772
+}

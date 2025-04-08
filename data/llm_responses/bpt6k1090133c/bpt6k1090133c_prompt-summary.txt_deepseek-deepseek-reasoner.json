@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090133c",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"17th century France\",\n    \"period_reasoning\": \"The play was published in 1671, aligning with the late 17th century. French theatre of this era often reflected contemporary settings unless explicitly historical. No evidence in the text suggests a different period.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"The 'top_1_place' entity is Paris with 3 mentions, including explicit statements like 'La Sc\u00e8ne est \u00e0 Paris' ('The scene is set in Paris') in the text.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 30.5661780834198,
+  "prompt_tokens": 1154,
+  "completion_tokens": 448,
+  "total_tokens": 1602
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8622111v",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Renaissance\",\n    \"period_reasoning\": \"The play mentions Florence, a key center of the Renaissance, and references to characters like ERASME (possibly Erasmus, a Renaissance humanist). The tragicomedy genre and French authorship from the 17th century also align with Renaissance theatrical traditions.\",\n    \"timeframe_start\": \"1400\",\n    \"timeframe_end\": \"1600\",\n    \"location\": \"Florence\",\n    \"location_reasoning\": \"Florence is the most frequently mentioned place (6 times) in the play's context, with characters discussing events and journeys tied to the city. Other locations like Lyon and Paris are secondary.\",\n    \"location_qid\": \"Q2044\"\n}",
+  "duration_seconds": 47.1906259059906,
+  "prompt_tokens": 1828,
+  "completion_tokens": 757,
+  "total_tokens": 2585
+}

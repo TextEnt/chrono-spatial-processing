@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090139v",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"17th century France\",\n    \"period_reasoning\": \"The play was published in 1662, which places it in 17th century France. French plays of this period typically set their action in contemporary times or the recent past. The language and character names (C\u00e9phise, Paquette) suggest a setting contemporary to the publication date.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1699\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play is written in French and was published in 17th century France. Character names like 'C\u00e9phise' and 'Paquette' are French. The title 'La Cocue imaginaire' is distinctly French. Most French plays of this period were set in France unless explicitly stated otherwise, and there are no indications in the excerpt of a foreign setting.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 4.141539096832275,
+  "prompt_tokens": 659,
+  "completion_tokens": 225,
+  "total_tokens": 884
+}

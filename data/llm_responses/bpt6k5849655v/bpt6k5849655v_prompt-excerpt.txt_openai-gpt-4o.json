@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5849655v",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": null,\n    \"period_reasoning\": \"The excerpt does not provide sufficient information about the historical context or specific events that could help determine the period in which the play is set. The language and style are typical of 17th-century French theatre, but this does not necessarily indicate the setting of the play itself.\",\n    \"timeframe_start\": null,\n    \"timeframe_end\": null,\n    \"location\": null,\n    \"location_reasoning\": \"The excerpt does not contain specific references to geographic locations or cultural markers that would allow for the identification of the setting. The names of the characters and the dialogue do not provide clear indications of a specific location.\",\n    \"location_qid\": null\n}",
+  "duration_seconds": 3.088412284851074,
+  "prompt_tokens": 603,
+  "completion_tokens": 152,
+  "total_tokens": 755
+}

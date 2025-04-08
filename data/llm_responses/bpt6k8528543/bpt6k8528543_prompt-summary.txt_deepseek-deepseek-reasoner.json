@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8528543",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": null,\n    \"period_reasoning\": \"The play includes mythological references (Pluton) and names like 'Magus' but lacks explicit temporal markers. The publication date (1656) indicates 17th-century authorship, but the setting could be allegorical or timeless.\",\n    \"timeframe_start\": null,\n    \"timeframe_end\": null,\n    \"location\": \"France\",\n    \"location_reasoning\": \"The top_1_place entity is labeled 'France', with a related sentence explicitly mentioning 'France' as a location.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 97.50795698165894,
+  "prompt_tokens": 1065,
+  "completion_tokens": 1889,
+  "total_tokens": 2954
+}

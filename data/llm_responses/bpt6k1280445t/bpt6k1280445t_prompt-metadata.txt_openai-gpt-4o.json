@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280445t",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play 'La Critique de l'Escole des femmes' by Moli\u00e8re was written and published in the 17th century, and it is likely set in the same period as it critiques contemporary society and theatrical practices.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"Moli\u00e8re's plays are typically set in France, reflecting the society and culture of his time. Given that Moli\u00e8re was a French playwright and his works often critique French society, it is reasonable to assume the play is set in France.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 12.954664945602417,
+  "prompt_tokens": 453,
+  "completion_tokens": 163,
+  "total_tokens": 616
+}

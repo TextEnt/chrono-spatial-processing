@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b86221269",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Ancient mythological period\",\n    \"period_reasoning\": \"The title 'La Diane' suggests the play is about Diana (Diane in French), the Roman goddess of hunting, the moon, and nature. Mythological plays were common in 17th century French theater, often set in an idealized ancient world. Given that Rotrou was a 17th century playwright, this work likely follows the tradition of setting mythological stories in classical antiquity.\",\n    \"timeframe_start\": \"-100\",\n    \"timeframe_end\": \"100\",\n    \"location\": \"Ancient Greece or Rome\",\n    \"location_reasoning\": \"The title references Diane (Diana), a Roman goddess who was equivalent to the Greek Artemis. 17th century French neoclassical plays frequently used Greco-Roman settings for mythological stories. Without additional character or plot information, I can only determine that the setting is likely either ancient Greece or Rome, as was typical for plays involving classical deities.\",\n    \"location_qid\": \"None\"\n}",
+  "duration_seconds": 5.386312961578369,
+  "prompt_tokens": 509,
+  "completion_tokens": 241,
+  "total_tokens": 750
+}

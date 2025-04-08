@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090139v",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": null,\n    \"period_reasoning\": \"The title 'La Cocue imaginaire, comedie' does not provide sufficient information to determine the historical period in which the play is set. The title suggests a comedic theme but lacks specific historical or temporal references.\",\n    \"timeframe_start\": null,\n    \"timeframe_end\": null,\n    \"location\": null,\n    \"location_reasoning\": \"The title alone does not provide enough information to determine the geographic location where the action of the play takes place. Without additional context or content from the play, it is not possible to ascertain the setting.\",\n    \"location_qid\": null\n}",
+  "duration_seconds": 2.570651054382324,
+  "prompt_tokens": 436,
+  "completion_tokens": 141,
+  "total_tokens": 577
+}

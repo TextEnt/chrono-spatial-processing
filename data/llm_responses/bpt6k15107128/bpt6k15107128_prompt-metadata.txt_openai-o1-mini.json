@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k15107128",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Iron Age\",\n    \"period_reasoning\": \"The play 'Athalie' is based on the biblical story of Athaliah, who was queen of the Kingdom of Judah during the 9th century BCE, which falls within the Iron Age.\",\n    \"timeframe_start\": \"-841\",\n    \"timeframe_end\": \"-835\",\n    \"location\": \"Kingdom of Judah\",\n    \"location_reasoning\": \"Athaliah was the queen of the Kingdom of Judah, an ancient kingdom located in the region of the modern-day Middle East.\",\n    \"location_qid\": \"Q19874\"\n}",
+  "duration_seconds": 5.456254959106445,
+  "prompt_tokens": 471,
+  "completion_tokens": 723,
+  "total_tokens": 1194
+}

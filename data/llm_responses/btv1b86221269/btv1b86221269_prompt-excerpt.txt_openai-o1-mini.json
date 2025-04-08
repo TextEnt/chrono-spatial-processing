@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b86221269",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"The play's title references Diane (Diana), a Roman goddess, indicating a setting rooted in Roman mythology. This suggests the action is placed within the broader context of Classical Antiquity.\",\n    \"timeframe_start\": \"-500\",\n    \"timeframe_end\": \"500\",\n    \"location\": \"Ancient Rome\",\n    \"location_reasoning\": \"Diana is a prominent deity in Roman mythology, and the themes and characters align with settings typical of Ancient Rome.\",\n    \"location_qid\": \"Q220\"\n}",
+  "duration_seconds": 6.94261622428894,
+  "prompt_tokens": 612,
+  "completion_tokens": 1164,
+  "total_tokens": 1776
+}

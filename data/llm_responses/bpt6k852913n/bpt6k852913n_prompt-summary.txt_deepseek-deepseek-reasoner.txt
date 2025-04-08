@@ -1,9 +1,0 @@
-{
-    "period": "17th century",
-    "period_reasoning": "The play was published in 1678, during the reign of Louis XIV, and French comedies of this era often reflected contemporary settings. The mentions of places like Luxembourg (built in 1612) and Senlis align with 17th-century France.",
-    "timeframe_start": "1601",
-    "timeframe_end": "1700",
-    "location": "France",
-    "location_reasoning": "The play references multiple French cities (Senlis, Paris, Luxembourg, Chalons en Champagne). Senlis is the most frequently mentioned place, but the broader context of interconnected locations suggests the action occurs within France.",
-    "location_qid": "Q142"
-}

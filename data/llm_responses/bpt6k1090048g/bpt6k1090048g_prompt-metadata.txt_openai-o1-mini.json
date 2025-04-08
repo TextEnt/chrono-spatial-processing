@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090048g",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Classical antiquity\",\n    \"period_reasoning\": \"The play is based on the mythological story of Pyramus and Thisbe, which originates from classical antiquity, particularly associated with ancient Babylon as depicted in Ovid\u2019s Metamorphoses.\",\n    \"timeframe_start\": \"-500\",\n    \"timeframe_end\": \"500\",\n    \"location\": \"Babylon\",\n    \"location_reasoning\": \"The story of Pyramus is traditionally set in Babylon, an ancient city-state in Mesopotamia.\",\n    \"location_qid\": \"Q12190\"\n}",
+  "duration_seconds": 6.364565134048462,
+  "prompt_tokens": 463,
+  "completion_tokens": 1101,
+  "total_tokens": 1564
+}

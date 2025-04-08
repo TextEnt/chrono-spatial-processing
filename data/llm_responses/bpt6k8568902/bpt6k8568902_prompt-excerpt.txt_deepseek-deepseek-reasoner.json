@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8568902",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Late Hellenistic period/Roman Republic\",\n    \"period_reasoning\": \"The name 'Hypsicratee' likely refers to Hypsicratia, wife of Mithridates VI of Pontus (1st century BCE). The themes of war, betrayal, and political intrigue align with the Mithridatic Wars between Pontus and Rome.\",\n    \"timeframe_start\": \"-120\",\n    \"timeframe_end\": \"-63\",\n    \"location\": \"Kingdom of Pontus\",\n    \"location_reasoning\": \"Hypsicratia was queen consort of Pontus. The play's classical tragedy structure and references to military conflict suggest a Anatolian/Black Sea region setting tied to Mithridates VI's realm.\",\n    \"location_qid\": \"Q132643\"\n}",
+  "duration_seconds": 78.68453812599182,
+  "prompt_tokens": 611,
+  "completion_tokens": 1403,
+  "total_tokens": 2014
+}

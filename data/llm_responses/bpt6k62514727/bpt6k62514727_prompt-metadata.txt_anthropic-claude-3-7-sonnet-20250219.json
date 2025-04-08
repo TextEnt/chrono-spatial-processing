@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k62514727",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Seventeenth-century France, likely during the reign of Louis XIV\",\n    \"period_reasoning\": \"The play was published in 1662, which falls during the early reign of Louis XIV in France. French theatrical works of this period typically depicted contemporary settings or the recent past. 'Les ramonneurs' (The Chimney Sweeps) suggests a setting contemporary to its publication, as it was performed at the H\u00f4tel de Bourgogne, a prominent theater of the time that specialized in contemporary works.\",\n    \"timeframe_start\": \"1640\",\n    \"timeframe_end\": \"1662\",\n    \"location\": \"Paris, France\",\n    \"location_reasoning\": \"The play was performed at the 'Th\u00e9\u00e2tre royal de l'Hostel de Bourgogne' which was located in Paris. As a French comedy from this period, it would most likely be set in Paris or its environs, especially given the urban occupation of chimney sweeps referenced in the title. The H\u00f4tel de Bourgogne was the premier theater in Paris during this period, and French comedies typically used familiar settings for their audiences.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 6.247745037078857,
+  "prompt_tokens": 525,
+  "completion_tokens": 282,
+  "total_tokens": 807
+}

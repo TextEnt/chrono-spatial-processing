@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280452z",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"17th century France\",\n    \"period_reasoning\": \"L'\u00c9cole des femmes (The School for Wives) is a comedy by Moli\u00e8re, first performed in 1662 and published in 1663 (though this edition is from 1674). Moli\u00e8re's comedies typically portrayed contemporary French society of his time, which was the 17th century. The play doesn't depict historical events from a different era but rather reflects the customs, social norms, and relationships of Moli\u00e8re's own period.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1699\",\n    \"location\": \"Paris, France\",\n    \"location_reasoning\": \"Moli\u00e8re wrote for the Parisian stage and his plays were typically set in urban French settings, most commonly Paris. While the play doesn't explicitly state its setting in the metadata provided, Moli\u00e8re's comedies typically took place in Paris or other French urban settings to make them relatable to his contemporary audience. L'\u00c9cole des femmes specifically portrays French bourgeois society of his time.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 6.0224809646606445,
+  "prompt_tokens": 498,
+  "completion_tokens": 267,
+  "total_tokens": 765
+}

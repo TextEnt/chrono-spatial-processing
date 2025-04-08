@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090139v",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"17th century France\",\n    \"period_reasoning\": \"The play 'La Cocue imaginaire, comedie' was published in 1662, which is during the 17th century. The language and style of the excerpt suggest a setting consistent with the time of its writing, as it reflects the societal norms and cultural context of 17th century France.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play is written in French and the title is in French, suggesting a French setting. Additionally, the style and themes are typical of French comedies of the 17th century, which often took place in France.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 2.7219231128692627,
+  "prompt_tokens": 579,
+  "completion_tokens": 175,
+  "total_tokens": 754
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5752605t",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was published in 1691, which is in the 17th century. The language and context suggest it is set in a similar timeframe.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play frequently mentions France and uses French titles and names, indicating that the setting is likely in France.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 2.085494041442871,
+  "prompt_tokens": 1067,
+  "completion_tokens": 119,
+  "total_tokens": 1186
+}

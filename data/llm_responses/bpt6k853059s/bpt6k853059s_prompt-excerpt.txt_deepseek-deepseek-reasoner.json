@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k853059s",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"The play is titled 'La Cydippe', referencing a figure from Greek mythology (Cydippe), and pastoral works often draw from classical settings.\",\n    \"timeframe_start\": -800,\n    \"timeframe_end\": 146,\n    \"location\": \"Delos, Greece\",\n    \"location_reasoning\": \"Cydippe's mythological story is linked to the island of Delos, a sacred site in Greek antiquity, and pastoral settings often evoke such idealized locales.\",\n    \"location_qid\": \"Q193610\"\n}",
+  "duration_seconds": 103.16013216972351,
+  "prompt_tokens": 611,
+  "completion_tokens": 1934,
+  "total_tokens": 2545
+}

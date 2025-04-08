@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k6255892m",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Early Modern Period\",\n    \"period_reasoning\": \"The play was published in 1638, which falls within the Early Modern Period.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play is a French work from the 17th century, likely set in contemporary France.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 4.632734060287476,
+  "prompt_tokens": 611,
+  "completion_tokens": 691,
+  "total_tokens": 1302
+}

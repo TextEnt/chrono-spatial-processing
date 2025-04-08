@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090049w",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"The play features pastoral elements and mythological figures (e.g., Sil\u00e8ne/Silenus, nymphs, satyrs) typical of Classical Antiquity settings, common in 17th-century French pastoral literature.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"500\",\n    \"location\": \"Sicily\",\n    \"location_reasoning\": \"The top_5_places include 'Sicile' (Sicily), a region historically linked to pastoral traditions in ancient Greek literature (e.g., Theocritus' idylls). Sil\u00e8ne, while a character, is tied to Mediterranean mythological contexts, further supporting a Sicilian setting.\",\n    \"location_qid\": \"Q1460\"\n}",
+  "duration_seconds": 91.47669696807861,
+  "prompt_tokens": 2150,
+  "completion_tokens": 1791,
+  "total_tokens": 3941
+}

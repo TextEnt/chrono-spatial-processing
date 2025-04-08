@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280290z",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Roman Empire (Augustus' reign)\",\n    \"period_reasoning\": \"The play's title references 'la Cl\u00e9mence d'Auguste', indicating it concerns Emperor Augustus (Octavian), who ruled during the transition from the Roman Republic to the Roman Empire.\",\n    \"timeframe_start\": \"-27\",\n    \"timeframe_end\": \"14\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"The play centers on Augustus, the Roman Emperor, and his court, which was based in Rome. Corneille's classical tragedies typically adhere to Roman historical settings.\",\n    \"location_qid\": \"Q220\"\n}",
+  "duration_seconds": 24.463956832885742,
+  "prompt_tokens": 456,
+  "completion_tokens": 464,
+  "total_tokens": 920
+}

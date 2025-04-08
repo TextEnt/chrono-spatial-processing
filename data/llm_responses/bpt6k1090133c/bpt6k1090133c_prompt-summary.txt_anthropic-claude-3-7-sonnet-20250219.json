@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090133c",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"17th century France\",\n    \"period_reasoning\": \"The play was published in 1671 according to the metadata, and it appears to be set in the contemporary period. The characters have French names (Isabelle, Marine, Polidore, Clitandre), and the dialogue style is consistent with 17th century French drama. The reference to a privilege granted by the King also indicates the setting is during the French monarchy of the 17th century.\",\n    \"timeframe_start\": \"1650\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"The play explicitly states 'La Sc\u00e8ne est \u00e0 Paris' (The Scene is in Paris), which directly identifies the setting. Additionally, Paris is mentioned in other contexts, including a reference to wine from Paris. Paris is the only significant place mentioned in the top places list.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 5.206188201904297,
+  "prompt_tokens": 1346,
+  "completion_tokens": 226,
+  "total_tokens": 1572
+}

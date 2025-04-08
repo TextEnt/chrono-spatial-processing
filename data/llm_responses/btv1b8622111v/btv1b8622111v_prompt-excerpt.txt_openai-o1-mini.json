@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8622111v",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": null,\n    \"period_reasoning\": \"The provided information does not contain specific historical references to determine the historical period of the play's setting.\",\n    \"timeframe_start\": null,\n    \"timeframe_end\": null,\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play is written in French by a French author, suggesting that the setting is likely in France.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 3.1733458042144775,
+  "prompt_tokens": 612,
+  "completion_tokens": 496,
+  "total_tokens": 1108
+}

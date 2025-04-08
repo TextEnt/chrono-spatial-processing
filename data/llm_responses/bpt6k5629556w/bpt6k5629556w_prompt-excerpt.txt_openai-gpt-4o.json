@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5629556w",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"The play features characters such as Alcide (another name for Hercules) and Dejanire, who are figures from Greek mythology. This suggests that the setting is in the time of ancient Greek myths, which is typically placed in Classical Antiquity.\",\n    \"timeframe_start\": \"-1200\",\n    \"timeframe_end\": \"-500\",\n    \"location\": \"Ancient Greece\",\n    \"location_reasoning\": \"The presence of characters from Greek mythology, such as Alcide (Hercules) and Dejanire, indicates that the play is set in Ancient Greece.\",\n    \"location_qid\": \"Q11772\"\n}",
+  "duration_seconds": 2.9853339195251465,
+  "prompt_tokens": 617,
+  "completion_tokens": 151,
+  "total_tokens": 768
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8622099v",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": null,\n    \"period_reasoning\": \"The excerpt does not contain explicit references to historical events, figures, or cultural markers that would indicate a specific historical period. The dialogue focuses on interpersonal emotions typical of classical French theater but lacks temporal context.\",\n    \"timeframe_start\": null,\n    \"timeframe_end\": null,\n    \"location\": null,\n    \"location_reasoning\": \"No geographic references (e.g., place names, cultural practices, or environmental details) are present in the excerpt or metadata to determine the play's setting. The French authorship and language suggest a French cultural context, but this does not inherently define the fictional location.\",\n    \"location_qid\": null\n}",
+  "duration_seconds": 89.85750889778137,
+  "prompt_tokens": 589,
+  "completion_tokens": 1784,
+  "total_tokens": 2373
+}

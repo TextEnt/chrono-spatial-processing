@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k6255892m",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"17th century France\",\n    \"period_reasoning\": \"The play was published in 1638 (17th century) and appears to be set in the contemporary period of its writing. References to locations like 'le Louvre' and social activities like attending 'l'Acad\u00e9mie', 'le Cours', and 'le Palais' suggest the setting is contemporary aristocratic French society of the early-to-mid 17th century.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1650\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"Several Parisian locations are mentioned: 'le Louvre' (the royal palace in Paris), 'le Palais' (likely referring to the Palais de Justice), and 'le Cours' (likely referring to the Cours-la-Reine, a fashionable promenade in Paris). Paris is also explicitly mentioned in the top 5 places. These references strongly indicate the play is set in Paris, which was the center of French aristocratic society in the 17th century.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 6.4184980392456055,
+  "prompt_tokens": 1827,
+  "completion_tokens": 279,
+  "total_tokens": 2106
+}

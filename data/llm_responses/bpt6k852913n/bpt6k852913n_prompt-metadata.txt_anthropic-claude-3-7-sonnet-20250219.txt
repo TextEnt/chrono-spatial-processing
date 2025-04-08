@@ -1,9 +1,0 @@
-{
-    "period": "Contemporary to the play's writing or publication",
-    "period_reasoning": "The play 'L'illusion grotesque ou le point nécromancien' was published in 1678 during the reign of Louis XIV. It's likely that the play was set in the contemporary period, as many French plays of this era were set in their present time. The subtitle mentions 'nécromancien' (necromancer), which suggests possibly fantastical elements, but still likely within a contemporary 17th century setting.",
-    "timeframe_start": "1650",
-    "timeframe_end": "1678",
-    "location": "France",
-    "location_reasoning": "The play was written in French by a French author (Néel) during the reign of Louis XIV, a period when French theater typically featured French settings. While the specific location within France isn't mentioned in the metadata, most French comedies of this period were set in France, often in Paris or other French cities. The lack of any foreign location indicator in the title suggests a domestic setting.",
-    "location_qid": "Q142"
-}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1519298v",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was published in 1662, and mentions 'Louis' (likely Louis d'or coins introduced in 1640), aligning with the 17th-century French context. The timeframe reflects the broader historical period of early modern France.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play is written in French, references 'France' in the top_5_places, and the Th\u00e9\u00e2tre du Marais (a Parisian theater) in the title. While 'Portugal' is the top_1_place, it is mentioned only once in a character's travel plan, suggesting the primary setting is France.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 58.86086297035217,
+  "prompt_tokens": 2243,
+  "completion_tokens": 1470,
+  "total_tokens": 3713
+}

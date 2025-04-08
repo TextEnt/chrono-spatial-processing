@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280290z",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Roman Empire (Principate)\",\n    \"period_reasoning\": \"The play references Augustus, the first Roman emperor, and events related to his reign. The mention of Rome, Gaul, and historical figures like Cinna and C\u00e9sar (Julius Caesar) situate the play in the early Roman Imperial period under Augustus.\",\n    \"timeframe_start\": \"-27\",\n    \"timeframe_end\": \"14\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"Rome is the most frequently mentioned place in the play, with direct references to its political struggles, citizens, and status as the center of the Roman Empire. Sentences like 'Rome enti\u00e8re noy\u00e9e au sang de ses enfants' and discussions of imperial power confirm the setting.\",\n    \"location_qid\": \"Q220\"\n}",
+  "duration_seconds": 33.29928207397461,
+  "prompt_tokens": 2492,
+  "completion_tokens": 450,
+  "total_tokens": 2942
+}

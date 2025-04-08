@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k857183z",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Early 17th century\",\n    \"period_reasoning\": \"The play was published in 1650, and French theatrical works of this period typically set their action in contemporary or recent times. Tragi-comedies of the 17th century often depicted events that could have occurred in the author's lifetime or the previous generation, so approximately 1600-1650 is a reasonable estimate.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1650\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play is a French work from the 17th century with a French author. French dramatic works of this period predominantly set their action in France, unless specifically indicated otherwise in the title (which doesn't mention any foreign location). The title 'Adolphe ou Le bigame genereux' suggests a French setting with French characters. Tragi-comedies of this period typically used domestic settings.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 5.049444913864136,
+  "prompt_tokens": 500,
+  "completion_tokens": 235,
+  "total_tokens": 735
+}

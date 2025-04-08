@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090133c",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": null,\n    \"period_reasoning\": \"The play 'La Dupe amoureuse, com\u00e9die' by Claude Rose de Rosimond does not provide sufficient information to determine the specific historical period in which the action is set. The title and author do not indicate a particular historical setting.\",\n    \"timeframe_start\": null,\n    \"timeframe_end\": null,\n    \"location\": null,\n    \"location_reasoning\": \"The metadata provided does not include any specific information about the geographic location where the action of the play takes place. The title and author do not suggest a particular location.\",\n    \"location_qid\": null\n}",
+  "duration_seconds": 2.559662103652954,
+  "prompt_tokens": 441,
+  "completion_tokens": 139,
+  "total_tokens": 580
+}

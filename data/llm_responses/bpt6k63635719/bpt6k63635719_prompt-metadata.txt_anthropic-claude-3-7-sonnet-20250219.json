@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k63635719",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Ancient Greece - Hellenistic period\",\n    \"period_reasoning\": \"The title mentions 'r\u00e9duites du grec de l'Histoire d'H\u00e9liodore', indicating this play is based on Heliodorus of Emesa's Greek romance 'Aethiopica' (also known as 'Theagenes and Chariclea'), which is set during the Hellenistic period. Heliodorus' original work was written in the 3rd or 4th century CE but depicts events in the Hellenistic era.\",\n    \"timeframe_start\": \"-323\",\n    \"timeframe_end\": \"-31\",\n    \"location\": \"Ancient Greece and Ethiopia\",\n    \"location_reasoning\": \"The play is based on Heliodorus' 'Aethiopica', which follows the adventures of Theagenes and Chariclea (named in the title) through various locations in the ancient Mediterranean world, primarily Greece and Ethiopia. The original story begins in Egypt, travels to Greece, and also includes significant portions set in Ethiopia.\",\n    \"location_qid\": \"Q35514\"\n}",
+  "duration_seconds": 5.067929029464722,
+  "prompt_tokens": 539,
+  "completion_tokens": 268,
+  "total_tokens": 807
+}

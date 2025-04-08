@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10900954",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": null,\n    \"period_reasoning\": \"The provided excerpt does not contain sufficient information to determine the historical period of the play's action.\",\n    \"timeframe_start\": null,\n    \"timeframe_end\": null,\n    \"location\": null,\n    \"location_reasoning\": \"The provided excerpt does not contain sufficient information to determine the geographic location of the play's action.\",\n    \"location_qid\": null\n}",
+  "duration_seconds": 5.918554067611694,
+  "prompt_tokens": 609,
+  "completion_tokens": 1003,
+  "total_tokens": 1612
+}

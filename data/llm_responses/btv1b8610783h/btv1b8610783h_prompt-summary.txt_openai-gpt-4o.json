@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8610783h",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play 'L'avare' by Moli\u00e8re was published in 1669, and the themes and social structures depicted, such as the focus on avarice and family dynamics, are consistent with the societal norms of 17th-century France.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1699\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"Although the play mentions Naples frequently, Moli\u00e8re's works are typically set in France, reflecting the society he was critiquing. The mention of Paris as a top place supports this, as it was a central location in Moli\u00e8re's life and works.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 3.4423911571502686,
+  "prompt_tokens": 1397,
+  "completion_tokens": 171,
+  "total_tokens": 1568
+}

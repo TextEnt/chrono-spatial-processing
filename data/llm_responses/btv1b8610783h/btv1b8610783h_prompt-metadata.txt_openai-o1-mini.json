@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8610783h",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"Moli\u00e8re's play 'L'avare' is set in contemporary 17th century France, reflecting the social and cultural context of that time.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris, France\",\n    \"location_reasoning\": \"The setting of 'L'avare' is typical of urban French society in the 17th century, and Paris was the central location for Moli\u00e8re's theatrical works.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 8.260264158248901,
+  "prompt_tokens": 466,
+  "completion_tokens": 1106,
+  "total_tokens": 1572
+}

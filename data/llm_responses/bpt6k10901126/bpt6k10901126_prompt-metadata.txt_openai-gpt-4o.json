@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10901126",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Roman Empire\",\n    \"period_reasoning\": \"The play is titled 'Germanicus,' which refers to a prominent Roman general and member of the Julio-Claudian dynasty. Germanicus lived during the early Roman Empire, specifically in the 1st century C.E.\",\n    \"timeframe_start\": \"0001\",\n    \"timeframe_end\": \"0100\",\n    \"location\": \"Roman Empire\",\n    \"location_reasoning\": \"Germanicus was a Roman general, and the events associated with his life and military campaigns took place within the Roman Empire, particularly in regions such as Germania and Rome.\",\n    \"location_qid\": \"Q2277\"\n}",
+  "duration_seconds": 1.8511769771575928,
+  "prompt_tokens": 436,
+  "completion_tokens": 145,
+  "total_tokens": 581
+}

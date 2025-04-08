@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b86221269",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Early Modern France\",\n    \"period_reasoning\": \"The play was published in 1635, during the early 17th century, and the frequent mentions of Paris and France suggest a contemporary setting typical of French comedies from this period. The lack of references to ancient or medieval contexts further supports this timeframe.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1650\",\n    \"location\": \"Paris, France\",\n    \"location_reasoning\": \"Paris is the most frequently mentioned place (frequency: 10), with multiple sentences explicitly referencing characters' activities and events in Paris. Boulogne is also mentioned, but Paris is central to the narrative.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 58.30320692062378,
+  "prompt_tokens": 2023,
+  "completion_tokens": 1167,
+  "total_tokens": 3190
+}

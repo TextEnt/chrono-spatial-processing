@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090230g",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was published in 1673 according to the metadata, and French theatre of this period typically depicted contemporary settings or settings from the recent past. The names of the characters (Clarice, Fabrice, Lisette) are consistent with 17th century French comedies. Also, the subtitle 'le Valet etourdy' (the careless valet) suggests a classic servant character of 17th century comedies.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play is written in French, by a French author (Rosimond, Claude Rose), and the character names (Clarice, Fabrice, Lisette) are typical of French comedy. The excerpt shows a theatrical convention common in French comedy of the period. Additionally, the subtitle 'le Valet etourdy' references a stock character type common in French comedy of this period.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 5.164192199707031,
+  "prompt_tokens": 729,
+  "completion_tokens": 259,
+  "total_tokens": 988
+}

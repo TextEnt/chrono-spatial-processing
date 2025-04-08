@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k15107128",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Biblical period of Ancient Israel\",\n    \"period_reasoning\": \"Athalie is a biblical tragedy by Jean Racine based on the Old Testament story of Athaliah (Athalie in French), who was queen of Judah. The subtitle 'trag\u00e9die tir\u00e9e de l'\u00c9criture sainte' explicitly states it is drawn from Holy Scripture. Athaliah was the daughter of King Ahab of Israel and Queen Jezebel, and seized power in Judah after the death of her son Ahaziah, killing all royal heirs except Joash who was hidden.\",\n    \"timeframe_start\": \"-842\",\n    \"timeframe_end\": \"-836\",\n    \"location\": \"Jerusalem, Kingdom of Judah\",\n    \"location_reasoning\": \"The biblical story of Athaliah takes place in Jerusalem, the capital of the Kingdom of Judah. The play is set specifically in the Temple of Jerusalem where the young heir Joash is hidden by the high priest Jehoiada. The events described in the Bible place Athaliah's reign and downfall in Jerusalem.\",\n    \"location_qid\": \"Q1218\"\n}",
+  "duration_seconds": 5.8906569480896,
+  "prompt_tokens": 503,
+  "completion_tokens": 277,
+  "total_tokens": 780
+}

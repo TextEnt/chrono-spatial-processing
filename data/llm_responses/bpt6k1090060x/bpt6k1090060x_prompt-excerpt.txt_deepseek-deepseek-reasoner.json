@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090060x",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Early Modern period\",\n    \"period_reasoning\": \"The play was published in 1692, during the late 17th century in France. The pastoral and tragi-comedic genre aligns with the theatrical trends of the Early Modern period (Renaissance to late 17th century), which often featured rural or idealized settings and mixed dramatic tones.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Provence, France\",\n    \"location_reasoning\": \"The excerpt uses Occitan-influenced dialect (e.g., 'Veyan qu'u ne vou pa lo ben de nostra filli'), typical of southern France, particularly regions like Provence where Occitan variants were spoken. The rural themes (e.g., 'vacheiti' [cows], 'vercheiri' [fields]) further suggest a pastoral setting in this area.\",\n    \"location_qid\": \"Q1527\"\n}",
+  "duration_seconds": 62.536297082901,
+  "prompt_tokens": 618,
+  "completion_tokens": 983,
+  "total_tokens": 1601
+}

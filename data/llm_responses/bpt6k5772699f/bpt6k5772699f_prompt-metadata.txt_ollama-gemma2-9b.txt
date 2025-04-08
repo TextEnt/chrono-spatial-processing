@@ -1,9 +1,0 @@
-{
-    "period": "Ancient Near East",
-    "period_reasoning": "The title mentions 'Baltazar, roy de Babilone', indicating the play is set in ancient Babylon.",
-    "timeframe_start": "-1000",
-    "timeframe_end": "-539",
-    "location": "Babylon",
-    "location_reasoning": "The title explicitly states 'Baltazar, roy de Babilone'",
-    "location_qid": "Q786"
-}

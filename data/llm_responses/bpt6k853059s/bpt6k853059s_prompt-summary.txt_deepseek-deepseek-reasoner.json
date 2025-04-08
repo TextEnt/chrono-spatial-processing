@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k853059s",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"The play references mythological entities (Venus, Cyth\u00e8re/Cythera) and pastoral themes common in classical settings. The presence of shepherds (Berg\u00e8re) and idealized rural environments aligns with pastoral traditions rooted in ancient Greek and Roman literature.\",\n    \"timeframe_start\": \"-500\",\n    \"timeframe_end\": \"0\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play mentions real locations like Paris and the Seine, which are in France. Though Cyth\u00e8re (Cythera) is a Greek mythological reference, the prominence of French geographic markers suggests a French pastoral setting blended with classical motifs.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 61.44359612464905,
+  "prompt_tokens": 1352,
+  "completion_tokens": 1112,
+  "total_tokens": 2464
+}

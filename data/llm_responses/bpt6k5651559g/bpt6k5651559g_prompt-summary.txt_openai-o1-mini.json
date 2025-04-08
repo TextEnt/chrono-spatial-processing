@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5651559g",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play references Cardinal Richelieu, a prominent figure in early 17th century France, and was published in 1643.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"The play mentions Paris and Cardinal Richelieu was based in Paris.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 6.7882912158966064,
+  "prompt_tokens": 1081,
+  "completion_tokens": 1080,
+  "total_tokens": 2161
+}

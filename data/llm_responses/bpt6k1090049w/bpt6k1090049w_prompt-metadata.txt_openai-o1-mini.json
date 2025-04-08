@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090049w",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Antiquity\",\n    \"period_reasoning\": \"The play features characters named Damon and Cloris, which are names rooted in classical Greek mythology. Additionally, the pastoral genre often draws inspiration from ancient settings, further suggesting an ancient Greek backdrop.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"0\",\n    \"location\": \"Ancient Greece\",\n    \"location_reasoning\": \"The characters' names and the pastoral nature of the play indicate a setting in Ancient Greece, a common backdrop for pastoral literature.\",\n    \"location_qid\": \"Q2222\"\n}",
+  "duration_seconds": 6.200649976730347,
+  "prompt_tokens": 477,
+  "completion_tokens": 975,
+  "total_tokens": 1452
+}

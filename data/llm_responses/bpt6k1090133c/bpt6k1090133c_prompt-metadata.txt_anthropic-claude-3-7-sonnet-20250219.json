@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090133c",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Late 17th century\",\n    \"period_reasoning\": \"The play was published in 1671 during the reign of Louis XIV. French plays of this era typically depicted contemporary settings or the recent past, particularly in comedies. The title 'La Dupe amoureuse' (The Amorous Dupe) suggests a comedy of manners typical of the period, which would have been set in contemporary times.\",\n    \"timeframe_start\": \"1650\",\n    \"timeframe_end\": \"1690\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"French comedies from the 17th century, particularly those performed during Louis XIV's reign, were most commonly set in Paris, the cultural and social center of France. Without specific information stating otherwise, Paris is the most likely setting for a French comedy from this period, as it was the setting for many works by Moli\u00e8re and his contemporaries who established conventions that other playwrights followed.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 5.06582498550415,
+  "prompt_tokens": 492,
+  "completion_tokens": 241,
+  "total_tokens": 733
+}

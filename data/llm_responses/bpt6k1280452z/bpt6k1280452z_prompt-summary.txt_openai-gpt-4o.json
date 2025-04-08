@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280452z",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play 'L'Escole des femmes' was written by Moli\u00e8re and published in 1674. Moli\u00e8re's works typically depict contemporary society, suggesting the play is set in the 17th century.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1699\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play frequently mentions France and is written by Moli\u00e8re, a French playwright. The setting is likely in France, as Moli\u00e8re's plays often reflect French society.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 2.341891050338745,
+  "prompt_tokens": 960,
+  "completion_tokens": 147,
+  "total_tokens": 1107
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k61486960",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was published in 1694, which is at the end of the 17th century. French plays of this period typically depicted contemporary settings or the recent past. The excerpt shows characters discussing love and marriage in a manner consistent with 17th century French society, including mentions of a wealthy widow worth 'cinquante mille \u00e9cus' (fifty thousand \u00e9cus), which was the currency of pre-revolutionary France.\",\n    \"timeframe_start\": \"1650\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play is written in French by Jean-Fran\u00e7ois Regnard, a French playwright active in the late 17th century. The characters have French names (Dorante, Pasquin, Agathe) and the title 'Attendez-moy sous l'orme' (Wait for me under the elm) suggests a rural French setting. The use of French currency (\u00e9cus) and the style of dialogue are consistent with a French setting.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 5.662827014923096,
+  "prompt_tokens": 705,
+  "completion_tokens": 267,
+  "total_tokens": 972
+}

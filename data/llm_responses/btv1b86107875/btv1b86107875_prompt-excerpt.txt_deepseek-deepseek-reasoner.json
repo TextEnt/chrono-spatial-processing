@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b86107875",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"17th century France (Ancien R\u00e9gime)\",\n    \"period_reasoning\": \"Moli\u00e8re's comedies typically satirized contemporary 17th-century French society, and the publication date (1661) aligns with Louis XIV's reign. The dialogue reflects social norms and marital dynamics common to the period.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris, France\",\n    \"location_reasoning\": \"Moli\u00e8re's plays were often set in Paris, where his theatre company performed (e.g., at the Palais Royal). The absence of explicit rural or foreign references suggests an urban French setting.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 57.15540909767151,
+  "prompt_tokens": 626,
+  "completion_tokens": 1125,
+  "total_tokens": 1751
+}

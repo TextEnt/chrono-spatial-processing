@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8568902",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"First Mithridatic War\",\n    \"period_reasoning\": \"The play revolves around Mithridates, who appears to be the most frequently mentioned person. Based on the context, this is almost certainly Mithridates VI of Pontus, a king who fought against Rome. The text mentions his wife Hypsicratee (or Hypsicratea), who according to historical records was indeed his devoted wife who followed him during his wars against Rome. The play seems to depict their struggle against Roman forces, with references to conflicts with Rome throughout the text.\",\n    \"timeframe_start\": \"-88\",\n    \"timeframe_end\": \"-63\",\n    \"location\": \"Kingdom of Pontus\",\n    \"location_reasoning\": \"The play centers on Mithridates (Mithridates VI of Pontus) and his wife Hypsicratee. The Kingdom of Pontus was Mithridates' realm, located in northern Anatolia (modern Turkey). The text mentions Mithridates fleeing and his wife following him, which aligns with historical accounts of Mithridates' campaigns and eventual defeat by Roman forces. The references to conflict with Rome, as well as mentions of Asia and Greece, support this location.\",\n    \"location_qid\": \"Q184376\"\n}",
+  "duration_seconds": 7.773360013961792,
+  "prompt_tokens": 2872,
+  "completion_tokens": 309,
+  "total_tokens": 3181
+}

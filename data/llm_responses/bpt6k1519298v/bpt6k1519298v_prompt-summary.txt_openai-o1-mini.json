@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1519298v",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was published in 1662 and contains language and settings typical of 17th-century France.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The author is French and the context includes French names and places, indicating France as the setting.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 5.734245777130127,
+  "prompt_tokens": 2117,
+  "completion_tokens": 887,
+  "total_tokens": 3004
+}

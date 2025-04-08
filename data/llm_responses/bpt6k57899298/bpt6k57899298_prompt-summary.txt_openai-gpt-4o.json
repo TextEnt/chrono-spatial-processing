@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k57899298",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Roman Empire\",\n    \"period_reasoning\": \"The play frequently mentions Rome and characters like Caesar, which are strongly associated with the Roman Empire. The themes of honor, empire, and conquest also align with this period.\",\n    \"timeframe_start\": \"-0027\",\n    \"timeframe_end\": \"0476\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"The play mentions Rome frequently and discusses themes related to Roman society and politics, indicating that the action is set in Rome.\",\n    \"location_qid\": \"Q220\"\n}",
+  "duration_seconds": 3.3931069374084473,
+  "prompt_tokens": 1469,
+  "completion_tokens": 124,
+  "total_tokens": 1593
+}

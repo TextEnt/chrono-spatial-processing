@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10901126",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Early Roman Empire (Reign of Tiberius)\",\n    \"period_reasoning\": \"The play centers on Germanicus, a Roman general during the reign of Tiberius (14\u201337 CE). Mentions of Augustus, Tiberius, and Drusus (son of Tiberius) align with the Julio-Claudian dynasty. The political tensions and references to military campaigns (e.g., Rhine) further situate it in this period.\",\n    \"timeframe_start\": \"14\",\n    \"timeframe_end\": \"37\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"Rome is the most frequently mentioned place (38 mentions), and the text references Roman political dynamics (e.g., 'Tib\u00e8re,' 'Auguste,' 'Drusus'). Sentences like 'Rome enti\u00e8re s'empresse' and 'Rome conna\u00eet trop bien un H\u00e9ros' confirm the setting.\",\n    \"location_qid\": \"Q220\"\n}",
+  "duration_seconds": 31.190680027008057,
+  "prompt_tokens": 1524,
+  "completion_tokens": 572,
+  "total_tokens": 2096
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k12804415",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"17th century France (Ancien R\u00e9gime)\",\n    \"period_reasoning\": \"Moli\u00e8re's plays typically satirized contemporary 17th-century French society, reflecting the cultural norms and social structures of the Ancien R\u00e9gime under Louis XIV. The publication date (1663) aligns with this period.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris, France\",\n    \"location_reasoning\": \"Moli\u00e8re's works were predominantly set in Parisian aristocratic or bourgeois settings, and the French dialogue/titles (e.g., 'Monsieur le Chevalier') suggest a Parisian context typical of his comedies.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 62.35384488105774,
+  "prompt_tokens": 606,
+  "completion_tokens": 1254,
+  "total_tokens": 1860
+}

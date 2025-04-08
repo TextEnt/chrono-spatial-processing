@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8610783h",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"17th century France\",\n    \"period_reasoning\": \"L'Avare (The Miser) is a comedy by Moli\u00e8re published in 1669. Moli\u00e8re typically set his plays in contemporary times, so the play would be set in the 17th century, around the time it was written. Moli\u00e8re's comedies typically reflected the society of Louis XIV's France.\",\n    \"timeframe_start\": \"1650\",\n    \"timeframe_end\": \"1669\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"While not explicitly stated in the metadata, Moli\u00e8re's comedies were typically set in Paris, where he lived and worked. L'Avare is generally understood to take place in Paris, in an urban setting appropriate for the bourgeois family depicted in the play. Paris was also the center of French cultural and theatrical life during Moli\u00e8re's time.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 4.656474828720093,
+  "prompt_tokens": 494,
+  "completion_tokens": 227,
+  "total_tokens": 721
+}

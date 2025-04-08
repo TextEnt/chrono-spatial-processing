@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090276g",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Early Modern Period\",\n    \"period_reasoning\": \"The play was published in 1654, situating it within the Early Modern Period. The themes and language used are characteristic of this era.\",\n    \"timeframe_start\": \"1501\",\n    \"timeframe_end\": \"1800\",\n    \"location\": \"Sicily\",\n    \"location_reasoning\": \"The location 'Sicile' is frequently mentioned as the primary setting in the play.\",\n    \"location_qid\": \"Q23471\"\n}",
+  "duration_seconds": 7.301525115966797,
+  "prompt_tokens": 1565,
+  "completion_tokens": 1153,
+  "total_tokens": 2718
+}

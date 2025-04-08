@@ -1,9 +1,0 @@
-{
-    "period": "Neo-Babylonian period",
-    "period_reasoning": "The title references Belshazzar (Balthazar), the last king of the Neo-Babylonian Empire, whose reign ended with the Persian conquest of Babylon in 539 BCE.",
-    "timeframe_start": "-550",
-    "timeframe_end": "-539",
-    "location": "Babylon",
-    "location_reasoning": "The title explicitly states the play concerns the death of Belshazzar, king of Babylon, placing the action in the ancient city of Babylon.",
-    "location_qid": "Q5684"
-}

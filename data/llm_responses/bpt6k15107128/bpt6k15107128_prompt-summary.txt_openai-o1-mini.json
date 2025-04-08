@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k15107128",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Kingdom of Judah during the Iron Age II\",\n    \"period_reasoning\": \"The play references Joash, a king of Judah, and Jerusalem, placing the setting in the biblical Kingdom of Judah during the Iron Age II.\",\n    \"timeframe_start\": \"-835\",\n    \"timeframe_end\": \"-796\",\n    \"location\": \"Jerusalem\",\n    \"location_reasoning\": \"Jerusalem is prominently mentioned as the primary setting in the play.\",\n    \"location_qid\": \"Q146\"\n}",
+  "duration_seconds": 4.754832744598389,
+  "prompt_tokens": 1092,
+  "completion_tokens": 574,
+  "total_tokens": 1666
+}

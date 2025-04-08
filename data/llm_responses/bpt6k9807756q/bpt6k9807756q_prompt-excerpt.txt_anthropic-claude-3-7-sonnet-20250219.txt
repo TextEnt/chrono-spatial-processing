@@ -1,9 +1,0 @@
-{
-    "period": "Ancient Greece",
-    "period_reasoning": "The excerpt mentions 'Sparte' (Sparta), an ancient Greek city-state, and refers to a 'Throne' that is wavering, suggesting a monarchical period in Sparta's history. The name 'Zelonide, princesse de Sparte' in the title also indicates the setting is in ancient Sparta during its monarchy period.",
-    "timeframe_start": "-900",
-    "timeframe_end": "-146",
-    "location": "Sparta",
-    "location_reasoning": "The title of the play explicitly mentions 'Zelonide, princesse de Sparte' (Sparta). Additionally, in the excerpt, there is direct reference to 'Sparte' as the place that has shaped the characters ('Sparte nous a formées').",
-    "location_qid": "Q5690"
-}

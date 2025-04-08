@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k57899298",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Roman Empire\",\n    \"period_reasoning\": \"17th-century French tragedies often drew from classical antiquity. The name 'Crisante' suggests a possible link to Chrysanthus, a Christian martyr from the 3rd century CE under the Roman Empire, a common setting for Rotrou's works.\",\n    \"timeframe_start\": \"200\",\n    \"timeframe_end\": \"300\",\n    \"location\": \"Roman Empire\",\n    \"location_reasoning\": \"The presumed martyrdom context of Chrysanthus and typical classical settings for French tragedies of this era point to the Roman Empire as the location.\",\n    \"location_qid\": \"Q2277\"\n}",
+  "duration_seconds": 29.60335612297058,
+  "prompt_tokens": 441,
+  "completion_tokens": 635,
+  "total_tokens": 1076
+}

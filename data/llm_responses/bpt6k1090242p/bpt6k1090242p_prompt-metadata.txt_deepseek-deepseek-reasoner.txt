@@ -1,9 +1,0 @@
-{
-    "period": "Roman Empire (Flavian Dynasty)",
-    "period_reasoning": "The title references 'Tite et Titus,' likely alluding to Roman Emperor Titus (79–81 CE) of the Flavian dynasty. The play critiques 'les Berenices,' possibly referencing historical figures like Berenice of Cilicia, who had a relationship with Titus. This suggests a setting during the 1st-century CE Roman Empire.",
-    "timeframe_start": "70",
-    "timeframe_end": "100",
-    "location": "Rome",
-    "location_reasoning": "The Roman Emperor Titus and his historical context strongly imply the play is set in Rome, the political and cultural center of the Roman Empire during the Flavian period.",
-    "location_qid": "Q220"
-}

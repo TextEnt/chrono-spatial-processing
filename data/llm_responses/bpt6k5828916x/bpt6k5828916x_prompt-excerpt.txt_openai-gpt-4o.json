@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5828916x",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was written in the 17th century by Jean de Rotrou, and the language and style suggest it is set in a similar period. The themes and social norms reflected in the excerpt align with the societal context of 17th-century France.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"Jean de Rotrou was a French playwright, and the play's title and language are in French. The dedication to a French nobleman (the Comte de Soissons) suggests a French setting.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 2.913439989089966,
+  "prompt_tokens": 596,
+  "completion_tokens": 158,
+  "total_tokens": 754
+}

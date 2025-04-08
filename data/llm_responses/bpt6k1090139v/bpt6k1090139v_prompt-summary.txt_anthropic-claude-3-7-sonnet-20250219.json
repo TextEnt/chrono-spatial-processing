@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090139v",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"17th Century France\",\n    \"period_reasoning\": \"The play was published in 1662 according to the metadata, and the content suggests a contemporary setting. References to social customs, marriage arrangements, and character dynamics (including bourgeois characters) are consistent with 17th century French society. The play follows comedic conventions of the period, similar to Moli\u00e8re's works.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"Paris is explicitly mentioned multiple times in the text as the setting. Characters are identified as 'Bourgeois de Paris', and there are references to specific Parisian locations like 'le Th\u00e9\u00e2tre du petit Bourbon'. The play makes multiple references to events happening 'in this City' when referring to Paris, and characters mention being 'in Paris' during dialogues.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 5.544680833816528,
+  "prompt_tokens": 1978,
+  "completion_tokens": 231,
+  "total_tokens": 2209
+}

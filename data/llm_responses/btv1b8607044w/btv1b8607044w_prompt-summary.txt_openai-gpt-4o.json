@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8607044w",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Ancient Rome\",\n    \"period_reasoning\": \"The play mentions Rome and compares Paris to Rome and Athens, suggesting a setting in a classical context. Additionally, the mention of 'Tibre' (Tiber) and 'Troie' (Troy) further supports a setting in ancient times, likely around the Roman Empire period.\",\n    \"timeframe_start\": \"-0275\",\n    \"timeframe_end\": \"00476\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"The frequent mention of Rome and the Tiber River, which is a significant geographical feature of Rome, suggests that the play is set in Rome.\",\n    \"location_qid\": \"Q220\"\n}",
+  "duration_seconds": 2.872576951980591,
+  "prompt_tokens": 1393,
+  "completion_tokens": 153,
+  "total_tokens": 1546
+}

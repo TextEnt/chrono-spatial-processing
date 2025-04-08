@@ -1,9 +1,0 @@
-{
-    "period": "Ancient Rome",
-    "period_reasoning": "The title, \"Tite et Titus,\" suggests characters related to the time around the Flavian dynasty in ancient Rome, particularly referencing Emperor Titus. Such setting would typically be associated with the 1st century CE.",
-    "timeframe_start": "0069",
-    "timeframe_end": "0081",
-    "location": "Rome",
-    "location_reasoning": "The name 'Titus' and the style suggest an ancient Roman setting. The use of characters like 'Enée' and 'Didon' also references mythological figures, pointing towards a Roman era commonly employed in plays set in Rome.",
-    "location_qid": "Q220"
-}

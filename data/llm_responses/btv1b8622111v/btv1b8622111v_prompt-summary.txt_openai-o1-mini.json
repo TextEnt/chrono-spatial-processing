@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8622111v",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Italian Renaissance\",\n    \"period_reasoning\": \"The frequent mention of Florence and the cultural context of the characters suggest a setting during the Italian Renaissance, a time when Florence was a prominent cultural center.\",\n    \"timeframe_start\": \"1300\",\n    \"timeframe_end\": \"1600\",\n    \"location\": \"Florence\",\n    \"location_reasoning\": \"Florence is the most frequently mentioned place in the play, indicating that the action is set there.\",\n    \"location_qid\": \"Q1322\"\n}",
+  "duration_seconds": 8.890266180038452,
+  "prompt_tokens": 1744,
+  "completion_tokens": 1026,
+  "total_tokens": 2770
+}

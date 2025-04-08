@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090049w",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Ancient Greek or Roman pastoral setting\",\n    \"period_reasoning\": \"The play appears to be a pastoral drama with characters like Cloris, Damon, Titire, Phillis, and mentions of figures like Sil\u00e8ne (likely Silenus, a figure from Greek mythology) and Daphannis (likely Daphnis, another figure from Greek pastoral literature). These names and the pastoral elements (shepherds, rural setting) are typical of classical antiquity-inspired literature, common in 17th century French theater that drew on Greco-Roman traditions.\",\n    \"timeframe_start\": \"-300\",\n    \"timeframe_end\": \"100\",\n    \"location\": \"Sicily\",\n    \"location_reasoning\": \"The text specifically mentions 'Sicile' among the top places, and Sicily was a traditional setting for pastoral literature since ancient times, particularly in works that inspired French pastoral dramas. Theocritus, who created the literary pastoral genre, was from Sicily, and many later pastoral works used Sicily as their setting. The presence of Greek mythological figures like Silenus (Sil\u00e8ne) also supports a Sicilian setting, which was part of Magna Graecia.\",\n    \"location_qid\": \"Q1460\"\n}",
+  "duration_seconds": 7.548189878463745,
+  "prompt_tokens": 2564,
+  "completion_tokens": 293,
+  "total_tokens": 2857
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280445t",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"17th Century France\",\n    \"period_reasoning\": \"The play was written by Moli\u00e8re, a famous 17th century French playwright, and was published in 1674 according to the metadata. Moli\u00e8re's works typically depicted contemporary French society, so the play is likely set in his own time period.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris, France\",\n    \"location_reasoning\": \"Moli\u00e8re's plays were typically set in Paris, where he worked and performed. The title 'La Critique de l'Escole des femmes' indicates it's a French play, and the characters (Dorante, Lise) have French names. Moli\u00e8re was associated with the court of Louis XIV in Paris and most of his comedies portrayed Parisian society.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 5.26903510093689,
+  "prompt_tokens": 687,
+  "completion_tokens": 220,
+  "total_tokens": 907
+}

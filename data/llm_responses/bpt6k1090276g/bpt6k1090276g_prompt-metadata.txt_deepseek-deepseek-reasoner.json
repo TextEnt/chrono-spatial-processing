@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090276g",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"17th century France\",\n    \"period_reasoning\": \"The play was written by Jean de Rotrou, a French dramatist of the 17th century, and French comedies of this era often reflected contemporary social settings. Without explicit references to an older period, the default assumption is the author's own time.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1654\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"French comedies from the 17th century typically took place in domestic or urban settings within France, reflecting the cultural context of the author and audience. No explicit alternative location is indicated in the metadata.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 46.576929807662964,
+  "prompt_tokens": 444,
+  "completion_tokens": 838,
+  "total_tokens": 1282
+}

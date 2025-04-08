@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090155z",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Mycenaean Greece\",\n    \"period_reasoning\": \"The play revolves around the mythological figure Amphitryon, a Mycenaean Greek hero. The presence of gods like Jupiter (Zeus) and Mercury (Hermes) and references to Thebes further anchor the narrative in the Mycenaean era, a period associated with Greek heroic myths.\",\n    \"timeframe_start\": \"-1600\",\n    \"timeframe_end\": \"-1100\",\n    \"location\": \"Thebes\",\n    \"location_reasoning\": \"Thebes is explicitly listed in the top places and is central to Amphitryon's myth. The play's references to Thebains (Thebans) and the prominence of Thebes in Greek mythology solidify this location.\",\n    \"location_qid\": \"Q160362\"\n}",
+  "duration_seconds": 73.26598882675171,
+  "prompt_tokens": 1030,
+  "completion_tokens": 1397,
+  "total_tokens": 2427
+}

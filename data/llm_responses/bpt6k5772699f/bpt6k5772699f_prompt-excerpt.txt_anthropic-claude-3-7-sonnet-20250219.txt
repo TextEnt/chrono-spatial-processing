@@ -1,9 +1,0 @@
-{
-    "period": "Ancient Babylon under Belshazzar",
-    "period_reasoning": "The title of the play 'La mort de Baltazar, roy de Babilone' refers to Belshazzar (Baltazar in French), the last king of Babylon before its fall to the Persians under Cyrus the Great. The excerpt mentions Cyrus ('vous craignez Cyrus'), which confirms this historical setting. This refers to the fall of Babylon to the Achaemenid Empire.",
-    "timeframe_start": "-556",
-    "timeframe_end": "-539",
-    "location": "Babylon",
-    "location_reasoning": "The title explicitly names 'Babilone' (Babylon) as the setting, and the dialogue references being inside fortresses ('nos sorteresses') and behind walls ('nos murs'), consistent with the ancient walled city of Babylon. The character is referred to as 'roy de Babilone' (King of Babylon).",
-    "location_qid": "Q4989"
-}

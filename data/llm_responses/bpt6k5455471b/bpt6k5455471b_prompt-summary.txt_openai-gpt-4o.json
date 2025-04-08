@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5455471b",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"The play mentions characters such as Daphnis and Coronis, which are figures from Greek mythology. Daphnis is often associated with pastoral poetry and is considered a legendary figure in Ancient Greece. The mention of 'Nymphe du Pinde' and 'consident d'Apollon' also suggests a setting in a mythological context related to Ancient Greece.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"-300\",\n    \"location\": \"Ancient Greece\",\n    \"location_reasoning\": \"The characters and references in the play, such as Daphnis, Coronis, and the mention of the Peneus River, are strongly associated with Greek mythology and geography. The Peneus River is located in Thessaly, Greece, and the mythological context suggests a setting in Ancient Greece.\",\n    \"location_qid\": \"Q11767\"\n}",
+  "duration_seconds": 3.7613589763641357,
+  "prompt_tokens": 945,
+  "completion_tokens": 204,
+  "total_tokens": 1149
+}

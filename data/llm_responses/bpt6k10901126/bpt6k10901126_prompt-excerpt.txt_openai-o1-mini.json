@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10901126",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Early Roman Empire\",\n    \"period_reasoning\": \"The play references Germanicus, a prominent general and member of the Julio-Claudian dynasty, who was active during the early Roman Empire.\",\n    \"timeframe_start\": \"1\",\n    \"timeframe_end\": \"100\",\n    \"location\": \"Ancient Rome\",\n    \"location_reasoning\": \"Germanicus was a key figure in Ancient Rome, suggesting the play is set in Rome or its immediate territories during his lifetime.\",\n    \"location_qid\": \"Q22661\"\n}",
+  "duration_seconds": 7.793230056762695,
+  "prompt_tokens": 607,
+  "completion_tokens": 581,
+  "total_tokens": 1188
+}

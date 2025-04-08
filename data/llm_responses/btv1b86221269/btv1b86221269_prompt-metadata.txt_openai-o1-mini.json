@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b86221269",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Ancient Rome\",\n    \"period_reasoning\": \"The title 'La Diane' refers to the Roman goddess Diana, suggesting a setting in ancient Roman times.\",\n    \"timeframe_start\": \"-753\",\n    \"timeframe_end\": \"-27\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"The reference to the Roman goddess Diana indicates a setting in Rome.\",\n    \"location_qid\": \"Q220\"\n}",
+  "duration_seconds": 5.568127155303955,
+  "prompt_tokens": 475,
+  "completion_tokens": 559,
+  "total_tokens": 1034
+}

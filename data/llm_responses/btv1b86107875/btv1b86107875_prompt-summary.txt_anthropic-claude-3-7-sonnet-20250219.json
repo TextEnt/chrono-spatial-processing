@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b86107875",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"17th century France\",\n    \"period_reasoning\": \"The play was published in 1661 (as mentioned in the metadata) and appears to be set in contemporary times. The characters and settings match 17th century French society. Moli\u00e8re typically wrote comedies set in his own time period.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"The play explicitly states 'La Sc\u00e8ne est \u00e0 Paris' (The scene is in Paris) in the context information. Additionally, Paris is mentioned multiple times in the text, including references to characters being in Paris and enjoying the pleasures of the city.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 5.3108038902282715,
+  "prompt_tokens": 1632,
+  "completion_tokens": 186,
+  "total_tokens": 1818
+}

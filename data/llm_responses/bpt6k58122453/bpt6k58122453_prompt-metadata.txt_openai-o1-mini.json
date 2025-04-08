@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k58122453",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Early Modern Period\",\n    \"period_reasoning\": \"The play was published in 1637, placing it in the 17th century, which is part of the Early Modern Period.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play is a French comedy from the 17th century, indicating it is likely set in France.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 6.09204888343811,
+  "prompt_tokens": 468,
+  "completion_tokens": 895,
+  "total_tokens": 1363
+}

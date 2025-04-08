@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k61251657",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play is a tragi-comedy written in 1640, which suggests it is set in a contemporary or near-contemporary setting typical of 17th-century plays. The themes of honor and love, as well as the style of dialogue, are consistent with the 17th-century French theatrical tradition.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The author, Urbain Chevreau, was French, and the play is written in French. The themes and style are consistent with French literature of the 17th century, suggesting that the play is set in France.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 3.172801971435547,
+  "prompt_tokens": 582,
+  "completion_tokens": 174,
+  "total_tokens": 756
+}

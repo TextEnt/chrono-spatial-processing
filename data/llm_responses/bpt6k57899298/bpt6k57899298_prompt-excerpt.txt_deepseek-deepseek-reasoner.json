@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k57899298",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Classical antiquity\",\n    \"period_reasoning\": \"The play's elevated language, references to divine intervention ('le ciel'), and tragic themes align with 17th-century French neoclassical tragedies, which often drew from ancient Greek or Roman settings. The author, Jean de Rotrou, was part of a literary tradition inspired by classical antiquity.\",\n    \"timeframe_start\": \"-500\",\n    \"timeframe_end\": \"-100\",\n    \"location\": \"Ancient Greece\",\n    \"location_reasoning\": \"The excerpt lacks explicit geographic markers, but the neoclassical style and tragic genre typical of Rotrou's contemporaries (e.g., Racine, Corneille) strongly suggest an ancient Greek setting, common in 17th-century French tragedies.\",\n    \"location_qid\": \"Q11772\"\n}",
+  "duration_seconds": 36.76166105270386,
+  "prompt_tokens": 604,
+  "completion_tokens": 945,
+  "total_tokens": 1549
+}

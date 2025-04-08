@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5651559g",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": null,\n    \"period_reasoning\": \"The play is set in a metaphysical realm involving Paradise and Hell, making it difficult to associate with a specific historical period.\",\n    \"timeframe_start\": null,\n    \"timeframe_end\": null,\n    \"location\": null,\n    \"location_reasoning\": \"The action of the play takes place in Paradise and Hell, which are metaphysical locations without specific geographic locations.\",\n    \"location_qid\": null\n}",
+  "duration_seconds": 6.826969623565674,
+  "prompt_tokens": 473,
+  "completion_tokens": 884,
+  "total_tokens": 1357
+}

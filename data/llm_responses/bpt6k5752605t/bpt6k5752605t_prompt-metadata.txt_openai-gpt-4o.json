@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5752605t",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play 'Les bourgeoises de qualit\u00e9' was published in 1691, which suggests it is likely set in the same century, reflecting the societal norms and settings of that time.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1699\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The author, No\u00ebl Lebreton de Hauteroche, was a French playwright, and the title of the play is in French, indicating that the play is likely set in France.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 2.0165889263153076,
+  "prompt_tokens": 452,
+  "completion_tokens": 142,
+  "total_tokens": 594
+}

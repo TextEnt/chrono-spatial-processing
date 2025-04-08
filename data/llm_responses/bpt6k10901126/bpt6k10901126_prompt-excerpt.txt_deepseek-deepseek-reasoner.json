@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10901126",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Early Roman Empire\",\n    \"period_reasoning\": \"The play centers on Germanicus, a historical Roman general (15 BCE\u201319 CE), and references the Senate, military mutinies, and political intrigue characteristic of the Julio-Claudian dynasty.\",\n    \"timeframe_start\": \"-27\",\n    \"timeframe_end\": \"68\",\n    \"location\": \"Roman Empire\",\n    \"location_reasoning\": \"References to the Roman Senate, legions, and the figure of Germanicus situate the play in the context of the Roman Empire.\",\n    \"location_qid\": \"Q2277\"\n}",
+  "duration_seconds": 34.34583878517151,
+  "prompt_tokens": 598,
+  "completion_tokens": 613,
+  "total_tokens": 1211
+}

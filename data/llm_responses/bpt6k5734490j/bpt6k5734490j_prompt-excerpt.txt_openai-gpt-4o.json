@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5734490j",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play is a 17th-century French comedy by Jean de Rotrou, and the style and themes are consistent with the pastoral and romantic comedies of that era.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"Jean de Rotrou was a French playwright, and the language and style suggest a setting in France, typical of his works.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 3.138198137283325,
+  "prompt_tokens": 599,
+  "completion_tokens": 126,
+  "total_tokens": 725
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8528543",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play is a tragi-comedy from the 17th century, as indicated by the publication date of 1656. The language and style are consistent with French plays of that era.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1699\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play is written in French and the author, La Motte, de, is a French playwright. The names of the characters and the style suggest a French setting typical of 17th-century French theatre.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 3.6010870933532715,
+  "prompt_tokens": 598,
+  "completion_tokens": 148,
+  "total_tokens": 746
+}

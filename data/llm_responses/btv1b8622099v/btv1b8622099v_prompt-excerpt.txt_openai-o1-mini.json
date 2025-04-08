@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8622099v",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Middle Ages\",\n    \"period_reasoning\": \"The character Clorinde is likely inspired by Clorinda from Torquato Tasso's 'Jerusalem Delivered,' which is set during the First Crusade in the Middle Ages.\",\n    \"timeframe_start\": \"1096\",\n    \"timeframe_end\": \"1291\",\n    \"location\": \"Holy Land\",\n    \"location_reasoning\": \"The play's probable reference to the First Crusade places its setting in the Holy Land during the Middle Ages.\",\n    \"location_qid\": \"Q486\"\n}",
+  "duration_seconds": 5.246892929077148,
+  "prompt_tokens": 594,
+  "completion_tokens": 842,
+  "total_tokens": 1436
+}

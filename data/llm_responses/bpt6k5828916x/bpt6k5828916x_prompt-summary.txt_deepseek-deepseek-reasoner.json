@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5828916x",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Classical Greece\",\n    \"period_reasoning\": \"The play mentions Corinthe (Corinth), a prominent city-state in ancient Greece, and Gr\u00e8ce (Greece). Tragi-comedies of the 17th century often drew on classical settings, and the absence of references to later historical figures or events supports this.\",\n    \"timeframe_start\": \"-500\",\n    \"timeframe_end\": \"-300\",\n    \"location\": \"Corinth\",\n    \"location_reasoning\": \"Corinthe (Corinth) is explicitly mentioned as the capital of Gr\u00e8ce (Greece) in the play's context and appears in multiple salient sentences, indicating it is the primary setting.\",\n    \"location_qid\": \"Q130498\"\n}",
+  "duration_seconds": 30.804365873336792,
+  "prompt_tokens": 962,
+  "completion_tokens": 571,
+  "total_tokens": 1533
+}

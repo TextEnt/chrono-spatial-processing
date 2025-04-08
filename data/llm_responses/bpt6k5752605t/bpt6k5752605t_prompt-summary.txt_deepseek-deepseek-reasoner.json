@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5752605t",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was published in 1691, and the author Hauteroche was active in the 17th century. The text references social structures (e.g., nobility, gentry) and terms like 'Gentilhomme' typical of the Ancien R\u00e9gime in 17th-century France.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The top_1_place entity is 'France' with three mentions, and other locations (Auvergne, Paris) are French regions. Sentences like 'il n'en est point en France' confirm the setting.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 31.617586851119995,
+  "prompt_tokens": 1124,
+  "completion_tokens": 565,
+  "total_tokens": 1689
+}

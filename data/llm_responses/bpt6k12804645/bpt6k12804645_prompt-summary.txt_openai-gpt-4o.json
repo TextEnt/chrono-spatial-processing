@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k12804645",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was written by Moli\u00e8re and published in 1668, which places it in the 17th century. The language and style of the play, as well as the societal norms reflected in the dialogue, are consistent with this period.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1699\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play is set in France, as indicated by the frequent mentions of France in the context, including references to the French manner and the privileges granted by the French monarchy. Additionally, Moli\u00e8re's works are typically set in France.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 4.18373703956604,
+  "prompt_tokens": 1743,
+  "completion_tokens": 164,
+  "total_tokens": 1907
+}

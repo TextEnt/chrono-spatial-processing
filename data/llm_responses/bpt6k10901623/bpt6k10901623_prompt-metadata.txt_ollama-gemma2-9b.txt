@@ -1,9 +1,0 @@
-{
-    "period": "Early Modern Period",
-    "period_reasoning": "The play was written in 1658, which falls within the Early Modern period.",
-    "timeframe_start": "1450",
-    "timeframe_end": "1750",
-    "location": "Hungary",
-    "location_reasoning": "The title explicitly mentions 'Théodore, Reyne de Hongrie', meaning 'Theodore, King of Hungary'.",
-    "location_qid": "Q364"
-}

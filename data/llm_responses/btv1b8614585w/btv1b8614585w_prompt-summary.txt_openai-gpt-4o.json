@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8614585w",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Roman Empire\",\n    \"period_reasoning\": \"The play mentions 'l'empereur D\u00e9cie', referring to Emperor Decius, who ruled the Roman Empire from 249 to 251 CE. This suggests that the play is set during the time of the Roman Empire, specifically in the mid-3rd century CE.\",\n    \"timeframe_start\": \"0249\",\n    \"timeframe_end\": \"0251\",\n    \"location\": \"Gaul\",\n    \"location_reasoning\": \"The play references 'Gaule', which is the French term for Gaul, a region of Western Europe during the Roman Empire. This indicates that the action of the play is set in Gaul.\",\n    \"location_qid\": \"Q1418\"\n}",
+  "duration_seconds": 4.517981052398682,
+  "prompt_tokens": 1500,
+  "completion_tokens": 163,
+  "total_tokens": 1663
+}

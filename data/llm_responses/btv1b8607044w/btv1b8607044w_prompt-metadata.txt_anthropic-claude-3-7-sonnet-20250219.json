@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8607044w",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Ancient Greece or Rome\",\n    \"period_reasoning\": \"Georges de Scud\u00e9ry wrote during the French Classical period (17th century), when playwrights frequently set their works in ancient Greece or Rome, following classical dramatic models. 'L'Amour tirannique' (Tyrannical Love) suggests themes of power, passion and despotism common in classical tragedies. The title indicates a tragedy-comedy, a genre that often drew on classical settings in this period.\",\n    \"timeframe_start\": \"-500\",\n    \"timeframe_end\": \"400\",\n    \"location\": \"Ancient Greece or Rome\",\n    \"location_reasoning\": \"French Classical dramatists of the 17th century typically set their tragedies in ancient Greece or Rome to conform with classical unities and to explore universal themes at a safe historical and geographical distance. Without specific details about the play's content, this is the most likely setting based on the genre, period of composition, and theatrical conventions of the time.\",\n    \"location_qid\": \"None\"\n}",
+  "duration_seconds": 5.244282245635986,
+  "prompt_tokens": 507,
+  "completion_tokens": 246,
+  "total_tokens": 753
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090139v",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was published in 1662, which is in the 17th century. The themes and language used in the play, such as the focus on marriage, social status, and the setting in Paris, align with the societal norms and cultural context of 17th-century France.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1699\",\n    \"location\": \"Paris, France\",\n    \"location_reasoning\": \"The play frequently mentions Paris as the setting, and it references specific locations and societal structures typical of Paris in the 17th century. The mention of the Theatre du Petit Bourbon and the context of the play being performed in Paris further support this.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 3.290985345840454,
+  "prompt_tokens": 1581,
+  "completion_tokens": 176,
+  "total_tokens": 1757
+}

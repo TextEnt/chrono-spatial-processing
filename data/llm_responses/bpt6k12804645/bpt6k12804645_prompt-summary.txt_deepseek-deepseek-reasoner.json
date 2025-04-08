@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k12804645",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was published in 1668 by Moli\u00e8re, a French playwright active in the 17th century. His works typically reflect contemporary settings of his time, aligning with the French Ancien R\u00e9gime and Louis XIV's reign.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play frequently references 'France' in its context, including mentions of Paris, royal privileges, and the phrase 'la mani\u00e8re de France.' These elements strongly indicate a French setting.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 44.675894021987915,
+  "prompt_tokens": 1832,
+  "completion_tokens": 882,
+  "total_tokens": 2714
+}

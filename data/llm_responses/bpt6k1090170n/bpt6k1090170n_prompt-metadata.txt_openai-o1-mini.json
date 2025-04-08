@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090170n",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Ancient Egypt\",\n    \"period_reasoning\": \"The name 'M\u00e9nechmes' is of Egyptian origin, suggesting that the play is set in an ancient Egyptian context.\",\n    \"timeframe_start\": \"-3000\",\n    \"timeframe_end\": \"-30\",\n    \"location\": \"Ancient Egypt\",\n    \"location_reasoning\": \"The titular character's name indicates a setting within Ancient Egypt.\",\n    \"location_qid\": \"Q735\"\n}",
+  "duration_seconds": 7.642261981964111,
+  "prompt_tokens": 460,
+  "completion_tokens": 1205,
+  "total_tokens": 1665
+}

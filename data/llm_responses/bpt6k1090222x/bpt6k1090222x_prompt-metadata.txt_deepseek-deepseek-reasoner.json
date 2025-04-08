@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090222x",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Elizabethan era\",\n    \"period_reasoning\": \"The play's title references the Earl of Essex, a historical figure (Robert Devereux) who was executed in 1601 during the reign of Queen Elizabeth I of England (1558-1603).\",\n    \"timeframe_start\": \"1558\",\n    \"timeframe_end\": \"1603\",\n    \"location\": \"England\",\n    \"location_reasoning\": \"The Earl of Essex was a prominent English nobleman and courtier in Elizabeth I's court, and the historical events surrounding his downfall occurred in England.\",\n    \"location_qid\": \"Q21\"\n}",
+  "duration_seconds": 40.60033679008484,
+  "prompt_tokens": 442,
+  "completion_tokens": 579,
+  "total_tokens": 1021
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8622111v",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Renaissance\",\n    \"period_reasoning\": \"The play was written and published in the 17th century (1637) during the French Renaissance period. Rotrou was a French playwright active during this time, and the language and style of the excerpt (with references to discretion, souls, and gods in plural 'Dieux') suggests Renaissance sensibilities. Tragi-comedies were also particularly popular during this period in France.\",\n    \"timeframe_start\": \"1550\",\n    \"timeframe_end\": \"1650\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play is written by Jean de Rotrou, a French playwright, and is written in French. Although the excerpt does not explicitly state the location, French tragi-comedies of this period were typically set in France. The formal style of address and references to '\u00e2me discrette et fid\u00e8le' align with French courtly or aristocratic settings of the Renaissance period.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 5.9227519035339355,
+  "prompt_tokens": 677,
+  "completion_tokens": 240,
+  "total_tokens": 917
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8569793",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": null,\n    \"period_reasoning\": \"Insufficient information to determine historical period based on metadata provided.\",\n    \"timeframe_start\": null,\n    \"timeframe_end\": null,\n    \"location\": \"Lorraine\",\n    \"location_reasoning\": \"The play is dedicated to Fran\u00e7ois de Lorraine, prince de Vaudemont, indicating a likely setting in Lorraine.\",\n    \"location_qid\": \"Q12796\"\n}",
+  "duration_seconds": 7.165719032287598,
+  "prompt_tokens": 514,
+  "completion_tokens": 1069,
+  "total_tokens": 1583
+}

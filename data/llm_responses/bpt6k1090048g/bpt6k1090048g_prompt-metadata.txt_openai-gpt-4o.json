@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090048g",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"The play 'Le Pyrame, trag\u00e9die en prose' by Jean Puget de La Serre is likely based on the myth of Pyramus and Thisbe, which is a classical myth from ancient times. This suggests that the setting of the play is in the period of Classical Antiquity.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"500\",\n    \"location\": \"Babylon\",\n    \"location_reasoning\": \"The myth of Pyramus and Thisbe is traditionally set in Babylon, which is part of the ancient Mesopotamian region. This suggests that the play is set in Babylon.\",\n    \"location_qid\": \"Q2448\"\n}",
+  "duration_seconds": 2.94858980178833,
+  "prompt_tokens": 443,
+  "completion_tokens": 165,
+  "total_tokens": 608
+}

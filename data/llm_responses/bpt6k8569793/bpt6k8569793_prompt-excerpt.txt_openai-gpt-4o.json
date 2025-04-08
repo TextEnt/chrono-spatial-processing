@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8569793",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Renaissance\",\n    \"period_reasoning\": \"The play was published in 1606, during the late Renaissance period. The themes and style of the excerpt, including references to nobility and military elements, are consistent with Renaissance literature.\",\n    \"timeframe_start\": \"1400\",\n    \"timeframe_end\": \"1600\",\n    \"location\": \"Lorraine\",\n    \"location_reasoning\": \"The play is dedicated to Fran\u00e7ois de Lorraine, a prince of Vaudemont, indicating a connection to the region of Lorraine in France. The author's association with the region further supports this setting.\",\n    \"location_qid\": \"Q12130\"\n}",
+  "duration_seconds": 3.4305129051208496,
+  "prompt_tokens": 631,
+  "completion_tokens": 144,
+  "total_tokens": 775
+}

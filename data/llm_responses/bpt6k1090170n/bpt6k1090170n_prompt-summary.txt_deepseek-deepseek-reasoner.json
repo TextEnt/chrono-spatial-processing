@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090170n",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"The play references 'Sicile' (Sicily) and 'Bacchus' (Roman god of wine), suggesting a Greco-Roman setting. The original source material for the play, Plautus's 'Menaechmi', is a Roman comedy set in the ancient Mediterranean world.\",\n    \"timeframe_start\": \"-300\",\n    \"timeframe_end\": \"-200\",\n    \"location\": \"Sicily\",\n    \"location_reasoning\": \"The top-mentioned place is 'Sicile' (Sicily), with explicit references to Syracuse ('Siracuse, in Sicile'), a historically significant city in Sicily during antiquity.\",\n    \"location_qid\": \"Q1460\"\n}",
+  "duration_seconds": 59.483033895492554,
+  "prompt_tokens": 894,
+  "completion_tokens": 977,
+  "total_tokens": 1871
+}

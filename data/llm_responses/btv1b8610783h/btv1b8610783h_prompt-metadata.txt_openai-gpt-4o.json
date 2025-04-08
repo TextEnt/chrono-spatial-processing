@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8610783h",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play 'L'Avare' by Moli\u00e8re was written and published in the 17th century, and it is typical for Moli\u00e8re's plays to be set in the contemporary period of their writing.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris, France\",\n    \"location_reasoning\": \"Moli\u00e8re's plays often take place in Paris, reflecting the society and customs of the time. 'L'Avare' is likely set in Paris as it deals with themes relevant to the bourgeoisie of the city.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 3.0383780002593994,
+  "prompt_tokens": 446,
+  "completion_tokens": 158,
+  "total_tokens": 604
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8569793",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": null,\n    \"period_reasoning\": \"The title and metadata do not provide explicit clues about the historical period of the play's action. 'Maurice tragoedie' could refer to a figure or story not clearly tied to a specific historical era without additional context.\",\n    \"timeframe_start\": null,\n    \"timeframe_end\": null,\n    \"location\": \"Duchy of Lorraine\",\n    \"location_reasoning\": \"The play is dedicated to Fran\u00e7ois de Lorraine, Prince de Vaudemont, and the author's affiliation with Pont-\u00e0-Mousson (a town in the Duchy of Lorraine) suggests a regional connection. The setting is likely tied to the dedicatee's domain.\",\n    \"location_qid\": \"Q170314\"\n}",
+  "duration_seconds": 72.80405521392822,
+  "prompt_tokens": 499,
+  "completion_tokens": 1404,
+  "total_tokens": 1903
+}

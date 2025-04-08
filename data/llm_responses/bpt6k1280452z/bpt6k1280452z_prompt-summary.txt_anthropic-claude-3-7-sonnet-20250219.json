@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280452z",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was published in 1674 according to the metadata, and as a work by Moli\u00e8re, it would be set in his contemporary time period. Moli\u00e8re (1622-1673) was a 17th century French playwright, so the action would likely take place during this century.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"Multiple factors indicate France as the setting: (1) The play is written in French, (2) Moli\u00e8re was a French playwright who typically set his plays in France, (3) 'France' is explicitly mentioned in the related sentences as a place where characters return to, suggesting it's the main setting, and (4) The names of characters (Alain, Georgette, Arnolphe, etc.) are French names typical of the period.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 4.795444965362549,
+  "prompt_tokens": 1150,
+  "completion_tokens": 242,
+  "total_tokens": 1392
+}

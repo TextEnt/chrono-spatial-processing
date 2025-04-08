@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090049w",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Classical antiquity\",\n    \"period_reasoning\": \"The excerpt references classical deities (Jupiter) and a pastoral setting, typical of idealized ancient Greco-Roman contexts common in 17th-century French pastoral literature.\",\n    \"timeframe_start\": \"-500\",\n    \"timeframe_end\": \"-300\",\n    \"location\": \"Arcadia\",\n    \"location_reasoning\": \"Pastoral works like this often use Arcadia, a mythical Greek region symbolizing rural simplicity, as their setting. The names Damon and Cloris further align with pastoral traditions rooted in ancient Greece.\",\n    \"location_qid\": \"Q170284\"\n}",
+  "duration_seconds": 73.25765824317932,
+  "prompt_tokens": 612,
+  "completion_tokens": 1240,
+  "total_tokens": 1852
+}

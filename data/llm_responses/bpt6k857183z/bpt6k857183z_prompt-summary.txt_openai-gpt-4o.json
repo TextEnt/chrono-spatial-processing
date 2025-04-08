@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k857183z",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Early Modern Period\",\n    \"period_reasoning\": \"The play involves themes of nobility, honor, and courtly intrigue, which are typical of the Early Modern Period. The mention of places like Rome and Africa, along with the societal structures implied, suggest a setting that aligns with the 16th to 18th centuries.\",\n    \"timeframe_start\": \"1500\",\n    \"timeframe_end\": \"1800\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"Rome is the most frequently mentioned place in the play, and the context suggests significant events occur there, such as marriage and betrayal. This indicates that Rome is likely the primary setting for the play's action.\",\n    \"location_qid\": \"Q220\"\n}",
+  "duration_seconds": 5.779115915298462,
+  "prompt_tokens": 1301,
+  "completion_tokens": 164,
+  "total_tokens": 1465
+}

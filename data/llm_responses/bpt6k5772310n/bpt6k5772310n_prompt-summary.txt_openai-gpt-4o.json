@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5772310n",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"The play mentions characters such as Ariane and Ph\u00e8dre, who are figures from Greek mythology. These characters are typically associated with stories set in Classical Antiquity.\",\n    \"timeframe_start\": \"-0500\",\n    \"timeframe_end\": \"-0300\",\n    \"location\": \"Athens\",\n    \"location_reasoning\": \"The mention of 'Ath\u00e8nes' suggests that the play is set in Athens, which aligns with the Greek mythological context of the characters.\",\n    \"location_qid\": \"Q1524\"\n}",
+  "duration_seconds": 2.4607279300689697,
+  "prompt_tokens": 927,
+  "completion_tokens": 131,
+  "total_tokens": 1058
+}

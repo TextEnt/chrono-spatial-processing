@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280290z",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Late Roman Republic to Early Roman Empire\",\n    \"period_reasoning\": \"The play references historical figures such as Auguste (Augustus) and C\u00e9sar (Julius Caesar), situating the events during the transition from the Roman Republic to the Roman Empire.\",\n    \"timeframe_start\": \"-44\",\n    \"timeframe_end\": \"-27\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"Multiple references to Rome and key Roman figures indicate that the action of the play is set in Rome.\",\n    \"location_qid\": \"Q220\"\n}",
+  "duration_seconds": 5.481919050216675,
+  "prompt_tokens": 2323,
+  "completion_tokens": 906,
+  "total_tokens": 3229
+}

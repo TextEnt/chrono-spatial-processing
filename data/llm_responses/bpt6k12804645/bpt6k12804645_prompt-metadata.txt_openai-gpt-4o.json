@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k12804645",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play 'Le Sicilien, ou L'amour peintre' by Moli\u00e8re was published in 1668, and Moli\u00e8re's works typically reflect the contemporary society of 17th century France.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"Moli\u00e8re's plays are generally set in France, often reflecting the social and cultural context of 17th century French society.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 2.6473989486694336,
+  "prompt_tokens": 454,
+  "completion_tokens": 135,
+  "total_tokens": 589
+}

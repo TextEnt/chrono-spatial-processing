@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k852855g",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was published in 1695, which is at the end of the 17th century. Based on the language and references to places like Paris, the action most likely takes place contemporaneously with its publication, in the late 17th century. The characters' names and speaking style are also consistent with 17th century French literature.\",\n    \"timeframe_start\": \"1650\",\n    \"timeframe_end\": \"1695\",\n    \"location\": \"French countryside near Paris\",\n    \"location_reasoning\": \"The title 'L'heureux accident ou la maison de campagne' refers to a country house. In the sentences, characters mention being in the countryside outside Paris, with one character saying 'Qu'il fait meilleur ici, cousine qu'\u00e0 Paris' (It's better here, cousin, than in Paris) and discussing the pleasures of country life compared to the 'fracas de la ville' (hustle and bustle of the city). Characters appear to travel between Paris and this country setting.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 5.785089015960693,
+  "prompt_tokens": 1495,
+  "completion_tokens": 268,
+  "total_tokens": 1763
+}

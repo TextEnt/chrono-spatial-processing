@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k12804415",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Classical Age\",\n    \"period_reasoning\": \"The play was published in 1663 by Moli\u00e8re, a prominent figure of the French Classical period, which spanned the 17th century.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"Multiple references to Parisian locations such as Place Royale, Louvre, and Place Maubert indicate that the action is set in Paris.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 5.69744086265564,
+  "prompt_tokens": 1046,
+  "completion_tokens": 968,
+  "total_tokens": 2014
+}

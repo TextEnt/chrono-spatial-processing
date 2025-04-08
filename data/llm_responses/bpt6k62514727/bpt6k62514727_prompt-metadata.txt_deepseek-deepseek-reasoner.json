@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k62514727",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"17th century France\",\n    \"period_reasoning\": \"The play was published in 1662 and performed at the Th\u00e9\u00e2tre royal de l'Hostel de Bourgogne, a prominent Parisian theater of the 17th century. French comedies from this era often reflected contemporary settings.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris, France\",\n    \"location_reasoning\": \"The play was performed at the Th\u00e9\u00e2tre royal de l'Hostel de Bourgogne, located in Paris. 17th-century French plays were typically set in their contemporary urban contexts unless specified otherwise.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 48.98358678817749,
+  "prompt_tokens": 471,
+  "completion_tokens": 865,
+  "total_tokens": 1336
+}

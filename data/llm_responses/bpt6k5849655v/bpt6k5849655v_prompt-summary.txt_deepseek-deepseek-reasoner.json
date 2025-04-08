@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5849655v",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was published in 1649 (17th century) and references historical elements like tax collectors ('partisans'), monopolies, and political unrest, aligning with events such as the Fronde civil wars (1648\u20131653) in France. The mythological framework (Pluto's court) likely serves as an allegory for contemporary French society.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The top-mentioned place is 'France' (frequency: 16), with repeated references to its political turmoil, taxes, and regions like Paris and Picardie. The play critiques French societal issues of the period, suggesting a setting in France.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 56.05148482322693,
+  "prompt_tokens": 1621,
+  "completion_tokens": 1083,
+  "total_tokens": 2704
+}

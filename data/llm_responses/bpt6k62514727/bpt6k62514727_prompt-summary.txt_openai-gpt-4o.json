@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k62514727",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was published in 1662, and the language and style suggest it is set in the same century. The presence of characters like 'CAPITAN' and references to places like Paris and the H\u00f4tel de Bourgogne, a prominent theater in Paris during the 17th century, support this timeframe.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1699\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"The play explicitly mentions that the scene is set in Paris, and there are multiple references to Paris in the context, such as 'Marchand Libraire \u00e0 Paris' and 'La Sc\u00e8ne est \u00e0 Paris'.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 3.142735242843628,
+  "prompt_tokens": 1201,
+  "completion_tokens": 172,
+  "total_tokens": 1373
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5734490j",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was published in 1653, and the language and style suggest it is set in a similar time period, typical of pastoral plays of the 17th century.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1699\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play was published in Paris, and the mention of French locations like Paris and Monceaux suggests that the action likely takes place in France.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 2.4098081588745117,
+  "prompt_tokens": 1070,
+  "completion_tokens": 131,
+  "total_tokens": 1201
+}

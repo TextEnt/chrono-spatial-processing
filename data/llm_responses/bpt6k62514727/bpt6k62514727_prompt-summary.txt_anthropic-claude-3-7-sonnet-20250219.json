@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k62514727",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was published in 1662 according to the metadata, and it appears to be contemporary to its publication period. The characters, setting, and references (such as the H\u00f4tel de Bourgogne theater) suggest a 17th century setting. There are no clear indications of the play being set in a different historical period.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"The play explicitly states 'La Sc\u00e8ne est \u00e0 Paris' (The Scene is in Paris) in one of the related sentences. Additionally, there are references to specific Parisian locations such as the H\u00f4tel de Bourgogne (a famous theater in Paris) and potentially the Louvre, which is listed among the top 5 places mentioned.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 4.6282689571380615,
+  "prompt_tokens": 1473,
+  "completion_tokens": 230,
+  "total_tokens": 1703
+}

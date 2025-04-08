@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8568902",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Late Roman Republic\",\n    \"period_reasoning\": \"The play centers on Mithridates (likely Mithridates VI of Pontus, 120\u201363 BCE), references to Roman conflicts (Punic Wars, Hannibal), and interactions with Roman deities (Juno, Mars), indicating a setting during the Mithridatic Wars (1st century BCE).\",\n    \"timeframe_start\": \"-120\",\n    \"timeframe_end\": \"-63\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"Rome is the most frequently mentioned place (frequency:11) and is central to conflicts described (e.g., 'cette grande ville,' 'Romains,' 'Junon contre la gent Romaine'), with geopolitical references to Italy and Roman military campaigns.\",\n    \"location_qid\": \"Q220\"\n}",
+  "duration_seconds": 35.52235698699951,
+  "prompt_tokens": 2496,
+  "completion_tokens": 564,
+  "total_tokens": 3060
+}

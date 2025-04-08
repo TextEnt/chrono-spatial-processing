@@ -1,9 +1,0 @@
-{
-    "period": "Middle Ages",
-    "period_reasoning": "The play's title refers to 'Théodore, Reyne de Hongrie', implying a setting that involves royalty and a kingdom. The historical context and style of the play by François de Boisrobert suggests a setting reminiscent of medieval European court drama.",
-    "timeframe_start": "0400",
-    "timeframe_end": "1500",
-    "location": "Hungary",
-    "location_reasoning": "The mention of 'Reyne de Hongrie' directly indicates that the action is set in Hungary, as it translates to 'Queen of Hungary'.",
-    "location_qid": "Q28"
-}

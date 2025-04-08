@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8622099v",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"17th century France\",\n    \"period_reasoning\": \"The play 'Clorinde' by Jean de Rotrou was published in 1637, and the context of the play, including references to Paris and societal norms, suggests it is set in the same period as its publication. The language and themes are consistent with 17th century French literature.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1699\",\n    \"location\": \"Paris, France\",\n    \"location_reasoning\": \"The play frequently mentions Paris, indicating that the action likely takes place there. Paris is also a central location in many of Rotrou's works, and the references to Parisian society and culture further support this setting.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 2.700974941253662,
+  "prompt_tokens": 1857,
+  "completion_tokens": 173,
+  "total_tokens": 2030
+}

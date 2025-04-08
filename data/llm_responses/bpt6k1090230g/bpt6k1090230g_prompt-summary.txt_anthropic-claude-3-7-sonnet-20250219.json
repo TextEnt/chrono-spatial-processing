@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090230g",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"17th century France\",\n    \"period_reasoning\": \"The play was published in 1673 according to the metadata, which places it in the 17th century. French plays of this period typically depicted contemporary settings, particularly comedies. The characters' names and dialogue style are consistent with 17th century French society.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"The location is explicitly stated in one of the related sentences: 'La Sc\u00e8ne est \u00e0 Paris' which translates to 'The Scene is in Paris'. Additionally, Paris is mentioned in another line of dialogue: 'Et dans Paris il faut'.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 4.123340129852295,
+  "prompt_tokens": 1456,
+  "completion_tokens": 192,
+  "total_tokens": 1648
+}

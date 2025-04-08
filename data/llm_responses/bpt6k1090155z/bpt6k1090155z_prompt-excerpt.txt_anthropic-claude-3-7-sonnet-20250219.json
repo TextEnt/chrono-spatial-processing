@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090155z",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Ancient Rome\",\n    \"period_reasoning\": \"The play 'Les Sosies' by Jean de Rotrou is an adaptation of the classical Roman comedy 'Amphitryon' by Plautus. The name 'Sosies' refers to the theme of identical doubles (from the character Sosia), which is central to the Amphitryon myth. The excerpt mentions 'Hymen', which is the Greek god of marriage, suggesting a classical setting. The language in the excerpt with references to gods ('Dieux') and formal discussions of marriage also points to a classical Roman or Greek setting.\",\n    \"timeframe_start\": \"-200\",\n    \"timeframe_end\": \"0\",\n    \"location\": \"Thebes\",\n    \"location_reasoning\": \"The original story of Amphitryon, which 'Les Sosies' adapts, is set in the city of Thebes. The Amphitryon myth concerns Jupiter (Zeus) impersonating Amphitryon to seduce his wife Alcmene in Thebes. While the excerpt doesn't explicitly mention Thebes, the play as a whole would maintain this classical setting. The themes of deception, mistaken identity, and marriage mentioned in the excerpt align with the Amphitryon narrative traditionally set in Thebes.\",\n    \"location_qid\": \"Q8216\"\n}",
+  "duration_seconds": 6.539844036102295,
+  "prompt_tokens": 654,
+  "completion_tokens": 323,
+  "total_tokens": 977
+}

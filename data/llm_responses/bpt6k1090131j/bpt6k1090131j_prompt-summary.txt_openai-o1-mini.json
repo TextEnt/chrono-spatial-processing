@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090131j",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Hellenistic period\",\n    \"period_reasoning\": \"Character names such as Berenice, Barsine, and Mithridate are historically associated with the Hellenistic era, suggesting the play is set during this time.\",\n    \"timeframe_start\": \"-323\",\n    \"timeframe_end\": \"-31\",\n    \"location\": \"Syria\",\n    \"location_reasoning\": \"The place 'Syrie' is listed among the top mentioned locations, indicating that the action of the play takes place in Syria.\",\n    \"location_qid\": \"Q858\"\n}",
+  "duration_seconds": 9.593973875045776,
+  "prompt_tokens": 1023,
+  "completion_tokens": 780,
+  "total_tokens": 1803
+}

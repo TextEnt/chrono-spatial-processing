@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k12801807",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Renaissance\",\n    \"period_reasoning\": \"The play is a pastoral, a genre that was popular during the Renaissance, particularly in the 16th and 17th centuries. The themes and characters, such as shepherds and nymphs, are typical of this period.\",\n    \"timeframe_start\": \"1500\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Italy\",\n    \"location_reasoning\": \"The play is a translation from Italian and the pastoral genre was particularly popular in Italy during the Renaissance. The mention of characters like Daphn\u00e9 and Syluie, which are common in Italian pastoral literature, supports this.\",\n    \"location_qid\": \"Q38\"\n}",
+  "duration_seconds": 2.9865329265594482,
+  "prompt_tokens": 1531,
+  "completion_tokens": 156,
+  "total_tokens": 1687
+}

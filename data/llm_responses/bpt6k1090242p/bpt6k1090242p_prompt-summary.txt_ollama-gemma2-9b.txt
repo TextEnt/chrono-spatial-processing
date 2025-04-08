@@ -1,9 +1,0 @@
-{
-    "period": "XVII century France",
-    "period_reasoning": "The metadata specifies that the play was published in 1673 and is a French play.",
-    "timeframe_start": "1600",
-    "timeframe_end": "1700",
-    "location": "France",
-    "location_reasoning": "The metadata does not explicitly state the location, but the text mentions 'Paris', 'France', and 'the Parnasse' which is associated with French theatre.",
-    "location_qid": "Q31156" 
-}

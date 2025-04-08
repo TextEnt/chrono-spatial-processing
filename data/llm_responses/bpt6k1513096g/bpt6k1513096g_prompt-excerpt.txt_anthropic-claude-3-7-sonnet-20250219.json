@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1513096g",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"France in the 17th century (Louis XIII period)\",\n    \"period_reasoning\": \"The play was published in 1636 during the 17th century in France. It is a 'tragi-comedie' which was a popular genre in French theater during this period. The characters have names like Aligandre, Florintor which suggest a French baroque theatrical tradition common during the reign of Louis XIII. The language and style of names indicate a contemporary setting for when it was written.\",\n    \"timeframe_start\": \"1610\",\n    \"timeframe_end\": \"1643\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play is written in French by a French author (De Rayssiguier) in the 17th century. The character names (Aligandre, Florintor, etc.) have a French baroque theater style typical of plays set in France during this period. While the setting isn't explicitly stated in the excerpt, French tragicomedies of this era were typically set in France or in stylized versions of other European locales, but the default assumption would be France given the author and language.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 7.167470216751099,
+  "prompt_tokens": 669,
+  "completion_tokens": 283,
+  "total_tokens": 952
+}

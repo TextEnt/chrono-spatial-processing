@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8568902",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Late Hellenistic period (Roman Republic era)\",\n    \"period_reasoning\": \"The name 'Hypsicratee' refers to Hypsicratea, a queen and wife of Mithridates VI of Pontus, a historical figure from the 1st century BCE. French neoclassical tragedies often drew on ancient historical or mythological themes.\",\n    \"timeframe_start\": \"-100\",\n    \"timeframe_end\": \"-63\",\n    \"location\": \"Kingdom of Pontus\",\n    \"location_reasoning\": \"Mithridates VI ruled the Kingdom of Pontus in Asia Minor (modern-day Turkey), and Hypsicratea was his spouse. The play's title and historical context strongly suggest this setting.\",\n    \"location_qid\": \"Q51769\"\n}",
+  "duration_seconds": 39.09232997894287,
+  "prompt_tokens": 460,
+  "completion_tokens": 776,
+  "total_tokens": 1236
+}

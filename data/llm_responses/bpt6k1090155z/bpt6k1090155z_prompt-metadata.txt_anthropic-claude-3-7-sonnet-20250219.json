@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090155z",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Ancient Greece or Ancient Rome\",\n    \"period_reasoning\": \"Les Sosies by Jean de Rotrou is an adaptation of Plautus's Latin comedy 'Amphitryon', which is set in ancient Greek mythology. The play revolves around Jupiter taking the form of Amphitryon and Mercury taking the form of his servant Sosia (hence the title 'Les Sosies' meaning 'The Doubles'). This story is set in the mythological ancient Greek world.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"-300\",\n    \"location\": \"Thebes, Greece\",\n    \"location_reasoning\": \"In the original Amphitryon myth that 'Les Sosies' is based on, the action takes place in Thebes, Greece. The story involves Amphitryon, a general of Thebes, his wife Alcmena, and the gods Jupiter and Mercury. Jupiter disguises himself as Amphitryon to seduce Alcmena, while Mercury takes the form of Amphitryon's servant.\",\n    \"location_qid\": \"Q41315\"\n}",
+  "duration_seconds": 9.612118005752563,
+  "prompt_tokens": 487,
+  "completion_tokens": 274,
+  "total_tokens": 761
+}

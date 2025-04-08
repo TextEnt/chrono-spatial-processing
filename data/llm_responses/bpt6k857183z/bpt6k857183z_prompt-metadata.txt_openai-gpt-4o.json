@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k857183z",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": null,\n    \"period_reasoning\": \"The title 'Adolphe ou Le bigame genereux . Tragi-comedie.' does not provide sufficient information about the historical period in which the play is set. The play's publication date of 1650 suggests it could be set in a contemporary or earlier period, but without more context, it's impossible to determine the exact timeframe.\",\n    \"timeframe_start\": null,\n    \"timeframe_end\": null,\n    \"location\": null,\n    \"location_reasoning\": \"The title and metadata do not provide any specific information about the geographic location where the play's action takes place. Without additional context or details, it is not possible to determine the location.\",\n    \"location_qid\": null\n}",
+  "duration_seconds": 2.75083589553833,
+  "prompt_tokens": 449,
+  "completion_tokens": 163,
+  "total_tokens": 612
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8614585w",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Roman Empire\",\n    \"period_reasoning\": \"The mention of Jupiter and the context of a council to punish impiety suggest a setting during the Roman Empire, when Roman gods were worshipped and such councils could be convened.\",\n    \"timeframe_start\": \"-0027\",\n    \"timeframe_end\": \"0476\",\n    \"location\": \"Roman Gaul\",\n    \"location_reasoning\": \"The play is about Sainte Reine, who is associated with Alise-Sainte-Reine in Burgundy, France. During the Roman Empire, this region was part of Roman Gaul.\",\n    \"location_qid\": \"Q12544\"\n}",
+  "duration_seconds": 3.133002996444702,
+  "prompt_tokens": 612,
+  "completion_tokens": 142,
+  "total_tokens": 754
+}

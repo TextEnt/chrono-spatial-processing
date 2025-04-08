@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k62514727",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was published in 1662, and the language and style are consistent with 17th-century French theatre. The themes and characters, such as a 'Capitan,' are typical of the commedia dell'arte influence prevalent in that era.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play was represented on the Th\u00e9\u00e2tre royal de l'Hostel de Bourgogne, which was located in Paris, France. The use of French language and the reference to a 'Bouqueti\u00e8re' suggest a French setting.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 3.6188957691192627,
+  "prompt_tokens": 623,
+  "completion_tokens": 163,
+  "total_tokens": 786
+}

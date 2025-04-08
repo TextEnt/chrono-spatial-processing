@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280445t",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"Moli\u00e8re was a prominent playwright in the 17th century, and his plays are typically set in contemporary France of that time.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"Moli\u00e8re's plays are often set in Paris, reflecting the social and cultural environment of the French capital during the 17th century.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 4.460054874420166,
+  "prompt_tokens": 473,
+  "completion_tokens": 646,
+  "total_tokens": 1119
+}

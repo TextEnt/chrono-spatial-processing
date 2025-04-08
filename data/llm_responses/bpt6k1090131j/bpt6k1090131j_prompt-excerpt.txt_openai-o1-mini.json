@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090131j",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Classical antiquity\",\n    \"period_reasoning\": \"The excerpt mentions 'Cleomene', likely referring to Cleomenes, a Spartan king from ancient Greece, indicating a setting in classical antiquity.\",\n    \"timeframe_start\": \"-500\",\n    \"timeframe_end\": \"-300\",\n    \"location\": \"Sparta\",\n    \"location_reasoning\": \"The name 'Cleomene' suggests a connection to Cleomenes of Sparta, pointing to Sparta as the geographic location.\",\n    \"location_qid\": \"Q1863\"\n}",
+  "duration_seconds": 4.795183181762695,
+  "prompt_tokens": 604,
+  "completion_tokens": 711,
+  "total_tokens": 1315
+}

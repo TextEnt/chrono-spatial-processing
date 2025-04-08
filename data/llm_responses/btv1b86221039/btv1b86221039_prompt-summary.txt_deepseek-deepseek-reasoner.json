@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b86221039",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"17th century France (Ancien R\u00e9gime)\",\n    \"period_reasoning\": \"The play was published in 1669 by a French author, Montfleury, aligning with the 17th-century French theatrical tradition. The mention of royal privileges and Paris in the context (though likely part of publication metadata) supports a contemporary setting.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": null,\n    \"location_reasoning\": \"While 'Paris' is the top-mentioned place, its mentions in the provided sentences relate to publication privileges rather than the play's narrative. Other locations like Venise, Rome, and France lack direct narrative context to confirm the setting.\",\n    \"location_qid\": null\n}",
+  "duration_seconds": 93.49806809425354,
+  "prompt_tokens": 1121,
+  "completion_tokens": 1749,
+  "total_tokens": 2870
+}

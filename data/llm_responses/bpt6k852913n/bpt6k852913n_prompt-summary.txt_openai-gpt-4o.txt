@@ -1,9 +1,0 @@
-{
-    "period": "17th century",
-    "period_reasoning": "The play, published in 1678, contains elements such as titles, social roles, and clothing that are consistent with 17th-century European (specifically French) society. The mention of Philandre wanting to marry and the reference to societal norms and attire indicate a setting contemporary with its time of writing.",
-    "timeframe_start": "1601",
-    "timeframe_end": "1700",
-    "location": "Paris, France",
-    "location_reasoning": "The play mentions locations such as Paris and related areas like the Luxembourg and Tuilleries, indicating that the action predominantly takes place in or around Paris, which was a cultural and societal hub in France during the 17th century.",
-    "location_qid": "Q90"
-}

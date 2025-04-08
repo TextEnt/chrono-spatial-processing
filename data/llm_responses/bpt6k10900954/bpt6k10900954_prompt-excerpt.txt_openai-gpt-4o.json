@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10900954",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"17th century France\",\n    \"period_reasoning\": \"The play was published in 1661, and the language and style suggest it is set in the same period. The themes of jealousy and courtship are common in 17th-century French comedies.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1699\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play is written in French and the style is consistent with French comedies of the 17th century. The names and social interactions suggest a setting in France.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 2.906712055206299,
+  "prompt_tokens": 589,
+  "completion_tokens": 142,
+  "total_tokens": 731
+}

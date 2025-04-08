@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090142b",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"The frequent mention of Paphos, an ancient city in Cyprus, along with classical-sounding character names suggests an ancient setting.\",\n    \"timeframe_start\": \"-500\",\n    \"timeframe_end\": \"500\",\n    \"location\": \"Paphos\",\n    \"location_reasoning\": \"Paphos is the most frequently mentioned place in the play, indicating it as the primary setting.\",\n    \"location_qid\": \"Q28734\"\n}",
+  "duration_seconds": 4.2451252937316895,
+  "prompt_tokens": 1491,
+  "completion_tokens": 639,
+  "total_tokens": 2130
+}

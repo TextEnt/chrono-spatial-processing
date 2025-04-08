@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090133c",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was written and published in 1671, indicating that its setting is likely contemporary to the 17th century.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play was authored and published in 17th century France, suggesting that the action takes place in France.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 9.018906831741333,
+  "prompt_tokens": 601,
+  "completion_tokens": 1533,
+  "total_tokens": 2134
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k15107128",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Kingdom of Judah (9th century BCE)\",\n    \"period_reasoning\": \"The play is based on the biblical story of Athaliah, a queen of Judah. The excerpt references figures like Samuel and Israel, situating the narrative in the context of ancient Hebrew history, specifically the period of the Kingdom of Judah.\",\n    \"timeframe_start\": \"-900\",\n    \"timeframe_end\": \"-800\",\n    \"location\": \"Jerusalem, Kingdom of Judah\",\n    \"location_reasoning\": \"The play's biblical context and references to Israel, the Tabernacle, and Hebrew prophets indicate the setting is the ancient Kingdom of Judah, with Jerusalem as its capital.\",\n    \"location_qid\": \"Q1218\"\n}",
+  "duration_seconds": 79.2223470211029,
+  "prompt_tokens": 604,
+  "completion_tokens": 1417,
+  "total_tokens": 2021
+}

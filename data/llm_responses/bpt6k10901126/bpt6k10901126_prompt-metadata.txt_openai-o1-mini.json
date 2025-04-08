@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10901126",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Roman Empire\",\n    \"period_reasoning\": \"The play 'Germanicus, trag\u00e9die' is centered around Germanicus, a prominent general and member of the Julio-Claudian dynasty, placing the events in the early Roman Empire.\",\n    \"timeframe_start\": \"-15\",\n    \"timeframe_end\": \"19\",\n    \"location\": \"Ancient Rome\",\n    \"location_reasoning\": \"Germanicus was a key figure in Ancient Rome, and his life and military campaigns were primarily based there, indicating that the play is set in this location.\",\n    \"location_qid\": \"Q220\"\n}",
+  "duration_seconds": 5.227619886398315,
+  "prompt_tokens": 456,
+  "completion_tokens": 850,
+  "total_tokens": 1306
+}

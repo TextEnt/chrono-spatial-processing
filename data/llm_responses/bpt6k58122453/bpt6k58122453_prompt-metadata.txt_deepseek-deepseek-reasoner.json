@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k58122453",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"17th century France\",\n    \"period_reasoning\": \"The play was published in 1637 and is a French comedy from the 17th century, suggesting it likely reflects the social and cultural context of its time of creation.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play is written in French and published in France during the 17th century, with no explicit indication of a non-French setting in the provided metadata.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 54.637446880340576,
+  "prompt_tokens": 450,
+  "completion_tokens": 841,
+  "total_tokens": 1291
+}

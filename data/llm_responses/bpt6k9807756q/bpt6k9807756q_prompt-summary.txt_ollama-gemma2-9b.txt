@@ -1,9 +1,0 @@
-{
-    "period": "Ancient Greece and Hellenistic period",
-    "period_reasoning": "The play features characters like Pyrrhus, a king from Epirus who fought against the Romans during the Hellenistic period. References to Sparte (Sparta) further indicate an Ancient Greek setting.",
-    "timeframe_start": "-323",
-    "timeframe_end": "146",
-    "location": "Ancient Greece, specifically Sparta and potentially Epirus",
-    "location_reasoning": "The play prominently mentions 'Sparte' (Sparta), a city-state in Ancient Greece. The presence of Pyrrhus suggests the potential inclusion of Epirus as a location as well.",
-    "location_qid": "Q184"
-}

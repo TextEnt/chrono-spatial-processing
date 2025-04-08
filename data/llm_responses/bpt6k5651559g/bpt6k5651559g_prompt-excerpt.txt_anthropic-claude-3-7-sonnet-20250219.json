@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5651559g",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"First half of the 17th century\",\n    \"period_reasoning\": \"The play was published in 1643 and refers to Cardinal Richelieu, who was the chief minister of France from 1624 to 1642 under King Louis XIII. The dialogue mentions Richelieu trying to enter Paradise after his death (he died in December 1642), suggesting the play is set in Richelieu's contemporary period. The mention of war ('flambeau de la guerre') likely refers to the Thirty Years' War (1618-1648) in which France was involved under Richelieu's guidance.\",\n    \"timeframe_start\": \"1624\",\n    \"timeframe_end\": \"1642\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play centers on Cardinal Richelieu, who was the chief minister of France. The reference to 'Monsieur le Grand' likely refers to Henri Coiffier de Ruz\u00e9, Marquis of Cinq-Mars (known as 'Monsieur le Grand'), who was executed in 1642 for conspiracy against Richelieu. The political context and characters strongly indicate a French setting.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 5.731580018997192,
+  "prompt_tokens": 675,
+  "completion_tokens": 296,
+  "total_tokens": 971
+}

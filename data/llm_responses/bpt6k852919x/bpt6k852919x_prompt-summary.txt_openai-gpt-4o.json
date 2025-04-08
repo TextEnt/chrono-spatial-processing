@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k852919x",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Ancient Gaul\",\n    \"period_reasoning\": \"The play frequently mentions Druids, Gauls, and practices such as the veneration of mistletoe (Gui), which are associated with the ancient Celtic culture of Gaul before the Roman conquest.\",\n    \"timeframe_start\": \"-500\",\n    \"timeframe_end\": \"50\",\n    \"location\": \"Gaul\",\n    \"location_reasoning\": \"The references to Gauls and Druids suggest that the play is set in Gaul, which corresponds to modern-day France and parts of neighboring countries during the Iron Age and Roman period.\",\n    \"location_qid\": \"Q1418\"\n}",
+  "duration_seconds": 3.1886489391326904,
+  "prompt_tokens": 1485,
+  "completion_tokens": 145,
+  "total_tokens": 1630
+}

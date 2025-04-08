@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b86221269",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play 'La Diane com\u00e9die' by Jean de Rotrou was published in 1635, and the language and style are consistent with the 17th-century French theatre. The themes of love, disguise, and courtship are typical of this period.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"Jean de Rotrou was a French playwright, and the play is written in French. The dedication to 'Monsieur le comte de Fiesque' suggests a setting in a French-speaking region, likely France itself.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 2.747756004333496,
+  "prompt_tokens": 592,
+  "completion_tokens": 163,
+  "total_tokens": 755
+}

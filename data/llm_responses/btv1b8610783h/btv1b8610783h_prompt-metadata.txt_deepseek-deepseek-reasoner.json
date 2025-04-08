@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8610783h",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"17th century France\",\n    \"period_reasoning\": \"Moli\u00e8re's plays are typically set in his contemporary period, which was 17th-century France. The publication date (1669) further supports this timeframe.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"Moli\u00e8re's comedies often take place in Paris, reflecting the social dynamics of his time. While the metadata does not explicitly state the location, his works are strongly associated with Parisian settings.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 118.10623002052307,
+  "prompt_tokens": 447,
+  "completion_tokens": 2488,
+  "total_tokens": 2935
+}

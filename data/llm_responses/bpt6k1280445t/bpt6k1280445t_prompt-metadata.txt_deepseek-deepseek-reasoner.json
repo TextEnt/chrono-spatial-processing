@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280445t",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"17th century France\",\n    \"period_reasoning\": \"Moli\u00e8re's works are typically set in his contemporary period, reflecting the social norms and issues of 17th-century France. The play was published in 1674, during the reign of Louis XIV, aligning with the French Baroque era.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris, France\",\n    \"location_reasoning\": \"Moli\u00e8re's plays often take place in Parisian aristocratic or bourgeois settings, satirizing contemporary society. The title and context suggest a literary and social critique common in urban intellectual circles of the time.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 54.91787385940552,
+  "prompt_tokens": 453,
+  "completion_tokens": 1055,
+  "total_tokens": 1508
+}

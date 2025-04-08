@@ -1,9 +1,0 @@
-{
-    "period": "Classical Greece",
-    "period_reasoning": "The play references Sparta, a prominent city-state in ancient Greece. The emphasis on martial virtues, thrones, and glory aligns with the Classical Greek period (5th–4th centuries BCE), when Sparta was a major military power.",
-    "timeframe_start": "-500",
-    "timeframe_end": "-300",
-    "location": "Sparta",
-    "location_reasoning": "The title explicitly names Sparta as the setting, and the excerpt reinforces this with references to Spartan ideals and political context (e.g., sustaining a throne).",
-    "location_qid": "Q5699"
-}

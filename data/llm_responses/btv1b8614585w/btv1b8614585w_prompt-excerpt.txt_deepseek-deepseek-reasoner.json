@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8614585w",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Roman Empire (Christian persecutions)\",\n    \"period_reasoning\": \"The play centers on Saint Reine (Regina), a 3rd-century Christian martyr. The excerpt references Jupiter and pagan rituals, aligning with Roman religious practices and early Christian persecution under the Roman Empire.\",\n    \"timeframe_start\": \"200\",\n    \"timeframe_end\": \"300\",\n    \"location\": \"Alise-Sainte-Reine (Alesia)\",\n    \"location_reasoning\": \"The title specifies 'Alise,' referencing Alise-Sainte-Reine in Burgundy, France. Saint Reine's martyrdom is historically associated with Alesia, the ancient Roman name for this location.\",\n    \"location_qid\": \"Q47421\"\n}",
+  "duration_seconds": 36.01974177360535,
+  "prompt_tokens": 626,
+  "completion_tokens": 716,
+  "total_tokens": 1342
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k58122453",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"17th century France during the reign of Louis XIII\",\n    \"period_reasoning\": \"The play was published in 1637 according to the metadata. The content mentions 'the Ligue' (likely referring to the Catholic League active in the late 16th/early 17th century) and mentions 'mon Roi' (my King). The time period of the action seems contemporary to the publication date, as was common in 17th century French comedies.\",\n    \"timeframe_start\": \"1610\",\n    \"timeframe_end\": \"1643\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"Paris is the most frequently mentioned location in the play with 13 occurrences. Several passages explicitly mention events taking place in Paris, such as 'Je crois qu'il s'en voit peu de pareils \u00e0 Paris', 'Dont jamais on ai fait le semblable \u00e0 Paris', and 'Les femmes de Paris se bandans contre moi'. The centrality of Paris to the setting is reinforced by how characters reference it as the main location of the action.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 6.746559143066406,
+  "prompt_tokens": 2088,
+  "completion_tokens": 275,
+  "total_tokens": 2363
+}

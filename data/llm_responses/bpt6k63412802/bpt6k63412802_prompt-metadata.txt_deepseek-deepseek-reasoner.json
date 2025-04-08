@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k63412802",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Roman Republic\",\n    \"period_reasoning\": \"The title 'Le Dictateur romain' explicitly references a Roman dictator, a political role specific to the Roman Republic. Tragedies about Roman political figures often focus on the Republican era, particularly its crises.\",\n    \"timeframe_start\": \"-509\",\n    \"timeframe_end\": \"-27\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"The term 'romain' (Roman) in the title directly ties the play to ancient Rome. Roman tragedies typically center on events in Rome itself.\",\n    \"location_qid\": \"Q220\"\n}",
+  "duration_seconds": 42.780163049697876,
+  "prompt_tokens": 461,
+  "completion_tokens": 711,
+  "total_tokens": 1172
+}

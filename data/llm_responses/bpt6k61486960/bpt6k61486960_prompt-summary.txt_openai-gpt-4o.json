@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k61486960",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"17th century France\",\n    \"period_reasoning\": \"The play was published in 1694, and the language and social context suggest it is set in the same period. The characters and their interactions reflect the societal norms and customs of late 17th century France.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Poitiers, France\",\n    \"location_reasoning\": \"The play frequently mentions Poitiers, and the context suggests that significant parts of the action take place there. Poitiers is a city in France, which aligns with the French origin of the play and its author.\",\n    \"location_qid\": \"Q372\"\n}",
+  "duration_seconds": 3.3586859703063965,
+  "prompt_tokens": 1268,
+  "completion_tokens": 156,
+  "total_tokens": 1424
+}

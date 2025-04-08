@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090142b",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Early Modern period\",\n    \"period_reasoning\": \"The play's reference to a 'corsaire' (corsair) suggests a setting during the height of Mediterranean piracy, particularly associated with the Barbary Coast in the 16th-17th centuries. The publication date (1663) and French tragicomedy genre further align with the Early Modern period.\",\n    \"timeframe_start\": \"1500\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Barbary Coast\",\n    \"location_reasoning\": \"Corsairs in the 17th century were strongly linked to the Barbary Coast (North Africa), where privateers operated under Ottoman or local authority. The term 'corsaire' in the title implies this region.\",\n    \"location_qid\": \"Q80766\"\n}",
+  "duration_seconds": 59.3988311290741,
+  "prompt_tokens": 442,
+  "completion_tokens": 1210,
+  "total_tokens": 1652
+}

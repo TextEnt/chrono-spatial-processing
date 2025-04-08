@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090276g",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Renaissance\",\n    \"period_reasoning\": \"The play was written by Jean de Rotrou, a 17th-century French playwright, and the themes and language suggest a setting consistent with the Renaissance period, which often featured themes of royalty, courtly life, and classical references.\",\n    \"timeframe_start\": \"1400\",\n    \"timeframe_end\": \"1600\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"Jean de Rotrou was a French playwright, and the use of French language and references to royalty suggest a setting in France, likely reflecting the societal norms and structures of the time.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 1.7556889057159424,
+  "prompt_tokens": 592,
+  "completion_tokens": 149,
+  "total_tokens": 741
+}

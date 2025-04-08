@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090139v",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"17th century France\",\n    \"period_reasoning\": \"The play was published in 1662, during the reign of Louis XIV, and the frequent references to Paris align with the cultural and theatrical prominence of the city in this period.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"The text explicitly mentions Paris multiple times in the 'related_sentences' of the top_1_place entity, including references to its Bourgeois class and the court's presence there.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 37.88347506523132,
+  "prompt_tokens": 1703,
+  "completion_tokens": 583,
+  "total_tokens": 2286
+}

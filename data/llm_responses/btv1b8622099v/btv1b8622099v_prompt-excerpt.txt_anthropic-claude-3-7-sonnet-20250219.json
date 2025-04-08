@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8622099v",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Seventeenth-century France\",\n    \"period_reasoning\": \"The play was published in 1637 according to the metadata. French plays from this period (17th century) typically set their action either in contemporary times or in classical antiquity. Given the characters' names (Lysante) and the formal language with verse structure, this appears to be a 17th century setting typical of French classical theater.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play is written in French by Jean de Rotrou, a prominent 17th-century French playwright. The characters have names like 'Lysante' which are typical of French classical theater. The formal language and the style of discourse (with references to 'feintes ardeurs' and 'passions naissantes') are characteristic of French neoclassical theater, which typically set plays in France or in stylized classical settings that reflected French society.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 6.291374206542969,
+  "prompt_tokens": 663,
+  "completion_tokens": 254,
+  "total_tokens": 917
+}

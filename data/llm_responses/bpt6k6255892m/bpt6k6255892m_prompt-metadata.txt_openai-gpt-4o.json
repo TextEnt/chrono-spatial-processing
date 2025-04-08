@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k6255892m",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"17th century France\",\n    \"period_reasoning\": \"The play 'Le Railleur, ou La satyre du temps' was published in 1638, during the 17th century. Given the context of French theatre in the 17th century, it is likely that the play is set in the same period.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The author, Andr\u00e9 Mareschal, was French, and the play was published in 1638, a time when French plays were typically set in France. The title also suggests a satirical take on contemporary society, which would likely be set in the author's own country.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 2.5560450553894043,
+  "prompt_tokens": 445,
+  "completion_tokens": 177,
+  "total_tokens": 622
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1519298v",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was published in 1662, which suggests it is likely set in the same century, as was common for plays of that era.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1699\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play was performed at the Th\u00e9\u00e2tre Royal du Marais, which was located in Paris, France. This suggests the setting is likely in France.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 2.1047720909118652,
+  "prompt_tokens": 458,
+  "completion_tokens": 125,
+  "total_tokens": 583
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090142b",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Early 17th century\",\n    \"period_reasoning\": \"The play was published in 1663 and is titled 'Le Prince corsaire' (The Corsair Prince). Corsairs were particularly active in the Mediterranean during the 16th and 17th centuries. Given the publication date and the genre of tragi-com\u00e9die (tragicomedy), which was popular in French theater during the early to mid-17th century, the play likely depicts events set in the contemporary period or recent past relative to its publication.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1663\",\n    \"location\": \"Mediterranean Sea\",\n    \"location_reasoning\": \"The title 'Le Prince corsaire' (The Corsair Prince) strongly suggests a maritime setting involving corsairs, who were privateers operating with government authorization. During the 17th century, corsairs were especially active in the Mediterranean Sea, operating from bases in North Africa (Barbary corsairs), Malta, and various European ports. French literary works of this period often featured Mediterranean settings for stories involving corsairs or pirates.\",\n    \"location_qid\": \"Q4918\"\n}",
+  "duration_seconds": 5.5524070262908936,
+  "prompt_tokens": 489,
+  "completion_tokens": 274,
+  "total_tokens": 763
+}

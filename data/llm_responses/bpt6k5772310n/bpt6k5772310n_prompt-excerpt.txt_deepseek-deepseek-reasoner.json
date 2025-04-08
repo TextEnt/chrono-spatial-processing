@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5772310n",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Ancient Greece\",\n    \"period_reasoning\": \"The characters 'Ariane' (Ariadne) and 'Pirithous' are figures from Greek mythology, specifically linked to the myth of Theseus and the Minotaur. The reference to a 'grand Roi' (great king) and mythological themes place the play in the context of ancient Greek legends.\",\n    \"timeframe_start\": \"-1600\",\n    \"timeframe_end\": \"-1100\",\n    \"location\": \"Crete\",\n    \"location_reasoning\": \"Ariadne is a Cretan princess in Greek mythology, and her story with Theseus and the Minotaur is set in Crete. The mention of a throne and mythological context strongly suggests Crete as the location.\",\n    \"location_qid\": \"Q34374\"\n}",
+  "duration_seconds": 26.513022899627686,
+  "prompt_tokens": 605,
+  "completion_tokens": 704,
+  "total_tokens": 1309
+}

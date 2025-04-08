@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1513096g",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Early Modern Period\",\n    \"period_reasoning\": \"The play was published in 1636, during the Early Modern Period. The language and themes suggest a setting consistent with this era, particularly in Europe.\",\n    \"timeframe_start\": \"1500\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The author is French, and the play is written in French, suggesting a setting in France. The names and language style are consistent with French literature of the 17th century.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 2.617807149887085,
+  "prompt_tokens": 584,
+  "completion_tokens": 134,
+  "total_tokens": 718
+}

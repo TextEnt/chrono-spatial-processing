@@ -1,9 +1,0 @@
-{
-    "period": null,
-    "period_reasoning": "The metadata provided does not include information about the historical period in which the play is set. The title mentions 'Tite et Titus', which could refer to Roman history, but without additional context or content from the play itself, we cannot definitively determine the specific historical period.",
-    "timeframe_start": null,
-    "timeframe_end": null,
-    "location": null,
-    "location_reasoning": "The metadata does not provide details about the geographic location of the play's action. While the title suggests a connection to Roman history, this is speculative and insufficient to accurately identify a specific location.",
-    "location_qid": null
-}

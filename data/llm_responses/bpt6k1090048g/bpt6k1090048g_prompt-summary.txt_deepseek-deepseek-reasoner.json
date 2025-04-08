@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090048g",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"The play's title 'Pyrame' alludes to the myth of Pyramus and Thisbe, a story from Ovid's *Metamorphoses* set in ancient Babylon. The mention of the Tigris River ('Tigre') and mythological figures like Z\u00e9phire further situate the narrative within a classical mythological context.\",\n    \"timeframe_start\": \"-2000\",\n    \"timeframe_end\": \"-539\",\n    \"location\": \"Babylon\",\n    \"location_reasoning\": \"The Tigris River ('Tigre') is explicitly mentioned, a key geographic feature of Mesopotamia. The Pyramus and Thisbe myth is traditionally set in Babylon, aligning with the play's classical references.\",\n    \"location_qid\": \"Q47690\"\n}",
+  "duration_seconds": 76.37157917022705,
+  "prompt_tokens": 1042,
+  "completion_tokens": 1510,
+  "total_tokens": 2552
+}

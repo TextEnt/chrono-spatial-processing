@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k57346959",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"The play features characters such as Diane (Diana), who is a Roman goddess, and references to pastoral settings and satyrs, which are common in classical mythology. These elements suggest a setting in Classical Antiquity.\",\n    \"timeframe_start\": \"-0500\",\n    \"timeframe_end\": \"0500\",\n    \"location\": \"Ancient Rome\",\n    \"location_reasoning\": \"The presence of characters like Diane, a Roman goddess, and the pastoral theme suggest a setting in Ancient Rome, which aligns with the mythological context.\",\n    \"location_qid\": \"Q220\"\n}",
+  "duration_seconds": 2.8129541873931885,
+  "prompt_tokens": 981,
+  "completion_tokens": 143,
+  "total_tokens": 1124
+}

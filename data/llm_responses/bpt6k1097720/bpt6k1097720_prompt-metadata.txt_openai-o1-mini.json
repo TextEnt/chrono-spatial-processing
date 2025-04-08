@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1097720",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"The play 'Phalante' by La Calpren\u00e8de is a tragedy likely set in ancient times, reflecting classical themes common in tragedies of that era.\",\n    \"timeframe_start\": \"-500\",\n    \"timeframe_end\": \"500\",\n    \"location\": \"Greece\",\n    \"location_reasoning\": \"17th-century tragedies often draw on ancient Greek settings to mirror classical themes and structures.\",\n    \"location_qid\": \"Q41\"\n}",
+  "duration_seconds": 7.811203718185425,
+  "prompt_tokens": 470,
+  "completion_tokens": 831,
+  "total_tokens": 1301
+}

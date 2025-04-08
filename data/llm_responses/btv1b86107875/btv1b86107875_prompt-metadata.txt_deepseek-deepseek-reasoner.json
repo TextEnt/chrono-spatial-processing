@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b86107875",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"17th century France\",\n    \"period_reasoning\": \"Moli\u00e8re's plays are typically set in contemporary France, reflecting 17th-century societal norms and customs. The publication date (1661) and author's context further support this timeframe.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris, France\",\n    \"location_reasoning\": \"Moli\u00e8re's comedies were often set in Parisian society, and the mention of the 'Palais Royal' theater in the title directly references a Parisian landmark where his plays were performed.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 33.11334991455078,
+  "prompt_tokens": 460,
+  "completion_tokens": 487,
+  "total_tokens": 947
+}

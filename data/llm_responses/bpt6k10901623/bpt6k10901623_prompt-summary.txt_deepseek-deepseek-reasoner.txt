@@ -1,9 +1,0 @@
-{
-    "period": "16th century",
-    "period_reasoning": "The mention of 'Asie' and the Ottoman-sounding name 'Amurat' (possibly Murad, a common Ottoman sultan name) suggests Ottoman-Hungarian conflicts, which peaked in the 16th century (e.g., Battle of Mohács, 1526). The play's focus on a Hungarian queen aligns with this period of Ottoman expansion into Hungary.",
-    "timeframe_start": "1501",
-    "timeframe_end": "1600",
-    "location": "Hungary",
-    "location_reasoning": "The title explicitly refers to the 'Reyne de Hongrie' (Queen of Hungary), and the Ottoman-Hungarian conflicts mentioned in the text further anchor the setting to Hungary.",
-    "location_qid": "Q28"
-}

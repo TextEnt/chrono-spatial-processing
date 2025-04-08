@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1097720",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Classical Greece\",\n    \"period_reasoning\": \"The play references Corinthe (Corinth), an ancient Greek city-state, and mentions kings and ancestral rulers typical of Classical Greece. The tragic genre and 17th-century French context suggest a classical setting, common in tragedies of this era.\",\n    \"timeframe_start\": \"-500\",\n    \"timeframe_end\": \"-300\",\n    \"location\": \"Corinth\",\n    \"location_reasoning\": \"Corinthe (Corinth) is explicitly named as the most frequently mentioned place, with references to its rulers, laws, and reverence for ancestral kings, aligning with its historical significance in antiquity.\",\n    \"location_qid\": \"Q42040\"\n}",
+  "duration_seconds": 47.676730155944824,
+  "prompt_tokens": 1404,
+  "completion_tokens": 677,
+  "total_tokens": 2081
+}

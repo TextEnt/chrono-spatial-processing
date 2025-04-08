@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5828916x",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"The play frequently references Corinthe (Corinth), a major city in ancient Greece, suggesting that the setting is during the Classical Antiquity period.\",\n    \"timeframe_start\": \"-500\",\n    \"timeframe_end\": \"-323\",\n    \"location\": \"Corinth\",\n    \"location_reasoning\": \"Corinthe (Corinth) is the most frequently mentioned place in the play, indicating that the action takes place there.\",\n    \"location_qid\": \"Q368\"\n}",
+  "duration_seconds": 7.169252157211304,
+  "prompt_tokens": 951,
+  "completion_tokens": 1156,
+  "total_tokens": 2107
+}

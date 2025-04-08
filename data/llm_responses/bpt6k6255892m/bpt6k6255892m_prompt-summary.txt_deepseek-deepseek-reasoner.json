@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k6255892m",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was published in 1638, during the 17th century, and typical French theatre of this era was often set in contemporary times. Mentions of Paris and the Louvre, prominent in 17th-century France, support this timeframe.\",\n    \"timeframe_start\": 1601,\n    \"timeframe_end\": 1700,\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"The play mentions 'Paris' and 'Louvre', which are real locations in Paris, France. These references indicate the setting is in Paris.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 88.46650695800781,
+  "prompt_tokens": 1583,
+  "completion_tokens": 1692,
+  "total_tokens": 3275
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1097720",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Ancient Greece\",\n    \"period_reasoning\": \"The play is titled 'Phalante', which likely refers to Phalanthus, a figure associated with Spartan and Greek mythology. This suggests the setting is in ancient Greece.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"-300\",\n    \"location\": \"Ancient Greece\",\n    \"location_reasoning\": \"Phalanthus is a character from Greek mythology, specifically linked to Sparta and the founding of Taranto in Italy, indicating the play is set in ancient Greece.\",\n    \"location_qid\": \"Q11772\"\n}",
+  "duration_seconds": 3.806349992752075,
+  "prompt_tokens": 450,
+  "completion_tokens": 135,
+  "total_tokens": 585
+}

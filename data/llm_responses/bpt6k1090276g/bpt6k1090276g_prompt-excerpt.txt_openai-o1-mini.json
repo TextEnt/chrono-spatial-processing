@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090276g",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was published in 1654, and the dialogue indicates a contemporary 17th-century French royal setting.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The author, Jean de Rotrou, was a 17th-century French playwright, and the presence of French royal characters suggests the action takes place in France.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 6.109323978424072,
+  "prompt_tokens": 612,
+  "completion_tokens": 1030,
+  "total_tokens": 1642
+}

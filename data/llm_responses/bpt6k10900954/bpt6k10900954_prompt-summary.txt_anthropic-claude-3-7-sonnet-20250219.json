@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10900954",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Early 17th century\",\n    \"period_reasoning\": \"The play was published in 1661, which indicates it was likely set in a contemporary or recent time period, as was common for plays of this era. The mention of characters such as a Duke, with courtly elements like 'Favori' and 'Cour' suggests a setting in the early to mid-17th century. References to letter writing, travel between cities, and the social dynamics described are consistent with 17th century European court life.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1650\",\n    \"location\": \"Florence\",\n    \"location_reasoning\": \"Florence is mentioned most frequently (15 times) in the play. Several sentences refer to Florence as the central location where characters 'return to' or 'depart from'. The text mentions a Duke of Florence, suggesting the setting is in the Duchy of Florence. Other places mentioned (Pise/Pisa, Madrid) appear to be places characters visit or reference, but Florence seems to be the main setting. References to court life and a Duke align with Florence's status as a ducal seat in this period.\",\n    \"location_qid\": \"Q2044\"\n}",
+  "duration_seconds": 6.0296790599823,
+  "prompt_tokens": 1666,
+  "completion_tokens": 290,
+  "total_tokens": 1956
+}

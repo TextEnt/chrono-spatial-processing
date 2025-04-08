@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k852919x",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Early Modern Period\",\n    \"period_reasoning\": \"The play references 17th-century French legal and social structures (e.g., 'Conseiller de Poitiers') and was published in 1664, aligning with Louis XIV's reign. Mentions of Gauls and Druids reflect cultural nostalgia rather than a historical setting.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Poitiers\",\n    \"location_reasoning\": \"Poitiers is repeatedly cited as the central location in the play's dialogue (e.g., 'Cherchez hors de Poitiers'), and characters interact within its societal framework (e.g., legal disputes, local reputation).\",\n    \"location_qid\": \"Q35572\"\n}",
+  "duration_seconds": 107.45003294944763,
+  "prompt_tokens": 1581,
+  "completion_tokens": 2109,
+  "total_tokens": 3690
+}

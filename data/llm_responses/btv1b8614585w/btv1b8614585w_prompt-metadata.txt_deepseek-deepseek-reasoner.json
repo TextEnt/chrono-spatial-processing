@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8614585w",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Roman Gaul (3rd century)\",\n    \"period_reasoning\": \"The play centers on the martyrdom of Sainte Reyne (Saint Regina), a Christian saint traditionally believed to have been martyred in the 3rd century CE during the Roman Empire's rule over Gaul.\",\n    \"timeframe_start\": \"200\",\n    \"timeframe_end\": \"300\",\n    \"location\": \"Alise-Sainte-Reine, France\",\n    \"location_reasoning\": \"The title references 'Alise,' which corresponds to Alise-Sainte-Reine, a commune in Burgundy, France. This location is historically associated with Saint Regina's martyrdom and the Abbey of Flavigny, where her relics were kept.\",\n    \"location_qid\": \"Q1345\"\n}",
+  "duration_seconds": 37.70242500305176,
+  "prompt_tokens": 472,
+  "completion_tokens": 575,
+  "total_tokens": 1047
+}

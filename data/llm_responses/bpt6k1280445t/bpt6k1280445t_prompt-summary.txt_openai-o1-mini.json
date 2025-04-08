@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280445t",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was authored by Moli\u00e8re in 1674 and references locations such as Paris, Louvre, Place Maubert, and Place Royale, which are significant to 17th century France.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"Multiple mentions of Parisian landmarks like Louvre, Place Maubert, and Place Royale indicate that the action is set in Paris.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 6.367170810699463,
+  "prompt_tokens": 1490,
+  "completion_tokens": 1039,
+  "total_tokens": 2529
+}

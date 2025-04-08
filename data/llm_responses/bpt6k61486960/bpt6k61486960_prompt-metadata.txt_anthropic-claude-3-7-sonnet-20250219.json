@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k61486960",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Late 17th century\",\n    \"period_reasoning\": \"The play was published in 1694 during the reign of Louis XIV. French comedies of this period typically depicted contemporary society or the recent past. The title 'Attendez-moy sous l'orme' (Wait for me under the elm tree) suggests a rural or small-town setting typical of contemporaneous French comedies.\",\n    \"timeframe_start\": \"1680\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Rural France\",\n    \"location_reasoning\": \"Jean-Fran\u00e7ois Regnard was a French playwright who wrote comedies set in France. The title 'Attendez-moy sous l'orme' refers to an elm tree, which suggests a rural setting. French comedies of this period often took place in rural settings or provincial towns, contrasting with the court life of Paris. Without specific details from the play itself, a general rural French setting is most likely.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 4.759818077087402,
+  "prompt_tokens": 495,
+  "completion_tokens": 245,
+  "total_tokens": 740
+}

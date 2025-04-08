@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k61486960",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Reign of Louis XIV\",\n    \"period_reasoning\": \"The play was published in 1694 during the reign of Louis XIV (1643\u20131715), a period when Jean-Fran\u00e7ois Regnard was active. French plays of this era often reflected contemporary settings and societal norms.\",\n    \"timeframe_start\": \"1643\",\n    \"timeframe_end\": \"1715\",\n    \"location\": \"Poitiers\",\n    \"location_reasoning\": \"Poitiers is the most frequently mentioned place in the play's context, with multiple sentences referencing events, conversations, and social dynamics tied to the city (e.g., 'charmantes conversations de Poitiers').\",\n    \"location_qid\": \"Q13386\"\n}",
+  "duration_seconds": 89.89606308937073,
+  "prompt_tokens": 1342,
+  "completion_tokens": 1808,
+  "total_tokens": 3150
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k63412802",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Ancient Roman Republic\",\n    \"period_reasoning\": \"The play features characters who are Roman officials (Consul, Dictator) and mentions institutions like the Senate. It also refers to battles against the Samnites, which were a series of wars fought by the Roman Republic between the 4th and 3rd centuries BCE. The mentioning of Fabie (likely a reference to Fabius) and phrases like 'c\u0153ur Romain' (Roman heart) strongly indicate the Roman Republican period.\",\n    \"timeframe_start\": \"-343\",\n    \"timeframe_end\": \"-290\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"Rome is mentioned 84 times in the text, making it the most frequently mentioned place. Characters hold Roman governmental positions (Consul, Dictator), and there are multiple references to Rome as the center of action. The play mentions battles against the Samnites, which were fought to defend Roman territories. The text also includes references to the Roman Senate and Roman military campaigns, which further establishes Rome as the primary location.\",\n    \"location_qid\": \"Q220\"\n}",
+  "duration_seconds": 8.188016176223755,
+  "prompt_tokens": 2340,
+  "completion_tokens": 264,
+  "total_tokens": 2604
+}

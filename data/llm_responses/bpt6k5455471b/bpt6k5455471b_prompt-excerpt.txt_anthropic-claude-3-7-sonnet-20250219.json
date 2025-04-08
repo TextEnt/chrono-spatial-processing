@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5455471b",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Ancient Greek Mythological Period\",\n    \"period_reasoning\": \"The excerpt contains references to pastoral elements and names like 'DAPHNIS' that are typical of Greek mythology and pastoral poetry. The name 'Coronis' in the title is a figure from Greek mythology who was loved by Apollo. The pastoral setting with references to 'Amour' (love) and passionate sentiments suggests a mythological narrative set in ancient times.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"-300\",\n    \"location\": \"Ancient Greece\",\n    \"location_reasoning\": \"The play is described as a 'pastorale h\u00e9ro\u00efque' which often drew from Greek mythology. The character name 'Daphnis' appears in the excerpt, who is a figure from Greek pastoral mythology. The title mentions 'Coronis' who in Greek mythology was a Thessalian princess loved by Apollo. These elements strongly indicate an Ancient Greek setting.\",\n    \"location_qid\": \"Q35573\"\n}",
+  "duration_seconds": 5.085325002670288,
+  "prompt_tokens": 698,
+  "completion_tokens": 243,
+  "total_tokens": 941
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k852919x",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Ancient Gaul (pre-Roman and Roman period)\",\n    \"period_reasoning\": \"The play contains references to Druids ('du bravant Dr\u00fcide'), ancient Gauls ('nos anciens Gaulois'), and Gallic religious practices like harvesting mistletoe (Gui) from sacred oak trees, which were central to pre-Roman Celtic religious ceremonies. The references to 'Venez au Gui l'an neuf, (disait-on) aux Gaulois, Quand du Savant Druide ils observaient les lois' clearly indicates a setting during the time when Druids were active in Gaul, before Christianity fully replaced indigenous practices.\",\n    \"timeframe_start\": \"-100\",\n    \"timeframe_end\": \"400\",\n    \"location\": \"Poitiers\",\n    \"location_reasoning\": \"Poitiers is repeatedly mentioned throughout the text as the central location where the action takes place. The text specifically mentions characters being 'dans Poitiers' (in Poitiers), references to 'tout Poitiers' (all of Poitiers), and mentions specific families in Poitiers ('Fo\u00fcasseau, P\u00e9l\u00e9rin, et Caill\u00e9 dans Poitiers'). The city is clearly the setting for the narrative, and characters discuss its reputation and social dynamics extensively.\",\n    \"location_qid\": \"Q39322\"\n}",
+  "duration_seconds": 8.222233772277832,
+  "prompt_tokens": 1812,
+  "completion_tokens": 337,
+  "total_tokens": 2149
+}

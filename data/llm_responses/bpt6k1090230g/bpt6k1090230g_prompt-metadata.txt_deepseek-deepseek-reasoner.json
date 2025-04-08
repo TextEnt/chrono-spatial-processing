@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090230g",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was published in 1673, during the French classical period (17th century), and comedies from this era typically reflected contemporary societal norms and settings.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play is written in French by a French author and belongs to the 17th-century French theatrical tradition, which commonly depicted domestic settings in France.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 50.58206605911255,
+  "prompt_tokens": 451,
+  "completion_tokens": 822,
+  "total_tokens": 1273
+}

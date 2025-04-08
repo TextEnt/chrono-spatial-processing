@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090276g",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Early Modern Period\",\n    \"period_reasoning\": \"The play features characters with names and titles such as 'Sire' and 'Reine', suggesting a monarchical society typical of the Early Modern Period. The mention of places like 'Sicile' and political elements like 'sceptre' and 'Vice-Roi' align with European monarchies during this time.\",\n    \"timeframe_start\": \"1500\",\n    \"timeframe_end\": \"1800\",\n    \"location\": \"Sicily\",\n    \"location_reasoning\": \"The play frequently mentions 'Sicile' (Sicily) as a central location, indicating that the action is likely set there. Sicily was a significant region in European history, often involved in political and royal affairs, which aligns with the themes of the play.\",\n    \"location_qid\": \"Q39\"\n}",
+  "duration_seconds": 5.1320109367370605,
+  "prompt_tokens": 1545,
+  "completion_tokens": 188,
+  "total_tokens": 1733
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090048g",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Ancient Greece or Rome\",\n    \"period_reasoning\": \"The title 'Le Pyrame' suggests the play is based on the story of Pyramus and Thisbe, a tragic love story from Greek mythology that was popularized in Ovid's 'Metamorphoses'. This suggests the play is set in ancient times when these mythological characters would have lived.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"100\",\n    \"location\": \"Babylon\",\n    \"location_reasoning\": \"In the original myth of Pyramus and Thisbe, as told in Ovid's 'Metamorphoses', the lovers lived in the city of Babylon. Since this play appears to be based on this classical myth, it's reasonable to assume it follows the traditional setting.\",\n    \"location_qid\": \"Q987\"\n}",
+  "duration_seconds": 4.359601259231567,
+  "prompt_tokens": 493,
+  "completion_tokens": 208,
+  "total_tokens": 701
+}

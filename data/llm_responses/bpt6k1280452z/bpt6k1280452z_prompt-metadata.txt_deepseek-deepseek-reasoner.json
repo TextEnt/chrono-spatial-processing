@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280452z",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"17th century France (Ancien R\u00e9gime)\",\n    \"period_reasoning\": \"Moli\u00e8re's plays typically satirize contemporary French society, and 'L'\u00c9cole des femmes' reflects 17th-century social norms and marital practices, aligning with the publication date (1674) and author's active period.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"Moli\u00e8re's works are set in his native France, often in urban or domestic settings reflective of his audience's environment. No indication of a foreign or historical setting is present in the title or metadata.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 46.70297193527222,
+  "prompt_tokens": 450,
+  "completion_tokens": 635,
+  "total_tokens": 1085
+}

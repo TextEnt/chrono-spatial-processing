@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10901126",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Early Roman Empire (Julio-Claudian dynasty)\",\n    \"period_reasoning\": \"The play's title references Germanicus, a prominent Roman general and member of the Julio-Claudian dynasty. His historical lifetime (15 BCE\u201319 CE) places the context in the early Roman Empire.\",\n    \"timeframe_start\": \"-15\",\n    \"timeframe_end\": \"30\",\n    \"location\": \"Roman Empire\",\n    \"location_reasoning\": \"Germanicus was a Roman general whose campaigns and political influence were centered in the Roman Empire, particularly in Germania and Rome.\",\n    \"location_qid\": \"Q2277\"\n}",
+  "duration_seconds": 31.361232042312622,
+  "prompt_tokens": 438,
+  "completion_tokens": 498,
+  "total_tokens": 936
+}

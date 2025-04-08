@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280452z",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"17th century France\",\n    \"period_reasoning\": \"The play 'L'Escole des femmes' by Moli\u00e8re was published in 1674, during the 17th century. Moli\u00e8re wrote contemporary plays set in his own time period. The language and names (Arnolphe, Horace, Agnes) are consistent with 17th century French society.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play is written by Moli\u00e8re, a French playwright. The language in the excerpt is French, and the character names (Arnolphe, Horace, Agnes) are typical of French literature of the period. Moli\u00e8re predominantly set his plays in France, often depicting French society and customs of his time.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 4.440496206283569,
+  "prompt_tokens": 700,
+  "completion_tokens": 220,
+  "total_tokens": 920
+}

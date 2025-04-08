@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8610783h",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was written in 1669 by Moli\u00e8re, and the language and context suggest it is set in the contemporary 17th century France.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1699\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"The play is a French comedy by Moli\u00e8re, typically set in Paris, which is the central location for French comedies of that era.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 7.273641109466553,
+  "prompt_tokens": 1417,
+  "completion_tokens": 1163,
+  "total_tokens": 2580
+}

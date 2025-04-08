@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8569793",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Byzantine Empire under Phocas\",\n    \"period_reasoning\": \"The play centers on Phocas, a historical figure identifiable as Byzantine Emperor Phocas (reigned 602\u2013610 CE). References to his tyranny, military revolts (e.g., in Mysia), and usurpation align with his historical reign.\",\n    \"timeframe_start\": \"602\",\n    \"timeframe_end\": \"610\",\n    \"location\": \"Thrace\",\n    \"location_reasoning\": \"Thrace is the most frequently mentioned place, described as a troubled region with references to its geography and political unrest. Other listed places (e.g., Constantinople) further situate the narrative in the Byzantine Empire, with Thrace as a key setting.\",\n    \"location_qid\": \"Q161549\"\n}",
+  "duration_seconds": 51.27912783622742,
+  "prompt_tokens": 2241,
+  "completion_tokens": 749,
+  "total_tokens": 2990
+}

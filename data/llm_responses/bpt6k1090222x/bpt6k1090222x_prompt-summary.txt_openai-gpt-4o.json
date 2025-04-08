@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090222x",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Elizabethan Era\",\n    \"period_reasoning\": \"The play is titled 'Le Comte d'Essex', which refers to Robert Devereux, 2nd Earl of Essex, a notable figure in the Elizabethan Era. He was a favorite of Queen Elizabeth I and was executed in 1601. The mention of a 'Reine' (Queen) and political intrigue suggests the setting is during the reign of Elizabeth I.\",\n    \"timeframe_start\": \"1558\",\n    \"timeframe_end\": \"1603\",\n    \"location\": \"England\",\n    \"location_reasoning\": \"The play's title and context suggest it is set in England, as Robert Devereux, the Earl of Essex, was an English nobleman. The mention of 'Londres' (London) further supports this setting.\",\n    \"location_qid\": \"Q21\"\n}",
+  "duration_seconds": 3.9320356845855713,
+  "prompt_tokens": 1232,
+  "completion_tokens": 191,
+  "total_tokens": 1423
+}

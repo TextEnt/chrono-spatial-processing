@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8614585w",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Merovingian period\",\n    \"period_reasoning\": \"The play centers around sainte Reyne d'Alise, placing its setting in the early medieval era during the Merovingian dynasty, which ruled the Frankish Kingdom from the 5th to the 8th century.\",\n    \"timeframe_start\": \"481\",\n    \"timeframe_end\": \"751\",\n    \"location\": \"Alise-Sainte-Reine, Kingdom of the Franks\",\n    \"location_reasoning\": \"The reference to sainte Reyne d'Alise and the abbey of Flavigny indicates the setting is in Alise-Sainte-Reine, a locale within the historical Kingdom of the Franks during the Merovingian period.\",\n    \"location_qid\": \"Q244816\"\n}",
+  "duration_seconds": 7.317374229431152,
+  "prompt_tokens": 632,
+  "completion_tokens": 1142,
+  "total_tokens": 1774
+}

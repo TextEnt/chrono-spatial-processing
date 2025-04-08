@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090131j",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Ancient Kingdom of Cappadocia\",\n    \"period_reasoning\": \"The play mentions characters with ancient names such as 'Ariarath\u00e9e', 'Berenice', and 'Mitridate'. Ariarathes was a dynastic name for kings of Cappadocia. Mithridates (Mitridate) is associated with the Kingdom of Pontus, which had connections with Cappadocia. Berenice was a common name for Hellenistic royal women. The mentions of thrones, kings, and succession suggests a royal Hellenistic setting.\",\n    \"timeframe_start\": \"-300\",\n    \"timeframe_end\": \"-17\",\n    \"location\": \"Cappadocia\",\n    \"location_reasoning\": \"The character 'Ariarath\u00e9e' suggests Cappadocia, as Ariarathes was the name of several kings of the ancient Kingdom of Cappadocia. The mention of 'Syrie' (Syria) as one of the top places indicates the setting is likely in the region of Anatolia near Syria, which matches Cappadocia's location. The context involving royal succession, thrones, and political marriages is consistent with Hellenistic kingdoms like Cappadocia.\",\n    \"location_qid\": \"Q131181\"\n}",
+  "duration_seconds": 7.091281890869141,
+  "prompt_tokens": 1215,
+  "completion_tokens": 314,
+  "total_tokens": 1529
+}

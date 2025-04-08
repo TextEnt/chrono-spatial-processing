@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8607044w",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"The title 'L'Amour tirannique' suggests themes of tyranny and love, which are common in plays set in ancient times. Additionally, 17th-century French plays often drew inspiration from Classical Antiquity, particularly Ancient Greece and Rome.\",\n    \"timeframe_start\": \"-500\",\n    \"timeframe_end\": \"500\",\n    \"location\": \"Ancient Rome\",\n    \"location_reasoning\": \"Given the common practice of setting 17th-century French plays in Ancient Rome due to its rich history of political intrigue and drama, it is likely that the play is set in this location.\",\n    \"location_qid\": \"Q220\"\n}",
+  "duration_seconds": 2.533900022506714,
+  "prompt_tokens": 452,
+  "completion_tokens": 155,
+  "total_tokens": 607
+}

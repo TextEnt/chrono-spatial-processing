@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k12801807",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Renaissance\",\n    \"period_reasoning\": \"The play 'L'Aminte' is a pastoral play, a genre that was popular during the Renaissance period. The original work by Torquato Tasso, 'Aminta', was written in 1573, which aligns with the Renaissance period.\",\n    \"timeframe_start\": \"1400\",\n    \"timeframe_end\": \"1600\",\n    \"location\": \"Italy\",\n    \"location_reasoning\": \"The original play 'Aminta' by Torquato Tasso is Italian, and the pastoral setting with nymphs and fountains is typical of an idealized Italian countryside, which was a common setting for pastoral plays of the Renaissance.\",\n    \"location_qid\": \"Q38\"\n}",
+  "duration_seconds": 3.1005501747131348,
+  "prompt_tokens": 615,
+  "completion_tokens": 164,
+  "total_tokens": 779
+}

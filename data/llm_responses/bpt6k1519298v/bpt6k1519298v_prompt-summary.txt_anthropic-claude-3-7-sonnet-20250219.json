@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1519298v",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"17th century France\",\n    \"period_reasoning\": \"The play was published in 1662 (from metadata) and contains references to contemporary French society. The characters discuss Louis (possibly Louis XIV), and the dialogue, manners, and social dynamics (servants/masters relationship, mentions of Marquis, Vicomte, Duc) are consistent with 17th century French society. The comedy appears to be set in its contemporary period as was common for comedies of that era.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1699\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"Several clues point to France as the setting: 1) The play is written in French; 2) The character mentions France directly in the limited excerpts; 3) The social titles mentioned (Marquis, Vicomte, Duc) are from the French aristocratic system; 4) The play was performed at the 'th\u00e9\u00e2tre royal du Marais' which was a Parisian theater; 5) One character mentions wanting to leave for Portugal, implying they are currently in France.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 6.473051071166992,
+  "prompt_tokens": 2662,
+  "completion_tokens": 282,
+  "total_tokens": 2944
+}

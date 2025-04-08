@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8528543",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Achaemenid Empire\",\n    \"period_reasoning\": \"The term 'Magus' refers to the ancient Persian priestly caste, strongly associated with the Achaemenid Empire (6th\u20134th century BCE). French 17th-century tragicomedies often drew on classical or exoticized historical settings.\",\n    \"timeframe_start\": \"-550\",\n    \"timeframe_end\": \"-330\",\n    \"location\": \"Persia\",\n    \"location_reasoning\": \"The Magi were central to Zoroastrianism and Persian imperial culture, indicating a likely Persian setting. The title's reference to 'Magus' aligns with this context.\",\n    \"location_qid\": \"Q794\"\n}",
+  "duration_seconds": 38.84993100166321,
+  "prompt_tokens": 441,
+  "completion_tokens": 705,
+  "total_tokens": 1146
+}

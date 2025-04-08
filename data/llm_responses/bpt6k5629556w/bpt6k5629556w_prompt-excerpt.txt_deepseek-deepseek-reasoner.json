@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5629556w",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Greek Heroic Age\",\n    \"period_reasoning\": \"The play features Alcide (Heracles/Hercules) and Dejanire (Deianira), central figures in Greek mythology. Heracles' mythic exploits are traditionally set during the Greek Heroic Age.\",\n    \"timeframe_start\": \"-1300\",\n    \"timeframe_end\": \"-1100\",\n    \"location\": \"Ancient Greece\",\n    \"location_reasoning\": \"The characters Alcide (Heracles) and Dejanire (Deianira) are from Greek mythology, and their stories are rooted in ancient Greek settings like Trachis or Tiryns.\",\n    \"location_qid\": \"Q11772\"\n}",
+  "duration_seconds": 38.56759786605835,
+  "prompt_tokens": 632,
+  "completion_tokens": 720,
+  "total_tokens": 1352
+}

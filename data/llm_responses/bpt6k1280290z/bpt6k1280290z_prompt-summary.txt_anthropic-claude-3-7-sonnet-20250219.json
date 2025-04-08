@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280290z",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Ancient Rome, early Roman Empire\",\n    \"period_reasoning\": \"The play revolves around Augustus (Auguste), who was the first Roman Emperor from 27 BCE to 14 CE. The play mentions key historical figures like Caesar, Pompey, and Sylla (Sulla), and describes events related to Rome's transition from Republic to Empire. References to 'Emperor Auguste' and descriptions of civil wars where 'Rome tore at its entrails' indicate the setting is during Augustus's reign, after the fall of the Republic.\",\n    \"timeframe_start\": \"-27\",\n    \"timeframe_end\": \"14\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"Rome is explicitly mentioned as the location throughout the text. It appears as the most frequent place (50 mentions) and is described as 'ma\u00eetresse du monde' (mistress of the world). The play describes events happening in Rome, with references to 'places publiques' (public squares) and scenes taking place in the city. The characters are concerned with Rome's political situation and leadership.\",\n    \"location_qid\": \"Q220\"\n}",
+  "duration_seconds": 7.708003044128418,
+  "prompt_tokens": 2878,
+  "completion_tokens": 265,
+  "total_tokens": 3143
+}

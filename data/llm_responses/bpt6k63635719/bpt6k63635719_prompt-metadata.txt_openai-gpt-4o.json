@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k63635719",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Ancient Greece\",\n    \"period_reasoning\": \"The play is based on 'Histoire d'H\u00e9liodore', which refers to the ancient Greek novel 'Aethiopica' by Heliodorus of Emesa. This novel is set in the context of ancient Greece.\",\n    \"timeframe_start\": \"-00400\",\n    \"timeframe_end\": \"-00200\",\n    \"location\": \"Greece\",\n    \"location_reasoning\": \"The original story of 'Aethiopica' by Heliodorus is set in ancient Greece, which suggests that the play's setting is likely the same.\",\n    \"location_qid\": \"Q41\"\n}",
+  "duration_seconds": 6.059323072433472,
+  "prompt_tokens": 481,
+  "completion_tokens": 145,
+  "total_tokens": 626
+}

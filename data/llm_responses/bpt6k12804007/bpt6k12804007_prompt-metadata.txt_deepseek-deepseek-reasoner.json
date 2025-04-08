@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k12804007",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"17th century France\",\n    \"period_reasoning\": \"Moli\u00e8re's plays are typically set in his contemporary France, reflecting the social norms and settings of the 17th century, aligning with the play's publication date (1662).\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"Moli\u00e8re's works generally depict French society of his time, with no indication in the title or metadata of a non-French setting.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 45.35530614852905,
+  "prompt_tokens": 450,
+  "completion_tokens": 757,
+  "total_tokens": 1207
+}

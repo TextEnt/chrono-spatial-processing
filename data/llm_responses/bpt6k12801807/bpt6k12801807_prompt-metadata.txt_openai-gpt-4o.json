@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k12801807",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Renaissance\",\n    \"period_reasoning\": \"The play 'L'Aminte' is a pastoral play originally written by Torquato Tasso, an Italian poet of the late Renaissance period. The themes and style are consistent with the Renaissance period, which focused on classical themes and humanism.\",\n    \"timeframe_start\": \"1400\",\n    \"timeframe_end\": \"1600\",\n    \"location\": \"Italy\",\n    \"location_reasoning\": \"The original play 'Aminta' by Torquato Tasso is set in a pastoral, idealized version of Italy. The French translation maintains the setting of the original work.\",\n    \"location_qid\": \"Q38\"\n}",
+  "duration_seconds": 2.5072991847991943,
+  "prompt_tokens": 458,
+  "completion_tokens": 152,
+  "total_tokens": 610
+}

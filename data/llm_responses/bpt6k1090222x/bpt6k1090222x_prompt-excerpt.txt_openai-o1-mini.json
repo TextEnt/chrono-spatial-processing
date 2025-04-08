@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090222x",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Late 16th century to Early 17th century\",\n    \"period_reasoning\": \"The play 'Le Comte d'Essex' likely refers to Robert Devereux, 2nd Earl of Essex, a prominent figure in late 16th century England who was executed in 1601.\",\n    \"timeframe_start\": \"1550\",\n    \"timeframe_end\": \"1601\",\n    \"location\": \"England\",\n    \"location_reasoning\": \"The title 'Le Comte d'Essex' refers to the Count of Essex, a noble title in England, specifically associated with the political and courtly settings of late 16th century England.\",\n    \"location_qid\": \"Q20\"\n}",
+  "duration_seconds": 5.713927984237671,
+  "prompt_tokens": 598,
+  "completion_tokens": 876,
+  "total_tokens": 1474
+}

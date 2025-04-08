@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k62514727",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was published in 1662, during the reign of Louis XIV (1643\u20131715), and French comedies of this era often reflected contemporary settings. The mention of 'Paris' and the absence of indicators for an earlier historical context suggest a 17th-century timeframe.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"The context explicitly states 'La Sc\u00e8ne est \u00e0 Paris' (The scene is in Paris), and 'Paris' is the top-mentioned place with two occurrences, confirming the setting.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 48.57970714569092,
+  "prompt_tokens": 1266,
+  "completion_tokens": 941,
+  "total_tokens": 2207
+}

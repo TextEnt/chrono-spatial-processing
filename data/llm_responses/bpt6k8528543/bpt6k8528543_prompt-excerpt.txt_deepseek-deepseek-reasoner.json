@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8528543",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": null,\n    \"period_reasoning\": \"The excerpt does not contain explicit references to historical events, technological markers, or cultural specifics that would allow confident identification of the period. The title and fragmented dialogue (e.g., 'anoblissement') suggest themes of social hierarchy, common in early modern Europe, but no direct temporal clues are present.\",\n    \"timeframe_start\": null,\n    \"timeframe_end\": null,\n    \"location\": null,\n    \"location_reasoning\": \"No geographic identifiers (e.g., place names, linguistic/cultural markers) are present in the excerpt. The French authorship and language suggest a French cultural context, but the setting could be fictional or allegorical.\",\n    \"location_qid\": null\n}",
+  "duration_seconds": 57.49435806274414,
+  "prompt_tokens": 609,
+  "completion_tokens": 1105,
+  "total_tokens": 1714
+}

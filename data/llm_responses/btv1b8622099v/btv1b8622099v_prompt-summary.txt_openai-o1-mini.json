@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8622099v",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": null,\n    \"period_reasoning\": \"The provided information does not include sufficient details to determine the historical period in which the play is set.\",\n    \"timeframe_start\": null,\n    \"timeframe_end\": null,\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"The place 'Paris' is frequently mentioned in the context, suggesting that the action of the play takes place in Paris.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 16.614791870117188,
+  "prompt_tokens": 1877,
+  "completion_tokens": 1140,
+  "total_tokens": 3017
+}

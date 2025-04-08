@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k852855g",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was published in 1695, which suggests it is likely set in a contemporary or near-contemporary setting, typical for comedies of that era.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The author, Fran\u00e7ois Passerat, was French, and the title of the play is in French, suggesting the play is set in France.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 2.1928961277008057,
+  "prompt_tokens": 448,
+  "completion_tokens": 127,
+  "total_tokens": 575
+}

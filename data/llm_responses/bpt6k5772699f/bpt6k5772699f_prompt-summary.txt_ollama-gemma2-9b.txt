@@ -1,9 +1,0 @@
-{
-    "period": "XVII century",
-    "period_reasoning": "The metadata explicitly states that the play was published in 1662.",
-    "timeframe_start": "1600",
-    "timeframe_end": "1700",
-    "location": "Babilone",
-    "location_reasoning": "The title of the play explicitly mentions \"La mort de Baltazar, roy de Babilone\".",
-    "location_qid": "Q3948" 
-}

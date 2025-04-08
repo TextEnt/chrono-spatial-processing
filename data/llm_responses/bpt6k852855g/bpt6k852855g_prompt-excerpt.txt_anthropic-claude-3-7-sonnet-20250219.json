@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k852855g",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"17th century France\",\n    \"period_reasoning\": \"The metadata indicates this is a French play written in the 17th century (publication date 1695). The action likely takes place contemporary to when it was written, as was common for comedies of this period. The character names (Lucrece, Angelique, Colin) and language patterns suggest a setting contemporary to the author's time.\",\n    \"timeframe_start\": \"1650\",\n    \"timeframe_end\": \"1695\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play is written in French by a French author (Fran\u00e7ois Passerat). The excerpt contains French character names (Lucrece, Angelique, Colin) and French expressions (like 'pargu\u00e9'). The title mentions 'maison de campagne' (country house), suggesting a rural French setting. Given the publication date and language, the play is almost certainly set in France.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 4.9581687450408936,
+  "prompt_tokens": 690,
+  "completion_tokens": 237,
+  "total_tokens": 927
+}

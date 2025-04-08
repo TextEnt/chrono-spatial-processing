@@ -1,9 +1,0 @@
-{
-    "period": "Classical Greece",
-    "period_reasoning": "The play's title references Sparta, a prominent city-state in Classical Greece. French 17th-century tragedies often drew from ancient Greek settings, particularly Sparta's historical/mythological context.",
-    "timeframe_start": "-800",
-    "timeframe_end": "-300",
-    "location": "Sparta",
-    "location_reasoning": "The title explicitly states 'princesse de Sparte' (princess of Sparta), indicating the action occurs in the ancient Greek city-state of Sparta.",
-    "location_qid": "Q5699"
-}

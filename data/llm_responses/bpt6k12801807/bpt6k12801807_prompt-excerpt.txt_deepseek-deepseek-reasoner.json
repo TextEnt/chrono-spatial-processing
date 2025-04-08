@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k12801807",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Classical antiquity\",\n    \"period_reasoning\": \"The play is a pastoral drama, a genre often set in an idealized ancient rural past. The mention of nymphs and mythological references aligns with classical antiquity themes common in Renaissance pastoral works.\",\n    \"timeframe_start\": \"-500\",\n    \"timeframe_end\": \"-100\",\n    \"location\": \"Arcadia\",\n    \"location_reasoning\": \"Pastoral dramas like Tasso's 'Aminta' (the original Italian work) are traditionally set in Arcadia, an idealized rustic region of ancient Greece. The characters' names (Tirsis, Daphn\u00e9) and natural setting (nymphs, fountains) reinforce this pastoral Arcadian context.\",\n    \"location_qid\": \"Q170284\"\n}",
+  "duration_seconds": 36.55879306793213,
+  "prompt_tokens": 625,
+  "completion_tokens": 698,
+  "total_tokens": 1323
+}

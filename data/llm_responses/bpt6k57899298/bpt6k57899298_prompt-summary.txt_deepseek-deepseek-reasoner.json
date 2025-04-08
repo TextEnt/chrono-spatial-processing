@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k57899298",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Roman Republic\",\n    \"period_reasoning\": \"The play mentions 'C\u00e9sar' and 'C\u00e6sar' (Julius Caesar) and 'Rome' as a central location, which strongly suggests a Roman Republic setting. The presence of a character named 'C\u00e9sar' and references to Roman political conflicts align with the late Roman Republic period (1st century BCE).\",\n    \"timeframe_start\": \"-100\",\n    \"timeframe_end\": \"-44\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"Rome is the top-mentioned place (frequency: 14) and is directly tied to political and military conflicts in the provided sentences. References to Roman glory, C\u00e9sar, and the Latin Empire further solidify Rome as the primary setting.\",\n    \"location_qid\": \"Q220\"\n}",
+  "duration_seconds": 18.52359104156494,
+  "prompt_tokens": 1554,
+  "completion_tokens": 505,
+  "total_tokens": 2059
+}

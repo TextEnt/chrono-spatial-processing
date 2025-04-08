@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8568902",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Antiquity\",\n    \"period_reasoning\": \"The title 'Hypsicratee' references a name associated with ancient Greek historical or mythical contexts, suggesting the play is set in ancient Greece.\",\n    \"timeframe_start\": \"-500\",\n    \"timeframe_end\": \"-300\",\n    \"location\": \"Greece\",\n    \"location_reasoning\": \"Hypsicratee is a name linked to ancient Greek figures, indicating the geographic setting is Greece.\",\n    \"location_qid\": \"Q41\"\n}",
+  "duration_seconds": 5.121509075164795,
+  "prompt_tokens": 613,
+  "completion_tokens": 769,
+  "total_tokens": 1382
+}

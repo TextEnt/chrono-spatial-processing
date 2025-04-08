@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k58122453",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was published in 1637 (17th century), and the lack of explicit historical markers in the provided text suggests it is set in a contemporary context typical of French comedic works of the early modern period.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris, France\",\n    \"location_reasoning\": \"Paris is the most frequently mentioned place (13 mentions), with characters referencing events and social dynamics specific to Paris. The top_5_places list also includes 'PARIS' and 'France,' reinforcing this setting.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 80.17889714241028,
+  "prompt_tokens": 1769,
+  "completion_tokens": 1529,
+  "total_tokens": 3298
+}

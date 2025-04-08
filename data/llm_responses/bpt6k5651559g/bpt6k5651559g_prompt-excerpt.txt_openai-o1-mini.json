@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5651559g",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Early modern period\",\n    \"period_reasoning\": \"The play is set during the time of Cardinal Richelieu, a prominent figure in early 17th century France, indicating the early modern period.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1643\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"Cardinal Richelieu was the chief minister to King Louis XIII of France and was primarily based in Paris, making it the likely setting of the play.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 8.938440084457397,
+  "prompt_tokens": 612,
+  "completion_tokens": 1356,
+  "total_tokens": 1968
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090222x",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Elizabethan Era\",\n    \"period_reasoning\": \"The play is titled 'Le Comte d'Essex,' referring to Robert Devereux, 2nd Earl of Essex, who was a prominent figure during the reign of Queen Elizabeth I of England. His life and actions are typically associated with the late 16th century to early 17th century.\",\n    \"timeframe_start\": \"1580\",\n    \"timeframe_end\": \"1601\",\n    \"location\": \"England\",\n    \"location_reasoning\": \"The mention of 'Le Comte d'Essex' indicates that the play is set in England, as Robert Devereux was an English nobleman. The reference to the 'r\u00e8gne d'une femme' likely alludes to Queen Elizabeth I, further supporting the English setting.\",\n    \"location_qid\": \"Q21\"\n}",
+  "duration_seconds": 3.0814919471740723,
+  "prompt_tokens": 578,
+  "completion_tokens": 188,
+  "total_tokens": 766
+}

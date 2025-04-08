@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b86221039",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was published in 1669, and the language and style suggest it is set in the same century. The themes and societal norms reflected in the play align with the 17th-century French society.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1699\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"The play mentions Paris explicitly, and given the context of French theatre in the 17th century, it is likely set in Paris, which was a central hub for cultural and theatrical activities during that time.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 3.3339552879333496,
+  "prompt_tokens": 1063,
+  "completion_tokens": 150,
+  "total_tokens": 1213
+}

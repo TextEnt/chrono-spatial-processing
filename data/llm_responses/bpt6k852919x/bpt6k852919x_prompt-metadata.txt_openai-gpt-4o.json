@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k852919x",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": null,\n    \"period_reasoning\": \"The title 'Le Mariage de Fine-Epice. Com\u00e9die' does not provide sufficient information to determine the historical period in which the play is set. Without additional context or content from the play, it is not possible to ascertain the timeframe.\",\n    \"timeframe_start\": null,\n    \"timeframe_end\": null,\n    \"location\": null,\n    \"location_reasoning\": \"The title alone does not provide enough information to determine the geographic location where the action of the play takes place. Without further context or content from the play, it is not possible to identify the location.\",\n    \"location_qid\": null\n}",
+  "duration_seconds": 2.2321178913116455,
+  "prompt_tokens": 437,
+  "completion_tokens": 147,
+  "total_tokens": 584
+}

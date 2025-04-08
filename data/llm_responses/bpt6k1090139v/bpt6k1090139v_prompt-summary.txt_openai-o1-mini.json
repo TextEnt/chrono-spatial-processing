@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090139v",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was published in 1662 and references to Paris and contemporary institutions like the Petit Bourbon theatre indicate a 17th-century setting.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"Multiple mentions of Paris and specific Parisian locations like the Petit Bourbon theatre within the play's context indicate that the action is set in Paris.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 5.171914100646973,
+  "prompt_tokens": 1601,
+  "completion_tokens": 647,
+  "total_tokens": 2248
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090049w",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"The play's title 'La Pompe fun\u00e8bre, ou Damon et Cloris, pastorale' suggests a pastoral theme, which often draws on classical settings. Additionally, the use of names like 'Damon' and 'Cloris' is reminiscent of characters from classical literature, indicating a setting in Classical Antiquity.\",\n    \"timeframe_start\": \"-500\",\n    \"timeframe_end\": \"500\",\n    \"location\": \"Ancient Greece\",\n    \"location_reasoning\": \"The names 'Damon' and 'Cloris' are of Greek origin, and pastoral themes are commonly associated with Ancient Greece, particularly in the context of literature and theatre.\",\n    \"location_qid\": \"Q11767\"\n}",
+  "duration_seconds": 2.602137804031372,
+  "prompt_tokens": 457,
+  "completion_tokens": 168,
+  "total_tokens": 625
+}

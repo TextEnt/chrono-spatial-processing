@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10901126",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Early Roman Empire\",\n    \"period_reasoning\": \"The play references historical figures such as Germanicus and Tiberius and is set in Rome, indicating it takes place during the early Roman Empire in the 1st century AD.\",\n    \"timeframe_start\": \"14\",\n    \"timeframe_end\": \"19\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"Rome is the most frequently mentioned place in the context, and the characters are historical Roman figures, indicating the play is set in Rome.\",\n    \"location_qid\": \"Q220\"\n}",
+  "duration_seconds": 5.945631265640259,
+  "prompt_tokens": 1466,
+  "completion_tokens": 972,
+  "total_tokens": 2438
+}

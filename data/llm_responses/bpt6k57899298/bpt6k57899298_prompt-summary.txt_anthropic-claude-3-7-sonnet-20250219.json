@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k57899298",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Ancient Rome\",\n    \"period_reasoning\": \"The play mentions 'C\u00e9sar' (Caesar) multiple times among top persons, refers to the 'Empire Latin' (Latin Empire), and mentions Rome as being dominant with its 'glory' and 'exploits'. The characters have Roman names (Marcie, Cassie) and there are references to Roman political concepts. These elements suggest the play is set during the Roman Empire period, particularly during the time of Caesar.\",\n    \"timeframe_start\": \"-50\",\n    \"timeframe_end\": \"50\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"Rome is mentioned with the highest frequency (14 times) among places. The text describes Rome's glory, refers to the 'Empire Latin' (Latin Empire), and positions Rome as a conquering power. Characters refer to being under Rome's rule and subject to 'C\u00e9sar'. The detailed references to Rome as a political and military power strongly indicate the play is set in Rome itself.\",\n    \"location_qid\": \"Q220\"\n}",
+  "duration_seconds": 5.221204042434692,
+  "prompt_tokens": 1774,
+  "completion_tokens": 246,
+  "total_tokens": 2020
+}

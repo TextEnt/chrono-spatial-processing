@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8569793",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Roman Empire\",\n    \"period_reasoning\": \"The title 'Maurice tragoedie' suggests a tragic narrative possibly related to Saint Maurice, a 3rd-century Roman military leader. French 17th-century tragedies often drew from classical antiquity, and the mention of military terms ('gendarmes', 'tambour') aligns with Roman settings.\",\n    \"timeframe_start\": \"250\",\n    \"timeframe_end\": \"300\",\n    \"location\": null,\n    \"location_reasoning\": \"The excerpt lacks explicit geographic references. While Saint Maurice's martyrdom is associated with Agaunum (modern Switzerland), the text does not confirm this setting.\",\n    \"location_qid\": null\n}",
+  "duration_seconds": 81.31446981430054,
+  "prompt_tokens": 652,
+  "completion_tokens": 1594,
+  "total_tokens": 2246
+}

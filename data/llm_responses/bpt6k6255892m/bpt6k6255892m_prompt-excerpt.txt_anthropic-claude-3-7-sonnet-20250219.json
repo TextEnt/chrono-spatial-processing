@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k6255892m",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Late Renaissance / Early Baroque\",\n    \"period_reasoning\": \"The play was published in 1638, during the 17th century in France. Plays of this period typically depicted contemporary settings or classical settings. Given the character names (Lyzante, Clarimond, Clytie) which have a classical or pastoral influence, and the themes discussing poets, this appears to be set in its contemporary period or slightly earlier, placing it in the Late Renaissance or Early Baroque period.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1650\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play is a French work from the 17th century, written by Andr\u00e9 Mareschal. The title 'Le Railleur, ou La satyre du temps' is in French, and the excerpt shows French language and style. French plays of this period typically set their action in France unless explicitly stating otherwise. The character names and dialogue suggest a French setting, as they follow French dramatic conventions of the time.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 5.627421855926514,
+  "prompt_tokens": 677,
+  "completion_tokens": 261,
+  "total_tokens": 938
+}

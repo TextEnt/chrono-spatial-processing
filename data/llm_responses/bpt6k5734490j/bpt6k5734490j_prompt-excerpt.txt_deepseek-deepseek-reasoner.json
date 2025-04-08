@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5734490j",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"The excerpt includes pastoral elements (e.g., 'Berger' meaning shepherd, references to idealized rural life) common in works inspired by classical antiquity. The title explicitly labels it a 'pastorale,' a genre often set in a timeless, mythologized ancient past.\",\n    \"timeframe_start\": \"-500\",\n    \"timeframe_end\": \"100\",\n    \"location\": \"Arcadia (region of Greece)\",\n    \"location_reasoning\": \"Pastoral works like this one frequently evoke Arcadia, a symbolic locus of rustic harmony in classical literature. The use of shepherds and mythological names (Amaryllis) reinforces this association.\",\n    \"location_qid\": \"Q170284\"\n}",
+  "duration_seconds": 32.0362389087677,
+  "prompt_tokens": 615,
+  "completion_tokens": 593,
+  "total_tokens": 1208
+}

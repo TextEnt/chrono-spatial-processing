@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090155z",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"Jean de Rotrou was a 17th-century playwright, and his works are typically set in contemporary France.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"As a French playwright, Jean de Rotrou's plays are commonly set in France.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 5.217420816421509,
+  "prompt_tokens": 458,
+  "completion_tokens": 822,
+  "total_tokens": 1280
+}

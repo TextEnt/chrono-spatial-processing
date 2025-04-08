@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b86221269",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Classical antiquity (Roman Empire)\",\n    \"period_reasoning\": \"The title references Diana (Diane), a Roman goddess, indicating a mythological or classical Roman setting, common in 17th-century French comedies inspired by antiquity.\",\n    \"timeframe_start\": \"-753\",\n    \"timeframe_end\": \"476\",\n    \"location\": \"Ancient Rome\",\n    \"location_reasoning\": \"Diana is a central figure in Roman mythology, and the play's title suggests a setting tied to her mythological context.\",\n    \"location_qid\": \"Q1747689\"\n}",
+  "duration_seconds": 64.9838080406189,
+  "prompt_tokens": 457,
+  "completion_tokens": 1290,
+  "total_tokens": 1747
+}

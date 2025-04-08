@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280290z",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Roman Empire\",\n    \"period_reasoning\": \"The play is titled 'Cinna, ou la Cl\u00e9mence d'Auguste,' which refers to Augustus, the first Roman Emperor. The historical context of Augustus suggests the setting is during the early Roman Empire.\",\n    \"timeframe_start\": \"-0027\",\n    \"timeframe_end\": \"0014\",\n    \"location\": \"Ancient Rome\",\n    \"location_reasoning\": \"The mention of Augustus, a central figure in Roman history, indicates that the play is set in Ancient Rome.\",\n    \"location_qid\": \"Q220\"\n}",
+  "duration_seconds": 3.743410348892212,
+  "prompt_tokens": 610,
+  "completion_tokens": 133,
+  "total_tokens": 743
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8569793",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Late Roman Empire\",\n    \"period_reasoning\": \"The title of the play is 'Maurice tragoedie', which likely refers to Emperor Maurice who ruled the Byzantine Empire from 582 to 602 CE. Maurice was a significant figure in the Late Roman/Early Byzantine period. The play was published in 1606, and historical figures were common subjects for 17th century tragedies.\",\n    \"timeframe_start\": \"582\",\n    \"timeframe_end\": \"602\",\n    \"location\": \"Constantinople\",\n    \"location_reasoning\": \"Emperor Maurice ruled the Eastern Roman Empire (Byzantine Empire) from Constantinople. As the play appears to be about this historical figure, the most likely setting would be Constantinople, the capital of the Byzantine Empire during Maurice's reign.\",\n    \"location_qid\": \"Q16869\"\n}",
+  "duration_seconds": 4.6616809368133545,
+  "prompt_tokens": 551,
+  "completion_tokens": 196,
+  "total_tokens": 747
+}

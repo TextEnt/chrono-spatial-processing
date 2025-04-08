@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k852855g",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was published in 1695 and is a French comedy, indicating it is likely set in the contemporary 17th century France.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The author is French and the play is a French comedy, suggesting that the action takes place in France.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 5.354269981384277,
+  "prompt_tokens": 468,
+  "completion_tokens": 768,
+  "total_tokens": 1236
+}

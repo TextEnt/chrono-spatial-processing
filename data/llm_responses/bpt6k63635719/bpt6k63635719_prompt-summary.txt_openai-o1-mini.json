@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k63635719",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Ptolemaic Egypt\",\n    \"period_reasoning\": \"The play frequently mentions Memphis and the Nil, which are significant in ancient Egypt. Additionally, the use of titles like Pontifex and the presence of characters with Greek-influenced names suggest a setting during the Ptolemaic period when Greek and Roman influences were prominent in Egypt.\",\n    \"timeframe_start\": \"-323\",\n    \"timeframe_end\": \"-30\",\n    \"location\": \"Memphis\",\n    \"location_reasoning\": \"Memphis is repeatedly referenced in the play, indicating that the action is set in this ancient Egyptian city.\",\n    \"location_qid\": \"Q22284\"\n}",
+  "duration_seconds": 6.756575107574463,
+  "prompt_tokens": 2412,
+  "completion_tokens": 1057,
+  "total_tokens": 3469
+}

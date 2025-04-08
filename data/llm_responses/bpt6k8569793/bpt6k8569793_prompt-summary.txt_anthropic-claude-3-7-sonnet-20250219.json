@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8569793",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Byzantine Empire, Early Middle Ages, reign of Emperor Maurice and Phocas' usurpation\",\n    \"period_reasoning\": \"The play centers on characters named Maurice and Phocas. Historically, Maurice was a Byzantine Emperor who ruled from 582 to 602 CE and was overthrown by Phocas who ruled from 602 to 610 CE. The text mentions Phocas as a 'Capitaine' who was made Emperor after a revolt, which aligns with the historical usurpation. There are also mentions of 'Tib\u00e8re' (likely Emperor Tiberius II Constantine, Maurice's predecessor) and references to the imperial succession.\",\n    \"timeframe_start\": \"582\",\n    \"timeframe_end\": \"610\",\n    \"location\": \"Constantinople\",\n    \"location_reasoning\": \"While Constantinople isn't explicitly mentioned as the primary location in the provided passages, it is listed among the top places and would be the logical setting for a play about Byzantine emperors. The text mentions Thrace multiple times (where Constantinople is located), and refers to imperial themes, the throne, and imperial succession. References to individuals being displayed near the shore/sea also align with Constantinople's coastal location.\",\n    \"location_qid\": \"Q16869\"\n}",
+  "duration_seconds": 7.326355934143066,
+  "prompt_tokens": 2503,
+  "completion_tokens": 298,
+  "total_tokens": 2801
+}

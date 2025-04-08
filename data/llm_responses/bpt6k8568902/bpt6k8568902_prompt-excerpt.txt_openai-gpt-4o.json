@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8568902",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Hellenistic Period\",\n    \"period_reasoning\": \"The name 'Hypsicratee' suggests a connection to Hypsicratea, a historical figure associated with Mithridates VI of Pontus, who lived during the Hellenistic Period. The themes of warfare and betrayal in the excerpt are consistent with the political climate of this era.\",\n    \"timeframe_start\": \"-323\",\n    \"timeframe_end\": \"-31\",\n    \"location\": \"Pontus\",\n    \"location_reasoning\": \"Hypsicratea was known to be associated with Mithridates VI, who was the king of Pontus. The themes of warfare and loyalty in the excerpt align with the historical context of Mithridates' reign in Pontus.\",\n    \"location_qid\": \"Q13351\"\n}",
+  "duration_seconds": 3.293537139892578,
+  "prompt_tokens": 593,
+  "completion_tokens": 176,
+  "total_tokens": 769
+}

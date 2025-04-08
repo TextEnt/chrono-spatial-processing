@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8569793",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"16th century\",\n    \"period_reasoning\": \"The play is dedicated to Fran\u00e7ois de Lorraine, Duke of Vaudemont, who lived in the 16th century, suggesting the action is set during or around his lifetime.\",\n    \"timeframe_start\": \"1501\",\n    \"timeframe_end\": \"1600\",\n    \"location\": \"Duchy of Lorraine\",\n    \"location_reasoning\": \"The dedication is to the Duke of Vaudemont, a title in the Duchy of Lorraine, and the author was associated with Pont-\u00e0-Mousson, located in Lorraine.\",\n    \"location_qid\": \"Q185333\"\n}",
+  "duration_seconds": 12.957304000854492,
+  "prompt_tokens": 651,
+  "completion_tokens": 2331,
+  "total_tokens": 2982
+}

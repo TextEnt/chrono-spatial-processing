@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1519298v",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"17th century France\",\n    \"period_reasoning\": \"The play was published in 1662 according to the metadata. French theater from this period typically portrayed contemporary society or the recent past. The language and character dynamics in the excerpt reflect 17th century French society, with references to domestic situations and hierarchical relationships typical of this period.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The text is in French, and the play was performed at 'th\u00e9\u00e2tre royal du Marais' which was a famous theater in Paris, France during the 17th century. The language and style of the dialogue in the excerpt is consistent with 17th century French theater. References to 'Madame' and French terms indicate a French setting.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 4.049600839614868,
+  "prompt_tokens": 686,
+  "completion_tokens": 215,
+  "total_tokens": 901
+}

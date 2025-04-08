@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k58122453",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was published in 1637, and the language and style suggest it is set in a contemporary or near-contemporary setting to its publication.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1699\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play is written in French and was published in 1637, a time when French theatre was prominent. The names of the characters and the style are consistent with French plays of the 17th century.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 2.8988630771636963,
+  "prompt_tokens": 589,
+  "completion_tokens": 139,
+  "total_tokens": 728
+}

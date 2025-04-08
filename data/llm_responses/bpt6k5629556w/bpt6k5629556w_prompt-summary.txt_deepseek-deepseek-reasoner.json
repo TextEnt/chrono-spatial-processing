@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5629556w",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Greek Heroic Age (Mycenaean period)\",\n    \"period_reasoning\": \"The play centers on characters from Greek mythology (Alcide/Heracles, D\u00e9janire/Deianira, Nessus, Junon/Hera), which are rooted in the Mycenaean-era myths. Heracles' myths are traditionally set in the Greek Heroic Age.\",\n    \"timeframe_start\": \"-1300\",\n    \"timeframe_end\": \"-1100\",\n    \"location\": \"Ancient Greece\",\n    \"location_reasoning\": \"The characters and mythological context (Heracles, Deianira, Nessus, Juno) are tied to ancient Greek legends, with no evidence of a Parisian setting in the narrative (the 'PARIS' mention refers to publication metadata).\",\n    \"location_qid\": \"Q117728\"\n}",
+  "duration_seconds": 45.03507590293884,
+  "prompt_tokens": 938,
+  "completion_tokens": 856,
+  "total_tokens": 1794
+}

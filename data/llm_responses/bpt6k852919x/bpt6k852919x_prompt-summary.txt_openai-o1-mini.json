@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k852919x",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Roman Gaul\",\n    \"period_reasoning\": \"The play references Druids and Gaulois, indicating an ancient Gaulish setting likely during the Roman period when Gaul was under Roman influence.\",\n    \"timeframe_start\": \"-50\",\n    \"timeframe_end\": \"50\",\n    \"location\": \"Poitiers\",\n    \"location_reasoning\": \"Poitiers is the most frequently mentioned place in the play, suggesting it is the primary geographic setting.\",\n    \"location_qid\": \"Q22624\"\n}",
+  "duration_seconds": 7.601863861083984,
+  "prompt_tokens": 1505,
+  "completion_tokens": 1153,
+  "total_tokens": 2658
+}

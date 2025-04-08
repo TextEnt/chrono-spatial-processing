@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b86107875",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was written by Moli\u00e8re in 1661, during the 17th century, and his works typically reflect the societal norms and settings of his contemporary period in France, specifically under the reign of Louis XIV.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"The play explicitly mentions Paris as the setting in sentences like 'La Sc\u00e8ne est \u00e0 Paris' and references to Parisian social dynamics (e.g., 'font dans tout Paris Monstrer au bout du doigt leurs honn\u00eates maris').\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 71.18472385406494,
+  "prompt_tokens": 1408,
+  "completion_tokens": 1475,
+  "total_tokens": 2883
+}

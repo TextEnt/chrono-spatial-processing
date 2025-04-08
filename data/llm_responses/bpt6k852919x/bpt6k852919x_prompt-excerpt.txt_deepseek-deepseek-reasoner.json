@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k852919x",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Early Modern France\",\n    \"period_reasoning\": \"The play was published in 1664, during the reign of Louis XIV, and its language, themes (e.g., social interactions, accusations of theft), and character names (e.g., Courtois, La Bellecallee) align with 17th-century French comedic traditions, typical of the Ancien R\u00e9gime period.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play is written in French, published in France (implied by metadata and language), and features French names (e.g., Courtois) and societal structures (e.g., prisons, familial terms like 'cousine'), consistent with a French setting.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 33.14873290061951,
+  "prompt_tokens": 599,
+  "completion_tokens": 589,
+  "total_tokens": 1188
+}

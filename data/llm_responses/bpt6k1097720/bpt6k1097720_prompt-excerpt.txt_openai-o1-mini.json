@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1097720",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": null,\n    \"period_reasoning\": \"The provided excerpt does not contain specific references to a historical period or events that can be used to determine the timeframe.\",\n    \"timeframe_start\": null,\n    \"timeframe_end\": null,\n    \"location\": null,\n    \"location_reasoning\": \"The excerpt does not include identifiable geographic locations or cultural references that indicate a specific geographic setting.\",\n    \"location_qid\": null\n}",
+  "duration_seconds": 4.271885871887207,
+  "prompt_tokens": 625,
+  "completion_tokens": 622,
+  "total_tokens": 1247
+}

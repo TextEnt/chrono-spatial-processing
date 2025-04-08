@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10900954",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Early Modern France (Ancien R\u00e9gime)\",\n    \"period_reasoning\": \"The play was written in 17th-century France (1661), a period dominated by classical French theater often set in contemporary aristocratic settings. The formal language ('Madame,' 'genoux'), themes of honor and social dynamics, and the name 'Henry' (common in French nobility) align with early modern French cultural norms.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The French language, authorial context (Lambert as a French playwright), and publication in France strongly suggest a domestic setting. 17th-century French comedies rarely used foreign settings unless explicitly stated.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 49.581552028656006,
+  "prompt_tokens": 609,
+  "completion_tokens": 829,
+  "total_tokens": 1438
+}

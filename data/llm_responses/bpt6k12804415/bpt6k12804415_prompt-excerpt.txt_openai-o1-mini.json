@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k12804415",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was written and published in 1663 by Moli\u00e8re, a 17th-century French playwright, indicating the action is set in the 17th century.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play was authored by Moli\u00e8re, a French playwright, suggesting the action takes place in France.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 8.246204853057861,
+  "prompt_tokens": 613,
+  "completion_tokens": 1095,
+  "total_tokens": 1708
+}

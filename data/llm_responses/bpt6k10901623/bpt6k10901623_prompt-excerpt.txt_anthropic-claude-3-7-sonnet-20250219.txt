@@ -1,9 +1,0 @@
-{
-    "period": "Middle Ages",
-    "period_reasoning": "The play's title mentions 'Théodore, Reyne de Hongrie' (Theodore, Queen of Hungary), which suggests the play is set during the medieval period when Hungary was a kingdom. The excerpt refers to characters using royal titles ('Reyne'/Queen, 'Roi'/King, 'Prince'), indicating a monarchical setting consistent with medieval Hungary.",
-    "timeframe_start": "1000",
-    "timeframe_end": "1500",
-    "location": "Kingdom of Hungary",
-    "location_reasoning": "The title explicitly states 'Reyne de Hongrie' (Queen of Hungary), clearly establishing Hungary as the location of the play. The dialogue involves royalty (Queen, King, Prince) in what appears to be the Hungarian court.",
-    "location_qid": "Q28513"
-}

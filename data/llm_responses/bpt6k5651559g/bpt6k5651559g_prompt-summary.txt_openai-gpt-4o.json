@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5651559g",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Early 17th century\",\n    \"period_reasoning\": \"The play mentions Cardinal Richelieu, a prominent figure in French history who was active in the early 17th century. Richelieu served as the Chief Minister to King Louis XIII of France from 1624 until his death in 1642. The references to Richelieu and the context of the play suggest it is set during his lifetime.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1650\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play is set in a context involving Cardinal Richelieu, who was a key political figure in France. Additionally, the mention of Paris and other French locations like Rochelle supports the setting being in France.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 6.003813743591309,
+  "prompt_tokens": 1061,
+  "completion_tokens": 181,
+  "total_tokens": 1242
+}

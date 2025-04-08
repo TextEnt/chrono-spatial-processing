@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5629556w",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"The play 'Alcide' is based on the mythological hero Hercules, who is associated with Classical Antiquity.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"-30\",\n    \"location\": \"Ancient Greece\",\n    \"location_reasoning\": \"Alcide refers to Hercules, a hero from Greek mythology, which is set in Ancient Greece.\",\n    \"location_qid\": \"Q5385\"\n}",
+  "duration_seconds": 9.121320009231567,
+  "prompt_tokens": 490,
+  "completion_tokens": 893,
+  "total_tokens": 1383
+}

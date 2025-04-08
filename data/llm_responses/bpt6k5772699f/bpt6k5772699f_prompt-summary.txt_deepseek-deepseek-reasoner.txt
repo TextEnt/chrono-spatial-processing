@@ -1,9 +1,0 @@
-{
-    "period": "Neo-Babylonian Empire",
-    "period_reasoning": "The play centers on the death of Balthazar (Belshazzar), a historical figure associated with the fall of Babylon to Cyrus the Great in 539 BCE. The mention of Cyrus and the title referencing Babylon's king situate the events in the Neo-Babylonian period (626–539 BCE).",
-    "timeframe_start": "-626",
-    "timeframe_end": "-539",
-    "location": "Babylon",
-    "location_reasoning": "The title explicitly refers to Balthazar as 'Roy de Babilone' (King of Babylon), and the historical context of his death ties the play to the city of Babylon. The mentions of 'Paris' in the metadata relate to the play's publication, not its setting.",
-    "location_qid": "Q5684"
-}

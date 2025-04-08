@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5772310n",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Ancient Greece, Heroic Age\",\n    \"period_reasoning\": \"The play 'Ariane' by Thomas Corneille refers to the Greek mythological figure Ariadne, daughter of King Minos of Crete. The story of Ariadne is most famously connected to the myth of Theseus and the Minotaur, which is set in the Greek Heroic Age, typically associated with the Late Bronze Age in Greek mythology.\",\n    \"timeframe_start\": \"-1600\",\n    \"timeframe_end\": \"-1100\",\n    \"location\": \"Crete\",\n    \"location_reasoning\": \"Ariadne's story is primarily set on the island of Crete, where her father Minos was king, and where the labyrinth containing the Minotaur was located. The play likely follows the traditional myth which takes place in Crete, at least initially, before Ariadne is abandoned on Naxos by Theseus.\",\n    \"location_qid\": \"Q34374\"\n}",
+  "duration_seconds": 5.07297158241272,
+  "prompt_tokens": 494,
+  "completion_tokens": 254,
+  "total_tokens": 748
+}

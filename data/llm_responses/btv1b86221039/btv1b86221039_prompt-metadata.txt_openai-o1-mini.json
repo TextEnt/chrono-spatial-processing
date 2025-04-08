@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b86221039",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": null,\n    \"period_reasoning\": \"The provided metadata does not include specific details about the historical period in which the play is set.\",\n    \"timeframe_start\": null,\n    \"timeframe_end\": null,\n    \"location\": null,\n    \"location_reasoning\": \"The metadata does not provide information regarding the geographic setting of the play.\",\n    \"location_qid\": null\n}",
+  "duration_seconds": 5.863988876342773,
+  "prompt_tokens": 467,
+  "completion_tokens": 678,
+  "total_tokens": 1145
+}

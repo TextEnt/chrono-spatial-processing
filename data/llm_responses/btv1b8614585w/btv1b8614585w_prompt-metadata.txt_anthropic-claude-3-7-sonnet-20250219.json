@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8614585w",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Roman Empire period\",\n    \"period_reasoning\": \"The play is titled 'Le martyre de sainte Reyne d'Alise' (The martyrdom of Saint Reyne of Alise). Saint Reyne (or Regina) of Alise was a Christian martyr who, according to tradition, was persecuted and martyred during the Roman persecution of Christians in the 3rd century CE under Emperor Decius or Maximian.\",\n    \"timeframe_start\": \"0250\",\n    \"timeframe_end\": \"0304\",\n    \"location\": \"Alise-Sainte-Reine (ancient Alesia), Burgundy, France\",\n    \"location_reasoning\": \"The title explicitly mentions 'sainte Reyne d'Alise' which refers to Saint Regina (Reyne) of Alise. Alise refers to Alise-Sainte-Reine, a commune in Burgundy, France, which was the ancient Gallo-Roman settlement of Alesia. The play was composed by a religious figure from the abbey of Flavigny, which is where the saint's relics were kept ('o\u00f9 repose le corps de sainte Reine').\",\n    \"location_qid\": \"Q211583\"\n}",
+  "duration_seconds": 5.247884750366211,
+  "prompt_tokens": 524,
+  "completion_tokens": 304,
+  "total_tokens": 828
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090048g",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"The title 'Pyrame' refers to the mythological figure Pyramus from Ovid's 'Metamorphoses', which is set in the ancient Near East during Classical Antiquity.\",\n    \"timeframe_start\": \"-700\",\n    \"timeframe_end\": \"-500\",\n    \"location\": \"Babylon\",\n    \"location_reasoning\": \"The tragic myth of Pyramus and Thisbe is traditionally set in ancient Babylon, as recounted in Ovid's work.\",\n    \"location_qid\": \"Q5684\"\n}",
+  "duration_seconds": 97.07955408096313,
+  "prompt_tokens": 444,
+  "completion_tokens": 1642,
+  "total_tokens": 2086
+}

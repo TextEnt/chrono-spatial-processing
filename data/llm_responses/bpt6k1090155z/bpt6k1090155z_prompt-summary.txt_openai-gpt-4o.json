@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090155z",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"The play mentions characters such as Amphytrion, Juppiter, and Mercure, who are figures from Greek and Roman mythology. This suggests that the setting is in a mythological context typical of Classical Antiquity.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"500\",\n    \"location\": \"Thebes, Greece\",\n    \"location_reasoning\": \"The mention of Thebes and characters from Greek mythology like Amphytrion and Juppiter suggests that the play is set in Thebes, a city in Greece known for its mythological significance.\",\n    \"location_qid\": \"Q35760\"\n}",
+  "duration_seconds": 3.160005807876587,
+  "prompt_tokens": 998,
+  "completion_tokens": 155,
+  "total_tokens": 1153
+}

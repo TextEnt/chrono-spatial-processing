@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k63635719",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Hellenistic period\",\n    \"period_reasoning\": \"The play mentions characters and settings that are consistent with the Hellenistic period, such as the presence of a Pontiff in Memphis and references to Greek culture and names. The Hellenistic period is characterized by the spread of Greek culture across the Eastern Mediterranean and Near East following the conquests of Alexander the Great.\",\n    \"timeframe_start\": \"-323\",\n    \"timeframe_end\": \"-31\",\n    \"location\": \"Memphis, Egypt\",\n    \"location_reasoning\": \"The play frequently mentions Memphis, which was a significant city in ancient Egypt. The references to Greek culture and characters suggest a setting during the Hellenistic period when Greek influence was prominent in Egypt.\",\n    \"location_qid\": \"Q2097\"\n}",
+  "duration_seconds": 7.160718202590942,
+  "prompt_tokens": 2392,
+  "completion_tokens": 172,
+  "total_tokens": 2564
+}

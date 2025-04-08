@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k12804007",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play 'Sganarelle ou le Cocu imaginaire' by Moli\u00e8re was written and published in 1662. Moli\u00e8re's works are typically set in the contemporary period of his life, which is the 17th century.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"Moli\u00e8re was a French playwright, and his plays are generally set in France, reflecting the society and culture of his time.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 2.5509848594665527,
+  "prompt_tokens": 448,
+  "completion_tokens": 144,
+  "total_tokens": 592
+}

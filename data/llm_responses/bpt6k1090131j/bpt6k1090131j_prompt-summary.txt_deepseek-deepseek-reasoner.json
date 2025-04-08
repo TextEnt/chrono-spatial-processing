@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090131j",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Hellenistic period\",\n    \"period_reasoning\": \"The play references figures like Mitridate (Mithridates VI of Pontus) and Barsine, who are linked to the Hellenistic era and Mithridatic Wars (1st century BCE). The conflict over thrones and royal alliances further supports this setting.\",\n    \"timeframe_start\": \"-120\",\n    \"timeframe_end\": \"-63\",\n    \"location\": \"Syria\",\n    \"location_reasoning\": \"Syria (Syrie) is explicitly listed among the top places, and the Hellenistic context (e.g., Seleucid Empire, Mithridatic Wars) aligns with Syria as a key region during this period.\",\n    \"location_qid\": \"Q8735\"\n}",
+  "duration_seconds": 72.87807083129883,
+  "prompt_tokens": 1044,
+  "completion_tokens": 1421,
+  "total_tokens": 2465
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8610783h",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was published in 1669 by Moli\u00e8re, and is likely set in the contemporary period. Several context clues support this: the mentions of oranges from China and confections suggest 17th century elite consumption patterns; the reference to the 'disorders of Naples' likely refers to the Neapolitan Revolt of 1647, which would place the action about 16 years after this event (as mentioned in one of the sentences); and the play's themes of avarice and arranged marriages were common subjects in 17th century French comedy.\",\n    \"timeframe_start\": \"1650\",\n    \"timeframe_end\": \"1669\",\n    \"location\": \"Naples\",\n    \"location_reasoning\": \"Naples is mentioned with the highest frequency (6 times) among places in the play, and the related sentences strongly suggest that a significant portion of the action or backstory takes place there. Several characters appear to have connections to Naples: they mention knowing Naples well, returning to Naples, and Naples being able to 'testify to their birth'. While some action may take place in France (given Moli\u00e8re is a French playwright), the textual evidence points to Naples as the primary setting or at least a crucial location in the characters' histories.\",\n    \"location_qid\": \"Q2634\"\n}",
+  "duration_seconds": 8.438425779342651,
+  "prompt_tokens": 1684,
+  "completion_tokens": 313,
+  "total_tokens": 1997
+}

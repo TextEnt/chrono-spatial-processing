@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5849655v",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"17th century France\",\n    \"period_reasoning\": \"The play was published in 1649 (17th century) and appears to be a satire about contemporary French society. It references 'partisans' (tax collectors) and 'monopoleurs' which were common targets of criticism during this period in France. The text mentions the 'France troubl\u00e9e' which likely refers to social unrest in France at that time, possibly the Fronde rebellions which occurred between 1648-1653.\",\n    \"timeframe_start\": \"1640\",\n    \"timeframe_end\": \"1660\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"France is mentioned repeatedly throughout the play (16 times according to the frequency count). The text refers to 'la France troubl\u00e9e' and discusses events happening within France. The play mentions French financial officials ('partisans'), monopolists, and French peasants ('pauvres paysans'). Paris is also mentioned, indicating a French setting. The mythological setting of Pluto's kingdom is likely an allegorical device to comment on French society.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 6.3061628341674805,
+  "prompt_tokens": 1879,
+  "completion_tokens": 273,
+  "total_tokens": 2152
+}

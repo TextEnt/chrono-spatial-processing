@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280452z",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"17th century France\",\n    \"period_reasoning\": \"The play was written by Moli\u00e8re, a 17th-century French playwright, and its publication date (1674) aligns with his active period. Moli\u00e8re's works typically reflect contemporary French society.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play explicitly mentions 'France' as a frequently referenced place, and Moli\u00e8re's works are predominantly set in France, reflecting its social norms and settings.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 32.96543502807617,
+  "prompt_tokens": 993,
+  "completion_tokens": 450,
+  "total_tokens": 1443
+}

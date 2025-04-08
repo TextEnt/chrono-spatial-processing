@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k61486960",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": null,\n    \"period_reasoning\": \"The title 'Attendez-moy sous l'orme' and the author Jean-Fran\u00e7ois Regnard do not provide sufficient information to determine the historical period in which the play is set. The play could be set in the contemporary period of the author (late 17th century) or in a different historical period, but without additional context, it is not possible to specify.\",\n    \"timeframe_start\": null,\n    \"timeframe_end\": null,\n    \"location\": null,\n    \"location_reasoning\": \"The title and author do not provide enough information to determine the specific geographic location where the action of the play takes place. Without additional context or content from the play, it is not possible to specify a location.\",\n    \"location_qid\": null\n}",
+  "duration_seconds": 3.0203797817230225,
+  "prompt_tokens": 445,
+  "completion_tokens": 175,
+  "total_tokens": 620
+}

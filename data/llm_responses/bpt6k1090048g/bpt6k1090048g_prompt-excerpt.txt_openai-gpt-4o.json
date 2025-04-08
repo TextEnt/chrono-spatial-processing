@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090048g",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Ancient Rome\",\n    \"period_reasoning\": \"The excerpt includes names such as 'Pyrame' and 'Thisbe', which are associated with the myth of Pyramus and Thisbe, a story from Ovid's 'Metamorphoses'. This suggests a setting in ancient times, likely during the Roman period when such myths were popular.\",\n    \"timeframe_start\": \"-753\",\n    \"timeframe_end\": \"476\",\n    \"location\": \"Ancient Rome\",\n    \"location_reasoning\": \"The myth of Pyramus and Thisbe is part of Roman mythology, indicating that the setting is likely in Ancient Rome or a Roman-influenced area.\",\n    \"location_qid\": \"Q220\"\n}",
+  "duration_seconds": 4.3749401569366455,
+  "prompt_tokens": 595,
+  "completion_tokens": 160,
+  "total_tokens": 755
+}

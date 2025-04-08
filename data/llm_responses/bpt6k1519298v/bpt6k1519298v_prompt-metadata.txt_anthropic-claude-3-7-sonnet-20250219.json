@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1519298v",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"17th century France, likely during the reign of Louis XIV\",\n    \"period_reasoning\": \"The play was published in 1662 during the 17th century in France. French theatrical works of this period typically depicted contemporary settings. Given that this is a comedy about domestic servants ('La disgr\u00e2ce des domestiques' - 'The Disgrace of Servants'), it most likely portrays contemporary French society during the early reign of Louis XIV (who began his personal rule in 1661).\",\n    \"timeframe_start\": \"1650\",\n    \"timeframe_end\": \"1662\",\n    \"location\": \"Paris, France\",\n    \"location_reasoning\": \"The play was performed at the 'th\u00e9\u00e2tre royal du Marais' (Royal Marais Theater), which was one of the main theaters in Paris during the 17th century. French comedies of this period typically set their action in Paris or its surroundings. Additionally, the Marais theater was known for performing contemporary comedies set in familiar French settings.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 5.479995250701904,
+  "prompt_tokens": 514,
+  "completion_tokens": 256,
+  "total_tokens": 770
+}

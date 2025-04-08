@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8622099v",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"First Crusade\",\n    \"period_reasoning\": \"The title 'Clorinde' likely references the character Clorinda from Torquato Tasso's 'Jerusalem Delivered,' which is set during the First Crusade (late 11th century). Jean de Rotrou's adaptations often drew from classical or historical literary sources.\",\n    \"timeframe_start\": \"1095\",\n    \"timeframe_end\": \"1099\",\n    \"location\": \"Jerusalem\",\n    \"location_reasoning\": \"Tasso's 'Jerusalem Delivered' centers on the Siege of Jerusalem (1099) during the First Crusade. As Clorinde is a key figure in that narrative, the play likely follows a similar setting.\",\n    \"location_qid\": \"Q1218\"\n}",
+  "duration_seconds": 60.124634981155396,
+  "prompt_tokens": 442,
+  "completion_tokens": 959,
+  "total_tokens": 1401
+}

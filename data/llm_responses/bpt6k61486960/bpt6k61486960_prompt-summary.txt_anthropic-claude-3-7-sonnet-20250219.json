@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k61486960",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Late 17th Century France\",\n    \"period_reasoning\": \"The play was published in 1694 according to the metadata. Since it was written by Jean-Fran\u00e7ois Regnard, a French playwright, and contains references to places in France, it's likely set in the contemporary period when it was written - the late 17th century during the reign of Louis XIV. The context mentions clothing from Paris and social customs of the period.\",\n    \"timeframe_start\": \"1670\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Poitiers\",\n    \"location_reasoning\": \"Poitiers is the most frequently mentioned place in the play with 5 mentions. The dialogue repeatedly references characters having been in Poitiers, including 'the charmante conversations of Poitiers' and events that happened there. There are also references to Poitou (the region where Poitiers is located). The rural setting is suggested by mentions of a 'Fermi\u00e8re' (female farmer) and characters like Colin who appears to be a rural character.\",\n    \"location_qid\": \"Q41441\"\n}",
+  "duration_seconds": 6.263033866882324,
+  "prompt_tokens": 1552,
+  "completion_tokens": 269,
+  "total_tokens": 1821
+}

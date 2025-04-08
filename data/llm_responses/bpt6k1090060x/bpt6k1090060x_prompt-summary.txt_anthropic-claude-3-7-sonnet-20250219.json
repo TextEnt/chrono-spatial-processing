@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090060x",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Late 17th century France\",\n    \"period_reasoning\": \"The play was published in 1692 according to the metadata, and it appears to be set in a contemporary rural setting with characters who are farmers and shepherds. There are references to social hierarchy and arranged marriages which were common in this period.\",\n    \"timeframe_start\": \"1650\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Is\u00e8re, France\",\n    \"location_reasoning\": \"The text specifically mentions 'Piero p\u00e8re de la Berg\u00e8re, Laboureur, voisin de l'Is\u00e8re' indicating the action takes place near the Is\u00e8re river in southeastern France. Additionally, Grenoble and Voiron (both in the Is\u00e8re department) are listed among the top 5 places mentioned in the play.\",\n    \"location_qid\": \"Q3137\"\n}",
+  "duration_seconds": 4.215412139892578,
+  "prompt_tokens": 1773,
+  "completion_tokens": 219,
+  "total_tokens": 1992
+}

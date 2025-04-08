@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090170n",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Roman Republic\",\n    \"period_reasoning\": \"The play is an adaptation of Plautus's 'Menaechmi', a Roman comedy from the Republican era. Jean de Rotrou's neoclassical adaptations typically retained classical settings.\",\n    \"timeframe_start\": \"-300\",\n    \"timeframe_end\": \"-50\",\n    \"location\": \"Epidamnus\",\n    \"location_reasoning\": \"Plautus's original play is set in Epidamnus (modern Durr\u00ebs, Albania), a Greek city later under Roman influence. Rotrou's adaptation likely preserves this setting.\",\n    \"location_qid\": \"Q193737\"\n}",
+  "duration_seconds": 161.38933110237122,
+  "prompt_tokens": 606,
+  "completion_tokens": 3016,
+  "total_tokens": 3622
+}

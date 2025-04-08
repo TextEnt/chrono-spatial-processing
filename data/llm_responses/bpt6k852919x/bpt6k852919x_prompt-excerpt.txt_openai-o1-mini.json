@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k852919x",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was published in 1664 and the social context in the excerpt suggests a contemporary 17th-century setting.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play is written in French and likely set in contemporary France typical of French comedies of the 17th century.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 6.861097812652588,
+  "prompt_tokens": 603,
+  "completion_tokens": 1087,
+  "total_tokens": 1690
+}

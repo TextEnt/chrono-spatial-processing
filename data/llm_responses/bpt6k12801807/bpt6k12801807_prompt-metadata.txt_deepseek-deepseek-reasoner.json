@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k12801807",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"The play 'L'Aminte' is a pastoral work translated from Torquato Tasso's 'Aminta' (1573), a pastoral drama set in a timeless Arcadian landscape typical of Classical Antiquity. Such works often evoke Hellenistic or Roman pastoral traditions rather than a specific historical event.\",\n    \"timeframe_start\": \"-323\",\n    \"timeframe_end\": \"-31\",\n    \"location\": \"Arcadia, Greece\",\n    \"location_reasoning\": \"Pastoral dramas like Tasso's 'Aminta' are traditionally set in Arcadia, a symbolic locus of idealized rural life in ancient Greek literature. The French translation retains this setting.\",\n    \"location_qid\": \"Q170295\"\n}",
+  "duration_seconds": 43.39980101585388,
+  "prompt_tokens": 460,
+  "completion_tokens": 812,
+  "total_tokens": 1272
+}

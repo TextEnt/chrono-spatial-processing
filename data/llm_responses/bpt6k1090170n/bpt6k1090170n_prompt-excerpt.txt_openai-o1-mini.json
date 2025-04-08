@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090170n",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was published in 1661 and reflects the contemporary social and cultural context of 17th century France.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The author was French, and the play is written in French with themes and characters typical of French comedies of the 17th century.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 5.710493326187134,
+  "prompt_tokens": 610,
+  "completion_tokens": 898,
+  "total_tokens": 1508
+}

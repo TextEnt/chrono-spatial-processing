@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5651559g",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Early 17th century\",\n    \"period_reasoning\": \"The play is about Cardinal Richelieu, who was a powerful French statesman during the early 17th century. The publication date of the play is 1643, which is the year of Richelieu's death (he died in December 1642). The play appears to be a satirical work depicting Richelieu after his death trying to enter Paradise but being sent to Hell instead, suggesting it takes place immediately after his death.\",\n    \"timeframe_start\": \"1642\",\n    \"timeframe_end\": \"1643\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play refers to Cardinal Richelieu, who was the chief minister of France under King Louis XIII. The setting appears to be in the afterlife (Paradise and Hell), but the earthly references are to France. There's a mention of 'Phant des Seines' which likely refers to the Seine River in France, and 'Rochelle' may refer to La Rochelle, a city in France where Richelieu led a famous siege in 1627-1628. The play was published in Paris ('\u00c0 PARIS').\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 6.148240804672241,
+  "prompt_tokens": 1265,
+  "completion_tokens": 294,
+  "total_tokens": 1559
+}

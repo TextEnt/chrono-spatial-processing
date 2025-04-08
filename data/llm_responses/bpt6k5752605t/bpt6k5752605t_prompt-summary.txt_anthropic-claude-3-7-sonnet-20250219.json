@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5752605t",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Late 17th century, Louis XIV era\",\n    \"period_reasoning\": \"The play was published in 1691 according to the metadata, and as a French comedy of that period, it likely depicts contemporary society. References to nobles, counts, and bourgeoisie trying to gain status ('Les bourgeoises de qualit\u00e9' - bourgeois women aspiring to nobility) are typical of Louis XIV's era when social mobility and class aspirations were common themes in literature.\",\n    \"timeframe_start\": \"1670\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"France is explicitly mentioned in the text as a setting ('Si ma maison n'est noble, il n'en est point en France'). Additionally, the author is French (No\u00ebl Lebreton de Hauteroche), the play is in French, and there are references to French nobility (Le Comte). The mention of places like 'Auvergne', 'Paris', and 'Tours' in the top 5 places further supports a French setting.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 6.794823884963989,
+  "prompt_tokens": 1293,
+  "completion_tokens": 274,
+  "total_tokens": 1567
+}

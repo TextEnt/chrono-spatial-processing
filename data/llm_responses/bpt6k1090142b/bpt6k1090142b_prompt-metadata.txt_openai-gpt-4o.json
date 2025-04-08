@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090142b",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play 'Le Prince corsaire, tragi-com\u00e9die' by Paul Scarron was published in 1663, which suggests that the action is likely set around the time it was written, a common practice for plays of that era.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1699\",\n    \"location\": \"Mediterranean Sea\",\n    \"location_reasoning\": \"The title 'Le Prince corsaire' suggests a setting related to piracy, which was prevalent in the Mediterranean Sea during the 17th century. Corsairs were privateers operating in this region.\",\n    \"location_qid\": \"Q490\"\n}",
+  "duration_seconds": 2.185981035232544,
+  "prompt_tokens": 441,
+  "completion_tokens": 158,
+  "total_tokens": 599
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8568902",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Hellenistic Period\",\n    \"period_reasoning\": \"The name 'Hypsicratee' suggests a connection to Hypsicratea, a historical figure associated with the Hellenistic period, specifically linked to Mithridates VI of Pontus.\",\n    \"timeframe_start\": \"-323\",\n    \"timeframe_end\": \"-31\",\n    \"location\": \"Pontus\",\n    \"location_reasoning\": \"Hypsicratea was known to be associated with Mithridates VI, who ruled the Kingdom of Pontus, located in what is now modern-day Turkey.\",\n    \"location_qid\": \"Q12544\"\n}",
+  "duration_seconds": 2.3031129837036133,
+  "prompt_tokens": 456,
+  "completion_tokens": 142,
+  "total_tokens": 598
+}

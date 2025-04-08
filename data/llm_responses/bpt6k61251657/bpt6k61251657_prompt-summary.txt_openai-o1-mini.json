@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k61251657",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Ancient period\",\n    \"period_reasoning\": \"The play is set in Persia (Perse) with characters like Cleon, which are associated with Classical Antiquity, suggesting the setting is during the Achaemenid Empire of ancient Persia.\",\n    \"timeframe_start\": \"-550\",\n    \"timeframe_end\": \"-330\",\n    \"location\": \"Persia\",\n    \"location_reasoning\": \"The play's context frequently mentions 'Perse' and the scene is explicitly stated to be in Persia, indicating the geographic location of the action is ancient Persia.\",\n    \"location_qid\": \"Q23440\"\n}",
+  "duration_seconds": 5.917546033859253,
+  "prompt_tokens": 1400,
+  "completion_tokens": 918,
+  "total_tokens": 2318
+}

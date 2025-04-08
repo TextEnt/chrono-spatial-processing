@@ -1,9 +1,0 @@
-{
-    "period": "Ancient Rome, Classical Period",
-    "period_reasoning": "The excerpt mentions characters Enée and Didon,  referencing figures from Roman mythology associated with the Trojan War and the city of Carthage.",
-    "timeframe_start": "-270",
-    "timeframe_end": "476",
-    "location": "Italy, Rome",
-    "location_reasoning": "The play refers to characters Enée (Aeneas) and Didon (Dido), both associated with the ancient Roman city of Rome and its history.",
-    "location_qid": "Q184"
-}

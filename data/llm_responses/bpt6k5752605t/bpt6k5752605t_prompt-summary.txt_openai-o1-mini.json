@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5752605t",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was published in 1691 and reflects the social structures, language, and cultural context of 17th century France, indicating that its action is set within this timeframe.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"France is the most frequently mentioned place in the play, with related sentences discussing French nobility and society, which indicates that the action takes place in France.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 6.387785911560059,
+  "prompt_tokens": 1087,
+  "completion_tokens": 978,
+  "total_tokens": 2065
+}

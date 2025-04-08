@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k852919x",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was published in 1664, suggesting it is likely set in the contemporary 17th century France.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play is written in French and was published in 1664, indicating it is likely set in France.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 3.9671480655670166,
+  "prompt_tokens": 457,
+  "completion_tokens": 508,
+  "total_tokens": 965
+}

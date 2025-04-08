@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090222x",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Elizabethan Era\",\n    \"period_reasoning\": \"The play 'Le Comte d'Essex' is about Robert Devereux, 2nd Earl of Essex, who was a favorite of Queen Elizabeth I of England and lived from 1565 to 1601. His rise and fall, culminating in his execution for treason, was a significant event in the late Elizabethan period. The play likely focuses on Essex's final years leading to his execution in 1601.\",\n    \"timeframe_start\": \"1595\",\n    \"timeframe_end\": \"1601\",\n    \"location\": \"England\",\n    \"location_reasoning\": \"The main character, the Earl of Essex (Robert Devereux), was an English nobleman who served in the court of Queen Elizabeth I. The historical events portrayed in the play took place primarily in London, England, particularly in the royal court and the Tower of London where Essex was imprisoned before his execution.\",\n    \"location_qid\": \"Q21\"\n}",
+  "duration_seconds": 5.579408168792725,
+  "prompt_tokens": 486,
+  "completion_tokens": 240,
+  "total_tokens": 726
+}

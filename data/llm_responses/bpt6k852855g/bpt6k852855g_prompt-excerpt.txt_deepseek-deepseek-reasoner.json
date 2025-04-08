@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k852855g",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"17th century France\",\n    \"period_reasoning\": \"The play was published in 1695 and is a French comedy, consistent with the stylistic conventions and societal themes of 17th-century French theater (e.g., Moli\u00e8re's works). The dialogue lacks archaic or anachronistic markers, suggesting a contemporary setting for its time.\",\n    \"timeframe_start\": 1601,\n    \"timeframe_end\": 1700,\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play is written in French, authored by a French playwright, and references a 'maison de campagne' (country house), a common setting in French comedies of the period. No explicit geographic markers suggest a non-French setting.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 38.283132791519165,
+  "prompt_tokens": 614,
+  "completion_tokens": 564,
+  "total_tokens": 1178
+}

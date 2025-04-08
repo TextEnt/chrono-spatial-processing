@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k15107128",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Kingdom of Judah (Biblical period)\",\n    \"period_reasoning\": \"The play references characters like Joas (Joash), David, and Joad (Jehoiada), who are key figures in the Old Testament's accounts of the Kingdom of Judah. The context of Jerusalem and the mention of Juda's kings confirm the biblical setting.\",\n    \"timeframe_start\": \"-900\",\n    \"timeframe_end\": \"-586\",\n    \"location\": \"Jerusalem\",\n    \"location_reasoning\": \"J\u00e9rusalem (Jerusalem) is the most frequently mentioned place in the play, with multiple sentences referencing its role as the central city of the Kingdom of Judah. Other locations like Jourdain (Jordan River) and Nil (Nile) further situate the narrative in the ancient Near East.\",\n    \"location_qid\": \"Q1218\"\n}",
+  "duration_seconds": 31.968878030776978,
+  "prompt_tokens": 1129,
+  "completion_tokens": 582,
+  "total_tokens": 1711
+}

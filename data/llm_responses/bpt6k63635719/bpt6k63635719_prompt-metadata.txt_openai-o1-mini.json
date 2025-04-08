@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k63635719",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Ancient Greece\",\n    \"period_reasoning\": \"The play is based on a Greek story, likely set during the Classical or Hellenistic periods of ancient Greece.\",\n    \"timeframe_start\": \"-500\",\n    \"timeframe_end\": \"-323\",\n    \"location\": \"Greece\",\n    \"location_reasoning\": \"The action is based on a Greek narrative, indicating it is set in Greece.\",\n    \"location_qid\": \"Q41\"\n}",
+  "duration_seconds": 6.150918245315552,
+  "prompt_tokens": 501,
+  "completion_tokens": 885,
+  "total_tokens": 1386
+}

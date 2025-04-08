@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8614585w",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Roman Empire\",\n    \"period_reasoning\": \"The play references Gaul, Caesar's edicts, and the conflict between pagan gods and Christianity, which are indicative of the Roman Empire period.\",\n    \"timeframe_start\": \"-0027\",\n    \"timeframe_end\": \"0476\",\n    \"location\": \"Gaul\",\n    \"location_reasoning\": \"The play mentions 'Gaule', historically referring to the region of Gaul under the Roman Empire.\",\n    \"location_qid\": \"Q12209\"\n}",
+  "duration_seconds": 13.340169906616211,
+  "prompt_tokens": 1520,
+  "completion_tokens": 1473,
+  "total_tokens": 2993
+}

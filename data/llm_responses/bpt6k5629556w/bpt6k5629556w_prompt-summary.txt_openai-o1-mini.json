@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5629556w",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"The play features characters from Greek mythology, such as Alcide (Heracles), D\u00e9janire, Iole, and Nessus, which are associated with Classical Antiquity.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"500\",\n    \"location\": \"Ancient Greece\",\n    \"location_reasoning\": \"The characters mentioned are prominent figures in Greek mythology, indicating that the play is set in Ancient Greece.\",\n    \"location_qid\": \"Q756\"\n}",
+  "duration_seconds": 5.985515117645264,
+  "prompt_tokens": 926,
+  "completion_tokens": 967,
+  "total_tokens": 1893
+}

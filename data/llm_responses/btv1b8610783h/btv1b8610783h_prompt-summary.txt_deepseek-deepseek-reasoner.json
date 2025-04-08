@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8610783h",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"17th century France\",\n    \"period_reasoning\": \"The play was written by Moli\u00e8re, a French playwright active in the mid-17th century, and his works typically reflect contemporary French society. The publication date (1669) and mentions of French cultural elements (e.g., Paris) align with this period.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"While Naples is the most frequently mentioned place, it appears in backstories (e.g., exile narratives). The play\u2019s characters and context (e.g., references to Paris in the top_5_places) suggest the primary setting is Paris, typical of Moli\u00e8re\u2019s comedies.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 60.47046399116516,
+  "prompt_tokens": 1458,
+  "completion_tokens": 959,
+  "total_tokens": 2417
+}

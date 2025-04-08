@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8622111v",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Early 17th century\",\n    \"period_reasoning\": \"The play was published in 1637 according to the metadata. Since most plays of this era were set in contemporary times or the recent past, it's reasonable to assume the action takes place in the early 17th century. References to characters and situations don't contain clear historical markers of earlier periods.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1637\",\n    \"location\": \"Florence\",\n    \"location_reasoning\": \"Florence is the most frequently mentioned place in the play (frequency: 6) and appears in multiple key sentences. Several sentences directly state that characters are in Florence or have traveled to Florence. For example: 'J'ai voulu voir Florence' (I wanted to see Florence) and 'ainsi mon esp\u00e9rance En un m\u00eame moment na\u00eet, et meurt dans Florence' (thus my hope is born and dies in the same moment in Florence). Other locations mentioned (Lyon, Paris) appear to be referenced as places characters are from or have visited, but Florence seems to be the primary setting.\",\n    \"location_qid\": \"Q2044\"\n}",
+  "duration_seconds": 6.328236103057861,
+  "prompt_tokens": 2091,
+  "completion_tokens": 270,
+  "total_tokens": 2361
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k6255892m",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Early modern France\",\n    \"period_reasoning\": \"The play was published in 1638 during the reign of Louis XIII, and French comedies of the 17th century typically reflected contemporary societal norms and settings. The satirical tone aligns with trends in early modern French theater.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1650\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The author is French, the title and text are in French, and 17th-century French plays were often set in the playwright's own cultural context unless explicitly historical or mythological. No location-specific clues contradict this in the excerpt.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 49.75436997413635,
+  "prompt_tokens": 604,
+  "completion_tokens": 954,
+  "total_tokens": 1558
+}

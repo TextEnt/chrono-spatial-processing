@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280445t",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"17th century France\",\n    \"period_reasoning\": \"The play 'La Critique de l'Escole des femmes' by Moli\u00e8re is a critique of another play by Moli\u00e8re, 'L'\u00c9cole des femmes', which was first performed in 1662. Given the style and themes typical of Moli\u00e8re's works, it is likely set in the same period as its writing and performance, reflecting the social and cultural context of 17th century France.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"Moli\u00e8re's plays are typically set in France, often reflecting the society and culture of his time. The language and context of the excerpt suggest a setting consistent with 17th century French society.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 2.8006300926208496,
+  "prompt_tokens": 595,
+  "completion_tokens": 193,
+  "total_tokens": 788
+}

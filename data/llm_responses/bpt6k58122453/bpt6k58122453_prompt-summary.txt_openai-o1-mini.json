@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k58122453",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was published in 1637 and frequently references Paris without indicating a different historical setting, suggesting it is set in the contemporary period of its writing.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"The play frequently mentions Paris as the primary location, with no indications of a different geographic setting.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 4.3013951778411865,
+  "prompt_tokens": 1661,
+  "completion_tokens": 641,
+  "total_tokens": 2302
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090230g",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was published in 1673, and it is common for plays of this era to be set in contemporary times, reflecting the society and culture of the 17th century.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The author, Claude Rose (Rosimond), was a French playwright, and the title of the play is in French. It is likely that the play is set in France, as it was common for playwrights to set their works in their own country.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 2.8964781761169434,
+  "prompt_tokens": 450,
+  "completion_tokens": 156,
+  "total_tokens": 606
+}

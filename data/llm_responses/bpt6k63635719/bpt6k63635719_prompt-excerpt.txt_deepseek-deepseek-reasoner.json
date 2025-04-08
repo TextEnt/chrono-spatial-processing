@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k63635719",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Late Antiquity\",\n    \"period_reasoning\": \"The play is based on Heliodorus's 'Aethiopica', a Greek novel from the 3rd\u20134th century CE. The reference to pagan gods ('Les Dieux') and the original work's Hellenistic-Roman context suggest a Late Antiquity setting.\",\n    \"timeframe_start\": \"200\",\n    \"timeframe_end\": \"400\",\n    \"location\": \"Ancient Ethiopia\",\n    \"location_reasoning\": \"Heliodorus's 'Aethiopica' centers on Ethiopian royalty (Chariclea, the protagonist, is Ethiopian). The play's title and characters (Th\u00e9ag\u00e8ne et Caricl\u00e9e) directly reference this narrative, situating the action in Ethiopia.\",\n    \"location_qid\": \"Q115\"\n}",
+  "duration_seconds": 31.01369333267212,
+  "prompt_tokens": 640,
+  "completion_tokens": 493,
+  "total_tokens": 1133
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5752605t",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Late 17th century\",\n    \"period_reasoning\": \"The play was published in 1691, and French plays of this era typically depicted contemporary society. The title 'Les bourgeoises de qualit\u00e9' (The bourgeois women of quality) suggests a focus on middle-class women aspiring to higher social status, which was a common theme in comedies of the period.\",\n    \"timeframe_start\": \"1670\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"The play was written by a French playwright (No\u00ebl Lebreton de Hauteroche) during the reign of Louis XIV. Comedies about social climbing bourgeois women were typically set in Paris, the center of French society and culture at that time. The bourgeoisie seeking to emulate nobility was particularly a Parisian phenomenon during this period. While the location is not explicitly stated in the metadata, Paris is the most likely setting given the social theme and theatrical conventions of French comedy in this era.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 7.457988977432251,
+  "prompt_tokens": 506,
+  "completion_tokens": 260,
+  "total_tokens": 766
+}

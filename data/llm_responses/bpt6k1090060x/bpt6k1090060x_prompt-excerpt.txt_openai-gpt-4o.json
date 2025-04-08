@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090060x",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was published in 1692, and the language and style suggest it is set in a similar time period, typical for pastoral and tragi-comedy plays of the 17th century.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1699\",\n    \"location\": \"Provence, France\",\n    \"location_reasoning\": \"The use of Occitan language elements, such as 'nostra filli' and 'ben de nostra', suggests a setting in the Occitan-speaking regions of France, likely Provence, where such dialects were common.\",\n    \"location_qid\": \"Q12683\"\n}",
+  "duration_seconds": 3.1089839935302734,
+  "prompt_tokens": 603,
+  "completion_tokens": 155,
+  "total_tokens": 758
+}

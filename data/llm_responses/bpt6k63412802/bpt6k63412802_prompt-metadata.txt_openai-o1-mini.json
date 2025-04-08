@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k63412802",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Late Roman Republic\",\n    \"period_reasoning\": \"The title 'Le Dictateur romain' suggests the play is set during the period when dictators were appointed in Rome, notably during the Late Roman Republic.\",\n    \"timeframe_start\": \"-133\",\n    \"timeframe_end\": \"-27\",\n    \"location\": \"Ancient Rome\",\n    \"location_reasoning\": \"The play is a tragedy about a Roman dictator, indicating that the setting is in Rome during the time of the Roman Republic.\",\n    \"location_qid\": \"Q220\"\n}",
+  "duration_seconds": 7.4562060832977295,
+  "prompt_tokens": 476,
+  "completion_tokens": 1224,
+  "total_tokens": 1700
+}

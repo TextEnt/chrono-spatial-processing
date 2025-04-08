@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090276g",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was written in 1654 by Jean de Rotrou, a French playwright active during the 17th century. The dialogue references a king ('LE ROY') and courtly dynamics typical of early modern French theater, suggesting a contemporary or generically monarchical European setting aligned with the author's era.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The author is French, the text uses French titles like 'Majest\u00e9,' and the play's context aligns with 17th-century French theatrical conventions. The absence of explicit geographic markers beyond the king's title implies a default French court setting.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 69.0382399559021,
+  "prompt_tokens": 606,
+  "completion_tokens": 1122,
+  "total_tokens": 1728
+}

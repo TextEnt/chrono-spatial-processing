@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090139v",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"17th century France\",\n    \"period_reasoning\": \"The play 'La Cocue imaginaire' (The Imaginary Cuckold) was published in 1662, during the 17th century in France. French comedies of this period typically depicted contemporary settings rather than historical periods. Given that it's a comedy about cuckoldry (a spouse's infidelity), it would most likely be set in the author's present time.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"French comedies of the 17th century, particularly those dealing with domestic issues like infidelity and marriage, were typically set in urban settings, with Paris being the most common location. While the exact location isn't specified in the metadata, Paris was the center of French theatrical production during this period, and urban comedies about domestic situations were usually set there.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 4.7470080852508545,
+  "prompt_tokens": 482,
+  "completion_tokens": 239,
+  "total_tokens": 721
+}

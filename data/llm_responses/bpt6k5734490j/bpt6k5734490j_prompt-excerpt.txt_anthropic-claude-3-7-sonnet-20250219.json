@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5734490j",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Pastoral or bucolic setting\",\n    \"period_reasoning\": \"The play is subtitled 'Amarillis, pastorale', which indicates it is a pastoral work. The excerpt contains references to a 'Berger' (shepherd) and characters named 'Amaryllis' and 'Philidas', which are typical names in pastoral literature. Pastoral works usually depict an idealized rural setting that is not tied to a specific historical period but rather represents a timeless bucolic world.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1653\",\n    \"location\": \"Rural France\",\n    \"location_reasoning\": \"The play is written in French by Jean de Rotrou in the 17th century. While the pastoral setting is idealized and somewhat fantastical, it would have been understood by contemporary French audiences as taking place in a rural French landscape. Pastoral plays of this period typically presented idealized versions of their own country's countryside. The names in the play (Amaryllis, Philidas) have a classical influence but would have been understood as representing French characters in a rural setting.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 5.94910192489624,
+  "prompt_tokens": 695,
+  "completion_tokens": 280,
+  "total_tokens": 975
+}

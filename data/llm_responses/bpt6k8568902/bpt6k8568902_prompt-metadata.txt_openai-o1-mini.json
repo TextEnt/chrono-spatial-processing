@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8568902",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"The play 'Hypsicratee' is based on a classical Greek tragedy, typically set in ancient Greek times.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"-500\",\n    \"location\": \"Ancient Greece\",\n    \"location_reasoning\": \"The setting of classical Greek tragedies like 'Hypsicratee' typically takes place in Ancient Greece.\",\n    \"location_qid\": \"Q1241\"\n}",
+  "duration_seconds": 4.290005922317505,
+  "prompt_tokens": 476,
+  "completion_tokens": 702,
+  "total_tokens": 1178
+}

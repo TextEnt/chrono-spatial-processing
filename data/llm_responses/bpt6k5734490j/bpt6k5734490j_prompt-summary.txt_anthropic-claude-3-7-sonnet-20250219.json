@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5734490j",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Ancient Greece (Pastoral setting)\",\n    \"period_reasoning\": \"The play appears to be a pastoral comedy, a genre often set in an idealized classical setting. The references to 'Bergers' (shepherds) described as 'illustre H\u00e9ros' (illustrious heroes), the classical-sounding names (Amaryllis, Daphne), and the pastoral theme ('Amarillis, pastorale' in the title) suggest an ancient Greek or Roman setting. Pastoral literature typically evokes a mythologized classical world.\",\n    \"timeframe_start\": \"-500\",\n    \"timeframe_end\": \"-300\",\n    \"location\": \"Arcadia\",\n    \"location_reasoning\": \"The play is described as a pastoral ('pastorale' in the title), which typically takes place in an idealized rural landscape. The mention of 'Bergers de ces lieux' (shepherds of these places) and characters with Greek-sounding names like Amaryllis and Daphne suggest an ancient Greek setting. The river 'Lignon' is mentioned among the top places, which in French pastoral literature often represents an idealized version of Arcadia, the traditional setting for pastoral drama. Arcadia was a mountainous region in Greece commonly used as the setting for pastoral literature.\",\n    \"location_qid\": \"Q179357\"\n}",
+  "duration_seconds": 6.84956431388855,
+  "prompt_tokens": 1281,
+  "completion_tokens": 318,
+  "total_tokens": 1599
+}

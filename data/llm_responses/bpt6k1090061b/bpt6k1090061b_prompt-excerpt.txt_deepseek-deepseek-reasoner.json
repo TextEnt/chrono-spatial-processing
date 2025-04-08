@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090061b",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Early Modern Period\",\n    \"period_reasoning\": \"The play is a 17th-century French adaptation of an Italian work, likely reflecting the Renaissance or Early Modern Period. Commedia dell'arte characters like Pantalon (Pantalone) were prominent in this era, and the architectural references align with post-Roman European settings.\",\n    \"timeframe_start\": \"1500\",\n    \"timeframe_end\": \"1650\",\n    \"location\": \"Italy\",\n    \"location_reasoning\": \"The title specifies a translation from Italian, and characters like Pantalon (Pantalone) and Le Docteur are staples of Italian commedia dell'arte. The mention of 'Royaume m\u00eame des Romains' may allude to Italy's historical ties to Roman heritage.\",\n    \"location_qid\": \"Q38\"\n}",
+  "duration_seconds": 60.713212728500366,
+  "prompt_tokens": 603,
+  "completion_tokens": 1202,
+  "total_tokens": 1805
+}

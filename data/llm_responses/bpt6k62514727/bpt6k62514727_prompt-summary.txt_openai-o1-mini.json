@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k62514727",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": null,\n    \"period_reasoning\": \"Insufficient information to determine historical period\",\n    \"timeframe_start\": null,\n    \"timeframe_end\": null,\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"The play frequently references Paris as the primary setting.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 2.988724946975708,
+  "prompt_tokens": 1221,
+  "completion_tokens": 410,
+  "total_tokens": 1631
+}

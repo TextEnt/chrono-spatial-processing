@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b86107875",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play 'L'Escole des maris' by Moli\u00e8re was published in 1661, and Moli\u00e8re's works typically reflect the society and customs of 17th century France.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"Moli\u00e8re was a French playwright, and his plays are generally set in France, reflecting the social and cultural context of the time.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 1.9642829895019531,
+  "prompt_tokens": 460,
+  "completion_tokens": 135,
+  "total_tokens": 595
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5772310n",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Ancient Greece\",\n    \"period_reasoning\": \"The play 'Ariane' is based on the mythological story of Ariadne, which is rooted in Greek mythology, indicating that the setting is in Ancient Greece.\",\n    \"timeframe_start\": \"-500\",\n    \"timeframe_end\": \"-300\",\n    \"location\": \"Naxos\",\n    \"location_reasoning\": \"The myth of Ariadne is closely associated with the island of Naxos, where Theseus abandoned her, suggesting that the play is set there.\",\n    \"location_qid\": \"Q17286\"\n}",
+  "duration_seconds": 5.761353969573975,
+  "prompt_tokens": 465,
+  "completion_tokens": 784,
+  "total_tokens": 1249
+}

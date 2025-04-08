@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b86107875",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was written by Moli\u00e8re and published in 1661, which suggests that the setting is contemporary to the time it was written. Moli\u00e8re's plays often reflect the society and customs of 17th century France.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"The play explicitly mentions Paris multiple times, and the scene is set in Paris. Moli\u00e8re's works are typically set in France, often in Paris, reflecting the society he was part of.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 2.431749105453491,
+  "prompt_tokens": 1327,
+  "completion_tokens": 153,
+  "total_tokens": 1480
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8622111v",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Middle Ages\",\n    \"period_reasoning\": \"The title 'La peleriere amoureuse' suggests a setting involving a pilgrimage, which was more common during the Middle Ages.\",\n    \"timeframe_start\": \"500\",\n    \"timeframe_end\": \"1500\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The author Jean de Rotrou was French, and it's likely that the play is set in France, the author's cultural context.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 7.427593946456909,
+  "prompt_tokens": 466,
+  "completion_tokens": 1152,
+  "total_tokens": 1618
+}

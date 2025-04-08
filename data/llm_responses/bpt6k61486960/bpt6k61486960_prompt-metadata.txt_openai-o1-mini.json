@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k61486960",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Late 17th century\",\n    \"period_reasoning\": \"The play was published in 1694 by a French author, suggesting the action takes place around the late 17th century.\",\n    \"timeframe_start\": \"1680\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play was authored and published in France by a French playwright, indicating the setting is likely in France.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 10.75077199935913,
+  "prompt_tokens": 465,
+  "completion_tokens": 1792,
+  "total_tokens": 2257
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5629556w",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Ancient Greek mythology\",\n    \"period_reasoning\": \"The play features characters from Greek mythology: Alcide (French name for Heracles/Hercules), D\u00e9janire (Deianira, wife of Heracles), Iole (princess loved by Heracles), Nessus (a centaur in Greek mythology), and Junon (Hera in Greek mythology). The narrative elements in the related sentences reference the mythological story where Deianira, jealous of Iole, unwittingly causes Hercules' death using a poisoned robe given to her by the centaur Nessus.\",\n    \"timeframe_start\": \"-1300\",\n    \"timeframe_end\": \"-1200\",\n    \"location\": \"Ancient Greece\",\n    \"location_reasoning\": \"The characters mentioned (Alcide/Heracles, D\u00e9janire, Iole, Nessus, Junon/Hera) are all figures from Greek mythology. The narrative references the classical Greek myth of Heracles, his wife Deianira, and the events leading to his death. The story traditionally takes place in various locations in Ancient Greece, particularly around Trachis.\",\n    \"location_qid\": \"Q27387\"\n}",
+  "duration_seconds": 7.7819671630859375,
+  "prompt_tokens": 1081,
+  "completion_tokens": 298,
+  "total_tokens": 1379
+}

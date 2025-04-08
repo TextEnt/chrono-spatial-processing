@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090131j",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Classical antiquity\",\n    \"period_reasoning\": \"French neoclassical tragedies of the 17th century, such as those by authors like Racine and Corneille, frequently drew on settings from classical antiquity (Greek or Roman). Given the genre and publication era, this play likely follows that convention.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"476\",\n    \"location\": \"Ancient Greece\",\n    \"location_reasoning\": \"17th-century French tragedies commonly used ancient Greek mythological or historical settings, even if unspecified in the title. The absence of explicit geographic clues in the metadata leads to this default assumption.\",\n    \"location_qid\": \"Q117728\"\n}",
+  "duration_seconds": 80.28513669967651,
+  "prompt_tokens": 441,
+  "completion_tokens": 1322,
+  "total_tokens": 1763
+}

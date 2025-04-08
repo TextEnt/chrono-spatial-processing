@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k853059s",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"Pastoral plays from the 17th century often drew inspiration from classical antiquity, particularly idealized rural settings associated with ancient Greece or Rome. The name 'Cydippe' is linked to Greek mythology (e.g., the story of Cydippe and Acontius), further suggesting a classical setting.\",\n    \"timeframe_start\": \"-500\",\n    \"timeframe_end\": \"-300\",\n    \"location\": \"Arcadia (ancient region of Greece)\",\n    \"location_reasoning\": \"Pastoral works like this one typically evoke Arcadia, a mythical Greek region symbolizing an idyllic rural paradise. The genre's conventions, rather than explicit textual clues, strongly imply this setting.\",\n    \"location_qid\": \"Q170295\"\n}",
+  "duration_seconds": 39.63783383369446,
+  "prompt_tokens": 447,
+  "completion_tokens": 624,
+  "total_tokens": 1071
+}

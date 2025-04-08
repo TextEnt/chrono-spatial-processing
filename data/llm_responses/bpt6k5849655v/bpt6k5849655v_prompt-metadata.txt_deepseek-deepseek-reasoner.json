@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5849655v",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"None\",\n    \"period_reasoning\": \"The play's title and reference to Pluton (Pluto) suggest a mythological setting rather than a specific historical period. The metadata provides no indication of a real-world historical timeframe.\",\n    \"timeframe_start\": \"None\",\n    \"timeframe_end\": \"None\",\n    \"location\": \"None\",\n    \"location_reasoning\": \"The action revolves around Pluton's mythological realm (the underworld), which is not a real geographic location. The metadata does not mention a concrete real-world setting.\",\n    \"location_qid\": \"None\"\n}",
+  "duration_seconds": 59.4815239906311,
+  "prompt_tokens": 453,
+  "completion_tokens": 1171,
+  "total_tokens": 1624
+}

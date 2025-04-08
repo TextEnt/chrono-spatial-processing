@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k15107128",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Biblical period\",\n    \"period_reasoning\": \"The play 'Athalie' by Jean Racine is based on the biblical story of Athaliah, who was a queen of Judah. The mention of figures like Samuel and references to the Tabernacle suggest a setting in the ancient Israelite period.\",\n    \"timeframe_start\": \"-1000\",\n    \"timeframe_end\": \"-500\",\n    \"location\": \"Ancient Kingdom of Judah\",\n    \"location_reasoning\": \"The play is set in the context of the biblical story of Athaliah, who was a queen in the Kingdom of Judah. The references to Hebrew figures and the Tabernacle further indicate this location.\",\n    \"location_qid\": \"Q133336\"\n}",
+  "duration_seconds": 3.380791187286377,
+  "prompt_tokens": 589,
+  "completion_tokens": 164,
+  "total_tokens": 753
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090048g",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Ancient Mesopotamia\",\n    \"period_reasoning\": \"The play's title 'Pyrame' and characters 'Thisbe' reference the classical myth of Pyramus and Thisbe, originating in ancient Babylonian lore (as told in Ovid's Metamorphoses). The tragic lovers' story is set in ancient Mesopotamia.\",\n    \"timeframe_start\": \"-1000\",\n    \"timeframe_end\": \"-1\",\n    \"location\": \"Babylon\",\n    \"location_reasoning\": \"The myth of Pyramus and Thisbe is explicitly set in Babylon (ancient Mesopotamia), as referenced in classical sources like Ovid. The excerpt's archaic tone and references to kingship align with this setting.\",\n    \"location_qid\": \"Q47690\"\n}",
+  "duration_seconds": 35.34626221656799,
+  "prompt_tokens": 610,
+  "completion_tokens": 616,
+  "total_tokens": 1226
+}

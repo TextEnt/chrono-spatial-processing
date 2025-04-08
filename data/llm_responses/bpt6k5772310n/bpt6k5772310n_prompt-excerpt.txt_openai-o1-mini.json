@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5772310n",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Ancient Greece\",\n    \"period_reasoning\": \"The play centers around Ariane (Ariadne), a figure from Greek mythology, indicating a setting in Ancient Greece.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"-300\",\n    \"location\": \"Ancient Greece\",\n    \"location_reasoning\": \"The protagonist is a figure from Greek mythology, suggesting the action takes place in Ancient Greece.\",\n    \"location_qid\": \"Q41\"\n}",
+  "duration_seconds": 5.32680082321167,
+  "prompt_tokens": 607,
+  "completion_tokens": 889,
+  "total_tokens": 1496
+}

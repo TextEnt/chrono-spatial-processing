@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k61251657",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Ancient Persia\",\n    \"period_reasoning\": \"The play frequently mentions 'Perse' (Persia) and involves themes of royalty, conquest, and exile, which are consistent with narratives from ancient Persian history. The mention of a 'Roi' (King) and the context of a hero's exploits suggest a setting in a time when Persia was a significant empire, likely during the Achaemenid Empire.\",\n    \"timeframe_start\": \"-550\",\n    \"timeframe_end\": \"-330\",\n    \"location\": \"Persia\",\n    \"location_reasoning\": \"The play explicitly mentions 'Perse' multiple times, indicating that the setting is in Persia. The context of royal figures and the mention of a 'Roi' (King) further supports this location as being within the historical boundaries of ancient Persia.\",\n    \"location_qid\": \"Q1027\"\n}",
+  "duration_seconds": 3.9730582237243652,
+  "prompt_tokens": 1380,
+  "completion_tokens": 191,
+  "total_tokens": 1571
+}

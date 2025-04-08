@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090230g",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": null,\n    \"period_reasoning\": \"The provided metadata does not include information about the setting or context of the play's action.\",\n    \"timeframe_start\": null,\n    \"timeframe_end\": null,\n    \"location\": null,\n    \"location_reasoning\": \"There is no information in the metadata regarding the geographic setting of the play.\",\n    \"location_qid\": null\n}",
+  "duration_seconds": 2.2590389251708984,
+  "prompt_tokens": 470,
+  "completion_tokens": 294,
+  "total_tokens": 764
+}

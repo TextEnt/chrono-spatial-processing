@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1513096g",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": null,\n    \"period_reasoning\": \"The title 'Alidor et Oronte. Tragi-comedie du sieur de R.' does not provide enough information to determine the specific historical period in which the play is set. The play's publication date in 1636 does not necessarily reflect the period in which the play's action occurs.\",\n    \"timeframe_start\": null,\n    \"timeframe_end\": null,\n    \"location\": null,\n    \"location_reasoning\": \"The title and metadata do not provide sufficient information to determine the geographic location where the action of the play takes place. The author's name and the title do not indicate a specific location.\",\n    \"location_qid\": null\n}",
+  "duration_seconds": 1.9442198276519775,
+  "prompt_tokens": 450,
+  "completion_tokens": 154,
+  "total_tokens": 604
+}

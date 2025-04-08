@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5772310n",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"The play references Greek mythological characters like Ariane (Ariadne), Arcas, and Ph\u00e9dre, and mentions Athens, indicating it is set in ancient Greece during Classical Antiquity.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"-300\",\n    \"location\": \"Athens\",\n    \"location_reasoning\": \"Athens is one of the top mentioned places in the play and aligns with the Greek mythological context of the characters.\",\n    \"location_qid\": \"Q415\"\n}",
+  "duration_seconds": 5.6787309646606445,
+  "prompt_tokens": 947,
+  "completion_tokens": 910,
+  "total_tokens": 1857
+}

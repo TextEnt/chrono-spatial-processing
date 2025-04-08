@@ -1,9 +1,0 @@
-{
-    "period": "Medieval to Renaissance Hungary",
-    "period_reasoning": "The play is titled 'Théodore, Reyne de Hongrie' (Theodore, Queen of Hungary), which indicates it takes place during a period when Hungary had a monarchy with a female ruler. Since the play was written in the 17th century (1658), it likely depicts events set in medieval or Renaissance Hungary, possibly featuring a fictionalized or historical Hungarian queen. French theater of this period often dramatized historical or pseudo-historical subjects set in earlier centuries.",
-    "timeframe_start": "1000",
-    "timeframe_end": "1600",
-    "location": "Kingdom of Hungary",
-    "location_reasoning": "The title explicitly mentions 'Reyne de Hongrie' (Queen of Hungary), clearly establishing Hungary as the primary setting. The Kingdom of Hungary was a significant European power during the medieval and Renaissance periods.",
-    "location_qid": "Q28513"
-}

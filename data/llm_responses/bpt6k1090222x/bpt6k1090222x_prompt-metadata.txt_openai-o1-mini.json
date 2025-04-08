@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090222x",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Elizabethan era\",\n    \"period_reasoning\": \"The play centers on the Earl of Essex, a notable figure during the reign of Queen Elizabeth I in late 16th-century England.\",\n    \"timeframe_start\": \"1558\",\n    \"timeframe_end\": \"1603\",\n    \"location\": \"England\",\n    \"location_reasoning\": \"The Earl of Essex was an English nobleman and military officer active during the Elizabethan era.\",\n    \"location_qid\": \"Q20\"\n}",
+  "duration_seconds": 5.6639440059661865,
+  "prompt_tokens": 461,
+  "completion_tokens": 829,
+  "total_tokens": 1290
+}

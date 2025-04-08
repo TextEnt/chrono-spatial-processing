@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1097720",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Ancient Greek mythology\",\n    \"period_reasoning\": \"The title 'Phalante' suggests a connection to Greek mythology. Phalantus (or Phalante in French) was a Spartan hero who led the Partheniae to found Tarentum (modern Taranto) in southern Italy. This mythological/semi-historical figure would place the play in ancient Greece, likely during the archaic period when Greek colonization was occurring.\",\n    \"timeframe_start\": \"-750\",\n    \"timeframe_end\": \"-550\",\n    \"location\": \"Ancient Sparta or Tarentum (modern Taranto, Italy)\",\n    \"location_reasoning\": \"Phalantus was a Spartan who led colonists to found Tarentum in southern Italy around the 8th century BCE. The play is likely set either in Sparta before the expedition or in Tarentum during/after its founding. Since La Calpren\u00e8de was writing classical tragedies in the French neoclassical tradition, he would have drawn on Greek mythology and history for inspiration.\",\n    \"location_qid\": \"Q5685\"\n}",
+  "duration_seconds": 6.180793046951294,
+  "prompt_tokens": 504,
+  "completion_tokens": 271,
+  "total_tokens": 775
+}

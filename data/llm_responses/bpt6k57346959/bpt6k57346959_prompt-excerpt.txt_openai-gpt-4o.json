@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k57346959",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"The presence of characters like Diane (Diana) and a Satyr suggests a setting in Classical Antiquity, as these are figures from Greco-Roman mythology.\",\n    \"timeframe_start\": \"-0500\",\n    \"timeframe_end\": \"0500\",\n    \"location\": \"Ancient Greece\",\n    \"location_reasoning\": \"The use of mythological figures such as Diane (Diana) and a Satyr, which are rooted in Greek mythology, suggests that the play is set in Ancient Greece.\",\n    \"location_qid\": \"Q11772\"\n}",
+  "duration_seconds": 2.569556951522827,
+  "prompt_tokens": 601,
+  "completion_tokens": 139,
+  "total_tokens": 740
+}

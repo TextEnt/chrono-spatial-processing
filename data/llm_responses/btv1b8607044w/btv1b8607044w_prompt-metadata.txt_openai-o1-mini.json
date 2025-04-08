@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8607044w",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"Given that Georges de Scud\u00e9ry's works often draw upon classical themes and settings, it is likely that 'L'Amour tirannique' is set during the period of Classical Antiquity.\",\n    \"timeframe_start\": \"-500\",\n    \"timeframe_end\": \"500\",\n    \"location\": \"Ancient Greece\",\n    \"location_reasoning\": \"Scud\u00e9ry's inspiration from classical mythology and literature suggests that the play is set in Ancient Greece, a common setting for tragedy-comedies of that era.\",\n    \"location_qid\": \"Q144\"\n}",
+  "duration_seconds": 7.7657411098480225,
+  "prompt_tokens": 472,
+  "completion_tokens": 1430,
+  "total_tokens": 1902
+}

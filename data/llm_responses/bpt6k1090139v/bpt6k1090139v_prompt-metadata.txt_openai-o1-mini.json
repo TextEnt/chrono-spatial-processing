@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090139v",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was published in 1662, situating it within the 17th century. Given that comedies often reflect the societal norms and contexts of their time, it's likely that the action is set during the same century.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play is a French comedy from the 17th century, suggesting that its setting is in France.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 9.61897087097168,
+  "prompt_tokens": 456,
+  "completion_tokens": 1490,
+  "total_tokens": 1946
+}

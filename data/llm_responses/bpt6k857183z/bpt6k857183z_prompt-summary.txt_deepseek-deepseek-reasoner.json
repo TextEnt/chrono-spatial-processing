@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k857183z",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Roman Empire\",\n    \"period_reasoning\": \"The play's frequent references to Rome, Africa, and Crete align with the Roman Empire's historical geography. The mention of laws, courts, and imperial titles (e.g., 'Prince mon P\u00e8re') further supports a classical Roman setting, typical of 17th-century French tragicomedies inspired by antiquity.\",\n    \"timeframe_start\": \"-27\",\n    \"timeframe_end\": \"476\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"Rome is the most frequently mentioned place (8 times) and is central to key plot elements (marriage, legal conflicts, and imperial context). Other locations like Africa and Crete are peripheral but historically associated with Roman territories.\",\n    \"location_qid\": \"Q220\"\n}",
+  "duration_seconds": 48.1370370388031,
+  "prompt_tokens": 1368,
+  "completion_tokens": 960,
+  "total_tokens": 2328
+}

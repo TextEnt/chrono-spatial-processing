@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b86221269",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"The play's title references Diana (Roman goddess) and contains classical mythological elements common in 17th-century French neoclassical theater\",\n    \"timeframe_start\": \"-100\",\n    \"timeframe_end\": \"100\",\n    \"location\": \"Ancient Rome\",\n    \"location_reasoning\": \"Diana is a Roman deity, and French neoclassical plays frequently used Greco-Roman settings\",\n    \"location_qid\": \"Q220\"\n}",
+  "duration_seconds": 46.038002252578735,
+  "prompt_tokens": 602,
+  "completion_tokens": 718,
+  "total_tokens": 1320
+}

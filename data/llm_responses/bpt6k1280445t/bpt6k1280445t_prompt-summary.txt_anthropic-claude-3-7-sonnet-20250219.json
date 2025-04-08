@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280445t",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"17th Century France\",\n    \"period_reasoning\": \"The metadata indicates this is a play by Moli\u00e8re published in 1674, during the 17th century. Moli\u00e8re's plays were typically set in his contemporary society. The language, social conventions, and references in the dialogue excerpts (such as discussions about theater, comedies, and social gatherings like suppers) align with 17th century French society.\",\n    \"timeframe_start\": \"1650\",\n    \"timeframe_end\": \"1674\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"Paris is explicitly mentioned in the top 5 places list. Additionally, there are references to Parisian society and culture in the dialogue, such as when a character mentions 'for peu qu'on y demeure, il vous passe l\u00e0 tous les jours assez de choses devant les yeux' (referring to Paris as a place where much happens). Other locations mentioned (Louvre, Place Royale) are in Paris. The setting appears to be the home of a wealthy Parisian, where characters are gathering for a supper.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 5.969048976898193,
+  "prompt_tokens": 1815,
+  "completion_tokens": 276,
+  "total_tokens": 2091
+}

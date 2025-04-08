@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5772310n",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"The names 'Pirithous' and 'Ariane' suggest characters from Greek mythology. Pirithous is a figure associated with Greek myth, often linked to Theseus, and Ariane (Ariadne) is known from the myth of Theseus and the Minotaur. These elements indicate a setting in Classical Antiquity.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"-300\",\n    \"location\": \"Ancient Greece\",\n    \"location_reasoning\": \"The characters and themes are derived from Greek mythology, which suggests that the play is set in Ancient Greece. The use of mythological figures like Pirithous and Ariane points to a setting in this region.\",\n    \"location_qid\": \"Q11772\"\n}",
+  "duration_seconds": 3.408651828765869,
+  "prompt_tokens": 587,
+  "completion_tokens": 179,
+  "total_tokens": 766
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090222x",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Elizabethan era\",\n    \"period_reasoning\": \"The play references the reign of a queen ('le r\u00e8gne d'une femme') and the Earl of Essex, a title associated with Robert Devereux, 2nd Earl of Essex, who was executed in 1601 during the reign of Elizabeth I of England. The historical context aligns with the Elizabethan period.\",\n    \"timeframe_start\": \"1558\",\n    \"timeframe_end\": \"1603\",\n    \"location\": \"England\",\n    \"location_reasoning\": \"The title 'Le Comte d'Essex' refers to the English peerage title, and the historical figure Robert Devereux was a prominent courtier in Elizabeth I's England. The political context of the excerpt suggests the English royal court.\",\n    \"location_qid\": \"Q21\"\n}",
+  "duration_seconds": 51.96763801574707,
+  "prompt_tokens": 589,
+  "completion_tokens": 786,
+  "total_tokens": 1375
+}

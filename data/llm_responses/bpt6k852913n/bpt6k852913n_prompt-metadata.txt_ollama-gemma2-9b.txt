@@ -1,9 +1,0 @@
-{
-    "period": "17th century",
-    "period_reasoning": "The metadata indicates the play was published in 1678.",
-    "timeframe_start": "1600",
-    "timeframe_end": "1700",
-    "location": "None",
-    "location_reasoning": "The provided information does not specify a location for the play.",
-    "location_qid": "None"
-}

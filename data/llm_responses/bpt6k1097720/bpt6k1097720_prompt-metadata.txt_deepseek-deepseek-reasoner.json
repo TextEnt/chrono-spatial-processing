@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1097720",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Classical Antiquity (Archaic Greece)\",\n    \"period_reasoning\": \"The name 'Phalante' likely refers to Phalanthus, a Spartan figure associated with the founding of Taras (modern Taranto) in Magna Graecia, circa 706 BCE. La Calpren\u00e8de's tragedies often drew from classical antiquity.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"-700\",\n    \"location\": \"Taras (Tarentum)\",\n    \"location_reasoning\": \"Phalanthus is historically linked to the founding of Taras (Greek colony in southern Italy). The title suggests the play centers on this figure and event.\",\n    \"location_qid\": \"Q202831\"\n}",
+  "duration_seconds": 47.95828127861023,
+  "prompt_tokens": 453,
+  "completion_tokens": 934,
+  "total_tokens": 1387
+}

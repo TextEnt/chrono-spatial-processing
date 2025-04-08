@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090142b",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Ancient Greek or Roman period\",\n    \"period_reasoning\": \"The play mentions characters with Greek/Hellenistic names like Amintas, \u00c9lise, Orosmane, Nicanor, and references to royalty ('la fille de ses Roys'). The mentions of Paphos and Cypre (Cyprus) as well as discussions of tyrants, kings, and princes suggest an ancient setting rather than a contemporary 17th century one.\",\n    \"timeframe_start\": \"-400\",\n    \"timeframe_end\": \"300\",\n    \"location\": \"Cyprus\",\n    \"location_reasoning\": \"The play repeatedly mentions 'Paphos' (a major ancient city in Cyprus) and 'Cypre' (Cyprus) as the main settings. Paphos appears most frequently (10 mentions) and is described as having walls, a populace, and being a place that can be captured or liberated. The text specifically states 'Cypre ne verra plus la fille de ses Roys' (Cyprus will no longer see the daughter of its Kings), confirming Cyprus as the primary location.\",\n    \"location_qid\": \"Q229\"\n}",
+  "duration_seconds": 7.150197982788086,
+  "prompt_tokens": 1820,
+  "completion_tokens": 277,
+  "total_tokens": 2097
+}

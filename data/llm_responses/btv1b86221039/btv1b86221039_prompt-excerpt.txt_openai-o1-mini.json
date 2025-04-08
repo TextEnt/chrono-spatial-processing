@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b86221039",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was written and published in 1669 in France, and the excerpt reflects contemporary societal themes such as marriage and fashion, indicating the setting is likely the 17th century.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play is authored by a French playwright and published in France, and the language and societal themes suggest a French setting.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 6.205900192260742,
+  "prompt_tokens": 605,
+  "completion_tokens": 972,
+  "total_tokens": 1577
+}

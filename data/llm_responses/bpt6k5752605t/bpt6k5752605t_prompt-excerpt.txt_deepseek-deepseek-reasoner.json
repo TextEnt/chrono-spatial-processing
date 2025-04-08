@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5752605t",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Late 17th century France (Ancien R\u00e9gime)\",\n    \"period_reasoning\": \"The play was published in 1691 by a French author, and its comedic focus on bourgeois social dynamics aligns with themes common in French theater during Louis XIV's reign (1643-1715). The dialogue reflects aristocratic manners and class-consciousness typical of the period.\",\n    \"timeframe_start\": \"1643\",\n    \"timeframe_end\": \"1715\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The author's French identity, original French text, and use of character names/terms like 'bourgeoises' strongly suggest a French urban setting typical of 17th-century social comedies.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 35.65191102027893,
+  "prompt_tokens": 623,
+  "completion_tokens": 565,
+  "total_tokens": 1188
+}

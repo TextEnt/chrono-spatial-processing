@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090222x",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Elizabethan era\",\n    \"period_reasoning\": \"The play is centered around the Count of Essex, a title associated with the Elizabethan era and historical figures like Robert Devereux, a favorite of Queen Elizabeth I.\",\n    \"timeframe_start\": \"1558\",\n    \"timeframe_end\": \"1603\",\n    \"location\": \"England\",\n    \"location_reasoning\": \"The Count of Essex is an English noble title, and the events likely take place in England during the Elizabethan period.\",\n    \"location_qid\": \"Q145\"\n}",
+  "duration_seconds": 8.11851692199707,
+  "prompt_tokens": 1252,
+  "completion_tokens": 1353,
+  "total_tokens": 2605
+}

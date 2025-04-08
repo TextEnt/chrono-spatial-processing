@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k6255892m",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was published in 1638 and satirizes contemporary society, suggesting it reflects the social context of 17th-century France.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1650\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play is written in French by a French author and critiques the 'time' (contemporary society), implying a French setting.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 106.29119324684143,
+  "prompt_tokens": 446,
+  "completion_tokens": 1937,
+  "total_tokens": 2383
+}

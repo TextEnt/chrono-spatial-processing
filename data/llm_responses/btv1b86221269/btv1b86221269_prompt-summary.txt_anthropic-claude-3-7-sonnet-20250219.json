@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b86221269",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Early 17th century\",\n    \"period_reasoning\": \"The play was published in 1635, and it's likely set contemporaneously to its writing. The context mentions people with French names and doesn't indicate a historical setting different from its time of writing. The pastoral elements (references to shepherds, peasants) were common in 17th century European theater.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1635\",\n    \"location\": \"Paris, France\",\n    \"location_reasoning\": \"Paris is frequently mentioned in the text. The play appears to have scenes set in Paris, with references to characters viewing or being in Paris. Additionally, there's a mention of Boulogne (likely Boulogne-sur-Mer in France) as the place from which Diane comes before traveling to Paris. The French language and setting, combined with the explicit mentions of Paris, strongly suggest the play is set in Paris, France.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 7.540005922317505,
+  "prompt_tokens": 2344,
+  "completion_tokens": 240,
+  "total_tokens": 2584
+}

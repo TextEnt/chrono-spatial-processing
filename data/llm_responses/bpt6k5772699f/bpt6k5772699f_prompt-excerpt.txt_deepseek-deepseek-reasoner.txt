@@ -1,9 +1,0 @@
-{
-    "period": "Neo-Babylonian Empire / Achaemenid Persian conquest",
-    "period_reasoning": "The play references King Balthazar (Belshazzar) of Babylon and Cyrus, corresponding to the historical fall of Babylon to Cyrus the Great in 539 B.C.E.",
-    "timeframe_start": "-539",
-    "timeframe_end": "-539",
-    "location": "Babylon",
-    "location_reasoning": "The title explicitly identifies Balthazar as 'roy de Babilone' (King of Babylon), and the excerpt references defensive walls, consistent with ancient Babylon's fortified city.",
-    "location_qid": "Q5684"
-}

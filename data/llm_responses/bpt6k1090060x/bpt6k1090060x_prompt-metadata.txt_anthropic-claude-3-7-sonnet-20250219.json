@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090060x",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"French pastoral drama period\",\n    \"period_reasoning\": \"This is a pastoral play ('Pastorale') from the late 17th century (published in 1692). Pastoral dramas typically depict an idealized rural setting that is somewhat timeless but usually set in the playwright's contemporary period or the recent past. Given the publication date and genre, the play likely depicts a setting contemporary to or slightly before the author's time.\",\n    \"timeframe_start\": \"1650\",\n    \"timeframe_end\": \"1692\",\n    \"location\": \"Rural France\",\n    \"location_reasoning\": \"The title indicates this is a 'Pastorale' (pastoral), which typically depicts rural settings. Being a French play from the 17th century, it most likely depicts a rural French setting. The name 'Janin' in the title suggests a French character. Without more specific information in the metadata, we can only determine it's likely set in rural France.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 5.368775129318237,
+  "prompt_tokens": 492,
+  "completion_tokens": 240,
+  "total_tokens": 732
+}

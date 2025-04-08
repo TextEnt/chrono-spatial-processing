@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k61486960",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The use of '\u00e9cus' (French gold coins) and the style of dialogue suggest a setting in 17th century France, aligning with the play's publication date of 1694.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1699\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The language and currency mentioned ('\u00e9cus') are indicative of France during the time the play was written.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 4.831411838531494,
+  "prompt_tokens": 618,
+  "completion_tokens": 715,
+  "total_tokens": 1333
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b86107875",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was published in 1661 and includes references to Paris and Fontainebleau, suggesting it is set in contemporary 17th century France.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"The play frequently mentions Paris and Fontainebleau, indicating that the action takes place in or around Paris, France.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 6.410254955291748,
+  "prompt_tokens": 1347,
+  "completion_tokens": 1029,
+  "total_tokens": 2376
+}

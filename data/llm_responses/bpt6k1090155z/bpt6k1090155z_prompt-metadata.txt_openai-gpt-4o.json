@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090155z",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"The play 'Les Sosies' by Jean de Rotrou is based on the mythological character Sosie, who appears in Plautus's play 'Amphitryon'. Plautus was a Roman playwright, and his works are set in the context of Classical Antiquity.\",\n    \"timeframe_start\": \"-0500\",\n    \"timeframe_end\": \"0500\",\n    \"location\": \"Ancient Greece\",\n    \"location_reasoning\": \"The character Sosie is associated with Greek mythology and the play 'Amphitryon' by Plautus, which is set in a mythological version of Ancient Greece.\",\n    \"location_qid\": \"Q11767\"\n}",
+  "duration_seconds": 6.348350763320923,
+  "prompt_tokens": 438,
+  "completion_tokens": 162,
+  "total_tokens": 600
+}

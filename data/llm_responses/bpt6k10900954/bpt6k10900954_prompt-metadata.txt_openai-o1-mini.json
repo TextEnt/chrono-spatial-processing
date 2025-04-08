@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10900954",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Early Modern period\",\n    \"period_reasoning\": \"The play was written in the 17th century France, which falls under the Early Modern period. It is likely set in the same timeframe to reflect contemporary societal norms and issues.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play is a French comedy from the 17th century, suggesting that its action takes place in France.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 5.527249097824097,
+  "prompt_tokens": 468,
+  "completion_tokens": 905,
+  "total_tokens": 1373
+}

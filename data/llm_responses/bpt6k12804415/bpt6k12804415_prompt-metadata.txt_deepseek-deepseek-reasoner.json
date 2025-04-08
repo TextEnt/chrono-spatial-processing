@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k12804415",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"17th century France\",\n    \"period_reasoning\": \"Moli\u00e8re's plays typically satirize 17th-century French society, and the publication date (1663) aligns with Louis XIV's reign, reflecting contemporary norms and settings.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"Moli\u00e8re's works are universally set in France, particularly Parisian aristocratic or bourgeois settings, mirroring the social context of his time.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 35.15867233276367,
+  "prompt_tokens": 452,
+  "completion_tokens": 683,
+  "total_tokens": 1135
+}

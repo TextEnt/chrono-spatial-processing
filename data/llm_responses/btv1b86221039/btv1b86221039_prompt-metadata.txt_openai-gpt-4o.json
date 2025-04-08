@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b86221039",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": null,\n    \"period_reasoning\": \"The title 'La femme juge et partie' and the author Montfleury do not provide sufficient information to determine the specific historical period in which the play's action is set. The play was published in 1669, but without more context or content from the play itself, it is not possible to ascertain the historical setting.\",\n    \"timeframe_start\": null,\n    \"timeframe_end\": null,\n    \"location\": null,\n    \"location_reasoning\": \"The title and metadata provided do not specify a geographic location for the play's setting. Without additional context or content from the play, it is not possible to determine the location.\",\n    \"location_qid\": null\n}",
+  "duration_seconds": 3.787213087081909,
+  "prompt_tokens": 447,
+  "completion_tokens": 157,
+  "total_tokens": 604
+}

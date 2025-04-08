@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8614585w",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Early Christian period\",\n    \"period_reasoning\": \"The play is about the martyrdom of Saint Reine (or Regina), who is traditionally believed to have been martyred during the Roman Empire's persecution of Christians. This places the events in the early Christian period, likely during the 3rd century CE.\",\n    \"timeframe_start\": \"0200\",\n    \"timeframe_end\": \"0300\",\n    \"location\": \"Alise-Sainte-Reine, France\",\n    \"location_reasoning\": \"The title of the play mentions 'sainte Reyne d'Alise,' which refers to Alise-Sainte-Reine, a commune in France where Saint Reine is believed to have been martyred.\",\n    \"location_qid\": \"Q1070397\"\n}",
+  "duration_seconds": 2.862076997756958,
+  "prompt_tokens": 471,
+  "completion_tokens": 171,
+  "total_tokens": 642
+}

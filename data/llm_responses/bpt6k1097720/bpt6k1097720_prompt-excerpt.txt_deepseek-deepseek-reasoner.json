@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1097720",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"The play is a 17th-century French tragedy featuring names (e.g., Phalante, Helene) and themes (e.g., royal conflict, tragic love) typical of classical antiquity settings, which were common in early modern French tragedies.\",\n    \"timeframe_start\": \"-500\",\n    \"timeframe_end\": \"-400\",\n    \"location\": \"Ancient Greece\",\n    \"location_reasoning\": \"The names Phalante (possibly derived from Phalantus, a Spartan figure) and Helene (Helen of Troy) suggest a classical Greek context, likely Sparta or a related mythological setting.\",\n    \"location_qid\": \"Q117728\"\n}",
+  "duration_seconds": 118.18056607246399,
+  "prompt_tokens": 623,
+  "completion_tokens": 2199,
+  "total_tokens": 2822
+}

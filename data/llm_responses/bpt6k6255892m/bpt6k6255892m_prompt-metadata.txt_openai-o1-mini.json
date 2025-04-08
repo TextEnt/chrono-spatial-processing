@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k6255892m",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was published in 1638, placing it in the context of the 17th century. It is likely set around the contemporary period of its publication.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"The author is French and the play was published in France during the 17th century, suggesting that the setting is likely Paris, which was a major cultural center at the time.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 9.205680847167969,
+  "prompt_tokens": 465,
+  "completion_tokens": 980,
+  "total_tokens": 1445
+}

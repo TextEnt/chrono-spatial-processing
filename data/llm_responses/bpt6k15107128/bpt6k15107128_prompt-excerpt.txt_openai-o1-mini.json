@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k15107128",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Iron Age II\",\n    \"period_reasoning\": \"The play Athalie is based on the biblical story of Athaliah, queen of Judah, which is set during the Iron Age II period in the ancient Near East.\",\n    \"timeframe_start\": \"-900\",\n    \"timeframe_end\": \"-800\",\n    \"location\": \"Jerusalem\",\n    \"location_reasoning\": \"Athalie, queen of Judah, was historically associated with Jerusalem, the capital of the Kingdom of Judah.\",\n    \"location_qid\": \"Q1215\"\n}",
+  "duration_seconds": 5.80757212638855,
+  "prompt_tokens": 609,
+  "completion_tokens": 903,
+  "total_tokens": 1512
+}

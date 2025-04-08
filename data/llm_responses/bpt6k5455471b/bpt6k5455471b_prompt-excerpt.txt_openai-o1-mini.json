@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5455471b",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"The excerpt references characters like Daphnis and Coronis, who are figures from ancient Greek mythology. This suggests the play is set in a period influenced by classical Greek culture and mythology.\",\n    \"timeframe_start\": \"-500\",\n    \"timeframe_end\": \"-323\",\n    \"location\": \"Greece\",\n    \"location_reasoning\": \"The use of Greek mythological characters indicates that the setting of the play is in Greece.\",\n    \"location_qid\": \"Q41\"\n}",
+  "duration_seconds": 5.173171043395996,
+  "prompt_tokens": 631,
+  "completion_tokens": 774,
+  "total_tokens": 1405
+}

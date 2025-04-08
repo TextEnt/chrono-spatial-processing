@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k58122453",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was published in 1637, during the 17th century, and French theater of this era often reflected contemporary settings. The language and social dynamics (e.g., references to 'Cavaliers' and formal address like 'Messieurs') align with early modern French societal norms.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play is written in French, published in France, and features character names and terms (e.g., 'Batelier', 'Messieurs') typical of French society. No explicit geographical clues suggest a non-French setting.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 58.61063504219055,
+  "prompt_tokens": 609,
+  "completion_tokens": 1160,
+  "total_tokens": 1769
+}

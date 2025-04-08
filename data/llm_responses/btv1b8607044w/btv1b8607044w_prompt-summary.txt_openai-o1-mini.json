@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8607044w",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Ancient Troy\",\n    \"period_reasoning\": \"The play mentions characters and places associated with the Trojan War, such as Polix\u00e8ne and Troie, indicating a setting in mythological ancient Troy.\",\n    \"timeframe_start\": \"-1200\",\n    \"timeframe_end\": \"-1100\",\n    \"location\": \"Troy\",\n    \"location_reasoning\": \"The play references 'Troie', the French name for Troy, suggesting the setting is in Troy.\",\n    \"location_qid\": \"Q3799\"\n}",
+  "duration_seconds": 8.271008968353271,
+  "prompt_tokens": 1413,
+  "completion_tokens": 963,
+  "total_tokens": 2376
+}

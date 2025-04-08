@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280452z",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was written and published in 1674 by Moli\u00e8re, situating its setting in the 17th century.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris, France\",\n    \"location_reasoning\": \"Moli\u00e8re was based in Paris, and his plays are typically set in contemporary French society.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 5.52907395362854,
+  "prompt_tokens": 469,
+  "completion_tokens": 766,
+  "total_tokens": 1235
+}

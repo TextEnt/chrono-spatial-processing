@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090060x",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"17th century rural France\",\n    \"period_reasoning\": \"The play was published in 1692 according to the metadata, which places it in the 17th century. The excerpt contains what appears to be a rural dialect or patois French (not standard literary French), with vocabulary that suggests a rural setting. Pastoral plays of this period typically depicted rural life contemporary to the author's time.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Rural France, likely in a Franco-Proven\u00e7al or Arpitan-speaking region\",\n    \"location_reasoning\": \"The excerpt contains text that is not standard French but appears to be a Franco-Proven\u00e7al dialect or patois with words like 'filli' (fille), 'ben' (bien), 'vout' (veut), and other dialectal forms. The title mentions a 'Pastorale' which was a genre depicting rural/shepherd life. Words like 'vacheiti' suggest farm/pastoral setting. This points to rural France, particularly in eastern/southeastern regions where Franco-Proven\u00e7al dialects were spoken.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 7.347848176956177,
+  "prompt_tokens": 691,
+  "completion_tokens": 288,
+  "total_tokens": 979
+}

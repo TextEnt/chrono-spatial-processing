@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090230g",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"17th century France\",\n    \"period_reasoning\": \"The play is a French comedy from the 17th century, written in 1673. The style and language suggest it is set in the same period as its writing, which is common for comedies of that time.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1699\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play is written by a French author and the language used is French. The names of the characters and the style are typical of French plays from the 17th century, suggesting the setting is in France.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 3.055833101272583,
+  "prompt_tokens": 621,
+  "completion_tokens": 155,
+  "total_tokens": 776
+}

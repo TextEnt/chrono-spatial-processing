@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5849655v",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Mythological\",\n    \"period_reasoning\": \"The play's title references 'Pluton', a figure from Roman mythology, suggesting the setting is within a mythological context rather than a specific historical period.\",\n    \"timeframe_start\": null,\n    \"timeframe_end\": null,\n    \"location\": \"Underworld\",\n    \"location_reasoning\": \"The title mentions 'Pluton', the Roman god of the underworld, indicating that the play is set in a mythological version of the underworld.\",\n    \"location_qid\": \"Q11397\"\n}",
+  "duration_seconds": 2.7384450435638428,
+  "prompt_tokens": 449,
+  "completion_tokens": 127,
+  "total_tokens": 576
+}

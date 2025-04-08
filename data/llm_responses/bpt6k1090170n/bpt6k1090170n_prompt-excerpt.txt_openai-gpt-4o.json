@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090170n",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Ancient Rome\",\n    \"period_reasoning\": \"The play 'Les M\u00e9nechmes' by Jean de Rotrou is an adaptation of Plautus' 'Menaechmi', which is set in Ancient Rome. The names and context suggest a Roman setting.\",\n    \"timeframe_start\": \"-0500\",\n    \"timeframe_end\": \"0000\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"The original play 'Menaechmi' by Plautus is set in Rome, and adaptations typically retain the original setting unless explicitly changed.\",\n    \"location_qid\": \"Q220\"\n}",
+  "duration_seconds": 2.4866151809692383,
+  "prompt_tokens": 590,
+  "completion_tokens": 138,
+  "total_tokens": 728
+}

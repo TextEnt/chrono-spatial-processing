@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5828916x",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Classical Greece\",\n    \"period_reasoning\": \"The play mentions Corinthe, a significant city-state in ancient Greece, and refers to it as the 'Ville capitalle de Gr\u00e8ce'. This suggests that the setting is during a time when Corinth was a prominent city in Greece, which aligns with the Classical Greece period.\",\n    \"timeframe_start\": \"-0500\",\n    \"timeframe_end\": \"-0323\",\n    \"location\": \"Corinth\",\n    \"location_reasoning\": \"The play frequently mentions Corinthe, indicating that it is the primary setting. Corinth was a major city-state in ancient Greece, which aligns with the context provided in the play.\",\n    \"location_qid\": \"Q11752\"\n}",
+  "duration_seconds": 3.0272061824798584,
+  "prompt_tokens": 931,
+  "completion_tokens": 158,
+  "total_tokens": 1089
+}

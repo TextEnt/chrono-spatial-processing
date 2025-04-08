@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090155z",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Ancient Greece\",\n    \"period_reasoning\": \"The play references figures from Greek mythology, such as Amphytrion, Creon, Mercure, Alcm\u00e8ne, and locations like Thrace and Thebes, indicating that the action is set in Ancient Greece.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"-300\",\n    \"location\": \"Thrace\",\n    \"location_reasoning\": \"Thrace is the most frequently mentioned place in the play, suggesting that the action takes place there.\",\n    \"location_qid\": \"Q1807\"\n}",
+  "duration_seconds": 9.420101165771484,
+  "prompt_tokens": 1018,
+  "completion_tokens": 1487,
+  "total_tokens": 2505
+}

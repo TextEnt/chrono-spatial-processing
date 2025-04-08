@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10901126",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Roman Empire\",\n    \"period_reasoning\": \"The play frequently mentions figures such as Germanicus and Drusus, who were prominent figures during the Roman Empire. Germanicus was a notable Roman general and member of the Julio-Claudian dynasty, active in the early 1st century CE.\",\n    \"timeframe_start\": \"0001\",\n    \"timeframe_end\": \"0100\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"The play frequently references Rome, indicating that the action is set in this city. Rome was the center of the Roman Empire during the time of Germanicus.\",\n    \"location_qid\": \"Q220\"\n}",
+  "duration_seconds": 2.640963077545166,
+  "prompt_tokens": 1446,
+  "completion_tokens": 146,
+  "total_tokens": 1592
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k61486960",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was written in 1694, and the language and themes suggest it is set in a contemporary setting for its time, which would be the late 17th century.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The author, Jean-Fran\u00e7ois Regnard, was a French playwright, and the names of the characters (Dorante, Pasquin, Agathe) are typical of French literature. The setting is likely in France, as it was common for playwrights to set their works in familiar locations.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 2.4968860149383545,
+  "prompt_tokens": 598,
+  "completion_tokens": 162,
+  "total_tokens": 760
+}

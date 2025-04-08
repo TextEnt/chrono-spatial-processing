@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090048g",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"The play references mythological characters and settings associated with ancient tales, indicating a setting in classical antiquity.\",\n    \"timeframe_start\": \"-500\",\n    \"timeframe_end\": \"500\",\n    \"location\": \"Babylon\",\n    \"location_reasoning\": \"The character Pyrame is traditionally associated with Babylonian mythology, suggesting the action takes place in Babylon.\",\n    \"location_qid\": \"Q836\"\n}",
+  "duration_seconds": 10.97500991821289,
+  "prompt_tokens": 1014,
+  "completion_tokens": 1144,
+  "total_tokens": 2158
+}

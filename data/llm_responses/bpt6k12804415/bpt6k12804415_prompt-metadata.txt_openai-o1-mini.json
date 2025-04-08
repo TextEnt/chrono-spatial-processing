@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k12804415",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Early modern period\",\n    \"period_reasoning\": \"The play was written and is set in the 17th century, aligning with the early modern period in France.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"Moli\u00e8re was a French playwright, and his works are typically set in contemporary French society.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 5.237841844558716,
+  "prompt_tokens": 474,
+  "completion_tokens": 889,
+  "total_tokens": 1363
+}

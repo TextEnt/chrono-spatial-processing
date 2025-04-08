@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k61486960",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Early Modern France\",\n    \"period_reasoning\": \"The play was written by Jean-Fran\u00e7ois Regnard, a French playwright active in the late 17th century. His works typically reflect contemporary French society and comedic traditions of the time, aligning with the dialogue's focus on romantic and financial intrigues common in French comedies of the era.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play's author, publication context (French), and use of French currency (\u00e9cus) in the dialogue indicate a French setting. The names of characters (Dorante, Pasquin, Agathe) are typical of French theatrical conventions of the period.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 26.242919921875,
+  "prompt_tokens": 616,
+  "completion_tokens": 484,
+  "total_tokens": 1100
+}

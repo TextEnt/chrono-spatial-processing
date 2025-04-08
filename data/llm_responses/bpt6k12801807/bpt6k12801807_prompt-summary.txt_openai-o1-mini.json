@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k12801807",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": null,\n    \"period_reasoning\": \"The provided information does not contain specific details about the historical period in which the play is set.\",\n    \"timeframe_start\": null,\n    \"timeframe_end\": null,\n    \"location\": \"France\",\n    \"location_reasoning\": \"The mention of places such as the Seine and Dauphin, which are associated with France, indicates that the action of the play is set in France.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 4.818334102630615,
+  "prompt_tokens": 1551,
+  "completion_tokens": 762,
+  "total_tokens": 2313
+}

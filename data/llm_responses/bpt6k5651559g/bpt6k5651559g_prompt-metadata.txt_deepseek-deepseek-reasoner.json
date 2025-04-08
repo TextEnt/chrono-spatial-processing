@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5651559g",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Early 17th century\",\n    \"period_reasoning\": \"The play revolves around Cardinal Richelieu, who was active in France during the early 17th century, particularly from 1624 until his death in 1642.\",\n    \"timeframe_start\": \"1624\",\n    \"timeframe_end\": \"1642\",\n    \"location\": null,\n    \"location_reasoning\": \"The play's action takes place in the afterlife (Heaven and Hell), which are not physical geographic locations.\",\n    \"location_qid\": null\n}",
+  "duration_seconds": 93.4441750049591,
+  "prompt_tokens": 456,
+  "completion_tokens": 1875,
+  "total_tokens": 2331
+}

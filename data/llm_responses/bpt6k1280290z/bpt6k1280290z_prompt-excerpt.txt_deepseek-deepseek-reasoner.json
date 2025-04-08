@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280290z",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Roman Empire (Early Imperial period)\",\n    \"period_reasoning\": \"The play's title references Augustus (Octavian), the first Roman emperor, and the characters \u00c6milie and Cinna suggest a plot related to historical conspiracies against him (circa 1st century CE).\",\n    \"timeframe_start\": \"-27\",\n    \"timeframe_end\": \"14\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"The play centers on Augustus, a Roman emperor, and Roman imperial politics. The names and context (e.g., 'vanger son pere' implying revenge linked to Roman civil wars) confirm a Roman setting.\",\n    \"location_qid\": \"Q220\"\n}",
+  "duration_seconds": 28.53012490272522,
+  "prompt_tokens": 620,
+  "completion_tokens": 547,
+  "total_tokens": 1167
+}

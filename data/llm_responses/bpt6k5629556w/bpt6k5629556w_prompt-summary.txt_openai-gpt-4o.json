@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5629556w",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Mythological Greece\",\n    \"period_reasoning\": \"The play features characters such as D\u00e9janire, Alcide (another name for Heracles), Iole, and Nessus, who are figures from Greek mythology. These characters are associated with mythological events rather than historical ones, suggesting the play is set in a mythological period rather than a specific historical timeframe.\",\n    \"timeframe_start\": \"-1200\",\n    \"timeframe_end\": \"-1100\",\n    \"location\": \"Ancient Greece\",\n    \"location_reasoning\": \"The presence of Greek mythological characters such as D\u00e9janire, Alcide, and Nessus indicates that the play is set in Ancient Greece, where these myths originated.\",\n    \"location_qid\": \"Q11772\"\n}",
+  "duration_seconds": 3.08184814453125,
+  "prompt_tokens": 906,
+  "completion_tokens": 168,
+  "total_tokens": 1074
+}

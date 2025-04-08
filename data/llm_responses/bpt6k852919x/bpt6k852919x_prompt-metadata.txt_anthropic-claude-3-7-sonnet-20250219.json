@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k852919x",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Mid-17th century French society\",\n    \"period_reasoning\": \"Given the publication date of 1664, the play was written during the reign of Louis XIV in France. French plays of this period typically depicted contemporary society or the recent past. The comedic nature of the play with a title suggesting a marriage theme ('Le Mariage de Fine-Epice') indicates it likely represented contemporary French society of the mid-17th century.\",\n    \"timeframe_start\": \"1650\",\n    \"timeframe_end\": \"1664\",\n    \"location\": \"Paris, France\",\n    \"location_reasoning\": \"French comedies of the 17th century, particularly those published in Paris, often took place in urban settings, with Paris being the most common location. The title suggests a comedy about marriage in French society, which would typically be set in Paris, the cultural and theatrical center of France during this period. Without specific details indicating another setting, Paris is the most likely location for this type of comedy.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 6.752140045166016,
+  "prompt_tokens": 487,
+  "completion_tokens": 244,
+  "total_tokens": 731
+}

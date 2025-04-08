@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k63635719",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Achaemenid Period (Persian rule in Egypt)\",\n    \"period_reasoning\": \"The play is an adaptation of Heliodorus's 'Aethiopica,' which is set during the Persian occupation of Egypt (6th\u20134th century BCE). The story references Persian satraps in Egypt, placing it within the Achaemenid Empire's dominance.\",\n    \"timeframe_start\": \"-525\",\n    \"timeframe_end\": \"-332\",\n    \"location\": \"Aethiopia (ancient Ethiopia)\",\n    \"location_reasoning\": \"Heliodorus's original work centers on Chariclea, the daughter of the Ethiopian queen, with key events occurring in Ethiopia (referred to as Aethiopia in Greek texts). The title explicitly ties the play to this Greek source.\",\n    \"location_qid\": \"Q282199\"\n}",
+  "duration_seconds": 98.78986287117004,
+  "prompt_tokens": 485,
+  "completion_tokens": 1952,
+  "total_tokens": 2437
+}

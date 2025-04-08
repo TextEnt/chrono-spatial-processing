@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5629556w",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Ancient Greek mythology\",\n    \"period_reasoning\": \"The title 'Alcide' refers to Alcides, another name for Heracles (Hercules), a figure from Ancient Greek mythology. Trag\u00e9dies en musique of this era often drew from classical antiquity.\",\n    \"timeframe_start\": \"-1300\",\n    \"timeframe_end\": \"-1200\",\n    \"location\": \"Ancient Greece\",\n    \"location_reasoning\": \"Heracles/Hercules is a central figure in Greek mythology, and the setting of such myths is typically Ancient Greece.\",\n    \"location_qid\": \"Q11772\"\n}",
+  "duration_seconds": 54.570871114730835,
+  "prompt_tokens": 473,
+  "completion_tokens": 899,
+  "total_tokens": 1372
+}

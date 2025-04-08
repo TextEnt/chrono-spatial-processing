@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090222x",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Elizabethan England\",\n    \"period_reasoning\": \"The play 'Le Comte d'Essex' by Claude Boyer is about Robert Devereux, the 2nd Earl of Essex, who was a favorite of Queen Elizabeth I of England. His life and downfall are set during the Elizabethan era.\",\n    \"timeframe_start\": \"1558\",\n    \"timeframe_end\": \"1603\",\n    \"location\": \"England\",\n    \"location_reasoning\": \"The action of the play is set in England, as it revolves around the historical figure Robert Devereux, who was an English nobleman and a prominent figure in the court of Queen Elizabeth I.\",\n    \"location_qid\": \"Q21\"\n}",
+  "duration_seconds": 2.747130870819092,
+  "prompt_tokens": 441,
+  "completion_tokens": 160,
+  "total_tokens": 601
+}

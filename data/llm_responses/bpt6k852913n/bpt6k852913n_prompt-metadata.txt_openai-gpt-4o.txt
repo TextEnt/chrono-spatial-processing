@@ -1,9 +1,0 @@
-{
-    "period": null,
-    "period_reasoning": "The title 'L'illusion grotesque ou le point nécromancien, comédie' does not provide enough context to determine a specific historical period in which the action of the play takes place.",
-    "timeframe_start": null,
-    "timeframe_end": null,
-    "location": null,
-    "location_reasoning": "The metadata does not provide clear information regarding the geographic setting of the play's action, and the title does not give specific hints about a location.",
-    "location_qid": null
-}

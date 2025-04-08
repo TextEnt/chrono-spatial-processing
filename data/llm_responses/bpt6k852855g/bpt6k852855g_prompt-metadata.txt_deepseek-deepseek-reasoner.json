@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k852855g",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was published in 1695, during the late 17th century, a period associated with Louis XIV's reign. French comedies of this era typically reflected contemporary settings unless otherwise specified.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play is written in French by a French author, and its title references a 'maison de campagne' (country house), a common setting in French domestic comedies of the period.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 123.12667608261108,
+  "prompt_tokens": 450,
+  "completion_tokens": 2313,
+  "total_tokens": 2763
+}

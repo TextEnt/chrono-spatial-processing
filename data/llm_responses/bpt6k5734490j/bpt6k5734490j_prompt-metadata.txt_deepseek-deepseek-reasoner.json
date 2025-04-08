@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5734490j",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": null,\n    \"period_reasoning\": \"The title and metadata do not provide explicit historical context for the play's setting. While pastoral works often evoke classical antiquity or idealized rural settings, there is insufficient information to determine a specific historical period.\",\n    \"timeframe_start\": null,\n    \"timeframe_end\": null,\n    \"location\": null,\n    \"location_reasoning\": \"The pastoral genre typically features idealized rural settings, but the metadata does not explicitly name a geographic location. Titles like 'Amarillis' and 'C\u00e9lim\u00e8ne' suggest pastoral archetypes rather than real-world places.\",\n    \"location_qid\": null\n}",
+  "duration_seconds": 51.85541605949402,
+  "prompt_tokens": 463,
+  "completion_tokens": 960,
+  "total_tokens": 1423
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5752605t",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Late 17th century\",\n    \"period_reasoning\": \"The play was published in 1691 according to the metadata. French plays of this era typically depicted contemporary society, especially comedies focused on bourgeois life. The title 'Les bourgeoises de qualit\u00e9' suggests a comedy about social classes in contemporary France, which means the action likely takes place in the same period as its publication - the late 17th century during the reign of Louis XIV.\",\n    \"timeframe_start\": \"1680\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"The play is titled 'Les bourgeoises de qualit\u00e9' which suggests an urban setting focused on middle-class women aspiring to nobility status. Paris was the center of French society and culture in the 17th century and the most likely setting for a comedy about bourgeois social climbing. The dialogue shows formal, courtly language between characters named Lisandre and Angelique, which fits with urban French society of the period. While no specific Parisian location is mentioned in the excerpt, Paris was the default setting for most French comedies about bourgeois life in this period.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 5.995882034301758,
+  "prompt_tokens": 714,
+  "completion_tokens": 292,
+  "total_tokens": 1006
+}

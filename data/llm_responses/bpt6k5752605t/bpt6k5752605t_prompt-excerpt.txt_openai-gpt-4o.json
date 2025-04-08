@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5752605t",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"17th century France\",\n    \"period_reasoning\": \"The play 'Les bourgeoises de qualit\u00e9' was written by No\u00ebl Lebreton de Hauteroche, a French playwright of the 17th century. The language and style of the excerpt, as well as the themes of social class and romantic relationships, are typical of French comedies from this period.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1699\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The author, No\u00ebl Lebreton de Hauteroche, was a French playwright, and the play was published in France. The themes and language suggest a setting consistent with French society during the 17th century.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 3.6890742778778076,
+  "prompt_tokens": 608,
+  "completion_tokens": 173,
+  "total_tokens": 781
+}

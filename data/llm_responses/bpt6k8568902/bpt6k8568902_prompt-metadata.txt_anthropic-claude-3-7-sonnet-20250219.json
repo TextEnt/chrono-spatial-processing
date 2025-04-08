@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8568902",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Ancient Kingdom of Pontus period\",\n    \"period_reasoning\": \"Hypsicratee likely refers to Hypsicratia (or Hypsicratea), who was the wife of Mithridates VI of Pontus, a king who ruled in the 1st century BCE. The historical Hypsicratia was known for her loyalty and courage, following her husband through his wars and defeats, which aligns with the 'magnanimite' (magnanimity) mentioned in the title.\",\n    \"timeframe_start\": \"-120\",\n    \"timeframe_end\": \"-63\",\n    \"location\": \"Pontus\",\n    \"location_reasoning\": \"The protagonist Hypsicratee strongly suggests the play is about Hypsicratia, wife of Mithridates VI, king of Pontus (a kingdom on the southern coast of the Black Sea in what is now Turkey). The time period corresponds to Mithridates VI's reign and conflicts with Rome.\",\n    \"location_qid\": \"Q207199\"\n}",
+  "duration_seconds": 5.221381902694702,
+  "prompt_tokens": 507,
+  "completion_tokens": 253,
+  "total_tokens": 760
+}

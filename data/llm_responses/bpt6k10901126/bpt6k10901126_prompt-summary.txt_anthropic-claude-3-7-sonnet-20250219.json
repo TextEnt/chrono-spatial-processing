@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10901126",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Early Roman Empire under Tiberius\",\n    \"period_reasoning\": \"The play features Germanicus, Drusus, and Tiberius as characters, with references to Augustus as well. Historically, Germanicus was a prominent Roman general during the early Roman Empire who died in 19 CE. He was the adopted son of Emperor Tiberius (who ruled 14-37 CE) and was related to Augustus. The play appears to depict political tensions involving these historical figures.\",\n    \"timeframe_start\": \"14\",\n    \"timeframe_end\": \"19\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"Rome is the most frequently mentioned place in the play with 38 occurrences. Several passages specifically mention Rome as the setting where the political intrigue between the characters takes place. One passage states 'Rome enti\u00e8re s'empresse' (all of Rome hurries) and another mentions 'Rome enfin s'int\u00e9resse' (finally Rome takes interest), indicating the action occurs in Rome itself, the center of the Roman Empire.\",\n    \"location_qid\": \"Q220\"\n}",
+  "duration_seconds": 5.343313932418823,
+  "prompt_tokens": 1797,
+  "completion_tokens": 267,
+  "total_tokens": 2064
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5828916x",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Early Modern Period\",\n    \"period_reasoning\": \"The play was written in the early 17th century (1631) by Jean de Rotrou, a French playwright. It is likely set in contemporary France during the Early Modern period.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"Jean de Rotrou was a French playwright, and his works are typically set in France.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 5.854954242706299,
+  "prompt_tokens": 488,
+  "completion_tokens": 903,
+  "total_tokens": 1391
+}

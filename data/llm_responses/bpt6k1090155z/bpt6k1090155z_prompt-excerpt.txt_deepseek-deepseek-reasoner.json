@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090155z",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"The play is an adaptation of the Amphitryon myth from Greek/Roman mythology, which is traditionally set in Classical Antiquity. The excerpt references divine intervention (e.g., 'Dieux') and themes of marital fidelity tied to mythological narratives.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"476\",\n    \"location\": \"Thebes\",\n    \"location_reasoning\": \"The Amphitryon myth, which this play adapts, is set in Thebes, Greece. The title 'Les Sosies' refers to the Roman character Sosia, but the original myth's setting remains Thebes.\",\n    \"location_qid\": \"Q16980\"\n}",
+  "duration_seconds": 81.15696787834167,
+  "prompt_tokens": 583,
+  "completion_tokens": 1524,
+  "total_tokens": 2107
+}

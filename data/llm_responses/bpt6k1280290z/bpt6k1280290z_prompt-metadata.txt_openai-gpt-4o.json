@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280290z",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Roman Empire\",\n    \"period_reasoning\": \"The play 'Cinna, ou la Cl\u00e9mence d'Auguste' by Pierre Corneille is set during the reign of the Roman Emperor Augustus. Augustus ruled from 27 B.C.E. to 14 C.E., which places the setting of the play within the timeframe of the Roman Empire.\",\n    \"timeframe_start\": \"-027\",\n    \"timeframe_end\": \"0014\",\n    \"location\": \"Ancient Rome\",\n    \"location_reasoning\": \"The play is centered around the character of Augustus, the first Roman Emperor, indicating that the setting is in Ancient Rome, the capital of the Roman Empire during his reign.\",\n    \"location_qid\": \"Q220\"\n}",
+  "duration_seconds": 13.042479991912842,
+  "prompt_tokens": 455,
+  "completion_tokens": 163,
+  "total_tokens": 618
+}

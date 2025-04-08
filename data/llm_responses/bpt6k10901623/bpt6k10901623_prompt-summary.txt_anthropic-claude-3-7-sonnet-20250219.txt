@@ -1,9 +1,0 @@
-{
-    "period": "Medieval Period",
-    "period_reasoning": "Based on the context, the play mentions a 'Reyne de Hongrie' (Queen of Hungary) in the title, and references to 'LE ROY' (The King) and court politics. The mention of 'Amurat' likely refers to an Ottoman Sultan (possibly Murad/Amurat I, II, or III), which places the setting in the medieval to early modern period when the Ottoman Empire was a significant power and interacted with Hungary.",
-    "timeframe_start": "1300",
-    "timeframe_end": "1500",
-    "location": "Hungary",
-    "location_reasoning": "The title of the play explicitly mentions 'Théodore, Reyne de Hongrie' (Theodore, Queen of Hungary), indicating Hungary as the primary setting. Additionally, the reference to Amurat (likely an Ottoman Sultan) 'passing to Asia' suggests the Hungarian-Ottoman frontier context, which was historically significant.",
-    "location_qid": "Q28"
-}

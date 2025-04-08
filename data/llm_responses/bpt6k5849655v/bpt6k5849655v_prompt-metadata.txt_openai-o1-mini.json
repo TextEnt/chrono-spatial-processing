@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5849655v",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Ancient Rome\",\n    \"period_reasoning\": \"The play references Pluto, the Roman god of the underworld, indicating a setting in the Roman mythological period.\",\n    \"timeframe_start\": \"-753\",\n    \"timeframe_end\": \"476\",\n    \"location\": \"Ancient Rome\",\n    \"location_reasoning\": \"Pluto is the Roman counterpart of Hades, suggesting the setting is within the Roman cultural context.\",\n    \"location_qid\": \"Q220\"\n}",
+  "duration_seconds": 5.589241981506348,
+  "prompt_tokens": 469,
+  "completion_tokens": 954,
+  "total_tokens": 1423
+}

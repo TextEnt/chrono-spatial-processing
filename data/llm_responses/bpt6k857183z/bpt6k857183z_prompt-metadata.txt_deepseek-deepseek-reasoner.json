@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k857183z",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was published in 1650, during the 17th century, a period when French tragi-comedies often reflected contemporary or near-contemporary settings. The genre's popularity in this era suggests a likely alignment with the historical context of its creation.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The author is French, and the play was published in France. 17th-century French theater frequently centered on domestic settings unless explicitly stated otherwise, making France the default assumption.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 77.85505509376526,
+  "prompt_tokens": 449,
+  "completion_tokens": 1612,
+  "total_tokens": 2061
+}

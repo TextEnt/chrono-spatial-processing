@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5772310n",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Ancient Greece\",\n    \"period_reasoning\": \"The play appears to be set in ancient Greece based on the character names mentioned in the text. Characters like Pirithous ('Piritho\u00fcs') and Phaedra ('Ph\u00e9dre') are figures from Greek mythology. Ariane is the French name for Ariadne, a princess in Greek mythology. These mythological characters suggest the play is set in ancient Greek times.\",\n    \"timeframe_start\": \"-1200\",\n    \"timeframe_end\": \"-800\",\n    \"location\": \"Athens\",\n    \"location_reasoning\": \"Athens ('Ath\u00e8nes' in French) is explicitly mentioned in the top 5 places. Additionally, the mythological characters associated with the play (Ariadne, Phaedra) are connected to Athens and Greek mythology. This strongly suggests that Athens is the primary setting of the play.\",\n    \"location_qid\": \"Q1524\"\n}",
+  "duration_seconds": 4.766378879547119,
+  "prompt_tokens": 1112,
+  "completion_tokens": 228,
+  "total_tokens": 1340
+}

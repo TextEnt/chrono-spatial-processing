@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k12804415",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"17th century France\",\n    \"period_reasoning\": \"The play was written by Moli\u00e8re in 1663, a French playwright active in the 17th century. His works typically reflect the social and cultural context of his time, and there is no indication in the metadata or context of anachronistic elements suggesting a different period.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"The play explicitly references Parisian landmarks such as 'Place Royale' and 'Louvre', which are historically associated with 17th-century Paris. The 'top_5_places' list further confirms Paris as the primary setting.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 49.51042318344116,
+  "prompt_tokens": 1059,
+  "completion_tokens": 871,
+  "total_tokens": 1930
+}

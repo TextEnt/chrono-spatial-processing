@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k57899298",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": null,\n    \"period_reasoning\": \"The title 'Crisante tragedie de Mr de Rotrou' does not provide sufficient information to determine the historical period in which the play is set. Without additional context or content from the play, it is not possible to accurately predict the timeframe.\",\n    \"timeframe_start\": null,\n    \"timeframe_end\": null,\n    \"location\": null,\n    \"location_reasoning\": \"The title and metadata do not provide enough information to determine the geographic location where the action of the play takes place. Without further context or details from the play itself, it is not possible to identify a specific location.\",\n    \"location_qid\": null\n}",
+  "duration_seconds": 2.3624839782714844,
+  "prompt_tokens": 441,
+  "completion_tokens": 150,
+  "total_tokens": 591
+}

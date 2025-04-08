@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10900954",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was published in 1661, during the 17th century, a period when French theater often depicted contemporary settings, especially in comedies. The lack of explicit historical or mythological references in the title suggests it is set in the author's own time.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play is written in French, published in France, and its title does not indicate a foreign or fictional setting. 17th-century French comedies typically took place in domestic or urban French contexts.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 59.46794009208679,
+  "prompt_tokens": 450,
+  "completion_tokens": 1217,
+  "total_tokens": 1667
+}

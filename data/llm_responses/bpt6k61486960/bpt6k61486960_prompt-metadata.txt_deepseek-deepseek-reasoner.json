@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k61486960",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"17th century France\",\n    \"period_reasoning\": \"The play was written by Jean-Fran\u00e7ois Regnard, a French author active in the late 17th century, and its publication in 1694 aligns with the comedic traditions and societal settings of Louis XIV's reign, typical of French comedies of that era.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"Regnard was a French playwright, and 17th-century French comedies (like those by Moli\u00e8re) typically depicted contemporary domestic settings in France, often in urban or semi-rural environments. The title's lack of explicit foreign or historical references further supports this.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 43.17790699005127,
+  "prompt_tokens": 445,
+  "completion_tokens": 814,
+  "total_tokens": 1259
+}

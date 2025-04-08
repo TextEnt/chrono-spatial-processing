@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b86107875",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Contemporary to Moli\u00e8re (17th century)\",\n    \"period_reasoning\": \"Moli\u00e8re's plays typically depicted contemporary French society. 'L'\u00c9cole des maris' (The School for Husbands) was written and first performed in 1661, as indicated by the publication date. Moli\u00e8re's comedies generally reflected the customs, manners and social issues of his own time rather than being set in historical periods.\",\n    \"timeframe_start\": \"1650\",\n    \"timeframe_end\": \"1670\",\n    \"location\": \"Paris, France\",\n    \"location_reasoning\": \"Moli\u00e8re's comedies were typically set in Paris, where he lived and worked. The play was performed at the 'Palais Royal' theater in Paris, and while this doesn't guarantee the setting is Paris, most of Moli\u00e8re's urban comedies depicted Parisian society. 'L'\u00c9cole des maris' specifically takes place in an urban setting identifiable as Paris in several editions and analyses of the play.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 5.223545074462891,
+  "prompt_tokens": 509,
+  "completion_tokens": 253,
+  "total_tokens": 762
+}

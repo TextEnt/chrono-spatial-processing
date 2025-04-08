@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090060x",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was published in 1692 and its pastoral and tragicomic elements suggest a setting consistent with the societal and cultural context of the 17th century in France.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Grenoble\",\n    \"location_reasoning\": \"The play references 'Laboureur, voisin de l'Is\u00e8re,' indicating a location near the Is\u00e8re department. Grenoble is a major city in the Is\u00e8re department, making it the most probable setting.\",\n    \"location_qid\": \"Q1203\"\n}",
+  "duration_seconds": 7.4776787757873535,
+  "prompt_tokens": 1488,
+  "completion_tokens": 1309,
+  "total_tokens": 2797
+}

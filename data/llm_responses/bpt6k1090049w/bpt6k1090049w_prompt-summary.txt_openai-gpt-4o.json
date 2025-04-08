@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090049w",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"The play features characters like Sil\u00e8ne, who is associated with Greek mythology, and references to nymphs and satyrs, which are common in ancient Greek and Roman literature. These elements suggest a setting in Classical Antiquity.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"500\",\n    \"location\": \"Ancient Greece\",\n    \"location_reasoning\": \"The presence of mythological figures such as Sil\u00e8ne, a companion of Dionysus in Greek mythology, and the pastoral setting with references to nymphs and satyrs, indicate a setting in Ancient Greece.\",\n    \"location_qid\": \"Q11767\"\n}",
+  "duration_seconds": 3.3126699924468994,
+  "prompt_tokens": 2000,
+  "completion_tokens": 156,
+  "total_tokens": 2156
+}

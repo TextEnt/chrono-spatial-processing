@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k852855g",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Late 17th century\",\n    \"period_reasoning\": \"The play was published in 1695 by a French author, Fran\u00e7ois Passerat, suggesting that the setting likely reflects the contemporary French society of that time.\",\n    \"timeframe_start\": \"1650\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The author is French and the play was published in France in 1695, indicating that the action is likely set in France.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 7.285668849945068,
+  "prompt_tokens": 622,
+  "completion_tokens": 1290,
+  "total_tokens": 1912
+}

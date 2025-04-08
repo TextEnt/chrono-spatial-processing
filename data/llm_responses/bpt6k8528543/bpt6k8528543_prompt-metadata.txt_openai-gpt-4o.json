@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8528543",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play is a tragi-comedy from the 17th century, a time when such genres were popular in France. The publication date of 1656 suggests it is likely set in the same century.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1699\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"Given that the play is written by a French author and the title is in French, it is likely set in France, which was a common setting for plays of this era.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 2.7432758808135986,
+  "prompt_tokens": 440,
+  "completion_tokens": 144,
+  "total_tokens": 584
+}

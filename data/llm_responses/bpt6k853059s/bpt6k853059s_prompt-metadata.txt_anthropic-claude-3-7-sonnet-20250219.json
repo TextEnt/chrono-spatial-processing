@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k853059s",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Ancient Greece\",\n    \"period_reasoning\": \"The title 'Cydippe' refers to a character from Greek mythology, indicating the play is likely set in ancient Greece. Pastoral plays from the 17th century often used Greek mythological settings and characters.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"-323\",\n    \"location\": \"Ancient Greece\",\n    \"location_reasoning\": \"The name 'Cydippe' is from Greek mythology. This is a pastoral play ('pastorale' in the title), and 17th century French pastoral plays frequently used Greek settings. The character Cydippe appears in several Greek myths, most notably in the story of Acontius and Cydippe.\",\n    \"location_qid\": \"Q27832\"\n}",
+  "duration_seconds": 4.268190145492554,
+  "prompt_tokens": 500,
+  "completion_tokens": 193,
+  "total_tokens": 693
+}

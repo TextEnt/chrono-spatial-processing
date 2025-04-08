@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k853059s",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Classical antiquity\",\n    \"period_reasoning\": \"The play references mythological figures such as Venus and Cyth\u00e8re, suggesting a setting in classical mythological times.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"0\",\n    \"location\": \"Cythera\",\n    \"location_reasoning\": \"The play mentions 'Cyth\u00e8re', which refers to the island of Cythera, a location in Greek mythology associated with Venus.\",\n    \"location_qid\": \"Q170236\"\n}",
+  "duration_seconds": 4.591600179672241,
+  "prompt_tokens": 1293,
+  "completion_tokens": 707,
+  "total_tokens": 2000
+}

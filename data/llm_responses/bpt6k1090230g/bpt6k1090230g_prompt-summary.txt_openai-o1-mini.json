@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090230g",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was published in 1673 and references locations such as Paris, indicating it is set in the 17th century.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"Paris is the most frequently mentioned place in the play.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 7.951977968215942,
+  "prompt_tokens": 1200,
+  "completion_tokens": 1012,
+  "total_tokens": 2212
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5455471b",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"The genre 'pastorale h\u00e9ro\u00efque' suggests a pastoral setting, often associated with idealized ancient Greek or Roman rural life, typical of 17th-century French pastoral works inspired by classical themes.\",\n    \"timeframe_start\": \"-500\",\n    \"timeframe_end\": \"-300\",\n    \"location\": \"Arcadia (Greece)\",\n    \"location_reasoning\": \"Pastoral works like this often take place in Arcadia, a symbolic locus of idyllic rural life in classical literature.\",\n    \"location_qid\": \"Q170284\"\n}",
+  "duration_seconds": 44.45527982711792,
+  "prompt_tokens": 469,
+  "completion_tokens": 897,
+  "total_tokens": 1366
+}

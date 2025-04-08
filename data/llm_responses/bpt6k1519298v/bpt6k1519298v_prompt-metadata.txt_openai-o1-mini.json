@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1519298v",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was published in 1662 and was likely set in the contemporary period of the author, which is the 17th century.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris, France\",\n    \"location_reasoning\": \"The play was represented at the Th\u00e9\u00e2tre Royal du Marais, which was located in Paris, indicating that the setting is Paris.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 7.0294880867004395,
+  "prompt_tokens": 478,
+  "completion_tokens": 1222,
+  "total_tokens": 1700
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b86107875",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Mid to late 17th century France\",\n    \"period_reasoning\": \"The play was published in 1661 by Moli\u00e8re, a famous French playwright of the 17th century. Most of Moli\u00e8re's plays were set in his contemporary period. The language and character names (Sganarelle, Val\u00e8re, Isabelle) are typical of 17th century French comedy. The reference to the 'Palais Royal' theater in the title also indicates a setting contemporary to the publication.\",\n    \"timeframe_start\": \"1650\",\n    \"timeframe_end\": \"1670\",\n    \"location\": \"Paris, France\",\n    \"location_reasoning\": \"The play is by Moli\u00e8re, a French playwright, and was performed at the 'Palais Royal' theater in Paris as mentioned in the title. The characters have French names (Sganarelle, Val\u00e8re, Isabelle), and the language is French. Moli\u00e8re typically set his comedies in Paris or French urban settings of his time.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 4.764964818954468,
+  "prompt_tokens": 701,
+  "completion_tokens": 258,
+  "total_tokens": 959
+}

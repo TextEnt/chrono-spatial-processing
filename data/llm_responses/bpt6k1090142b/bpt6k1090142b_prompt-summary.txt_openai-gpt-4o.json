@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090142b",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"The play mentions locations such as Paphos and Cypre, which are associated with ancient Greek and Roman history. The mention of 'fille de ses Roys' and 'Tyrans' suggests a setting in a time when monarchies and tyrannies were common, aligning with Classical Antiquity.\",\n    \"timeframe_start\": \"-0500\",\n    \"timeframe_end\": \"0500\",\n    \"location\": \"Paphos, Cyprus\",\n    \"location_reasoning\": \"Paphos is mentioned as the top location in the play, and it is a historical city in Cyprus known for its significance in ancient Greek and Roman times. The context of the play suggests a setting in this region.\",\n    \"location_qid\": \"Q180746\"\n}",
+  "duration_seconds": 4.247609853744507,
+  "prompt_tokens": 1471,
+  "completion_tokens": 179,
+  "total_tokens": 1650
+}

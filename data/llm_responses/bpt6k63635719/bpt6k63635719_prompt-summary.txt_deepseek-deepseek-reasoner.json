@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k63635719",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Late Period of ancient Egypt (Achaemenid rule)\",\n    \"period_reasoning\": \"The play is based on Heliodorus's 'Aethiopica', set during Persian rule over Egypt. Mentions of Memphis (ancient Egyptian city), Persian names (Arsace, Orondate), and references to Persian political structures (eunuques, Prince Orondate) indicate a context of Achaemenid control over Egypt (6th\u20134th century BCE).\",\n    \"timeframe_start\": \"-525\",\n    \"timeframe_end\": \"-332\",\n    \"location\": \"Memphis, Egypt\",\n    \"location_reasoning\": \"Memphis is explicitly listed as the top mentioned place with 12 occurrences. As the ancient capital of Lower Egypt and a key religious/political center, its prominence aligns with the Persian administrative context described in the text.\",\n    \"location_qid\": \"Q9072\"\n}",
+  "duration_seconds": 64.15294885635376,
+  "prompt_tokens": 2554,
+  "completion_tokens": 1168,
+  "total_tokens": 3722
+}

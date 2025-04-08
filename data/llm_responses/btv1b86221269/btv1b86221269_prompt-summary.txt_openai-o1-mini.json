@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b86221269",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Early Modern Period\",\n    \"period_reasoning\": \"The play was written and published in 1635, indicative of the Early Modern Period in France.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"Paris is the most frequently mentioned location in the play, suggesting it as the setting.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 8.47343897819519,
+  "prompt_tokens": 1913,
+  "completion_tokens": 1333,
+  "total_tokens": 3246
+}

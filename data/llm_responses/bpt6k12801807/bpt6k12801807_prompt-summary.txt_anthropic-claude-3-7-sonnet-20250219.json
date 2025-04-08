@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k12801807",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Ancient Greek or Roman pastoral setting\",\n    \"period_reasoning\": \"The play appears to be a pastoral drama with characters like Daphn\u00e9, Syluie (likely Sylvie), Tirsis, and Aminte, which are typical names in pastoral literature that often emulated classical Greek or Roman settings. The text mentions that it's a 'pastorale fidellement traduite de l'italien,' indicating it's a translation of an Italian pastoral work. Given that it's 'L'Aminte' by Le Tasse (Torquato Tasso), this is likely his famous pastoral drama 'Aminta' (1573), which was set in a classical pastoral world populated by shepherds and nymphs in an idealized Arcadian landscape.\",\n    \"timeframe_start\": \"-500\",\n    \"timeframe_end\": \"100\",\n    \"location\": \"Arcadia\",\n    \"location_reasoning\": \"The references to 'Berg\u00e8re' (shepherdess) and the pastoral nature of the play strongly suggest an Arcadian setting, which was the conventional setting for pastoral dramas. The characters have classical-sounding names (Daphn\u00e9, Syluie, Tirsis, Aminte), and the dialogue refers to natural elements like trees, waters, and forests. The original work by Tasso, 'Aminta,' is known to be set in an idealized Arcadia, a mountainous region in Greece that became the mythical setting for pastoral literature.\",\n    \"location_qid\": \"Q131201\"\n}",
+  "duration_seconds": 8.20354700088501,
+  "prompt_tokens": 1879,
+  "completion_tokens": 362,
+  "total_tokens": 2241
+}

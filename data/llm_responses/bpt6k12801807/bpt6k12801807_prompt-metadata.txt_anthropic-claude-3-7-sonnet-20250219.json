@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k12801807",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Renaissance pastoral setting\",\n    \"period_reasoning\": \"L'Aminte (Aminta in Italian) is a pastoral play by Torquato Tasso (Le Tasse in French) originally written in 1573. Pastoral plays typically depict an idealized rural setting inspired by classical antiquity but generally set in a contemporary or timeless pastoral world. The translation in 1632 does not change the original setting of the play.\",\n    \"timeframe_start\": \"1500\",\n    \"timeframe_end\": \"1600\",\n    \"location\": \"Arcadia (idealized Italian countryside)\",\n    \"location_reasoning\": \"L'Aminte is a pastoral drama, and these works typically take place in an idealized rural landscape called Arcadia. Tasso was an Italian poet and the play would have been set in an idealized version of the Italian countryside, though represented as the mythical Arcadia. Pastoral dramas of this period did not aim for geographical precision but rather created an idealized setting for the dramatic action.\",\n    \"location_qid\": \"Q178493\"\n}",
+  "duration_seconds": 5.98908805847168,
+  "prompt_tokens": 509,
+  "completion_tokens": 259,
+  "total_tokens": 768
+}

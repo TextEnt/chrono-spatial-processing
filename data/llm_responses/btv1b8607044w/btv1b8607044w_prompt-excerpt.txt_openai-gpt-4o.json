@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8607044w",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Ancient Rome\",\n    \"period_reasoning\": \"The excerpt contains themes of destiny, duty, and the conflict between personal desires and familial obligations, which are common in plays set in Ancient Rome. The language and style suggest a setting that aligns with classical themes rather than contemporary 17th-century France.\",\n    \"timeframe_start\": \"-0500\",\n    \"timeframe_end\": \"00476\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"The use of terms like 'vainqueur' (victor) and the focus on duty and destiny suggest a Roman setting, as these are common themes in Roman literature and drama. The play's title and style also hint at a classical setting, likely Rome.\",\n    \"location_qid\": \"Q220\"\n}",
+  "duration_seconds": 5.71152400970459,
+  "prompt_tokens": 586,
+  "completion_tokens": 170,
+  "total_tokens": 756
+}

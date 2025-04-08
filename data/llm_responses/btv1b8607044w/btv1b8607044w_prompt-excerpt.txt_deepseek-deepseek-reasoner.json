@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8607044w",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": null,\n    \"period_reasoning\": \"The excerpt does not contain explicit references to specific historical events, figures, or cultural markers that would indicate a distinct historical period. The themes of love, duty, and fate are universal and not tied to a particular era.\",\n    \"timeframe_start\": null,\n    \"timeframe_end\": null,\n    \"location\": null,\n    \"location_reasoning\": \"The excerpt lacks geographic or culturally specific references (e.g., place names, institutions, or contextual details) that would allow identification of the play's setting. The conflict is interpersonal and abstract, with no indication of a real-world location.\",\n    \"location_qid\": null\n}",
+  "duration_seconds": 80.83539891242981,
+  "prompt_tokens": 610,
+  "completion_tokens": 1523,
+  "total_tokens": 2133
+}

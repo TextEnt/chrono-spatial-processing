@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k57899298",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Ancient Rome\",\n    \"period_reasoning\": \"The excerpt contains language and themes that are reminiscent of classical tragedies, which often draw on themes and settings from Ancient Rome or Greece. The use of terms like 'Seigneur' and the dramatic tone suggest a setting in a historical period known for its dramatic and tragic literature.\",\n    \"timeframe_start\": \"-0500\",\n    \"timeframe_end\": \"0500\",\n    \"location\": \"Ancient Rome\",\n    \"location_reasoning\": \"The play's title 'Crisante tragedie' and the style of writing suggest a classical setting, likely in Ancient Rome, which was a common setting for tragedies in the 17th century French literature. The use of formal language and themes of fate and divine intervention are typical of Roman settings.\",\n    \"location_qid\": \"Q220\"\n}",
+  "duration_seconds": 4.159687042236328,
+  "prompt_tokens": 585,
+  "completion_tokens": 183,
+  "total_tokens": 768
+}

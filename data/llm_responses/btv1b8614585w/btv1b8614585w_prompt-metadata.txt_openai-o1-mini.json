@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8614585w",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Early Middle Ages\",\n    \"period_reasoning\": \"The martyrdom of a saint is typically set during the Early Middle Ages, a period when hagiographical plays were common.\",\n    \"timeframe_start\": \"500\",\n    \"timeframe_end\": \"1000\",\n    \"location\": \"Burgundy, France\",\n    \"location_reasoning\": \"The play was composed by a religious from the abbaye de Flavigny, which is located in Burgundy, suggesting the action is set in that region.\",\n    \"location_qid\": \"Q121157\"\n}",
+  "duration_seconds": 9.61543083190918,
+  "prompt_tokens": 491,
+  "completion_tokens": 971,
+  "total_tokens": 1462
+}

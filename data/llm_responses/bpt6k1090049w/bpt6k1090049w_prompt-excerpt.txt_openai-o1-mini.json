@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090049w",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"The excerpt references Jupiter and other Roman gods, indicating a setting in the period of ancient Roman mythology.\",\n    \"timeframe_start\": \"-500\",\n    \"timeframe_end\": \"500\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"The mention of Jupiter, a principal Roman deity, suggests that the action takes place in Rome.\",\n    \"location_qid\": \"Q220\"\n}",
+  "duration_seconds": 3.886411190032959,
+  "prompt_tokens": 615,
+  "completion_tokens": 565,
+  "total_tokens": 1180
+}

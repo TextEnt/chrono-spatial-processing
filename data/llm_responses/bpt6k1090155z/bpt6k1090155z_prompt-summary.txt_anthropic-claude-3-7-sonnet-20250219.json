@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090155z",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Ancient Greece, mythological era\",\n    \"period_reasoning\": \"The play features characters from Greek mythology such as Amphytrion, Jupiter (Roman version of Zeus), Mercury (Roman version of Hermes), and Alcm\u00e8ne (French for Alcmene). These characters appear in the myth of Amphitryon, where Jupiter impersonates Amphitryon to seduce his wife Alcmene. References to Titans also indicate the setting is in mythological ancient Greece.\",\n    \"timeframe_start\": \"-1300\",\n    \"timeframe_end\": \"-1100\",\n    \"location\": \"Thebes, Greece\",\n    \"location_reasoning\": \"The text explicitly mentions 'Thebains' (people of Thebes) and 'Thebes' appears in the top 5 places. In the original myth, Amphitryon was the general of Thebes and was married to Alcmene, and the events took place in Thebes. Additionally, there are references to characters addressing 'Thebains' in the text.\",\n    \"location_qid\": \"Q41314\"\n}",
+  "duration_seconds": 6.669217109680176,
+  "prompt_tokens": 1198,
+  "completion_tokens": 270,
+  "total_tokens": 1468
+}

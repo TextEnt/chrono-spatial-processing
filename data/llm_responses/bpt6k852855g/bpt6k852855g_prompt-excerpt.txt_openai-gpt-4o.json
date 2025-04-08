@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k852855g",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"17th century France\",\n    \"period_reasoning\": \"The play was written in 1695, a time when comedies often depicted contemporary settings. The language and style suggest a setting in the same century.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1699\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play is written in French by a French author, and the style and names of the characters suggest a setting in France.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 2.2378108501434326,
+  "prompt_tokens": 602,
+  "completion_tokens": 124,
+  "total_tokens": 726
+}

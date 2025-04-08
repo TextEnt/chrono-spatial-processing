@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k61251657",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": null,\n    \"period_reasoning\": \"The play is set in Persia, but there is insufficient information in the provided context to determine a specific historical period. The text does not mention events, rulers, or other details that would allow pinpointing a timeframe.\",\n    \"timeframe_start\": null,\n    \"timeframe_end\": null,\n    \"location\": \"Perse\",\n    \"location_reasoning\": \"The play's context frequently mentions 'Perse' (Persia) as a key location, including the statement 'La Sc\u00e8ne est en Perse' (The scene is in Persia). The top_1_place entity is 'Perse' with a frequency of 6.\",\n    \"location_qid\": \"Q161243\"\n}",
+  "duration_seconds": 101.92793798446655,
+  "prompt_tokens": 1459,
+  "completion_tokens": 1974,
+  "total_tokens": 3433
+}

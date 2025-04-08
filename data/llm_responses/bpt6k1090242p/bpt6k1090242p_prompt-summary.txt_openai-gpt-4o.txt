@@ -1,9 +1,0 @@
-{
-    "period": "Ancient Rome",
-    "period_reasoning": "The presence of characters such as Titus, Berenice, and Apollon suggests a setting related to Ancient Roman history or mythology. Titus and Berenice are historic figures associated with Ancient Rome. The reference to Apollon connects to Ancient Greek mythology, which was influential in Roman culture.",
-    "timeframe_start": "-0027",
-    "timeframe_end": "00476",
-    "location": "Rome",
-    "location_reasoning": "The character names like Titus and Berenice are strongly associated with Rome, indicating that the action most likely takes place in Rome, consistent with the Roman Empire timeframe.",
-    "location_qid": "Q220"
-}

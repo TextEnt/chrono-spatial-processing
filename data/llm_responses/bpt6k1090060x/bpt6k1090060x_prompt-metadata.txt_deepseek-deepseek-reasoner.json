@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090060x",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": null,\n    \"period_reasoning\": \"The title and metadata provide no explicit clues about the historical period of the play's setting. Pastoral works often depict timeless or idealized rural environments, which do not strongly indicate a specific historical timeframe.\",\n    \"timeframe_start\": null,\n    \"timeframe_end\": null,\n    \"location\": null,\n    \"location_reasoning\": \"The title and metadata do not specify a geographic location. While pastoral works are typically set in rural or idyllic environments, these are often generic and not tied to a real-world place. The French origin of the author and publication suggests a possible French setting, but this is speculative and insufficient for confirmation.\",\n    \"location_qid\": null\n}",
+  "duration_seconds": 71.71652793884277,
+  "prompt_tokens": 443,
+  "completion_tokens": 1241,
+  "total_tokens": 1684
+}

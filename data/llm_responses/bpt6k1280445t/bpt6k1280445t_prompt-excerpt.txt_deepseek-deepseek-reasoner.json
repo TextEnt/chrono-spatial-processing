@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280445t",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"17th century France\",\n    \"period_reasoning\": \"The play was written by Moli\u00e8re, a French playwright active in the 17th century, and his works typically reflect contemporary French society during the reign of Louis XIV.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris, France\",\n    \"location_reasoning\": \"Moli\u00e8re's plays are generally set in Parisian aristocratic or bourgeois circles, and the French names/context in the excerpt align with this setting.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 91.99954795837402,
+  "prompt_tokens": 611,
+  "completion_tokens": 1729,
+  "total_tokens": 2340
+}

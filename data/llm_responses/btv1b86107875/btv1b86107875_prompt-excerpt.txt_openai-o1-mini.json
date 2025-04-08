@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b86107875",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was written and first performed in 1661 by Moli\u00e8re, reflecting the societal norms and context of 17th-century France. The themes and characters are indicative of the cultural and social dynamics of that era.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris, France\",\n    \"location_reasoning\": \"The play was represented on the theatre du Palais Royal in Paris, and Moli\u00e8re's works are typically set within Parisian society, suggesting that the action takes place in Paris.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 11.339484930038452,
+  "prompt_tokens": 637,
+  "completion_tokens": 1250,
+  "total_tokens": 1887
+}

@@ -1,9 +1,0 @@
-{
-    "period": "Roman Empire",
-    "period_reasoning": "The play references historical figures Titus and Berenice, who were associated with the Roman Empire (1st century CE). The title and characters suggest a focus on Roman-era narratives, though filtered through a 17th-century French critique.",
-    "timeframe_start": "70",
-    "timeframe_end": "81",
-    "location": "Rome",
-    "location_reasoning": "Titus was a Roman emperor, and Berenice was a client queen of Rome. While the play's meta-commentary involves the mythological Parnassus, the core narrative likely centers on Rome. Mentions of Rome in the top_5_places further support this.",
-    "location_qid": "Q220"
-}

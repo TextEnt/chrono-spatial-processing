@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8622111v",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Renaissance\",\n    \"period_reasoning\": \"The play mentions characters and settings that are consistent with the Renaissance period, such as the city of Florence, which was a significant cultural center during the Renaissance. The themes of love and courtship, as well as the presence of characters like ERASME, suggest a setting that aligns with the social and cultural dynamics of the Renaissance.\",\n    \"timeframe_start\": \"1400\",\n    \"timeframe_end\": \"1600\",\n    \"location\": \"Florence\",\n    \"location_reasoning\": \"Florence is mentioned as the top place with a frequency of 6, and several sentences reference events and characters in Florence. This suggests that Florence is a central location for the play's action.\",\n    \"location_qid\": \"Q2044\"\n}",
+  "duration_seconds": 5.195497989654541,
+  "prompt_tokens": 1724,
+  "completion_tokens": 173,
+  "total_tokens": 1897
+}

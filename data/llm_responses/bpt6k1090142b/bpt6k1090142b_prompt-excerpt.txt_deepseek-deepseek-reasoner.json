@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090142b",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Early Modern period\",\n    \"period_reasoning\": \"The play's themes of corsairs (privateers/pirates) and its 17th-century French authorship suggest the Early Modern period, when Mediterranean corsair activity (e.g., Barbary corsairs) was prominent.\",\n    \"timeframe_start\": \"1500\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Barbary Coast\",\n    \"location_reasoning\": \"The title 'Le Prince corsaire' (The Corsair Prince) and references to maritime conflict imply a setting linked to corsairs, who were most active in the Mediterranean, particularly the Barbary Coast (North Africa).\",\n    \"location_qid\": \"Q808511\"\n}",
+  "duration_seconds": 38.364537954330444,
+  "prompt_tokens": 591,
+  "completion_tokens": 748,
+  "total_tokens": 1339
+}

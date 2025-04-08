@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5455471b",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Antiquity\",\n    \"period_reasoning\": \"The play 'Coronis' is a pastorale h\u00e9ro\u00efque, a genre typically based on classical mythology, and 'Coronis' is a figure from Greek mythology, indicating a setting in ancient times.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"500\",\n    \"location\": \"Ancient Greece\",\n    \"location_reasoning\": \"The character 'Coronis' is from Greek mythology, suggesting that the play is set in ancient Greece.\",\n    \"location_qid\": \"Q1449\"\n}",
+  "duration_seconds": 6.805308103561401,
+  "prompt_tokens": 485,
+  "completion_tokens": 973,
+  "total_tokens": 1458
+}

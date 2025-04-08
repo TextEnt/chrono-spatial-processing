@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8622099v",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Middle Ages\",\n    \"period_reasoning\": \"The character Clorinde is associated with the Crusades, which took place during the Middle Ages.\",\n    \"timeframe_start\": \"1000\",\n    \"timeframe_end\": \"1300\",\n    \"location\": \"Holy Land\",\n    \"location_reasoning\": \"The play is likely set during the Crusades, which were conducted in the Holy Land.\",\n    \"location_qid\": \"Q1224\"\n}",
+  "duration_seconds": 5.007163763046265,
+  "prompt_tokens": 461,
+  "completion_tokens": 758,
+  "total_tokens": 1219
+}

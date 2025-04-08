@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090230g",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Early Modern France\",\n    \"period_reasoning\": \"The play was published in 1673 by a French author, and its context lacks references to historical events or figures outside the 17th-century setting, suggesting a contemporary timeframe aligned with Louis XIV's reign (1643\u20131715).\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"The play explicitly states 'La Sc\u00e8ne est \u00e0 Paris' in one of the related sentences, and Paris is the most frequently mentioned place.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 64.34989905357361,
+  "prompt_tokens": 1235,
+  "completion_tokens": 1045,
+  "total_tokens": 2280
+}

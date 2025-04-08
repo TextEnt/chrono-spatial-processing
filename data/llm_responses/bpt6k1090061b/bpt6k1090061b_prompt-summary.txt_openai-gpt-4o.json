@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090061b",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Renaissance\",\n    \"period_reasoning\": \"The play references historical figures and cultural elements such as Socrates, Cicero, and Roman consuls, which are indicative of a setting that draws on classical antiquity. The Renaissance period, particularly in Europe, was characterized by a revival of interest in the classical arts and literature, making it a plausible setting for the play.\",\n    \"timeframe_start\": \"1400\",\n    \"timeframe_end\": \"1600\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"The play frequently mentions Rome and Roman elements, suggesting that the action is set in or around Rome. The references to Roman consuls and the Empire of the Pope further support this location.\",\n    \"location_qid\": \"Q220\"\n}",
+  "duration_seconds": 3.040653944015503,
+  "prompt_tokens": 3035,
+  "completion_tokens": 168,
+  "total_tokens": 3203
+}

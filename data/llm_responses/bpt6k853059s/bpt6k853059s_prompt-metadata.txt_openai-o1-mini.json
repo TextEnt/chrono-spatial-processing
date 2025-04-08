@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k853059s",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"The name 'Cydippe' is derived from Greek mythology, indicating the play is set in a period inspired by ancient Greek culture and society, which aligns with Classical Antiquity.\",\n    \"timeframe_start\": \"-500\",\n    \"timeframe_end\": \"500\",\n    \"location\": \"Ancient Greece\",\n    \"location_reasoning\": \"The use of a character name from Greek mythology suggests the geographic setting of the play is in ancient Greece.\",\n    \"location_qid\": \"Q279\"\n}",
+  "duration_seconds": 4.764068126678467,
+  "prompt_tokens": 466,
+  "completion_tokens": 841,
+  "total_tokens": 1307
+}

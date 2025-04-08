@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8528543",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Early Modern Period\",\n    \"period_reasoning\": \"The play was written and published in the 17th century, and the excerpt's language and themes suggest a setting contemporary to that time.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The author is French, and the names and language used in the excerpt indicate a French setting.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 5.079262971878052,
+  "prompt_tokens": 618,
+  "completion_tokens": 638,
+  "total_tokens": 1256
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k63635719",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Ancient Greece\",\n    \"period_reasoning\": \"The title mentions 'Th\u00e9ag\u00e8ne et Caricl\u00e9e' which references the Greek romance 'Aethiopica' by Heliodorus of Emesa. This is explicitly stated in the metadata as being 'r\u00e9duites du grec de l'Histoire d'H\u00e9liodore' (reduced from the Greek of Heliodorus's History). This work is set in ancient Greece and Ethiopia during the Hellenistic period.\",\n    \"timeframe_start\": \"-300\",\n    \"timeframe_end\": \"-100\",\n    \"location\": \"Ancient Greece and Ethiopia\",\n    \"location_reasoning\": \"The play is based on Heliodorus's 'Aethiopica' (or 'Ethiopian Story'), which follows the adventures of Theagenes and Chariclea through Greece, Egypt, and Ethiopia. The original romance is set primarily in these locations during the Hellenistic period. The names 'Th\u00e9ag\u00e8ne et Caricl\u00e9e' are the French versions of the Greek protagonists Theagenes and Chariclea.\",\n    \"location_qid\": \"Q27583\"\n}",
+  "duration_seconds": 5.913855075836182,
+  "prompt_tokens": 708,
+  "completion_tokens": 280,
+  "total_tokens": 988
+}

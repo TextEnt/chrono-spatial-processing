@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k852855g",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Late 17th century\",\n    \"period_reasoning\": \"The play was published in 1695, during the reign of Louis XIV in France. French plays of this period typically depicted contemporary settings or the recent past. The title 'L'heureux accident ou la maison de campagne' (The Happy Accident or the Country House) suggests a setting contemporary to its writing, as it references a country house which was a common setting for comedies of manners in this period.\",\n    \"timeframe_start\": \"1670\",\n    \"timeframe_end\": \"1695\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play is written in French by a French playwright (Fran\u00e7ois Passerat) and contains 'maison de campagne' (country house) in the title, suggesting a French rural or suburban setting. During this period, French dramatists typically set their comedies in France, often in or near Paris, or in the French countryside.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 5.179615020751953,
+  "prompt_tokens": 501,
+  "completion_tokens": 241,
+  "total_tokens": 742
+}

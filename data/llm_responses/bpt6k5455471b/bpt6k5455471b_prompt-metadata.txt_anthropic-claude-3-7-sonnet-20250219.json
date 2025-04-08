@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5455471b",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Ancient Greece/Rome mythological setting\",\n    \"period_reasoning\": \"The play is titled 'Coronis, pastorale h\u00e9ro\u00efque' which suggests a mythological theme. Coronis is a figure from Greek mythology who was loved by Apollo. Pastoral heroic plays in the 17th century French tradition often used settings from Greek or Roman mythology, particularly for operas performed at the Acad\u00e9mie royale de musique.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"-100\",\n    \"location\": \"Ancient Greece\",\n    \"location_reasoning\": \"Coronis is a figure from Greek mythology. She was a Thessalian princess loved by Apollo. The 'pastorale h\u00e9ro\u00efque' genre typically used Greek mythological settings, and the name Coronis specifically points to a Greek mythological context rather than a Roman one.\",\n    \"location_qid\": \"Q35514\"\n}",
+  "duration_seconds": 4.607844114303589,
+  "prompt_tokens": 522,
+  "completion_tokens": 224,
+  "total_tokens": 746
+}

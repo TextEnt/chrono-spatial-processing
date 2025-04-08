@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10901126",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Roman Empire\",\n    \"period_reasoning\": \"The play is titled 'Germanicus,' who was a prominent Roman general and member of the Julio-Claudian dynasty. The mention of the Senate, People, and Soldiers suggests a Roman setting, likely during the early Roman Empire.\",\n    \"timeframe_start\": \"0014\",\n    \"timeframe_end\": \"0019\",\n    \"location\": \"Roman Empire\",\n    \"location_reasoning\": \"The character Germanicus was a Roman general, and the references to the Senate and Soldiers indicate a Roman setting. The play likely takes place in the Roman Empire, possibly in Rome or a Roman military camp.\",\n    \"location_qid\": \"Q2277\"\n}",
+  "duration_seconds": 3.271677255630493,
+  "prompt_tokens": 587,
+  "completion_tokens": 155,
+  "total_tokens": 742
+}

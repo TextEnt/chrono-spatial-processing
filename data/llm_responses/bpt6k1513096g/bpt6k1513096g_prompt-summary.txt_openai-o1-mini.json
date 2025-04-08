@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1513096g",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": null,\n    \"period_reasoning\": \"The play does not provide sufficient information to determine the historical period in which the action is set.\",\n    \"timeframe_start\": null,\n    \"timeframe_end\": null,\n    \"location\": \"England\",\n    \"location_reasoning\": \"The play frequently mentions 'Angleterre', indicating the action takes place in England.\",\n    \"location_qid\": \"Q16\"\n}",
+  "duration_seconds": 7.678620100021362,
+  "prompt_tokens": 1682,
+  "completion_tokens": 1196,
+  "total_tokens": 2878
+}

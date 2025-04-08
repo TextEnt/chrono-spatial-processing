@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090155z",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Ancient Greece (mythological period)\",\n    \"period_reasoning\": \"The play is a comedy based on the myth of Amphitryon, which is rooted in ancient Greek mythology. The story of Amphitryon, involving Jupiter and Mercury taking human forms, is traditionally associated with the mythological era of ancient Greece, predating historical records but often linked to the Bronze Age or the time of the Trojan War.\",\n    \"timeframe_start\": \"-1300\",\n    \"timeframe_end\": \"-1100\",\n    \"location\": \"Thebes, Greece\",\n    \"location_reasoning\": \"The Amphitryon myth, which this play adapts, is set in the city of Thebes in ancient Greece. Rotrou's adaptation retains this mythological setting.\",\n    \"location_qid\": \"Q16980\"\n}",
+  "duration_seconds": 65.4552550315857,
+  "prompt_tokens": 439,
+  "completion_tokens": 1195,
+  "total_tokens": 1634
+}

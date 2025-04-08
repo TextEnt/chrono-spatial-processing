@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090230g",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Louis XIV's reign\",\n    \"period_reasoning\": \"The play was published in 1673, which falls within the reign of Louis XIV (1643-1715). The social interactions and themes are consistent with the cultural context of 17th-century France during this period.\",\n    \"timeframe_start\": \"1643\",\n    \"timeframe_end\": \"1715\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"As a French comedy from the 17th century, it is likely set in Paris, which was the cultural and political center of France at the time.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 5.5209572315216064,
+  "prompt_tokens": 641,
+  "completion_tokens": 860,
+  "total_tokens": 1501
+}

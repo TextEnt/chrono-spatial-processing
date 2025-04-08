@@ -1,9 +1,0 @@
-{
-    "period": "Medieval Hungary",
-    "period_reasoning": "The title references a Queen of Hungary ('Reyne de Hongrie'), and medieval Hungary (c. 1000–1526) was a common setting for French tragicomedies involving royal intrigue. The excerpt's references to kings, princes, and courtly conflict align with this era.",
-    "timeframe_start": "1000",
-    "timeframe_end": "1526",
-    "location": "Kingdom of Hungary",
-    "location_reasoning": "The title explicitly states the play centers on a queen of Hungary, and the text includes Hungarian royalty (e.g., 'Roi' for king).",
-    "location_qid": "Q1641"
-}

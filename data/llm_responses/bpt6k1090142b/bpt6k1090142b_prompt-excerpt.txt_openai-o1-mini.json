@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090142b",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": null,\n    \"period_reasoning\": \"The provided excerpt does not contain sufficient information to determine the historical period.\",\n    \"timeframe_start\": null,\n    \"timeframe_end\": null,\n    \"location\": null,\n    \"location_reasoning\": \"The provided excerpt does not contain sufficient information to determine the geographic location.\",\n    \"location_qid\": null\n}",
+  "duration_seconds": 6.926039934158325,
+  "prompt_tokens": 595,
+  "completion_tokens": 1057,
+  "total_tokens": 1652
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5455471b",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": null,\n    \"period_reasoning\": \"The play is set in a mythological context without sufficient information to determine a specific historical period.\",\n    \"timeframe_start\": null,\n    \"timeframe_end\": null,\n    \"location\": \"Greece\",\n    \"location_reasoning\": \"The characters and place names are rooted in Greek mythology, such as Daphnis, Coronis, Apollon, and Pindus.\",\n    \"location_qid\": \"Q41\"\n}",
+  "duration_seconds": 4.561161994934082,
+  "prompt_tokens": 965,
+  "completion_tokens": 569,
+  "total_tokens": 1534
+}

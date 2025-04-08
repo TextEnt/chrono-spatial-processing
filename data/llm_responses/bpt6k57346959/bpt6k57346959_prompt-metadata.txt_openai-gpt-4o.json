@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k57346959",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": null,\n    \"period_reasoning\": \"The title and metadata of the play do not provide specific information about the historical period in which the action takes place. The play is a 'pastorale,' a genre often set in an idealized rural setting, but this does not specify a particular historical period.\",\n    \"timeframe_start\": null,\n    \"timeframe_end\": null,\n    \"location\": null,\n    \"location_reasoning\": \"The metadata does not provide specific information about the geographic location where the action of the play takes place. The play is described as a 'pastorale,' which typically involves rural or pastoral settings, but this is not enough to determine a specific location.\",\n    \"location_qid\": null\n}",
+  "duration_seconds": 3.4587299823760986,
+  "prompt_tokens": 454,
+  "completion_tokens": 158,
+  "total_tokens": 612
+}

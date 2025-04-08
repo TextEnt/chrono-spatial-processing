@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090276g",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"European Renaissance/Early Modern Period\",\n    \"period_reasoning\": \"The play was published in 1654 (17th century) and contains references to royalty ('LE ROY', 'votre Majest\u00e9', 'un Prince'). The language and style are consistent with Renaissance/Early Modern court settings, with themes of loyalty, obedience, and formal speech patterns typical of royal courts of that era.\",\n    \"timeframe_start\": \"1500\",\n    \"timeframe_end\": \"1650\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play is written in French, authored by Jean de Rotrou (a French playwright), and contains French character names (Liliane). The presence of royalty ('LE ROY') and the courtly setting strongly suggest the play is set in France, likely at a French royal court. The play's publication in France in 1654 further supports this conclusion.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 4.428653955459595,
+  "prompt_tokens": 683,
+  "completion_tokens": 237,
+  "total_tokens": 920
+}

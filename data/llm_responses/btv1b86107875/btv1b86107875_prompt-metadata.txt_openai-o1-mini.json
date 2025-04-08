@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b86107875",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was written and first performed by Moli\u00e8re in 1661, reflecting the societal norms and cultural context of 17th-century France.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"Moli\u00e8re, being a French playwright, set his plays within the context of French society, and 'L'Escole des maris' reflects the cultural and social dynamics of France during that period.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 6.625691890716553,
+  "prompt_tokens": 480,
+  "completion_tokens": 1110,
+  "total_tokens": 1590
+}

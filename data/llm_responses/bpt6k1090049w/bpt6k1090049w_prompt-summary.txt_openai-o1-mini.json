@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090049w",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"The play contains mythological characters and themes consistent with ancient Greek settings.\",\n    \"timeframe_start\": \"-500\",\n    \"timeframe_end\": \"-300\",\n    \"location\": \"Greece\",\n    \"location_reasoning\": \"Mythological figures such as Sil\u00e8ne and Daphnis suggest the action takes place in ancient Greece.\",\n    \"location_qid\": \"Q41\"\n}",
+  "duration_seconds": 5.307361125946045,
+  "prompt_tokens": 2020,
+  "completion_tokens": 818,
+  "total_tokens": 2838
+}

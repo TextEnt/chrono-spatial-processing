@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280452z",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was written and published in the 17th century, and its themes and societal context reflect contemporary French society.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"Moli\u00e8re was a French playwright, and the play is set in the social and cultural context of 17th-century France.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 5.868086099624634,
+  "prompt_tokens": 626,
+  "completion_tokens": 769,
+  "total_tokens": 1395
+}

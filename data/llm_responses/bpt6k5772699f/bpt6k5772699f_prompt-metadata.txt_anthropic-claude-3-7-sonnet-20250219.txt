@@ -1,9 +1,0 @@
-{
-    "period": "Babylonian Empire under Belshazzar",
-    "period_reasoning": "The title 'La mort de Baltazar, roy de Babilone' refers to Belshazzar (Baltazar in French), who was the last king of Babylon before it fell to the Persians under Cyrus the Great. Belshazzar's death is famously described in the Book of Daniel in the Bible, where the 'writing on the wall' episode occurs during his final feast.",
-    "timeframe_start": "-556",
-    "timeframe_end": "-539",
-    "location": "Babylon",
-    "location_reasoning": "The title explicitly mentions 'Baltazar, roy de Babilone' (Belshazzar, king of Babylon), indicating that the play is set in the ancient city of Babylon, which was the capital of the Babylonian Empire.",
-    "location_qid": "Q5686"
-}

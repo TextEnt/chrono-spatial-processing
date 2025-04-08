@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280290z",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Early Roman Empire\",\n    \"period_reasoning\": \"The play is set during the reign of Emperor Augustus, marking the early Roman Empire period.\",\n    \"timeframe_start\": \"-0027\",\n    \"timeframe_end\": \"0014\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"The action of the play takes place in Rome during the reign of Augustus.\",\n    \"location_qid\": \"Q753\"\n}",
+  "duration_seconds": 4.120419263839722,
+  "prompt_tokens": 475,
+  "completion_tokens": 688,
+  "total_tokens": 1163
+}

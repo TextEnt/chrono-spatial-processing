@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8568902",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Hellenistic Period\",\n    \"period_reasoning\": \"The play mentions Mithridates, who is likely Mithridates VI of Pontus, a historical figure from the Hellenistic Period. Mithridates VI reigned from 120 B.C. to 63 B.C., which places the action in this timeframe.\",\n    \"timeframe_start\": \"-120\",\n    \"timeframe_end\": \"-63\",\n    \"location\": \"Pontus\",\n    \"location_reasoning\": \"The play centers around Mithridates, who was the king of Pontus. Although Rome is frequently mentioned, it is likely in the context of Mithridates' conflicts with Rome, indicating that the primary setting is Pontus.\",\n    \"location_qid\": \"Q13351\"\n}",
+  "duration_seconds": 3.8073160648345947,
+  "prompt_tokens": 2338,
+  "completion_tokens": 168,
+  "total_tokens": 2506
+}

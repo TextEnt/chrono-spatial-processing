@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5651559g",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Early 17th century\",\n    \"period_reasoning\": \"The play is titled 'Dialogue du cardinal de Richelieu voulant entrer en Paradis, et sa descente aux enfers', which references Cardinal Richelieu, a prominent French clergyman and statesman who lived from 1585 to 1642. The action is likely set during his lifetime or shortly thereafter.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1650\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"Cardinal Richelieu was a key figure in French history, serving as the chief minister to King Louis XIII. The play's title suggests a focus on Richelieu's life and actions, which were centered in France.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 2.3754470348358154,
+  "prompt_tokens": 453,
+  "completion_tokens": 180,
+  "total_tokens": 633
+}

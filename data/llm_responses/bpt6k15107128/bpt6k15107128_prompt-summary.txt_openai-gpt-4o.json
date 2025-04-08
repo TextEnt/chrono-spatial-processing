@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k15107128",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Iron Age\",\n    \"period_reasoning\": \"The play 'Athalie' is based on biblical events, specifically from the Hebrew Bible. Joas (Jehoash) was a king of Judah, and his reign is traditionally dated to the 9th century B.C.E. This places the events in the Iron Age, a period characterized by the use of iron tools and weapons, and significant historical developments in the Near East.\",\n    \"timeframe_start\": \"-0900\",\n    \"timeframe_end\": \"-0800\",\n    \"location\": \"Kingdom of Judah\",\n    \"location_reasoning\": \"The play mentions Joas, who was a king of Judah, and the city of Jerusalem, which was the capital of the Kingdom of Judah. This indicates that the action takes place in the historical region of Judah, located in the southern part of the ancient Kingdom of Israel.\",\n    \"location_qid\": \"Q1266349\"\n}",
+  "duration_seconds": 4.395695924758911,
+  "prompt_tokens": 1072,
+  "completion_tokens": 204,
+  "total_tokens": 1276
+}

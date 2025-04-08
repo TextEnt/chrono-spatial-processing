@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k15107128",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Biblical period (9th century BCE)\",\n    \"period_reasoning\": \"The play 'Athalie' is based on the biblical story of Athaliah, queen of Judah, as recounted in 2 Kings and 2 Chronicles. Her historical reign occurred in the 9th century BCE.\",\n    \"timeframe_start\": \"-842\",\n    \"timeframe_end\": \"-836\",\n    \"location\": \"Jerusalem, Kingdom of Judah\",\n    \"location_reasoning\": \"The biblical narrative of Athaliah centers on her rule in Jerusalem, the capital of the Kingdom of Judah, as described in the Old Testament.\",\n    \"location_qid\": \"Q1218\"\n}",
+  "duration_seconds": 43.29245686531067,
+  "prompt_tokens": 456,
+  "completion_tokens": 627,
+  "total_tokens": 1083
+}

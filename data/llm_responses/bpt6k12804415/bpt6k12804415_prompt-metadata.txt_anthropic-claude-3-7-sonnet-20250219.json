@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k12804415",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Early 17th century France during the reign of Louis XIV\",\n    \"period_reasoning\": \"The play was published in 1663, which places it in the early part of Louis XIV's reign during the 17th century. Moli\u00e8re's works typically portrayed contemporary society, so it's reasonable to assume the play is set in his own time or very close to it. 'La Critique de l'\u00c9cole des femmes' is actually a response to criticisms of his earlier play 'L'\u00c9cole des femmes' and features characters discussing contemporary theatrical conventions.\",\n    \"timeframe_start\": \"1650\",\n    \"timeframe_end\": \"1663\",\n    \"location\": \"Paris, France\",\n    \"location_reasoning\": \"Moli\u00e8re was a French playwright active in Paris, and 'La Critique de l'\u00c9cole des femmes' was performed at the Th\u00e9\u00e2tre du Palais-Royal in Paris. The play is a salon discussion among Parisian society members, and Moli\u00e8re's works typically depicted urban French society of his time, particularly in Paris where he lived and worked.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 5.011423110961914,
+  "prompt_tokens": 501,
+  "completion_tokens": 270,
+  "total_tokens": 771
+}

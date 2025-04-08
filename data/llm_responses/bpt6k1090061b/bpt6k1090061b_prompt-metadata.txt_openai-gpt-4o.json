@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090061b",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": null,\n    \"period_reasoning\": \"The title and author do not provide enough information to determine the specific historical period in which the play is set. The play is a translation from Italian, but this does not imply a specific historical setting.\",\n    \"timeframe_start\": null,\n    \"timeframe_end\": null,\n    \"location\": null,\n    \"location_reasoning\": \"The title indicates that the play is a translation from Italian, but it does not specify the location where the action takes place. Without further context or content from the play, the geographic location cannot be determined.\",\n    \"location_qid\": null\n}",
+  "duration_seconds": 2.160154104232788,
+  "prompt_tokens": 454,
+  "completion_tokens": 138,
+  "total_tokens": 592
+}

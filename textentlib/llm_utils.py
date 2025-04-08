@@ -206,21 +206,22 @@ def llm_responses_to_dataframe(responses_base_path: Path) -> pd.DataFrame:
     df = process_llm_responses(responses_base_path)
     try:
         df.drop(columns=['response'], inplace=True)
-    except Exception as e:
-        print(e)
-    
-    # fusion timeframe_start and timeframe_end into a single column
-    df['timeframe'] = df['timeframe_start'].astype(str) + ', ' + df['timeframe_end'].astype(str)
-    df.drop(columns=['timeframe_start', 'timeframe_end'], inplace=True)
+        
+        # fusion timeframe_start and timeframe_end into a single column
+        df['timeframe'] = df['timeframe_start'].astype(str) + ', ' + df['timeframe_end'].astype(str)
+        df.drop(columns=['timeframe_start', 'timeframe_end'], inplace=True)
 
-    # create a unique response ID
-    df['response_id'] = df['document_id'].astype(str) + '$' + df['prompt_id'].astype(str) + '$' + df['model_name'].astype(str)
-    df.set_index('response_id', inplace=True, drop=True)
-    
-    # rename only selected columns
-    prediction_columns = ['period', 'period_reasoning', 'location', 'location_reasoning', 'location_qid', 'timeframe']
-    cols = df.columns[df.columns.str.contains('|'.join(prediction_columns))]
-    df.rename(columns={col: 'pred_' + col for col in df.columns if col in cols}, inplace=True)
+        # create a unique response ID
+        df['response_id'] = df['document_id'].astype(str) + '$' + df['prompt_id'].astype(str) + '$' + df['model_name'].astype(str)
+        df.set_index('response_id', inplace=True, drop=True)
+        
+        # rename only selected columns
+        prediction_columns = ['period', 'period_reasoning', 'location', 'location_reasoning', 'location_qid', 'timeframe']
+        cols = df.columns[df.columns.str.contains('|'.join(prediction_columns))]
+        df.rename(columns={col: 'pred_' + col for col in df.columns if col in cols}, inplace=True)
+    except Exception as e:
+        # this will fail if the columns are not present or the dataframe is empty
+        print(e)
     return df
 
 def gt_annotations_to_dataframe(gt_base_path: Path, filename: str = 'textent-annotations - groundtruth-annotations.tsv') -> pd.DataFrame:
@@ -302,9 +303,14 @@ def prepare_evaluation_dataframe(
     else:
         raise ValueError(f"Invalid split value: {split}")
     
-    # merging 
-    df_sample_gt = df_sample_docs.join(df_gt_annotations, how='inner')
-    df_eval_data = df_llm_responses.merge(df_sample_gt, left_on='document_id', right_index=True)
+    # merging
+    try:
+        assert df_llm_responses.shape != (0, 0), "No LLM responses found."
+        df_sample_gt = df_sample_docs.join(df_gt_annotations, how='inner')
+        df_eval_data = df_llm_responses.merge(df_sample_gt, left_on='document_id', right_index=True)
+    except AssertionError as e:
+        # you cannot merge an empty dataframe
+        df_eval_data = df_sample_docs.join(df_gt_annotations, how='inner')
 
     # define new columns with default values
     df_eval_data['score_period_string'] = None
@@ -341,4 +347,9 @@ def prepare_evaluation_dataframe(
         'gt_location_reason',
         'pred_location_reasoning',
     ]
-    return df_sample_docs.index.to_list(), df_eval_data[display_columns]
+    try:
+        return df_sample_docs.index.to_list(), df_eval_data[display_columns]
+    except KeyError:
+        # this will fail if the columns are not present or the dataframe is empty
+        print("Some columns are missing in the dataframe.")
+        return df_sample_docs.index.to_list(), df_eval_data

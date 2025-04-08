@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090060x",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": null,\n    \"period_reasoning\": \"Insufficient information to determine historical period from the provided metadata.\",\n    \"timeframe_start\": null,\n    \"timeframe_end\": null,\n    \"location\": null,\n    \"location_reasoning\": \"Insufficient information to determine geographic location from the provided metadata.\",\n    \"location_qid\": null\n}",
+  "duration_seconds": 3.9244630336761475,
+  "prompt_tokens": 462,
+  "completion_tokens": 605,
+  "total_tokens": 1067
+}

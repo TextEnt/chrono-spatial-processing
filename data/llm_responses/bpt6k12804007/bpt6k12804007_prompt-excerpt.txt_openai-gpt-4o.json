@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k12804007",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play 'Sganarelle ou le Cocu imaginaire' by Moli\u00e8re was written and published in 1662, which is in the 17th century. The themes and language used in the excerpt, such as the focus on marital issues and the style of comedy, are consistent with the societal norms and literary style of the 17th century.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"Moli\u00e8re was a French playwright, and his works are typically set in France. The language used in the play is French, and the societal context, such as the focus on marriage and fidelity, aligns with 17th century French society.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 3.892845869064331,
+  "prompt_tokens": 588,
+  "completion_tokens": 190,
+  "total_tokens": 778
+}

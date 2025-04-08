@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k857183z",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": null,\n    \"period_reasoning\": \"The excerpt does not contain explicit references to historical events, figures, or cultural markers that would indicate a specific historical period. The language and style are consistent with 17th-century French drama but do not directly specify the play's temporal setting.\",\n    \"timeframe_start\": null,\n    \"timeframe_end\": null,\n    \"location\": null,\n    \"location_reasoning\": \"The excerpt lacks geographic references (e.g., place names, regional customs, or political entities) to infer a specific location. The French authorship and language suggest a French cultural context, but the play's narrative setting is not explicitly stated.\",\n    \"location_qid\": null\n}",
+  "duration_seconds": 69.97558498382568,
+  "prompt_tokens": 593,
+  "completion_tokens": 1310,
+  "total_tokens": 1903
+}

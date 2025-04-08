@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280445t",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play is written by Moli\u00e8re, a prominent playwright of the 17th century, and the themes and language used are consistent with the societal norms and literary style of that period.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris, France\",\n    \"location_reasoning\": \"The frequent mention of places like Paris, Louvre, and Place Royale, along with the cultural context of the play, suggests that the action is set in Paris, France.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 2.3415818214416504,
+  "prompt_tokens": 1470,
+  "completion_tokens": 141,
+  "total_tokens": 1611
+}

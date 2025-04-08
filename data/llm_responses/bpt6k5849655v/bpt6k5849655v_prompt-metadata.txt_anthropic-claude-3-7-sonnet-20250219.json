@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5849655v",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Ancient Greek mythology\",\n    \"period_reasoning\": \"The title of the play mentions Pluton (Pluto), who is the god of the underworld in Greek mythology. The fact that it mentions courtisans (courtiers) of Pluton and a pilgrimage to his kingdom suggests the play is set in mythological time, specifically in the context of Greek/Roman mythology where Pluto rules the underworld.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"-146\",\n    \"location\": \"Underworld (Hades)\",\n    \"location_reasoning\": \"The title clearly mentions 'Pluton et leur p\u00e8lerinage en son royaume' (Pluto and their pilgrimage to his kingdom). Pluto's kingdom is the underworld, also known as Hades in Greek mythology. The play appears to be set in this mythological location rather than a real geographical place on Earth.\",\n    \"location_qid\": \"Q7885\"\n}",
+  "duration_seconds": 4.177680015563965,
+  "prompt_tokens": 499,
+  "completion_tokens": 236,
+  "total_tokens": 735
+}

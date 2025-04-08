@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k12804645",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": null,\n    \"period_reasoning\": \"The provided information does not specify a historical period for the play's setting.\",\n    \"timeframe_start\": null,\n    \"timeframe_end\": null,\n    \"location\": \"France\",\n    \"location_reasoning\": \"France is the most frequently mentioned place in the play, suggesting that the action likely takes place there.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 6.248152017593384,
+  "prompt_tokens": 1763,
+  "completion_tokens": 683,
+  "total_tokens": 2446
+}

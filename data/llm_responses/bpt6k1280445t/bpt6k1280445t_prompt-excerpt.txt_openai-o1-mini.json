@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280445t",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"17th century France\",\n    \"period_reasoning\": \"The play is authored by Moli\u00e8re, a prominent French playwright of the 17th century, and his comedies are typically set in the contemporary societal context of his time.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"Moli\u00e8re's works are generally set in Parisian society, reflecting the cultural and social dynamics of the French capital during the 17th century.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 6.548447132110596,
+  "prompt_tokens": 615,
+  "completion_tokens": 914,
+  "total_tokens": 1529
+}

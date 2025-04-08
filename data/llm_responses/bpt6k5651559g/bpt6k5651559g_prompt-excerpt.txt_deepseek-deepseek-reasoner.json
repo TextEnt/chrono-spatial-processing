@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5651559g",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Early 17th century\",\n    \"period_reasoning\": \"The play centers on Cardinal Richelieu, a historical figure active in France during the early 17th century (specifically under Louis XIII). The excerpt references war and political conflicts consistent with Richelieu's role in shaping French foreign policy, including involvement in the Thirty Years' War.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1650\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play is in French, references a French historical figure (Cardinal Richelieu), and critiques his political actions, which were centered in France. The mention of 'Monsieur le Grand' (a French honorific) and contextual themes align with French politics of the era.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 91.48351407051086,
+  "prompt_tokens": 603,
+  "completion_tokens": 1927,
+  "total_tokens": 2530
+}

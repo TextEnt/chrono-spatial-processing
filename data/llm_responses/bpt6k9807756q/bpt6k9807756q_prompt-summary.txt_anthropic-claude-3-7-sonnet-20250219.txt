@@ -1,9 +1,0 @@
-{
-    "period": "Ancient Greece, Hellenistic period",
-    "period_reasoning": "The play mentions Pyrrhus, who is likely Pyrrhus of Epirus, a Hellenistic king who lived from 319-272 BCE. The play also mentions Sparta and Spartans, and positions Pyrrhus as a military threat to Sparta, which aligns with historical events of the Hellenistic period after Alexander the Great's death when successor kingdoms were in conflict.",
-    "timeframe_start": "-323",
-    "timeframe_end": "-272",
-    "location": "Sparta",
-    "location_reasoning": "The title of the play is 'Zelonide, princesse de Sparte' (Zelonide, princess of Sparta), and Sparta is the most frequently mentioned place in the text. The context sections explicitly refer to 'Sparte' multiple times as the setting where the action takes place, with references to 'notre Ville' (our City) when speaking of Sparta. Characters are described as 'Spartaines' (Spartan women) and there's concern about defending Sparta against Pyrrhus's forces.",
-    "location_qid": "Q5690"
-}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5629556w",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"The characters Alcide (Hercules), Dejanire (Deianira), and Thetys are figures from ancient Greek mythology, indicating the play is set in the Classical Antiquity period.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"500\",\n    \"location\": \"Ancient Greece\",\n    \"location_reasoning\": \"The characters are from ancient Greek mythology, suggesting the setting is in Ancient Greece.\",\n    \"location_qid\": \"Q41\"\n}",
+  "duration_seconds": 10.453183889389038,
+  "prompt_tokens": 637,
+  "completion_tokens": 839,
+  "total_tokens": 1476
+}

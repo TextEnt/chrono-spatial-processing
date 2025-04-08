@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k63635719",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "openai:gpt-4o",
+  "response": "{\n    \"period\": \"Ancient Greece\",\n    \"period_reasoning\": \"The play is based on 'Les chastes et loyales amours de Th\u00e9ag\u00e8ne et Caricl\u00e9e,' which is a French adaptation of a Greek novel by Heliodorus of Emesa. The original story is set in the context of ancient Greek culture and mythology, suggesting the action takes place in that era.\",\n    \"timeframe_start\": \"-500\",\n    \"timeframe_end\": \"-300\",\n    \"location\": \"Greece\",\n    \"location_reasoning\": \"The original Greek novel by Heliodorus is set in ancient Greece, and the names Th\u00e9ag\u00e8ne and Caricl\u00e9e are Greek, indicating that the action of the play is likely set in Greece.\",\n    \"location_qid\": \"Q41\"\n}",
+  "duration_seconds": 2.5728089809417725,
+  "prompt_tokens": 622,
+  "completion_tokens": 170,
+  "total_tokens": 792
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8528543",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "openai:o1-mini",
+  "response": "{\n    \"period\": null,\n    \"period_reasoning\": \"Insufficient information to determine the historical period from the provided data.\",\n    \"timeframe_start\": null,\n    \"timeframe_end\": null,\n    \"location\": \"France\",\n    \"location_reasoning\": \"France is the only place mentioned in the context and the play is a French tragi-comedy from the 17th century.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 4.988797187805176,
+  "prompt_tokens": 1035,
+  "completion_tokens": 687,
+  "total_tokens": 1722
+}

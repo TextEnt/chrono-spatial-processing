@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090170n",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Ancient Rome\",\n    \"period_reasoning\": \"Les M\u00e9nechmes is a French adaptation of Plautus's Latin comedy Menaechmi. Plautus was a Roman playwright who lived around 254-184 BCE. His works were set in his contemporary time. Jean de Rotrou, a 17th century French dramatist, frequently adapted classical plays while maintaining their original setting.\",\n    \"timeframe_start\": \"-250\",\n    \"timeframe_end\": \"-150\",\n    \"location\": \"Epidamnus\",\n    \"location_reasoning\": \"Plautus's original play Menaechmi (upon which Rotrou's Les M\u00e9nechmes is based) is set in Epidamnus, an ancient Greek colony that was located in what is now Albania. The plot revolves around twin brothers who were separated in Epidamnus and later reunited there.\",\n    \"location_qid\": \"Q1339919\"\n}",
+  "duration_seconds": 4.698126792907715,
+  "prompt_tokens": 489,
+  "completion_tokens": 229,
+  "total_tokens": 718
+}

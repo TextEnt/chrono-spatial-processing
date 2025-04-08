@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5849655v",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Classical antiquity\",\n    \"period_reasoning\": \"The play references Pluton (Pluto), the Roman god of the underworld, indicating a mythological setting tied to Roman mythology, which is associated with classical antiquity.\",\n    \"timeframe_start\": \"-500\",\n    \"timeframe_end\": \"500\",\n    \"location\": null,\n    \"location_reasoning\": \"The play's action is explicitly set in Pluton's mythological underworld realm, which is not a real-world geographic location.\",\n    \"location_qid\": null\n}",
+  "duration_seconds": 94.11148190498352,
+  "prompt_tokens": 621,
+  "completion_tokens": 1733,
+  "total_tokens": 2354
+}

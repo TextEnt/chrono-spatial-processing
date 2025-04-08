@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090142b",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"The play references Paphos and Cypre (Cyprus), ancient locations tied to Greek mythology and history. The Hellenistic period (4th\u20131st centuries BCE) aligns with Cyprus's prominence under Greek and later Roman influence, fitting the setting implied by place names and character dynamics.\",\n    \"timeframe_start\": \"-400\",\n    \"timeframe_end\": \"-30\",\n    \"location\": \"Paphos, Cyprus\",\n    \"location_reasoning\": \"Paphos is the most frequently mentioned place (10 occurrences) and is explicitly tied to the action (e.g., guarding/losing Paphos). Cypre (Cyprus) is also listed among top places, reinforcing the island as the broader geographic context.\",\n    \"location_qid\": \"Q180209\"\n}",
+  "duration_seconds": 55.00907802581787,
+  "prompt_tokens": 1564,
+  "completion_tokens": 1103,
+  "total_tokens": 2667
+}

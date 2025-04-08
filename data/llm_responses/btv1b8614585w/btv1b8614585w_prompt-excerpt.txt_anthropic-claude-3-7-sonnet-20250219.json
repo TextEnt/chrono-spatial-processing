@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8614585w",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Ancient Rome during persecution of early Christians\",\n    \"period_reasoning\": \"The play appears to be a Christian martyrdom story set during Roman persecutions. Key indicators include: 1) The title mentions 'martyre' (martyrdom) of Saint Reyne; 2) A character named 'Olibre' who is called 'Pr\u00e9sident' suggests a Roman official/governor; 3) References to Jupiter (Roman god) and punishing 'infidelity' (likely refusal to worship Roman gods); 4) The threat of punishment for not honoring Jupiter points to Roman persecution of Christians.\",\n    \"timeframe_start\": \"0250\",\n    \"timeframe_end\": \"0313\",\n    \"location\": \"Alise-Sainte-Reine (ancient Alesia)\",\n    \"location_reasoning\": \"The title specifically mentions 'sainte Reyne d'Alise' (Saint Reyne of Alise). Alise refers to Alise-Sainte-Reine, a town in Burgundy, France, which was the ancient Gallo-Roman site of Alesia. The play also mentions that the saint's body rests at Flavigny Abbey, which is near Alise-Sainte-Reine.\",\n    \"location_qid\": \"Q211212\"\n}",
+  "duration_seconds": 6.079648971557617,
+  "prompt_tokens": 696,
+  "completion_tokens": 318,
+  "total_tokens": 1014
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8614585w",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "deepseek:deepseek-reasoner",
+  "response": "{\n    \"period\": \"Roman Empire (Crisis of the Third Century)\",\n    \"period_reasoning\": \"The play references Emperor D\u00e9cie (Decius), who ruled 249\u2013251 CE, and Christian persecution under his reign. The context of martyrdom, Roman laws against Christians, and mentions of Jupiter align with this period.\",\n    \"timeframe_start\": \"249\",\n    \"timeframe_end\": \"251\",\n    \"location\": \"Gaul (Roman province)\",\n    \"location_reasoning\": \"The top-mentioned place is 'Gaule' (Gaul), with references to its political and religious context under Roman rule. The play's title also links to Alise (Alise-Sainte-Reine, France), a location in ancient Gaul.\",\n    \"location_qid\": \"Q167346\"\n}",
+  "duration_seconds": 32.503227949142456,
+  "prompt_tokens": 1611,
+  "completion_tokens": 634,
+  "total_tokens": 2245
+}

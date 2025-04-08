@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k63635719",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Ancient Egypt during Persian rule\",\n    \"period_reasoning\": \"The text mentions several elements that point to Ancient Egypt under Persian rule: references to Orondate as 'the Monarque de Perse' (Persian monarch), mentions of Memphis having a priesthood system, and a character described as suitable to 'serve as a Eunuch in such a court' (Persian court). The play appears to be an adaptation of 'Theagenes and Chariclea' (Ethiopian Story) by Heliodorus, which is set during the Persian occupation of Egypt.\",\n    \"timeframe_start\": \"-525\",\n    \"timeframe_end\": \"-332\",\n    \"location\": \"Memphis, Egypt\",\n    \"location_reasoning\": \"Memphis is explicitly mentioned multiple times as the central location where the action takes place. It is described as having a priesthood system (Thiamis is referred to as a Pontiff/Priest of Memphis). Other characters like Arsace appear to have authority in Memphis. The text also mentions the Nile ('Nil') which confirms the Egyptian setting.\",\n    \"location_qid\": \"Q13249957\"\n}",
+  "duration_seconds": 20.80117106437683,
+  "prompt_tokens": 2940,
+  "completion_tokens": 272,
+  "total_tokens": 3212
+}

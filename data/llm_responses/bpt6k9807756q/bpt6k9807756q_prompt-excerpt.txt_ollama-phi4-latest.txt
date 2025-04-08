@@ -1,9 +1,0 @@
-{
-    "period": "Classical Antiquity",
-    "period_reasoning": "The play is titled 'Zelonide, princesse de Sparte' and mentions Sparta, an ancient Greek city-state. The themes of honor, glory, and valor suggest a setting in Classical Antiquity, particularly during the time when Sparta was prominent.",
-    "timeframe_start": "-800",
-    "timeframe_end": "-146",
-    "location": "Sparta, Ancient Greece",
-    "location_reasoning": "The excerpt explicitly mentions Sparta, indicating that the play's action is set there. Additionally, the language and themes are consistent with those of ancient Greek culture.",
-    "location_qid": "Q1737"
-}

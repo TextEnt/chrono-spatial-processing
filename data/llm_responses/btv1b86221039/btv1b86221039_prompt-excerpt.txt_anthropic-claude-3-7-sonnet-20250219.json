@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b86221039",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"17th century France\",\n    \"period_reasoning\": \"The play was published in 1669 during the 17th century in France. French plays from this period typically set their narratives in contemporary times. The excerpt mentions fashion elements like 'Rubans, de Points, et de dentelle' (ribbons, points, and lace) which were typical aristocratic and bourgeois fashion items in 17th century France.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1699\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play is written in French by Montfleury, who was a French playwright. The fashion items mentioned (ribbons, lace) and social customs described in the excerpt align with 17th century French society. The play's original publication in 1669 in France suggests it was written for a French audience about French society.\",\n    \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 4.7623679637908936,
+  "prompt_tokens": 666,
+  "completion_tokens": 232,
+  "total_tokens": 898
+}

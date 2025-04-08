@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k857183z",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "anthropic:claude-3-7-sonnet-20250219",
+  "response": "{\n    \"period\": \"Ancient Rome or Early Christian period\",\n    \"period_reasoning\": \"The play mentions Rome, a 'Chef heureux sur mer', 'prisons d'Afrique', and themes related to faith ('Un appui de la Foi'). References to captives and slavery, combined with the Roman setting, suggest the action takes place during the Roman Empire, possibly during the early Christian period when Rome had conflicts in Africa and issues of faith were prominent.\",\n    \"timeframe_start\": \"0100\",\n    \"timeframe_end\": \"0400\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"Rome is frequently mentioned (8 times) in the text and appears to be the central location. Several sentences explicitly place the action in Rome: 'Pour m'\u00e9pouser dans Rome', 'Dans Rome il m'\u00e9pousa', etc. The context also references conflicts between Rome and Africa, suggesting Rome as the main setting with possible connections to African territories under Roman influence.\",\n    \"location_qid\": \"Q220\"\n}",
+  "duration_seconds": 5.699022054672241,
+  "prompt_tokens": 1587,
+  "completion_tokens": 242,
+  "total_tokens": 1829
+}

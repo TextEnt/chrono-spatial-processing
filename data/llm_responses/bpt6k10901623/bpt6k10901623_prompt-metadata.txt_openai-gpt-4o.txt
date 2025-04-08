@@ -1,9 +1,0 @@
-{
-    "period": "Medieval Hungary",
-    "period_reasoning": "The title 'Théodore, Reyne de Hongrie' suggests a Hungarian setting. During the Middle Ages, Hungary was a significant kingdom in Europe, making it a plausible setting for a historic play. As the play was published in the 17th century, authors often set such plays in the Middle Ages when focusing on nobility and royalty.",
-    "timeframe_start": "0800",
-    "timeframe_end": "1526",
-    "location": "Kingdom of Hungary",
-    "location_reasoning": "The title explicitly mentions Hungary ('Reyne de Hongrie'), indicating the play is likely set in this region. The Kingdom of Hungary was a central European state established in the Middle Ages and relevant through this period.",
-    "location_qid": "Q17134"
-}
