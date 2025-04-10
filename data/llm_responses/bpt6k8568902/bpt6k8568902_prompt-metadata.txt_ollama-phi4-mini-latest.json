@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8568902",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:phi4-mini:latest",
+  "response": "I am Check if(inLookNowReplyLinkerScan Look\nGivenGoogleThislooksThinkSearchInstruction-I'm)",
+  "duration_seconds": 1.4669301509857178,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

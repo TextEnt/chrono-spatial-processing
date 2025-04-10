@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k57899298",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"17th century\",\n  \"period_reasoning\": \"The play is written by Jean de Rotrou, a French playwright from the XVII century. The language and style of the excerpt also align with the literary conventions of the 17th century.\",\n  \"timeframe_start\": \"+1600\",\n  \"timeframe_end\": \"+1700\",\n  \"location\": \"France\",\n  \"location_reasoning\": \"Jean de Rotrou is a French playwright, and there are no indications in the excerpt that suggest a different setting. The language used is French.\",\n  \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 18.7089786529541,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

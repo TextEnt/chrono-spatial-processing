@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090061b",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"Renaissance\",\n   \"period_reasoning\": \"The text references classical figures like Cicero and Socrates, alongside mentions of Rome, Paris, and the Pope, suggesting a revival of classical learning and culture characteristic of the Renaissance. References to the Louvre and the Papal Empire further support this timeframe.\",\n   \"timeframe_start\": \"1400\",\n   \"timeframe_end\": \"1600\",\n   \"location\": \"Italy and France\",\n   \"location_reasoning\": \"The text explicitly mentions Rome, Paris, and France. Italy is strongly implied through references to Rome and the Pope. The Louvre is also mentioned, placing the action in France.\",\n   \"location_qid\": \"Q1766\"\n}",
+  "duration_seconds": 19.717085599899292,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

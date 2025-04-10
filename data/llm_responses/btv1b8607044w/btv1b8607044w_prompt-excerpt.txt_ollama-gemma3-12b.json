@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8607044w",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"XVII century\",\n   \"period_reasoning\": \"The play's metadata indicates the author is Georges de Scud\u00e9ry and the publication date is 1639. Scud\u00e9ry was a prominent figure in the French literary scene during the 17th century.\",\n   \"timeframe_start\": \"+1600\",\n   \"timeframe_end\": \"+1700\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"Georges de Scud\u00e9ry was a French author, and the play was published in France. The excerpt is written in French, further supporting this.\",\n   \"location_qid\": \"Q159\"\n}",
+  "duration_seconds": 12.399114847183228,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8528543",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Renaissance or Early Modern Period\",\n  \"period_reasoning\": \"The play is a tragi-com\u00e9die, a genre popular during the Renaissance and Early Modern periods. The publication date of 1656 suggests that the play was written during this time.\",\n  \"timeframe_start\": \"-0100\",\n  \"timeframe_end\": \"+1700\",\n  \"location\": \"None\",\n  \"location_reasoning\": \"The provided information does not specify the location where the action of the play takes place.\",\n  \"location_qid\": null\n}",
+  "duration_seconds": 15.86558198928833,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10900954",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": None,\n  \"period_reasoning\": \"The excerpt provided does not contain sufficient information to determine the historical period in which the play is set.\",\n  \"timeframe_start\": None,\n  \"timeframe_end\": None,\n  \"location\": None,\n  \"location_reasoning\": \"The excerpt provided does not contain any specific references to a geographic location where the action of the play takes place.\",\n  \"location_qid\": None\n}",
+  "duration_seconds": 15.89670705795288,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

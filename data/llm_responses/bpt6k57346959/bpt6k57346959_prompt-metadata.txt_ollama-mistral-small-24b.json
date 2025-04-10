@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k57346959",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"17th century\",\n  \"period_reasoning\": \"The play is a XVII century French work, and it is reasonable to assume that the action takes place in a similar timeframe.\",\n  \"timeframe_start\": \"+1600\",\n  \"timeframe_end\": \"+1700\",\n  \"location\": \"France\",\n  \"location_reasoning\": \"The title mentions 'repr\u00e9sent\u00e9e en France', indicating that the play is set in France.\",\n  \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 15.593085765838623,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

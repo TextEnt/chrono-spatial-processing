@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10901126",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Roman Empire\",\n  \"period_reasoning\": \"The play mentions historical figures such as Germanicus, Drusus, and Tib\u00e8re, who are all associated with the Roman Empire. The mention of 'Rome' and other places like 'Rhin' (Rhine) and 'Lyon' further supports this period.\",\n  \"timeframe_start\": \"-14\",\n  \"timeframe_end\": \"68\",\n  \"location\": \"Roman Empire\",\n  \"location_reasoning\": \"The play frequently mentions 'Rome' and other locations associated with the Roman Empire, such as the Rhine (Rhin) and Lyon. These references indicate that the action of the play takes place within the Roman Empire.\",\n  \"location_qid\": \"Q140\"\n}",
+  "duration_seconds": 29.709046363830566,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

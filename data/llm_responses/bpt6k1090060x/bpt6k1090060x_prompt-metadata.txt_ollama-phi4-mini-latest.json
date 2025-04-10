@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090060x",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:phi4-mini:latest",
+  "response": "--:What.Response generated blocks Do not is incomplete Function)",
+  "duration_seconds": 1.192286729812622,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

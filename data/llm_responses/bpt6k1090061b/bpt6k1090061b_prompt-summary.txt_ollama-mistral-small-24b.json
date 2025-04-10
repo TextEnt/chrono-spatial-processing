@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090061b",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Early Modern Period\",\n  \"period_reasoning\": \"The text mentions references to historical figures and locations such as Rome, Paris, and Venice, which were prominent during the Early Modern Period. Additionally, the language style and themes suggest a timeframe around the Renaissance or early modern era.\",\n  \"timeframe_start\": \"+1400\",\n  \"timeframe_end\": \"+1800\",\n  \"location\": \"Europe\",\n  \"location_reasoning\": \"The text frequently mentions European cities such as Rome, Paris, and Venice. The mention of the 'Empire of the Pope' also suggests a location within Europe.\",\n  \"location_qid\": \"Q46\"\n}",
+  "duration_seconds": 32.35144805908203,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

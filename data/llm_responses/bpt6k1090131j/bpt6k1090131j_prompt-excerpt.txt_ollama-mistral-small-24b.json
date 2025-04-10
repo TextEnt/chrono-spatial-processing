@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090131j",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Ancient Greece or Rome\",\n  \"period_reasoning\": \"The excerpt mentions 'Clemene,' which is a name associated with ancient Greek mythology, and the themes of kingship, victory in war, and divine intervention are common in classical tragedies.\",\n  \"timeframe_start\": \"-500\",\n  \"timeframe_end\": \"+100\",\n  \"location\": \"Greece or Rome\",\n  \"location_reasoning\": \"The names and themes suggest a setting in ancient Greece or Rome, which were the primary locations for classical tragedies.\",\n  \"location_qid\": \"Q84\"\n}",
+  "duration_seconds": 18.407589435577393,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

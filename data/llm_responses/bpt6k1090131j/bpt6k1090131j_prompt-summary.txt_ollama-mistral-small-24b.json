@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090131j",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Ancient Rome\",\n  \"period_reasoning\": \"The play mentions characters like Berenice, Barsine, and Mitridate, which are names associated with historical figures from ancient times. Additionally, the mention of 'Trone' (throne) suggests a royal or imperial setting, which is common in ancient Roman dramas.\",\n  \"timeframe_start\": \"-100\",\n  \"timeframe_end\": \"200\",\n  \"location\": \"Rome\",\n  \"location_reasoning\": \"The characters and themes suggest a setting in the Roman Empire, where such historical figures and royal intrigues were prevalent.\",\n  \"location_qid\": \"Q196\"\n}",
+  "duration_seconds": 24.13031554222107,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090061b",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Ancient Rome\",\n  \"period_reasoning\": \"The excerpt mentions 'le Royaume m\u00eame des Romains', which translates to 'the Kingdom of the Romans'. This suggests that the play is set in Ancient Rome.\",\n  \"timeframe_start\": \"-753\",\n  \"timeframe_end\": \"476\",\n  \"location\": \"Rome, Italy\",\n  \"location_reasoning\": \"The mention of 'le Royaume m\u00eame des Romains' indicates that the setting is likely Rome, which was the capital of the Roman Empire.\",\n  \"location_qid\": \"Q253\"\n}",
+  "duration_seconds": 18.995821714401245,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

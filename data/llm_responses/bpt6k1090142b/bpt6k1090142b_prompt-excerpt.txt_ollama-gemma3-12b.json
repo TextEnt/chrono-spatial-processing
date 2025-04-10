@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090142b",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"17th Century\",\n   \"period_reasoning\": \"The play is authored by Paul Scarron and titled \\\"Le Prince corsaire, trag\u00e9die-com\u00e9die\\\", published in 1663. This firmly places it within the French 17th century, a period known for its theatrical developments and the works of playwrights like Moli\u00e8re and Corneille.\",\n   \"timeframe_start\": \"[\u00b1Y]1600\",\n   \"timeframe_end\": \"[\u00b1Y]1700\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"Paul Scarron was a French writer, and the play's publication in France strongly suggests the setting is within France. The excerpt does not provide specific geographic details to pinpoint a more precise location.\",\n   \"location_qid\": \"Q144\"\n}",
+  "duration_seconds": 14.691818237304688,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

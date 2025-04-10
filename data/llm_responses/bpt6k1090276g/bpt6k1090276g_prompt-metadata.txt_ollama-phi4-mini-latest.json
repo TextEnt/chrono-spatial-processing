@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090276g",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:phi4-mini:latest",
+  "response": "Based on your input, I cannot determine with certainty whether there is a geographical and historical context provided within it. Therefore:\n\n\n{\n  \"period\": null,\n  \"timeframe_start\": None,\n  \"timeframe_end\": None,\n  \"location\": None,\n  \"location_reasoning\": \"The JSON object only includes metadata about the play without any explicit information regarding its setting or time period.\",\n  \"location_qid\": None\n}",
+  "duration_seconds": 3.214414358139038,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

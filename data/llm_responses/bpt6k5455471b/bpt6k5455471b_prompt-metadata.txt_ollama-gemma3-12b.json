@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5455471b",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"Classical Period (French Baroque)\",\n   \"period_reasoning\": \"The play is attributed to Daniel-Paul Chappuzeau de Baug\u00e9 and was represented by the Acad\u00e9mie royale de musique in 1691. This places it firmly within the French Baroque period, a time of significant artistic and theatrical development in France.\",\n   \"timeframe_start\": \"-1642\",\n   \"timeframe_end\": \"-1789\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"The Acad\u00e9mie royale de musique was a French institution. The play's representation in France strongly suggests the action is set in France.\",\n   \"location_qid\": \"Q1476\"\n}",
+  "duration_seconds": 11.710700035095215,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

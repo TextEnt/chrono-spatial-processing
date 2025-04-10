@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1519298v",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"17th Century\",\n  \"period_reasoning\": \"The play is titled 'Les Domestiques' and was published in France during the 17th century. The language used, such as 'Guillot', 'Monsieur Policarpe', and other references, suggests a French setting from that era.\",\n  \"timeframe_start\": \"+1600\",\n  \"timeframe_end\": \"+1700\",\n  \"location\": \"France\",\n  \"location_reasoning\": \"The play is titled 'Les Domestiques' which is in French and mentions characters with French names like Guillot, Monsieur Policarpe. The context suggests a French setting.\",\n  \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 35.345741510391235,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

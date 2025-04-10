@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090222x",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"Early Modern England\",\n   \"period_reasoning\": \"The play title \\\"Le Comte d'Essex, trag\u00e9die\\\" directly references the Earl of Essex, a historical figure from 17th-century England. The excerpt, though in French, indicates a narrative centered around a person and events related to English history.\",\n   \"timeframe_start\": \"-1600\",\n   \"timeframe_end\": \"-1700\",\n   \"location\": \"England\",\n   \"location_reasoning\": \"The play is about the Earl of Essex, a prominent figure in English history. Therefore, the action likely takes place in England.\",\n   \"location_qid\": \"Q145\"\n}",
+  "duration_seconds": 12.892403841018677,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1519298v",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"French Baroque period\",\n   \"period_reasoning\": \"The play was written by Jean Chevalier and published in 1662. This aligns with the French Baroque period, a significant era in French theatre and literature.\",\n   \"timeframe_start\": \"+1600\",\n   \"timeframe_end\": \"+1715\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"The play was 'repr\u00e9sent\u00e9e sur le th\u00e9\u00e2tre royal du Marais', which is located in Paris, France. The author is French, and the publication date is from the French Baroque period.\",\n   \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 11.076578378677368,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

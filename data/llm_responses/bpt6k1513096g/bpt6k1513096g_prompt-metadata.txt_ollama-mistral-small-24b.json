@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1513096g",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"17th century\",\n  \"period_reasoning\": \"The play is a XVII century French tragedy-comedy, which suggests that the historical period depicted in the play could be set during the same timeframe.\",\n  \"timeframe_start\": \"+1600\",\n  \"timeframe_end\": \"+1700\",\n  \"location\": \"France\",\n  \"location_reasoning\": \"The author is French and the play was published in France, suggesting that the action of the play could be set in France.\",\n  \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 15.868916273117065,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

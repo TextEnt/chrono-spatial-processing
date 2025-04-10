@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090131j",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"XVII century\",\n   \"period_reasoning\": \"The play was published in 1672, placing it firmly within the 17th century.\",\n   \"timeframe_start\": \"+1600\",\n   \"timeframe_end\": \"+1700\",\n   \"location\": \"Syrie\",\n   \"location_reasoning\": \"The play mentions 'Syrie' as a place, suggesting the action takes place there.\",\n   \"location_qid\": \"Q432\"\n}",
+  "duration_seconds": 12.634779691696167,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

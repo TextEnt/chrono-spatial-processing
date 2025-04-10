@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280290z",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Roman Empire\",\n  \"period_reasoning\": \"The title 'Cinna, ou la Cl\u00e9mence d'Auguste' suggests a historical context related to ancient Rome. Cinna was a Roman senator and poet who lived during the reign of Emperor Augustus.\",\n  \"timeframe_start\": \"-30\",\n  \"timeframe_end\": \"+14\",\n  \"location\": \"Rome\",\n  \"location_reasoning\": \"The play is centered around the character Cinna, who was associated with ancient Rome. The mention of 'Auguste' (Augustus) further confirms this setting.\",\n  \"location_qid\": \"Q250\"\n}",
+  "duration_seconds": 19.391806840896606,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

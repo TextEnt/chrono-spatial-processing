@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5629556w",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:phi4-mini:latest",
+  "response": "I'm afterI dynamically withGiven translated 2:Instruction",
+  "duration_seconds": 1.2154316902160645,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

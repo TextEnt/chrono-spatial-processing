@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5752605t",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"17th century\",\n  \"period_reasoning\": \"The play was written by No\u00ebl Lebreton Hauteroche and published in 1691, which places it firmly within the 17th century.\",\n  \"timeframe_start\": \"+1600\",\n  \"timeframe_end\": \"+1699\",\n  \"location\": \"France\",\n  \"location_reasoning\": \"The author No\u00ebl Lebreton Hauteroche was a French playwright, and the title of the play is in French. This suggests that the action likely takes place in France.\",\n  \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 16.995062112808228,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

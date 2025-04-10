@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k12801807",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"Classical Antiquity / Pastoral Genre\",\n   \"period_reasoning\": \"The play is described as a \\\"pastorale,\\\" which is a genre rooted in classical antiquity, specifically inspired by works like Virgil's Eclogues. The excerpt references nymphs and a hunt, common tropes in pastoral literature.\",\n   \"timeframe_start\": \"-79 B.C.\",\n   \"timeframe_end\": \"476\",\n   \"location\": \"Rural Arcadia (fictional)\",\n   \"location_reasoning\": \"Pastoral plays are typically set in idealized rural landscapes, often Arcadia, a region in Greece that became symbolic of a pastoral paradise.\",\n   \"location_qid\": \"Q3138\"\n}",
+  "duration_seconds": 62.766658782958984,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k12801807",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"XVII century\",\n   \"period_reasoning\": \"The metadata indicates the play was published in 1632, placing it firmly within the 17th century. The play is a pastoral, a common genre during this period.\",\n   \"timeframe_start\": \"1600\",\n   \"timeframe_end\": \"1700\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"The play is written in French ('vers fran\u00e7ois') and published by a French author (Tasse, Le).\",\n   \"location_qid\": \"Q159\"\n}",
+  "duration_seconds": 17.09049129486084,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

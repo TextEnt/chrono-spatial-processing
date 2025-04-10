@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10900954",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"17th century\",\n  \"period_reasoning\": \"The play was published in 1661, and it is a comedy from the XVII century.\",\n  \"timeframe_start\": \"+1600\",\n  \"timeframe_end\": \"+1700\",\n  \"location\": \"Florence\",\n  \"location_reasoning\": \"Florence is mentioned frequently (15 times) in the play, indicating it is a significant location where part of the action takes place.\",\n  \"location_qid\": \"Q986\"\n}",
+  "duration_seconds": 24.444618225097656,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

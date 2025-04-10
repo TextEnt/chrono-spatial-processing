@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b86221269",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"Early Modern Period\",\n   \"period_reasoning\": \"The play is authored by Jean Rotrou and published in 1635. This places it firmly within the Early Modern Period of French literature, specifically the reign of Louis XIII.\",\n   \"timeframe_start\": \"-0001\",\n   \"timeframe_end\": \"1789\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"Jean Rotrou was a French playwright, and the play's publication details indicate a French origin. The play's language and cultural context strongly suggest a French setting.\",\n   \"location_qid\": \"Q159\"\n}",
+  "duration_seconds": 12.479345560073853,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

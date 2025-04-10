@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090048g",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"Classical Antiquity\",\n   \"period_reasoning\": \"The excerpt references 'Tyran' and 'THISBE', which are characters from the myth of Pyramus and Thisbe, a story originating in Greek mythology. The play is a tragedy, a genre often associated with classical themes and settings.\",\n   \"timeframe_start\": \"-800\",\n   \"timeframe_end\": \"-30\",\n   \"location\": \"Greece\",\n   \"location_reasoning\": \"Pyramus and Thisbe is a Greek myth, therefore the setting is likely in ancient Greece.\",\n   \"location_qid\": \"Q466\"\n}",
+  "duration_seconds": 11.669115781784058,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k852919x",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:phi4-mini:latest",
+  "response": "{\n  \"period\": \"17th century French Renaissance\",\n  \"period_reasoning\": \"Based on the title 'Le Mariage de Fine-Epice. Com\u00e9die' and its publication year, it is likely to be a play from France during this time period.\",\n  \"timeframe_start\": \"-1610\", \n  \"timeframe_end\": \"+1699\"\n}",
+  "duration_seconds": 2.7623188495635986,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

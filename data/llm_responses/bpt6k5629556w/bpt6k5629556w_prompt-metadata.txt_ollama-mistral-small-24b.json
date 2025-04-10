@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5629556w",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Ancient Greece\",\n  \"period_reasoning\": \"The title 'Alcide' refers to Alcides, another name for Hercules, a prominent figure in Greek mythology. The play is likely set during the time of ancient Greek heroes.\",\n  \"timeframe_start\": \"-1200\",\n  \"timeframe_end\": \"-800\",\n  \"location\": \"Greece\",\n  \"location_reasoning\": \"Hercules (Alcides) is a central figure in Greek mythology, and his stories are primarily set in ancient Greece.\",\n  \"location_qid\": \"Q145\"\n}",
+  "duration_seconds": 16.707510471343994,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

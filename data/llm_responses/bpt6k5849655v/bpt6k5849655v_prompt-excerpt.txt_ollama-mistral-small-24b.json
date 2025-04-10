@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5849655v",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"17th century\",\n  \"period_reasoning\": \"The play is written by Lavalise, De and published in 1649. The language used in the excerpt suggests a 17th-century French context.\",\n  \"timeframe_start\": \"+1600\",\n  \"timeframe_end\": \"+1700\",\n  \"location\": \"None\",\n  \"location_reasoning\": \"The provided information does not specify the geographic location where the action of the play takes place. The excerpt does not contain any clues about the setting.\",\n  \"location_qid\": null\n}",
+  "duration_seconds": 18.440565824508667,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

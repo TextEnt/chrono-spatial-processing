@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090170n",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"Classical Antiquity / Roman Comedy adaptation\",\n   \"period_reasoning\": \"The play \\\"Les M\\u00e9nechmes\\\" is an adaptation of the Roman comedy \\\"The Twins\\\" by Plautus. This indicates a setting rooted in the classical world.\",\n   \"timeframe_start\": \"-200\",\n   \"timeframe_end\": \"0\",\n   \"location\": \"Ancient Rome\",\n   \"location_reasoning\": \"As an adaptation of a Roman comedy, the play's action is likely set in Ancient Rome.\",\n   \"location_qid\": \"Q1599\"\n}",
+  "duration_seconds": 10.496018648147583,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

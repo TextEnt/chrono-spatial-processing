@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090048g",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:phi4-mini:latest",
+  "response": "Look at Looked 003 is derived split Split Checkup.klook\n and",
+  "duration_seconds": 1.2628002166748047,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

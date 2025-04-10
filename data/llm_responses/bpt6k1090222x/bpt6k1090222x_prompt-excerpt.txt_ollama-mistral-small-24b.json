@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090222x",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Late 16th century to early 17th century\",\n  \"period_reasoning\": \"The play is titled 'Le Comte d'Essex, trag\u00e9die' and mentions historical figures and events that are characteristic of the late 16th to early 17th century. The character Essex refers to Robert Devereux, 2nd Earl of Essex, who was a prominent figure in English history during this period.\",\n  \"timeframe_start\": \"-0158\",\n  \"timeframe_end\": \"+0163\",\n  \"location\": \"England\",\n  \"location_reasoning\": \"The character 'Le Comte d'Essex' (Earl of Essex) is a historical figure closely associated with England. The political intrigue and courtly setting described in the excerpt are typical of English history during this period.\",\n  \"location_qid\": \"Q145\"\n}",
+  "duration_seconds": 23.466981172561646,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

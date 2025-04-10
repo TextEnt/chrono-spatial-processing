@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k857183z",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"17th Century\",\n   \"period_reasoning\": \"The play was published in 1650, placing it firmly within the 17th century. The language and themes are characteristic of French Baroque theatre.\",\n   \"timeframe_start\": \"-1601\",\n   \"timeframe_end\": \"-1701\",\n   \"location\": \"Rome, France, Africa\",\n   \"location_reasoning\": \"The text explicitly mentions 'Rome' multiple times, indicating a significant portion of the action takes place there. References to 'France' and 'Afrique' (Africa) also suggest these locations are relevant to the play's setting.\",\n   \"location_qid\": \"Q43\"\n}",
+  "duration_seconds": 16.55878520011902,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

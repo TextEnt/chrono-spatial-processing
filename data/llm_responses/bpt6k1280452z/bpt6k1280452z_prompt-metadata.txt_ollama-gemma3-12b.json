@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280452z",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"17th Century France\",\n   \"period_reasoning\": \"The play is by Moli\u00e8re, a prominent French playwright of the 17th century. The title indicates it is a 'com\u00e9die', a common genre in French theatre during that period.\",\n   \"timeframe_start\": \"+1600\",\n   \"timeframe_end\": \"+1700\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"Moli\u00e8re was a French playwright, and his plays are typically set in France or depict French society.\",\n   \"location_qid\": \"Q183\"\n}",
+  "duration_seconds": 10.531881093978882,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

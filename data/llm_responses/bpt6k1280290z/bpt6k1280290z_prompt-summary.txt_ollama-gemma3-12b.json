@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280290z",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"Roman Empire\",\n   \"period_reasoning\": \"The text frequently mentions 'Rome,' 'Romains,' and references battles and political events characteristic of the Roman era. References to 'Aigle' (Roman Eagle), 'temples,' and 'monarchie' further solidify this period.\",\n   \"timeframe_start\": \"-27\",\n   \"timeframe_end\": \"476\",\n   \"location\": \"Rome and Italy\",\n   \"location_reasoning\": \"The text explicitly mentions 'Rome' multiple times, along with references to battles and events occurring within the city and surrounding areas. The mention of 'Italie' also supports this location.\",\n   \"location_qid\": \"Q183\"\n}",
+  "duration_seconds": 19.448839902877808,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

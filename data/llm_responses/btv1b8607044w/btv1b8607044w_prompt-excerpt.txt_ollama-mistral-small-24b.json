@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8607044w",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"17th century France\",\n  \"period_reasoning\": \"The play was written by Georges de Scud\u00e9ry in 1639, which places it firmly within the 17th century. The style and themes are characteristic of French literature from this period.\",\n  \"timeframe_start\": \"+1600\",\n  \"timeframe_end\": \"+1700\",\n  \"location\": \"France\",\n  \"location_reasoning\": \"Georges de Scud\u00e9ry was a French writer, and the play's title and content suggest a French setting. The language of the excerpt is French.\",\n  \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 19.216096878051758,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

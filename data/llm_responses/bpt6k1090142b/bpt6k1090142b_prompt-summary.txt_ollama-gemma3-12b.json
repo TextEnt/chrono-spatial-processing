@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090142b",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"Ancient Mediterranean World\",\n   \"period_reasoning\": \"The play references places like Paphos, Cyprus, and Greece, which are characteristic of the Ancient Mediterranean world. The presence of characters like 'Corsaire' and references to royalty and power struggles further suggest an ancient setting.\",\n   \"timeframe_start\": \"-800\",\n   \"timeframe_end\": \"-100\",\n   \"location\": \"Paphos, Cyprus, Greece\",\n   \"location_reasoning\": \"The text explicitly mentions Paphos and Cyprus. References to Greece further solidify the Mediterranean setting.\",\n   \"location_qid\": \"Q42211\"\n}",
+  "duration_seconds": 16.932889938354492,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

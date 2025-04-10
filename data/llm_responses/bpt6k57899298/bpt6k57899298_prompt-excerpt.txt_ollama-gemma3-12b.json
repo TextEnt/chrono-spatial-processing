@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k57899298",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"Early Modern Period\",\n   \"period_reasoning\": \"The play is attributed to Jean Rotrou and published in 1640. This places it firmly within the Early Modern Period of French literature, a time characterized by significant shifts in theatrical conventions and literary styles.\",\n   \"timeframe_start\": \"-1500\",\n   \"timeframe_end\": \"-1700\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"Jean Rotrou was a French playwright, and the play's publication in 1640 indicates a French origin. The language of the excerpt is French.\",\n   \"location_qid\": \"Q144\"\n}",
+  "duration_seconds": 12.755630016326904,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

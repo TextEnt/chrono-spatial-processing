@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10900954",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"17th century\",\n   \"period_reasoning\": \"The play's metadata indicates it was published in 1661, placing it firmly within the 17th century. The language and themes are consistent with French Baroque theatre.\",\n   \"timeframe_start\": \"1600\",\n   \"timeframe_end\": \"1700\",\n   \"location\": \"Florence, Italy\",\n   \"location_reasoning\": \"The text frequently mentions 'Florence' and references events and people associated with that city. The play also mentions 'Pise', another Italian city, further suggesting an Italian setting.\",\n   \"location_qid\": \"Q1613\"\n}",
+  "duration_seconds": 16.196682929992676,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

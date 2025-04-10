@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8614585w",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Late Antiquity or Early Middle Ages\",\n  \"period_reasoning\": \"The title mentions 'sainte Reyne d'Alise', which refers to Saint Reine, a figure from early Christian history. The play is likely set during the time of her life and martyrdom, which would place it in the Late Antiquity or Early Middle Ages period.\",\n  \"timeframe_start\": \"-300\",\n  \"timeframe_end\": \"+500\",\n  \"location\": \"Alise-Sainte-Reine\",\n  \"location_reasoning\": \"The title explicitly mentions 'd'Alise', which refers to Alise-Sainte-Reine, a commune in France where Saint Reine's relics are believed to be located.\",\n  \"location_qid\": \"Q283495\"\n}",
+  "duration_seconds": 20.932405710220337,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

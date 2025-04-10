@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k15107128",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"Biblical times\",\n   \"period_reasoning\": \"The title indicates the play is \\\"tir\u00e9e de l'\u00c9criture sainte\\\" (taken from the Holy Scripture/Bible). This strongly suggests a setting in biblical times.\",\n   \"timeframe_start\": \"-1000\",\n   \"timeframe_end\": \"-500\",\n   \"location\": \"Biblical Levant (likely encompassing parts of modern-day Israel, Palestine, Lebanon, Syria, and Jordan)\",\n   \"location_reasoning\": \"Given the biblical source material, the action likely takes place in the Biblical Levant, a region encompassing parts of modern-day Israel, Palestine, Lebanon, Syria, and Jordan. The specific location within this region would depend on the particular biblical story adapted.\",\n   \"location_qid\": \"Q3936\"\n}",
+  "duration_seconds": 13.00807785987854,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

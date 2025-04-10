@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280290z",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:phi4-mini:latest",
+  "response": "Focus on viewingPromptUse this##\" sucksREFER Do youafferids:",
+  "duration_seconds": 1.5904788970947266,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8569793",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"Early Modern Period\",\n   \"period_reasoning\": \"The play's metadata indicates it was written by Nicolas Romain and published in 1606. This firmly places it within the Early Modern Period, specifically the French Renaissance and the reign of Henry IV.\",\n   \"timeframe_start\": \"+1400\",\n   \"timeframe_end\": \"+1700\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"The author's title 'conseiller de mondict seigneur, capitaine, prevost, & gruyer du Pont-\u00e0-Mousson' indicates a connection to a specific region within France. The play's language and cultural context are also indicative of France.\",\n   \"location_qid\": \"Q127\"\n}",
+  "duration_seconds": 13.996216297149658,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

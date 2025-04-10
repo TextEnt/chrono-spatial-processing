@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8614585w",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"Early Modern Period\",\n   \"period_reasoning\": \"The play's title references Saint Reine of Alise, a historical figure venerated in France. The publication date (1687) firmly places the play within the Early Modern Period, specifically the reign of Louis XIV. The religious context and the invocation of Jupiter also align with the cultural and religious landscape of 17th-century France.\",\n   \"timeframe_start\": \"+1500\",\n   \"timeframe_end\": \"+1800\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"The play references Saint Reine of Alise, a figure associated with Alise-Sainte-Reine in Burgundy, France. The play's publication in France and its religious context further support this location.\",\n   \"location_qid\": \"Q16239\"\n}",
+  "duration_seconds": 15.08691692352295,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

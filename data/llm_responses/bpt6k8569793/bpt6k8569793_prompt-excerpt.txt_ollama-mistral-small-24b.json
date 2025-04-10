@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8569793",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Late Middle Ages or Early Modern Period\",\n  \"period_reasoning\": \"The play is written in French and published in 1606, which places it in the early modern period. The language and style suggest a setting that could be from the late medieval to early modern era.\",\n  \"timeframe_start\": \"-500\",\n  \"timeframe_end\": \"+1700\",\n  \"location\": \"France or Lorraine region\",\n  \"location_reasoning\": \"The dedication mentions 'monseigneur de Vaudemont Fran\u00e7ois de Lorraine,' indicating a connection to the Lorraine region in France. The language and context suggest a French setting.\",\n  \"location_qid\": \"Q1259\"\n}",
+  "duration_seconds": 22.445167541503906,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

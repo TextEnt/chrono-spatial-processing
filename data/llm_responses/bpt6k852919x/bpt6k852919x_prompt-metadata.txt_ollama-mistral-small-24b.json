@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k852919x",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"17th century\",\n  \"period_reasoning\": \"The play was published in 1664, which places it firmly within the 17th century.\",\n  \"timeframe_start\": \"+1600\",\n  \"timeframe_end\": \"+1700\",\n  \"location\": \"None\",\n  \"location_reasoning\": \"The provided information does not specify the geographic location where the action of the play takes place.\",\n  \"location_qid\": null\n}",
+  "duration_seconds": 14.229557752609253,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

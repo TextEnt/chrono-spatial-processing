@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k57899298",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Ancient Greece\",\n  \"period_reasoning\": \"The title 'Crisante tragedie' suggests a connection to ancient Greek tragedy, which was popular in the XVII century. The name Crisante is likely derived from the Greek mythological figure Chrysanthus.\",\n  \"timeframe_start\": \"-800\",\n  \"timeframe_end\": \"-300\",\n  \"location\": \"Greece\",\n  \"location_reasoning\": \"Ancient Greek tragedies typically take place in ancient Greece, which is consistent with the title and theme of the play.\",\n  \"location_qid\": \"Q145\"\n}",
+  "duration_seconds": 16.882895469665527,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

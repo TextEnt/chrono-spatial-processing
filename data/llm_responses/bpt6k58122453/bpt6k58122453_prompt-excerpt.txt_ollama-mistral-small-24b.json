@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k58122453",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"17th century\",\n  \"period_reasoning\": \"The play was written by L. Discret and published in 1637, which places it firmly within the 17th century.\",\n  \"timeframe_start\": \"+1600\",\n  \"timeframe_end\": \"+1700\",\n  \"location\": None,\n  \"location_reasoning\": \"The excerpt provided does not contain any specific geographical references that would allow for the determination of a precise location.\",\n  \"location_qid\": null\n}",
+  "duration_seconds": 17.012832164764404,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

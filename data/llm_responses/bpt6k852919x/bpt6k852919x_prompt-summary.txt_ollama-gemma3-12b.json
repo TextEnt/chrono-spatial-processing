@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k852919x",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"XVII century\",\n   \"period_reasoning\": \"The play's metadata indicates a publication date of 1664, placing it firmly within the 17th century.\",\n   \"timeframe_start\": \"+1600\",\n   \"timeframe_end\": \"+1700\",\n   \"location\": \"Poitiers\",\n   \"location_reasoning\": \"The text frequently mentions 'Poitiers,' indicating it is a key location in the play's setting. Several sentences directly refer to actions and events taking place in Poitiers.\",\n   \"location_qid\": \"Q20261\"\n}",
+  "duration_seconds": 16.58104658126831,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

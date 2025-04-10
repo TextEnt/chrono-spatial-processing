@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1519298v",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"17th century\",\n  \"period_reasoning\": \"The play was written by Jean Chevalier and published in 1662, which places it firmly within the 17th century.\",\n  \"timeframe_start\": \"+1600\",\n  \"timeframe_end\": \"+1700\",\n  \"location\": \"France\",\n  \"location_reasoning\": \"The play was represented on the th\u00e9\u00e2tre royal du Marais in Paris, which is located in France. The language of the excerpt is French.\",\n  \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 18.07217264175415,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

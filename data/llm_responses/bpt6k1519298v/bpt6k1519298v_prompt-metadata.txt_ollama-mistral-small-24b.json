@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1519298v",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"17th century\",\n  \"period_reasoning\": \"The play was published in 1662, which is during the 17th century. The title and author suggest it is a contemporary work of that era.\",\n  \"timeframe_start\": \"+1600\",\n  \"timeframe_end\": \"+1700\",\n  \"location\": \"Paris, France\",\n  \"location_reasoning\": \"The play was represented on the 'th\u00e9\u00e2tre royal du Marais,' which is a historical theatre in Paris. The title and author also suggest a French context.\",\n  \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 19.27900266647339,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b86107875",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"17th Century France\",\n   \"period_reasoning\": \"The play is by Moli\u00e8re, a prominent French playwright of the 17th century. The title 'L'Escole des maris' and the presence of French language confirm the French origin and timeframe.\",\n   \"timeframe_start\": \"[+1600]1601\",\n   \"timeframe_end\": \"[+1700]1700\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"Moli\u00e8re was a French playwright, and the play is written in French. The play was 'represent\u00e9e sur le theatre du Palais Royal' which is located in Paris.\",\n   \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 13.770851850509644,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

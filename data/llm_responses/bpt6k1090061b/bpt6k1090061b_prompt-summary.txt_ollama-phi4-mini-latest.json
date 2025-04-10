@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090061b",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:phi4-mini:latest",
+  "response": "This is defined as Dray\nA: should not knownaugment 5. Thefollowinglooks aresure andthenuringainsllor thisresult",
+  "duration_seconds": 4.3696606159210205,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090276g",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:phi4-mini:latest",
+  "response": "Based on your input, here is my prediction in JSON format:\n\n\n{\n  \"period\": null,\n  \"period_reasoning\": \"The play's title and author's name do not provide sufficient information to identify a specific historical period.\",\n  \"timeframe_start\": None,\n  \"timeframe_end\": None,\n  \"location\": null,\n  \"location_reasoning\": \"Lilian, as well as the words 'roy' (king) suggests that this text might be related with Renaissance France. However, there is not enough information to identify a specific geographical location.\",\n  \"location_qid\": null\n}",
+  "duration_seconds": 4.298325538635254,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

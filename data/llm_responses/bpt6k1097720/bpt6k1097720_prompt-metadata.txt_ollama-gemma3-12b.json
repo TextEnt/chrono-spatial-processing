@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1097720",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"Classical Antiquity\",\n   \"period_reasoning\": \"The author, La Calpren\u00e8de, was known for writing tragedies inspired by classical themes and settings, particularly Greek and Roman mythology and history. The title 'Phalante' itself suggests a connection to ancient Greek legends, as Phialantes were figures in Greek mythology.\",\n   \"timeframe_start\": \"-800\",\n   \"timeframe_end\": \"476\",\n   \"location\": \"Greece and potentially Roman Empire\",\n   \"location_reasoning\": \"Given the classical inspiration, the play likely takes place in ancient Greece or regions under Roman influence where Greek culture was prevalent. The specific location within Greece or the Roman Empire is difficult to determine without further textual analysis.\",\n   \"location_qid\": \"Q42\"\n}",
+  "duration_seconds": 12.476824045181274,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k857183z",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Late Antiquity or Early Middle Ages\",\n  \"period_reasoning\": \"The play mentions historical and mythical elements that are characteristic of late antiquity or early middle ages, such as references to Rome and Africa.\",\n  \"timeframe_start\": \"-476\",\n  \"timeframe_end\": \"+1000\",\n  \"location\": \"Rome\",\n  \"location_reasoning\": \"The place 'Rome' is mentioned frequently in the play, indicating that a significant portion of the action takes place there.\",\n  \"location_qid\": \"Q238\"\n}",
+  "duration_seconds": 24.03829288482666,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

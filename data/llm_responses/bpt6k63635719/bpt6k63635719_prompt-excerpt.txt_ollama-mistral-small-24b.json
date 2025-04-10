@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k63635719",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Ancient Greece\",\n  \"period_reasoning\": \"The title mentions 'Histoire d'H\u00e9liodore,' which refers to Heliodorus, a Greek novelist from the 3rd century CE. The play is based on his work, suggesting an ancient Greek setting.\",\n  \"timeframe_start\": \"-500\",\n  \"timeframe_end\": \"+100\",\n  \"location\": \"Greece\",\n  \"location_reasoning\": \"The reference to Heliodorus and the Greek context of the original story indicate that the play is set in Greece.\",\n  \"location_qid\": \"Q43\"\n}",
+  "duration_seconds": 18.868618488311768,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1513096g",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"Early Modern Period\",\n   \"period_reasoning\": \"The play's metadata indicates it was published in 1636. This falls squarely within the Early Modern Period in Europe, specifically the 17th century.\",\n   \"timeframe_start\": \"-1600\",\n   \"timeframe_end\": \"-1700\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"The author's name 'Rayssiguier, De' suggests a French origin. The play is written in French, further supporting a French setting.\",\n   \"location_qid\": \"Q144\"\n}",
+  "duration_seconds": 12.22579050064087,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

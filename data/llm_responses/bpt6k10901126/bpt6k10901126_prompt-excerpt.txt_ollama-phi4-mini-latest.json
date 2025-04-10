@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10901126",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:phi4-mini:latest",
+  "response": "A\"Lookat is\u201c?",
+  "duration_seconds": 1.3267714977264404,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

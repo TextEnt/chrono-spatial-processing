@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10900954",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"17th century\",\n  \"period_reasoning\": \"The play was written by Lambert in 1661, which places it firmly within the 17th century.\",\n  \"timeframe_start\": \"+1600\",\n  \"timeframe_end\": \"+1700\",\n  \"location\": \"None\",\n  \"location_reasoning\": \"There is no information provided about the specific location where the action of the play takes place.\",\n  \"location_qid\": null\n}",
+  "duration_seconds": 14.397598028182983,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

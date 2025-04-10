@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5455471b",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:phi4-mini:latest",
+  "response": "JQuery:Lookat\n and considerwhat isan Order L2)",
+  "duration_seconds": 1.2412195205688477,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

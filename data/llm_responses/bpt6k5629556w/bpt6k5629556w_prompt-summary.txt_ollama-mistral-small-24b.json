@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5629556w",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Ancient Greece\",\n  \"period_reasoning\": \"The play mentions characters from Greek mythology such as D\u00e9janire, Alcide (Hercules), Iole, Nessus, and Junon (Hera). These characters are associated with ancient Greek myths.\",\n  \"timeframe_start\": \"-1200\",\n  \"timeframe_end\": \"-800\",\n  \"location\": \"Greece\",\n  \"location_reasoning\": \"The characters mentioned in the play are from Greek mythology, which is set primarily in ancient Greece.\",\n  \"location_qid\": \"Q935\"\n}",
+  "duration_seconds": 20.356961488723755,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

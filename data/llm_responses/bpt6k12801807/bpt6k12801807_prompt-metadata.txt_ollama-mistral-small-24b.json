@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k12801807",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Renaissance\",\n  \"period_reasoning\": \"The play is a pastoral drama, which was popular during the Renaissance period. The title 'L'Aminte' suggests it is based on an Italian work, and the translation into French indicates it fits within the cultural exchange of the Renaissance.\",\n  \"timeframe_start\": \"-1400\",\n  \"timeframe_end\": \"+1700\",\n  \"location\": \"Italy\",\n  \"location_reasoning\": \"The play is a translation from Italian to French, suggesting that the original setting and inspiration are likely rooted in Italy. Pastoral dramas often depict idyllic rural settings common in Italian literature of the time.\",\n  \"location_qid\": \"Q38\"\n}",
+  "duration_seconds": 21.09776997566223,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

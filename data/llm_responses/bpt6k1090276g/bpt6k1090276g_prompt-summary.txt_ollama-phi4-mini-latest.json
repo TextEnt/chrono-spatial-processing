@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090276g",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:phi4-mini:latest",
+  "response": "{\n  \"period\": null,\n  \"period_reasoning\": \"No explicit historical period or date is provided in the JSON object.\",\n  \"timeframe_start\": None,\n  \"timeframe_end\": None,\n  \"location\": \"Sicile\",\n  \"location_reasoning\": \"The context contains frequent mentions of 'Sicile' indicating it as a significant location for setting and events within the play. However, no specific historical period is mentioned.\",\n  \"location_qid\": null\n}",
+  "duration_seconds": 5.440683126449585,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

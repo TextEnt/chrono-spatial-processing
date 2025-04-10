@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k853059s",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"Classical Antiquity / Pastoral Genre\",\n   \"period_reasoning\": \"The title 'La Cydippe' references a mythological figure from the Argonautica by Apollonius of Rhodes, indicating a connection to classical mythology. The description 'pastorale' explicitly identifies the play as belonging to the pastoral genre, which frequently draws inspiration from classical pastoral poetry and settings.\",\n   \"timeframe_start\": \"-800\",\n   \"timeframe_end\": \"0\",\n   \"location\": \"Mythological Greece / Pastoral Landscape\",\n   \"location_reasoning\": \"The reference to 'Cydippe' and the 'Argonautica' strongly suggests a setting rooted in Greek mythology. The 'pastorale' genre often depicts idealized rural landscapes, which could be interpreted as a generic pastoral setting, but likely inspired by ancient Greece.\",\n   \"location_qid\": \"Q466\"\n}",
+  "duration_seconds": 15.343076229095459,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

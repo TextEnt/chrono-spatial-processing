@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k852919x",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"French Baroque period\",\n   \"period_reasoning\": \"The play's title 'Le Mariage de Fine-Epice. Com\u00e9die' and the publication date (1664) strongly suggest it belongs to the French Baroque period, a significant era for French theatre.\",\n   \"timeframe_start\": \"+1600\",\n   \"timeframe_end\": \"+1715\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"Given the play is a French comedy from the 17th century, the setting is most likely France.\",\n   \"location_qid\": \"Q147\"\n}",
+  "duration_seconds": 10.74015760421753,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

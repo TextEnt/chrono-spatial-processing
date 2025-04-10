@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k12804645",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"17th century\",\n  \"period_reasoning\": \"Moli\u00e8re was a prominent French playwright in the 17th century, and his works often reflect the societal norms and cultural context of that era.\",\n  \"timeframe_start\": \"+1600\",\n  \"timeframe_end\": \"+1700\",\n  \"location\": \"France\",\n  \"location_reasoning\": \"Moli\u00e8re was a French playwright, and many of his plays are set in France or have French characters.\",\n  \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 15.551705360412598,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

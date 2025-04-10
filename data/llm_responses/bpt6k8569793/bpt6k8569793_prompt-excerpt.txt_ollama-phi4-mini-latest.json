@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8569793",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:phi4-mini:latest",
+  "response": "{\n  \"period\": \"Renaissance France\",\n  \"period_reasoning\": \"Nicolas Romain, as indicated in metadata 'author', suggests a French origin for both author and play. The language used is also typical for this era.\",\n  \"timeframe_start\": -1606,\n  \"timeframe_end\": None,\n  \"location\": None,\n  \"location_reasoning\": null\n}",
+  "duration_seconds": 3.508007764816284,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k12804645",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"17th Century\",\n   \"period_reasoning\": \"The play is authored by Moli\u00e8re, who was a prominent figure in the French theatre scene during the 17th century. The publication date (1668) confirms this timeframe.\",\n   \"timeframe_start\": \"1600\",\n   \"timeframe_end\": \"1700\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"The text explicitly mentions 'France' multiple times and references French customs and locations. The play was published and performed in France.\",\n   \"location_qid\": \"Q159\"\n}",
+  "duration_seconds": 18.014232635498047,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

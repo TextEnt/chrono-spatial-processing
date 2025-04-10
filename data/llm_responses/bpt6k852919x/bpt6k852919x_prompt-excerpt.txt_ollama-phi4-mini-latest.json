@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k852919x",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:phi4-mini:latest",
+  "response": "{\n  \"period\": None,\n  \"period_reasoning\": \"Insufficient information from metadata or excerpt, such as specific historical period details like century or region in France where this play was set. The XVII century might suggest a setting during that time frame but cannot be accurately pinpointed with the given data.\",\n  \"timeframe_start\": None,\n  \"timeframe_end\": None,\n  \"location\": None,\n  \"location_reasoning\": \"No specific location is mentioned within metadata or excerpt, making it impossible to determine where in France this play takes place. 'Le Mariage de Fine-Epice' might have a broader context but the given details do not provide enough geographical precision.\",\n  \"location_qid\": None\n}",
+  "duration_seconds": 5.0217719078063965,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

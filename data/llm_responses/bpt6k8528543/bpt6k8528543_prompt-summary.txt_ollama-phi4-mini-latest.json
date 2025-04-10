@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8528543",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:phi4-mini:latest",
+  "response": "{\n  \"period\": \"17th century France\",\n  \"period_reasoning\": \"The play is written by La Motte de Vallombreuse, a known author from the Baroque period in French literature. The title 'Le Grand Magus' and its publication date of 1656 confirm that it was produced during this era.\",\n  \"timeframe_start\": \"-1656\",\n  \"timeframe_end\": \"-1660\", // Assuming an end decade close to when publications usually ceased for a play\n  \"location\": \"France\",\n  \"location_reasoning\": \"The metadata indicates the label 'France' with high frequency, and one related sentence specifically mentions France. This suggests that at least part of or all of its events transpire in this country.\",\n  \"location_qid\": \"Q141\"\n}",
+  "duration_seconds": 6.446807861328125,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

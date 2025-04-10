@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k61251657",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"XVII century\",\n   \"period_reasoning\": \"The play was published in 1640, which falls within the XVII century (1601-1700).\",\n   \"timeframe_start\": \"+1601\",\n   \"timeframe_end\": \"+1700\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"The author, Urbain Chevreau, was a French playwright. The play is written in French, indicating a French setting or origin.\",\n   \"location_qid\": \"Q144\"\n}",
+  "duration_seconds": 10.06196665763855,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

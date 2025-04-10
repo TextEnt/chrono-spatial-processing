@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090061b",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"XVII century\",\n   \"period_reasoning\": \"The play was published in 1629, which falls within the XVII century.\",\n   \"timeframe_start\": \"+1600\",\n   \"timeframe_end\": \"+1700\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"The author is French (Nicolas du Peschier) and the play is described as 'langage de l'Orateur Fran\u00e7ois', indicating a French linguistic context.\",\n   \"location_qid\": \"Q159\"\n}",
+  "duration_seconds": 9.852229118347168,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8622111v",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"XVII century\",\n   \"period_reasoning\": \"The play's metadata indicates the author is Jean Rotrou and the publication date is 1637. This firmly places the play within the 17th century.\",\n   \"timeframe_start\": \"1600\",\n   \"timeframe_end\": \"1700\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"The play is written in French and authored by a French playwright (Jean Rotrou). The play's setting is not explicitly mentioned in the provided excerpt, but the French language and author strongly suggest a French setting.\",\n   \"location_qid\": \"Q144\"\n}",
+  "duration_seconds": 12.866612195968628,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

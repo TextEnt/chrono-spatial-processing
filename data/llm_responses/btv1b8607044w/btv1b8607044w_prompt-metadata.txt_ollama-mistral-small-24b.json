@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8607044w",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"17th century France\",\n  \"period_reasoning\": \"The play was written by Georges de Scud\u00e9ry in 1639, during the French Baroque period. The title and style suggest a setting contemporary to or slightly earlier than the author's time.\",\n  \"timeframe_start\": \"+1500\",\n  \"timeframe_end\": \"+1700\",\n  \"location\": \"France\",\n  \"location_reasoning\": \"Georges de Scud\u00e9ry was a French writer, and his works often reflect the cultural and social context of France during that era.\",\n  \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 17.15167498588562,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

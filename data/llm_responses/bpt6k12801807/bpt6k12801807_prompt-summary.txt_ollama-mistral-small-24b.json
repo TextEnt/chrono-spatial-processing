@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k12801807",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Classical Antiquity\",\n  \"period_reasoning\": \"The play is a pastoral drama, which often features mythological characters and settings from classical antiquity. The mention of 'Daphn\u00e9' (Daphne) in the context suggests a connection to Greek mythology, where Daphne was a nymph pursued by Apollo.\",\n  \"timeframe_start\": \"-800\",\n  \"timeframe_end\": \"500\",\n  \"location\": \"Greece\",\n  \"location_reasoning\": \"The presence of mythological figures such as 'Daphn\u00e9' (Daphne) and the pastoral setting strongly suggest a Greek context, which is typical for classical mythology.\",\n  \"location_qid\": \"Q145\"\n}",
+  "duration_seconds": 24.87069296836853,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

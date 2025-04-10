@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5734490j",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"XVII century\",\n   \"period_reasoning\": \"The play's metadata indicates the author is Jean de Rotrou and the publication date is 1653, placing it firmly within the 17th century.\",\n   \"timeframe_start\": \"+1600\",\n   \"timeframe_end\": \"+1700\",\n   \"location\": \"Paris and surrounding areas\",\n   \"location_reasoning\": \"The play mentions 'Paris' explicitly and references a location '\u00c0 PARIS, Chez GUILLAUME DE LUINE, sous la mont\u00e9e de la Cour des Aydes'. The presence of other places like 'Lignon', 'Lyon', 'Rome', and 'MONCEAUX' suggests a broader region around Paris.\",\n   \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 16.769562482833862,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

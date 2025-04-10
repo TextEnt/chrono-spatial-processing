@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090061b",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"17th century\",\n  \"period_reasoning\": \"The play was published in 1629, which places it firmly within the 17th century. The title suggests a translation from Italian to French, indicating a contemporary setting or a recent past that aligns with the 17th-century context.\",\n  \"timeframe_start\": \"+1600\",\n  \"timeframe_end\": \"+1700\",\n  \"location\": \"France\",\n  \"location_reasoning\": \"The title mentions 'langage de l'Orateur Fran\u00e7ois,' which refers to the French language, suggesting a French setting. Additionally, Nicolas Du Peschier was a French author.\",\n  \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 19.006348848342896,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

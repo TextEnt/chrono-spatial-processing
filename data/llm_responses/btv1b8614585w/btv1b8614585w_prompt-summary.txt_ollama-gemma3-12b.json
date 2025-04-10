@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8614585w",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"XVII century\",\n   \"period_reasoning\": \"The play's metadata indicates it was published in 1687, placing it firmly within the 17th century. The religious context and references to historical figures and events are consistent with this period.\",\n   \"timeframe_start\": \"1600\",\n   \"timeframe_end\": \"1700\",\n   \"location\": \"Gaule (Gaul)\",\n   \"location_reasoning\": \"The text explicitly mentions 'Gaule' (Gaul) as a key location. The play's context also suggests a setting within the historical region of Gaul, which corresponds to modern-day France and surrounding areas.\",\n   \"location_qid\": \"2729\"\n}",
+  "duration_seconds": 18.312296152114868,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

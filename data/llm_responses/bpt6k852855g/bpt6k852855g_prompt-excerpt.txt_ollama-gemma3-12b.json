@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k852855g",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"17th Century\",\n   \"period_reasoning\": \"The play's metadata indicates the author is Fran\u00e7ois Passerat and the play was published in 1695. This firmly places the play within the 17th century.\",\n   \"timeframe_start\": \"+1600\",\n   \"timeframe_end\": \"+1700\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"Fran\u00e7ois Passerat was a French playwright, and the play's publication details suggest a French origin. The excerpt is in French, further supporting this.\",\n   \"location_qid\": \"Q159\"\n}",
+  "duration_seconds": 12.449260473251343,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

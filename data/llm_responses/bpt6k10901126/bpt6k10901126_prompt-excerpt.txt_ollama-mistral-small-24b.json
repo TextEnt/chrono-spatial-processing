@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10901126",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Roman Empire\",\n  \"period_reasoning\": \"The play is titled 'Germanicus, trag\u00e9die' and mentions characters like Drusus and references to the Roman Senate and soldiers. Germanicus was a prominent figure in the Roman Empire during the early 1st century CE.\",\n  \"timeframe_start\": \"-30\",\n  \"timeframe_end\": \"+50\",\n  \"location\": \"Rome\",\n  \"location_reasoning\": \"The mention of the Roman Senate, Peuple (People), and Soldats (Soldiers) strongly suggests a setting in Rome, the capital of the Roman Empire.\",\n  \"location_qid\": \"Q196\"\n}",
+  "duration_seconds": 18.91874861717224,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

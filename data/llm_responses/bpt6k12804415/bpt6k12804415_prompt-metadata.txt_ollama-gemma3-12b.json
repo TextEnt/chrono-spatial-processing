@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k12804415",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"17th Century France\",\n   \"period_reasoning\": \"The play is by Moli\u00e8re, a prominent French playwright of the 17th century. The title includes 'comedie' which is a common genre for plays of that era.\",\n   \"timeframe_start\": \"+1600\",\n   \"timeframe_end\": \"+1700\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"Moli\u00e8re was a French playwright, and his plays are typically set in France or depict French society.\",\n   \"location_qid\": \"Q144\"\n}",
+  "duration_seconds": 10.430152177810669,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

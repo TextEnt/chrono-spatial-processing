@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090139v",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"17th century\",\n  \"period_reasoning\": \"The play was published in 1662, which places it firmly within the 17th century. Given that the play is a comedy from the XVII century, it is reasonable to assume that the action takes place during this period.\",\n  \"timeframe_start\": \"+1600\",\n  \"timeframe_end\": \"+1700\",\n  \"location\": \"France\",\n  \"location_reasoning\": \"The title and author information suggest a French context. The play's title 'La Cocue imaginaire, comedie' is in French, and the publication date of 1662 aligns with the period when French literature flourished.\",\n  \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 19.705185174942017,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

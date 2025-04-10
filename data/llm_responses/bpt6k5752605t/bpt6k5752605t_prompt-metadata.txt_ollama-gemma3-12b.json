@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5752605t",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"French Baroque period\",\n   \"period_reasoning\": \"The play is authored by No\u00ebl Lebreton, known as Hauteroche, and the publication date is 1691. This places the play firmly within the French Baroque period, a significant era in French theatre.\",\n   \"timeframe_start\": \"+1600\",\n   \"timeframe_end\": \"+1715\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"Given the author and the French publication date, the play is most likely set in France.\",\n   \"location_qid\": \"Q147\"\n}",
+  "duration_seconds": 10.539716005325317,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

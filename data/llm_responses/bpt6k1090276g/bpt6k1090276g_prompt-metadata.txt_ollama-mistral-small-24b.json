@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090276g",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"17th century\",\n  \"period_reasoning\": \"The play was written by Jean de Rotrou in the 17th century, and it is likely that the action takes place within a similar timeframe.\",\n  \"timeframe_start\": \"+1600\",\n  \"timeframe_end\": \"+1700\",\n  \"location\": \"France\",\n  \"location_reasoning\": \"Jean de Rotrou was a French playwright, and his works are typically set in France or involve French characters.\",\n  \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 16.006762981414795,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

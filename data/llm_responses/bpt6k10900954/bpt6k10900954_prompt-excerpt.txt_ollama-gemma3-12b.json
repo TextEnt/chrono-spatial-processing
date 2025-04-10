@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10900954",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"17th Century France\",\n   \"period_reasoning\": \"The play's metadata indicates it was published in 1661, placing it firmly within the 17th century. The author's name (Lambert) and the title's style are consistent with French theatrical productions of that era.\",\n   \"timeframe_start\": \"-1601\",\n   \"timeframe_end\": \"-1700\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"Given the play's French title ('Les S\u0153urs jalouses') and the author's French origin, the action likely takes place in France.\",\n   \"location_qid\": \"Q183\"\n}",
+  "duration_seconds": 13.164155006408691,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

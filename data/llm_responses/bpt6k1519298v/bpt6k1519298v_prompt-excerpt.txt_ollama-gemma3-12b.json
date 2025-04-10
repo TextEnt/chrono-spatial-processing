@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1519298v",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"17th Century France\",\n   \"period_reasoning\": \"The play's metadata indicates the author is Jean Chevalier and the title is 'La disgr\u00e2ce des domestiques', published in 1662. This aligns with the French Baroque period, specifically the reign of Louis XIV, which is characteristic of 17th-century French theatre.\",\n   \"timeframe_start\": \"[\u00b1Y]1600\",\n   \"timeframe_end\": \"[\u00b1Y]1700\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"The play was 'repr\u00e9sent\u00e9e sur le th\u00e9\u00e2tre royal du Marais', which is located in Paris, France. The author's name and publication details further confirm the French origin.\",\n   \"location_qid\": \"Q181\"\n}",
+  "duration_seconds": 14.443650007247925,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

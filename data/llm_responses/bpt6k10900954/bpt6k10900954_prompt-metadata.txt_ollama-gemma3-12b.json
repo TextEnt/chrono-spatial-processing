@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10900954",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"XVII century, French Baroque theatre\",\n   \"period_reasoning\": \"The play's metadata indicates the author 'Lambert' and the publication date '1661'. Lambert was a prolific playwright during the reign of Louis XIV, a key period of French Baroque theatre. The title 'Les S\u0153urs jalouses, ou l'Escharpe et le Brasselet, com\u00e9die' is typical of the comedies produced during this era.\",\n   \"timeframe_start\": \"+1600\",\n   \"timeframe_end\": \"+1700\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"Given the author and the French title of the play, the action most likely takes place in France. French theatre of the 17th century was primarily performed in France.\",\n   \"location_qid\": \"Q144\"\n}",
+  "duration_seconds": 13.443125009536743,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

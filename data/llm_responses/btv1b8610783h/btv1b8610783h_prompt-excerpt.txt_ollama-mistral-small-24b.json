@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8610783h",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"17th century\",\n  \"period_reasoning\": \"Moli\u00e8re was a prominent French playwright in the 17th century, and the play 'L'avare' was published in 1669.\",\n  \"timeframe_start\": \"+1600\",\n  \"timeframe_end\": \"+1700\",\n  \"location\": \"France\",\n  \"location_reasoning\": \"Moli\u00e8re is a French author, and his plays are typically set in France unless otherwise specified. The language of the excerpt is French.\",\n  \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 20.527225971221924,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

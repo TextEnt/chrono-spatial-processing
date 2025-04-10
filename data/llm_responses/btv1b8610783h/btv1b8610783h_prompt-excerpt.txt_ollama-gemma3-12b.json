@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8610783h",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"17th Century\",\n   \"period_reasoning\": \"The play is by Moli\u00e8re, a prominent French playwright of the 17th century. The metadata confirms the publication date as 1669, firmly placing it within this period.\",\n   \"timeframe_start\": \"[+1600]1600\",\n   \"timeframe_end\": \"[+1700]1700\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"Moli\u00e8re was a French playwright, and his plays are typically set in France or depict French society. The excerpt uses French language and cultural references.\",\n   \"location_qid\": \"Q181\"\n}",
+  "duration_seconds": 13.196526050567627,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

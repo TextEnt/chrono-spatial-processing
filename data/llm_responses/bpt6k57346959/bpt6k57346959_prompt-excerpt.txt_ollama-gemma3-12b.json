@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k57346959",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"Classical Antiquity / Pastoral Tradition\",\n   \"period_reasoning\": \"The excerpt references \\\"Dianne\\\" and a \\\"Satyr,\\\" which are figures from classical mythology. The play is described as a \\\"Pastoral\\\" which is a genre rooted in classical literature and often depicting idealized rural settings and characters inspired by mythology.\",\n   \"timeframe_start\": \"-800\",\n   \"timeframe_end\": \"476\",\n   \"location\": \"Rural Arcadia (mythological)\",\n   \"location_reasoning\": \"Pastoral plays frequently take place in Arcadia, a mythical region of Greece known for its idyllic landscapes and shepherds. The setting is idealized and not a specific real-world location.\",\n   \"location_qid\": \"Q3297\"\n}",
+  "duration_seconds": 13.726960182189941,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8528543",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"17th Century\",\n   \"period_reasoning\": \"The play's metadata indicates it was published in 1656, placing it firmly within the 17th century. The author, La Motte, was a French writer of the 17th century.\",\n   \"timeframe_start\": \"[\u00b1Y]1600\",\n   \"timeframe_end\": \"[\u00b1Y]1700\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"The play is by a French author and is a French play, suggesting the action likely takes place in France.\",\n   \"location_qid\": \"Q144\"\n}",
+  "duration_seconds": 12.228461027145386,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

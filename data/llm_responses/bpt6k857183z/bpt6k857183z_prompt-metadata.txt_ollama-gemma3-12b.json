@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k857183z",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"XVII century\",\n   \"period_reasoning\": \"The play's publication date (1650) firmly places it within the 17th century.\",\n   \"timeframe_start\": \"+1600\",\n   \"timeframe_end\": \"+1700\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"The author, Pierre-Louis Bigres de Jussy, was French. Plays from the 17th century were typically set in France or drew inspiration from French history and culture.\",\n   \"location_qid\": \"Q144\"\n}",
+  "duration_seconds": 10.303813934326172,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

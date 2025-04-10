@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k12801807",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"Classical Antiquity / Pastoral Genre\",\n   \"period_reasoning\": \"The title 'L'Aminte,... pastorale fidellement traduite de l'italien en vers fran\u00e7ois...' indicates a pastoral play, a genre frequently drawing inspiration from classical antiquity (e.g., Virgil's Eclogues). The translation from Italian suggests a revival of classical themes and forms popular during the 17th century.\",\n   \"timeframe_start\": \"-700\",\n   \"timeframe_end\": \"0\",\n   \"location\": \"Arcadia (mythical)\",\n   \"location_reasoning\": \"Pastoral plays often take place in Arcadia, a mythical region of ancient Greece, representing an idealized rural setting.\",\n   \"location_qid\": \"Q902\"\n}",
+  "duration_seconds": 12.510281324386597,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

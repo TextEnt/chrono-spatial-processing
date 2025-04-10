@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k63635719",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"Ancient Greece\",\n   \"period_reasoning\": \"The title mentions \\\"du grec de l'Histoire d'H\u00e9liodore\\\", indicating a translation from a Greek source. H\u00e9liodore was a Greek novelist who wrote in the 3rd century AD. The play is based on his work, so the setting is likely Ancient Greece.\",\n   \"timeframe_start\": \"-330\",\n   \"timeframe_end\": \"0\",\n   \"location\": \"Greece\",\n   \"location_reasoning\": \"The play is based on a Greek source, so the action likely takes place in Greece.\",\n   \"location_qid\": \"Q282\"\n}",
+  "duration_seconds": 11.122076749801636,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

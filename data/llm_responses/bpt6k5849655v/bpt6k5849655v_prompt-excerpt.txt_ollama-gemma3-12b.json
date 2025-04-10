@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5849655v",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"Classical Mythology and Early Modern France\",\n   \"period_reasoning\": \"The title \\\"La farce des courtisans de Pluton et leur p\u00e8lerinage en son royaume\\\" (The farce of Pluto's courtiers and their pilgrimage to his kingdom) explicitly references Pluto, a Roman god of the underworld. This indicates a setting drawing from classical mythology. The author, Lavalise, De, and the publication date (1649) place the play within the French Baroque period.\",\n   \"timeframe_start\": \"-600\",\n   \"timeframe_end\": \"1700\",\n   \"location\": \"Underworld (Pluto's Kingdom) and France\",\n   \"location_reasoning\": \"The play's setting is explicitly Pluto's kingdom, a mythological underworld. The author and publication details suggest a French origin for the play itself.\",\n   \"location_qid\": \"Q42363\"\n}",
+  "duration_seconds": 15.92319393157959,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

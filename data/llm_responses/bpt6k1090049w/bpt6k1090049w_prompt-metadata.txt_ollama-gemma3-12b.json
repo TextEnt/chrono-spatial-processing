@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090049w",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"French Baroque period\",\n   \"period_reasoning\": \"The play was written by Charles de Vion and published in 1634, which falls within the French Baroque period (roughly 1600-1715). The title also suggests pastoral themes common in Baroque theatre.\",\n   \"timeframe_start\": \"+1600\",\n   \"timeframe_end\": \"+1715\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"Charles de Vion was a French playwright, and the play was published in France. The play's language and cultural context strongly suggest a French setting.\",\n   \"location_qid\": \"Q127\"\n}",
+  "duration_seconds": 11.525097846984863,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

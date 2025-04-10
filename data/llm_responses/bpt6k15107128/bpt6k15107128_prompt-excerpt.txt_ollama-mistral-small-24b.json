@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k15107128",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Ancient Israelite period\",\n  \"period_reasoning\": \"The excerpt mentions 'Israel', 'H\u00e9breux' (Hebrews), and 'Tabernacle', which are all references to ancient Israelite culture and religion.\",\n  \"timeframe_start\": \"-1200\",\n  \"timeframe_end\": \"-586\",\n  \"location\": \"Kingdom of Judah\",\n  \"location_reasoning\": \"The mention of 'Israel' and 'H\u00e9breux' suggests a setting in the ancient Israelite kingdom, specifically during the period when the Kingdom of Judah existed.\",\n  \"location_qid\": \"Q12734\"\n}",
+  "duration_seconds": 18.850754022598267,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

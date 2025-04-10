@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1513096g",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"17th century\",\n  \"period_reasoning\": \"The play is a tragi-comedy from the XVII century, which aligns with the publication date of 1636. The language and style are characteristic of French literature from this period.\",\n  \"timeframe_start\": \"+1600\",\n  \"timeframe_end\": \"+1700\",\n  \"location\": None,\n  \"location_reasoning\": \"The excerpt does not provide any specific geographical clues about the setting of the play. The names used in the text do not correspond to known historical locations.\",\n  \"location_qid\": None\n}",
+  "duration_seconds": 18.40454888343811,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

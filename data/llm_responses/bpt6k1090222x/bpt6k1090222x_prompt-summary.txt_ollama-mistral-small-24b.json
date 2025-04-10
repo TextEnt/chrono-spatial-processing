@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090222x",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Late 16th to early 17th century\",\n  \"period_reasoning\": \"The play is titled 'Le Comte d'Essex, trag\u00e9die' and mentions historical figures such as Coban. The Earl of Essex (Robert Devereux) was a prominent figure in English history during the late 16th to early 17th century.\",\n  \"timeframe_start\": \"-0158\",\n  \"timeframe_end\": \"+01620\",\n  \"location\": \"England\",\n  \"location_reasoning\": \"The play is about the Earl of Essex, a key figure in English history. The mention of 'Paris' and 'France' suggests some international context but the primary action likely revolves around England.\",\n  \"location_qid\": \"Q145\"\n}",
+  "duration_seconds": 29.02067255973816,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

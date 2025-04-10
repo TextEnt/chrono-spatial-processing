@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1513096g",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"XVII century\",\n   \"period_reasoning\": \"The play's publication date (1636) clearly places it within the 17th century.\",\n   \"timeframe_start\": \"+1600\",\n   \"timeframe_end\": \"+1700\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"The author's name 'Rayssiguier, De' suggests a French origin. The play's title is in French, further supporting this.\",\n   \"location_qid\": \"Q144\"\n}",
+  "duration_seconds": 10.022258520126343,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

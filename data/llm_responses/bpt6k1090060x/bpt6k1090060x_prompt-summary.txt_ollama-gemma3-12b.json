@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090060x",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"XVII century\",\n   \"period_reasoning\": \"The metadata indicates the play was published in 1692, placing it firmly within the 17th century.\",\n   \"timeframe_start\": \"+1600\",\n   \"timeframe_end\": \"+1700\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"The play is written in French and mentions places like Grenoble and Voiron, which are located in France. The author, Jean Millet, was a French playwright.\",\n   \"location_qid\": \"Q159\"\n}",
+  "duration_seconds": 16.014188051223755,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

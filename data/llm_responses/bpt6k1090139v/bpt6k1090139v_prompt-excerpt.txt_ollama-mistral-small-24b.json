@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090139v",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"17th century\",\n  \"period_reasoning\": \"The play was published in 1662, which places it firmly within the 17th century. The language and style of the excerpt also align with the characteristics of French literature from this period.\",\n  \"timeframe_start\": \"+1600\",\n  \"timeframe_end\": \"+1700\",\n  \"location\": \"None\",\n  \"location_reasoning\": \"The provided information does not include any specific details about the geographic location where the action of the play takes place.\",\n  \"location_qid\": null\n}",
+  "duration_seconds": 17.77771830558777,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

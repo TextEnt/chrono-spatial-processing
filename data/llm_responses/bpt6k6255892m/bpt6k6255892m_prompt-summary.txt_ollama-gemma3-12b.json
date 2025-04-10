@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k6255892m",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"XVII century\",\n   \"period_reasoning\": \"The play's metadata indicates it was published in 1638, placing it firmly within the 17th century. The language and themes are consistent with French Baroque theatre.\",\n   \"timeframe_start\": \"1600\",\n   \"timeframe_end\": \"1700\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"The play is a French play (as indicated by the author's name and language). References to 'Paris' and 'Louvre' suggest a setting in France.\",\n   \"location_qid\": \"Q159\"\n}",
+  "duration_seconds": 17.09514808654785,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

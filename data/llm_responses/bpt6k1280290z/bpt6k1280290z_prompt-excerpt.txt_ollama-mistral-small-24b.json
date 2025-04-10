@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280290z",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Roman Empire\",\n  \"period_reasoning\": \"The excerpt mentions 'Auguste', which is a reference to Augustus, the first Roman Emperor. The play's title also includes 'Cinna' and 'Cl\u00e9mence d'Auguste', indicating it revolves around historical figures from the Roman Empire.\",\n  \"timeframe_start\": \"-27\",\n  \"timeframe_end\": \"476\",\n  \"location\": \"Rome, Italy\",\n  \"location_reasoning\": \"The mention of Augustus and the context of the play suggest that the action takes place in Rome, the capital of the Roman Empire.\",\n  \"location_qid\": \"Q230\"\n}",
+  "duration_seconds": 20.11157727241516,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

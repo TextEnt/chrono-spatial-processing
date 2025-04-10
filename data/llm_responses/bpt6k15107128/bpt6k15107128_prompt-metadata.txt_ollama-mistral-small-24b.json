@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k15107128",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Biblical period\",\n  \"period_reasoning\": \"The title mentions 'trag\u00e9die tir\u00e9e de l'\u00c9criture sainte', indicating that the play is based on biblical stories. The Biblical period spans from around -1000 to 0 BCE.\",\n  \"timeframe_start\": \"-1000\",\n  \"timeframe_end\": \"0\",\n  \"location\": \"Jerusalem\",\n  \"location_reasoning\": \"Athalie, the main character, is a historical figure associated with Jerusalem during the biblical period. She was the daughter of Jezebel and Ahab, king of Israel.\",\n  \"location_qid\": \"Q196\"\n}",
+  "duration_seconds": 17.939626216888428,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

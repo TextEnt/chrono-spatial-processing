@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5849655v",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Ancient Greek Mythology\",\n  \"period_reasoning\": \"The title mentions 'Pluton,' which is another name for Pluto, the god of the underworld in Greek mythology. The play's theme involves courtisans and a pilgrimage to Pluton's kingdom, suggesting a setting rooted in ancient Greek mythological concepts.\",\n  \"timeframe_start\": \"-1200\",\n  \"timeframe_end\": \"-800\",\n  \"location\": \"Underworld\",\n  \"location_reasoning\": \"The play is set in the underworld, as indicated by references to Pluton's kingdom and a pilgrimage there. This aligns with ancient Greek mythology where the underworld is ruled by Pluto.\",\n  \"location_qid\": None\n}",
+  "duration_seconds": 19.159915447235107,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

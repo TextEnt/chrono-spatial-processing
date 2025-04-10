@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090048g",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Ancient Greece\",\n  \"period_reasoning\": \"The title 'Le Pyrame, trag\u00e9die en prose' suggests a connection to the ancient Greek myth of Pyramus and Thisbe. The play is likely set in the historical period associated with this myth.\",\n  \"timeframe_start\": \"-500\",\n  \"timeframe_end\": \"-300\",\n  \"location\": \"Babylon\",\n  \"location_reasoning\": \"The myth of Pyramus and Thisbe is traditionally set in Babylon, which was a significant city in ancient Mesopotamia. The play's title strongly suggests this location.\",\n  \"location_qid\": \"Q18956\"\n}",
+  "duration_seconds": 17.578596591949463,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

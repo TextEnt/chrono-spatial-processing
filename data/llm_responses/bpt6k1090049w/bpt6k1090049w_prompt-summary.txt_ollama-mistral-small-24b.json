@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090049w",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"17th century\",\n  \"period_reasoning\": \"The play is written in French and mentions characters like Sil\u00e8ne, which are typical of pastoral literature popular during the 17th century. The publication date of the play is not provided but it can be inferred from the language and style.\",\n  \"timeframe_start\": \"+1600\",\n  \"timeframe_end\": \"+1700\",\n  \"location\": \"None\",\n  \"location_reasoning\": \"The text does not provide specific geographic locations that can be definitively linked to a particular place. The mentions of 'Paris' and 'Sicile' are likely references rather than the actual setting of the play.\",\n  \"location_qid\": null\n}",
+  "duration_seconds": 33.70680379867554,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

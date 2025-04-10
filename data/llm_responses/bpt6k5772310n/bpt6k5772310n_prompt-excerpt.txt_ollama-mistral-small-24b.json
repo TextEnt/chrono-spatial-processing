@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5772310n",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Ancient Greek Mythology\",\n  \"period_reasoning\": \"The names 'Pirithous' and 'Ariane' are associated with ancient Greek mythology. Pirithous is a figure from Greek mythology, known for his friendship with Theseus. Ariadne (Ariane in French) is also a figure from Greek mythology, daughter of King Minos of Crete.\",\n  \"timeframe_start\": \"-1200\",\n  \"timeframe_end\": \"-800\",\n  \"location\": \"Greece\",\n  \"location_reasoning\": \"The characters and themes mentioned in the excerpt are rooted in ancient Greek mythology, which is closely associated with Greece.\",\n  \"location_qid\": \"Q145\"\n}",
+  "duration_seconds": 21.261008977890015,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

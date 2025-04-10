@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10901126",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"Ancient Rome\",\n   \"period_reasoning\": \"The play title 'Germanicus' refers to the Roman emperor Gaius Julius Caesar Germanicus. The excerpt contains references to 'Empire', 'Senate', 'People', and 'Soldats', which are all characteristic of Roman society.\",\n   \"timeframe_start\": \"-44\",\n   \"timeframe_end\": \"14\",\n   \"location\": \"Roman Empire\",\n   \"location_reasoning\": \"The play's subject matter, Germanicus, and the references to Roman institutions and people, strongly suggest a setting within the Roman Empire.\",\n   \"location_qid\": \"Q30\"\n}",
+  "duration_seconds": 12.33591628074646,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

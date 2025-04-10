@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8569793",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Byzantine Empire\",\n  \"period_reasoning\": \"The text mentions 'Thrace', which was part of the Byzantine Empire, and references to 'Constantinople' (modern-day Istanbul), which was the capital of the Byzantine Empire. Additionally, the mention of 'Rome' suggests a historical context that includes the Eastern Roman Empire.\",\n  \"timeframe_start\": \"-330\",\n  \"timeframe_end\": \"+1453\",\n  \"location\": \"Thrace\",\n  \"location_reasoning\": \"The text explicitly mentions 'Thrace', which is a geographical and historical region in Southeastern Europe. The context of the play, including references to Constantinople and Rome, supports this location.\",\n  \"location_qid\": \"Q159037\"\n}",
+  "duration_seconds": 27.819031476974487,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

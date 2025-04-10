@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8614585w",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"Medieval Period\",\n   \"period_reasoning\": \"The play depicts the martyrdom of Saint Reine of Alise, a historical figure from the 6th century. The title explicitly references her and the abbey where she is buried, indicating a focus on medieval hagiography and religious themes.\",\n   \"timeframe_start\": \"-0500\",\n   \"timeframe_end\": \"-0400\",\n   \"location\": \"Alise, France\",\n   \"location_reasoning\": \"The title mentions 'sainte Reyne d'Alise', indicating that the action is set in or near Alise, which is a commune in the Meurthe-et-Moselle department in north-eastern France.\",\n   \"location_qid\": \"Q1066099\"\n}",
+  "duration_seconds": 12.650525569915771,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

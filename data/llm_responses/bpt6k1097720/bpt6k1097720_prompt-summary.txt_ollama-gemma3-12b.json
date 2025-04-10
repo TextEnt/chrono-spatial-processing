@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1097720",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"Ancient Greece\",\n   \"period_reasoning\": \"The play mentions \\\"Corinthe\\\" (Corinth), a prominent city-state in ancient Greece. References to kings, empires, and a lineage of rulers further suggest a setting in a classical or ancient civilization.\",\n   \"timeframe_start\": \"-800\",\n   \"timeframe_end\": \"-323\",\n   \"location\": \"Corinth, Greece\",\n   \"location_reasoning\": \"The text explicitly mentions \\\"Corinthe,\\\" which is the ancient Greek city of Corinth. The references to royal lineage and city-state governance strongly indicate a location in ancient Greece.\",\n   \"location_qid\": \"Q423\"\n}",
+  "duration_seconds": 16.19127607345581,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

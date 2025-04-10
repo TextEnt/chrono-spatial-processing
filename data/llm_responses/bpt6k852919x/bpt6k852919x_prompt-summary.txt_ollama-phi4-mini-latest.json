@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k852919x",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:phi4-mini:latest",
+  "response": "{\n  \"period\": \"17th century (or possibly earlier due to frequent mentions of courtly and scholarly elements)\",\n  \"period_reasoning\": \"Based on metadata indicating publication date as '1664' and context mentioning places like Poitiers, Paris, Limousin which suggest a time with those notable cities.\",\n  \"timeframe_start\": \"-1500\",\n  \"timeframe_end\": \"1700\",\n  \"location\": \"France (specifically around regions mentioned in the play such as Poitiers)\",\n  \"location_reasoning\": \"Metadata and context indicating references to places like Poitiers, Paris. The mention of 'Gaulois' could also suggest a connection with ancient Gaul which was located mainly within modern France.\",\n  \"location_qid\": null\n}",
+  "duration_seconds": 7.226015567779541,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

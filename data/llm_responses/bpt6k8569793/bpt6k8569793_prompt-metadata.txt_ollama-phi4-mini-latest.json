@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8569793",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:phi4-mini:latest",
+  "response": "{\n  \"period\": \"17th Century France\", \n  \"timeframe_start\": \"-1606\", \n  \"timeframe_end\": \"+1699\",\n  \"location\": None,\n  \"location_reasoning\": null\n}\n\nRationale: The play was published in 1606, so we set the timeframe to start from -1606 (the year of publication) and end by +16xx since it could have taken place between then. However, there is no information about where this theatrical work takes its scene which makes location prediction impossible. In such case QID can be left as None.",
+  "duration_seconds": 4.236674070358276,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8607044w",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"XVII century\",\n   \"period_reasoning\": \"The play was published in 1639, which falls within the XVII century.\",\n   \"timeframe_start\": \"+1600\",\n   \"timeframe_end\": \"+1700\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"Georges de Scud\u00e9ry was a French writer, and the play is a French theatre play.\",\n   \"location_qid\": \"Q144\"\n}",
+  "duration_seconds": 8.92592167854309,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

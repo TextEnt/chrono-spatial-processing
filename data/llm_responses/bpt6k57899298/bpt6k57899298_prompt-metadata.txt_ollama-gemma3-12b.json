@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k57899298",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"XVII century, French Baroque period\",\n   \"period_reasoning\": \"The play is attributed to Jean Rotrou, a prominent French playwright of the 17th century. The title 'Crisante tragedie de Mr de Rotrou' confirms its origin within the French Baroque period.\",\n   \"timeframe_start\": \"+1600\",\n   \"timeframe_end\": \"+1700\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"Jean Rotrou was a French playwright, and the play is a French tragedy. Therefore, the action likely takes place in France.\",\n   \"location_qid\": \"Q144\"\n}",
+  "duration_seconds": 11.061465740203857,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

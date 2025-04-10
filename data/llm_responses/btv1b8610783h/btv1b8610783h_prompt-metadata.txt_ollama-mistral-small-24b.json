@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8610783h",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"17th century France\",\n  \"period_reasoning\": \"Moli\u00e8re was a French playwright who lived and worked in the 17th century. The play 'L'avare' was published in 1669, which places it firmly within this period.\",\n  \"timeframe_start\": \"+1600\",\n  \"timeframe_end\": \"+1700\",\n  \"location\": \"France\",\n  \"location_reasoning\": \"Moli\u00e8re is a well-known French playwright, and his works are typically set in contemporary France of his time. The title and author information suggest a French setting.\",\n  \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 17.67272710800171,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

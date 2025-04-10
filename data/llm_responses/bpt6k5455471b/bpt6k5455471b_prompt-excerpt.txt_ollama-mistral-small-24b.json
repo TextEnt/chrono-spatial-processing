@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5455471b",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Ancient Greece\",\n  \"period_reasoning\": \"The title 'Coronis, pastorale h\u00e9ro\u00efque' and the mention of mythological figures like Daphne suggest a setting in Ancient Greek mythology. The pastoral theme is common in literature inspired by ancient Greek culture.\",\n  \"timeframe_start\": \"-800\",\n  \"timeframe_end\": \"-300\",\n  \"location\": \"Greece\",\n  \"location_reasoning\": \"The mention of mythological figures and the pastoral setting strongly suggest a location in Ancient Greece, where such themes were prevalent.\",\n  \"location_qid\": \"Q145\"\n}",
+  "duration_seconds": 21.801589488983154,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

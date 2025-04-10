@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8622099v",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"XVII century\",\n   \"period_reasoning\": \"The play is authored by Jean de Rotrou and published in the 17th century. The text also mentions printing and distribution of the play, which aligns with the printing practices of the 17th century.\",\n   \"timeframe_start\": \"1600\",\n   \"timeframe_end\": \"1700\",\n   \"location\": \"Paris\",\n   \"location_reasoning\": \"The text explicitly mentions 'Paris' multiple times, indicating it is a key location in the play. References to printing and distribution in Paris further solidify this.\",\n   \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 18.530639171600342,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k62514727",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"French Baroque period\",\n   \"period_reasoning\": \"The play's metadata indicates the author is Claude Deschamps (Villiers) and the play was published in 1662. This aligns with the French Baroque period, a significant era in French theatre and literature.\",\n   \"timeframe_start\": \"+1600\",\n   \"timeframe_end\": \"+1715\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"The play was 'repr\u00e9sent\u00e9e sur le Th\u00e9\u00e2tre royal de l'Hostel de Bourgogne', which is located in Dijon, France. The play's publication and performance context firmly place it in France.\",\n   \"location_qid\": \"Q158\"\n}",
+  "duration_seconds": 13.5206139087677,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

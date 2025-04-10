@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b86221039",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"17th Century France\",\n   \"period_reasoning\": \"The play's metadata indicates the author is Montfleury and the title is 'La femme juge et partie', published in 1669. Montfleury was a French playwright active in the 17th century, and the publication date confirms the play's origin in that period.\",\n   \"timeframe_start\": \"[\u00b1Y]1600\",\n   \"timeframe_end\": \"[\u00b1Y]1700\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"The play is a French work by a French author, indicating the action likely takes place in France.\",\n   \"location_qid\": \"Q144\"\n}",
+  "duration_seconds": 13.495213270187378,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

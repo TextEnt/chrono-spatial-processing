@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5772310n",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"Classical Antiquity\",\n   \"period_reasoning\": \"The play 'Ariane' by Corneille is a tragedy based on Greek mythology. Ariadne is a figure from Greek mythology, associated with the myth of Theseus and the Minotaur, placing the action in ancient Greece.\",\n   \"timeframe_start\": \"-800\",\n   \"timeframe_end\": \"-300\",\n   \"location\": \"Crete\",\n   \"location_reasoning\": \"The myth of Ariadne is strongly associated with the island of Crete, where she aided Theseus in defeating the Minotaur.\",\n   \"location_qid\": \"Q4239\"\n}",
+  "duration_seconds": 11.049567699432373,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

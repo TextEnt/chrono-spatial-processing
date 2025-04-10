@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5651559g",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"17th century\",\n  \"period_reasoning\": \"The play is a XVII century French work, and Cardinal Richelieu was active during this period.\",\n  \"timeframe_start\": \"+1600\",\n  \"timeframe_end\": \"+1700\",\n  \"location\": \"Heaven and Hell\",\n  \"location_reasoning\": \"The title mentions 'entrer en Paradis' (enter Paradise) and 'descente aux enfers' (descent into hell), indicating the action takes place in these supernatural locations.\",\n  \"location_qid\": null\n}",
+  "duration_seconds": 15.8635892868042,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

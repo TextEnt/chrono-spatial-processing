@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090276g",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"French Baroque period\",\n   \"period_reasoning\": \"The play was written by Jean Rotrou and published in 1654. Jean Rotrou was a significant playwright of the French Baroque period, which flourished in the 17th century.\",\n   \"timeframe_start\": \"+1600\",\n   \"timeframe_end\": \"+1700\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"Jean Rotrou was a French playwright, and the play was published in France. Therefore, the action likely takes place in France.\",\n   \"location_qid\": \"Q127\"\n}",
+  "duration_seconds": 10.703338623046875,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

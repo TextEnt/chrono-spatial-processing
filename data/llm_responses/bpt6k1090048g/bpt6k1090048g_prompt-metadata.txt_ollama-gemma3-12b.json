@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090048g",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"Classical Antiquity\",\n   \"period_reasoning\": \"The title 'Le Pyrame' refers to the mythological figure of Pyramus, a character from Greek mythology. Tragedies of the 17th century often drew inspiration from classical mythology and history.\",\n   \"timeframe_start\": \"-800\",\n   \"timeframe_end\": \"476\",\n   \"location\": \"Greece\",\n   \"location_reasoning\": \"Pyramus is a figure from Greek mythology, placing the action geographically in Greece or a region associated with Greek mythology.\",\n   \"location_qid\": \"Q466\"\n}",
+  "duration_seconds": 10.576279878616333,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090222x",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"English Jacobean and Caroline era\",\n   \"period_reasoning\": \"The play \\\"Le Comte d'Essex\\\" (The Earl of Essex) is based on the life and execution of Robert Devereux, 2nd Earl of Essex, a prominent figure in English history during the reigns of James I and Charles I. The title itself indicates a focus on a historical English figure.\",\n   \"timeframe_start\": \"-1600\",\n   \"timeframe_end\": \"-1650\",\n   \"location\": \"England\",\n   \"location_reasoning\": \"The play is about an English Earl, Robert Devereux, and therefore the action takes place in England.\",\n   \"location_qid\": \"Q272\"\n}",
+  "duration_seconds": 11.902247667312622,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

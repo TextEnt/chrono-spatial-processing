@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k63635719",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"Hellenistic Period\",\n   \"period_reasoning\": \"References to Memphis, Nil (Nile), and Greek deities (Jupiter, Cybele) suggest a setting within the Hellenistic world, where Greek culture interacted with Egyptian traditions. The presence of Persian and Greek characters further supports this timeframe.\",\n   \"timeframe_start\": \"-323\",\n   \"timeframe_end\": \"-30\",\n   \"location\": \"Egypt\",\n   \"location_reasoning\": \"The repeated mention of Memphis, a city in Egypt, and the Nile River strongly indicates that the play is set in Egypt. References to Egyptian priesthood and customs further solidify this location.\",\n   \"location_qid\": \"Q417\"\n}",
+  "duration_seconds": 19.46276021003723,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

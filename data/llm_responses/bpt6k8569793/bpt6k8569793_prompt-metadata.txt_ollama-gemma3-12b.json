@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8569793",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"Early Modern Period\",\n   \"period_reasoning\": \"The play was written in 1606, placing it firmly within the Early Modern Period of French literature. The author's title and affiliations (doctor of law, counselor, captain, etc.) are characteristic of the era.\",\n   \"timeframe_start\": \"-1500\",\n   \"timeframe_end\": \"-1700\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"The author, Nicolas Romain, was a French writer and the play was published in France. The mention of 'Pont-\u00e0-Mousson' indicates a location within France.\",\n   \"location_qid\": \"Q1294\"\n}",
+  "duration_seconds": 11.83378005027771,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

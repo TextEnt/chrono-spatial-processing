@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090133c",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"French Baroque period\",\n   \"period_reasoning\": \"The play is by Claude Rose Rosimond and published in 1671. Rosimond was a playwright of the French Baroque period, which flourished in the 17th century.\",\n   \"timeframe_start\": \"+1600\",\n   \"timeframe_end\": \"+1715\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"Given the author's nationality and the play's French title, the action likely takes place in France.\",\n   \"location_qid\": \"Q127\"\n}",
+  "duration_seconds": 10.467750310897827,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

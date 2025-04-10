@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090276g",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"17th Century France\",\n   \"period_reasoning\": \"The play is authored by Jean Rotrou and published in 1654. This places it firmly within the 17th century, a significant period for French theatre and literature.\",\n   \"timeframe_start\": \"-1601\",\n   \"timeframe_end\": \"-1700\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"The play is a French work by a French author, indicating the action likely takes place in France. The excerpt uses French language and likely reflects French cultural norms of the time.\",\n   \"location_qid\": \"Q144\"\n}",
+  "duration_seconds": 12.728824853897095,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

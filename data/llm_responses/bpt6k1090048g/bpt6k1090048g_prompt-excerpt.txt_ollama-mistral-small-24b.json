@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090048g",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Ancient Greece\",\n  \"period_reasoning\": \"The mention of 'Pyrame' suggests a reference to Pyramus, a character from ancient Greek mythology. The tragic nature and the prose style are consistent with classical Greek tragedies.\",\n  \"timeframe_start\": \"-800\",\n  \"timeframe_end\": \"-300\",\n  \"location\": \"Athens\",\n  \"location_reasoning\": \"Athens is a well-known center for ancient Greek theater and tragedy, making it a likely setting for a play based on classical mythology.\",\n  \"location_qid\": \"Q1748\"\n}",
+  "duration_seconds": 18.892913579940796,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

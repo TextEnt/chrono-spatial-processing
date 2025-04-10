@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090222x",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:phi4-mini:latest",
+  "response": ":=*",
+  "duration_seconds": 1.2008121013641357,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k6255892m",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"17th century\",\n  \"period_reasoning\": \"The play was published in 1638, and the language and style are characteristic of the 17th century.\",\n  \"timeframe_start\": \"+1600\",\n  \"timeframe_end\": \"+1700\",\n  \"location\": \"France\",\n  \"location_reasoning\": \"The play mentions 'France' as one of the top places, indicating a strong connection to French culture and geography. Additionally, the author is Andr\u00e9 Mareschal, who was active in France during the 17th century.\",\n  \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 28.06673002243042,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

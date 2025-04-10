@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090048g",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"XVII century\",\n   \"period_reasoning\": \"The play was written by Jean Puget de La Serre and published in 1633, placing it firmly within the 17th century.\",\n   \"timeframe_start\": \"-1601\",\n   \"timeframe_end\": \"-1701\",\n   \"location\": \"Unclear, possibly Ancient Thebes\",\n   \"location_reasoning\": \"The play contains references to 'Tigre' and 'Lyon', which could allude to Ancient Thebes (where lions and tigers were kept). However, this is speculative and the location is not explicitly stated.\",\n   \"location_qid\": \"None\"\n}",
+  "duration_seconds": 14.817418813705444,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

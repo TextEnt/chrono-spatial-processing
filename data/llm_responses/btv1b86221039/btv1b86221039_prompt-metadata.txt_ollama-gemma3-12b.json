@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b86221039",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"XVII century, French Classicism\",\n   \"period_reasoning\": \"The author 'Montfleury' (Antoine de Montfleury) was a French playwright of the 17th century. The title 'Comedie' indicates a play belonging to the French classical comedy genre.\",\n   \"timeframe_start\": \"+1600\",\n   \"timeframe_end\": \"+1700\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"Given the author's nationality and the play's French theatrical tradition, the action likely takes place in France.\",\n   \"location_qid\": \"Q144\"\n}",
+  "duration_seconds": 10.928699254989624,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8607044w",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"XVII century\",\n   \"period_reasoning\": \"The play's metadata indicates it was published in 1639, placing it firmly within the 17th century. The text also references contemporary events and places, further supporting this timeframe.\",\n   \"timeframe_start\": \"-1601\",\n   \"timeframe_end\": \"-1701\",\n   \"location\": \"Paris, France\",\n   \"location_reasoning\": \"The text explicitly mentions 'Paris' multiple times, particularly in relation to the play's publication and distribution. References to 'France' are implicit through the context of Parisian publishing and the mention of the French monarchy.\",\n   \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 17.088826894760132,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

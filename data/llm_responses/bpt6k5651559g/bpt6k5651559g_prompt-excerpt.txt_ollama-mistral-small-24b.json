@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5651559g",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"17th century\",\n  \"period_reasoning\": \"The play is a XVII century French tragicomedy, and the text mentions historical figures like Cardinal Richelieu, who was active in the early to mid-17th century.\",\n  \"timeframe_start\": \"+1600\",\n  \"timeframe_end\": \"+1700\",\n  \"location\": \"France\",\n  \"location_reasoning\": \"The play is written in French and mentions Cardinal Richelieu, a prominent figure in French history during the 17th century. The text also references 'les Tures,' which likely refers to the Ottoman Empire, suggesting a European context.\",\n  \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 19.846508264541626,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

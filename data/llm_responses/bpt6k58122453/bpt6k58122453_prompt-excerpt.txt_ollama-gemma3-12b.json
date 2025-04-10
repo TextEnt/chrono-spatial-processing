@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k58122453",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"17th Century France\",\n   \"period_reasoning\": \"The play's metadata indicates the author is 'Discret, L' and the title is 'Alizon, com\u00e9die Desdi\u00e9e au jeunes veufves & aux vieilles filles'. The publication date is 1637. This firmly places the play within the 17th century, a period of significant theatrical development in France.\",\n   \"timeframe_start\": \"+1600\",\n   \"timeframe_end\": \"+1700\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"Given the author's French origin and the play's language, the action likely takes place in France. The play is a 'com\u00e9die', a genre common in French theatre of the period.\",\n   \"location_qid\": \"Q144\"\n}",
+  "duration_seconds": 14.965667724609375,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

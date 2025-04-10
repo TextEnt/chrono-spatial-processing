@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090048g",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Antiquity\",\n  \"period_reasoning\": \"The play mentions mythological figures and themes, such as NARBAL, SYLAR, ILAR, l'Aurore, and Z\u00e9phire, which are characteristic of ancient Greek or Roman mythology. The mention of 'Dieux' (gods) also suggests a setting in antiquity.\",\n  \"timeframe_start\": \"-1000\",\n  \"timeframe_end\": \"500\",\n  \"location\": \"None\",\n  \"location_reasoning\": \"The provided information does not specify any particular geographic location. The mentions of 'Tigre' and 'Lyon' are likely symbolic or metaphorical rather than literal places.\",\n  \"location_qid\": null\n}",
+  "duration_seconds": 24.4088191986084,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

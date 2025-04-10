@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k63412802",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"Roman Republic/Early Roman Empire\",\n   \"period_reasoning\": \"The title \\\"Le Dictateur romain\\\" (The Roman Dictator) strongly suggests a setting related to ancient Rome, specifically during a period when the role of dictator was significant. This could encompass the late Roman Republic or the early Roman Empire.\",\n   \"timeframe_start\": \"-753\",\n   \"timeframe_end\": \"476\",\n   \"location\": \"Rome\",\n   \"location_reasoning\": \"Given the title referencing a Roman dictator, the action likely takes place in Rome, the heart of the Roman world.\",\n   \"location_qid\": \"Q183\"\n}",
+  "duration_seconds": 11.118947744369507,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5772310n",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"Classical Antiquity, specifically Greek Mythology\",\n   \"period_reasoning\": \"The play's title 'Ariane' immediately suggests a connection to Greek mythology, as Ariadne is a figure from Greek legend. The excerpt contains references to characters and themes common in classical tragedies, although the language is in 17th-century French.\",\n   \"timeframe_start\": \"-800\",\n   \"timeframe_end\": \"-30\",\n   \"location\": \"Crete, Greece\",\n   \"location_reasoning\": \"Ariadne is associated with the island of Crete in Greek mythology. She is known for assisting Theseus in navigating the Labyrinth.\",\n   \"location_qid\": \"Q4211\"\n}",
+  "duration_seconds": 13.276682376861572,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8569793",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Ancient Rome\",\n  \"period_reasoning\": \"The title 'Maurice tragoedie' suggests a historical or mythological context, and Maurice is often associated with early Christian history in Roman times.\",\n  \"timeframe_start\": \"-100\",\n  \"timeframe_end\": \"+500\",\n  \"location\": \"Roman Empire\",\n  \"location_reasoning\": \"The character Maurice is historically linked to the Roman Empire during its later period, particularly around the time of the Christian persecutions and the rise of Christianity.\",\n  \"location_qid\": \"Q143\"\n}",
+  "duration_seconds": 16.515800714492798,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

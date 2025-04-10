@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5455471b",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"Classical Antiquity, idealized in a pastoral setting\",\n   \"period_reasoning\": \"The play title 'Coronis' refers to a mythological figure from Greek mythology. The description 'pastorale h\u00e9ro\u00efque' indicates a pastoral setting, a common trope in classical literature and drama, often used to evoke a romanticized view of rural life and mythology.\",\n   \"timeframe_start\": \"-800\",\n   \"timeframe_end\": \"476\",\n   \"location\": \"Ancient Greece\",\n   \"location_reasoning\": \"The reference to 'Coronis' strongly suggests a setting in Ancient Greece, the origin of the mythological figure. The pastoral setting further reinforces this association, as pastoral themes are deeply rooted in Greek literature and culture.\",\n   \"location_qid\": \"Q466\"\n}",
+  "duration_seconds": 14.236342668533325,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

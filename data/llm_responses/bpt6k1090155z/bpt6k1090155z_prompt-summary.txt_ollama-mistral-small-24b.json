@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090155z",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Ancient Greek Mythology\",\n  \"period_reasoning\": \"The play mentions characters from Greek mythology such as Amphytrion, Jupiter (Zeus), and Mercure (Mercury). These characters are associated with ancient Greek myths.\",\n  \"timeframe_start\": \"-1200\",\n  \"timeframe_end\": \"-800\",\n  \"location\": \"Greece\",\n  \"location_reasoning\": \"The mention of Thebes, a prominent city in ancient Greece, and the involvement of mythological figures strongly suggest that the play is set in ancient Greece.\",\n  \"location_qid\": \"Q149\"\n}",
+  "duration_seconds": 21.882387161254883,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

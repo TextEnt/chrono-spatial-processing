@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090170n",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Ancient Greece and Rome\",\n  \"period_reasoning\": \"The mention of 'Sicile' (Sicily) and references to classical figures like Bacchus suggest a setting inspired by ancient Greek and Roman mythology.\",\n  \"timeframe_start\": \"-800\",\n  \"timeframe_end\": \"476\",\n  \"location\": \"Sicily\",\n  \"location_reasoning\": \"The frequent mention of 'Sicile' (Sicily) in the related sentences indicates that the play is set in this location.\",\n  \"location_qid\": \"Q23109\"\n}",
+  "duration_seconds": 20.23867964744568,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

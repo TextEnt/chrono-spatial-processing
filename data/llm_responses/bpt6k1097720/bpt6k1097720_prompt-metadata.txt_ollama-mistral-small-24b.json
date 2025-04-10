@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1097720",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Ancient Greece\",\n  \"period_reasoning\": \"The title 'Phalante' suggests a connection to Greek mythology, as Phalantus is a figure from ancient Greek history. The play's genre, tragedy, was popular in the classical period of Ancient Greece.\",\n  \"timeframe_start\": \"-800\",\n  \"timeframe_end\": \"-300\",\n  \"location\": \"Greece\",\n  \"location_reasoning\": \"The reference to Phalante and the tragic genre strongly suggest a setting in ancient Greece, where these elements are rooted.\",\n  \"location_qid\": \"Q192\"\n}",
+  "duration_seconds": 17.234217643737793,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

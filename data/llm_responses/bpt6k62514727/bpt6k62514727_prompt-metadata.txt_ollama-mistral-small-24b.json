@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k62514727",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"17th century\",\n  \"period_reasoning\": \"The play was written by Claude Deschamps de Villiers in 1662, which places it firmly within the 17th century.\",\n  \"timeframe_start\": \"+1600\",\n  \"timeframe_end\": \"+1700\",\n  \"location\": \"Paris, France\",\n  \"location_reasoning\": \"The play was performed at the Th\u00e9\u00e2tre royal de l'H\u00f4tel de Bourgogne in Paris, which is a well-known theatre in Paris.\",\n  \"location_qid\": \"Q38\"\n}",
+  "duration_seconds": 16.05695652961731,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

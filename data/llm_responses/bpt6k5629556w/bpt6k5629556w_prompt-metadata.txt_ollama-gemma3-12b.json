@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5629556w",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"Classical Antiquity\",\n   \"period_reasoning\": \"The title 'Alcide' refers to Hercules (Heracles in Greek), a prominent figure in Greek mythology. Tragedies based on classical mythology were common in the 17th century.\",\n   \"timeframe_start\": \"-800\",\n   \"timeframe_end\": \"-146\",\n   \"location\": \"Greece\",\n   \"location_reasoning\": \"Alcide (Hercules) is a figure from Greek mythology, placing the action in ancient Greece.\",\n   \"location_qid\": \"Q48\"\n}",
+  "duration_seconds": 10.128552198410034,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

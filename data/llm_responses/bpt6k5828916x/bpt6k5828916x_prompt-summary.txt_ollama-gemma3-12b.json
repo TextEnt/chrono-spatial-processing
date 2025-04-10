@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5828916x",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"XVII century\",\n   \"period_reasoning\": \"The play was published in 1631, which falls within the XVII century.\",\n   \"timeframe_start\": \"1600\",\n   \"timeframe_end\": \"1700\",\n   \"location\": \"Corinthe, Greece\",\n   \"location_reasoning\": \"The play repeatedly mentions 'Corinthe', which is a city in Greece. The text also refers to 'Gr\u00e8ce'.\",\n   \"location_qid\": \"Q432\"\n}",
+  "duration_seconds": 12.12912654876709,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

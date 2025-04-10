@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k61486960",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"17th century\",\n  \"period_reasoning\": \"The play was written by Jean-Fran\u00e7ois Regnard in 1694, which places it firmly within the 17th century.\",\n  \"timeframe_start\": \"+1600\",\n  \"timeframe_end\": \"+1700\",\n  \"location\": \"France\",\n  \"location_reasoning\": \"Jean-Fran\u00e7ois Regnard was a French playwright, and the title of the play is in French. This suggests that the action likely takes place in France.\",\n  \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 17.834797143936157,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

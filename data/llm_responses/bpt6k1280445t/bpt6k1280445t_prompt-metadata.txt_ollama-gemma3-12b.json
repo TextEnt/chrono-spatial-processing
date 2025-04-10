@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280445t",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"17th Century\",\n   \"period_reasoning\": \"The play was written by Moli\u00e8re, a prominent French playwright of the 17th century. The publication date (1674) confirms this timeframe.\",\n   \"timeframe_start\": \"+1600\",\n   \"timeframe_end\": \"+1700\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"Moli\u00e8re was a French playwright, and his plays are typically set in France or depict French society. The title 'La Critique de l'\u00c9cole des femmes' suggests a critique of French customs and education.\",\n   \"location_qid\": \"Q144\"\n}",
+  "duration_seconds": 11.329490661621094,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

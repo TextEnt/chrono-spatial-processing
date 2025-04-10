@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090276g",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"XVII century\",\n   \"period_reasoning\": \"The play's metadata indicates it was published in 1654, placing it firmly within the 17th century.\",\n   \"timeframe_start\": \"1600\",\n   \"timeframe_end\": \"1700\",\n   \"location\": \"Sicily\",\n   \"location_reasoning\": \"The play repeatedly mentions 'Sicile' (Sicily) as a key location. Several sentences describe events and characters related to the island.\",\n   \"location_qid\": \"Q183\"\n}",
+  "duration_seconds": 16.165436029434204,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

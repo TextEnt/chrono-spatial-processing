@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k15107128",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"Biblical Times\",\n   \"period_reasoning\": \"The excerpt mentions \\\"saint Proph\u00e8te\\\", \\\"Samuel\\\", \\\"Israel\\\", and \\\"Tabernacle\\\", all of which are references to the Hebrew Bible (Old Testament). These elements strongly suggest a setting within the biblical period.\",\n   \"timeframe_start\": \"-1000\",\n   \"timeframe_end\": \"-500\",\n   \"location\": \"Ancient Israel\",\n   \"location_reasoning\": \"References to \\\"Israel\\\" and \\\"Tabernacle\\\" indicate a location in Ancient Israel, the historical land of the Israelites.\",\n   \"location_qid\": \"Q20767\"\n}",
+  "duration_seconds": 12.396979570388794,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

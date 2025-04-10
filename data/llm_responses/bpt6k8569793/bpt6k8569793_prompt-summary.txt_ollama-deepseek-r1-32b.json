@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8569793",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:deepseek-r1:32b",
+  "response": "<think>\nAlright, so I'm trying to figure out when and where this play is set. Let's start by looking at the information provided.\n\nFirst, there are mentions of several people: Phocas, Pierre, Maurice, Mars. From what I remember, Phocas was a Byzantine emperor who reigned in the late 6th to early 7th century. Maurice might be referring to Emperor Maurice, who ruled from 582 to 602 AD. That could place the timeframe around that period.\n\nLooking at the places mentioned: Thrace, Danube, Rome, Constantinople, Tigre. Thrace is a region in southeastern Europe, and Constantinople was the capital of the Byzantine Empire, which aligns with the reign of Maurice and Phocas. The Danube could be relevant as it's near Thrace and was a frontier area during that time.\n\nSo, putting this together, the historical period seems to be around 582 to 602 AD when Emperor Maurice was ruling. The location is likely Constantinople since it's the main city mentioned and was central during that era.\n</think>\n\n\n{\n    \"period\": \"Late 6th to early 7th century\",\n    \"period_reasoning\": \"The mention of Phocas, who became emperor in 602 AD, and Maurice, emperor from 582-602 AD, places the timeframe around their reigns.\",\n    \"timeframe_start\": \"582\",\n    \"timeframe_end\": \"602\",\n    \"location\": \"Constantinople\",\n    \"location_reasoning\": \"Constantinople was the capital of the Byzantine Empire during this period and is mentioned alongside Thrace, which was a region under Byzantine control.\",\n    \"location_qid\": \"Q1475\"\n}",
+  "duration_seconds": 85.31867027282715,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8614585w",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Roman Empire\",\n  \"period_reasoning\": \"The play mentions 'C\u00e9sar' (Caesar) and 'Jupiter', which are associated with the Roman Empire. Additionally, the mention of 'D\u00e9cie' (Decius), who was a Roman Emperor known for his persecution of Christians, further supports this period.\",\n  \"timeframe_start\": \"-27\",\n  \"timeframe_end\": \"476\",\n  \"location\": \"Gaule\",\n  \"location_reasoning\": \"The play explicitly mentions 'Gaule' (Gaul) as a significant location. Additionally, the mention of 'Bretagne' (Britain), 'Saxe', and other places further supports this geographic context.\",\n  \"location_qid\": \"Q1425\"\n}",
+  "duration_seconds": 29.52085781097412,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

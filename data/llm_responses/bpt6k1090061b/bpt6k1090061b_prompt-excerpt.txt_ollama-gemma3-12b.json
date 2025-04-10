@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090061b",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"XVII century\",\n   \"period_reasoning\": \"The play's metadata indicates it was published in 1629, placing it firmly within the 17th century. The language used ('Orateur Fran\u00e7ois') and references to Roman architecture are also characteristic of the period.\",\n   \"timeframe_start\": \"[\u00b1Y]1600\",\n   \"timeframe_end\": \"[\u00b1Y]1700\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"The play is described as being 'traduit en langage de l'Orateur Fran\u00e7ois', which strongly suggests France as the location of the play's setting and language.\",\n   \"location_qid\": \"Q144\"\n}",
+  "duration_seconds": 13.492862224578857,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

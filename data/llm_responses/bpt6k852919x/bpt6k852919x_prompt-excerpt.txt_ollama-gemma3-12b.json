@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k852919x",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"17th Century France\",\n   \"period_reasoning\": \"The play's title 'Le Mariage de Fine-Epice. Com\u00e9die' and the publication date (1664) strongly suggest a French context during the 17th century. The language used in the excerpt is also characteristic of the French language of that era.\",\n   \"timeframe_start\": \"[\u00b1Y]1600\",\n   \"timeframe_end\": \"[\u00b1Y]1700\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"The play is a French comedy, indicating a French setting.\",\n   \"location_qid\": \"Q144\"\n}",
+  "duration_seconds": 12.851129055023193,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

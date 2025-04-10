@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b86107875",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"17th Century France\",\n   \"period_reasoning\": \"The play is by Moli\u00e8re, a prominent French playwright of the 17th century. The title includes 'de J. B. P. Moliere' which confirms the author and the French origin.\",\n   \"timeframe_start\": \"+1600\",\n   \"timeframe_end\": \"+1700\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"Moli\u00e8re was a French playwright, and the play's title and author indicate a French setting.\",\n   \"location_qid\": \"Q181\"\n}",
+  "duration_seconds": 10.742602348327637,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k63635719",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"Ancient Greece\",\n   \"period_reasoning\": \"The play is described as a 'reduction du grec' (reduction from the Greek), indicating it is based on a Greek source. The title references 'Th\u00e9ag\u00e8ne et Cericl\u00e9e', suggesting a story rooted in Greek mythology or history.\",\n   \"timeframe_start\": \"-800\",\n   \"timeframe_end\": \"-323\",\n   \"location\": \"Greece\",\n   \"location_reasoning\": \"The play is a 'reduction du grec', implying a Greek origin and setting.\",\n   \"location_qid\": \"Q48\"\n}",
+  "duration_seconds": 11.972885370254517,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

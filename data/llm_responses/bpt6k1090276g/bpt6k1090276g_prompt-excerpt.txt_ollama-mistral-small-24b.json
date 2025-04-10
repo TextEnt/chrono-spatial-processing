@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090276g",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"17th century France\",\n  \"period_reasoning\": \"The play is written by Jean de Rotrou, a French dramatist from the 17th century. The language and style are consistent with the Baroque period.\",\n  \"timeframe_start\": \"+1600\",\n  \"timeframe_end\": \"+1700\",\n  \"location\": \"France\",\n  \"location_reasoning\": \"The author, Jean de Rotrou, is a French dramatist, and the language of the play is in French. The use of 'LE ROY' (the King) suggests a setting in France.\",\n  \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 18.824583530426025,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

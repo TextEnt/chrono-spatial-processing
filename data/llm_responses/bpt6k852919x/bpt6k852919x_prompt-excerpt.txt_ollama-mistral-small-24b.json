@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k852919x",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"17th century France\",\n  \"period_reasoning\": \"The play was published in 1664, and the language used is French. The historical period aligns with the 17th century, which is consistent with the publication date.\",\n  \"timeframe_start\": \"+1600\",\n  \"timeframe_end\": \"+1700\",\n  \"location\": \"France\",\n  \"location_reasoning\": \"The play's title and language suggest a French setting. The author is not specified but the publication in France during the 17th century indicates a likely French location.\",\n  \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 19.31476855278015,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

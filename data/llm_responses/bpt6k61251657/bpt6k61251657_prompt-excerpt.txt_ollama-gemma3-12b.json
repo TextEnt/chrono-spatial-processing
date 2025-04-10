@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k61251657",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"XVII century\",\n   \"period_reasoning\": \"The play's metadata indicates a publication date of 1640, placing it firmly within the 17th century.\",\n   \"timeframe_start\": \"-1601\",\n   \"timeframe_end\": \"-1700\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"The play is written in French and published by Urbain Chevreau, a French playwright. This strongly suggests the action takes place in France.\",\n   \"location_qid\": \"Q144\"\n}",
+  "duration_seconds": 11.438039779663086,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

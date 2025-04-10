@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8622099v",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"17th century\",\n  \"period_reasoning\": \"The play is written by Jean de Rotrou, a French dramatist who lived in the 17th century. The language and style of the text also suggest a 17th-century setting.\",\n  \"timeframe_start\": \"+1600\",\n  \"timeframe_end\": \"+1700\",\n  \"location\": \"Paris\",\n  \"location_reasoning\": \"The mention of 'Paris' multiple times in the related sentences indicates that Paris is a significant location in the play. Additionally, the reference to 'Marchand Libraire \u00e0 Paris' further supports this.\",\n  \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 30.962911367416382,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280452z",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"XVII century\",\n   \"period_reasoning\": \"The play's metadata indicates the author is Moli\u00e8re and the publication date is 1674, placing it firmly within the 17th century.\",\n   \"timeframe_start\": \"+1600\",\n   \"timeframe_end\": \"+1700\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"The text explicitly mentions 'France' and references events taking place within France. The play is a French play by Moli\u00e8re, further confirming the location.\",\n   \"location_qid\": \"Q159\"\n}",
+  "duration_seconds": 13.963182210922241,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b86221269",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"17th century\",\n  \"period_reasoning\": \"The play was published in 1635, and it is a XVII century work. The language and style are consistent with the 17th-century French literature.\",\n  \"timeframe_start\": \"+1600\",\n  \"timeframe_end\": \"+1700\",\n  \"location\": \"France\",\n  \"location_reasoning\": \"The play mentions Paris, which is a significant location in France. Additionally, the author Jean de Rotrou was a French playwright.\",\n  \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 30.15591835975647,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k63412802",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"Ancient Rome\",\n   \"period_reasoning\": \"The title \\\"Le Dictateur romain\\\" (The Roman Dictator) explicitly indicates a Roman setting. The excerpt contains references to 'l'Empire' (the Empire) and 'Fabie', which are Roman terms.\",\n   \"timeframe_start\": \"-753\",\n   \"timeframe_end\": \"476\",\n   \"location\": \"Rome\",\n   \"location_reasoning\": \"The play is titled 'Le Dictateur romain', strongly suggesting the action takes place in Rome, the heart of the Roman Empire.\",\n   \"location_qid\": \"Q183\"\n}",
+  "duration_seconds": 12.39719295501709,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

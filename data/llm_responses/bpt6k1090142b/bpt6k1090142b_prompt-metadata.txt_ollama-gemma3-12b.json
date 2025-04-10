@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090142b",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"17th Century\",\n   \"period_reasoning\": \"The play was written by Paul Scarron and published in 1663, placing it firmly within the 17th century.\",\n   \"timeframe_start\": \"+1600\",\n   \"timeframe_end\": \"+1700\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"Paul Scarron was a French playwright, and the play is a French theatrical work. Therefore, the action likely takes place in France.\",\n   \"location_qid\": \"Q144\"\n}",
+  "duration_seconds": 10.12127947807312,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k852855g",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:phi4-mini:latest",
+  "response": "and\n\"AskWhat Ask after is performed in normal LookAtMatchResponseReply",
+  "duration_seconds": 1.327883005142212,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

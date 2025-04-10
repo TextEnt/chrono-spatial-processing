@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8568902",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"Classical Antiquity\",\n   \"period_reasoning\": \"The title \\\"Hypsicrat\u00e9e\\\" suggests a connection to ancient Greek culture, as Hypsicrates was a historical figure (a Spartan admiral). The subtitle \\\"trag\u00e9die\\\" indicates a play inspired by Greek tragedy.\",\n   \"timeframe_start\": \"-800\",\n   \"timeframe_end\": \"-30\",\n   \"location\": \"Greece\",\n   \"location_reasoning\": \"Given the reference to a Spartan admiral and the genre of Greek tragedy, the play likely takes place in ancient Greece.\",\n   \"location_qid\": \"Q466\"\n}",
+  "duration_seconds": 10.656821250915527,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

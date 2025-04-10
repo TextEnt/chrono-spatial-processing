@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5651559g",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"XVII century\",\n   \"period_reasoning\": \"The play's title indicates a work from the 17th century, specifically 1643, as stated in the publication date. The author, Cardinal de Richelieu, was a prominent figure in the French court during that period.\",\n   \"timeframe_start\": \"+1600\",\n   \"timeframe_end\": \"+1700\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"Cardinal de Richelieu was a key figure in the French court, making France the most likely setting for the play. The play is a French work.\",\n   \"location_qid\": \"Q181\"\n}",
+  "duration_seconds": 11.585926055908203,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8622111v",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"17th century France\",\n  \"period_reasoning\": \"The play was written by Jean de Rotrou in the 17th century, and it is a tragi-comedy which was popular during this period.\",\n  \"timeframe_start\": \"+1600\",\n  \"timeframe_end\": \"+1700\",\n  \"location\": \"France\",\n  \"location_reasoning\": \"Jean de Rotrou was a French playwright, and his works are typically set in France or involve French characters.\",\n  \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 15.817017316818237,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

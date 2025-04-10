@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8622111v",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"XVII century\",\n   \"period_reasoning\": \"The play's metadata indicates it was written by Jean de Rotrou and published in 1637, placing it firmly within the 17th century.\",\n   \"timeframe_start\": \"1600\",\n   \"timeframe_end\": \"1700\",\n   \"location\": \"Florence, Italy\",\n   \"location_reasoning\": \"The text frequently mentions 'Florence' and references events and people associated with the city. The context suggests Florence is a significant location within the play's narrative.\",\n   \"location_qid\": \"Q372\"\n}",
+  "duration_seconds": 18.020087718963623,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

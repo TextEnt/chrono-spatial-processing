@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b86221269",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Renaissance\",\n  \"period_reasoning\": \"The play is written by Jean de Rotrou, a French playwright from the XVII century. The Renaissance period in France spans from the late XV to the early XVII century.\",\n  \"timeframe_start\": \"-1400\",\n  \"timeframe_end\": \"+1650\",\n  \"location\": \"France\",\n  \"location_reasoning\": \"Jean de Rotrou is a French playwright, and the title of the play includes 'Monsieur le comte de Fiesque,' which suggests a French setting.\",\n  \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 18.60874843597412,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

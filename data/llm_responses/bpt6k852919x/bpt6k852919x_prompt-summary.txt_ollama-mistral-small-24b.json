@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k852919x",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Gallic period and early Middle Ages\",\n  \"period_reasoning\": \"The play mentions Druids, Gauls, and ancient customs that are characteristic of the Gallic period. The reference to 'nos anciens Gaulois' (our ancient Gauls) suggests a historical setting in the pre-Roman or early medieval era.\",\n  \"timeframe_start\": \"-500\",\n  \"timeframe_end\": \"+1000\",\n  \"location\": \"Poitiers, France\",\n  \"location_reasoning\": \"The place 'Poitiers' is frequently mentioned in the context, indicating it as a significant location for the play's action.\",\n  \"location_qid\": \"Q2456\"\n}",
+  "duration_seconds": 28.52259373664856,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

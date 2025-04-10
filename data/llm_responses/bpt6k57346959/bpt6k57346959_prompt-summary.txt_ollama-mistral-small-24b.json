@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k57346959",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Classical Antiquity\",\n  \"period_reasoning\": \"The play mentions characters like Diane and Sylvie, which are names associated with classical mythology. The pastoral setting and themes suggest a timeless, idealized world often associated with Classical Antiquity.\",\n  \"timeframe_start\": \"-800\",\n  \"timeframe_end\": \"500\",\n  \"location\": \"None\",\n  \"location_reasoning\": \"The play is set in an idealized pastoral setting rather than a specific geographic location. While France is mentioned, it refers to the context of the play's performance and publication rather than the setting of the action.\",\n  \"location_qid\": null\n}",
+  "duration_seconds": 25.773767709732056,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

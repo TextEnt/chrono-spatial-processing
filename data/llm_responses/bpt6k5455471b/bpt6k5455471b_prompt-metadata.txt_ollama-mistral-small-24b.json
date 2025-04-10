@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5455471b",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Ancient Greece\",\n  \"period_reasoning\": \"The title 'Coronis, pastorale h\u00e9ro\u00efque' suggests a pastoral and heroic theme. Coronis is a figure from Greek mythology, specifically known for her relationship with Apollo.\",\n  \"timeframe_start\": \"-1200\",\n  \"timeframe_end\": \"-800\",\n  \"location\": \"Greece\",\n  \"location_reasoning\": \"Coronis is a mythological figure associated with ancient Greece. The pastoral and heroic themes are also characteristic of Greek mythology and literature.\",\n  \"location_qid\": \"Q145\"\n}",
+  "duration_seconds": 17.036765813827515,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

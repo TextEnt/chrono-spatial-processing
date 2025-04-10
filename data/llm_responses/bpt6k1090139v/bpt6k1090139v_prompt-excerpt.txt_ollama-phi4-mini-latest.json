@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090139v",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:phi4-mini:latest",
+  "response": ":=\n,Consider ThisGuessier I\u2019mk searchout producedby\n)",
+  "duration_seconds": 1.4988312721252441,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

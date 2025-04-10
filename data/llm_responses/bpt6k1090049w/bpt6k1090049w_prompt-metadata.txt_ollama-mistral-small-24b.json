@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090049w",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"17th century\",\n  \"period_reasoning\": \"The play was written by Charles de Vion in the 17th century, and pastoral plays often depict timeless or idealized settings that could be associated with ancient times.\",\n  \"timeframe_start\": \"-300\",\n  \"timeframe_end\": \"+1699\",\n  \"location\": \"None\",\n  \"location_reasoning\": \"The title and metadata do not provide specific information about the geographic location of the play's action. Pastoral plays often take place in idealized, rural settings that are not tied to a specific real-world location.\",\n  \"location_qid\": null\n}",
+  "duration_seconds": 17.499832153320312,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

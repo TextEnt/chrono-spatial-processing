@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k6255892m",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"17th century\",\n  \"period_reasoning\": \"The play was written by Andr\u00e9 Mareschal in 1638, which places it firmly within the 17th century.\",\n  \"timeframe_start\": \"+1600\",\n  \"timeframe_end\": \"+1700\",\n  \"location\": \"France\",\n  \"location_reasoning\": \"Andr\u00e9 Mareschal was a French author, and the play's title and content suggest it is set in France.\",\n  \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 15.482477903366089,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

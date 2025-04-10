@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090170n",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:phi4-mini:latest",
+  "response": "Reply reached\nUse is:ll\n\n,Look compare and categor Look!",
+  "duration_seconds": 1.1231184005737305,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

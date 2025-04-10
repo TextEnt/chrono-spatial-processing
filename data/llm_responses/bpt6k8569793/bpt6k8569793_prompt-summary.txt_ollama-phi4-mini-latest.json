@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8569793",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:phi4-mini:latest",
+  "response": "{\n    \"period\": \"Roman Empire during the 4th century C.E.\",\n    \"period_reasoning\": \"Maurice, Maurice; Phocas are historical figures who were involved in power struggles that occurred within this period. The text also mentions Thrace which was a Roman province and references to celestial phenomena suggest familiarity with ancient Rome's understanding of astronomy as part of its culture.\", \n    \"timeframe_start\": \"-300\", \n    \"timeframe_end\": \"+400\",\n    \"location\": \"Roman Empire, specifically the region around modern-day Bulgaria (Thrace)\",\n    \"location_reasoning\": \"The play seems to be set in a time when both Phocas and Maurice were involved with Roman affairs. The Thrace mentioned directly ties it back to this area under its historical context as being part of or governed by Rome.\", \n    \"location_qid\": 277\n}",
+  "duration_seconds": 8.982516527175903,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

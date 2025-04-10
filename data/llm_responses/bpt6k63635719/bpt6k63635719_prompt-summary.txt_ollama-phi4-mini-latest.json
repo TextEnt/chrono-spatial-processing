@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k63635719",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:phi4-mini:latest",
+  "response": "iting and  is a historical data from the $,  The following results are",
+  "duration_seconds": 6.615548849105835,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

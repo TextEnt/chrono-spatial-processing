@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8622099v",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:phi4-mini:latest",
+  "response": "A and translated:inQuestion L\n, 1\"",
+  "duration_seconds": 1.4738473892211914,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k12801807",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:phi4-mini:latest",
+  "response": "{\n  \"period\": \"Renaissance period in France, specifically during Henri IV's reign (1589\u20131610)\",\n  \"period_reasoning\": \"The play was published by Tasse who wrote his works under King Henry IV and mentions 'pastorale fidellement traduite de l'italien en vers fran\u00e7ois', indicating French Renaissance\",\n  \"timeframe_start\": \"-1592\", \n  \"timeframe_end\": \"+1603\",\n  \"location\": \"France, particularly Parisian stage or countryside as pastoral scenes are commonly depicted in literature during this period.\",\n  \"location_reasoning\": \"Typical setting for plays of the era would be either urban centers like Paris (common location for theatrical performances) where patrons and audiences were found, specifically referenced is 'pastorale' suggesting an idyllic rural scene common to French Renaissance dramas\",\n  \"location_qid\": null\n}",
+  "duration_seconds": 16.74924373626709,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

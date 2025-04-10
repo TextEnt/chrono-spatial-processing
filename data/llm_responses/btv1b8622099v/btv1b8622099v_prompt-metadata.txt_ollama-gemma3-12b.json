@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8622099v",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"XVII century, likely influenced by classical antiquity\",\n   \"period_reasoning\": \"The play is attributed to Jean Rotrou, a French playwright of the 17th century. The title 'Clorinde' suggests a connection to classical mythology, specifically the story of Clorinda from Orlando Furioso, which was popular during the Baroque period. The play's genre is listed as 'com\u00e9die', a common form of dramatic work in the 17th century.\",\n   \"timeframe_start\": \"+1600\",\n   \"timeframe_end\": \"+1700\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"Jean Rotrou was a French playwright, and the play was published in France. While the play may draw inspiration from classical settings, the production and authorship place it firmly in France.\",\n   \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 13.787282228469849,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

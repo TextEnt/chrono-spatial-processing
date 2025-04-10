@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k57346959",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:phi4-mini:latest",
+  "response": "I'miers: ULook at",
+  "duration_seconds": 1.861419677734375,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

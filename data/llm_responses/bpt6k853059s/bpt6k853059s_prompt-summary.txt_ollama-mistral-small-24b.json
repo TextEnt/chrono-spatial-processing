@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k853059s",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"17th century\",\n  \"period_reasoning\": \"The play was published in 1632, which places it firmly within the 17th century. The language and style are consistent with French literature from this period.\",\n  \"timeframe_start\": \"+1600\",\n  \"timeframe_end\": \"+1700\",\n  \"location\": \"None\",\n  \"location_reasoning\": \"The provided information does not specify a clear geographic location for the action of the play. The mentions of 'Berg\u00e8re' and other places like 'Paris', 'Seine', 'Rhin', and 'Cyth\u00e8re' do not provide enough context to determine a specific location where the action takes place.\",\n  \"location_qid\": null\n}",
+  "duration_seconds": 27.622815370559692,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

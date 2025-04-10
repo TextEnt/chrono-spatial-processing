@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090222x",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Late Elizabethan and Early Stuart period\",\n  \"period_reasoning\": \"The play is titled 'Le Comte d'Essex, trag\u00e9die', which refers to Robert Devereux, 2nd Earl of Essex. He was a prominent figure during the reign of Queen Elizabeth I of England. The historical events surrounding his life and downfall occurred in the late 16th and early 17th centuries.\",\n  \"timeframe_start\": \"-0158\",\n  \"timeframe_end\": \"+01625\",\n  \"location\": \"England\",\n  \"location_reasoning\": \"The Earl of Essex is a historical figure closely associated with the court of Queen Elizabeth I, who ruled England during this period.\",\n  \"location_qid\": \"Q145\"\n}",
+  "duration_seconds": 20.18870997428894,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

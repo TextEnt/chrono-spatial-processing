@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k15107128",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"Biblical period\",\n   \"period_reasoning\": \"The play is explicitly described as being 'tir\u00e9e de l'\u00c9criture sainte' (taken from the Holy Scripture) and mentions characters and places central to the Hebrew Bible (Old Testament). References to 'Roi de Juda' (King of Judah), 'fils d'Okosias' (son of Jehoash), and 'Joas' strongly indicate a setting within the Kingdom of Judah.\",\n   \"timeframe_start\": \"-1000\",\n   \"timeframe_end\": \"-586\",\n   \"location\": \"Jerusalem\",\n   \"location_reasoning\": \"The play repeatedly mentions 'J\u00e9rusalem' (Jerusalem), which is the capital of the Kingdom of Judah and a central location in the biblical narrative. The text describes it as a significant city with a complex history.\",\n   \"location_qid\": \"Q42\"\n}",
+  "duration_seconds": 18.4369215965271,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

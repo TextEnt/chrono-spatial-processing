@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090230g",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"French Baroque period\",\n   \"period_reasoning\": \"The play is authored by Claude Rose Rosimond and published in 1673. This aligns with the French Baroque period, a significant era in French theatre and literature.\",\n   \"timeframe_start\": \"-1600\",\n   \"timeframe_end\": \"-1715\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"The play is a French work, and without specific references to other locations, it is reasonable to assume the action takes place in France.\",\n   \"location_qid\": \"Q147\"\n}",
+  "duration_seconds": 12.08336615562439,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

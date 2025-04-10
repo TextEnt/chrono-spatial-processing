@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k61251657",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Ancient Persia\",\n  \"period_reasoning\": \"The play mentions 'Perse' multiple times, which is the French word for Persia. The historical context and the mention of ancient Persian culture and royalty suggest that the action takes place in Ancient Persia.\",\n  \"timeframe_start\": \"-550\",\n  \"timeframe_end\": \"-330\",\n  \"location\": \"Persia\",\n  \"location_reasoning\": \"The play is set in 'Perse,' which is the French word for Persia. The frequent mention of Perse and its cultural elements confirms this location.\",\n  \"location_qid\": \"Q8196\"\n}",
+  "duration_seconds": 23.150973796844482,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

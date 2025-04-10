@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1513096g",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:phi4-mini:latest",
+  "response": "{\n  \"period\": \"Renaissance period in France, specifically during its later stages (end of XV century)\",\n  \"period_reasoning\": \"Title and author are indicative of French Renaissance theatre with a publication date from '1636', which places it within that time frame.\",\n  \"timeframe_start\": \"-1590\",\n  \"timeframe_end\": \"+1660\", // Assuming the play is set in an earlier stage by extrapolating typical setting times for such plays and based on author's known activity period.\n  \"location\": null, \n  \"location_reasoning\": \"The metadata does not provide any specific details about where within France or its political subdivisions (city of Paris) that 'Alidor et Oronte' takes place.\",\n  \"location_qid\": None\n}",
+  "duration_seconds": 7.591607570648193,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

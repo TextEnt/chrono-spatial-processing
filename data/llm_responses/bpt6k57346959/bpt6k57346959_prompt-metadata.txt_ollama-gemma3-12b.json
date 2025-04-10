@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k57346959",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"Classical Period (French Baroque)\",\n   \"period_reasoning\": \"The play is a 'com\u00e9die en musique' (comical opera) by Pierre Perrin, published in 1659. This aligns with the French Baroque period, a significant era for opera and theatrical development in France.\",\n   \"timeframe_start\": \"+1600\",\n   \"timeframe_end\": \"+1700\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"The play is described as 'repr\u00e9sent\u00e9e en France' (represented in France), indicating that the action takes place in France.\",\n   \"location_qid\": \"Q144\"\n}",
+  "duration_seconds": 11.232824087142944,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

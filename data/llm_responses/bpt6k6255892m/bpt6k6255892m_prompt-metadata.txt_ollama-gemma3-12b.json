@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k6255892m",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"French Baroque period\",\n   \"period_reasoning\": \"The play was written by Andre Marechal and published in 1638. This falls squarely within the French Baroque period, which roughly spans from the early 17th century to the late 18th century.\",\n   \"timeframe_start\": \"+1600\",\n   \"timeframe_end\": \"+1700\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"The play is a French play from the 17th century, so the action likely takes place in France.\",\n   \"location_qid\": \"Q147\"\n}",
+  "duration_seconds": 10.905952215194702,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k15107128",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Ancient Israelite period\",\n  \"period_reasoning\": \"The play mentions characters and events related to ancient Israel, such as Joas (King Joash) and Jerusalem. These references suggest a historical setting in ancient Israel during the time of the kings.\",\n  \"timeframe_start\": \"-1000\",\n  \"timeframe_end\": \"-586\",\n  \"location\": \"Jerusalem\",\n  \"location_reasoning\": \"The play frequently mentions 'J\u00e9rusalem' (Jerusalem) and its significance in the narrative, indicating that the action takes place there.\",\n  \"location_qid\": \"Q913\"\n}",
+  "duration_seconds": 21.422118663787842,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

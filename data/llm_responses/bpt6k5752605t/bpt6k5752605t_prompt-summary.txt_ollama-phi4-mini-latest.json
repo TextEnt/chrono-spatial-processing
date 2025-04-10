@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5752605t",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:phi4-mini:latest",
+  "response": "1 -- and using a dynamic like isothermal\n-",
+  "duration_seconds": 2.2032289505004883,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

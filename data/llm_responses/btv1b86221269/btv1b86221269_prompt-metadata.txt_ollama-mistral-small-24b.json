@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b86221269",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Renaissance\",\n  \"period_reasoning\": \"Jean de Rotrou was a French dramatist active in the 17th century, and his works are often set during the Renaissance period.\",\n  \"timeframe_start\": \"-0150\",\n  \"timeframe_end\": \"+01699\",\n  \"location\": \"France\",\n  \"location_reasoning\": \"Jean de Rotrou was a French dramatist, and many of his plays are set in France or have French characters. The dedication to Monsieur le comte de Fiesque suggests a French setting.\",\n  \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 17.61497950553894,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

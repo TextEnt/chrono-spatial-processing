@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k852855g",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"17th century\",\n  \"period_reasoning\": \"The play was published in 1695, which is during the 17th century. The title and author suggest a French context, typical for this period.\",\n  \"timeframe_start\": \"+1600\",\n  \"timeframe_end\": \"+1699\",\n  \"location\": \"France\",\n  \"location_reasoning\": \"The author, Fran\u00e7ois Passerat, is French, and the title of the play suggests a French setting. The language of the play is also French.\",\n  \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 16.848225355148315,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

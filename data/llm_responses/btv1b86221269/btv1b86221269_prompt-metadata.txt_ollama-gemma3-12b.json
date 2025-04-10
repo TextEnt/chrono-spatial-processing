@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b86221269",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"Classical Period (French Baroque)\",\n   \"period_reasoning\": \"The play is written by Jean Rotrou, a prominent playwright of the French Baroque period (roughly 1600-1715). The publication date (1635) firmly places it within this era.\",\n   \"timeframe_start\": \"+1600\",\n   \"timeframe_end\": \"+1715\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"Jean Rotrou was a French playwright, and the play was published in France. The dedication to 'Monsieur le comte de Fiesque' suggests a French aristocratic context.\",\n   \"location_qid\": \"Q144\"\n}",
+  "duration_seconds": 11.71489143371582,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

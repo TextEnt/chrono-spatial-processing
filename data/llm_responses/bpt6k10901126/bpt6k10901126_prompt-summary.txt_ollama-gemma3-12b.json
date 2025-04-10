@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10901126",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"Roman Empire, specifically the Julio-Claudian dynasty\",\n   \"period_reasoning\": \"The play's title, 'Germanicus,' refers to the Roman general Germanicus, a prominent figure in Roman history. The characters mentioned (Tib\u00e8re, Drusus, Pison, Cinna, Agrippine) are all historical figures associated with the Roman imperial family during the early Roman Empire. The plot seems to revolve around political intrigue and succession within the Roman imperial court.\",\n   \"timeframe_start\": \"-40\",\n   \"timeframe_end\": \"14\",\n   \"location\": \"Rome\",\n   \"location_reasoning\": \"The text repeatedly mentions 'Rome' as a central location. Several sentences describe events and actions taking place within the city of Rome.\",\n   \"location_qid\": \"Q183\"\n}",
+  "duration_seconds": 18.71485924720764,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

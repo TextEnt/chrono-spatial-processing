@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8568902",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Classical Antiquity\",\n  \"period_reasoning\": \"The text mentions several historical and mythological figures and events that are characteristic of Classical Antiquity, such as references to Rome, Greece, Troie, Thrace, and Paris. The involvement of gods like Jupiter and Mars also points to a period where mythology played a significant role in literature.\",\n  \"timeframe_start\": \"-800\",\n  \"timeframe_end\": \"+500\",\n  \"location\": \"Mediterranean region\",\n  \"location_reasoning\": \"The text frequently mentions locations such as Rome, Greece, Troie, Thrace, and Paris, all of which are in the Mediterranean region. These references strongly suggest that the action of the play takes place in this area.\",\n  \"location_qid\": \"Q4916\"\n}",
+  "duration_seconds": 37.90405082702637,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

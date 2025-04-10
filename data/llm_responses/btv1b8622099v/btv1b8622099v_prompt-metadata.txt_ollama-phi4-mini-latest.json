@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8622099v",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:phi4-mini:latest",
+  "response": "Answer 001000Lookback and need is,Please\nQuestion now",
+  "duration_seconds": 1.2057061195373535,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

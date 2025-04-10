@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5734490j",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"17th century\",\n  \"period_reasoning\": \"The play was published in 1653, and it is a pastoral comedy set in a rural environment. The language and style are characteristic of 17th-century French literature.\",\n  \"timeframe_start\": \"+1600\",\n  \"timeframe_end\": \"+1700\",\n  \"location\": None,\n  \"location_reasoning\": \"The play mentions Paris, Lyon, Rome, Lignon, and Monceaux. However, the specific location of the action is not clearly indicated in the provided sentences.\",\n  \"location_qid\": None\n}",
+  "duration_seconds": 23.00751280784607,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

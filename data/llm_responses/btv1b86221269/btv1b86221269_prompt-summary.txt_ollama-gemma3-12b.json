@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b86221269",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"XVII century\",\n   \"period_reasoning\": \"The play is attributed to the XVII century, as indicated by the provided text mentioning 'Marchand Libraire \u00e0 Paris' and the publication details associated with the play. The language and cultural references align with the French Baroque period.\",\n   \"timeframe_start\": \"1600\",\n   \"timeframe_end\": \"1700\",\n   \"location\": \"Paris, France\",\n   \"location_reasoning\": \"The text explicitly mentions 'Paris' multiple times and references events and locations within the city. It also mentions 'France' directly.\",\n   \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 18.796029806137085,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

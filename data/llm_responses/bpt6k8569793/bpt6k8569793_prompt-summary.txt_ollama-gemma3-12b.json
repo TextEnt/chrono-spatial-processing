@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8569793",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"Late Roman Empire / Early Byzantine Era\",\n   \"period_reasoning\": \"The text references figures and events characteristic of the transition from the Roman Empire to the Byzantine Empire. Mentions of emperors, references to Thrace, and the overall tone suggest a period of political upheaval and religious change within the Roman world. The presence of 'Constantinople' as a place name is a strong indicator of the Byzantine period.\",\n   \"timeframe_start\": \"-0476\",\n   \"timeframe_end\": \"0527\",\n   \"location\": \"Thrace and surrounding regions (Balkans, Eastern Europe)\",\n   \"location_reasoning\": \"The text explicitly mentions 'Thrace' as a significant location. References to the Danube river and other geographical features suggest a setting in the Balkans and Eastern Europe. Constantinople is also mentioned, placing the action in the Eastern Roman/Byzantine world.\",\n   \"location_qid\": \"Q432\"\n}",
+  "duration_seconds": 22.76971673965454,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

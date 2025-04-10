@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k12804415",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"17th century France\",\n  \"period_reasoning\": \"Moli\u00e8re was a prominent French playwright in the 17th century, and his works are typically set in contemporary or slightly earlier periods within France. The publication date of 1663 aligns with this period.\",\n  \"timeframe_start\": \"+1600\",\n  \"timeframe_end\": \"+1700\",\n  \"location\": \"France\",\n  \"location_reasoning\": \"Moli\u00e8re was a French playwright, and his plays are generally set in France. The language of the excerpt is French, which supports this location.\",\n  \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 19.22478461265564,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

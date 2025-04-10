@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b86107875",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"17th century\",\n  \"period_reasoning\": \"Moli\u00e8re was a prominent French playwright in the 17th century, and the publication date of the play is 1661.\",\n  \"timeframe_start\": \"+1600\",\n  \"timeframe_end\": \"+1700\",\n  \"location\": \"France\",\n  \"location_reasoning\": \"Moli\u00e8re was a French playwright, and the title mentions 'theatre du Palais Royal,' which is located in Paris, France.\",\n  \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 20.37542986869812,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

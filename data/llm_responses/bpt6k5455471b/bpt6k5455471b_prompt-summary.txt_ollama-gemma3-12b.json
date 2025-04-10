@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5455471b",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"Classical Antiquity / Pastoral Drama\",\n   \"period_reasoning\": \"The play is titled \\\"Coronis, pastorale h\u00e9ro\u00efque\\\" and references characters and places associated with Greek mythology (Coronis, Apollo, Pinde, Fleuve). The pastoral genre often draws inspiration from classical antiquity. The mention of Apollo and the nymph Pinde strongly suggests a setting rooted in Greek mythology and pastoral traditions.\",\n   \"timeframe_start\": \"-800\",\n   \"timeframe_end\": \"0\",\n   \"location\": \"Greece\",\n   \"location_reasoning\": \"The references to Greek mythological figures (Coronis, Apollo, Pinde) and the presence of a 'Fleuve' (river) strongly suggest a location in ancient Greece. The play's pastoral setting further reinforces this association.\",\n   \"location_qid\": \"Q48\"\n}",
+  "duration_seconds": 16.01265549659729,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

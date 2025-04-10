@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090060x",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"Pastoral drama, typical of the French Baroque period\",\n   \"period_reasoning\": \"The play's title 'Pastorale et tragi-comedie' indicates a pastoral drama, a common genre in the 17th century, particularly during the Baroque period in France. The publication date (1692) further confirms this timeframe.\",\n   \"timeframe_start\": \"-1600\",\n   \"timeframe_end\": \"-1700\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"The play is written in French, and the author is French (Jean Millet). This strongly suggests the action takes place in France.\",\n   \"location_qid\": \"Q144\"\n}",
+  "duration_seconds": 13.322245359420776,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

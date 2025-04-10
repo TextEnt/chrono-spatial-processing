@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5772310n",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Ancient Greece\",\n  \"period_reasoning\": \"The title 'Ariane' suggests that the play is based on the mythological figure Ariadne, who is associated with ancient Greek mythology.\",\n  \"timeframe_start\": \"-1200\",\n  \"timeframe_end\": \"-800\",\n  \"location\": \"Crete\",\n  \"location_reasoning\": \"Ariadne is closely linked to the island of Crete, where she was a princess and played a significant role in Greek mythology.\",\n  \"location_qid\": \"Q17943\"\n}",
+  "duration_seconds": 16.133185863494873,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k15107128",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:deepseek-r1:32b",
+  "response": "<think>\nOkay, I need to predict the time and location for Racine's play Athalie based on the provided JSON. Let's look at the metadata first. The author is Jean Racine, who was a French playwright in the 17th century. The title mentions it's a tragedy drawn from the Holy Scriptures, which gives me a hint that the setting might be biblical.\n\nLooking at the excerpt, I see references to Samuel and Israel. From my knowledge, Athalie is based on events from the Old Testament, specifically around King David and his family. In the play, Athaliah (or Atalie) is a queen who tries to seize power after her son's death. This story takes place in ancient Judah.\n\nSo, historically, the timeframe for such biblical narratives would be around 10th century BCE when David was king. Therefore, I'll set the timeframe from -1020 to -950 BCE.\n\nFor the location, since it's a story about Israel and the Temple of Jerusalem, the setting is in ancient Judah, specifically in Jerusalem. The Wikidata QID for Jerusalem is Q841.\n</think>\n\n\n{\n    \"period\": \"Biblical times\",\n    \"period_reasoning\": \"The play Athalie is based on events from the Old Testament, particularly focusing on the story of King David and his family. This places the action in biblical times.\",\n    \"timeframe_start\": \"-1020\",\n    \"timeframe_end\": \"-950\",\n    \"location\": \"Jerusalem, Judah\",\n    \"location_reasoning\": \"The play is set in ancient Judah, specifically referencing events around the Temple of Jerusalem.\",\n    \"location_qid\": \"Q841\"\n}",
+  "duration_seconds": 56.60815501213074,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

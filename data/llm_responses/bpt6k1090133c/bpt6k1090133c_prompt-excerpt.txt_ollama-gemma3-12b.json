@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090133c",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"17th Century France\",\n   \"period_reasoning\": \"The play's metadata indicates the author is Claude Rose Rosimond and the play is titled 'La Dupe amoureuse, com\u00e9die', published in 1671. This firmly places the play within the French literary scene of the 17th century.\",\n   \"timeframe_start\": \"-1601\",\n   \"timeframe_end\": \"-1701\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"Given the author's nationality and the play's French title, it is highly probable that the play is set in France. The excerpt is written in French, further supporting this assumption.\",\n   \"location_qid\": \"Q144\"\n}",
+  "duration_seconds": 13.90105152130127,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

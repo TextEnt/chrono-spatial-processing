@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k61486960",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"17th Century\",\n   \"period_reasoning\": \"The play was written by Jean-Fran\\u00e7ois Regnard, a French playwright of the 18th century. The publication date (1694) confirms this timeframe.\",\n   \"timeframe_start\": \"+1600\",\n   \"timeframe_end\": \"+1700\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"Jean-Fran\\u00e7ois Regnard was a French playwright, and the play is a French theatre play.\",\n   \"location_qid\": \"Q144\"\n}",
+  "duration_seconds": 10.872748374938965,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

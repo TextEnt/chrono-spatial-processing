@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10901126",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"Roman Empire\",\n   \"period_reasoning\": \"The play title \\\"Germanicus\\\" refers to the Roman Emperor Gaius Julius Caesar Germanicus. This strongly suggests a setting within the Roman Empire.\",\n   \"timeframe_start\": \"-44\",\n   \"timeframe_end\": \"14\",\n   \"location\": \"Roman Empire\",\n   \"location_reasoning\": \"Given the reference to Germanicus, a Roman Emperor, the play's action is likely set in the Roman Empire.\",\n   \"location_qid\": \"Q3076\"\n}",
+  "duration_seconds": 9.751691818237305,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

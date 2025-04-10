@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8568902",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"Hellenistic Period and Roman Republic/Early Empire\",\n   \"period_reasoning\": \"The play references figures and events associated with both Greek and Roman history. Mentions of Troie, Greece, and Rome, alongside characters and conflicts characteristic of the Hellenistic era and the Roman Republic/Early Empire, suggest a setting spanning these periods. References to figures like Romulus and Camille further solidify the Roman connection.\",\n   \"timeframe_start\": \"-323\",\n   \"timeframe_end\": \"14\",\n   \"location\": \"Mediterranean region, primarily centered around Rome and Greece\",\n   \"location_reasoning\": \"The play explicitly mentions Rome, Greece, and Troie, all key locations in the Mediterranean region during the relevant historical periods. Conflicts and references to various peoples and regions within this area further support this geographic setting.\",\n   \"location_qid\": \"Q186\"\n}",
+  "duration_seconds": 21.8668053150177,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

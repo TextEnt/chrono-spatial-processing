@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090131j",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"Classical Antiquity / Roman Empire\",\n   \"period_reasoning\": \"Tragedies often draw inspiration from classical mythology and history. The title 'Le Fils suppos\u00e9' (The Supposed Son) suggests a plot reminiscent of classical tragic narratives, frequently set in ancient times.\",\n   \"timeframe_start\": \"-753\",\n   \"timeframe_end\": \"476\",\n   \"location\": \"Roman Empire\",\n   \"location_reasoning\": \"Given the classical inspiration, the play likely takes place in the Roman Empire or a region influenced by Roman culture.\",\n   \"location_qid\": \"Q3077\"\n}",
+  "duration_seconds": 10.677749156951904,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

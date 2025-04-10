@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k57899298",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"XVII century\",\n   \"period_reasoning\": \"The play's metadata indicates it was written in 1640, placing it firmly within the 17th century.\",\n   \"timeframe_start\": \"-1600\",\n   \"timeframe_end\": \"-1700\",\n   \"location\": \"Rome\",\n   \"location_reasoning\": \"The text frequently mentions 'Rome' and references Roman history and figures (C\u00e6sar).\",\n   \"location_qid\": \"Q157\"\n}",
+  "duration_seconds": 15.586466550827026,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

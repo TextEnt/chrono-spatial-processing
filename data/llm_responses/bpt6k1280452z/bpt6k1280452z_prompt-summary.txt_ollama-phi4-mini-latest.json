@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280452z",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:phi4-mini:latest",
+  "response": "LLuring isiting itarts)",
+  "duration_seconds": 1.9598793983459473,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

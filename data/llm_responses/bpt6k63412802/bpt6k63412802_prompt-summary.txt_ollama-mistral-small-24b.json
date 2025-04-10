@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k63412802",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Roman Republic and Roman Empire\",\n  \"period_reasoning\": \"The play mentions 'Rome' frequently, which is a key indicator of a historical period set in ancient Rome. The characters and events described are consistent with the political and military context of the Roman Republic and early Roman Empire.\",\n  \"timeframe_start\": \"-270\",\n  \"timeframe_end\": \"+1453\",\n  \"location\": \"Rome, Italy\",\n  \"location_reasoning\": \"The play is set in Rome as indicated by the frequent mentions of 'Rome' and references to Roman political figures and events.\",\n  \"location_qid\": \"Q208\"\n}",
+  "duration_seconds": 31.65970778465271,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

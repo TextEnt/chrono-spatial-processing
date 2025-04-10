@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5651559g",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"XVII century\",\n   \"period_reasoning\": \"The play's title, \\\"Dialogue du cardinal de Richelieu voulant entrer en Paradis, et sa descente aux enfers . Tragicom\u00e9die\\\", explicitly references Cardinal Richelieu, a prominent figure in 17th-century France. The publication date in the metadata confirms this timeframe.\",\n   \"timeframe_start\": \"+1600\",\n   \"timeframe_end\": \"+1700\",\n   \"location\": \"France\",\n   \"location_reasoning\": \"Cardinal Richelieu was a key figure in French politics and the play's reference to him strongly suggests a French setting.\",\n   \"location_qid\": \"Q17276\"\n}",
+  "duration_seconds": 13.336461305618286,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

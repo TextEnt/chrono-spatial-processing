@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280290z",
+  "prompt_id": "prompt-metadata.txt",
+  "model_name": "ollama:phi4-mini:latest",
+  "response": "InputInFocusLookatDo thistimeLooking functions againTurn,IGoUseFrame)",
+  "duration_seconds": 1.3387575149536133,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

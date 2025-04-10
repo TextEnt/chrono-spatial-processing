@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k12804645",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"17th century\",\n  \"period_reasoning\": \"Moli\u00e8re was a prominent French playwright in the 17th century, and the play's publication date is 1668.\",\n  \"timeframe_start\": \"+1600\",\n  \"timeframe_end\": \"+1700\",\n  \"location\": \"France\",\n  \"location_reasoning\": \"The author is French, and the title of the play includes 'Gentilhomme Fran\u00e7ais', indicating a French setting.\",\n  \"location_qid\": \"Q142\"\n}",
+  "duration_seconds": 18.393285512924194,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

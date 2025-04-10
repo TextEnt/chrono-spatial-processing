@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8610783h",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:gemma3:12b",
+  "response": "{\n   \"period\": \"17th Century\",\n   \"period_reasoning\": \"The play is by Moli\u00e8re, who was a prominent playwright of the 17th century. The play's language and themes are characteristic of the French Baroque period.\",\n   \"timeframe_start\": \"-1601\",\n   \"timeframe_end\": \"-1701\",\n   \"location\": \"Naples, France\",\n   \"location_reasoning\": \"The play mentions 'Naples' frequently, suggesting it is a significant location in the story. The play is by a French playwright, Moli\u00e8re, indicating a French setting as well.\",\n   \"location_qid\": \"6466176\"\n}",
+  "duration_seconds": 16.903186798095703,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

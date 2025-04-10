@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k57346959",
+  "prompt_id": "prompt-excerpt.txt",
+  "model_name": "ollama:mistral-small:24b",
+  "response": "{\n  \"period\": \"Classical Antiquity\",\n  \"period_reasoning\": \"The mention of 'Diane' (Diana in English), a goddess from Roman mythology, and the pastoral setting suggest that the play is set in ancient times. The use of mythological figures and pastoral themes are characteristic of Classical Antiquity.\",\n  \"timeframe_start\": \"-800\",\n  \"timeframe_end\": \"476\",\n  \"location\": \"None\",\n  \"location_reasoning\": \"The excerpt does not provide specific geographical details that can be used to determine the exact location. The setting is mythological and pastoral, which could apply to various locations in the ancient world.\",\n  \"location_qid\": null\n}",
+  "duration_seconds": 20.518476963043213,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}
