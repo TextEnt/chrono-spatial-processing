@@ -2,6 +2,8 @@ evaluation:
   groundtruth_path: "data/groundtruth/"
   pregenerated_prompts_path: "data/prompts/pregenerated/"
   responses_path: "data/llm_responses/"
+  scores_output_path: "data/evaluation/"
+  llm_judge_prompt_path: "data/prompts/"
   temperature: 0.2
   models:
     - "ollama:phi4-mini:latest"

@@ -8,6 +8,7 @@ import aisuite
 from typing import List, Dict, Union
 from pathlib import Path
 from dataclasses import dataclass
+from textentlib.prompting import build_llm_judge_prompt
 
 JSON_PATTERN = re.compile(r"```json\n(.*?)```", re.DOTALL)
 DIRECT_JSON_PATTERN = re.compile(r"\{[^}]*\}", re.DOTALL)
@@ -353,3 +354,31 @@ def prepare_evaluation_dataframe(
         # this will fail if the columns are not present or the dataframe is empty
         print("Some columns are missing in the dataframe.")
         return df_sample_docs.index.to_list(), df_eval_data
+
+def add_prompt(row, prompt_path: Path) -> str:
+    """
+    Builds a prompt for the LLM judge task based on the row data.
+    """
+
+    prediction_columns = [col for col in row.keys() if col.startswith('pred_') and not col.endswith('reasoning')]
+    reference_columns = [col for col in row.keys() if col.startswith('gt_') and not col.endswith('reason')]
+
+    prediction_dict = row[prediction_columns].to_dict()
+    reference_dict = row[reference_columns].to_dict()
+
+    prompt = build_llm_judge_prompt(
+        prediction=prediction_dict,
+        reference=reference_dict,
+        prompts_base_path=prompt_path
+    )
+    return prompt
+
+def process_llm_judge_responses(llm_judge_responses) -> List[dict]:
+    scores  = []
+    for r in llm_judge_responses:
+        _, scores_dict = try_extract_json_from_text(r.response)
+        scores_dict['response_id'] = r.document_id
+        scores_dict['evaluator'] = r.model_name
+        scores_dict['total_tokens'] = r.total_tokens
+        scores.append(scores_dict)
+    return scores
