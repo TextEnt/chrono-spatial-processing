@@ -21,13 +21,8 @@ def run_llm_judge_evaluation(config_path, base_path, llm_judge):
     # Convert paths to Path objects
     config_path = Path(config_path)
     base_path = Path(base_path)
-
-    # Placeholder for the main logic
-    click.echo(f"Running LLM-judge evaluation with the following parameters:")
-    click.echo(f"  - Config Path: {config_path}")
-    click.echo(f"  - Base Path: {base_path}")
-    click.echo(f"  - LLM Judge: {llm_judge}")
-
+    
+    # Read configuration
     config = read_configuration(config_path)['evaluation']
     gt_path = base_path / config['groundtruth_path']
 
