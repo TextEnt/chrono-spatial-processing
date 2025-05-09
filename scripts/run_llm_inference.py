@@ -41,7 +41,6 @@ def run(config_path: str, base_path: str) -> None:
         if prompt.prompt_id in settings['prompts']
     ]
     print(f'Loaded {len(llm_requests)} pre-generated prompts.')
-    import ipdb; ipdb.set_trace()
 
     # Initialize the AI client
     client = ai.Client()
@@ -54,9 +53,9 @@ def run(config_path: str, base_path: str) -> None:
 
     for model in llms:
         print('Running predictions for model:', model)
-        if 'ollama' in model:
-            print('Ollama model detected, skipping this model.')
-            continue
+        #if 'ollama' in model:
+        #    print('Ollama model detected, skipping this model.')
+        #    continue
         if model in reasoning_llms:
             llm_responses += query_llm(client, model, llm_requests, inference_output_path)
         else:
