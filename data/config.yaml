@@ -1,3 +1,14 @@
+inference:
+  corpus_metadata_path: "data/textent_corpus.tsv"
+  pregenerated_prompts_path: "data/prompts/pregenerated/"
+  responses_path: "data/llm_inference/"
+  temperature: 0.2
+  models:
+    - "ollama:mistral-small:24b"
+    - "deepseek:deepseek-reasoner"
+  prompts:
+    - "prompt-summary.txt"
+
 evaluation:
   groundtruth_path: "data/groundtruth/"
   pregenerated_prompts_path: "data/prompts/pregenerated/"
