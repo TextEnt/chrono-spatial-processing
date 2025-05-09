@@ -4,7 +4,7 @@ from pathlib import Path
 import aisuite as ai
 from dotenv import load_dotenv
 from textentlib.utils import read_configuration
-from textentlib.llm_utils import fetch_prompts, prepare_evaluation_dataframe, query_llm
+from textentlib.llm_utils import fetch_prompts, query_llm, llm_responses_to_dataframe
 
 @click.command()
 @click.option('--config_path', help='Path to the YAML configuration file.')
@@ -61,7 +61,9 @@ def run(config_path: str, base_path: str) -> None:
         else:
             llm_responses += query_llm(client, model, llm_requests, inference_output_path, temperature=default_temperature)
 
-    # TODO: process the LLM responses
+    df_inference = llm_responses_to_dataframe(inference_output_path)
+    df_inference.to_csv(inference_output_path / 'llm_responses.csv', sep='\t', index=False)
+    print(f'LLM responses saved to: {inference_output_path / "llm_responses.csv"}')
 
 if __name__ == '__main__':
     load_dotenv()
