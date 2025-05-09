@@ -6,40 +6,6 @@
 - **publication date**: 1639
 
 
-## ollama:mistral-small:24b-prompt-excerpt.txt
-
-### Period
-
-**Model reasoning**: The play was written by Georges de Scudéry in 1639, which places it firmly within the 17th century. The style and themes are characteristic of French literature from this period.
-
-#### Period string
-- **GT**: Ancient Rome
-- **Prediction**: 17th century France
-- **Score**: 0.0 
-
-#### Period interval
-- **GT**: 112, 200
-- **Prediction**: +1600, +1700
-- **Score**: 0.0
-
-### Location
-
-**Model reasoning**: Georges de Scudéry was a French writer, and the play's title and content suggest a French setting. The language of the excerpt is French.
-
-#### Location string
-- **GT**: Amasya 
-- **Prediction**: France
-- **Score**: 0.0
-
-#### Location QID
-- **GT**: Q170532
-- **Prediction**: Q142
-- **Score**: 0.0
-
-#### Score reasoning
-The predicted period '17th century France' does not match the reference period 'Ancient Rome'. The predicted timeframe (1600-1700) does not overlap with the reference timeframe (112-200). The predicted location 'France' is not among the preferred or accepted locations, and the location QID 'Q142' is not among the accepted QIDs.
-    
-
 ## anthropic:claude-3-7-sonnet-20250219-prompt-summary.txt
 
 ### Period
@@ -108,6 +74,108 @@ The predicted period differs from the reference period. The predicted timeframe 
 The predicted period 'Classical Antiquity' is broader than the reference period 'Ancient Rome', earning a partial score. The predicted timeframe '-500 to 500' partially overlaps with the reference timeframe '112 to 200'. The predicted location 'Ancient Greece or Rome' is within the accepted locations but does not match the preferred location 'Amasya'. The predicted location QID is 'None', which does not match or fall within the acceptable QIDs.
     
 
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play references ancient Mediterranean locations (Rome, Greece, Troy) and includes character names (Polixène, Tiridate, Tigrane) associated with classical or Hellenistic-era figures, common in 17th-century French tragedies set in antiquity.
+
+#### Period string
+- **GT**: Ancient Rome
+- **Prediction**: Classical Antiquity
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 112, 200
+- **Prediction**: -500, 500
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: Rome, Tiber River, and Greece are listed among the top places. The prominence of Rome and its association with classical settings in French drama of this period strongly suggests the action is set there.
+
+#### Location string
+- **GT**: Amasya 
+- **Prediction**: Rome
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q170532
+- **Prediction**: Q220
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Classical Antiquity' is broader than the reference 'Ancient Rome'. The predicted timeframe '-500 to 500' partially overlaps with the reference timeframe '112 to 200'. The predicted location 'Rome' is not among the accepted locations, and the location QID 'Q220' is not within the acceptable QIDs.
+    
+
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The excerpt does not contain explicit references to specific historical events, figures, or cultural markers that would indicate a distinct historical period. The themes of love, duty, and fate are universal and not tied to a particular era.
+
+#### Period string
+- **GT**: Ancient Rome
+- **Prediction**: None
+- **Score**: 0.0 
+
+#### Period interval
+- **GT**: 112, 200
+- **Prediction**: None, None
+- **Score**: 0.0
+
+### Location
+
+**Model reasoning**: The excerpt lacks geographic or culturally specific references (e.g., place names, institutions, or contextual details) that would allow identification of the play's setting. The conflict is interpersonal and abstract, with no indication of a real-world location.
+
+#### Location string
+- **GT**: Amasya 
+- **Prediction**: None
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q170532
+- **Prediction**: None
+- **Score**: 0.0
+
+#### Score reasoning
+The prediction did not provide any period, timeframe, or location information, resulting in scores of 0 for all categories.
+    
+
+## ollama:mistral-small:24b-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The play was written by Georges de Scudéry in 1639, which places it firmly within the 17th century. The style and themes are characteristic of French literature from this period.
+
+#### Period string
+- **GT**: Ancient Rome
+- **Prediction**: 17th century France
+- **Score**: 0.0 
+
+#### Period interval
+- **GT**: 112, 200
+- **Prediction**: +1600, +1700
+- **Score**: 0.0
+
+### Location
+
+**Model reasoning**: Georges de Scudéry was a French writer, and the play's title and content suggest a French setting. The language of the excerpt is French.
+
+#### Location string
+- **GT**: Amasya 
+- **Prediction**: France
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q170532
+- **Prediction**: Q142
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period '17th century France' does not match the reference period 'Ancient Rome'. The predicted timeframe (1600-1700) does not overlap with the reference timeframe (112-200). The predicted location 'France' is not among the preferred or accepted locations, and the location QID 'Q142' is not among the accepted QIDs.
+    
+
 ## ollama:mistral-small:24b-prompt-summary.txt
 
 ### Period
@@ -148,74 +216,6 @@ All predicted fields are NaN, which do not match or overlap with the reference v
 - **title**: La disgrâce des domestiques : comédie représentée sur le théâtre royal du Marais / [par J. Chevalier]
 - **publication date**: 1662
 
-
-## ollama:mistral-small:24b-prompt-excerpt.txt
-
-### Period
-
-**Model reasoning**: The play was written by Jean Chevalier and published in 1662, which places it firmly within the 17th century.
-
-#### Period string
-- **GT**: Early modern
-- **Prediction**: 17th century
-- **Score**: 0.5 
-
-#### Period interval
-- **GT**: 1600, 1662
-- **Prediction**: +1600, +1700
-- **Score**: 0.5
-
-### Location
-
-**Model reasoning**: The play was represented on the théâtre royal du Marais in Paris, which is located in France. The language of the excerpt is French.
-
-#### Location string
-- **GT**: Paris
-- **Prediction**: France
-- **Score**: 0.5
-
-#### Location QID
-- **GT**: Q90
-- **Prediction**: Q142
-- **Score**: 0.5
-
-#### Score reasoning
-The predicted period '17th century' is narrower than the reference's 'Early modern', resulting in a partial match. The timeframe '+1600, +1700' partially overlaps with the reference '1600, 1662'. The predicted location 'France' is not the preferred 'Paris' but is an accepted location. Similarly, the predicted location QID 'Q142' is not the preferred 'Q90' but is among the acceptable QIDs.
-    
-
-## ollama:mistral-small:24b-prompt-summary.txt
-
-### Period
-
-**Model reasoning**: The play is titled 'Les Domestiques' and was published in France during the 17th century. The language used, such as 'Guillot', 'Monsieur Policarpe', and other references, suggests a French setting from that era.
-
-#### Period string
-- **GT**: Early modern
-- **Prediction**: 17th Century
-- **Score**: 1.0 
-
-#### Period interval
-- **GT**: 1600, 1662
-- **Prediction**: +1600, +1700
-- **Score**: 0.5
-
-### Location
-
-**Model reasoning**: The play is titled 'Les Domestiques' which is in French and mentions characters with French names like Guillot, Monsieur Policarpe. The context suggests a French setting.
-
-#### Location string
-- **GT**: Paris
-- **Prediction**: France
-- **Score**: 0.5
-
-#### Location QID
-- **GT**: Q90
-- **Prediction**: Q142
-- **Score**: 0.5
-
-#### Score reasoning
-The predicted period '17th Century' is equivalent to the reference period 'Early modern', earning a full score. The prediction timeframe (1600-1700) partially overlaps with the reference timeframe (1600-1662), resulting in a 0.5 score. The predicted location 'France' is not the preferred 'Paris' but is within the accepted locations, thus a 0.5 score. Similarly, the predicted location QID 'Q142' differs from the preferred 'Q90' but is within the acceptable QIDs, leading to a 0.5 score.
-    
 
 ## anthropic:claude-3-7-sonnet-20250219-prompt-excerpt.txt
 
@@ -283,6 +283,142 @@ The predicted period '17th century France' is narrower than the reference 'Early
 
 #### Score reasoning
 The predicted period '17th century France' is more specific than the reference 'Early modern', resulting in a partial match. The predicted timeframe '1600-1699' overlaps partially with the reference '1600-1662'. The predicted location 'France' is within the accepted locations but not the preferred 'Paris'. The predicted location QID 'Q142' is among the acceptable QIDs but not the preferred 'Q90'.
+    
+
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The play was published in 1662 and written in French, aligning with the theatrical traditions of 17th-century France. Comedies of this period often reflected contemporary social dynamics, such as class conflicts between servants and masters, as suggested by the title and excerpt.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: 17th century France
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1662
+- **Prediction**: 1601, 1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The play was performed at the Théâtre Royal du Marais, a historic theater in Paris active during the 17th century. The excerpt's context and the theater's association with Parisian culture strongly suggest the setting.
+
+#### Location string
+- **GT**: Paris
+- **Prediction**: Paris, France
+- **Score**: 1.0
+
+#### Location QID
+- **GT**: Q90
+- **Prediction**: Q90
+- **Score**: 1.0
+
+#### Score reasoning
+The predicted period '17th century France' is narrower than the reference 'Early modern', resulting in a partial match for the period string score of 0.5. The timeframe '1601-1700' partially overlaps with the reference '1600-1662', earning a period interval score of 0.5. The predicted location 'Paris, France' matches the preferred location 'Paris', securing a location string score of 1. Additionally, the location QID 'Q90' exactly matches the reference, resulting in a location QID score of 1.
+    
+
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play was published in 1662, and mentions 'Louis' (likely Louis d'or coins introduced in 1640), aligning with the 17th-century French context. The timeframe reflects the broader historical period of early modern France.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: 17th century
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1662
+- **Prediction**: 1601, 1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The play is written in French, references 'France' in the top_5_places, and the Théâtre du Marais (a Parisian theater) in the title. While 'Portugal' is the top_1_place, it is mentioned only once in a character's travel plan, suggesting the primary setting is France.
+
+#### Location string
+- **GT**: Paris
+- **Prediction**: France
+- **Score**: 0.5
+
+#### Location QID
+- **GT**: Q90
+- **Prediction**: Q142
+- **Score**: 0.5
+
+#### Score reasoning
+The predicted period '17th century' is narrower than the reference 'Early modern'. The timeframe partially overlaps from 1601 to 1662. The location 'France' is accepted but not the preferred location 'Paris', and the QID 'Q142' is acceptable but not preferred.
+    
+
+## ollama:mistral-small:24b-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The play was written by Jean Chevalier and published in 1662, which places it firmly within the 17th century.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: 17th century
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1662
+- **Prediction**: +1600, +1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The play was represented on the théâtre royal du Marais in Paris, which is located in France. The language of the excerpt is French.
+
+#### Location string
+- **GT**: Paris
+- **Prediction**: France
+- **Score**: 0.5
+
+#### Location QID
+- **GT**: Q90
+- **Prediction**: Q142
+- **Score**: 0.5
+
+#### Score reasoning
+The predicted period '17th century' is narrower than the reference's 'Early modern', resulting in a partial match. The timeframe '+1600, +1700' partially overlaps with the reference '1600, 1662'. The predicted location 'France' is not the preferred 'Paris' but is an accepted location. Similarly, the predicted location QID 'Q142' is not the preferred 'Q90' but is among the acceptable QIDs.
+    
+
+## ollama:mistral-small:24b-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play is titled 'Les Domestiques' and was published in France during the 17th century. The language used, such as 'Guillot', 'Monsieur Policarpe', and other references, suggests a French setting from that era.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: 17th Century
+- **Score**: 1.0 
+
+#### Period interval
+- **GT**: 1600, 1662
+- **Prediction**: +1600, +1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The play is titled 'Les Domestiques' which is in French and mentions characters with French names like Guillot, Monsieur Policarpe. The context suggests a French setting.
+
+#### Location string
+- **GT**: Paris
+- **Prediction**: France
+- **Score**: 0.5
+
+#### Location QID
+- **GT**: Q90
+- **Prediction**: Q142
+- **Score**: 0.5
+
+#### Score reasoning
+The predicted period '17th Century' is equivalent to the reference period 'Early modern', earning a full score. The prediction timeframe (1600-1700) partially overlaps with the reference timeframe (1600-1662), resulting in a 0.5 score. The predicted location 'France' is not the preferred 'Paris' but is within the accepted locations, thus a 0.5 score. Similarly, the predicted location QID 'Q142' differs from the preferred 'Q90' but is within the acceptable QIDs, leading to a 0.5 score.
     
     
 # Document ID: bpt6k57899298
@@ -360,6 +496,74 @@ The predicted period 'Ancient Rome' does not match the reference period 'Ancient
 The predicted period 'Ancient Rome' does not match the reference period 'Ancient Greece'. The predicted timeframe '-50, 50' does not overlap with the reference timeframe '-1000, -700'. The predicted location 'Rome' is not among the accepted locations 'Corinth' or 'Greece'. Additionally, the predicted location QID 'Q220' is not listed in the acceptable location QIDs 'Q103011' or 'Q41'.
     
 
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play mentions 'César' and 'Cæsar' (Julius Caesar) and 'Rome' as a central location, which strongly suggests a Roman Republic setting. The presence of a character named 'César' and references to Roman political conflicts align with the late Roman Republic period (1st century BCE).
+
+#### Period string
+- **GT**: Ancient Greece
+- **Prediction**: Roman Republic
+- **Score**: 0.0 
+
+#### Period interval
+- **GT**: -1000, -700
+- **Prediction**: -100, -44
+- **Score**: 0.0
+
+### Location
+
+**Model reasoning**: Rome is the top-mentioned place (frequency: 14) and is directly tied to political and military conflicts in the provided sentences. References to Roman glory, César, and the Latin Empire further solidify Rome as the primary setting.
+
+#### Location string
+- **GT**: Corinth
+- **Prediction**: Rome
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q103011
+- **Prediction**: Q220
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Roman Republic' does not match the reference period 'Ancient Greece'. The timeframe '-100 to -44' does not overlap with the reference timeframe '-1000 to -700'. The predicted location 'Rome' is neither the preferred location 'Corinth' nor among the accepted locations 'Corinth | Greece'. The predicted location QID 'Q220' does not match the preferred QID 'Q103011' and is not among the acceptable QIDs 'Q103011 | Q41'.
+    
+
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The play's elevated language, references to divine intervention ('le ciel'), and tragic themes align with 17th-century French neoclassical tragedies, which often drew from ancient Greek or Roman settings. The author, Jean de Rotrou, was part of a literary tradition inspired by classical antiquity.
+
+#### Period string
+- **GT**: Ancient Greece
+- **Prediction**: Classical antiquity
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: -1000, -700
+- **Prediction**: -500, -100
+- **Score**: 0.0
+
+### Location
+
+**Model reasoning**: The excerpt lacks explicit geographic markers, but the neoclassical style and tragic genre typical of Rotrou's contemporaries (e.g., Racine, Corneille) strongly suggest an ancient Greek setting, common in 17th-century French tragedies.
+
+#### Location string
+- **GT**: Corinth
+- **Prediction**: Ancient Greece
+- **Score**: 0.5
+
+#### Location QID
+- **GT**: Q103011
+- **Prediction**: Q11772
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Classical antiquity' is broader than the reference 'Ancient Greece'. The predicted timeframe (-500 to -100) does not overlap with the reference timeframe (-1000 to -700). The predicted location 'Ancient Greece' is within the accepted locations. The predicted location QID 'Q11772' is not among the acceptable QIDs.
+    
+
 ## ollama:mistral-small:24b-prompt-excerpt.txt
 
 ### Period
@@ -435,40 +639,6 @@ The predicted period ('Roman Empire') does not match the reference period ('Anci
 - **publication date**: 1672
 
 
-## ollama:mistral-small:24b-prompt-excerpt.txt
-
-### Period
-
-**Model reasoning**: The names 'Pirithous' and 'Ariane' are associated with ancient Greek mythology. Pirithous is a figure from Greek mythology, known for his friendship with Theseus. Ariadne (Ariane in French) is also a figure from Greek mythology, daughter of King Minos of Crete.
-
-#### Period string
-- **GT**: Ancient Greece
-- **Prediction**: Ancient Greek Mythology
-- **Score**: 0.5 
-
-#### Period interval
-- **GT**: -900, -701
-- **Prediction**: -1200, -800
-- **Score**: 0.5
-
-### Location
-
-**Model reasoning**: The characters and themes mentioned in the excerpt are rooted in ancient Greek mythology, which is closely associated with Greece.
-
-#### Location string
-- **GT**: Naxos
-- **Prediction**: Greece
-- **Score**: 0.5
-
-#### Location QID
-- **GT**: Q188527
-- **Prediction**: Q145
-- **Score**: 0.0
-
-#### Score reasoning
-The predicted period 'Ancient Greek Mythology' is narrower than the reference period 'Ancient Greece', resulting in a partial score. The predicted timeframe '-1200, -800' partially overlaps with the reference timeframe '-900, -701'. The predicted location 'Greece' is within the accepted locations. However, the predicted location QID 'Q145' is not among the acceptable QIDs.
-    
-
 ## anthropic:claude-3-7-sonnet-20250219-prompt-summary.txt
 
 ### Period
@@ -537,6 +707,108 @@ The period strings match exactly. The predicted timeframe partially overlaps wit
 The period string 'Ancient Greek era' is equivalent to the reference 'Ancient Greece' (1 point). The timeframe '-1200, -700' partially overlaps with the reference '-900, -701' (0.5 points). The location 'Crete/Ancient Greece' is not among the accepted locations 'Naxos | Cyclades | Greece' (0 points). The location QID 'Q34374' is not within the acceptable QIDs 'Q188527 | Q171132 | Q41' (0 points).
     
 
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The characters 'Ariane' (Ariadne) and 'Pirithous' are figures from Greek mythology, specifically linked to the myth of Theseus and the Minotaur. The reference to a 'grand Roi' (great king) and mythological themes place the play in the context of ancient Greek legends.
+
+#### Period string
+- **GT**: Ancient Greece
+- **Prediction**: Ancient Greece
+- **Score**: 1.0 
+
+#### Period interval
+- **GT**: -900, -701
+- **Prediction**: -1600, -1100
+- **Score**: 0.0
+
+### Location
+
+**Model reasoning**: Ariadne is a Cretan princess in Greek mythology, and her story with Theseus and the Minotaur is set in Crete. The mention of a throne and mythological context strongly suggests Crete as the location.
+
+#### Location string
+- **GT**: Naxos
+- **Prediction**: Crete
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q188527
+- **Prediction**: Q34374
+- **Score**: 0.0
+
+#### Score reasoning
+The period string in the prediction matches exactly with the reference. However, the period intervals do not overlap. The predicted location 'Crete' is not among the accepted locations, and its QID 'Q34374' is not listed in the acceptable location QIDs.
+    
+
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play features characters from Greek mythology (Ariane/Ariadne, Phédre/Phaedra) and references to Athens, indicating a setting tied to the mythological era of Ancient Greece.
+
+#### Period string
+- **GT**: Ancient Greece
+- **Prediction**: Ancient Greece
+- **Score**: 1.0 
+
+#### Period interval
+- **GT**: -900, -701
+- **Prediction**: -1300, -1200
+- **Score**: 0.0
+
+### Location
+
+**Model reasoning**: The play's context lists 'Athènes' as a frequently mentioned place, and the mythological characters (e.g., Ariadne, Phaedra) are closely associated with ancient Athens in Greek myth.
+
+#### Location string
+- **GT**: Naxos
+- **Prediction**: Athènes
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q188527
+- **Prediction**: Q1524
+- **Score**: 0.0
+
+#### Score reasoning
+The period string matches exactly, earning 1 point. The predicted timeframe does not overlap with the reference timeframe, resulting in 0 points. The predicted location 'Athènes' is neither the preferred location 'Naxos' nor among the accepted locations 'Cyclades' or 'Greece', leading to 0 points. The predicted location QID 'Q1524' is not among the acceptable QIDs 'Q188527', 'Q171132', or 'Q41', resulting in 0 points.
+    
+
+## ollama:mistral-small:24b-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The names 'Pirithous' and 'Ariane' are associated with ancient Greek mythology. Pirithous is a figure from Greek mythology, known for his friendship with Theseus. Ariadne (Ariane in French) is also a figure from Greek mythology, daughter of King Minos of Crete.
+
+#### Period string
+- **GT**: Ancient Greece
+- **Prediction**: Ancient Greek Mythology
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: -900, -701
+- **Prediction**: -1200, -800
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The characters and themes mentioned in the excerpt are rooted in ancient Greek mythology, which is closely associated with Greece.
+
+#### Location string
+- **GT**: Naxos
+- **Prediction**: Greece
+- **Score**: 0.5
+
+#### Location QID
+- **GT**: Q188527
+- **Prediction**: Q145
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Ancient Greek Mythology' is narrower than the reference period 'Ancient Greece', resulting in a partial score. The predicted timeframe '-1200, -800' partially overlaps with the reference timeframe '-900, -701'. The predicted location 'Greece' is within the accepted locations. However, the predicted location QID 'Q145' is not among the acceptable QIDs.
+    
+
 ## ollama:mistral-small:24b-prompt-summary.txt
 
 ### Period
@@ -577,40 +849,6 @@ The period in the prediction matches the reference exactly, scoring 1. The predi
 - **title**: La Comédie des comédies, traduite d'italien en langage de l'Orateur François
 - **publication date**: 1629
 
-
-## ollama:mistral-small:24b-prompt-excerpt.txt
-
-### Period
-
-**Model reasoning**: The excerpt mentions 'le Royaume même des Romains', which translates to 'the Kingdom of the Romans'. This suggests that the play is set in Ancient Rome.
-
-#### Period string
-- **GT**: Early modern
-- **Prediction**: Ancient Rome
-- **Score**: 0.0 
-
-#### Period interval
-- **GT**: 1600, 1629
-- **Prediction**: -753, 476
-- **Score**: 0.0
-
-### Location
-
-**Model reasoning**: The mention of 'le Royaume même des Romains' indicates that the setting is likely Rome, which was the capital of the Roman Empire.
-
-#### Location string
-- **GT**: France
-- **Prediction**: Rome, Italy
-- **Score**: 0.0
-
-#### Location QID
-- **GT**: Q142
-- **Prediction**: Q253
-- **Score**: 0.0
-
-#### Score reasoning
-The predicted period 'Ancient Rome' does not match the reference period 'Early modern'. The timeframe '-753, 476' does not overlap with the reference timeframe '1600, 1629'. The predicted location 'Rome, Italy' differs from the preferred location 'France' and is not among accepted locations. The predicted location QID 'Q253' differs from the preferred QID 'Q142' and is not among acceptable location QIDs.
-    
 
 ## anthropic:claude-3-7-sonnet-20250219-prompt-excerpt.txt
 
@@ -680,6 +918,108 @@ The predicted period 'Renaissance or early 17th century' is broader than the ref
 The predicted period 'Early 17th century' is narrower than the reference 'Early modern', resulting in a score of 0.5. The predicted timeframe '1600-1650' partially overlaps with the reference timeframe '1600-1629', resulting in a score of 0.5. The predicted location 'France' and its QID 'Q142' exactly match the reference, resulting in full scores of 1 for both location string and location QID.
     
 
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The play is a 17th-century French adaptation of an Italian work, likely reflecting the Renaissance or Early Modern Period. Commedia dell'arte characters like Pantalon (Pantalone) were prominent in this era, and the architectural references align with post-Roman European settings.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: Early Modern Period
+- **Score**: 1.0 
+
+#### Period interval
+- **GT**: 1600, 1629
+- **Prediction**: 1500, 1650
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The title specifies a translation from Italian, and characters like Pantalon (Pantalone) and Le Docteur are staples of Italian commedia dell'arte. The mention of 'Royaume même des Romains' may allude to Italy's historical ties to Roman heritage.
+
+#### Location string
+- **GT**: France
+- **Prediction**: Italy
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q142
+- **Prediction**: Q38
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Early Modern Period' is equivalent to the reference 'Early modern', earning full points. The predicted timeframe '1500-1650' partially overlaps with the reference timeframe '1600-1629', resulting in a partial score. The predicted location 'Italy' does not match or fall within the accepted locations 'France', and the location QID 'Q38' does not match the preferred QID 'Q142' nor is it among the acceptable QIDs, leading to zero points for both location string and QID.
+    
+
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play references locations like Paris and Rome as contemporary seats of governance, mentions the Duc de Venise (Duke of Venice), and includes characters like Paladin and Capitan, which align with early modern European settings. The publication date (1629) and the blend of classical references (e.g., Cicero, ancient Rome) with early modern institutions suggest this period.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: Early Modern Period
+- **Score**: 1.0 
+
+#### Period interval
+- **GT**: 1600, 1629
+- **Prediction**: 1500, 1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: Rome is the most frequently mentioned place (frequency: 8) and is discussed in contexts like governance, historical comparisons to ancient consuls, and the Pope's influence. Other mentions (e.g., Paris, France) are secondary, suggesting Rome as the primary setting.
+
+#### Location string
+- **GT**: France
+- **Prediction**: Rome
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q142
+- **Prediction**: Q220
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Early Modern Period' matches the reference 'Early modern', earning full points. The predicted timeframe 1500-1700 partially overlaps with the reference timeframe 1600-1629, resulting in a partial score. The predicted location 'Rome' does not match or fall within the accepted locations 'France', and the location QID 'Q220' differs from the reference QID 'Q142' with no overlap, leading to zero scores for both location string and QID.
+    
+
+## ollama:mistral-small:24b-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The excerpt mentions 'le Royaume même des Romains', which translates to 'the Kingdom of the Romans'. This suggests that the play is set in Ancient Rome.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: Ancient Rome
+- **Score**: 0.0 
+
+#### Period interval
+- **GT**: 1600, 1629
+- **Prediction**: -753, 476
+- **Score**: 0.0
+
+### Location
+
+**Model reasoning**: The mention of 'le Royaume même des Romains' indicates that the setting is likely Rome, which was the capital of the Roman Empire.
+
+#### Location string
+- **GT**: France
+- **Prediction**: Rome, Italy
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q142
+- **Prediction**: Q253
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Ancient Rome' does not match the reference period 'Early modern'. The timeframe '-753, 476' does not overlap with the reference timeframe '1600, 1629'. The predicted location 'Rome, Italy' differs from the preferred location 'France' and is not among accepted locations. The predicted location QID 'Q253' differs from the preferred QID 'Q142' and is not among acceptable location QIDs.
+    
+
 ## ollama:mistral-small:24b-prompt-summary.txt
 
 ### Period
@@ -720,74 +1060,6 @@ The predicted period string 'Early Modern Period' is equivalent to the reference
 - **title**: La Diane comédie . Par le Sieur Rotrou. Dédiée à Monsieur le comte de Fiesque
 - **publication date**: 1635
 
-
-## ollama:mistral-small:24b-prompt-summary.txt
-
-### Period
-
-**Model reasoning**: The play was published in 1635, and it is a XVII century work. The language and style are consistent with the 17th-century French literature.
-
-#### Period string
-- **GT**: Early modern
-- **Prediction**: 17th century
-- **Score**: 0.5 
-
-#### Period interval
-- **GT**: 1600, 1635
-- **Prediction**: +1600, +1700
-- **Score**: 0.5
-
-### Location
-
-**Model reasoning**: The play mentions Paris, which is a significant location in France. Additionally, the author Jean de Rotrou was a French playwright.
-
-#### Location string
-- **GT**: Paris
-- **Prediction**: France
-- **Score**: 0.5
-
-#### Location QID
-- **GT**: Q90
-- **Prediction**: Q142
-- **Score**: 0.5
-
-#### Score reasoning
-The predicted period '17th century' is narrower than the reference 'Early modern'. The predicted timeframe (1600-1700) partially overlaps with the reference timeframe (1600-1635). The location 'France' is accepted but not the preferred 'Paris'. The location QID 'Q142' is acceptable as it is listed among the acceptable QIDs.
-    
-
-## ollama:mistral-small:24b-prompt-excerpt.txt
-
-### Period
-
-**Model reasoning**: The play is written by Jean de Rotrou, a French playwright from the XVII century. The Renaissance period in France spans from the late XV to the early XVII century.
-
-#### Period string
-- **GT**: Early modern
-- **Prediction**: Renaissance
-- **Score**: 0.5 
-
-#### Period interval
-- **GT**: 1600, 1635
-- **Prediction**: -1400, +1650
-- **Score**: 0.5
-
-### Location
-
-**Model reasoning**: Jean de Rotrou is a French playwright, and the title of the play includes 'Monsieur le comte de Fiesque,' which suggests a French setting.
-
-#### Location string
-- **GT**: Paris
-- **Prediction**: France
-- **Score**: 0.5
-
-#### Location QID
-- **GT**: Q90
-- **Prediction**: Q142
-- **Score**: 0.5
-
-#### Score reasoning
-The predicted period 'Renaissance' partially overlaps with the reference's 'Early modern'. The predicted timeframe from 1400 to 1650 partly overlaps with the reference's 1600 to 1635. The predicted location 'France' is among the reference's accepted locations 'Paris | France'. The predicted location QID 'Q142' is listed as acceptable in the reference's acceptable location QIDs 'Q90 | Q142'.
-    
 
 ## anthropic:claude-3-7-sonnet-20250219-prompt-summary.txt
 
@@ -856,6 +1128,142 @@ The predicted period 'Early 17th century' is narrower than the reference 'Early 
 #### Score reasoning
 All predicted fields are missing or invalid (NaN), resulting in zero scores for period string, period interval, location string, and location QID.
     
+
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play was published in 1635, during the early 17th century, and the frequent mentions of Paris and France suggest a contemporary setting typical of French comedies from this period. The lack of references to ancient or medieval contexts further supports this timeframe.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: Early Modern France
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1635
+- **Prediction**: 1600, 1650
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: Paris is the most frequently mentioned place (frequency: 10), with multiple sentences explicitly referencing characters' activities and events in Paris. Boulogne is also mentioned, but Paris is central to the narrative.
+
+#### Location string
+- **GT**: Paris
+- **Prediction**: Paris, France
+- **Score**: 1.0
+
+#### Location QID
+- **GT**: Q90
+- **Prediction**: Q90
+- **Score**: 1.0
+
+#### Score reasoning
+The predicted period 'Early Modern France' is slightly more specific than the reference 'Early modern', earning 0.5 points. The timeframe '1600-1650' partially overlaps with the reference '1600-1635', earning 0.5 points. The predicted location 'Paris, France' is equivalent to the reference 'Paris', earning 1 point. The location QID 'Q90' matches the reference, earning 1 point.
+    
+
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The play's title references Diana (Roman goddess) and contains classical mythological elements common in 17th-century French neoclassical theater
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: Classical Antiquity
+- **Score**: 0.0 
+
+#### Period interval
+- **GT**: 1600, 1635
+- **Prediction**: -100, 100
+- **Score**: 0.0
+
+### Location
+
+**Model reasoning**: Diana is a Roman deity, and French neoclassical plays frequently used Greco-Roman settings
+
+#### Location string
+- **GT**: Paris
+- **Prediction**: Ancient Rome
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q90
+- **Prediction**: Q220
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Classical Antiquity' does not match the reference period 'Early modern'. The predicted timeframe '-100, 100' does not overlap with the reference timeframe '1600, 1635'. The predicted location 'Ancient Rome' is neither the preferred location 'Paris' nor listed in the accepted locations 'Paris | France'. Additionally, the predicted location QID 'Q220' does not match the preferred QID 'Q90' and is not among the acceptable QIDs 'Q90 | Q142'.
+    
+
+## ollama:mistral-small:24b-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play was published in 1635, and it is a XVII century work. The language and style are consistent with the 17th-century French literature.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: 17th century
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1635
+- **Prediction**: +1600, +1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The play mentions Paris, which is a significant location in France. Additionally, the author Jean de Rotrou was a French playwright.
+
+#### Location string
+- **GT**: Paris
+- **Prediction**: France
+- **Score**: 0.5
+
+#### Location QID
+- **GT**: Q90
+- **Prediction**: Q142
+- **Score**: 0.5
+
+#### Score reasoning
+The predicted period '17th century' is narrower than the reference 'Early modern'. The predicted timeframe (1600-1700) partially overlaps with the reference timeframe (1600-1635). The location 'France' is accepted but not the preferred 'Paris'. The location QID 'Q142' is acceptable as it is listed among the acceptable QIDs.
+    
+
+## ollama:mistral-small:24b-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The play is written by Jean de Rotrou, a French playwright from the XVII century. The Renaissance period in France spans from the late XV to the early XVII century.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: Renaissance
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1635
+- **Prediction**: -1400, +1650
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: Jean de Rotrou is a French playwright, and the title of the play includes 'Monsieur le comte de Fiesque,' which suggests a French setting.
+
+#### Location string
+- **GT**: Paris
+- **Prediction**: France
+- **Score**: 0.5
+
+#### Location QID
+- **GT**: Q90
+- **Prediction**: Q142
+- **Score**: 0.5
+
+#### Score reasoning
+The predicted period 'Renaissance' partially overlaps with the reference's 'Early modern'. The predicted timeframe from 1400 to 1650 partly overlaps with the reference's 1600 to 1635. The predicted location 'France' is among the reference's accepted locations 'Paris | France'. The predicted location QID 'Q142' is listed as acceptable in the reference's acceptable location QIDs 'Q90 | Q142'.
+    
     
 # Document ID: bpt6k61251657
 
@@ -863,40 +1271,6 @@ All predicted fields are missing or invalid (NaN), resulting in zero scores for 
 - **title**: L'Innocent exilé . Tragi-comédie
 - **publication date**: 1640
 
-
-## ollama:mistral-small:24b-prompt-excerpt.txt
-
-### Period
-
-**Model reasoning**: nan
-
-#### Period string
-- **GT**: Ancient Rome
-- **Prediction**: nan
-- **Score**: 0.0 
-
-#### Period interval
-- **GT**: -27, 510
-- **Prediction**: nan, nan
-- **Score**: 0.0
-
-### Location
-
-**Model reasoning**: nan
-
-#### Location string
-- **GT**: Persia
-- **Prediction**: nan
-- **Score**: 0.0
-
-#### Location QID
-- **GT**: Q794
-- **Prediction**: nan
-- **Score**: 0.0
-
-#### Score reasoning
-The prediction contains NaN or invalid values for all fields, resulting in no matches with the reference data.
-    
 
 ## anthropic:claude-3-7-sonnet-20250219-prompt-summary.txt
 
@@ -966,6 +1340,108 @@ The predicted period 'Ancient Persian Empire' differs from the reference period 
 The prediction period is broader than the reference. The timeframes partially overlap. The predicted location and location QID do not match or are not among the accepted values.
     
 
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The themes of honor, love, and divine intervention, along with the character name 'Arthenice' (potentially a variation of Artemisia, a figure from ancient history), suggest a setting in Classical Antiquity, common in 17th-century French tragicomedies.
+
+#### Period string
+- **GT**: Ancient Rome
+- **Prediction**: Classical Antiquity
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: -27, 510
+- **Prediction**: -500, 100
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The excerpt does not provide explicit geographic references, and 'Arthenice' is too ambiguous to conclusively link to a specific historical location. The play's title and themes do not offer sufficient clues to determine a precise setting.
+
+#### Location string
+- **GT**: Persia
+- **Prediction**: None
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q794
+- **Prediction**: None
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Classical Antiquity' is broader than the reference 'Ancient Rome', resulting in a 0.5 score for period string. The predicted timeframe (-500 to 100) partially overlaps with the reference timeframe (-27 to 510), leading to a 0.5 score for period interval. No location was predicted, resulting in scores of 0 for both location string and location QID.
+    
+
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play is set in Persia, but there is insufficient information in the provided context to determine a specific historical period. The text does not mention events, rulers, or other details that would allow pinpointing a timeframe.
+
+#### Period string
+- **GT**: Ancient Rome
+- **Prediction**: None
+- **Score**: 0.0 
+
+#### Period interval
+- **GT**: -27, 510
+- **Prediction**: None, None
+- **Score**: 0.0
+
+### Location
+
+**Model reasoning**: The play's context frequently mentions 'Perse' (Persia) as a key location, including the statement 'La Scène est en Perse' (The scene is in Persia). The top_1_place entity is 'Perse' with a frequency of 6.
+
+#### Location string
+- **GT**: Persia
+- **Prediction**: Perse
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q794
+- **Prediction**: Q161243
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period is null, differing from the reference 'Ancient Rome'. The predicted timeframe 'None, None' does not overlap with the reference '-27, 510'. The predicted location 'Perse' is neither equivalent to the preferred location 'Persia' nor listed among the accepted locations 'Persia | Iran'. Additionally, the predicted location QID 'Q161243' does not match the reference QID 'Q794' and is not among the acceptable location QIDs.
+    
+
+## ollama:mistral-small:24b-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: nan
+
+#### Period string
+- **GT**: Ancient Rome
+- **Prediction**: nan
+- **Score**: 0.0 
+
+#### Period interval
+- **GT**: -27, 510
+- **Prediction**: nan, nan
+- **Score**: 0.0
+
+### Location
+
+**Model reasoning**: nan
+
+#### Location string
+- **GT**: Persia
+- **Prediction**: nan
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q794
+- **Prediction**: nan
+- **Score**: 0.0
+
+#### Score reasoning
+The prediction contains NaN or invalid values for all fields, resulting in no matches with the reference data.
+    
+
 ## ollama:mistral-small:24b-prompt-summary.txt
 
 ### Period
@@ -1006,40 +1482,6 @@ The predicted period 'Ancient Persia' differs from the reference period 'Ancient
 - **title**: La femme juge et partie . Comedie. Par A. J. Montfleury
 - **publication date**: 1669
 
-
-## ollama:mistral-small:24b-prompt-summary.txt
-
-### Period
-
-**Model reasoning**: The play was written by Montfleury and published in 1669, which places it firmly within the 17th century.
-
-#### Period string
-- **GT**: Early modern
-- **Prediction**: 17th century
-- **Score**: 0.5 
-
-#### Period interval
-- **GT**: 1600, 1669
-- **Prediction**: +1600, +1700
-- **Score**: 0.5
-
-### Location
-
-**Model reasoning**: The play mentions Paris as a significant place, but there is no explicit indication that the action of the play takes place in Paris or any other specific location.
-
-#### Location string
-- **GT**: Faro
-- **Prediction**: None
-- **Score**: 0.0
-
-#### Location QID
-- **GT**: Q159457
-- **Prediction**: None
-- **Score**: 0.0
-
-#### Score reasoning
-The predicted period '17th century' is narrower than the reference 'Early modern'. The predicted timeframe overlaps partially with the reference. The predicted location is 'None', which is not accepted, and no valid location QID was provided.
-    
 
 ## anthropic:claude-3-7-sonnet-20250219-prompt-summary.txt
 
@@ -1109,6 +1551,108 @@ The predicted period '17th century' is narrower than the reference 'Early modern
 The predicted period '17th century France' is narrower than the reference period 'Early modern' (score 0.5). The predicted timeframe '1600, 1699' partially overlaps with the reference timeframe '1600, 1669' (score 0.5). The predicted location 'France' does not match the preferred location 'Faro' and is not among the accepted locations (score 0). The predicted location QID 'Q142' does not match the preferred QID and is not among the acceptable location QIDs (score 0).
     
 
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play was published in 1669 by a French author, Montfleury, aligning with the 17th-century French theatrical tradition. The mention of royal privileges and Paris in the context (though likely part of publication metadata) supports a contemporary setting.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: 17th century France (Ancien Régime)
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1669
+- **Prediction**: 1601, 1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: While 'Paris' is the top-mentioned place, its mentions in the provided sentences relate to publication privileges rather than the play's narrative. Other locations like Venise, Rome, and France lack direct narrative context to confirm the setting.
+
+#### Location string
+- **GT**: Faro
+- **Prediction**: None
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q159457
+- **Prediction**: None
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period '17th century France (Ancien Régime)' is more specific than the reference 'Early modern', resulting in a score of 0.5. The predicted timeframe '1601-1700' partially overlaps with the reference timeframe '1600-1669', also earning a score of 0.5. No location was provided in the prediction, leading to scores of 0 for both location string and QID.
+    
+
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The play was published in 1669 by a French author, and the excerpt references fashion elements (rubans, points, dentelle) and social customs characteristic of 17th-century French bourgeoisie. The comedic critique of marriage rituals aligns with contemporaneous French theater traditions.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: 17th century France
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1669
+- **Prediction**: 1601, 1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The author Montfleury was active in French theater, the original title is in French, and the described social conventions/marriage customs reflect early modern French urban settings typical of 17th-century comedies.
+
+#### Location string
+- **GT**: Faro
+- **Prediction**: France
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q159457
+- **Prediction**: Q142
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period '17th century France' is narrower than the reference 'Early modern', hence scored 0.5. The timeframe '1601-1700' partially overlaps with the reference '1600-1669', scoring 0.5. The predicted location 'France' is not among the accepted locations 'Faro | Portugal', resulting in a score of 0 for location string. The predicted location QID 'Q142' is not within the acceptable QIDs 'Q159457 | Q45', thus scored 0.
+    
+
+## ollama:mistral-small:24b-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play was written by Montfleury and published in 1669, which places it firmly within the 17th century.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: 17th century
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1669
+- **Prediction**: +1600, +1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The play mentions Paris as a significant place, but there is no explicit indication that the action of the play takes place in Paris or any other specific location.
+
+#### Location string
+- **GT**: Faro
+- **Prediction**: None
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q159457
+- **Prediction**: None
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period '17th century' is narrower than the reference 'Early modern'. The predicted timeframe overlaps partially with the reference. The predicted location is 'None', which is not accepted, and no valid location QID was provided.
+    
+
 ## ollama:mistral-small:24b-prompt-excerpt.txt
 
 ### Period
@@ -1149,40 +1693,6 @@ The predicted period '17th century' is narrower than the reference 'Early modern
 - **title**: Les chastes et loyales amours de Théagène et Cariclée , réduites du grec de l'Histoire d'Héliodore en huict poèmes dragmatiques ou théâtres consécutifs, par Alexandre Hardy, Parisien
 - **publication date**: 1623
 
-
-## ollama:mistral-small:24b-prompt-summary.txt
-
-### Period
-
-**Model reasoning**: The text mentions 'Memphis', which is an ancient city in Egypt, and references to 'Pontife' and 'Monarque de Perse' suggest a connection to the Persian Empire. The mention of 'Eunuque' and 'Prêtrise' also indicates an ancient setting.
-
-#### Period string
-- **GT**: Ancient Greece
-- **Prediction**: Ancient Egypt and Persian Empire
-- **Score**: 0.0 
-
-#### Period interval
-- **GT**: -400, -300
-- **Prediction**: -300, +500
-- **Score**: 0.5
-
-### Location
-
-**Model reasoning**: The text explicitly mentions 'Memphis', which is a well-known city in ancient Egypt. Additionally, the mention of 'Pontife' and religious practices aligns with the historical context of Memphis.
-
-#### Location string
-- **GT**: Egypt
-- **Prediction**: Memphis, Egypt
-- **Score**: 0.5
-
-#### Location QID
-- **GT**: Q79
-- **Prediction**: Q187049
-- **Score**: 0.0
-
-#### Score reasoning
-The predicted period 'Ancient Egypt and Persian Empire' differs from the reference period 'Ancient Greece'. The prediction timeframe '-300, +500' partly overlaps with the reference timeframe '-400, -300' at -300. The predicted location 'Memphis, Egypt' is within the accepted locations but is more specific than the preferred location 'Egypt'. The location QID 'Q187049' is not among the accepted QIDs.
-    
 
 ## anthropic:claude-3-7-sonnet-20250219-prompt-summary.txt
 
@@ -1252,6 +1762,108 @@ The predicted period 'Ancient Egypt during Persian rule' differs from the refere
 The period strings match exactly, earning 1 point. The timeframe intervals overlap only at -300, resulting in a partial overlap and a score of 0.5. The predicted locations include accepted locations but do not match the preferred location exactly, awarding 0.5 points. The predicted location QID does not match or fall within the acceptable QIDs, resulting in a score of 0.
     
 
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The play is based on Heliodorus's 'Aethiopica', a Greek novel from the 3rd–4th century CE. The reference to pagan gods ('Les Dieux') and the original work's Hellenistic-Roman context suggest a Late Antiquity setting.
+
+#### Period string
+- **GT**: Ancient Greece
+- **Prediction**: Late Antiquity
+- **Score**: 0.0 
+
+#### Period interval
+- **GT**: -400, -300
+- **Prediction**: 200, 400
+- **Score**: 0.0
+
+### Location
+
+**Model reasoning**: Heliodorus's 'Aethiopica' centers on Ethiopian royalty (Chariclea, the protagonist, is Ethiopian). The play's title and characters (Théagène et Cariclée) directly reference this narrative, situating the action in Ethiopia.
+
+#### Location string
+- **GT**: Egypt
+- **Prediction**: Ancient Ethiopia
+- **Score**: 0.5
+
+#### Location QID
+- **GT**: Q79
+- **Prediction**: Q115
+- **Score**: 0.5
+
+#### Score reasoning
+The predicted period 'Late Antiquity' does not match the reference period 'Ancient Greece'. The predicted timeframe '200, 400' does not overlap with the reference timeframe '-400, -300'. The predicted location 'Ancient Ethiopia' is within the accepted locations. The predicted location QID 'Q115' is among the acceptable location QIDs.
+    
+
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play is based on Heliodorus's 'Aethiopica', set during Persian rule over Egypt. Mentions of Memphis (ancient Egyptian city), Persian names (Arsace, Orondate), and references to Persian political structures (eunuques, Prince Orondate) indicate a context of Achaemenid control over Egypt (6th–4th century BCE).
+
+#### Period string
+- **GT**: Ancient Greece
+- **Prediction**: Late Period of ancient Egypt (Achaemenid rule)
+- **Score**: 0.0 
+
+#### Period interval
+- **GT**: -400, -300
+- **Prediction**: -525, -332
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: Memphis is explicitly listed as the top mentioned place with 12 occurrences. As the ancient capital of Lower Egypt and a key religious/political center, its prominence aligns with the Persian administrative context described in the text.
+
+#### Location string
+- **GT**: Egypt
+- **Prediction**: Memphis, Egypt
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q79
+- **Prediction**: Q9072
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period differs from the reference period. The timeframe overlaps partially. The location 'Memphis, Egypt' is not the preferred location and is not included in the list of accepted locations. The location QID 'Q9072' is not among the acceptable QIDs.
+    
+
+## ollama:mistral-small:24b-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The text mentions 'Memphis', which is an ancient city in Egypt, and references to 'Pontife' and 'Monarque de Perse' suggest a connection to the Persian Empire. The mention of 'Eunuque' and 'Prêtrise' also indicates an ancient setting.
+
+#### Period string
+- **GT**: Ancient Greece
+- **Prediction**: Ancient Egypt and Persian Empire
+- **Score**: 0.0 
+
+#### Period interval
+- **GT**: -400, -300
+- **Prediction**: -300, +500
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The text explicitly mentions 'Memphis', which is a well-known city in ancient Egypt. Additionally, the mention of 'Pontife' and religious practices aligns with the historical context of Memphis.
+
+#### Location string
+- **GT**: Egypt
+- **Prediction**: Memphis, Egypt
+- **Score**: 0.5
+
+#### Location QID
+- **GT**: Q79
+- **Prediction**: Q187049
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Ancient Egypt and Persian Empire' differs from the reference period 'Ancient Greece'. The prediction timeframe '-300, +500' partly overlaps with the reference timeframe '-400, -300' at -300. The predicted location 'Memphis, Egypt' is within the accepted locations but is more specific than the preferred location 'Egypt'. The location QID 'Q187049' is not among the accepted QIDs.
+    
+
 ## ollama:mistral-small:24b-prompt-excerpt.txt
 
 ### Period
@@ -1292,40 +1904,6 @@ The period string matches exactly. The timeframe partially overlaps. The locatio
 - **title**: Alizon, comédie Desdiée au jeunes veufves & aux vieilles filles
 - **publication date**: 1637
 
-
-## ollama:mistral-small:24b-prompt-excerpt.txt
-
-### Period
-
-**Model reasoning**: nan
-
-#### Period string
-- **GT**: Early modern
-- **Prediction**: nan
-- **Score**: 0.0 
-
-#### Period interval
-- **GT**: 1600, 1637
-- **Prediction**: nan, nan
-- **Score**: 0.0
-
-### Location
-
-**Model reasoning**: nan
-
-#### Location string
-- **GT**: Paris
-- **Prediction**: nan
-- **Score**: 0.0
-
-#### Location QID
-- **GT**: Q90
-- **Prediction**: nan
-- **Score**: 0.0
-
-#### Score reasoning
-All predicted fields are invalid (NaN), resulting in zero scores for period string, period interval, location string, and location QID.
-    
 
 ## anthropic:claude-3-7-sonnet-20250219-prompt-excerpt.txt
 
@@ -1395,6 +1973,108 @@ The predicted period '17th century' is narrower than the reference's 'Early mode
 The period string in the prediction ('17th century France during the reign of Louis XIII') is more specific than the reference ('Early modern'), resulting in a score of 0.5. The period interval in the prediction (1610-1643) partially overlaps with the reference timeframe (1600-1637), hence a score of 0.5. The location string matches the preferred location ('Paris'), earning a score of 1. The location QID matches the preferred location QID ('Q90'), also earning a score of 1.
     
 
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The play was published in 1637, during the 17th century, and French theater of this era often reflected contemporary settings. The language and social dynamics (e.g., references to 'Cavaliers' and formal address like 'Messieurs') align with early modern French societal norms.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: 17th century
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1637
+- **Prediction**: 1601, 1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The play is written in French, published in France, and features character names and terms (e.g., 'Batelier', 'Messieurs') typical of French society. No explicit geographical clues suggest a non-French setting.
+
+#### Location string
+- **GT**: Paris
+- **Prediction**: France
+- **Score**: 0.5
+
+#### Location QID
+- **GT**: Q90
+- **Prediction**: Q142
+- **Score**: 0.5
+
+#### Score reasoning
+The predicted period '17th century' is narrower than the reference 'Early modern', resulting in a score of 0.5. The predicted timeframe '1601-1700' partially overlaps with the reference timeframe '1600-1637', leading to a score of 0.5. The predicted location 'France' is included in the accepted locations but is not the preferred location 'Paris', which earns a score of 0.5. The predicted location QID 'Q142' is among the acceptable location QIDs but does not match the preferred QID 'Q90', resulting in a score of 0.5.
+    
+
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play was published in 1637 (17th century), and the lack of explicit historical markers in the provided text suggests it is set in a contemporary context typical of French comedic works of the early modern period.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: 17th century
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1637
+- **Prediction**: 1601, 1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: Paris is the most frequently mentioned place (13 mentions), with characters referencing events and social dynamics specific to Paris. The top_5_places list also includes 'PARIS' and 'France,' reinforcing this setting.
+
+#### Location string
+- **GT**: Paris
+- **Prediction**: Paris, France
+- **Score**: 1.0
+
+#### Location QID
+- **GT**: Q90
+- **Prediction**: Q90
+- **Score**: 1.0
+
+#### Score reasoning
+The predicted period '17th century' is broader than the reference 'Early modern', resulting in a partial match. The timeframe '1601-1700' partially overlaps with the reference '1600-1637'. The location 'Paris, France' is equivalent to the preferred location 'Paris', and the location QID 'Q90' matches the reference.
+    
+
+## ollama:mistral-small:24b-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: nan
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: nan
+- **Score**: 0.0 
+
+#### Period interval
+- **GT**: 1600, 1637
+- **Prediction**: nan, nan
+- **Score**: 0.0
+
+### Location
+
+**Model reasoning**: nan
+
+#### Location string
+- **GT**: Paris
+- **Prediction**: nan
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q90
+- **Prediction**: nan
+- **Score**: 0.0
+
+#### Score reasoning
+All predicted fields are invalid (NaN), resulting in zero scores for period string, period interval, location string, and location QID.
+    
+
 ## ollama:mistral-small:24b-prompt-summary.txt
 
 ### Period
@@ -1435,74 +2115,6 @@ The predicted period '17th century' is narrower than the reference 'Early modern
 - **title**: Le Pyrame, tragédie en prose
 - **publication date**: 1633
 
-
-## ollama:mistral-small:24b-prompt-summary.txt
-
-### Period
-
-**Model reasoning**: The play mentions mythological figures and themes, such as NARBAL, SYLAR, ILAR, l'Aurore, and Zéphire, which are characteristic of ancient Greek or Roman mythology. The mention of 'Dieux' (gods) also suggests a setting in antiquity.
-
-#### Period string
-- **GT**: Neo-Babylonian Empire
-- **Prediction**: Antiquity
-- **Score**: 0.5 
-
-#### Period interval
-- **GT**: -626, -539
-- **Prediction**: -1000, 500
-- **Score**: 0.5
-
-### Location
-
-**Model reasoning**: The provided information does not specify any particular geographic location. The mentions of 'Tigre' and 'Lyon' are likely symbolic or metaphorical rather than literal places.
-
-#### Location string
-- **GT**: Babylon
-- **Prediction**: None
-- **Score**: 0.0
-
-#### Location QID
-- **GT**: Q5684
-- **Prediction**: None
-- **Score**: 0.0
-
-#### Score reasoning
-The predicted period 'Antiquity' is broader than the reference 'Neo-Babylonian Empire', resulting in a partial match. The predicted timeframe '-1000, 500' partly overlaps with the reference timeframe '-626, -539'. The predicted location 'None' does not match or fall within the accepted locations. The predicted location QID is null and does not match any of the acceptable QIDs.
-    
-
-## ollama:mistral-small:24b-prompt-excerpt.txt
-
-### Period
-
-**Model reasoning**: The mention of 'Pyrame' suggests a reference to Pyramus, a character from ancient Greek mythology. The tragic nature and the prose style are consistent with classical Greek tragedies.
-
-#### Period string
-- **GT**: Neo-Babylonian Empire
-- **Prediction**: Ancient Greece
-- **Score**: 0.0 
-
-#### Period interval
-- **GT**: -626, -539
-- **Prediction**: -800, -300
-- **Score**: 0.5
-
-### Location
-
-**Model reasoning**: Athens is a well-known center for ancient Greek theater and tragedy, making it a likely setting for a play based on classical mythology.
-
-#### Location string
-- **GT**: Babylon
-- **Prediction**: Athens
-- **Score**: 0.0
-
-#### Location QID
-- **GT**: Q5684
-- **Prediction**: Q1748
-- **Score**: 0.0
-
-#### Score reasoning
-The predicted period 'Ancient Greece' does not match the reference period 'Neo-Babylonian Empire'. The predicted timeframe '-800 to -300' partially overlaps with the reference timeframe '-626 to -539'. The predicted location 'Athens' is neither the preferred location 'Babylon' nor an accepted location. The predicted location QID 'Q1748' does not match the preferred location QID 'Q5684' nor is it among the acceptable location QIDs.
-    
 
 ## anthropic:claude-3-7-sonnet-20250219-prompt-summary.txt
 
@@ -1571,6 +2183,142 @@ The predicted period 'Ancient Babylon/Mesopotamia' is broader than the reference
 #### Score reasoning
 The predicted period 'Ancient Greek/Roman mythological period' differs from the reference 'Neo-Babylonian Empire', resulting in a score of 0. The predicted timeframe (-700 to 0) partially overlaps with the reference timeframe (-626 to -539), earning 0.5 points. The predicted location 'Babylon' matches the preferred location, awarding 1 point. However, the predicted location QID 'Q5686' does not match the preferred or any acceptable QIDs, resulting in a score of 0.
     
+
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The play's title 'Pyrame' and characters 'Thisbe' reference the classical myth of Pyramus and Thisbe, originating in ancient Babylonian lore (as told in Ovid's Metamorphoses). The tragic lovers' story is set in ancient Mesopotamia.
+
+#### Period string
+- **GT**: Neo-Babylonian Empire
+- **Prediction**: Ancient Mesopotamia
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: -626, -539
+- **Prediction**: -1000, -1
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The myth of Pyramus and Thisbe is explicitly set in Babylon (ancient Mesopotamia), as referenced in classical sources like Ovid. The excerpt's archaic tone and references to kingship align with this setting.
+
+#### Location string
+- **GT**: Babylon
+- **Prediction**: Babylon
+- **Score**: 1.0
+
+#### Location QID
+- **GT**: Q5684
+- **Prediction**: Q47690
+- **Score**: 0.5
+
+#### Score reasoning
+The period string 'Ancient Mesopotamia' is broader than the reference 'Neo-Babylonian Empire', resulting in a score of 0.5. The timeframe '-1000, -1' partially overlaps with the reference timeframe '-626, -539', earning a score of 0.5. The location string 'Babylon' matches the preferred location exactly, warranting a full score of 1. The location QID 'Q47690' is within the list of acceptable location QIDs, leading to a score of 0.5.
+    
+
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play's title 'Pyrame' alludes to the myth of Pyramus and Thisbe, a story from Ovid's *Metamorphoses* set in ancient Babylon. The mention of the Tigris River ('Tigre') and mythological figures like Zéphire further situate the narrative within a classical mythological context.
+
+#### Period string
+- **GT**: Neo-Babylonian Empire
+- **Prediction**: Classical Antiquity
+- **Score**: 0.0 
+
+#### Period interval
+- **GT**: -626, -539
+- **Prediction**: -2000, -539
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The Tigris River ('Tigre') is explicitly mentioned, a key geographic feature of Mesopotamia. The Pyramus and Thisbe myth is traditionally set in Babylon, aligning with the play's classical references.
+
+#### Location string
+- **GT**: Babylon
+- **Prediction**: Babylon
+- **Score**: 1.0
+
+#### Location QID
+- **GT**: Q5684
+- **Prediction**: Q47690
+- **Score**: 0.5
+
+#### Score reasoning
+The predicted period 'Classical Antiquity' differs from the reference 'Neo-Babylonian Empire'. The predicted timeframe partly overlaps with the reference timeframe. The predicted location 'Babylon' matches the preferred location. The predicted location QID 'Q47690' is within the accepted location QIDs.
+    
+
+## ollama:mistral-small:24b-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play mentions mythological figures and themes, such as NARBAL, SYLAR, ILAR, l'Aurore, and Zéphire, which are characteristic of ancient Greek or Roman mythology. The mention of 'Dieux' (gods) also suggests a setting in antiquity.
+
+#### Period string
+- **GT**: Neo-Babylonian Empire
+- **Prediction**: Antiquity
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: -626, -539
+- **Prediction**: -1000, 500
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The provided information does not specify any particular geographic location. The mentions of 'Tigre' and 'Lyon' are likely symbolic or metaphorical rather than literal places.
+
+#### Location string
+- **GT**: Babylon
+- **Prediction**: None
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q5684
+- **Prediction**: None
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Antiquity' is broader than the reference 'Neo-Babylonian Empire', resulting in a partial match. The predicted timeframe '-1000, 500' partly overlaps with the reference timeframe '-626, -539'. The predicted location 'None' does not match or fall within the accepted locations. The predicted location QID is null and does not match any of the acceptable QIDs.
+    
+
+## ollama:mistral-small:24b-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The mention of 'Pyrame' suggests a reference to Pyramus, a character from ancient Greek mythology. The tragic nature and the prose style are consistent with classical Greek tragedies.
+
+#### Period string
+- **GT**: Neo-Babylonian Empire
+- **Prediction**: Ancient Greece
+- **Score**: 0.0 
+
+#### Period interval
+- **GT**: -626, -539
+- **Prediction**: -800, -300
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: Athens is a well-known center for ancient Greek theater and tragedy, making it a likely setting for a play based on classical mythology.
+
+#### Location string
+- **GT**: Babylon
+- **Prediction**: Athens
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q5684
+- **Prediction**: Q1748
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Ancient Greece' does not match the reference period 'Neo-Babylonian Empire'. The predicted timeframe '-800 to -300' partially overlaps with the reference timeframe '-626 to -539'. The predicted location 'Athens' is neither the preferred location 'Babylon' nor an accepted location. The predicted location QID 'Q1748' does not match the preferred location QID 'Q5684' nor is it among the acceptable location QIDs.
+    
     
 # Document ID: bpt6k1090133c
 
@@ -1578,40 +2326,6 @@ The predicted period 'Ancient Greek/Roman mythological period' differs from the 
 - **title**: La Dupe amoureuse, comédie
 - **publication date**: 1671
 
-
-## ollama:mistral-small:24b-prompt-excerpt.txt
-
-### Period
-
-**Model reasoning**: nan
-
-#### Period string
-- **GT**: Early modern
-- **Prediction**: nan
-- **Score**: 0.0 
-
-#### Period interval
-- **GT**: 1600, 1671
-- **Prediction**: nan, nan
-- **Score**: 0.0
-
-### Location
-
-**Model reasoning**: nan
-
-#### Location string
-- **GT**: Paris
-- **Prediction**: nan
-- **Score**: 0.0
-
-#### Location QID
-- **GT**: Q90
-- **Prediction**: nan
-- **Score**: 0.0
-
-#### Score reasoning
-All predicted fields are invalid (NaN or 'nan') and do not match the reference values.
-    
 
 ## anthropic:claude-3-7-sonnet-20250219-prompt-excerpt.txt
 
@@ -1679,6 +2393,108 @@ The predicted period '17th Century France' is narrower than the reference 'Early
 
 #### Score reasoning
 The predicted period '17th century France' is narrower than the reference 'Early modern', resulting in a score of 0.5. The predicted timeframe '1650-1700' partially overlaps with the reference timeframe '1600-1671', leading to a score of 0.5. The predicted location 'Paris' exactly matches the preferred location in the reference, earning a score of 1. The predicted location QID 'Q90' matches the preferred location QID in the reference, earning a score of 1.
+    
+
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play was published in 1671, aligning with the late 17th century. French theatre of this era often reflected contemporary settings unless explicitly historical. No evidence in the text suggests a different period.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: 17th century France
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1671
+- **Prediction**: 1601, 1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The 'top_1_place' entity is Paris with 3 mentions, including explicit statements like 'La Scène est à Paris' ('The scene is set in Paris') in the text.
+
+#### Location string
+- **GT**: Paris
+- **Prediction**: Paris
+- **Score**: 1.0
+
+#### Location QID
+- **GT**: Q90
+- **Prediction**: Q90
+- **Score**: 1.0
+
+#### Score reasoning
+The predicted period string '17th century France' is narrower than the reference 'Early modern', resulting in a score of 0.5. The predicted timeframe '1601-1700' partially overlaps with the reference timeframe '1600-1671', granting a score of 0.5. The predicted location 'Paris' matches the preferred location in the reference, earning a full score of 1. The predicted location QID 'Q90' also matches the preferred location QID in the reference, earning a full score of 1.
+    
+
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The play was written and published in 1671 by a French author, and French comedic theater of this era typically reflected contemporary social norms and settings. The language and thematic focus on honor align with early modern French cultural contexts.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: 17th century France
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1671
+- **Prediction**: 1601, 1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The author is French, the text is written in French, and French comedic plays of the 17th century were usually set in the playwright's own cultural context unless otherwise specified. No explicit geographic clues contradict this assumption.
+
+#### Location string
+- **GT**: Paris
+- **Prediction**: France
+- **Score**: 0.5
+
+#### Location QID
+- **GT**: Q90
+- **Prediction**: Q142
+- **Score**: 0.5
+
+#### Score reasoning
+The predicted period '17th century France' is narrower than the reference 'Early modern', resulting in a score of 0.5 for period string. The predicted timeframe '1601, 1700' partially overlaps with the reference timeframe '1600, 1671', resulting in a score of 0.5 for period interval. The predicted location 'France' is within the accepted locations ('Paris | France'), resulting in a score of 0.5 for location string. The predicted location QID 'Q142' is among the acceptable QIDs ('Q90 | Q142'), resulting in a score of 0.5 for location QID.
+    
+
+## ollama:mistral-small:24b-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: nan
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: nan
+- **Score**: 0.0 
+
+#### Period interval
+- **GT**: 1600, 1671
+- **Prediction**: nan, nan
+- **Score**: 0.0
+
+### Location
+
+**Model reasoning**: nan
+
+#### Location string
+- **GT**: Paris
+- **Prediction**: nan
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q90
+- **Prediction**: nan
+- **Score**: 0.0
+
+#### Score reasoning
+All predicted fields are invalid (NaN or 'nan') and do not match the reference values.
     
 
 ## ollama:mistral-small:24b-prompt-summary.txt
@@ -1790,6 +2606,74 @@ The predicted period '17th Century France' is broader than the reference 'Early 
 The prediction's period '17th century France' is narrower than the reference 'Early modern', resulting in a score of 0.5. The timeframe '1600-1699' partially overlaps with the reference timeframe '1600-1662', earning another 0.5. The predicted location 'France' is accepted but not the preferred 'Paris', which also scores 0.5. Lastly, the location QID 'Q142' is among the acceptable QIDs, leading to a final score of 0.5.
     
 
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The play was published in 1662, during the reign of Louis XIV. French 17th-century comedies, particularly those in the tradition of Molière, typically reflected contemporary society and manners. The use of French names (Céphise, Paquette) and social dynamics around portraits/jealousy align with Early Modern French theatrical conventions.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: Early Modern France (Ancien Régime)
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1662
+- **Prediction**: 1601, 1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The original French title, publication context (17th-century French theater), and character names strongly suggest a French setting. No geographical indicators in the excerpt contradict this assumption.
+
+#### Location string
+- **GT**: Paris
+- **Prediction**: France
+- **Score**: 0.5
+
+#### Location QID
+- **GT**: Q90
+- **Prediction**: Q142
+- **Score**: 0.5
+
+#### Score reasoning
+The predicted period string 'Early Modern France (Ancien Régime)' is broader than the reference 'Early modern'. The predicted timeframe '1601, 1700' partially overlaps with the reference '1600, 1662'. The predicted location 'France' is within the accepted locations 'Paris | France'. The predicted location QID 'Q142' is acceptable but not the preferred QID 'Q90'.
+    
+
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play was published in 1662, during the reign of Louis XIV, and the frequent references to Paris align with the cultural and theatrical prominence of the city in this period.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: 17th century France
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1662
+- **Prediction**: 1601, 1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The text explicitly mentions Paris multiple times in the 'related_sentences' of the top_1_place entity, including references to its Bourgeois class and the court's presence there.
+
+#### Location string
+- **GT**: Paris
+- **Prediction**: Paris
+- **Score**: 1.0
+
+#### Location QID
+- **GT**: Q90
+- **Prediction**: Q90
+- **Score**: 1.0
+
+#### Score reasoning
+The predicted period string '17th century France' partially aligns with the reference period 'Early modern', resulting in a 0.5 score. The predicted timeframe '1601, 1700' partially overlaps with the reference timeframe '1600, 1662', also scoring 0.5. The predicted location 'Paris' matches the preferred location, earning 1 point. The predicted location QID 'Q90' matches the preferred location QID, earning 1 point.
+    
+
 ## ollama:mistral-small:24b-prompt-summary.txt
 
 ### Period
@@ -1865,40 +2749,6 @@ The predicted period '17th century' is narrower than the reference's 'Early mode
 - **publication date**: 1673
 
 
-## ollama:mistral-small:24b-prompt-summary.txt
-
-### Period
-
-**Model reasoning**: The play was published in 1673, which places it firmly within the 17th century.
-
-#### Period string
-- **GT**: Early modern
-- **Prediction**: 17th century
-- **Score**: 0.5 
-
-#### Period interval
-- **GT**: 1600, 1673
-- **Prediction**: +1600, +1700
-- **Score**: 0.5
-
-### Location
-
-**Model reasoning**: The top place mentioned is Paris and the play's setting is explicitly stated as Paris in one of the sentences: 'La Scène est à Paris LES I'.
-
-#### Location string
-- **GT**: Paris
-- **Prediction**: Paris
-- **Score**: 1.0
-
-#### Location QID
-- **GT**: Q90
-- **Prediction**: Q90
-- **Score**: 1.0
-
-#### Score reasoning
-The predicted period '17th century' is narrower than the reference 'Early modern', earning 0.5 points. The prediction timeframe '1600-1700' partially overlaps with the reference timeframe '1600-1673', resulting in 0.5 points. The location 'Paris' and its QID 'Q90' exactly match the reference, each receiving full points.
-    
-
 ## anthropic:claude-3-7-sonnet-20250219-prompt-excerpt.txt
 
 ### Period
@@ -1965,6 +2815,108 @@ The predicted period '17th century' is more specific than the reference period '
 
 #### Score reasoning
 The predicted period '17th century France' is narrower than the reference 'Early modern', resulting in a score of 0.5 for period string. The predicted timeframe '1600-1700' partially overlaps with the reference timeframe '1600-1673', earning a score of 0.5 for period interval. The predicted location 'Paris' matches the preferred location in the reference, securing a full score of 1.0 for location string. Additionally, the predicted location QID 'Q90' aligns with the preferred location QID in the reference, resulting in a full score of 1.0 for location QID.
+    
+
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play was published in 1673 by a French author, and its context lacks references to historical events or figures outside the 17th-century setting, suggesting a contemporary timeframe aligned with Louis XIV's reign (1643–1715).
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: Early Modern France
+- **Score**: 0.0 
+
+#### Period interval
+- **GT**: 1600, 1673
+- **Prediction**: 1601, 1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The play explicitly states 'La Scène est à Paris' in one of the related sentences, and Paris is the most frequently mentioned place.
+
+#### Location string
+- **GT**: Paris
+- **Prediction**: Paris
+- **Score**: 1.0
+
+#### Location QID
+- **GT**: Q90
+- **Prediction**: Q90
+- **Score**: 1.0
+
+#### Score reasoning
+The predicted period 'Early Modern France' differs from the reference 'Early modern', resulting in 0 points for period string. The timeframe '1601-1700' partially overlaps with the reference '1600-1673', earning 0.5 points. The location 'Paris' matches the preferred location exactly, awarding 1 point. The location QID 'Q90' also matches the preferred location QID, awarding another 1 point.
+    
+
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The play was published in 1673 by a French author, and its title and character dynamics (e.g., valet, aristocratic interactions) align with French comedic conventions of the 17th century, particularly the era of Molière. The themes of mistaken identity and class-based humor are typical of the period.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: 17th century France (Ancien Régime)
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1673
+- **Prediction**: 1601, 1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The author is French, the title and text are in French, and the comedic style (e.g., valet-driven plots) reflects the theatrical traditions of 17th-century France. No specific location is mentioned, but the cultural context strongly suggests France.
+
+#### Location string
+- **GT**: Paris
+- **Prediction**: France
+- **Score**: 0.5
+
+#### Location QID
+- **GT**: Q90
+- **Prediction**: Q142
+- **Score**: 0.5
+
+#### Score reasoning
+The predicted period '17th century France (Ancien Régime)' is narrower than the reference's 'Early modern', earning 0.5. The timeframe '1601-1700' partially overlaps with the reference '1600-1673', earning 0.5. The predicted location 'France' is an accepted location but not the preferred 'Paris', earning 0.5. The predicted location QID 'Q142' is acceptable but not the preferred 'Q90', earning 0.5.
+    
+
+## ollama:mistral-small:24b-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play was published in 1673, which places it firmly within the 17th century.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: 17th century
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1673
+- **Prediction**: +1600, +1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The top place mentioned is Paris and the play's setting is explicitly stated as Paris in one of the sentences: 'La Scène est à Paris LES I'.
+
+#### Location string
+- **GT**: Paris
+- **Prediction**: Paris
+- **Score**: 1.0
+
+#### Location QID
+- **GT**: Q90
+- **Prediction**: Q90
+- **Score**: 1.0
+
+#### Score reasoning
+The predicted period '17th century' is narrower than the reference 'Early modern', earning 0.5 points. The prediction timeframe '1600-1700' partially overlaps with the reference timeframe '1600-1673', resulting in 0.5 points. The location 'Paris' and its QID 'Q90' exactly match the reference, each receiving full points.
     
 
 ## ollama:mistral-small:24b-prompt-excerpt.txt
@@ -2076,6 +3028,74 @@ The predicted period 'Ancient Greek or Roman pastoral setting' differs from the 
 The predicted period 'Ancient Greece' does not match the reference period 'Early modern'. The timeframes partially overlap. The predicted location 'Ancient Greece' is not among the preferred or accepted locations 'Sicily' or 'Italy'. The location QID 'Q11772' is not among the acceptable QIDs 'Q1460' or 'Q38'.
     
 
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play features pastoral elements and mythological figures (e.g., Silène/Silenus, nymphs, satyrs) typical of Classical Antiquity settings, common in 17th-century French pastoral literature.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: Classical Antiquity
+- **Score**: 0.0 
+
+#### Period interval
+- **GT**: -735, -241
+- **Prediction**: -800, 500
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The top_5_places include 'Sicile' (Sicily), a region historically linked to pastoral traditions in ancient Greek literature (e.g., Theocritus' idylls). Silène, while a character, is tied to Mediterranean mythological contexts, further supporting a Sicilian setting.
+
+#### Location string
+- **GT**: Sicily 
+- **Prediction**: Sicily
+- **Score**: 1.0
+
+#### Location QID
+- **GT**: Q1460
+- **Prediction**: Q1460
+- **Score**: 1.0
+
+#### Score reasoning
+The predicted period 'Classical Antiquity' differs from the reference 'Early modern'. The predicted timeframe partially overlaps with the reference timeframe. The predicted location 'Sicily' and its QID match the preferred location in the reference.
+    
+
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The excerpt references classical deities (Jupiter) and a pastoral setting, typical of idealized ancient Greco-Roman contexts common in 17th-century French pastoral literature.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: Classical antiquity
+- **Score**: 0.0 
+
+#### Period interval
+- **GT**: -735, -241
+- **Prediction**: -500, -300
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: Pastoral works like this often use Arcadia, a mythical Greek region symbolizing rural simplicity, as their setting. The names Damon and Cloris further align with pastoral traditions rooted in ancient Greece.
+
+#### Location string
+- **GT**: Sicily 
+- **Prediction**: Arcadia
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q1460
+- **Prediction**: Q170284
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Classical antiquity' does not match the reference period 'Early modern'. The predicted timeframe '-500 to -300' partially overlaps with the reference timeframe '-735 to -241'. The predicted location 'Arcadia' is not among the accepted locations 'Sicily' or 'Italy'. The predicted location QID 'Q170284' is not among the acceptable QIDs 'Q1460' or 'Q38'.
+    
+
 ## ollama:mistral-small:24b-prompt-excerpt.txt
 
 ### Period
@@ -2151,40 +3171,6 @@ The predicted period '17th century' is narrower than the reference 'Early modern
 - **publication date**: 1632
 
 
-## ollama:mistral-small:24b-prompt-excerpt.txt
-
-### Period
-
-**Model reasoning**: The excerpt mentions 'Nymphes' and a 'fontaine', which are elements commonly found in pastoral literature set in ancient Greek or Roman times. The characters' names, such as Tirsis, Daphné, and Ponretta, also have classical roots.
-
-#### Period string
-- **GT**: Ancient Greece
-- **Prediction**: Antiquity
-- **Score**: 0.5 
-
-#### Period interval
-- **GT**: -356, -323
-- **Prediction**: -500, +100
-- **Score**: 0.5
-
-### Location
-
-**Model reasoning**: The mention of 'Nymphes' and the pastoral setting suggest a Mediterranean environment. The title indicates an Italian origin, but the play is translated into French.
-
-#### Location string
-- **GT**: Greece
-- **Prediction**: Greece or Italy
-- **Score**: 0.0
-
-#### Location QID
-- **GT**: Q41
-- **Prediction**: None
-- **Score**: 0.0
-
-#### Score reasoning
-The predicted period 'Antiquity' is broader than the reference 'Ancient Greece', resulting in a score of 0.5. The predicted timeframe '-500, +100' partially overlaps with the reference timeframe '-356, -323', earning another 0.5. The predicted location 'Greece or Italy' includes 'Italy', which is not an accepted location, leading to a score of 0. Additionally, the predicted location QID is null and does not match the reference QID 'Q41', resulting in a score of 0.
-    
-
 ## anthropic:claude-3-7-sonnet-20250219-prompt-excerpt.txt
 
 ### Period
@@ -2253,6 +3239,108 @@ The predicted period 'Ancient Greece or Rome' is broader than the reference 'Anc
 The predicted period 'Ancient Greek or Roman pastoral setting' is broader than the reference period 'Ancient Greece'. The predicted timeframe '-500, 100' partially overlaps with the reference timeframe '-356, -323'. The predicted location 'Arcadia' does not match the preferred location 'Greece' and is not listed among the accepted locations. The predicted location QID 'Q131201' does not match the preferred location QID 'Q41' and there are no acceptable location QIDs provided.
     
 
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The play is a pastoral drama, a genre often set in an idealized ancient rural past. The mention of nymphs and mythological references aligns with classical antiquity themes common in Renaissance pastoral works.
+
+#### Period string
+- **GT**: Ancient Greece
+- **Prediction**: Classical antiquity
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: -356, -323
+- **Prediction**: -500, -100
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: Pastoral dramas like Tasso's 'Aminta' (the original Italian work) are traditionally set in Arcadia, an idealized rustic region of ancient Greece. The characters' names (Tirsis, Daphné) and natural setting (nymphs, fountains) reinforce this pastoral Arcadian context.
+
+#### Location string
+- **GT**: Greece
+- **Prediction**: Arcadia
+- **Score**: 0.5
+
+#### Location QID
+- **GT**: Q41
+- **Prediction**: Q170284
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Classical antiquity' is broader than the reference 'Ancient Greece'. The predicted timeframe '-500, -100' partially overlaps with the reference '-356, -323'. The predicted location 'Arcadia' is contained within the accepted location 'Greece'. The predicted location QID 'Q170284' does not match the preferred QID 'Q41' and is not within any acceptable location QIDs.
+    
+
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play is a pastoral work translated from Italian, and while pastoral themes often evoke a timeless or classical Arcadian setting, the provided context does not explicitly reference historical events, dates, or specific cultural markers to anchor it in a concrete historical period. Mentions like 'Rome' and 'Dauphin' are ambiguous (Rome could refer to antiquity or metaphorically, 'Dauphin' is a French title but its usage here is unclear).
+
+#### Period string
+- **GT**: Ancient Greece
+- **Prediction**: None
+- **Score**: 0.0 
+
+#### Period interval
+- **GT**: -356, -323
+- **Prediction**: None, None
+- **Score**: 0.0
+
+### Location
+
+**Model reasoning**: The top-mentioned 'place' (Bergère) refers to a shepherdess, not a geographic location. Other listed places (Rome, Dauphin, Seine) are inconsistent and lack contextual specificity. The pastoral genre typically implies an idealized rural setting like Arcadia, but the input does not explicitly confirm this. The French translator and mentions of 'Seine' suggest a French adaptation, but this is speculative.
+
+#### Location string
+- **GT**: Greece
+- **Prediction**: None
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q41
+- **Prediction**: None
+- **Score**: 0.0
+
+#### Score reasoning
+All predicted fields are null or missing, resulting in no matches with the reference values.
+    
+
+## ollama:mistral-small:24b-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The excerpt mentions 'Nymphes' and a 'fontaine', which are elements commonly found in pastoral literature set in ancient Greek or Roman times. The characters' names, such as Tirsis, Daphné, and Ponretta, also have classical roots.
+
+#### Period string
+- **GT**: Ancient Greece
+- **Prediction**: Antiquity
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: -356, -323
+- **Prediction**: -500, +100
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The mention of 'Nymphes' and the pastoral setting suggest a Mediterranean environment. The title indicates an Italian origin, but the play is translated into French.
+
+#### Location string
+- **GT**: Greece
+- **Prediction**: Greece or Italy
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q41
+- **Prediction**: None
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Antiquity' is broader than the reference 'Ancient Greece', resulting in a score of 0.5. The predicted timeframe '-500, +100' partially overlaps with the reference timeframe '-356, -323', earning another 0.5. The predicted location 'Greece or Italy' includes 'Italy', which is not an accepted location, leading to a score of 0. Additionally, the predicted location QID is null and does not match the reference QID 'Q41', resulting in a score of 0.
+    
+
 ## ollama:mistral-small:24b-prompt-summary.txt
 
 ### Period
@@ -2293,40 +3381,6 @@ The predicted period 'Classical Antiquity' is broader than the reference period 
 - **title**: Maurice tragoedie. Dediée à tres-haut, & tres-genereux prince monseigneur de Vaudemont François de Lorraine. Par Nicolas Romain docteur és droicts, conseiller de mondict seigneur, capitaine, prevost, & gruyer du Pont-à-Mousson
 - **publication date**: 1606
 
-
-## ollama:mistral-small:24b-prompt-excerpt.txt
-
-### Period
-
-**Model reasoning**: The play is written in French and published in 1606, which places it in the early modern period. The language and style suggest a setting that could be from the late medieval to early modern era.
-
-#### Period string
-- **GT**: Byzantine Empire
-- **Prediction**: Late Middle Ages or Early Modern Period
-- **Score**: 0.5 
-
-#### Period interval
-- **GT**: 602, 602
-- **Prediction**: -500, +1700
-- **Score**: 0.5
-
-### Location
-
-**Model reasoning**: The dedication mentions 'monseigneur de Vaudemont François de Lorraine,' indicating a connection to the Lorraine region in France. The language and context suggest a French setting.
-
-#### Location string
-- **GT**: Constantinople
-- **Prediction**: France or Lorraine region
-- **Score**: 0.0
-
-#### Location QID
-- **GT**: Q16869
-- **Prediction**: Q1259
-- **Score**: 0.0
-
-#### Score reasoning
-The predicted period 'Late Middle Ages or Early Modern Period' is broader than the reference 'Byzantine Empire', earning 0.5 points. The predicted timeframe '-500, +1700' overlaps with the reference timeframe '602, 602' at the year 602, resulting in 0.5 points. The predicted location 'France or Lorraine region' does not match or fall within the accepted locations of 'Constantinople | Byzantium | Istanbul | Byzantine Empire', yielding 0 points. Additionally, the predicted location QID 'Q1259' is not among the acceptable QIDs 'Q16869 | Q23725 | Q406 | Q12544', also resulting in 0 points.
-    
 
 ## anthropic:claude-3-7-sonnet-20250219-prompt-excerpt.txt
 
@@ -2396,6 +3450,108 @@ The predicted period 'Ancient Rome (Imperial period)' differs from the reference
 The predicted period string is broader by including additional details, resulting in a partial match (0.5). The predicted timeframe partially overlaps with the reference timeframe (582-610 vs 602), leading to a score of 0.5. The location string and QID exactly match the reference, each earning a full score of 1.
     
 
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The title 'Maurice tragoedie' suggests a tragic narrative possibly related to Saint Maurice, a 3rd-century Roman military leader. French 17th-century tragedies often drew from classical antiquity, and the mention of military terms ('gendarmes', 'tambour') aligns with Roman settings.
+
+#### Period string
+- **GT**: Byzantine Empire
+- **Prediction**: Roman Empire
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 602, 602
+- **Prediction**: 250, 300
+- **Score**: 0.0
+
+### Location
+
+**Model reasoning**: The excerpt lacks explicit geographic references. While Saint Maurice's martyrdom is associated with Agaunum (modern Switzerland), the text does not confirm this setting.
+
+#### Location string
+- **GT**: Constantinople
+- **Prediction**: None
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q16869
+- **Prediction**: None
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Roman Empire' is broader than the reference 'Byzantine Empire', earning 0.5 points. The predicted timeframe '250, 300' does not overlap with the reference timeframe '602, 602', resulting in 0 points. No location or location QID was provided in the prediction, leading to 0 points for both location string and location QID.
+    
+
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play centers on Phocas, a historical figure identifiable as Byzantine Emperor Phocas (reigned 602–610 CE). References to his tyranny, military revolts (e.g., in Mysia), and usurpation align with his historical reign.
+
+#### Period string
+- **GT**: Byzantine Empire
+- **Prediction**: Byzantine Empire under Phocas
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 602, 602
+- **Prediction**: 602, 610
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: Thrace is the most frequently mentioned place, described as a troubled region with references to its geography and political unrest. Other listed places (e.g., Constantinople) further situate the narrative in the Byzantine Empire, with Thrace as a key setting.
+
+#### Location string
+- **GT**: Constantinople
+- **Prediction**: Thrace
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q16869
+- **Prediction**: Q161549
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Byzantine Empire under Phocas' is more specific than the reference 'Byzantine Empire', earning 0.5 points. The timeframe '602, 610' partially overlaps with the reference '602, 602', resulting in 0.5 points. The predicted location 'Thrace' is not among the accepted locations, leading to 0 points. Additionally, the location QID 'Q161549' is not within the acceptable QIDs, also scoring 0 points.
+    
+
+## ollama:mistral-small:24b-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The play is written in French and published in 1606, which places it in the early modern period. The language and style suggest a setting that could be from the late medieval to early modern era.
+
+#### Period string
+- **GT**: Byzantine Empire
+- **Prediction**: Late Middle Ages or Early Modern Period
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 602, 602
+- **Prediction**: -500, +1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The dedication mentions 'monseigneur de Vaudemont François de Lorraine,' indicating a connection to the Lorraine region in France. The language and context suggest a French setting.
+
+#### Location string
+- **GT**: Constantinople
+- **Prediction**: France or Lorraine region
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q16869
+- **Prediction**: Q1259
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Late Middle Ages or Early Modern Period' is broader than the reference 'Byzantine Empire', earning 0.5 points. The predicted timeframe '-500, +1700' overlaps with the reference timeframe '602, 602' at the year 602, resulting in 0.5 points. The predicted location 'France or Lorraine region' does not match or fall within the accepted locations of 'Constantinople | Byzantium | Istanbul | Byzantine Empire', yielding 0 points. Additionally, the predicted location QID 'Q1259' is not among the acceptable QIDs 'Q16869 | Q23725 | Q406 | Q12544', also resulting in 0 points.
+    
+
 ## ollama:mistral-small:24b-prompt-summary.txt
 
 ### Period
@@ -2436,74 +3592,6 @@ The predicted period 'Byzantine Empire' matches exactly with the reference. The 
 - **title**: L'Escole des maris, comedie, de J. B. P. Moliere. Representée sur le theatre du Palais Royal.
 - **publication date**: 1661
 
-
-## ollama:mistral-small:24b-prompt-summary.txt
-
-### Period
-
-**Model reasoning**: The play was written by Molière and published in 1661, which places it firmly within the 17th century.
-
-#### Period string
-- **GT**: Early modern
-- **Prediction**: 17th century
-- **Score**: 0.5 
-
-#### Period interval
-- **GT**: 1600, 1661
-- **Prediction**: +1600, +1700
-- **Score**: 0.5
-
-### Location
-
-**Model reasoning**: The play mentions Paris multiple times and is set in a theatre in Paris (theatre du Palais Royal).
-
-#### Location string
-- **GT**: Paris
-- **Prediction**: Paris
-- **Score**: 1.0
-
-#### Location QID
-- **GT**: Q90
-- **Prediction**: Q90
-- **Score**: 1.0
-
-#### Score reasoning
-The predicted period '17th century' is narrower than the reference 'Early modern', resulting in a score of 0.5 for period string. The predicted timeframe (1600-1700) partially overlaps with the reference timeframe (1600-1661), leading to a score of 0.5 for period interval. The predicted location 'Paris' matches the preferred location, earning a full score of 1 for location string. The predicted location QID 'Q90' matches the preferred QID, also earning a full score of 1 for location QID.
-    
-
-## ollama:mistral-small:24b-prompt-excerpt.txt
-
-### Period
-
-**Model reasoning**: Molière was a prominent French playwright in the 17th century, and the publication date of the play is 1661.
-
-#### Period string
-- **GT**: Early modern
-- **Prediction**: 17th century
-- **Score**: 0.5 
-
-#### Period interval
-- **GT**: 1600, 1661
-- **Prediction**: +1600, +1700
-- **Score**: 0.5
-
-### Location
-
-**Model reasoning**: Molière was a French playwright, and the title mentions 'theatre du Palais Royal,' which is located in Paris, France.
-
-#### Location string
-- **GT**: Paris
-- **Prediction**: France
-- **Score**: 0.5
-
-#### Location QID
-- **GT**: Q90
-- **Prediction**: Q142
-- **Score**: 0.5
-
-#### Score reasoning
-The predicted period '17th century' partially matches the reference period 'Early modern', earning 0.5 points. The predicted timeframe '+1600, +1700' partly overlaps with the reference timeframe '1600, 1661', resulting in 0.5 points. The predicted location 'France' is among the accepted locations but is not the preferred 'Paris', thus 0.5 points. The predicted location QID 'Q142' is acceptable but not the preferred 'Q90', awarding 0.5 points.
-    
 
 ## anthropic:claude-3-7-sonnet-20250219-prompt-summary.txt
 
@@ -2572,6 +3660,142 @@ The period string '17th century France' is more specific than the reference 'Ear
 #### Score reasoning
 The prediction period 'Mid to late 17th century France' is narrower than the reference period 'Early modern', resulting in a partial match (0.5). The prediction timeframe [1650-1670] partially overlaps with the reference timeframe [1600-1661], hence a score of 0.5. The location 'Paris, France' matches the preferred location 'Paris', scoring 1. The location QID 'Q90' matches the preferred QID 'Q90', scoring 1.
     
+
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play was written by Molière in 1661, during the 17th century, and his works typically reflect the societal norms and settings of his contemporary period in France, specifically under the reign of Louis XIV.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: 17th century
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1661
+- **Prediction**: 1601, 1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The play explicitly mentions Paris as the setting in sentences like 'La Scène est à Paris' and references to Parisian social dynamics (e.g., 'font dans tout Paris Monstrer au bout du doigt leurs honnêtes maris').
+
+#### Location string
+- **GT**: Paris
+- **Prediction**: Paris
+- **Score**: 1.0
+
+#### Location QID
+- **GT**: Q90
+- **Prediction**: Q90
+- **Score**: 1.0
+
+#### Score reasoning
+The predicted period string '17th century' is narrower than the reference 'Early modern', resulting in a score of 0.5. The predicted timeframe overlaps partially with the reference timeframe, earning another 0.5. The predicted location 'Paris' matches the preferred location exactly, granting a full score of 1. Additionally, the predicted location QID 'Q90' matches the preferred QID, also receiving a full score of 1.
+    
+
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: Molière's comedies typically satirized contemporary 17th-century French society, and the publication date (1661) aligns with Louis XIV's reign. The dialogue reflects social norms and marital dynamics common to the period.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: 17th century France (Ancien Régime)
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1661
+- **Prediction**: 1601, 1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: Molière's plays were often set in Paris, where his theatre company performed (e.g., at the Palais Royal). The absence of explicit rural or foreign references suggests an urban French setting.
+
+#### Location string
+- **GT**: Paris
+- **Prediction**: Paris, France
+- **Score**: 1.0
+
+#### Location QID
+- **GT**: Q90
+- **Prediction**: Q90
+- **Score**: 1.0
+
+#### Score reasoning
+The predicted period string '17th century France (Ancien Régime)' is narrower than the reference 'Early modern', earning 0.5 points. The predicted timeframe '1601-1700' partially overlaps with the reference timeframe '1600-1661', earning 0.5 points. The predicted location string 'Paris, France' is equivalent to the reference 'Paris', earning 1 point. The predicted location QID 'Q90' matches the reference QID, earning 1 point.
+    
+
+## ollama:mistral-small:24b-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play was written by Molière and published in 1661, which places it firmly within the 17th century.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: 17th century
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1661
+- **Prediction**: +1600, +1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The play mentions Paris multiple times and is set in a theatre in Paris (theatre du Palais Royal).
+
+#### Location string
+- **GT**: Paris
+- **Prediction**: Paris
+- **Score**: 1.0
+
+#### Location QID
+- **GT**: Q90
+- **Prediction**: Q90
+- **Score**: 1.0
+
+#### Score reasoning
+The predicted period '17th century' is narrower than the reference 'Early modern', resulting in a score of 0.5 for period string. The predicted timeframe (1600-1700) partially overlaps with the reference timeframe (1600-1661), leading to a score of 0.5 for period interval. The predicted location 'Paris' matches the preferred location, earning a full score of 1 for location string. The predicted location QID 'Q90' matches the preferred QID, also earning a full score of 1 for location QID.
+    
+
+## ollama:mistral-small:24b-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: Molière was a prominent French playwright in the 17th century, and the publication date of the play is 1661.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: 17th century
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1661
+- **Prediction**: +1600, +1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: Molière was a French playwright, and the title mentions 'theatre du Palais Royal,' which is located in Paris, France.
+
+#### Location string
+- **GT**: Paris
+- **Prediction**: France
+- **Score**: 0.5
+
+#### Location QID
+- **GT**: Q90
+- **Prediction**: Q142
+- **Score**: 0.5
+
+#### Score reasoning
+The predicted period '17th century' partially matches the reference period 'Early modern', earning 0.5 points. The predicted timeframe '+1600, +1700' partly overlaps with the reference timeframe '1600, 1661', resulting in 0.5 points. The predicted location 'France' is among the accepted locations but is not the preferred 'Paris', thus 0.5 points. The predicted location QID 'Q142' is acceptable but not the preferred 'Q90', awarding 0.5 points.
+    
     
 # Document ID: btv1b8614585w
 
@@ -2579,74 +3803,6 @@ The prediction period 'Mid to late 17th century France' is narrower than the ref
 - **title**: Le martyre de sainte Reyne d'Alise , tragedie. Composée par un religieux de l'abbaye de Flavigny, où repose le corps de sainte Reine. Premiere edition
 - **publication date**: 1687
 
-
-## ollama:mistral-small:24b-prompt-excerpt.txt
-
-### Period
-
-**Model reasoning**: The excerpt mentions 'Jupiter,' which is the Roman name for Zeus, the king of the gods in ancient Greek mythology. The reference to divine punishment and the mention of Jupiter suggest a setting rooted in ancient Greek or Roman mythological contexts.
-
-#### Period string
-- **GT**: Ancient Rome
-- **Prediction**: Ancient Greek Mythology
-- **Score**: 0.0 
-
-#### Period interval
-- **GT**: 238, 238
-- **Prediction**: -1200, -800
-- **Score**: 0.0
-
-### Location
-
-**Model reasoning**: The mention of 'Jupiter' and the divine context strongly suggest a setting in ancient Greece, where Greek mythology originated. The play's title also includes 'sainte Reine,' which could be a reference to Saint Reine, a figure associated with Flavigny, France, but the mythological context points more towards Greece.
-
-#### Location string
-- **GT**: Alesia
-- **Prediction**: Greece
-- **Score**: 0.0
-
-#### Location QID
-- **GT**: Q835966
-- **Prediction**: Q149
-- **Score**: 0.0
-
-#### Score reasoning
-The predicted period 'Ancient Greek Mythology' does not match the reference period 'Ancient Rome'. The predicted timeframe '-1200, -800' does not overlap with the reference timeframe '238, 238'. The predicted location 'Greece' is not among the accepted locations 'Alesia | Gaul | France'. The predicted location QID 'Q149' is not among the acceptable location QIDs 'Q835966 | Q38060 | Q142'.
-    
-
-## ollama:mistral-small:24b-prompt-summary.txt
-
-### Period
-
-**Model reasoning**: The play mentions 'César' (Caesar) and 'Jupiter', which are associated with the Roman Empire. Additionally, the mention of 'Décie' (Decius), who was a Roman Emperor known for his persecution of Christians, further supports this period.
-
-#### Period string
-- **GT**: Ancient Rome
-- **Prediction**: Roman Empire
-- **Score**: 0.5 
-
-#### Period interval
-- **GT**: 238, 238
-- **Prediction**: -27, 476
-- **Score**: 0.5
-
-### Location
-
-**Model reasoning**: The play explicitly mentions 'Gaule' (Gaul) as a significant location. Additionally, the mention of 'Bretagne' (Britain), 'Saxe', and other places further supports this geographic context.
-
-#### Location string
-- **GT**: Alesia
-- **Prediction**: Gaule
-- **Score**: 0.5
-
-#### Location QID
-- **GT**: Q835966
-- **Prediction**: Q1425
-- **Score**: 0.0
-
-#### Score reasoning
-Period string: 'Roman Empire' is broader than 'Ancient Rome', scoring 0.5. Period interval: the prediction timeframe (-27 to 476) partly overlaps with the reference (238 to 238), scoring 0.5. Location string: 'Gaule' is in the accepted locations ('Alesia | Gaul | France'), scoring 0.5. Location QID: 'Q1425' is not among the acceptable location QIDs, scoring 0.
-    
 
 ## anthropic:claude-3-7-sonnet-20250219-prompt-excerpt.txt
 
@@ -2714,6 +3870,142 @@ The predicted period string is more specific than the reference, earning 0.5 poi
 
 #### Score reasoning
 The predicted period 'Roman Empire' is narrower than the reference 'Ancient Rome'. The timeframe '249-251' does not overlap with the reference timeframe '238'. The location 'Gaul' is within the accepted locations. The location QID 'Q58086' is not among the acceptable QIDs.
+    
+
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play references Emperor Décie (Decius), who ruled 249–251 CE, and Christian persecution under his reign. The context of martyrdom, Roman laws against Christians, and mentions of Jupiter align with this period.
+
+#### Period string
+- **GT**: Ancient Rome
+- **Prediction**: Roman Empire (Crisis of the Third Century)
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 238, 238
+- **Prediction**: 249, 251
+- **Score**: 0.0
+
+### Location
+
+**Model reasoning**: The top-mentioned place is 'Gaule' (Gaul), with references to its political and religious context under Roman rule. The play's title also links to Alise (Alise-Sainte-Reine, France), a location in ancient Gaul.
+
+#### Location string
+- **GT**: Alesia
+- **Prediction**: Gaul (Roman province)
+- **Score**: 0.5
+
+#### Location QID
+- **GT**: Q835966
+- **Prediction**: Q167346
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Roman Empire (Crisis of the Third Century)' is narrower than the reference period 'Ancient Rome', resulting in a score of 0.5. The predicted timeframe '249-251' does not overlap with the reference timeframe '238', resulting in a score of 0. The predicted location 'Gaul (Roman province)' is within the accepted locations, yielding a score of 0.5. The predicted location QID 'Q167346' is not among the acceptable QIDs, resulting in a score of 0.
+    
+
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The play centers on Saint Reine (Regina), a 3rd-century Christian martyr. The excerpt references Jupiter and pagan rituals, aligning with Roman religious practices and early Christian persecution under the Roman Empire.
+
+#### Period string
+- **GT**: Ancient Rome
+- **Prediction**: Roman Empire (Christian persecutions)
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 238, 238
+- **Prediction**: 200, 300
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The title specifies 'Alise,' referencing Alise-Sainte-Reine in Burgundy, France. Saint Reine's martyrdom is historically associated with Alesia, the ancient Roman name for this location.
+
+#### Location string
+- **GT**: Alesia
+- **Prediction**: Alise-Sainte-Reine (Alesia)
+- **Score**: 1.0
+
+#### Location QID
+- **GT**: Q835966
+- **Prediction**: Q47421
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Roman Empire (Christian persecutions)' is narrower than the reference period 'Ancient Rome', resulting in a score of 0.5. The predicted timeframe '200-300' partially overlaps with the reference timeframe '238', which earns a score of 0.5. The predicted location 'Alise-Sainte-Reine (Alesia)' matches the preferred location 'Alesia', achieving a full score of 1. However, the predicted location QID 'Q47421' is not among the acceptable QIDs listed in the reference, leading to a score of 0.
+    
+
+## ollama:mistral-small:24b-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The excerpt mentions 'Jupiter,' which is the Roman name for Zeus, the king of the gods in ancient Greek mythology. The reference to divine punishment and the mention of Jupiter suggest a setting rooted in ancient Greek or Roman mythological contexts.
+
+#### Period string
+- **GT**: Ancient Rome
+- **Prediction**: Ancient Greek Mythology
+- **Score**: 0.0 
+
+#### Period interval
+- **GT**: 238, 238
+- **Prediction**: -1200, -800
+- **Score**: 0.0
+
+### Location
+
+**Model reasoning**: The mention of 'Jupiter' and the divine context strongly suggest a setting in ancient Greece, where Greek mythology originated. The play's title also includes 'sainte Reine,' which could be a reference to Saint Reine, a figure associated with Flavigny, France, but the mythological context points more towards Greece.
+
+#### Location string
+- **GT**: Alesia
+- **Prediction**: Greece
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q835966
+- **Prediction**: Q149
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Ancient Greek Mythology' does not match the reference period 'Ancient Rome'. The predicted timeframe '-1200, -800' does not overlap with the reference timeframe '238, 238'. The predicted location 'Greece' is not among the accepted locations 'Alesia | Gaul | France'. The predicted location QID 'Q149' is not among the acceptable location QIDs 'Q835966 | Q38060 | Q142'.
+    
+
+## ollama:mistral-small:24b-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play mentions 'César' (Caesar) and 'Jupiter', which are associated with the Roman Empire. Additionally, the mention of 'Décie' (Decius), who was a Roman Emperor known for his persecution of Christians, further supports this period.
+
+#### Period string
+- **GT**: Ancient Rome
+- **Prediction**: Roman Empire
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 238, 238
+- **Prediction**: -27, 476
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The play explicitly mentions 'Gaule' (Gaul) as a significant location. Additionally, the mention of 'Bretagne' (Britain), 'Saxe', and other places further supports this geographic context.
+
+#### Location string
+- **GT**: Alesia
+- **Prediction**: Gaule
+- **Score**: 0.5
+
+#### Location QID
+- **GT**: Q835966
+- **Prediction**: Q1425
+- **Score**: 0.0
+
+#### Score reasoning
+Period string: 'Roman Empire' is broader than 'Ancient Rome', scoring 0.5. Period interval: the prediction timeframe (-27 to 476) partly overlaps with the reference (238 to 238), scoring 0.5. Location string: 'Gaule' is in the accepted locations ('Alesia | Gaul | France'), scoring 0.5. Location QID: 'Q1425' is not among the acceptable location QIDs, scoring 0.
     
     
 # Document ID: bpt6k1280445t
@@ -2791,6 +4083,74 @@ The predicted period string '17th Century France' is more specific than the refe
 The predicted period string '17th Century France' is narrower than the reference 'Early modern'. The predicted timeframe (1650-1674) partially overlaps with the reference timeframe (1600-1674). The predicted location 'Paris' matches the preferred location, and the location QID 'Q90' matches the preferred location QID.
     
 
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play was written by Molière in 1674, during the reign of Louis XIV (1643–1715), and his works typically reflect the social and cultural context of 17th-century France under the Sun King.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: Reign of Louis XIV
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1674
+- **Prediction**: 1643, 1715
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The play references Parisian landmarks (Louvre, Place Royale, place Maubert), which were central to 17th-century Parisian life. Molière's works predominantly depict settings in Paris, aligning with his career at the French court and in the city's theaters.
+
+#### Location string
+- **GT**: Paris
+- **Prediction**: Paris
+- **Score**: 1.0
+
+#### Location QID
+- **GT**: Q90
+- **Prediction**: Q90
+- **Score**: 1.0
+
+#### Score reasoning
+The predicted period 'Reign of Louis XIV' is a narrower period within the reference 'Early modern' period, resulting in a score of 0.5. The predicted timeframe (1643-1715) partially overlaps with the reference timeframe (1600-1674), resulting in a score of 0.5. The predicted location 'Paris' matches the reference's preferred location, earning a score of 1. The predicted location QID 'Q90' matches the reference's preferred location QID, earning a score of 1.
+    
+
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The play was written by Molière, a French playwright active in the 17th century, and his works typically reflect contemporary French society during the reign of Louis XIV.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: 17th century France
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1674
+- **Prediction**: 1601, 1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: Molière's plays are generally set in Parisian aristocratic or bourgeois circles, and the French names/context in the excerpt align with this setting.
+
+#### Location string
+- **GT**: Paris
+- **Prediction**: Paris, France
+- **Score**: 0.5
+
+#### Location QID
+- **GT**: Q90
+- **Prediction**: Q90
+- **Score**: 1.0
+
+#### Score reasoning
+The predicted period '17th century France' partially matches the reference period 'Early modern', earning 0.5 points. The predicted timeframe '1601, 1700' overlaps with the reference timeframe '1600, 1674', resulting in 0.5 points. The predicted location 'Paris, France' includes the preferred location 'Paris' and an accepted location 'France', which grants 0.5 points. The predicted location QID 'Q90' exactly matches the preferred location QID in the reference, earning full points.
+    
+
 ## ollama:mistral-small:24b-prompt-excerpt.txt
 
 ### Period
@@ -2866,40 +4226,6 @@ The predicted period '17th century' is narrower than the reference period 'Early
 - **publication date**: 1653
 
 
-## ollama:mistral-small:24b-prompt-summary.txt
-
-### Period
-
-**Model reasoning**: nan
-
-#### Period string
-- **GT**: Early modern
-- **Prediction**: nan
-- **Score**: 0.0 
-
-#### Period interval
-- **GT**: 1600, 1653
-- **Prediction**: nan, nan
-- **Score**: 0.0
-
-### Location
-
-**Model reasoning**: nan
-
-#### Location string
-- **GT**: Lignon du Forez
-- **Prediction**: nan
-- **Score**: 0.0
-
-#### Location QID
-- **GT**: Q1125496
-- **Prediction**: nan
-- **Score**: 0.0
-
-#### Score reasoning
-The predicted period is NaN, which does not match the reference period 'Early modern'. The predicted timeframe 'nan, nan' does not overlap with the reference timeframe '1600, 1653'. The predicted location is NaN, which does not match or fall within the accepted locations 'Lignon du Forez | Forez | France'. The predicted location QID is NaN, which does not match or fall within the acceptable location QIDs 'Q1125496 | Q1437284'.
-    
-
 ## anthropic:claude-3-7-sonnet-20250219-prompt-excerpt.txt
 
 ### Period
@@ -2968,6 +4294,108 @@ The predicted period 'Pastoral or bucolic setting' does not match the reference 
 The predicted period, timeframe, location, and location QID do not match or overlap with the reference values.
     
 
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The excerpt includes pastoral elements (e.g., 'Berger' meaning shepherd, references to idealized rural life) common in works inspired by classical antiquity. The title explicitly labels it a 'pastorale,' a genre often set in a timeless, mythologized ancient past.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: Classical Antiquity
+- **Score**: 0.0 
+
+#### Period interval
+- **GT**: 1600, 1653
+- **Prediction**: -500, 100
+- **Score**: 0.0
+
+### Location
+
+**Model reasoning**: Pastoral works like this one frequently evoke Arcadia, a symbolic locus of rustic harmony in classical literature. The use of shepherds and mythological names (Amaryllis) reinforces this association.
+
+#### Location string
+- **GT**: Lignon du Forez
+- **Prediction**: Arcadia (region of Greece)
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q1125496
+- **Prediction**: Q170284
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Classical Antiquity' does not match the reference period 'Early modern'. The predicted timeframe '-500, 100' does not overlap with the reference timeframe '1600, 1653'. The predicted location 'Arcadia (region of Greece)' is not among the accepted locations ('Lignon du Forez', 'Forez', 'France'). The predicted location QID 'Q170284' is not among the acceptable QIDs ('Q1125496', 'Q1437284').
+    
+
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play is a pastoral comedy, which typically uses timeless, idyllic settings rather than specific historical periods. No explicit historical events or temporal markers are mentioned in the provided context to determine a concrete timeframe.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: None
+- **Score**: 0.0 
+
+#### Period interval
+- **GT**: 1600, 1653
+- **Prediction**: None, None
+- **Score**: 0.0
+
+### Location
+
+**Model reasoning**: While the top places listed include real locations like Paris, Lyon, and Rome, mentions of Paris in the provided sentences refer to the publisher's address, not the play's setting. The pastoral genre often uses fictional or generalized rural settings, and no specific geographic details from the play's narrative are provided to confirm a real-world location.
+
+#### Location string
+- **GT**: Lignon du Forez
+- **Prediction**: None
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q1125496
+- **Prediction**: None
+- **Score**: 0.0
+
+#### Score reasoning
+The prediction did not provide any values for period, timeframe, location, or location QID, resulting in no matches with the reference data.
+    
+
+## ollama:mistral-small:24b-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: nan
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: nan
+- **Score**: 0.0 
+
+#### Period interval
+- **GT**: 1600, 1653
+- **Prediction**: nan, nan
+- **Score**: 0.0
+
+### Location
+
+**Model reasoning**: nan
+
+#### Location string
+- **GT**: Lignon du Forez
+- **Prediction**: nan
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q1125496
+- **Prediction**: nan
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period is NaN, which does not match the reference period 'Early modern'. The predicted timeframe 'nan, nan' does not overlap with the reference timeframe '1600, 1653'. The predicted location is NaN, which does not match or fall within the accepted locations 'Lignon du Forez | Forez | France'. The predicted location QID is NaN, which does not match or fall within the acceptable location QIDs 'Q1125496 | Q1437284'.
+    
+
 ## ollama:mistral-small:24b-prompt-excerpt.txt
 
 ### Period
@@ -3008,40 +4436,6 @@ The predicted period '17th century' is narrower than the reference 'Early modern
 - **title**: Dialogue du cardinal de Richelieu voulant entrer en Paradis, et sa descente aux enfers . Tragi-comédie
 - **publication date**: 1643
 
-
-## ollama:mistral-small:24b-prompt-excerpt.txt
-
-### Period
-
-**Model reasoning**: The play is a XVII century French tragicomedy, and the text mentions historical figures like Cardinal Richelieu, who was active in the early to mid-17th century.
-
-#### Period string
-- **GT**: Early modern
-- **Prediction**: 17th century
-- **Score**: 0.5 
-
-#### Period interval
-- **GT**: 1642, 1642
-- **Prediction**: +1600, +1700
-- **Score**: 0.5
-
-### Location
-
-**Model reasoning**: The play is written in French and mentions Cardinal Richelieu, a prominent figure in French history during the 17th century. The text also references 'les Tures,' which likely refers to the Ottoman Empire, suggesting a European context.
-
-#### Location string
-- **GT**: Hell and paradise
-- **Prediction**: France
-- **Score**: 0.0
-
-#### Location QID
-- **GT**: nan
-- **Prediction**: Q142
-- **Score**: 0.0
-
-#### Score reasoning
-The predicted period '17th century' is narrower than the reference 'Early modern', earning 0.5. The timeframe 1600-1700 partially overlaps with the reference year 1642, resulting in 0.5. The predicted location 'France' does not match or fall within the accepted locations 'Hell and paradise', scoring 0. Similarly, the location QID 'Q142' is not among the acceptable QIDs 'Q564 | Q3363340', resulting in a score of 0.
-    
 
 ## anthropic:claude-3-7-sonnet-20250219-prompt-excerpt.txt
 
@@ -3111,6 +4505,108 @@ The predicted period 'First half of the 17th century' is more specific than the 
 The predicted period 'Early 17th century' is narrower than the reference 'Early modern'. The timeframe partially overlaps (1642 overlaps with 1642-1643). The predicted location 'France' is not among the preferred or accepted locations. The predicted location QID 'Q142' is not listed in the acceptable location QIDs.
     
 
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The play centers on Cardinal Richelieu, a historical figure active in France during the early 17th century (specifically under Louis XIII). The excerpt references war and political conflicts consistent with Richelieu's role in shaping French foreign policy, including involvement in the Thirty Years' War.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: Early 17th century
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1642, 1642
+- **Prediction**: 1600, 1650
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The play is in French, references a French historical figure (Cardinal Richelieu), and critiques his political actions, which were centered in France. The mention of 'Monsieur le Grand' (a French honorific) and contextual themes align with French politics of the era.
+
+#### Location string
+- **GT**: Hell and paradise
+- **Prediction**: France
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: nan
+- **Prediction**: Q142
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Early 17th century' is more specific than the reference 'Early modern', resulting in a partial match (0.5). The predicted timeframe '1600-1650' partially overlaps with the reference timeframe '1642', earning another 0.5. The predicted location 'France' does not match the preferred or accepted locations 'Hell and paradise', leading to a score of 0. Similarly, the predicted location QID 'Q142' is not listed among the acceptable QIDs 'Q564 | Q3363340', resulting in a score of 0.
+    
+
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play centers on Cardinal Richelieu (died 1642) and references historical figures like Monsieur le Grand (Henri Coiffier de Ruzé, executed 1642). The publication date (1643) and focus on Richelieu’s political actions align with his tenure as Louis XIII’s chief minister (1624–1642).
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: Early 17th century France (Louis XIII's reign)
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1642, 1642
+- **Prediction**: 1610, 1643
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: PARIS is explicitly listed as the top place, and Richelieu’s political career was centered in Paris. The related sentence 'À PARIS M. DC.' confirms the city as a key setting.
+
+#### Location string
+- **GT**: Hell and paradise
+- **Prediction**: Paris
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: nan
+- **Prediction**: Q90
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Early 17th century France (Louis XIII's reign)' is more specific than the reference's 'Early modern', resulting in a score of 0.5. The predicted timeframe '1610, 1643' partially overlaps with the reference's '1642, 1642', earning a score of 0.5. The predicted location 'Paris' does not match the preferred location 'Hell and paradise' and is not among the accepted locations, leading to a score of 0. Additionally, the predicted location QID 'Q90' is not listed in the acceptable QIDs 'Q564 | Q3363340', resulting in a score of 0.
+    
+
+## ollama:mistral-small:24b-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The play is a XVII century French tragicomedy, and the text mentions historical figures like Cardinal Richelieu, who was active in the early to mid-17th century.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: 17th century
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1642, 1642
+- **Prediction**: +1600, +1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The play is written in French and mentions Cardinal Richelieu, a prominent figure in French history during the 17th century. The text also references 'les Tures,' which likely refers to the Ottoman Empire, suggesting a European context.
+
+#### Location string
+- **GT**: Hell and paradise
+- **Prediction**: France
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: nan
+- **Prediction**: Q142
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period '17th century' is narrower than the reference 'Early modern', earning 0.5. The timeframe 1600-1700 partially overlaps with the reference year 1642, resulting in 0.5. The predicted location 'France' does not match or fall within the accepted locations 'Hell and paradise', scoring 0. Similarly, the location QID 'Q142' is not among the acceptable QIDs 'Q564 | Q3363340', resulting in a score of 0.
+    
+
 ## ollama:mistral-small:24b-prompt-summary.txt
 
 ### Period
@@ -3151,40 +4647,6 @@ The predicted period '17th century' is narrower than the reference 'Early modern
 - **title**: Hypsicratee, ou La magnanimite tragoedie nouvellement représentee, au college des Bons Enfans
 - **publication date**: 1604
 
-
-## ollama:mistral-small:24b-prompt-excerpt.txt
-
-### Period
-
-**Model reasoning**: The title 'Hypsicratee' suggests a Greek name, and the themes mentioned in the excerpt such as 'magnanimite tragoedie' (tragedy of magnanimity) are reminiscent of classical Greek tragedies. The mention of 'épée' (sword) and 'carnage et au sang' (carnage and blood) also align with the violent themes common in ancient Greek dramas.
-
-#### Period string
-- **GT**: Ancient Rome
-- **Prediction**: Ancient Greece
-- **Score**: 0.0 
-
-#### Period interval
-- **GT**: -70, -50
-- **Prediction**: -500, -300
-- **Score**: 0.0
-
-### Location
-
-**Model reasoning**: The name 'Hypsicratee' is of Greek origin, and the play's title includes 'tragoedie,' which is derived from the Greek word for tragedy. These elements strongly suggest a setting in ancient Greece.
-
-#### Location string
-- **GT**: Kingdom of Pontus
-- **Prediction**: Greece
-- **Score**: 0.0
-
-#### Location QID
-- **GT**: Q7380487
-- **Prediction**: Q148
-- **Score**: 0.0
-
-#### Score reasoning
-The predicted period ('Ancient Greece') does not match the reference period ('Ancient Rome'). The predicted timeframe (-500, -300) does not overlap with the reference timeframe (-70, -50). The predicted location ('Greece') is not among the accepted locations ('Kingdom of Pontus', 'Minor Asia', 'Anatolia'). Additionally, the predicted location QID ('Q148') is not within the acceptable location QIDs ('Q7380487', 'Q51614').
-    
 
 ## anthropic:claude-3-7-sonnet-20250219-prompt-excerpt.txt
 
@@ -3254,6 +4716,108 @@ The predicted period string 'Ancient Rome/Greece' is broader than the reference 
 The predicted period 'First Mithridatic War' is narrower than the reference period 'Ancient Rome' (0.5). The predicted timeframe '-88, -63' partly overlaps with the reference timeframe '-70, -50' (0.5). The predicted location 'Kingdom of Pontus' matches the preferred location in the reference (1). The predicted location QID 'Q184376' does not match or fall within the acceptable QIDs in the reference (0).
     
 
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play centers on Mithridates (likely Mithridates VI of Pontus, 120–63 BCE), references to Roman conflicts (Punic Wars, Hannibal), and interactions with Roman deities (Juno, Mars), indicating a setting during the Mithridatic Wars (1st century BCE).
+
+#### Period string
+- **GT**: Ancient Rome
+- **Prediction**: Late Roman Republic
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: -70, -50
+- **Prediction**: -120, -63
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: Rome is the most frequently mentioned place (frequency:11) and is central to conflicts described (e.g., 'cette grande ville,' 'Romains,' 'Junon contre la gent Romaine'), with geopolitical references to Italy and Roman military campaigns.
+
+#### Location string
+- **GT**: Kingdom of Pontus
+- **Prediction**: Rome
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q7380487
+- **Prediction**: Q220
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Late Roman Republic' is more specific than the reference 'Ancient Rome' (0.5). The predicted timeframe '-120, -63' partially overlaps with the reference '-70, -50' (0.5). The predicted location 'Rome' is not among the preferred or accepted locations (0). The predicted location QID 'Q220' is not among the acceptable location QIDs (0).
+    
+
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The name 'Hypsicratee' likely refers to Hypsicratia, wife of Mithridates VI of Pontus (1st century BCE). The themes of war, betrayal, and political intrigue align with the Mithridatic Wars between Pontus and Rome.
+
+#### Period string
+- **GT**: Ancient Rome
+- **Prediction**: Late Hellenistic period/Roman Republic
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: -70, -50
+- **Prediction**: -120, -63
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: Hypsicratia was queen consort of Pontus. The play's classical tragedy structure and references to military conflict suggest a Anatolian/Black Sea region setting tied to Mithridates VI's realm.
+
+#### Location string
+- **GT**: Kingdom of Pontus
+- **Prediction**: Kingdom of Pontus
+- **Score**: 1.0
+
+#### Location QID
+- **GT**: Q7380487
+- **Prediction**: Q132643
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Late Hellenistic period/Roman Republic' is broader than the reference period 'Ancient Rome'. The predicted timeframe '-120, -63' partially overlaps with the reference timeframe '-70, -50'. The predicted location 'Kingdom of Pontus' matches the preferred location in the reference. The predicted location QID 'Q132643' does not match the preferred QID 'Q7380487' and is not within the acceptable QIDs.
+    
+
+## ollama:mistral-small:24b-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The title 'Hypsicratee' suggests a Greek name, and the themes mentioned in the excerpt such as 'magnanimite tragoedie' (tragedy of magnanimity) are reminiscent of classical Greek tragedies. The mention of 'épée' (sword) and 'carnage et au sang' (carnage and blood) also align with the violent themes common in ancient Greek dramas.
+
+#### Period string
+- **GT**: Ancient Rome
+- **Prediction**: Ancient Greece
+- **Score**: 0.0 
+
+#### Period interval
+- **GT**: -70, -50
+- **Prediction**: -500, -300
+- **Score**: 0.0
+
+### Location
+
+**Model reasoning**: The name 'Hypsicratee' is of Greek origin, and the play's title includes 'tragoedie,' which is derived from the Greek word for tragedy. These elements strongly suggest a setting in ancient Greece.
+
+#### Location string
+- **GT**: Kingdom of Pontus
+- **Prediction**: Greece
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q7380487
+- **Prediction**: Q148
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period ('Ancient Greece') does not match the reference period ('Ancient Rome'). The predicted timeframe (-500, -300) does not overlap with the reference timeframe (-70, -50). The predicted location ('Greece') is not among the accepted locations ('Kingdom of Pontus', 'Minor Asia', 'Anatolia'). Additionally, the predicted location QID ('Q148') is not within the acceptable location QIDs ('Q7380487', 'Q51614').
+    
+
 ## ollama:mistral-small:24b-prompt-summary.txt
 
 ### Period
@@ -3294,40 +4858,6 @@ The predicted period 'Classical Antiquity' is broader than the reference 'Ancien
 - **title**: Cinna, ou la Clémence d'Auguste, tragédie (par P. Corneille)...
 - **publication date**: 1646
 
-
-## ollama:mistral-small:24b-prompt-excerpt.txt
-
-### Period
-
-**Model reasoning**: The excerpt mentions 'Auguste', which is a reference to Augustus, the first Roman Emperor. The play's title also includes 'Cinna' and 'Clémence d'Auguste', indicating it revolves around historical figures from the Roman Empire.
-
-#### Period string
-- **GT**: Ancient Rome
-- **Prediction**: Roman Empire
-- **Score**: 0.5 
-
-#### Period interval
-- **GT**: -27, 14
-- **Prediction**: -27, 476
-- **Score**: 0.5
-
-### Location
-
-**Model reasoning**: The mention of Augustus and the context of the play suggest that the action takes place in Rome, the capital of the Roman Empire.
-
-#### Location string
-- **GT**: Rome
-- **Prediction**: Rome, Italy
-- **Score**: 1.0
-
-#### Location QID
-- **GT**: Q220
-- **Prediction**: Q230
-- **Score**: 0.0
-
-#### Score reasoning
-The predicted period 'Roman Empire' is narrower than the reference 'Ancient Rome', resulting in a score of 0.5. The predicted timeframe of -27 to 476 partially overlaps with the reference timeframe of -27 to 14, hence a score of 0.5. The predicted location 'Rome, Italy' matches the preferred location 'Rome', earning a full score of 1. The predicted location QID 'Q230' does not match or fall within the acceptable QIDs ('Q220' or 'Q2277'), resulting in a score of 0.
-    
 
 ## anthropic:claude-3-7-sonnet-20250219-prompt-excerpt.txt
 
@@ -3397,6 +4927,108 @@ The predicted period string accurately reflects the reference period. The timefr
 The predicted period 'Ancient Rome, early Roman Empire' is broader than the reference period 'Ancient Rome', resulting in a score of 0.5. The predicted timeframe '-27, 14' exactly matches the reference timeframe, earning a score of 1. The predicted location 'Rome' matches the preferred location in the reference, earning a score of 1. Additionally, the predicted location QID 'Q220' matches the preferred location QID in the reference, also earning a score of 1.
     
 
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The play's title references Augustus (Octavian), the first Roman emperor, and the characters Æmilie and Cinna suggest a plot related to historical conspiracies against him (circa 1st century CE).
+
+#### Period string
+- **GT**: Ancient Rome
+- **Prediction**: Roman Empire (Early Imperial period)
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: -27, 14
+- **Prediction**: -27, 14
+- **Score**: 1.0
+
+### Location
+
+**Model reasoning**: The play centers on Augustus, a Roman emperor, and Roman imperial politics. The names and context (e.g., 'vanger son pere' implying revenge linked to Roman civil wars) confirm a Roman setting.
+
+#### Location string
+- **GT**: Rome
+- **Prediction**: Rome
+- **Score**: 1.0
+
+#### Location QID
+- **GT**: Q220
+- **Prediction**: Q220
+- **Score**: 1.0
+
+#### Score reasoning
+The predicted period 'Roman Empire (Early Imperial period)' is more specific than the reference 'Ancient Rome', resulting in a partial score of 0.5. The timeframe '-27, 14' exactly matches the reference, earning a score of 1. The predicted location 'Rome' matches the preferred location in the reference, scoring 1. The predicted location QID 'Q220' matches the preferred location QID in the reference, scoring 1.
+    
+
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play references Augustus, the first Roman emperor, and events related to his reign. The mention of Rome, Gaul, and historical figures like Cinna and César (Julius Caesar) situate the play in the early Roman Imperial period under Augustus.
+
+#### Period string
+- **GT**: Ancient Rome
+- **Prediction**: Roman Empire (Principate)
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: -27, 14
+- **Prediction**: -27, 14
+- **Score**: 1.0
+
+### Location
+
+**Model reasoning**: Rome is the most frequently mentioned place in the play, with direct references to its political struggles, citizens, and status as the center of the Roman Empire. Sentences like 'Rome entière noyée au sang de ses enfants' and discussions of imperial power confirm the setting.
+
+#### Location string
+- **GT**: Rome
+- **Prediction**: Rome
+- **Score**: 1.0
+
+#### Location QID
+- **GT**: Q220
+- **Prediction**: Q220
+- **Score**: 1.0
+
+#### Score reasoning
+The predicted period 'Roman Empire (Principate)' is more specific than the reference 'Ancient Rome', earning 0.5 points. The period intervals match exactly, earning 1 point. The predicted location 'Rome' matches the preferred location, earning 1 point. The location QID 'Q220' matches the preferred QID, earning 1 point.
+    
+
+## ollama:mistral-small:24b-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The excerpt mentions 'Auguste', which is a reference to Augustus, the first Roman Emperor. The play's title also includes 'Cinna' and 'Clémence d'Auguste', indicating it revolves around historical figures from the Roman Empire.
+
+#### Period string
+- **GT**: Ancient Rome
+- **Prediction**: Roman Empire
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: -27, 14
+- **Prediction**: -27, 476
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The mention of Augustus and the context of the play suggest that the action takes place in Rome, the capital of the Roman Empire.
+
+#### Location string
+- **GT**: Rome
+- **Prediction**: Rome, Italy
+- **Score**: 1.0
+
+#### Location QID
+- **GT**: Q220
+- **Prediction**: Q230
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Roman Empire' is narrower than the reference 'Ancient Rome', resulting in a score of 0.5. The predicted timeframe of -27 to 476 partially overlaps with the reference timeframe of -27 to 14, hence a score of 0.5. The predicted location 'Rome, Italy' matches the preferred location 'Rome', earning a full score of 1. The predicted location QID 'Q230' does not match or fall within the acceptable QIDs ('Q220' or 'Q2277'), resulting in a score of 0.
+    
+
 ## ollama:mistral-small:24b-prompt-summary.txt
 
 ### Period
@@ -3437,40 +5069,6 @@ The predicted period 'Roman Republic and Roman Empire' is equivalent to the refe
 - **title**: Coronis , pastorale héroïque, représentée par l'Académie royale de musique, le 23e mars 1691
 - **publication date**: 1691
 
-
-## ollama:mistral-small:24b-prompt-excerpt.txt
-
-### Period
-
-**Model reasoning**: The title 'Coronis, pastorale héroïque' and the mention of mythological figures like Daphne suggest a setting in Ancient Greek mythology. The pastoral theme is common in literature inspired by ancient Greek culture.
-
-#### Period string
-- **GT**: Ancient Greece
-- **Prediction**: Ancient Greece
-- **Score**: 1.0 
-
-#### Period interval
-- **GT**: -1000, -700
-- **Prediction**: -800, -300
-- **Score**: 0.5
-
-### Location
-
-**Model reasoning**: The mention of mythological figures and the pastoral setting strongly suggest a location in Ancient Greece, where such themes were prevalent.
-
-#### Location string
-- **GT**: Greece
-- **Prediction**: Greece
-- **Score**: 1.0
-
-#### Location QID
-- **GT**: Q41
-- **Prediction**: Q145
-- **Score**: 0.0
-
-#### Score reasoning
-The period string matches exactly. The timeframe partially overlaps with the reference timeframe. The location string matches the preferred location. The location QID does not match the preferred or acceptable QIDs.
-    
 
 ## anthropic:claude-3-7-sonnet-20250219-prompt-summary.txt
 
@@ -3538,6 +5136,108 @@ The predicted period 'Ancient Greece - Mythological' is more specific than the r
 
 #### Score reasoning
 The predicted period 'Ancient Greek Mythological Period' is broader than the reference 'Ancient Greece'. The predicted timeframe '-800, -300' partially overlaps with the reference '-1000, -700'. The location 'Ancient Greece' matches the preferred location 'Greece'. The location QID 'Q35573' does not match the preferred QID 'Q41' and is not among the acceptable QIDs.
+    
+
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play references Greek mythological figures (e.g., CLIO, a Muse), pastoral themes (e.g., Daphnis, a shepherd in Greek literature), and locations tied to Greek mythology (e.g., Mount Pindus). These elements align with classical antiquity.
+
+#### Period string
+- **GT**: Ancient Greece
+- **Prediction**: Classical antiquity
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: -1000, -700
+- **Prediction**: -800, -146
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The mention of 'Pinde' (Mount Pindus) and 'Fleuve Pénée' (River Peneus) situates the play in Thessaly, a region in Greece associated with these geographical features in classical mythology.
+
+#### Location string
+- **GT**: Greece
+- **Prediction**: Thessaly, Greece
+- **Score**: 0.5
+
+#### Location QID
+- **GT**: Q41
+- **Prediction**: Q193258
+- **Score**: 0.0
+
+#### Score reasoning
+The period string 'Classical antiquity' is broader than the reference 'Ancient Greece'. The predicted timeframe partially overlaps with the reference timeframe. The predicted location 'Thessaly, Greece' is within the accepted location 'Greece'. The location QID 'Q193258' does not match the preferred or acceptable QIDs.
+    
+
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The excerpt references Daphnis, a figure from ancient Greek pastoral poetry, and the pastoral genre typically evokes idealized rural settings tied to classical antiquity. The play's title ('pastorale héroïque') further aligns with themes common in classical pastoral traditions.
+
+#### Period string
+- **GT**: Ancient Greece
+- **Prediction**: Classical antiquity
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: -1000, -700
+- **Prediction**: -800, 500
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: Pastoral works like this often depict idyllic rural settings inspired by Arcadia, a region in ancient Greece symbolizing harmony with nature. The mention of Daphnis, a shepherd from Greek mythology, reinforces this association.
+
+#### Location string
+- **GT**: Greece
+- **Prediction**: Arcadia, Greece
+- **Score**: 0.5
+
+#### Location QID
+- **GT**: Q41
+- **Prediction**: Q170284
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Classical antiquity' is broader than the reference 'Ancient Greece' (0.5). The predicted timeframe '-800, 500' partially overlaps with the reference '-1000, -700' (0.5). The predicted location 'Arcadia, Greece' is within the accepted locations 'Greece' (0.5). The predicted location QID 'Q170284' does not match or fall within accepted QIDs (0).
+    
+
+## ollama:mistral-small:24b-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The title 'Coronis, pastorale héroïque' and the mention of mythological figures like Daphne suggest a setting in Ancient Greek mythology. The pastoral theme is common in literature inspired by ancient Greek culture.
+
+#### Period string
+- **GT**: Ancient Greece
+- **Prediction**: Ancient Greece
+- **Score**: 1.0 
+
+#### Period interval
+- **GT**: -1000, -700
+- **Prediction**: -800, -300
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The mention of mythological figures and the pastoral setting strongly suggest a location in Ancient Greece, where such themes were prevalent.
+
+#### Location string
+- **GT**: Greece
+- **Prediction**: Greece
+- **Score**: 1.0
+
+#### Location QID
+- **GT**: Q41
+- **Prediction**: Q145
+- **Score**: 0.0
+
+#### Score reasoning
+The period string matches exactly. The timeframe partially overlaps with the reference timeframe. The location string matches the preferred location. The location QID does not match the preferred or acceptable QIDs.
     
 
 ## ollama:mistral-small:24b-prompt-summary.txt
@@ -3649,6 +5349,74 @@ The predicted period '17th century France' is narrower than the reference 'Early
 The predicted period 'Contemporary to the play's publication' does not match the reference period 'Early modern'. The predicted timeframe (1600-1649) partially overlaps with the reference timeframe (1648-1653). The predicted location 'France' is within the accepted locations but not the preferred 'Paris'. The predicted location QID 'Q142' is acceptable but not the preferred 'Q90'.
     
 
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play was published in 1649 (17th century) and references historical elements like tax collectors ('partisans'), monopolies, and political unrest, aligning with events such as the Fronde civil wars (1648–1653) in France. The mythological framework (Pluto's court) likely serves as an allegory for contemporary French society.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: 17th century
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1648, 1653
+- **Prediction**: 1601, 1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The top-mentioned place is 'France' (frequency: 16), with repeated references to its political turmoil, taxes, and regions like Paris and Picardie. The play critiques French societal issues of the period, suggesting a setting in France.
+
+#### Location string
+- **GT**: Paris
+- **Prediction**: France
+- **Score**: 0.5
+
+#### Location QID
+- **GT**: Q90
+- **Prediction**: Q142
+- **Score**: 0.5
+
+#### Score reasoning
+The predicted period '17th century' is narrower than the reference 'Early modern', resulting in a score of 0.5. The predicted timeframe 1601-1700 partially overlaps with the reference timeframe 1648-1653, yielding a score of 0.5. The predicted location 'France' is an accepted location but not the preferred one, leading to a score of 0.5. The predicted location QID 'Q142' is acceptable but not the preferred QID, resulting in a score of 0.5.
+    
+
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The play references Pluton (Pluto), the Roman god of the underworld, indicating a mythological setting tied to Roman mythology, which is associated with classical antiquity.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: Classical antiquity
+- **Score**: 0.0 
+
+#### Period interval
+- **GT**: 1648, 1653
+- **Prediction**: -500, 500
+- **Score**: 0.0
+
+### Location
+
+**Model reasoning**: The play's action is explicitly set in Pluton's mythological underworld realm, which is not a real-world geographic location.
+
+#### Location string
+- **GT**: Paris
+- **Prediction**: None
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q90
+- **Prediction**: None
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Classical antiquity' does not match the reference period 'Early modern'. The predicted timeframe (-500 to 500) does not overlap with the reference timeframe (1648 to 1653). No location was predicted, resulting in no match with the preferred or accepted locations.
+    
+
 ## ollama:mistral-small:24b-prompt-summary.txt
 
 ### Period
@@ -3724,40 +5492,6 @@ The predicted period '17th century' is broader than the reference 'Early modern'
 - **publication date**: 1637
 
 
-## ollama:mistral-small:24b-prompt-excerpt.txt
-
-### Period
-
-**Model reasoning**: The play was written by Jean de Rotrou and published in 1637, which places it firmly within the 17th century.
-
-#### Period string
-- **GT**: Early modern
-- **Prediction**: 17th century
-- **Score**: 0.5 
-
-#### Period interval
-- **GT**: 1600, 1637
-- **Prediction**: +1600, +1700
-- **Score**: 0.5
-
-### Location
-
-**Model reasoning**: The excerpt provided does not contain any specific geographical references that would indicate the location of the play's action.
-
-#### Location string
-- **GT**: Florence
-- **Prediction**: None
-- **Score**: 0.0
-
-#### Location QID
-- **GT**: Q142
-- **Prediction**: None
-- **Score**: 0.0
-
-#### Score reasoning
-The predicted period '17th century' is narrower than the reference 'Early modern'. The predicted timeframe (1600-1700) partly overlaps with the reference timeframe (1600-1637). The predicted location is 'None', which is not among the accepted locations. The predicted location QID is null, which does not match or fall within the acceptable QIDs.
-    
-
 ## anthropic:claude-3-7-sonnet-20250219-prompt-summary.txt
 
 ### Period
@@ -3826,6 +5560,108 @@ The prediction's period 'Early 17th century' is more specific than the reference
 The predicted period 'Renaissance' partially overlaps with the reference period 'Early modern', earning 0.5 points. The predicted timeframe (1550-1650) partly overlaps with the reference timeframe (1600-1637), resulting in another 0.5 points. The predicted location 'France' is not among the accepted locations 'Florence | Tuscany | Italy', so it scores 0. However, the predicted location QID 'Q142' matches the preferred location QID, awarding 1 point.
     
 
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The excerpt does not contain explicit references to historical events, figures, or cultural elements that would indicate a specific historical period. The mention of 'Dieux' (gods) is too generic to conclusively link to a polytheistic era (e.g., antiquity) without further contextual evidence.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: None
+- **Score**: 0.0 
+
+#### Period interval
+- **GT**: 1600, 1637
+- **Prediction**: None, None
+- **Score**: 0.0
+
+### Location
+
+**Model reasoning**: The excerpt lacks geographic or cultural markers (e.g., place names, landmarks, societal structures) to determine the setting. The title's 'pelerine' (pilgrimess) suggests a religious journey motif, but this does not specify a location without additional context.
+
+#### Location string
+- **GT**: Florence
+- **Prediction**: None
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q142
+- **Prediction**: None
+- **Score**: 0.0
+
+#### Score reasoning
+All predicted fields are null, which do not match or overlap with the reference values.
+    
+
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play mentions Florence, a key center of the Renaissance, and references to characters like ERASME (possibly Erasmus, a Renaissance humanist). The tragicomedy genre and French authorship from the 17th century also align with Renaissance theatrical traditions.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: Renaissance
+- **Score**: 0.0 
+
+#### Period interval
+- **GT**: 1600, 1637
+- **Prediction**: 1400, 1600
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: Florence is the most frequently mentioned place (6 times) in the play's context, with characters discussing events and journeys tied to the city. Other locations like Lyon and Paris are secondary.
+
+#### Location string
+- **GT**: Florence
+- **Prediction**: Florence
+- **Score**: 1.0
+
+#### Location QID
+- **GT**: Q142
+- **Prediction**: Q2044
+- **Score**: 0.5
+
+#### Score reasoning
+The predicted period 'Renaissance' does not match the reference period 'Early modern', resulting in a score of 0. The predicted timeframe '1400-1600' partially overlaps with the reference timeframe '1600-1637', earning a score of 0.5. The predicted location 'Florence' matches the preferred location, achieving a full score of 1. The predicted location QID 'Q2044' is among the accepted location QIDs, resulting in a score of 0.5.
+    
+
+## ollama:mistral-small:24b-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The play was written by Jean de Rotrou and published in 1637, which places it firmly within the 17th century.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: 17th century
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1637
+- **Prediction**: +1600, +1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The excerpt provided does not contain any specific geographical references that would indicate the location of the play's action.
+
+#### Location string
+- **GT**: Florence
+- **Prediction**: None
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q142
+- **Prediction**: None
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period '17th century' is narrower than the reference 'Early modern'. The predicted timeframe (1600-1700) partly overlaps with the reference timeframe (1600-1637). The predicted location is 'None', which is not among the accepted locations. The predicted location QID is null, which does not match or fall within the acceptable QIDs.
+    
+
 ## ollama:mistral-small:24b-prompt-summary.txt
 
 ### Period
@@ -3866,40 +5702,6 @@ The predicted period '17th century' is narrower than the reference 'Early modern
 - **title**: Adolphe ou Le bigame genereux . Tragi-comedie.
 - **publication date**: 1650
 
-
-## ollama:mistral-small:24b-prompt-excerpt.txt
-
-### Period
-
-**Model reasoning**: nan
-
-#### Period string
-- **GT**: Early modern
-- **Prediction**: nan
-- **Score**: 0.0 
-
-#### Period interval
-- **GT**: 1600, 1650
-- **Prediction**: nan, nan
-- **Score**: 0.0
-
-### Location
-
-**Model reasoning**: nan
-
-#### Location string
-- **GT**: Herford
-- **Prediction**: nan
-- **Score**: 0.0
-
-#### Location QID
-- **GT**: Q3971
-- **Prediction**: nan
-- **Score**: 0.0
-
-#### Score reasoning
-All predicted fields are missing or invalid (NaN), resulting in no matches or overlaps with the reference values.
-    
 
 ## anthropic:claude-3-7-sonnet-20250219-prompt-summary.txt
 
@@ -3967,6 +5769,108 @@ The predicted period ('Ancient Rome or Early Christian period') does not match t
 
 #### Score reasoning
 The predicted period '17th Century' is narrower than the reference 'Early modern' (0.5). The predicted timeframe matches the reference exactly (1). The predicted location 'France' is not among the accepted locations (0). The predicted location QID 'Q142' is not among the acceptable location QIDs (0).
+    
+
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The excerpt does not contain explicit references to historical events, figures, or cultural markers that would indicate a specific historical period. The language and style are consistent with 17th-century French drama but do not directly specify the play's temporal setting.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: None
+- **Score**: 0.0 
+
+#### Period interval
+- **GT**: 1600, 1650
+- **Prediction**: None, None
+- **Score**: 0.0
+
+### Location
+
+**Model reasoning**: The excerpt lacks geographic references (e.g., place names, regional customs, or political entities) to infer a specific location. The French authorship and language suggest a French cultural context, but the play's narrative setting is not explicitly stated.
+
+#### Location string
+- **GT**: Herford
+- **Prediction**: None
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q3971
+- **Prediction**: None
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period is null, which does not match the reference period 'Early modern'. The predicted timeframe 'None, None' does not overlap with the reference timeframe '1600, 1650'. The predicted location is null, which is not among the accepted locations ('Herford', 'Holy Roman Empire', 'Germany'). The predicted location QID is null, which does not match the preferred QID 'Q3971' or any of the acceptable QIDs ('Q3971', 'Q12548', 'Q183').
+    
+
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play's frequent references to Rome, Africa, and Crete align with the Roman Empire's historical geography. The mention of laws, courts, and imperial titles (e.g., 'Prince mon Père') further supports a classical Roman setting, typical of 17th-century French tragicomedies inspired by antiquity.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: Roman Empire
+- **Score**: 0.0 
+
+#### Period interval
+- **GT**: 1600, 1650
+- **Prediction**: -27, 476
+- **Score**: 0.0
+
+### Location
+
+**Model reasoning**: Rome is the most frequently mentioned place (8 times) and is central to key plot elements (marriage, legal conflicts, and imperial context). Other locations like Africa and Crete are peripheral but historically associated with Roman territories.
+
+#### Location string
+- **GT**: Herford
+- **Prediction**: Rome
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q3971
+- **Prediction**: Q220
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Roman Empire' does not match the reference period 'Early modern'. The prediction timeframe '-27 to 476' does not overlap with the reference timeframe '1600 to 1650'. The predicted location 'Rome' is not the preferred location 'Herford' nor is it listed among the accepted locations. Additionally, the predicted location QID 'Q220' does not match the preferred location QID 'Q3971' and is not among the acceptable location QIDs.
+    
+
+## ollama:mistral-small:24b-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: nan
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: nan
+- **Score**: 0.0 
+
+#### Period interval
+- **GT**: 1600, 1650
+- **Prediction**: nan, nan
+- **Score**: 0.0
+
+### Location
+
+**Model reasoning**: nan
+
+#### Location string
+- **GT**: Herford
+- **Prediction**: nan
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q3971
+- **Prediction**: nan
+- **Score**: 0.0
+
+#### Score reasoning
+All predicted fields are missing or invalid (NaN), resulting in no matches or overlaps with the reference values.
     
 
 ## ollama:mistral-small:24b-prompt-summary.txt
@@ -4044,40 +5948,6 @@ The predicted period 'Late Antiquity or Early Middle Ages' does not match the re
 The predicted period 'Golden Age of Piracy' is narrower than the reference 'Early modern'. The predicted timeframe '1600-1650' partially overlaps with the reference '1600-1663'. The predicted location 'Mediterranean Sea' is not among the preferred or accepted locations ('Paphos', 'Cyprus'). The predicted location QID 'Q4918' is not among the acceptable QIDs ('Q180918', 'Q229').
     
 
-## ollama:mistral-small:24b-prompt-summary.txt
-
-### Period
-
-**Model reasoning**: The play mentions Paphos, which is an ancient city in Cyprus with a rich history dating back to the Bronze Age. The mention of 'Cypre' (Cyprus) and other places like 'Asie' (Asia) and 'Grèce' (Greece) suggests a setting influenced by classical antiquity.
-
-#### Period string
-- **GT**: Early modern
-- **Prediction**: Ancient Greece and Roman Empire
-- **Score**: 0.0 
-
-#### Period interval
-- **GT**: 1600, 1663
-- **Prediction**: -800, +476
-- **Score**: 0.0
-
-### Location
-
-**Model reasoning**: The frequent mention of Paphos and its significance in the play indicates that it is a central location. Additionally, references to 'Cypre' (Cyprus) further support this conclusion.
-
-#### Location string
-- **GT**: Paphos
-- **Prediction**: Paphos, Cyprus
-- **Score**: 0.5
-
-#### Location QID
-- **GT**: Q180918
-- **Prediction**: Q208394
-- **Score**: 0.0
-
-#### Score reasoning
-The predicted period 'Ancient Greece and Roman Empire' does not match the reference period 'Early modern'. The predicted timeframe '-800, +476' does not overlap with the reference timeframe '1600, 1663'. The predicted location 'Paphos, Cyprus' is contained within the accepted locations 'Paphos | Cyprus', resulting in a partial score. The predicted location QID 'Q208394' is not among the acceptable location QIDs 'Q180918 | Q229'.
-    
-
 ## anthropic:claude-3-7-sonnet-20250219-prompt-summary.txt
 
 ### Period
@@ -4110,6 +5980,108 @@ The predicted period 'Ancient Greece and Roman Empire' does not match the refere
 
 #### Score reasoning
 The predicted period 'Ancient Greek or Roman period' differs from the reference period 'Early modern'. The predicted timeframe '-400, 300' does not overlap with the reference timeframe '1600, 1663'. The predicted location 'Cyprus' is within the accepted locations, and the location QID 'Q229' is among the acceptable QIDs.
+    
+
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play references Paphos and Cypre (Cyprus), ancient locations tied to Greek mythology and history. The Hellenistic period (4th–1st centuries BCE) aligns with Cyprus's prominence under Greek and later Roman influence, fitting the setting implied by place names and character dynamics.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: Classical Antiquity
+- **Score**: 0.0 
+
+#### Period interval
+- **GT**: 1600, 1663
+- **Prediction**: -400, -30
+- **Score**: 0.0
+
+### Location
+
+**Model reasoning**: Paphos is the most frequently mentioned place (10 occurrences) and is explicitly tied to the action (e.g., guarding/losing Paphos). Cypre (Cyprus) is also listed among top places, reinforcing the island as the broader geographic context.
+
+#### Location string
+- **GT**: Paphos
+- **Prediction**: Paphos, Cyprus
+- **Score**: 0.5
+
+#### Location QID
+- **GT**: Q180918
+- **Prediction**: Q180209
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Classical Antiquity' does not match the reference period 'Early modern'. The predicted timeframe '-400, -30' does not overlap with the reference timeframe '1600, 1663'. The predicted location 'Paphos, Cyprus' is within the accepted locations but not the preferred location. The predicted location QID 'Q180209' does not match any accepted QIDs.
+    
+
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The play's themes of corsairs (privateers/pirates) and its 17th-century French authorship suggest the Early Modern period, when Mediterranean corsair activity (e.g., Barbary corsairs) was prominent.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: Early Modern period
+- **Score**: 1.0 
+
+#### Period interval
+- **GT**: 1600, 1663
+- **Prediction**: 1500, 1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The title 'Le Prince corsaire' (The Corsair Prince) and references to maritime conflict imply a setting linked to corsairs, who were most active in the Mediterranean, particularly the Barbary Coast (North Africa).
+
+#### Location string
+- **GT**: Paphos
+- **Prediction**: Barbary Coast
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q180918
+- **Prediction**: Q808511
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Early Modern period' matches the reference period 'Early modern'. The predicted timeframe '1500-1700' partially overlaps with the reference timeframe '1600-1663'. The predicted location 'Barbary Coast' is neither the preferred location 'Paphos' nor among the accepted locations 'Paphos | Cyprus'. The predicted location QID 'Q808511' does not match the preferred QID 'Q180918' and is not among the acceptable QIDs 'Q229'.
+    
+
+## ollama:mistral-small:24b-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play mentions Paphos, which is an ancient city in Cyprus with a rich history dating back to the Bronze Age. The mention of 'Cypre' (Cyprus) and other places like 'Asie' (Asia) and 'Grèce' (Greece) suggests a setting influenced by classical antiquity.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: Ancient Greece and Roman Empire
+- **Score**: 0.0 
+
+#### Period interval
+- **GT**: 1600, 1663
+- **Prediction**: -800, +476
+- **Score**: 0.0
+
+### Location
+
+**Model reasoning**: The frequent mention of Paphos and its significance in the play indicates that it is a central location. Additionally, references to 'Cypre' (Cyprus) further support this conclusion.
+
+#### Location string
+- **GT**: Paphos
+- **Prediction**: Paphos, Cyprus
+- **Score**: 0.5
+
+#### Location QID
+- **GT**: Q180918
+- **Prediction**: Q208394
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Ancient Greece and Roman Empire' does not match the reference period 'Early modern'. The predicted timeframe '-800, +476' does not overlap with the reference timeframe '1600, 1663'. The predicted location 'Paphos, Cyprus' is contained within the accepted locations 'Paphos | Cyprus', resulting in a partial score. The predicted location QID 'Q208394' is not among the acceptable location QIDs 'Q180918 | Q229'.
     
 
 ## ollama:mistral-small:24b-prompt-excerpt.txt
@@ -4152,74 +6124,6 @@ The predicted period '17th century' is narrower than the reference 'Early modern
 - **title**: Les bourgeoises de qualité . Comedie. Par Mr de Haute Roche
 - **publication date**: 1691
 
-
-## ollama:mistral-small:24b-prompt-summary.txt
-
-### Period
-
-**Model reasoning**: The play was published in 1691, and it is a comedy from the XVII century. The author Noël Lebreton Hauteroche lived during this period.
-
-#### Period string
-- **GT**: Early modern
-- **Prediction**: 17th century
-- **Score**: 0.5 
-
-#### Period interval
-- **GT**: 1600, 1691
-- **Prediction**: +1600, +1700
-- **Score**: 0.5
-
-### Location
-
-**Model reasoning**: The play mentions 'France' as a significant place with a frequency of 3, and it is the top mentioned location. Additionally, the author is French.
-
-#### Location string
-- **GT**: Paris
-- **Prediction**: France
-- **Score**: 0.5
-
-#### Location QID
-- **GT**: Q90
-- **Prediction**: Q142
-- **Score**: 0.5
-
-#### Score reasoning
-The predicted period '17th century' is a narrower subset of the reference period 'Early modern', resulting in a partial match (0.5). The predicted timeframe '+1600, +1700' partially overlaps with the reference timeframe '1600, 1691' (0.5). The predicted location 'France' is within the accepted locations but not the preferred location (0.5). Similarly, the predicted location QID 'Q142' is among the acceptable QIDs but does not match the preferred QID 'Q90' (0.5).
-    
-
-## ollama:mistral-small:24b-prompt-excerpt.txt
-
-### Period
-
-**Model reasoning**: nan
-
-#### Period string
-- **GT**: Early modern
-- **Prediction**: nan
-- **Score**: 0.0 
-
-#### Period interval
-- **GT**: 1600, 1691
-- **Prediction**: nan, nan
-- **Score**: 0.0
-
-### Location
-
-**Model reasoning**: nan
-
-#### Location string
-- **GT**: Paris
-- **Prediction**: nan
-- **Score**: 0.0
-
-#### Location QID
-- **GT**: Q90
-- **Prediction**: nan
-- **Score**: 0.0
-
-#### Score reasoning
-All predicted fields are NaN, which do not match the reference values or fall within the accepted alternatives.
-    
 
 ## anthropic:claude-3-7-sonnet-20250219-prompt-summary.txt
 
@@ -4287,6 +6191,142 @@ The predicted period 'Late 17th century, Louis XIV era' is more specific than th
 
 #### Score reasoning
 The predicted period 'Late 17th century' is narrower than the reference 'Early modern' (0.5). The prediction timeframe 1680-1700 partially overlaps with the reference 1600-1691 (0.5). The predicted location 'Paris' matches the preferred location (1). The predicted location QID 'Q90' matches the preferred location QID (1).
+    
+
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play was published in 1691, and the author Hauteroche was active in the 17th century. The text references social structures (e.g., nobility, gentry) and terms like 'Gentilhomme' typical of the Ancien Régime in 17th-century France.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: 17th century
+- **Score**: 1.0 
+
+#### Period interval
+- **GT**: 1600, 1691
+- **Prediction**: 1601, 1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The top_1_place entity is 'France' with three mentions, and other locations (Auvergne, Paris) are French regions. Sentences like 'il n'en est point en France' confirm the setting.
+
+#### Location string
+- **GT**: Paris
+- **Prediction**: France
+- **Score**: 0.5
+
+#### Location QID
+- **GT**: Q90
+- **Prediction**: Q142
+- **Score**: 0.5
+
+#### Score reasoning
+The predicted period '17th century' is equivalent to the reference 'Early modern' (1 point). The predicted timeframe 1601-1700 partially overlaps with the reference 1600-1691 (0.5 points). The predicted location 'France' is within the accepted locations ('Paris | France') (0.5 points). The predicted location QID 'Q142' is within the acceptable QIDs ('Q90 | Q142') (0.5 points).
+    
+
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The play was published in 1691 by a French author, and its comedic focus on bourgeois social dynamics aligns with themes common in French theater during Louis XIV's reign (1643-1715). The dialogue reflects aristocratic manners and class-consciousness typical of the period.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: Late 17th century France (Ancien Régime)
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1691
+- **Prediction**: 1643, 1715
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The author's French identity, original French text, and use of character names/terms like 'bourgeoises' strongly suggest a French urban setting typical of 17th-century social comedies.
+
+#### Location string
+- **GT**: Paris
+- **Prediction**: France
+- **Score**: 0.5
+
+#### Location QID
+- **GT**: Q90
+- **Prediction**: Q142
+- **Score**: 0.5
+
+#### Score reasoning
+The predicted period string 'Late 17th century France (Ancien Régime)' is narrower than the reference 'Early modern', resulting in a score of 0.5. The predicted timeframe (1643-1715) partially overlaps with the reference timeframe (1600-1691), earning another 0.5. The predicted location 'France' is within the accepted locations 'Paris | France', leading to a score of 0.5. Lastly, the predicted location QID 'Q142' is among the acceptable QIDs 'Q90 | Q142', which also results in a score of 0.5.
+    
+
+## ollama:mistral-small:24b-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play was published in 1691, and it is a comedy from the XVII century. The author Noël Lebreton Hauteroche lived during this period.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: 17th century
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1691
+- **Prediction**: +1600, +1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The play mentions 'France' as a significant place with a frequency of 3, and it is the top mentioned location. Additionally, the author is French.
+
+#### Location string
+- **GT**: Paris
+- **Prediction**: France
+- **Score**: 0.5
+
+#### Location QID
+- **GT**: Q90
+- **Prediction**: Q142
+- **Score**: 0.5
+
+#### Score reasoning
+The predicted period '17th century' is a narrower subset of the reference period 'Early modern', resulting in a partial match (0.5). The predicted timeframe '+1600, +1700' partially overlaps with the reference timeframe '1600, 1691' (0.5). The predicted location 'France' is within the accepted locations but not the preferred location (0.5). Similarly, the predicted location QID 'Q142' is among the acceptable QIDs but does not match the preferred QID 'Q90' (0.5).
+    
+
+## ollama:mistral-small:24b-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: nan
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: nan
+- **Score**: 0.0 
+
+#### Period interval
+- **GT**: 1600, 1691
+- **Prediction**: nan, nan
+- **Score**: 0.0
+
+### Location
+
+**Model reasoning**: nan
+
+#### Location string
+- **GT**: Paris
+- **Prediction**: nan
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q90
+- **Prediction**: nan
+- **Score**: 0.0
+
+#### Score reasoning
+All predicted fields are NaN, which do not match the reference values or fall within the accepted alternatives.
     
     
 # Document ID: btv1b8610783h
@@ -4364,6 +6404,74 @@ The predicted period '17th century' is narrower than the reference 'Early modern
 The predicted period '17th century' is narrower than the reference 'Early modern' (0.5). The timeframe '1650-1669' partially overlaps with the reference '1600-1669' (0.5). The predicted location 'Naples' is not among the accepted locations 'Paris | France' (0). The predicted location QID 'Q2634' is not included in the acceptable QIDs 'Q90 | Q142' (0).
     
 
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play was written by Molière, a French playwright active in the mid-17th century, and his works typically reflect contemporary French society. The publication date (1669) and mentions of French cultural elements (e.g., Paris) align with this period.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: 17th century France
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1669
+- **Prediction**: 1601, 1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: While Naples is the most frequently mentioned place, it appears in backstories (e.g., exile narratives). The play’s characters and context (e.g., references to Paris in the top_5_places) suggest the primary setting is Paris, typical of Molière’s comedies.
+
+#### Location string
+- **GT**: Paris
+- **Prediction**: Paris
+- **Score**: 1.0
+
+#### Location QID
+- **GT**: Q90
+- **Prediction**: Q90
+- **Score**: 1.0
+
+#### Score reasoning
+The predicted period '17th century France' is narrower than the reference 'Early modern', earning 0.5 points. The timeframe 1601-1700 partially overlaps with the reference timeframe 1600-1669, resulting in another 0.5 points. The predicted location 'Paris' exactly matches the preferred location, granting 1 point. Additionally, the predicted location QID 'Q90' matches the preferred location QID, awarding the full 1 point.
+    
+
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The play was written by Molière in 1669 and reflects the societal context of 17th-century France, consistent with his works set in his contemporary era.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: 17th century
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1669
+- **Prediction**: 1601, 1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: Molière's plays are typically set in France, and the French names, societal context, and lack of location-specific clues in the excerpt support this inference.
+
+#### Location string
+- **GT**: Paris
+- **Prediction**: France
+- **Score**: 0.5
+
+#### Location QID
+- **GT**: Q90
+- **Prediction**: Q142
+- **Score**: 0.5
+
+#### Score reasoning
+The predicted period '17th century' is narrower than the reference 'Early modern'. The predicted timeframe partially overlaps with the reference timeframe. The predicted location 'France' is an accepted location but not the preferred 'Paris'. The predicted location QID 'Q142' is acceptable but not the preferred QID 'Q90'.
+    
+
 ## ollama:mistral-small:24b-prompt-summary.txt
 
 ### Period
@@ -4439,74 +6547,6 @@ The predicted period '17th century' is narrower than the reference 'Early modern
 - **publication date**: 1663
 
 
-## ollama:mistral-small:24b-prompt-excerpt.txt
-
-### Period
-
-**Model reasoning**: Molière was a prominent French playwright in the 17th century, and his works are typically set in contemporary or slightly earlier periods within France. The publication date of 1663 aligns with this period.
-
-#### Period string
-- **GT**: Early modern
-- **Prediction**: 17th century France
-- **Score**: 0.5 
-
-#### Period interval
-- **GT**: 1605, 1663
-- **Prediction**: +1600, +1700
-- **Score**: 0.5
-
-### Location
-
-**Model reasoning**: Molière was a French playwright, and his plays are generally set in France. The language of the excerpt is French, which supports this location.
-
-#### Location string
-- **GT**: Paris
-- **Prediction**: France
-- **Score**: 0.5
-
-#### Location QID
-- **GT**: Q90
-- **Prediction**: Q142
-- **Score**: 0.5
-
-#### Score reasoning
-The period string in the prediction ('17th century France') is narrower than the reference ('Early modern'), resulting in a score of 0.5. The period interval in the prediction ('+1600, +1700') partially overlaps with the reference interval ('1605, 1663'), earning a score of 0.5. The location string in the prediction ('France') is listed as an accepted location but not the preferred location ('Paris'), which merits a score of 0.5. Lastly, the location QID in the prediction ('Q142') is among the acceptable location QIDs but does not match the preferred location QID ('Q90'), thus receiving a score of 0.5.
-    
-
-## ollama:mistral-small:24b-prompt-summary.txt
-
-### Period
-
-**Model reasoning**: The play was written by Molière and published in 1663, which places it firmly within the 17th century.
-
-#### Period string
-- **GT**: Early modern
-- **Prediction**: 17th century
-- **Score**: 1.0 
-
-#### Period interval
-- **GT**: 1605, 1663
-- **Prediction**: +1600, +1700
-- **Score**: 0.5
-
-### Location
-
-**Model reasoning**: The play frequently mentions Paris and specific locations within Paris such as 'Place Royale' and 'Louvre'.
-
-#### Location string
-- **GT**: Paris
-- **Prediction**: Paris
-- **Score**: 1.0
-
-#### Location QID
-- **GT**: Q90
-- **Prediction**: Q90
-- **Score**: 1.0
-
-#### Score reasoning
-The period '17th century' is equivalent to the reference period 'Early modern', hence full score. The timeframe '+1600 to +1700' partially overlaps with the reference timeframe '1605 to 1663', resulting in a half score. The location 'Paris' and its QID 'Q90' exactly match the preferred reference location and QID, earning full scores.
-    
-
 ## anthropic:claude-3-7-sonnet-20250219-prompt-summary.txt
 
 ### Period
@@ -4573,6 +6613,142 @@ The predicted period '17th century France during the reign of Louis XIV' is equi
 
 #### Score reasoning
 The period string '17th century' is narrower than the reference 'Early modern'. The timeframe [1600, 1699] partially overlaps with [1605, 1663]. The location 'France' is accepted but not the preferred 'Paris'. The location QID 'Q142' is acceptable but not the preferred 'Q90'.
+    
+
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: Molière's plays typically satirized contemporary 17th-century French society, reflecting the cultural norms and social structures of the Ancien Régime under Louis XIV. The publication date (1663) aligns with this period.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: 17th century France (Ancien Régime)
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1605, 1663
+- **Prediction**: 1601, 1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: Molière's works were predominantly set in Parisian aristocratic or bourgeois settings, and the French dialogue/titles (e.g., 'Monsieur le Chevalier') suggest a Parisian context typical of his comedies.
+
+#### Location string
+- **GT**: Paris
+- **Prediction**: Paris, France
+- **Score**: 1.0
+
+#### Location QID
+- **GT**: Q90
+- **Prediction**: Q90
+- **Score**: 1.0
+
+#### Score reasoning
+The predicted period '17th century France (Ancien Régime)' is more specific than the reference 'Early modern', resulting in a score of 0.5. The predicted timeframe '1601-1700' partially overlaps with the reference timeframe '1605-1663', earning a score of 0.5. The predicted location 'Paris, France' is equivalent to the preferred location 'Paris', thus receiving a score of 1. The predicted location QID 'Q90' matches the preferred QID, also receiving a score of 1.
+    
+
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play was written by Molière in 1663, a French playwright active in the 17th century. His works typically reflect the social and cultural context of his time, and there is no indication in the metadata or context of anachronistic elements suggesting a different period.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: 17th century France
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1605, 1663
+- **Prediction**: 1601, 1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The play explicitly references Parisian landmarks such as 'Place Royale' and 'Louvre', which are historically associated with 17th-century Paris. The 'top_5_places' list further confirms Paris as the primary setting.
+
+#### Location string
+- **GT**: Paris
+- **Prediction**: Paris
+- **Score**: 1.0
+
+#### Location QID
+- **GT**: Q90
+- **Prediction**: Q90
+- **Score**: 1.0
+
+#### Score reasoning
+The predicted period '17th century France' is more specific than the reference 'Early modern', and the timeframe partially overlaps. The location 'Paris' and its QID 'Q90' match the reference.
+    
+
+## ollama:mistral-small:24b-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: Molière was a prominent French playwright in the 17th century, and his works are typically set in contemporary or slightly earlier periods within France. The publication date of 1663 aligns with this period.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: 17th century France
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1605, 1663
+- **Prediction**: +1600, +1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: Molière was a French playwright, and his plays are generally set in France. The language of the excerpt is French, which supports this location.
+
+#### Location string
+- **GT**: Paris
+- **Prediction**: France
+- **Score**: 0.5
+
+#### Location QID
+- **GT**: Q90
+- **Prediction**: Q142
+- **Score**: 0.5
+
+#### Score reasoning
+The period string in the prediction ('17th century France') is narrower than the reference ('Early modern'), resulting in a score of 0.5. The period interval in the prediction ('+1600, +1700') partially overlaps with the reference interval ('1605, 1663'), earning a score of 0.5. The location string in the prediction ('France') is listed as an accepted location but not the preferred location ('Paris'), which merits a score of 0.5. Lastly, the location QID in the prediction ('Q142') is among the acceptable location QIDs but does not match the preferred location QID ('Q90'), thus receiving a score of 0.5.
+    
+
+## ollama:mistral-small:24b-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play was written by Molière and published in 1663, which places it firmly within the 17th century.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: 17th century
+- **Score**: 1.0 
+
+#### Period interval
+- **GT**: 1605, 1663
+- **Prediction**: +1600, +1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The play frequently mentions Paris and specific locations within Paris such as 'Place Royale' and 'Louvre'.
+
+#### Location string
+- **GT**: Paris
+- **Prediction**: Paris
+- **Score**: 1.0
+
+#### Location QID
+- **GT**: Q90
+- **Prediction**: Q90
+- **Score**: 1.0
+
+#### Score reasoning
+The period '17th century' is equivalent to the reference period 'Early modern', hence full score. The timeframe '+1600 to +1700' partially overlaps with the reference timeframe '1605 to 1663', resulting in a half score. The location 'Paris' and its QID 'Q90' exactly match the preferred reference location and QID, earning full scores.
     
     
 # Document ID: bpt6k10900954
@@ -4648,6 +6824,74 @@ The predicted period '17th century France during the reign of Louis XIV (the Sun
 
 #### Score reasoning
 The predicted period 'Early 17th century' is a narrower term within the reference's 'Early modern' period. The timeframe [1600, 1650] partially overlaps with the reference's [1600, 1661]. The location 'Florence' is an accepted location, and the QID 'Q2044' is among the acceptable QIDs.
+    
+
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play was published in 1661, a French comedy from the 17th century. While the setting in Florence might evoke the Italian Renaissance, the lack of explicit historical references in the text suggests the action aligns with the author's contemporary period (17th century).
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: 17th century
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1661
+- **Prediction**: 1601, 1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: Florence is the most frequently mentioned place (frequency: 15) and appears in key contextual sentences (e.g., characters returning to or departing from Florence, references to the Duke of Florence). Other top places (Prairie, Paris, Madrid, Pise) are secondary or transient.
+
+#### Location string
+- **GT**: Poggio a Caiano
+- **Prediction**: Florence
+- **Score**: 0.5
+
+#### Location QID
+- **GT**: Q20387
+- **Prediction**: Q2044
+- **Score**: 0.5
+
+#### Score reasoning
+The period string '17th century' is narrower than the reference 'Early modern', assigning 0.5. The period interval partially overlaps with the reference timeframe, assigning 0.5. The location 'Florence' is not the preferred location but is among the accepted locations, assigning 0.5. The location QID 'Q2044' is acceptable but not preferred, assigning 0.5.
+    
+
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The play was written in 17th-century France (1661), a period dominated by classical French theater often set in contemporary aristocratic settings. The formal language ('Madame,' 'genoux'), themes of honor and social dynamics, and the name 'Henry' (common in French nobility) align with early modern French cultural norms.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: Early Modern France (Ancien Régime)
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1661
+- **Prediction**: 1601, 1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The French language, authorial context (Lambert as a French playwright), and publication in France strongly suggest a domestic setting. 17th-century French comedies rarely used foreign settings unless explicitly stated.
+
+#### Location string
+- **GT**: Poggio a Caiano
+- **Prediction**: France
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q20387
+- **Prediction**: Q142
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Early Modern France (Ancien Régime)' is narrower than the reference 'Early modern'. The predicted timeframe 1601-1700 partially overlaps with the reference timeframe 1600-1661. The predicted location 'France' is not among the accepted locations, and the location QID 'Q142' is not among the acceptable QIDs.
     
 
 ## ollama:mistral-small:24b-prompt-summary.txt
@@ -4759,40 +7003,6 @@ The prediction did not provide values for period, timeframe, location, or locati
 The predicted period '17th century France' is more specific than the reference's 'Early modern', resulting in a partial score. The timeframe '1600-1650' partially overlaps with the reference '1600-1638'. Both the location string and QID exactly match the reference.
     
 
-## ollama:mistral-small:24b-prompt-summary.txt
-
-### Period
-
-**Model reasoning**: The play was published in 1638, and the language and style are characteristic of the 17th century.
-
-#### Period string
-- **GT**: Early modern
-- **Prediction**: 17th century
-- **Score**: 0.5 
-
-#### Period interval
-- **GT**: 1600, 1638
-- **Prediction**: +1600, +1700
-- **Score**: 0.5
-
-### Location
-
-**Model reasoning**: The play mentions 'France' as one of the top places, indicating a strong connection to French culture and geography. Additionally, the author is André Mareschal, who was active in France during the 17th century.
-
-#### Location string
-- **GT**: Paris
-- **Prediction**: France
-- **Score**: 0.5
-
-#### Location QID
-- **GT**: Q90
-- **Prediction**: Q142
-- **Score**: 0.5
-
-#### Score reasoning
-The predicted period '17th century' is within the broader 'Early modern' period. The predicted timeframe partially overlaps with the reference timeframe. The predicted location 'France' is an accepted location but not the preferred one. The predicted location QID 'Q142' is within the acceptable QIDs but not the preferred QID.
-    
-
 ## anthropic:claude-3-7-sonnet-20250219-prompt-excerpt.txt
 
 ### Period
@@ -4825,6 +7035,108 @@ The predicted period '17th century' is within the broader 'Early modern' period.
 
 #### Score reasoning
 The predicted period 'Late Renaissance / Early Baroque' is broader than the reference 'Early modern'. The predicted timeframe '1600, 1650' partially overlaps with the reference '1600, 1638'. The predicted location 'France' is an accepted location but not the preferred 'Paris'. The predicted location QID 'Q142' is acceptable but not the preferred 'Q90'.
+    
+
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play was published in 1638, during the 17th century, and typical French theatre of this era was often set in contemporary times. Mentions of Paris and the Louvre, prominent in 17th-century France, support this timeframe.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: 17th century
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1638
+- **Prediction**: 1601, 1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The play mentions 'Paris' and 'Louvre', which are real locations in Paris, France. These references indicate the setting is in Paris.
+
+#### Location string
+- **GT**: Paris
+- **Prediction**: Paris
+- **Score**: 1.0
+
+#### Location QID
+- **GT**: Q90
+- **Prediction**: Q90
+- **Score**: 1.0
+
+#### Score reasoning
+The predicted period '17th century' is more specific than the reference's 'Early modern', resulting in a partial score for the period string. The timeframe '1601-1700' partially overlaps with the reference's '1600-1638', hence a partial score for the period interval. The location 'Paris' matches the preferred location, and the location QID 'Q90' matches the preferred QID.
+    
+
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The play was published in 1638 during the reign of Louis XIII, and French comedies of the 17th century typically reflected contemporary societal norms and settings. The satirical tone aligns with trends in early modern French theater.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: Early modern France
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1638
+- **Prediction**: 1601, 1650
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The author is French, the title and text are in French, and 17th-century French plays were often set in the playwright's own cultural context unless explicitly historical or mythological. No location-specific clues contradict this in the excerpt.
+
+#### Location string
+- **GT**: Paris
+- **Prediction**: France
+- **Score**: 0.5
+
+#### Location QID
+- **GT**: Q90
+- **Prediction**: Q142
+- **Score**: 0.5
+
+#### Score reasoning
+The predicted period 'Early modern France' is narrower than the reference 'Early modern', earning 0.5 points. The timeframe '1601, 1650' partially overlaps with the reference '1600, 1638', resulting in 0.5 points. The predicted location 'France' is accepted but not the preferred 'Paris', granting 0.5 points. Lastly, the location QID 'Q142' is acceptable but not the preferred 'Q90', leading to a score of 0.5.
+    
+
+## ollama:mistral-small:24b-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play was published in 1638, and the language and style are characteristic of the 17th century.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: 17th century
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1638
+- **Prediction**: +1600, +1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The play mentions 'France' as one of the top places, indicating a strong connection to French culture and geography. Additionally, the author is André Mareschal, who was active in France during the 17th century.
+
+#### Location string
+- **GT**: Paris
+- **Prediction**: France
+- **Score**: 0.5
+
+#### Location QID
+- **GT**: Q90
+- **Prediction**: Q142
+- **Score**: 0.5
+
+#### Score reasoning
+The predicted period '17th century' is within the broader 'Early modern' period. The predicted timeframe partially overlaps with the reference timeframe. The predicted location 'France' is an accepted location but not the preferred one. The predicted location QID 'Q142' is within the acceptable QIDs but not the preferred QID.
     
 
 ## ollama:mistral-small:24b-prompt-excerpt.txt
@@ -4902,40 +7214,6 @@ All prediction fields for period, timeframe, location, and location QID were mis
 The predicted period '17th century' is equivalent to the reference 'Early modern', earning a full score. The predicted timeframe '1600, 1700' partially overlaps with the reference timeframe '1600, 1668', resulting in a 0.5 score. The predicted location 'Sicily' matches the preferred location in the reference, and the predicted location QID 'Q1460' matches the preferred location QID, both receiving full scores.
     
 
-## ollama:mistral-small:24b-prompt-excerpt.txt
-
-### Period
-
-**Model reasoning**: Molière was a prominent French playwright in the 17th century, and the play's publication date is 1668.
-
-#### Period string
-- **GT**: Early modern
-- **Prediction**: 17th century
-- **Score**: 0.5 
-
-#### Period interval
-- **GT**: 1600, 1668
-- **Prediction**: +1600, +1700
-- **Score**: 0.5
-
-### Location
-
-**Model reasoning**: The author is French, and the title of the play includes 'Gentilhomme Français', indicating a French setting.
-
-#### Location string
-- **GT**: Sicily
-- **Prediction**: France
-- **Score**: 0.0
-
-#### Location QID
-- **GT**: Q1460
-- **Prediction**: Q142
-- **Score**: 0.0
-
-#### Score reasoning
-The predicted period '17th century' is more specific than the reference period 'Early modern', resulting in a score of 0.5. The predicted timeframe '1600-1700' partially overlaps with the reference timeframe '1600-1668', yielding a score of 0.5. The predicted location 'France' is neither the preferred location 'Sicily' nor one of the accepted locations ('Sicily', 'Italy'), resulting in a score of 0. Additionally, the location QID 'Q142' does not match the preferred QID 'Q1460' nor is it among the acceptable QIDs ('Q1460', 'Q38'), leading to a score of 0.
-    
-
 ## anthropic:claude-3-7-sonnet-20250219-prompt-excerpt.txt
 
 ### Period
@@ -4968,6 +7246,108 @@ The predicted period '17th century' is more specific than the reference period '
 
 #### Score reasoning
 The period string '17th century' is narrower than the reference 'Early modern', earning 0.5 points. The timeframe '1600-1699' partially overlaps with the reference '1600-1668', resulting in 0.5 points. The predicted location 'Sicily' matches the preferred location, granting 1 point. The location QID 'Q1460' also matches the reference, awarding 1 point.
+    
+
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The play was written by Molière in 1668, and his works typically reflect the social and cultural context of 17th-century France. The title's reference to Sicily does not indicate a historical shift, as Molière often used foreign settings to satirize contemporary French society.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: 17th century
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1668
+- **Prediction**: 1601, 1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The title 'Le Sicilien' explicitly references Sicily, suggesting the play is set there. The excerpt's mention of a 'Gentilhomme Français' (French gentleman) aligns with Molière's common practice of juxtaposing French characters with foreign settings for comedic or satirical purposes.
+
+#### Location string
+- **GT**: Sicily
+- **Prediction**: Sicily
+- **Score**: 1.0
+
+#### Location QID
+- **GT**: Q1460
+- **Prediction**: Q1460
+- **Score**: 1.0
+
+#### Score reasoning
+The period string '17th century' is narrower than the reference 'Early modern', hence a score of 0.5. The timeframe 1601-1700 partly overlaps with the reference timeframe 1600-1668, resulting in a score of 0.5. The location 'Sicily' matches the preferred location, earning a score of 1. The location QID 'Q1460' matches the preferred location QID, also earning a score of 1.
+    
+
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play was published in 1668 by Molière, a French playwright active in the 17th century. His works typically reflect contemporary settings of his time, aligning with the French Ancien Régime and Louis XIV's reign.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: 17th century
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1668
+- **Prediction**: 1601, 1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The play frequently references 'France' in its context, including mentions of Paris, royal privileges, and the phrase 'la manière de France.' These elements strongly indicate a French setting.
+
+#### Location string
+- **GT**: Sicily
+- **Prediction**: France
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q1460
+- **Prediction**: Q142
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period '17th century' is narrower than the reference 'Early modern' (score_period_string=0.5). The timeframe overlaps partially (score_period_interval=0.5). The predicted location 'France' is not among the accepted locations (score_location_string=0). The location QID 'Q142' is not in the acceptable QIDs (score_location_qid=0).
+    
+
+## ollama:mistral-small:24b-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: Molière was a prominent French playwright in the 17th century, and the play's publication date is 1668.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: 17th century
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1668
+- **Prediction**: +1600, +1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The author is French, and the title of the play includes 'Gentilhomme Français', indicating a French setting.
+
+#### Location string
+- **GT**: Sicily
+- **Prediction**: France
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q1460
+- **Prediction**: Q142
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period '17th century' is more specific than the reference period 'Early modern', resulting in a score of 0.5. The predicted timeframe '1600-1700' partially overlaps with the reference timeframe '1600-1668', yielding a score of 0.5. The predicted location 'France' is neither the preferred location 'Sicily' nor one of the accepted locations ('Sicily', 'Italy'), resulting in a score of 0. Additionally, the location QID 'Q142' does not match the preferred QID 'Q1460' nor is it among the acceptable QIDs ('Q1460', 'Q38'), leading to a score of 0.
     
 
 ## ollama:mistral-small:24b-prompt-summary.txt
@@ -5010,74 +7390,6 @@ The predicted period '17th century' is narrower than the reference 'Early modern
 - **title**: Phalante : tragédie / de Mr de La Calprenède
 - **publication date**: 1642
 
-
-## ollama:mistral-small:24b-prompt-excerpt.txt
-
-### Period
-
-**Model reasoning**: The names 'Phalante' and 'Helene' suggest characters from Greek mythology. Phalante is a character in Greek mythology, often associated with ancient Greek stories.
-
-#### Period string
-- **GT**: Ancient Greece
-- **Prediction**: Ancient Greece
-- **Score**: 1.0 
-
-#### Period interval
-- **GT**: -1000, -700
-- **Prediction**: -1200, -800
-- **Score**: 0.5
-
-### Location
-
-**Model reasoning**: The names and themes suggest a setting in ancient Greece, where many of the characters from Greek mythology are based.
-
-#### Location string
-- **GT**: Corinth
-- **Prediction**: Greece
-- **Score**: 0.5
-
-#### Location QID
-- **GT**: Q103011
-- **Prediction**: Q46
-- **Score**: 0.0
-
-#### Score reasoning
-Period string matches exactly. Period timeframe partially overlaps with reference. Location is within accepted locations. Location QID is not among acceptable QIDs.
-    
-
-## ollama:mistral-small:24b-prompt-summary.txt
-
-### Period
-
-**Model reasoning**: The play mentions 'Corinthe', which is the French name for Corinth, an ancient Greek city-state. The context and language used suggest a historical setting in Ancient Greece.
-
-#### Period string
-- **GT**: Ancient Greece
-- **Prediction**: Ancient Greece
-- **Score**: 1.0 
-
-#### Period interval
-- **GT**: -1000, -700
-- **Prediction**: -800, -146
-- **Score**: 0.5
-
-### Location
-
-**Model reasoning**: The play frequently mentions 'Corinthe', which is the French name for Corinth. This city is a significant location in the context of the play.
-
-#### Location string
-- **GT**: Corinth
-- **Prediction**: Corinth
-- **Score**: 1.0
-
-#### Location QID
-- **GT**: Q103011
-- **Prediction**: Q20738
-- **Score**: 0.0
-
-#### Score reasoning
-The predicted period 'Ancient Greece' matches the reference period exactly, earning full points. The predicted timeframe (-800 to -146) partially overlaps with the reference timeframe (-1000 to -700), resulting in a partial score. The predicted location 'Corinth' matches the preferred location in the reference, earning full points. The predicted location QID 'Q20738' does not match the preferred QID and is not among the acceptable QIDs, resulting in no points.
-    
 
 ## anthropic:claude-3-7-sonnet-20250219-prompt-excerpt.txt
 
@@ -5146,6 +7458,142 @@ The predicted period string matches the reference exactly, earning a full score.
 #### Score reasoning
 The period string exactly matches the reference period. The timeframe intervals partially overlap. The location string matches the preferred location. The location QID does not match the preferred QID and is not among the accepted QIDs.
     
+
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The play is a 17th-century French tragedy featuring names (e.g., Phalante, Helene) and themes (e.g., royal conflict, tragic love) typical of classical antiquity settings, which were common in early modern French tragedies.
+
+#### Period string
+- **GT**: Ancient Greece
+- **Prediction**: Classical Antiquity
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: -1000, -700
+- **Prediction**: -500, -400
+- **Score**: 0.0
+
+### Location
+
+**Model reasoning**: The names Phalante (possibly derived from Phalantus, a Spartan figure) and Helene (Helen of Troy) suggest a classical Greek context, likely Sparta or a related mythological setting.
+
+#### Location string
+- **GT**: Corinth
+- **Prediction**: Ancient Greece
+- **Score**: 0.5
+
+#### Location QID
+- **GT**: Q103011
+- **Prediction**: Q117728
+- **Score**: 0.0
+
+#### Score reasoning
+The period 'Classical Antiquity' is broader than 'Ancient Greece', earning 0.5 points. The timeframe '-500 to -400' does not overlap with the reference '-1000 to -700', resulting in 0 points. The location 'Ancient Greece' is not the preferred location 'Corinth' but is within the accepted locations, awarding 0.5 points. The location QID 'Q117728' does not match the preferred QID 'Q103011' and is not within the acceptable QIDs, leading to 0 points.
+    
+
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play references Corinthe (Corinth), an ancient Greek city-state, and mentions kings and ancestral rulers typical of Classical Greece. The tragic genre and 17th-century French context suggest a classical setting, common in tragedies of this era.
+
+#### Period string
+- **GT**: Ancient Greece
+- **Prediction**: Classical Greece
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: -1000, -700
+- **Prediction**: -500, -300
+- **Score**: 0.0
+
+### Location
+
+**Model reasoning**: Corinthe (Corinth) is explicitly named as the most frequently mentioned place, with references to its rulers, laws, and reverence for ancestral kings, aligning with its historical significance in antiquity.
+
+#### Location string
+- **GT**: Corinth
+- **Prediction**: Corinth
+- **Score**: 1.0
+
+#### Location QID
+- **GT**: Q103011
+- **Prediction**: Q42040
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Classical Greece' is a narrower equivalent of the reference 'Ancient Greece', earning 0.5 points. The predicted timeframe '-500, -300' does not overlap with the reference '-1000, -700', earning 0 points. The predicted location 'Corinth' matches the reference preferred location, earning 1 point. The predicted location QID 'Q42040' does not match or is not within the acceptable location QIDs, earning 0 points.
+    
+
+## ollama:mistral-small:24b-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The names 'Phalante' and 'Helene' suggest characters from Greek mythology. Phalante is a character in Greek mythology, often associated with ancient Greek stories.
+
+#### Period string
+- **GT**: Ancient Greece
+- **Prediction**: Ancient Greece
+- **Score**: 1.0 
+
+#### Period interval
+- **GT**: -1000, -700
+- **Prediction**: -1200, -800
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The names and themes suggest a setting in ancient Greece, where many of the characters from Greek mythology are based.
+
+#### Location string
+- **GT**: Corinth
+- **Prediction**: Greece
+- **Score**: 0.5
+
+#### Location QID
+- **GT**: Q103011
+- **Prediction**: Q46
+- **Score**: 0.0
+
+#### Score reasoning
+Period string matches exactly. Period timeframe partially overlaps with reference. Location is within accepted locations. Location QID is not among acceptable QIDs.
+    
+
+## ollama:mistral-small:24b-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play mentions 'Corinthe', which is the French name for Corinth, an ancient Greek city-state. The context and language used suggest a historical setting in Ancient Greece.
+
+#### Period string
+- **GT**: Ancient Greece
+- **Prediction**: Ancient Greece
+- **Score**: 1.0 
+
+#### Period interval
+- **GT**: -1000, -700
+- **Prediction**: -800, -146
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The play frequently mentions 'Corinthe', which is the French name for Corinth. This city is a significant location in the context of the play.
+
+#### Location string
+- **GT**: Corinth
+- **Prediction**: Corinth
+- **Score**: 1.0
+
+#### Location QID
+- **GT**: Q103011
+- **Prediction**: Q20738
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Ancient Greece' matches the reference period exactly, earning full points. The predicted timeframe (-800 to -146) partially overlaps with the reference timeframe (-1000 to -700), resulting in a partial score. The predicted location 'Corinth' matches the preferred location in the reference, earning full points. The predicted location QID 'Q20738' does not match the preferred QID and is not among the acceptable QIDs, resulting in no points.
+    
     
 # Document ID: bpt6k1090155z
 
@@ -5153,40 +7601,6 @@ The period string exactly matches the reference period. The timeframe intervals 
 - **title**: Les Sosies, comédie
 - **publication date**: 1668
 
-
-## ollama:mistral-small:24b-prompt-summary.txt
-
-### Period
-
-**Model reasoning**: The play mentions characters from Greek mythology such as Amphytrion, Jupiter (Zeus), and Mercure (Mercury). These characters are associated with ancient Greek myths.
-
-#### Period string
-- **GT**: Ancient Greece
-- **Prediction**: Ancient Greek Mythology
-- **Score**: 0.5 
-
-#### Period interval
-- **GT**: -1350, -1200
-- **Prediction**: -1200, -800
-- **Score**: 1.0
-
-### Location
-
-**Model reasoning**: The mention of Thebes, a prominent city in ancient Greece, and the involvement of mythological figures strongly suggest that the play is set in ancient Greece.
-
-#### Location string
-- **GT**: Greece
-- **Prediction**: Greece
-- **Score**: 1.0
-
-#### Location QID
-- **GT**: Q41
-- **Prediction**: Q149
-- **Score**: 0.0
-
-#### Score reasoning
-The predicted period 'Ancient Greek Mythology' is narrower than the reference 'Ancient Greece', earning 0.5 points. The timeframe '-1200, -800' overlaps with the reference '-1350, -1200', resulting in a full point. The location 'Greece' matches the preferred location exactly, awarding 1 point. However, the predicted location QID 'Q149' does not match or fall within the acceptable QIDs ('Q41'), resulting in 0 points.
-    
 
 ## anthropic:claude-3-7-sonnet-20250219-prompt-excerpt.txt
 
@@ -5256,6 +7670,108 @@ The predicted period 'Ancient Rome' differs from the reference period 'Ancient G
 The predicted period string 'Ancient Greece, mythological era' is narrower than the reference 'Ancient Greece'. The predicted timeframe (-1300 to -1100) partially overlaps with the reference timeframe (-1350 to -1200). The predicted location 'Thebes, Greece' is within the accepted locations 'Greece'. The predicted location QID 'Q41314' does not match the reference QID 'Q41' and is not within the acceptable QIDs.
     
 
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play revolves around the mythological figure Amphitryon, a Mycenaean Greek hero. The presence of gods like Jupiter (Zeus) and Mercury (Hermes) and references to Thebes further anchor the narrative in the Mycenaean era, a period associated with Greek heroic myths.
+
+#### Period string
+- **GT**: Ancient Greece
+- **Prediction**: Mycenaean Greece
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: -1350, -1200
+- **Prediction**: -1600, -1100
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: Thebes is explicitly listed in the top places and is central to Amphitryon's myth. The play's references to Thebains (Thebans) and the prominence of Thebes in Greek mythology solidify this location.
+
+#### Location string
+- **GT**: Greece
+- **Prediction**: Thebes
+- **Score**: 0.5
+
+#### Location QID
+- **GT**: Q41
+- **Prediction**: Q160362
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Mycenaean Greece' is a subset of the reference period 'Ancient Greece', resulting in a partial match (0.5). The predicted timeframe '-1600, -1100' partially overlaps with the reference timeframe '-1350, -1200' (0.5). The predicted location 'Thebes' is within the accepted locations 'Greece' (0.5). However, the predicted location QID 'Q160362' does not match or fall within the acceptable QID 'Q41' (0).
+    
+
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The play is an adaptation of the Amphitryon myth from Greek/Roman mythology, which is traditionally set in Classical Antiquity. The excerpt references divine intervention (e.g., 'Dieux') and themes of marital fidelity tied to mythological narratives.
+
+#### Period string
+- **GT**: Ancient Greece
+- **Prediction**: Classical Antiquity
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: -1350, -1200
+- **Prediction**: -800, 476
+- **Score**: 0.0
+
+### Location
+
+**Model reasoning**: The Amphitryon myth, which this play adapts, is set in Thebes, Greece. The title 'Les Sosies' refers to the Roman character Sosia, but the original myth's setting remains Thebes.
+
+#### Location string
+- **GT**: Greece
+- **Prediction**: Thebes
+- **Score**: 0.5
+
+#### Location QID
+- **GT**: Q41
+- **Prediction**: Q16980
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Classical Antiquity' is broader than the reference period 'Ancient Greece', resulting in a score of 0.5. The predicted timeframe '-800, 476' does not overlap with the reference timeframe '-1350, -1200', resulting in a score of 0. The predicted location 'Thebes' is within the accepted locations 'Greece', resulting in a score of 0.5. The predicted location QID 'Q16980' does not match or fall under the acceptable QIDs 'Q41', resulting in a score of 0.
+    
+
+## ollama:mistral-small:24b-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play mentions characters from Greek mythology such as Amphytrion, Jupiter (Zeus), and Mercure (Mercury). These characters are associated with ancient Greek myths.
+
+#### Period string
+- **GT**: Ancient Greece
+- **Prediction**: Ancient Greek Mythology
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: -1350, -1200
+- **Prediction**: -1200, -800
+- **Score**: 1.0
+
+### Location
+
+**Model reasoning**: The mention of Thebes, a prominent city in ancient Greece, and the involvement of mythological figures strongly suggest that the play is set in ancient Greece.
+
+#### Location string
+- **GT**: Greece
+- **Prediction**: Greece
+- **Score**: 1.0
+
+#### Location QID
+- **GT**: Q41
+- **Prediction**: Q149
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Ancient Greek Mythology' is narrower than the reference 'Ancient Greece', earning 0.5 points. The timeframe '-1200, -800' overlaps with the reference '-1350, -1200', resulting in a full point. The location 'Greece' matches the preferred location exactly, awarding 1 point. However, the predicted location QID 'Q149' does not match or fall within the acceptable QIDs ('Q41'), resulting in 0 points.
+    
+
 ## ollama:mistral-small:24b-prompt-excerpt.txt
 
 ### Period
@@ -5297,40 +7813,6 @@ The predicted period '17th century' does not match the reference period 'Ancient
 - **publication date**: 1662
 
 
-## ollama:mistral-small:24b-prompt-summary.txt
-
-### Period
-
-**Model reasoning**: The play was published in 1662, which places it firmly within the 17th century.
-
-#### Period string
-- **GT**: Early modern
-- **Prediction**: 17th century
-- **Score**: 0.5 
-
-#### Period interval
-- **GT**: 1600, 1662
-- **Prediction**: +1600, +1700
-- **Score**: 0.5
-
-### Location
-
-**Model reasoning**: The top place mentioned is 'Paris', and the related sentences confirm that the scene is set in Paris. Additionally, the play was performed at the Théâtre royal de l'Hostel de Bourgogne, which is located in Paris.
-
-#### Location string
-- **GT**: Paris
-- **Prediction**: Paris
-- **Score**: 1.0
-
-#### Location QID
-- **GT**: Q90
-- **Prediction**: Q147
-- **Score**: 0.0
-
-#### Score reasoning
-The period string '17th century' is narrower than 'Early modern', resulting in a score of 0.5. The timeframe '+1600, +1700' partially overlaps with the reference '1600, 1662', so scores 0.5. Location 'Paris' matches the preferred location, scoring 1. The location QID 'Q147' does not match or is not among acceptable QIDs, scoring 0.
-    
-
 ## anthropic:claude-3-7-sonnet-20250219-prompt-summary.txt
 
 ### Period
@@ -5365,40 +7847,6 @@ The period string '17th century' is narrower than 'Early modern', resulting in a
 The predicted period '17th century' is narrower than the reference 'Early modern', resulting in a score of 0.5. The timeframe '1600-1700' partly overlaps with the reference '1600-1662', also scoring 0.5. The location 'Paris' and its QID 'Q90' match perfectly with the reference, each receiving a score of 1.
     
 
-## ollama:mistral-small:24b-prompt-excerpt.txt
-
-### Period
-
-**Model reasoning**: The play was written by Claude Deschamps de Villiers and published in 1662, which places it firmly within the 17th century.
-
-#### Period string
-- **GT**: Early modern
-- **Prediction**: 17th century
-- **Score**: 0.5 
-
-#### Period interval
-- **GT**: 1600, 1662
-- **Prediction**: +1600, +1700
-- **Score**: 0.5
-
-### Location
-
-**Model reasoning**: The play was performed at the Théâtre royal de l'Hôtel de Bourgogne in Paris. The mention of 'Théâtre royal' and 'Hôtel de Bourgogne' strongly suggests a location in Paris.
-
-#### Location string
-- **GT**: Paris
-- **Prediction**: Paris, France
-- **Score**: 1.0
-
-#### Location QID
-- **GT**: Q90
-- **Prediction**: Q130
-- **Score**: 0.0
-
-#### Score reasoning
-The predicted period '17th century' is broader than the reference 'Early modern', resulting in a score of 0.5. The predicted timeframe '1600-1700' partially overlaps with the reference timeframe '1600-1662', resulting in a score of 0.5. The predicted location 'Paris, France' is equivalent to the reference location 'Paris', resulting in a score of 1. The predicted location QID 'Q130' is not among the acceptable QIDs 'Q90' or 'Q142', resulting in a score of 0.
-    
-
 ## anthropic:claude-3-7-sonnet-20250219-prompt-excerpt.txt
 
 ### Period
@@ -5431,6 +7879,142 @@ The predicted period '17th century' is broader than the reference 'Early modern'
 
 #### Score reasoning
 The predicted period '17th Century France' is narrower than the reference 'Early modern', earning 0.5 points. The predicted timeframe '1600-1699' partially overlaps with the reference timeframe '1600-1662', earning 0.5 points. The predicted location 'Paris, France' is equivalent to the preferred location 'Paris', earning 1 point. The predicted location QID 'Q90' matches the preferred QID 'Q90', earning 1 point.
+    
+
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play was published in 1662, during the reign of Louis XIV (1643–1715), and French comedies of this era often reflected contemporary settings. The mention of 'Paris' and the absence of indicators for an earlier historical context suggest a 17th-century timeframe.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: 17th century
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1662
+- **Prediction**: 1601, 1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The context explicitly states 'La Scène est à Paris' (The scene is in Paris), and 'Paris' is the top-mentioned place with two occurrences, confirming the setting.
+
+#### Location string
+- **GT**: Paris
+- **Prediction**: Paris
+- **Score**: 1.0
+
+#### Location QID
+- **GT**: Q90
+- **Prediction**: Q90
+- **Score**: 1.0
+
+#### Score reasoning
+The predicted period '17th century' is narrower than the reference 'Early modern' (0.5). The predicted timeframe [1601-1700] partially overlaps with the reference [1600-1662] (0.5). The predicted location 'Paris' matches the preferred location (1). The predicted location QID 'Q90' matches the preferred location QID (1).
+    
+
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The play was published in 1662, and French theatre of this era often reflected contemporary settings. The excerpt's dialogue and character dynamics align with 17th-century French comedic conventions, such as stock characters like 'Capitan' (a braggart soldier archetype).
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: 17th century
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1662
+- **Prediction**: 1601, 1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The author is French, the play was performed at the Théâtre royal de l'Hostel de Bourgogne (a Parisian theatre), and the excerpt uses French terms like 'Monsieur' and 'Bouquetière,' suggesting a French setting. However, no explicit geographic references are present in the excerpt itself.
+
+#### Location string
+- **GT**: Paris
+- **Prediction**: France
+- **Score**: 0.5
+
+#### Location QID
+- **GT**: Q90
+- **Prediction**: Q142
+- **Score**: 0.5
+
+#### Score reasoning
+The predicted period '17th century' is narrower than the reference 'Early modern'. The predicted timeframe (1601-1700) partially overlaps with the reference timeframe (1600-1662). The predicted location 'France' is within the accepted locations ('Paris' | 'France'), and the location QID 'Q142' is among the acceptable QIDs ('Q90' | 'Q142').
+    
+
+## ollama:mistral-small:24b-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play was published in 1662, which places it firmly within the 17th century.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: 17th century
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1662
+- **Prediction**: +1600, +1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The top place mentioned is 'Paris', and the related sentences confirm that the scene is set in Paris. Additionally, the play was performed at the Théâtre royal de l'Hostel de Bourgogne, which is located in Paris.
+
+#### Location string
+- **GT**: Paris
+- **Prediction**: Paris
+- **Score**: 1.0
+
+#### Location QID
+- **GT**: Q90
+- **Prediction**: Q147
+- **Score**: 0.0
+
+#### Score reasoning
+The period string '17th century' is narrower than 'Early modern', resulting in a score of 0.5. The timeframe '+1600, +1700' partially overlaps with the reference '1600, 1662', so scores 0.5. Location 'Paris' matches the preferred location, scoring 1. The location QID 'Q147' does not match or is not among acceptable QIDs, scoring 0.
+    
+
+## ollama:mistral-small:24b-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The play was written by Claude Deschamps de Villiers and published in 1662, which places it firmly within the 17th century.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: 17th century
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1662
+- **Prediction**: +1600, +1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The play was performed at the Théâtre royal de l'Hôtel de Bourgogne in Paris. The mention of 'Théâtre royal' and 'Hôtel de Bourgogne' strongly suggests a location in Paris.
+
+#### Location string
+- **GT**: Paris
+- **Prediction**: Paris, France
+- **Score**: 1.0
+
+#### Location QID
+- **GT**: Q90
+- **Prediction**: Q130
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period '17th century' is broader than the reference 'Early modern', resulting in a score of 0.5. The predicted timeframe '1600-1700' partially overlaps with the reference timeframe '1600-1662', resulting in a score of 0.5. The predicted location 'Paris, France' is equivalent to the reference location 'Paris', resulting in a score of 1. The predicted location QID 'Q130' is not among the acceptable QIDs 'Q90' or 'Q142', resulting in a score of 0.
     
     
 # Document ID: bpt6k5828916x
@@ -5508,6 +8092,74 @@ The predicted period 'Ancient Greece' matches the reference exactly, earning ful
 The predicted period includes both Ancient Greece and Ancient Rome, making it broader than the reference period (0.5). The predicted timeframe (-500 to 400) partially overlaps with the reference timeframe (-480 to -31) (0.5). The predicted location includes 'Ancient Greece', which is an accepted location (0.5). The predicted location QID is 'None', which does not match or fall within the acceptable QIDs (0).
     
 
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play mentions Corinthe (Corinth), a prominent city-state in ancient Greece, and Grèce (Greece). Tragi-comedies of the 17th century often drew on classical settings, and the absence of references to later historical figures or events supports this.
+
+#### Period string
+- **GT**: Ancient Greece
+- **Prediction**: Classical Greece
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: -480, -31
+- **Prediction**: -500, -300
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: Corinthe (Corinth) is explicitly mentioned as the capital of Grèce (Greece) in the play's context and appears in multiple salient sentences, indicating it is the primary setting.
+
+#### Location string
+- **GT**: Corinth 
+- **Prediction**: Corinth
+- **Score**: 1.0
+
+#### Location QID
+- **GT**: Q103011
+- **Prediction**: Q130498
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Classical Greece' is a narrower subset of the reference 'Ancient Greece', earning 0.5 points. The timeframe '-500, -300' partially overlaps with the reference '-480, -31', resulting in 0.5 points. The predicted location 'Corinth' matches the preferred location exactly, awarding full points. However, the predicted location QID 'Q130498' does not match or fall within the acceptable QIDs of the reference, leading to a score of 0.
+    
+
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The excerpt and metadata lack explicit references to historical events, figures, or cultural markers that would indicate a specific historical period. The tragicomic genre and 17th-century French authorship suggest a possible early modern European setting, but this is speculative without textual evidence.
+
+#### Period string
+- **GT**: Ancient Greece
+- **Prediction**: None
+- **Score**: 0.0 
+
+#### Period interval
+- **GT**: -480, -31
+- **Prediction**: None, None
+- **Score**: 0.0
+
+### Location
+
+**Model reasoning**: No geographic identifiers (e.g., place names, cultural practices, or linguistic cues) are present in the excerpt or metadata to determine the play's setting. The French authorship and dedication to a French nobleman suggest a French audience but do not confirm the fictional location.
+
+#### Location string
+- **GT**: Corinth 
+- **Prediction**: None
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q103011
+- **Prediction**: None
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period is null, which does not match the reference period 'Ancient Greece'. The predicted timeframe 'None, None' does not overlap with the reference timeframe '-480, -31'. The predicted location is null, which is not among the accepted locations 'Corinth' or 'Greece'. The predicted location QID is null, which is not among the acceptable QIDs 'Q103011' or 'Q41'.
+    
+
 ## ollama:mistral-small:24b-prompt-excerpt.txt
 
 ### Period
@@ -5583,74 +8235,6 @@ The predicted period string matches the reference exactly. The predicted timefra
 - **publication date**: 1659
 
 
-## ollama:mistral-small:24b-prompt-summary.txt
-
-### Period
-
-**Model reasoning**: The play mentions characters like Diane and Sylvie, which are names associated with classical mythology. The pastoral setting and themes suggest a timeless, idealized world often associated with Classical Antiquity.
-
-#### Period string
-- **GT**: Ancient Greece
-- **Prediction**: Classical Antiquity
-- **Score**: 0.5 
-
-#### Period interval
-- **GT**: -1000, -700
-- **Prediction**: -800, 500
-- **Score**: 0.5
-
-### Location
-
-**Model reasoning**: The play is set in an idealized pastoral setting rather than a specific geographic location. While France is mentioned, it refers to the context of the play's performance and publication rather than the setting of the action.
-
-#### Location string
-- **GT**: Greece
-- **Prediction**: None
-- **Score**: 0.0
-
-#### Location QID
-- **GT**: Q41
-- **Prediction**: None
-- **Score**: 0.0
-
-#### Score reasoning
-The predicted period 'Classical Antiquity' is broader than the reference period 'Ancient Greece', resulting in a score of 0.5. The predicted timeframe '-800,500' partially overlaps with the reference '-1000,-700', earning a score of 0.5. The predicted location is 'None', which neither matches the preferred location 'Greece' nor is it within the accepted locations, leading to scores of 0 for both location string and location QID.
-    
-
-## ollama:mistral-small:24b-prompt-excerpt.txt
-
-### Period
-
-**Model reasoning**: The mention of 'Diane' (Diana in English), a goddess from Roman mythology, and the pastoral setting suggest that the play is set in ancient times. The use of mythological figures and pastoral themes are characteristic of Classical Antiquity.
-
-#### Period string
-- **GT**: Ancient Greece
-- **Prediction**: Classical Antiquity
-- **Score**: 0.5 
-
-#### Period interval
-- **GT**: -1000, -700
-- **Prediction**: -800, 476
-- **Score**: 0.5
-
-### Location
-
-**Model reasoning**: The excerpt does not provide specific geographical details that can be used to determine the exact location. The setting is mythological and pastoral, which could apply to various locations in the ancient world.
-
-#### Location string
-- **GT**: Greece
-- **Prediction**: None
-- **Score**: 0.0
-
-#### Location QID
-- **GT**: Q41
-- **Prediction**: None
-- **Score**: 0.0
-
-#### Score reasoning
-The predicted period 'Classical Antiquity' is broader than the reference period 'Ancient Greece', resulting in a score of 0.5. The predicted timeframe '-800, 476' partially overlaps with the reference '-1000, -700', resulting in a score of 0.5. The predicted location is 'None', which does not match or is included in the accepted locations 'Greece', resulting in a score of 0. The predicted location QID is null, which does not match or is included in the accepted QIDs 'Q41', resulting in a score of 0.
-    
-
 ## anthropic:claude-3-7-sonnet-20250219-prompt-summary.txt
 
 ### Period
@@ -5718,6 +8302,142 @@ The predicted period string does not match the reference. The predicted timefram
 #### Score reasoning
 The predicted period 'Classical Greek mythology' does not match the reference period 'Ancient Greece' (score_period_string: 0). The predicted timeframe '-800, -300' partially overlaps with the reference timeframe '-1000, -700' (score_period_interval: 0.5). The predicted location 'Ancient Greece' is equivalent to the reference preferred location 'Greece' (score_location_string: 1). The predicted location QID 'Q35573' does not match the reference QID 'Q41' and is not within the acceptable location QIDs (score_location_qid: 0).
     
+
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The presence of mythological figures like Diane (Diana, Roman goddess) and a Satyr (creature from Greek mythology) suggests a setting in classical antiquity, common in 17th-century French pastoral works.
+
+#### Period string
+- **GT**: Ancient Greece
+- **Prediction**: Classical antiquity (Greco-Roman)
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: -1000, -700
+- **Prediction**: -0800, 0476
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: Pastoral settings in classical mythology often evoke Arcadia, a region of Greece idealized in literature as a rustic paradise. The 'Boccage' (wooded area) and mythological characters align with this tradition.
+
+#### Location string
+- **GT**: Greece
+- **Prediction**: Arcadia
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q41
+- **Prediction**: Q170284
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Classical antiquity (Greco-Roman)' is broader than the reference 'Ancient Greece', resulting in a score of 0.5. The predicted timeframe '-0800, 0476' partially overlaps with the reference '-1000, -700', giving a score of 0.5. The predicted location 'Arcadia' does not match or is not contained within the accepted locations 'Greece', resulting in a score of 0. The predicted location QID 'Q170284' does not match the preferred QID 'Q41' or any acceptable QIDs, resulting in a score of 0.
+    
+
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play includes mythological elements such as the character DIANE (Diana, a Roman goddess) and a SATYRE, which are typical of Classical Antiquity. The reference to 'le siècle d'or' (the Golden Age) further supports a mythological or ancient setting.
+
+#### Period string
+- **GT**: Ancient Greece
+- **Prediction**: Classical Antiquity
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: -1000, -700
+- **Prediction**: -0800, 0476
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The title specifies the play was 'représentée en France' (performed in France), and the top_1_place in the context is labeled 'France', with sentences emphasizing its role as the setting for the first French musical comedy.
+
+#### Location string
+- **GT**: Greece
+- **Prediction**: France
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q41
+- **Prediction**: Q142
+- **Score**: 0.0
+
+#### Score reasoning
+The prediction's period 'Classical Antiquity' is broader than the reference's 'Ancient Greece', and their timeframes partially overlap. The predicted location 'France' does not match the preferred or accepted location 'Greece', and the location QID 'Q142' does not match or belong to the accepted QIDs.
+    
+
+## ollama:mistral-small:24b-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play mentions characters like Diane and Sylvie, which are names associated with classical mythology. The pastoral setting and themes suggest a timeless, idealized world often associated with Classical Antiquity.
+
+#### Period string
+- **GT**: Ancient Greece
+- **Prediction**: Classical Antiquity
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: -1000, -700
+- **Prediction**: -800, 500
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The play is set in an idealized pastoral setting rather than a specific geographic location. While France is mentioned, it refers to the context of the play's performance and publication rather than the setting of the action.
+
+#### Location string
+- **GT**: Greece
+- **Prediction**: None
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q41
+- **Prediction**: None
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Classical Antiquity' is broader than the reference period 'Ancient Greece', resulting in a score of 0.5. The predicted timeframe '-800,500' partially overlaps with the reference '-1000,-700', earning a score of 0.5. The predicted location is 'None', which neither matches the preferred location 'Greece' nor is it within the accepted locations, leading to scores of 0 for both location string and location QID.
+    
+
+## ollama:mistral-small:24b-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The mention of 'Diane' (Diana in English), a goddess from Roman mythology, and the pastoral setting suggest that the play is set in ancient times. The use of mythological figures and pastoral themes are characteristic of Classical Antiquity.
+
+#### Period string
+- **GT**: Ancient Greece
+- **Prediction**: Classical Antiquity
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: -1000, -700
+- **Prediction**: -800, 476
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The excerpt does not provide specific geographical details that can be used to determine the exact location. The setting is mythological and pastoral, which could apply to various locations in the ancient world.
+
+#### Location string
+- **GT**: Greece
+- **Prediction**: None
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q41
+- **Prediction**: None
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Classical Antiquity' is broader than the reference period 'Ancient Greece', resulting in a score of 0.5. The predicted timeframe '-800, 476' partially overlaps with the reference '-1000, -700', resulting in a score of 0.5. The predicted location is 'None', which does not match or is included in the accepted locations 'Greece', resulting in a score of 0. The predicted location QID is null, which does not match or is included in the accepted QIDs 'Q41', resulting in a score of 0.
+    
     
 # Document ID: bpt6k8528543
 
@@ -5760,40 +8480,6 @@ The predicted period 'Classical Greek mythology' does not match the reference pe
 The predicted period 'Ancient Rome' does not match the reference period 'Early modern'. The predicted timeframe '0001-0500' does not overlap with the reference timeframe '1600-1656'. The predicted location 'Roman Empire' is neither the preferred location 'Paris' nor an accepted location. Additionally, the predicted location QID 'Q2277' differs from the preferred QID 'Q90' and is not among the acceptable QIDs.
     
 
-## ollama:mistral-small:24b-prompt-summary.txt
-
-### Period
-
-**Model reasoning**: nan
-
-#### Period string
-- **GT**: Early modern
-- **Prediction**: nan
-- **Score**: 0.0 
-
-#### Period interval
-- **GT**: 1600, 1656
-- **Prediction**: nan, nan
-- **Score**: 0.0
-
-### Location
-
-**Model reasoning**: nan
-
-#### Location string
-- **GT**: Paris
-- **Prediction**: nan
-- **Score**: 0.0
-
-#### Location QID
-- **GT**: Q90
-- **Prediction**: nan
-- **Score**: 0.0
-
-#### Score reasoning
-The predicted period is NaN, which does not match the reference 'Early modern'. The predicted timeframe 'nan, nan' does not overlap with the reference timeframe '1600, 1656'. The predicted location is NaN, which does not match the preferred location 'Paris' nor is it within the accepted locations 'Paris | France'. The predicted location QID is NaN, which does not match the preferred location QID 'Q90' nor is it within the acceptable location QIDs 'Q90 | Q142'.
-    
-
 ## anthropic:claude-3-7-sonnet-20250219-prompt-excerpt.txt
 
 ### Period
@@ -5826,6 +8512,108 @@ The predicted period is NaN, which does not match the reference 'Early modern'. 
 
 #### Score reasoning
 The predicted period '17th century France' is narrower than the reference 'Early modern'. The timeframe '1600-1699' partially overlaps with the reference '1600-1656'. The location 'France' is among the accepted locations. The location QID 'Q142' is among the acceptable QIDs.
+    
+
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play includes mythological references (Pluton) and names like 'Magus' but lacks explicit temporal markers. The publication date (1656) indicates 17th-century authorship, but the setting could be allegorical or timeless.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: None
+- **Score**: 0.0 
+
+#### Period interval
+- **GT**: 1600, 1656
+- **Prediction**: None, None
+- **Score**: 0.0
+
+### Location
+
+**Model reasoning**: The top_1_place entity is labeled 'France', with a related sentence explicitly mentioning 'France' as a location.
+
+#### Location string
+- **GT**: Paris
+- **Prediction**: France
+- **Score**: 0.5
+
+#### Location QID
+- **GT**: Q90
+- **Prediction**: Q142
+- **Score**: 0.5
+
+#### Score reasoning
+The predicted period is missing and does not match the reference. The timeframe provided does not overlap with the reference timeframe. The predicted location 'France' is within the accepted locations, and its QID 'Q142' is also acceptable.
+    
+
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The excerpt does not contain explicit references to historical events, technological markers, or cultural specifics that would allow confident identification of the period. The title and fragmented dialogue (e.g., 'anoblissement') suggest themes of social hierarchy, common in early modern Europe, but no direct temporal clues are present.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: None
+- **Score**: 0.0 
+
+#### Period interval
+- **GT**: 1600, 1656
+- **Prediction**: None, None
+- **Score**: 0.0
+
+### Location
+
+**Model reasoning**: No geographic identifiers (e.g., place names, linguistic/cultural markers) are present in the excerpt. The French authorship and language suggest a French cultural context, but the setting could be fictional or allegorical.
+
+#### Location string
+- **GT**: Paris
+- **Prediction**: None
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q90
+- **Prediction**: None
+- **Score**: 0.0
+
+#### Score reasoning
+All predicted fields are null or 'None', which do not match the reference values.
+    
+
+## ollama:mistral-small:24b-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: nan
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: nan
+- **Score**: 0.0 
+
+#### Period interval
+- **GT**: 1600, 1656
+- **Prediction**: nan, nan
+- **Score**: 0.0
+
+### Location
+
+**Model reasoning**: nan
+
+#### Location string
+- **GT**: Paris
+- **Prediction**: nan
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q90
+- **Prediction**: nan
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period is NaN, which does not match the reference 'Early modern'. The predicted timeframe 'nan, nan' does not overlap with the reference timeframe '1600, 1656'. The predicted location is NaN, which does not match the preferred location 'Paris' nor is it within the accepted locations 'Paris | France'. The predicted location QID is NaN, which does not match the preferred location QID 'Q90' nor is it within the acceptable location QIDs 'Q90 | Q142'.
     
 
 ## ollama:mistral-small:24b-prompt-excerpt.txt
@@ -5868,40 +8656,6 @@ The predicted period '17th century' is narrower than the reference period 'Early
 - **title**: Le Dictateur romain : tragédie dédiée à Mgr le duc d'Espernon / [A. Mareschal]
 - **publication date**: 1647
 
-
-## ollama:mistral-small:24b-prompt-excerpt.txt
-
-### Period
-
-**Model reasoning**: The title 'Le Dictateur romain' suggests a setting in ancient Rome. The mention of 'l'Empire' (the Empire) and 'Fabie', which could refer to the Fabii, an influential family in ancient Roman history, supports this period.
-
-#### Period string
-- **GT**: Ancient Rome
-- **Prediction**: Roman Republic or Roman Empire
-- **Score**: 1.0 
-
-#### Period interval
-- **GT**: -365, -310
-- **Prediction**: -509, +476
-- **Score**: 0.5
-
-### Location
-
-**Model reasoning**: The title and content references such as 'l'Empire' and 'Fabie' strongly indicate that the play is set in ancient Rome.
-
-#### Location string
-- **GT**: Rome
-- **Prediction**: Rome
-- **Score**: 1.0
-
-#### Location QID
-- **GT**: Q220
-- **Prediction**: Q103
-- **Score**: 0.0
-
-#### Score reasoning
-The predicted period string 'Roman Republic or Roman Empire' is equivalent to the reference period 'Ancient Rome'. The predicted timeframe '-509, +476' partially overlaps with the reference timeframe '-365, -310'. The predicted location 'Rome' matches the preferred location. The predicted location QID 'Q103' does not match the preferred QID 'Q220' nor is it in the list of acceptable QIDs.
-    
 
 ## anthropic:claude-3-7-sonnet-20250219-prompt-summary.txt
 
@@ -5969,6 +8723,108 @@ The predicted period 'Ancient Roman Republic' is more specific than the referenc
 
 #### Score reasoning
 The predicted period 'Ancient Rome, Republican Period' is more specific than the reference period 'Ancient Rome', resulting in a score of 0.5 for period string. The predicted timeframe '-509, -27' partially overlaps with the reference timeframe '-365, -310', leading to a score of 0.5 for period interval. The predicted location 'Rome' and location QID 'Q220' both match the reference, each receiving a score of 1.
+    
+
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play references Roman political titles like 'Dictateur' and 'Consul', and mentions historical conflicts with the Samnites, which aligns with the Roman Republic era (509–27 BCE). The Samnite Wars (343–290 BCE) are directly referenced in the text (e.g., 'tous les Samnites morts').
+
+#### Period string
+- **GT**: Ancient Rome
+- **Prediction**: Roman Republic
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: -365, -310
+- **Prediction**: -343, -290
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The text frequently mentions Rome (e.g., 'Temples de Rome', 'Rome préfère un homme'), and key Roman political structures (e.g., 'Consul', 'Sénat') are central to the narrative.
+
+#### Location string
+- **GT**: Rome
+- **Prediction**: Rome
+- **Score**: 1.0
+
+#### Location QID
+- **GT**: Q220
+- **Prediction**: Q220
+- **Score**: 1.0
+
+#### Score reasoning
+The predicted period 'Roman Republic' is narrower than the reference 'Ancient Rome', and the timeframe partially overlaps. The location 'Rome' and its QID 'Q220' match the reference.
+    
+
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The title 'Le Dictateur romain' and references to 'Empire', 'lois', and Roman names like 'Papyre' and 'Fabie' suggest a setting in ancient Rome. The term 'Dictateur' (dictator) aligns with the Roman Republic's use of temporary dictators during crises, predating the Imperial era.
+
+#### Period string
+- **GT**: Ancient Rome
+- **Prediction**: Roman Republic
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: -365, -310
+- **Prediction**: -509, -27
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The title and context explicitly reference a Roman dictator, and the Latinized names (Papyre, Fabie) and political structure (empire, laws) strongly indicate ancient Rome as the setting.
+
+#### Location string
+- **GT**: Rome
+- **Prediction**: Ancient Rome
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q220
+- **Prediction**: Q220
+- **Score**: 1.0
+
+#### Score reasoning
+The predicted period 'Roman Republic' is narrower than the reference 'Ancient Rome' (score_period_string: 0.5). The timeframe partially overlaps (-509, -27 vs -365, -310) (score_period_interval: 0.5). The predicted location 'Ancient Rome' is not equivalent to or contained within the accepted locations 'Rome | Roman Empire | Italy' (score_location_string: 0). The predicted location QID 'Q220' matches the reference QID (score_location_qid: 1).
+    
+
+## ollama:mistral-small:24b-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The title 'Le Dictateur romain' suggests a setting in ancient Rome. The mention of 'l'Empire' (the Empire) and 'Fabie', which could refer to the Fabii, an influential family in ancient Roman history, supports this period.
+
+#### Period string
+- **GT**: Ancient Rome
+- **Prediction**: Roman Republic or Roman Empire
+- **Score**: 1.0 
+
+#### Period interval
+- **GT**: -365, -310
+- **Prediction**: -509, +476
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The title and content references such as 'l'Empire' and 'Fabie' strongly indicate that the play is set in ancient Rome.
+
+#### Location string
+- **GT**: Rome
+- **Prediction**: Rome
+- **Score**: 1.0
+
+#### Location QID
+- **GT**: Q220
+- **Prediction**: Q103
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period string 'Roman Republic or Roman Empire' is equivalent to the reference period 'Ancient Rome'. The predicted timeframe '-509, +476' partially overlaps with the reference timeframe '-365, -310'. The predicted location 'Rome' matches the preferred location. The predicted location QID 'Q103' does not match the preferred QID 'Q220' nor is it in the list of acceptable QIDs.
     
 
 ## ollama:mistral-small:24b-prompt-summary.txt
@@ -6080,6 +8936,74 @@ The predicted period '17th century' is narrower than the reference 'Early modern
 The predicted period 'Late 17th Century France' is narrower than the reference 'Early modern' (0.5). The timeframe '1670-1700' partially overlaps with the reference '1600-1694' (0.5). The location 'Poitiers' is within the accepted locations 'Poitou' (0.5). The location QID 'Q41441' is not among the acceptable QIDs (0).
     
 
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play was published in 1694 during the reign of Louis XIV (1643–1715), a period when Jean-François Regnard was active. French plays of this era often reflected contemporary settings and societal norms.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: Reign of Louis XIV
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1694
+- **Prediction**: 1643, 1715
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: Poitiers is the most frequently mentioned place in the play's context, with multiple sentences referencing events, conversations, and social dynamics tied to the city (e.g., 'charmantes conversations de Poitiers').
+
+#### Location string
+- **GT**: Poitou
+- **Prediction**: Poitiers
+- **Score**: 0.5
+
+#### Location QID
+- **GT**: Q954076 | Q142
+- **Prediction**: Q13386
+- **Score**: 0.0
+
+#### Score reasoning
+The period 'Reign of Louis XIV' is more specific than 'Early modern' (0.5). The timeframe 1643-1715 partially overlaps with the reference 1600-1694 (0.5). The location 'Poitiers' is accepted as it is within 'France' (0.5). The location QID 'Q13386' is not acceptable (0).
+    
+
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The play was written by Jean-François Regnard, a French playwright active in the late 17th century. His works typically reflect contemporary French society and comedic traditions of the time, aligning with the dialogue's focus on romantic and financial intrigues common in French comedies of the era.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: Early Modern France
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1694
+- **Prediction**: 1600, 1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The play's author, publication context (French), and use of French currency (écus) in the dialogue indicate a French setting. The names of characters (Dorante, Pasquin, Agathe) are typical of French theatrical conventions of the period.
+
+#### Location string
+- **GT**: Poitou
+- **Prediction**: France
+- **Score**: 0.5
+
+#### Location QID
+- **GT**: Q954076 | Q142
+- **Prediction**: Q142
+- **Score**: 1.0
+
+#### Score reasoning
+The predicted period 'Early Modern France' partially matches the reference 'Early modern' but includes additional location information, resulting in a 0.5 score. The timeframe '1600, 1700' overlaps with the reference '1600, 1694', earning another 0.5. The predicted location 'France' is not the preferred 'Poitou' but is among the accepted locations, scoring 0.5. The location QID 'Q142' matches one of the preferred QIDs in the reference, resulting in a full score of 1.
+    
+
 ## ollama:mistral-small:24b-prompt-summary.txt
 
 ### Period
@@ -6155,40 +9079,6 @@ The predicted period '17th century' is equivalent to the reference period 'Early
 - **publication date**: 1661
 
 
-## ollama:mistral-small:24b-prompt-excerpt.txt
-
-### Period
-
-**Model reasoning**: The excerpt contains references to classical themes and names such as 'Orazie' which is likely a reference to Orazio, a character from Roman mythology. The language and style suggest a setting inspired by ancient Greek or Roman times.
-
-#### Period string
-- **GT**: Ancient Rome
-- **Prediction**: Classical Antiquity
-- **Score**: 0.5 
-
-#### Period interval
-- **GT**: -229, -184
-- **Prediction**: -800, 476
-- **Score**: 0.5
-
-### Location
-
-**Model reasoning**: The name 'Orazie' strongly suggests a connection to Roman mythology, particularly the Horatii and Curiatii story. The play's title 'Les Ménechmes' also hints at a classical theme, as it refers to twins, which is a common motif in ancient literature.
-
-#### Location string
-- **GT**: Epidamnos
-- **Prediction**: Ancient Rome
-- **Score**: 0.0
-
-#### Location QID
-- **GT**: Q3567546
-- **Prediction**: Q137
-- **Score**: 0.0
-
-#### Score reasoning
-The predicted period 'Classical Antiquity' is broader than the reference period 'Ancient Rome'. The predicted timeframe from -800 to 476 partially overlaps with the reference timeframe from -229 to -184. The predicted location 'Ancient Rome' is not among the preferred or accepted locations. Additionally, the predicted location QID 'Q137' does not match the preferred location QID 'Q3567546' nor is it within the acceptable location QIDs.
-    
-
 ## anthropic:claude-3-7-sonnet-20250219-prompt-summary.txt
 
 ### Period
@@ -6221,40 +9111,6 @@ The predicted period 'Classical Antiquity' is broader than the reference period 
 
 #### Score reasoning
 The predicted period 'Ancient Roman period' is equivalent to the reference 'Ancient Rome', earning a score of 1. The predicted timeframe (-200 to 100) partially overlaps with the reference timeframe (-229 to -184), earning a score of 0.5. The predicted location 'Syracuse, Sicily' is not among the preferred or accepted locations, resulting in a score of 0. Similarly, the location QID 'Q15304' is not among the preferred or acceptable QIDs, resulting in a score of 0.
-    
-
-## ollama:mistral-small:24b-prompt-summary.txt
-
-### Period
-
-**Model reasoning**: The mention of 'Sicile' (Sicily) and references to classical figures like Bacchus suggest a setting inspired by ancient Greek and Roman mythology.
-
-#### Period string
-- **GT**: Ancient Rome
-- **Prediction**: Ancient Greece and Rome
-- **Score**: 0.5 
-
-#### Period interval
-- **GT**: -229, -184
-- **Prediction**: -800, 476
-- **Score**: 0.5
-
-### Location
-
-**Model reasoning**: The frequent mention of 'Sicile' (Sicily) in the related sentences indicates that the play is set in this location.
-
-#### Location string
-- **GT**: Epidamnos
-- **Prediction**: Sicily
-- **Score**: 0.0
-
-#### Location QID
-- **GT**: Q3567546
-- **Prediction**: Q23109
-- **Score**: 0.0
-
-#### Score reasoning
-The predicted period 'Ancient Greece and Rome' is broader than the reference 'Ancient Rome'. The predicted timeframe '-800 to 476' partially overlaps with the reference timeframe '-229 to -184'. The predicted location 'Sicily' and its QID 'Q23109' are not within the accepted locations or acceptable location QIDs.
     
 
 ## anthropic:claude-3-7-sonnet-20250219-prompt-excerpt.txt
@@ -6290,6 +9146,142 @@ The predicted period 'Ancient Greece and Rome' is broader than the reference 'An
 #### Score reasoning
 The period string matches exactly. The predicted timeframe partially overlaps with the reference timeframe. The predicted location 'Rome' is not among the accepted locations, and the location QID 'Q220' is not listed among the acceptable location QIDs.
     
+
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play references 'Sicile' (Sicily) and 'Bacchus' (Roman god of wine), suggesting a Greco-Roman setting. The original source material for the play, Plautus's 'Menaechmi', is a Roman comedy set in the ancient Mediterranean world.
+
+#### Period string
+- **GT**: Ancient Rome
+- **Prediction**: Classical Antiquity
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: -229, -184
+- **Prediction**: -300, -200
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The top-mentioned place is 'Sicile' (Sicily), with explicit references to Syracuse ('Siracuse, in Sicile'), a historically significant city in Sicily during antiquity.
+
+#### Location string
+- **GT**: Epidamnos
+- **Prediction**: Sicily
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q3567546
+- **Prediction**: Q1460
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Classical Antiquity' is broader than the reference period 'Ancient Rome', resulting in a partial match for period string and timeframe. The predicted location 'Sicily' does not match the preferred location and is not among the accepted locations, leading to zero scores for location string and location QID.
+    
+
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The play is an adaptation of Plautus's 'Menaechmi', a Roman comedy from the Republican era. Jean de Rotrou's neoclassical adaptations typically retained classical settings.
+
+#### Period string
+- **GT**: Ancient Rome
+- **Prediction**: Roman Republic
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: -229, -184
+- **Prediction**: -300, -50
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: Plautus's original play is set in Epidamnus (modern Durrës, Albania), a Greek city later under Roman influence. Rotrou's adaptation likely preserves this setting.
+
+#### Location string
+- **GT**: Epidamnos
+- **Prediction**: Epidamnus
+- **Score**: 1.0
+
+#### Location QID
+- **GT**: Q3567546
+- **Prediction**: Q193737
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Roman Republic' is narrower than the reference period 'Ancient Rome', resulting in a score of 0.5. The predicted timeframe '-300, -50' partly overlaps with the reference timeframe '-229, -184', scoring 0.5. The predicted location 'Epidamnus' matches the reference preferred location 'Epidamnos', scoring 1. The predicted location QID 'Q193737' does not match the reference QID 'Q3567546' and is not among the acceptable QIDs, scoring 0.
+    
+
+## ollama:mistral-small:24b-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The excerpt contains references to classical themes and names such as 'Orazie' which is likely a reference to Orazio, a character from Roman mythology. The language and style suggest a setting inspired by ancient Greek or Roman times.
+
+#### Period string
+- **GT**: Ancient Rome
+- **Prediction**: Classical Antiquity
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: -229, -184
+- **Prediction**: -800, 476
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The name 'Orazie' strongly suggests a connection to Roman mythology, particularly the Horatii and Curiatii story. The play's title 'Les Ménechmes' also hints at a classical theme, as it refers to twins, which is a common motif in ancient literature.
+
+#### Location string
+- **GT**: Epidamnos
+- **Prediction**: Ancient Rome
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q3567546
+- **Prediction**: Q137
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Classical Antiquity' is broader than the reference period 'Ancient Rome'. The predicted timeframe from -800 to 476 partially overlaps with the reference timeframe from -229 to -184. The predicted location 'Ancient Rome' is not among the preferred or accepted locations. Additionally, the predicted location QID 'Q137' does not match the preferred location QID 'Q3567546' nor is it within the acceptable location QIDs.
+    
+
+## ollama:mistral-small:24b-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The mention of 'Sicile' (Sicily) and references to classical figures like Bacchus suggest a setting inspired by ancient Greek and Roman mythology.
+
+#### Period string
+- **GT**: Ancient Rome
+- **Prediction**: Ancient Greece and Rome
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: -229, -184
+- **Prediction**: -800, 476
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The frequent mention of 'Sicile' (Sicily) in the related sentences indicates that the play is set in this location.
+
+#### Location string
+- **GT**: Epidamnos
+- **Prediction**: Sicily
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q3567546
+- **Prediction**: Q23109
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Ancient Greece and Rome' is broader than the reference 'Ancient Rome'. The predicted timeframe '-800 to 476' partially overlaps with the reference timeframe '-229 to -184'. The predicted location 'Sicily' and its QID 'Q23109' are not within the accepted locations or acceptable location QIDs.
+    
     
 # Document ID: bpt6k852855g
 
@@ -6297,40 +9289,6 @@ The period string matches exactly. The predicted timeframe partially overlaps wi
 - **title**: L'heureux accident ou la maison de campagne, comédie / par M. Passerat
 - **publication date**: 1695
 
-
-## ollama:mistral-small:24b-prompt-excerpt.txt
-
-### Period
-
-**Model reasoning**: The play was written by François Passerat and published in 1695, which places it firmly within the 17th century.
-
-#### Period string
-- **GT**: Early modern
-- **Prediction**: 17th century
-- **Score**: 0.5 
-
-#### Period interval
-- **GT**: 1600, 1695
-- **Prediction**: +1600, +1700
-- **Score**: 0.5
-
-### Location
-
-**Model reasoning**: The excerpt provided does not contain any specific geographical references that would indicate the location of the play's action.
-
-#### Location string
-- **GT**: Paris
-- **Prediction**: None
-- **Score**: 0.0
-
-#### Location QID
-- **GT**: Q90
-- **Prediction**: None
-- **Score**: 0.0
-
-#### Score reasoning
-The predicted period '17th century' is narrower than the reference 'Early modern', earning 0.5 points. The predicted timeframe '+1600, +1700' partially overlaps with the reference timeframe '1600, 1695', earning 0.5 points. The predicted location 'None' does not match the preferred location 'Paris' and is not among the accepted locations, resulting in 0 points. The predicted location QID is null, which does not match the preferred QID 'Q90' nor is it among the acceptable QIDs, resulting in 0 points.
-    
 
 ## anthropic:claude-3-7-sonnet-20250219-prompt-excerpt.txt
 
@@ -6400,6 +9358,108 @@ The predicted period string '17th century France' is narrower than the reference
 The period string '17th century' is narrower than the reference 'Early modern'. The timeframe 1650-1695 partially overlaps with the reference timeframe 1600-1695. The location 'French countryside near Paris' is within the accepted locations 'Paris' or 'France'. The location QID 'Q142' is among the acceptable location QIDs 'Q90' and 'Q142'.
     
 
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play was published in 1695, during the late 17th century, and French comedies of this era often reflected contemporary settings. The metadata explicitly places it in the 17th century.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: 17th century France
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1695
+- **Prediction**: 1601, 1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: Paris is the most frequently mentioned place (frequency: 4) in the play's context. Sentences contrast Paris with the countryside, suggesting it is a key reference point, even if the immediate setting is a country house near the city.
+
+#### Location string
+- **GT**: Paris
+- **Prediction**: Paris
+- **Score**: 1.0
+
+#### Location QID
+- **GT**: Q90
+- **Prediction**: Q90
+- **Score**: 1.0
+
+#### Score reasoning
+The predicted period '17th century France' is a more specific subset of the reference period 'Early modern', resulting in a score of 0.5. The predicted timeframe '1601-1700' partially overlaps with the reference timeframe '1600-1695', earning a score of 0.5. The predicted location 'Paris' exactly matches the preferred location in the reference, scoring 1. The predicted location QID 'Q90' is identical to the reference QID, scoring 1.
+    
+
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The play was published in 1695 and is a French comedy, consistent with the stylistic conventions and societal themes of 17th-century French theater (e.g., Molière's works). The dialogue lacks archaic or anachronistic markers, suggesting a contemporary setting for its time.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: 17th century France
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1695
+- **Prediction**: 1601, 1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The play is written in French, authored by a French playwright, and references a 'maison de campagne' (country house), a common setting in French comedies of the period. No explicit geographic markers suggest a non-French setting.
+
+#### Location string
+- **GT**: Paris
+- **Prediction**: France
+- **Score**: 0.5
+
+#### Location QID
+- **GT**: Q90
+- **Prediction**: Q142
+- **Score**: 0.5
+
+#### Score reasoning
+The predicted period '17th century France' is narrower than the reference 'Early modern'. The timeframe '1601-1700' partially overlaps with the reference '1600-1695'. The location 'France' is accepted but not the preferred 'Paris'. The location QID 'Q142' is acceptable but not the preferred 'Q90'.
+    
+
+## ollama:mistral-small:24b-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The play was written by François Passerat and published in 1695, which places it firmly within the 17th century.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: 17th century
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1695
+- **Prediction**: +1600, +1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The excerpt provided does not contain any specific geographical references that would indicate the location of the play's action.
+
+#### Location string
+- **GT**: Paris
+- **Prediction**: None
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q90
+- **Prediction**: None
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period '17th century' is narrower than the reference 'Early modern', earning 0.5 points. The predicted timeframe '+1600, +1700' partially overlaps with the reference timeframe '1600, 1695', earning 0.5 points. The predicted location 'None' does not match the preferred location 'Paris' and is not among the accepted locations, resulting in 0 points. The predicted location QID is null, which does not match the preferred QID 'Q90' nor is it among the acceptable QIDs, resulting in 0 points.
+    
+
 ## ollama:mistral-small:24b-prompt-summary.txt
 
 ### Period
@@ -6440,40 +9500,6 @@ The predicted period '17th century' is narrower than the reference 'Early modern
 - **title**: L'Escole des femmes, comédie par J. B. P. Molière
 - **publication date**: 1674
 
-
-## ollama:mistral-small:24b-prompt-summary.txt
-
-### Period
-
-**Model reasoning**: The play was written by Molière, a prominent French playwright of the 17th century. The publication date is 1674, which falls within this period.
-
-#### Period string
-- **GT**: Early modern
-- **Prediction**: 17th century
-- **Score**: 0.5 
-
-#### Period interval
-- **GT**: 1600, 1674
-- **Prediction**: +1600, +1700
-- **Score**: 0.5
-
-### Location
-
-**Model reasoning**: The play mentions 'France' multiple times and is written by a French author. The context also includes references to French characters and settings.
-
-#### Location string
-- **GT**: France
-- **Prediction**: France
-- **Score**: 1.0
-
-#### Location QID
-- **GT**: Q142
-- **Prediction**: Q142
-- **Score**: 1.0
-
-#### Score reasoning
-The period string '17th century' is narrower than the reference 'Early modern', resulting in a score of 0.5. The period interval from 1600 to 1700 partially overlaps with the reference timeframe of 1600 to 1674, also scoring 0.5. Both the location string and location QID match the preferred values in the reference, each earning a score of 1.
-    
 
 ## anthropic:claude-3-7-sonnet-20250219-prompt-excerpt.txt
 
@@ -6543,6 +9569,108 @@ The predicted period '17th century France' is narrower than the reference period
 The predicted period '17th century' is narrower than the reference 'Early modern', earning a score of 0.5. The predicted timeframe 1600-1700 partially overlaps with the reference timeframe 1600-1674, resulting in a score of 0.5. Both the predicted location and location QID match the reference exactly, each receiving a full score of 1.
     
 
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play was written by Molière, a 17th-century French playwright, and its publication date (1674) aligns with his active period. Molière's works typically reflect contemporary French society.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: 17th century France
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1674
+- **Prediction**: 1601, 1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The play explicitly mentions 'France' as a frequently referenced place, and Molière's works are predominantly set in France, reflecting its social norms and settings.
+
+#### Location string
+- **GT**: France
+- **Prediction**: France
+- **Score**: 1.0
+
+#### Location QID
+- **GT**: Q142
+- **Prediction**: Q142
+- **Score**: 1.0
+
+#### Score reasoning
+The predicted period '17th century France' is narrower than the reference 'Early modern', resulting in a score of 0.5 for the period string. The predicted timeframe '1601-1700' partially overlaps with the reference timeframe '1600-1674', leading to a score of 0.5 for the period interval. The predicted location 'France' exactly matches the preferred location in the reference, earning a full score of 1 for the location string. Additionally, the predicted location QID 'Q142' matches the preferred location QID in the reference, resulting in a full score of 1 for the location QID.
+    
+
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: Molière's plays typically reflect 17th-century French society, and the publication date (1674) aligns with Louis XIV's reign. The dialogue and character dynamics are consistent with contemporary social critiques of the era.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: Early Modern France
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1674
+- **Prediction**: 1601, 1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: Molière's works are set in France, often satirizing Parisian bourgeois society. The French language, names (Arnolphé, Horace), and cultural context in the excerpt reinforce this.
+
+#### Location string
+- **GT**: France
+- **Prediction**: France
+- **Score**: 1.0
+
+#### Location QID
+- **GT**: Q142
+- **Prediction**: Q142
+- **Score**: 1.0
+
+#### Score reasoning
+The predicted period 'Early Modern France' is more specific than the reference 'Early modern', resulting in a partial match (0.5). The predicted timeframe '1601, 1700' partially overlaps with the reference '1600, 1674' (0.5). Both the location string and QID exactly match the reference, earning full points (1 each).
+    
+
+## ollama:mistral-small:24b-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play was written by Molière, a prominent French playwright of the 17th century. The publication date is 1674, which falls within this period.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: 17th century
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1674
+- **Prediction**: +1600, +1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The play mentions 'France' multiple times and is written by a French author. The context also includes references to French characters and settings.
+
+#### Location string
+- **GT**: France
+- **Prediction**: France
+- **Score**: 1.0
+
+#### Location QID
+- **GT**: Q142
+- **Prediction**: Q142
+- **Score**: 1.0
+
+#### Score reasoning
+The period string '17th century' is narrower than the reference 'Early modern', resulting in a score of 0.5. The period interval from 1600 to 1700 partially overlaps with the reference timeframe of 1600 to 1674, also scoring 0.5. Both the location string and location QID match the preferred values in the reference, each earning a score of 1.
+    
+
 ## ollama:mistral-small:24b-prompt-excerpt.txt
 
 ### Period
@@ -6583,40 +9711,6 @@ The predicted period '17th century' is narrower than the reference 'Early modern
 - **title**: Pastorale et tragi-comedie de Janin
 - **publication date**: 1692
 
-
-## ollama:mistral-small:24b-prompt-excerpt.txt
-
-### Period
-
-**Model reasoning**: The play was written by Jean Millet and published in 1692, which places it firmly within the 17th century.
-
-#### Period string
-- **GT**: Early modern
-- **Prediction**: 17th century
-- **Score**: 0.5 
-
-#### Period interval
-- **GT**: 1600, 1692
-- **Prediction**: +1600, +1700
-- **Score**: 0.5
-
-### Location
-
-**Model reasoning**: The excerpt provided does not contain any specific geographical references that can be used to determine the location of the play's action.
-
-#### Location string
-- **GT**: Grenoble
-- **Prediction**: None
-- **Score**: 0.0
-
-#### Location QID
-- **GT**: Q1289
-- **Prediction**: None
-- **Score**: 0.0
-
-#### Score reasoning
-The predicted period '17th century' is narrower than the reference 'Early modern' (0.5). The predicted timeframe 1600-1700 partially overlaps with the reference 1600-1692 (0.5). The predicted location 'None' does not match or fall within accepted locations (0). The predicted location QID is null, which does not match or fall within accepted QIDs (0).
-    
 
 ## anthropic:claude-3-7-sonnet-20250219-prompt-excerpt.txt
 
@@ -6684,6 +9778,108 @@ The period '17th century' matches the reference's 'Early modern' (score 1). The 
 
 #### Score reasoning
 The prediction's period 'Late 17th century France' is narrower than the reference period 'Early modern'. The timeframe partially overlaps between 1650-1700 and 1600-1692. The location 'Isère, France' is accepted as it is within France but differs from the preferred location 'Grenoble'. The location QID 'Q3137' is not among the accepted QIDs.
+    
+
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The play was published in 1692, during the late 17th century in France. The pastoral and tragi-comedic genre aligns with the theatrical trends of the Early Modern period (Renaissance to late 17th century), which often featured rural or idealized settings and mixed dramatic tones.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: Early Modern period
+- **Score**: 1.0 
+
+#### Period interval
+- **GT**: 1600, 1692
+- **Prediction**: 1601, 1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The excerpt uses Occitan-influenced dialect (e.g., 'Veyan qu'u ne vou pa lo ben de nostra filli'), typical of southern France, particularly regions like Provence where Occitan variants were spoken. The rural themes (e.g., 'vacheiti' [cows], 'vercheiri' [fields]) further suggest a pastoral setting in this area.
+
+#### Location string
+- **GT**: Grenoble
+- **Prediction**: Provence, France
+- **Score**: 0.5
+
+#### Location QID
+- **GT**: Q1289
+- **Prediction**: Q1527
+- **Score**: 0.0
+
+#### Score reasoning
+The period string 'Early Modern period' is equivalent to the reference 'Early modern'. The timeframe 1601-1700 partially overlaps with the reference timeframe 1600-1692. The location 'Provence, France' is within the accepted locations 'Grenoble' or 'France'. However, the location QID 'Q1527' does not match the preferred QID 'Q1289' and is not among the acceptable QIDs 'Q1289' or 'Q142'.
+    
+
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play was published in 1692 and is described as a XVII-century French theatre work. Pastoral settings in French literature were common in the 17th century, and the lack of references to events outside this era suggests a contemporary setting.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: 17th century
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1692
+- **Prediction**: 1601, 1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The play references 'Grenoble' and 'Isère' (a river near Grenoble). The Dauphiné region (where Grenoble is located) is implied by mentions of Voiron and the Isère River, common in southeastern France.
+
+#### Location string
+- **GT**: Grenoble
+- **Prediction**: Grenoble
+- **Score**: 1.0
+
+#### Location QID
+- **GT**: Q1289
+- **Prediction**: Q1289
+- **Score**: 1.0
+
+#### Score reasoning
+The predicted period '17th century' is narrower than the reference 'Early modern' (0.5). The predicted timeframe '1601-1700' partially overlaps with the reference '1600-1692' (0.5). The predicted location 'Grenoble' and its QID 'Q1289' exactly match the preferred location in the reference (1 each).
+    
+
+## ollama:mistral-small:24b-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The play was written by Jean Millet and published in 1692, which places it firmly within the 17th century.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: 17th century
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1692
+- **Prediction**: +1600, +1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The excerpt provided does not contain any specific geographical references that can be used to determine the location of the play's action.
+
+#### Location string
+- **GT**: Grenoble
+- **Prediction**: None
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q1289
+- **Prediction**: None
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period '17th century' is narrower than the reference 'Early modern' (0.5). The predicted timeframe 1600-1700 partially overlaps with the reference 1600-1692 (0.5). The predicted location 'None' does not match or fall within accepted locations (0). The predicted location QID is null, which does not match or fall within accepted QIDs (0).
     
 
 ## ollama:mistral-small:24b-prompt-summary.txt
@@ -6795,6 +9991,74 @@ The predicted period ('Early modern period') matches the reference period ('Earl
 The predicted period is broader than the reference period, and the timeframe partially overlaps. However, the predicted location and location QID do not match the preferred or accepted values in the reference.
     
 
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The play was written in 1654 by Jean de Rotrou, a French playwright active during the 17th century. The dialogue references a king ('LE ROY') and courtly dynamics typical of early modern French theater, suggesting a contemporary or generically monarchical European setting aligned with the author's era.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: 17th century
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1654
+- **Prediction**: 1600, 1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The author is French, the text uses French titles like 'Majesté,' and the play's context aligns with 17th-century French theatrical conventions. The absence of explicit geographic markers beyond the king's title implies a default French court setting.
+
+#### Location string
+- **GT**: Palermo
+- **Prediction**: France
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q2656
+- **Prediction**: Q142
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period '17th century' is narrower than the reference's 'Early modern' period (score_period_string: 0.5). The prediction's timeframe (1600-1700) partially overlaps with the reference's timeframe (1600-1654) (score_period_interval: 0.5). The predicted location 'France' is not among the preferred or accepted locations (score_location_string: 0). The predicted location QID 'Q142' is not among the acceptable location QIDs (score_location_qid: 0).
+    
+
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play was published in 1654, and French 17th-century theater often reflected contemporary or classical settings. The political references to sovereignty and treaties align with early modern European monarchical structures, typical of the 17th century.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: 17th century
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1654
+- **Prediction**: 1601, 1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The top_1_place is 'Sicile' (Sicily) with high frequency. Sentences reference Sicilian sovereignty ('le bien de la Sicile'), royal succession, and governance, indicating the action revolves around Sicilian political dynamics. Other places like Palerme (Palermo) further anchor the setting in Sicily.
+
+#### Location string
+- **GT**: Palermo
+- **Prediction**: Sicily
+- **Score**: 0.5
+
+#### Location QID
+- **GT**: Q2656
+- **Prediction**: Q1460
+- **Score**: 0.5
+
+#### Score reasoning
+The predicted period '17th century' is narrower than the reference 'Early modern'. The predicted timeframe overlaps partially with the reference timeframe. The predicted location 'Sicily' is an accepted location but not the preferred one. The location QID 'Q1460' is acceptable but not the preferred QID.
+    
+
 ## ollama:mistral-small:24b-prompt-excerpt.txt
 
 ### Period
@@ -6870,40 +10134,6 @@ The predicted period '17th century' is narrower than the reference 'Early modern
 - **publication date**: 1632
 
 
-## ollama:mistral-small:24b-prompt-summary.txt
-
-### Period
-
-**Model reasoning**: The play was published in 1632, which places it firmly within the 17th century. The language and style are consistent with French literature from this period.
-
-#### Period string
-- **GT**: Early modern
-- **Prediction**: 17th century
-- **Score**: 0.5 
-
-#### Period interval
-- **GT**: 1600, 1632
-- **Prediction**: +1600, +1700
-- **Score**: 0.5
-
-### Location
-
-**Model reasoning**: The provided information does not specify a clear geographic location for the action of the play. The mentions of 'Bergère' and other places like 'Paris', 'Seine', 'Rhin', and 'Cythère' do not provide enough context to determine a specific location where the action takes place.
-
-#### Location string
-- **GT**: Unknown
-- **Prediction**: None
-- **Score**: 0.0
-
-#### Location QID
-- **GT**: nan
-- **Prediction**: None
-- **Score**: 0.0
-
-#### Score reasoning
-The predicted period '17th century' is narrower than the reference's 'Early modern'. The predicted timeframe partially overlaps with the reference's timeframe. The predicted location 'None' does not match or fall within the reference's accepted locations, and the location QID is null.
-    
-
 ## anthropic:claude-3-7-sonnet-20250219-prompt-excerpt.txt
 
 ### Period
@@ -6970,6 +10200,108 @@ The predicted period 'Classical Antiquity' does not match the reference period '
 
 #### Score reasoning
 The predicted period 'Ancient or Classical Greek period' does not match the reference period 'Early modern'. The predicted timeframe '-800, -323' does not overlap with the reference timeframe '1600, 1632'. The predicted location 'Rural Greece or mythological Greek landscape' is not specified in the reference's accepted locations, which are 'Unknown'. Additionally, the predicted location QID 'Q35' is not present in the reference's acceptable location QIDs, which are 'NaN'.
+    
+
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The play is titled 'La Cydippe', referencing a figure from Greek mythology (Cydippe), and pastoral works often draw from classical settings.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: Classical Antiquity
+- **Score**: 0.0 
+
+#### Period interval
+- **GT**: 1600, 1632
+- **Prediction**: -800, 146
+- **Score**: 0.0
+
+### Location
+
+**Model reasoning**: Cydippe's mythological story is linked to the island of Delos, a sacred site in Greek antiquity, and pastoral settings often evoke such idealized locales.
+
+#### Location string
+- **GT**: Unknown
+- **Prediction**: Delos, Greece
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: nan
+- **Prediction**: Q193610
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Classical Antiquity' does not match the reference period 'Early modern'. The predicted timeframe '-800, 146' does not overlap with the reference timeframe '1600, 1632'. The predicted location 'Delos, Greece' is not specified in the reference's accepted locations, which are 'Unknown'. Additionally, the predicted location QID 'Q193610' does not match or fall within any acceptable QIDs as the reference QIDs are 'NaN'.
+    
+
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play references mythological entities (Venus, Cythère/Cythera) and pastoral themes common in classical settings. The presence of shepherds (Bergère) and idealized rural environments aligns with pastoral traditions rooted in ancient Greek and Roman literature.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: Classical Antiquity
+- **Score**: 0.0 
+
+#### Period interval
+- **GT**: 1600, 1632
+- **Prediction**: -500, 0
+- **Score**: 0.0
+
+### Location
+
+**Model reasoning**: The play mentions real locations like Paris and the Seine, which are in France. Though Cythère (Cythera) is a Greek mythological reference, the prominence of French geographic markers suggests a French pastoral setting blended with classical motifs.
+
+#### Location string
+- **GT**: Unknown
+- **Prediction**: France
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: nan
+- **Prediction**: Q142
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Classical Antiquity' does not match the reference period 'Early modern'. The predicted timeframe '-500, 0' does not overlap with the reference timeframe '1600, 1632'. The predicted location 'France' is neither the preferred location nor listed among accepted locations in the reference. Similarly, the location QID 'Q142' is not the preferred QID and is not among the acceptable location QIDs in the reference.
+    
+
+## ollama:mistral-small:24b-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play was published in 1632, which places it firmly within the 17th century. The language and style are consistent with French literature from this period.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: 17th century
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1632
+- **Prediction**: +1600, +1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The provided information does not specify a clear geographic location for the action of the play. The mentions of 'Bergère' and other places like 'Paris', 'Seine', 'Rhin', and 'Cythère' do not provide enough context to determine a specific location where the action takes place.
+
+#### Location string
+- **GT**: Unknown
+- **Prediction**: None
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: nan
+- **Prediction**: None
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period '17th century' is narrower than the reference's 'Early modern'. The predicted timeframe partially overlaps with the reference's timeframe. The predicted location 'None' does not match or fall within the reference's accepted locations, and the location QID is null.
     
 
 ## ollama:mistral-small:24b-prompt-excerpt.txt
@@ -7081,6 +10413,74 @@ The predicted period '17th century France' is more specific than the reference '
 The predicted period 'Seventeenth-century France' is narrower than the reference 'Early modern'. The predicted timeframe '1600-1700' partially overlaps with the reference timeframe '1600-1637'. The predicted location 'France' is within the accepted locations but differs from the preferred location 'Paris'. The predicted location QID 'Q142' is among the acceptable location QIDs but does not match the preferred location QID 'Q90'.
     
 
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play was published in 1637, and references to Paris (a key French cultural center) and contextual elements (e.g., 'Privilège du Roi') align with the reign of Louis XIII (1610–1643). The language and thematic style are consistent with French Baroque theater of the early 17th century.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: Early 17th century
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1637
+- **Prediction**: 1601, 1650
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: Paris is explicitly mentioned multiple times in the play's context (e.g., 'venez me le dire à Paris,' 'Marchand Libraire à Paris,' 'Privilège du Roi donné à Paris'), indicating it is the primary setting.
+
+#### Location string
+- **GT**: Paris
+- **Prediction**: Paris
+- **Score**: 1.0
+
+#### Location QID
+- **GT**: Q90
+- **Prediction**: Q90
+- **Score**: 1.0
+
+#### Score reasoning
+The predicted period 'Early 17th century' is narrower than the reference 'Early modern'. The predicted timeframe (1601-1650) partially overlaps with the reference timeframe (1600-1637). The predicted location 'Paris' matches the preferred location, and the location QID 'Q90' matches the preferred location QID in the reference.
+    
+
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The excerpt does not contain explicit references to historical events, figures, or cultural markers that would indicate a specific historical period. The dialogue focuses on interpersonal emotions typical of classical French theater but lacks temporal context.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: None
+- **Score**: 0.0 
+
+#### Period interval
+- **GT**: 1600, 1637
+- **Prediction**: None, None
+- **Score**: 0.0
+
+### Location
+
+**Model reasoning**: No geographic references (e.g., place names, cultural practices, or environmental details) are present in the excerpt or metadata to determine the play's setting. The French authorship and language suggest a French cultural context, but this does not inherently define the fictional location.
+
+#### Location string
+- **GT**: Paris
+- **Prediction**: None
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q90
+- **Prediction**: None
+- **Score**: 0.0
+
+#### Score reasoning
+The prediction does not provide period, timeframe, location, or location QID, resulting in zero scores across all evaluation categories.
+    
+
 ## ollama:mistral-small:24b-prompt-excerpt.txt
 
 ### Period
@@ -7156,74 +10556,6 @@ The period '17th century' is narrower than the reference 'Early modern', earning
 - **publication date**: 1693
 
 
-## ollama:mistral-small:24b-prompt-excerpt.txt
-
-### Period
-
-**Model reasoning**: The mention of 'Alcide' suggests a reference to Hercules (Heracles in Greek mythology), who is a central figure in ancient Greek mythology. The characters Dejanire and Thétylis are also associated with the myths surrounding Hercules.
-
-#### Period string
-- **GT**: Ancient Greece
-- **Prediction**: Ancient Greece
-- **Score**: 1.0 
-
-#### Period interval
-- **GT**: -1300, -1200
-- **Prediction**: -1200, -800
-- **Score**: 0.5
-
-### Location
-
-**Model reasoning**: The characters and themes mentioned in the excerpt are closely tied to Greek mythology, which is rooted in ancient Greece.
-
-#### Location string
-- **GT**: Oechalia 
-- **Prediction**: Greece
-- **Score**: 0.5
-
-#### Location QID
-- **GT**: Q3594069
-- **Prediction**: Q43
-- **Score**: 0.0
-
-#### Score reasoning
-The period string 'Ancient Greece' matches exactly with the reference, earning 1 point. The predicted timeframe '-1200, -800' partially overlaps with the reference timeframe '-1300, -1200' at the year -1200, resulting in 0.5 points. The predicted location 'Greece' is within the accepted locations ('Oechalia | Thessaly | Greece') but is not the preferred location 'Oechalia', thus receiving 0.5 points. The predicted location QID 'Q43' does not match the preferred QID 'Q3594069' and is not listed among the acceptable QIDs ('Q3594069 | Q166919 | Q41'), leading to a score of 0.
-    
-
-## ollama:mistral-small:24b-prompt-summary.txt
-
-### Period
-
-**Model reasoning**: The play mentions characters from Greek mythology such as Déjanire, Alcide (Hercules), Iole, Nessus, and Junon (Hera). These characters are associated with ancient Greek myths.
-
-#### Period string
-- **GT**: Ancient Greece
-- **Prediction**: Ancient Greece
-- **Score**: 1.0 
-
-#### Period interval
-- **GT**: -1300, -1200
-- **Prediction**: -1200, -800
-- **Score**: 0.5
-
-### Location
-
-**Model reasoning**: The characters mentioned in the play are from Greek mythology, which is set primarily in ancient Greece.
-
-#### Location string
-- **GT**: Oechalia 
-- **Prediction**: Greece
-- **Score**: 0.5
-
-#### Location QID
-- **GT**: Q3594069
-- **Prediction**: Q935
-- **Score**: 0.0
-
-#### Score reasoning
-The period string matches exactly, receiving a full point. The timeframe overlaps at -1200, granting half a point. The location string 'Greece' is among the accepted locations, scoring half a point. The location QID does not match or fall within acceptable QIDs, resulting in zero points.
-    
-
 ## anthropic:claude-3-7-sonnet-20250219-prompt-excerpt.txt
 
 ### Period
@@ -7291,6 +10623,142 @@ The predicted period string includes an additional era ('Heroic Age') making it 
 #### Score reasoning
 The predicted period 'Ancient Greek mythology' does not match the reference period 'Ancient Greece'. The timeframe matches exactly. The predicted location 'Ancient Greece' is within the accepted locations. The predicted location QID 'Q27387' is not among the acceptable location QIDs.
     
+
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play centers on characters from Greek mythology (Alcide/Heracles, Déjanire/Deianira, Nessus, Junon/Hera), which are rooted in the Mycenaean-era myths. Heracles' myths are traditionally set in the Greek Heroic Age.
+
+#### Period string
+- **GT**: Ancient Greece
+- **Prediction**: Greek Heroic Age (Mycenaean period)
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: -1300, -1200
+- **Prediction**: -1300, -1100
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The characters and mythological context (Heracles, Deianira, Nessus, Juno) are tied to ancient Greek legends, with no evidence of a Parisian setting in the narrative (the 'PARIS' mention refers to publication metadata).
+
+#### Location string
+- **GT**: Oechalia 
+- **Prediction**: Ancient Greece
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q3594069
+- **Prediction**: Q117728
+- **Score**: 0.0
+
+#### Score reasoning
+The prediction's period is more specific than the reference, earning 0.5 points. The timeframe partially overlaps with the reference's timeframe, resulting in 0.5 points. The predicted location does not match the preferred location and is not among the accepted locations, leading to a score of 0. Additionally, the predicted location QID is neither the preferred nor among the acceptable QIDs, resulting in a score of 0.
+    
+
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The play features Alcide (Heracles/Hercules) and Dejanire (Deianira), central figures in Greek mythology. Heracles' mythic exploits are traditionally set during the Greek Heroic Age.
+
+#### Period string
+- **GT**: Ancient Greece
+- **Prediction**: Greek Heroic Age
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: -1300, -1200
+- **Prediction**: -1300, -1100
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The characters Alcide (Heracles) and Dejanire (Deianira) are from Greek mythology, and their stories are rooted in ancient Greek settings like Trachis or Tiryns.
+
+#### Location string
+- **GT**: Oechalia 
+- **Prediction**: Ancient Greece
+- **Score**: 0.5
+
+#### Location QID
+- **GT**: Q3594069
+- **Prediction**: Q11772
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Greek Heroic Age' is narrower than the reference 'Ancient Greece'. The timeframe '-1300, -1100' partly overlaps with the reference '-1300, -1200'. The location 'Ancient Greece' is contained within the accepted locations. The location QID 'Q11772' is not among the acceptable QIDs.
+    
+
+## ollama:mistral-small:24b-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The mention of 'Alcide' suggests a reference to Hercules (Heracles in Greek mythology), who is a central figure in ancient Greek mythology. The characters Dejanire and Thétylis are also associated with the myths surrounding Hercules.
+
+#### Period string
+- **GT**: Ancient Greece
+- **Prediction**: Ancient Greece
+- **Score**: 1.0 
+
+#### Period interval
+- **GT**: -1300, -1200
+- **Prediction**: -1200, -800
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The characters and themes mentioned in the excerpt are closely tied to Greek mythology, which is rooted in ancient Greece.
+
+#### Location string
+- **GT**: Oechalia 
+- **Prediction**: Greece
+- **Score**: 0.5
+
+#### Location QID
+- **GT**: Q3594069
+- **Prediction**: Q43
+- **Score**: 0.0
+
+#### Score reasoning
+The period string 'Ancient Greece' matches exactly with the reference, earning 1 point. The predicted timeframe '-1200, -800' partially overlaps with the reference timeframe '-1300, -1200' at the year -1200, resulting in 0.5 points. The predicted location 'Greece' is within the accepted locations ('Oechalia | Thessaly | Greece') but is not the preferred location 'Oechalia', thus receiving 0.5 points. The predicted location QID 'Q43' does not match the preferred QID 'Q3594069' and is not listed among the acceptable QIDs ('Q3594069 | Q166919 | Q41'), leading to a score of 0.
+    
+
+## ollama:mistral-small:24b-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play mentions characters from Greek mythology such as Déjanire, Alcide (Hercules), Iole, Nessus, and Junon (Hera). These characters are associated with ancient Greek myths.
+
+#### Period string
+- **GT**: Ancient Greece
+- **Prediction**: Ancient Greece
+- **Score**: 1.0 
+
+#### Period interval
+- **GT**: -1300, -1200
+- **Prediction**: -1200, -800
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The characters mentioned in the play are from Greek mythology, which is set primarily in ancient Greece.
+
+#### Location string
+- **GT**: Oechalia 
+- **Prediction**: Greece
+- **Score**: 0.5
+
+#### Location QID
+- **GT**: Q3594069
+- **Prediction**: Q935
+- **Score**: 0.0
+
+#### Score reasoning
+The period string matches exactly, receiving a full point. The timeframe overlaps at -1200, granting half a point. The location string 'Greece' is among the accepted locations, scoring half a point. The location QID does not match or fall within acceptable QIDs, resulting in zero points.
+    
     
 # Document ID: bpt6k10901126
 
@@ -7298,40 +10766,6 @@ The predicted period 'Ancient Greek mythology' does not match the reference peri
 - **title**: Germanicus, tragédie
 - **publication date**: 1693
 
-
-## ollama:mistral-small:24b-prompt-summary.txt
-
-### Period
-
-**Model reasoning**: The play mentions historical figures such as Germanicus, Drusus, and Tibère, who are all associated with the Roman Empire. The mention of 'Rome' and other places like 'Rhin' (Rhine) and 'Lyon' further supports this period.
-
-#### Period string
-- **GT**: Ancient Rome
-- **Prediction**: Roman Empire
-- **Score**: 0.5 
-
-#### Period interval
-- **GT**: -15, 19
-- **Prediction**: -14, 68
-- **Score**: 0.5
-
-### Location
-
-**Model reasoning**: The play frequently mentions 'Rome' and other locations associated with the Roman Empire, such as the Rhine (Rhin) and Lyon. These references indicate that the action of the play takes place within the Roman Empire.
-
-#### Location string
-- **GT**: Rome
-- **Prediction**: Roman Empire
-- **Score**: 0.5
-
-#### Location QID
-- **GT**: Q220
-- **Prediction**: Q140
-- **Score**: 0.0
-
-#### Score reasoning
-The predicted period 'Roman Empire' is narrower than the reference 'Ancient Rome'. The timeframe '-14, 68' partially overlaps with the reference '-15, 19'. The predicted location 'Roman Empire' is within the accepted locations. The predicted location QID 'Q140' is not among the acceptable QIDs.
-    
 
 ## anthropic:claude-3-7-sonnet-20250219-prompt-excerpt.txt
 
@@ -7401,6 +10835,108 @@ The predicted period 'Roman Empire' is more specific than the reference 'Ancient
 The predicted period 'Early Roman Empire under Tiberius' is more specific than the reference period 'Ancient Rome', resulting in a score of 0.5. The predicted timeframe '14, 19' partially overlaps with the reference timeframe '-15, 19', earning a score of 0.5. The predicted location 'Rome' exactly matches the preferred location in the reference, resulting in a full score of 1. The predicted location QID 'Q220' matches the preferred location QID 'Q220' in the reference, also earning a full score of 1.
     
 
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The play centers on Germanicus, a historical Roman general (15 BCE–19 CE), and references the Senate, military mutinies, and political intrigue characteristic of the Julio-Claudian dynasty.
+
+#### Period string
+- **GT**: Ancient Rome
+- **Prediction**: Early Roman Empire
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: -15, 19
+- **Prediction**: -27, 68
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: References to the Roman Senate, legions, and the figure of Germanicus situate the play in the context of the Roman Empire.
+
+#### Location string
+- **GT**: Rome
+- **Prediction**: Roman Empire
+- **Score**: 0.5
+
+#### Location QID
+- **GT**: Q220
+- **Prediction**: Q2277
+- **Score**: 0.5
+
+#### Score reasoning
+The predicted period 'Early Roman Empire' is narrower than the reference 'Ancient Rome', resulting in a score of 0.5. The predicted timeframe '-27,68' partially overlaps with the reference timeframe '-15,19', leading to a score of 0.5. The predicted location 'Roman Empire' is within the accepted locations 'Rome | Roman empire', earning a score of 0.5. The predicted location QID 'Q2277' is among the acceptable QIDs 'Q220 | Q2277', which also results in a score of 0.5.
+    
+
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play centers on Germanicus, a Roman general during the reign of Tiberius (14–37 CE). Mentions of Augustus, Tiberius, and Drusus (son of Tiberius) align with the Julio-Claudian dynasty. The political tensions and references to military campaigns (e.g., Rhine) further situate it in this period.
+
+#### Period string
+- **GT**: Ancient Rome
+- **Prediction**: Early Roman Empire (Reign of Tiberius)
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: -15, 19
+- **Prediction**: 14, 37
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: Rome is the most frequently mentioned place (38 mentions), and the text references Roman political dynamics (e.g., 'Tibère,' 'Auguste,' 'Drusus'). Sentences like 'Rome entière s'empresse' and 'Rome connaît trop bien un Héros' confirm the setting.
+
+#### Location string
+- **GT**: Rome
+- **Prediction**: Rome
+- **Score**: 1.0
+
+#### Location QID
+- **GT**: Q220
+- **Prediction**: Q220
+- **Score**: 1.0
+
+#### Score reasoning
+The predicted period 'Early Roman Empire (Reign of Tiberius)' is a narrower subset of the reference period 'Ancient Rome', resulting in a score of 0.5. The predicted timeframe (14-37) partially overlaps with the reference timeframe (-15-19) from 14 to 19, earning another 0.5. Both the predicted location name 'Rome' and QID 'Q220' exactly match the reference, each scoring 1.
+    
+
+## ollama:mistral-small:24b-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play mentions historical figures such as Germanicus, Drusus, and Tibère, who are all associated with the Roman Empire. The mention of 'Rome' and other places like 'Rhin' (Rhine) and 'Lyon' further supports this period.
+
+#### Period string
+- **GT**: Ancient Rome
+- **Prediction**: Roman Empire
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: -15, 19
+- **Prediction**: -14, 68
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The play frequently mentions 'Rome' and other locations associated with the Roman Empire, such as the Rhine (Rhin) and Lyon. These references indicate that the action of the play takes place within the Roman Empire.
+
+#### Location string
+- **GT**: Rome
+- **Prediction**: Roman Empire
+- **Score**: 0.5
+
+#### Location QID
+- **GT**: Q220
+- **Prediction**: Q140
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Roman Empire' is narrower than the reference 'Ancient Rome'. The timeframe '-14, 68' partially overlaps with the reference '-15, 19'. The predicted location 'Roman Empire' is within the accepted locations. The predicted location QID 'Q140' is not among the acceptable QIDs.
+    
+
 ## ollama:mistral-small:24b-prompt-excerpt.txt
 
 ### Period
@@ -7441,40 +10977,6 @@ The period string 'Roman Empire' is narrower than 'Ancient Rome', resulting in a
 - **title**: Le Fils supposé, tragédie
 - **publication date**: 1672
 
-
-## ollama:mistral-small:24b-prompt-excerpt.txt
-
-### Period
-
-**Model reasoning**: The excerpt mentions 'Clemene,' which is a name associated with ancient Greek mythology, and the themes of kingship, victory in war, and divine intervention are common in classical tragedies.
-
-#### Period string
-- **GT**: Ancient Greece
-- **Prediction**: Ancient Greece or Rome
-- **Score**: 0.5 
-
-#### Period interval
-- **GT**: -220, -163
-- **Prediction**: -500, +100
-- **Score**: 0.5
-
-### Location
-
-**Model reasoning**: The names and themes suggest a setting in ancient Greece or Rome, which were the primary locations for classical tragedies.
-
-#### Location string
-- **GT**: Kayseri
-- **Prediction**: Greece or Rome
-- **Score**: 0.5
-
-#### Location QID
-- **GT**: Q48338
-- **Prediction**: Q84
-- **Score**: 0.0
-
-#### Score reasoning
-The predicted period 'Ancient Greece or Rome' is broader than the reference 'Ancient Greece'. The prediction timeframe '-500, +100' partially overlaps with the reference '-220, -163'. The predicted location 'Greece or Rome' includes 'Greece' which is in the accepted locations, but 'Rome' is not. The predicted location QID 'Q84' is not among the accepted QIDs.
-    
 
 ## anthropic:claude-3-7-sonnet-20250219-prompt-excerpt.txt
 
@@ -7544,6 +11046,108 @@ The period string matches exactly (1 point). The prediction timeframe partly ove
 The predicted period 'Ancient Kingdom of Cappadocia' differs from the reference 'Ancient Greece'. The predicted timeframe overlaps partially with the reference timeframe. The predicted location 'Cappadocia' is within the accepted locations but is not the preferred location. The predicted location QID 'Q131181' is not among the acceptable QIDs.
     
 
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play references figures like Mitridate (Mithridates VI of Pontus) and Barsine, who are linked to the Hellenistic era and Mithridatic Wars (1st century BCE). The conflict over thrones and royal alliances further supports this setting.
+
+#### Period string
+- **GT**: Ancient Greece
+- **Prediction**: Hellenistic period
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: -220, -163
+- **Prediction**: -120, -63
+- **Score**: 0.0
+
+### Location
+
+**Model reasoning**: Syria (Syrie) is explicitly listed among the top places, and the Hellenistic context (e.g., Seleucid Empire, Mithridatic Wars) aligns with Syria as a key region during this period.
+
+#### Location string
+- **GT**: Kayseri
+- **Prediction**: Syria
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q48338
+- **Prediction**: Q8735
+- **Score**: 0.0
+
+#### Score reasoning
+The period string 'Hellenistic period' is narrower than the reference 'Ancient Greece'. The timeframe '-120, -63' does not overlap with the reference '-220, -163'. The predicted location 'Syria' is not among the accepted locations. The predicted location QID 'Q8735' is not among the accepted QIDs.
+    
+
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The excerpt references names like Cleomene and themes of divine justice (e.g., 'le juste Ciel'), military victory, and state recovery, typical of ancient Greek or Roman tragedies. French 17th-century tragedies often drew on classical settings.
+
+#### Period string
+- **GT**: Ancient Greece
+- **Prediction**: Classical Antiquity
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: -220, -163
+- **Prediction**: -500, -300
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: Cleomene (Cleomenes) is a name associated with Spartan kings (e.g., Cleomenes I), and the military-political context aligns with Spartan history.
+
+#### Location string
+- **GT**: Kayseri
+- **Prediction**: Sparta
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q48338
+- **Prediction**: Q5699
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Classical Antiquity' is broader than the reference period 'Ancient Greece', resulting in a score of 0.5 for the period string. The predicted timeframe partially overlaps with the reference timeframe, leading to a score of 0.5 for the period interval. The predicted location 'Sparta' is not among the accepted locations, resulting in a score of 0 for the location string. Additionally, the predicted location QID 'Q5699' is not within the acceptable location QIDs, leading to a score of 0 for the location QID.
+    
+
+## ollama:mistral-small:24b-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The excerpt mentions 'Clemene,' which is a name associated with ancient Greek mythology, and the themes of kingship, victory in war, and divine intervention are common in classical tragedies.
+
+#### Period string
+- **GT**: Ancient Greece
+- **Prediction**: Ancient Greece or Rome
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: -220, -163
+- **Prediction**: -500, +100
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The names and themes suggest a setting in ancient Greece or Rome, which were the primary locations for classical tragedies.
+
+#### Location string
+- **GT**: Kayseri
+- **Prediction**: Greece or Rome
+- **Score**: 0.5
+
+#### Location QID
+- **GT**: Q48338
+- **Prediction**: Q84
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Ancient Greece or Rome' is broader than the reference 'Ancient Greece'. The prediction timeframe '-500, +100' partially overlaps with the reference '-220, -163'. The predicted location 'Greece or Rome' includes 'Greece' which is in the accepted locations, but 'Rome' is not. The predicted location QID 'Q84' is not among the accepted QIDs.
+    
+
 ## ollama:mistral-small:24b-prompt-summary.txt
 
 ### Period
@@ -7584,40 +11188,6 @@ The predicted period 'Ancient Rome' does not match the reference period 'Ancient
 - **title**: Le Comte d'Essex, tragédie
 - **publication date**: 1678
 
-
-## ollama:mistral-small:24b-prompt-summary.txt
-
-### Period
-
-**Model reasoning**: The play is titled 'Le Comte d'Essex, tragédie' and mentions historical figures such as Coban. The Earl of Essex (Robert Devereux) was a prominent figure in English history during the late 16th to early 17th century.
-
-#### Period string
-- **GT**: Renaissance
-- **Prediction**: Late 16th to early 17th century
-- **Score**: 0.5 
-
-#### Period interval
-- **GT**: 1565, 1601
-- **Prediction**: -0158, +01620
-- **Score**: 0.5
-
-### Location
-
-**Model reasoning**: The play is about the Earl of Essex, a key figure in English history. The mention of 'Paris' and 'France' suggests some international context but the primary action likely revolves around England.
-
-#### Location string
-- **GT**: London
-- **Prediction**: England
-- **Score**: 0.5
-
-#### Location QID
-- **GT**: Q84
-- **Prediction**: Q145
-- **Score**: 0.5
-
-#### Score reasoning
-The predicted period 'Late 16th to early 17th century' is narrower than the reference period 'Renaissance', resulting in a score of 0.5. The predicted timeframe partially overlaps with the reference timeframe, earning a score of 0.5. The predicted location 'England' is within the accepted locations, leading to a score of 0.5. The predicted location QID 'Q145' is among the acceptable location QIDs, also resulting in a score of 0.5.
-    
 
 ## anthropic:claude-3-7-sonnet-20250219-prompt-excerpt.txt
 
@@ -7685,6 +11255,108 @@ The predicted period 'Tudor period / Elizabethan era' is more specific than the 
 
 #### Score reasoning
 The predicted period ('Tudor period / Elizabethan era') differs from the reference ('Renaissance'), resulting in a score of 0. The predicted timeframe (1558-1603) partially overlaps with the reference timeframe (1565-1601), so a score of 0.5 was assigned. The predicted location is the same as the preferred location ('London'), earning a score of 1. The predicted location QID matches the preferred location QID ('Q84'), thus a score of 1 was given.
+    
+
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play references the Earl of Essex, a historical figure executed in 1601 under Queen Elizabeth I. The mention of 'Reine' (Queen) and the political context align with Elizabeth I's reign.
+
+#### Period string
+- **GT**: Renaissance
+- **Prediction**: Elizabethan era
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1565, 1601
+- **Prediction**: 1558, 1603
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The Earl of Essex was an English nobleman, and 'Londres' (London) appears in the top places. The political conflict described (e.g., 'criminel d'État') suggests the English royal court.
+
+#### Location string
+- **GT**: London
+- **Prediction**: England
+- **Score**: 0.5
+
+#### Location QID
+- **GT**: Q84
+- **Prediction**: Q21
+- **Score**: 0.5
+
+#### Score reasoning
+The predicted period 'Elizabethan era' is narrower than the reference period 'Renaissance', earning 0.5. The predicted timeframe '1558-1603' partially overlaps with the reference timeframe '1565-1601', resulting in 0.5. The predicted location 'England' is within the accepted locations but differs from the preferred location 'London', granting a score of 0.5. Lastly, the predicted location QID 'Q21' is among the acceptable QIDs, leading to a score of 0.5.
+    
+
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The play references the reign of a queen ('le règne d'une femme') and the Earl of Essex, a title associated with Robert Devereux, 2nd Earl of Essex, who was executed in 1601 during the reign of Elizabeth I of England. The historical context aligns with the Elizabethan period.
+
+#### Period string
+- **GT**: Renaissance
+- **Prediction**: Elizabethan era
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1565, 1601
+- **Prediction**: 1558, 1603
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The title 'Le Comte d'Essex' refers to the English peerage title, and the historical figure Robert Devereux was a prominent courtier in Elizabeth I's England. The political context of the excerpt suggests the English royal court.
+
+#### Location string
+- **GT**: London
+- **Prediction**: England
+- **Score**: 0.5
+
+#### Location QID
+- **GT**: Q84
+- **Prediction**: Q21
+- **Score**: 0.5
+
+#### Score reasoning
+The predicted period 'Elizabethan era' is a narrower subset of the reference period 'Renaissance' (0.5). The predicted timeframe (1558-1603) partially overlaps with the reference timeframe (1565-1601), earning 0.5. The predicted location 'England' is within the accepted locations ('London | England | United Kingdom') but not the preferred location, resulting in 0.5. The predicted location QID 'Q21' is among the acceptable QIDs ('Q84 | Q21 | Q145') but not the preferred QID, also yielding 0.5.
+    
+
+## ollama:mistral-small:24b-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play is titled 'Le Comte d'Essex, tragédie' and mentions historical figures such as Coban. The Earl of Essex (Robert Devereux) was a prominent figure in English history during the late 16th to early 17th century.
+
+#### Period string
+- **GT**: Renaissance
+- **Prediction**: Late 16th to early 17th century
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1565, 1601
+- **Prediction**: -0158, +01620
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The play is about the Earl of Essex, a key figure in English history. The mention of 'Paris' and 'France' suggests some international context but the primary action likely revolves around England.
+
+#### Location string
+- **GT**: London
+- **Prediction**: England
+- **Score**: 0.5
+
+#### Location QID
+- **GT**: Q84
+- **Prediction**: Q145
+- **Score**: 0.5
+
+#### Score reasoning
+The predicted period 'Late 16th to early 17th century' is narrower than the reference period 'Renaissance', resulting in a score of 0.5. The predicted timeframe partially overlaps with the reference timeframe, earning a score of 0.5. The predicted location 'England' is within the accepted locations, leading to a score of 0.5. The predicted location QID 'Q145' is among the acceptable location QIDs, also resulting in a score of 0.5.
     
 
 ## ollama:mistral-small:24b-prompt-excerpt.txt
@@ -7762,40 +11434,6 @@ The predicted period 'Late 16th century to early 17th century' is more specific 
 The predicted period '17th century France' is broader than the reference period 'Early modern', earning 0.5 points. The predicted timeframe '1600, 1699' partially overlaps with the reference timeframe '1600, 1662', earning 0.5 points. The predicted location 'Paris' matches the preferred location in the reference, earning 1 point. The predicted location QID 'Q90' matches the preferred location QID in the reference, earning 1 point.
     
 
-## ollama:mistral-small:24b-prompt-excerpt.txt
-
-### Period
-
-**Model reasoning**: Molière was a prominent French playwright in the 17th century, and the publication date of the play is 1662.
-
-#### Period string
-- **GT**: Early modern
-- **Prediction**: 17th century
-- **Score**: 0.5 
-
-#### Period interval
-- **GT**: 1600, 1662
-- **Prediction**: +1600, +1700
-- **Score**: 0.5
-
-### Location
-
-**Model reasoning**: Molière was a French playwright, and his works are typically set in France or reflect French society of the time.
-
-#### Location string
-- **GT**: Paris
-- **Prediction**: France
-- **Score**: 0.5
-
-#### Location QID
-- **GT**: Q90
-- **Prediction**: Q142
-- **Score**: 0.5
-
-#### Score reasoning
-The predicted period '17th century' is narrower than the reference 'Early modern'. The predicted timeframe '+1600, +1700' partially overlaps with the reference timeframe '1600, 1662'. The predicted location 'France' is among the accepted locations ('Paris | France'). The predicted location QID 'Q142' is acceptable but not the preferred QID 'Q90'.
-    
-
 ## anthropic:claude-3-7-sonnet-20250219-prompt-excerpt.txt
 
 ### Period
@@ -7828,6 +11466,108 @@ The predicted period '17th century' is narrower than the reference 'Early modern
 
 #### Score reasoning
 Period: '17th century' is narrower than 'Early modern' (0.5). Timeframe: partial overlap between 1600-1662 and 1600-1700 (0.5). Location: 'France' is an accepted location (0.5). Location QID: 'Q142' is acceptable but not the preferred 'Q90' (0.5).
+    
+
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play was written by Molière in 1662, a prominent French playwright of the 17th century. The language, character names (e.g., Sganarelle, Celie), and references to societal norms (e.g., marriage disputes, bourgeois settings) align with early modern French theatrical traditions and the cultural context of Louis XIV's reign.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: 17th century France
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1662
+- **Prediction**: 1601, 1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The play explicitly references Paris multiple times in its context (e.g., 'venir à Paris,' 'arrivé à Paris'), and the top_1_place entity is labeled 'Paris' with high frequency. The text also urges the audience to visit Paris to watch the play performed, indicating its setting.
+
+#### Location string
+- **GT**: Paris
+- **Prediction**: Paris
+- **Score**: 1.0
+
+#### Location QID
+- **GT**: Q90
+- **Prediction**: Q90
+- **Score**: 1.0
+
+#### Score reasoning
+The predicted period '17th century France' is a narrower scope within the reference period 'Early modern'. The timeframe '1601-1700' partially overlaps with the reference timeframe '1600-1662'. Both the location and location QID exactly match the reference.
+    
+
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: Molière's works typically reflect contemporary 17th-century French society, and the publication date (1662) aligns with Louis XIV's reign (1643-1715). The comedic focus on social manners and marital themes is characteristic of this period.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: 17th century France (Ancien Régime)
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1662
+- **Prediction**: 1601, 1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: Molière's plays are almost exclusively set in France, often satirizing Parisian bourgeois and aristocratic society. No specific foreign references in the excerpt suggest a non-French setting.
+
+#### Location string
+- **GT**: Paris
+- **Prediction**: France
+- **Score**: 0.5
+
+#### Location QID
+- **GT**: Q90
+- **Prediction**: Q142
+- **Score**: 0.5
+
+#### Score reasoning
+The predicted period is more specific than the reference, the timeframe partially overlaps, the predicted location is an accepted alternative, and the location QID is within the acceptable QIDs.
+    
+
+## ollama:mistral-small:24b-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: Molière was a prominent French playwright in the 17th century, and the publication date of the play is 1662.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: 17th century
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1662
+- **Prediction**: +1600, +1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: Molière was a French playwright, and his works are typically set in France or reflect French society of the time.
+
+#### Location string
+- **GT**: Paris
+- **Prediction**: France
+- **Score**: 0.5
+
+#### Location QID
+- **GT**: Q90
+- **Prediction**: Q142
+- **Score**: 0.5
+
+#### Score reasoning
+The predicted period '17th century' is narrower than the reference 'Early modern'. The predicted timeframe '+1600, +1700' partially overlaps with the reference timeframe '1600, 1662'. The predicted location 'France' is among the accepted locations ('Paris | France'). The predicted location QID 'Q142' is acceptable but not the preferred QID 'Q90'.
     
 
 ## ollama:mistral-small:24b-prompt-summary.txt
@@ -7870,40 +11610,6 @@ The predicted period '17th century' is narrower than the reference 'Early modern
 - **title**: Athalie , tragédie tirée de l'Écriture sainte [de J. Racine]
 - **publication date**: 1691
 
-
-## ollama:mistral-small:24b-prompt-summary.txt
-
-### Period
-
-**Model reasoning**: The play mentions characters and events related to ancient Israel, such as Joas (King Joash) and Jerusalem. These references suggest a historical setting in ancient Israel during the time of the kings.
-
-#### Period string
-- **GT**: Biblical times
-- **Prediction**: Ancient Israelite period
-- **Score**: 1.0 
-
-#### Period interval
-- **GT**: -835, -835
-- **Prediction**: -1000, -586
-- **Score**: 0.5
-
-### Location
-
-**Model reasoning**: The play frequently mentions 'Jérusalem' (Jerusalem) and its significance in the narrative, indicating that the action takes place there.
-
-#### Location string
-- **GT**: Jerusalem
-- **Prediction**: Jerusalem
-- **Score**: 1.0
-
-#### Location QID
-- **GT**: Q1218
-- **Prediction**: Q913
-- **Score**: 0.0
-
-#### Score reasoning
-The predicted period string 'Ancient Israelite period' is equivalent to the reference 'Biblical times', earning 1 point. The predicted timeframe '-1000, -586' partially overlaps with the reference timeframe '-835, -835', earning 0.5 points. The predicted location 'Jerusalem' matches the preferred location, earning 1 point. However, the predicted location QID 'Q913' is not among the acceptable QIDs, resulting in 0 points.
-    
 
 ## anthropic:claude-3-7-sonnet-20250219-prompt-excerpt.txt
 
@@ -7973,6 +11679,108 @@ The predicted period 'Ancient Israel' is narrower than the reference period 'Bib
 The predicted period 'Ancient Israel: Biblical Period' is more specific than the reference 'Biblical times', resulting in a partial score. The timeframe '-836, -796' partially overlaps with the reference '-835, -835'. The predicted location 'Jerusalem' matches the preferred location, and the location QID 'Q1218' also matches the preferred QID.
     
 
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play references characters like Joas (Joash), David, and Joad (Jehoiada), who are key figures in the Old Testament's accounts of the Kingdom of Judah. The context of Jerusalem and the mention of Juda's kings confirm the biblical setting.
+
+#### Period string
+- **GT**: Biblical times
+- **Prediction**: Kingdom of Judah (Biblical period)
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: -835, -835
+- **Prediction**: -900, -586
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: Jérusalem (Jerusalem) is the most frequently mentioned place in the play, with multiple sentences referencing its role as the central city of the Kingdom of Judah. Other locations like Jourdain (Jordan River) and Nil (Nile) further situate the narrative in the ancient Near East.
+
+#### Location string
+- **GT**: Jerusalem
+- **Prediction**: Jerusalem
+- **Score**: 1.0
+
+#### Location QID
+- **GT**: Q1218
+- **Prediction**: Q1218
+- **Score**: 1.0
+
+#### Score reasoning
+The predicted period 'Kingdom of Judah (Biblical period)' is narrower than the reference 'Biblical times', earning 0.5. The predicted timeframe '-900 to -586' partially overlaps with the reference timeframe '-835 to -835', earning 0.5. The predicted location 'Jerusalem' matches the preferred location, earning 1. The predicted location QID 'Q1218' matches the preferred location QID, earning 1.
+    
+
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The play is based on the biblical story of Athaliah, a queen of Judah. The excerpt references figures like Samuel and Israel, situating the narrative in the context of ancient Hebrew history, specifically the period of the Kingdom of Judah.
+
+#### Period string
+- **GT**: Biblical times
+- **Prediction**: Kingdom of Judah (9th century BCE)
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: -835, -835
+- **Prediction**: -900, -800
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The play's biblical context and references to Israel, the Tabernacle, and Hebrew prophets indicate the setting is the ancient Kingdom of Judah, with Jerusalem as its capital.
+
+#### Location string
+- **GT**: Jerusalem
+- **Prediction**: Jerusalem, Kingdom of Judah
+- **Score**: 1.0
+
+#### Location QID
+- **GT**: Q1218
+- **Prediction**: Q1218
+- **Score**: 1.0
+
+#### Score reasoning
+The period string in the prediction is more specific than the reference, earning 0.5 points. The prediction timeframe partially overlaps with the reference timeframe, assigning 0.5 points. The predicted location matches the preferred location, granting 1 point. The predicted location QID matches the preferred QID, also earning 1 point.
+    
+
+## ollama:mistral-small:24b-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play mentions characters and events related to ancient Israel, such as Joas (King Joash) and Jerusalem. These references suggest a historical setting in ancient Israel during the time of the kings.
+
+#### Period string
+- **GT**: Biblical times
+- **Prediction**: Ancient Israelite period
+- **Score**: 1.0 
+
+#### Period interval
+- **GT**: -835, -835
+- **Prediction**: -1000, -586
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The play frequently mentions 'Jérusalem' (Jerusalem) and its significance in the narrative, indicating that the action takes place there.
+
+#### Location string
+- **GT**: Jerusalem
+- **Prediction**: Jerusalem
+- **Score**: 1.0
+
+#### Location QID
+- **GT**: Q1218
+- **Prediction**: Q913
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period string 'Ancient Israelite period' is equivalent to the reference 'Biblical times', earning 1 point. The predicted timeframe '-1000, -586' partially overlaps with the reference timeframe '-835, -835', earning 0.5 points. The predicted location 'Jerusalem' matches the preferred location, earning 1 point. However, the predicted location QID 'Q913' is not among the acceptable QIDs, resulting in 0 points.
+    
+
 ## ollama:mistral-small:24b-prompt-excerpt.txt
 
 ### Period
@@ -8013,74 +11821,6 @@ The predicted period 'Ancient Israelite period' is more specific than the refere
 - **title**: Alidor et Oronte. Tragi-comedie du sieur de R.
 - **publication date**: 1636
 
-
-## ollama:mistral-small:24b-prompt-summary.txt
-
-### Period
-
-**Model reasoning**: The play was published in 1636, which places it firmly within the 17th century.
-
-#### Period string
-- **GT**: Early modern
-- **Prediction**: 17th century
-- **Score**: 0.5 
-
-#### Period interval
-- **GT**: 1600, 1636
-- **Prediction**: +1600, +1700
-- **Score**: 0.5
-
-### Location
-
-**Model reasoning**: The play mentions 'Angleterre' (England) and 'France' as significant places, indicating that the action likely takes place in these countries.
-
-#### Location string
-- **GT**: France
-- **Prediction**: France and England
-- **Score**: 0.0
-
-#### Location QID
-- **GT**: Q142
-- **Prediction**: None
-- **Score**: 0.0
-
-#### Score reasoning
-The predicted period '17th century' is narrower than the reference period 'Early modern' (score_period_string: 0.5). The predicted timeframe 1600-1700 partially overlaps with the reference timeframe 1600-1636 (score_period_interval: 0.5). The predicted location 'France and England' does not match the preferred location and is not among the accepted locations (score_location_string: 0). The predicted location QID is null, differing from the reference QID 'Q142' (score_location_qid: 0).
-    
-
-## ollama:mistral-small:24b-prompt-excerpt.txt
-
-### Period
-
-**Model reasoning**: nan
-
-#### Period string
-- **GT**: Early modern
-- **Prediction**: nan
-- **Score**: 0.0 
-
-#### Period interval
-- **GT**: 1600, 1636
-- **Prediction**: nan, nan
-- **Score**: 0.0
-
-### Location
-
-**Model reasoning**: nan
-
-#### Location string
-- **GT**: France
-- **Prediction**: nan
-- **Score**: 0.0
-
-#### Location QID
-- **GT**: Q142
-- **Prediction**: nan
-- **Score**: 0.0
-
-#### Score reasoning
-All predicted fields are NaN or 'nan', which do not match or overlap with any of the reference values.
-    
 
 ## anthropic:claude-3-7-sonnet-20250219-prompt-summary.txt
 
@@ -8149,6 +11889,142 @@ The period '17th century' is narrower than 'Early modern', and the timeframe '16
 #### Score reasoning
 The predicted period 'France in the 17th century (Louis XIII period)' is more specific than the reference period 'Early modern', resulting in a partial score of 0.5 for period string. The predicted timeframe (1610-1643) partially overlaps with the reference timeframe (1600-1636), earning a score of 0.5 for period interval. Both the predicted location 'France' and the location QID 'Q142' exactly match the reference, resulting in full scores of 1 for both location string and location QID.
     
+
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play was published in 1636 (17th century) and French tragicomedies of this era often reflect contemporary or classical settings. The text mentions locations like France and England, which align with early modern European contexts.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: Early modern period
+- **Score**: 1.0 
+
+#### Period interval
+- **GT**: 1600, 1636
+- **Prediction**: 1601, 1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The play's context includes mentions of France (e.g., 'était venue en France') and French characters (e.g., 'Gentilhomme François'), indicating the primary geographic setting.
+
+#### Location string
+- **GT**: France
+- **Prediction**: France
+- **Score**: 1.0
+
+#### Location QID
+- **GT**: Q142
+- **Prediction**: Q142
+- **Score**: 1.0
+
+#### Score reasoning
+The predicted period 'Early modern period' is equivalent to the reference 'Early modern' (1 point). The timeframe '1601, 1700' partially overlaps with the reference '1600, 1636' (0.5 points). The predicted location 'France' matches the reference preferred location 'France' (1 point). The location QID 'Q142' matches the reference preferred location QID 'Q142' (1 point).
+    
+
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The play is a tragicomedy from 17th-century France, a period when authors often drew on classical themes and settings. Names like 'Alidor' and 'Florintor' suggest a fictionalized ancient context, typical of French tragicomedies influenced by Greco-Roman traditions.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: Classical Antiquity
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1636
+- **Prediction**: -300, 476
+- **Score**: 0.0
+
+### Location
+
+**Model reasoning**: The excerpt does not provide explicit geographic references. While the name 'Oronte' might evoke the Orontes River (ancient Syria), this is speculative. The setting is likely fictional or generically ancient, common in tragicomedies of the era.
+
+#### Location string
+- **GT**: France
+- **Prediction**: None
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q142
+- **Prediction**: None
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Classical Antiquity' is broader than the reference period 'Early modern', earning a score of 0.5. The predicted timeframe '-300, 476' does not overlap with the reference timeframe '1600, 1636', resulting in a score of 0. The predicted location and location QID are null and do not match the reference, each receiving a score of 0.
+    
+
+## ollama:mistral-small:24b-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play was published in 1636, which places it firmly within the 17th century.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: 17th century
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1636
+- **Prediction**: +1600, +1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The play mentions 'Angleterre' (England) and 'France' as significant places, indicating that the action likely takes place in these countries.
+
+#### Location string
+- **GT**: France
+- **Prediction**: France and England
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q142
+- **Prediction**: None
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period '17th century' is narrower than the reference period 'Early modern' (score_period_string: 0.5). The predicted timeframe 1600-1700 partially overlaps with the reference timeframe 1600-1636 (score_period_interval: 0.5). The predicted location 'France and England' does not match the preferred location and is not among the accepted locations (score_location_string: 0). The predicted location QID is null, differing from the reference QID 'Q142' (score_location_qid: 0).
+    
+
+## ollama:mistral-small:24b-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: nan
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: nan
+- **Score**: 0.0 
+
+#### Period interval
+- **GT**: 1600, 1636
+- **Prediction**: nan, nan
+- **Score**: 0.0
+
+### Location
+
+**Model reasoning**: nan
+
+#### Location string
+- **GT**: France
+- **Prediction**: nan
+- **Score**: 0.0
+
+#### Location QID
+- **GT**: Q142
+- **Prediction**: nan
+- **Score**: 0.0
+
+#### Score reasoning
+All predicted fields are NaN or 'nan', which do not match or overlap with any of the reference values.
+    
     
 # Document ID: bpt6k852919x
 
@@ -8191,40 +12067,6 @@ The predicted period 'France in the 17th century (Louis XIII period)' is more sp
 The predicted period 'Ancient Gaul (pre-Roman and Roman period)' does not match or is equivalent to the reference period 'Early modern'. The predicted timeframe '-100, 400' does not overlap with the reference timeframe '1600, 1664'. The predicted location 'Poitiers' matches the reference preferred location. The predicted location QID 'Q39322' does not match the reference preferred location QID 'Q6616' and is not among the acceptable location QIDs.
     
 
-## ollama:mistral-small:24b-prompt-summary.txt
-
-### Period
-
-**Model reasoning**: The play mentions Druids, Gauls, and ancient customs that are characteristic of the Gallic period. The reference to 'nos anciens Gaulois' (our ancient Gauls) suggests a historical setting in the pre-Roman or early medieval era.
-
-#### Period string
-- **GT**: Early modern
-- **Prediction**: Gallic period and early Middle Ages
-- **Score**: 0.5 
-
-#### Period interval
-- **GT**: 1600, 1664
-- **Prediction**: -500, +1000
-- **Score**: 0.0
-
-### Location
-
-**Model reasoning**: The place 'Poitiers' is frequently mentioned in the context, indicating it as a significant location for the play's action.
-
-#### Location string
-- **GT**: Poitiers
-- **Prediction**: Poitiers, France
-- **Score**: 1.0
-
-#### Location QID
-- **GT**: Q6616
-- **Prediction**: Q2456
-- **Score**: 0.0
-
-#### Score reasoning
-The predicted period 'Gallic period and early Middle Ages' is broader than the reference 'Early modern'. The predicted timeframe '-500, +1000' does not overlap with the reference timeframe '1600, 1664'. The predicted location 'Poitiers, France' matches the preferred location 'Poitiers'. The predicted location QID 'Q2456' does not match or fall within the accepted location QIDs.
-    
-
 ## anthropic:claude-3-7-sonnet-20250219-prompt-excerpt.txt
 
 ### Period
@@ -8257,6 +12099,111 @@ The predicted period 'Gallic period and early Middle Ages' is broader than the r
 
 #### Score reasoning
 The period string '17th-century France' is equivalent to 'Early modern', earning full points. The timeframe '1600, 1699' partially overlaps with the reference timeframe '1600, 1664', earning partial points. The location 'France' is an accepted location but not the preferred one, earning partial points. The location QID 'Q142' is an accepted QID but not the preferred one, earning partial points.
+    
+
+## deepseek:deepseek-reasoner-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play references 17th-century French legal and social structures (e.g., 'Conseiller de Poitiers') and was published in 1664, aligning with Louis XIV's reign. Mentions of Gauls and Druids reflect cultural nostalgia rather than a historical setting.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: Early Modern Period
+- **Score**: 1.0 
+
+#### Period interval
+- **GT**: 1600, 1664
+- **Prediction**: 1601, 1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: Poitiers is repeatedly cited as the central location in the play's dialogue (e.g., 'Cherchez hors de Poitiers'), and characters interact within its societal framework (e.g., legal disputes, local reputation).
+
+#### Location string
+- **GT**: Poitiers
+- **Prediction**: Poitiers
+- **Score**: 1.0
+
+#### Location QID
+- **GT**: Q6616
+- **Prediction**: Q35572
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Early Modern Period' matches the reference 'Early modern'. The predicted timeframe partially overlaps with the reference timeframe (1601-1700 vs 1600-1664). The predicted location 'Poitiers' matches the preferred location. The predicted location QID 'Q35572' does not match or is not among the acceptable QIDs.
+    
+
+## deepseek:deepseek-reasoner-prompt-excerpt.txt
+
+### Period
+
+**Model reasoning**: The play was published in 1664, during the reign of Louis XIV, and its language, themes (e.g., social interactions, accusations of theft), and character names (e.g., Courtois, La Bellecallee) align with 17th-century French comedic traditions, typical of the Ancien Régime period.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: Early Modern France
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1664
+- **Prediction**: 1600, 1700
+- **Score**: 0.5
+
+### Location
+
+**Model reasoning**: The play is written in French, published in France (implied by metadata and language), and features French names (e.g., Courtois) and societal structures (e.g., prisons, familial terms like 'cousine'), consistent with a French setting.
+
+#### Location string
+- **GT**: Poitiers
+- **Prediction**: France
+- **Score**: 0.5
+
+#### Location QID
+- **GT**: Q6616
+- **Prediction**: Q142
+- **Score**: 0.5
+
+#### Score reasoning
+1. **Period String:** The prediction 'Early Modern France' includes the reference period 'Early modern' but adds a location qualifier, making it broader. 
+2. **Period Interval:** The prediction timeframe '1600, 1700' partially overlaps with the reference '1600, 1664'. 
+3. **Location String:** The prediction 'France' is listed in the accepted locations ('Poitiers | France') but is not the preferred location. 
+4. **Location QID:** The prediction QID 'Q142' is among the acceptable location QIDs ('Q6616 | Q142') but is not the preferred QID.
+    
+
+## ollama:mistral-small:24b-prompt-summary.txt
+
+### Period
+
+**Model reasoning**: The play mentions Druids, Gauls, and ancient customs that are characteristic of the Gallic period. The reference to 'nos anciens Gaulois' (our ancient Gauls) suggests a historical setting in the pre-Roman or early medieval era.
+
+#### Period string
+- **GT**: Early modern
+- **Prediction**: Gallic period and early Middle Ages
+- **Score**: 0.5 
+
+#### Period interval
+- **GT**: 1600, 1664
+- **Prediction**: -500, +1000
+- **Score**: 0.0
+
+### Location
+
+**Model reasoning**: The place 'Poitiers' is frequently mentioned in the context, indicating it as a significant location for the play's action.
+
+#### Location string
+- **GT**: Poitiers
+- **Prediction**: Poitiers, France
+- **Score**: 1.0
+
+#### Location QID
+- **GT**: Q6616
+- **Prediction**: Q2456
+- **Score**: 0.0
+
+#### Score reasoning
+The predicted period 'Gallic period and early Middle Ages' is broader than the reference 'Early modern'. The predicted timeframe '-500, +1000' does not overlap with the reference timeframe '1600, 1664'. The predicted location 'Poitiers, France' matches the preferred location 'Poitiers'. The predicted location QID 'Q2456' does not match or fall within the accepted location QIDs.
     
 
 ## ollama:mistral-small:24b-prompt-excerpt.txt
