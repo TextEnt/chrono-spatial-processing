@@ -10,3 +10,4 @@ wikidata.ipynb
 __pycache__/
 *.egg-info/
 .env
+.python-version
