@@ -4,8 +4,7 @@ inference:
   responses_path: "data/llm_inference/"
   temperature: 0.2
   models:
-    - "ollama:mistral-small:24b"
-    - "deepseek:deepseek-reasoner"
+    - "ollama:mistral-small3.1:latest"
   prompts:
     - "prompt-summary.txt"
 
