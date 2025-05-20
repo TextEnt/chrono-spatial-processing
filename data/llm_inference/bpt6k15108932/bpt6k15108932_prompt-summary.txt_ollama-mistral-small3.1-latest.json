@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k15108932",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Roman Empire\",\n    \"period_reasoning\": \"The play mentions characters and events associated with the Roman Empire, such as 'C\u00e9sar', 'Rome', and references to imperial politics and conspiracies, which are indicative of the Roman Empire period.\",\n    \"timeframe_start\": \"-27\",\n    \"timeframe_end\": \"476\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"The play frequently mentions 'Rome' and references to Roman political figures and events, indicating that the action takes place in Rome.\",\n    \"location_qid\": \"Q923\"\n}",
+  "duration_seconds": 26.180192947387695,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

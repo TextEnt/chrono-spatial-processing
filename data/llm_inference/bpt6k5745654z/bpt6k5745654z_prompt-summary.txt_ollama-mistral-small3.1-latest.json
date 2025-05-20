@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5745654z",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Ancient Rome\",\n    \"period_reasoning\": \"The character Lucrece is mentioned multiple times, referring to the historical figure Lucretia, a Roman woman whose rape and subsequent suicide sparked the overthrow of the Roman monarchy. This indicates that the play references events from Ancient Rome.\",\n    \"timeframe_start\": \"-509\",\n    \"timeframe_end\": \"-27\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"The mention of Lucrece, who is associated with the founding of the Roman Republic, suggests that the action of the play is set in or references Rome.\",\n    \"location_qid\": \"Q1046\"\n}",
+  "duration_seconds": 19.942629098892212,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

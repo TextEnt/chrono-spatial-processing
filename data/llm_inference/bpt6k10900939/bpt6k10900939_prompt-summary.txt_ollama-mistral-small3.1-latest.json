@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10900939",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Late Middle Ages to Early Modern Period\",\n    \"period_reasoning\": \"The play discusses historical figures and events related to Anne of Brittany and Isabelle, which are set in the late 15th to early 16th century. Anne of Brittany was a historical figure who lived from 1477 to 1514, and her life spans the transition from the Late Middle Ages to the Early Modern Period.\",\n    \"timeframe_start\": \"-1400\",\n    \"timeframe_end\": \"1600\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play mentions 'France' frequently and discusses events and figures related to French history, specifically Anne of Brittany, who was the Queen of France.\",\n    \"location_qid\": \"142\"\n}",
+  "duration_seconds": 23.683881998062134,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

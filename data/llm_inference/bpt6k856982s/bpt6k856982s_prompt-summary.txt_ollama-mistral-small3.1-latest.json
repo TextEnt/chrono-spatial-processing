@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k856982s",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Antiquity\",\n    \"period_reasoning\": \"The play mentions \\\"Diocletian\\\" and \\\"Rome\\\", which are historical references to the Roman Empire. Diocletian was a Roman emperor who ruled from 284 to 305 CE. The repeated references to Rome and the mention of Diocletian indicate that the play is set in the ancient world, likely during or around the Roman Empire period.\",\n    \"timeframe_start\": \"-500\",\n    \"timeframe_end\": \"305\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"The repeated mentions of \\\"Rome\\\" and references to Roman historical figures and events, such as Diocletian, suggest that the play is set in or around Rome.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 24.449392080307007,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

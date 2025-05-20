@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5675022h",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early modern period\",\n    \"period_reasoning\": \"The play was written in the 17th century, specifically in 1635, which places it firmly in the early modern period. The early modern period generally spans from the late 15th century to the late 18th century.\",\n    \"timeframe_start\": \"-500\",\n    \"timeframe_end\": \"1800\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The frequent mentions of Paris and the Seine, as well as references to French cultural and literary figures, strongly suggest that the play is set in France. Additionally, the author, Georges de Scud\u00e9ry, was a French writer.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 23.97729730606079,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090179c",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early modern period\",\n    \"period_reasoning\": \"The play was written in the 17th century, which is part of the early modern period. Additionally, the language and references in the text suggest a setting consistent with this historical period.\",\n    \"timeframe_start\": \"+1500\",\n    \"timeframe_end\": \"+1800\",\n    \"location\": \"None\",\n    \"location_reasoning\": \"The provided information does not sufficiently indicate a specific geographic location where the action of the play takes place.\",\n    \"location_qid\": \"None\"\n}",
+  "duration_seconds": 18.844106912612915,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

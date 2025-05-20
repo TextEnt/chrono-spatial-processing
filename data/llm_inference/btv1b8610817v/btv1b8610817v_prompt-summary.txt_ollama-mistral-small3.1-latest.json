@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8610817v",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Antiquity\",\n    \"period_reasoning\": \"The play is set in a mythological context involving characters like Ph\u00e8dre and Hippolyte, which are associated with ancient Greek mythology. The mentions of Theseus, Aricie, and other characters also suggest a setting in the mythological past.\",\n    \"timeframe_start\": \"-1200\",\n    \"timeframe_end\": \"-800\",\n    \"location\": \"Greece\",\n    \"location_reasoning\": \"The play mentions 'Gr\u00e8ce' multiple times in relation to the characters and their actions. Additionally, the characters and settings are deeply rooted in Greek mythology, which is centered in ancient Greece.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 23.920956134796143,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

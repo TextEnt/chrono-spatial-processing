@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k15100368",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Trojan War\",\n    \"period_reasoning\": \"The play frequently mentions Achille (Achilles) and Paris, who are key figures in the Trojan War. The mention of Hector and Priam, who are also central figures in the Trojan War, further supports this period.\",\n    \"timeframe_start\": \"-1260\",\n    \"timeframe_end\": \"-1180\",\n    \"location\": \"Troy\",\n    \"location_reasoning\": \"The play mentions Paris, who is a prince of Troy, and Achille, who is a Greek hero fighting against Troy. Additionally, the mention of Priam and Hector, who are the king and prince of Troy respectively, indicates that the action takes place in or around Troy.\",\n    \"location_qid\": \"Q10242\"\n}",
+  "duration_seconds": 30.534449100494385,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

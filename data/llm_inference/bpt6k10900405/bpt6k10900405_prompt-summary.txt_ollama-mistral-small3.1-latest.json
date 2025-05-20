@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10900405",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Antiquity\",\n    \"period_reasoning\": \"The play mentions characters and references that are associated with ancient Greek mythology, such as Creon, Medea, Jason, and Corinthe. These figures and locations are well-known from ancient Greek and Roman mythology and literature.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"476\",\n    \"location\": \"Corinthe\",\n    \"location_reasoning\": \"Corinthe is explicitly mentioned multiple times in the provided sentences, indicating it is a central location in the play.\",\n    \"location_qid\": \"Q11145\"\n}",
+  "duration_seconds": 20.064767122268677,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

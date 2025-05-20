@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k856873h",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early modern period\",\n    \"period_reasoning\": \"The language and style of the text, as well as the mention of specific roles and titles (e.g., Prince, Princess, Infante), suggest a setting in the early modern period. This era is characterized by the rise of monarchies and the complexities of courtly intrigue, which align with the themes and characters described.\",\n    \"timeframe_start\": \"+1450\",\n    \"timeframe_end\": \"+1800\",\n    \"location\": \"Europe\",\n    \"location_reasoning\": \"The mention of specific European locations such as 'Hongrie' (Hungary), 'Paris', 'Rome', 'Boheme' (Bohemia), and 'Pologne' (Poland) indicates that the action of the play takes place in Europe. The references to royal titles and political entities further support this geographical setting.\",\n    \"location_qid\": \"Q46\"\n}",
+  "duration_seconds": 31.36705994606018,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

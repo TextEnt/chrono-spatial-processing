@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10900331",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early Modern Period\",\n    \"period_reasoning\": \"The play is from the 17th century (1631), which falls within the Early Modern Period. This period is characterized by significant cultural, scientific, and political changes in Europe, including the Renaissance and the Age of Exploration.\",\n    \"timeframe_start\": \"1500\",\n    \"timeframe_end\": \"1800\",\n    \"location\": \"Sicile\",\n    \"location_reasoning\": \"The text mentions 'Sicile' frequently and in various contexts, indicating that a significant portion of the play's action takes place there. Additionally, other locations mentioned (France, Paris, Corse, Mauritanie) do not seem to be the primary settings based on the frequency and context of mentions.\",\n    \"location_qid\": \"Q6094\"\n}",
+  "duration_seconds": 29.06297016143799,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

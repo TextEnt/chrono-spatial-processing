@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k6283934q",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Antiquity\",\n    \"period_reasoning\": \"The mentions of 'Sybille' (the Sibyl) and 'oracle' are indicative of ancient Greek or Roman mythology, suggesting the play is set in ancient times.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"0\",\n    \"location\": \"Ancient Greece or Rome\",\n    \"location_reasoning\": \"The mention of 'Sybille' (the Sibyl) and 'oracle' are associated with ancient Greek or Roman mythology, suggesting the play is set in either of these ancient locations. However, 'Paris' is also mentioned frequently, but it is not clear if it is the same Paris or another place with the same name. The mentions of 'Rome' could also suggest a setting in ancient Rome.\",\n    \"location_qid\": \"None\"\n}",
+  "duration_seconds": 24.152858018875122,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

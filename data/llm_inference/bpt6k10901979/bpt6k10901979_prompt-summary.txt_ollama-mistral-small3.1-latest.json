@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10901979",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early modern period\",\n    \"period_reasoning\": \"The play was written in the 17th century, which is part of the early modern period. The mention of Turkey and references to Christian-Muslim interactions suggest a context where these themes were relevant, aligning with the early modern period's religious and political dynamics.\",\n    \"timeframe_start\": \"1500\",\n    \"timeframe_end\": \"1800\",\n    \"location\": \"Turkey\",\n    \"location_reasoning\": \"The frequent mention of 'Turquie' (Turkey) and references to Turkish laws and customs suggest that the action of the play is set in or involves Turkey. Additionally, the mention of Venice, Constantinople, and Bari, which are historically connected to Turkey, supports this conclusion.\",\n    \"location_qid\": \"Q48\"\n}",
+  "duration_seconds": 23.62293577194214,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

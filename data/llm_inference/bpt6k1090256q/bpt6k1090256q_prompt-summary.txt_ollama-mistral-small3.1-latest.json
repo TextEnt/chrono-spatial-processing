@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090256q",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"The play mentions 'Paris' and 'Venus', which are characters from Greek mythology, and 'Paphos', an ancient city associated with the worship of Venus. These references suggest that the action is set in the mythological world of Classical Antiquity.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"476\",\n    \"location\": \"Mythological Greece\",\n    \"location_reasoning\": \"The play features mythological characters and places such as Paris, Venus, and Paphos, which are associated with ancient Greek mythology. Therefore, the setting is likely a mythological representation of ancient Greece.\",\n    \"location_qid\": \"None\"\n}",
+  "duration_seconds": 23.20748209953308,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1352544",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Antiquity\",\n    \"period_reasoning\": \"The mention of 'Prometheus' and 'Caucase' (Caucasus) in the context suggests references to Greek mythology, which places the action in the ancient world.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"0\",\n    \"location\": \"Caucasus region\",\n    \"location_reasoning\": \"The repeated mention of 'Caucase' (Caucasus) in the play indicates a geographical setting related to this region.\",\n    \"location_qid\": \"Q8573\"\n}",
+  "duration_seconds": 21.216758012771606,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

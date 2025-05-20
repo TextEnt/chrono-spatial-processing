@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k856901n",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early modern period\",\n    \"period_reasoning\": \"The play is from the XVII century, which is part of the early modern period. The language and the context of the text also suggest this timeframe.\",\n    \"timeframe_start\": \"1450\",\n    \"timeframe_end\": \"1800\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"Paris is mentioned multiple times in the related sentences, indicating it is a significant setting in the play.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 20.557528734207153,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

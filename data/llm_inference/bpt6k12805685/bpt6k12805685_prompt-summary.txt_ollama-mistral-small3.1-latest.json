@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k12805685",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play 'Les Fourberies de Scapin' is written by Moli\u00e8re and published in 1671. This places it firmly within the 17th century.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Italy (specifically, Tarente, Naples, and Alger are mentioned)\",\n    \"location_reasoning\": \"The play frequently mentions Tarente, Naples, and Alger. Tarente and Naples are cities in Italy, and Alger is a city in Algeria, suggesting the action takes place in the Mediterranean region with a strong Italian influence.\",\n    \"location_qid\": \"Q38228\"\n}",
+  "duration_seconds": 23.079206943511963,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

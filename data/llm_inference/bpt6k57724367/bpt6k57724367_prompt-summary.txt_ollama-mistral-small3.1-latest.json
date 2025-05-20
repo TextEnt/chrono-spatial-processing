@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k57724367",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early modern period\",\n    \"period_reasoning\": \"The play is written in French and was published in 1668, which is within the early modern period. The style and language used in the related sentences suggest a setting consistent with this historical period.\",\n    \"timeframe_start\": \"1500\",\n    \"timeframe_end\": \"1800\",\n    \"location\": \"Spain\",\n    \"location_reasoning\": \"Madrid is mentioned multiple times in the related sentences, indicating a strong connection to Spain. Additionally, the mention of 'Dom Sanche' and 'Seuille' (Seville) further supports a Spanish setting.\",\n    \"location_qid\": \"Q29\"\n}",
+  "duration_seconds": 20.989162921905518,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

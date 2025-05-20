@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090198q",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Renaissance to early modern period\",\n    \"period_reasoning\": \"The text is in French and the play was written in the 17th century. The style and language suggest a setting that aligns with the cultural and literary movements of the Renaissance and early modern period.\",\n    \"timeframe_start\": \"-1300\",\n    \"timeframe_end\": \"1800\",\n    \"location\": \"Rural France, likely near a river\",\n    \"location_reasoning\": \"The frequent mention of pastoral themes and the river Lignon suggest a rural setting in France. The presence of shepherds (berg\u00e8res) and the pastoral style further indicate a countryside environment.\",\n    \"location_qid\": \"Q131212\"\n}",
+  "duration_seconds": 23.161033868789673,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

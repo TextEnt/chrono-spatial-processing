@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5455471b",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"The action of the play is set in Ancient Greece\",\n    \"period_reasoning\": \"The names 'Coronis' and 'Daphnis' are mythological figures associated with ancient Greek mythology. Additionally, the mention of 'Corax,' a character associated with Apollo, and references to rivers like the Peneus, all point to a setting in ancient Greece.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"-500\",\n    \"location\": \"Ancient Greece\",\n    \"location_reasoning\": \"The characters and places mentioned, such as 'Coronis,' 'Daphnis,' 'Corax,' and the Peneus river, are all associated with ancient Greek mythology and geography.\",\n    \"location_qid\": \"Q43\"\n}",
+  "duration_seconds": 21.940348148345947,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090231w",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Late 17th century\",\n    \"period_reasoning\": \"The play mentions Louis XIV, who reigned from 1643 to 1715. The text also refers to Jacques II, who was King of England from 1685 to 1688. Given the publication date of 1696, the play likely takes place in the late 17th century.\",\n    \"timeframe_start\": \"1643\",\n    \"timeframe_end\": \"1715\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"The title of the play, 'Le Retour de Jacques II \u00e0 Paris,' and multiple mentions of Paris in the related sentences indicate that the action takes place in Paris.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 24.49317502975464,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

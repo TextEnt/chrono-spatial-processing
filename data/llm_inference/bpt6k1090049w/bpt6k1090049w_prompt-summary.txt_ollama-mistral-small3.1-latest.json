@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090049w",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"The Ancient Greek and Roman period\",\n    \"period_reasoning\": \"The play is a pastoral, a genre that often features mythological and classical references. Characters like Cloris, Damon, Phillis, and Sil\u00e8ne are names associated with Greek and Roman mythology. The mentions of 'Daphannis' and other pastoral elements suggest a setting inspired by the idyllic landscapes and mythological figures of ancient Greece and Rome.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"476\",\n    \"location\": \"Arcadia\",\n    \"location_reasoning\": \"The play is a pastoral, a literary genre that often takes place in idealized rural landscapes, typically associated with Arcadia, a region in ancient Greece known for its natural beauty and pastoral simplicity. The characters and themes in the play align with this traditional setting.\",\n    \"location_qid\": \"Q183555\"\n}",
+  "duration_seconds": 33.5945348739624,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k857200c",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Antiquity\",\n    \"period_reasoning\": \"The play mentions historical figures and places from the ancient world, such as Hannibal, Scipion, R\u00e9gulus, Arsace, and Hannibal, who are all associated with the ancient world, particularly the Punic Wars between Rome and Carthage. This places the action in the ancient period, specifically around the time of the Roman Republic.\",\n    \"timeframe_start\": \"-300\",\n    \"timeframe_end\": \"146 B.C.\",\n    \"location\": \"Mediterranean\",\n    \"location_reasoning\": \"The play frequently mentions Rome and Carthage, two major cities involved in the Punic Wars. Additionally, it mentions Spartes and Hannibal, further indicating a Mediterranean setting. The conflict between Rome and Carthage was a central event in the ancient Mediterranean world.\",\n    \"location_qid\": \"Q451\"\n}",
+  "duration_seconds": 33.000805139541626,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

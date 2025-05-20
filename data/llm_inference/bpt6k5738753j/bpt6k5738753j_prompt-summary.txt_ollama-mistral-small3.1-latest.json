@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5738753j",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Late Middle Ages to Early Modern Period\",\n    \"period_reasoning\": \"The play mentions the 'Mores' (Moors), which suggests a historical context involving the Reconquista, a series of campaigns by Christian states to recapture territory from Muslim rule in the Iberian Peninsula. The Reconquista spanned from the early 8th century to the late 15th century. Additionally, the presence of references to 'Aragon' and 'Grenade' further supports this context, as these regions were significant in the Reconquista.\",\n    \"timeframe_start\": \"-711\",\n    \"timeframe_end\": \"1492\",\n    \"location\": \"Iberian Peninsula\",\n    \"location_reasoning\": \"The play frequently mentions 'Castille', 'Aragon', and 'Grenade', which are all regions in the Iberian Peninsula. These references indicate that the action of the play is set in this geographic location.\",\n    \"location_qid\": \"Q274\"\n}",
+  "duration_seconds": 29.836549282073975,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

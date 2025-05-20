@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1311799",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early modern period\",\n    \"period_reasoning\": \"The play was written by Thomas Corneille in the 17th century, which is within the early modern period.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1750\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The frequent mention of Paris and France in the top places suggests that the play is set in France.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 21.281770944595337,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

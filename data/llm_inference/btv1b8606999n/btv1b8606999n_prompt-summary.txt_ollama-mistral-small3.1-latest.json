@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8606999n",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Renaissance\",\n    \"period_reasoning\": \"The play was written in the 17th century, which is part of the late Renaissance period in Europe. The literary style and themes mentioned, such as pastoral settings and mythological references, are characteristic of Renaissance literature.\",\n    \"timeframe_start\": \"-1350\",\n    \"timeframe_end\": \"1600\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The mentions of 'Lignon' and 'France' suggest that the play is set in France. Lignon is a river in France, specifically in the Auvergne-Rh\u00f4ne-Alpes region, which supports the setting being in France.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 22.053097009658813,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

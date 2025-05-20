@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8529128",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early modern period\",\n    \"period_reasoning\": \"The publication date of the play is 1692, which places it in the late 17th century. This is within the timeframe of the Early Modern period, which generally spans from the late 15th to the early 19th century.\",\n    \"timeframe_start\": \"1500\",\n    \"timeframe_end\": \"1800\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play is written in French and mentions several French regions such as Normandie, Bourgogne, Trianon, and Champagne. Additionally, the mention of specific French cultural and social contexts suggests that the action is set in France.\",\n    \"location_qid\": \"142\"\n}",
+  "duration_seconds": 21.587015867233276,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

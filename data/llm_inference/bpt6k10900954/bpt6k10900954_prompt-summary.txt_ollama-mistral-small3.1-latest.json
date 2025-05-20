@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10900954",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The publication date of the play is 1661, which is within the 17th century. Since the play is a work of fiction, it is likely set in a contemporary or slightly earlier time period.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Florence\",\n    \"location_reasoning\": \"Florence is the most frequently mentioned place in the play and is explicitly mentioned multiple times in contexts that suggest it is a central location for the characters' activities and interactions.\",\n    \"location_qid\": \"Q1884\"\n}",
+  "duration_seconds": 22.725469827651978,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

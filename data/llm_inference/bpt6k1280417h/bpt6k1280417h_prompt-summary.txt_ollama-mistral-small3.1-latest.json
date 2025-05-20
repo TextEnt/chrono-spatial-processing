@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280417h",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Late 17th Century\",\n    \"period_reasoning\": \"The play 'Le D\u00e9pit Amoureux' was written by Moli\u00e8re and published in 1663. This suggests that the historical period in which the play could have taken place is the late 17th century.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"None\",\n    \"location_reasoning\": \"The mentions of Paris and France in the context do not necessarily indicate that the action of the play takes place in these locations. The context does not provide sufficient information to determine the geographic location of the play's action.\",\n    \"location_qid\": \"None\"\n}",
+  "duration_seconds": 23.805512189865112,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1336391",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Late Roman Empire\",\n    \"period_reasoning\": \"The play mentions Honorius, who was a Roman Emperor from 393 to 423 CE. Additionally, it refers to Stilicomon (likely Stilicho), a high-ranking military commander during the reign of Honorius. The historical figures and the context of political intrigue suggest the Late Roman Empire period.\",\n    \"timeframe_start\": \"300\",\n    \"timeframe_end\": \"450\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"The play explicitly mentions Rome multiple times as a significant setting. Additionally, the characters and events described are consistent with the political and military context of Rome during the Late Roman Empire.\",\n    \"location_qid\": \"Q923\"\n}",
+  "duration_seconds": 25.503035306930542,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

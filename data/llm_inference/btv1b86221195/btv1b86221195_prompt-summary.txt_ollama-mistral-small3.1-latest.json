@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b86221195",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early Modern Period\",\n    \"period_reasoning\": \"The play is a tragi-comedy from the 17th century, which places it within the Early Modern Period. The reference to Mazarin and the style of the text also suggest this era.\",\n    \"timeframe_start\": \"1450\",\n    \"timeframe_end\": \"1789\",\n    \"location\": \"Spain and France\",\n    \"location_reasoning\": \"The mention of 'LOPE' suggests a connection to Spain, as Lope de Vega was a famous Spanish playwright. Additionally, the frequent mention of 'Paris' indicates a connection to France. The play's setting likely involves interactions between these two countries.\",\n    \"location_qid\": \"None\"\n}",
+  "duration_seconds": 25.069941997528076,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

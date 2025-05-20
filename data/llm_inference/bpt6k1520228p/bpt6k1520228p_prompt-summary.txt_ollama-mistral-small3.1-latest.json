@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1520228p",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early modern period\",\n    \"period_reasoning\": \"The play was written by Jean Chevalier in 1663, which places it firmly in the early modern period.\",\n    \"timeframe_start\": \"+1600\",\n    \"timeframe_end\": \"+1800\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play mentions 'Ville de Paris' and 'Ch\u00e2teau du Louvre', both of which are located in France. Additionally, the play's author, Jean Chevalier, is a French writer, and the publication date is 1663, a time when Paris was a significant cultural and political center in France.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 20.65143918991089,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

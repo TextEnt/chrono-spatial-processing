@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5511876p",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"French Baroque\",\n    \"period_reasoning\": \"The play was written by Dancourt in the 17th century. Dancourt was a French dramatist, and his works are characteristic of the French Baroque period, which spans from the late 16th to the early 18th century.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Versailles\",\n    \"location_reasoning\": \"The play mentions 'Versailles' explicitly and indicates it was performed there. The text also mentions 'Palais de Versailles,' which is a clear reference to the Palace of Versailles.\",\n    \"location_qid\": \"Q922744\"\n}",
+  "duration_seconds": 19.97325301170349,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

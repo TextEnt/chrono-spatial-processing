@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k911606",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early modern period\",\n    \"period_reasoning\": \"The publication date of the play is 1638, which is within the early modern period. This period is generally considered to span from the late 15th to the mid-18th century.\",\n    \"timeframe_start\": \"1453\",\n    \"timeframe_end\": \"1789\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play is written by a French author, Georges de Scud\u00e9ry, and mentions several French locations, including Tours and Paris. Additionally, the mention of France itself supports this conclusion.\",\n    \"location_qid\": \"142\"\n}",
+  "duration_seconds": 21.480467081069946,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

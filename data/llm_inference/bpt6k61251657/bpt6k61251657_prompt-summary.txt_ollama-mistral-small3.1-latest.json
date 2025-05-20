@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k61251657",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Antiquity and Middle Ages\",\n    \"period_reasoning\": \"The play mentions historical and cultural references that are characteristic of ancient and medieval periods, such as kings, princes, and references to heroic deeds and royal courts. Additionally, the mention of 'Perse' suggests a setting in ancient Persia or a medieval context where such references were still relevant.\",\n    \"timeframe_start\": \"-550\",\n    \"timeframe_end\": \"1492\",\n    \"location\": \"Perse\",\n    \"location_reasoning\": \"The term 'Perse' appears frequently in the context of the play, indicating that the action is set in or related to ancient Persia. Additionally, the scene is explicitly stated to be in 'Perse'.\",\n    \"location_qid\": \"Q454\"\n}",
+  "duration_seconds": 989.7916231155396,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

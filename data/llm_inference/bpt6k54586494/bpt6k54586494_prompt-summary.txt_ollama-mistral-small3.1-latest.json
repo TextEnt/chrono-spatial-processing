@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k54586494",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Antiquity\",\n    \"period_reasoning\": \"The play mentions Minos, who is a figure from Greek mythology, specifically the king of Crete during the time of the myth of the Minotaur. This places the story in the mythological era of ancient Greece.\",\n    \"timeframe_start\": \"-3000\",\n    \"timeframe_end\": \"-146\",\n    \"location\": \"Crete\",\n    \"location_reasoning\": \"The play mentions Crete, which is the primary setting for the myth of the Minotaur and the labyrinth. Additionally, Minos is the king of Crete, reinforcing this location.\",\n    \"location_qid\": \"Q37757\"\n}",
+  "duration_seconds": 27.110570907592773,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10901178",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"The Early Modern period\",\n    \"period_reasoning\": \"The play is written in French and the style of language used in the sentences is characteristic of the XVII century. The title of the play, \\\"Le Festin de Pierre, ou l'Ath\u00e9e foudroy\u00e9\\\", along with the publication date of 1665, places it firmly within the Early Modern period, particularly in the 17th century.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play is written by a French author and several references are made to France and Paris. The frequent mention of 'Rome' suggests an international context, but the primary setting is likely France due to the author's nationality and the cultural references.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 26.1197988986969,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

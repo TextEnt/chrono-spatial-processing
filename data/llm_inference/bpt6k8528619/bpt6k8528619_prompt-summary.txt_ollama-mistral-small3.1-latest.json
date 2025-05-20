@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8528619",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"The French Classical Age\",\n    \"period_reasoning\": \"The play is written by Fran\u00e7ois Passerat and published in 1695, placing it within the French Classical Age, which spans from the mid-17th to the late 18th century.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1800\",\n    \"location\": \"None\",\n    \"location_reasoning\": \"The provided information does not specify a particular geographic location where the action of the play takes place. The references to 'Berg\u00e8re' and pastoral themes are generic and do not indicate a specific location.\",\n    \"location_qid\": \"None\"\n}",
+  "duration_seconds": 20.612685680389404,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

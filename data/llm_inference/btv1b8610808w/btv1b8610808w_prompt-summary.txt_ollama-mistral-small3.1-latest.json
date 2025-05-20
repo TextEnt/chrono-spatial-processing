@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8610808w",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"The play mentions characters and events that are associated with the mythological stories of Thebes, such as Creon, Jocaste, and Antigone, which are set in the time of Classical Antiquity.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"400\",\n    \"location\": \"Thebes\",\n    \"location_reasoning\": \"The play explicitly mentions Thebes multiple times, indicating that the action takes place in or around this ancient city.\",\n    \"location_qid\": \"Q18854\"\n}",
+  "duration_seconds": 21.50779700279236,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

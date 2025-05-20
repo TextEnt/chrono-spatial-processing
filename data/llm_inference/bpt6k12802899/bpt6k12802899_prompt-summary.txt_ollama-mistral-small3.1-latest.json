@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k12802899",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"The Roman Kingdom period\",\n    \"period_reasoning\": \"The play frequently mentions Rome and the characters involved in the story are related to the founding of the Roman Kingdom. The story revolves around the Horatii and the Curiatii, which are legendary figures from Roman mythology associated with the early history of Rome.\",\n    \"timeframe_start\": \"-753\",\n    \"timeframe_end\": \"-509\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"The text mentions Rome frequently and the context of the play is deeply rooted in Roman mythology and early Roman history.\",\n    \"location_qid\": \"Q924\"\n}",
+  "duration_seconds": 26.715071201324463,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

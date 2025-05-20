@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5817834x",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Late 17th Century\",\n    \"period_reasoning\": \"The publication date of the play is 1698, indicating that the play was written in the late 17th century. The cultural and linguistic context of the play also aligns with the late 17th century in France.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play explicitly mentions 'France' multiple times, indicating that the action of the play is set in France. Additionally, the cultural and linguistic context of the play aligns with 17th-century France.\",\n    \"location_qid\": \"142\"\n}",
+  "duration_seconds": 22.701124906539917,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

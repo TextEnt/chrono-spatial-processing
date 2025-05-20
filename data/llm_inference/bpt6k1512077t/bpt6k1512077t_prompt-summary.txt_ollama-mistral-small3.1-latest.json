@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1512077t",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Ancient Greek mythology and classical mythology\",\n    \"period_reasoning\": \"The play mentions characters from Greek mythology (such as Apollon and Themis) and a setting that references ancient Greece and Rome. This indicates that the play is set in a mythological and classical context.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"-1\",\n    \"location\": \"Greece and Rome\",\n    \"location_reasoning\": \"The play mentions Athens and Rome, which are significant locations in ancient Greek and Roman history. The mention of 'Arts Riches par toi des beaut\u00e9s souveraines Qu'ils eurent autrefois dans Rome et dans Ath\u00e8nes' suggests a setting that involves these ancient civilizations.\",\n    \"location_qid\": \"Q99\"\n}",
+  "duration_seconds": 20.935266971588135,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1511988d",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early modern period\",\n    \"period_reasoning\": \"The play is from the XVII century, and the text mentions elements such as 'chicane' (legal dispute) and 'carrosse' (carriage), which are indicative of the early modern period. Additionally, the play's publication date is 1684, which falls within the early modern period.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1800\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"The text explicitly mentions 'Maisons dans Paris' and 'P\u00e9riilllo GRAPINIAN,' indicating that the action of the play takes place in Paris.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 21.142691135406494,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

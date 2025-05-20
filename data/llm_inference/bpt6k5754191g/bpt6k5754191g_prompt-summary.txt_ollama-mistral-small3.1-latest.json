@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5754191g",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was written by Dancourt and published in 1697, indicating it is a work of the 17th century.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1699\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"The term 'Paris' is mentioned 12 times in the related sentences, indicating that the action of the play takes place in Paris.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 24.22300100326538,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

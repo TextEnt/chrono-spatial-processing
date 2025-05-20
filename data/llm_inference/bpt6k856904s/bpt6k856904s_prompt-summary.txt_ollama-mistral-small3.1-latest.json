@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k856904s",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Ancien R\u00e9gime\",\n    \"period_reasoning\": \"The play is a pastorale, a genre popular in the 17th century, and it mentions 'saint Hym\u00e9n\u00e9e,' which refers to the classical god of marriage, indicating a classical or Renaissance influence. The style and themes suggest a time period consistent with the Ancien R\u00e9gime in France.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1789\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play mentions 'France' explicitly in the related sentences, indicating that the action of the play takes place in France.\",\n    \"location_qid\": \"142\"\n}",
+  "duration_seconds": 28.936413764953613,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

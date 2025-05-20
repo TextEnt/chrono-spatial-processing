@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8568368",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Ancien R\u00e9gime\",\n    \"period_reasoning\": \"The play is a pastoral drama written in the early 17th century, which aligns with the literary and cultural styles of the Ancien R\u00e9gime period in France.\",\n    \"timeframe_start\": \"1500\",\n    \"timeframe_end\": \"1789\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play mentions Paris, a prominent city in France, and the text contains French cultural references, suggesting that the action is set in France.\",\n    \"location_qid\": \"142\"\n}",
+  "duration_seconds": 20.12173295021057,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

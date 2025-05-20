@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k6262823q",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Late Middle Ages to Early Modern Period\",\n    \"period_reasoning\": \"The play mentions themes and styles that are consistent with the Late Middle Ages and Early Modern Period. The language and references suggest a setting that could span from the late 14th to the early 17th century.\",\n    \"timeframe_start\": \"-1300\",\n    \"timeframe_end\": \"1650\",\n    \"location\": \"Naples\",\n    \"location_reasoning\": \"The play frequently mentions Naples, indicating that it is a significant setting. References to Naples in the sentences suggest it is a central location for the play's action.\",\n    \"location_qid\": \"Q11170\"\n}",
+  "duration_seconds": 22.28715419769287,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

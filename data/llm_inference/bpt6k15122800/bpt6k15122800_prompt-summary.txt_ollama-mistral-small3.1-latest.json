@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k15122800",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Roman Empire\",\n    \"period_reasoning\": \"The play mentions the 'Empire Romain' and references figures and events related to the Roman Empire, such as the mention of 'L'Imp\u00e9ratrice' and 'L'Imp\u00e9ratrice Catherine d'Alexandrie.'\",\n    \"timeframe_start\": \"-27\",\n    \"timeframe_end\": \"476\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"The play frequently mentions 'Rome' and references historical and cultural elements associated with Rome.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 39.13840985298157,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

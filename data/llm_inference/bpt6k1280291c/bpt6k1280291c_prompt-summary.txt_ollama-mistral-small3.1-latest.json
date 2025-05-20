@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280291c",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Roman Empire\",\n    \"period_reasoning\": \"The play mentions Auguste (Augustus), who was the first Roman Emperor. This indicates the setting is during the Roman Empire.\",\n    \"timeframe_start\": \"-31\",\n    \"timeframe_end\": \"14\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"The play frequently mentions Rome and discusses political and social dynamics that are centered around Rome.\",\n    \"location_qid\": \"Q926\"\n}",
+  "duration_seconds": 24.76336693763733,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

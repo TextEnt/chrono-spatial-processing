@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5754196j",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"The Trojan War\",\n    \"period_reasoning\": \"The text mentions key figures and events associated with the Trojan War, such as Paris, Ilion (Troy), and the mention of Andromache and Hermione, who are prominent figures in the mythological narrative of the Trojan War. This indicates that the play is set during the time of the Trojan War.\",\n    \"timeframe_start\": \"-1300\",\n    \"timeframe_end\": \"-1200\",\n    \"location\": \"Troy\",\n    \"location_reasoning\": \"The text mentions 'Ilion' (an ancient name for Troy) and key figures associated with the Trojan War. The play is set in the context of the Trojan War, which took place in the city of Troy.\",\n    \"location_qid\": \"Q41593\"\n}",
+  "duration_seconds": 27.805047035217285,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

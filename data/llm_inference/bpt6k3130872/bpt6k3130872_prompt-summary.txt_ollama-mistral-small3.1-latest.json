@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k3130872",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early 17th century\",\n    \"period_reasoning\": \"The publication date of the play is 1611, which indicates that the play was written in the early 17th century. The references to 'Henry le Grand' (Henry IV of France) also support this timeframe.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1620\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The mention of 'France' multiple times in the context, along with references to 'PARIS' and 'Henry le Grand' (Henry IV of France), strongly suggest that the action of the play is set in France.\",\n    \"location_qid\": \"142\"\n}",
+  "duration_seconds": 26.68415594100952,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

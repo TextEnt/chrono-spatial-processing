@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k63398825",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"The period of the French classical literature\",\n    \"period_reasoning\": \"The play was written in the XVII century (1670) and contains references typical of the French classical literature of that period.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"The frequent mention of Paris in the play indicates that the action takes place in this city.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 20.247071027755737,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

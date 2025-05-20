@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090263v",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"The Mythological Period of Ancient Greece\",\n    \"period_reasoning\": \"The play mentions several key figures and events from Greek mythology, such as Hercule, Mars, and references to the Trojan War. These elements are indicative of the mythological period of Ancient Greece.\",\n    \"timeframe_start\": \"-1200\",\n    \"timeframe_end\": \"-800\",\n    \"location\": \"Peloponese\",\n    \"location_reasoning\": \"The title of the play mentions the Peloponese, and multiple sentences reference this region. Additionally, the play discusses the return of the Heraclides to the Peloponese, which is a central theme.\",\n    \"location_qid\": \"Q44624\"\n}",
+  "duration_seconds": 24.253952026367188,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

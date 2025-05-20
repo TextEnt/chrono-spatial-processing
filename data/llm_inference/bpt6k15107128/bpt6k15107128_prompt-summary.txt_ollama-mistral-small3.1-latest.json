@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k15107128",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Iron Age III\",\n    \"period_reasoning\": \"The play references 'JOAS, Roi de Juda, fils d'Okosias', which places the action in the time of King Joash of Judah, who reigned from approximately 837 to 798 BCE. This aligns with the Iron Age III period in the ancient Near East.\",\n    \"timeframe_start\": \"-900\",\n    \"timeframe_end\": \"-700\",\n    \"location\": \"Kingdom of Judah\",\n    \"location_reasoning\": \"The play repeatedly mentions Juda (Judah) and its kings, including Joash, who was a king of Judah. Additionally, Jerusalem is frequently referenced, which was the capital of the Kingdom of Judah.\",\n    \"location_qid\": \"Q206553\"\n}",
+  "duration_seconds": 22.31661105155945,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

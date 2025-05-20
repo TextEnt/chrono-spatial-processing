@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5458862p",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early modern period\",\n    \"period_reasoning\": \"The publication date of the play is 1632, which places it within the early modern period. The style and language used in the play also suggest this period.\",\n    \"timeframe_start\": \"+1400\",\n    \"timeframe_end\": \"+1800\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"Several references in the text mention Paris and France, indicating that the action likely takes place in France. Additionally, the author, Richemont-Banchereau, is associated with French literature of the time.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 25.630228996276855,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

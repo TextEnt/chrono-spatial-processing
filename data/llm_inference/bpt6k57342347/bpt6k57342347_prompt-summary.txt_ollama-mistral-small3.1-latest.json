@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k57342347",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"17th Century\",\n    \"period_reasoning\": \"The publication date of the play is 1622, which places it in the 17th century. Additionally, the style and language used in the play are characteristic of the French literature of this period.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play mentions France multiple times and specifically refers to Paris and other French locations, indicating that the action is set in France.\",\n    \"location_qid\": \"142\"\n}",
+  "duration_seconds": 22.873276948928833,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

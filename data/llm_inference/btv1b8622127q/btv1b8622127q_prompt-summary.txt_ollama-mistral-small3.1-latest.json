@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8622127q",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early Modern Period\",\n    \"period_reasoning\": \"The play is a tragi-com\u00e9die from the 17th century, a genre that flourished during the Early Modern Period. The style and language used in the text, as well as the mention of nobility and courtly intrigue, are characteristic of this era.\",\n    \"timeframe_start\": \"-0001\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The text mentions 'France' multiple times, indicating that the play is set in France. Additionally, the author, Jean de Rotrou, is a French playwright, further supporting this location.\",\n    \"location_qid\": \"142\"\n}",
+  "duration_seconds": 24.288818359375,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

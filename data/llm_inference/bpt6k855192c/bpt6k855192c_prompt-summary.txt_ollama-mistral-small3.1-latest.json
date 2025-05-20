@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k855192c",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"The Crusades\",\n    \"period_reasoning\": \"The mention of characters such as Aladin, Godefroi, and the setting involving the siege of Jerusalem, along with references to Christians and Pagans, strongly suggests a narrative set during the Crusades. The Crusades were a series of religious wars between Christians and Muslims that took place from the 11th to the 13th centuries.\",\n    \"timeframe_start\": \"1095\",\n    \"timeframe_end\": \"1291\",\n    \"location\": \"Jerusalem\",\n    \"location_reasoning\": \"The play explicitly mentions Jerusalem as a significant location, and it is central to the conflict described. Jerusalem was a key city in the Crusades, frequently changing hands between Christian and Muslim control.\",\n    \"location_qid\": \"Q658\"\n}",
+  "duration_seconds": 25.84919285774231,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k12801963",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Ancient Greece and Early Modern France\",\n    \"period_reasoning\": \"The mention of places like Corinthe, LORIS, HYLIS, and Gr\u00e8ce suggests a connection to Ancient Greece. The setting in Paris and the author's time period (17th century) indicate that the play could also have elements of Early Modern France.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"1652\",\n    \"location\": \"Ancient Greece and Paris\",\n    \"location_reasoning\": \"The places mentioned include Corinthe, LORIS, HYLIS, and Gr\u00e8ce, which are associated with Ancient Greece. Additionally, Paris is frequently mentioned, indicating a setting in Early Modern France.\",\n    \"location_qid\": \"None\"\n}",
+  "duration_seconds": 30.145810842514038,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

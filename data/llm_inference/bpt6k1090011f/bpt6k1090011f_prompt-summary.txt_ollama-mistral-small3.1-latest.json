@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090011f",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early Modern Period\",\n    \"period_reasoning\": \"The play was written by Georges de Scud\u00e9ry in the 17th century, which places it within the Early Modern Period.\",\n    \"timeframe_start\": \"1500\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The frequent mention of Paris and France, along with the author's nationality, suggest that the action of the play takes place in France.\",\n    \"location_qid\": \"142\"\n}",
+  "duration_seconds": 18.011724948883057,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

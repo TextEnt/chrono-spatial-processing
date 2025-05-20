@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k87013650",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Ancient Greek mythology\",\n    \"period_reasoning\": \"The play mentions characters and events that are rooted in ancient Greek mythology, such as references to the goddess Astrea and the involvement of gods and oracles.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"-300\",\n    \"location\": \"Arcadia\",\n    \"location_reasoning\": \"The play is described as a pastoral tragicomedy, which often takes place in idyllic, rural settings. The frequent mention of characters like Astrea, Celadon, and Diane, along with the pastoral themes, suggests a setting inspired by Arcadia, a region in ancient Greece known for its pastoral beauty and mythological associations.\",\n    \"location_qid\": \"Q192406\"\n}",
+  "duration_seconds": 35.209222078323364,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

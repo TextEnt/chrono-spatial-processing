@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5619355h",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Late Antiquity to Early Middle Ages\",\n    \"period_reasoning\": \"The play mentions Clotilde, a historical figure who was a queen of the Franks in the 5th-6th century, suggesting the setting is around that time. The names and themes also align with the early medieval period in Europe.\",\n    \"timeframe_start\": \"-400\",\n    \"timeframe_end\": \"1000\",\n    \"location\": \"Frankish Kingdom\",\n    \"location_reasoning\": \"Clotilde is a historical figure associated with the Frankish Kingdom. Additionally, the mentions of Paris and Narbonne, which were part of the Frankish Kingdom, support this location.\",\n    \"location_qid\": \"Q8444\"\n}",
+  "duration_seconds": 25.931293964385986,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

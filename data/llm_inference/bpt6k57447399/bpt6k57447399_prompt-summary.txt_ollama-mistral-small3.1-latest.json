@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k57447399",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Roman Empire\",\n    \"period_reasoning\": \"The play frequently mentions Rome and its political figures, such as the Consul and the Senate, indicating a setting within the Roman Empire. The characters and political intrigues suggest a time when Rome was a significant political and military power.\",\n    \"timeframe_start\": \"-27\",\n    \"timeframe_end\": \"476\",\n    \"location\": \"Armenia\",\n    \"location_reasoning\": \"The title of the play is 'Z\u00e9nobie, reyne d'Arm\u00e9nie', which directly indicates that the action takes place in Armenia. Additionally, the frequent mentions of Armenia and its royal figures support this location.\",\n    \"location_qid\": \"Q6686\"\n}",
+  "duration_seconds": 28.859453916549683,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

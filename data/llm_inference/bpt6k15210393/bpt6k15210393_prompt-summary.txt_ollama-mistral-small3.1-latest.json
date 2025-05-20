@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k15210393",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Mythological era\",\n    \"period_reasoning\": \"The play involves characters from Greek mythology such as Amphitrite, Neptune, and Venus, which places the action in a mythological timeframe.\",\n    \"timeframe_start\": \"-1200\",\n    \"timeframe_end\": \"-800\",\n    \"location\": \"Cyth\u00e8re\",\n    \"location_reasoning\": \"The place \\\"Cyth\u00e8re\\\" is mentioned multiple times in the related sentences, which is an island associated with the goddess Venus in Greek mythology.\",\n    \"location_qid\": \"Q189317\"\n}",
+  "duration_seconds": 18.903053998947144,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

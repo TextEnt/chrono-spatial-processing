@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10902396",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"XVII century\",\n    \"period_reasoning\": \"The publication date of the play is 1684, which places it within the XVII century. The content and references within the play also suggest a setting consistent with the social and cultural context of the XVII century.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1699\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The mention of 'France' in the related sentences, as well as references to locations like 'saint Germain' and cultural references that are specific to France, indicate that the play is set in France.\",\n    \"location_qid\": \"142\"\n}",
+  "duration_seconds": 23.978419303894043,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

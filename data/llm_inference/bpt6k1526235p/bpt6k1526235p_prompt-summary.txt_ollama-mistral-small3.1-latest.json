@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1526235p",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Antiquity\",\n    \"period_reasoning\": \"The play mentions several entities and activities associated with ancient mythology, particularly Bacchus (Bachus) and his followers, who are part of Greek and Roman mythology. References to Satyres, Bacchantes, and the mention of ancient rituals and figures like 'les lois' and 'les appas' indicate a setting rooted in classical antiquity.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"476\",\n    \"location\": \"Mythe\",\n    \"location_reasoning\": \"The play is set in a mythological context rather than a specific geographic location. Entities like Bachus and his followers, as well as references to ancient rituals, suggest a mythological setting rather than a specific place on Earth.\",\n    \"location_qid\": \"None\"\n}",
+  "duration_seconds": 25.937657833099365,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

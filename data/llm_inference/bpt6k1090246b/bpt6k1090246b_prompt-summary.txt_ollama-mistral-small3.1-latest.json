@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090246b",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Hellenistic Period\",\n    \"period_reasoning\": \"The play mentions Antigonus, Seleucus, and Olympia, which are names associated with the successors of Alexander the Great. This suggests the Hellenistic Period, which spans from the death of Alexander in 323 B.C. to the establishment of the Roman Empire in 31 B.C.\",\n    \"timeframe_start\": \"-323\",\n    \"timeframe_end\": \"-31\",\n    \"location\": \"Ancient Greece and the Near East\",\n    \"location_reasoning\": \"The mention of Antigonus, Seleucus, and Olympia, along with the reference to Epirus, suggests a setting in the ancient Greek world and the Near East, where the Hellenistic kingdoms were located.\",\n    \"location_qid\": \"Q175910\"\n}",
+  "duration_seconds": 23.28000497817993,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

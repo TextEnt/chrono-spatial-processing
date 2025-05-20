@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8610800k",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Late 17th century\",\n    \"period_reasoning\": \"The play is written by Moli\u00e8re, a prominent playwright of the 17th century. The publication date is 1669, which places the play in the late 17th century.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"None\",\n    \"location_reasoning\": \"The play frequently mentions historical places such as Rome, France, Paris, Gr\u00e8ce, and Athens. However, there is no direct indication of where the action of the play specifically takes place. The references to these places are likely part of the dialogue and commentary within the play rather than the setting itself.\",\n    \"location_qid\": \"None\"\n}",
+  "duration_seconds": 24.23857808113098,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

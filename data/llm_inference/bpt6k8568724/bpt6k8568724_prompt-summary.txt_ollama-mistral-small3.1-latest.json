@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8568724",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early Modern Period\",\n    \"period_reasoning\": \"The play was written in the 17th century, which falls within the Early Modern Period. The language and references in the text are consistent with this era.\",\n    \"timeframe_start\": \"+1500\",\n    \"timeframe_end\": \"+1800\",\n    \"location\": \"Paris, France\",\n    \"location_reasoning\": \"The text frequently mentions Paris, indicating that the action of the play is set in this city. Additionally, the play was performed at the Th\u00e9\u00e2tre Royal de Saint-Germain-en-Laye, which is near Paris.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 19.86316990852356,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

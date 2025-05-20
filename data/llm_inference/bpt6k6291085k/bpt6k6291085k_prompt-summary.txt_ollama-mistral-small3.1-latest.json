@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k6291085k",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Ancient Near East\",\n    \"period_reasoning\": \"The play is based on the story of Esther from the Old Testament, which is set in the ancient Near East during the Persian Empire.\",\n    \"timeframe_start\": \"-600\",\n    \"timeframe_end\": \"-330\",\n    \"location\": \"Persian Empire\",\n    \"location_reasoning\": \"The story of Esther, which the play is based on, takes place in the Persian Empire. Specific mentions of places like 'Susan' (likely Shushan) and references to the Persian King Assuerus (Ahasuerus) support this setting.\",\n    \"location_qid\": \"Q30291\"\n}",
+  "duration_seconds": 22.941234350204468,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

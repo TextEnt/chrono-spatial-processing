@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8622115h",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"16th century\",\n    \"period_reasoning\": \"The play is based on the epic poem 'Orlando Furioso' by Ludovico Ariosto, which was published in 1516 and 1532. The characters and events in the play, such as Roland (Orlando) and Angelique, are derived from this epic. The 16th century is therefore the most plausible period for the action of the play.\",\n    \"timeframe_start\": \"1500\",\n    \"timeframe_end\": \"1600\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The top mentioned place is Paris, which is located in France. Additionally, other places mentioned include 'France', 'Maine', and 'Landes', all of which are regions in France. Therefore, it is reasonable to conclude that the action of the play takes place in France.\",\n    \"location_qid\": \"142\"\n}",
+  "duration_seconds": 30.872570276260376,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

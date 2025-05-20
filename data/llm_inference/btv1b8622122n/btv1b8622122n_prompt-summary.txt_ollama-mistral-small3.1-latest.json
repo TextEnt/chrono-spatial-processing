@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8622122n",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early to Mid-17th Century\",\n    \"period_reasoning\": \"The play was published in 1637, indicating that the action likely takes place around this time or slightly earlier, considering the typical context of French literature from this era.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1650\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The mentions of 'PARIS' and 'France' suggest that the action is set in France. Additionally, the reference to 'Navarre' and 'Troie' (Troy) supports a setting within the French cultural and geographical context.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 23.17078924179077,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

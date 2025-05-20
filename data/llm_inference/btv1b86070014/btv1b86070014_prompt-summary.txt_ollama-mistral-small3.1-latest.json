@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b86070014",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Greek mythology and ancient Greek history\",\n    \"period_reasoning\": \"The play is named after Amphitryon, a figure from Greek mythology, and mentions characters like Jupiter and Mercury, who are also from Greek mythology. The play's setting and characters are rooted in ancient Greek stories and legends.\",\n    \"timeframe_start\": \"-1000\",\n    \"timeframe_end\": \"0\",\n    \"location\": \"Thebes\",\n    \"location_reasoning\": \"Thebes is mentioned as one of the top places in the play. It is a significant location in Greek mythology and history, fitting the context of the play's characters and themes.\",\n    \"location_qid\": \"Q190801\"\n}",
+  "duration_seconds": 21.724101066589355,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

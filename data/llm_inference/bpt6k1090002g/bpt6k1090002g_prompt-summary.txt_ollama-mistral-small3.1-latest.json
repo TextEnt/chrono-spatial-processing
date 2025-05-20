@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090002g",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early modern period\",\n    \"period_reasoning\": \"The play was written in 1669, which falls within the early modern period. This period is characterized by significant cultural and political changes in Europe, including the development of theater and literature, which aligns with the context of the play.\",\n    \"timeframe_start\": \"1500\",\n    \"timeframe_end\": \"1800\",\n    \"location\": \"Paris, France\",\n    \"location_reasoning\": \"The term 'Paris' appears frequently in the context sentences, indicating that the action of the play is set in Paris. Additionally, the mention of 'Saint Germain', 'Tours', 'Blois', and 'Canadas' suggests a French setting, but 'Paris' is the most prominently mentioned place.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 25.17942976951599,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

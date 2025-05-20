@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090096j",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Middle Ages to early modern period\",\n    \"period_reasoning\": \"The mention of Clotaire and references to feudal systems suggest a medieval or early modern setting. Additionally, the publication date of 1665 suggests a historical period that could include elements from the Middle Ages.\",\n    \"timeframe_start\": \"-476\",\n    \"timeframe_end\": \"1648\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play is in French, the author is French, and the mentions of Paris and the Ch\u00e2teau du Louvre, both iconic French locations, strongly suggest that the action takes place in France.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 38.72217106819153,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280470w",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play is written by Moli\u00e8re and published in 1675, a clear indication that it is from the 17th century. While the action of the play itself might not be set in the 17th century, the context and language used are indicative of the time period in which Moli\u00e8re wrote.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"The text mentions 'Paris' multiple times and explicitly states 'La Sc\u00e8ne est \u00e0 Paris' in one of the sentences, indicating that the action of the play is set in Paris.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 631.1957380771637,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

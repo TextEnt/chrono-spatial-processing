@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5742924x",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"The play is titled 'Coriolan,' which refers to the Roman general Gaius Marcius Coriolanus, a historical figure from the 5th century B.C.E. The frequent mention of Rome and the characters' names, which are reminiscent of Roman names, suggest a setting in ancient Rome.\",\n    \"timeframe_start\": \"-600\",\n    \"timeframe_end\": \"-200\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"The play is titled 'Coriolan,' which refers to the Roman general Gaius Marcius Coriolanus. Additionally, the frequent mention of 'Rome' and references to Roman culture and politics in the related sentences indicate that the action takes place in ancient Rome.\",\n    \"location_qid\": \"Q1894\"\n}",
+  "duration_seconds": 24.70094108581543,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090166r",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Hellenistic period\",\n    \"period_reasoning\": \"The play is titled 'Le Grand Alexandre, ou Porus, roy des Indes, tragedie', which focuses on Alexander the Great, who lived in the 4th century BCE. The Hellenistic period follows the death of Alexander the Great in 323 BCE and lasts until the Roman Empire's rise, approximately in the 1st century BCE.\",\n    \"timeframe_start\": \"-356\",\n    \"timeframe_end\": \"-323\",\n    \"location\": \"India\",\n    \"location_reasoning\": \"The title of the play mentions 'Porus, roy des Indes', indicating that the action takes place in India, specifically involving Porus, a historical figure known for his encounter with Alexander the Great.\",\n    \"location_qid\": \"Q668\"\n}",
+  "duration_seconds": 23.512460947036743,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

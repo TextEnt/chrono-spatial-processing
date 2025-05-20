@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10901497",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Late Roman Empire\",\n    \"period_reasoning\": \"The play mentions 'Honorius, Empereur d'Occident' and references to the 'Empereur d'Occident' suggest the action takes place during the Late Roman Empire, as Honorius was Emperor of the Western Roman Empire from 393 to 423 AD. The mention of 'Genseric' and 'Carthage' also aligns with the Vandal Kingdom, which was prominent during this period.\",\n    \"timeframe_start\": \"300\",\n    \"timeframe_end\": \"476\",\n    \"location\": \"Rome and surrounding areas of the Western Roman Empire\",\n    \"location_reasoning\": \"The play frequently mentions Rome and other locations such as Carthage and Africa, which were part of the Western Roman Empire during the Late Roman Empire period.\",\n    \"location_qid\": \"Q1889\"\n}",
+  "duration_seconds": 25.108241081237793,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

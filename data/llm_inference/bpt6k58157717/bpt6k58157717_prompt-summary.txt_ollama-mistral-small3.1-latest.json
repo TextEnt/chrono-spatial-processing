@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k58157717",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Medieval/Renaissance period\",\n    \"period_reasoning\": \"The play mentions characters and themes that are reminiscent of the Matter of France and the medieval epic poems, such as the references to Roland and Bradamante, who are central figures in the Orlando Furioso by Ludovico Ariosto. This suggests a setting in the medieval/Renaissance period, which is also consistent with the literary style and themes prevalent in the 17th century.\",\n    \"timeframe_start\": \"-476\",\n    \"timeframe_end\": \"1600\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play explicitly mentions 'France' multiple times, indicating that the action takes place in this country. Additionally, references to Paris and the French court further support this location.\",\n    \"location_qid\": \"142\"\n}",
+  "duration_seconds": 26.29444718360901,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

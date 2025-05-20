@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k852922m",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Late 17th century\",\n    \"period_reasoning\": \"The play was published in 1691, suggesting that it reflects the societal and cultural norms of the late 17th century. This timeframe aligns with the French classical period in literature and theatre.\",\n    \"timeframe_start\": \"1650\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Toulon\",\n    \"location_reasoning\": \"Toulon is mentioned multiple times as a significant location in the play. Characters are associated with Toulon, and it is a key setting for the narrative. There is also a mention of Paris, but it seems to be less central to the story.\",\n    \"location_qid\": \"Q9028\"\n}",
+  "duration_seconds": 24.637680292129517,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

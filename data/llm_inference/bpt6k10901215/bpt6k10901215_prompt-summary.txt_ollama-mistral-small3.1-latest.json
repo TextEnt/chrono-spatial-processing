@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10901215",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"The Roman Republic period\",\n    \"period_reasoning\": \"The play is titled 'Coriolan, trag\u00e9die,' which refers to the historical figure Caius Martius Coriolanus, a Roman general and consul who lived in the 5th century B.C. The context mentions 'Rome,' 'Tarquin' (likely referring to the Tarquins, the last kings of Rome), and other elements associated with Roman history and mythology.\",\n    \"timeframe_start\": \"-509\",\n    \"timeframe_end\": \"-27\",\n    \"location\": \"Ancient Rome\",\n    \"location_reasoning\": \"The frequent mentions of 'Rome' and references to Roman historical figures and events strongly indicate that the action of the play takes place in Ancient Rome.\",\n    \"location_qid\": \"Q939\"\n}",
+  "duration_seconds": 24.361507892608643,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

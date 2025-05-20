@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k6255602h",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play is written in the 17th century, as indicated by the publication date of 1669. The language and style of the sentences also align with 17th-century French literature.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1699\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"The play mentions Paris frequently and is set in the context of the Th\u00e9\u00e2tre Royal de l'Hostel de Bourgogne, which is located in Paris. This suggests that the primary setting of the play is in Paris.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 23.231717824935913,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

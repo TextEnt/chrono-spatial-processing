@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k857217c",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The publication date of the play is 1666, which is in the 17th century. The style and language used in the play also align with the characteristics of 17th-century French literature.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France and Africa\",\n    \"location_reasoning\": \"The title of the play mentions 'Ambassadeur d'Affrique', indicating a connection to Africa. Additionally, the frequent mention of 'Afrique' in the related sentences confirms this connection. The play is written in French and mentions places like Paris and France, suggesting that a significant part of the action takes place in France.\",\n    \"location_qid\": \"None\"\n}",
+  "duration_seconds": 24.07312321662903,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

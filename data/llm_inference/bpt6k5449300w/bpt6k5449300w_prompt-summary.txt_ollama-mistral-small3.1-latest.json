@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5449300w",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Roman Empire\",\n    \"period_reasoning\": \"The play mentions multiple Roman emperors (Maximin, Vitellie, Gordian, Pertinax, Macrin, Probe, Aurelie) and references to the political structure of the Roman Empire (e.g., 'Nos plus nonueaux sujets, les plus dignes de Rome', 'Mais pourquoi pour un seul tant de Ma\u00eetres divers, Et pour quoi quatre Chefs au corps de l'Univers?'), indicating the action takes place during the Roman Empire.\",\n    \"timeframe_start\": \"-27\",\n    \"timeframe_end\": \"476\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"The play frequently mentions 'Rome' and discusses Roman political and religious contexts, indicating that the action takes place in Rome.\",\n    \"location_qid\": \"Q925\"\n}",
+  "duration_seconds": 26.90251612663269,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b86221128",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Antiquity\",\n    \"period_reasoning\": \"The play mentions Mars, who is a Roman god associated with the god of war in Roman mythology. This indicates that the play is set in ancient times, likely during the Roman Empire or a similar ancient civilization. The references to Mars suggest a time when Roman mythology was prevalent, which places the action in antiquity.\",\n    \"timeframe_start\": \"-100\",\n    \"timeframe_end\": \"500\",\n    \"location\": \"Epire\",\n    \"location_reasoning\": \"The play mentions 'le Prince d'Epire' and 'toute l'Epire', which indicates that the action takes place in Epirus, an ancient region in northwestern Greece. This region is historically significant in ancient Greek and Roman history.\",\n    \"location_qid\": \"Q190025\"\n}",
+  "duration_seconds": 23.75001859664917,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

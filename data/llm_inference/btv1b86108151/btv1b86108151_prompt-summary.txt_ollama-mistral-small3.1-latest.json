@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b86108151",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"The Hellenistic period\",\n    \"period_reasoning\": \"The play features characters and references to places that are associated with the Hellenistic period, such as Mithridates, Pharnace, and Rome. Mithridates VI of Pontus, who is likely the inspiration for the character Mithridate, lived in the 2nd and 1st centuries B.C.E. Additionally, the references to Rome and the political dynamics suggest a time when the Roman Republic was expanding its influence in the Eastern Mediterranean.\",\n    \"timeframe_start\": \"-323\",\n    \"timeframe_end\": \"31\",\n    \"location\": \"Anatolia (modern-day Turkey)\",\n    \"location_reasoning\": \"The play mentions Mithridates, who is historically associated with the Kingdom of Pontus, located in modern-day northern Turkey. The references to Rome and the political intrigues suggest a setting in the Eastern Mediterranean, likely in Anatolia.\",\n    \"location_qid\": \"Q13155\"\n}",
+  "duration_seconds": 27.413554906845093,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

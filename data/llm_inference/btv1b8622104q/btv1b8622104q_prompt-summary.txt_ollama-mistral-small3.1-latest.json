@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8622104q",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Late 17th century\",\n    \"period_reasoning\": \"The play was written by Montfleury and published in 1670, suggesting the action likely takes place during the same timeframe, the late 17th century.\",\n    \"timeframe_start\": \"1650\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Beauce\",\n    \"location_reasoning\": \"The title of the play is 'Le gentilhomme de Beauce,' and the place 'Beauce' is mentioned frequently, indicating the action is likely set in this region.\",\n    \"location_qid\": \"Q1330204\"\n}",
+  "duration_seconds": 24.671570777893066,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

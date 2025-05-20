@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090175q",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Late Middle Ages to Early Modern Period\",\n    \"period_reasoning\": \"The language and style of the text, along with the mention of specific historical and cultural references, suggest that the play is set in the Late Middle Ages to Early Modern Period. The use of terms like 'Maistre' and 'advocat' are indicative of this era.\",\n    \"timeframe_start\": \"1300\",\n    \"timeframe_end\": \"1656\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"The text explicitly mentions 'Paris' multiple times, indicating that the action of the play takes place in Paris.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 24.29498791694641,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

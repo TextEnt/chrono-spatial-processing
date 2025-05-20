@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5628858f",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"The play mentions mythological figures such as Venus, Adonis, Cupidon, and Diane, which are associated with classical mythology. These figures are prevalent in stories from ancient Greek and Roman times.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"476\",\n    \"location\": \"None\",\n    \"location_reasoning\": \"The play mentions \\\"France\\\" but this is likely a reference to the author's contemporary setting rather than the setting of the play's action, as the mythological figures mentioned are associated with classical antiquity, which predates the existence of France as a nation.\",\n    \"location_qid\": \"None\"\n}",
+  "duration_seconds": 21.582281351089478,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

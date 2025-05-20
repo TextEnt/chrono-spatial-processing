@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8622117b",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early modern period\",\n    \"period_reasoning\": \"The play was published in 1646, during the 17th century, which falls within the early modern period. The language and style of the play also suggest a setting consistent with this era.\",\n    \"timeframe_start\": \"-1500\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Italy\",\n    \"location_reasoning\": \"The top 5 places mentioned in the play include Naples, Tarente (Taranto), and Salerne (Salerno), all of which are located in Italy. This suggests that the action of the play is set in Italy.\",\n    \"location_qid\": \"Q38\"\n}",
+  "duration_seconds": 22.300436973571777,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

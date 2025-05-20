@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k852853q",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Medieval or early modern period\",\n    \"period_reasoning\": \"The play features characters and events that suggest a historical setting from the Middle Ages or early modern period. The mention of kings and battles, as well as the use of heroic and mythical names like FARAMOND, suggests a timeframe when such stories were prevalent.\",\n    \"timeframe_start\": \"-500\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Europe\",\n    \"location_reasoning\": \"The play mentions several European locations such as Cologne, Rome, and France, indicating that the action takes place in Europe. The frequent mention of Cologne in particular suggests a significant setting in this region.\",\n    \"location_qid\": \"Q46\"\n}",
+  "duration_seconds": 27.69630789756775,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

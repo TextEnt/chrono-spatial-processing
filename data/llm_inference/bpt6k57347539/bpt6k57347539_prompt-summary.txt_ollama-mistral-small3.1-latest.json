@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k57347539",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early 17th century France\",\n    \"period_reasoning\": \"The play is titled 'La Rochelois [i. e. Rocheloise] tragedie' and mentions Louis XIII, who reigned from 1610 to 1643. The publication date of the play is 1629, indicating that the events described in the play likely took place during his reign.\",\n    \"timeframe_start\": \"1610\",\n    \"timeframe_end\": \"1643\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play frequently mentions 'France' and 'Le Roi' (the King), referring to Louis XIII of France. Additionally, the title mentions 'Rochelle', which is a city in France.\",\n    \"location_qid\": \"142\"\n}",
+  "duration_seconds": 38.6941077709198,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

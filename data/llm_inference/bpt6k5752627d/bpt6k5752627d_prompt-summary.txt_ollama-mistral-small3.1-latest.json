@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5752627d",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The publication date of the play is 1693, which places it within the 17th century. The style and content of the play, including the mention of pistoles and other historical references, are consistent with this period.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris, France\",\n    \"location_reasoning\": \"The play frequently mentions Paris as a significant setting. Sentences like 'Je venais vous en rendre compte, Madame, et tout Paris viendra chez vous' and 'Ah, que je connais de gens \u00e0 Paris qui voudraient avoir une occasion comme celle-cy' clearly indicate that the action takes place in Paris.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 26.96713399887085,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

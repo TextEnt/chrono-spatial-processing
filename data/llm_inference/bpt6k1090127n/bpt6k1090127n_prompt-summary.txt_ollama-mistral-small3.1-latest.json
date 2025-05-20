@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090127n",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"16th and 17th centuries\",\n    \"period_reasoning\": \"The play is about Marie Stuart (Mary, Queen of Scots), who lived from 1542 to 1587. The mention of Elisabeth refers to Elizabeth I of England, who ruled from 1558 to 1603. These historical figures and the political context suggest the action takes place during the 16th and 17th centuries.\",\n    \"timeframe_start\": \"-1500\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Scotland and England\",\n    \"location_reasoning\": \"The play is titled 'Marie Stuard, Reyne d'\u00c9cosse,' indicating a focus on Mary, Queen of Scots, who was Queen of Scotland. Additionally, the frequent mentions of \u00c9lisabeth (Elizabeth I of England) and references to political intrigue involving both Scotland and England suggest the action takes place in these two countries.\",\n    \"location_qid\": \"None\"\n}",
+  "duration_seconds": 28.591580867767334,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

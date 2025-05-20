@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k15132112",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Ancient Greek and Roman mythology\",\n    \"period_reasoning\": \"The play mentions several mythological figures such as Cybele and Atys, who are associated with ancient Greek and Roman mythology. Cybele is a mother goddess in ancient Greek religion, and Atys is a figure from Phrygian mythology, closely associated with Cybele. The references to these deities suggest that the play is set in a mythological context that aligns with ancient Greek and Roman mythology.\",\n    \"timeframe_start\": \"-1200\",\n    \"timeframe_end\": \"476\",\n    \"location\": \"Phrygia\",\n    \"location_reasoning\": \"Cybele and Atys are figures from Phrygian mythology. Phrygia was an ancient region in modern-day Turkey. The mentions of these mythological figures strongly suggest that the action of the play takes place in Phrygia or a mythological setting inspired by Phrygia.\",\n    \"location_qid\": \"Q191458\"\n}",
+  "duration_seconds": 26.952153205871582,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

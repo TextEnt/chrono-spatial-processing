@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090236z",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Greek mythology and classical antiquity\",\n    \"period_reasoning\": \"The play references Greek mythological figures such as Momus, Pluton, and Themis, which indicates that the action is set in a mythological or classical antiquity context.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"400\",\n    \"location\": \"Mythological Underworld\",\n    \"location_reasoning\": \"The mention of characters like Momus, Pluton, and Themis, along with references to the Styx, suggests that the play is set in the mythological underworld.\",\n    \"location_qid\": \"None\"\n}",
+  "duration_seconds": 21.164485931396484,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

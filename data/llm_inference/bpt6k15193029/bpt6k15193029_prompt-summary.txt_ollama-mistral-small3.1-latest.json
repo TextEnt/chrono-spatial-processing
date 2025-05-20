@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k15193029",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The publication date of the play is 1663, indicating that it was written in the 17th century. Given that the play is a comedy set in contemporary times for its audience, the action of the play is likely set within the same period.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"The play mentions Paris and the Th\u00e9\u00e2tre du Marais multiple times, indicating that the action of the play takes place in Paris.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 22.799238920211792,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

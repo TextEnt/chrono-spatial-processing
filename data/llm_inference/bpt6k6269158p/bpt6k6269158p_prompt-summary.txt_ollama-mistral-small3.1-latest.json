@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k6269158p",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was published in 1638, which is in the 17th century. The setting and language of the play also align with the literary style and themes prevalent in the 17th century.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Vaugirard\",\n    \"location_reasoning\": \"The title of the play includes 'Les nopces de Vaugirard,' indicating that the action of the play takes place in or around Vaugirard. The frequent mentions of Vaugirard in the context also support this conclusion.\",\n    \"location_qid\": \"Q202791\"\n}",
+  "duration_seconds": 27.073214292526245,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

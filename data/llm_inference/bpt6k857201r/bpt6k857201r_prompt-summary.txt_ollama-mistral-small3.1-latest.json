@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k857201r",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Late Roman Empire and Early Christian persecutions\",\n    \"period_reasoning\": \"The text mentions 'Diocletian Emperor of Rome' and 'the persecution that began on the Christians', which refers to the Great Persecution under Diocletian (circa 303-311 CE). The characters and the plot revolve around early Christian martyrs and the Roman Empire's oppression of Christianity.\",\n    \"timeframe_start\": \"303\",\n    \"timeframe_end\": \"313\",\n    \"location\": \"Gaul (present-day France)\",\n    \"location_reasoning\": \"The text mentions 'Alise' (modern-day Alise-Sainte-Reine) and 'Marseille,' both of which are located in Gaul. Additionally, 'Alise' is specifically mentioned as the city where Reine is being protected, and it is a significant historical site related to the Roman Empire and early Christian history.\",\n    \"location_qid\": \"Q191180\"\n}",
+  "duration_seconds": 34.945611000061035,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

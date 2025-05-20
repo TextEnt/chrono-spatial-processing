@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k857209s",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Ancient Greece\",\n    \"period_reasoning\": \"The mention of Greece and the themes of pastoral life, shepherds, and heroes are indicative of the cultural and historical context of Ancient Greece.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"-146\",\n    \"location\": \"Ancient Greece\",\n    \"location_reasoning\": \"The play references Greece and pastoral settings which align with the cultural and geographical context of Ancient Greece.\",\n    \"location_qid\": \"Q7514\"\n}",
+  "duration_seconds": 19.508707761764526,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

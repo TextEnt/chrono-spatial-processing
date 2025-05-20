@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k12804022",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Late 17th century\",\n    \"period_reasoning\": \"The play was written by Moli\u00e8re and published in 1679, which places it in the late 17th century.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The frequent mention of France and Paris in the related sentences suggests that the action of the play is set in France.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 19.9377019405365,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8622113p",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Late Middle Ages to Early Modern Period\",\n    \"period_reasoning\": \"The language and style of the text, along with the mention of terms like 'Seigneur' and 'Reyne', suggest a setting in the Late Middle Ages to Early Modern Period. The publication date of 1638 indicates that the play was written during this time, which is consistent with the historical and cultural context of the text.\",\n    \"timeframe_start\": \"-500\",\n    \"timeframe_end\": \"1638\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"The repeated mention of 'Paris' in the related sentences strongly suggests that the action of the play takes place in Paris. Additionally, the publication details mention Paris, reinforcing the likelihood of this setting.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 25.857943058013916,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

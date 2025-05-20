@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280468t",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Late 17th century\",\n    \"period_reasoning\": \"The play was written by Moli\u00e8re and published in 1667. This places the work within the late 17th century.\",\n    \"timeframe_start\": \"1650\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"The context mentions 'Paris' multiple times in relation to the play's setting. Specifically, sentences like 'La Sc\u00e8ne est \u00e0 Paris' directly indicate that the action takes place in Paris.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 23.317646026611328,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

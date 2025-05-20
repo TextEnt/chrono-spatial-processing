@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090046n",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"The Iron Age\",\n    \"period_reasoning\": \"The play mentions Jepht\u00e9, who is a biblical figure from the Book of Judges in the Old Testament. The Book of Judges is set during the Iron Age, approximately between 1200 and 1050 BCE.\",\n    \"timeframe_start\": \"-1200\",\n    \"timeframe_end\": \"-1050\",\n    \"location\": \"Canaan\",\n    \"location_reasoning\": \"The play references Jepht\u00e9, a judge of Israel, and mentions places like the Jourdain (Jordan River) and Bethlehem, which are located in the ancient region of Canaan.\",\n    \"location_qid\": \"Q180080\"\n}",
+  "duration_seconds": 25.960920810699463,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

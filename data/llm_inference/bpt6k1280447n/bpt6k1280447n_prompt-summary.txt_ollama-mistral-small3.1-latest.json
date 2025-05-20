@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280447n",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early modern period\",\n    \"period_reasoning\": \"The play is written by Moli\u00e8re, a prominent French playwright of the 17th century. The style and themes are characteristic of the early modern period, which spans from the late 15th to the late 18th century. The play was published in 1665, which falls within this timeframe.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"The play mentions Paris multiple times in the related sentences, indicating that the action likely takes place in Paris.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 24.435728788375854,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

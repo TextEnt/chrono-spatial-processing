@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k852871n",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The publication date of the play is 1682, which is in the 17th century. There are no indications that the play is set in a different time period.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"None\",\n    \"location_reasoning\": \"The mention of 'Chine' and 'Monomapa' does not clearly indicate where the play is set. 'Monomapa' could be a fictional place or a misinterpretation, and 'Chine' is mentioned in a context that does not specify the setting of the play.\",\n    \"location_qid\": \"None\"\n}",
+  "duration_seconds": 21.86297607421875,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

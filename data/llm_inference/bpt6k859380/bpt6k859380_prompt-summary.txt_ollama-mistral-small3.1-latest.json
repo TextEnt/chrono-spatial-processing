@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k859380",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Roman Empire\",\n    \"period_reasoning\": \"The characters and references in the play, such as Pison, Germanicus, C\u00e9sar, and Drus, are all historical figures from the Roman Empire. Additionally, the mention of Rome and its political and social context supports this period.\",\n    \"timeframe_start\": \"-27\",\n    \"timeframe_end\": \"476\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"The play frequently mentions Rome and its political and social context, indicating that the action takes place in or around Rome. The repeated references to Rome and its political figures support this conclusion.\",\n    \"location_qid\": \"Q927\"\n}",
+  "duration_seconds": 23.595064878463745,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

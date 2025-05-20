@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10902559",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Late Roman Republic\",\n    \"period_reasoning\": \"The play mentions historical figures such as Marius and Sylla, who were prominent during the late Roman Republic. Marius was a significant figure in the Roman Republic from around -157 to -86, and Sylla was a Roman general and dictator from around -138 to -78.\",\n    \"timeframe_start\": \"-157\",\n    \"timeframe_end\": \"-44\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"The text frequently mentions Rome and Roman political and military figures, indicating that the action of the play is set in or around Rome.\",\n    \"location_qid\": \"Q924\"\n}",
+  "duration_seconds": 26.89384698867798,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

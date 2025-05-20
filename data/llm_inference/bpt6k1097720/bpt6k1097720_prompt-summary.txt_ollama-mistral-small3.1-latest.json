@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1097720",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Ancient Greece\",\n    \"period_reasoning\": \"The mention of 'Corinthe' (Corinth) suggests an ancient Greek setting. Corinth was a significant city-state in ancient Greece, particularly during the classical and Hellenistic periods.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"0\",\n    \"location\": \"Corinth\",\n    \"location_reasoning\": \"The place 'Corinthe' (Corinth) is mentioned multiple times in the context, indicating that the action of the play is set in or around this ancient Greek city.\",\n    \"location_qid\": \"Q107294\"\n}",
+  "duration_seconds": 21.789055824279785,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

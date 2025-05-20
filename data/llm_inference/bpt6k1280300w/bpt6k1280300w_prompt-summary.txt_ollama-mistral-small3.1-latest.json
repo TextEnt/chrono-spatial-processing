@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280300w",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"The Roman Kingdom period\",\n    \"period_reasoning\": \"The play 'Horace' by Pierre Corneille is a tragedy that revolves around the legendary figures of the Roman Kingdom period, particularly the Horatii and Curiatii. The story involves conflicts between Rome and Alba Longa, which are historical elements associated with the early Roman Kingdom.\",\n    \"timeframe_start\": \"-753\",\n    \"timeframe_end\": \"-509\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"The frequent mentions of Rome in the related sentences and the fact that the play is named after a Roman hero, Horace, strongly indicate that the action of the play takes place in Rome. Additionally, the conflict between Rome and Alba Longa is a central theme, further confirming the Roman setting.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 28.498520135879517,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

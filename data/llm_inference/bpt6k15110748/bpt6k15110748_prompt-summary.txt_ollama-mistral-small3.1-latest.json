@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k15110748",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Antiquity, Persian Empire\",\n    \"period_reasoning\": \"The play mentions Cyrus, who is historically associated with the Achaemenid Empire, which was a significant Persian empire in antiquity. Cyrus the Great (Cyrus II) ruled from approximately 559 to 530 BCE.\",\n    \"timeframe_start\": \"-600\",\n    \"timeframe_end\": \"-500\",\n    \"location\": \"Persia\",\n    \"location_reasoning\": \"The mention of Cyrus and the reference to Persian culture and places such as 'Perse' indicate that the action of the play is set in the Persian Empire.\",\n    \"location_qid\": \"Q384\"\n}",
+  "duration_seconds": 23.964353799819946,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

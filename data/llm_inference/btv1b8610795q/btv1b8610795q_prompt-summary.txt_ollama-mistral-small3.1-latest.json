@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8610795q",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play is written by Br\u00e9court and published in 1674. This places the creation of the play in the 17th century. Furthermore, the mention of Moli\u00e8re, who was a prominent figure in 17th-century French theatre, reinforces this timeframe.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play is written in French and mentions several locations and figures associated with France. Specifically, the mentions of Versailles, Paris, and France, as well as the reference to Moli\u00e8re, a French playwright, indicate that the action is set in France.\",\n    \"location_qid\": \"142\"\n}",
+  "duration_seconds": 24.17533302307129,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

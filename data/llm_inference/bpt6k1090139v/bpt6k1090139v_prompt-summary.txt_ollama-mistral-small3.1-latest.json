@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090139v",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was published in 1662 and the context suggests a setting in the 17th century. The mention of 'le Mariage du Roi' likely refers to the marriage of Louis XIV, which occurred in 1660, providing a historical anchor.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"The play frequently mentions Paris and describes it as the setting for various scenes and references. For example, 'Paris' is mentioned 13 times in the context, and sentences clearly place characters and events within Paris.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 26.847847938537598,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

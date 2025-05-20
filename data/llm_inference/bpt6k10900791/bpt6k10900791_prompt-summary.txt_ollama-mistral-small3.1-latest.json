@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10900791",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Renaissance to Early Modern period\",\n    \"period_reasoning\": \"The play was written in the 17th century (1638). The themes, language, and characters are typical of the Renaissance and Early Modern period, which spans roughly from the 14th to the 17th century.\",\n    \"timeframe_start\": \"-1300\",\n    \"timeframe_end\": \"1650\",\n    \"location\": \"Valence, Spain\",\n    \"location_reasoning\": \"Valence is mentioned multiple times in the related sentences and is the top place mentioned in the play. The frequent references to this location indicate that it is likely where the action of the play takes place.\",\n    \"location_qid\": \"Q1491\"\n}",
+  "duration_seconds": 27.261246919631958,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

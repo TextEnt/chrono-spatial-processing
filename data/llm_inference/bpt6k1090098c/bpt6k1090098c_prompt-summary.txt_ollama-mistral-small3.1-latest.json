@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090098c",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"17th Century\",\n    \"period_reasoning\": \"The play is attributed to Boucher and was published in 1663, which places it within the 17th century.\",\n    \"timeframe_start\": \"+1600\",\n    \"timeframe_end\": \"+1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The title of the play includes 'Champagne,' a region in France, and the context mentions Paris, a city in France, as one of the top places.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 18.98867416381836,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

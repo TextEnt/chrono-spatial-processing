@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8405564",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Antiquity\",\n    \"period_reasoning\": \"The play mentions historical figures and places like 'Perse', 'Thrace', and 'Gr\u00e8ce', which are associated with ancient history. Additionally, the context of the play involves royalty, princes, and kingdoms, which are typical of ancient narratives.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"476\",\n    \"location\": \"Ancient Near East and Eastern Mediterranean\",\n    \"location_reasoning\": \"The frequent mention of 'Perse' (Persia) and 'Thrace' suggests that the action of the play is set in the ancient Near East and Eastern Mediterranean regions. These areas were significant in ancient history and are referenced in the context of the play.\",\n    \"location_qid\": \"Q24201\"\n}",
+  "duration_seconds": 27.191500902175903,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

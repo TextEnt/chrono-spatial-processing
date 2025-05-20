@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8534188",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play is written by Moli\u00e8re, a renowned French playwright of the 17th century, and was published in 1683. The style and themes align with the literary and cultural context of the 17th century.\",\n    \"timeframe_start\": \"+1600\",\n    \"timeframe_end\": \"+1699\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play is written in French and mentions 'France' and 'Rome' as locations. Moli\u00e8re is a French author, and the context strongly suggests a French setting.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 21.80967426300049,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

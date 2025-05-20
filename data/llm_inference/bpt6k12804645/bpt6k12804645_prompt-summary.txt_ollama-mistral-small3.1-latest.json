@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k12804645",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early Modern Period\",\n    \"period_reasoning\": \"The play was written by Moli\u00e8re in the 17th century, specifically published in 1668. This places it firmly within the Early Modern Period, which spans from the late 15th to the mid-18th century.\",\n    \"timeframe_start\": \"1500\",\n    \"timeframe_end\": \"1750\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play is written in French and mentions 'France' multiple times in the context. Additionally, Moli\u00e8re is a well-known French playwright.\",\n    \"location_qid\": \"142\"\n}",
+  "duration_seconds": 26.002868175506592,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

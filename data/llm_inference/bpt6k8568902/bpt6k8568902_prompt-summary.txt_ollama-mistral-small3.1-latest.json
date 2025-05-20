@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8568902",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"The play mentions several figures and locations associated with classical antiquity, including Mithridates, Rome, Greece, and Troie. Mithridates VI of Pontus, known as Mithridates the Great, lived from approximately 135 BCE to 63 BCE. The mention of classical figures and locations strongly suggests that the action of the play is set during the classical antiquity period.\",\n    \"timeframe_start\": \"-753\",\n    \"timeframe_end\": \"476\",\n    \"location\": \"Mediterranean region\",\n    \"location_reasoning\": \"The frequent mentions of Rome, Greece, and Troie indicate that the play's action is set in the Mediterranean region, which was a significant theater for the events of classical antiquity.\",\n    \"location_qid\": \"Q5285\"\n}",
+  "duration_seconds": 36.685001850128174,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

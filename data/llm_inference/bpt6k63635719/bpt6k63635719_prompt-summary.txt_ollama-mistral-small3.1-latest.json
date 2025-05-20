@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k63635719",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Hellenistic period\",\n    \"period_reasoning\": \"The play is based on the Greek novel \\\"Aethiopica\\\" by Heliodorus of Emesa, which is set during the Hellenistic period. This period is characterized by Greek influence and culture after the conquests of Alexander the Great.\",\n    \"timeframe_start\": \"-336\",\n    \"timeframe_end\": \"31\",\n    \"location\": \"Egypt\",\n    \"location_reasoning\": \"The play mentions Memphis, which is a significant city in ancient Egypt. Additionally, the presence of the Nile and the Greek references suggest an Egyptian setting, particularly in the context of Hellenistic Egypt.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 30.76989483833313,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

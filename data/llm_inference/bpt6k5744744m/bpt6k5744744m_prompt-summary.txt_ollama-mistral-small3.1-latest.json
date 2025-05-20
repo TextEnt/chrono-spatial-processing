@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5744744m",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Antiquity\",\n    \"period_reasoning\": \"The play mentions Orpheus (Orph\u00e9e), who is a figure from Greek mythology. Additionally, references to Ph\u0153bus (Apollo), Pluton (Pluto), and Bacchantes (followers of Bacchus) indicate a setting in ancient Greek mythology.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"500\",\n    \"location\": \"Greece\",\n    \"location_reasoning\": \"The characters and themes mentioned in the play are rooted in ancient Greek mythology.\",\n    \"location_qid\": \"Q99\"\n}",
+  "duration_seconds": 18.60098910331726,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

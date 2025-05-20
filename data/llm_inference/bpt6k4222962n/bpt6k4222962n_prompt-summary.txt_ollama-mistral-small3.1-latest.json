@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k4222962n",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early Modern Period\",\n    \"period_reasoning\": \"The play is a comedy written by Jean-Fran\u00e7ois Regnard and published in 1695. This places it firmly within the Early Modern Period, which spans from the late 15th to the mid-18th century, characterized by significant cultural and social changes in Europe.\",\n    \"timeframe_start\": \"1450\",\n    \"timeframe_end\": \"1750\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The mention of 'Champagne' as both a person and a place, along with references to French cultural elements such as the Opera, Com\u00e9die, and Bal, strongly suggest that the action of the play takes place in France. Additionally, the mention of 'France' in the top places list further supports this.\",\n    \"location_qid\": \"142\"\n}",
+  "duration_seconds": 26.59443998336792,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

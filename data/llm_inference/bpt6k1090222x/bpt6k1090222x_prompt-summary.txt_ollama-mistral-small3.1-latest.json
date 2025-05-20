@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090222x",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Late 16th to early 17th century\",\n    \"period_reasoning\": \"The play mentions historical figures and events that are likely associated with the late 16th to early 17th century, particularly around the time of the reign of Elizabeth I of England. The Comte d'Essex (Robert Devereux, 2nd Earl of Essex) was a prominent figure during this period.\",\n    \"timeframe_start\": \"-0155\",\n    \"timeframe_end\": \"+01625\",\n    \"location\": \"England\",\n    \"location_reasoning\": \"The title of the play, 'Le Comte d'Essex,' refers to the Earl of Essex, a historical figure closely associated with the court of Elizabeth I of England. Additionally, the mention of places like London and the Palace Royal suggests an English setting.\",\n    \"location_qid\": \"Q145\"\n}",
+  "duration_seconds": 25.25732684135437,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k56993297",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Antiquity\",\n    \"period_reasoning\": \"The play is based on the myth of Proserpine (also known as Persephone), who is a central figure in Greek mythology. The myth involves the abduction of Proserpine by Pluto (Hades) and her subsequent role as the queen of the underworld. These myths originate from ancient Greek and Roman times, which span from around the 8th century BCE to the 5th century CE.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"500\",\n    \"location\": \"Sicile\",\n    \"location_reasoning\": \"The text mentions \\\"Sicile\\\" multiple times in the context of the action taking place. The myth of Proserpine is deeply rooted in the Greek and Roman cultures, which had significant influence over Sicily.\",\n    \"location_qid\": \"Q7257\"\n}",
+  "duration_seconds": 23.553569078445435,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

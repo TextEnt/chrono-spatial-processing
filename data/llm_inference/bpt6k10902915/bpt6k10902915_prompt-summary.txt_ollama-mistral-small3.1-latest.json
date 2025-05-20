@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10902915",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early Modern Period\",\n    \"period_reasoning\": \"The play is a tragedy in prose written by Jean Puget de La Serre, a French author from the XVII century.\",\n    \"timeframe_start\": \"+1500\",\n    \"timeframe_end\": \"+1800\",\n    \"location\": \"Candie\",\n    \"location_reasoning\": \"Candie is mentioned twice in the context of the play, indicating it is a significant location in the narrative.\",\n    \"location_qid\": \"Q188423\"\n}",
+  "duration_seconds": 16.378098964691162,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

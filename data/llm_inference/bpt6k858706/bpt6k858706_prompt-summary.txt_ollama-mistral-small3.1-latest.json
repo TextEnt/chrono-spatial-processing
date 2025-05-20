@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k858706",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early modern period\",\n    \"period_reasoning\": \"The play is written in the 17th century and reflects the historical and cultural context of that time. The mention of Catalans and the political intrigues suggest a setting in the early modern period, characterized by monarchies, feudalism, and the beginnings of absolutism.\",\n    \"timeframe_start\": \"1500\",\n    \"timeframe_end\": \"1800\",\n    \"location\": \"Catalonia (Spain)\",\n    \"location_reasoning\": \"The play mentions Catalans and the city of Barcelonne (Barcelona), which are strong indicators that the action takes place in Catalonia. Additionally, the mention of Madrid and the political context further supports a Spanish setting.\",\n    \"location_qid\": \"Q844\"\n}",
+  "duration_seconds": 24.58721685409546,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8622109s",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"17th Century\",\n    \"period_reasoning\": \"The publication date of the play is 1694, which is in the 17th century. The play's title references 'le th\u00e9\u00e2tre italien de l'Hostel de Bourgogne', which was active during this time period. The language and references in the sentences also align with the cultural and literary context of the 17th century.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"The word 'Paris' is frequently mentioned in the related sentences. Additionally, the play references the 'H\u00f4tel de Bourgogne,' which was a famous theatre in Paris during the 17th century.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 27.840700149536133,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

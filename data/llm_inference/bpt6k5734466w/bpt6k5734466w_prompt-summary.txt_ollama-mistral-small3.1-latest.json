@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5734466w",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"The Roman Republic\",\n    \"period_reasoning\": \"The play features the character Brutus, who is a significant figure in Roman history, particularly known for his role in the assassination of Julius Caesar. This historical event occurred during the Roman Republic period. Additionally, the frequent mention of Rome and Roman political structures supports this conclusion.\",\n    \"timeframe_start\": \"-509\",\n    \"timeframe_end\": \"-27\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"The play is titled 'Brutus, Trag\u00e9die' and repeatedly mentions Rome and Roman political figures and events. This indicates that the action of the play is set in Rome.\",\n    \"location_qid\": \"Q926\"\n}",
+  "duration_seconds": 23.21320605278015,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

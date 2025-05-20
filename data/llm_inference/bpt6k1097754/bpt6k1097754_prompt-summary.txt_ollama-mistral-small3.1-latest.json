@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1097754",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"16th-17th century\",\n    \"period_reasoning\": \"The play was published in 1629, and the language and style suggest it is from the early 17th century. The mention of pastoral themes and tragi-comedy are characteristic of the literary movements of the 16th and 17th centuries.\",\n    \"timeframe_start\": \"1500\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play mentions several French locations and references, such as 'Paris', 'France', 'Seine', and 'Hollande'. Additionally, the context and language used are indicative of French literature from this period.\",\n    \"location_qid\": \"142\"\n}",
+  "duration_seconds": 30.63471007347107,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8622099v",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"The Renaissance and the Early Modern Period\",\n    \"period_reasoning\": \"The play was written by Jean de Rotrou in the 17th century, a period that falls within the Early Modern Period. The themes, language, and character dynamics suggest a setting that reflects the cultural and societal norms of this time, which include elements of the Renaissance influence.\",\n    \"timeframe_start\": \"1400\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"The mentions of Paris in the related sentences, such as 'venez me le dire \u00e0 Paris' and 'Marchand Libraire \u00e0 Paris,' strongly indicate that the play is set in or frequently references Paris. Additionally, the privilege granted by the King in Paris further supports this location.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 30.85004997253418,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

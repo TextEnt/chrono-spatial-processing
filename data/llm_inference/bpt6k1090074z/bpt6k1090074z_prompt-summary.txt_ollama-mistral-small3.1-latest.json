@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090074z",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Bronze Age\",\n    \"period_reasoning\": \"The play is based on the myth of Iphigenia, which is set during the Trojan War. The Trojan War is traditionally dated to the 12th or 13th century BCE, which falls within the Late Bronze Age.\",\n    \"timeframe_start\": \"-1400\",\n    \"timeframe_end\": \"-1100\",\n    \"location\": \"Ancient Greece\",\n    \"location_reasoning\": \"The play mentions several key locations and figures associated with Ancient Greece, such as Agamemnon, Achilles, Iphigenia, and the Trojan War. The frequent mention of 'Gr\u00e8ce' and references to Argos and Troie further confirm the setting in Ancient Greece.\",\n    \"location_qid\": \"Q39\"\n}",
+  "duration_seconds": 31.555557250976562,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

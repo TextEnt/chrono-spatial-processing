@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090120r",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Late Roman Empire\",\n    \"period_reasoning\": \"The play mentions historical figures and places that are associated with the Late Roman Empire. Maximian is a name associated with Roman emperors, and the mention of Marc Antoine (Mark Antony) and Egypt suggests a setting during or after the Roman period.\",\n    \"timeframe_start\": \"-27\",\n    \"timeframe_end\": \"476\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"The play mentions Rome and Greece, which are significant locations in the context of the Roman Empire. The frequent mention of Maximian, a name associated with Roman emperors, further supports this setting. The mention of Marc Antoine (Mark Antony) and Egypt also points to a Roman context.\",\n    \"location_qid\": \"Q1889\"\n}",
+  "duration_seconds": 27.39335799217224,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

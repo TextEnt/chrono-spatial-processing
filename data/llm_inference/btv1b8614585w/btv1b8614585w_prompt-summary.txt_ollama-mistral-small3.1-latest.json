@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8614585w",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Late Antiquity or Early Middle Ages\",\n    \"period_reasoning\": \"The play is about the martyrdom of Sainte Reine, which typically refers to Saint Reine of Alise, a martyr from the early Christian period. The mention of Roman emperor Decius, who ruled from 249 to 251 CE, and the persecution of Christians suggests a setting in the late Roman Empire or early medieval period.\",\n    \"timeframe_start\": \"-300\",\n    \"timeframe_end\": \"500\",\n    \"location\": \"Gaule\",\n    \"location_reasoning\": \"The text frequently mentions 'Gaule,' which is the Latin name for Gaul, a region in Western Europe that corresponds roughly to modern France, Belgium, and parts of Switzerland and Germany. The mention of 'Bretagne' (Brittany) and 'Saxe' (Saxony) also supports a setting in Gaul.\",\n    \"location_qid\": \"Q9008\"\n}",
+  "duration_seconds": 30.511400938034058,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

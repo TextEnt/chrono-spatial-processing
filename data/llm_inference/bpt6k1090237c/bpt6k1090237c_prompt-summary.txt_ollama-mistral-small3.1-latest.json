@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090237c",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Late Antiquity and Early Middle Ages\",\n    \"period_reasoning\": \"The mention of the character Longin and the references to Rome suggest a setting related to the fall of the Western Roman Empire and the early medieval period. Longin is a historical figure associated with the late Roman Empire.\",\n    \"timeframe_start\": \"-200\",\n    \"timeframe_end\": \"700\",\n    \"location\": \"Italy\",\n    \"location_reasoning\": \"The frequent mentions of Rome, the Tiber River (Tibre), Ravenne, Romagne, and Milan indicate that the action of the play is set in Italy.\",\n    \"location_qid\": \"Q38\"\n}",
+  "duration_seconds": 23.01648998260498,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

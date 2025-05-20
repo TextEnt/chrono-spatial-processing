@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k9807756q",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Classical antiquity\",\n    \"period_reasoning\": \"The play mentions Pyrrhus, a figure associated with ancient Greece, specifically the Hellenistic period. Pyrrhus was a king of Epirus in the 3rd century BCE. The context also references Spartiates and the city of Sparta, which are historically significant during the classical antiquity period.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"-146\",\n    \"location\": \"Ancient Greece\",\n    \"location_reasoning\": \"The play frequently mentions Sparta and Pyrrhus, both of which are associated with Ancient Greece. The references to Spartiates and the historical context of Pyrrhus further confirm this location.\",\n    \"location_qid\": \"Q1799\"\n}",
+  "duration_seconds": 23.94335389137268,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

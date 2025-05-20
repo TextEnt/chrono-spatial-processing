@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5816386m",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Mycenaean Greece\",\n    \"period_reasoning\": \"The play mentions key figures such as Achilles, Agamemnon, Diomedes, and Priam, which are all characters from the Trojan War. The Trojan War is a central event in Greek mythology, specifically during the Mycenaean period. Additionally, the frequent mention of 'Gr\u00e8ce' (Greece) and 'Troie' (Troy) reinforces this setting.\",\n    \"timeframe_start\": \"-1600\",\n    \"timeframe_end\": \"-1100\",\n    \"location\": \"Troy\",\n    \"location_reasoning\": \"The play mentions 'Troie' (Troy) and 'Gr\u00e8ce' (Greece) multiple times, indicating that the action takes place in the context of the Trojan War, which is set in and around Troy.\",\n    \"location_qid\": \"Q48353\"\n}",
+  "duration_seconds": 23.86290407180786,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

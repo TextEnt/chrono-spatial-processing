@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090150w",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early Modern France\",\n    \"period_reasoning\": \"The play was written by Br\u00e9court in the 17th century, specifically in 1660. This places the historical context firmly within the Early Modern period of France, characterized by the reign of Louis XIV and the cultural and political developments of that era.\",\n    \"timeframe_start\": \"1500\",\n    \"timeframe_end\": \"1789\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"The text explicitly mentions 'La Sc\u00e8ne est \u00e0 Paris' and 'DONNE \u00e0 Paris', indicating that the action of the play is set in Paris.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 21.458292961120605,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

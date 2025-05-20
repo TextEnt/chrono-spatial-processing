@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090233q",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Ancient Greece\",\n    \"period_reasoning\": \"The mention of 'Roi de Phrygie' and 'Arimant' suggest a setting in ancient Greece or the surrounding regions. Phrygia was an ancient kingdom in western Asia Minor (modern-day Turkey).\",\n    \"timeframe_start\": \"-1200\",\n    \"timeframe_end\": \"-500\",\n    \"location\": \"Phrygia\",\n    \"location_reasoning\": \"The text mentions 'Roi de Phrygie,' indicating that the action takes place in or around Phrygia, an ancient kingdom in western Asia Minor.\",\n    \"location_qid\": \"Q205945\"\n}",
+  "duration_seconds": 21.8158221244812,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

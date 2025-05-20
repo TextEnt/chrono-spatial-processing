@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090067t",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Late Roman Republic\",\n    \"period_reasoning\": \"The play references 'Consul' and 'Roman' multiple times, indicating a setting within the Roman Republic. The characters and the themes discussed are consistent with the Late Roman Republic period, known for its political and military figures and conflicts.\",\n    \"timeframe_start\": \"-200\",\n    \"timeframe_end\": \"-30\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"The frequent mention of Rome and Roman virtues suggests that the action of the play takes place in or around Rome. The dialogue and references to Roman customs and laws further support this.\",\n    \"location_qid\": \"Q920\"\n}",
+  "duration_seconds": 23.04495620727539,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

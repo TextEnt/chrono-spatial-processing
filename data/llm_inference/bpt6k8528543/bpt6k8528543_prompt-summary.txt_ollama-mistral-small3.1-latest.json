@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8528543",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Unknown\",\n    \"period_reasoning\": \"The provided context does not include sufficient information to determine the historical period in which the play is set.\",\n    \"timeframe_start\": \"None\",\n    \"timeframe_end\": \"None\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The mention of 'France' in the context of the play suggests that the action takes place in France.\",\n    \"location_qid\": \"142\"\n}",
+  "duration_seconds": 16.072508811950684,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

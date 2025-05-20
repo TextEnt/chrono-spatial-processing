@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10901282",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play is written by Raymond Poisson and published in 1664. The references to the people and places mentioned in the play are consistent with the 17th century.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Spain\",\n    \"location_reasoning\": \"The frequent mentions of Madrid and Spain, as well as references to the Spanish court and Spanish nobles, indicate that the action of the play is set in Spain.\",\n    \"location_qid\": \"Q29\"\n}",
+  "duration_seconds": 23.300302743911743,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k9791972w",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early modern period\",\n    \"period_reasoning\": \"The publication date is 1696, which places the play within the early modern period.\",\n    \"timeframe_start\": \"1500\",\n    \"timeframe_end\": \"1800\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"The play frequently mentions Paris and refers to characters as residents of Paris (e.g., 'enfant de Paris').\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 20.7455050945282,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

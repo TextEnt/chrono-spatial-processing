@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5455530r",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Ancient Greek mythology\",\n    \"period_reasoning\": \"The play involves characters from Greek mythology, such as Proserpine (Persephone), Pluto (Hades), and Jupiter (Zeus). These characters are central to ancient Greek myths, which are set in a timeless mythological era.\",\n    \"timeframe_start\": \"-1000\",\n    \"timeframe_end\": \"-800\",\n    \"location\": \"Greece\",\n    \"location_reasoning\": \"The characters and the mythological events are rooted in ancient Greek mythology, which is primarily set in ancient Greece. Additionally, the mention of Sicily in the context of the mythological events aligns with the Greek influence in Sicily during ancient times.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 27.97488307952881,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

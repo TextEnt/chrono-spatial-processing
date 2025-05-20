@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8626230s",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Antiquity\",\n    \"period_reasoning\": \"The play features characters such as Amphitryon, Creon, and Mercury, who are figures from Greek mythology. This indicates that the action of the play is set in ancient times, likely during the mythological era of ancient Greece.\",\n    \"timeframe_start\": \"-1200\",\n    \"timeframe_end\": \"-700\",\n    \"location\": \"Th\u00e8bes\",\n    \"location_reasoning\": \"Th\u00e8bes is one of the top-mentioned places in the play. Amphitryon and Creon are associated with Th\u00e8bes in Greek mythology.\",\n    \"location_qid\": \"Q187223\"\n}",
+  "duration_seconds": 19.3246750831604,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280418x",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Middle Ages\",\n    \"period_reasoning\": \"The mention of 'Prince' and references to 'Roi' and 'Tr\u00f4ne' suggest a feudal or medieval setting. The presence of 'Troupes' and conflicts over royalty and rule also align with medieval themes.\",\n    \"timeframe_start\": \"-500\",\n    \"timeframe_end\": \"1500\",\n    \"location\": \"Castille\",\n    \"location_reasoning\": \"The place 'Castille' is mentioned multiple times in the related sentences, indicating that it is a significant location in the play.\",\n    \"location_qid\": \"Q11445\"\n}",
+  "duration_seconds": 22.328531980514526,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

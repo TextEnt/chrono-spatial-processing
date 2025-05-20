@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5448678k",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Ancient Greece\",\n    \"period_reasoning\": \"The play frequently mentions 'Gr\u00e8ce', which is the French word for Greece. The mentions of 'P\u00e9lopon\u00e8se' (Peloponnese) and references to kings and princes suggest a setting in ancient Greece, which is consistent with the themes and settings of many classical tragedies.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"-330\",\n    \"location\": \"Greece\",\n    \"location_reasoning\": \"The frequent mention of 'Gr\u00e8ce' and 'P\u00e9lopon\u00e8se' indicates that the action of the play is set in Greece.\",\n    \"location_qid\": \"Q41\"\n}",
+  "duration_seconds": 20.05363702774048,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

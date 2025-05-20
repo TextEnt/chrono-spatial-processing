@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10404294",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Ancient Rome\",\n    \"period_reasoning\": \"The mention of 'Rome' in the play suggests that the action is set in or around Ancient Rome. The names of the characters and the language used are indicative of a historical period that aligns with the classical era of Rome.\",\n    \"timeframe_start\": \"-509\",\n    \"timeframe_end\": \"476\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"The explicit mention of 'Rome' in the related sentences indicates that the action of the play is set in or around Rome.\",\n    \"location_qid\": \"Q924\"\n}",
+  "duration_seconds": 21.30988097190857,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

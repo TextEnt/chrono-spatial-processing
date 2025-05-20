@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090295t",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Hellenistic Period\",\n    \"period_reasoning\": \"The play frequently mentions \\\"Alexandre\\\" (Alexander the Great), who lived in the 4th century BCE. Alexander's conquests and campaigns are central to the Hellenistic Period, which spans from his death in 323 BCE to the rise of the Roman Empire in 31 BCE. Additionally, references to the Thrace region, which was part of Alexander's empire, support this historical context.\",\n    \"timeframe_start\": \"-336\",\n    \"timeframe_end\": \"-31\",\n    \"location\": \"Thrace\",\n    \"location_reasoning\": \"The term \\\"Thrace\\\" appears frequently in the related sentences, indicating that the action of the play is set in this region. Thrace was a historical region in Southeast Europe, located roughly in the borders of modern-day Bulgaria, Greece, and Turkey.\",\n    \"location_qid\": \"Q192290\"\n}",
+  "duration_seconds": 38.340651988983154,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

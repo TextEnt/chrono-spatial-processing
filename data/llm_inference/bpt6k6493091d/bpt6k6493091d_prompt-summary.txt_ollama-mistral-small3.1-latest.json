@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k6493091d",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Late Middle Ages to Early Modern Period\",\n    \"period_reasoning\": \"The play was written in the 17th century, which suggests it could be set in the Late Middle Ages to Early Modern Period. This is supported by the mention of titles and names that were common in that era.\",\n    \"timeframe_start\": \"-1300\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"England\",\n    \"location_reasoning\": \"The frequent mention of 'Angleterre' (France for England) in the related sentences indicates that the action of the play takes place in England.\",\n    \"location_qid\": \"Q145\"\n}",
+  "duration_seconds": 21.37515687942505,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

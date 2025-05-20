@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5754483z",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early Modern Period\",\n    \"period_reasoning\": \"The play was written in 1693, which falls within the Early Modern Period. The language and references in the text, such as the mention of 'Madagascar' and the style of dialogue, are consistent with this historical period.\",\n    \"timeframe_start\": \"1453\",\n    \"timeframe_end\": \"1789\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The author, David-Augustin de Brueys, is French, and the text mentions several locations in France, such as 'PARIS' and 'Seine'. Additionally, the style and language of the play are consistent with French literature of the period.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 28.581243753433228,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

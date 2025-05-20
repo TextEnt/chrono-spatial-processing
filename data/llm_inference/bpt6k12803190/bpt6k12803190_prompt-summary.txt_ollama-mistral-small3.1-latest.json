@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k12803190",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"XVII century\",\n    \"period_reasoning\": \"The play was published in 1653, indicating that it is a work of the 17th century. The language and references in the play also align with the cultural and literary norms of the 17th century.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1699\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"The play frequently mentions Paris and contrasts it with Poitiers. The references to Paris as a significant and contrasting location suggest that the action or setting of the play is primarily in Paris.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 26.05383825302124,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280318k",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Late Roman Empire\",\n    \"period_reasoning\": \"The play mentions 'Rome' frequently and discusses Roman culture, suggesting a setting within the Roman Empire. The references to pagan practices and the mention of Roman knights indicate a period when Rome was still a significant cultural and political entity.\",\n    \"timeframe_start\": \"-27\",\n    \"timeframe_end\": \"476\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"The frequent mentions of 'Rome' and Roman customs, as well as references to Roman knights, strongly suggest that the action of the play takes place in or around Rome.\",\n    \"location_qid\": \"Q924\"\n}",
+  "duration_seconds": 26.236488819122314,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

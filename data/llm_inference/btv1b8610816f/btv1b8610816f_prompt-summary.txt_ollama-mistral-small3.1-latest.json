@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8610816f",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Late Bronze Age\",\n    \"period_reasoning\": \"The play mentions Achilles and Agamemnon, who are central figures in the Trojan War, a conflict that took place during the Late Bronze Age. Additionally, the mention of Troie (Troie) and Greece aligns with the setting of the Trojan War.\",\n    \"timeframe_start\": \"-1400\",\n    \"timeframe_end\": \"-1100\",\n    \"location\": \"Ancient Greece and Troie (Troie)\",\n    \"location_reasoning\": \"The play frequently mentions Greece and Troie (Troie), which are the primary settings of the Trojan War. Achilles and Agamemnon are also associated with these locations.\",\n    \"location_qid\": \"Q4824807\"\n}",
+  "duration_seconds": 25.348576068878174,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

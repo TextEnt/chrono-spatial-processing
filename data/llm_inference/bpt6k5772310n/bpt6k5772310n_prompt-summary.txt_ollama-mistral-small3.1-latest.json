@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5772310n",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Antiquity\",\n    \"period_reasoning\": \"The play is titled 'Ariane', which refers to Ariadne, a figure from Greek mythology. Ariadne is associated with the myth of Theseus and the Minotaur, which is set in ancient Crete. This suggests that the play is set in ancient times, specifically during the period of Greek mythology.\",\n    \"timeframe_start\": \"-1200\",\n    \"timeframe_end\": \"146\",\n    \"location\": \"Crete\",\n    \"location_reasoning\": \"The character Ariadne is closely associated with the island of Crete, where the myth of Theseus and the Minotaur takes place. Therefore, it is reasonable to infer that the action of the play is set in Crete.\",\n    \"location_qid\": \"Q3900\"\n}",
+  "duration_seconds": 20.799111127853394,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

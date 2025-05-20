@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k57416324",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was published in 1664, which is within the 17th century. Additionally, the author Jean Chevalier and the mention of Moli\u00e8re suggest a 17th-century context, as Moli\u00e8re was active during this period.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"The top_1_place in the context is Paris with a frequency of 3. Additionally, the mention of 'le Th\u00e9\u00e2tre royal du Marais' in the title and 'la Sc\u00e8ne est \u00e0 Paris' in the related sentences confirm that the action takes place in Paris.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 24.27880311012268,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

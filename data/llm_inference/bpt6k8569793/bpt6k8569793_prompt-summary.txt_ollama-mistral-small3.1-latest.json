@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8569793",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Byzantine Empire\",\n    \"period_reasoning\": \"The play mentions 'Phocas', who was a Byzantine emperor. Additionally, references to the Byzantine court and politics, such as the mention of the Emperor's title and the Byzantine Empire's internal struggles, suggest the setting is within the Byzantine Empire. The play also mentions characters and events that align with the historical context of the Byzantine Empire, particularly during the late 6th to early 7th century.\",\n    \"timeframe_start\": \"500\",\n    \"timeframe_end\": \"610\",\n    \"location\": \"Byzantine Empire\",\n    \"location_reasoning\": \"The play mentions 'Thrace', 'Constantinople', and other places that were part of the Byzantine Empire. The references to Byzantine politics and the Emperor's court further support this setting.\",\n    \"location_qid\": \"Q206\"\n}",
+  "duration_seconds": 34.47217631340027,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

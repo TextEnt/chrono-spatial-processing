@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090140h",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early modern period\",\n    \"period_reasoning\": \"The play is written in French and the language used, as well as the mention of 'Quartier d'hyver' and 'campagnes' suggests a setting in the early modern period, particularly the 17th or 18th century. The publication date of 1697 also supports this period.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1750\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The frequent mention of Paris and other French locations such as Boulogne, Saint Clou, and Vincennes strongly indicate that the action of the play takes place in France.\",\n    \"location_qid\": \"142\"\n}",
+  "duration_seconds": 24.452900171279907,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

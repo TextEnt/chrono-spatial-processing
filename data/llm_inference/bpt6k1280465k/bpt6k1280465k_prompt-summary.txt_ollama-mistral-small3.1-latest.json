@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280465k",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early modern period\",\n    \"period_reasoning\": \"Moli\u00e8re, the author of the play, was active in the 17th century. The play itself was published in 1674, indicating that the play reflects the cultural and societal norms of that time.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"Moli\u00e8re was a French playwright, and the mention of 'Paris' and 'Place Royale' strongly suggests that the play is set in France. Additionally, the frequent mention of 'Champagne' likely refers to the Champagne region in France.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 21.461069107055664,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

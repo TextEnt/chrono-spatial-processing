@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k3045974n",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Late 17th century\",\n    \"period_reasoning\": \"The play is published in 1694, which places it firmly in the late 17th century. The cultural and linguistic references suggest a setting contemporaneous with the publication date.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The repeated mention of Paris and references to French cultural elements suggest that the action of the play takes place in France.\",\n    \"location_qid\": \"142\"\n}",
+  "duration_seconds": 20.325881004333496,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

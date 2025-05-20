@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k12805529",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Ancient Greece\",\n    \"period_reasoning\": \"The play is titled 'Amphitryon' which is based on the Greek mythological character Amphitryon, a Theban general. The context mentions Thebes and the involvement of Greek gods like Jupiter (Zeus) and Mercury (Hermes). This indicates the story is rooted in ancient Greek mythology and history.\",\n    \"timeframe_start\": \"-1400\",\n    \"timeframe_end\": \"-300\",\n    \"location\": \"Thebes\",\n    \"location_reasoning\": \"The play frequently mentions Thebes, a city in ancient Greece. The related sentences and context clearly place the action in Thebes.\",\n    \"location_qid\": \"Q135402\"\n}",
+  "duration_seconds": 20.923635005950928,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8569801",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"XVII century\",\n    \"period_reasoning\": \"The play was published in 1699, indicating it was likely written in the late XVII century.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1699\",\n    \"location\": \"Lyon, France\",\n    \"location_reasoning\": \"The title of the play is 'Le Carnaval de Lyon, com\u00e9die' and the text mentions Lyon multiple times, indicating that the play is set in Lyon.\",\n    \"location_qid\": \"Q9008\"\n}",
+  "duration_seconds": 17.330710887908936,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

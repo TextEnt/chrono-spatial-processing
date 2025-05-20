@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090193n",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Late 17th century\",\n    \"period_reasoning\": \"The play was published in 1660 and mentions individuals and locations that were likely relevant to the late 17th century in France.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"The play explicitly mentions Paris multiple times in relation to the setting and publication details.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 17.24795174598694,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

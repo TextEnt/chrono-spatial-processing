@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k12805381",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was written by Moli\u00e8re in 1669, and the context suggests it reflects the societal norms and language of the 17th century.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1699\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The author Moli\u00e8re is French and the play was published in 1669 in France. Additionally, the mention of Paris and France in the top 5 places indicates a French setting.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 24.07524085044861,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

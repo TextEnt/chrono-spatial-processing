@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5626607t",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Late Middle Ages to Early Modern Period\",\n    \"period_reasoning\": \"The language and style of the play suggest it is from the 17th century. The mention of 'Le Proph\u00e8te' and 'Charles-Quint' indicate a historical setting that could span from the late Middle Ages to the Early Modern Period, considering the cultural and political context of the time.\",\n    \"timeframe_start\": \"-1450\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"North Africa, particularly Tunisia\",\n    \"location_reasoning\": \"The frequent mention of 'Thunis' (Tunis) and references to places like Algiers and France suggest a setting in North Africa, with specific focus on Tunisia. Additionally, the mention of 'Charles-Quint' (Charles V) aligns with historical events in the region.\",\n    \"location_qid\": \"Q1895\"\n}",
+  "duration_seconds": 26.920075178146362,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8571685",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Second Temple period\",\n    \"period_reasoning\": \"The play mentions \\\"Machabee\\\" which refers to the Maccabees, who were prominent during the Second Temple period. Additionally, references to Jerusalem (Hierusalem), Solomon's temple, and the conflict with Syrians align with the historical context of the Maccabean Revolt and the broader Second Temple period.\",\n    \"timeframe_start\": \"-332\",\n    \"timeframe_end\": \"70\",\n    \"location\": \"Jerusalem\",\n    \"location_reasoning\": \"The play frequently mentions Jerusalem (Hierusalem) and Solomon's temple, indicating that the action takes place in or around Jerusalem.\",\n    \"location_qid\": \"Q658\"\n}",
+  "duration_seconds": 21.37707281112671,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

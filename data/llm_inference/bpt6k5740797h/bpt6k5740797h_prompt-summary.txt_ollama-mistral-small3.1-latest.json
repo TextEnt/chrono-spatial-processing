@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5740797h",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Parthian Empire\",\n    \"period_reasoning\": \"The title of the play mentions 'Arsace, roi des Parthes,' indicating that the play is set during the Parthian Empire. Arsace is a historical figure associated with the Parthian dynasty.\",\n    \"timeframe_start\": \"-247\",\n    \"timeframe_end\": \"224\",\n    \"location\": \"Parthia\",\n    \"location_reasoning\": \"The play is explicitly about Arsace, a ruler of the Parthian Empire, which was located in modern-day Iran and surrounding regions.\",\n    \"location_qid\": \"Q190140\"\n}",
+  "duration_seconds": 19.56763982772827,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

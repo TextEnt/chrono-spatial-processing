@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090071q",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Achaemenid Empire\",\n    \"period_reasoning\": \"The play mentions Darius, who is a well-known historical figure associated with the Achaemenid Empire. The Achaemenid Empire is a historical period that spanned from approximately 550 B.C. to 330 B.C.\",\n    \"timeframe_start\": \"-550\",\n    \"timeframe_end\": \"-330\",\n    \"location\": \"Perse\",\n    \"location_reasoning\": \"The play frequently mentions 'Perse' (Persia), which is the heartland of the Achaemenid Empire.\",\n    \"location_qid\": \"Q19259\"\n}",
+  "duration_seconds": 23.392701864242554,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

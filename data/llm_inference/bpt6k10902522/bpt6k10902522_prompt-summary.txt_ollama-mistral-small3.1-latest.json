@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10902522",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early Middle Ages\",\n    \"period_reasoning\": \"The play is titled 'Clotilde, Trag\u00e9die,' and Clotilde was a historical figure who lived in the early Middle Ages. Clotilde was a Frankish queen consort and the wife of King Clovis I, who ruled in the late 5th and early 6th centuries. The mention of Clotilde suggests a historical context related to this era.\",\n    \"timeframe_start\": \"-500\",\n    \"timeframe_end\": \"500\",\n    \"location\": \"Frankish Kingdom\",\n    \"location_reasoning\": \"Clotilde is historically associated with the Frankish Kingdom. She was the wife of Clovis I, the King of the Franks. Although the play mentions Paris, this is likely the location of the publication rather than the setting of the play.\",\n    \"location_qid\": \"Q201426\"\n}",
+  "duration_seconds": 25.26985812187195,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

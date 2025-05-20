@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k9905809",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Roman Empire\",\n    \"period_reasoning\": \"The mentions of Neron (Nero), Britannicus, and Tacite refer to historical figures and events from the Roman Empire. Nero was the Roman Emperor from 54 to 68 AD, and Tacitus was a Roman historian who wrote about this period.\",\n    \"timeframe_start\": \"-27\",\n    \"timeframe_end\": \"476\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"The play frequently mentions Rome and its imperial context. Specific references to Rome and its political and social environment indicate that the action takes place in this city.\",\n    \"location_qid\": \"Q923\"\n}",
+  "duration_seconds": 24.844902992248535,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090032m",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early 17th Century France\",\n    \"period_reasoning\": \"The play is written by Pierre Du Ryer and published in 1632, which is during the early 17th century. The style and themes of the tragi-com\u00e9die suggest it is set in a similar timeframe.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1650\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play mentions Paris and the bois de Boulogne, which are locations in France. The context and setting of the play, including the references to French nobles and the French court, indicate that the action takes place in France.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 24.28976798057556,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

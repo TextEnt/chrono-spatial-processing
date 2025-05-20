@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090271d",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"The frequent mention of Hercule (Hercules) and references to mythological places like Pinde (Mount Pindus), Athos (Mount Athos), and Caucase (Mount Caucasus) indicate that the play is set in the context of Greek mythology, which is rooted in Classical Antiquity.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"476\",\n    \"location\": \"Greece\",\n    \"location_reasoning\": \"The references to mythological figures and places associated with Greek mythology suggest that the primary setting of the play is in ancient Greece.\",\n    \"location_qid\": \"Q148\"\n}",
+  "duration_seconds": 25.622878074645996,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

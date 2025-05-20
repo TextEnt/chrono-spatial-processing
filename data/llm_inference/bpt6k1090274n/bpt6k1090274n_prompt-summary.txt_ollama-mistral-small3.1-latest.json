@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090274n",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Ancient Persia\",\n    \"period_reasoning\": \"The frequent mention of 'Cyrus' suggests a connection to the historical figure Cyrus the Great, who ruled ancient Persia. Additionally, the mention of 'Perse' and 'Antioche' supports this period.\",\n    \"timeframe_start\": \"-600\",\n    \"timeframe_end\": \"-500\",\n    \"location\": \"Persia\",\n    \"location_reasoning\": \"The frequent mention of 'Cyrus' and 'Perse' indicates that the action of the play takes place in ancient Persia.\",\n    \"location_qid\": \"Q544\"\n}",
+  "duration_seconds": 24.371320009231567,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280556z",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was written by Moli\u00e8re, a prominent French playwright of the 17th century, and it was published in 1670. The language and cultural references in the play align with the 17th-century context.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1699\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play mentions Paris and Limoges, which are both cities in France. Additionally, the play was performed at Chambord, a ch\u00e2teau located in France. The cultural and linguistic references also suggest a French setting.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 23.06400179862976,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

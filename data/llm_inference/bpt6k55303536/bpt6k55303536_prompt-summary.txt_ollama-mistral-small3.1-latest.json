@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k55303536",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Ancient times, possibly the Hellenistic period\",\n    \"period_reasoning\": \"The mentions of 'Alexandre' (Alexander the Great) and 'Alexandre Mon c\u0153ur' suggest a historical period related to Alexander the Great, who lived in the 4th century B.C. Additionally, the mention of 'Carthage' and 'Troie' (Troy) points to ancient times, likely the Hellenistic period.\",\n    \"timeframe_start\": \"-356\",\n    \"timeframe_end\": \"-323\",\n    \"location\": \"The Mediterranean region\",\n    \"location_reasoning\": \"The mentions of 'Rome', 'Carthage', 'France', 'Perse', and 'Troie' suggest that the play's action is set in the Mediterranean region, encompassing these historical locations.\",\n    \"location_qid\": \"Q288\"\n}",
+  "duration_seconds": 24.405981063842773,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

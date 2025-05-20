@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k57349337",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"The French Wars of Religion\",\n    \"period_reasoning\": \"The play mentions the Ligue, which is a reference to the Catholic League, a significant faction during the French Wars of Religion. The context discusses themes of religious conflict and political strife, which are characteristic of this period.\",\n    \"timeframe_start\": \"1562\",\n    \"timeframe_end\": \"1598\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play repeatedly mentions France and discusses internal conflicts within the country, indicating that the action takes place in France.\",\n    \"location_qid\": \"142\"\n}",
+  "duration_seconds": 23.90145993232727,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

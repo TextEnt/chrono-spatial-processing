@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k62514727",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The publication date of the play is 1662, which places it in the 17th century. The play is a comedy and the style and references suggest it is contemporary to the time of its publication.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"The play explicitly mentions 'La Sc\u00e8ne est \u00e0 Paris' and references the Th\u00e9\u00e2tre royal de l'Hostel de Bourgogne, which is located in Paris. Additionally, the mention of Paris as a top place further supports this.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 21.979364156723022,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

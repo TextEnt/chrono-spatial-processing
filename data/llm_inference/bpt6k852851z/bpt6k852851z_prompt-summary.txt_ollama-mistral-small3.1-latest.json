@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k852851z",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Roman Empire\",\n    \"period_reasoning\": \"The play mentions several key historical figures and events related to the Roman Empire, such as Vespasien (Vespasian), Domitie (Domitian), \u00c9ponine, Sabinus, and Mucien. These figures are associated with the late 1st century CE, during the reign of the Flavian dynasty. Additionally, the mention of the Roman Senate and the political intrigues within Rome further supports this historical period.\",\n    \"timeframe_start\": \"-30\",\n    \"timeframe_end\": \"300\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"The play frequently mentions Rome as a central location, and the actions and dialogues are set within the context of Roman politics and society. The mention of the Roman Senate and the political intrigues within Rome further supports this geographic location.\",\n    \"location_qid\": \"Q924\"\n}",
+  "duration_seconds": 29.578123092651367,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

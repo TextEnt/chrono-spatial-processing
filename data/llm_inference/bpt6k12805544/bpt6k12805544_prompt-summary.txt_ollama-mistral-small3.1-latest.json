@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k12805544",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was written by Moli\u00e8re in 1670, and the language and references in the text suggest it is set in the same time period.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play mentions Paris and Limoges, which are cities in France. Additionally, Moli\u00e8re was a French playwright, and the language of the text is French.\",\n    \"location_qid\": \"142\"\n}",
+  "duration_seconds": 23.516252040863037,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

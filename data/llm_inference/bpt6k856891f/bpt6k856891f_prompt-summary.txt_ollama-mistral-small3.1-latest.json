@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k856891f",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Middle Ages\",\n    \"period_reasoning\": \"The play mentions Charles, which likely refers to Charlemagne, a prominent figure from the Middle Ages. Additionally, the mention of 'Agramant,' the king of Africa in the epic poem 'Orlando Furioso' by Ludovico Ariosto, further suggests a medieval setting.\",\n    \"timeframe_start\": \"-476\",\n    \"timeframe_end\": \"1453\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The text explicitly mentions 'France' multiple times, indicating that the action of the play takes place in France. Additionally, the mention of 'Paris' and 'Bayonne' further supports this geographic setting.\",\n    \"location_qid\": \"142\"\n}",
+  "duration_seconds": 27.039581298828125,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

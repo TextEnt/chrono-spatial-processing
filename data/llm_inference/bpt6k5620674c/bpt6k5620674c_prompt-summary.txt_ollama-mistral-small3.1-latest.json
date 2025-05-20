@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5620674c",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Late Middle Ages to Early Modern Period\",\n    \"period_reasoning\": \"The play is set in a context that includes references to nobility, royalty, and political intrigue, which are common themes in literature from the Late Middle Ages to the Early Modern Period. The mention of 'Infante' suggests a setting in a historical period where the Spanish Empire was influential, which aligns with the Early Modern Period.\",\n    \"timeframe_start\": \"+1300\",\n    \"timeframe_end\": \"+1800\",\n    \"location\": \"Sicile\",\n    \"location_reasoning\": \"The most frequently mentioned place in the play is 'Sicile' (Sicily), which is referenced multiple times in the related sentences. This suggests that the action of the play is set in or around Sicily.\",\n    \"location_qid\": \"Q5704\"\n}",
+  "duration_seconds": 23.97598099708557,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5715547n",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Classical Antiquity to Medieval Period\",\n    \"period_reasoning\": \"The play mentions references to ancient deities such as Venus and uses language and themes that are characteristic of classical antiquity and medieval literature. The mention of 'Dieux' (Gods) and references to 'Cypre' (Cyprus) in a mythological context suggest a setting that blends classical mythology with medieval chivalric themes.\",\n    \"timeframe_start\": \"-700\",\n    \"timeframe_end\": \"1400\",\n    \"location\": \"Cyprus\",\n    \"location_reasoning\": \"The frequent mention of 'Cypre' (Cyprus) and the context of a kingdom or empire suggest that the action of the play is set in or around Cyprus. Additionally, the mention of 'Chypre' (French for Cyprus) reinforces this location.\",\n    \"location_qid\": \"Q406\"\n}",
+  "duration_seconds": 30.077719926834106,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k6251467x",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Roman Empire\",\n    \"period_reasoning\": \"The play mentions prominent Roman figures like Neron (Nero), Arie, and Caesar. It also references Roman historical events and cultural elements, such as the mutiny of Roman legions and the destruction of Troy. These references indicate the Roman Empire as the historical period.\",\n    \"timeframe_start\": \"-27\",\n    \"timeframe_end\": \"476\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"The play frequently mentions Rome and its significance, and the characters and events are deeply rooted in Roman history and culture.\",\n    \"location_qid\": \"Q924\"\n}",
+  "duration_seconds": 26.54160714149475,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

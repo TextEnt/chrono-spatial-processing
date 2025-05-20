@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b86108188",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Persian Empire\",\n    \"period_reasoning\": \"The play mentions Assuerus, who is identified as a king of Persia. The context also references historical figures and events related to the Persian Empire, such as Darius and the capture of Jews from the Jordan River to the Euphrates.\",\n    \"timeframe_start\": \"-550\",\n    \"timeframe_end\": \"-330\",\n    \"location\": \"Persia\",\n    \"location_reasoning\": \"The play is explicitly set in Persia, as indicated by multiple references to Persia and the Persian court.\",\n    \"location_qid\": \"Q48304\"\n}",
+  "duration_seconds": 21.210139274597168,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

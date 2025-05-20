@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090244h",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"The Middle Ages to the early modern period\",\n    \"period_reasoning\": \"The play mentions the 'Seigneur' and 'Sceptre', which are terms associated with feudal and royal contexts typical of the Middle Ages to the early modern period. Additionally, the themes of loyalty, royalty, and religious conversion are indicative of this era.\",\n    \"timeframe_start\": \"400\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France and Spain\",\n    \"location_reasoning\": \"The play frequently mentions 'France' and references to royalty and religious themes suggest a European setting. Additionally, the mention of 'Madrid' and 'Inde' (India) in the context of royal and religious dynamics points to a broader European context, likely including Spain.\",\n    \"location_qid\": \"None\"\n}",
+  "duration_seconds": 24.27499508857727,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

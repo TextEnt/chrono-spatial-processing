@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k61486960",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early modern period\",\n    \"period_reasoning\": \"The play is from the XVII century, which is part of the early modern period. Additionally, the references to social interactions and language use suggest a setting in this timeframe.\",\n    \"timeframe_start\": \"1500\",\n    \"timeframe_end\": \"1800\",\n    \"location\": \"Poitiers, France\",\n    \"location_reasoning\": \"The frequent mentions of Poitiers and Paris in the play indicate that the action is likely set in these locations. Poitiers is explicitly mentioned multiple times in contexts that suggest it is a significant setting for the play.\",\n    \"location_qid\": \"Q905818\"\n}",
+  "duration_seconds": 22.231846809387207,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

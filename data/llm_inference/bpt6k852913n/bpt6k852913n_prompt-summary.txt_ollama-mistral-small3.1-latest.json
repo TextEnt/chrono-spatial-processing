@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k852913n",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was written by N\u00e9el and published in 1678, which places it in the 17th century.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1699\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play mentions several French locations such as Paris, Luxembourg, and Senlis, indicating that the action takes place in France.\",\n    \"location_qid\": \"142\"\n}",
+  "duration_seconds": 19.319341897964478,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

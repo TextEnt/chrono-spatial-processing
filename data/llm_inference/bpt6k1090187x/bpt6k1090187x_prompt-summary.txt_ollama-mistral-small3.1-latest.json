@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090187x",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Roman Empire and Early Christian Era\",\n    \"period_reasoning\": \"The play mentions several historical figures and events associated with the Roman Empire and the early Christian era, such as Diocletien, Galerius, and Constantine. It also references the persecution of Christians and the conversion of the Roman Empire to Christianity, which are significant events from this period.\",\n    \"timeframe_start\": \"-27\",\n    \"timeframe_end\": \"337\",\n    \"location\": \"Roman Empire\",\n    \"location_reasoning\": \"The play frequently mentions Rome and other places associated with the Roman Empire, such as Dalmatie. The actions and characters are centered around the Roman political and religious context.\",\n    \"location_qid\": \"Q97\"\n}",
+  "duration_seconds": 30.135019063949585,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

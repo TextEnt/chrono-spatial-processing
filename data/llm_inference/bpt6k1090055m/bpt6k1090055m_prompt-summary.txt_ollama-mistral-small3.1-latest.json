@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090055m",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Middle Ages\",\n    \"period_reasoning\": \"The play revolves around the story of Sainte Reine, a virgin martyr from the early Christian era, which places it in the context of the Middle Ages, particularly around the time of the Roman Empire's decline and the rise of Christianity.\",\n    \"timeframe_start\": \"-100\",\n    \"timeframe_end\": \"1000\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The text mentions 'Gaulle' and 'France', indicating that the play is set in the region that corresponds to modern-day France. Additionally, Sainte Reine is associated with Alise, a town in France, which further supports this location.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 22.18146777153015,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

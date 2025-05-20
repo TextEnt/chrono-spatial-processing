@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k856874w",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Late Antiquity to Early Middle Ages\",\n    \"period_reasoning\": \"The mention of pagan gods and goddesses (e.g., 'par le ciel, par la terre et par toutes les deite\u0301s c\u00e9lestes agr\u00e9\u00e9s, terrestres, acquatiques et infernales') suggests a time before the full establishment of Christianity in Europe, which places the play in the period from the decline of the Roman Empire to the early Middle Ages.\",\n    \"timeframe_start\": \"-300\",\n    \"timeframe_end\": \"1000\",\n    \"location\": \"Cyprus\",\n    \"location_reasoning\": \"The repeated mention of 'Cypre' in the text, as well as references to classical deities and pastoral themes, suggests a setting in the Mediterranean region, specifically Cyprus, which has historical and mythological associations with the deities mentioned.\",\n    \"location_qid\": \"Q406\"\n}",
+  "duration_seconds": 28.779537200927734,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

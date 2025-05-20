@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k852919x",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Late Iron Age to Early Medieval\",\n    \"period_reasoning\": \"The play mentions Druids and ancient Gaulish customs, which were prevalent during the Late Iron Age (around 500 BCE to 52 BCE). Additionally, the references to 'anciens Gaulois' and the practices described suggest a setting in the Early Medieval period, as these customs were likely preserved and remembered during this time.\",\n    \"timeframe_start\": \"-500\",\n    \"timeframe_end\": \"600\",\n    \"location\": \"Gaul\",\n    \"location_reasoning\": \"The frequent mention of 'Gaulois' and Druids indicates that the action takes place in Gaul. Additionally, the mention of Poitiers, a city in ancient Gaul, supports this conclusion.\",\n    \"location_qid\": \"Q300101\"\n}",
+  "duration_seconds": 25.938687801361084,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

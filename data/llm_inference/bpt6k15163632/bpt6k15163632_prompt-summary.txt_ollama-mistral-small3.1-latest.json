@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k15163632",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Ancient Greek and Roman mythology\",\n    \"period_reasoning\": \"The presence of Bacchus (also known as Dionysus in Greek mythology) and the mention of Satires, Silvains, and Bergers indicate a setting inspired by ancient Greek and Roman mythology, where these deities and characters are prominent.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"476\",\n    \"location\": \"Versailles\",\n    \"location_reasoning\": \"The related sentences mention 'la Grotte de Versailles' and 'Les F\u00eates de l'Amour et de Bacchus', indicating that the action of the play is set in Versailles.\",\n    \"location_qid\": \"Q905\"\n}",
+  "duration_seconds": 20.888204097747803,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

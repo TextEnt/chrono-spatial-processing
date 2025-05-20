@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k6354094m",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"17th century France\",\n    \"period_reasoning\": \"The publication date of the play is 1670, and the play is written in French, indicating it is set in the 17th century in France.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris, France\",\n    \"location_reasoning\": \"The play frequently mentions 'Ville de Paris' and 'Paris', indicating that the action takes place in Paris, France.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 22.27083396911621,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

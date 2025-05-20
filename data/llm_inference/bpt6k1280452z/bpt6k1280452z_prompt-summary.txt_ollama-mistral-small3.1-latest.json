@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280452z",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play 'L'\u00c9cole des femmes' was written by Moli\u00e8re in 1674. While the publication date does not necessarily indicate when the play is set, it is common for plays from this era to be set in the contemporary time period of the author.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The place 'France' is mentioned multiple times in the related sentences, indicating that the play is likely set in France.\",\n    \"location_qid\": \"142\"\n}",
+  "duration_seconds": 18.726646184921265,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

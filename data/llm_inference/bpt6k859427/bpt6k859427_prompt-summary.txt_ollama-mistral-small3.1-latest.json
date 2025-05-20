@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k859427",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Antiquity\",\n    \"period_reasoning\": \"The characters Momus, Apollon, and Phaeton are mythological figures from Greek and Roman mythology, which suggests that the play is set in ancient times. Additionally, the reference to the Parnasse, a mountain sacred to the Muses and Apollon in Greek mythology, further supports this conclusion.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"476\",\n    \"location\": \"Greece and Rome\",\n    \"location_reasoning\": \"The mentions of Momus, Apollon, Phaeton, and Parnasse indicate a setting rooted in Greek mythology and the classical world. Additionally, the mention of Rome suggests a Roman context.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 21.72260808944702,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

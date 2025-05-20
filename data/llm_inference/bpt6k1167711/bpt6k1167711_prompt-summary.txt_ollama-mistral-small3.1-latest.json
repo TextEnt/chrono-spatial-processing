@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1167711",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Renaissance and Early Modern Period\",\n    \"period_reasoning\": \"The publication date of the play is 1646, which falls within the Early Modern Period. The play's style and language suggest it could be set in the late Renaissance or Early Modern Period.\",\n    \"timeframe_start\": \"1450\",\n    \"timeframe_end\": \"1750\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"The play mentions Paris in the context of publishing and royal privileges, indicating a significant connection to Paris.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 21.468971014022827,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

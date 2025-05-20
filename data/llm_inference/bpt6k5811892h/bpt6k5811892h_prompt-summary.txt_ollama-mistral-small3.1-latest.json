@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5811892h",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Antiquity\",\n    \"period_reasoning\": \"The mention of 'ANTENOR' is a significant clue. Antenor is a figure from Greek mythology and the Trojan War, which places the play in the context of ancient Greek or Trojan legends. This would situate the play in the period of Greek mythology, which is typically set in ancient times.\",\n    \"timeframe_start\": \"-1200\",\n    \"timeframe_end\": \"-800\",\n    \"location\": \"Troy\",\n    \"location_reasoning\": \"Antenor is a character from the Trojan War, which is centered around the city of Troy. This strongly suggests that the play's action is set in or around Troy.\",\n    \"location_qid\": \"Q12045\"\n}",
+  "duration_seconds": 21.360321760177612,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

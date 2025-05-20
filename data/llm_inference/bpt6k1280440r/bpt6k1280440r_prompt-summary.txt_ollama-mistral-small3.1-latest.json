@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280440r",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was written by Moli\u00e8re, a prominent French playwright of the 17th century. The text style and references align with the literary and cultural context of this period.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1699\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play mentions 'France' and 'Paris' frequently, indicating that the action likely takes place in France. Additionally, the play was performed at the Palais-Royal in Paris, further suggesting a French setting.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 18.85642695426941,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

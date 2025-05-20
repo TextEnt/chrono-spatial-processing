@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k63622516",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The publication date of the play is 1642, which is within the 17th century. Historical and literary context from the 17th century suggests that the events described in the play are likely set within the same period.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1699\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play explicitly mentions France as a significant location, and the action seems to revolve around events and characters in France.\",\n    \"location_qid\": \"142\"\n}",
+  "duration_seconds": 22.277889013290405,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

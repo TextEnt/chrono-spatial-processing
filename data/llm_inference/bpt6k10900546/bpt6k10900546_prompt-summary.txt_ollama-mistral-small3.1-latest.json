@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10900546",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Medieval to Early Renaissance\",\n    \"period_reasoning\": \"The mention of the city of Parme and the style of language and references suggest a setting in the Medieval or Early Renaissance period. The play's publication date is 1633, but the content and characters suggest a historical setting that is earlier than the 17th century.\",\n    \"timeframe_start\": \"-476\",\n    \"timeframe_end\": \"1492\",\n    \"location\": \"Italy\",\n    \"location_reasoning\": \"The city of Parme is mentioned multiple times in the play, indicating that the action is set in Italy.\",\n    \"location_qid\": \"Q3839\"\n}",
+  "duration_seconds": 22.929542064666748,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

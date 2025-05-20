@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280299p",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"8th century B.C.\",\n    \"period_reasoning\": \"The play is named 'Horace', which refers to the legendary Roman hero Horatius Cocles. The story of Horatius is set in the 8th century B.C. during the early days of the Roman Republic, when Rome was engaged in conflicts with neighboring cities, notably Alba Longa.\",\n    \"timeframe_start\": \"-753\",\n    \"timeframe_end\": \"-717\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"The frequent mention of 'Rome' in the related sentences indicates that the action of the play takes place in Rome. Additionally, the mention of 'Albe' (Alba Longa) and the references to Roman culture and conflicts align with the historical setting of early Rome.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 32.85000395774841,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5849604j",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early Middle Ages\",\n    \"period_reasoning\": \"The play mentions Renaud (Rinaldo in Italian), a character from the Matter of France, who is a central figure in the Song of Roland. The Song of Roland is set during the reign of Charlemagne in the 8th century, which places the action in the Early Middle Ages.\",\n    \"timeframe_start\": \"-700\",\n    \"timeframe_end\": \"900\",\n    \"location\": \"Holy Land\",\n    \"location_reasoning\": \"The play mentions Damascus (Damas), which is a city in the Holy Land. Additionally, the presence of characters like Renaud and Armide, who are associated with the Crusades and the conflict between Christians and Muslims, further supports this location.\",\n    \"location_qid\": \"Q545\"\n}",
+  "duration_seconds": 20.95822501182556,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

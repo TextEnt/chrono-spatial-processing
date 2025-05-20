@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8619667v",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early 17th century\",\n    \"period_reasoning\": \"The publication date of the play is 1623, and the style and content suggest it is set in the early 17th century.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1650\",\n    \"location\": \"Paris, France\",\n    \"location_reasoning\": \"The mentions of 'Paris' and references to local landmarks and cultural elements strongly indicate that the play is set in Paris, France.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 34.32683205604553,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

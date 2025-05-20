@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k6112868p",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Roman Republic\",\n    \"period_reasoning\": \"The play mentions several key figures from the late Roman Republic, such as Brutus (Brute), Caesar (C\u00e6sar), and references to events and figures that align with this historical period.\",\n    \"timeframe_start\": \"-100\",\n    \"timeframe_end\": \"-44\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"The text frequently mentions Rome as a central location and discusses political and social dynamics that are characteristic of the Roman Republic.\",\n    \"location_qid\": \"Q925\"\n}",
+  "duration_seconds": 22.3305881023407,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

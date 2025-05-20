@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k62614839",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The publication date of the play is 1643, which is within the 17th century. It is reasonable to assume the play's action takes place around the same time.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play is dedicated to the queen of France, and the mention of 'France' in the related sentences suggests that the action of the play is set in France. Additionally, the mention of 'Paris' and 'Palais Royal' further supports this.\",\n    \"location_qid\": \"142\"\n}",
+  "duration_seconds": 24.248996257781982,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

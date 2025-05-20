@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090044t",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Late Antiquity to the Middle Ages\",\n    \"period_reasoning\": \"The mention of terms like 'palais' (palace) and references to 'S\u00e9nat' (Senate) suggest a setting that could be from the late Roman Empire or the early medieval period, where such institutions and titles were prevalent.\",\n    \"timeframe_start\": \"-200\",\n    \"timeframe_end\": \"1400\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The mention of 'louvre' strongly suggests a French setting, as the Louvre is a well-known historical palace in Paris.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 25.88124918937683,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

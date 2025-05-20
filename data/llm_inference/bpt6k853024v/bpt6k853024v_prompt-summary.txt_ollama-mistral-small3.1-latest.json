@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k853024v",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Roman Empire\",\n    \"period_reasoning\": \"The play mentions historical figures such as Pertinax, Severus, and Antoninus, who are associated with the Roman Empire. Additionally, the frequent mention of Rome and other Roman-related places and events strongly suggests the setting is within the Roman Empire.\",\n    \"timeframe_start\": \"-27\",\n    \"timeframe_end\": \"476\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"The play frequently mentions Rome as a significant location. Additionally, the context of the Roman Empire and the mention of other Roman-related places like Asia and Antioche reinforce Rome as the primary setting.\",\n    \"location_qid\": \"Q922\"\n}",
+  "duration_seconds": 26.720380067825317,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8569008",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"XVII century\",\n    \"period_reasoning\": \"The publication date of the play is 1694, which is in the XVII century. Therefore, it is reasonable to assume that the play is set in the same historical period.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Lyon\",\n    \"location_reasoning\": \"The city of Lyon is mentioned three times in the context of the play, indicating that it is a significant location in the narrative.\",\n    \"location_qid\": \"Q9007\"\n}",
+  "duration_seconds": 18.514848947525024,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

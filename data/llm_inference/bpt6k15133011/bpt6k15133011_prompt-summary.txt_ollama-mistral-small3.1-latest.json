@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k15133011",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Renaissance\",\n    \"period_reasoning\": \"The text mentions shepherds, dances, and pastoral themes, which are characteristic of Renaissance literature and theater, particularly in the 17th century.\",\n    \"timeframe_start\": \"1453\",\n    \"timeframe_end\": \"1687\",\n    \"location\": \"None\",\n    \"location_reasoning\": \"The provided information does not specify a particular geographic location where the action of the play takes place.\",\n    \"location_qid\": \"None\"\n}",
+  "duration_seconds": 15.63814902305603,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090290r",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"The Late Middle Ages and Early Modern Period\",\n    \"period_reasoning\": \"The play is a pastoral tragicomedy involving themes and characters that are characteristic of Renaissance literature. The mention of deities and oracles suggests a setting influenced by classical mythology, which was prevalent during the Early Modern Period. The pastoral setting and the themes of love and adventure are also indicative of this time frame.\",\n    \"timeframe_start\": \"1400\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The text mentions several places and characters that are associated with French literature and geography. Specifically, the mention of 'France' and 'Bearn' are clear indicators of a French setting. Additionally, the style and themes of the play are consistent with French pastoral literature of the period.\",\n    \"location_qid\": \"142\"\n}",
+  "duration_seconds": 44.5561728477478,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

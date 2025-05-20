@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k15106882",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early modern period\",\n    \"period_reasoning\": \"The play is based on the life of Thomas More, who lived from 1478 to 1535. Additionally, the publication date of the play is 1646, which places it in the early modern period.\",\n    \"timeframe_start\": \"-1478\",\n    \"timeframe_end\": \"1535\",\n    \"location\": \"England\",\n    \"location_reasoning\": \"Thomas More was an English lawyer, social philosopher, author, statesman, and Lord Chancellor of England from 1529 to 1532. The play focuses on his life and trials, which took place primarily in England.\",\n    \"location_qid\": \"Q12598\"\n}",
+  "duration_seconds": 25.409914016723633,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

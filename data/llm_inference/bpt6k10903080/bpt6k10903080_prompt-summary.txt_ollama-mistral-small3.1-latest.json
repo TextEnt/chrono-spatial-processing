@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10903080",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early Modern Period\",\n    \"period_reasoning\": \"The play was written in the 17th century (1631) and mentions historical figures and events that align with the Early Modern Period, particularly the conflicts and political landscape of Central Europe during that time.\",\n    \"timeframe_start\": \"1500\",\n    \"timeframe_end\": \"1800\",\n    \"location\": \"Central Europe\",\n    \"location_reasoning\": \"The play mentions several key locations such as Hongrie (Hungary), Pologne (Poland), and Lyon, which are all in Central Europe. Additionally, the political and military actions described align with the historical context of Central Europe during the Early Modern Period.\",\n    \"location_qid\": \"None\"\n}",
+  "duration_seconds": 26.561361074447632,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

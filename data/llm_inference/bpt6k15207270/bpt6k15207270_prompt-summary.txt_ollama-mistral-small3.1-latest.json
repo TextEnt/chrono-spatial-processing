@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k15207270",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"The play mentions Orpheus, a figure from Greek mythology, and refers to a quest for the Golden Fleece, which is a story from Greek mythology. These elements suggest that the play is set in the time of classical Greek mythology.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"0\",\n    \"location\": \"Greece\",\n    \"location_reasoning\": \"The play frequently mentions Greece and refers to Greek mythology and figures like Orpheus. The story of Jason and the Golden Fleece is set in ancient Greece.\",\n    \"location_qid\": \"Q145\"\n}",
+  "duration_seconds": 19.665361881256104,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

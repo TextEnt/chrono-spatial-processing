@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8610798z",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play is written by Moli\u00e8re, a well-known French playwright of the 17th century. The publication date is 1670, which falls within the 17th century.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"The top_1_place entity is Paris with a frequency of 3, and several related sentences mention Paris explicitly.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 22.65753412246704,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8622133f",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early modern period\",\n    \"period_reasoning\": \"The play is from the 17th century, a time that falls within the early modern period, characterized by the rise of nation-states, exploration, and significant cultural and artistic developments.\",\n    \"timeframe_start\": \"1400\",\n    \"timeframe_end\": \"1800\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"The frequent mentions of Paris in the play, along with references to the court and royal figures, suggest that the action of the play takes place in Paris.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 25.08211588859558,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

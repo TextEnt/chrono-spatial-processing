@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10901267",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Roman Period\",\n    \"period_reasoning\": \"The frequent mention of Rome and Roman cultural and political elements, such as the Roman Senate, Emperor, and Roman Empire, indicate that the play is set during the Roman Period. The presence of characters like Herode and Mariane, and references to Jerusalem and Palestine, further support this conclusion.\",\n    \"timeframe_start\": \"-27\",\n    \"timeframe_end\": \"476\",\n    \"location\": \"Roman Empire\",\n    \"location_reasoning\": \"The frequent mention of Rome and Roman cultural and political elements, such as the Roman Senate, Emperor, and Roman Empire, indicate that the play is set in the Roman Empire. The presence of characters like Herode and Mariane, and references to Jerusalem and Palestine, further support this conclusion.\",\n    \"location_qid\": \"Q1895\"\n}",
+  "duration_seconds": 33.02381491661072,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

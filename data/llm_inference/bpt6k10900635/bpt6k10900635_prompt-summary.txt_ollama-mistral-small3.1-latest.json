@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10900635",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early Modern Period\",\n    \"period_reasoning\": \"The publication date of the play is 1673, which falls within the Early Modern Period.\",\n    \"timeframe_start\": \"+1500\",\n    \"timeframe_end\": \"+1800\",\n    \"location\": \"Naples\",\n    \"location_reasoning\": \"The term 'Naples' is frequently mentioned in the related sentences, indicating that the play's action is set in Naples.\",\n    \"location_qid\": \"Q1498\"\n}",
+  "duration_seconds": 20.22207021713257,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

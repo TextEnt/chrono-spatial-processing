@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k856976z",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Roman Empire\",\n    \"period_reasoning\": \"The play is titled 'La forte romaine, ou Sainte Suzanne,' which suggests a Roman setting. The mention of 'Rome' and Roman-related terminology in the sentences provides further evidence. The characters Maximian and Maximus are historically associated with the Roman Empire.\",\n    \"timeframe_start\": \"-27\",\n    \"timeframe_end\": \"476\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"The play is titled 'La forte romaine,' and the frequent mention of 'Rome' in the related sentences confirms the setting. Additionally, the characters and their interactions suggest a Roman context.\",\n    \"location_qid\": \"Q924\"\n}",
+  "duration_seconds": 19.733994960784912,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5752605t",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early modern period\",\n    \"period_reasoning\": \"The play is written in the 17th century, a time period that falls within the early modern period. The language and style of the play, as well as the mention of social classes and relationships, are indicative of this historical context.\",\n    \"timeframe_start\": \"1500\",\n    \"timeframe_end\": \"1800\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The frequent mention of 'France' in the related sentences suggests that the action of the play takes place in France. Additionally, the author and the context of the play align with the cultural and historical setting of France during the early modern period.\",\n    \"location_qid\": \"142\"\n}",
+  "duration_seconds": 21.102264165878296,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

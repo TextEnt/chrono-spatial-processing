@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8414817",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early modern period\",\n    \"period_reasoning\": \"The play is written in French and the style of language suggests it is from the 17th century. The author, Denis Clerselier de Nanteuil, is active during this time. Additionally, the title includes the term 'Com\u00e9die h\u00e9ro\u00efque,' which was a popular genre in the 17th century.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Spain\",\n    \"location_reasoning\": \"The frequent mention of 'Dom Carlos' suggests a connection to Spanish history, as Dom Carlos (Don Carlos) is associated with the Spanish royal family. Additionally, the mention of 'Viceroy' and 'Valence' (a region in Spain) supports the setting being in Spain.\",\n    \"location_qid\": \"Q29\"\n}",
+  "duration_seconds": 26.121543169021606,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

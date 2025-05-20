@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k841557s",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early Modern Period\",\n    \"period_reasoning\": \"The play was written in the 17th century, which places it firmly within the Early Modern Period. The Early Modern Period is generally considered to span from the late 15th to the mid-18th century, encompassing the Renaissance and the Age of Enlightenment.\",\n    \"timeframe_start\": \"1500\",\n    \"timeframe_end\": \"1750\",\n    \"location\": \"Thrace\",\n    \"location_reasoning\": \"The mention of 'Thrace' in multiple related sentences suggests that a significant portion of the play's action takes place in this region.\",\n    \"location_qid\": \"Q195398\"\n}",
+  "duration_seconds": 23.273854970932007,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

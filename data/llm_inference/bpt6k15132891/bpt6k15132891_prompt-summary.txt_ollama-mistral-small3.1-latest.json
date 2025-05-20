@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k15132891",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"The ancient Greek mythology era\",\n    \"period_reasoning\": \"The play mentions Bellerophon, a hero from Greek mythology, who is known for slaying the Chimera. This indicates that the play's action is set in the era of ancient Greek mythology.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"-500\",\n    \"location\": \"Lycian Greece\",\n    \"location_reasoning\": \"Bellerophon is a hero from Greek mythology, specifically associated with Lycia, a region in ancient Greece. The mentions of Bellerophon and the Chimera in the play suggest that the action takes place in this mythological context.\",\n    \"location_qid\": \"Q195034\"\n}",
+  "duration_seconds": 29.496339797973633,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

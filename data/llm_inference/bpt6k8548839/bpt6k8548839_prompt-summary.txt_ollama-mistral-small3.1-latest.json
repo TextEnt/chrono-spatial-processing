@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8548839",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"17th century France\",\n    \"period_reasoning\": \"The play is written by Moli\u00e8re and published in 1660, which places it firmly in the 17th century. The references to the 'Precieuses ridicules' and the language used align with the cultural and literary context of 17th-century France.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1699\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"The play is titled 'Les Precieuses ridicules. Comedie. Represent\u00e9e au Petit Bourbon', which specifies that it was performed at the Petit Bourbon theater in Paris. Additionally, Paris is mentioned frequently in the play's context, reinforcing its central role.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 21.079984664916992,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

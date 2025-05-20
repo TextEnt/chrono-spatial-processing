@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k54495188",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"The Second Punic War\",\n    \"period_reasoning\": \"The play mentions Scipion (Scipio Africanus), Hannibal, and Asdrubal, who are key figures in the Second Punic War (218-201 B.C.). Additionally, the conflict between Rome and Carthage is a central theme.\",\n    \"timeframe_start\": \"-218\",\n    \"timeframe_end\": \"-201\",\n    \"location\": \"Carthage and Rome\",\n    \"location_reasoning\": \"The play frequently mentions Carthage and Rome, indicating that the action takes place in these locations or involves significant interactions between these two cities.\",\n    \"location_qid\": \"Q235\"\n}",
+  "duration_seconds": 25.07695984840393,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

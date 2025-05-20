@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280589b",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"The Trojan War and its aftermath\",\n    \"period_reasoning\": \"The play mentions Andromaque, Pyrrhus, Hector, and Troie. These are all figures and locations associated with the Trojan War and its immediate aftermath. The play's focus on these characters and places suggests it is set during this historical period.\",\n    \"timeframe_start\": \"-1260\",\n    \"timeframe_end\": \"-1200\",\n    \"location\": \"Troy\",\n    \"location_reasoning\": \"The play is titled 'Andromaque, trag\u00e9die' and mentions 'Pyrrhus' and 'Hector', who are key figures associated with the city of Troy. Additionally, 'Troie' is listed as one of the top places, further indicating that the action of the play is set in or around Troy.\",\n    \"location_qid\": \"Q5999\"\n}",
+  "duration_seconds": 26.18471908569336,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

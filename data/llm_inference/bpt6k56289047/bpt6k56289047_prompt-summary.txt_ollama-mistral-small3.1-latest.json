@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k56289047",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early Modern Period\",\n    \"period_reasoning\": \"The play was written in 1697 by Charles Du Fresny, placing it in the Early Modern Period, which spans from the late 15th to the mid-18th century.\",\n    \"timeframe_start\": \"1500\",\n    \"timeframe_end\": \"1750\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The author, Charles Du Fresny, is a French playwright, and the context of the play suggests a French setting, with no specific mentions of other locations.\",\n    \"location_qid\": \"142\"\n}",
+  "duration_seconds": 20.238030672073364,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

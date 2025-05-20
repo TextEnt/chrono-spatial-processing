@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k856984j",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Late Antiquity and Early Middle Ages\",\n    \"period_reasoning\": \"The play mentions Saint Nicolas, a historical figure from the 4th century. The reference to Nicolas being elected Archbishop of Myra aligns with his historical role in the early Christian Church during this timeframe.\",\n    \"timeframe_start\": \"-400\",\n    \"timeframe_end\": \"700\",\n    \"location\": \"Myra\",\n    \"location_reasoning\": \"The play explicitly mentions Nicolas being elected Archbishop of Myra. Myra is an ancient city in what is now modern-day Turkey.\",\n    \"location_qid\": \"Q471588\"\n}",
+  "duration_seconds": 20.84792709350586,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

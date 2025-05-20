@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10902114",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early Merovingian Dynasty\",\n    \"period_reasoning\": \"The play mentions characters such as Childebert, Clotaire, and Clotilde, who are historical figures from the Merovingian Dynasty. The Merovingian Dynasty ruled the Franks from the 5th to the 8th century CE. Additionally, the references to the kings of Paris and Orleans, and the actions taking place in France, suggest a timeframe within this dynasty.\",\n    \"timeframe_start\": \"450\",\n    \"timeframe_end\": \"750\",\n    \"location\": \"Francia\",\n    \"location_reasoning\": \"The text frequently mentions 'France' and 'Paris', indicating that the action takes place in the region that would later become France. Additionally, references to the 'Gauls' and 'Gaule' further support this location.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 33.12080383300781,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

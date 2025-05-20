@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5789985w",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"The Trojan War\",\n    \"period_reasoning\": \"The play mentions several key figures and locations associated with the Trojan War, such as Agamemnon, Achilles, and Troy. The Trojan War is a significant event in Greek mythology and history.\",\n    \"timeframe_start\": \"-1260\",\n    \"timeframe_end\": \"-1180\",\n    \"location\": \"Troy\",\n    \"location_reasoning\": \"The play frequently mentions 'Troie' (French for Troy), a city known from the Trojan War. Additionally, other places mentioned such as Greece and Argos are associated with the Trojan War.\",\n    \"location_qid\": \"Q38318\"\n}",
+  "duration_seconds": 28.424020051956177,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

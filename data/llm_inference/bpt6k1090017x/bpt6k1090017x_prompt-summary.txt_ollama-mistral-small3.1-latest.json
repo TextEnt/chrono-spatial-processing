@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090017x",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early Modern Period\",\n    \"period_reasoning\": \"The play was written by Georges de Scud\u00e9ry in 1635. This date falls within the Early Modern Period, which is generally considered to span from the late 15th to the mid-18th century.\",\n    \"timeframe_start\": \"1500\",\n    \"timeframe_end\": \"1750\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play is titled 'Le Trompeur puny, ou l'Histoire septentrionale, tragi-com\u00e9die' and mentions France in multiple sentences. Additionally, the author Georges de Scud\u00e9ry is a French playwright, further suggesting that the action of the play is set in France.\",\n    \"location_qid\": \"142\"\n}",
+  "duration_seconds": 26.887386798858643,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

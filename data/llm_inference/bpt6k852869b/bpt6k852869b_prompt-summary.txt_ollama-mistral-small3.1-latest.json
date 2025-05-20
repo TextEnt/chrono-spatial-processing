@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k852869b",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Merovingian dynasty\",\n    \"period_reasoning\": \"Childebrand is a historical figure associated with the Merovingian dynasty, which ruled the Franks from the 5th to the 8th century.\",\n    \"timeframe_start\": \"-400\",\n    \"timeframe_end\": \"0751\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"Childebrand is associated with the Frankish kingdom, which was primarily located in modern-day France.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 17.543957948684692,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280309m",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early modern period\",\n    \"period_reasoning\": \"The play is written in the 17th century, which falls within the early modern period. This period is characterized by significant cultural, political, and social changes in Europe, including the rise of absolutism, the scientific revolution, and the beginning of colonial expansion.\",\n    \"timeframe_start\": \"1450\",\n    \"timeframe_end\": \"1800\",\n    \"location\": \"Castille\",\n    \"location_reasoning\": \"The place named 'Castille' appears frequently in the play, indicating that the action takes place in this region.\",\n    \"location_qid\": \"Q24426\"\n}",
+  "duration_seconds": 28.344522953033447,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

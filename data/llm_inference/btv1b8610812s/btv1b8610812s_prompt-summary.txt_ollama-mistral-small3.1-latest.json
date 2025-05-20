@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8610812s",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Roman Empire\",\n    \"period_reasoning\": \"The frequent mentions of Neron (Nero), a Roman Emperor, and references to the Roman Senate and the Roman Empire indicate that the play is set during the Roman Empire period.\",\n    \"timeframe_start\": \"-27\",\n    \"timeframe_end\": \"476\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"The frequent mentions of Rome and references to Roman political and social structures, as well as the presence of Neron (Nero), a Roman Emperor, suggest that the action of the play takes place in Rome.\",\n    \"location_qid\": \"Q923\"\n}",
+  "duration_seconds": 21.554154872894287,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

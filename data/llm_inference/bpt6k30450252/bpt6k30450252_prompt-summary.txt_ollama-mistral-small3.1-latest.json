@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k30450252",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"The Persian Empire\",\n    \"period_reasoning\": \"The frequent mentions of 'Perse' (Perse) in the related sentences indicate that the action of the play is set within the Persian Empire.\",\n    \"timeframe_start\": \"-550\",\n    \"timeframe_end\": \"1979\",\n    \"location\": \"The Persian Empire\",\n    \"location_reasoning\": \"The mentions of 'Perse' (Perse) suggest that the play is set in the Persian Empire. There are also mentions of Paris and France, but they are likely references to contemporary places for the audience of the time.\",\n    \"location_qid\": \"Q47\"\n}",
+  "duration_seconds": 22.576847076416016,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

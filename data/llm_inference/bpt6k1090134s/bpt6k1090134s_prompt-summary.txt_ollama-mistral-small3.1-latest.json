@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090134s",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The publication date of the play is 1650, which places it in the 17th century.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1699\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"The word 'Paris' appears multiple times in the play's context, indicating that the action likely takes place in Paris.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 22.69097900390625,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

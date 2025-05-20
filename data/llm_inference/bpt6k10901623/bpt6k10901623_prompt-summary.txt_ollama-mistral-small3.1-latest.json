@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10901623",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early modern period\",\n    \"period_reasoning\": \"The play was published in 1658, which places it within the early modern period. This era is characterized by the Renaissance, the Reformation, and the Age of Exploration, which aligns with the cultural and historical context of the 17th century.\",\n    \"timeframe_start\": \"-1450\",\n    \"timeframe_end\": \"1789\",\n    \"location\": \"Hungary\",\n    \"location_reasoning\": \"The title of the play includes \\\"Reyne de Hongrie,\\\" which translates to \\\"Queen of Hungary.\\\" This suggests that the action of the play is set in Hungary. Additionally, the mention of \\\"Asie\\\" (Asia) and other locations like \\\"Moni\\\" and \\\"Jap\\\" (which could be interpreted as Japan) indicate a broader geographical scope, but the primary setting is likely Hungary.\",\n    \"location_qid\": \"Q28\"\n}",
+  "duration_seconds": 23.755871057510376,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

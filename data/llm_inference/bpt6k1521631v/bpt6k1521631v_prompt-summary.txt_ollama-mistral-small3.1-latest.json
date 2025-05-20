@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1521631v",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early Modern Period\",\n    \"period_reasoning\": \"The publication date of the play is 1678, which falls within the Early Modern Period. The context provided does not suggest any specific historical period other than the one implied by the publication date.\",\n    \"timeframe_start\": \"+1400\",\n    \"timeframe_end\": \"+1800\",\n    \"location\": \"None\",\n    \"location_reasoning\": \"The mentions of places such as France, Gand, Rhin, Paris, and Mons do not provide enough context to determine the specific location where the action of the play takes place. These places are likely references to contemporary locations known to the audience of the time rather than the setting of the play.\",\n    \"location_qid\": \"None\"\n}",
+  "duration_seconds": 21.576141119003296,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

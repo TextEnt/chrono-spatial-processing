@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090099s",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early modern period\",\n    \"period_reasoning\": \"The play is from the XVII century, which is part of the early modern period.\",\n    \"timeframe_start\": \"-1500\",\n    \"timeframe_end\": \"1800\",\n    \"location\": \"Castille\",\n    \"location_reasoning\": \"The entity 'Castille' is mentioned frequently in the play, indicating that the action takes place there.\",\n    \"location_qid\": \"Q8434\"\n}",
+  "duration_seconds": 20.667537927627563,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

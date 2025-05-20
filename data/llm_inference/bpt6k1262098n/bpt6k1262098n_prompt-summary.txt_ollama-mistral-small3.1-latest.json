@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1262098n",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early Modern Period\",\n    \"period_reasoning\": \"The play is written by Thomas Corneille and published in 1688. Thomas Corneille was a French playwright of the 17th century, which places the work within the Early Modern Period.\",\n    \"timeframe_start\": \"+1500\",\n    \"timeframe_end\": \"+1700\",\n    \"location\": \"None\",\n    \"location_reasoning\": \"The play mentions 'Rome' and 'Paris', but these references do not necessarily indicate where the action of the play takes place. Without further context, it is not possible to determine the specific location of the play's setting.\",\n    \"location_qid\": \"None\"\n}",
+  "duration_seconds": 21.573246955871582,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

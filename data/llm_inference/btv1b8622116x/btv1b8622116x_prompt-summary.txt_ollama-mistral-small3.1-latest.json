@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b8622116x",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Byzantine Empire\",\n    \"period_reasoning\": \"The mention of key figures and places associated with the Byzantine Empire, such as B\u00e9lisaire, Constantinople, and references to significant rivers like the Gange, Nile, and Euphrate, indicate the action is set during the Byzantine era.\",\n    \"timeframe_start\": \"-330\",\n    \"timeframe_end\": \"1453\",\n    \"location\": \"Byzantine Empire\",\n    \"location_reasoning\": \"The play mentions B\u00e9lisaire, a prominent Byzantine general, and places like Constantinople and the Gange, which are associated with the Byzantine Empire.\",\n    \"location_qid\": \"Q238\"\n}",
+  "duration_seconds": 23.641741037368774,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

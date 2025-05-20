@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k62763275",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"XVII century\",\n    \"period_reasoning\": \"The publication date of the play is 1681, which is in the XVII century. Therefore, the action of the play is likely set during the same period.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Aubervilliers\",\n    \"location_reasoning\": \"Aubervilliers is mentioned twice in the play and is the top place entity mentioned. The mention of Aubervilliers suggests that the action of the play takes place in this location.\",\n    \"location_qid\": \"Q226122\"\n}",
+  "duration_seconds": 20.093092918395996,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090091g",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"XVII century\",\n    \"period_reasoning\": \"The play was written in 1660, indicating it is from the 17th century.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"The text mentions 'La Sc\u00e8ne est \u00e0 Paris' and 'Marchand Libraire \u00e0 Paris', indicating the setting is in Paris.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 20.533031225204468,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

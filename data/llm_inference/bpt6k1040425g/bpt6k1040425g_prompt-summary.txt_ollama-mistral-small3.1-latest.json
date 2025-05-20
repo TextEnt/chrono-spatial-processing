@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1040425g",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early modern period\",\n    \"period_reasoning\": \"The play was written by Pierre Troterel and published in 1627, which places it in the early modern period. The mention of pastoral themes and the style of language used are also indicative of this era.\",\n    \"timeframe_start\": \"1453\",\n    \"timeframe_end\": \"1789\",\n    \"location\": \"Normandie\",\n    \"location_reasoning\": \"The text explicitly mentions 'Normandie' as the place of nativity of the author, suggesting that the play is set in or related to this region.\",\n    \"location_qid\": \"Q9308\"\n}",
+  "duration_seconds": 23.938612937927246,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

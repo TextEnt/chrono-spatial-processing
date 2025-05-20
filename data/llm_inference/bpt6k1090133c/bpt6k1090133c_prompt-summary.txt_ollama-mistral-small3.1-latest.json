@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090133c",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The metadata indicates that the play was published in 1671. This suggests that the action of the play likely takes place around the same time, during the 17th century.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1699\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"The text mentions 'Paris' multiple times in relation to the setting of the play, indicating that the action likely takes place in Paris. Specifically, sentences like 'La Sc\u00e8ne est \u00e0 Paris' explicitly set the scene in Paris.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 21.83909797668457,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

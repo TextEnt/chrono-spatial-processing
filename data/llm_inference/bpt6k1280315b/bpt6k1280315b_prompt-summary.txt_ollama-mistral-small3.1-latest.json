@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280315b",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Late Middle Ages/Early Modern Period\",\n    \"period_reasoning\": \"The play is set in Castille, a region in Spain. The mention of knights, royal courts, and the cultural references align with the Late Middle Ages to Early Modern Period in European history, specifically the 15th to 17th centuries.\",\n    \"timeframe_start\": \"-1000\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Castille, Spain\",\n    \"location_reasoning\": \"The frequent mention of 'Castille' in the related sentences indicates that the action of the play takes place in this region. Additionally, the mention of Grenade and France, along with the references to royal courts and knights, supports a setting in Spain.\",\n    \"location_qid\": \"Q17412\"\n}",
+  "duration_seconds": 29.678555011749268,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

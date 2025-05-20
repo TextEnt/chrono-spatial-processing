@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10900687",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Classical antiquity\",\n    \"period_reasoning\": \"The play is based on the mythological figures Venus (Aphrodite) and Adonis, which are prominent in Greek and Roman mythology, suggesting a setting in classical antiquity. The interactions between Venus, Adonis, and Mars (Ares) are consistent with mythological narratives from this period.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"500\",\n    \"location\": \"Mount Ida\",\n    \"location_reasoning\": \"The play revolves around the mythological love story of Venus and Adonis, which traditionally takes place on Mount Ida in ancient Greece. The mention of mythological characters and their interactions strongly suggests this setting.\",\n    \"location_qid\": \"Q743380\"\n}",
+  "duration_seconds": 23.759605884552002,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

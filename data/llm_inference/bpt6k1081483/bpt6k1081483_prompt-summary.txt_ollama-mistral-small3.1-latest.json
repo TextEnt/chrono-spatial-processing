@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1081483",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"17th Century\",\n    \"period_reasoning\": \"The play is written by Jean de La Fontaine, a well-known author of the 17th century. The publication date is 1699, which falls within the 17th century.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"The play mentions 'PARIS' in the context of the publication information, indicating that the play is likely set in Paris.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 18.23908305168152,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

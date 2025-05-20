@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1281045r",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Greek mythology\",\n    \"period_reasoning\": \"The play is titled 'Androm\u00e8de' which refers to Andromeda, a figure from Greek mythology. The plot involves mythological elements such as monsters, gods, and divine interventions, which are characteristic of Greek mythology.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"-600\",\n    \"location\": \"Ethiopia\",\n    \"location_reasoning\": \"The text mentions 'C\u00e9p\u00e9e Roi d'\u00c9thiopie' and 'fille unique' which refers to Andromeda, the daughter of Cepheus, King of Ethiopia, in Greek mythology. The play is based on the myth of Andromeda, who was chained to a rock as a sacrifice to a sea monster.\",\n    \"location_qid\": \"Q937\"\n}",
+  "duration_seconds": 27.339534997940063,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

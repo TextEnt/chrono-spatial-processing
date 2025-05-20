@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k57899298",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Roman Empire\",\n    \"period_reasoning\": \"The frequent mention of 'Rome' and 'C\u00e6sar' suggests a setting within the Roman Empire. The presence of 'Rome' indicates the period of Roman rule, and 'C\u00e6sar' typically refers to the time of the Roman Republic or early Roman Empire.\",\n    \"timeframe_start\": \"-27\",\n    \"timeframe_end\": \"476\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"The frequent mention of 'Rome' and references to Roman political figures like 'C\u00e6sar' strongly indicate that the play's action is set in Rome.\",\n    \"location_qid\": \"Q922\"\n}",
+  "duration_seconds": 23.794050931930542,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

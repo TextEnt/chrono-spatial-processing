@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1343846",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Antiquity\",\n    \"period_reasoning\": \"The play mentions mythological figures such as Theseus, Heracles, and Pyritous, as well as references to ancient Greek mythology and historical events. These elements suggest that the action is set in the ancient world.\",\n    \"timeframe_start\": \"-1200\",\n    \"timeframe_end\": \"323 BCE\",\n    \"location\": \"Ancient Greece\",\n    \"location_reasoning\": \"The frequent mentions of 'Gr\u00e8ce' (Greece), 'Ath\u00e8nes' (Athens), and 'Peloponese' indicate that the action of the play is set in Ancient Greece. Additionally, the references to Greek mythology and historical figures further support this location.\",\n    \"location_qid\": \"Q41\"\n}",
+  "duration_seconds": 28.261478900909424,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

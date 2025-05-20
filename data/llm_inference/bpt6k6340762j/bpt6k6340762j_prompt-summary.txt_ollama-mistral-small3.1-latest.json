@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k6340762j",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Late 17th Century\",\n    \"period_reasoning\": \"The play was published in 1689, which is the late 17th century. The mention of 'Bacchus' and 'Amour' aligns with the themes and styles prevalent in the late 17th century French literature, particularly in pastoral works.\",\n    \"timeframe_start\": \"1650\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Versailles\",\n    \"location_reasoning\": \"The mention of 'Versailles' in the related sentences indicates that the action or the context of the play is associated with this location.\",\n    \"location_qid\": \"Q9006\"\n}",
+  "duration_seconds": 21.191900968551636,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090221h",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Late Middle Ages\",\n    \"period_reasoning\": \"The play is about Jeanne d'Arc (Joan of Arc), also known as the 'Pucelle d'Orl\u00e9ans'. Jeanne d'Arc is historically known for her role in the Hundred Years' War between France and England, which took place from 1337 to 1453. This period is part of the Late Middle Ages.\",\n    \"timeframe_start\": \"-1300\",\n    \"timeframe_end\": \"1453\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play is titled 'Trag\u00e9die de Jeanne d'Arques, dite la Pucelle d'Orl\u00e9ans', which directly refers to Joan of Arc and her association with Orl\u00e9ans. Additionally, the context mentions 'France' multiple times, indicating that the primary setting of the play is in France.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 34.09604597091675,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

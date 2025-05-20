@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10902737",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Renaissance\",\n    \"period_reasoning\": \"The publication date of the play is 1611, which places it in the late Renaissance period. The play's mention of imitation of ancient Greeks and Latins, as well as modern Italians, suggests a cultural context typical of the Renaissance, which emphasized the revival of classical learning and influences from Italy.\",\n    \"timeframe_start\": \"1400\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Troyes\",\n    \"location_reasoning\": \"The play frequently mentions Troyes as a significant location, with multiple sentences referring to events and characters associated with this city.\",\n    \"location_qid\": \"Q130771\"\n}",
+  "duration_seconds": 28.05757713317871,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

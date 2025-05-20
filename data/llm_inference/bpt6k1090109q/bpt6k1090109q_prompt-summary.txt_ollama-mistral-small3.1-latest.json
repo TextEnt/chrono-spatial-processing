@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090109q",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early modern period\",\n    \"period_reasoning\": \"The play is written in the 17th century and it mentions people, places and concerns typical of the early modern period.\",\n    \"timeframe_start\": \"1500\",\n    \"timeframe_end\": \"1800\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The mention of 'Paris' and 'Pont-Neuf', along with the French language used in the play, suggest that the action takes place in France. The mention of Rome is likely a reference to the historical significance of the city rather than the location of the play's action.\",\n    \"location_qid\": \"142\"\n}",
+  "duration_seconds": 20.265456199645996,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

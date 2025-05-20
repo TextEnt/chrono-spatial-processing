@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k859543c",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Renaissance to Early Modern Period\",\n    \"period_reasoning\": \"The play mentions references to old traditions and customs such as the use of 'Ratafia' and 'Jambons de Mayence', which were popular during the Renaissance and Early Modern Period. The mention of 'Magicien' and 'Baguette enchant\u00e9e' also suggests a time when such themes were prevalent in literature.\",\n    \"timeframe_start\": \"1400\",\n    \"timeframe_end\": \"1750\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The mention of specific French regions and cities such as 'Boulogne', 'Bourgogne', and 'Lyon' indicates that the action of the play takes place in France. Additionally, the language of the play is French, which further supports this conclusion.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 29.80388379096985,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

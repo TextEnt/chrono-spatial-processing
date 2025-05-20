@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090053s",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Late Antiquity to Early Middle Ages\",\n    \"period_reasoning\": \"The mention of characters like 'Durias', 'Cardaces', and 'Levigilde' suggests a setting in the transition period from the Roman Empire to the early medieval period. Additionally, the reference to 'Pontife de Rome' indicates a time when the Roman Catholic Church was influential, which aligns with the Late Antiquity to Early Middle Ages period.\",\n    \"timeframe_start\": \"-300\",\n    \"timeframe_end\": \"1500\",\n    \"location\": \"Iberian Peninsula\",\n    \"location_reasoning\": \"The character 'Saint Hermenegilde' is historically associated with the Iberian Peninsula, specifically Visigothic Spain. Additionally, the mention of 'Seville' in the top places further supports this location.\",\n    \"location_qid\": \"Q170299\"\n}",
+  "duration_seconds": 19.723931789398193,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

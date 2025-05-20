@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1513897n",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early Modern Period\",\n    \"period_reasoning\": \"The play was written in the 17th century, specifically in 1648. This period falls within the Early Modern Period, which spans from the late 15th to the mid-18th century.\",\n    \"timeframe_start\": \"-1453\",\n    \"timeframe_end\": \"1750\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"The context mentions multiple references to Paris, including sentences that explicitly state 'La Sc\u00e8ne est \u00e0 Paris devant la maison d'Oronthe' and 'Dedans Paris'. This indicates that the action of the play is set in Paris.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 25.189404726028442,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280316r",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Roman Empire to Early Christian Era\",\n    \"period_reasoning\": \"The play mentions Roman religious practices, the mention of 'Dieu des Chr\u00e9tiens' (God of Christians) and references to the conversion to Christianity. These elements suggest a time period when Christianity was emerging and interacting with Roman pagan practices.\",\n    \"timeframe_start\": \"-27\",\n    \"timeframe_end\": \"312\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"The text repeatedly mentions 'Rome' in various contexts, indicating that the play's action is set in or significantly references the city of Rome.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 27.975904941558838,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

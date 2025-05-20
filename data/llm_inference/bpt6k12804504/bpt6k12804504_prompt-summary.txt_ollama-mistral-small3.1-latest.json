@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k12804504",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play is written by Moli\u00e8re, a prominent French playwright of the 17th century. The publication date is 1674, which is within the 17th century.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play is mentioned to be represented on the theatre du Palais Royal. The context mentions 'France' multiple times, indicating that the action likely takes place in France.\",\n    \"location_qid\": \"142\"\n}",
+  "duration_seconds": 19.40994930267334,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

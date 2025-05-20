@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5626255h",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"The Second Punic War\",\n    \"period_reasoning\": \"The play mentions Hannibal, Scipion, Fabius, and the battle of Zama, which are all key figures and events of the Second Punic War. Hannibal's campaigns and the eventual Roman victory at Zama are central to this conflict.\",\n    \"timeframe_start\": \"-218\",\n    \"timeframe_end\": \"-201\",\n    \"location\": \"North Africa\",\n    \"location_reasoning\": \"The play frequently mentions Carthage and Africa, which are located in North Africa. Additionally, the conflict involving Hannibal and Scipion took place in this region.\",\n    \"location_qid\": \"Q9242\"\n}",
+  "duration_seconds": 26.119157075881958,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

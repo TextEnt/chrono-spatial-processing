@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090203k",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"17th Century\",\n    \"period_reasoning\": \"The play is titled 'Les Fragmens de Moli\u00e8re, com\u00e9die' and was published in 1682, indicating it was written in the 17th Century. Additionally, the mention of Moli\u00e8re, a prominent figure of the 17th Century, supports this period.\",\n    \"timeframe_start\": \"+1600\",\n    \"timeframe_end\": \"+1699\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The author, Champmesl\u00e9, and the mention of Moli\u00e8re, a famous French playwright, suggest that the play is set in France. Additionally, the French language used in the play further supports this location.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 21.986480951309204,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

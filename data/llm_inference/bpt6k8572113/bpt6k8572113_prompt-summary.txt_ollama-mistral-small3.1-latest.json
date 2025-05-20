@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8572113",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Late 17th century\",\n    \"period_reasoning\": \"The play was published in 1694, which places it in the late 17th century. The context and language used in the play suggest it reflects the social and cultural norms of this time period.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play frequently mentions 'France' and references cultural and social norms specific to France during the late 17th century. Additionally, the mention of 'Fontange,' a style of headdress popular in France during this period, supports this location.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 24.228794813156128,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

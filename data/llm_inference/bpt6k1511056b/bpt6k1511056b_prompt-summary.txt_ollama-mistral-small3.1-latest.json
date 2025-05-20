@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1511056b",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Late 17th century\",\n    \"period_reasoning\": \"The play was published in 1695, indicating it was written in the late 17th century. The references to historical figures and events, such as Louis and the mention of the Ottoman Empire, align with this timeframe.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Europe\",\n    \"location_reasoning\": \"The title and content frequently mention 'Europe' and various European places and figures, suggesting the action and setting are predominantly within Europe.\",\n    \"location_qid\": \"62560\"\n}",
+  "duration_seconds": 21.237061738967896,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

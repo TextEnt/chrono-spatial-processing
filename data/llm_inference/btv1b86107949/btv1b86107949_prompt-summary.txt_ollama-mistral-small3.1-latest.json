@@ -1,0 +1,10 @@
+{
+  "document_id": "btv1b86107949",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early Modern Period\",\n    \"period_reasoning\": \"The play is written by Moli\u00e8re, a prominent playwright of the 17th century, and was published in 1674. The Early Modern Period spans from the late 15th to the late 18th century, encompassing the Renaissance and the Enlightenment.\",\n    \"timeframe_start\": \"1400\",\n    \"timeframe_end\": \"1800\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"Moli\u00e8re was a French playwright, and his works were typically set in France. Additionally, the mention of 'Paris' and 'Palais Royal' in the top places further supports this.\",\n    \"location_qid\": \"142\"\n}",
+  "duration_seconds": 31.06737732887268,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

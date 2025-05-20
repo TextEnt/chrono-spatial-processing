@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090191t",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The metadata indicates the publication date of the play is 1664, which is within the 17th century. The style of language and references in the related sentences also suggest a 17th-century context.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"The text frequently mentions Paris and discusses events and opinions specific to Parisian society, indicating that the action of the play is set in Paris.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 26.359663724899292,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10902648",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Roman Empire\",\n    \"period_reasoning\": \"The play frequently mentions 'C\u00e9sars' and 'Rome', indicating a time when the Roman Empire was prominent. Additionally, the mention of 'Auguste' (Augustus) and 'les C\u00e9sars' suggests a time period during or shortly after the Roman Empire.\",\n    \"timeframe_start\": \"-27\",\n    \"timeframe_end\": \"476\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"The frequent mention of 'Rome' and 'Rom\u00e8me' in the related sentences suggests that the action of the play is set in or around Rome.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 26.193185091018677,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

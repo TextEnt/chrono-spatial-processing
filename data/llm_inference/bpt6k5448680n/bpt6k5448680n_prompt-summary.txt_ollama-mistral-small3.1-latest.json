@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5448680n",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Greek mythology and ancient Phrygia\",\n    \"period_reasoning\": \"The frequent mentions of Cybele, who is a significant figure in Greek mythology, and the reference to the 'Roi de Phrygie' indicate that the play is set in the context of ancient Greek mythology and the historical region of Phrygia.\",\n    \"timeframe_start\": \"-1000\",\n    \"timeframe_end\": \"0\",\n    \"location\": \"Phrygia\",\n    \"location_reasoning\": \"The mention of 'Roi de Phrygie' and the presence of Cybele, who is associated with Phrygia, suggest that the play is set in the region of Phrygia.\",\n    \"location_qid\": \"Q177993\"\n}",
+  "duration_seconds": 30.691178798675537,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

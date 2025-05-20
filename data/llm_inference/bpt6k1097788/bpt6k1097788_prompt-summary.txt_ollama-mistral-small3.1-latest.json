@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1097788",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Hellenistic period\",\n    \"period_reasoning\": \"The play mentions Syphax, who was a historical figure from the 3rd-2nd century B.C. during the Punic Wars between Carthage and Rome. The characters and events suggest a setting in the Hellenistic period, particularly during the conflict between Carthage and Rome.\",\n    \"timeframe_start\": \"-300\",\n    \"timeframe_end\": \"-146\",\n    \"location\": \"Carthage\",\n    \"location_reasoning\": \"The play mentions characters and places associated with Carthage, such as Syphax and Sophonisbe, and references to Rome. The primary action seems to revolve around Carthage and its conflicts with Rome.\",\n    \"location_qid\": \"Q9165\"\n}",
+  "duration_seconds": 25.337471961975098,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

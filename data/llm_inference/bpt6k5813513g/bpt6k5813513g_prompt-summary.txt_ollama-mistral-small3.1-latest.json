@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5813513g",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The play was written in 1633, which places it in the 17th century. The content and language style are consistent with this period.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1699\",\n    \"location\": \"Venise\",\n    \"location_reasoning\": \"Venise is the most frequently mentioned place in the play, suggesting it is a significant location where the action takes place.\",\n    \"location_qid\": \"Q203\"\n}",
+  "duration_seconds": 22.266295909881592,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

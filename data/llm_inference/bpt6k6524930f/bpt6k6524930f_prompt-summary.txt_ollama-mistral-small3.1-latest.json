@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k6524930f",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Mythological Age\",\n    \"period_reasoning\": \"The play features mythological characters such as Cybele, Atys, and Flore, which are typical of Greek and Roman mythology. The presence of these characters suggests that the action takes place in a mythological setting, which does not correspond to a specific historical period but rather to the timeless realm of myth and legend.\",\n    \"timeframe_start\": \"None\",\n    \"timeframe_end\": \"None\",\n    \"location\": \"Phrygia\",\n    \"location_reasoning\": \"Cybele is associated with Phrygia, an ancient region in modern-day Turkey. The mention of the 'Roi de Phrygie' (King of Phrygia) further supports this association.\",\n    \"location_qid\": \"Q310230\"\n}",
+  "duration_seconds": 26.220531940460205,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

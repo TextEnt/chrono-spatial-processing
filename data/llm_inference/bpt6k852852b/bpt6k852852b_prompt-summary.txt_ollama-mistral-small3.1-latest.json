@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k852852b",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"The Roman Republic and Early Roman Empire\",\n    \"period_reasoning\": \"The play references Manlius Torquatus, a historical figure from the Roman Republic. Additionally, the mentions of Rome and the Roman political and social structure, such as the role of the consul, suggest a time period within the Roman Republic or the early Roman Empire.\",\n    \"timeframe_start\": \"-509\",\n    \"timeframe_end\": \"27\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"The play frequently mentions Rome and Roman customs, politics, and society, indicating that the action of the play takes place in Rome.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 25.617387056350708,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

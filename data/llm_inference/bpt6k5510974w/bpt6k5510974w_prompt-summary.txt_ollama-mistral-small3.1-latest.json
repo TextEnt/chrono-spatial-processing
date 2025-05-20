@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5510974w",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Classical Antiquity\",\n    \"period_reasoning\": \"The play mentions characters such as Circ\u00e9, Glaucus, and Sylla, who are figures from Greek mythology and Roman history, indicating that the action is set in the time of classical antiquity.\",\n    \"timeframe_start\": \"-800\",\n    \"timeframe_end\": \"476\",\n    \"location\": \"Greece\",\n    \"location_reasoning\": \"The primary characters and themes of the play, such as Circ\u00e9 and Glaucus, are rooted in Greek mythology, suggesting that the action takes place in ancient Greece.\",\n    \"location_qid\": \"Q99\"\n}",
+  "duration_seconds": 25.32664704322815,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

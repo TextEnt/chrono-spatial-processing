@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k857183z",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Ancient Rome and the Early Roman Empire\",\n    \"period_reasoning\": \"The play mentions 'Rome' frequently and discusses scenarios that align with the political and social structure of Ancient Rome and the Early Roman Empire. Terms like 'Prince,' 'Cour,' and 'trahissait elle et moi, l'honneur, Rome et le Ciel' suggest a setting in the Roman era.\",\n    \"timeframe_start\": \"-509\",\n    \"timeframe_end\": \"476\",\n    \"location\": \"Rome\",\n    \"location_reasoning\": \"The play repeatedly mentions 'Rome' as a significant setting, with sentences discussing events and characters related to Rome. This strongly indicates that the primary location of the action is Rome.\",\n    \"location_qid\": \"Q905\"\n}",
+  "duration_seconds": 23.626511096954346,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k856903d",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early Christian Era\",\n    \"period_reasoning\": \"The play mentions 'J\u00e9sus-Christ' and refers to characters like Saint Clair, indicating a Christian context. The actions involve martyrdom and saintly figures, which are common themes in early Christian literature.\",\n    \"timeframe_start\": \"-33\",\n    \"timeframe_end\": \"313\",\n    \"location\": \"Normandie\",\n    \"location_reasoning\": \"The term 'Normandie' appears multiple times in the related sentences, indicating that the action of the play takes place in this region. Additionally, the play is described as a 'tragi-com\u00e9die chrestienne,' which suggests a setting in a Christian context, likely in France.\",\n    \"location_qid\": \"Q922\"\n}",
+  "duration_seconds": 23.678786993026733,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

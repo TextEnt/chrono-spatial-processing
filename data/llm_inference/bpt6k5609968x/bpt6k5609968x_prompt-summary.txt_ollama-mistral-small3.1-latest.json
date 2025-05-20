@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k5609968x",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Late Middle Ages to Early Modern Period\",\n    \"period_reasoning\": \"The play mentions 'Charles le Hardy, dernier duc de Bourgogne,' who is Charles the Bold, the last Duke of Burgundy. Charles the Bold lived from 1433 to 1477, placing the historical context in the late Middle Ages. Additionally, the mention of 'France' and the historical figures aligns with the Early Modern Period, which spans from the late 15th to the early 18th century.\",\n    \"timeframe_start\": \"-1477\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Burgundy and France\",\n    \"location_reasoning\": \"The play is titled 'Le jugement \u00e9quitable de Charles le Hardy, dernier duc de Bourgogne,' indicating that the action is set in Burgundy. Additionally, the mention of 'France' in the related sentences suggests that the action also takes place in France.\",\n    \"location_qid\": \"Q9008\"\n}",
+  "duration_seconds": 26.280126094818115,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

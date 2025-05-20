@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280304j",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Late Roman Republic to Early Roman Empire\",\n    \"period_reasoning\": \"The play mentions historical figures such as C\u00c3\u00a9sar (Julius Caesar) and Pomp\u00c3\u00a9e (Pompey), who were prominent during the late Roman Republic and early Roman Empire. The actions and events described in the play align with the political and military conflicts of this period.\",\n    \"timeframe_start\": \"-100\",\n    \"timeframe_end\": \"30\",\n    \"location\": \"Rome and Egypt\",\n    \"location_reasoning\": \"The play frequently mentions Rome and Egypt as significant locations. Specifically, the mentions of Rome, Alexandria, and Memphis indicate that the action takes place in these regions, which were key areas of conflict during the time of Julius Caesar and Pompey.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 28.943984985351562,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280398m",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"XVII century\",\n    \"period_reasoning\": \"The play was written by Moli\u00e8re and published in 1660. Given the publication date, it is reasonable to assume that the play is set in the same time period.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"The term 'Paris' is mentioned 6 times in the related sentences of the places, and there are references to actions taking place in Paris. This strongly indicates that the play is set in Paris.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 26.262547969818115,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

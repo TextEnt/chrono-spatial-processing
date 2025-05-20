@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280543b",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Late 17th century\",\n    \"period_reasoning\": \"The play was written by Moli\u00e8re in 1669, indicating that the play was likely set in the late 17th century, around the time it was written.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play is written in French and mentions characters with French names and titles, suggesting it is set in France. Additionally, Moli\u00e8re is a renowned French playwright, further supporting this inference.\",\n    \"location_qid\": \"142\"\n}",
+  "duration_seconds": 21.19253396987915,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k6272681r",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early modern period\",\n    \"period_reasoning\": \"The play is written in the 17th century (1638) and references social and political structures consistent with the early modern period, including royal courts, princes, and political intrigue.\",\n    \"timeframe_start\": \"+1500\",\n    \"timeframe_end\": \"+1800\",\n    \"location\": \"Kingdom of Naples\",\n    \"location_reasoning\": \"The frequent mention of Naples and Salerne, both of which are located in the Kingdom of Naples, as well as references to the King and royal courts, suggest that the action of the play takes place in the Kingdom of Naples.\",\n    \"location_qid\": \"Q199249\"\n}",
+  "duration_seconds": 27.835251331329346,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

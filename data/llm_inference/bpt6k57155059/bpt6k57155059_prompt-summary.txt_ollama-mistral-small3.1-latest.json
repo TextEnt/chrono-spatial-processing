@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k57155059",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Late Antiquity\",\n    \"period_reasoning\": \"B\u00e9lisaire, also known as Belisarius, was a prominent general of the Byzantine Empire during the reign of Emperor Justinian I. The play's characters and references to B\u00e9lisaire and Justinian suggest the action is set during the 6th century in the Eastern Roman (Byzantine) Empire.\",\n    \"timeframe_start\": \"500\",\n    \"timeframe_end\": \"600\",\n    \"location\": \"Byzantine Empire\",\n    \"location_reasoning\": \"B\u00e9lisaire was a general of the Byzantine Empire, and the context of the play revolves around his exploits and the political intrigues of the Byzantine court. The play's dedication to a French count and mention of Paris suggests a later French adaptation or setting, but the core action of the play is set in the Byzantine Empire.\",\n    \"location_qid\": \"Q1195\"\n}",
+  "duration_seconds": 26.918821811676025,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090087k",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The publication date of the play is 1694. This suggests that the historical period in which the play was written and likely set is the 17th century.\",\n    \"timeframe_start\": \"1601\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"None\",\n    \"location_reasoning\": \"The text mentions several places such as Rome, Paris, Carthage, and Euripide. However, these references do not clearly indicate where the main action of the play takes place. Therefore, the location cannot be determined with certainty.\",\n    \"location_qid\": \"None\"\n}",
+  "duration_seconds": 24.986953258514404,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

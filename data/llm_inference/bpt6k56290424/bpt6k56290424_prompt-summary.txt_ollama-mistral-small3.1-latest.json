@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k56290424",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Late 17th century\",\n    \"period_reasoning\": \"The play was published in 1683, which is in the late 17th century. The context and characters mentioned are consistent with the social and cultural environment of this period in France.\",\n    \"timeframe_start\": \"1650\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The frequent mention of France and specific French locations such as Paris, Rome, Italie, and Corse suggest that the play is set in France. Additionally, the cultural and linguistic context aligns with 17th-century French society.\",\n    \"location_qid\": \"142\"\n}",
+  "duration_seconds": 23.051562786102295,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k856883v",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"17th century\",\n    \"period_reasoning\": \"The publication date of the play is 1685, which falls in the 17th century. The historical period of the play's action is likely to be contemporaneous with its publication.\",\n    \"timeframe_start\": \"1600\",\n    \"timeframe_end\": \"1699\",\n    \"location\": \"France\",\n    \"location_reasoning\": \"The play mentions 'Champagne,' a region in France, multiple times. Additionally, 'Paris,' 'Versaille,' and 'Toulouse' are also mentioned, which are all cities in France.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 26.363582849502563,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

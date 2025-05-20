@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1525193g",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Middle Ages to early modern period\",\n    \"period_reasoning\": \"The frequent mentions of Castille, the use of noble titles like 'Dom Alphonse,' and the themes of royal intrigue and conflict suggest a setting in medieval or early modern Europe. The reference to the 'King of L\u00e9on' and the 'King of Castille' further supports this, as these were significant medieval and early modern European kingdoms.\",\n    \"timeframe_start\": \"-476\",\n    \"timeframe_end\": \"1492\",\n    \"location\": \"Spain\",\n    \"location_reasoning\": \"The repeated mentions of Castille, a historic region in Spain, along with references to L\u00e9on and Burgos, indicate that the play is set in Spain. These places are historically significant in Spanish history and literature.\",\n    \"location_qid\": \"Q252\"\n}",
+  "duration_seconds": 26.677090883255005,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

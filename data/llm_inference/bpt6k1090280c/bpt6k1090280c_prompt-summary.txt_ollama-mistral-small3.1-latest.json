@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1090280c",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Renaissance\",\n    \"period_reasoning\": \"The publication date of the play is 1633, which places it within the late Renaissance period. The mention of 'fascination' and the style of language suggest the early modern period.\",\n    \"timeframe_start\": \"1400\",\n    \"timeframe_end\": \"1650\",\n    \"location\": \"Paris\",\n    \"location_reasoning\": \"The play frequently mentions Paris and describes it as the setting for various events and dialogues.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 147.2930359840393,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

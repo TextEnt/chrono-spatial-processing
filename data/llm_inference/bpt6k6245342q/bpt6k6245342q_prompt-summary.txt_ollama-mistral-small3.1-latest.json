@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k6245342q",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Medieval to Early Modern Europe\",\n    \"period_reasoning\": \"The play mentions royal courts, noble houses, and political intrigue, which are common themes in medieval and early modern European literature. The language and style are indicative of the 17th century, but the themes suggest a setting in a previous era.\",\n    \"timeframe_start\": \"-500\",\n    \"timeframe_end\": \"1600\",\n    \"location\": \"Europe, potentially France and neighboring countries\",\n    \"location_reasoning\": \"The play is written in French by a French author and mentions places like Hungary and Poland, which are European countries. The action likely takes place in a European setting, possibly involving French nobility and politics.\",\n    \"location_qid\": \"None\"\n}",
+  "duration_seconds": 28.650789976119995,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

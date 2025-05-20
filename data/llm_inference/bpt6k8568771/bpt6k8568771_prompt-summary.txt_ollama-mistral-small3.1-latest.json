@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k8568771",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early Modern Period\",\n    \"period_reasoning\": \"The text mentions elements that suggest a setting in the Early Modern Period, such as references to galley slaves, soldiers, and religious conversion themes, which were prevalent during the 17th century.\",\n    \"timeframe_start\": \"+1500\",\n    \"timeframe_end\": \"+1800\",\n    \"location\": \"Venice\",\n    \"location_reasoning\": \"The text frequently mentions 'Venise' (Venice) and describes it as the setting of various significant events and dialogues within the play.\",\n    \"location_qid\": \"Q668\"\n}",
+  "duration_seconds": 20.85600209236145,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

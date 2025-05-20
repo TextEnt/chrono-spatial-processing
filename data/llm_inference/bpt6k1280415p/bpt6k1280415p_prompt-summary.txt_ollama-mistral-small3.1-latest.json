@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k1280415p",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early modern period\",\n    \"period_reasoning\": \"The play was written by Moli\u00e8re in the 17th century, and the language and cultural references suggest an early modern period setting, which typically spans from the late 15th to the early 18th century.\",\n    \"timeframe_start\": \"1500\",\n    \"timeframe_end\": \"1700\",\n    \"location\": \"Paris, France\",\n    \"location_reasoning\": \"The play frequently mentions Paris and references cultural and social contexts specific to Paris in the 17th century.\",\n    \"location_qid\": \"Q90\"\n}",
+  "duration_seconds": 21.739596128463745,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

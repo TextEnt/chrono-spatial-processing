@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k858690",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Early modern period\",\n    \"period_reasoning\": \"The publication date of the play is 1653, which is during the early modern period. The play is written by Fran\u00e7ois de Boisrobert, a French poet and dramatist active in the 17th century.\",\n    \"timeframe_start\": \"1453\",\n    \"timeframe_end\": \"1789\",\n    \"location\": \"Londres\",\n    \"location_reasoning\": \"The 'context' property mentions that the scene is set in Londres multiple times.\",\n    \"location_qid\": \"Q84\"\n}",
+  "duration_seconds": 19.100231885910034,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

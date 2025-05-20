@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10901764",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"Ancient Greek mythology\",\n    \"period_reasoning\": \"The play is titled 'Adonis, trag\u00e9die francoyse' and mentions Adonis, Venus, and Cupidon, which are figures from ancient Greek mythology. The references to these mythological figures suggest that the action is set in a mythological timeframe rather than a specific historical period.\",\n    \"timeframe_start\": \"-4000\",\n    \"timeframe_end\": \"-1000\",\n    \"location\": \"None\",\n    \"location_reasoning\": \"The mentions of 'France' and 'Paris' in the play refer to the intended audience or the location of the play's publication rather than the setting of the action. The action of the play is set in the realm of ancient Greek mythology, which does not have a specific geographic location.\",\n    \"location_qid\": \"None\"\n}",
+  "duration_seconds": 22.197999000549316,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}

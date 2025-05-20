@@ -1,0 +1,10 @@
+{
+  "document_id": "bpt6k10900561",
+  "prompt_id": "prompt-summary.txt",
+  "model_name": "ollama:mistral-small3.1:latest",
+  "response": "{\n    \"period\": \"1st century B.C.E. - 1st century C.E.\",\n    \"period_reasoning\": \"The play mentions key historical figures and events related to the time of Jesus Christ, such as 'Christ,' 'Aristobule,' and 'J\u00e9rusalem.' These references suggest that the action of the play is set around the time of the birth of Jesus Christ, which is historically placed in the 1st century B.C.E. to 1st century C.E.\",\n    \"timeframe_start\": \"-100\",\n    \"timeframe_end\": \"100\",\n    \"location\": \"Jerusalem\",\n    \"location_reasoning\": \"The play frequently mentions 'J\u00e9rusalem' and refers to events that took place in Jerusalem, such as the birth of Jesus Christ and the actions of Herod the Great. These references indicate that the action of the play is set in Jerusalem.\",\n    \"location_qid\": \"Q658\"\n}",
+  "duration_seconds": 29.030038118362427,
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null
+}
