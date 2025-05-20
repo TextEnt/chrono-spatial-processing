@@ -2,8 +2,8 @@ SHELL:=/bin/bash
 
 BASE_PATH?='/Users/mromanello/Documents/chrono-spatial-processing'
 CONFIG_FILE?='./data/config.yaml'
-CORPUS_PATH?=''
-SPACY_CORPUS_PATH?=''
+CORPUS_PATH?='../TheatreLFSV2/'
+SPACY_CORPUS_PATH?='data/corpus_24022025.spacy'
 LLM_JUDGE_MODEL?='openai:o1-mini'
 
 tei2spacy:
@@ -12,7 +12,7 @@ tei2spacy:
 
 # pre-generate prompts for all documents in the spacy corpus
 generate-prompts:
-	python scripts/generate_prompts.py --spacy-corpus-path=data/corpus_24022025.spacy 
+	python scripts/generate_prompts.py --spacy-corpus-path=$(SPACY_CORPUS_PATH) 
 		--output-summaries-path=data/summaries/
 		--output-prompts-path=data/prompts/pregenerated2/
 
