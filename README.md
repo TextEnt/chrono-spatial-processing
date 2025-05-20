@@ -36,7 +36,7 @@ Once we have identified a suitable LLM-judge, we benchmark several LLMs in a zer
 
 ### Inference
 
-Based on the evaluation results, we can then select an LLM and use it for inference on a larger corpus (see `make ...`). This step assumes that pre-processing and pre-generation of prompts were already performed. For an example configuration see `data/confi.yaml` under the section `inference`. As an example, the folder `data/llm_inference/` contains all the predictions produced by the model [`ollama:mistral-small3.1:latest`](https://ollama.com/library/mistral-small3.1) on the documents listed in `data/textent_corpus.tsv`.
+Based on the evaluation results, we can then select an LLM and use it for inference on a larger corpus (see `make ...`). This step assumes that pre-processing and pre-generation of prompts were already performed. For an example configuration see `data/confi.yaml` under the section `inference`. As an example, the folder `data/llm_inference/` contains all the predictions produced by the model [`ollama:mistral-small3.1:latest`](https://ollama.com/library/mistral-small3.1) on the documents listed in `data/textent_corpus.tsv`. All model's prediction are then compiled into a TSV file [`./data/llm_inference/llm_responses.tsv`](./data/llm_inference/llm_responses.tsv).
 
 ## Acknowledgements
 Code and data in this repository were produced in the context of the project _The Geographic Horizon of writers_ (PIs Simon Gabay and Nicola Carboni), funded by the Swiss National Science Foundation under the Spark grant [220833](https://data.snf.ch/grants/grant/220833).
